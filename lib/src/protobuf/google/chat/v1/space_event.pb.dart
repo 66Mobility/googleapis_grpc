@@ -993,6 +993,8 @@ class ListSpaceEventsResponse extends $pb.GeneratedMessage {
   static ListSpaceEventsResponse? _defaultInstance;
 
   /// Results are returned in chronological order (oldest event first).
+  /// Note: The `permissionSettings` field is not returned in the Space
+  /// object for list requests.
   @$pb.TagNumber(1)
   $core.List<SpaceEvent> get spaceEvents => $_getList(0);
 

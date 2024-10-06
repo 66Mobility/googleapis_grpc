@@ -131,14 +131,44 @@ const Space$json = {
       '10': 'accessSettings'
     },
     {'1': 'space_uri', '3': 25, '4': 1, '5': 9, '8': {}, '10': 'spaceUri'},
+    {
+      '1': 'predefined_permission_settings',
+      '3': 26,
+      '4': 1,
+      '5': 14,
+      '6': '.google.chat.v1.Space.PredefinedPermissionSettings',
+      '8': {},
+      '9': 0,
+      '10': 'predefinedPermissionSettings'
+    },
+    {
+      '1': 'permission_settings',
+      '3': 27,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.PermissionSettings',
+      '8': {},
+      '9': 0,
+      '10': 'permissionSettings'
+    },
   ],
   '3': [
     Space_SpaceDetails$json,
     Space_MembershipCount$json,
-    Space_AccessSettings$json
+    Space_AccessSettings$json,
+    Space_PermissionSettings$json,
+    Space_PermissionSetting$json
   ],
-  '4': [Space_Type$json, Space_SpaceType$json, Space_SpaceThreadingState$json],
+  '4': [
+    Space_Type$json,
+    Space_SpaceType$json,
+    Space_SpaceThreadingState$json,
+    Space_PredefinedPermissionSettings$json
+  ],
   '7': {},
+  '8': [
+    {'1': 'space_permission_settings'},
+  ],
 };
 
 @$core.Deprecated('Use spaceDescriptor instead')
@@ -200,6 +230,113 @@ const Space_AccessSettings_AccessState$json = {
 };
 
 @$core.Deprecated('Use spaceDescriptor instead')
+const Space_PermissionSettings$json = {
+  '1': 'PermissionSettings',
+  '2': [
+    {
+      '1': 'manage_members_and_groups',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.PermissionSetting',
+      '9': 0,
+      '10': 'manageMembersAndGroups',
+      '17': true
+    },
+    {
+      '1': 'modify_space_details',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.PermissionSetting',
+      '9': 1,
+      '10': 'modifySpaceDetails',
+      '17': true
+    },
+    {
+      '1': 'toggle_history',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.PermissionSetting',
+      '9': 2,
+      '10': 'toggleHistory',
+      '17': true
+    },
+    {
+      '1': 'use_at_mention_all',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.PermissionSetting',
+      '9': 3,
+      '10': 'useAtMentionAll',
+      '17': true
+    },
+    {
+      '1': 'manage_apps',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.PermissionSetting',
+      '9': 4,
+      '10': 'manageApps',
+      '17': true
+    },
+    {
+      '1': 'manage_webhooks',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.PermissionSetting',
+      '9': 5,
+      '10': 'manageWebhooks',
+      '17': true
+    },
+    {
+      '1': 'post_messages',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.PermissionSetting',
+      '8': {},
+      '9': 6,
+      '10': 'postMessages',
+      '17': true
+    },
+    {
+      '1': 'reply_messages',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.chat.v1.Space.PermissionSetting',
+      '9': 7,
+      '10': 'replyMessages',
+      '17': true
+    },
+  ],
+  '8': [
+    {'1': '_manage_members_and_groups'},
+    {'1': '_modify_space_details'},
+    {'1': '_toggle_history'},
+    {'1': '_use_at_mention_all'},
+    {'1': '_manage_apps'},
+    {'1': '_manage_webhooks'},
+    {'1': '_post_messages'},
+    {'1': '_reply_messages'},
+  ],
+};
+
+@$core.Deprecated('Use spaceDescriptor instead')
+const Space_PermissionSetting$json = {
+  '1': 'PermissionSetting',
+  '2': [
+    {'1': 'managers_allowed', '3': 1, '4': 1, '5': 8, '10': 'managersAllowed'},
+    {'1': 'members_allowed', '3': 2, '4': 1, '5': 8, '10': 'membersAllowed'},
+  ],
+};
+
+@$core.Deprecated('Use spaceDescriptor instead')
 const Space_Type$json = {
   '1': 'Type',
   '2': [
@@ -231,6 +368,16 @@ const Space_SpaceThreadingState$json = {
   ],
 };
 
+@$core.Deprecated('Use spaceDescriptor instead')
+const Space_PredefinedPermissionSettings$json = {
+  '1': 'PredefinedPermissionSettings',
+  '2': [
+    {'1': 'PREDEFINED_PERMISSION_SETTINGS_UNSPECIFIED', '2': 0},
+    {'1': 'COLLABORATION_SPACE', '2': 1},
+    {'1': 'ANNOUNCEMENT_SPACE', '2': 2},
+  ],
+};
+
 /// Descriptor for `Space`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List spaceDescriptor = $convert.base64Decode(
     'CgVTcGFjZRISCgRuYW1lGAEgASgJUgRuYW1lEjUKBHR5cGUYAiABKA4yGi5nb29nbGUuY2hhdC'
@@ -251,20 +398,45 @@ final $typed_data.Uint8List spaceDescriptor = $convert.base64Decode(
     '9vZ2xlLmNoYXQudjEuU3BhY2UuTWVtYmVyc2hpcENvdW50QgPgQQNSD21lbWJlcnNoaXBDb3Vu'
     'dBJSCg9hY2Nlc3Nfc2V0dGluZ3MYFyABKAsyJC5nb29nbGUuY2hhdC52MS5TcGFjZS5BY2Nlc3'
     'NTZXR0aW5nc0ID4EEBUg5hY2Nlc3NTZXR0aW5ncxIgCglzcGFjZV91cmkYGSABKAlCA+BBA1II'
-    'c3BhY2VVcmkaUAoMU3BhY2VEZXRhaWxzEiAKC2Rlc2NyaXB0aW9uGAEgASgJUgtkZXNjcmlwdG'
-    'lvbhIeCgpndWlkZWxpbmVzGAIgASgJUgpndWlkZWxpbmVzGoMBCg9NZW1iZXJzaGlwQ291bnQS'
-    'Qgoeam9pbmVkX2RpcmVjdF9odW1hbl91c2VyX2NvdW50GAQgASgFUhpqb2luZWREaXJlY3RIdW'
-    '1hblVzZXJDb3VudBIsChJqb2luZWRfZ3JvdXBfY291bnQYBSABKAVSEGpvaW5lZEdyb3VwQ291'
-    'bnQa1wEKDkFjY2Vzc1NldHRpbmdzElgKDGFjY2Vzc19zdGF0ZRgBIAEoDjIwLmdvb2dsZS5jaG'
-    'F0LnYxLlNwYWNlLkFjY2Vzc1NldHRpbmdzLkFjY2Vzc1N0YXRlQgPgQQNSC2FjY2Vzc1N0YXRl'
-    'Eh8KCGF1ZGllbmNlGAMgASgJQgPgQQFSCGF1ZGllbmNlIkoKC0FjY2Vzc1N0YXRlEhwKGEFDQ0'
-    'VTU19TVEFURV9VTlNQRUNJRklFRBAAEgsKB1BSSVZBVEUQARIQCgxESVNDT1ZFUkFCTEUQAiIu'
-    'CgRUeXBlEhQKEFRZUEVfVU5TUEVDSUZJRUQQABIICgRST09NEAESBgoCRE0QAiJWCglTcGFjZV'
-    'R5cGUSGgoWU1BBQ0VfVFlQRV9VTlNQRUNJRklFRBAAEgkKBVNQQUNFEAESDgoKR1JPVVBfQ0hB'
-    'VBACEhIKDkRJUkVDVF9NRVNTQUdFEAMiggEKE1NwYWNlVGhyZWFkaW5nU3RhdGUSJQohU1BBQ0'
-    'VfVEhSRUFESU5HX1NUQVRFX1VOU1BFQ0lGSUVEEAASFQoRVEhSRUFERURfTUVTU0FHRVMQAhIU'
-    'ChBHUk9VUEVEX01FU1NBR0VTEAMSFwoTVU5USFJFQURFRF9NRVNTQUdFUxAEOi7qQSsKGWNoYX'
-    'QuZ29vZ2xlYXBpcy5jb20vU3BhY2USDnNwYWNlcy97c3BhY2V9');
+    'c3BhY2VVcmkSggEKHnByZWRlZmluZWRfcGVybWlzc2lvbl9zZXR0aW5ncxgaIAEoDjIyLmdvb2'
+    'dsZS5jaGF0LnYxLlNwYWNlLlByZWRlZmluZWRQZXJtaXNzaW9uU2V0dGluZ3NCBuBBBOBBAUgA'
+    'UhxwcmVkZWZpbmVkUGVybWlzc2lvblNldHRpbmdzEmAKE3Blcm1pc3Npb25fc2V0dGluZ3MYGy'
+    'ABKAsyKC5nb29nbGUuY2hhdC52MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ3NCA+BBAUgAUhJw'
+    'ZXJtaXNzaW9uU2V0dGluZ3MaUAoMU3BhY2VEZXRhaWxzEiAKC2Rlc2NyaXB0aW9uGAEgASgJUg'
+    'tkZXNjcmlwdGlvbhIeCgpndWlkZWxpbmVzGAIgASgJUgpndWlkZWxpbmVzGoMBCg9NZW1iZXJz'
+    'aGlwQ291bnQSQgoeam9pbmVkX2RpcmVjdF9odW1hbl91c2VyX2NvdW50GAQgASgFUhpqb2luZW'
+    'REaXJlY3RIdW1hblVzZXJDb3VudBIsChJqb2luZWRfZ3JvdXBfY291bnQYBSABKAVSEGpvaW5l'
+    'ZEdyb3VwQ291bnQa1wEKDkFjY2Vzc1NldHRpbmdzElgKDGFjY2Vzc19zdGF0ZRgBIAEoDjIwLm'
+    'dvb2dsZS5jaGF0LnYxLlNwYWNlLkFjY2Vzc1NldHRpbmdzLkFjY2Vzc1N0YXRlQgPgQQNSC2Fj'
+    'Y2Vzc1N0YXRlEh8KCGF1ZGllbmNlGAMgASgJQgPgQQFSCGF1ZGllbmNlIkoKC0FjY2Vzc1N0YX'
+    'RlEhwKGEFDQ0VTU19TVEFURV9VTlNQRUNJRklFRBAAEgsKB1BSSVZBVEUQARIQCgxESVNDT1ZF'
+    'UkFCTEUQAhqKBwoSUGVybWlzc2lvblNldHRpbmdzEmcKGW1hbmFnZV9tZW1iZXJzX2FuZF9ncm'
+    '91cHMYASABKAsyJy5nb29nbGUuY2hhdC52MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ0gAUhZt'
+    'YW5hZ2VNZW1iZXJzQW5kR3JvdXBziAEBEl4KFG1vZGlmeV9zcGFjZV9kZXRhaWxzGAIgASgLMi'
+    'cuZ29vZ2xlLmNoYXQudjEuU3BhY2UuUGVybWlzc2lvblNldHRpbmdIAVISbW9kaWZ5U3BhY2VE'
+    'ZXRhaWxziAEBElMKDnRvZ2dsZV9oaXN0b3J5GAMgASgLMicuZ29vZ2xlLmNoYXQudjEuU3BhY2'
+    'UuUGVybWlzc2lvblNldHRpbmdIAlINdG9nZ2xlSGlzdG9yeYgBARJZChJ1c2VfYXRfbWVudGlv'
+    'bl9hbGwYBCABKAsyJy5nb29nbGUuY2hhdC52MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ0gDUg'
+    '91c2VBdE1lbnRpb25BbGyIAQESTQoLbWFuYWdlX2FwcHMYBSABKAsyJy5nb29nbGUuY2hhdC52'
+    'MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ0gEUgptYW5hZ2VBcHBziAEBElUKD21hbmFnZV93ZW'
+    'Job29rcxgGIAEoCzInLmdvb2dsZS5jaGF0LnYxLlNwYWNlLlBlcm1pc3Npb25TZXR0aW5nSAVS'
+    'Dm1hbmFnZVdlYmhvb2tziAEBElYKDXBvc3RfbWVzc2FnZXMYByABKAsyJy5nb29nbGUuY2hhdC'
+    '52MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ0ID4EEDSAZSDHBvc3RNZXNzYWdlc4gBARJTCg5y'
+    'ZXBseV9tZXNzYWdlcxgIIAEoCzInLmdvb2dsZS5jaGF0LnYxLlNwYWNlLlBlcm1pc3Npb25TZX'
+    'R0aW5nSAdSDXJlcGx5TWVzc2FnZXOIAQFCHAoaX21hbmFnZV9tZW1iZXJzX2FuZF9ncm91cHNC'
+    'FwoVX21vZGlmeV9zcGFjZV9kZXRhaWxzQhEKD190b2dnbGVfaGlzdG9yeUIVChNfdXNlX2F0X2'
+    '1lbnRpb25fYWxsQg4KDF9tYW5hZ2VfYXBwc0ISChBfbWFuYWdlX3dlYmhvb2tzQhAKDl9wb3N0'
+    'X21lc3NhZ2VzQhEKD19yZXBseV9tZXNzYWdlcxpnChFQZXJtaXNzaW9uU2V0dGluZxIpChBtYW'
+    '5hZ2Vyc19hbGxvd2VkGAEgASgIUg9tYW5hZ2Vyc0FsbG93ZWQSJwoPbWVtYmVyc19hbGxvd2Vk'
+    'GAIgASgIUg5tZW1iZXJzQWxsb3dlZCIuCgRUeXBlEhQKEFRZUEVfVU5TUEVDSUZJRUQQABIICg'
+    'RST09NEAESBgoCRE0QAiJWCglTcGFjZVR5cGUSGgoWU1BBQ0VfVFlQRV9VTlNQRUNJRklFRBAA'
+    'EgkKBVNQQUNFEAESDgoKR1JPVVBfQ0hBVBACEhIKDkRJUkVDVF9NRVNTQUdFEAMiggEKE1NwYW'
+    'NlVGhyZWFkaW5nU3RhdGUSJQohU1BBQ0VfVEhSRUFESU5HX1NUQVRFX1VOU1BFQ0lGSUVEEAAS'
+    'FQoRVEhSRUFERURfTUVTU0FHRVMQAhIUChBHUk9VUEVEX01FU1NBR0VTEAMSFwoTVU5USFJFQU'
+    'RFRF9NRVNTQUdFUxAEIn8KHFByZWRlZmluZWRQZXJtaXNzaW9uU2V0dGluZ3MSLgoqUFJFREVG'
+    'SU5FRF9QRVJNSVNTSU9OX1NFVFRJTkdTX1VOU1BFQ0lGSUVEEAASFwoTQ09MTEFCT1JBVElPTl'
+    '9TUEFDRRABEhYKEkFOTk9VTkNFTUVOVF9TUEFDRRACOi7qQSsKGWNoYXQuZ29vZ2xlYXBpcy5j'
+    'b20vU3BhY2USDnNwYWNlcy97c3BhY2V9QhsKGXNwYWNlX3Blcm1pc3Npb25fc2V0dGluZ3M=');
 
 @$core.Deprecated('Use createSpaceRequestDescriptor instead')
 const CreateSpaceRequest$json = {

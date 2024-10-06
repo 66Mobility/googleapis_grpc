@@ -93,12 +93,19 @@ class ExecuteSqlRequest_QueryMode extends $pb.ProtobufEnum {
       ExecuteSqlRequest_QueryMode._(1, _omitEnumNames ? '' : 'PLAN');
   static const ExecuteSqlRequest_QueryMode PROFILE =
       ExecuteSqlRequest_QueryMode._(2, _omitEnumNames ? '' : 'PROFILE');
+  static const ExecuteSqlRequest_QueryMode WITH_STATS =
+      ExecuteSqlRequest_QueryMode._(3, _omitEnumNames ? '' : 'WITH_STATS');
+  static const ExecuteSqlRequest_QueryMode WITH_PLAN_AND_STATS =
+      ExecuteSqlRequest_QueryMode._(
+          4, _omitEnumNames ? '' : 'WITH_PLAN_AND_STATS');
 
   static const $core.List<ExecuteSqlRequest_QueryMode> values =
       <ExecuteSqlRequest_QueryMode>[
     NORMAL,
     PLAN,
     PROFILE,
+    WITH_STATS,
+    WITH_PLAN_AND_STATS,
   ];
 
   static final $core.Map<$core.int, ExecuteSqlRequest_QueryMode> _byValue =

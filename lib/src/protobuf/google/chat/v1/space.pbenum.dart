@@ -87,6 +87,38 @@ class Space_SpaceThreadingState extends $pb.ProtobufEnum {
   const Space_SpaceThreadingState._($core.int v, $core.String n) : super(v, n);
 }
 
+/// Predefined permission settings that you can only specify when creating a
+/// named space. More settings might be added in the future.
+/// For details about permission settings for named spaces, see [Learn about
+/// spaces](https://support.google.com/chat/answer/7659784).
+class Space_PredefinedPermissionSettings extends $pb.ProtobufEnum {
+  static const Space_PredefinedPermissionSettings
+      PREDEFINED_PERMISSION_SETTINGS_UNSPECIFIED =
+      Space_PredefinedPermissionSettings._(0,
+          _omitEnumNames ? '' : 'PREDEFINED_PERMISSION_SETTINGS_UNSPECIFIED');
+  static const Space_PredefinedPermissionSettings COLLABORATION_SPACE =
+      Space_PredefinedPermissionSettings._(
+          1, _omitEnumNames ? '' : 'COLLABORATION_SPACE');
+  static const Space_PredefinedPermissionSettings ANNOUNCEMENT_SPACE =
+      Space_PredefinedPermissionSettings._(
+          2, _omitEnumNames ? '' : 'ANNOUNCEMENT_SPACE');
+
+  static const $core.List<Space_PredefinedPermissionSettings> values =
+      <Space_PredefinedPermissionSettings>[
+    PREDEFINED_PERMISSION_SETTINGS_UNSPECIFIED,
+    COLLABORATION_SPACE,
+    ANNOUNCEMENT_SPACE,
+  ];
+
+  static final $core.Map<$core.int, Space_PredefinedPermissionSettings>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Space_PredefinedPermissionSettings? valueOf($core.int value) =>
+      _byValue[value];
+
+  const Space_PredefinedPermissionSettings._($core.int v, $core.String n)
+      : super(v, n);
+}
+
 /// Represents the access state of the space.
 class Space_AccessSettings_AccessState extends $pb.ProtobufEnum {
   static const Space_AccessSettings_AccessState ACCESS_STATE_UNSPECIFIED =

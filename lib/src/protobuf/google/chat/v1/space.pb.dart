@@ -268,14 +268,19 @@ class Space_AccessSettings extends $pb.GeneratedMessage {
 
   ///  Optional. The resource name of the [target
   ///  audience](https://support.google.com/a/answer/9934697) who can discover
-  ///  the space, join the space, and preview the messages in the space. For
-  ///  details, see [Make a space discoverable to a target
+  ///  the space, join the space, and preview the messages in the space. If
+  ///  unset, only users or Google Groups who have been individually invited or
+  ///  added to the space can access it. For details, see [Make a space
+  ///  discoverable to a target
   ///  audience](https://developers.google.com/workspace/chat/space-target-audience).
   ///
   ///  Format: `audiences/{audience}`
   ///
   ///  To use the default target audience for the Google Workspace organization,
   ///  set to `audiences/default`.
+  ///
+  ///  This field is not populated when using the `chat.bot` scope with [app
+  ///  authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-app).
   @$pb.TagNumber(3)
   $core.String get audience => $_getSZ(1);
   @$pb.TagNumber(3)
@@ -287,6 +292,316 @@ class Space_AccessSettings extends $pb.GeneratedMessage {
   $core.bool hasAudience() => $_has(1);
   @$pb.TagNumber(3)
   void clearAudience() => clearField(3);
+}
+
+///  [Permission settings](https://support.google.com/chat/answer/13340792)
+///  that you can specify when updating an existing named space.
+///
+///  To set permission settings when creating a space, specify the
+///  `PredefinedPermissionSettings` field in your request.
+class Space_PermissionSettings extends $pb.GeneratedMessage {
+  factory Space_PermissionSettings({
+    Space_PermissionSetting? manageMembersAndGroups,
+    Space_PermissionSetting? modifySpaceDetails,
+    Space_PermissionSetting? toggleHistory,
+    Space_PermissionSetting? useAtMentionAll,
+    Space_PermissionSetting? manageApps,
+    Space_PermissionSetting? manageWebhooks,
+    Space_PermissionSetting? postMessages,
+    Space_PermissionSetting? replyMessages,
+  }) {
+    final $result = create();
+    if (manageMembersAndGroups != null) {
+      $result.manageMembersAndGroups = manageMembersAndGroups;
+    }
+    if (modifySpaceDetails != null) {
+      $result.modifySpaceDetails = modifySpaceDetails;
+    }
+    if (toggleHistory != null) {
+      $result.toggleHistory = toggleHistory;
+    }
+    if (useAtMentionAll != null) {
+      $result.useAtMentionAll = useAtMentionAll;
+    }
+    if (manageApps != null) {
+      $result.manageApps = manageApps;
+    }
+    if (manageWebhooks != null) {
+      $result.manageWebhooks = manageWebhooks;
+    }
+    if (postMessages != null) {
+      $result.postMessages = postMessages;
+    }
+    if (replyMessages != null) {
+      $result.replyMessages = replyMessages;
+    }
+    return $result;
+  }
+  Space_PermissionSettings._() : super();
+  factory Space_PermissionSettings.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Space_PermissionSettings.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Space.PermissionSettings',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..aOM<Space_PermissionSetting>(
+        1, _omitFieldNames ? '' : 'manageMembersAndGroups',
+        subBuilder: Space_PermissionSetting.create)
+    ..aOM<Space_PermissionSetting>(
+        2, _omitFieldNames ? '' : 'modifySpaceDetails',
+        subBuilder: Space_PermissionSetting.create)
+    ..aOM<Space_PermissionSetting>(3, _omitFieldNames ? '' : 'toggleHistory',
+        subBuilder: Space_PermissionSetting.create)
+    ..aOM<Space_PermissionSetting>(4, _omitFieldNames ? '' : 'useAtMentionAll',
+        subBuilder: Space_PermissionSetting.create)
+    ..aOM<Space_PermissionSetting>(5, _omitFieldNames ? '' : 'manageApps',
+        subBuilder: Space_PermissionSetting.create)
+    ..aOM<Space_PermissionSetting>(6, _omitFieldNames ? '' : 'manageWebhooks',
+        subBuilder: Space_PermissionSetting.create)
+    ..aOM<Space_PermissionSetting>(7, _omitFieldNames ? '' : 'postMessages',
+        subBuilder: Space_PermissionSetting.create)
+    ..aOM<Space_PermissionSetting>(8, _omitFieldNames ? '' : 'replyMessages',
+        subBuilder: Space_PermissionSetting.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Space_PermissionSettings clone() =>
+      Space_PermissionSettings()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Space_PermissionSettings copyWith(
+          void Function(Space_PermissionSettings) updates) =>
+      super.copyWith((message) => updates(message as Space_PermissionSettings))
+          as Space_PermissionSettings;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static Space_PermissionSettings create() => Space_PermissionSettings._();
+  Space_PermissionSettings createEmptyInstance() => create();
+  static $pb.PbList<Space_PermissionSettings> createRepeated() =>
+      $pb.PbList<Space_PermissionSettings>();
+  @$core.pragma('dart2js:noInline')
+  static Space_PermissionSettings getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Space_PermissionSettings>(create);
+  static Space_PermissionSettings? _defaultInstance;
+
+  /// Setting for managing members and groups in a space.
+  @$pb.TagNumber(1)
+  Space_PermissionSetting get manageMembersAndGroups => $_getN(0);
+  @$pb.TagNumber(1)
+  set manageMembersAndGroups(Space_PermissionSetting v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasManageMembersAndGroups() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearManageMembersAndGroups() => clearField(1);
+  @$pb.TagNumber(1)
+  Space_PermissionSetting ensureManageMembersAndGroups() => $_ensure(0);
+
+  /// Setting for updating space name, avatar, description and guidelines.
+  @$pb.TagNumber(2)
+  Space_PermissionSetting get modifySpaceDetails => $_getN(1);
+  @$pb.TagNumber(2)
+  set modifySpaceDetails(Space_PermissionSetting v) {
+    setField(2, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasModifySpaceDetails() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearModifySpaceDetails() => clearField(2);
+  @$pb.TagNumber(2)
+  Space_PermissionSetting ensureModifySpaceDetails() => $_ensure(1);
+
+  /// Setting for toggling space history on and off.
+  @$pb.TagNumber(3)
+  Space_PermissionSetting get toggleHistory => $_getN(2);
+  @$pb.TagNumber(3)
+  set toggleHistory(Space_PermissionSetting v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasToggleHistory() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearToggleHistory() => clearField(3);
+  @$pb.TagNumber(3)
+  Space_PermissionSetting ensureToggleHistory() => $_ensure(2);
+
+  /// Setting for using @all in a space.
+  @$pb.TagNumber(4)
+  Space_PermissionSetting get useAtMentionAll => $_getN(3);
+  @$pb.TagNumber(4)
+  set useAtMentionAll(Space_PermissionSetting v) {
+    setField(4, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasUseAtMentionAll() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearUseAtMentionAll() => clearField(4);
+  @$pb.TagNumber(4)
+  Space_PermissionSetting ensureUseAtMentionAll() => $_ensure(3);
+
+  /// Setting for managing apps in a space.
+  @$pb.TagNumber(5)
+  Space_PermissionSetting get manageApps => $_getN(4);
+  @$pb.TagNumber(5)
+  set manageApps(Space_PermissionSetting v) {
+    setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasManageApps() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearManageApps() => clearField(5);
+  @$pb.TagNumber(5)
+  Space_PermissionSetting ensureManageApps() => $_ensure(4);
+
+  /// Setting for managing webhooks in a space.
+  @$pb.TagNumber(6)
+  Space_PermissionSetting get manageWebhooks => $_getN(5);
+  @$pb.TagNumber(6)
+  set manageWebhooks(Space_PermissionSetting v) {
+    setField(6, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasManageWebhooks() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearManageWebhooks() => clearField(6);
+  @$pb.TagNumber(6)
+  Space_PermissionSetting ensureManageWebhooks() => $_ensure(5);
+
+  /// Output only. Setting for posting messages in a space.
+  @$pb.TagNumber(7)
+  Space_PermissionSetting get postMessages => $_getN(6);
+  @$pb.TagNumber(7)
+  set postMessages(Space_PermissionSetting v) {
+    setField(7, v);
+  }
+
+  @$pb.TagNumber(7)
+  $core.bool hasPostMessages() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearPostMessages() => clearField(7);
+  @$pb.TagNumber(7)
+  Space_PermissionSetting ensurePostMessages() => $_ensure(6);
+
+  /// Setting for replying to messages in a space.
+  @$pb.TagNumber(8)
+  Space_PermissionSetting get replyMessages => $_getN(7);
+  @$pb.TagNumber(8)
+  set replyMessages(Space_PermissionSetting v) {
+    setField(8, v);
+  }
+
+  @$pb.TagNumber(8)
+  $core.bool hasReplyMessages() => $_has(7);
+  @$pb.TagNumber(8)
+  void clearReplyMessages() => clearField(8);
+  @$pb.TagNumber(8)
+  Space_PermissionSetting ensureReplyMessages() => $_ensure(7);
+}
+
+/// Represents a space permission setting.
+class Space_PermissionSetting extends $pb.GeneratedMessage {
+  factory Space_PermissionSetting({
+    $core.bool? managersAllowed,
+    $core.bool? membersAllowed,
+  }) {
+    final $result = create();
+    if (managersAllowed != null) {
+      $result.managersAllowed = managersAllowed;
+    }
+    if (membersAllowed != null) {
+      $result.membersAllowed = membersAllowed;
+    }
+    return $result;
+  }
+  Space_PermissionSetting._() : super();
+  factory Space_PermissionSetting.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Space_PermissionSetting.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Space.PermissionSetting',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
+      createEmptyInstance: create)
+    ..aOB(1, _omitFieldNames ? '' : 'managersAllowed')
+    ..aOB(2, _omitFieldNames ? '' : 'membersAllowed')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Space_PermissionSetting clone() =>
+      Space_PermissionSetting()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Space_PermissionSetting copyWith(
+          void Function(Space_PermissionSetting) updates) =>
+      super.copyWith((message) => updates(message as Space_PermissionSetting))
+          as Space_PermissionSetting;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static Space_PermissionSetting create() => Space_PermissionSetting._();
+  Space_PermissionSetting createEmptyInstance() => create();
+  static $pb.PbList<Space_PermissionSetting> createRepeated() =>
+      $pb.PbList<Space_PermissionSetting>();
+  @$core.pragma('dart2js:noInline')
+  static Space_PermissionSetting getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Space_PermissionSetting>(create);
+  static Space_PermissionSetting? _defaultInstance;
+
+  /// Whether spaces managers have this permission.
+  @$pb.TagNumber(1)
+  $core.bool get managersAllowed => $_getBF(0);
+  @$pb.TagNumber(1)
+  set managersAllowed($core.bool v) {
+    $_setBool(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasManagersAllowed() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearManagersAllowed() => clearField(1);
+
+  /// Whether non-manager members have this permission.
+  @$pb.TagNumber(2)
+  $core.bool get membersAllowed => $_getBF(1);
+  @$pb.TagNumber(2)
+  set membersAllowed($core.bool v) {
+    $_setBool(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasMembersAllowed() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearMembersAllowed() => clearField(2);
+}
+
+enum Space_SpacePermissionSettings {
+  predefinedPermissionSettings,
+  permissionSettings,
+  notSet
 }
 
 /// A space in Google Chat. Spaces are conversations between two or more users
@@ -310,6 +625,8 @@ class Space extends $pb.GeneratedMessage {
     Space_MembershipCount? membershipCount,
     Space_AccessSettings? accessSettings,
     $core.String? spaceUri,
+    Space_PredefinedPermissionSettings? predefinedPermissionSettings,
+    Space_PermissionSettings? permissionSettings,
   }) {
     final $result = create();
     if (name != null) {
@@ -365,6 +682,12 @@ class Space extends $pb.GeneratedMessage {
     if (spaceUri != null) {
       $result.spaceUri = spaceUri;
     }
+    if (predefinedPermissionSettings != null) {
+      $result.predefinedPermissionSettings = predefinedPermissionSettings;
+    }
+    if (permissionSettings != null) {
+      $result.permissionSettings = permissionSettings;
+    }
     return $result;
   }
   Space._() : super();
@@ -375,10 +698,17 @@ class Space extends $pb.GeneratedMessage {
           [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
       create()..mergeFromJson(i, r);
 
+  static const $core.Map<$core.int, Space_SpacePermissionSettings>
+      _Space_SpacePermissionSettingsByTag = {
+    26: Space_SpacePermissionSettings.predefinedPermissionSettings,
+    27: Space_SpacePermissionSettings.permissionSettings,
+    0: Space_SpacePermissionSettings.notSet
+  };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'Space',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
+    ..oo(0, [26, 27])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<Space_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
         defaultOrMaker: Space_Type.TYPE_UNSPECIFIED,
@@ -417,6 +747,17 @@ class Space extends $pb.GeneratedMessage {
     ..aOM<Space_AccessSettings>(23, _omitFieldNames ? '' : 'accessSettings',
         subBuilder: Space_AccessSettings.create)
     ..aOS(25, _omitFieldNames ? '' : 'spaceUri')
+    ..e<Space_PredefinedPermissionSettings>(
+        26,
+        _omitFieldNames ? '' : 'predefinedPermissionSettings',
+        $pb.PbFieldType.OE,
+        defaultOrMaker: Space_PredefinedPermissionSettings
+            .PREDEFINED_PERMISSION_SETTINGS_UNSPECIFIED,
+        valueOf: Space_PredefinedPermissionSettings.valueOf,
+        enumValues: Space_PredefinedPermissionSettings.values)
+    ..aOM<Space_PermissionSettings>(
+        27, _omitFieldNames ? '' : 'permissionSettings',
+        subBuilder: Space_PermissionSettings.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -440,9 +781,20 @@ class Space extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Space>(create);
   static Space? _defaultInstance;
 
+  Space_SpacePermissionSettings whichSpacePermissionSettings() =>
+      _Space_SpacePermissionSettingsByTag[$_whichOneof(0)]!;
+  void clearSpacePermissionSettings() => clearField($_whichOneof(0));
+
   ///  Resource name of the space.
   ///
   ///  Format: `spaces/{space}`
+  ///
+  ///  Where `{space}` represents the system-assigned ID for the space. You can
+  ///  obtain the space ID by calling the
+  ///  [`spaces.list()`](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces/list)
+  ///  method or from the space URL. For example, if the space URL
+  ///  is `https://mail.google.com/mail/u/0/#chat/space/AAAAAAAAA`, the space ID
+  ///  is `AAAAAAAAA`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -474,11 +826,11 @@ class Space extends $pb.GeneratedMessage {
   void clearType() => clearField(2);
 
   ///  The space's display name. Required when [creating a
-  ///  space](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces/create).
-  ///  If you receive the error message `ALREADY_EXISTS` when creating a space or
-  ///  updating the `displayName`, try a different `displayName`. An
-  ///  existing space within the Google Workspace organization might already use
-  ///  this display name.
+  ///  space](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces/create)
+  ///  with a `spaceType` of `SPACE`. If you receive the error message
+  ///  `ALREADY_EXISTS` when creating a space or updating the `displayName`, try a
+  ///  different `displayName`. An existing space within the Google Workspace
+  ///  organization might already use this display name.
   ///
   ///  For direct messages, this field might be empty.
   ///
@@ -534,15 +886,6 @@ class Space extends $pb.GeneratedMessage {
   ///    * The authenticated user uses a consumer account (unmanaged user
   ///      account). By default, a space created by a consumer account permits any
   ///      Google Chat user.
-  ///
-  ///    * The space is used to [import data to Google Chat]
-  ///      (https://developers.google.com/chat/api/guides/import-data-overview)
-  ///      because import mode spaces must only permit members from the same
-  ///      Google Workspace organization. However, as part of the [Google
-  ///      Workspace Developer Preview
-  ///      Program](https://developers.google.com/workspace/preview), import mode
-  ///      spaces can permit any Google Chat user so this field can then be set
-  ///      for import mode spaces.
   ///
   ///  For existing spaces, this field is output only.
   @$pb.TagNumber(8)
@@ -728,9 +1071,43 @@ class Space extends $pb.GeneratedMessage {
   $core.bool hasSpaceUri() => $_has(16);
   @$pb.TagNumber(25)
   void clearSpaceUri() => clearField(25);
+
+  /// Optional. Input only. Predefined space permission settings, input only
+  /// when creating a space. If the field is not set, a collaboration space is
+  /// created. After you create the space, settings are populated in the
+  /// `PermissionSettings` field.
+  @$pb.TagNumber(26)
+  Space_PredefinedPermissionSettings get predefinedPermissionSettings =>
+      $_getN(17);
+  @$pb.TagNumber(26)
+  set predefinedPermissionSettings(Space_PredefinedPermissionSettings v) {
+    setField(26, v);
+  }
+
+  @$pb.TagNumber(26)
+  $core.bool hasPredefinedPermissionSettings() => $_has(17);
+  @$pb.TagNumber(26)
+  void clearPredefinedPermissionSettings() => clearField(26);
+
+  /// Optional. Space permission settings for existing spaces. Input for
+  /// updating exact space permission settings, where existing permission
+  /// settings are replaced. Output lists current permission settings.
+  @$pb.TagNumber(27)
+  Space_PermissionSettings get permissionSettings => $_getN(18);
+  @$pb.TagNumber(27)
+  set permissionSettings(Space_PermissionSettings v) {
+    setField(27, v);
+  }
+
+  @$pb.TagNumber(27)
+  $core.bool hasPermissionSettings() => $_has(18);
+  @$pb.TagNumber(27)
+  void clearPermissionSettings() => clearField(27);
+  @$pb.TagNumber(27)
+  Space_PermissionSettings ensurePermissionSettings() => $_ensure(18);
 }
 
-/// A request to create a named space.
+/// A request to create a named space with no members.
 class CreateSpaceRequest extends $pb.GeneratedMessage {
   factory CreateSpaceRequest({
     Space? space,
@@ -787,9 +1164,13 @@ class CreateSpaceRequest extends $pb.GeneratedMessage {
   ///  Required. The `displayName` and `spaceType` fields must be populated.  Only
   ///  `SpaceType.SPACE` is supported.
   ///
-  ///  If you receive the error message `ALREADY_EXISTS` when creating a space,
+  ///  If you receive the error message `ALREADY_EXISTS`,
   ///  try a different `displayName`. An existing space within the Google
   ///  Workspace organization might already use this display name.
+  ///
+  ///  If you're a member of the [Developer Preview
+  ///  program](https://developers.google.com/workspace/preview),
+  ///  `SpaceType.GROUP_CHAT` can be used if `importMode` is set to true.
   ///
   ///  The space `name` is assigned on the server so anything specified in this
   ///  field will be ignored.
@@ -1011,6 +1392,8 @@ class ListSpacesResponse extends $pb.GeneratedMessage {
   static ListSpacesResponse? _defaultInstance;
 
   /// List of spaces in the requested (or first) page.
+  /// Note: The `permissionSettings` field is not returned in the Space
+  /// object for list requests.
   @$pb.TagNumber(1)
   $core.List<Space> get spaces => $_getList(0);
 
@@ -1277,54 +1660,64 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   ///  Required. The updated field paths, comma separated if there are
   ///  multiple.
   ///
-  ///  Currently supported field paths:
+  ///  You can update the following fields for a space:
   ///
-  ///  - `display_name` (Only supports changing the display name of a space with
-  ///  the `SPACE` type, or when also including the `space_type` mask to change a
-  ///  `GROUP_CHAT` space type to `SPACE`. Trying to update the display name of a
-  ///  `GROUP_CHAT` or a `DIRECT_MESSAGE` space results in an invalid argument
-  ///  error. If you receive the error message `ALREADY_EXISTS` when updating the
-  ///  `displayName`, try a different `displayName`. An existing space within the
-  ///  Google Workspace organization might already use this display name.)
+  ///  `space_details`: Updates the space's description. Supports up to 150
+  ///  characters.
   ///
-  ///  - `space_type` (Only supports changing a `GROUP_CHAT` space type to
+  ///  `display_name`: Only supports updating the display name for spaces where
+  ///  `spaceType` field is `SPACE`.
+  ///   If you receive the error message `ALREADY_EXISTS`, try a different
+  ///   value. An existing space within the
+  ///  Google Workspace organization might already use this display name.
+  ///
+  ///  `space_type`: Only supports changing a `GROUP_CHAT` space type to
   ///  `SPACE`. Include `display_name` together
   ///  with `space_type` in the update mask and ensure that the specified space
   ///  has a non-empty display name and the `SPACE` space type. Including the
   ///  `space_type` mask and the `SPACE` type in the specified space when updating
   ///  the display name is optional if the existing space already has the `SPACE`
   ///  type. Trying to update the space type in other ways results in an invalid
-  ///  argument error).
-  ///  `space_type` is not supported with admin access.
+  ///  argument error.
+  ///  `space_type` is not supported with `useAdminAccess`.
   ///
-  ///  - `space_details`
+  ///  `space_history_state`: Updates [space history
+  ///  settings](https://support.google.com/chat/answer/7664687) by turning
+  ///  history on or off for the space. Only supported if history settings are
+  ///  enabled for the Google Workspace organization. To update the
+  ///  space history state, you must omit all other field masks in your request.
+  ///  `space_history_state` is not supported with `useAdminAccess`.
   ///
-  ///  - `space_history_state` (Supports [turning history on or off for the
-  ///  space](https://support.google.com/chat/answer/7664687) if [the organization
-  ///  allows users to change their history
-  ///  setting](https://support.google.com/a/answer/7664184).
-  ///  Warning: mutually exclusive with all other field paths.)
-  ///  `space_history_state` is not supported with admin access.
-  ///
-  ///  - `access_settings.audience` (Supports changing the [access
+  ///  `access_settings.audience`: Updates the [access
   ///  setting](https://support.google.com/chat/answer/11971020) of who can
-  ///  discover the space, join the space, and preview the messages in space. If
-  ///  no audience is specified in the access setting, the space's access setting
-  ///  is updated to private. Warning: mutually exclusive with all other field
-  ///  paths.)
-  ///  `access_settings.audience` is not supported with admin access.
+  ///  discover the space, join the space, and preview the messages in named space
+  ///  where `spaceType` field is `SPACE`. If the existing space has a
+  ///  target audience, you can remove the audience and restrict space access by
+  ///  omitting a value for this field mask. To update access settings for a
+  ///  space, the authenticating user must be a space manager and omit all other
+  ///  field masks in your request. You can't update this field if the space is in
+  ///  [import
+  ///  mode](https://developers.google.com/workspace/chat/import-data-overview).
+  ///  To learn more, see [Make a space discoverable to specific
+  ///  users](https://developers.google.com/workspace/chat/space-target-audience).
+  ///  `access_settings.audience` is not supported with `useAdminAccess`.
   ///
-  ///  - Developer Preview: Supports changing the [permission
-  ///  settings](https://support.google.com/chat/answer/13340792) of a space,
-  ///  supported field paths
-  ///  include: `permission_settings.manage_members_and_groups`,
-  ///  `permission_settings.modify_space_details`,
-  ///  `permission_settings.toggle_history`,
-  ///  `permission_settings.use_at_mention_all`,
-  ///  `permission_settings.manage_apps`, `permission_settings.manage_webhooks`,
-  ///  `permission_settings.reply_messages`
-  ///   (Warning: mutually exclusive with all other non-permission settings field
-  ///  paths). `permission_settings` is not supported with admin access.
+  ///  `permission_settings`: Supports changing the
+  ///  [permission settings](https://support.google.com/chat/answer/13340792)
+  ///  of a space.
+  ///  When updating permission settings, you can only specify
+  ///  `permissionSettings` field masks; you cannot update other field masks
+  ///  at the same time. `permissionSettings` is not supported with
+  ///  `useAdminAccess`.
+  ///  The supported field masks include:
+  ///
+  ///  - `permission_settings.manageMembersAndGroups`
+  ///  - `permission_settings.modifySpaceDetails`
+  ///  - `permission_settings.toggleHistory`
+  ///  - `permission_settings.useAtMentionAll`
+  ///  - `permission_settings.manageApps`
+  ///  - `permission_settings.manageWebhooks`
+  ///  - `permission_settings.replyMessages`
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)

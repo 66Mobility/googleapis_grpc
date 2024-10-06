@@ -166,6 +166,42 @@ final $typed_data.Uint8List instanceConfigDescriptor = $convert.base64Decode(
     'cy5jb20vSW5zdGFuY2VDb25maWcSNHByb2plY3RzL3twcm9qZWN0fS9pbnN0YW5jZUNvbmZpZ3'
     'Mve2luc3RhbmNlX2NvbmZpZ30=');
 
+@$core.Deprecated('Use replicaComputeCapacityDescriptor instead')
+const ReplicaComputeCapacity$json = {
+  '1': 'ReplicaComputeCapacity',
+  '2': [
+    {
+      '1': 'replica_selection',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.ReplicaSelection',
+      '8': {},
+      '10': 'replicaSelection'
+    },
+    {'1': 'node_count', '3': 2, '4': 1, '5': 5, '9': 0, '10': 'nodeCount'},
+    {
+      '1': 'processing_units',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '9': 0,
+      '10': 'processingUnits'
+    },
+  ],
+  '8': [
+    {'1': 'compute_capacity'},
+  ],
+};
+
+/// Descriptor for `ReplicaComputeCapacity`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List replicaComputeCapacityDescriptor = $convert.base64Decode(
+    'ChZSZXBsaWNhQ29tcHV0ZUNhcGFjaXR5EmQKEXJlcGxpY2Ffc2VsZWN0aW9uGAEgASgLMjIuZ2'
+    '9vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuUmVwbGljYVNlbGVjdGlvbkID4EECUhBy'
+    'ZXBsaWNhU2VsZWN0aW9uEh8KCm5vZGVfY291bnQYAiABKAVIAFIJbm9kZUNvdW50EisKEHByb2'
+    'Nlc3NpbmdfdW5pdHMYAyABKAVIAFIPcHJvY2Vzc2luZ1VuaXRzQhIKEGNvbXB1dGVfY2FwYWNp'
+    'dHk=');
+
 @$core.Deprecated('Use autoscalingConfigDescriptor instead')
 const AutoscalingConfig$json = {
   '1': 'AutoscalingConfig',
@@ -190,10 +226,21 @@ const AutoscalingConfig$json = {
       '8': {},
       '10': 'autoscalingTargets'
     },
+    {
+      '1': 'asymmetric_autoscaling_options',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6':
+          '.google.spanner.admin.instance.v1.AutoscalingConfig.AsymmetricAutoscalingOption',
+      '8': {},
+      '10': 'asymmetricAutoscalingOptions'
+    },
   ],
   '3': [
     AutoscalingConfig_AutoscalingLimits$json,
-    AutoscalingConfig_AutoscalingTargets$json
+    AutoscalingConfig_AutoscalingTargets$json,
+    AutoscalingConfig_AsymmetricAutoscalingOption$json
   ],
 };
 
@@ -249,20 +296,88 @@ const AutoscalingConfig_AutoscalingTargets$json = {
   ],
 };
 
+@$core.Deprecated('Use autoscalingConfigDescriptor instead')
+const AutoscalingConfig_AsymmetricAutoscalingOption$json = {
+  '1': 'AsymmetricAutoscalingOption',
+  '2': [
+    {
+      '1': 'replica_selection',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.ReplicaSelection',
+      '8': {},
+      '10': 'replicaSelection'
+    },
+    {
+      '1': 'overrides',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.spanner.admin.instance.v1.AutoscalingConfig.AsymmetricAutoscalingOption.AutoscalingConfigOverrides',
+      '8': {},
+      '10': 'overrides'
+    },
+  ],
+  '3': [
+    AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides$json
+  ],
+};
+
+@$core.Deprecated('Use autoscalingConfigDescriptor instead')
+const AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides$json =
+    {
+  '1': 'AutoscalingConfigOverrides',
+  '2': [
+    {
+      '1': 'autoscaling_limits',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.spanner.admin.instance.v1.AutoscalingConfig.AutoscalingLimits',
+      '8': {},
+      '10': 'autoscalingLimits'
+    },
+    {
+      '1': 'autoscaling_target_high_priority_cpu_utilization_percent',
+      '3': 2,
+      '4': 1,
+      '5': 5,
+      '8': {},
+      '10': 'autoscalingTargetHighPriorityCpuUtilizationPercent'
+    },
+  ],
+};
+
 /// Descriptor for `AutoscalingConfig`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List autoscalingConfigDescriptor = $convert.base64Decode(
     'ChFBdXRvc2NhbGluZ0NvbmZpZxJ5ChJhdXRvc2NhbGluZ19saW1pdHMYASABKAsyRS5nb29nbG'
     'Uuc3Bhbm5lci5hZG1pbi5pbnN0YW5jZS52MS5BdXRvc2NhbGluZ0NvbmZpZy5BdXRvc2NhbGlu'
     'Z0xpbWl0c0ID4EECUhFhdXRvc2NhbGluZ0xpbWl0cxJ8ChNhdXRvc2NhbGluZ190YXJnZXRzGA'
     'IgASgLMkYuZ29vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuQXV0b3NjYWxpbmdDb25m'
-    'aWcuQXV0b3NjYWxpbmdUYXJnZXRzQgPgQQJSEmF1dG9zY2FsaW5nVGFyZ2V0cxrTAQoRQXV0b3'
-    'NjYWxpbmdMaW1pdHMSHQoJbWluX25vZGVzGAEgASgFSABSCG1pbk5vZGVzEjIKFG1pbl9wcm9j'
-    'ZXNzaW5nX3VuaXRzGAIgASgFSABSEm1pblByb2Nlc3NpbmdVbml0cxIdCgltYXhfbm9kZXMYAy'
-    'ABKAVIAVIIbWF4Tm9kZXMSMgoUbWF4X3Byb2Nlc3NpbmdfdW5pdHMYBCABKAVIAVISbWF4UHJv'
-    'Y2Vzc2luZ1VuaXRzQgsKCW1pbl9saW1pdEILCgltYXhfbGltaXQasAEKEkF1dG9zY2FsaW5nVG'
-    'FyZ2V0cxJVCiVoaWdoX3ByaW9yaXR5X2NwdV91dGlsaXphdGlvbl9wZXJjZW50GAEgASgFQgPg'
-    'QQJSIWhpZ2hQcmlvcml0eUNwdVV0aWxpemF0aW9uUGVyY2VudBJDChtzdG9yYWdlX3V0aWxpem'
-    'F0aW9uX3BlcmNlbnQYAiABKAVCA+BBAlIZc3RvcmFnZVV0aWxpemF0aW9uUGVyY2VudA==');
+    'aWcuQXV0b3NjYWxpbmdUYXJnZXRzQgPgQQJSEmF1dG9zY2FsaW5nVGFyZ2V0cxKaAQoeYXN5bW'
+    '1ldHJpY19hdXRvc2NhbGluZ19vcHRpb25zGAMgAygLMk8uZ29vZ2xlLnNwYW5uZXIuYWRtaW4u'
+    'aW5zdGFuY2UudjEuQXV0b3NjYWxpbmdDb25maWcuQXN5bW1ldHJpY0F1dG9zY2FsaW5nT3B0aW'
+    '9uQgPgQQFSHGFzeW1tZXRyaWNBdXRvc2NhbGluZ09wdGlvbnMa0wEKEUF1dG9zY2FsaW5nTGlt'
+    'aXRzEh0KCW1pbl9ub2RlcxgBIAEoBUgAUghtaW5Ob2RlcxIyChRtaW5fcHJvY2Vzc2luZ191bm'
+    'l0cxgCIAEoBUgAUhJtaW5Qcm9jZXNzaW5nVW5pdHMSHQoJbWF4X25vZGVzGAMgASgFSAFSCG1h'
+    'eE5vZGVzEjIKFG1heF9wcm9jZXNzaW5nX3VuaXRzGAQgASgFSAFSEm1heFByb2Nlc3NpbmdVbm'
+    'l0c0ILCgltaW5fbGltaXRCCwoJbWF4X2xpbWl0GrABChJBdXRvc2NhbGluZ1RhcmdldHMSVQol'
+    'aGlnaF9wcmlvcml0eV9jcHVfdXRpbGl6YXRpb25fcGVyY2VudBgBIAEoBUID4EECUiFoaWdoUH'
+    'Jpb3JpdHlDcHVVdGlsaXphdGlvblBlcmNlbnQSQwobc3RvcmFnZV91dGlsaXphdGlvbl9wZXJj'
+    'ZW50GAIgASgFQgPgQQJSGXN0b3JhZ2VVdGlsaXphdGlvblBlcmNlbnQaqAQKG0FzeW1tZXRyaW'
+    'NBdXRvc2NhbGluZ09wdGlvbhJkChFyZXBsaWNhX3NlbGVjdGlvbhgBIAEoCzIyLmdvb2dsZS5z'
+    'cGFubmVyLmFkbWluLmluc3RhbmNlLnYxLlJlcGxpY2FTZWxlY3Rpb25CA+BBAlIQcmVwbGljYV'
+    'NlbGVjdGlvbhKNAQoJb3ZlcnJpZGVzGAIgASgLMmouZ29vZ2xlLnNwYW5uZXIuYWRtaW4uaW5z'
+    'dGFuY2UudjEuQXV0b3NjYWxpbmdDb25maWcuQXN5bW1ldHJpY0F1dG9zY2FsaW5nT3B0aW9uLk'
+    'F1dG9zY2FsaW5nQ29uZmlnT3ZlcnJpZGVzQgPgQQFSCW92ZXJyaWRlcxqSAgoaQXV0b3NjYWxp'
+    'bmdDb25maWdPdmVycmlkZXMSeQoSYXV0b3NjYWxpbmdfbGltaXRzGAEgASgLMkUuZ29vZ2xlLn'
+    'NwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuQXV0b3NjYWxpbmdDb25maWcuQXV0b3NjYWxpbmdM'
+    'aW1pdHNCA+BBAVIRYXV0b3NjYWxpbmdMaW1pdHMSeQo4YXV0b3NjYWxpbmdfdGFyZ2V0X2hpZ2'
+    'hfcHJpb3JpdHlfY3B1X3V0aWxpemF0aW9uX3BlcmNlbnQYAiABKAVCA+BBAVIyYXV0b3NjYWxp'
+    'bmdUYXJnZXRIaWdoUHJpb3JpdHlDcHVVdGlsaXphdGlvblBlcmNlbnQ=');
 
 @$core.Deprecated('Use instanceDescriptor instead')
 const Instance$json = {
@@ -273,6 +388,15 @@ const Instance$json = {
     {'1': 'display_name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
     {'1': 'node_count', '3': 5, '4': 1, '5': 5, '10': 'nodeCount'},
     {'1': 'processing_units', '3': 9, '4': 1, '5': 5, '10': 'processingUnits'},
+    {
+      '1': 'replica_compute_capacity',
+      '3': 19,
+      '4': 3,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.ReplicaComputeCapacity',
+      '8': {},
+      '10': 'replicaComputeCapacity'
+    },
     {
       '1': 'autoscaling_config',
       '3': 17,
@@ -369,22 +493,24 @@ final $typed_data.Uint8List instanceDescriptor = $convert.base64Decode(
     'CghJbnN0YW5jZRIXCgRuYW1lGAEgASgJQgPgQQJSBG5hbWUSRQoGY29uZmlnGAIgASgJQi3gQQ'
     'L6QScKJXNwYW5uZXIuZ29vZ2xlYXBpcy5jb20vSW5zdGFuY2VDb25maWdSBmNvbmZpZxImCgxk'
     'aXNwbGF5X25hbWUYAyABKAlCA+BBAlILZGlzcGxheU5hbWUSHQoKbm9kZV9jb3VudBgFIAEoBV'
-    'IJbm9kZUNvdW50EikKEHByb2Nlc3NpbmdfdW5pdHMYCSABKAVSD3Byb2Nlc3NpbmdVbml0cxJn'
-    'ChJhdXRvc2NhbGluZ19jb25maWcYESABKAsyMy5nb29nbGUuc3Bhbm5lci5hZG1pbi5pbnN0YW'
-    '5jZS52MS5BdXRvc2NhbGluZ0NvbmZpZ0ID4EEBUhFhdXRvc2NhbGluZ0NvbmZpZxJLCgVzdGF0'
-    'ZRgGIAEoDjIwLmdvb2dsZS5zcGFubmVyLmFkbWluLmluc3RhbmNlLnYxLkluc3RhbmNlLlN0YX'
-    'RlQgPgQQNSBXN0YXRlEk4KBmxhYmVscxgHIAMoCzI2Lmdvb2dsZS5zcGFubmVyLmFkbWluLmlu'
-    'c3RhbmNlLnYxLkluc3RhbmNlLkxhYmVsc0VudHJ5UgZsYWJlbHMSIwoNZW5kcG9pbnRfdXJpcx'
-    'gIIAMoCVIMZW5kcG9pbnRVcmlzEkAKC2NyZWF0ZV90aW1lGAsgASgLMhouZ29vZ2xlLnByb3Rv'
-    'YnVmLlRpbWVzdGFtcEID4EEDUgpjcmVhdGVUaW1lEkAKC3VwZGF0ZV90aW1lGAwgASgLMhouZ2'
-    '9vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EEDUgp1cGRhdGVUaW1lElEKB2VkaXRpb24YFCAB'
-    'KA4yMi5nb29nbGUuc3Bhbm5lci5hZG1pbi5pbnN0YW5jZS52MS5JbnN0YW5jZS5FZGl0aW9uQg'
-    'PgQQFSB2VkaXRpb24aOQoLTGFiZWxzRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUY'
-    'AiABKAlSBXZhbHVlOgI4ASI3CgVTdGF0ZRIVChFTVEFURV9VTlNQRUNJRklFRBAAEgwKCENSRU'
-    'FUSU5HEAESCQoFUkVBRFkQAiJVCgdFZGl0aW9uEhcKE0VESVRJT05fVU5TUEVDSUZJRUQQABIM'
-    'CghTVEFOREFSRBABEg4KCkVOVEVSUFJJU0UQAhITCg9FTlRFUlBSSVNFX1BMVVMQAzpN6kFKCh'
-    '9zcGFubmVyLmdvb2dsZWFwaXMuY29tL0luc3RhbmNlEidwcm9qZWN0cy97cHJvamVjdH0vaW5z'
-    'dGFuY2VzL3tpbnN0YW5jZX0=');
+    'IJbm9kZUNvdW50EikKEHByb2Nlc3NpbmdfdW5pdHMYCSABKAVSD3Byb2Nlc3NpbmdVbml0cxJ3'
+    'ChhyZXBsaWNhX2NvbXB1dGVfY2FwYWNpdHkYEyADKAsyOC5nb29nbGUuc3Bhbm5lci5hZG1pbi'
+    '5pbnN0YW5jZS52MS5SZXBsaWNhQ29tcHV0ZUNhcGFjaXR5QgPgQQNSFnJlcGxpY2FDb21wdXRl'
+    'Q2FwYWNpdHkSZwoSYXV0b3NjYWxpbmdfY29uZmlnGBEgASgLMjMuZ29vZ2xlLnNwYW5uZXIuYW'
+    'RtaW4uaW5zdGFuY2UudjEuQXV0b3NjYWxpbmdDb25maWdCA+BBAVIRYXV0b3NjYWxpbmdDb25m'
+    'aWcSSwoFc3RhdGUYBiABKA4yMC5nb29nbGUuc3Bhbm5lci5hZG1pbi5pbnN0YW5jZS52MS5Jbn'
+    'N0YW5jZS5TdGF0ZUID4EEDUgVzdGF0ZRJOCgZsYWJlbHMYByADKAsyNi5nb29nbGUuc3Bhbm5l'
+    'ci5hZG1pbi5pbnN0YW5jZS52MS5JbnN0YW5jZS5MYWJlbHNFbnRyeVIGbGFiZWxzEiMKDWVuZH'
+    'BvaW50X3VyaXMYCCADKAlSDGVuZHBvaW50VXJpcxJACgtjcmVhdGVfdGltZRgLIAEoCzIaLmdv'
+    'b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBA1IKY3JlYXRlVGltZRJACgt1cGRhdGVfdGltZR'
+    'gMIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBA1IKdXBkYXRlVGltZRJRCgdl'
+    'ZGl0aW9uGBQgASgOMjIuZ29vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2'
+    'UuRWRpdGlvbkID4EEBUgdlZGl0aW9uGjkKC0xhYmVsc0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5'
+    'EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOAEiNwoFU3RhdGUSFQoRU1RBVEVfVU5TUEVDSUZJRU'
+    'QQABIMCghDUkVBVElORxABEgkKBVJFQURZEAIiVQoHRWRpdGlvbhIXChNFRElUSU9OX1VOU1BF'
+    'Q0lGSUVEEAASDAoIU1RBTkRBUkQQARIOCgpFTlRFUlBSSVNFEAISEwoPRU5URVJQUklTRV9QTF'
+    'VTEAM6TepBSgofc3Bhbm5lci5nb29nbGVhcGlzLmNvbS9JbnN0YW5jZRIncHJvamVjdHMve3By'
+    'b2plY3R9L2luc3RhbmNlcy97aW5zdGFuY2V9');
 
 @$core.Deprecated('Use listInstanceConfigsRequestDescriptor instead')
 const ListInstanceConfigsRequest$json = {

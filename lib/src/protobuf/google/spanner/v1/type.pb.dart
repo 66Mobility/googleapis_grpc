@@ -108,8 +108,9 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCode() => clearField(1);
 
-  /// If [code][google.spanner.v1.Type.code] == [ARRAY][google.spanner.v1.TypeCode.ARRAY], then `array_element_type`
-  /// is the type of the array elements.
+  /// If [code][google.spanner.v1.Type.code] ==
+  /// [ARRAY][google.spanner.v1.TypeCode.ARRAY], then `array_element_type` is the
+  /// type of the array elements.
   @$pb.TagNumber(2)
   Type get arrayElementType => $_getN(1);
   @$pb.TagNumber(2)
@@ -124,8 +125,9 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Type ensureArrayElementType() => $_ensure(1);
 
-  /// If [code][google.spanner.v1.Type.code] == [STRUCT][google.spanner.v1.TypeCode.STRUCT], then `struct_type`
-  /// provides type information for the struct's fields.
+  /// If [code][google.spanner.v1.Type.code] ==
+  /// [STRUCT][google.spanner.v1.TypeCode.STRUCT], then `struct_type` provides
+  /// type information for the struct's fields.
   @$pb.TagNumber(3)
   StructType get structType => $_getN(2);
   @$pb.TagNumber(3)
@@ -140,12 +142,14 @@ class Type extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   StructType ensureStructType() => $_ensure(2);
 
-  /// The [TypeAnnotationCode][google.spanner.v1.TypeAnnotationCode] that disambiguates SQL type that Spanner will
-  /// use to represent values of this type during query processing. This is
-  /// necessary for some type codes because a single [TypeCode][google.spanner.v1.TypeCode] can be mapped
-  /// to different SQL types depending on the SQL dialect. [type_annotation][google.spanner.v1.Type.type_annotation]
-  /// typically is not needed to process the content of a value (it doesn't
-  /// affect serialization) and clients can ignore it on the read path.
+  /// The [TypeAnnotationCode][google.spanner.v1.TypeAnnotationCode] that
+  /// disambiguates SQL type that Spanner will use to represent values of this
+  /// type during query processing. This is necessary for some type codes because
+  /// a single [TypeCode][google.spanner.v1.TypeCode] can be mapped to different
+  /// SQL types depending on the SQL dialect.
+  /// [type_annotation][google.spanner.v1.Type.type_annotation] typically is not
+  /// needed to process the content of a value (it doesn't affect serialization)
+  /// and clients can ignore it on the read path.
   @$pb.TagNumber(4)
   TypeAnnotationCode get typeAnnotation => $_getN(3);
   @$pb.TagNumber(4)
@@ -266,7 +270,8 @@ class StructType_Field extends $pb.GeneratedMessage {
   Type ensureType() => $_ensure(1);
 }
 
-/// `StructType` defines the fields of a [STRUCT][google.spanner.v1.TypeCode.STRUCT] type.
+/// `StructType` defines the fields of a
+/// [STRUCT][google.spanner.v1.TypeCode.STRUCT] type.
 class StructType extends $pb.GeneratedMessage {
   factory StructType({
     $core.Iterable<StructType_Field>? fields,
@@ -319,9 +324,9 @@ class StructType extends $pb.GeneratedMessage {
   /// The list of fields that make up this struct. Order is
   /// significant, because values of this struct type are represented as
   /// lists, where the order of field values matches the order of
-  /// fields in the [StructType][google.spanner.v1.StructType]. In turn, the order of fields
-  /// matches the order of columns in a read request, or the order of
-  /// fields in the `SELECT` clause of a query.
+  /// fields in the [StructType][google.spanner.v1.StructType]. In turn, the
+  /// order of fields matches the order of columns in a read request, or the
+  /// order of fields in the `SELECT` clause of a query.
   @$pb.TagNumber(1)
   $core.List<StructType_Field> get fields => $_getList(0);
 }

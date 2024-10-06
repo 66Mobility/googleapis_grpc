@@ -184,13 +184,15 @@ const DeleteAccountRequest$json = {
   '1': 'DeleteAccountRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+    {'1': 'force', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'force'},
   ],
 };
 
 /// Descriptor for `DeleteAccountRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List deleteAccountRequestDescriptor = $convert.base64Decode(
     'ChREZWxldGVBY2NvdW50UmVxdWVzdBI+CgRuYW1lGAEgASgJQirgQQL6QSQKIm1lcmNoYW50YX'
-    'BpLmdvb2dsZWFwaXMuY29tL0FjY291bnRSBG5hbWU=');
+    'BpLmdvb2dsZWFwaXMuY29tL0FjY291bnRSBG5hbWUSGQoFZm9yY2UYAiABKAhCA+BBAVIFZm9y'
+    'Y2U=');
 
 @$core.Deprecated('Use updateAccountRequestDescriptor instead')
 const UpdateAccountRequest$json = {

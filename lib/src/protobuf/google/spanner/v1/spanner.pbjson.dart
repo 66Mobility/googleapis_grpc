@@ -491,6 +491,8 @@ const ExecuteSqlRequest_QueryMode$json = {
     {'1': 'NORMAL', '2': 0},
     {'1': 'PLAN', '2': 1},
     {'1': 'PROFILE', '2': 2},
+    {'1': 'WITH_STATS', '2': 3},
+    {'1': 'WITH_PLAN_AND_STATS', '2': 4},
   ],
 };
 
@@ -514,8 +516,8 @@ final $typed_data.Uint8List executeSqlRequestDescriptor = $convert.base64Decode(
     '9uGAEgASgJUhBvcHRpbWl6ZXJWZXJzaW9uEkAKHG9wdGltaXplcl9zdGF0aXN0aWNzX3BhY2th'
     'Z2UYAiABKAlSGm9wdGltaXplclN0YXRpc3RpY3NQYWNrYWdlGlYKD1BhcmFtVHlwZXNFbnRyeR'
     'IQCgNrZXkYASABKAlSA2tleRItCgV2YWx1ZRgCIAEoCzIXLmdvb2dsZS5zcGFubmVyLnYxLlR5'
-    'cGVSBXZhbHVlOgI4ASIuCglRdWVyeU1vZGUSCgoGTk9STUFMEAASCAoEUExBThABEgsKB1BST0'
-    'ZJTEUQAg==');
+    'cGVSBXZhbHVlOgI4ASJXCglRdWVyeU1vZGUSCgoGTk9STUFMEAASCAoEUExBThABEgsKB1BST0'
+    'ZJTEUQAhIOCgpXSVRIX1NUQVRTEAMSFwoTV0lUSF9QTEFOX0FORF9TVEFUUxAE');
 
 @$core.Deprecated('Use executeBatchDmlRequestDescriptor instead')
 const ExecuteBatchDmlRequest$json = {

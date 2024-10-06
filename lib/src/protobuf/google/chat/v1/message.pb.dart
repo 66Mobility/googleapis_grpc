@@ -305,8 +305,8 @@ class Message extends $pb.GeneratedMessage {
   ///  user](https://developers.google.com/workspace/chat/format-messages#messages-@mention),
   ///  or everyone in the space.
   ///
-  ///  To learn about creating text messages, see [Send a text
-  ///  message](https://developers.google.com/workspace/chat/create-messages#create-text-messages).
+  ///  To learn about creating text messages, see [Send a
+  ///  message](https://developers.google.com/workspace/chat/create-messages).
   @$pb.TagNumber(4)
   $core.String get text => $_getSZ(3);
   @$pb.TagNumber(4)
@@ -456,8 +456,8 @@ class Message extends $pb.GeneratedMessage {
   ///  user](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user),
   ///  the messages can't contain cards.
   ///
-  ///  To learn about cards and how to create them, see [Send card
-  ///  messages](https://developers.google.com/workspace/chat/create-messages#create).
+  ///  To learn how to create a message that contains cards, see [Send a
+  ///  message](https://developers.google.com/workspace/chat/create-messages).
   ///
   ///  [Card builder](https://addons.gsuite.google.com/uikit/builder)
   @$pb.TagNumber(22)
@@ -538,16 +538,17 @@ class Message extends $pb.GeneratedMessage {
 
   ///  Immutable. Input for creating a message, otherwise output only. The user
   ///  that can view the message. When set, the message is private and only
-  ///  visible to the specified user and the Chat app. Link previews and
-  ///  attachments aren't supported for private messages.
+  ///  visible to the specified user and the Chat app. To include this field in
+  ///  your request, you must call the Chat API using [app
+  ///  authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-app)
+  ///  and omit the following:
   ///
-  ///  Only Chat apps can send private messages. If your Chat app [authenticates
-  ///  as a
-  ///  user](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user)
-  ///  to send a message, the message can't be private and must omit this field.
+  ///  * [Attachments](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces.messages.attachments)
+  ///  * [Accessory
+  ///  widgets](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces.messages#Message.AccessoryWidget)
   ///
-  ///  For details, see [Send private messages to Google Chat
-  ///  users](https://developers.google.com/workspace/chat/private-messages).
+  ///  For details, see [Send a message
+  ///  privately](https://developers.google.com/workspace/chat/create-messages#private).
   @$pb.TagNumber(36)
   $406.User get privateMessageViewer => $_getN(20);
   @$pb.TagNumber(36)
@@ -855,7 +856,7 @@ class Thread extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Thread>(create);
   static Thread? _defaultInstance;
 
-  ///  Output only. Resource name of the thread.
+  ///  Resource name of the thread.
   ///
   ///  Example: `spaces/{space}/threads/{thread}`
   @$pb.TagNumber(1)

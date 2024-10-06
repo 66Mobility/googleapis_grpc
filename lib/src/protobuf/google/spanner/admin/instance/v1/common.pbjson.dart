@@ -59,3 +59,15 @@ final $typed_data.Uint8List operationProgressDescriptor = $convert.base64Decode(
     'BlcmNlbnQSOQoKc3RhcnRfdGltZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBS'
     'CXN0YXJ0VGltZRI1CghlbmRfdGltZRgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbX'
     'BSB2VuZFRpbWU=');
+
+@$core.Deprecated('Use replicaSelectionDescriptor instead')
+const ReplicaSelection$json = {
+  '1': 'ReplicaSelection',
+  '2': [
+    {'1': 'location', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'location'},
+  ],
+};
+
+/// Descriptor for `ReplicaSelection`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List replicaSelectionDescriptor = $convert.base64Decode(
+    'ChBSZXBsaWNhU2VsZWN0aW9uEh8KCGxvY2F0aW9uGAEgASgJQgPgQQJSCGxvY2F0aW9u');

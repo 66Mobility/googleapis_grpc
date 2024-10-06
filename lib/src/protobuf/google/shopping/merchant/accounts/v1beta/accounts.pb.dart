@@ -624,10 +624,14 @@ class CreateAndConfigureAccountRequest extends $pb.GeneratedMessage {
 class DeleteAccountRequest extends $pb.GeneratedMessage {
   factory DeleteAccountRequest({
     $core.String? name,
+    $core.bool? force,
   }) {
     final $result = create();
     if (name != null) {
       $result.name = name;
+    }
+    if (force != null) {
+      $result.force = force;
     }
     return $result;
   }
@@ -645,6 +649,7 @@ class DeleteAccountRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..aOB(2, _omitFieldNames ? '' : 'force')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -684,6 +689,20 @@ class DeleteAccountRequest extends $pb.GeneratedMessage {
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
+
+  /// Optional. If set to `true`, the account is deleted even if it provides
+  /// services to other accounts or has processed offers.
+  @$pb.TagNumber(2)
+  $core.bool get force => $_getBF(1);
+  @$pb.TagNumber(2)
+  set force($core.bool v) {
+    $_setBool(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasForce() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearForce() => clearField(2);
 }
 
 /// Request message for the `UpdateAccount` method.

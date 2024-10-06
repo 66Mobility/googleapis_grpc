@@ -395,6 +395,137 @@ class InstanceConfig extends $pb.GeneratedMessage {
   void clearState() => clearField(11);
 }
 
+enum ReplicaComputeCapacity_ComputeCapacity {
+  nodeCount,
+  processingUnits,
+  notSet
+}
+
+/// ReplicaComputeCapacity describes the amount of server resources that are
+/// allocated to each replica identified by the replica selection.
+class ReplicaComputeCapacity extends $pb.GeneratedMessage {
+  factory ReplicaComputeCapacity({
+    $550.ReplicaSelection? replicaSelection,
+    $core.int? nodeCount,
+    $core.int? processingUnits,
+  }) {
+    final $result = create();
+    if (replicaSelection != null) {
+      $result.replicaSelection = replicaSelection;
+    }
+    if (nodeCount != null) {
+      $result.nodeCount = nodeCount;
+    }
+    if (processingUnits != null) {
+      $result.processingUnits = processingUnits;
+    }
+    return $result;
+  }
+  ReplicaComputeCapacity._() : super();
+  factory ReplicaComputeCapacity.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ReplicaComputeCapacity.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, ReplicaComputeCapacity_ComputeCapacity>
+      _ReplicaComputeCapacity_ComputeCapacityByTag = {
+    2: ReplicaComputeCapacity_ComputeCapacity.nodeCount,
+    3: ReplicaComputeCapacity_ComputeCapacity.processingUnits,
+    0: ReplicaComputeCapacity_ComputeCapacity.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ReplicaComputeCapacity',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..oo(0, [2, 3])
+    ..aOM<$550.ReplicaSelection>(1, _omitFieldNames ? '' : 'replicaSelection',
+        subBuilder: $550.ReplicaSelection.create)
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'nodeCount', $pb.PbFieldType.O3)
+    ..a<$core.int>(
+        3, _omitFieldNames ? '' : 'processingUnits', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ReplicaComputeCapacity clone() =>
+      ReplicaComputeCapacity()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ReplicaComputeCapacity copyWith(
+          void Function(ReplicaComputeCapacity) updates) =>
+      super.copyWith((message) => updates(message as ReplicaComputeCapacity))
+          as ReplicaComputeCapacity;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static ReplicaComputeCapacity create() => ReplicaComputeCapacity._();
+  ReplicaComputeCapacity createEmptyInstance() => create();
+  static $pb.PbList<ReplicaComputeCapacity> createRepeated() =>
+      $pb.PbList<ReplicaComputeCapacity>();
+  @$core.pragma('dart2js:noInline')
+  static ReplicaComputeCapacity getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ReplicaComputeCapacity>(create);
+  static ReplicaComputeCapacity? _defaultInstance;
+
+  ReplicaComputeCapacity_ComputeCapacity whichComputeCapacity() =>
+      _ReplicaComputeCapacity_ComputeCapacityByTag[$_whichOneof(0)]!;
+  void clearComputeCapacity() => clearField($_whichOneof(0));
+
+  /// Required. Identifies replicas by specified properties.
+  /// All replicas in the selection have the same amount of compute capacity.
+  @$pb.TagNumber(1)
+  $550.ReplicaSelection get replicaSelection => $_getN(0);
+  @$pb.TagNumber(1)
+  set replicaSelection($550.ReplicaSelection v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasReplicaSelection() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearReplicaSelection() => clearField(1);
+  @$pb.TagNumber(1)
+  $550.ReplicaSelection ensureReplicaSelection() => $_ensure(0);
+
+  ///  The number of nodes allocated to each replica.
+  ///
+  ///  This may be zero in API responses for instances that are not yet in
+  ///  state `READY`.
+  @$pb.TagNumber(2)
+  $core.int get nodeCount => $_getIZ(1);
+  @$pb.TagNumber(2)
+  set nodeCount($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasNodeCount() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearNodeCount() => clearField(2);
+
+  ///  The number of processing units allocated to each replica.
+  ///
+  ///  This may be zero in API responses for instances that are not yet in
+  ///  state `READY`.
+  @$pb.TagNumber(3)
+  $core.int get processingUnits => $_getIZ(2);
+  @$pb.TagNumber(3)
+  set processingUnits($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasProcessingUnits() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearProcessingUnits() => clearField(3);
+}
+
 enum AutoscalingConfig_AutoscalingLimits_MinLimit {
   minNodes,
   minProcessingUnits,
@@ -665,11 +796,245 @@ class AutoscalingConfig_AutoscalingTargets extends $pb.GeneratedMessage {
   void clearStorageUtilizationPercent() => clearField(2);
 }
 
+/// Overrides the top-level autoscaling configuration for the replicas
+/// identified by `replica_selection`. All fields in this message are
+/// optional. Any unspecified fields will use the corresponding values from
+/// the top-level autoscaling configuration.
+class AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
+    extends $pb.GeneratedMessage {
+  factory AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides({
+    AutoscalingConfig_AutoscalingLimits? autoscalingLimits,
+    $core.int? autoscalingTargetHighPriorityCpuUtilizationPercent,
+  }) {
+    final $result = create();
+    if (autoscalingLimits != null) {
+      $result.autoscalingLimits = autoscalingLimits;
+    }
+    if (autoscalingTargetHighPriorityCpuUtilizationPercent != null) {
+      $result.autoscalingTargetHighPriorityCpuUtilizationPercent =
+          autoscalingTargetHighPriorityCpuUtilizationPercent;
+    }
+    return $result;
+  }
+  AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides._()
+      : super();
+  factory AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AutoscalingConfig.AsymmetricAutoscalingOption.AutoscalingConfigOverrides',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<AutoscalingConfig_AutoscalingLimits>(
+        1, _omitFieldNames ? '' : 'autoscalingLimits',
+        subBuilder: AutoscalingConfig_AutoscalingLimits.create)
+    ..a<$core.int>(
+        2,
+        _omitFieldNames
+            ? ''
+            : 'autoscalingTargetHighPriorityCpuUtilizationPercent',
+        $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
+      clone() =>
+          AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides()
+            ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides copyWith(
+          void Function(
+                  AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides)
+              updates) =>
+      super.copyWith((message) => updates(message
+              as AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides))
+          as AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
+      create() =>
+          AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
+              ._();
+  AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
+      createEmptyInstance() => create();
+  static $pb.PbList<
+          AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides>
+      createRepeated() => $pb.PbList<
+          AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides>();
+  @$core.pragma('dart2js:noInline')
+  static AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
+      getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+              AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides>(
+          create);
+  static AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides?
+      _defaultInstance;
+
+  /// Optional. If specified, overrides the min/max limit in the top-level
+  /// autoscaling configuration for the selected replicas.
+  @$pb.TagNumber(1)
+  AutoscalingConfig_AutoscalingLimits get autoscalingLimits => $_getN(0);
+  @$pb.TagNumber(1)
+  set autoscalingLimits(AutoscalingConfig_AutoscalingLimits v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasAutoscalingLimits() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearAutoscalingLimits() => clearField(1);
+  @$pb.TagNumber(1)
+  AutoscalingConfig_AutoscalingLimits ensureAutoscalingLimits() => $_ensure(0);
+
+  /// Optional. If specified, overrides the autoscaling target
+  /// high_priority_cpu_utilization_percent in the top-level autoscaling
+  /// configuration for the selected replicas.
+  @$pb.TagNumber(2)
+  $core.int get autoscalingTargetHighPriorityCpuUtilizationPercent =>
+      $_getIZ(1);
+  @$pb.TagNumber(2)
+  set autoscalingTargetHighPriorityCpuUtilizationPercent($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasAutoscalingTargetHighPriorityCpuUtilizationPercent() =>
+      $_has(1);
+  @$pb.TagNumber(2)
+  void clearAutoscalingTargetHighPriorityCpuUtilizationPercent() =>
+      clearField(2);
+}
+
+/// AsymmetricAutoscalingOption specifies the scaling of replicas identified by
+/// the given selection.
+class AutoscalingConfig_AsymmetricAutoscalingOption
+    extends $pb.GeneratedMessage {
+  factory AutoscalingConfig_AsymmetricAutoscalingOption({
+    $550.ReplicaSelection? replicaSelection,
+    AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides?
+        overrides,
+  }) {
+    final $result = create();
+    if (replicaSelection != null) {
+      $result.replicaSelection = replicaSelection;
+    }
+    if (overrides != null) {
+      $result.overrides = overrides;
+    }
+    return $result;
+  }
+  AutoscalingConfig_AsymmetricAutoscalingOption._() : super();
+  factory AutoscalingConfig_AsymmetricAutoscalingOption.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AutoscalingConfig_AsymmetricAutoscalingOption.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AutoscalingConfig.AsymmetricAutoscalingOption',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
+      createEmptyInstance: create)
+    ..aOM<$550.ReplicaSelection>(1, _omitFieldNames ? '' : 'replicaSelection',
+        subBuilder: $550.ReplicaSelection.create)
+    ..aOM<AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides>(
+        2, _omitFieldNames ? '' : 'overrides',
+        subBuilder:
+            AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
+                .create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AutoscalingConfig_AsymmetricAutoscalingOption clone() =>
+      AutoscalingConfig_AsymmetricAutoscalingOption()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AutoscalingConfig_AsymmetricAutoscalingOption copyWith(
+          void Function(AutoscalingConfig_AsymmetricAutoscalingOption)
+              updates) =>
+      super.copyWith((message) =>
+              updates(message as AutoscalingConfig_AsymmetricAutoscalingOption))
+          as AutoscalingConfig_AsymmetricAutoscalingOption;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AutoscalingConfig_AsymmetricAutoscalingOption create() =>
+      AutoscalingConfig_AsymmetricAutoscalingOption._();
+  AutoscalingConfig_AsymmetricAutoscalingOption createEmptyInstance() =>
+      create();
+  static $pb.PbList<AutoscalingConfig_AsymmetricAutoscalingOption>
+      createRepeated() =>
+          $pb.PbList<AutoscalingConfig_AsymmetricAutoscalingOption>();
+  @$core.pragma('dart2js:noInline')
+  static AutoscalingConfig_AsymmetricAutoscalingOption getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AutoscalingConfig_AsymmetricAutoscalingOption>(create);
+  static AutoscalingConfig_AsymmetricAutoscalingOption? _defaultInstance;
+
+  /// Required. Selects the replicas to which this AsymmetricAutoscalingOption
+  /// applies. Only read-only replicas are supported.
+  @$pb.TagNumber(1)
+  $550.ReplicaSelection get replicaSelection => $_getN(0);
+  @$pb.TagNumber(1)
+  set replicaSelection($550.ReplicaSelection v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasReplicaSelection() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearReplicaSelection() => clearField(1);
+  @$pb.TagNumber(1)
+  $550.ReplicaSelection ensureReplicaSelection() => $_ensure(0);
+
+  /// Optional. Overrides applied to the top-level autoscaling configuration
+  /// for the selected replicas.
+  @$pb.TagNumber(2)
+  AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
+      get overrides => $_getN(1);
+  @$pb.TagNumber(2)
+  set overrides(
+      AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
+          v) {
+    setField(2, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasOverrides() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearOverrides() => clearField(2);
+  @$pb.TagNumber(2)
+  AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
+      ensureOverrides() => $_ensure(1);
+}
+
 /// Autoscaling configuration for an instance.
 class AutoscalingConfig extends $pb.GeneratedMessage {
   factory AutoscalingConfig({
     AutoscalingConfig_AutoscalingLimits? autoscalingLimits,
     AutoscalingConfig_AutoscalingTargets? autoscalingTargets,
+    $core.Iterable<AutoscalingConfig_AsymmetricAutoscalingOption>?
+        asymmetricAutoscalingOptions,
   }) {
     final $result = create();
     if (autoscalingLimits != null) {
@@ -677,6 +1042,9 @@ class AutoscalingConfig extends $pb.GeneratedMessage {
     }
     if (autoscalingTargets != null) {
       $result.autoscalingTargets = autoscalingTargets;
+    }
+    if (asymmetricAutoscalingOptions != null) {
+      $result.asymmetricAutoscalingOptions.addAll(asymmetricAutoscalingOptions);
     }
     return $result;
   }
@@ -699,6 +1067,11 @@ class AutoscalingConfig extends $pb.GeneratedMessage {
     ..aOM<AutoscalingConfig_AutoscalingTargets>(
         2, _omitFieldNames ? '' : 'autoscalingTargets',
         subBuilder: AutoscalingConfig_AutoscalingTargets.create)
+    ..pc<AutoscalingConfig_AsymmetricAutoscalingOption>(
+        3,
+        _omitFieldNames ? '' : 'asymmetricAutoscalingOptions',
+        $pb.PbFieldType.PM,
+        subBuilder: AutoscalingConfig_AsymmetricAutoscalingOption.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -754,6 +1127,19 @@ class AutoscalingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   AutoscalingConfig_AutoscalingTargets ensureAutoscalingTargets() =>
       $_ensure(1);
+
+  ///  Optional. Optional asymmetric autoscaling options.
+  ///  Replicas matching the replica selection criteria will be autoscaled
+  ///  independently from other replicas. The autoscaler will scale the replicas
+  ///  based on the utilization of replicas identified by the replica selection.
+  ///  Replica selections should not overlap with each other.
+  ///
+  ///  Other replicas (those do not match any replica selection) will be
+  ///  autoscaled together and will have the same compute capacity allocated to
+  ///  them.
+  @$pb.TagNumber(3)
+  $core.List<AutoscalingConfig_AsymmetricAutoscalingOption>
+      get asymmetricAutoscalingOptions => $_getList(2);
 }
 
 /// An isolated set of Cloud Spanner resources on which databases can be hosted.
@@ -770,6 +1156,7 @@ class Instance extends $pb.GeneratedMessage {
     $302.Timestamp? createTime,
     $302.Timestamp? updateTime,
     AutoscalingConfig? autoscalingConfig,
+    $core.Iterable<ReplicaComputeCapacity>? replicaComputeCapacity,
     Instance_Edition? edition,
   }) {
     final $result = create();
@@ -805,6 +1192,9 @@ class Instance extends $pb.GeneratedMessage {
     }
     if (autoscalingConfig != null) {
       $result.autoscalingConfig = autoscalingConfig;
+    }
+    if (replicaComputeCapacity != null) {
+      $result.replicaComputeCapacity.addAll(replicaComputeCapacity);
     }
     if (edition != null) {
       $result.edition = edition;
@@ -846,6 +1236,9 @@ class Instance extends $pb.GeneratedMessage {
         subBuilder: $302.Timestamp.create)
     ..aOM<AutoscalingConfig>(17, _omitFieldNames ? '' : 'autoscalingConfig',
         subBuilder: AutoscalingConfig.create)
+    ..pc<ReplicaComputeCapacity>(
+        19, _omitFieldNames ? '' : 'replicaComputeCapacity', $pb.PbFieldType.PM,
+        subBuilder: ReplicaComputeCapacity.create)
     ..e<Instance_Edition>(
         20, _omitFieldNames ? '' : 'edition', $pb.PbFieldType.OE,
         defaultOrMaker: Instance_Edition.EDITION_UNSPECIFIED,
@@ -920,18 +1313,25 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearDisplayName() => clearField(3);
 
-  ///  The number of nodes allocated to this instance. At most one of either
-  ///  node_count or processing_units should be present in the message.
+  ///  The number of nodes allocated to this instance. At most, one of either
+  ///  `node_count` or `processing_units` should be present in the message.
   ///
-  ///  Users can set the node_count field to specify the target number of nodes
+  ///  Users can set the `node_count` field to specify the target number of nodes
   ///  allocated to the instance.
   ///
-  ///  This may be zero in API responses for instances that are not yet in state
-  ///  `READY`.
+  ///  If autoscaling is enabled, `node_count` is treated as an `OUTPUT_ONLY`
+  ///  field and reflects the current number of nodes allocated to the instance.
   ///
-  ///  See [the
-  ///  documentation](https://cloud.google.com/spanner/docs/compute-capacity)
-  ///  for more information about nodes and processing units.
+  ///  This might be zero in API responses for instances that are not yet in the
+  ///  `READY` state.
+  ///
+  ///  If the instance has varying node count across replicas (achieved by
+  ///  setting asymmetric_autoscaling_options in autoscaling config), the
+  ///  node_count here is the maximum node count across all replicas.
+  ///
+  ///  For more information, see
+  ///  [Compute capacity, nodes, and processing
+  ///  units](https://cloud.google.com/spanner/docs/compute-capacity).
   @$pb.TagNumber(5)
   $core.int get nodeCount => $_getIZ(3);
   @$pb.TagNumber(5)
@@ -989,18 +1389,27 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.List<$core.String> get endpointUris => $_getList(6);
 
-  ///  The number of processing units allocated to this instance. At most one of
-  ///  processing_units or node_count should be present in the message.
+  ///  The number of processing units allocated to this instance. At most, one of
+  ///  either `processing_units` or `node_count` should be present in the message.
   ///
-  ///  Users can set the processing_units field to specify the target number of
+  ///  Users can set the `processing_units` field to specify the target number of
   ///  processing units allocated to the instance.
   ///
-  ///  This may be zero in API responses for instances that are not yet in state
-  ///  `READY`.
+  ///  If autoscaling is enabled, `processing_units` is treated as an
+  ///  `OUTPUT_ONLY` field and reflects the current number of processing units
+  ///  allocated to the instance.
   ///
-  ///  See [the
-  ///  documentation](https://cloud.google.com/spanner/docs/compute-capacity)
-  ///  for more information about nodes and processing units.
+  ///  This might be zero in API responses for instances that are not yet in the
+  ///  `READY` state.
+  ///
+  ///  If the instance has varying processing units per replica
+  ///  (achieved by setting asymmetric_autoscaling_options in autoscaling config),
+  ///  the processing_units here is the maximum processing units across all
+  ///  replicas.
+  ///
+  ///  For more information, see
+  ///  [Compute capacity, nodes and processing
+  ///  units](https://cloud.google.com/spanner/docs/compute-capacity).
   @$pb.TagNumber(9)
   $core.int get processingUnits => $_getIZ(7);
   @$pb.TagNumber(9)
@@ -1061,16 +1470,23 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   AutoscalingConfig ensureAutoscalingConfig() => $_ensure(10);
 
+  /// Output only. Lists the compute capacity per ReplicaSelection. A replica
+  /// selection identifies a set of replicas with common properties. Replicas
+  /// identified by a ReplicaSelection are scaled with the same compute capacity.
+  @$pb.TagNumber(19)
+  $core.List<ReplicaComputeCapacity> get replicaComputeCapacity =>
+      $_getList(11);
+
   /// Optional. The `Edition` of the current instance.
   @$pb.TagNumber(20)
-  Instance_Edition get edition => $_getN(11);
+  Instance_Edition get edition => $_getN(12);
   @$pb.TagNumber(20)
   set edition(Instance_Edition v) {
     setField(20, v);
   }
 
   @$pb.TagNumber(20)
-  $core.bool hasEdition() => $_has(11);
+  $core.bool hasEdition() => $_has(12);
   @$pb.TagNumber(20)
   void clearEdition() => clearField(20);
 }

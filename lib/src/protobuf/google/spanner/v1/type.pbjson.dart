@@ -32,6 +32,7 @@ const TypeCode$json = {
     {'1': 'JSON', '2': 11},
     {'1': 'PROTO', '2': 13},
     {'1': 'ENUM', '2': 14},
+    {'1': 'INTERVAL', '2': 16},
   ],
 };
 
@@ -40,7 +41,7 @@ final $typed_data.Uint8List typeCodeDescriptor = $convert.base64Decode(
     'CghUeXBlQ29kZRIZChVUWVBFX0NPREVfVU5TUEVDSUZJRUQQABIICgRCT09MEAESCQoFSU5UNj'
     'QQAhILCgdGTE9BVDY0EAMSCwoHRkxPQVQzMhAPEg0KCVRJTUVTVEFNUBAEEggKBERBVEUQBRIK'
     'CgZTVFJJTkcQBhIJCgVCWVRFUxAHEgkKBUFSUkFZEAgSCgoGU1RSVUNUEAkSCwoHTlVNRVJJQx'
-    'AKEggKBEpTT04QCxIJCgVQUk9UTxANEggKBEVOVU0QDg==');
+    'AKEggKBEpTT04QCxIJCgVQUk9UTxANEggKBEVOVU0QDhIMCghJTlRFUlZBTBAQ');
 
 @$core.Deprecated('Use typeAnnotationCodeDescriptor instead')
 const TypeAnnotationCode$json = {

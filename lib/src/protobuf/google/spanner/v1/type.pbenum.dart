@@ -41,6 +41,8 @@ class TypeCode extends $pb.ProtobufEnum {
   static const TypeCode JSON = TypeCode._(11, _omitEnumNames ? '' : 'JSON');
   static const TypeCode PROTO = TypeCode._(13, _omitEnumNames ? '' : 'PROTO');
   static const TypeCode ENUM = TypeCode._(14, _omitEnumNames ? '' : 'ENUM');
+  static const TypeCode INTERVAL =
+      TypeCode._(16, _omitEnumNames ? '' : 'INTERVAL');
 
   static const $core.List<TypeCode> values = <TypeCode>[
     TYPE_CODE_UNSPECIFIED,
@@ -58,6 +60,7 @@ class TypeCode extends $pb.ProtobufEnum {
     JSON,
     PROTO,
     ENUM,
+    INTERVAL,
   ];
 
   static final $core.Map<$core.int, TypeCode> _byValue =

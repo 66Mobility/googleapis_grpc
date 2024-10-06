@@ -1,6 +1,6 @@
 name: googleapis_grpc
 description: Auto-generated client libraries for accessing Google APIs through gRPC. Unofficial.
-version: 1.0.14
+version: 1.0.15
 repository: https://github.com/66Mobility/googleapis_grpc
 
 environment:
