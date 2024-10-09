@@ -633,6 +633,15 @@ const ExecuteBatchDmlResponse$json = {
       '6': '.google.rpc.Status',
       '10': 'status'
     },
+    {
+      '1': 'precommit_token',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.MultiplexedSessionPrecommitToken',
+      '8': {},
+      '10': 'precommitToken'
+    },
   ],
 };
 
@@ -640,7 +649,9 @@ const ExecuteBatchDmlResponse$json = {
 final $typed_data.Uint8List executeBatchDmlResponseDescriptor = $convert.base64Decode(
     'ChdFeGVjdXRlQmF0Y2hEbWxSZXNwb25zZRI9CgtyZXN1bHRfc2V0cxgBIAMoCzIcLmdvb2dsZS'
     '5zcGFubmVyLnYxLlJlc3VsdFNldFIKcmVzdWx0U2V0cxIqCgZzdGF0dXMYAiABKAsyEi5nb29n'
-    'bGUucnBjLlN0YXR1c1IGc3RhdHVz');
+    'bGUucnBjLlN0YXR1c1IGc3RhdHVzEmEKD3ByZWNvbW1pdF90b2tlbhgDIAEoCzIzLmdvb2dsZS'
+    '5zcGFubmVyLnYxLk11bHRpcGxleGVkU2Vzc2lvblByZWNvbW1pdFRva2VuQgPgQQFSDnByZWNv'
+    'bW1pdFRva2Vu');
 
 @$core.Deprecated('Use partitionOptionsDescriptor instead')
 const PartitionOptions$json = {
@@ -955,6 +966,15 @@ const BeginTransactionRequest$json = {
       '6': '.google.spanner.v1.RequestOptions',
       '10': 'requestOptions'
     },
+    {
+      '1': 'mutation_key',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.Mutation',
+      '8': {},
+      '10': 'mutationKey'
+    },
   ],
 };
 
@@ -964,7 +984,8 @@ final $typed_data.Uint8List beginTransactionRequestDescriptor = $convert.base64D
     '5uZXIuZ29vZ2xlYXBpcy5jb20vU2Vzc2lvblIHc2Vzc2lvbhJECgdvcHRpb25zGAIgASgLMiUu'
     'Z29vZ2xlLnNwYW5uZXIudjEuVHJhbnNhY3Rpb25PcHRpb25zQgPgQQJSB29wdGlvbnMSSgoPcm'
     'VxdWVzdF9vcHRpb25zGAMgASgLMiEuZ29vZ2xlLnNwYW5uZXIudjEuUmVxdWVzdE9wdGlvbnNS'
-    'DnJlcXVlc3RPcHRpb25z');
+    'DnJlcXVlc3RPcHRpb25zEkMKDG11dGF0aW9uX2tleRgEIAEoCzIbLmdvb2dsZS5zcGFubmVyLn'
+    'YxLk11dGF0aW9uQgPgQQFSC211dGF0aW9uS2V5');
 
 @$core.Deprecated('Use commitRequestDescriptor instead')
 const CommitRequest$json = {
@@ -1020,6 +1041,15 @@ const CommitRequest$json = {
       '6': '.google.spanner.v1.RequestOptions',
       '10': 'requestOptions'
     },
+    {
+      '1': 'precommit_token',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.MultiplexedSessionPrecommitToken',
+      '8': {},
+      '10': 'precommitToken'
+    },
   ],
   '8': [
     {'1': 'transaction'},
@@ -1036,7 +1066,9 @@ final $typed_data.Uint8List commitRequestDescriptor = $convert.base64Decode(
     '4KE3JldHVybl9jb21taXRfc3RhdHMYBSABKAhSEXJldHVybkNvbW1pdFN0YXRzEkgKEG1heF9j'
     'b21taXRfZGVsYXkYCCABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25CA+BBAVIObWF4Q2'
     '9tbWl0RGVsYXkSSgoPcmVxdWVzdF9vcHRpb25zGAYgASgLMiEuZ29vZ2xlLnNwYW5uZXIudjEu'
-    'UmVxdWVzdE9wdGlvbnNSDnJlcXVlc3RPcHRpb25zQg0KC3RyYW5zYWN0aW9u');
+    'UmVxdWVzdE9wdGlvbnNSDnJlcXVlc3RPcHRpb25zEmEKD3ByZWNvbW1pdF90b2tlbhgJIAEoCz'
+    'IzLmdvb2dsZS5zcGFubmVyLnYxLk11bHRpcGxleGVkU2Vzc2lvblByZWNvbW1pdFRva2VuQgPg'
+    'QQFSDnByZWNvbW1pdFRva2VuQg0KC3RyYW5zYWN0aW9u');
 
 @$core.Deprecated('Use rollbackRequestDescriptor instead')
 const RollbackRequest$json = {

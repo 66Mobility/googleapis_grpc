@@ -74,6 +74,14 @@ const TransactionOptions_ReadWrite$json = {
       '6': '.google.spanner.v1.TransactionOptions.ReadWrite.ReadLockMode',
       '10': 'readLockMode'
     },
+    {
+      '1': 'multiplexed_session_previous_transaction_id',
+      '3': 2,
+      '4': 1,
+      '5': 12,
+      '8': {},
+      '10': 'multiplexedSessionPreviousTransactionId'
+    },
   ],
   '4': [TransactionOptions_ReadWrite_ReadLockMode$json],
 };
@@ -155,18 +163,20 @@ final $typed_data.Uint8List transactionOptionsDescriptor = $convert.base64Decode
     '5QYXJ0aXRpb25lZERtbEgAUg5wYXJ0aXRpb25lZERtbBJNCglyZWFkX29ubHkYAiABKAsyLi5n'
     'b29nbGUuc3Bhbm5lci52MS5UcmFuc2FjdGlvbk9wdGlvbnMuUmVhZE9ubHlIAFIIcmVhZE9ubH'
     'kSRAofZXhjbHVkZV90eG5fZnJvbV9jaGFuZ2Vfc3RyZWFtcxgFIAEoCFIbZXhjbHVkZVR4bkZy'
-    'b21DaGFuZ2VTdHJlYW1zGsABCglSZWFkV3JpdGUSYgoOcmVhZF9sb2NrX21vZGUYASABKA4yPC'
+    'b21DaGFuZ2VTdHJlYW1zGqMCCglSZWFkV3JpdGUSYgoOcmVhZF9sb2NrX21vZGUYASABKA4yPC'
     '5nb29nbGUuc3Bhbm5lci52MS5UcmFuc2FjdGlvbk9wdGlvbnMuUmVhZFdyaXRlLlJlYWRMb2Nr'
-    'TW9kZVIMcmVhZExvY2tNb2RlIk8KDFJlYWRMb2NrTW9kZRIeChpSRUFEX0xPQ0tfTU9ERV9VTl'
-    'NQRUNJRklFRBAAEg8KC1BFU1NJTUlTVElDEAESDgoKT1BUSU1JU1RJQxACGhAKDlBhcnRpdGlv'
-    'bmVkRG1sGoQDCghSZWFkT25seRIYCgZzdHJvbmcYASABKAhIAFIGc3Ryb25nEkoKEm1pbl9yZW'
-    'FkX3RpbWVzdGFtcBgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIAFIQbWluUmVh'
-    'ZFRpbWVzdGFtcBJACg1tYXhfc3RhbGVuZXNzGAMgASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cm'
-    'F0aW9uSABSDG1heFN0YWxlbmVzcxJDCg5yZWFkX3RpbWVzdGFtcBgEIAEoCzIaLmdvb2dsZS5w'
-    'cm90b2J1Zi5UaW1lc3RhbXBIAFINcmVhZFRpbWVzdGFtcBJECg9leGFjdF9zdGFsZW5lc3MYBS'
-    'ABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25IAFIOZXhhY3RTdGFsZW5lc3MSMgoVcmV0'
-    'dXJuX3JlYWRfdGltZXN0YW1wGAYgASgIUhNyZXR1cm5SZWFkVGltZXN0YW1wQhEKD3RpbWVzdG'
-    'FtcF9ib3VuZEIGCgRtb2Rl');
+    'TW9kZVIMcmVhZExvY2tNb2RlEmEKK211bHRpcGxleGVkX3Nlc3Npb25fcHJldmlvdXNfdHJhbn'
+    'NhY3Rpb25faWQYAiABKAxCA+BBAVInbXVsdGlwbGV4ZWRTZXNzaW9uUHJldmlvdXNUcmFuc2Fj'
+    'dGlvbklkIk8KDFJlYWRMb2NrTW9kZRIeChpSRUFEX0xPQ0tfTU9ERV9VTlNQRUNJRklFRBAAEg'
+    '8KC1BFU1NJTUlTVElDEAESDgoKT1BUSU1JU1RJQxACGhAKDlBhcnRpdGlvbmVkRG1sGoQDCghS'
+    'ZWFkT25seRIYCgZzdHJvbmcYASABKAhIAFIGc3Ryb25nEkoKEm1pbl9yZWFkX3RpbWVzdGFtcB'
+    'gCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIAFIQbWluUmVhZFRpbWVzdGFtcBJA'
+    'Cg1tYXhfc3RhbGVuZXNzGAMgASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uSABSDG1heF'
+    'N0YWxlbmVzcxJDCg5yZWFkX3RpbWVzdGFtcBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l'
+    'c3RhbXBIAFINcmVhZFRpbWVzdGFtcBJECg9leGFjdF9zdGFsZW5lc3MYBSABKAsyGS5nb29nbG'
+    'UucHJvdG9idWYuRHVyYXRpb25IAFIOZXhhY3RTdGFsZW5lc3MSMgoVcmV0dXJuX3JlYWRfdGlt'
+    'ZXN0YW1wGAYgASgIUhNyZXR1cm5SZWFkVGltZXN0YW1wQhEKD3RpbWVzdGFtcF9ib3VuZEIGCg'
+    'Rtb2Rl');
 
 @$core.Deprecated('Use transactionDescriptor instead')
 const Transaction$json = {
@@ -181,13 +191,23 @@ const Transaction$json = {
       '6': '.google.protobuf.Timestamp',
       '10': 'readTimestamp'
     },
+    {
+      '1': 'precommit_token',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.MultiplexedSessionPrecommitToken',
+      '10': 'precommitToken'
+    },
   ],
 };
 
 /// Descriptor for `Transaction`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List transactionDescriptor = $convert.base64Decode(
     'CgtUcmFuc2FjdGlvbhIOCgJpZBgBIAEoDFICaWQSQQoOcmVhZF90aW1lc3RhbXAYAiABKAsyGi'
-    '5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUg1yZWFkVGltZXN0YW1w');
+    '5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUg1yZWFkVGltZXN0YW1wElwKD3ByZWNvbW1pdF90'
+    'b2tlbhgDIAEoCzIzLmdvb2dsZS5zcGFubmVyLnYxLk11bHRpcGxleGVkU2Vzc2lvblByZWNvbW'
+    '1pdFRva2VuUg5wcmVjb21taXRUb2tlbg==');
 
 @$core.Deprecated('Use transactionSelectorDescriptor instead')
 const TransactionSelector$json = {
@@ -224,3 +244,18 @@ final $typed_data.Uint8List transactionSelectorDescriptor = $convert.base64Decod
     '5lci52MS5UcmFuc2FjdGlvbk9wdGlvbnNIAFIJc2luZ2xlVXNlEhAKAmlkGAIgASgMSABSAmlk'
     'Ej0KBWJlZ2luGAMgASgLMiUuZ29vZ2xlLnNwYW5uZXIudjEuVHJhbnNhY3Rpb25PcHRpb25zSA'
     'BSBWJlZ2luQgoKCHNlbGVjdG9y');
+
+@$core.Deprecated('Use multiplexedSessionPrecommitTokenDescriptor instead')
+const MultiplexedSessionPrecommitToken$json = {
+  '1': 'MultiplexedSessionPrecommitToken',
+  '2': [
+    {'1': 'precommit_token', '3': 1, '4': 1, '5': 12, '10': 'precommitToken'},
+    {'1': 'seq_num', '3': 2, '4': 1, '5': 5, '10': 'seqNum'},
+  ],
+};
+
+/// Descriptor for `MultiplexedSessionPrecommitToken`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List multiplexedSessionPrecommitTokenDescriptor =
+    $convert.base64Decode(
+        'CiBNdWx0aXBsZXhlZFNlc3Npb25QcmVjb21taXRUb2tlbhInCg9wcmVjb21taXRfdG9rZW4YAS'
+        'ABKAxSDnByZWNvbW1pdFRva2VuEhcKB3NlcV9udW0YAiABKAVSBnNlcU51bQ==');

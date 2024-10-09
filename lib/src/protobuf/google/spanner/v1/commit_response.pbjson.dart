@@ -33,8 +33,20 @@ const CommitResponse$json = {
       '6': '.google.spanner.v1.CommitResponse.CommitStats',
       '10': 'commitStats'
     },
+    {
+      '1': 'precommit_token',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.MultiplexedSessionPrecommitToken',
+      '9': 0,
+      '10': 'precommitToken'
+    },
   ],
   '3': [CommitResponse_CommitStats$json],
+  '8': [
+    {'1': 'MultiplexedSessionRetry'},
+  ],
 };
 
 @$core.Deprecated('Use commitResponseDescriptor instead')
@@ -50,5 +62,7 @@ final $typed_data.Uint8List commitResponseDescriptor = $convert.base64Decode(
     'Cg5Db21taXRSZXNwb25zZRJFChBjb21taXRfdGltZXN0YW1wGAEgASgLMhouZ29vZ2xlLnByb3'
     'RvYnVmLlRpbWVzdGFtcFIPY29tbWl0VGltZXN0YW1wElAKDGNvbW1pdF9zdGF0cxgCIAEoCzIt'
     'Lmdvb2dsZS5zcGFubmVyLnYxLkNvbW1pdFJlc3BvbnNlLkNvbW1pdFN0YXRzUgtjb21taXRTdG'
-    'F0cxo0CgtDb21taXRTdGF0cxIlCg5tdXRhdGlvbl9jb3VudBgBIAEoA1INbXV0YXRpb25Db3Vu'
-    'dA==');
+    'F0cxJeCg9wcmVjb21taXRfdG9rZW4YBCABKAsyMy5nb29nbGUuc3Bhbm5lci52MS5NdWx0aXBs'
+    'ZXhlZFNlc3Npb25QcmVjb21taXRUb2tlbkgAUg5wcmVjb21taXRUb2tlbho0CgtDb21taXRTdG'
+    'F0cxIlCg5tdXRhdGlvbl9jb3VudBgBIAEoA1INbXV0YXRpb25Db3VudEIZChdNdWx0aXBsZXhl'
+    'ZFNlc3Npb25SZXRyeQ==');

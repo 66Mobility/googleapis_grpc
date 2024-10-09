@@ -2086,6 +2086,7 @@ class ExecuteBatchDmlResponse extends $pb.GeneratedMessage {
   factory ExecuteBatchDmlResponse({
     $core.Iterable<$249.ResultSet>? resultSets,
     $322.Status? status,
+    $250.MultiplexedSessionPrecommitToken? precommitToken,
   }) {
     final $result = create();
     if (resultSets != null) {
@@ -2093,6 +2094,9 @@ class ExecuteBatchDmlResponse extends $pb.GeneratedMessage {
     }
     if (status != null) {
       $result.status = status;
+    }
+    if (precommitToken != null) {
+      $result.precommitToken = precommitToken;
     }
     return $result;
   }
@@ -2114,6 +2118,9 @@ class ExecuteBatchDmlResponse extends $pb.GeneratedMessage {
         subBuilder: $249.ResultSet.create)
     ..aOM<$322.Status>(2, _omitFieldNames ? '' : 'status',
         subBuilder: $322.Status.create)
+    ..aOM<$250.MultiplexedSessionPrecommitToken>(
+        3, _omitFieldNames ? '' : 'precommitToken',
+        subBuilder: $250.MultiplexedSessionPrecommitToken.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2168,6 +2175,27 @@ class ExecuteBatchDmlResponse extends $pb.GeneratedMessage {
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
   $322.Status ensureStatus() => $_ensure(1);
+
+  /// Optional. A precommit token will be included if the read-write transaction
+  /// is on a multiplexed session.
+  /// The precommit token with the highest sequence number from this transaction
+  /// attempt should be passed to the
+  /// [Commit][google.spanner.v1.Spanner.Commit] request for this transaction.
+  /// This feature is not yet supported and will result in an UNIMPLEMENTED
+  /// error.
+  @$pb.TagNumber(3)
+  $250.MultiplexedSessionPrecommitToken get precommitToken => $_getN(2);
+  @$pb.TagNumber(3)
+  set precommitToken($250.MultiplexedSessionPrecommitToken v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasPrecommitToken() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearPrecommitToken() => clearField(3);
+  @$pb.TagNumber(3)
+  $250.MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(2);
 }
 
 /// Options for a PartitionQueryRequest and
@@ -3152,6 +3180,7 @@ class BeginTransactionRequest extends $pb.GeneratedMessage {
     $core.String? session,
     $250.TransactionOptions? options,
     RequestOptions? requestOptions,
+    $554.Mutation? mutationKey,
   }) {
     final $result = create();
     if (session != null) {
@@ -3162,6 +3191,9 @@ class BeginTransactionRequest extends $pb.GeneratedMessage {
     }
     if (requestOptions != null) {
       $result.requestOptions = requestOptions;
+    }
+    if (mutationKey != null) {
+      $result.mutationKey = mutationKey;
     }
     return $result;
   }
@@ -3183,6 +3215,8 @@ class BeginTransactionRequest extends $pb.GeneratedMessage {
         subBuilder: $250.TransactionOptions.create)
     ..aOM<RequestOptions>(3, _omitFieldNames ? '' : 'requestOptions',
         subBuilder: RequestOptions.create)
+    ..aOM<$554.Mutation>(4, _omitFieldNames ? '' : 'mutationKey',
+        subBuilder: $554.Mutation.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3256,6 +3290,26 @@ class BeginTransactionRequest extends $pb.GeneratedMessage {
   void clearRequestOptions() => clearField(3);
   @$pb.TagNumber(3)
   RequestOptions ensureRequestOptions() => $_ensure(2);
+
+  /// Optional. Required for read-write transactions on a multiplexed session
+  /// that commit mutations but do not perform any reads or queries. Clients
+  /// should randomly select one of the mutations from the mutation set and send
+  /// it as a part of this request.
+  /// This feature is not yet supported and will result in an UNIMPLEMENTED
+  /// error.
+  @$pb.TagNumber(4)
+  $554.Mutation get mutationKey => $_getN(3);
+  @$pb.TagNumber(4)
+  set mutationKey($554.Mutation v) {
+    setField(4, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasMutationKey() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearMutationKey() => clearField(4);
+  @$pb.TagNumber(4)
+  $554.Mutation ensureMutationKey() => $_ensure(3);
 }
 
 enum CommitRequest_Transaction { transactionId, singleUseTransaction, notSet }
@@ -3270,6 +3324,7 @@ class CommitRequest extends $pb.GeneratedMessage {
     $core.bool? returnCommitStats,
     RequestOptions? requestOptions,
     $264.Duration? maxCommitDelay,
+    $250.MultiplexedSessionPrecommitToken? precommitToken,
   }) {
     final $result = create();
     if (session != null) {
@@ -3292,6 +3347,9 @@ class CommitRequest extends $pb.GeneratedMessage {
     }
     if (maxCommitDelay != null) {
       $result.maxCommitDelay = maxCommitDelay;
+    }
+    if (precommitToken != null) {
+      $result.precommitToken = precommitToken;
     }
     return $result;
   }
@@ -3329,6 +3387,9 @@ class CommitRequest extends $pb.GeneratedMessage {
         subBuilder: RequestOptions.create)
     ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'maxCommitDelay',
         subBuilder: $264.Duration.create)
+    ..aOM<$250.MultiplexedSessionPrecommitToken>(
+        9, _omitFieldNames ? '' : 'precommitToken',
+        subBuilder: $250.MultiplexedSessionPrecommitToken.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3461,6 +3522,26 @@ class CommitRequest extends $pb.GeneratedMessage {
   void clearMaxCommitDelay() => clearField(8);
   @$pb.TagNumber(8)
   $264.Duration ensureMaxCommitDelay() => $_ensure(6);
+
+  /// Optional. If the read-write transaction was executed on a multiplexed
+  /// session, the precommit token with the highest sequence number received in
+  /// this transaction attempt, should be included here. Failing to do so will
+  /// result in a FailedPrecondition error.
+  /// This feature is not yet supported and will result in an UNIMPLEMENTED
+  /// error.
+  @$pb.TagNumber(9)
+  $250.MultiplexedSessionPrecommitToken get precommitToken => $_getN(7);
+  @$pb.TagNumber(9)
+  set precommitToken($250.MultiplexedSessionPrecommitToken v) {
+    setField(9, v);
+  }
+
+  @$pb.TagNumber(9)
+  $core.bool hasPrecommitToken() => $_has(7);
+  @$pb.TagNumber(9)
+  void clearPrecommitToken() => clearField(9);
+  @$pb.TagNumber(9)
+  $250.MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(7);
 }
 
 /// The request for [Rollback][google.spanner.v1.Spanner.Rollback].

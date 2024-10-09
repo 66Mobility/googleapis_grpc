@@ -26,6 +26,7 @@ class ResultSet extends $pb.GeneratedMessage {
     ResultSetMetadata? metadata,
     $core.Iterable<$261.ListValue>? rows,
     ResultSetStats? stats,
+    $250.MultiplexedSessionPrecommitToken? precommitToken,
   }) {
     final $result = create();
     if (metadata != null) {
@@ -36,6 +37,9 @@ class ResultSet extends $pb.GeneratedMessage {
     }
     if (stats != null) {
       $result.stats = stats;
+    }
+    if (precommitToken != null) {
+      $result.precommitToken = precommitToken;
     }
     return $result;
   }
@@ -58,6 +62,9 @@ class ResultSet extends $pb.GeneratedMessage {
         subBuilder: $261.ListValue.create)
     ..aOM<ResultSetStats>(3, _omitFieldNames ? '' : 'stats',
         subBuilder: ResultSetStats.create)
+    ..aOM<$250.MultiplexedSessionPrecommitToken>(
+        5, _omitFieldNames ? '' : 'precommitToken',
+        subBuilder: $250.MultiplexedSessionPrecommitToken.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -126,6 +133,27 @@ class ResultSet extends $pb.GeneratedMessage {
   void clearStats() => clearField(3);
   @$pb.TagNumber(3)
   ResultSetStats ensureStats() => $_ensure(2);
+
+  /// Optional. A precommit token will be included if the read-write transaction
+  /// is on a multiplexed session.
+  /// The precommit token with the highest sequence number from this transaction
+  /// attempt should be passed to the
+  /// [Commit][google.spanner.v1.Spanner.Commit] request for this transaction.
+  /// This feature is not yet supported and will result in an UNIMPLEMENTED
+  /// error.
+  @$pb.TagNumber(5)
+  $250.MultiplexedSessionPrecommitToken get precommitToken => $_getN(3);
+  @$pb.TagNumber(5)
+  set precommitToken($250.MultiplexedSessionPrecommitToken v) {
+    setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasPrecommitToken() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearPrecommitToken() => clearField(5);
+  @$pb.TagNumber(5)
+  $250.MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(3);
 }
 
 /// Partial results from a streaming read or SQL query. Streaming reads and
@@ -138,6 +166,7 @@ class PartialResultSet extends $pb.GeneratedMessage {
     $core.bool? chunkedValue,
     $core.List<$core.int>? resumeToken,
     ResultSetStats? stats,
+    $250.MultiplexedSessionPrecommitToken? precommitToken,
   }) {
     final $result = create();
     if (metadata != null) {
@@ -154,6 +183,9 @@ class PartialResultSet extends $pb.GeneratedMessage {
     }
     if (stats != null) {
       $result.stats = stats;
+    }
+    if (precommitToken != null) {
+      $result.precommitToken = precommitToken;
     }
     return $result;
   }
@@ -179,6 +211,9 @@ class PartialResultSet extends $pb.GeneratedMessage {
         4, _omitFieldNames ? '' : 'resumeToken', $pb.PbFieldType.OY)
     ..aOM<ResultSetStats>(5, _omitFieldNames ? '' : 'stats',
         subBuilder: ResultSetStats.create)
+    ..aOM<$250.MultiplexedSessionPrecommitToken>(
+        8, _omitFieldNames ? '' : 'precommitToken',
+        subBuilder: $250.MultiplexedSessionPrecommitToken.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -347,6 +382,27 @@ class PartialResultSet extends $pb.GeneratedMessage {
   void clearStats() => clearField(5);
   @$pb.TagNumber(5)
   ResultSetStats ensureStats() => $_ensure(4);
+
+  /// Optional. A precommit token will be included if the read-write transaction
+  /// is on a multiplexed session.
+  /// The precommit token with the highest sequence number from this transaction
+  /// attempt should be passed to the
+  /// [Commit][google.spanner.v1.Spanner.Commit] request for this transaction.
+  /// This feature is not yet supported and will result in an UNIMPLEMENTED
+  /// error.
+  @$pb.TagNumber(8)
+  $250.MultiplexedSessionPrecommitToken get precommitToken => $_getN(5);
+  @$pb.TagNumber(8)
+  set precommitToken($250.MultiplexedSessionPrecommitToken v) {
+    setField(8, v);
+  }
+
+  @$pb.TagNumber(8)
+  $core.bool hasPrecommitToken() => $_has(5);
+  @$pb.TagNumber(8)
+  void clearPrecommitToken() => clearField(8);
+  @$pb.TagNumber(8)
+  $250.MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(5);
 }
 
 /// Metadata about a [ResultSet][google.spanner.v1.ResultSet] or [PartialResultSet][google.spanner.v1.PartialResultSet].

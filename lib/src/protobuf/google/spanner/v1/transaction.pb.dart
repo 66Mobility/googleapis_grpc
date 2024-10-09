@@ -24,10 +24,15 @@ export 'transaction.pbenum.dart';
 class TransactionOptions_ReadWrite extends $pb.GeneratedMessage {
   factory TransactionOptions_ReadWrite({
     TransactionOptions_ReadWrite_ReadLockMode? readLockMode,
+    $core.List<$core.int>? multiplexedSessionPreviousTransactionId,
   }) {
     final $result = create();
     if (readLockMode != null) {
       $result.readLockMode = readLockMode;
+    }
+    if (multiplexedSessionPreviousTransactionId != null) {
+      $result.multiplexedSessionPreviousTransactionId =
+          multiplexedSessionPreviousTransactionId;
     }
     return $result;
   }
@@ -50,6 +55,10 @@ class TransactionOptions_ReadWrite extends $pb.GeneratedMessage {
             .READ_LOCK_MODE_UNSPECIFIED,
         valueOf: TransactionOptions_ReadWrite_ReadLockMode.valueOf,
         enumValues: TransactionOptions_ReadWrite_ReadLockMode.values)
+    ..a<$core.List<$core.int>>(
+        2,
+        _omitFieldNames ? '' : 'multiplexedSessionPreviousTransactionId',
+        $pb.PbFieldType.OY)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -91,6 +100,24 @@ class TransactionOptions_ReadWrite extends $pb.GeneratedMessage {
   $core.bool hasReadLockMode() => $_has(0);
   @$pb.TagNumber(1)
   void clearReadLockMode() => clearField(1);
+
+  /// Optional. Clients should pass the transaction ID of the previous
+  /// transaction attempt that was aborted if this transaction is being
+  /// executed on a multiplexed session.
+  /// This feature is not yet supported and will result in an UNIMPLEMENTED
+  /// error.
+  @$pb.TagNumber(2)
+  $core.List<$core.int> get multiplexedSessionPreviousTransactionId =>
+      $_getN(1);
+  @$pb.TagNumber(2)
+  set multiplexedSessionPreviousTransactionId($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasMultiplexedSessionPreviousTransactionId() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearMultiplexedSessionPreviousTransactionId() => clearField(2);
 }
 
 /// Message type to initiate a Partitioned DML transaction.
@@ -873,6 +900,7 @@ class Transaction extends $pb.GeneratedMessage {
   factory Transaction({
     $core.List<$core.int>? id,
     $302.Timestamp? readTimestamp,
+    MultiplexedSessionPrecommitToken? precommitToken,
   }) {
     final $result = create();
     if (id != null) {
@@ -880,6 +908,9 @@ class Transaction extends $pb.GeneratedMessage {
     }
     if (readTimestamp != null) {
       $result.readTimestamp = readTimestamp;
+    }
+    if (precommitToken != null) {
+      $result.precommitToken = precommitToken;
     }
     return $result;
   }
@@ -900,6 +931,9 @@ class Transaction extends $pb.GeneratedMessage {
         1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OY)
     ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'readTimestamp',
         subBuilder: $302.Timestamp.create)
+    ..aOM<MultiplexedSessionPrecommitToken>(
+        3, _omitFieldNames ? '' : 'precommitToken',
+        subBuilder: MultiplexedSessionPrecommitToken.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -963,6 +997,29 @@ class Transaction extends $pb.GeneratedMessage {
   void clearReadTimestamp() => clearField(2);
   @$pb.TagNumber(2)
   $302.Timestamp ensureReadTimestamp() => $_ensure(1);
+
+  /// A precommit token will be included in the response of a BeginTransaction
+  /// request if the read-write transaction is on a multiplexed session and
+  /// a mutation_key was specified in the
+  /// [BeginTransaction][google.spanner.v1.BeginTransactionRequest].
+  /// The precommit token with the highest sequence number from this transaction
+  /// attempt should be passed to the [Commit][google.spanner.v1.Spanner.Commit]
+  /// request for this transaction.
+  /// This feature is not yet supported and will result in an UNIMPLEMENTED
+  /// error.
+  @$pb.TagNumber(3)
+  MultiplexedSessionPrecommitToken get precommitToken => $_getN(2);
+  @$pb.TagNumber(3)
+  set precommitToken(MultiplexedSessionPrecommitToken v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasPrecommitToken() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearPrecommitToken() => clearField(3);
+  @$pb.TagNumber(3)
+  MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(2);
 }
 
 enum TransactionSelector_Selector { singleUse, id, begin, notSet }
@@ -1094,6 +1151,99 @@ class TransactionSelector extends $pb.GeneratedMessage {
   void clearBegin() => clearField(3);
   @$pb.TagNumber(3)
   TransactionOptions ensureBegin() => $_ensure(2);
+}
+
+/// When a read-write transaction is executed on a multiplexed session,
+/// this precommit token is sent back to the client
+/// as a part of the [Transaction] message in the BeginTransaction response and
+/// also as a part of the [ResultSet] and [PartialResultSet] responses.
+class MultiplexedSessionPrecommitToken extends $pb.GeneratedMessage {
+  factory MultiplexedSessionPrecommitToken({
+    $core.List<$core.int>? precommitToken,
+    $core.int? seqNum,
+  }) {
+    final $result = create();
+    if (precommitToken != null) {
+      $result.precommitToken = precommitToken;
+    }
+    if (seqNum != null) {
+      $result.seqNum = seqNum;
+    }
+    return $result;
+  }
+  MultiplexedSessionPrecommitToken._() : super();
+  factory MultiplexedSessionPrecommitToken.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MultiplexedSessionPrecommitToken.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MultiplexedSessionPrecommitToken',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
+      createEmptyInstance: create)
+    ..a<$core.List<$core.int>>(
+        1, _omitFieldNames ? '' : 'precommitToken', $pb.PbFieldType.OY)
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'seqNum', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MultiplexedSessionPrecommitToken clone() =>
+      MultiplexedSessionPrecommitToken()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MultiplexedSessionPrecommitToken copyWith(
+          void Function(MultiplexedSessionPrecommitToken) updates) =>
+      super.copyWith(
+              (message) => updates(message as MultiplexedSessionPrecommitToken))
+          as MultiplexedSessionPrecommitToken;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MultiplexedSessionPrecommitToken create() =>
+      MultiplexedSessionPrecommitToken._();
+  MultiplexedSessionPrecommitToken createEmptyInstance() => create();
+  static $pb.PbList<MultiplexedSessionPrecommitToken> createRepeated() =>
+      $pb.PbList<MultiplexedSessionPrecommitToken>();
+  @$core.pragma('dart2js:noInline')
+  static MultiplexedSessionPrecommitToken getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MultiplexedSessionPrecommitToken>(
+          create);
+  static MultiplexedSessionPrecommitToken? _defaultInstance;
+
+  /// Opaque precommit token.
+  @$pb.TagNumber(1)
+  $core.List<$core.int> get precommitToken => $_getN(0);
+  @$pb.TagNumber(1)
+  set precommitToken($core.List<$core.int> v) {
+    $_setBytes(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasPrecommitToken() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearPrecommitToken() => clearField(1);
+
+  /// An incrementing seq number is generated on every precommit token
+  /// that is returned. Clients should remember the precommit token with the
+  /// highest sequence number from the current transaction attempt.
+  @$pb.TagNumber(2)
+  $core.int get seqNum => $_getIZ(1);
+  @$pb.TagNumber(2)
+  set seqNum($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasSeqNum() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearSeqNum() => clearField(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

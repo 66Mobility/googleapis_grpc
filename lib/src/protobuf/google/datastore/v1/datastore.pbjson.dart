@@ -609,6 +609,14 @@ const Mutation$json = {
       '10': 'updateTime'
     },
     {
+      '1': 'conflict_resolution_strategy',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.Mutation.ConflictResolutionStrategy',
+      '10': 'conflictResolutionStrategy'
+    },
+    {
       '1': 'property_mask',
       '3': 9,
       '4': 1,
@@ -616,10 +624,30 @@ const Mutation$json = {
       '6': '.google.datastore.v1.PropertyMask',
       '10': 'propertyMask'
     },
+    {
+      '1': 'property_transforms',
+      '3': 12,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyTransform',
+      '8': {},
+      '10': 'propertyTransforms'
+    },
   ],
+  '4': [Mutation_ConflictResolutionStrategy$json],
   '8': [
     {'1': 'operation'},
     {'1': 'conflict_detection_strategy'},
+  ],
+};
+
+@$core.Deprecated('Use mutationDescriptor instead')
+const Mutation_ConflictResolutionStrategy$json = {
+  '1': 'ConflictResolutionStrategy',
+  '2': [
+    {'1': 'STRATEGY_UNSPECIFIED', '2': 0},
+    {'1': 'SERVER_VALUE', '2': 1},
+    {'1': 'FAIL', '2': 3},
   ],
 };
 
@@ -630,9 +658,104 @@ final $typed_data.Uint8List mutationDescriptor = $convert.base64Decode(
     'AFIGdXBkYXRlEjUKBnVwc2VydBgGIAEoCzIbLmdvb2dsZS5kYXRhc3RvcmUudjEuRW50aXR5SA'
     'BSBnVwc2VydBIyCgZkZWxldGUYByABKAsyGC5nb29nbGUuZGF0YXN0b3JlLnYxLktleUgAUgZk'
     'ZWxldGUSIwoMYmFzZV92ZXJzaW9uGAggASgDSAFSC2Jhc2VWZXJzaW9uEj0KC3VwZGF0ZV90aW'
-    '1lGAsgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgBUgp1cGRhdGVUaW1lEkYKDXBy'
-    'b3BlcnR5X21hc2sYCSABKAsyIS5nb29nbGUuZGF0YXN0b3JlLnYxLlByb3BlcnR5TWFza1IMcH'
-    'JvcGVydHlNYXNrQgsKCW9wZXJhdGlvbkIdChtjb25mbGljdF9kZXRlY3Rpb25fc3RyYXRlZ3k=');
+    '1lGAsgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgBUgp1cGRhdGVUaW1lEnoKHGNv'
+    'bmZsaWN0X3Jlc29sdXRpb25fc3RyYXRlZ3kYCiABKA4yOC5nb29nbGUuZGF0YXN0b3JlLnYxLk'
+    '11dGF0aW9uLkNvbmZsaWN0UmVzb2x1dGlvblN0cmF0ZWd5Uhpjb25mbGljdFJlc29sdXRpb25T'
+    'dHJhdGVneRJGCg1wcm9wZXJ0eV9tYXNrGAkgASgLMiEuZ29vZ2xlLmRhdGFzdG9yZS52MS5Qcm'
+    '9wZXJ0eU1hc2tSDHByb3BlcnR5TWFzaxJcChNwcm9wZXJ0eV90cmFuc2Zvcm1zGAwgAygLMiYu'
+    'Z29vZ2xlLmRhdGFzdG9yZS52MS5Qcm9wZXJ0eVRyYW5zZm9ybUID4EEBUhJwcm9wZXJ0eVRyYW'
+    '5zZm9ybXMiUgoaQ29uZmxpY3RSZXNvbHV0aW9uU3RyYXRlZ3kSGAoUU1RSQVRFR1lfVU5TUEVD'
+    'SUZJRUQQABIQCgxTRVJWRVJfVkFMVUUQARIICgRGQUlMEANCCwoJb3BlcmF0aW9uQh0KG2Nvbm'
+    'ZsaWN0X2RldGVjdGlvbl9zdHJhdGVneQ==');
+
+@$core.Deprecated('Use propertyTransformDescriptor instead')
+const PropertyTransform$json = {
+  '1': 'PropertyTransform',
+  '2': [
+    {'1': 'property', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'property'},
+    {
+      '1': 'set_to_server_value',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.PropertyTransform.ServerValue',
+      '9': 0,
+      '10': 'setToServerValue'
+    },
+    {
+      '1': 'increment',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Value',
+      '9': 0,
+      '10': 'increment'
+    },
+    {
+      '1': 'maximum',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Value',
+      '9': 0,
+      '10': 'maximum'
+    },
+    {
+      '1': 'minimum',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Value',
+      '9': 0,
+      '10': 'minimum'
+    },
+    {
+      '1': 'append_missing_elements',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.ArrayValue',
+      '9': 0,
+      '10': 'appendMissingElements'
+    },
+    {
+      '1': 'remove_all_from_array',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.ArrayValue',
+      '9': 0,
+      '10': 'removeAllFromArray'
+    },
+  ],
+  '4': [PropertyTransform_ServerValue$json],
+  '8': [
+    {'1': 'transform_type'},
+  ],
+};
+
+@$core.Deprecated('Use propertyTransformDescriptor instead')
+const PropertyTransform_ServerValue$json = {
+  '1': 'ServerValue',
+  '2': [
+    {'1': 'SERVER_VALUE_UNSPECIFIED', '2': 0},
+    {'1': 'REQUEST_TIME', '2': 1},
+  ],
+};
+
+/// Descriptor for `PropertyTransform`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List propertyTransformDescriptor = $convert.base64Decode(
+    'ChFQcm9wZXJ0eVRyYW5zZm9ybRIfCghwcm9wZXJ0eRgBIAEoCUID4EEBUghwcm9wZXJ0eRJjCh'
+    'NzZXRfdG9fc2VydmVyX3ZhbHVlGAIgASgOMjIuZ29vZ2xlLmRhdGFzdG9yZS52MS5Qcm9wZXJ0'
+    'eVRyYW5zZm9ybS5TZXJ2ZXJWYWx1ZUgAUhBzZXRUb1NlcnZlclZhbHVlEjoKCWluY3JlbWVudB'
+    'gDIAEoCzIaLmdvb2dsZS5kYXRhc3RvcmUudjEuVmFsdWVIAFIJaW5jcmVtZW50EjYKB21heGlt'
+    'dW0YBCABKAsyGi5nb29nbGUuZGF0YXN0b3JlLnYxLlZhbHVlSABSB21heGltdW0SNgoHbWluaW'
+    '11bRgFIAEoCzIaLmdvb2dsZS5kYXRhc3RvcmUudjEuVmFsdWVIAFIHbWluaW11bRJZChdhcHBl'
+    'bmRfbWlzc2luZ19lbGVtZW50cxgGIAEoCzIfLmdvb2dsZS5kYXRhc3RvcmUudjEuQXJyYXlWYW'
+    'x1ZUgAUhVhcHBlbmRNaXNzaW5nRWxlbWVudHMSVAoVcmVtb3ZlX2FsbF9mcm9tX2FycmF5GAcg'
+    'ASgLMh8uZ29vZ2xlLmRhdGFzdG9yZS52MS5BcnJheVZhbHVlSABSEnJlbW92ZUFsbEZyb21Bcn'
+    'JheSI9CgtTZXJ2ZXJWYWx1ZRIcChhTRVJWRVJfVkFMVUVfVU5TUEVDSUZJRUQQABIQCgxSRVFV'
+    'RVNUX1RJTUUQAUIQCg50cmFuc2Zvcm1fdHlwZQ==');
 
 @$core.Deprecated('Use mutationResultDescriptor instead')
 const MutationResult$json = {
@@ -670,6 +793,14 @@ const MutationResult$json = {
       '5': 8,
       '10': 'conflictDetected'
     },
+    {
+      '1': 'transform_results',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.datastore.v1.Value',
+      '10': 'transformResults'
+    },
   ],
 };
 
@@ -679,7 +810,8 @@ final $typed_data.Uint8List mutationResultDescriptor = $convert.base64Decode(
     'IDa2V5EhgKB3ZlcnNpb24YBCABKANSB3ZlcnNpb24SOwoLY3JlYXRlX3RpbWUYByABKAsyGi5n'
     'b29nbGUucHJvdG9idWYuVGltZXN0YW1wUgpjcmVhdGVUaW1lEjsKC3VwZGF0ZV90aW1lGAYgAS'
     'gLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIKdXBkYXRlVGltZRIrChFjb25mbGljdF9k'
-    'ZXRlY3RlZBgFIAEoCFIQY29uZmxpY3REZXRlY3RlZA==');
+    'ZXRlY3RlZBgFIAEoCFIQY29uZmxpY3REZXRlY3RlZBJHChF0cmFuc2Zvcm1fcmVzdWx0cxgIIA'
+    'MoCzIaLmdvb2dsZS5kYXRhc3RvcmUudjEuVmFsdWVSEHRyYW5zZm9ybVJlc3VsdHM=');
 
 @$core.Deprecated('Use propertyMaskDescriptor instead')
 const PropertyMask$json = {

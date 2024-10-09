@@ -35,6 +35,56 @@ class CommitRequest_Mode extends $pb.ProtobufEnum {
   const CommitRequest_Mode._($core.int v, $core.String n) : super(v, n);
 }
 
+/// The possible ways to resolve a conflict detected in a mutation.
+class Mutation_ConflictResolutionStrategy extends $pb.ProtobufEnum {
+  static const Mutation_ConflictResolutionStrategy STRATEGY_UNSPECIFIED =
+      Mutation_ConflictResolutionStrategy._(
+          0, _omitEnumNames ? '' : 'STRATEGY_UNSPECIFIED');
+  static const Mutation_ConflictResolutionStrategy SERVER_VALUE =
+      Mutation_ConflictResolutionStrategy._(
+          1, _omitEnumNames ? '' : 'SERVER_VALUE');
+  static const Mutation_ConflictResolutionStrategy FAIL =
+      Mutation_ConflictResolutionStrategy._(3, _omitEnumNames ? '' : 'FAIL');
+
+  static const $core.List<Mutation_ConflictResolutionStrategy> values =
+      <Mutation_ConflictResolutionStrategy>[
+    STRATEGY_UNSPECIFIED,
+    SERVER_VALUE,
+    FAIL,
+  ];
+
+  static final $core.Map<$core.int, Mutation_ConflictResolutionStrategy>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Mutation_ConflictResolutionStrategy? valueOf($core.int value) =>
+      _byValue[value];
+
+  const Mutation_ConflictResolutionStrategy._($core.int v, $core.String n)
+      : super(v, n);
+}
+
+/// A value that is calculated by the server.
+class PropertyTransform_ServerValue extends $pb.ProtobufEnum {
+  static const PropertyTransform_ServerValue SERVER_VALUE_UNSPECIFIED =
+      PropertyTransform_ServerValue._(
+          0, _omitEnumNames ? '' : 'SERVER_VALUE_UNSPECIFIED');
+  static const PropertyTransform_ServerValue REQUEST_TIME =
+      PropertyTransform_ServerValue._(1, _omitEnumNames ? '' : 'REQUEST_TIME');
+
+  static const $core.List<PropertyTransform_ServerValue> values =
+      <PropertyTransform_ServerValue>[
+    SERVER_VALUE_UNSPECIFIED,
+    REQUEST_TIME,
+  ];
+
+  static final $core.Map<$core.int, PropertyTransform_ServerValue> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static PropertyTransform_ServerValue? valueOf($core.int value) =>
+      _byValue[value];
+
+  const PropertyTransform_ServerValue._($core.int v, $core.String n)
+      : super(v, n);
+}
+
 /// The possible values for read consistencies.
 class ReadOptions_ReadConsistency extends $pb.ProtobufEnum {
   static const ReadOptions_ReadConsistency READ_CONSISTENCY_UNSPECIFIED =

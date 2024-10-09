@@ -41,6 +41,15 @@ const ResultSet$json = {
       '6': '.google.spanner.v1.ResultSetStats',
       '10': 'stats'
     },
+    {
+      '1': 'precommit_token',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.MultiplexedSessionPrecommitToken',
+      '8': {},
+      '10': 'precommitToken'
+    },
   ],
 };
 
@@ -49,7 +58,9 @@ final $typed_data.Uint8List resultSetDescriptor = $convert.base64Decode(
     'CglSZXN1bHRTZXQSQAoIbWV0YWRhdGEYASABKAsyJC5nb29nbGUuc3Bhbm5lci52MS5SZXN1bH'
     'RTZXRNZXRhZGF0YVIIbWV0YWRhdGESLgoEcm93cxgCIAMoCzIaLmdvb2dsZS5wcm90b2J1Zi5M'
     'aXN0VmFsdWVSBHJvd3MSNwoFc3RhdHMYAyABKAsyIS5nb29nbGUuc3Bhbm5lci52MS5SZXN1bH'
-    'RTZXRTdGF0c1IFc3RhdHM=');
+    'RTZXRTdGF0c1IFc3RhdHMSYQoPcHJlY29tbWl0X3Rva2VuGAUgASgLMjMuZ29vZ2xlLnNwYW5u'
+    'ZXIudjEuTXVsdGlwbGV4ZWRTZXNzaW9uUHJlY29tbWl0VG9rZW5CA+BBAVIOcHJlY29tbWl0VG'
+    '9rZW4=');
 
 @$core.Deprecated('Use partialResultSetDescriptor instead')
 const PartialResultSet$json = {
@@ -81,6 +92,15 @@ const PartialResultSet$json = {
       '6': '.google.spanner.v1.ResultSetStats',
       '10': 'stats'
     },
+    {
+      '1': 'precommit_token',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.v1.MultiplexedSessionPrecommitToken',
+      '8': {},
+      '10': 'precommitToken'
+    },
   ],
 };
 
@@ -90,7 +110,9 @@ final $typed_data.Uint8List partialResultSetDescriptor = $convert.base64Decode(
     'EuUmVzdWx0U2V0TWV0YWRhdGFSCG1ldGFkYXRhEi4KBnZhbHVlcxgCIAMoCzIWLmdvb2dsZS5w'
     'cm90b2J1Zi5WYWx1ZVIGdmFsdWVzEiMKDWNodW5rZWRfdmFsdWUYAyABKAhSDGNodW5rZWRWYW'
     'x1ZRIhCgxyZXN1bWVfdG9rZW4YBCABKAxSC3Jlc3VtZVRva2VuEjcKBXN0YXRzGAUgASgLMiEu'
-    'Z29vZ2xlLnNwYW5uZXIudjEuUmVzdWx0U2V0U3RhdHNSBXN0YXRz');
+    'Z29vZ2xlLnNwYW5uZXIudjEuUmVzdWx0U2V0U3RhdHNSBXN0YXRzEmEKD3ByZWNvbW1pdF90b2'
+    'tlbhgIIAEoCzIzLmdvb2dsZS5zcGFubmVyLnYxLk11bHRpcGxleGVkU2Vzc2lvblByZWNvbW1p'
+    'dFRva2VuQgPgQQFSDnByZWNvbW1pdFRva2Vu');
 
 @$core.Deprecated('Use resultSetMetadataDescriptor instead')
 const ResultSetMetadata$json = {

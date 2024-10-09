@@ -1939,7 +1939,9 @@ class Mutation extends $pb.GeneratedMessage {
     $421.Key? delete,
     $fixnum.Int64? baseVersion,
     PropertyMask? propertyMask,
+    Mutation_ConflictResolutionStrategy? conflictResolutionStrategy,
     $302.Timestamp? updateTime,
+    $core.Iterable<PropertyTransform>? propertyTransforms,
   }) {
     final $result = create();
     if (insert != null) {
@@ -1960,8 +1962,14 @@ class Mutation extends $pb.GeneratedMessage {
     if (propertyMask != null) {
       $result.propertyMask = propertyMask;
     }
+    if (conflictResolutionStrategy != null) {
+      $result.conflictResolutionStrategy = conflictResolutionStrategy;
+    }
     if (updateTime != null) {
       $result.updateTime = updateTime;
+    }
+    if (propertyTransforms != null) {
+      $result.propertyTransforms.addAll(propertyTransforms);
     }
     return $result;
   }
@@ -2005,8 +2013,17 @@ class Mutation extends $pb.GeneratedMessage {
     ..aInt64(8, _omitFieldNames ? '' : 'baseVersion')
     ..aOM<PropertyMask>(9, _omitFieldNames ? '' : 'propertyMask',
         subBuilder: PropertyMask.create)
+    ..e<Mutation_ConflictResolutionStrategy>(10,
+        _omitFieldNames ? '' : 'conflictResolutionStrategy', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            Mutation_ConflictResolutionStrategy.STRATEGY_UNSPECIFIED,
+        valueOf: Mutation_ConflictResolutionStrategy.valueOf,
+        enumValues: Mutation_ConflictResolutionStrategy.values)
     ..aOM<$302.Timestamp>(11, _omitFieldNames ? '' : 'updateTime',
         subBuilder: $302.Timestamp.create)
+    ..pc<PropertyTransform>(
+        12, _omitFieldNames ? '' : 'propertyTransforms', $pb.PbFieldType.PM,
+        subBuilder: PropertyTransform.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2139,22 +2156,322 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   PropertyMask ensurePropertyMask() => $_ensure(5);
 
+  /// The strategy to use when a conflict is detected. Defaults to
+  /// `SERVER_VALUE`.
+  /// If this is set, then `conflict_detection_strategy` must also be set.
+  @$pb.TagNumber(10)
+  Mutation_ConflictResolutionStrategy get conflictResolutionStrategy =>
+      $_getN(6);
+  @$pb.TagNumber(10)
+  set conflictResolutionStrategy(Mutation_ConflictResolutionStrategy v) {
+    setField(10, v);
+  }
+
+  @$pb.TagNumber(10)
+  $core.bool hasConflictResolutionStrategy() => $_has(6);
+  @$pb.TagNumber(10)
+  void clearConflictResolutionStrategy() => clearField(10);
+
   /// The update time of the entity that this mutation is being applied
   /// to. If this does not match the current update time on the server, the
   /// mutation conflicts.
   @$pb.TagNumber(11)
-  $302.Timestamp get updateTime => $_getN(6);
+  $302.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(11)
   set updateTime($302.Timestamp v) {
     setField(11, v);
   }
 
   @$pb.TagNumber(11)
-  $core.bool hasUpdateTime() => $_has(6);
+  $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $302.Timestamp ensureUpdateTime() => $_ensure(6);
+  $302.Timestamp ensureUpdateTime() => $_ensure(7);
+
+  ///  Optional. The transforms to perform on the entity.
+  ///
+  ///  This field can be set only when the operation is `insert`, `update`,
+  ///  or `upsert`. If present, the transforms are be applied to the entity
+  ///  regardless of the property mask, in order, after the operation.
+  @$pb.TagNumber(12)
+  $core.List<PropertyTransform> get propertyTransforms => $_getList(8);
+}
+
+enum PropertyTransform_TransformType {
+  setToServerValue,
+  increment,
+  maximum,
+  minimum,
+  appendMissingElements,
+  removeAllFromArray,
+  notSet
+}
+
+/// A transformation of an entity property.
+class PropertyTransform extends $pb.GeneratedMessage {
+  factory PropertyTransform({
+    $core.String? property,
+    PropertyTransform_ServerValue? setToServerValue,
+    $421.Value? increment,
+    $421.Value? maximum,
+    $421.Value? minimum,
+    $421.ArrayValue? appendMissingElements,
+    $421.ArrayValue? removeAllFromArray,
+  }) {
+    final $result = create();
+    if (property != null) {
+      $result.property = property;
+    }
+    if (setToServerValue != null) {
+      $result.setToServerValue = setToServerValue;
+    }
+    if (increment != null) {
+      $result.increment = increment;
+    }
+    if (maximum != null) {
+      $result.maximum = maximum;
+    }
+    if (minimum != null) {
+      $result.minimum = minimum;
+    }
+    if (appendMissingElements != null) {
+      $result.appendMissingElements = appendMissingElements;
+    }
+    if (removeAllFromArray != null) {
+      $result.removeAllFromArray = removeAllFromArray;
+    }
+    return $result;
+  }
+  PropertyTransform._() : super();
+  factory PropertyTransform.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PropertyTransform.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, PropertyTransform_TransformType>
+      _PropertyTransform_TransformTypeByTag = {
+    2: PropertyTransform_TransformType.setToServerValue,
+    3: PropertyTransform_TransformType.increment,
+    4: PropertyTransform_TransformType.maximum,
+    5: PropertyTransform_TransformType.minimum,
+    6: PropertyTransform_TransformType.appendMissingElements,
+    7: PropertyTransform_TransformType.removeAllFromArray,
+    0: PropertyTransform_TransformType.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PropertyTransform',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..oo(0, [2, 3, 4, 5, 6, 7])
+    ..aOS(1, _omitFieldNames ? '' : 'property')
+    ..e<PropertyTransform_ServerValue>(
+        2, _omitFieldNames ? '' : 'setToServerValue', $pb.PbFieldType.OE,
+        defaultOrMaker: PropertyTransform_ServerValue.SERVER_VALUE_UNSPECIFIED,
+        valueOf: PropertyTransform_ServerValue.valueOf,
+        enumValues: PropertyTransform_ServerValue.values)
+    ..aOM<$421.Value>(3, _omitFieldNames ? '' : 'increment',
+        subBuilder: $421.Value.create)
+    ..aOM<$421.Value>(4, _omitFieldNames ? '' : 'maximum',
+        subBuilder: $421.Value.create)
+    ..aOM<$421.Value>(5, _omitFieldNames ? '' : 'minimum',
+        subBuilder: $421.Value.create)
+    ..aOM<$421.ArrayValue>(6, _omitFieldNames ? '' : 'appendMissingElements',
+        subBuilder: $421.ArrayValue.create)
+    ..aOM<$421.ArrayValue>(7, _omitFieldNames ? '' : 'removeAllFromArray',
+        subBuilder: $421.ArrayValue.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PropertyTransform clone() => PropertyTransform()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PropertyTransform copyWith(void Function(PropertyTransform) updates) =>
+      super.copyWith((message) => updates(message as PropertyTransform))
+          as PropertyTransform;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static PropertyTransform create() => PropertyTransform._();
+  PropertyTransform createEmptyInstance() => create();
+  static $pb.PbList<PropertyTransform> createRepeated() =>
+      $pb.PbList<PropertyTransform>();
+  @$core.pragma('dart2js:noInline')
+  static PropertyTransform getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PropertyTransform>(create);
+  static PropertyTransform? _defaultInstance;
+
+  PropertyTransform_TransformType whichTransformType() =>
+      _PropertyTransform_TransformTypeByTag[$_whichOneof(0)]!;
+  void clearTransformType() => clearField($_whichOneof(0));
+
+  ///  Optional. The name of the property.
+  ///
+  ///  Property paths (a list of property names separated by dots (`.`)) may be
+  ///  used to refer to properties inside entity values. For example `foo.bar`
+  ///  means the property `bar` inside the entity property `foo`.
+  ///
+  ///  If a property name contains a dot `.` or a backlslash `\`, then that name
+  ///  must be escaped.
+  @$pb.TagNumber(1)
+  $core.String get property => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set property($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasProperty() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearProperty() => clearField(1);
+
+  /// Sets the property to the given server value.
+  @$pb.TagNumber(2)
+  PropertyTransform_ServerValue get setToServerValue => $_getN(1);
+  @$pb.TagNumber(2)
+  set setToServerValue(PropertyTransform_ServerValue v) {
+    setField(2, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasSetToServerValue() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearSetToServerValue() => clearField(2);
+
+  ///  Adds the given value to the property's current value.
+  ///
+  ///  This must be an integer or a double value.
+  ///  If the property is not an integer or double, or if the property does not
+  ///  yet exist, the transformation will set the property to the given value.
+  ///  If either of the given value or the current property value are doubles,
+  ///  both values will be interpreted as doubles. Double arithmetic and
+  ///  representation of double values follows IEEE 754 semantics.
+  ///  If there is positive/negative integer overflow, the property is resolved
+  ///  to the largest magnitude positive/negative integer.
+  @$pb.TagNumber(3)
+  $421.Value get increment => $_getN(2);
+  @$pb.TagNumber(3)
+  set increment($421.Value v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasIncrement() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearIncrement() => clearField(3);
+  @$pb.TagNumber(3)
+  $421.Value ensureIncrement() => $_ensure(2);
+
+  ///  Sets the property to the maximum of its current value and the given
+  ///  value.
+  ///
+  ///  This must be an integer or a double value.
+  ///  If the property is not an integer or double, or if the property does not
+  ///  yet exist, the transformation will set the property to the given value.
+  ///  If a maximum operation is applied where the property and the input value
+  ///  are of mixed types (that is - one is an integer and one is a double)
+  ///  the property takes on the type of the larger operand. If the operands are
+  ///  equivalent (e.g. 3 and 3.0), the property does not change.
+  ///  0, 0.0, and -0.0 are all zero. The maximum of a zero stored value and
+  ///  zero input value is always the stored value.
+  ///  The maximum of any numeric value x and NaN is NaN.
+  @$pb.TagNumber(4)
+  $421.Value get maximum => $_getN(3);
+  @$pb.TagNumber(4)
+  set maximum($421.Value v) {
+    setField(4, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasMaximum() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearMaximum() => clearField(4);
+  @$pb.TagNumber(4)
+  $421.Value ensureMaximum() => $_ensure(3);
+
+  ///  Sets the property to the minimum of its current value and the given
+  ///  value.
+  ///
+  ///  This must be an integer or a double value.
+  ///  If the property is not an integer or double, or if the property does not
+  ///  yet exist, the transformation will set the property to the input value.
+  ///  If a minimum operation is applied where the property and the input value
+  ///  are of mixed types (that is - one is an integer and one is a double)
+  ///  the property takes on the type of the smaller operand. If the operands
+  ///  are equivalent (e.g. 3 and 3.0), the property does not change. 0, 0.0,
+  ///  and -0.0 are all zero. The minimum of a zero stored value and zero input
+  ///  value is always the stored value. The minimum of any numeric value x and
+  ///  NaN is NaN.
+  @$pb.TagNumber(5)
+  $421.Value get minimum => $_getN(4);
+  @$pb.TagNumber(5)
+  set minimum($421.Value v) {
+    setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasMinimum() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearMinimum() => clearField(5);
+  @$pb.TagNumber(5)
+  $421.Value ensureMinimum() => $_ensure(4);
+
+  ///  Appends the given elements in order if they are not already present in
+  ///  the current property value.
+  ///  If the property is not an array, or if the property does not yet exist,
+  ///  it is first set to the empty array.
+  ///
+  ///  Equivalent numbers of different types (e.g. 3L and 3.0) are
+  ///  considered equal when checking if a value is missing.
+  ///  NaN is equal to NaN, and the null value is equal to the null value.
+  ///  If the input contains multiple equivalent values, only the first will
+  ///  be considered.
+  ///
+  ///  The corresponding transform result will be the null value.
+  @$pb.TagNumber(6)
+  $421.ArrayValue get appendMissingElements => $_getN(5);
+  @$pb.TagNumber(6)
+  set appendMissingElements($421.ArrayValue v) {
+    setField(6, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasAppendMissingElements() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearAppendMissingElements() => clearField(6);
+  @$pb.TagNumber(6)
+  $421.ArrayValue ensureAppendMissingElements() => $_ensure(5);
+
+  ///  Removes all of the given elements from the array in the property.
+  ///  If the property is not an array, or if the property does not yet exist,
+  ///  it is set to the empty array.
+  ///
+  ///  Equivalent numbers of different types (e.g. 3L and 3.0) are
+  ///  considered equal when deciding whether an element should be removed.
+  ///  NaN is equal to NaN, and the null value is equal to the null value.
+  ///  This will remove all equivalent values if there are duplicates.
+  ///
+  ///  The corresponding transform result will be the null value.
+  @$pb.TagNumber(7)
+  $421.ArrayValue get removeAllFromArray => $_getN(6);
+  @$pb.TagNumber(7)
+  set removeAllFromArray($421.ArrayValue v) {
+    setField(7, v);
+  }
+
+  @$pb.TagNumber(7)
+  $core.bool hasRemoveAllFromArray() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearRemoveAllFromArray() => clearField(7);
+  @$pb.TagNumber(7)
+  $421.ArrayValue ensureRemoveAllFromArray() => $_ensure(6);
 }
 
 /// The result of applying a mutation.
@@ -2165,6 +2482,7 @@ class MutationResult extends $pb.GeneratedMessage {
     $core.bool? conflictDetected,
     $302.Timestamp? updateTime,
     $302.Timestamp? createTime,
+    $core.Iterable<$421.Value>? transformResults,
   }) {
     final $result = create();
     if (key != null) {
@@ -2181,6 +2499,9 @@ class MutationResult extends $pb.GeneratedMessage {
     }
     if (createTime != null) {
       $result.createTime = createTime;
+    }
+    if (transformResults != null) {
+      $result.transformResults.addAll(transformResults);
     }
     return $result;
   }
@@ -2205,6 +2526,9 @@ class MutationResult extends $pb.GeneratedMessage {
         subBuilder: $302.Timestamp.create)
     ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'createTime',
         subBuilder: $302.Timestamp.create)
+    ..pc<$421.Value>(
+        8, _omitFieldNames ? '' : 'transformResults', $pb.PbFieldType.PM,
+        subBuilder: $421.Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2309,6 +2633,12 @@ class MutationResult extends $pb.GeneratedMessage {
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
   $302.Timestamp ensureCreateTime() => $_ensure(4);
+
+  /// The results of applying each
+  /// [PropertyTransform][google.datastore.v1.PropertyTransform], in the same
+  /// order of the request.
+  @$pb.TagNumber(8)
+  $core.List<$421.Value> get transformResults => $_getList(5);
 }
 
 /// The set of arbitrarily nested property paths used to restrict an operation to
