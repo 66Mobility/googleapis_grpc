@@ -1022,6 +1022,407 @@ class PlatformLogsSettings extends $pb.GeneratedMessage {
   void clearSeverity() => clearField(1);
 }
 
+/// Specifies the reason why some data may have been left out of
+/// the desired Pub/Sub message due to the API message limits
+/// (https://cloud.google.com/pubsub/quotas#resource_limits). For example,
+/// when the number of attributes is larger than 100, the number of
+/// attributes is truncated to 100 to respect the limit on the attribute count.
+/// Other attribute limits are treated similarly. When the size of the desired
+/// message would've been larger than 10MB, the message won't be published at
+/// all, and ingestion of the subsequent messages will proceed as normal.
+class IngestionFailureEvent_ApiViolationReason extends $pb.GeneratedMessage {
+  factory IngestionFailureEvent_ApiViolationReason() => create();
+  IngestionFailureEvent_ApiViolationReason._() : super();
+  factory IngestionFailureEvent_ApiViolationReason.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IngestionFailureEvent_ApiViolationReason.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IngestionFailureEvent.ApiViolationReason',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_ApiViolationReason clone() =>
+      IngestionFailureEvent_ApiViolationReason()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_ApiViolationReason copyWith(
+          void Function(IngestionFailureEvent_ApiViolationReason) updates) =>
+      super.copyWith((message) =>
+              updates(message as IngestionFailureEvent_ApiViolationReason))
+          as IngestionFailureEvent_ApiViolationReason;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_ApiViolationReason create() =>
+      IngestionFailureEvent_ApiViolationReason._();
+  IngestionFailureEvent_ApiViolationReason createEmptyInstance() => create();
+  static $pb.PbList<IngestionFailureEvent_ApiViolationReason>
+      createRepeated() =>
+          $pb.PbList<IngestionFailureEvent_ApiViolationReason>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_ApiViolationReason getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          IngestionFailureEvent_ApiViolationReason>(create);
+  static IngestionFailureEvent_ApiViolationReason? _defaultInstance;
+}
+
+/// Set when an Avro file is unsupported or its format is not valid. When this
+/// occurs, one or more Avro objects won't be ingested.
+class IngestionFailureEvent_AvroFailureReason extends $pb.GeneratedMessage {
+  factory IngestionFailureEvent_AvroFailureReason() => create();
+  IngestionFailureEvent_AvroFailureReason._() : super();
+  factory IngestionFailureEvent_AvroFailureReason.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IngestionFailureEvent_AvroFailureReason.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IngestionFailureEvent.AvroFailureReason',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_AvroFailureReason clone() =>
+      IngestionFailureEvent_AvroFailureReason()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_AvroFailureReason copyWith(
+          void Function(IngestionFailureEvent_AvroFailureReason) updates) =>
+      super.copyWith((message) =>
+              updates(message as IngestionFailureEvent_AvroFailureReason))
+          as IngestionFailureEvent_AvroFailureReason;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_AvroFailureReason create() =>
+      IngestionFailureEvent_AvroFailureReason._();
+  IngestionFailureEvent_AvroFailureReason createEmptyInstance() => create();
+  static $pb.PbList<IngestionFailureEvent_AvroFailureReason> createRepeated() =>
+      $pb.PbList<IngestionFailureEvent_AvroFailureReason>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_AvroFailureReason getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          IngestionFailureEvent_AvroFailureReason>(create);
+  static IngestionFailureEvent_AvroFailureReason? _defaultInstance;
+}
+
+enum IngestionFailureEvent_CloudStorageFailure_Reason {
+  avroFailureReason,
+  apiViolationReason,
+  notSet
+}
+
+/// Failure when ingesting from a Cloud Storage source.
+class IngestionFailureEvent_CloudStorageFailure extends $pb.GeneratedMessage {
+  factory IngestionFailureEvent_CloudStorageFailure({
+    $core.String? bucket,
+    $core.String? objectName,
+    $fixnum.Int64? objectGeneration,
+    IngestionFailureEvent_AvroFailureReason? avroFailureReason,
+    IngestionFailureEvent_ApiViolationReason? apiViolationReason,
+  }) {
+    final $result = create();
+    if (bucket != null) {
+      $result.bucket = bucket;
+    }
+    if (objectName != null) {
+      $result.objectName = objectName;
+    }
+    if (objectGeneration != null) {
+      $result.objectGeneration = objectGeneration;
+    }
+    if (avroFailureReason != null) {
+      $result.avroFailureReason = avroFailureReason;
+    }
+    if (apiViolationReason != null) {
+      $result.apiViolationReason = apiViolationReason;
+    }
+    return $result;
+  }
+  IngestionFailureEvent_CloudStorageFailure._() : super();
+  factory IngestionFailureEvent_CloudStorageFailure.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IngestionFailureEvent_CloudStorageFailure.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static const $core
+      .Map<$core.int, IngestionFailureEvent_CloudStorageFailure_Reason>
+      _IngestionFailureEvent_CloudStorageFailure_ReasonByTag = {
+    5: IngestionFailureEvent_CloudStorageFailure_Reason.avroFailureReason,
+    6: IngestionFailureEvent_CloudStorageFailure_Reason.apiViolationReason,
+    0: IngestionFailureEvent_CloudStorageFailure_Reason.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IngestionFailureEvent.CloudStorageFailure',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
+      createEmptyInstance: create)
+    ..oo(0, [5, 6])
+    ..aOS(1, _omitFieldNames ? '' : 'bucket')
+    ..aOS(2, _omitFieldNames ? '' : 'objectName')
+    ..aInt64(3, _omitFieldNames ? '' : 'objectGeneration')
+    ..aOM<IngestionFailureEvent_AvroFailureReason>(
+        5, _omitFieldNames ? '' : 'avroFailureReason',
+        subBuilder: IngestionFailureEvent_AvroFailureReason.create)
+    ..aOM<IngestionFailureEvent_ApiViolationReason>(
+        6, _omitFieldNames ? '' : 'apiViolationReason',
+        subBuilder: IngestionFailureEvent_ApiViolationReason.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_CloudStorageFailure clone() =>
+      IngestionFailureEvent_CloudStorageFailure()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_CloudStorageFailure copyWith(
+          void Function(IngestionFailureEvent_CloudStorageFailure) updates) =>
+      super.copyWith((message) =>
+              updates(message as IngestionFailureEvent_CloudStorageFailure))
+          as IngestionFailureEvent_CloudStorageFailure;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_CloudStorageFailure create() =>
+      IngestionFailureEvent_CloudStorageFailure._();
+  IngestionFailureEvent_CloudStorageFailure createEmptyInstance() => create();
+  static $pb.PbList<IngestionFailureEvent_CloudStorageFailure>
+      createRepeated() =>
+          $pb.PbList<IngestionFailureEvent_CloudStorageFailure>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_CloudStorageFailure getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          IngestionFailureEvent_CloudStorageFailure>(create);
+  static IngestionFailureEvent_CloudStorageFailure? _defaultInstance;
+
+  IngestionFailureEvent_CloudStorageFailure_Reason whichReason() =>
+      _IngestionFailureEvent_CloudStorageFailure_ReasonByTag[$_whichOneof(0)]!;
+  void clearReason() => clearField($_whichOneof(0));
+
+  /// Optional. Name of the Cloud Storage bucket used for ingestion.
+  @$pb.TagNumber(1)
+  $core.String get bucket => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set bucket($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasBucket() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearBucket() => clearField(1);
+
+  /// Optional. Name of the Cloud Storage object which contained the section
+  /// that couldn't be ingested.
+  @$pb.TagNumber(2)
+  $core.String get objectName => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set objectName($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasObjectName() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearObjectName() => clearField(2);
+
+  /// Optional. Generation of the Cloud Storage object which contained the
+  /// section that couldn't be ingested.
+  @$pb.TagNumber(3)
+  $fixnum.Int64 get objectGeneration => $_getI64(2);
+  @$pb.TagNumber(3)
+  set objectGeneration($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasObjectGeneration() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearObjectGeneration() => clearField(3);
+
+  /// Optional. Failure encountered when parsing an Avro file.
+  @$pb.TagNumber(5)
+  IngestionFailureEvent_AvroFailureReason get avroFailureReason => $_getN(3);
+  @$pb.TagNumber(5)
+  set avroFailureReason(IngestionFailureEvent_AvroFailureReason v) {
+    setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasAvroFailureReason() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearAvroFailureReason() => clearField(5);
+  @$pb.TagNumber(5)
+  IngestionFailureEvent_AvroFailureReason ensureAvroFailureReason() =>
+      $_ensure(3);
+
+  /// Optional. The Pub/Sub API limits prevented the desired message from
+  /// being published.
+  @$pb.TagNumber(6)
+  IngestionFailureEvent_ApiViolationReason get apiViolationReason => $_getN(4);
+  @$pb.TagNumber(6)
+  set apiViolationReason(IngestionFailureEvent_ApiViolationReason v) {
+    setField(6, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasApiViolationReason() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearApiViolationReason() => clearField(6);
+  @$pb.TagNumber(6)
+  IngestionFailureEvent_ApiViolationReason ensureApiViolationReason() =>
+      $_ensure(4);
+}
+
+enum IngestionFailureEvent_Failure { cloudStorageFailure, notSet }
+
+/// Payload of the Platform Log entry sent when a failure is encountered while
+/// ingesting.
+class IngestionFailureEvent extends $pb.GeneratedMessage {
+  factory IngestionFailureEvent({
+    $core.String? topic,
+    $core.String? errorMessage,
+    IngestionFailureEvent_CloudStorageFailure? cloudStorageFailure,
+  }) {
+    final $result = create();
+    if (topic != null) {
+      $result.topic = topic;
+    }
+    if (errorMessage != null) {
+      $result.errorMessage = errorMessage;
+    }
+    if (cloudStorageFailure != null) {
+      $result.cloudStorageFailure = cloudStorageFailure;
+    }
+    return $result;
+  }
+  IngestionFailureEvent._() : super();
+  factory IngestionFailureEvent.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IngestionFailureEvent.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, IngestionFailureEvent_Failure>
+      _IngestionFailureEvent_FailureByTag = {
+    3: IngestionFailureEvent_Failure.cloudStorageFailure,
+    0: IngestionFailureEvent_Failure.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IngestionFailureEvent',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
+      createEmptyInstance: create)
+    ..oo(0, [3])
+    ..aOS(1, _omitFieldNames ? '' : 'topic')
+    ..aOS(2, _omitFieldNames ? '' : 'errorMessage')
+    ..aOM<IngestionFailureEvent_CloudStorageFailure>(
+        3, _omitFieldNames ? '' : 'cloudStorageFailure',
+        subBuilder: IngestionFailureEvent_CloudStorageFailure.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent clone() =>
+      IngestionFailureEvent()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent copyWith(
+          void Function(IngestionFailureEvent) updates) =>
+      super.copyWith((message) => updates(message as IngestionFailureEvent))
+          as IngestionFailureEvent;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent create() => IngestionFailureEvent._();
+  IngestionFailureEvent createEmptyInstance() => create();
+  static $pb.PbList<IngestionFailureEvent> createRepeated() =>
+      $pb.PbList<IngestionFailureEvent>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IngestionFailureEvent>(create);
+  static IngestionFailureEvent? _defaultInstance;
+
+  IngestionFailureEvent_Failure whichFailure() =>
+      _IngestionFailureEvent_FailureByTag[$_whichOneof(0)]!;
+  void clearFailure() => clearField($_whichOneof(0));
+
+  /// Required. Name of the import topic. Format is:
+  /// projects/{project_name}/topics/{topic_name}.
+  @$pb.TagNumber(1)
+  $core.String get topic => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set topic($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasTopic() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearTopic() => clearField(1);
+
+  /// Required. Error details explaining why ingestion to Pub/Sub has failed.
+  @$pb.TagNumber(2)
+  $core.String get errorMessage => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set errorMessage($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasErrorMessage() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearErrorMessage() => clearField(2);
+
+  /// Optional. Failure when ingesting from Cloud Storage.
+  @$pb.TagNumber(3)
+  IngestionFailureEvent_CloudStorageFailure get cloudStorageFailure =>
+      $_getN(2);
+  @$pb.TagNumber(3)
+  set cloudStorageFailure(IngestionFailureEvent_CloudStorageFailure v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasCloudStorageFailure() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearCloudStorageFailure() => clearField(3);
+  @$pb.TagNumber(3)
+  IngestionFailureEvent_CloudStorageFailure ensureCloudStorageFailure() =>
+      $_ensure(2);
+}
+
 /// A topic resource.
 class Topic extends $pb.GeneratedMessage {
   factory Topic({

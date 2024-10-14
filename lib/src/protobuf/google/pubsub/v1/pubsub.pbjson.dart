@@ -349,6 +349,105 @@ final $typed_data.Uint8List platformLogsSettingsDescriptor = $convert.base64Deco
     'ZXJpdHkSGAoUU0VWRVJJVFlfVU5TUEVDSUZJRUQQABIMCghESVNBQkxFRBABEgkKBURFQlVHEA'
     'ISCAoESU5GTxADEgsKB1dBUk5JTkcQBBIJCgVFUlJPUhAF');
 
+@$core.Deprecated('Use ingestionFailureEventDescriptor instead')
+const IngestionFailureEvent$json = {
+  '1': 'IngestionFailureEvent',
+  '2': [
+    {'1': 'topic', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'topic'},
+    {
+      '1': 'error_message',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'errorMessage'
+    },
+    {
+      '1': 'cloud_storage_failure',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.IngestionFailureEvent.CloudStorageFailure',
+      '8': {},
+      '9': 0,
+      '10': 'cloudStorageFailure'
+    },
+  ],
+  '3': [
+    IngestionFailureEvent_ApiViolationReason$json,
+    IngestionFailureEvent_AvroFailureReason$json,
+    IngestionFailureEvent_CloudStorageFailure$json
+  ],
+  '8': [
+    {'1': 'failure'},
+  ],
+};
+
+@$core.Deprecated('Use ingestionFailureEventDescriptor instead')
+const IngestionFailureEvent_ApiViolationReason$json = {
+  '1': 'ApiViolationReason',
+};
+
+@$core.Deprecated('Use ingestionFailureEventDescriptor instead')
+const IngestionFailureEvent_AvroFailureReason$json = {
+  '1': 'AvroFailureReason',
+};
+
+@$core.Deprecated('Use ingestionFailureEventDescriptor instead')
+const IngestionFailureEvent_CloudStorageFailure$json = {
+  '1': 'CloudStorageFailure',
+  '2': [
+    {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
+    {'1': 'object_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'objectName'},
+    {
+      '1': 'object_generation',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'objectGeneration'
+    },
+    {
+      '1': 'avro_failure_reason',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.IngestionFailureEvent.AvroFailureReason',
+      '8': {},
+      '9': 0,
+      '10': 'avroFailureReason'
+    },
+    {
+      '1': 'api_violation_reason',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.pubsub.v1.IngestionFailureEvent.ApiViolationReason',
+      '8': {},
+      '9': 0,
+      '10': 'apiViolationReason'
+    },
+  ],
+  '8': [
+    {'1': 'reason'},
+  ],
+};
+
+/// Descriptor for `IngestionFailureEvent`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List ingestionFailureEventDescriptor = $convert.base64Decode(
+    'ChVJbmdlc3Rpb25GYWlsdXJlRXZlbnQSGQoFdG9waWMYASABKAlCA+BBAlIFdG9waWMSKAoNZX'
+    'Jyb3JfbWVzc2FnZRgCIAEoCUID4EECUgxlcnJvck1lc3NhZ2USdgoVY2xvdWRfc3RvcmFnZV9m'
+    'YWlsdXJlGAMgASgLMjsuZ29vZ2xlLnB1YnN1Yi52MS5Jbmdlc3Rpb25GYWlsdXJlRXZlbnQuQ2'
+    'xvdWRTdG9yYWdlRmFpbHVyZUID4EEBSABSE2Nsb3VkU3RvcmFnZUZhaWx1cmUaFAoSQXBpVmlv'
+    'bGF0aW9uUmVhc29uGhMKEUF2cm9GYWlsdXJlUmVhc29uGvsCChNDbG91ZFN0b3JhZ2VGYWlsdX'
+    'JlEhsKBmJ1Y2tldBgBIAEoCUID4EEBUgZidWNrZXQSJAoLb2JqZWN0X25hbWUYAiABKAlCA+BB'
+    'AVIKb2JqZWN0TmFtZRIwChFvYmplY3RfZ2VuZXJhdGlvbhgDIAEoA0ID4EEBUhBvYmplY3RHZW'
+    '5lcmF0aW9uEnAKE2F2cm9fZmFpbHVyZV9yZWFzb24YBSABKAsyOS5nb29nbGUucHVic3ViLnYx'
+    'LkluZ2VzdGlvbkZhaWx1cmVFdmVudC5BdnJvRmFpbHVyZVJlYXNvbkID4EEBSABSEWF2cm9GYW'
+    'lsdXJlUmVhc29uEnMKFGFwaV92aW9sYXRpb25fcmVhc29uGAYgASgLMjouZ29vZ2xlLnB1YnN1'
+    'Yi52MS5Jbmdlc3Rpb25GYWlsdXJlRXZlbnQuQXBpVmlvbGF0aW9uUmVhc29uQgPgQQFIAFISYX'
+    'BpVmlvbGF0aW9uUmVhc29uQggKBnJlYXNvbkIJCgdmYWlsdXJl');
+
 @$core.Deprecated('Use topicDescriptor instead')
 const Topic$json = {
   '1': 'Topic',

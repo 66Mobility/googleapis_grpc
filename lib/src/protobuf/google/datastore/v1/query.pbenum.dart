@@ -138,6 +138,35 @@ class PropertyFilter_Operator extends $pb.ProtobufEnum {
   const PropertyFilter_Operator._($core.int v, $core.String n) : super(v, n);
 }
 
+/// The distance measure to use when comparing vectors.
+class FindNearest_DistanceMeasure extends $pb.ProtobufEnum {
+  static const FindNearest_DistanceMeasure DISTANCE_MEASURE_UNSPECIFIED =
+      FindNearest_DistanceMeasure._(
+          0, _omitEnumNames ? '' : 'DISTANCE_MEASURE_UNSPECIFIED');
+  static const FindNearest_DistanceMeasure EUCLIDEAN =
+      FindNearest_DistanceMeasure._(1, _omitEnumNames ? '' : 'EUCLIDEAN');
+  static const FindNearest_DistanceMeasure COSINE =
+      FindNearest_DistanceMeasure._(2, _omitEnumNames ? '' : 'COSINE');
+  static const FindNearest_DistanceMeasure DOT_PRODUCT =
+      FindNearest_DistanceMeasure._(3, _omitEnumNames ? '' : 'DOT_PRODUCT');
+
+  static const $core.List<FindNearest_DistanceMeasure> values =
+      <FindNearest_DistanceMeasure>[
+    DISTANCE_MEASURE_UNSPECIFIED,
+    EUCLIDEAN,
+    COSINE,
+    DOT_PRODUCT,
+  ];
+
+  static final $core.Map<$core.int, FindNearest_DistanceMeasure> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static FindNearest_DistanceMeasure? valueOf($core.int value) =>
+      _byValue[value];
+
+  const FindNearest_DistanceMeasure._($core.int v, $core.String n)
+      : super(v, n);
+}
+
 /// The possible values for the `more_results` field.
 class QueryResultBatch_MoreResultsType extends $pb.ProtobufEnum {
   static const QueryResultBatch_MoreResultsType MORE_RESULTS_TYPE_UNSPECIFIED =

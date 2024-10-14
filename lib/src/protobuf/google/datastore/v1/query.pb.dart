@@ -182,7 +182,16 @@ class EntityResult extends $pb.GeneratedMessage {
   $302.Timestamp ensureCreateTime() => $_ensure(4);
 }
 
-/// A query for entities.
+///  A query for entities.
+///
+///  The query stages are executed in the following order:
+///  1. kind
+///  2. filter
+///  3. projection
+///  4. order + start_cursor + end_cursor
+///  5. offset
+///  6. limit
+///  7. find_nearest
 class Query extends $pb.GeneratedMessage {
   factory Query({
     $core.Iterable<Projection>? projection,
@@ -194,6 +203,7 @@ class Query extends $pb.GeneratedMessage {
     $core.List<$core.int>? endCursor,
     $core.int? offset,
     $307.Int32Value? limit,
+    FindNearest? findNearest,
   }) {
     final $result = create();
     if (projection != null) {
@@ -222,6 +232,9 @@ class Query extends $pb.GeneratedMessage {
     }
     if (limit != null) {
       $result.limit = limit;
+    }
+    if (findNearest != null) {
+      $result.findNearest = findNearest;
     }
     return $result;
   }
@@ -255,6 +268,8 @@ class Query extends $pb.GeneratedMessage {
     ..a<$core.int>(10, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
     ..aOM<$307.Int32Value>(12, _omitFieldNames ? '' : 'limit',
         subBuilder: $307.Int32Value.create)
+    ..aOM<FindNearest>(13, _omitFieldNames ? '' : 'findNearest',
+        subBuilder: FindNearest.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -380,6 +395,25 @@ class Query extends $pb.GeneratedMessage {
   void clearLimit() => clearField(12);
   @$pb.TagNumber(12)
   $307.Int32Value ensureLimit() => $_ensure(8);
+
+  ///  Optional. A potential Nearest Neighbors Search.
+  ///
+  ///  Applies after all other filters and ordering.
+  ///
+  ///  Finds the closest vector embeddings to the given query vector.
+  @$pb.TagNumber(13)
+  FindNearest get findNearest => $_getN(9);
+  @$pb.TagNumber(13)
+  set findNearest(FindNearest v) {
+    setField(13, v);
+  }
+
+  @$pb.TagNumber(13)
+  $core.bool hasFindNearest() => $_has(9);
+  @$pb.TagNumber(13)
+  void clearFindNearest() => clearField(13);
+  @$pb.TagNumber(13)
+  FindNearest ensureFindNearest() => $_ensure(9);
 }
 
 ///  Count of entities that match the query.
@@ -1502,6 +1536,191 @@ class PropertyFilter extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
   @$pb.TagNumber(3)
   $421.Value ensureValue() => $_ensure(2);
+}
+
+/// Nearest Neighbors search config. The ordering provided by FindNearest
+/// supersedes the order_by stage. If multiple documents have the same vector
+/// distance, the returned document order is not guaranteed to be stable between
+/// queries.
+class FindNearest extends $pb.GeneratedMessage {
+  factory FindNearest({
+    PropertyReference? vectorProperty,
+    $421.Value? queryVector,
+    FindNearest_DistanceMeasure? distanceMeasure,
+    $307.Int32Value? limit,
+    $core.String? distanceResultProperty,
+    $307.DoubleValue? distanceThreshold,
+  }) {
+    final $result = create();
+    if (vectorProperty != null) {
+      $result.vectorProperty = vectorProperty;
+    }
+    if (queryVector != null) {
+      $result.queryVector = queryVector;
+    }
+    if (distanceMeasure != null) {
+      $result.distanceMeasure = distanceMeasure;
+    }
+    if (limit != null) {
+      $result.limit = limit;
+    }
+    if (distanceResultProperty != null) {
+      $result.distanceResultProperty = distanceResultProperty;
+    }
+    if (distanceThreshold != null) {
+      $result.distanceThreshold = distanceThreshold;
+    }
+    return $result;
+  }
+  FindNearest._() : super();
+  factory FindNearest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory FindNearest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'FindNearest',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
+      createEmptyInstance: create)
+    ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'vectorProperty',
+        subBuilder: PropertyReference.create)
+    ..aOM<$421.Value>(2, _omitFieldNames ? '' : 'queryVector',
+        subBuilder: $421.Value.create)
+    ..e<FindNearest_DistanceMeasure>(
+        3, _omitFieldNames ? '' : 'distanceMeasure', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            FindNearest_DistanceMeasure.DISTANCE_MEASURE_UNSPECIFIED,
+        valueOf: FindNearest_DistanceMeasure.valueOf,
+        enumValues: FindNearest_DistanceMeasure.values)
+    ..aOM<$307.Int32Value>(4, _omitFieldNames ? '' : 'limit',
+        subBuilder: $307.Int32Value.create)
+    ..aOS(5, _omitFieldNames ? '' : 'distanceResultProperty')
+    ..aOM<$307.DoubleValue>(6, _omitFieldNames ? '' : 'distanceThreshold',
+        subBuilder: $307.DoubleValue.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  FindNearest clone() => FindNearest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  FindNearest copyWith(void Function(FindNearest) updates) =>
+      super.copyWith((message) => updates(message as FindNearest))
+          as FindNearest;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FindNearest create() => FindNearest._();
+  FindNearest createEmptyInstance() => create();
+  static $pb.PbList<FindNearest> createRepeated() => $pb.PbList<FindNearest>();
+  @$core.pragma('dart2js:noInline')
+  static FindNearest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<FindNearest>(create);
+  static FindNearest? _defaultInstance;
+
+  /// Required. An indexed vector property to search upon. Only documents which
+  /// contain vectors whose dimensionality match the query_vector can be
+  /// returned.
+  @$pb.TagNumber(1)
+  PropertyReference get vectorProperty => $_getN(0);
+  @$pb.TagNumber(1)
+  set vectorProperty(PropertyReference v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasVectorProperty() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearVectorProperty() => clearField(1);
+  @$pb.TagNumber(1)
+  PropertyReference ensureVectorProperty() => $_ensure(0);
+
+  /// Required. The query vector that we are searching on. Must be a vector of no
+  /// more than 2048 dimensions.
+  @$pb.TagNumber(2)
+  $421.Value get queryVector => $_getN(1);
+  @$pb.TagNumber(2)
+  set queryVector($421.Value v) {
+    setField(2, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasQueryVector() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearQueryVector() => clearField(2);
+  @$pb.TagNumber(2)
+  $421.Value ensureQueryVector() => $_ensure(1);
+
+  /// Required. The Distance Measure to use, required.
+  @$pb.TagNumber(3)
+  FindNearest_DistanceMeasure get distanceMeasure => $_getN(2);
+  @$pb.TagNumber(3)
+  set distanceMeasure(FindNearest_DistanceMeasure v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasDistanceMeasure() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearDistanceMeasure() => clearField(3);
+
+  /// Required. The number of nearest neighbors to return. Must be a positive
+  /// integer of no more than 100.
+  @$pb.TagNumber(4)
+  $307.Int32Value get limit => $_getN(3);
+  @$pb.TagNumber(4)
+  set limit($307.Int32Value v) {
+    setField(4, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasLimit() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearLimit() => clearField(4);
+  @$pb.TagNumber(4)
+  $307.Int32Value ensureLimit() => $_ensure(3);
+
+  /// Optional. Optional name of the field to output the result of the vector
+  /// distance calculation. Must conform to [entity
+  /// property][google.datastore.v1.Entity.properties] limitations.
+  @$pb.TagNumber(5)
+  $core.String get distanceResultProperty => $_getSZ(4);
+  @$pb.TagNumber(5)
+  set distanceResultProperty($core.String v) {
+    $_setString(4, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasDistanceResultProperty() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearDistanceResultProperty() => clearField(5);
+
+  ///  Optional. Option to specify a threshold for which no less similar documents
+  ///  will be returned. The behavior of the specified `distance_measure` will
+  ///  affect the meaning of the distance threshold. Since DOT_PRODUCT distances
+  ///  increase when the vectors are more similar, the comparison is inverted.
+  ///
+  ///  For EUCLIDEAN, COSINE: WHERE distance <= distance_threshold
+  ///  For DOT_PRODUCT:       WHERE distance >= distance_threshold
+  @$pb.TagNumber(6)
+  $307.DoubleValue get distanceThreshold => $_getN(5);
+  @$pb.TagNumber(6)
+  set distanceThreshold($307.DoubleValue v) {
+    setField(6, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasDistanceThreshold() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearDistanceThreshold() => clearField(6);
+  @$pb.TagNumber(6)
+  $307.DoubleValue ensureDistanceThreshold() => $_ensure(5);
 }
 
 /// A [GQL

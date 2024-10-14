@@ -122,6 +122,15 @@ const Query$json = {
       '6': '.google.protobuf.Int32Value',
       '10': 'limit'
     },
+    {
+      '1': 'find_nearest',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.FindNearest',
+      '8': {},
+      '10': 'findNearest'
+    },
   ],
 };
 
@@ -135,7 +144,8 @@ final $typed_data.Uint8List queryDescriptor = $convert.base64Decode(
     '9yZS52MS5Qcm9wZXJ0eVJlZmVyZW5jZVIKZGlzdGluY3RPbhIhCgxzdGFydF9jdXJzb3IYByAB'
     'KAxSC3N0YXJ0Q3Vyc29yEh0KCmVuZF9jdXJzb3IYCCABKAxSCWVuZEN1cnNvchIWCgZvZmZzZX'
     'QYCiABKAVSBm9mZnNldBIxCgVsaW1pdBgMIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZh'
-    'bHVlUgVsaW1pdA==');
+    'bHVlUgVsaW1pdBJICgxmaW5kX25lYXJlc3QYDSABKAsyIC5nb29nbGUuZGF0YXN0b3JlLnYxLk'
+    'ZpbmROZWFyZXN0QgPgQQFSC2ZpbmROZWFyZXN0');
 
 @$core.Deprecated('Use aggregationQueryDescriptor instead')
 const AggregationQuery$json = {
@@ -491,6 +501,92 @@ final $typed_data.Uint8List propertyFilterDescriptor = $convert.base64Decode(
     'VU5TUEVDSUZJRUQQABINCglMRVNTX1RIQU4QARIWChJMRVNTX1RIQU5fT1JfRVFVQUwQAhIQCg'
     'xHUkVBVEVSX1RIQU4QAxIZChVHUkVBVEVSX1RIQU5fT1JfRVFVQUwQBBIJCgVFUVVBTBAFEgYK'
     'AklOEAYSDQoJTk9UX0VRVUFMEAkSEAoMSEFTX0FOQ0VTVE9SEAsSCgoGTk9UX0lOEA0=');
+
+@$core.Deprecated('Use findNearestDescriptor instead')
+const FindNearest$json = {
+  '1': 'FindNearest',
+  '2': [
+    {
+      '1': 'vector_property',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.PropertyReference',
+      '8': {},
+      '10': 'vectorProperty'
+    },
+    {
+      '1': 'query_vector',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.datastore.v1.Value',
+      '8': {},
+      '10': 'queryVector'
+    },
+    {
+      '1': 'distance_measure',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.google.datastore.v1.FindNearest.DistanceMeasure',
+      '8': {},
+      '10': 'distanceMeasure'
+    },
+    {
+      '1': 'limit',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Int32Value',
+      '8': {},
+      '10': 'limit'
+    },
+    {
+      '1': 'distance_result_property',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'distanceResultProperty'
+    },
+    {
+      '1': 'distance_threshold',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.DoubleValue',
+      '8': {},
+      '10': 'distanceThreshold'
+    },
+  ],
+  '4': [FindNearest_DistanceMeasure$json],
+};
+
+@$core.Deprecated('Use findNearestDescriptor instead')
+const FindNearest_DistanceMeasure$json = {
+  '1': 'DistanceMeasure',
+  '2': [
+    {'1': 'DISTANCE_MEASURE_UNSPECIFIED', '2': 0},
+    {'1': 'EUCLIDEAN', '2': 1},
+    {'1': 'COSINE', '2': 2},
+    {'1': 'DOT_PRODUCT', '2': 3},
+  ],
+};
+
+/// Descriptor for `FindNearest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List findNearestDescriptor = $convert.base64Decode(
+    'CgtGaW5kTmVhcmVzdBJUCg92ZWN0b3JfcHJvcGVydHkYASABKAsyJi5nb29nbGUuZGF0YXN0b3'
+    'JlLnYxLlByb3BlcnR5UmVmZXJlbmNlQgPgQQJSDnZlY3RvclByb3BlcnR5EkIKDHF1ZXJ5X3Zl'
+    'Y3RvchgCIAEoCzIaLmdvb2dsZS5kYXRhc3RvcmUudjEuVmFsdWVCA+BBAlILcXVlcnlWZWN0b3'
+    'ISYAoQZGlzdGFuY2VfbWVhc3VyZRgDIAEoDjIwLmdvb2dsZS5kYXRhc3RvcmUudjEuRmluZE5l'
+    'YXJlc3QuRGlzdGFuY2VNZWFzdXJlQgPgQQJSD2Rpc3RhbmNlTWVhc3VyZRI2CgVsaW1pdBgEIA'
+    'EoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlQgPgQQJSBWxpbWl0Ej0KGGRpc3RhbmNl'
+    'X3Jlc3VsdF9wcm9wZXJ0eRgFIAEoCUID4EEBUhZkaXN0YW5jZVJlc3VsdFByb3BlcnR5ElAKEm'
+    'Rpc3RhbmNlX3RocmVzaG9sZBgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZUID'
+    '4EEBUhFkaXN0YW5jZVRocmVzaG9sZCJfCg9EaXN0YW5jZU1lYXN1cmUSIAocRElTVEFOQ0VfTU'
+    'VBU1VSRV9VTlNQRUNJRklFRBAAEg0KCUVVQ0xJREVBThABEgoKBkNPU0lORRACEg8KC0RPVF9Q'
+    'Uk9EVUNUEAM=');
 
 @$core.Deprecated('Use gqlQueryDescriptor instead')
 const GqlQuery$json = {
