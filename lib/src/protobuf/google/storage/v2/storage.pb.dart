@@ -1496,6 +1496,7 @@ class RestoreObjectRequest extends $pb.GeneratedMessage {
     $fixnum.Int64? ifMetagenerationNotMatch,
     CommonObjectRequestParams? commonObjectRequestParams,
     $core.bool? copySourceAcl,
+    $core.String? restoreToken,
   }) {
     final $result = create();
     if (bucket != null) {
@@ -1525,6 +1526,9 @@ class RestoreObjectRequest extends $pb.GeneratedMessage {
     if (copySourceAcl != null) {
       $result.copySourceAcl = copySourceAcl;
     }
+    if (restoreToken != null) {
+      $result.restoreToken = restoreToken;
+    }
     return $result;
   }
   RestoreObjectRequest._() : super();
@@ -1551,6 +1555,7 @@ class RestoreObjectRequest extends $pb.GeneratedMessage {
         8, _omitFieldNames ? '' : 'commonObjectRequestParams',
         subBuilder: CommonObjectRequestParams.create)
     ..aOB(9, _omitFieldNames ? '' : 'copySourceAcl')
+    ..aOS(11, _omitFieldNames ? '' : 'restoreToken')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1704,6 +1709,23 @@ class RestoreObjectRequest extends $pb.GeneratedMessage {
   $core.bool hasCopySourceAcl() => $_has(8);
   @$pb.TagNumber(9)
   void clearCopySourceAcl() => clearField(9);
+
+  /// Optional. Restore token used to differentiate soft-deleted objects with the
+  /// same name and generation. Only applicable for hierarchical namespace
+  /// buckets. This parameter is optional, and is only required in the rare case
+  /// when there are multiple soft-deleted objects with the same name and
+  /// generation.
+  @$pb.TagNumber(11)
+  $core.String get restoreToken => $_getSZ(9);
+  @$pb.TagNumber(11)
+  set restoreToken($core.String v) {
+    $_setString(9, v);
+  }
+
+  @$pb.TagNumber(11)
+  $core.bool hasRestoreToken() => $_has(9);
+  @$pb.TagNumber(11)
+  void clearRestoreToken() => clearField(11);
 }
 
 /// Message for canceling an in-progress resumable upload.
@@ -2113,6 +2135,7 @@ class GetObjectRequest extends $pb.GeneratedMessage {
     CommonObjectRequestParams? commonObjectRequestParams,
     $333.FieldMask? readMask,
     $core.bool? softDeleted,
+    $core.String? restoreToken,
   }) {
     final $result = create();
     if (bucket != null) {
@@ -2145,6 +2168,9 @@ class GetObjectRequest extends $pb.GeneratedMessage {
     if (softDeleted != null) {
       $result.softDeleted = softDeleted;
     }
+    if (restoreToken != null) {
+      $result.restoreToken = restoreToken;
+    }
     return $result;
   }
   GetObjectRequest._() : super();
@@ -2173,6 +2199,7 @@ class GetObjectRequest extends $pb.GeneratedMessage {
     ..aOM<$333.FieldMask>(10, _omitFieldNames ? '' : 'readMask',
         subBuilder: $333.FieldMask.create)
     ..aOB(11, _omitFieldNames ? '' : 'softDeleted')
+    ..aOS(12, _omitFieldNames ? '' : 'restoreToken')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2342,6 +2369,23 @@ class GetObjectRequest extends $pb.GeneratedMessage {
   $core.bool hasSoftDeleted() => $_has(9);
   @$pb.TagNumber(11)
   void clearSoftDeleted() => clearField(11);
+
+  /// Optional. Restore token used to differentiate soft-deleted objects with the
+  /// same name and generation. Only applicable for hierarchical namespace
+  /// buckets and if soft_deleted is set to true. This parameter is optional, and
+  /// is only required in the rare case when there are multiple soft-deleted
+  /// objects with the same name and generation.
+  @$pb.TagNumber(12)
+  $core.String get restoreToken => $_getSZ(10);
+  @$pb.TagNumber(12)
+  set restoreToken($core.String v) {
+    $_setString(10, v);
+  }
+
+  @$pb.TagNumber(12)
+  $core.bool hasRestoreToken() => $_has(10);
+  @$pb.TagNumber(12)
+  void clearRestoreToken() => clearField(12);
 }
 
 /// Response message for ReadObject.
@@ -8919,6 +8963,7 @@ class Object extends $pb.GeneratedMessage {
     $core.String? etag,
     $302.Timestamp? softDeleteTime,
     $302.Timestamp? hardDeleteTime,
+    $core.String? restoreToken,
   }) {
     final $result = create();
     if (name != null) {
@@ -9008,6 +9053,9 @@ class Object extends $pb.GeneratedMessage {
     if (hardDeleteTime != null) {
       $result.hardDeleteTime = hardDeleteTime;
     }
+    if (restoreToken != null) {
+      $result.restoreToken = restoreToken;
+    }
     return $result;
   }
   Object._() : super();
@@ -9069,6 +9117,7 @@ class Object extends $pb.GeneratedMessage {
         subBuilder: $302.Timestamp.create)
     ..aOM<$302.Timestamp>(29, _omitFieldNames ? '' : 'hardDeleteTime',
         subBuilder: $302.Timestamp.create)
+    ..aOS(35, _omitFieldNames ? '' : 'restoreToken')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -9538,6 +9587,21 @@ class Object extends $pb.GeneratedMessage {
   void clearHardDeleteTime() => clearField(29);
   @$pb.TagNumber(29)
   $302.Timestamp ensureHardDeleteTime() => $_ensure(28);
+
+  /// Output only. Restore token used to differentiate deleted objects with the
+  /// same name and generation. This field is output only, and only set for
+  /// deleted objects in HNS buckets.
+  @$pb.TagNumber(35)
+  $core.String get restoreToken => $_getSZ(29);
+  @$pb.TagNumber(35)
+  set restoreToken($core.String v) {
+    $_setString(29, v);
+  }
+
+  @$pb.TagNumber(35)
+  $core.bool hasRestoreToken() => $_has(29);
+  @$pb.TagNumber(35)
+  void clearRestoreToken() => clearField(35);
 }
 
 /// An access-control entry.
