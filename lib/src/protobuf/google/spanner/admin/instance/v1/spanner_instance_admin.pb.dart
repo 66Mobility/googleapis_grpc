@@ -1158,6 +1158,7 @@ class Instance extends $pb.GeneratedMessage {
     AutoscalingConfig? autoscalingConfig,
     $core.Iterable<ReplicaComputeCapacity>? replicaComputeCapacity,
     Instance_Edition? edition,
+    Instance_DefaultBackupScheduleType? defaultBackupScheduleType,
   }) {
     final $result = create();
     if (name != null) {
@@ -1198,6 +1199,9 @@ class Instance extends $pb.GeneratedMessage {
     }
     if (edition != null) {
       $result.edition = edition;
+    }
+    if (defaultBackupScheduleType != null) {
+      $result.defaultBackupScheduleType = defaultBackupScheduleType;
     }
     return $result;
   }
@@ -1244,6 +1248,12 @@ class Instance extends $pb.GeneratedMessage {
         defaultOrMaker: Instance_Edition.EDITION_UNSPECIFIED,
         valueOf: Instance_Edition.valueOf,
         enumValues: Instance_Edition.values)
+    ..e<Instance_DefaultBackupScheduleType>(23,
+        _omitFieldNames ? '' : 'defaultBackupScheduleType', $pb.PbFieldType.OE,
+        defaultOrMaker: Instance_DefaultBackupScheduleType
+            .DEFAULT_BACKUP_SCHEDULE_TYPE_UNSPECIFIED,
+        valueOf: Instance_DefaultBackupScheduleType.valueOf,
+        enumValues: Instance_DefaultBackupScheduleType.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1489,6 +1499,28 @@ class Instance extends $pb.GeneratedMessage {
   $core.bool hasEdition() => $_has(12);
   @$pb.TagNumber(20)
   void clearEdition() => clearField(20);
+
+  ///  Optional. Controls the default backup behavior for new databases within the
+  ///  instance.
+  ///
+  ///  Note that `AUTOMATIC` is not permitted for free instances, as backups and
+  ///  backup schedules are not allowed for free instances.
+  ///
+  ///  In the `GetInstance` or `ListInstances` response, if the value of
+  ///  default_backup_schedule_type is unset or NONE, no default backup
+  ///  schedule will be created for new databases within the instance.
+  @$pb.TagNumber(23)
+  Instance_DefaultBackupScheduleType get defaultBackupScheduleType =>
+      $_getN(13);
+  @$pb.TagNumber(23)
+  set defaultBackupScheduleType(Instance_DefaultBackupScheduleType v) {
+    setField(23, v);
+  }
+
+  @$pb.TagNumber(23)
+  $core.bool hasDefaultBackupScheduleType() => $_has(13);
+  @$pb.TagNumber(23)
+  void clearDefaultBackupScheduleType() => clearField(23);
 }
 
 /// The request for

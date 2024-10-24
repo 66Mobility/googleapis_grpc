@@ -30856,7 +30856,8 @@ class TableDataProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearProjectDataProfile() => clearField(2);
 
-  /// The resource name of the resource profiled.
+  /// The Cloud Asset Inventory resource that was profiled in order to generate
+  /// this TableDataProfile.
   /// https://cloud.google.com/apis/design/resource_names#full_resource_name
   @$pb.TagNumber(3)
   $core.String get fullResource => $_getSZ(2);
@@ -31100,7 +31101,7 @@ class TableDataProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   void clearDatasetProjectId() => clearField(24);
 
-  /// If the resource is BigQuery, the  dataset ID.
+  /// If the resource is BigQuery, the dataset ID.
   @$pb.TagNumber(25)
   $core.String get datasetId => $_getSZ(20);
   @$pb.TagNumber(25)
@@ -31113,7 +31114,7 @@ class TableDataProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   void clearDatasetId() => clearField(25);
 
-  /// If the resource is BigQuery, the BigQuery table ID.
+  /// The table ID.
   @$pb.TagNumber(26)
   $core.String get tableId => $_getSZ(21);
   @$pb.TagNumber(26)
@@ -31830,9 +31831,9 @@ class ColumnDataProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   void clearDatasetProjectId() => clearField(19);
 
-  /// The BigQuery location where the dataset's data is stored.
+  /// If supported, the location where the dataset's data is stored.
   /// See https://cloud.google.com/bigquery/docs/locations for supported
-  /// locations.
+  /// BigQuery locations.
   @$pb.TagNumber(20)
   $core.String get datasetLocation => $_getSZ(15);
   @$pb.TagNumber(20)
@@ -31845,7 +31846,7 @@ class ColumnDataProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   void clearDatasetLocation() => clearField(20);
 
-  /// The BigQuery dataset ID.
+  /// The BigQuery dataset ID, if the resource profiled is a BigQuery table.
   @$pb.TagNumber(21)
   $core.String get datasetId => $_getSZ(16);
   @$pb.TagNumber(21)
@@ -31858,7 +31859,7 @@ class ColumnDataProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   void clearDatasetId() => clearField(21);
 
-  /// The BigQuery table ID.
+  /// The table ID.
   @$pb.TagNumber(22)
   $core.String get tableId => $_getSZ(17);
   @$pb.TagNumber(22)

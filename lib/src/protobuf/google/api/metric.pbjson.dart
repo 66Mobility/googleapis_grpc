@@ -103,6 +103,30 @@ const MetricDescriptor_MetricDescriptorMetadata$json = {
       '6': '.google.protobuf.Duration',
       '10': 'ingestDelay'
     },
+    {
+      '1': 'time_series_resource_hierarchy_level',
+      '3': 4,
+      '4': 3,
+      '5': 14,
+      '6':
+          '.google.api.MetricDescriptor.MetricDescriptorMetadata.TimeSeriesResourceHierarchyLevel',
+      '10': 'timeSeriesResourceHierarchyLevel'
+    },
+  ],
+  '4': [
+    MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel$json
+  ],
+};
+
+@$core.Deprecated('Use metricDescriptorDescriptor instead')
+const MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel$json =
+    {
+  '1': 'TimeSeriesResourceHierarchyLevel',
+  '2': [
+    {'1': 'TIME_SERIES_RESOURCE_HIERARCHY_LEVEL_UNSPECIFIED', '2': 0},
+    {'1': 'PROJECT', '2': 1},
+    {'1': 'ORGANIZATION', '2': 2},
+    {'1': 'FOLDER', '2': 3},
   ],
 };
 
@@ -142,15 +166,20 @@ final $typed_data.Uint8List metricDescriptorDescriptor = $convert.base64Decode(
     'C2Rpc3BsYXlOYW1lElEKCG1ldGFkYXRhGAogASgLMjUuZ29vZ2xlLmFwaS5NZXRyaWNEZXNjcm'
     'lwdG9yLk1ldHJpY0Rlc2NyaXB0b3JNZXRhZGF0YVIIbWV0YWRhdGESOgoMbGF1bmNoX3N0YWdl'
     'GAwgASgOMhcuZ29vZ2xlLmFwaS5MYXVuY2hTdGFnZVILbGF1bmNoU3RhZ2USOAoYbW9uaXRvcm'
-    'VkX3Jlc291cmNlX3R5cGVzGA0gAygJUhZtb25pdG9yZWRSZXNvdXJjZVR5cGVzGtgBChhNZXRy'
+    'VkX3Jlc291cmNlX3R5cGVzGA0gAygJUhZtb25pdG9yZWRSZXNvdXJjZVR5cGVzGocEChhNZXRy'
     'aWNEZXNjcmlwdG9yTWV0YWRhdGESPgoMbGF1bmNoX3N0YWdlGAEgASgOMhcuZ29vZ2xlLmFwaS'
     '5MYXVuY2hTdGFnZUICGAFSC2xhdW5jaFN0YWdlEj4KDXNhbXBsZV9wZXJpb2QYAiABKAsyGS5n'
     'b29nbGUucHJvdG9idWYuRHVyYXRpb25SDHNhbXBsZVBlcmlvZBI8Cgxpbmdlc3RfZGVsYXkYAy'
-    'ABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25SC2luZ2VzdERlbGF5Ik8KCk1ldHJpY0tp'
-    'bmQSGwoXTUVUUklDX0tJTkRfVU5TUEVDSUZJRUQQABIJCgVHQVVHRRABEgkKBURFTFRBEAISDg'
-    'oKQ1VNVUxBVElWRRADInEKCVZhbHVlVHlwZRIaChZWQUxVRV9UWVBFX1VOU1BFQ0lGSUVEEAAS'
-    'CAoEQk9PTBABEgkKBUlOVDY0EAISCgoGRE9VQkxFEAMSCgoGU1RSSU5HEAQSEAoMRElTVFJJQl'
-    'VUSU9OEAUSCQoFTU9ORVkQBg==');
+    'ABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25SC2luZ2VzdERlbGF5EqYBCiR0aW1lX3Nl'
+    'cmllc19yZXNvdXJjZV9oaWVyYXJjaHlfbGV2ZWwYBCADKA4yVi5nb29nbGUuYXBpLk1ldHJpY0'
+    'Rlc2NyaXB0b3IuTWV0cmljRGVzY3JpcHRvck1ldGFkYXRhLlRpbWVTZXJpZXNSZXNvdXJjZUhp'
+    'ZXJhcmNoeUxldmVsUiB0aW1lU2VyaWVzUmVzb3VyY2VIaWVyYXJjaHlMZXZlbCKDAQogVGltZV'
+    'Nlcmllc1Jlc291cmNlSGllcmFyY2h5TGV2ZWwSNAowVElNRV9TRVJJRVNfUkVTT1VSQ0VfSElF'
+    'UkFSQ0hZX0xFVkVMX1VOU1BFQ0lGSUVEEAASCwoHUFJPSkVDVBABEhAKDE9SR0FOSVpBVElPTh'
+    'ACEgoKBkZPTERFUhADIk8KCk1ldHJpY0tpbmQSGwoXTUVUUklDX0tJTkRfVU5TUEVDSUZJRUQQ'
+    'ABIJCgVHQVVHRRABEgkKBURFTFRBEAISDgoKQ1VNVUxBVElWRRADInEKCVZhbHVlVHlwZRIaCh'
+    'ZWQUxVRV9UWVBFX1VOU1BFQ0lGSUVEEAASCAoEQk9PTBABEgkKBUlOVDY0EAISCgoGRE9VQkxF'
+    'EAMSCgoGU1RSSU5HEAQSEAoMRElTVFJJQlVUSU9OEAUSCQoFTU9ORVkQBg==');
 
 @$core.Deprecated('Use metricDescriptor instead')
 const Metric$json = {

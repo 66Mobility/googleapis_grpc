@@ -86,6 +86,10 @@ class ErrorReason extends $pb.ProtobufEnum {
       ErrorReason._(30, _omitEnumNames ? '' : 'GCP_SUSPENDED');
   static const ErrorReason LOCATION_POLICY_VIOLATED =
       ErrorReason._(31, _omitEnumNames ? '' : 'LOCATION_POLICY_VIOLATED');
+  static const ErrorReason MISSING_ORIGIN =
+      ErrorReason._(33, _omitEnumNames ? '' : 'MISSING_ORIGIN');
+  static const ErrorReason OVERLOADED_CREDENTIALS =
+      ErrorReason._(34, _omitEnumNames ? '' : 'OVERLOADED_CREDENTIALS');
 
   static const $core.List<ErrorReason> values = <ErrorReason>[
     ERROR_REASON_UNSPECIFIED,
@@ -119,6 +123,8 @@ class ErrorReason extends $pb.ProtobufEnum {
     SERVICE_NOT_VISIBLE,
     GCP_SUSPENDED,
     LOCATION_POLICY_VIOLATED,
+    MISSING_ORIGIN,
+    OVERLOADED_CREDENTIALS,
   ];
 
   static final $core.Map<$core.int, ErrorReason> _byValue =

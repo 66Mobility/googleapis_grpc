@@ -16,6 +16,9 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/timestamp.pb.dart' as $302;
 import '../../type/types.pb.dart' as $536;
+import 'css_product_common.pbenum.dart';
+
+export 'css_product_common.pbenum.dart';
 
 /// Attributes for CSS Product.
 class Attributes extends $pb.GeneratedMessage {
@@ -68,6 +71,8 @@ class Attributes extends $pb.GeneratedMessage {
     $core.String? customLabel2,
     $core.String? customLabel3,
     $core.String? customLabel4,
+    HeadlineOfferInstallment? headlineOfferInstallment,
+    HeadlineOfferSubscriptionCost? headlineOfferSubscriptionCost,
   }) {
     final $result = create();
     if (cppLink != null) {
@@ -214,6 +219,12 @@ class Attributes extends $pb.GeneratedMessage {
     if (customLabel4 != null) {
       $result.customLabel4 = customLabel4;
     }
+    if (headlineOfferInstallment != null) {
+      $result.headlineOfferInstallment = headlineOfferInstallment;
+    }
+    if (headlineOfferSubscriptionCost != null) {
+      $result.headlineOfferSubscriptionCost = headlineOfferSubscriptionCost;
+    }
     return $result;
   }
   Attributes._() : super();
@@ -295,6 +306,12 @@ class Attributes extends $pb.GeneratedMessage {
         protoName: 'custom_label_3')
     ..aOS(50, _omitFieldNames ? '' : 'customLabel4',
         protoName: 'custom_label_4')
+    ..aOM<HeadlineOfferInstallment>(
+        51, _omitFieldNames ? '' : 'headlineOfferInstallment',
+        subBuilder: HeadlineOfferInstallment.create)
+    ..aOM<HeadlineOfferSubscriptionCost>(
+        52, _omitFieldNames ? '' : 'headlineOfferSubscriptionCost',
+        subBuilder: HeadlineOfferSubscriptionCost.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -919,6 +936,38 @@ class Attributes extends $pb.GeneratedMessage {
   $core.bool hasCustomLabel4() => $_has(47);
   @$pb.TagNumber(50)
   void clearCustomLabel4() => clearField(50);
+
+  /// Number and amount of installments to pay for an item.
+  @$pb.TagNumber(51)
+  HeadlineOfferInstallment get headlineOfferInstallment => $_getN(48);
+  @$pb.TagNumber(51)
+  set headlineOfferInstallment(HeadlineOfferInstallment v) {
+    setField(51, v);
+  }
+
+  @$pb.TagNumber(51)
+  $core.bool hasHeadlineOfferInstallment() => $_has(48);
+  @$pb.TagNumber(51)
+  void clearHeadlineOfferInstallment() => clearField(51);
+  @$pb.TagNumber(51)
+  HeadlineOfferInstallment ensureHeadlineOfferInstallment() => $_ensure(48);
+
+  /// Number of periods (months or years) and amount of payment per period
+  /// for an item with an associated subscription contract.
+  @$pb.TagNumber(52)
+  HeadlineOfferSubscriptionCost get headlineOfferSubscriptionCost => $_getN(49);
+  @$pb.TagNumber(52)
+  set headlineOfferSubscriptionCost(HeadlineOfferSubscriptionCost v) {
+    setField(52, v);
+  }
+
+  @$pb.TagNumber(52)
+  $core.bool hasHeadlineOfferSubscriptionCost() => $_has(49);
+  @$pb.TagNumber(52)
+  void clearHeadlineOfferSubscriptionCost() => clearField(52);
+  @$pb.TagNumber(52)
+  HeadlineOfferSubscriptionCost ensureHeadlineOfferSubscriptionCost() =>
+      $_ensure(49);
 }
 
 /// The certification for the product. Use the this attribute to describe
@@ -1741,6 +1790,228 @@ class CssProductStatus extends $pb.GeneratedMessage {
   void clearGoogleExpirationDate() => clearField(7);
   @$pb.TagNumber(7)
   $302.Timestamp ensureGoogleExpirationDate() => $_ensure(4);
+}
+
+/// The SubscriptionCost of the product.
+class HeadlineOfferSubscriptionCost extends $pb.GeneratedMessage {
+  factory HeadlineOfferSubscriptionCost({
+    SubscriptionPeriod? period,
+    $fixnum.Int64? periodLength,
+    $536.Price? amount,
+  }) {
+    final $result = create();
+    if (period != null) {
+      $result.period = period;
+    }
+    if (periodLength != null) {
+      $result.periodLength = periodLength;
+    }
+    if (amount != null) {
+      $result.amount = amount;
+    }
+    return $result;
+  }
+  HeadlineOfferSubscriptionCost._() : super();
+  factory HeadlineOfferSubscriptionCost.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory HeadlineOfferSubscriptionCost.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'HeadlineOfferSubscriptionCost',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
+    ..e<SubscriptionPeriod>(
+        1, _omitFieldNames ? '' : 'period', $pb.PbFieldType.OE,
+        defaultOrMaker: SubscriptionPeriod.SUBSCRIPTION_PERIOD_UNSPECIFIED,
+        valueOf: SubscriptionPeriod.valueOf,
+        enumValues: SubscriptionPeriod.values)
+    ..aInt64(2, _omitFieldNames ? '' : 'periodLength')
+    ..aOM<$536.Price>(3, _omitFieldNames ? '' : 'amount',
+        subBuilder: $536.Price.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  HeadlineOfferSubscriptionCost clone() =>
+      HeadlineOfferSubscriptionCost()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  HeadlineOfferSubscriptionCost copyWith(
+          void Function(HeadlineOfferSubscriptionCost) updates) =>
+      super.copyWith(
+              (message) => updates(message as HeadlineOfferSubscriptionCost))
+          as HeadlineOfferSubscriptionCost;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static HeadlineOfferSubscriptionCost create() =>
+      HeadlineOfferSubscriptionCost._();
+  HeadlineOfferSubscriptionCost createEmptyInstance() => create();
+  static $pb.PbList<HeadlineOfferSubscriptionCost> createRepeated() =>
+      $pb.PbList<HeadlineOfferSubscriptionCost>();
+  @$core.pragma('dart2js:noInline')
+  static HeadlineOfferSubscriptionCost getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<HeadlineOfferSubscriptionCost>(create);
+  static HeadlineOfferSubscriptionCost? _defaultInstance;
+
+  /// The type of subscription period.
+  /// Supported values are:
+  ///   * "`month`"
+  ///   * "`year`"
+  @$pb.TagNumber(1)
+  SubscriptionPeriod get period => $_getN(0);
+  @$pb.TagNumber(1)
+  set period(SubscriptionPeriod v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasPeriod() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearPeriod() => clearField(1);
+
+  /// The number of subscription periods the buyer has to pay.
+  @$pb.TagNumber(2)
+  $fixnum.Int64 get periodLength => $_getI64(1);
+  @$pb.TagNumber(2)
+  set periodLength($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasPeriodLength() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearPeriodLength() => clearField(2);
+
+  /// The amount the buyer has to pay per subscription period.
+  @$pb.TagNumber(3)
+  $536.Price get amount => $_getN(2);
+  @$pb.TagNumber(3)
+  set amount($536.Price v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasAmount() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearAmount() => clearField(3);
+  @$pb.TagNumber(3)
+  $536.Price ensureAmount() => $_ensure(2);
+}
+
+/// A message that represents installment.
+class HeadlineOfferInstallment extends $pb.GeneratedMessage {
+  factory HeadlineOfferInstallment({
+    $fixnum.Int64? months,
+    $536.Price? amount,
+    $536.Price? downpayment,
+  }) {
+    final $result = create();
+    if (months != null) {
+      $result.months = months;
+    }
+    if (amount != null) {
+      $result.amount = amount;
+    }
+    if (downpayment != null) {
+      $result.downpayment = downpayment;
+    }
+    return $result;
+  }
+  HeadlineOfferInstallment._() : super();
+  factory HeadlineOfferInstallment.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory HeadlineOfferInstallment.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'HeadlineOfferInstallment',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
+    ..aInt64(1, _omitFieldNames ? '' : 'months')
+    ..aOM<$536.Price>(2, _omitFieldNames ? '' : 'amount',
+        subBuilder: $536.Price.create)
+    ..aOM<$536.Price>(3, _omitFieldNames ? '' : 'downpayment',
+        subBuilder: $536.Price.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  HeadlineOfferInstallment clone() =>
+      HeadlineOfferInstallment()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  HeadlineOfferInstallment copyWith(
+          void Function(HeadlineOfferInstallment) updates) =>
+      super.copyWith((message) => updates(message as HeadlineOfferInstallment))
+          as HeadlineOfferInstallment;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static HeadlineOfferInstallment create() => HeadlineOfferInstallment._();
+  HeadlineOfferInstallment createEmptyInstance() => create();
+  static $pb.PbList<HeadlineOfferInstallment> createRepeated() =>
+      $pb.PbList<HeadlineOfferInstallment>();
+  @$core.pragma('dart2js:noInline')
+  static HeadlineOfferInstallment getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<HeadlineOfferInstallment>(create);
+  static HeadlineOfferInstallment? _defaultInstance;
+
+  /// The number of installments the buyer has to pay.
+  @$pb.TagNumber(1)
+  $fixnum.Int64 get months => $_getI64(0);
+  @$pb.TagNumber(1)
+  set months($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasMonths() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearMonths() => clearField(1);
+
+  /// The amount the buyer has to pay per month.
+  @$pb.TagNumber(2)
+  $536.Price get amount => $_getN(1);
+  @$pb.TagNumber(2)
+  set amount($536.Price v) {
+    setField(2, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasAmount() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearAmount() => clearField(2);
+  @$pb.TagNumber(2)
+  $536.Price ensureAmount() => $_ensure(1);
+
+  /// The up-front down payment amount the buyer has to pay.
+  @$pb.TagNumber(3)
+  $536.Price get downpayment => $_getN(2);
+  @$pb.TagNumber(3)
+  set downpayment($536.Price v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasDownpayment() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearDownpayment() => clearField(3);
+  @$pb.TagNumber(3)
+  $536.Price ensureDownpayment() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

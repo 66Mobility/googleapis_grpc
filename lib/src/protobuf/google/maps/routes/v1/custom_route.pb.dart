@@ -16,8 +16,9 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import 'route.pb.dart' as $486;
 
 /// Encapsulates a custom route computed based on the route objective specified
-/// by the customer. CustomRoute contains a route and a route token, which can be
-/// passed to NavSDK to reconstruct the custom route for turn by turn navigation.
+/// by the customer. `CustomRoute` contains a route and a route token, which can
+/// be passed to NavSDK to reconstruct the custom route for turn by turn
+/// navigation.
 class CustomRoute extends $pb.GeneratedMessage {
   factory CustomRoute({
     $486.Route? route,
@@ -89,8 +90,8 @@ class CustomRoute extends $pb.GeneratedMessage {
 
   /// Web-safe base64 encoded route token that can be passed to NavSDK, which
   /// allows NavSDK to reconstruct the route during navigation, and in the event
-  /// of rerouting honor the original intention when RoutesPreferred
-  /// ComputeCustomRoutes is called. Customers should treat this token as an
+  /// of rerouting honor the original intention when `RoutesPreferred`
+  /// `ComputeCustomRoutes` is called. Customers should treat this token as an
   /// opaque blob.
   @$pb.TagNumber(12)
   $core.String get token => $_getSZ(1);

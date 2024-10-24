@@ -122,6 +122,7 @@ const BigQueryTableType$json = {
     {'1': 'BIG_QUERY_TABLE_TYPE_UNSPECIFIED', '2': 0},
     {'1': 'BIG_QUERY_TABLE_TYPE_TABLE', '2': 1},
     {'1': 'BIG_QUERY_TABLE_TYPE_EXTERNAL_BIG_LAKE', '2': 2},
+    {'1': 'BIG_QUERY_TABLE_TYPE_SNAPSHOT', '2': 3},
   ],
 };
 
@@ -129,7 +130,8 @@ const BigQueryTableType$json = {
 final $typed_data.Uint8List bigQueryTableTypeDescriptor = $convert.base64Decode(
     'ChFCaWdRdWVyeVRhYmxlVHlwZRIkCiBCSUdfUVVFUllfVEFCTEVfVFlQRV9VTlNQRUNJRklFRB'
     'AAEh4KGkJJR19RVUVSWV9UQUJMRV9UWVBFX1RBQkxFEAESKgomQklHX1FVRVJZX1RBQkxFX1RZ'
-    'UEVfRVhURVJOQUxfQklHX0xBS0UQAg==');
+    'UEVfRVhURVJOQUxfQklHX0xBS0UQAhIhCh1CSUdfUVVFUllfVEFCTEVfVFlQRV9TTkFQU0hPVB'
+    'AD');
 
 @$core.Deprecated('Use dataProfileUpdateFrequencyDescriptor instead')
 const DataProfileUpdateFrequency$json = {

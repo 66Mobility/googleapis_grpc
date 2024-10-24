@@ -19,18 +19,18 @@ import 'fallback_info.pbenum.dart' as $488;
 
 export 'compute_custom_routes_response.pbenum.dart';
 
-///  Encapsulates fallback info for ComputeCustomRoutes. ComputeCustomRoutes
+///  Encapsulates fallback info for `ComputeCustomRoutes`. `ComputeCustomRoutes`
 ///  performs two types of fallbacks:
 ///
-///  1. If it cannot compute the route using the routing_preference requested by
-///  the customer, it will fallback to another routing mode. In this case
-///  fallback_routing_mode and routing_mode_fallback_reason are used to
+///  1. If it cannot compute the route using the `routing_preference` requested
+///  by the customer, it will fallback to another routing mode. In this case
+///  `fallback_routing_mode` and `routing_mode_fallback_reason` are used to
 ///  communicate the fallback routing mode used, as well as the reason for
 ///  fallback.
 ///
 ///  2. If it cannot compute a 'best' route for the route objective specified by
 ///  the customer, it might fallback to another objective.
-///  fallback_route_objective is used to communicate the fallback route
+///  `fallback_route_objective` is used to communicate the fallback route
 ///  objective.
 class ComputeCustomRoutesResponse_FallbackInfo extends $pb.GeneratedMessage {
   factory ComputeCustomRoutesResponse_FallbackInfo({

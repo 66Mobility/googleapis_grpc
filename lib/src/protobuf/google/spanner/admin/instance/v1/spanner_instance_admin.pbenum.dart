@@ -133,6 +133,35 @@ class Instance_Edition extends $pb.ProtobufEnum {
   const Instance_Edition._($core.int v, $core.String n) : super(v, n);
 }
 
+/// Indicates the default backup behavior for new databases within the
+/// instance.
+class Instance_DefaultBackupScheduleType extends $pb.ProtobufEnum {
+  static const Instance_DefaultBackupScheduleType
+      DEFAULT_BACKUP_SCHEDULE_TYPE_UNSPECIFIED =
+      Instance_DefaultBackupScheduleType._(
+          0, _omitEnumNames ? '' : 'DEFAULT_BACKUP_SCHEDULE_TYPE_UNSPECIFIED');
+  static const Instance_DefaultBackupScheduleType NONE =
+      Instance_DefaultBackupScheduleType._(1, _omitEnumNames ? '' : 'NONE');
+  static const Instance_DefaultBackupScheduleType AUTOMATIC =
+      Instance_DefaultBackupScheduleType._(
+          2, _omitEnumNames ? '' : 'AUTOMATIC');
+
+  static const $core.List<Instance_DefaultBackupScheduleType> values =
+      <Instance_DefaultBackupScheduleType>[
+    DEFAULT_BACKUP_SCHEDULE_TYPE_UNSPECIFIED,
+    NONE,
+    AUTOMATIC,
+  ];
+
+  static final $core.Map<$core.int, Instance_DefaultBackupScheduleType>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Instance_DefaultBackupScheduleType? valueOf($core.int value) =>
+      _byValue[value];
+
+  const Instance_DefaultBackupScheduleType._($core.int v, $core.String n)
+      : super(v, n);
+}
+
 /// Indicates the current state of the instance partition.
 class InstancePartition_State extends $pb.ProtobufEnum {
   static const InstancePartition_State STATE_UNSPECIFIED =

@@ -165,8 +165,8 @@ class ProfileGeneration extends $pb.ProtobufEnum {
   const ProfileGeneration._($core.int v, $core.String n) : super(v, n);
 }
 
-/// Over time new types may be added. Currently VIEW, MATERIALIZED_VIEW,
-/// and SNAPSHOT are not supported.
+/// Over time new types may be added. Currently VIEW, MATERIALIZED_VIEW, and
+/// non-BigLake external tables are not supported.
 class BigQueryTableTypeCollection extends $pb.ProtobufEnum {
   static const BigQueryTableTypeCollection BIG_QUERY_COLLECTION_UNSPECIFIED =
       BigQueryTableTypeCollection._(
@@ -194,8 +194,8 @@ class BigQueryTableTypeCollection extends $pb.ProtobufEnum {
       : super(v, n);
 }
 
-/// Over time new types may be added. Currently VIEW, MATERIALIZED_VIEW,
-/// SNAPSHOT, and non-BigLake external tables are not supported.
+/// Over time new types may be added. Currently VIEW, MATERIALIZED_VIEW, and
+/// non-BigLake external tables are not supported.
 class BigQueryTableType extends $pb.ProtobufEnum {
   static const BigQueryTableType BIG_QUERY_TABLE_TYPE_UNSPECIFIED =
       BigQueryTableType._(
@@ -206,11 +206,15 @@ class BigQueryTableType extends $pb.ProtobufEnum {
   static const BigQueryTableType BIG_QUERY_TABLE_TYPE_EXTERNAL_BIG_LAKE =
       BigQueryTableType._(
           2, _omitEnumNames ? '' : 'BIG_QUERY_TABLE_TYPE_EXTERNAL_BIG_LAKE');
+  static const BigQueryTableType BIG_QUERY_TABLE_TYPE_SNAPSHOT =
+      BigQueryTableType._(
+          3, _omitEnumNames ? '' : 'BIG_QUERY_TABLE_TYPE_SNAPSHOT');
 
   static const $core.List<BigQueryTableType> values = <BigQueryTableType>[
     BIG_QUERY_TABLE_TYPE_UNSPECIFIED,
     BIG_QUERY_TABLE_TYPE_TABLE,
     BIG_QUERY_TABLE_TYPE_EXTERNAL_BIG_LAKE,
+    BIG_QUERY_TABLE_TYPE_SNAPSHOT,
   ];
 
   static final $core.Map<$core.int, BigQueryTableType> _byValue =

@@ -55,10 +55,23 @@ class TollPass extends $pb.ProtobufEnum {
       TollPass._(78, _omitEnumNames ? '' : 'IN_FASTAG');
   static const TollPass IN_LOCAL_HP_PLATE_EXEMPT =
       TollPass._(79, _omitEnumNames ? '' : 'IN_LOCAL_HP_PLATE_EXEMPT');
+  static const TollPass JP_ETC = TollPass._(98, _omitEnumNames ? '' : 'JP_ETC');
+  static const TollPass JP_ETC2 =
+      TollPass._(99, _omitEnumNames ? '' : 'JP_ETC2');
+  static const TollPass MX_IAVE =
+      TollPass._(90, _omitEnumNames ? '' : 'MX_IAVE');
+  static const TollPass MX_PASE =
+      TollPass._(91, _omitEnumNames ? '' : 'MX_PASE');
+  static const TollPass MX_QUICKPASS =
+      TollPass._(93, _omitEnumNames ? '' : 'MX_QUICKPASS');
+  static const TollPass MX_SISTEMA_TELEPEAJE_CHIHUAHUA =
+      TollPass._(89, _omitEnumNames ? '' : 'MX_SISTEMA_TELEPEAJE_CHIHUAHUA');
   static const TollPass MX_TAG_IAVE =
       TollPass._(12, _omitEnumNames ? '' : 'MX_TAG_IAVE');
   static const TollPass MX_TAG_TELEVIA =
       TollPass._(13, _omitEnumNames ? '' : 'MX_TAG_TELEVIA');
+  static const TollPass MX_TELEVIA =
+      TollPass._(92, _omitEnumNames ? '' : 'MX_TELEVIA');
   static const TollPass MX_VIAPASS =
       TollPass._(14, _omitEnumNames ? '' : 'MX_VIAPASS');
   static const TollPass US_AL_FREEDOM_PASS =
@@ -129,10 +142,14 @@ class TollPass extends $pb.ProtobufEnum {
           _omitEnumNames
               ? ''
               : 'US_MI_AMBASSADOR_BRIDGE_PREMIER_COMMUTER_CARD');
+  static const TollPass US_MI_BCPASS =
+      TollPass._(94, _omitEnumNames ? '' : 'US_MI_BCPASS');
   static const TollPass US_MI_GROSSE_ILE_TOLL_BRIDGE_PASS_TAG = TollPass._(
       37, _omitEnumNames ? '' : 'US_MI_GROSSE_ILE_TOLL_BRIDGE_PASS_TAG');
   static const TollPass US_MI_IQ_PROX_CARD =
       TollPass._(38, _omitEnumNames ? '' : 'US_MI_IQ_PROX_CARD');
+  static const TollPass US_MI_IQ_TAG =
+      TollPass._(95, _omitEnumNames ? '' : 'US_MI_IQ_TAG');
   static const TollPass US_MI_MACKINAC_BRIDGE_MAC_PASS =
       TollPass._(39, _omitEnumNames ? '' : 'US_MI_MACKINAC_BRIDGE_MAC_PASS');
   static const TollPass US_MI_NEXPRESS_TOLL =
@@ -163,6 +180,8 @@ class TollPass extends $pb.ProtobufEnum {
       TollPass._(46, _omitEnumNames ? '' : 'US_RI_EZPASSRI');
   static const TollPass US_SC_PALPASS =
       TollPass._(47, _omitEnumNames ? '' : 'US_SC_PALPASS');
+  static const TollPass US_TX_AVI_TAG =
+      TollPass._(97, _omitEnumNames ? '' : 'US_TX_AVI_TAG');
   static const TollPass US_TX_BANCPASS =
       TollPass._(48, _omitEnumNames ? '' : 'US_TX_BANCPASS');
   static const TollPass US_TX_DEL_RIO_PASS =
@@ -177,6 +196,8 @@ class TollPass extends $pb.ProtobufEnum {
       TollPass._(53, _omitEnumNames ? '' : 'US_TX_EZ_CROSS');
   static const TollPass US_TX_EZTAG =
       TollPass._(54, _omitEnumNames ? '' : 'US_TX_EZTAG');
+  static const TollPass US_TX_FUEGO_TAG =
+      TollPass._(96, _omitEnumNames ? '' : 'US_TX_FUEGO_TAG');
   static const TollPass US_TX_LAREDO_TRADE_TAG =
       TollPass._(55, _omitEnumNames ? '' : 'US_TX_LAREDO_TRADE_TAG');
   static const TollPass US_TX_PLUSPASS =
@@ -199,6 +220,8 @@ class TollPass extends $pb.ProtobufEnum {
       TollPass._(62, _omitEnumNames ? '' : 'US_WV_EZPASSWV');
   static const TollPass US_WV_MEMORIAL_BRIDGE_TICKETS =
       TollPass._(63, _omitEnumNames ? '' : 'US_WV_MEMORIAL_BRIDGE_TICKETS');
+  static const TollPass US_WV_MOV_PASS =
+      TollPass._(100, _omitEnumNames ? '' : 'US_WV_MOV_PASS');
   static const TollPass US_WV_NEWELL_TOLL_BRIDGE_TICKET =
       TollPass._(64, _omitEnumNames ? '' : 'US_WV_NEWELL_TOLL_BRIDGE_TICKET');
 
@@ -223,8 +246,15 @@ class TollPass extends $pb.ProtobufEnum {
     ID_E_TOLL,
     IN_FASTAG,
     IN_LOCAL_HP_PLATE_EXEMPT,
+    JP_ETC,
+    JP_ETC2,
+    MX_IAVE,
+    MX_PASE,
+    MX_QUICKPASS,
+    MX_SISTEMA_TELEPEAJE_CHIHUAHUA,
     MX_TAG_IAVE,
     MX_TAG_TELEVIA,
+    MX_TELEVIA,
     MX_VIAPASS,
     US_AL_FREEDOM_PASS,
     US_AK_ANTON_ANDERSON_TUNNEL_BOOK_OF_10_TICKETS,
@@ -254,8 +284,10 @@ class TollPass extends $pb.ProtobufEnum {
     US_MD_EZPASSMD,
     US_ME_EZPASSME,
     US_MI_AMBASSADOR_BRIDGE_PREMIER_COMMUTER_CARD,
+    US_MI_BCPASS,
     US_MI_GROSSE_ILE_TOLL_BRIDGE_PASS_TAG,
     US_MI_IQ_PROX_CARD,
+    US_MI_IQ_TAG,
     US_MI_MACKINAC_BRIDGE_MAC_PASS,
     US_MI_NEXPRESS_TOLL,
     US_MN_EZPASSMN,
@@ -271,6 +303,7 @@ class TollPass extends $pb.ProtobufEnum {
     US_PA_EZPASSPA,
     US_RI_EZPASSRI,
     US_SC_PALPASS,
+    US_TX_AVI_TAG,
     US_TX_BANCPASS,
     US_TX_DEL_RIO_PASS,
     US_TX_EFAST_PASS,
@@ -278,6 +311,7 @@ class TollPass extends $pb.ProtobufEnum {
     US_TX_EPTOLL,
     US_TX_EZ_CROSS,
     US_TX_EZTAG,
+    US_TX_FUEGO_TAG,
     US_TX_LAREDO_TRADE_TAG,
     US_TX_PLUSPASS,
     US_TX_TOLLTAG,
@@ -289,6 +323,7 @@ class TollPass extends $pb.ProtobufEnum {
     US_WA_GOOD_TO_GO,
     US_WV_EZPASSWV,
     US_WV_MEMORIAL_BRIDGE_TICKETS,
+    US_WV_MOV_PASS,
     US_WV_NEWELL_TOLL_BRIDGE_TICKET,
   ];
 

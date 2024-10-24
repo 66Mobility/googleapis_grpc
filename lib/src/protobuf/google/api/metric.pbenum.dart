@@ -81,4 +81,49 @@ class MetricDescriptor_ValueType extends $pb.ProtobufEnum {
   const MetricDescriptor_ValueType._($core.int v, $core.String n) : super(v, n);
 }
 
+/// The resource hierarchy level of the timeseries data of a metric.
+class MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+    extends $pb.ProtobufEnum {
+  static const MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+      TIME_SERIES_RESOURCE_HIERARCHY_LEVEL_UNSPECIFIED =
+      MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+          ._(
+              0,
+              _omitEnumNames
+                  ? ''
+                  : 'TIME_SERIES_RESOURCE_HIERARCHY_LEVEL_UNSPECIFIED');
+  static const MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+      PROJECT =
+      MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+          ._(1, _omitEnumNames ? '' : 'PROJECT');
+  static const MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+      ORGANIZATION =
+      MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+          ._(2, _omitEnumNames ? '' : 'ORGANIZATION');
+  static const MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+      FOLDER =
+      MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+          ._(3, _omitEnumNames ? '' : 'FOLDER');
+
+  static const $core.List<
+          MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel>
+      values =
+      <MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel>[
+    TIME_SERIES_RESOURCE_HIERARCHY_LEVEL_UNSPECIFIED,
+    PROJECT,
+    ORGANIZATION,
+    FOLDER,
+  ];
+
+  static final $core.Map<$core.int,
+          MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel?
+      valueOf($core.int value) => _byValue[value];
+
+  const MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel._(
+      $core.int v, $core.String n)
+      : super(v, n);
+}
+
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

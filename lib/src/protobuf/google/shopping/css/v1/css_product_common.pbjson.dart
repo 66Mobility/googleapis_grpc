@@ -13,6 +13,21 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
+@$core.Deprecated('Use subscriptionPeriodDescriptor instead')
+const SubscriptionPeriod$json = {
+  '1': 'SubscriptionPeriod',
+  '2': [
+    {'1': 'SUBSCRIPTION_PERIOD_UNSPECIFIED', '2': 0},
+    {'1': 'MONTH', '2': 1},
+    {'1': 'YEAR', '2': 2},
+  ],
+};
+
+/// Descriptor for `SubscriptionPeriod`. Decode as a `google.protobuf.EnumDescriptorProto`.
+final $typed_data.Uint8List subscriptionPeriodDescriptor = $convert.base64Decode(
+    'ChJTdWJzY3JpcHRpb25QZXJpb2QSIwofU1VCU0NSSVBUSU9OX1BFUklPRF9VTlNQRUNJRklFRB'
+    'AAEgkKBU1PTlRIEAESCAoEWUVBUhAC');
+
 @$core.Deprecated('Use attributesDescriptor instead')
 const Attributes$json = {
   '1': 'Attributes',
@@ -350,6 +365,22 @@ const Attributes$json = {
       '10': 'customLabel4',
       '17': true
     },
+    {
+      '1': 'headline_offer_installment',
+      '3': 51,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.HeadlineOfferInstallment',
+      '10': 'headlineOfferInstallment'
+    },
+    {
+      '1': 'headline_offer_subscription_cost',
+      '3': 52,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.HeadlineOfferSubscriptionCost',
+      '10': 'headlineOfferSubscriptionCost'
+    },
   ],
   '8': [
     {'1': '_cpp_link'},
@@ -429,16 +460,21 @@ final $typed_data.Uint8List attributesDescriptor = $convert.base64Decode(
     'X2xhYmVsXzAYLiABKAlIGlIMY3VzdG9tTGFiZWwwiAEBEikKDmN1c3RvbV9sYWJlbF8xGC8gAS'
     'gJSBtSDGN1c3RvbUxhYmVsMYgBARIpCg5jdXN0b21fbGFiZWxfMhgwIAEoCUgcUgxjdXN0b21M'
     'YWJlbDKIAQESKQoOY3VzdG9tX2xhYmVsXzMYMSABKAlIHVIMY3VzdG9tTGFiZWwziAEBEikKDm'
-    'N1c3RvbV9sYWJlbF80GDIgASgJSB5SDGN1c3RvbUxhYmVsNIgBAUILCglfY3BwX2xpbmtCEgoQ'
-    'X2NwcF9tb2JpbGVfbGlua0ITChFfY3BwX2Fkc19yZWRpcmVjdEITChFfbnVtYmVyX29mX29mZm'
-    'Vyc0IbChlfaGVhZGxpbmVfb2ZmZXJfY29uZGl0aW9uQhYKFF9oZWFkbGluZV9vZmZlcl9saW5r'
-    'Qh0KG19oZWFkbGluZV9vZmZlcl9tb2JpbGVfbGlua0IICgZfdGl0bGVCDQoLX2ltYWdlX2xpbm'
-    'tCDgoMX2Rlc2NyaXB0aW9uQggKBl9icmFuZEIGCgRfbXBuQgcKBV9ndGluQhoKGF9nb29nbGVf'
-    'cHJvZHVjdF9jYXRlZ29yeUIICgZfYWR1bHRCDAoKX211bHRpcGFja0IMCgpfaXNfYnVuZGxlQg'
-    'wKCl9hZ2VfZ3JvdXBCCAoGX2NvbG9yQgkKB19nZW5kZXJCCwoJX21hdGVyaWFsQgoKCF9wYXR0'
-    'ZXJuQgcKBV9zaXplQg4KDF9zaXplX3N5c3RlbUIQCg5faXRlbV9ncm91cF9pZEIICgZfcGF1c2'
-    'VCEQoPX2N1c3RvbV9sYWJlbF8wQhEKD19jdXN0b21fbGFiZWxfMUIRCg9fY3VzdG9tX2xhYmVs'
-    'XzJCEQoPX2N1c3RvbV9sYWJlbF8zQhEKD19jdXN0b21fbGFiZWxfNA==');
+    'N1c3RvbV9sYWJlbF80GDIgASgJSB5SDGN1c3RvbUxhYmVsNIgBARJuChpoZWFkbGluZV9vZmZl'
+    'cl9pbnN0YWxsbWVudBgzIAEoCzIwLmdvb2dsZS5zaG9wcGluZy5jc3MudjEuSGVhZGxpbmVPZm'
+    'Zlckluc3RhbGxtZW50UhhoZWFkbGluZU9mZmVySW5zdGFsbG1lbnQSfgogaGVhZGxpbmVfb2Zm'
+    'ZXJfc3Vic2NyaXB0aW9uX2Nvc3QYNCABKAsyNS5nb29nbGUuc2hvcHBpbmcuY3NzLnYxLkhlYW'
+    'RsaW5lT2ZmZXJTdWJzY3JpcHRpb25Db3N0Uh1oZWFkbGluZU9mZmVyU3Vic2NyaXB0aW9uQ29z'
+    'dEILCglfY3BwX2xpbmtCEgoQX2NwcF9tb2JpbGVfbGlua0ITChFfY3BwX2Fkc19yZWRpcmVjdE'
+    'ITChFfbnVtYmVyX29mX29mZmVyc0IbChlfaGVhZGxpbmVfb2ZmZXJfY29uZGl0aW9uQhYKFF9o'
+    'ZWFkbGluZV9vZmZlcl9saW5rQh0KG19oZWFkbGluZV9vZmZlcl9tb2JpbGVfbGlua0IICgZfdG'
+    'l0bGVCDQoLX2ltYWdlX2xpbmtCDgoMX2Rlc2NyaXB0aW9uQggKBl9icmFuZEIGCgRfbXBuQgcK'
+    'BV9ndGluQhoKGF9nb29nbGVfcHJvZHVjdF9jYXRlZ29yeUIICgZfYWR1bHRCDAoKX211bHRpcG'
+    'Fja0IMCgpfaXNfYnVuZGxlQgwKCl9hZ2VfZ3JvdXBCCAoGX2NvbG9yQgkKB19nZW5kZXJCCwoJ'
+    'X21hdGVyaWFsQgoKCF9wYXR0ZXJuQgcKBV9zaXplQg4KDF9zaXplX3N5c3RlbUIQCg5faXRlbV'
+    '9ncm91cF9pZEIICgZfcGF1c2VCEQoPX2N1c3RvbV9sYWJlbF8wQhEKD19jdXN0b21fbGFiZWxf'
+    'MUIRCg9fY3VzdG9tX2xhYmVsXzJCEQoPX2N1c3RvbV9sYWJlbF8zQhEKD19jdXN0b21fbGFiZW'
+    'xfNA==');
 
 @$core.Deprecated('Use certificationDescriptor instead')
 const Certification$json = {
@@ -621,3 +657,65 @@ final $typed_data.Uint8List cssProductStatusDescriptor = $convert.base64Decode(
     'gGIAEoCVILZGVzY3JpcHRpb24SFgoGZGV0YWlsGAcgASgJUgZkZXRhaWwSJAoNZG9jdW1lbnRh'
     'dGlvbhgIIAEoCVINZG9jdW1lbnRhdGlvbhIxChRhcHBsaWNhYmxlX2NvdW50cmllcxgJIAMoCV'
     'ITYXBwbGljYWJsZUNvdW50cmllcw==');
+
+@$core.Deprecated('Use headlineOfferSubscriptionCostDescriptor instead')
+const HeadlineOfferSubscriptionCost$json = {
+  '1': 'HeadlineOfferSubscriptionCost',
+  '2': [
+    {
+      '1': 'period',
+      '3': 1,
+      '4': 1,
+      '5': 14,
+      '6': '.google.shopping.css.v1.SubscriptionPeriod',
+      '10': 'period'
+    },
+    {'1': 'period_length', '3': 2, '4': 1, '5': 3, '10': 'periodLength'},
+    {
+      '1': 'amount',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'amount'
+    },
+  ],
+};
+
+/// Descriptor for `HeadlineOfferSubscriptionCost`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List headlineOfferSubscriptionCostDescriptor = $convert.base64Decode(
+    'Ch1IZWFkbGluZU9mZmVyU3Vic2NyaXB0aW9uQ29zdBJCCgZwZXJpb2QYASABKA4yKi5nb29nbG'
+    'Uuc2hvcHBpbmcuY3NzLnYxLlN1YnNjcmlwdGlvblBlcmlvZFIGcGVyaW9kEiMKDXBlcmlvZF9s'
+    'ZW5ndGgYAiABKANSDHBlcmlvZExlbmd0aBIzCgZhbW91bnQYAyABKAsyGy5nb29nbGUuc2hvcH'
+    'BpbmcudHlwZS5QcmljZVIGYW1vdW50');
+
+@$core.Deprecated('Use headlineOfferInstallmentDescriptor instead')
+const HeadlineOfferInstallment$json = {
+  '1': 'HeadlineOfferInstallment',
+  '2': [
+    {'1': 'months', '3': 1, '4': 1, '5': 3, '10': 'months'},
+    {
+      '1': 'amount',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'amount'
+    },
+    {
+      '1': 'downpayment',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.type.Price',
+      '10': 'downpayment'
+    },
+  ],
+};
+
+/// Descriptor for `HeadlineOfferInstallment`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List headlineOfferInstallmentDescriptor = $convert.base64Decode(
+    'ChhIZWFkbGluZU9mZmVySW5zdGFsbG1lbnQSFgoGbW9udGhzGAEgASgDUgZtb250aHMSMwoGYW'
+    '1vdW50GAIgASgLMhsuZ29vZ2xlLnNob3BwaW5nLnR5cGUuUHJpY2VSBmFtb3VudBI9Cgtkb3du'
+    'cGF5bWVudBgDIAEoCzIbLmdvb2dsZS5zaG9wcGluZy50eXBlLlByaWNlUgtkb3ducGF5bWVudA'
+    '==');

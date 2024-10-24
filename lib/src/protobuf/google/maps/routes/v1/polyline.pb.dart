@@ -85,7 +85,7 @@ class Polyline extends $pb.GeneratedMessage {
   void clearPolylineType() => clearField($_whichOneof(0));
 
   /// The string encoding of the polyline using the [polyline encoding
-  /// algorithm](https://developers.google.com/maps/documentation/utilities/polylinealgorithm)
+  /// algorithm](https://developers.google.com/maps/documentation/utilities/polylinealgorithm).
   @$pb.TagNumber(1)
   $core.String get encodedPolyline => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -99,7 +99,7 @@ class Polyline extends $pb.GeneratedMessage {
   void clearEncodedPolyline() => clearField(1);
 
   /// Specifies a polyline using the [GeoJSON LineString
-  /// format](https://tools.ietf.org/html/rfc7946#section-3.1.4)
+  /// format](https://tools.ietf.org/html/rfc7946#section-3.1.4).
   @$pb.TagNumber(2)
   $261.Struct get geoJsonLinestring => $_getN(1);
   @$pb.TagNumber(2)

@@ -136,7 +136,7 @@ class Waypoint extends $pb.GeneratedMessage {
   /// added to the `legs` array, but they do route the journey through the
   /// waypoint. You can only set this value on waypoints that are intermediates.
   /// The request fails if you set this field on terminal waypoints.
-  /// If ComputeRoutesRequest.optimize_waypoint_order is set to true then
+  /// If `ComputeRoutesRequest.optimize_waypoint_order` is set to true then
   /// this field cannot be set to true; otherwise, the request fails.
   @$pb.TagNumber(3)
   $core.bool get via => $_getBF(2);
@@ -172,7 +172,7 @@ class Waypoint extends $pb.GeneratedMessage {
   /// value, the route will pass through the location so that the vehicle can
   /// stop at the side of road that the location is biased towards from the
   /// center of the road. This option works only for 'DRIVE' and 'TWO_WHEELER'
-  /// travel modes, and when the 'location_type' is set to 'location'.
+  /// travel modes.
   @$pb.TagNumber(5)
   $core.bool get sideOfRoad => $_getBF(4);
   @$pb.TagNumber(5)
@@ -257,10 +257,10 @@ class Location extends $pb.GeneratedMessage {
   $325.LatLng ensureLatLng() => $_ensure(0);
 
   /// The compass heading associated with the direction of the flow of traffic.
-  /// This value is used to specify the side of the road to use for pickup and
+  /// This value specifies the side of the road to use for pickup and
   /// drop-off. Heading values can be from 0 to 360, where 0 specifies a heading
-  /// of due North, 90 specifies a heading of due East, etc. You can use this
-  /// field only for `DRIVE` and `TWO_WHEELER` travel modes.
+  /// of due North, 90 specifies a heading of due East, and so on. You can use
+  /// this field only for `DRIVE` and `TWO_WHEELER` travel modes.
   @$pb.TagNumber(2)
   $307.Int32Value get heading => $_getN(1);
   @$pb.TagNumber(2)

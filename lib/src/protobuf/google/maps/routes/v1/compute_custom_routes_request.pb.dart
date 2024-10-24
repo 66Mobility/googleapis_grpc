@@ -609,6 +609,7 @@ class RouteObjective_CustomLayer_DatasetInfo extends $pb.GeneratedMessage {
   void clearDisplayName() => clearField(2);
 }
 
+/// Deprecated: Custom layers will stop affecting route generation soon.
 /// Customized data layer that customers use to influence the generated route.
 class RouteObjective_CustomLayer extends $pb.GeneratedMessage {
   factory RouteObjective_CustomLayer({
@@ -764,7 +765,8 @@ class RouteObjective extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   RouteObjective_RateCard ensureRateCard() => $_ensure(0);
 
-  /// Optional. Specifies the custom data layer being used to affect generated
+  /// Optional. Deprecated: Custom layers will stop affecting route generation
+  /// soon. Specifies the custom data layer being used to affect generated
   /// routes. Customers can turn off the custom layer by not setting this field.
   @$pb.TagNumber(2)
   RouteObjective_CustomLayer get customLayer => $_getN(1);

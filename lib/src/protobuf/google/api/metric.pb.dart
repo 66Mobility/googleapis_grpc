@@ -27,6 +27,9 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
     $304.LaunchStage? launchStage,
     $264.Duration? samplePeriod,
     $264.Duration? ingestDelay,
+    $core.Iterable<
+            MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel>?
+        timeSeriesResourceHierarchyLevel,
   }) {
     final $result = create();
     if (launchStage != null) {
@@ -38,6 +41,10 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
     }
     if (ingestDelay != null) {
       $result.ingestDelay = ingestDelay;
+    }
+    if (timeSeriesResourceHierarchyLevel != null) {
+      $result.timeSeriesResourceHierarchyLevel
+          .addAll(timeSeriesResourceHierarchyLevel);
     }
     return $result;
   }
@@ -63,6 +70,19 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
         subBuilder: $264.Duration.create)
     ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'ingestDelay',
         subBuilder: $264.Duration.create)
+    ..pc<MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel>(
+        4,
+        _omitFieldNames ? '' : 'timeSeriesResourceHierarchyLevel',
+        $pb.PbFieldType.KE,
+        valueOf:
+            MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+                .valueOf,
+        enumValues:
+            MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+                .values,
+        defaultEnumValue:
+            MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel
+                .TIME_SERIES_RESOURCE_HIERARCHY_LEVEL_UNSPECIFIED)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -147,6 +167,12 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
   void clearIngestDelay() => clearField(3);
   @$pb.TagNumber(3)
   $264.Duration ensureIngestDelay() => $_ensure(2);
+
+  /// The scope of the timeseries data of the metric.
+  @$pb.TagNumber(4)
+  $core.List<
+          MetricDescriptor_MetricDescriptorMetadata_TimeSeriesResourceHierarchyLevel>
+      get timeSeriesResourceHierarchyLevel => $_getList(3);
 }
 
 ///  Defines a metric type and its schema. Once a metric descriptor is created,

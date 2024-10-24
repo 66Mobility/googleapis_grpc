@@ -451,9 +451,23 @@ const Instance$json = {
       '8': {},
       '10': 'edition'
     },
+    {
+      '1': 'default_backup_schedule_type',
+      '3': 23,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.spanner.admin.instance.v1.Instance.DefaultBackupScheduleType',
+      '8': {},
+      '10': 'defaultBackupScheduleType'
+    },
   ],
   '3': [Instance_LabelsEntry$json],
-  '4': [Instance_State$json, Instance_Edition$json],
+  '4': [
+    Instance_State$json,
+    Instance_Edition$json,
+    Instance_DefaultBackupScheduleType$json
+  ],
   '7': {},
 };
 
@@ -488,6 +502,16 @@ const Instance_Edition$json = {
   ],
 };
 
+@$core.Deprecated('Use instanceDescriptor instead')
+const Instance_DefaultBackupScheduleType$json = {
+  '1': 'DefaultBackupScheduleType',
+  '2': [
+    {'1': 'DEFAULT_BACKUP_SCHEDULE_TYPE_UNSPECIFIED', '2': 0},
+    {'1': 'NONE', '2': 1},
+    {'1': 'AUTOMATIC', '2': 2},
+  ],
+};
+
 /// Descriptor for `Instance`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List instanceDescriptor = $convert.base64Decode(
     'CghJbnN0YW5jZRIXCgRuYW1lGAEgASgJQgPgQQJSBG5hbWUSRQoGY29uZmlnGAIgASgJQi3gQQ'
@@ -505,12 +529,16 @@ final $typed_data.Uint8List instanceDescriptor = $convert.base64Decode(
     'b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBA1IKY3JlYXRlVGltZRJACgt1cGRhdGVfdGltZR'
     'gMIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBA1IKdXBkYXRlVGltZRJRCgdl'
     'ZGl0aW9uGBQgASgOMjIuZ29vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2'
-    'UuRWRpdGlvbkID4EEBUgdlZGl0aW9uGjkKC0xhYmVsc0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5'
-    'EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOAEiNwoFU3RhdGUSFQoRU1RBVEVfVU5TUEVDSUZJRU'
-    'QQABIMCghDUkVBVElORxABEgkKBVJFQURZEAIiVQoHRWRpdGlvbhIXChNFRElUSU9OX1VOU1BF'
-    'Q0lGSUVEEAASDAoIU1RBTkRBUkQQARIOCgpFTlRFUlBSSVNFEAISEwoPRU5URVJQUklTRV9QTF'
-    'VTEAM6TepBSgofc3Bhbm5lci5nb29nbGVhcGlzLmNvbS9JbnN0YW5jZRIncHJvamVjdHMve3By'
-    'b2plY3R9L2luc3RhbmNlcy97aW5zdGFuY2V9');
+    'UuRWRpdGlvbkID4EEBUgdlZGl0aW9uEooBChxkZWZhdWx0X2JhY2t1cF9zY2hlZHVsZV90eXBl'
+    'GBcgASgOMkQuZ29vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2UuRGVmYX'
+    'VsdEJhY2t1cFNjaGVkdWxlVHlwZUID4EEBUhlkZWZhdWx0QmFja3VwU2NoZWR1bGVUeXBlGjkK'
+    'C0xhYmVsc0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOA'
+    'EiNwoFU3RhdGUSFQoRU1RBVEVfVU5TUEVDSUZJRUQQABIMCghDUkVBVElORxABEgkKBVJFQURZ'
+    'EAIiVQoHRWRpdGlvbhIXChNFRElUSU9OX1VOU1BFQ0lGSUVEEAASDAoIU1RBTkRBUkQQARIOCg'
+    'pFTlRFUlBSSVNFEAISEwoPRU5URVJQUklTRV9QTFVTEAMiYgoZRGVmYXVsdEJhY2t1cFNjaGVk'
+    'dWxlVHlwZRIsCihERUZBVUxUX0JBQ0tVUF9TQ0hFRFVMRV9UWVBFX1VOU1BFQ0lGSUVEEAASCA'
+    'oETk9ORRABEg0KCUFVVE9NQVRJQxACOk3qQUoKH3NwYW5uZXIuZ29vZ2xlYXBpcy5jb20vSW5z'
+    'dGFuY2USJ3Byb2plY3RzL3twcm9qZWN0fS9pbnN0YW5jZXMve2luc3RhbmNlfQ==');
 
 @$core.Deprecated('Use listInstanceConfigsRequestDescriptor instead')
 const ListInstanceConfigsRequest$json = {

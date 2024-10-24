@@ -145,65 +145,6 @@ class StorageClient extends $grpc.Client {
       ($254.QueryWriteStatusRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
           $254.QueryWriteStatusResponse.fromBuffer(value));
-  static final _$getServiceAccount =
-      $grpc.ClientMethod<$254.GetServiceAccountRequest, $254.ServiceAccount>(
-          '/google.storage.v2.Storage/GetServiceAccount',
-          ($254.GetServiceAccountRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) =>
-              $254.ServiceAccount.fromBuffer(value));
-  static final _$createHmacKey =
-      $grpc.ClientMethod<$254.CreateHmacKeyRequest, $254.CreateHmacKeyResponse>(
-          '/google.storage.v2.Storage/CreateHmacKey',
-          ($254.CreateHmacKeyRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) =>
-              $254.CreateHmacKeyResponse.fromBuffer(value));
-  static final _$deleteHmacKey =
-      $grpc.ClientMethod<$254.DeleteHmacKeyRequest, $3.Empty>(
-          '/google.storage.v2.Storage/DeleteHmacKey',
-          ($254.DeleteHmacKeyRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$getHmacKey =
-      $grpc.ClientMethod<$254.GetHmacKeyRequest, $254.HmacKeyMetadata>(
-          '/google.storage.v2.Storage/GetHmacKey',
-          ($254.GetHmacKeyRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) =>
-              $254.HmacKeyMetadata.fromBuffer(value));
-  static final _$listHmacKeys =
-      $grpc.ClientMethod<$254.ListHmacKeysRequest, $254.ListHmacKeysResponse>(
-          '/google.storage.v2.Storage/ListHmacKeys',
-          ($254.ListHmacKeysRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) =>
-              $254.ListHmacKeysResponse.fromBuffer(value));
-  static final _$updateHmacKey =
-      $grpc.ClientMethod<$254.UpdateHmacKeyRequest, $254.HmacKeyMetadata>(
-          '/google.storage.v2.Storage/UpdateHmacKey',
-          ($254.UpdateHmacKeyRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) =>
-              $254.HmacKeyMetadata.fromBuffer(value));
-  static final _$deleteNotificationConfig =
-      $grpc.ClientMethod<$254.DeleteNotificationConfigRequest, $3.Empty>(
-          '/google.storage.v2.Storage/DeleteNotificationConfig',
-          ($254.DeleteNotificationConfigRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$getNotificationConfig = $grpc.ClientMethod<
-          $254.GetNotificationConfigRequest, $254.NotificationConfig>(
-      '/google.storage.v2.Storage/GetNotificationConfig',
-      ($254.GetNotificationConfigRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) =>
-          $254.NotificationConfig.fromBuffer(value));
-  static final _$createNotificationConfig = $grpc.ClientMethod<
-          $254.CreateNotificationConfigRequest, $254.NotificationConfig>(
-      '/google.storage.v2.Storage/CreateNotificationConfig',
-      ($254.CreateNotificationConfigRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) =>
-          $254.NotificationConfig.fromBuffer(value));
-  static final _$listNotificationConfigs = $grpc.ClientMethod<
-          $254.ListNotificationConfigsRequest,
-          $254.ListNotificationConfigsResponse>(
-      '/google.storage.v2.Storage/ListNotificationConfigs',
-      ($254.ListNotificationConfigsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) =>
-          $254.ListNotificationConfigsResponse.fromBuffer(value));
 
   StorageClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -338,69 +279,6 @@ class StorageClient extends $grpc.Client {
       $254.QueryWriteStatusRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$queryWriteStatus, request, options: options);
-  }
-
-  $grpc.ResponseFuture<$254.ServiceAccount> getServiceAccount(
-      $254.GetServiceAccountRequest request,
-      {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$getServiceAccount, request, options: options);
-  }
-
-  $grpc.ResponseFuture<$254.CreateHmacKeyResponse> createHmacKey(
-      $254.CreateHmacKeyRequest request,
-      {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$createHmacKey, request, options: options);
-  }
-
-  $grpc.ResponseFuture<$3.Empty> deleteHmacKey(
-      $254.DeleteHmacKeyRequest request,
-      {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$deleteHmacKey, request, options: options);
-  }
-
-  $grpc.ResponseFuture<$254.HmacKeyMetadata> getHmacKey(
-      $254.GetHmacKeyRequest request,
-      {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$getHmacKey, request, options: options);
-  }
-
-  $grpc.ResponseFuture<$254.ListHmacKeysResponse> listHmacKeys(
-      $254.ListHmacKeysRequest request,
-      {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$listHmacKeys, request, options: options);
-  }
-
-  $grpc.ResponseFuture<$254.HmacKeyMetadata> updateHmacKey(
-      $254.UpdateHmacKeyRequest request,
-      {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$updateHmacKey, request, options: options);
-  }
-
-  $grpc.ResponseFuture<$3.Empty> deleteNotificationConfig(
-      $254.DeleteNotificationConfigRequest request,
-      {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$deleteNotificationConfig, request,
-        options: options);
-  }
-
-  $grpc.ResponseFuture<$254.NotificationConfig> getNotificationConfig(
-      $254.GetNotificationConfigRequest request,
-      {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$getNotificationConfig, request, options: options);
-  }
-
-  $grpc.ResponseFuture<$254.NotificationConfig> createNotificationConfig(
-      $254.CreateNotificationConfigRequest request,
-      {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$createNotificationConfig, request,
-        options: options);
-  }
-
-  $grpc.ResponseFuture<$254.ListNotificationConfigsResponse>
-      listNotificationConfigs($254.ListNotificationConfigsRequest request,
-          {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$listNotificationConfigs, request,
-        options: options);
   }
 }
 
@@ -596,95 +474,6 @@ abstract class StorageServiceBase extends $grpc.Service {
         ($core.List<$core.int> value) =>
             $254.QueryWriteStatusRequest.fromBuffer(value),
         ($254.QueryWriteStatusResponse value) => value.writeToBuffer()));
-    $addMethod(
-        $grpc.ServiceMethod<$254.GetServiceAccountRequest, $254.ServiceAccount>(
-            'GetServiceAccount',
-            getServiceAccount_Pre,
-            false,
-            false,
-            ($core.List<$core.int> value) =>
-                $254.GetServiceAccountRequest.fromBuffer(value),
-            ($254.ServiceAccount value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$254.CreateHmacKeyRequest,
-            $254.CreateHmacKeyResponse>(
-        'CreateHmacKey',
-        createHmacKey_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) =>
-            $254.CreateHmacKeyRequest.fromBuffer(value),
-        ($254.CreateHmacKeyResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$254.DeleteHmacKeyRequest, $3.Empty>(
-        'DeleteHmacKey',
-        deleteHmacKey_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) =>
-            $254.DeleteHmacKeyRequest.fromBuffer(value),
-        ($3.Empty value) => value.writeToBuffer()));
-    $addMethod(
-        $grpc.ServiceMethod<$254.GetHmacKeyRequest, $254.HmacKeyMetadata>(
-            'GetHmacKey',
-            getHmacKey_Pre,
-            false,
-            false,
-            ($core.List<$core.int> value) =>
-                $254.GetHmacKeyRequest.fromBuffer(value),
-            ($254.HmacKeyMetadata value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$254.ListHmacKeysRequest,
-            $254.ListHmacKeysResponse>(
-        'ListHmacKeys',
-        listHmacKeys_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) =>
-            $254.ListHmacKeysRequest.fromBuffer(value),
-        ($254.ListHmacKeysResponse value) => value.writeToBuffer()));
-    $addMethod(
-        $grpc.ServiceMethod<$254.UpdateHmacKeyRequest, $254.HmacKeyMetadata>(
-            'UpdateHmacKey',
-            updateHmacKey_Pre,
-            false,
-            false,
-            ($core.List<$core.int> value) =>
-                $254.UpdateHmacKeyRequest.fromBuffer(value),
-            ($254.HmacKeyMetadata value) => value.writeToBuffer()));
-    $addMethod(
-        $grpc.ServiceMethod<$254.DeleteNotificationConfigRequest, $3.Empty>(
-            'DeleteNotificationConfig',
-            deleteNotificationConfig_Pre,
-            false,
-            false,
-            ($core.List<$core.int> value) =>
-                $254.DeleteNotificationConfigRequest.fromBuffer(value),
-            ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$254.GetNotificationConfigRequest,
-            $254.NotificationConfig>(
-        'GetNotificationConfig',
-        getNotificationConfig_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) =>
-            $254.GetNotificationConfigRequest.fromBuffer(value),
-        ($254.NotificationConfig value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$254.CreateNotificationConfigRequest,
-            $254.NotificationConfig>(
-        'CreateNotificationConfig',
-        createNotificationConfig_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) =>
-            $254.CreateNotificationConfigRequest.fromBuffer(value),
-        ($254.NotificationConfig value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$254.ListNotificationConfigsRequest,
-            $254.ListNotificationConfigsResponse>(
-        'ListNotificationConfigs',
-        listNotificationConfigs_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) =>
-            $254.ListNotificationConfigsRequest.fromBuffer(value),
-        ($254.ListNotificationConfigsResponse value) => value.writeToBuffer()));
   }
 
   $async.Future<$3.Empty> deleteBucket_Pre($grpc.ServiceCall call,
@@ -794,62 +583,6 @@ abstract class StorageServiceBase extends $grpc.Service {
     return queryWriteStatus(call, await request);
   }
 
-  $async.Future<$254.ServiceAccount> getServiceAccount_Pre(
-      $grpc.ServiceCall call,
-      $async.Future<$254.GetServiceAccountRequest> request) async {
-    return getServiceAccount(call, await request);
-  }
-
-  $async.Future<$254.CreateHmacKeyResponse> createHmacKey_Pre(
-      $grpc.ServiceCall call,
-      $async.Future<$254.CreateHmacKeyRequest> request) async {
-    return createHmacKey(call, await request);
-  }
-
-  $async.Future<$3.Empty> deleteHmacKey_Pre($grpc.ServiceCall call,
-      $async.Future<$254.DeleteHmacKeyRequest> request) async {
-    return deleteHmacKey(call, await request);
-  }
-
-  $async.Future<$254.HmacKeyMetadata> getHmacKey_Pre($grpc.ServiceCall call,
-      $async.Future<$254.GetHmacKeyRequest> request) async {
-    return getHmacKey(call, await request);
-  }
-
-  $async.Future<$254.ListHmacKeysResponse> listHmacKeys_Pre(
-      $grpc.ServiceCall call,
-      $async.Future<$254.ListHmacKeysRequest> request) async {
-    return listHmacKeys(call, await request);
-  }
-
-  $async.Future<$254.HmacKeyMetadata> updateHmacKey_Pre($grpc.ServiceCall call,
-      $async.Future<$254.UpdateHmacKeyRequest> request) async {
-    return updateHmacKey(call, await request);
-  }
-
-  $async.Future<$3.Empty> deleteNotificationConfig_Pre($grpc.ServiceCall call,
-      $async.Future<$254.DeleteNotificationConfigRequest> request) async {
-    return deleteNotificationConfig(call, await request);
-  }
-
-  $async.Future<$254.NotificationConfig> getNotificationConfig_Pre(
-      $grpc.ServiceCall call,
-      $async.Future<$254.GetNotificationConfigRequest> request) async {
-    return getNotificationConfig(call, await request);
-  }
-
-  $async.Future<$254.NotificationConfig> createNotificationConfig_Pre(
-      $grpc.ServiceCall call,
-      $async.Future<$254.CreateNotificationConfigRequest> request) async {
-    return createNotificationConfig(call, await request);
-  }
-
-  $async.Future<$254.ListNotificationConfigsResponse>
-      listNotificationConfigs_Pre($grpc.ServiceCall call,
-          $async.Future<$254.ListNotificationConfigsRequest> request) async {
-    return listNotificationConfigs(call, await request);
-  }
-
   $async.Future<$3.Empty> deleteBucket(
       $grpc.ServiceCall call, $254.DeleteBucketRequest request);
   $async.Future<$254.Bucket> getBucket(
@@ -895,24 +628,4 @@ abstract class StorageServiceBase extends $grpc.Service {
       $grpc.ServiceCall call, $254.StartResumableWriteRequest request);
   $async.Future<$254.QueryWriteStatusResponse> queryWriteStatus(
       $grpc.ServiceCall call, $254.QueryWriteStatusRequest request);
-  $async.Future<$254.ServiceAccount> getServiceAccount(
-      $grpc.ServiceCall call, $254.GetServiceAccountRequest request);
-  $async.Future<$254.CreateHmacKeyResponse> createHmacKey(
-      $grpc.ServiceCall call, $254.CreateHmacKeyRequest request);
-  $async.Future<$3.Empty> deleteHmacKey(
-      $grpc.ServiceCall call, $254.DeleteHmacKeyRequest request);
-  $async.Future<$254.HmacKeyMetadata> getHmacKey(
-      $grpc.ServiceCall call, $254.GetHmacKeyRequest request);
-  $async.Future<$254.ListHmacKeysResponse> listHmacKeys(
-      $grpc.ServiceCall call, $254.ListHmacKeysRequest request);
-  $async.Future<$254.HmacKeyMetadata> updateHmacKey(
-      $grpc.ServiceCall call, $254.UpdateHmacKeyRequest request);
-  $async.Future<$3.Empty> deleteNotificationConfig(
-      $grpc.ServiceCall call, $254.DeleteNotificationConfigRequest request);
-  $async.Future<$254.NotificationConfig> getNotificationConfig(
-      $grpc.ServiceCall call, $254.GetNotificationConfigRequest request);
-  $async.Future<$254.NotificationConfig> createNotificationConfig(
-      $grpc.ServiceCall call, $254.CreateNotificationConfigRequest request);
-  $async.Future<$254.ListNotificationConfigsResponse> listNotificationConfigs(
-      $grpc.ServiceCall call, $254.ListNotificationConfigsRequest request);
 }

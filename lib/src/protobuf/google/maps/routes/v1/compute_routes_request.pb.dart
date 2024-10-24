@@ -22,7 +22,7 @@ import 'waypoint.pb.dart' as $482;
 
 export 'compute_routes_request.pbenum.dart';
 
-/// ComputeRoutes request message.
+/// `ComputeRoutes` request message.
 class ComputeRoutesRequest extends $pb.GeneratedMessage {
   factory ComputeRoutesRequest({
     $482.Waypoint? origin,
@@ -210,10 +210,8 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   /// Optional. Specifies how to compute the route. The server
   /// attempts to use the selected routing preference to compute the route. If
   ///  the routing preference results in an error or an extra long latency, then
-  /// an error is returned. In the future, we might implement a fallback
-  /// mechanism to use a different option when the preferred option does not give
-  /// a valid result. You can specify this option only when the `travel_mode` is
-  /// `DRIVE` or `TWO_WHEELER`, otherwise the request fails.
+  /// an error is returned. You can specify this option only when the
+  /// `travel_mode` is `DRIVE` or `TWO_WHEELER`, otherwise the request fails.
   @$pb.TagNumber(5)
   RoutingPreference get routingPreference => $_getN(4);
   @$pb.TagNumber(5)
@@ -256,7 +254,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $302.Timestamp ensureDepartureTime() => $_ensure(6);
 
-  /// Specifies whether to calculate alternate routes in addition to the route.
+  /// Optional. Specifies whether to calculate alternate routes in addition to
+  /// the route. No alternative routes are returned for requests that have
+  /// intermediate waypoints.
   @$pb.TagNumber(8)
   $core.bool get computeAlternativeRoutes => $_getBF(7);
   @$pb.TagNumber(8)
@@ -286,11 +286,12 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   RouteModifiers ensureRouteModifiers() => $_ensure(8);
 
   /// Optional. The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-  /// information, see
-  /// http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. See
-  /// [Language Support](https://developers.google.com/maps/faq#languagesupport)
-  /// for the list of supported languages. When you don't provide this value, the
-  /// display language is inferred from the location of the route request.
+  /// information, see [Unicode Locale
+  /// Identifier](http://www.unicode.org/reports/tr35/#Unicode_locale_identifier).
+  /// See [Language
+  /// Support](https://developers.google.com/maps/faq#languagesupport) for the
+  /// list of supported languages. When you don't provide this value, the display
+  /// language is inferred from the location of the route request.
   @$pb.TagNumber(10)
   $core.String get languageCode => $_getSZ(9);
   @$pb.TagNumber(10)
@@ -336,11 +337,11 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   /// If optimizeWaypointOrder is set to true, an attempt is made to re-order the
   /// specified intermediate waypoints to minimize the overall cost of the route.
   /// If any of the intermediate waypoints is via waypoint the request fails. Use
-  /// ComputeRoutesResponse.Routes.optimized_intermediate_waypoint_index to find
-  /// the new ordering. If routes.optimized_intermediate_waypoint_index is not
-  /// requested in the `X-Goog-FieldMask` header, the request fails. If
-  /// optimizeWaypointOrder is set to false,
-  /// ComputeRoutesResponse.optimized_intermediate_waypoint_index is empty.
+  /// `ComputeRoutesResponse.Routes.optimized_intermediate_waypoint_index` to
+  /// find the new ordering. If `routes.optimized_intermediate_waypoint_index` is
+  /// not requested in the `X-Goog-FieldMask` header, the request fails. If
+  /// `optimize_waypoint_order` is set to false,
+  /// `ComputeRoutesResponse.optimized_intermediate_waypoint_index` is empty.
   @$pb.TagNumber(13)
   $core.bool get optimizeWaypointOrder => $_getBF(12);
   @$pb.TagNumber(13)
@@ -435,8 +436,8 @@ class RouteModifiers extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<RouteModifiers>(create);
   static RouteModifiers? _defaultInstance;
 
-  /// Specifies whether to avoid toll roads where reasonable. Preference will be
-  /// given to routes not containing toll roads. Applies only to the `DRIVE` and
+  /// When set to true, avoids toll roads where reasonable, giving preference to
+  /// routes not containing toll roads. Applies only to the `DRIVE` and
   /// `TWO_WHEELER` travel modes.
   @$pb.TagNumber(1)
   $core.bool get avoidTolls => $_getBF(0);
@@ -450,8 +451,8 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearAvoidTolls() => clearField(1);
 
-  /// Specifies whether to avoid highways where reasonable. Preference will be
-  /// given to routes not containing highways. Applies only to the `DRIVE` and
+  /// When set to true, avoids highways where reasonable, giving preference to
+  /// routes not containing highways. Applies only to the `DRIVE` and
   /// `TWO_WHEELER` travel modes.
   @$pb.TagNumber(2)
   $core.bool get avoidHighways => $_getBF(1);
@@ -465,8 +466,8 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearAvoidHighways() => clearField(2);
 
-  /// Specifies whether to avoid ferries where reasonable. Preference will be
-  /// given to routes not containing travel by ferries.
+  /// When set to true, avoids ferries where reasonable, giving preference to
+  /// routes not containing ferries.
   /// Applies only to the `DRIVE` and`TWO_WHEELER` travel modes.
   @$pb.TagNumber(3)
   $core.bool get avoidFerries => $_getBF(2);
@@ -480,8 +481,8 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAvoidFerries() => clearField(3);
 
-  /// Specifies whether to avoid navigating indoors where reasonable. Preference
-  /// will be given to routes not containing indoor navigation.
+  /// When set to true, avoids navigating indoors where reasonable, giving
+  /// preference to routes not containing indoor navigation.
   /// Applies only to the `WALK` travel mode.
   @$pb.TagNumber(4)
   $core.bool get avoidIndoor => $_getBF(3);
@@ -514,13 +515,12 @@ class RouteModifiers extends $pb.GeneratedMessage {
   /// If toll passes are provided, the API tries to return the pass price. If
   /// toll passes are not provided, the API treats the toll pass as unknown and
   /// tries to return the cash price.
-  /// Applies only to the DRIVE and TWO_WHEELER travel modes.
+  /// Applies only to the `DRIVE` and `TWO_WHEELER` travel modes.
   @$pb.TagNumber(6)
   $core.List<$484.TollPass> get tollPasses => $_getList(5);
 }
 
-/// Encapsulates the vehicle information, such as the license plate last
-/// character.
+/// Encapsulates the vehicle information, such as the vehicle emission type.
 class VehicleInfo extends $pb.GeneratedMessage {
   factory VehicleInfo({
     $core.String? licensePlateLastCharacter,
@@ -593,7 +593,8 @@ class VehicleInfo extends $pb.GeneratedMessage {
   void clearLicensePlateLastCharacter() => clearField(1);
 
   /// Describes the vehicle's emission type.
-  /// Applies only to the DRIVE travel mode.
+  /// Applies only to the `DRIVE`
+  /// [`RouteTravelMode`][google.maps.routes.v1.RouteTravelMode].
   @$pb.TagNumber(2)
   $485.VehicleEmissionType get emissionType => $_getN(1);
   @$pb.TagNumber(2)

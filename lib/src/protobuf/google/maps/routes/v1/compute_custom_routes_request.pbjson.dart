@@ -233,6 +233,7 @@ const RouteObjective_CustomLayer$json = {
     },
   ],
   '3': [RouteObjective_CustomLayer_DatasetInfo$json],
+  '7': {'3': true},
 };
 
 @$core.Deprecated('Use routeObjectiveDescriptor instead')
@@ -261,8 +262,8 @@ final $typed_data.Uint8List routeObjectiveDescriptor = $convert.base64Decode(
     'RhcnlDb3N0QgPgQQFSDWNvc3RQZXJNaW51dGUSYAoLY29zdF9wZXJfa20YAyABKAsyOy5nb29n'
     'bGUubWFwcy5yb3V0ZXMudjEuUm91dGVPYmplY3RpdmUuUmF0ZUNhcmQuTW9uZXRhcnlDb3N0Qg'
     'PgQQFSCWNvc3RQZXJLbRIoCg1pbmNsdWRlX3RvbGxzGAQgASgIQgPgQQFSDGluY2x1ZGVUb2xs'
-    'cxopCgxNb25ldGFyeUNvc3QSGQoFdmFsdWUYASABKAFCA+BBAlIFdmFsdWUa0QEKC0N1c3RvbU'
+    'cxopCgxNb25ldGFyeUNvc3QSGQoFdmFsdWUYASABKAFCA+BBAlIFdmFsdWUa1QEKC0N1c3RvbU'
     'xheWVyEmUKDGRhdGFzZXRfaW5mbxgBIAEoCzI9Lmdvb2dsZS5tYXBzLnJvdXRlcy52MS5Sb3V0'
     'ZU9iamVjdGl2ZS5DdXN0b21MYXllci5EYXRhc2V0SW5mb0ID4EECUgtkYXRhc2V0SW5mbxpbCg'
     'tEYXRhc2V0SW5mbxIkCgpkYXRhc2V0X2lkGAEgASgJQgUYAeBBAVIJZGF0YXNldElkEiYKDGRp'
-    'c3BsYXlfbmFtZRgCIAEoCUID4EEBUgtkaXNwbGF5TmFtZUILCglvYmplY3RpdmU=');
+    'c3BsYXlfbmFtZRgCIAEoCUID4EEBUgtkaXNwbGF5TmFtZToCGAFCCwoJb2JqZWN0aXZl');
