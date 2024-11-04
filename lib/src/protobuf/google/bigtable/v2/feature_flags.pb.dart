@@ -30,6 +30,8 @@ class FeatureFlags extends $pb.GeneratedMessage {
     $core.bool? routingCookie,
     $core.bool? retryInfo,
     $core.bool? clientSideMetricsEnabled,
+    $core.bool? trafficDirectorEnabled,
+    $core.bool? directAccessRequested,
   }) {
     final $result = create();
     if (reverseScans != null) {
@@ -53,6 +55,12 @@ class FeatureFlags extends $pb.GeneratedMessage {
     if (clientSideMetricsEnabled != null) {
       $result.clientSideMetricsEnabled = clientSideMetricsEnabled;
     }
+    if (trafficDirectorEnabled != null) {
+      $result.trafficDirectorEnabled = trafficDirectorEnabled;
+    }
+    if (directAccessRequested != null) {
+      $result.directAccessRequested = directAccessRequested;
+    }
     return $result;
   }
   FeatureFlags._() : super();
@@ -75,6 +83,8 @@ class FeatureFlags extends $pb.GeneratedMessage {
     ..aOB(6, _omitFieldNames ? '' : 'routingCookie')
     ..aOB(7, _omitFieldNames ? '' : 'retryInfo')
     ..aOB(8, _omitFieldNames ? '' : 'clientSideMetricsEnabled')
+    ..aOB(9, _omitFieldNames ? '' : 'trafficDirectorEnabled')
+    ..aOB(10, _omitFieldNames ? '' : 'directAccessRequested')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -198,6 +208,32 @@ class FeatureFlags extends $pb.GeneratedMessage {
   $core.bool hasClientSideMetricsEnabled() => $_has(6);
   @$pb.TagNumber(8)
   void clearClientSideMetricsEnabled() => clearField(8);
+
+  /// Notify the server that the client using Traffic Director endpoint.
+  @$pb.TagNumber(9)
+  $core.bool get trafficDirectorEnabled => $_getBF(7);
+  @$pb.TagNumber(9)
+  set trafficDirectorEnabled($core.bool v) {
+    $_setBool(7, v);
+  }
+
+  @$pb.TagNumber(9)
+  $core.bool hasTrafficDirectorEnabled() => $_has(7);
+  @$pb.TagNumber(9)
+  void clearTrafficDirectorEnabled() => clearField(9);
+
+  /// Notify the server that the client explicitly opted in for Direct Access.
+  @$pb.TagNumber(10)
+  $core.bool get directAccessRequested => $_getBF(8);
+  @$pb.TagNumber(10)
+  set directAccessRequested($core.bool v) {
+    $_setBool(8, v);
+  }
+
+  @$pb.TagNumber(10)
+  $core.bool hasDirectAccessRequested() => $_has(8);
+  @$pb.TagNumber(10)
+  void clearDirectAccessRequested() => clearField(10);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

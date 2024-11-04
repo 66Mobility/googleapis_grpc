@@ -48,6 +48,20 @@ const FeatureFlags$json = {
       '5': 8,
       '10': 'clientSideMetricsEnabled'
     },
+    {
+      '1': 'traffic_director_enabled',
+      '3': 9,
+      '4': 1,
+      '5': 8,
+      '10': 'trafficDirectorEnabled'
+    },
+    {
+      '1': 'direct_access_requested',
+      '3': 10,
+      '4': 1,
+      '5': 8,
+      '10': 'directAccessRequested'
+    },
   ],
 };
 
@@ -59,4 +73,6 @@ final $typed_data.Uint8List featureFlagsDescriptor = $convert.base64Decode(
     'Rfc2Nhbm5lZF9yb3dfcmVzcG9uc2VzGAQgASgIUhdsYXN0U2Nhbm5lZFJvd1Jlc3BvbnNlcxIl'
     'Cg5yb3V0aW5nX2Nvb2tpZRgGIAEoCFINcm91dGluZ0Nvb2tpZRIdCgpyZXRyeV9pbmZvGAcgAS'
     'gIUglyZXRyeUluZm8SPQobY2xpZW50X3NpZGVfbWV0cmljc19lbmFibGVkGAggASgIUhhjbGll'
-    'bnRTaWRlTWV0cmljc0VuYWJsZWQ=');
+    'bnRTaWRlTWV0cmljc0VuYWJsZWQSOAoYdHJhZmZpY19kaXJlY3Rvcl9lbmFibGVkGAkgASgIUh'
+    'Z0cmFmZmljRGlyZWN0b3JFbmFibGVkEjYKF2RpcmVjdF9hY2Nlc3NfcmVxdWVzdGVkGAogASgI'
+    'UhVkaXJlY3RBY2Nlc3NSZXF1ZXN0ZWQ=');
