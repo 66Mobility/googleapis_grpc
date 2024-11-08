@@ -17,6 +17,7 @@ analyzer:
     doc_directive_unknown: ignore
     empty_constructor_bodies: ignore
     implementation_imports: ignore
+    unnecessary_library_name: ignore
 # Uncomment the following section to specify additional rules.
 
 # linter:
