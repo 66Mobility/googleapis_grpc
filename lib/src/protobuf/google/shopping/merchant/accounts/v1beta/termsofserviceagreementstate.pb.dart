@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../type/date.pb.dart' as $327;
-import 'termsofservicekind.pbenum.dart' as $544;
+import 'termsofservicekind.pbenum.dart' as $545;
 
 ///  This resource represents the agreement state for a given account and terms of
 ///  service kind.
@@ -42,7 +42,7 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   factory TermsOfServiceAgreementState({
     $core.String? name,
     $core.String? regionCode,
-    $544.TermsOfServiceKind? termsOfServiceKind,
+    $545.TermsOfServiceKind? termsOfServiceKind,
     Accepted? accepted,
     Required? required,
   }) {
@@ -79,12 +79,12 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'regionCode')
-    ..e<$544.TermsOfServiceKind>(
+    ..e<$545.TermsOfServiceKind>(
         3, _omitFieldNames ? '' : 'termsOfServiceKind', $pb.PbFieldType.OE,
         defaultOrMaker:
-            $544.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED,
-        valueOf: $544.TermsOfServiceKind.valueOf,
-        enumValues: $544.TermsOfServiceKind.values)
+            $545.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED,
+        valueOf: $545.TermsOfServiceKind.valueOf,
+        enumValues: $545.TermsOfServiceKind.values)
     ..aOM<Accepted>(4, _omitFieldNames ? '' : 'accepted',
         subBuilder: Accepted.create)
     ..aOM<Required>(5, _omitFieldNames ? '' : 'required',
@@ -150,9 +150,9 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
 
   /// Terms of Service kind associated with the particular version.
   @$pb.TagNumber(3)
-  $544.TermsOfServiceKind get termsOfServiceKind => $_getN(2);
+  $545.TermsOfServiceKind get termsOfServiceKind => $_getN(2);
   @$pb.TagNumber(3)
-  set termsOfServiceKind($544.TermsOfServiceKind v) {
+  set termsOfServiceKind($545.TermsOfServiceKind v) {
     setField(3, v);
   }
 

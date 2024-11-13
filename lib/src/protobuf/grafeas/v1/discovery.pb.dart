@@ -15,7 +15,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../google/protobuf/timestamp.pb.dart' as $302;
 import '../../google/rpc/status.pb.dart' as $322;
-import 'common.pbenum.dart' as $556;
+import 'common.pbenum.dart' as $557;
 import 'discovery.pbenum.dart';
 
 export 'discovery.pbenum.dart';
@@ -25,7 +25,7 @@ export 'discovery.pbenum.dart';
 /// consumer's project at the start of analysis.
 class DiscoveryNote extends $pb.GeneratedMessage {
   factory DiscoveryNote({
-    $556.NoteKind? analysisKind,
+    $557.NoteKind? analysisKind,
   }) {
     final $result = create();
     if (analysisKind != null) {
@@ -45,11 +45,11 @@ class DiscoveryNote extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'DiscoveryNote',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
       createEmptyInstance: create)
-    ..e<$556.NoteKind>(
+    ..e<$557.NoteKind>(
         1, _omitFieldNames ? '' : 'analysisKind', $pb.PbFieldType.OE,
-        defaultOrMaker: $556.NoteKind.NOTE_KIND_UNSPECIFIED,
-        valueOf: $556.NoteKind.valueOf,
-        enumValues: $556.NoteKind.values)
+        defaultOrMaker: $557.NoteKind.NOTE_KIND_UNSPECIFIED,
+        valueOf: $557.NoteKind.valueOf,
+        enumValues: $557.NoteKind.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -78,9 +78,9 @@ class DiscoveryNote extends $pb.GeneratedMessage {
   /// Required. Immutable. The kind of analysis that is handled by this
   /// discovery.
   @$pb.TagNumber(1)
-  $556.NoteKind get analysisKind => $_getN(0);
+  $557.NoteKind get analysisKind => $_getN(0);
   @$pb.TagNumber(1)
-  set analysisKind($556.NoteKind v) {
+  set analysisKind($557.NoteKind v) {
     setField(1, v);
   }
 

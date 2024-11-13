@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/duration.pb.dart' as $264;
-import '../../../type/interval.pb.dart' as $511;
+import '../../../type/interval.pb.dart' as $512;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -227,7 +227,7 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
     PickTimeSeriesFilter_Method? rankingMethod,
     $core.int? numTimeSeries,
     PickTimeSeriesFilter_Direction? direction,
-    $511.Interval? interval,
+    $512.Interval? interval,
   }) {
     final $result = create();
     if (rankingMethod != null) {
@@ -269,8 +269,8 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
         defaultOrMaker: PickTimeSeriesFilter_Direction.DIRECTION_UNSPECIFIED,
         valueOf: PickTimeSeriesFilter_Direction.valueOf,
         enumValues: PickTimeSeriesFilter_Direction.values)
-    ..aOM<$511.Interval>(4, _omitFieldNames ? '' : 'interval',
-        subBuilder: $511.Interval.create)
+    ..aOM<$512.Interval>(4, _omitFieldNames ? '' : 'interval',
+        subBuilder: $512.Interval.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -340,9 +340,9 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
 
   /// Select the top N streams/time series within this time interval
   @$pb.TagNumber(4)
-  $511.Interval get interval => $_getN(3);
+  $512.Interval get interval => $_getN(3);
   @$pb.TagNumber(4)
-  set interval($511.Interval v) {
+  set interval($512.Interval v) {
     setField(4, v);
   }
 
@@ -351,7 +351,7 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearInterval() => clearField(4);
   @$pb.TagNumber(4)
-  $511.Interval ensureInterval() => $_ensure(3);
+  $512.Interval ensureInterval() => $_ensure(3);
 }
 
 /// A filter that ranks streams based on their statistical relation to other

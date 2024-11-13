@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/types.pb.dart' as $536;
-import 'promotions_common.pb.dart' as $548;
-import 'promotions_common.pbenum.dart' as $548;
+import '../../../type/types.pb.dart' as $537;
+import 'promotions_common.pb.dart' as $549;
+import 'promotions_common.pbenum.dart' as $549;
 
 ///  Represents a promotion. See the following articles for more details.
 ///
@@ -36,11 +36,11 @@ class Promotion extends $pb.GeneratedMessage {
     $core.String? promotionId,
     $core.String? contentLanguage,
     $core.String? targetCountry,
-    $core.Iterable<$548.RedemptionChannel>? redemptionChannel,
+    $core.Iterable<$549.RedemptionChannel>? redemptionChannel,
     $core.String? dataSource,
-    $548.Attributes? attributes,
-    $core.Iterable<$536.CustomAttribute>? customAttributes,
-    $548.PromotionStatus? promotionStatus,
+    $549.Attributes? attributes,
+    $core.Iterable<$537.CustomAttribute>? customAttributes,
+    $549.PromotionStatus? promotionStatus,
     $fixnum.Int64? versionNumber,
   }) {
     final $result = create();
@@ -94,19 +94,19 @@ class Promotion extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'promotionId')
     ..aOS(3, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(4, _omitFieldNames ? '' : 'targetCountry')
-    ..pc<$548.RedemptionChannel>(
+    ..pc<$549.RedemptionChannel>(
         5, _omitFieldNames ? '' : 'redemptionChannel', $pb.PbFieldType.KE,
-        valueOf: $548.RedemptionChannel.valueOf,
-        enumValues: $548.RedemptionChannel.values,
-        defaultEnumValue: $548.RedemptionChannel.REDEMPTION_CHANNEL_UNSPECIFIED)
+        valueOf: $549.RedemptionChannel.valueOf,
+        enumValues: $549.RedemptionChannel.values,
+        defaultEnumValue: $549.RedemptionChannel.REDEMPTION_CHANNEL_UNSPECIFIED)
     ..aOS(6, _omitFieldNames ? '' : 'dataSource')
-    ..aOM<$548.Attributes>(7, _omitFieldNames ? '' : 'attributes',
-        subBuilder: $548.Attributes.create)
-    ..pc<$536.CustomAttribute>(
+    ..aOM<$549.Attributes>(7, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $549.Attributes.create)
+    ..pc<$537.CustomAttribute>(
         8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM,
-        subBuilder: $536.CustomAttribute.create)
-    ..aOM<$548.PromotionStatus>(9, _omitFieldNames ? '' : 'promotionStatus',
-        subBuilder: $548.PromotionStatus.create)
+        subBuilder: $537.CustomAttribute.create)
+    ..aOM<$549.PromotionStatus>(9, _omitFieldNames ? '' : 'promotionStatus',
+        subBuilder: $549.PromotionStatus.create)
     ..aInt64(10, _omitFieldNames ? '' : 'versionNumber')
     ..hasRequiredFields = false;
 
@@ -203,7 +203,7 @@ class Promotion extends $pb.GeneratedMessage {
   /// channel](https://support.google.com/merchants/answer/13837674?ref_topic=13773355&sjid=17642868584668136159-NC)
   /// for the promotion. At least one channel is required.
   @$pb.TagNumber(5)
-  $core.List<$548.RedemptionChannel> get redemptionChannel => $_getList(4);
+  $core.List<$549.RedemptionChannel> get redemptionChannel => $_getList(4);
 
   /// Output only. The primary data source of the promotion.
   @$pb.TagNumber(6)
@@ -220,9 +220,9 @@ class Promotion extends $pb.GeneratedMessage {
 
   /// Optional. A list of promotion attributes.
   @$pb.TagNumber(7)
-  $548.Attributes get attributes => $_getN(6);
+  $549.Attributes get attributes => $_getN(6);
   @$pb.TagNumber(7)
-  set attributes($548.Attributes v) {
+  set attributes($549.Attributes v) {
     setField(7, v);
   }
 
@@ -231,7 +231,7 @@ class Promotion extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearAttributes() => clearField(7);
   @$pb.TagNumber(7)
-  $548.Attributes ensureAttributes() => $_ensure(6);
+  $549.Attributes ensureAttributes() => $_ensure(6);
 
   /// Optional. A list of custom (merchant-provided) attributes. It can also be
   /// used for submitting any attribute of the data specification in its generic
@@ -240,16 +240,16 @@ class Promotion extends $pb.GeneratedMessage {
   /// This is useful for submitting attributes not explicitly exposed by the
   /// API.
   @$pb.TagNumber(8)
-  $core.List<$536.CustomAttribute> get customAttributes => $_getList(7);
+  $core.List<$537.CustomAttribute> get customAttributes => $_getList(7);
 
   /// Output only. The [status of a
   /// promotion](https://support.google.com/merchants/answer/3398326?ref_topic=7322924&sjid=5155774230887277618-NC),
   /// data validation issues, that is, information about a promotion computed
   /// asynchronously.
   @$pb.TagNumber(9)
-  $548.PromotionStatus get promotionStatus => $_getN(8);
+  $549.PromotionStatus get promotionStatus => $_getN(8);
   @$pb.TagNumber(9)
-  set promotionStatus($548.PromotionStatus v) {
+  set promotionStatus($549.PromotionStatus v) {
     setField(9, v);
   }
 
@@ -258,7 +258,7 @@ class Promotion extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearPromotionStatus() => clearField(9);
   @$pb.TagNumber(9)
-  $548.PromotionStatus ensurePromotionStatus() => $_ensure(8);
+  $549.PromotionStatus ensurePromotionStatus() => $_ensure(8);
 
   ///  Optional. Represents the existing version (freshness) of the promotion,
   ///  which can be used to preserve the right order when multiple updates are

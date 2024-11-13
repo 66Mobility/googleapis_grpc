@@ -1,3 +1,7 @@
+## 1.0.22
+
+- Update protobuf definitions
+
 ## 1.0.21
 
 - Update protobuf definitions

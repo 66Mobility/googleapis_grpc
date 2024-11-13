@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../google/protobuf/timestamp.pb.dart' as $302;
-import 'package.pb.dart' as $563;
+import 'package.pb.dart' as $564;
 
 /// An Upgrade Note represents a potential upgrade of a package to a given
 /// version. For each package version combination (i.e. bash 4.0, bash 4.1,
@@ -23,7 +23,7 @@ import 'package.pb.dart' as $563;
 class UpgradeNote extends $pb.GeneratedMessage {
   factory UpgradeNote({
     $core.String? package,
-    $563.Version? version,
+    $564.Version? version,
     $core.Iterable<UpgradeDistribution>? distributions,
     WindowsUpdate? windowsUpdate,
   }) {
@@ -55,8 +55,8 @@ class UpgradeNote extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'package')
-    ..aOM<$563.Version>(2, _omitFieldNames ? '' : 'version',
-        subBuilder: $563.Version.create)
+    ..aOM<$564.Version>(2, _omitFieldNames ? '' : 'version',
+        subBuilder: $564.Version.create)
     ..pc<UpgradeDistribution>(
         3, _omitFieldNames ? '' : 'distributions', $pb.PbFieldType.PM,
         subBuilder: UpgradeDistribution.create)
@@ -102,9 +102,9 @@ class UpgradeNote extends $pb.GeneratedMessage {
   /// Required for non-Windows OS. The version of the package in machine + human
   /// readable form.
   @$pb.TagNumber(2)
-  $563.Version get version => $_getN(1);
+  $564.Version get version => $_getN(1);
   @$pb.TagNumber(2)
-  set version($563.Version v) {
+  set version($564.Version v) {
     setField(2, v);
   }
 
@@ -113,7 +113,7 @@ class UpgradeNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearVersion() => clearField(2);
   @$pb.TagNumber(2)
-  $563.Version ensureVersion() => $_ensure(1);
+  $564.Version ensureVersion() => $_ensure(1);
 
   /// Metadata about the upgrade for each specific operating system.
   @$pb.TagNumber(3)
@@ -588,7 +588,7 @@ class WindowsUpdate extends $pb.GeneratedMessage {
 class UpgradeOccurrence extends $pb.GeneratedMessage {
   factory UpgradeOccurrence({
     $core.String? package,
-    $563.Version? parsedVersion,
+    $564.Version? parsedVersion,
     UpgradeDistribution? distribution,
     WindowsUpdate? windowsUpdate,
   }) {
@@ -620,8 +620,8 @@ class UpgradeOccurrence extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'package')
-    ..aOM<$563.Version>(3, _omitFieldNames ? '' : 'parsedVersion',
-        subBuilder: $563.Version.create)
+    ..aOM<$564.Version>(3, _omitFieldNames ? '' : 'parsedVersion',
+        subBuilder: $564.Version.create)
     ..aOM<UpgradeDistribution>(4, _omitFieldNames ? '' : 'distribution',
         subBuilder: UpgradeDistribution.create)
     ..aOM<WindowsUpdate>(5, _omitFieldNames ? '' : 'windowsUpdate',
@@ -667,9 +667,9 @@ class UpgradeOccurrence extends $pb.GeneratedMessage {
   /// Required for non-Windows OS. The version of the package in a machine +
   /// human readable form.
   @$pb.TagNumber(3)
-  $563.Version get parsedVersion => $_getN(1);
+  $564.Version get parsedVersion => $_getN(1);
   @$pb.TagNumber(3)
-  set parsedVersion($563.Version v) {
+  set parsedVersion($564.Version v) {
     setField(3, v);
   }
 
@@ -678,7 +678,7 @@ class UpgradeOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearParsedVersion() => clearField(3);
   @$pb.TagNumber(3)
-  $563.Version ensureParsedVersion() => $_ensure(1);
+  $564.Version ensureParsedVersion() => $_ensure(1);
 
   /// Metadata about the upgrade for available for the specific operating system
   /// for the resource_url. This allows efficient filtering, as well as

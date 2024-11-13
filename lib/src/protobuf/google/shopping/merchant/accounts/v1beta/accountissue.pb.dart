@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/types.pbenum.dart' as $536;
+import '../../../type/types.pbenum.dart' as $537;
 import 'accountissue.pbenum.dart';
 
 export 'accountissue.pbenum.dart';
@@ -114,7 +114,7 @@ class AccountIssue_ImpactedDestination_Impact extends $pb.GeneratedMessage {
 /// The impact of the issue on a destination.
 class AccountIssue_ImpactedDestination extends $pb.GeneratedMessage {
   factory AccountIssue_ImpactedDestination({
-    $536.ReportingContext_ReportingContextEnum? reportingContext,
+    $537.ReportingContext_ReportingContextEnum? reportingContext,
     $core.Iterable<AccountIssue_ImpactedDestination_Impact>? impacts,
   }) {
     final $result = create();
@@ -139,12 +139,12 @@ class AccountIssue_ImpactedDestination extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
       createEmptyInstance: create)
-    ..e<$536.ReportingContext_ReportingContextEnum>(
+    ..e<$537.ReportingContext_ReportingContextEnum>(
         1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE,
-        defaultOrMaker: $536.ReportingContext_ReportingContextEnum
+        defaultOrMaker: $537.ReportingContext_ReportingContextEnum
             .REPORTING_CONTEXT_ENUM_UNSPECIFIED,
-        valueOf: $536.ReportingContext_ReportingContextEnum.valueOf,
-        enumValues: $536.ReportingContext_ReportingContextEnum.values)
+        valueOf: $537.ReportingContext_ReportingContextEnum.valueOf,
+        enumValues: $537.ReportingContext_ReportingContextEnum.values)
     ..pc<AccountIssue_ImpactedDestination_Impact>(
         2, _omitFieldNames ? '' : 'impacts', $pb.PbFieldType.PM,
         subBuilder: AccountIssue_ImpactedDestination_Impact.create)
@@ -180,9 +180,9 @@ class AccountIssue_ImpactedDestination extends $pb.GeneratedMessage {
 
   /// The impacted reporting context.
   @$pb.TagNumber(1)
-  $536.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
+  $537.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
   @$pb.TagNumber(1)
-  set reportingContext($536.ReportingContext_ReportingContextEnum v) {
+  set reportingContext($537.ReportingContext_ReportingContextEnum v) {
     setField(1, v);
   }
 

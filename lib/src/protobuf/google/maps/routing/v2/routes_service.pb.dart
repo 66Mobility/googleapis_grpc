@@ -17,44 +17,44 @@ import '../../../protobuf/duration.pb.dart' as $264;
 import '../../../protobuf/timestamp.pb.dart' as $302;
 import '../../../rpc/status.pb.dart' as $322;
 import '../../../type/localized_text.pb.dart' as $460;
-import 'fallback_info.pb.dart' as $506;
-import 'geocoding_results.pb.dart' as $507;
-import 'polyline.pbenum.dart' as $491;
-import 'route.pb.dart' as $505;
-import 'route_modifiers.pb.dart' as $503;
-import 'route_travel_mode.pbenum.dart' as $498;
+import 'fallback_info.pb.dart' as $507;
+import 'geocoding_results.pb.dart' as $508;
+import 'polyline.pbenum.dart' as $492;
+import 'route.pb.dart' as $506;
+import 'route_modifiers.pb.dart' as $504;
+import 'route_travel_mode.pbenum.dart' as $499;
 import 'routes_service.pbenum.dart';
-import 'routing_preference.pbenum.dart' as $508;
-import 'traffic_model.pbenum.dart' as $510;
-import 'transit_preferences.pb.dart' as $504;
-import 'units.pbenum.dart' as $509;
-import 'waypoint.pb.dart' as $502;
+import 'routing_preference.pbenum.dart' as $509;
+import 'traffic_model.pbenum.dart' as $511;
+import 'transit_preferences.pb.dart' as $505;
+import 'units.pbenum.dart' as $510;
+import 'waypoint.pb.dart' as $503;
 
 export 'routes_service.pbenum.dart';
 
 /// ComputeRoutes request message.
 class ComputeRoutesRequest extends $pb.GeneratedMessage {
   factory ComputeRoutesRequest({
-    $502.Waypoint? origin,
-    $502.Waypoint? destination,
-    $core.Iterable<$502.Waypoint>? intermediates,
-    $498.RouteTravelMode? travelMode,
-    $508.RoutingPreference? routingPreference,
-    $491.PolylineQuality? polylineQuality,
+    $503.Waypoint? origin,
+    $503.Waypoint? destination,
+    $core.Iterable<$503.Waypoint>? intermediates,
+    $499.RouteTravelMode? travelMode,
+    $509.RoutingPreference? routingPreference,
+    $492.PolylineQuality? polylineQuality,
     $302.Timestamp? departureTime,
     $core.bool? computeAlternativeRoutes,
-    $503.RouteModifiers? routeModifiers,
+    $504.RouteModifiers? routeModifiers,
     $core.String? languageCode,
-    $509.Units? units,
-    $491.PolylineEncoding? polylineEncoding,
+    $510.Units? units,
+    $492.PolylineEncoding? polylineEncoding,
     $core.bool? optimizeWaypointOrder,
     $core.Iterable<ComputeRoutesRequest_ReferenceRoute>?
         requestedReferenceRoutes,
     $core.Iterable<ComputeRoutesRequest_ExtraComputation>? extraComputations,
     $core.String? regionCode,
-    $510.TrafficModel? trafficModel,
+    $511.TrafficModel? trafficModel,
     $302.Timestamp? arrivalTime,
-    $504.TransitPreferences? transitPreferences,
+    $505.TransitPreferences? transitPreferences,
   }) {
     final $result = create();
     if (origin != null) {
@@ -129,43 +129,43 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routing.v2'),
       createEmptyInstance: create)
-    ..aOM<$502.Waypoint>(1, _omitFieldNames ? '' : 'origin',
-        subBuilder: $502.Waypoint.create)
-    ..aOM<$502.Waypoint>(2, _omitFieldNames ? '' : 'destination',
-        subBuilder: $502.Waypoint.create)
-    ..pc<$502.Waypoint>(
+    ..aOM<$503.Waypoint>(1, _omitFieldNames ? '' : 'origin',
+        subBuilder: $503.Waypoint.create)
+    ..aOM<$503.Waypoint>(2, _omitFieldNames ? '' : 'destination',
+        subBuilder: $503.Waypoint.create)
+    ..pc<$503.Waypoint>(
         3, _omitFieldNames ? '' : 'intermediates', $pb.PbFieldType.PM,
-        subBuilder: $502.Waypoint.create)
-    ..e<$498.RouteTravelMode>(
+        subBuilder: $503.Waypoint.create)
+    ..e<$499.RouteTravelMode>(
         4, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE,
-        defaultOrMaker: $498.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED,
-        valueOf: $498.RouteTravelMode.valueOf,
-        enumValues: $498.RouteTravelMode.values)
-    ..e<$508.RoutingPreference>(
+        defaultOrMaker: $499.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED,
+        valueOf: $499.RouteTravelMode.valueOf,
+        enumValues: $499.RouteTravelMode.values)
+    ..e<$509.RoutingPreference>(
         5, _omitFieldNames ? '' : 'routingPreference', $pb.PbFieldType.OE,
-        defaultOrMaker: $508.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED,
-        valueOf: $508.RoutingPreference.valueOf,
-        enumValues: $508.RoutingPreference.values)
-    ..e<$491.PolylineQuality>(
+        defaultOrMaker: $509.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED,
+        valueOf: $509.RoutingPreference.valueOf,
+        enumValues: $509.RoutingPreference.values)
+    ..e<$492.PolylineQuality>(
         6, _omitFieldNames ? '' : 'polylineQuality', $pb.PbFieldType.OE,
-        defaultOrMaker: $491.PolylineQuality.POLYLINE_QUALITY_UNSPECIFIED,
-        valueOf: $491.PolylineQuality.valueOf,
-        enumValues: $491.PolylineQuality.values)
+        defaultOrMaker: $492.PolylineQuality.POLYLINE_QUALITY_UNSPECIFIED,
+        valueOf: $492.PolylineQuality.valueOf,
+        enumValues: $492.PolylineQuality.values)
     ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'departureTime',
         subBuilder: $302.Timestamp.create)
     ..aOB(8, _omitFieldNames ? '' : 'computeAlternativeRoutes')
-    ..aOM<$503.RouteModifiers>(9, _omitFieldNames ? '' : 'routeModifiers',
-        subBuilder: $503.RouteModifiers.create)
+    ..aOM<$504.RouteModifiers>(9, _omitFieldNames ? '' : 'routeModifiers',
+        subBuilder: $504.RouteModifiers.create)
     ..aOS(10, _omitFieldNames ? '' : 'languageCode')
-    ..e<$509.Units>(11, _omitFieldNames ? '' : 'units', $pb.PbFieldType.OE,
-        defaultOrMaker: $509.Units.UNITS_UNSPECIFIED,
-        valueOf: $509.Units.valueOf,
-        enumValues: $509.Units.values)
-    ..e<$491.PolylineEncoding>(
+    ..e<$510.Units>(11, _omitFieldNames ? '' : 'units', $pb.PbFieldType.OE,
+        defaultOrMaker: $510.Units.UNITS_UNSPECIFIED,
+        valueOf: $510.Units.valueOf,
+        enumValues: $510.Units.values)
+    ..e<$492.PolylineEncoding>(
         12, _omitFieldNames ? '' : 'polylineEncoding', $pb.PbFieldType.OE,
-        defaultOrMaker: $491.PolylineEncoding.POLYLINE_ENCODING_UNSPECIFIED,
-        valueOf: $491.PolylineEncoding.valueOf,
-        enumValues: $491.PolylineEncoding.values)
+        defaultOrMaker: $492.PolylineEncoding.POLYLINE_ENCODING_UNSPECIFIED,
+        valueOf: $492.PolylineEncoding.valueOf,
+        enumValues: $492.PolylineEncoding.values)
     ..aOB(13, _omitFieldNames ? '' : 'optimizeWaypointOrder')
     ..pc<ComputeRoutesRequest_ReferenceRoute>(14,
         _omitFieldNames ? '' : 'requestedReferenceRoutes', $pb.PbFieldType.KE,
@@ -180,16 +180,16 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
         defaultEnumValue:
             ComputeRoutesRequest_ExtraComputation.EXTRA_COMPUTATION_UNSPECIFIED)
     ..aOS(16, _omitFieldNames ? '' : 'regionCode')
-    ..e<$510.TrafficModel>(
+    ..e<$511.TrafficModel>(
         18, _omitFieldNames ? '' : 'trafficModel', $pb.PbFieldType.OE,
-        defaultOrMaker: $510.TrafficModel.TRAFFIC_MODEL_UNSPECIFIED,
-        valueOf: $510.TrafficModel.valueOf,
-        enumValues: $510.TrafficModel.values)
+        defaultOrMaker: $511.TrafficModel.TRAFFIC_MODEL_UNSPECIFIED,
+        valueOf: $511.TrafficModel.valueOf,
+        enumValues: $511.TrafficModel.values)
     ..aOM<$302.Timestamp>(19, _omitFieldNames ? '' : 'arrivalTime',
         subBuilder: $302.Timestamp.create)
-    ..aOM<$504.TransitPreferences>(
+    ..aOM<$505.TransitPreferences>(
         20, _omitFieldNames ? '' : 'transitPreferences',
-        subBuilder: $504.TransitPreferences.create)
+        subBuilder: $505.TransitPreferences.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -218,9 +218,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
 
   /// Required. Origin waypoint.
   @$pb.TagNumber(1)
-  $502.Waypoint get origin => $_getN(0);
+  $503.Waypoint get origin => $_getN(0);
   @$pb.TagNumber(1)
-  set origin($502.Waypoint v) {
+  set origin($503.Waypoint v) {
     setField(1, v);
   }
 
@@ -229,13 +229,13 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearOrigin() => clearField(1);
   @$pb.TagNumber(1)
-  $502.Waypoint ensureOrigin() => $_ensure(0);
+  $503.Waypoint ensureOrigin() => $_ensure(0);
 
   /// Required. Destination waypoint.
   @$pb.TagNumber(2)
-  $502.Waypoint get destination => $_getN(1);
+  $503.Waypoint get destination => $_getN(1);
   @$pb.TagNumber(2)
-  set destination($502.Waypoint v) {
+  set destination($503.Waypoint v) {
     setField(2, v);
   }
 
@@ -244,19 +244,19 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDestination() => clearField(2);
   @$pb.TagNumber(2)
-  $502.Waypoint ensureDestination() => $_ensure(1);
+  $503.Waypoint ensureDestination() => $_ensure(1);
 
   /// Optional. A set of waypoints along the route (excluding terminal points),
   /// for either stopping at or passing by. Up to 25 intermediate waypoints are
   /// supported.
   @$pb.TagNumber(3)
-  $core.List<$502.Waypoint> get intermediates => $_getList(2);
+  $core.List<$503.Waypoint> get intermediates => $_getList(2);
 
   /// Optional. Specifies the mode of transportation.
   @$pb.TagNumber(4)
-  $498.RouteTravelMode get travelMode => $_getN(3);
+  $499.RouteTravelMode get travelMode => $_getN(3);
   @$pb.TagNumber(4)
-  set travelMode($498.RouteTravelMode v) {
+  set travelMode($499.RouteTravelMode v) {
     setField(4, v);
   }
 
@@ -271,9 +271,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   /// an error is returned. You can specify this option only when the
   /// `travel_mode` is `DRIVE` or `TWO_WHEELER`, otherwise the request fails.
   @$pb.TagNumber(5)
-  $508.RoutingPreference get routingPreference => $_getN(4);
+  $509.RoutingPreference get routingPreference => $_getN(4);
   @$pb.TagNumber(5)
-  set routingPreference($508.RoutingPreference v) {
+  set routingPreference($509.RoutingPreference v) {
     setField(5, v);
   }
 
@@ -284,9 +284,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
 
   /// Optional. Specifies your preference for the quality of the polyline.
   @$pb.TagNumber(6)
-  $491.PolylineQuality get polylineQuality => $_getN(5);
+  $492.PolylineQuality get polylineQuality => $_getN(5);
   @$pb.TagNumber(6)
-  set polylineQuality($491.PolylineQuality v) {
+  set polylineQuality($492.PolylineQuality v) {
     setField(6, v);
   }
 
@@ -333,9 +333,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   /// Optional. A set of conditions to satisfy that affect the way routes are
   /// calculated.
   @$pb.TagNumber(9)
-  $503.RouteModifiers get routeModifiers => $_getN(8);
+  $504.RouteModifiers get routeModifiers => $_getN(8);
   @$pb.TagNumber(9)
-  set routeModifiers($503.RouteModifiers v) {
+  set routeModifiers($504.RouteModifiers v) {
     setField(9, v);
   }
 
@@ -344,7 +344,7 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearRouteModifiers() => clearField(9);
   @$pb.TagNumber(9)
-  $503.RouteModifiers ensureRouteModifiers() => $_ensure(8);
+  $504.RouteModifiers ensureRouteModifiers() => $_ensure(8);
 
   /// Optional. The BCP-47 language code, such as "en-US" or "sr-Latn". For more
   /// information, see [Unicode Locale
@@ -372,9 +372,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   /// are not affected by this value. If you don't provide this value, then the
   /// display units are inferred from the location of the first origin.
   @$pb.TagNumber(11)
-  $509.Units get units => $_getN(10);
+  $510.Units get units => $_getN(10);
   @$pb.TagNumber(11)
-  set units($509.Units v) {
+  set units($510.Units v) {
     setField(11, v);
   }
 
@@ -385,9 +385,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
 
   /// Optional. Specifies the preferred encoding for the polyline.
   @$pb.TagNumber(12)
-  $491.PolylineEncoding get polylineEncoding => $_getN(11);
+  $492.PolylineEncoding get polylineEncoding => $_getN(11);
   @$pb.TagNumber(12)
-  set polylineEncoding($491.PolylineEncoding v) {
+  set polylineEncoding($492.PolylineEncoding v) {
     setField(12, v);
   }
 
@@ -463,9 +463,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   /// Defaults to `BEST_GUESS` if traffic is requested and `TrafficModel` is not
   /// specified.
   @$pb.TagNumber(18)
-  $510.TrafficModel get trafficModel => $_getN(16);
+  $511.TrafficModel get trafficModel => $_getN(16);
   @$pb.TagNumber(18)
-  set trafficModel($510.TrafficModel v) {
+  set trafficModel($511.TrafficModel v) {
     setField(18, v);
   }
 
@@ -499,9 +499,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   /// [`RouteTravelMode`][google.maps.routing.v2.RouteTravelMode] is set to
   /// `TRANSIT`.
   @$pb.TagNumber(20)
-  $504.TransitPreferences get transitPreferences => $_getN(18);
+  $505.TransitPreferences get transitPreferences => $_getN(18);
   @$pb.TagNumber(20)
-  set transitPreferences($504.TransitPreferences v) {
+  set transitPreferences($505.TransitPreferences v) {
     setField(20, v);
   }
 
@@ -510,15 +510,15 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   void clearTransitPreferences() => clearField(20);
   @$pb.TagNumber(20)
-  $504.TransitPreferences ensureTransitPreferences() => $_ensure(18);
+  $505.TransitPreferences ensureTransitPreferences() => $_ensure(18);
 }
 
 /// ComputeRoutes the response message.
 class ComputeRoutesResponse extends $pb.GeneratedMessage {
   factory ComputeRoutesResponse({
-    $core.Iterable<$505.Route>? routes,
-    $506.FallbackInfo? fallbackInfo,
-    $507.GeocodingResults? geocodingResults,
+    $core.Iterable<$506.Route>? routes,
+    $507.FallbackInfo? fallbackInfo,
+    $508.GeocodingResults? geocodingResults,
   }) {
     final $result = create();
     if (routes != null) {
@@ -545,12 +545,12 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routing.v2'),
       createEmptyInstance: create)
-    ..pc<$505.Route>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM,
-        subBuilder: $505.Route.create)
-    ..aOM<$506.FallbackInfo>(2, _omitFieldNames ? '' : 'fallbackInfo',
-        subBuilder: $506.FallbackInfo.create)
-    ..aOM<$507.GeocodingResults>(3, _omitFieldNames ? '' : 'geocodingResults',
-        subBuilder: $507.GeocodingResults.create)
+    ..pc<$506.Route>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM,
+        subBuilder: $506.Route.create)
+    ..aOM<$507.FallbackInfo>(2, _omitFieldNames ? '' : 'fallbackInfo',
+        subBuilder: $507.FallbackInfo.create)
+    ..aOM<$508.GeocodingResults>(3, _omitFieldNames ? '' : 'geocodingResults',
+        subBuilder: $508.GeocodingResults.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -584,16 +584,16 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
   /// recommended route. If the array is empty, then it means no route could be
   /// found.
   @$pb.TagNumber(1)
-  $core.List<$505.Route> get routes => $_getList(0);
+  $core.List<$506.Route> get routes => $_getList(0);
 
   /// In some cases when the server is not able to compute the route results with
   /// all of the input preferences, it may fallback to using a different way of
   /// computation. When fallback mode is used, this field contains detailed info
   /// about the fallback response. Otherwise this field is unset.
   @$pb.TagNumber(2)
-  $506.FallbackInfo get fallbackInfo => $_getN(1);
+  $507.FallbackInfo get fallbackInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set fallbackInfo($506.FallbackInfo v) {
+  set fallbackInfo($507.FallbackInfo v) {
     setField(2, v);
   }
 
@@ -602,13 +602,13 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearFallbackInfo() => clearField(2);
   @$pb.TagNumber(2)
-  $506.FallbackInfo ensureFallbackInfo() => $_ensure(1);
+  $507.FallbackInfo ensureFallbackInfo() => $_ensure(1);
 
   /// Contains geocoding response info for waypoints specified as addresses.
   @$pb.TagNumber(3)
-  $507.GeocodingResults get geocodingResults => $_getN(2);
+  $508.GeocodingResults get geocodingResults => $_getN(2);
   @$pb.TagNumber(3)
-  set geocodingResults($507.GeocodingResults v) {
+  set geocodingResults($508.GeocodingResults v) {
     setField(3, v);
   }
 
@@ -617,7 +617,7 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearGeocodingResults() => clearField(3);
   @$pb.TagNumber(3)
-  $507.GeocodingResults ensureGeocodingResults() => $_ensure(2);
+  $508.GeocodingResults ensureGeocodingResults() => $_ensure(2);
 }
 
 /// ComputeRouteMatrix request message
@@ -625,17 +625,17 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
   factory ComputeRouteMatrixRequest({
     $core.Iterable<RouteMatrixOrigin>? origins,
     $core.Iterable<RouteMatrixDestination>? destinations,
-    $498.RouteTravelMode? travelMode,
-    $508.RoutingPreference? routingPreference,
+    $499.RouteTravelMode? travelMode,
+    $509.RoutingPreference? routingPreference,
     $302.Timestamp? departureTime,
     $core.String? languageCode,
-    $509.Units? units,
+    $510.Units? units,
     $core.Iterable<ComputeRouteMatrixRequest_ExtraComputation>?
         extraComputations,
     $core.String? regionCode,
-    $510.TrafficModel? trafficModel,
+    $511.TrafficModel? trafficModel,
     $302.Timestamp? arrivalTime,
-    $504.TransitPreferences? transitPreferences,
+    $505.TransitPreferences? transitPreferences,
   }) {
     final $result = create();
     if (origins != null) {
@@ -695,23 +695,23 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
     ..pc<RouteMatrixDestination>(
         2, _omitFieldNames ? '' : 'destinations', $pb.PbFieldType.PM,
         subBuilder: RouteMatrixDestination.create)
-    ..e<$498.RouteTravelMode>(
+    ..e<$499.RouteTravelMode>(
         3, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE,
-        defaultOrMaker: $498.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED,
-        valueOf: $498.RouteTravelMode.valueOf,
-        enumValues: $498.RouteTravelMode.values)
-    ..e<$508.RoutingPreference>(
+        defaultOrMaker: $499.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED,
+        valueOf: $499.RouteTravelMode.valueOf,
+        enumValues: $499.RouteTravelMode.values)
+    ..e<$509.RoutingPreference>(
         4, _omitFieldNames ? '' : 'routingPreference', $pb.PbFieldType.OE,
-        defaultOrMaker: $508.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED,
-        valueOf: $508.RoutingPreference.valueOf,
-        enumValues: $508.RoutingPreference.values)
+        defaultOrMaker: $509.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED,
+        valueOf: $509.RoutingPreference.valueOf,
+        enumValues: $509.RoutingPreference.values)
     ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'departureTime',
         subBuilder: $302.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'languageCode')
-    ..e<$509.Units>(7, _omitFieldNames ? '' : 'units', $pb.PbFieldType.OE,
-        defaultOrMaker: $509.Units.UNITS_UNSPECIFIED,
-        valueOf: $509.Units.valueOf,
-        enumValues: $509.Units.values)
+    ..e<$510.Units>(7, _omitFieldNames ? '' : 'units', $pb.PbFieldType.OE,
+        defaultOrMaker: $510.Units.UNITS_UNSPECIFIED,
+        valueOf: $510.Units.valueOf,
+        enumValues: $510.Units.values)
     ..pc<ComputeRouteMatrixRequest_ExtraComputation>(
         8, _omitFieldNames ? '' : 'extraComputations', $pb.PbFieldType.KE,
         valueOf: ComputeRouteMatrixRequest_ExtraComputation.valueOf,
@@ -719,16 +719,16 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
         defaultEnumValue: ComputeRouteMatrixRequest_ExtraComputation
             .EXTRA_COMPUTATION_UNSPECIFIED)
     ..aOS(9, _omitFieldNames ? '' : 'regionCode')
-    ..e<$510.TrafficModel>(
+    ..e<$511.TrafficModel>(
         10, _omitFieldNames ? '' : 'trafficModel', $pb.PbFieldType.OE,
-        defaultOrMaker: $510.TrafficModel.TRAFFIC_MODEL_UNSPECIFIED,
-        valueOf: $510.TrafficModel.valueOf,
-        enumValues: $510.TrafficModel.values)
+        defaultOrMaker: $511.TrafficModel.TRAFFIC_MODEL_UNSPECIFIED,
+        valueOf: $511.TrafficModel.valueOf,
+        enumValues: $511.TrafficModel.values)
     ..aOM<$302.Timestamp>(11, _omitFieldNames ? '' : 'arrivalTime',
         subBuilder: $302.Timestamp.create)
-    ..aOM<$504.TransitPreferences>(
+    ..aOM<$505.TransitPreferences>(
         12, _omitFieldNames ? '' : 'transitPreferences',
-        subBuilder: $504.TransitPreferences.create)
+        subBuilder: $505.TransitPreferences.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -778,9 +778,9 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
 
   /// Optional. Specifies the mode of transportation.
   @$pb.TagNumber(3)
-  $498.RouteTravelMode get travelMode => $_getN(2);
+  $499.RouteTravelMode get travelMode => $_getN(2);
   @$pb.TagNumber(3)
-  set travelMode($498.RouteTravelMode v) {
+  set travelMode($499.RouteTravelMode v) {
     setField(3, v);
   }
 
@@ -795,9 +795,9 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
   /// returned. You can specify this option only when the `travel_mode` is
   /// `DRIVE` or `TWO_WHEELER`, otherwise the request fails.
   @$pb.TagNumber(4)
-  $508.RoutingPreference get routingPreference => $_getN(3);
+  $509.RoutingPreference get routingPreference => $_getN(3);
   @$pb.TagNumber(4)
-  set routingPreference($508.RoutingPreference v) {
+  set routingPreference($509.RoutingPreference v) {
     setField(4, v);
   }
 
@@ -846,9 +846,9 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
 
   /// Optional. Specifies the units of measure for the display fields.
   @$pb.TagNumber(7)
-  $509.Units get units => $_getN(6);
+  $510.Units get units => $_getN(6);
   @$pb.TagNumber(7)
-  set units($509.Units v) {
+  set units($510.Units v) {
     setField(7, v);
   }
 
@@ -890,9 +890,9 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
   /// Defaults to `BEST_GUESS` if traffic is requested and `TrafficModel` is not
   /// specified.
   @$pb.TagNumber(10)
-  $510.TrafficModel get trafficModel => $_getN(9);
+  $511.TrafficModel get trafficModel => $_getN(9);
   @$pb.TagNumber(10)
-  set trafficModel($510.TrafficModel v) {
+  set trafficModel($511.TrafficModel v) {
     setField(10, v);
   }
 
@@ -925,9 +925,9 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
   /// [RouteTravelMode][google.maps.routing.v2.RouteTravelMode] is set to
   /// `TRANSIT`.
   @$pb.TagNumber(12)
-  $504.TransitPreferences get transitPreferences => $_getN(11);
+  $505.TransitPreferences get transitPreferences => $_getN(11);
   @$pb.TagNumber(12)
-  set transitPreferences($504.TransitPreferences v) {
+  set transitPreferences($505.TransitPreferences v) {
     setField(12, v);
   }
 
@@ -936,14 +936,14 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearTransitPreferences() => clearField(12);
   @$pb.TagNumber(12)
-  $504.TransitPreferences ensureTransitPreferences() => $_ensure(11);
+  $505.TransitPreferences ensureTransitPreferences() => $_ensure(11);
 }
 
 /// A single origin for ComputeRouteMatrixRequest
 class RouteMatrixOrigin extends $pb.GeneratedMessage {
   factory RouteMatrixOrigin({
-    $502.Waypoint? waypoint,
-    $503.RouteModifiers? routeModifiers,
+    $503.Waypoint? waypoint,
+    $504.RouteModifiers? routeModifiers,
   }) {
     final $result = create();
     if (waypoint != null) {
@@ -967,10 +967,10 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routing.v2'),
       createEmptyInstance: create)
-    ..aOM<$502.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
-        subBuilder: $502.Waypoint.create)
-    ..aOM<$503.RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers',
-        subBuilder: $503.RouteModifiers.create)
+    ..aOM<$503.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
+        subBuilder: $503.Waypoint.create)
+    ..aOM<$504.RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers',
+        subBuilder: $504.RouteModifiers.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -998,9 +998,9 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
 
   /// Required. Origin waypoint
   @$pb.TagNumber(1)
-  $502.Waypoint get waypoint => $_getN(0);
+  $503.Waypoint get waypoint => $_getN(0);
   @$pb.TagNumber(1)
-  set waypoint($502.Waypoint v) {
+  set waypoint($503.Waypoint v) {
     setField(1, v);
   }
 
@@ -1009,13 +1009,13 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearWaypoint() => clearField(1);
   @$pb.TagNumber(1)
-  $502.Waypoint ensureWaypoint() => $_ensure(0);
+  $503.Waypoint ensureWaypoint() => $_ensure(0);
 
   /// Optional. Modifiers for every route that takes this as the origin
   @$pb.TagNumber(2)
-  $503.RouteModifiers get routeModifiers => $_getN(1);
+  $504.RouteModifiers get routeModifiers => $_getN(1);
   @$pb.TagNumber(2)
-  set routeModifiers($503.RouteModifiers v) {
+  set routeModifiers($504.RouteModifiers v) {
     setField(2, v);
   }
 
@@ -1024,13 +1024,13 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRouteModifiers() => clearField(2);
   @$pb.TagNumber(2)
-  $503.RouteModifiers ensureRouteModifiers() => $_ensure(1);
+  $504.RouteModifiers ensureRouteModifiers() => $_ensure(1);
 }
 
 /// A single destination for ComputeRouteMatrixRequest
 class RouteMatrixDestination extends $pb.GeneratedMessage {
   factory RouteMatrixDestination({
-    $502.Waypoint? waypoint,
+    $503.Waypoint? waypoint,
   }) {
     final $result = create();
     if (waypoint != null) {
@@ -1051,8 +1051,8 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routing.v2'),
       createEmptyInstance: create)
-    ..aOM<$502.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
-        subBuilder: $502.Waypoint.create)
+    ..aOM<$503.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
+        subBuilder: $503.Waypoint.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1082,9 +1082,9 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
 
   /// Required. Destination waypoint
   @$pb.TagNumber(1)
-  $502.Waypoint get waypoint => $_getN(0);
+  $503.Waypoint get waypoint => $_getN(0);
   @$pb.TagNumber(1)
-  set waypoint($502.Waypoint v) {
+  set waypoint($503.Waypoint v) {
     setField(1, v);
   }
 
@@ -1093,7 +1093,7 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearWaypoint() => clearField(1);
   @$pb.TagNumber(1)
-  $502.Waypoint ensureWaypoint() => $_ensure(0);
+  $503.Waypoint ensureWaypoint() => $_ensure(0);
 }
 
 /// Text representations of certain properties.
@@ -1244,8 +1244,8 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
     $core.int? distanceMeters,
     $264.Duration? duration,
     $264.Duration? staticDuration,
-    $505.RouteTravelAdvisory? travelAdvisory,
-    $506.FallbackInfo? fallbackInfo,
+    $506.RouteTravelAdvisory? travelAdvisory,
+    $507.FallbackInfo? fallbackInfo,
     RouteMatrixElementCondition? condition,
     RouteMatrixElement_LocalizedValues? localizedValues,
   }) {
@@ -1306,10 +1306,10 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
         subBuilder: $264.Duration.create)
     ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'staticDuration',
         subBuilder: $264.Duration.create)
-    ..aOM<$505.RouteTravelAdvisory>(7, _omitFieldNames ? '' : 'travelAdvisory',
-        subBuilder: $505.RouteTravelAdvisory.create)
-    ..aOM<$506.FallbackInfo>(8, _omitFieldNames ? '' : 'fallbackInfo',
-        subBuilder: $506.FallbackInfo.create)
+    ..aOM<$506.RouteTravelAdvisory>(7, _omitFieldNames ? '' : 'travelAdvisory',
+        subBuilder: $506.RouteTravelAdvisory.create)
+    ..aOM<$507.FallbackInfo>(8, _omitFieldNames ? '' : 'fallbackInfo',
+        subBuilder: $507.FallbackInfo.create)
     ..e<RouteMatrixElementCondition>(
         9, _omitFieldNames ? '' : 'condition', $pb.PbFieldType.OE,
         defaultOrMaker: RouteMatrixElementCondition
@@ -1437,9 +1437,9 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   /// Additional information about the route. For example: restriction
   /// information and toll information
   @$pb.TagNumber(7)
-  $505.RouteTravelAdvisory get travelAdvisory => $_getN(6);
+  $506.RouteTravelAdvisory get travelAdvisory => $_getN(6);
   @$pb.TagNumber(7)
-  set travelAdvisory($505.RouteTravelAdvisory v) {
+  set travelAdvisory($506.RouteTravelAdvisory v) {
     setField(7, v);
   }
 
@@ -1448,7 +1448,7 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearTravelAdvisory() => clearField(7);
   @$pb.TagNumber(7)
-  $505.RouteTravelAdvisory ensureTravelAdvisory() => $_ensure(6);
+  $506.RouteTravelAdvisory ensureTravelAdvisory() => $_ensure(6);
 
   /// In some cases when the server is not able to compute the route with the
   /// given preferences for this particular origin/destination pair, it may
@@ -1456,9 +1456,9 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   /// used, this field contains detailed information about the fallback response.
   /// Otherwise this field is unset.
   @$pb.TagNumber(8)
-  $506.FallbackInfo get fallbackInfo => $_getN(7);
+  $507.FallbackInfo get fallbackInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set fallbackInfo($506.FallbackInfo v) {
+  set fallbackInfo($507.FallbackInfo v) {
     setField(8, v);
   }
 
@@ -1467,7 +1467,7 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearFallbackInfo() => clearField(8);
   @$pb.TagNumber(8)
-  $506.FallbackInfo ensureFallbackInfo() => $_ensure(7);
+  $507.FallbackInfo ensureFallbackInfo() => $_ensure(7);
 
   /// Indicates whether the route was found or not. Independent of status.
   @$pb.TagNumber(9)

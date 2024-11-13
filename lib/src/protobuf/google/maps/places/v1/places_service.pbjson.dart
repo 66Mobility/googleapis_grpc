@@ -273,6 +273,14 @@ const SearchTextRequest$json = {
       '8': {},
       '10': 'searchAlongRouteParameters'
     },
+    {
+      '1': 'include_pure_service_area_businesses',
+      '3': 20,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'includePureServiceAreaBusinesses'
+    },
   ],
   '3': [
     SearchTextRequest_LocationBias$json,
@@ -400,17 +408,18 @@ final $typed_data.Uint8List searchTextRequestDescriptor = $convert.base64Decode(
     'luZ1BhcmFtZXRlcnNCA+BBAVIRcm91dGluZ1BhcmFtZXRlcnMSiwEKHXNlYXJjaF9hbG9uZ19y'
     'b3V0ZV9wYXJhbWV0ZXJzGBEgASgLMkMuZ29vZ2xlLm1hcHMucGxhY2VzLnYxLlNlYXJjaFRleH'
     'RSZXF1ZXN0LlNlYXJjaEFsb25nUm91dGVQYXJhbWV0ZXJzQgPgQQFSGnNlYXJjaEFsb25nUm91'
-    'dGVQYXJhbWV0ZXJzGooBCgxMb2NhdGlvbkJpYXMSOQoJcmVjdGFuZ2xlGAEgASgLMhkuZ29vZ2'
-    'xlLmdlby50eXBlLlZpZXdwb3J0SABSCXJlY3RhbmdsZRI3CgZjaXJjbGUYAiABKAsyHS5nb29n'
-    'bGUubWFwcy5wbGFjZXMudjEuQ2lyY2xlSABSBmNpcmNsZUIGCgR0eXBlGlgKE0xvY2F0aW9uUm'
-    'VzdHJpY3Rpb24SOQoJcmVjdGFuZ2xlGAEgASgLMhkuZ29vZ2xlLmdlby50eXBlLlZpZXdwb3J0'
-    'SABSCXJlY3RhbmdsZUIGCgR0eXBlGp8BCglFVk9wdGlvbnMSPAoYbWluaW11bV9jaGFyZ2luZ1'
-    '9yYXRlX2t3GAEgASgBQgPgQQFSFW1pbmltdW1DaGFyZ2luZ1JhdGVLdxJUCg9jb25uZWN0b3Jf'
-    'dHlwZXMYAiADKA4yJi5nb29nbGUubWFwcy5wbGFjZXMudjEuRVZDb25uZWN0b3JUeXBlQgPgQQ'
-    'FSDmNvbm5lY3RvclR5cGVzGl4KGlNlYXJjaEFsb25nUm91dGVQYXJhbWV0ZXJzEkAKCHBvbHls'
-    'aW5lGAEgASgLMh8uZ29vZ2xlLm1hcHMucGxhY2VzLnYxLlBvbHlsaW5lQgPgQQJSCHBvbHlsaW'
-    '5lIk4KDlJhbmtQcmVmZXJlbmNlEh8KG1JBTktfUFJFRkVSRU5DRV9VTlNQRUNJRklFRBAAEgwK'
-    'CERJU1RBTkNFEAESDQoJUkVMRVZBTkNFEAI=');
+    'dGVQYXJhbWV0ZXJzElMKJGluY2x1ZGVfcHVyZV9zZXJ2aWNlX2FyZWFfYnVzaW5lc3NlcxgUIA'
+    'EoCEID4EEBUiBpbmNsdWRlUHVyZVNlcnZpY2VBcmVhQnVzaW5lc3NlcxqKAQoMTG9jYXRpb25C'
+    'aWFzEjkKCXJlY3RhbmdsZRgBIAEoCzIZLmdvb2dsZS5nZW8udHlwZS5WaWV3cG9ydEgAUglyZW'
+    'N0YW5nbGUSNwoGY2lyY2xlGAIgASgLMh0uZ29vZ2xlLm1hcHMucGxhY2VzLnYxLkNpcmNsZUgA'
+    'UgZjaXJjbGVCBgoEdHlwZRpYChNMb2NhdGlvblJlc3RyaWN0aW9uEjkKCXJlY3RhbmdsZRgBIA'
+    'EoCzIZLmdvb2dsZS5nZW8udHlwZS5WaWV3cG9ydEgAUglyZWN0YW5nbGVCBgoEdHlwZRqfAQoJ'
+    'RVZPcHRpb25zEjwKGG1pbmltdW1fY2hhcmdpbmdfcmF0ZV9rdxgBIAEoAUID4EEBUhVtaW5pbX'
+    'VtQ2hhcmdpbmdSYXRlS3cSVAoPY29ubmVjdG9yX3R5cGVzGAIgAygOMiYuZ29vZ2xlLm1hcHMu'
+    'cGxhY2VzLnYxLkVWQ29ubmVjdG9yVHlwZUID4EEBUg5jb25uZWN0b3JUeXBlcxpeChpTZWFyY2'
+    'hBbG9uZ1JvdXRlUGFyYW1ldGVycxJACghwb2x5bGluZRgBIAEoCzIfLmdvb2dsZS5tYXBzLnBs'
+    'YWNlcy52MS5Qb2x5bGluZUID4EECUghwb2x5bGluZSJOCg5SYW5rUHJlZmVyZW5jZRIfChtSQU'
+    '5LX1BSRUZFUkVOQ0VfVU5TUEVDSUZJRUQQABIMCghESVNUQU5DRRABEg0KCVJFTEVWQU5DRRAC');
 
 @$core.Deprecated('Use searchTextResponseDescriptor instead')
 const SearchTextResponse$json = {
@@ -607,6 +616,14 @@ const AutocompletePlacesRequest$json = {
       '8': {},
       '10': 'sessionToken'
     },
+    {
+      '1': 'include_pure_service_area_businesses',
+      '3': 12,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'includePureServiceAreaBusinesses'
+    },
   ],
   '3': [
     AutocompletePlacesRequest_LocationBias$json,
@@ -684,12 +701,13 @@ final $typed_data.Uint8List autocompletePlacesRequestDescriptor = $convert.base6
     '5nb29nbGUudHlwZS5MYXRMbmdCA+BBAVIGb3JpZ2luEiYKDGlucHV0X29mZnNldBgJIAEoBUID'
     '4EEBUgtpbnB1dE9mZnNldBI/ChlpbmNsdWRlX3F1ZXJ5X3ByZWRpY3Rpb25zGAogASgIQgPgQQ'
     'FSF2luY2x1ZGVRdWVyeVByZWRpY3Rpb25zEigKDXNlc3Npb25fdG9rZW4YCyABKAlCA+BBAVIM'
-    'c2Vzc2lvblRva2VuGooBCgxMb2NhdGlvbkJpYXMSOQoJcmVjdGFuZ2xlGAEgASgLMhkuZ29vZ2'
-    'xlLmdlby50eXBlLlZpZXdwb3J0SABSCXJlY3RhbmdsZRI3CgZjaXJjbGUYAiABKAsyHS5nb29n'
-    'bGUubWFwcy5wbGFjZXMudjEuQ2lyY2xlSABSBmNpcmNsZUIGCgR0eXBlGpEBChNMb2NhdGlvbl'
-    'Jlc3RyaWN0aW9uEjkKCXJlY3RhbmdsZRgBIAEoCzIZLmdvb2dsZS5nZW8udHlwZS5WaWV3cG9y'
-    'dEgAUglyZWN0YW5nbGUSNwoGY2lyY2xlGAIgASgLMh0uZ29vZ2xlLm1hcHMucGxhY2VzLnYxLk'
-    'NpcmNsZUgAUgZjaXJjbGVCBgoEdHlwZQ==');
+    'c2Vzc2lvblRva2VuElMKJGluY2x1ZGVfcHVyZV9zZXJ2aWNlX2FyZWFfYnVzaW5lc3NlcxgMIA'
+    'EoCEID4EEBUiBpbmNsdWRlUHVyZVNlcnZpY2VBcmVhQnVzaW5lc3NlcxqKAQoMTG9jYXRpb25C'
+    'aWFzEjkKCXJlY3RhbmdsZRgBIAEoCzIZLmdvb2dsZS5nZW8udHlwZS5WaWV3cG9ydEgAUglyZW'
+    'N0YW5nbGUSNwoGY2lyY2xlGAIgASgLMh0uZ29vZ2xlLm1hcHMucGxhY2VzLnYxLkNpcmNsZUgA'
+    'UgZjaXJjbGVCBgoEdHlwZRqRAQoTTG9jYXRpb25SZXN0cmljdGlvbhI5CglyZWN0YW5nbGUYAS'
+    'ABKAsyGS5nb29nbGUuZ2VvLnR5cGUuVmlld3BvcnRIAFIJcmVjdGFuZ2xlEjcKBmNpcmNsZRgC'
+    'IAEoCzIdLmdvb2dsZS5tYXBzLnBsYWNlcy52MS5DaXJjbGVIAFIGY2lyY2xlQgYKBHR5cGU=');
 
 @$core.Deprecated('Use autocompletePlacesResponseDescriptor instead')
 const AutocompletePlacesResponse$json = {

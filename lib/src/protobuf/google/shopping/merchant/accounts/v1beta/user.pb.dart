@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/field_mask.pb.dart' as $333;
-import 'accessright.pbenum.dart' as $539;
+import 'accessright.pbenum.dart' as $540;
 import 'user.pbenum.dart';
 
 export 'user.pbenum.dart';
@@ -24,7 +24,7 @@ class User extends $pb.GeneratedMessage {
   factory User({
     $core.String? name,
     User_State? state,
-    $core.Iterable<$539.AccessRight>? accessRights,
+    $core.Iterable<$540.AccessRight>? accessRights,
   }) {
     final $result = create();
     if (name != null) {
@@ -56,11 +56,11 @@ class User extends $pb.GeneratedMessage {
         defaultOrMaker: User_State.STATE_UNSPECIFIED,
         valueOf: User_State.valueOf,
         enumValues: User_State.values)
-    ..pc<$539.AccessRight>(
+    ..pc<$540.AccessRight>(
         4, _omitFieldNames ? '' : 'accessRights', $pb.PbFieldType.KE,
-        valueOf: $539.AccessRight.valueOf,
-        enumValues: $539.AccessRight.values,
-        defaultEnumValue: $539.AccessRight.ACCESS_RIGHT_UNSPECIFIED)
+        valueOf: $540.AccessRight.valueOf,
+        enumValues: $540.AccessRight.values,
+        defaultEnumValue: $540.AccessRight.ACCESS_RIGHT_UNSPECIFIED)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -118,7 +118,7 @@ class User extends $pb.GeneratedMessage {
   /// rights](https://support.google.com/merchants/answer/12160472?sjid=6789834943175119429-EU#accesstypes)
   /// the user has.
   @$pb.TagNumber(4)
-  $core.List<$539.AccessRight> get accessRights => $_getList(2);
+  $core.List<$540.AccessRight> get accessRights => $_getList(2);
 }
 
 /// Request message for the `GetUser` method.

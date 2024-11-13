@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'toll_passes.pbenum.dart' as $501;
-import 'vehicle_info.pb.dart' as $500;
+import 'toll_passes.pbenum.dart' as $502;
+import 'vehicle_info.pb.dart' as $501;
 
 /// Encapsulates a set of optional conditions to satisfy when calculating the
 /// routes.
@@ -24,8 +24,8 @@ class RouteModifiers extends $pb.GeneratedMessage {
     $core.bool? avoidHighways,
     $core.bool? avoidFerries,
     $core.bool? avoidIndoor,
-    $500.VehicleInfo? vehicleInfo,
-    $core.Iterable<$501.TollPass>? tollPasses,
+    $501.VehicleInfo? vehicleInfo,
+    $core.Iterable<$502.TollPass>? tollPasses,
   }) {
     final $result = create();
     if (avoidTolls != null) {
@@ -65,13 +65,13 @@ class RouteModifiers extends $pb.GeneratedMessage {
     ..aOB(2, _omitFieldNames ? '' : 'avoidHighways')
     ..aOB(3, _omitFieldNames ? '' : 'avoidFerries')
     ..aOB(4, _omitFieldNames ? '' : 'avoidIndoor')
-    ..aOM<$500.VehicleInfo>(5, _omitFieldNames ? '' : 'vehicleInfo',
-        subBuilder: $500.VehicleInfo.create)
-    ..pc<$501.TollPass>(
+    ..aOM<$501.VehicleInfo>(5, _omitFieldNames ? '' : 'vehicleInfo',
+        subBuilder: $501.VehicleInfo.create)
+    ..pc<$502.TollPass>(
         6, _omitFieldNames ? '' : 'tollPasses', $pb.PbFieldType.KE,
-        valueOf: $501.TollPass.valueOf,
-        enumValues: $501.TollPass.values,
-        defaultEnumValue: $501.TollPass.TOLL_PASS_UNSPECIFIED)
+        valueOf: $502.TollPass.valueOf,
+        enumValues: $502.TollPass.values,
+        defaultEnumValue: $502.TollPass.TOLL_PASS_UNSPECIFIED)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -159,9 +159,9 @@ class RouteModifiers extends $pb.GeneratedMessage {
 
   /// Specifies the vehicle information.
   @$pb.TagNumber(5)
-  $500.VehicleInfo get vehicleInfo => $_getN(4);
+  $501.VehicleInfo get vehicleInfo => $_getN(4);
   @$pb.TagNumber(5)
-  set vehicleInfo($500.VehicleInfo v) {
+  set vehicleInfo($501.VehicleInfo v) {
     setField(5, v);
   }
 
@@ -170,7 +170,7 @@ class RouteModifiers extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearVehicleInfo() => clearField(5);
   @$pb.TagNumber(5)
-  $500.VehicleInfo ensureVehicleInfo() => $_ensure(4);
+  $501.VehicleInfo ensureVehicleInfo() => $_ensure(4);
 
   /// Encapsulates information about toll passes.
   /// If toll passes are provided, the API tries to return the pass price. If
@@ -179,7 +179,7 @@ class RouteModifiers extends $pb.GeneratedMessage {
   /// Applies only to the `DRIVE` and `TWO_WHEELER`
   /// [`RouteTravelMode`][google.maps.routing.v2.RouteTravelMode].
   @$pb.TagNumber(6)
-  $core.List<$501.TollPass> get tollPasses => $_getList(5);
+  $core.List<$502.TollPass> get tollPasses => $_getList(5);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

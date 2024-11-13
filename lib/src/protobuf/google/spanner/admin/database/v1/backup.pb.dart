@@ -18,8 +18,8 @@ import '../../../../longrunning/operations.pb.dart' as $13;
 import '../../../../protobuf/field_mask.pb.dart' as $333;
 import '../../../../protobuf/timestamp.pb.dart' as $302;
 import 'backup.pbenum.dart';
-import 'common.pb.dart' as $549;
-import 'common.pbenum.dart' as $549;
+import 'common.pb.dart' as $550;
+import 'common.pbenum.dart' as $550;
 
 export 'backup.pbenum.dart';
 
@@ -33,12 +33,12 @@ class Backup extends $pb.GeneratedMessage {
     $fixnum.Int64? sizeBytes,
     Backup_State? state,
     $core.Iterable<$core.String>? referencingDatabases,
-    $549.EncryptionInfo? encryptionInfo,
+    $550.EncryptionInfo? encryptionInfo,
     $302.Timestamp? versionTime,
-    $549.DatabaseDialect? databaseDialect,
+    $550.DatabaseDialect? databaseDialect,
     $core.Iterable<$core.String>? referencingBackups,
     $302.Timestamp? maxExpireTime,
-    $core.Iterable<$549.EncryptionInfo>? encryptionInformation,
+    $core.Iterable<$550.EncryptionInfo>? encryptionInformation,
     $core.Iterable<$core.String>? backupSchedules,
     $fixnum.Int64? freeableSizeBytes,
     $fixnum.Int64? exclusiveSizeBytes,
@@ -127,21 +127,21 @@ class Backup extends $pb.GeneratedMessage {
         valueOf: Backup_State.valueOf,
         enumValues: Backup_State.values)
     ..pPS(7, _omitFieldNames ? '' : 'referencingDatabases')
-    ..aOM<$549.EncryptionInfo>(8, _omitFieldNames ? '' : 'encryptionInfo',
-        subBuilder: $549.EncryptionInfo.create)
+    ..aOM<$550.EncryptionInfo>(8, _omitFieldNames ? '' : 'encryptionInfo',
+        subBuilder: $550.EncryptionInfo.create)
     ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'versionTime',
         subBuilder: $302.Timestamp.create)
-    ..e<$549.DatabaseDialect>(
+    ..e<$550.DatabaseDialect>(
         10, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE,
-        defaultOrMaker: $549.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED,
-        valueOf: $549.DatabaseDialect.valueOf,
-        enumValues: $549.DatabaseDialect.values)
+        defaultOrMaker: $550.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED,
+        valueOf: $550.DatabaseDialect.valueOf,
+        enumValues: $550.DatabaseDialect.values)
     ..pPS(11, _omitFieldNames ? '' : 'referencingBackups')
     ..aOM<$302.Timestamp>(12, _omitFieldNames ? '' : 'maxExpireTime',
         subBuilder: $302.Timestamp.create)
-    ..pc<$549.EncryptionInfo>(
+    ..pc<$550.EncryptionInfo>(
         13, _omitFieldNames ? '' : 'encryptionInformation', $pb.PbFieldType.PM,
-        subBuilder: $549.EncryptionInfo.create)
+        subBuilder: $550.EncryptionInfo.create)
     ..pPS(14, _omitFieldNames ? '' : 'backupSchedules')
     ..aInt64(15, _omitFieldNames ? '' : 'freeableSizeBytes')
     ..aInt64(16, _omitFieldNames ? '' : 'exclusiveSizeBytes')
@@ -293,9 +293,9 @@ class Backup extends $pb.GeneratedMessage {
 
   /// Output only. The encryption information for the backup.
   @$pb.TagNumber(8)
-  $549.EncryptionInfo get encryptionInfo => $_getN(7);
+  $550.EncryptionInfo get encryptionInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set encryptionInfo($549.EncryptionInfo v) {
+  set encryptionInfo($550.EncryptionInfo v) {
     setField(8, v);
   }
 
@@ -304,7 +304,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearEncryptionInfo() => clearField(8);
   @$pb.TagNumber(8)
-  $549.EncryptionInfo ensureEncryptionInfo() => $_ensure(7);
+  $550.EncryptionInfo ensureEncryptionInfo() => $_ensure(7);
 
   /// The backup will contain an externally consistent copy of the database at
   /// the timestamp specified by `version_time`. If `version_time` is not
@@ -326,9 +326,9 @@ class Backup extends $pb.GeneratedMessage {
 
   /// Output only. The database dialect information for the backup.
   @$pb.TagNumber(10)
-  $549.DatabaseDialect get databaseDialect => $_getN(9);
+  $550.DatabaseDialect get databaseDialect => $_getN(9);
   @$pb.TagNumber(10)
-  set databaseDialect($549.DatabaseDialect v) {
+  set databaseDialect($550.DatabaseDialect v) {
     setField(10, v);
   }
 
@@ -373,7 +373,7 @@ class Backup extends $pb.GeneratedMessage {
   /// versions must be available for the backup to be restored. If a key version
   /// is revoked in the middle of a restore, the restore behavior is undefined.
   @$pb.TagNumber(13)
-  $core.List<$549.EncryptionInfo> get encryptionInformation => $_getList(12);
+  $core.List<$550.EncryptionInfo> get encryptionInformation => $_getList(12);
 
   ///  Output only. List of backup schedule URIs that are associated with
   ///  creating this backup. This is only applicable for scheduled backups, and
@@ -605,7 +605,7 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   factory CreateBackupMetadata({
     $core.String? name,
     $core.String? database,
-    $549.OperationProgress? progress,
+    $550.OperationProgress? progress,
     $302.Timestamp? cancelTime,
   }) {
     final $result = create();
@@ -638,8 +638,8 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'database')
-    ..aOM<$549.OperationProgress>(3, _omitFieldNames ? '' : 'progress',
-        subBuilder: $549.OperationProgress.create)
+    ..aOM<$550.OperationProgress>(3, _omitFieldNames ? '' : 'progress',
+        subBuilder: $550.OperationProgress.create)
     ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'cancelTime',
         subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false;
@@ -698,9 +698,9 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   /// [CreateBackup][google.spanner.admin.database.v1.DatabaseAdmin.CreateBackup]
   /// operation.
   @$pb.TagNumber(3)
-  $549.OperationProgress get progress => $_getN(2);
+  $550.OperationProgress get progress => $_getN(2);
   @$pb.TagNumber(3)
-  set progress($549.OperationProgress v) {
+  set progress($550.OperationProgress v) {
     setField(3, v);
   }
 
@@ -709,7 +709,7 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearProgress() => clearField(3);
   @$pb.TagNumber(3)
-  $549.OperationProgress ensureProgress() => $_ensure(2);
+  $550.OperationProgress ensureProgress() => $_ensure(2);
 
   /// The time at which cancellation of this operation was received.
   /// [Operations.CancelOperation][google.longrunning.Operations.CancelOperation]
@@ -904,7 +904,7 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   factory CopyBackupMetadata({
     $core.String? name,
     $core.String? sourceBackup,
-    $549.OperationProgress? progress,
+    $550.OperationProgress? progress,
     $302.Timestamp? cancelTime,
   }) {
     final $result = create();
@@ -937,8 +937,8 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'sourceBackup')
-    ..aOM<$549.OperationProgress>(3, _omitFieldNames ? '' : 'progress',
-        subBuilder: $549.OperationProgress.create)
+    ..aOM<$550.OperationProgress>(3, _omitFieldNames ? '' : 'progress',
+        subBuilder: $550.OperationProgress.create)
     ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'cancelTime',
         subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false;
@@ -1000,9 +1000,9 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   /// [CopyBackup][google.spanner.admin.database.v1.DatabaseAdmin.CopyBackup]
   /// operation.
   @$pb.TagNumber(3)
-  $549.OperationProgress get progress => $_getN(2);
+  $550.OperationProgress get progress => $_getN(2);
   @$pb.TagNumber(3)
-  set progress($549.OperationProgress v) {
+  set progress($550.OperationProgress v) {
     setField(3, v);
   }
 
@@ -1011,7 +1011,7 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearProgress() => clearField(3);
   @$pb.TagNumber(3)
-  $549.OperationProgress ensureProgress() => $_ensure(2);
+  $550.OperationProgress ensureProgress() => $_ensure(2);
 
   /// The time at which cancellation of CopyBackup operation was received.
   /// [Operations.CancelOperation][google.longrunning.Operations.CancelOperation]

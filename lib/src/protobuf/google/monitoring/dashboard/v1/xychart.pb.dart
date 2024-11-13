@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/duration.pb.dart' as $264;
-import 'metrics.pb.dart' as $513;
+import 'metrics.pb.dart' as $514;
 import 'xychart.pbenum.dart';
 
 export 'xychart.pbenum.dart';
@@ -22,7 +22,7 @@ export 'xychart.pbenum.dart';
 /// Groups a time series query definition with charting options.
 class XyChart_DataSet extends $pb.GeneratedMessage {
   factory XyChart_DataSet({
-    $513.TimeSeriesQuery? timeSeriesQuery,
+    $514.TimeSeriesQuery? timeSeriesQuery,
     XyChart_DataSet_PlotType? plotType,
     $core.String? legendTemplate,
     $264.Duration? minAlignmentPeriod,
@@ -59,8 +59,8 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
-    ..aOM<$513.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
-        subBuilder: $513.TimeSeriesQuery.create)
+    ..aOM<$514.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
+        subBuilder: $514.TimeSeriesQuery.create)
     ..e<XyChart_DataSet_PlotType>(
         2, _omitFieldNames ? '' : 'plotType', $pb.PbFieldType.OE,
         defaultOrMaker: XyChart_DataSet_PlotType.PLOT_TYPE_UNSPECIFIED,
@@ -102,9 +102,9 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   /// Required. Fields for querying time series data from the
   /// Stackdriver metrics API.
   @$pb.TagNumber(1)
-  $513.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $514.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($513.TimeSeriesQuery v) {
+  set timeSeriesQuery($514.TimeSeriesQuery v) {
     setField(1, v);
   }
 
@@ -113,7 +113,7 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $513.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $514.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// How this data should be plotted on the chart.
   @$pb.TagNumber(2)
@@ -267,7 +267,7 @@ class XyChart extends $pb.GeneratedMessage {
   factory XyChart({
     $core.Iterable<XyChart_DataSet>? dataSets,
     $264.Duration? timeshiftDuration,
-    $core.Iterable<$513.Threshold>? thresholds,
+    $core.Iterable<$514.Threshold>? thresholds,
     XyChart_Axis? xAxis,
     XyChart_Axis? yAxis,
     ChartOptions? chartOptions,
@@ -315,9 +315,9 @@ class XyChart extends $pb.GeneratedMessage {
         subBuilder: XyChart_DataSet.create)
     ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'timeshiftDuration',
         subBuilder: $264.Duration.create)
-    ..pc<$513.Threshold>(
+    ..pc<$514.Threshold>(
         5, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM,
-        subBuilder: $513.Threshold.create)
+        subBuilder: $514.Threshold.create)
     ..aOM<XyChart_Axis>(6, _omitFieldNames ? '' : 'xAxis',
         subBuilder: XyChart_Axis.create)
     ..aOM<XyChart_Axis>(7, _omitFieldNames ? '' : 'yAxis',
@@ -374,7 +374,7 @@ class XyChart extends $pb.GeneratedMessage {
 
   /// Threshold lines drawn horizontally across the chart.
   @$pb.TagNumber(5)
-  $core.List<$513.Threshold> get thresholds => $_getList(2);
+  $core.List<$514.Threshold> get thresholds => $_getList(2);
 
   /// The properties applied to the x-axis.
   @$pb.TagNumber(6)

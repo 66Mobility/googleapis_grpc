@@ -14,19 +14,19 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/duration.pb.dart' as $264;
-import 'metrics.pb.dart' as $513;
+import 'metrics.pb.dart' as $514;
 import 'table.pbenum.dart';
-import 'table_display_options.pb.dart' as $514;
+import 'table_display_options.pb.dart' as $515;
 
 export 'table.pbenum.dart';
 
 /// Groups a time series query definition with table options.
 class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   factory TimeSeriesTable_TableDataSet({
-    $513.TimeSeriesQuery? timeSeriesQuery,
+    $514.TimeSeriesQuery? timeSeriesQuery,
     $core.String? tableTemplate,
     $264.Duration? minAlignmentPeriod,
-    $514.TableDisplayOptions? tableDisplayOptions,
+    $515.TableDisplayOptions? tableDisplayOptions,
   }) {
     final $result = create();
     if (timeSeriesQuery != null) {
@@ -56,14 +56,14 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
-    ..aOM<$513.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
-        subBuilder: $513.TimeSeriesQuery.create)
+    ..aOM<$514.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
+        subBuilder: $514.TimeSeriesQuery.create)
     ..aOS(2, _omitFieldNames ? '' : 'tableTemplate')
     ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'minAlignmentPeriod',
         subBuilder: $264.Duration.create)
-    ..aOM<$514.TableDisplayOptions>(
+    ..aOM<$515.TableDisplayOptions>(
         4, _omitFieldNames ? '' : 'tableDisplayOptions',
-        subBuilder: $514.TableDisplayOptions.create)
+        subBuilder: $515.TableDisplayOptions.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -96,9 +96,9 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   /// Required. Fields for querying time series data from the
   /// Stackdriver metrics API.
   @$pb.TagNumber(1)
-  $513.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $514.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($513.TimeSeriesQuery v) {
+  set timeSeriesQuery($514.TimeSeriesQuery v) {
     setField(1, v);
   }
 
@@ -107,7 +107,7 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $513.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $514.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// Optional. A template string for naming `TimeSeries` in the resulting data
   /// set. This should be a string with interpolations of the form
@@ -147,9 +147,9 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   /// Optional. Table display options for configuring how the table is
   /// rendered.
   @$pb.TagNumber(4)
-  $514.TableDisplayOptions get tableDisplayOptions => $_getN(3);
+  $515.TableDisplayOptions get tableDisplayOptions => $_getN(3);
   @$pb.TagNumber(4)
-  set tableDisplayOptions($514.TableDisplayOptions v) {
+  set tableDisplayOptions($515.TableDisplayOptions v) {
     setField(4, v);
   }
 
@@ -158,7 +158,7 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearTableDisplayOptions() => clearField(4);
   @$pb.TagNumber(4)
-  $514.TableDisplayOptions ensureTableDisplayOptions() => $_ensure(3);
+  $515.TableDisplayOptions ensureTableDisplayOptions() => $_ensure(3);
 }
 
 /// The persistent settings for a table's columns.

@@ -16,8 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $302;
 import '../../../../type/date.pb.dart' as $327;
-import '../../../type/types.pb.dart' as $536;
-import '../../../type/types.pbenum.dart' as $536;
+import '../../../type/types.pb.dart' as $537;
+import '../../../type/types.pbenum.dart' as $537;
 import 'reports.pbenum.dart';
 
 export 'reports.pbenum.dart';
@@ -548,7 +548,7 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
     $fixnum.Int64? impressions,
     $core.double? clickThroughRate,
     $core.double? conversions,
-    $536.Price? conversionValue,
+    $537.Price? conversionValue,
     $core.double? conversionRate,
   }) {
     final $result = create();
@@ -686,8 +686,8 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
         25, _omitFieldNames ? '' : 'clickThroughRate', $pb.PbFieldType.OD)
     ..a<$core.double>(
         26, _omitFieldNames ? '' : 'conversions', $pb.PbFieldType.OD)
-    ..aOM<$536.Price>(27, _omitFieldNames ? '' : 'conversionValue',
-        subBuilder: $536.Price.create)
+    ..aOM<$537.Price>(27, _omitFieldNames ? '' : 'conversionValue',
+        subBuilder: $537.Price.create)
     ..a<$core.double>(
         28, _omitFieldNames ? '' : 'conversionRate', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
@@ -1098,9 +1098,9 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   ///
   ///  Available only for the `FREE` traffic source.
   @$pb.TagNumber(27)
-  $536.Price get conversionValue => $_getN(26);
+  $537.Price get conversionValue => $_getN(26);
   @$pb.TagNumber(27)
-  set conversionValue($536.Price v) {
+  set conversionValue($537.Price v) {
     setField(27, v);
   }
 
@@ -1109,7 +1109,7 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   void clearConversionValue() => clearField(27);
   @$pb.TagNumber(27)
-  $536.Price ensureConversionValue() => $_ensure(26);
+  $537.Price ensureConversionValue() => $_ensure(26);
 
   ///  Number of conversions divided by the number of clicks, reported on the
   ///  impression date. Metric.
@@ -1221,7 +1221,7 @@ class ProductView_ItemIssue_ItemIssueType extends $pb.GeneratedMessage {
 class ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
     extends $pb.GeneratedMessage {
   factory ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext({
-    $536.ReportingContext_ReportingContextEnum? reportingContext,
+    $537.ReportingContext_ReportingContextEnum? reportingContext,
     $core.Iterable<$core.String>? disapprovedCountries,
     $core.Iterable<$core.String>? demotedCountries,
   }) {
@@ -1255,12 +1255,12 @@ class ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
       createEmptyInstance: create)
-    ..e<$536.ReportingContext_ReportingContextEnum>(
+    ..e<$537.ReportingContext_ReportingContextEnum>(
         1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE,
-        defaultOrMaker: $536.ReportingContext_ReportingContextEnum
+        defaultOrMaker: $537.ReportingContext_ReportingContextEnum
             .REPORTING_CONTEXT_ENUM_UNSPECIFIED,
-        valueOf: $536.ReportingContext_ReportingContextEnum.valueOf,
-        enumValues: $536.ReportingContext_ReportingContextEnum.values)
+        valueOf: $537.ReportingContext_ReportingContextEnum.valueOf,
+        enumValues: $537.ReportingContext_ReportingContextEnum.values)
     ..pPS(2, _omitFieldNames ? '' : 'disapprovedCountries')
     ..pPS(3, _omitFieldNames ? '' : 'demotedCountries')
     ..hasRequiredFields = false;
@@ -1306,9 +1306,9 @@ class ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
 
   /// Reporting context the issue applies to.
   @$pb.TagNumber(1)
-  $536.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
+  $537.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
   @$pb.TagNumber(1)
-  set reportingContext($536.ReportingContext_ReportingContextEnum v) {
+  set reportingContext($537.ReportingContext_ReportingContextEnum v) {
     setField(1, v);
   }
 
@@ -1574,7 +1574,7 @@ class ProductView extends $pb.GeneratedMessage {
     $core.String? productTypeL3,
     $core.String? productTypeL4,
     $core.String? productTypeL5,
-    $536.Price? price,
+    $537.Price? price,
     $core.String? condition,
     $core.String? availability,
     $core.String? shippingLabel,
@@ -1586,7 +1586,7 @@ class ProductView extends $pb.GeneratedMessage {
     ProductView_AggregatedReportingContextStatus?
         aggregatedReportingContextStatus,
     $core.Iterable<ProductView_ItemIssue>? itemIssues,
-    $536.Channel_ChannelEnum? channel,
+    $537.Channel_ChannelEnum? channel,
     ProductView_ClickPotential? clickPotential,
     $fixnum.Int64? clickPotentialRank,
   }) {
@@ -1713,8 +1713,8 @@ class ProductView extends $pb.GeneratedMessage {
     ..aOS(14, _omitFieldNames ? '' : 'productTypeL3')
     ..aOS(15, _omitFieldNames ? '' : 'productTypeL4')
     ..aOS(16, _omitFieldNames ? '' : 'productTypeL5')
-    ..aOM<$536.Price>(17, _omitFieldNames ? '' : 'price',
-        subBuilder: $536.Price.create)
+    ..aOM<$537.Price>(17, _omitFieldNames ? '' : 'price',
+        subBuilder: $537.Price.create)
     ..aOS(18, _omitFieldNames ? '' : 'condition')
     ..aOS(19, _omitFieldNames ? '' : 'availability')
     ..aOS(20, _omitFieldNames ? '' : 'shippingLabel')
@@ -1736,11 +1736,11 @@ class ProductView extends $pb.GeneratedMessage {
     ..pc<ProductView_ItemIssue>(
         27, _omitFieldNames ? '' : 'itemIssues', $pb.PbFieldType.PM,
         subBuilder: ProductView_ItemIssue.create)
-    ..e<$536.Channel_ChannelEnum>(
+    ..e<$537.Channel_ChannelEnum>(
         28, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE,
-        defaultOrMaker: $536.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED,
-        valueOf: $536.Channel_ChannelEnum.valueOf,
-        enumValues: $536.Channel_ChannelEnum.values)
+        defaultOrMaker: $537.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED,
+        valueOf: $537.Channel_ChannelEnum.valueOf,
+        enumValues: $537.Channel_ChannelEnum.values)
     ..e<ProductView_ClickPotential>(
         29, _omitFieldNames ? '' : 'clickPotential', $pb.PbFieldType.OE,
         defaultOrMaker: ProductView_ClickPotential.CLICK_POTENTIAL_UNSPECIFIED,
@@ -1996,9 +1996,9 @@ class ProductView extends $pb.GeneratedMessage {
   /// Product price. Absent if the information about the price of the product is
   /// not available.
   @$pb.TagNumber(17)
-  $536.Price get price => $_getN(16);
+  $537.Price get price => $_getN(16);
   @$pb.TagNumber(17)
-  set price($536.Price v) {
+  set price($537.Price v) {
     setField(17, v);
   }
 
@@ -2007,7 +2007,7 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearPrice() => clearField(17);
   @$pb.TagNumber(17)
-  $536.Price ensurePrice() => $_ensure(16);
+  $537.Price ensurePrice() => $_ensure(16);
 
   /// [Condition](https://support.google.com/merchants/answer/6324469) of the
   /// product.
@@ -2140,9 +2140,9 @@ class ProductView extends $pb.GeneratedMessage {
 
   /// Channel of the product. Can be `ONLINE` or `LOCAL`.
   @$pb.TagNumber(28)
-  $536.Channel_ChannelEnum get channel => $_getN(27);
+  $537.Channel_ChannelEnum get channel => $_getN(27);
   @$pb.TagNumber(28)
-  set channel($536.Channel_ChannelEnum v) {
+  set channel($537.Channel_ChannelEnum v) {
     setField(28, v);
   }
 
@@ -2205,8 +2205,8 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
     $core.String? productTypeL3,
     $core.String? productTypeL4,
     $core.String? productTypeL5,
-    $536.Price? price,
-    $536.Price? benchmarkPrice,
+    $537.Price? price,
+    $537.Price? benchmarkPrice,
   }) {
     final $result = create();
     if (reportCountryCode != null) {
@@ -2290,10 +2290,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
     ..aOS(13, _omitFieldNames ? '' : 'productTypeL3')
     ..aOS(14, _omitFieldNames ? '' : 'productTypeL4')
     ..aOS(15, _omitFieldNames ? '' : 'productTypeL5')
-    ..aOM<$536.Price>(16, _omitFieldNames ? '' : 'price',
-        subBuilder: $536.Price.create)
-    ..aOM<$536.Price>(17, _omitFieldNames ? '' : 'benchmarkPrice',
-        subBuilder: $536.Price.create)
+    ..aOM<$537.Price>(16, _omitFieldNames ? '' : 'price',
+        subBuilder: $537.Price.create)
+    ..aOM<$537.Price>(17, _omitFieldNames ? '' : 'benchmarkPrice',
+        subBuilder: $537.Price.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2537,9 +2537,9 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
 
   /// Current price of the product.
   @$pb.TagNumber(16)
-  $536.Price get price => $_getN(15);
+  $537.Price get price => $_getN(15);
   @$pb.TagNumber(16)
-  set price($536.Price v) {
+  set price($537.Price v) {
     setField(16, v);
   }
 
@@ -2548,14 +2548,14 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   void clearPrice() => clearField(16);
   @$pb.TagNumber(16)
-  $536.Price ensurePrice() => $_ensure(15);
+  $537.Price ensurePrice() => $_ensure(15);
 
   /// Latest available price benchmark for the product's catalog in the benchmark
   /// country.
   @$pb.TagNumber(17)
-  $536.Price get benchmarkPrice => $_getN(16);
+  $537.Price get benchmarkPrice => $_getN(16);
   @$pb.TagNumber(17)
-  set benchmarkPrice($536.Price v) {
+  set benchmarkPrice($537.Price v) {
     setField(17, v);
   }
 
@@ -2564,7 +2564,7 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearBenchmarkPrice() => clearField(17);
   @$pb.TagNumber(17)
-  $536.Price ensureBenchmarkPrice() => $_ensure(16);
+  $537.Price ensureBenchmarkPrice() => $_ensure(16);
 }
 
 ///  Fields available for query in `price_insights_product_view` table.
@@ -2590,8 +2590,8 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
     $core.String? productTypeL3,
     $core.String? productTypeL4,
     $core.String? productTypeL5,
-    $536.Price? price,
-    $536.Price? suggestedPrice,
+    $537.Price? price,
+    $537.Price? suggestedPrice,
     $core.double? predictedImpressionsChangeFraction,
     $core.double? predictedClicksChangeFraction,
     $core.double? predictedConversionsChangeFraction,
@@ -2689,10 +2689,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
     ..aOS(12, _omitFieldNames ? '' : 'productTypeL3')
     ..aOS(13, _omitFieldNames ? '' : 'productTypeL4')
     ..aOS(14, _omitFieldNames ? '' : 'productTypeL5')
-    ..aOM<$536.Price>(15, _omitFieldNames ? '' : 'price',
-        subBuilder: $536.Price.create)
-    ..aOM<$536.Price>(16, _omitFieldNames ? '' : 'suggestedPrice',
-        subBuilder: $536.Price.create)
+    ..aOM<$537.Price>(15, _omitFieldNames ? '' : 'price',
+        subBuilder: $537.Price.create)
+    ..aOM<$537.Price>(16, _omitFieldNames ? '' : 'suggestedPrice',
+        subBuilder: $537.Price.create)
     ..a<$core.double>(
         17,
         _omitFieldNames ? '' : 'predictedImpressionsChangeFraction',
@@ -2936,9 +2936,9 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
 
   /// Current price of the product.
   @$pb.TagNumber(15)
-  $536.Price get price => $_getN(14);
+  $537.Price get price => $_getN(14);
   @$pb.TagNumber(15)
-  set price($536.Price v) {
+  set price($537.Price v) {
     setField(15, v);
   }
 
@@ -2947,13 +2947,13 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   void clearPrice() => clearField(15);
   @$pb.TagNumber(15)
-  $536.Price ensurePrice() => $_ensure(14);
+  $537.Price ensurePrice() => $_ensure(14);
 
   /// Latest suggested price for the product.
   @$pb.TagNumber(16)
-  $536.Price get suggestedPrice => $_getN(15);
+  $537.Price get suggestedPrice => $_getN(15);
   @$pb.TagNumber(16)
-  set suggestedPrice($536.Price v) {
+  set suggestedPrice($537.Price v) {
     setField(16, v);
   }
 
@@ -2962,7 +2962,7 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   void clearSuggestedPrice() => clearField(16);
   @$pb.TagNumber(16)
-  $536.Price ensureSuggestedPrice() => $_ensure(15);
+  $537.Price ensureSuggestedPrice() => $_ensure(15);
 
   /// Predicted change in impressions as a fraction after introducing the
   /// suggested price compared to current active price. For example, 0.05 is a 5%

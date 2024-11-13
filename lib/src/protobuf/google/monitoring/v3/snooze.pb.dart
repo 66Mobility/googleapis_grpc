@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $531;
+import 'common.pb.dart' as $532;
 
 /// Criteria specific to the `AlertPolicy`s that this `Snooze` applies to. The
 /// `Snooze` will suppress alerts that come from one of the `AlertPolicy`s
@@ -86,7 +86,7 @@ class Snooze extends $pb.GeneratedMessage {
   factory Snooze({
     $core.String? name,
     Snooze_Criteria? criteria,
-    $531.TimeInterval? interval,
+    $532.TimeInterval? interval,
     $core.String? displayName,
   }) {
     final $result = create();
@@ -120,8 +120,8 @@ class Snooze extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Snooze_Criteria>(3, _omitFieldNames ? '' : 'criteria',
         subBuilder: Snooze_Criteria.create)
-    ..aOM<$531.TimeInterval>(4, _omitFieldNames ? '' : 'interval',
-        subBuilder: $531.TimeInterval.create)
+    ..aOM<$532.TimeInterval>(4, _omitFieldNames ? '' : 'interval',
+        subBuilder: $532.TimeInterval.create)
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false;
 
@@ -185,9 +185,9 @@ class Snooze extends $pb.GeneratedMessage {
   /// skew to account for the time it takes for a request to reach the API from
   /// the UI.
   @$pb.TagNumber(4)
-  $531.TimeInterval get interval => $_getN(2);
+  $532.TimeInterval get interval => $_getN(2);
   @$pb.TagNumber(4)
-  set interval($531.TimeInterval v) {
+  set interval($532.TimeInterval v) {
     setField(4, v);
   }
 
@@ -196,7 +196,7 @@ class Snooze extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearInterval() => clearField(4);
   @$pb.TagNumber(4)
-  $531.TimeInterval ensureInterval() => $_ensure(2);
+  $532.TimeInterval ensureInterval() => $_ensure(2);
 
   /// Required. A display name for the `Snooze`. This can be, at most, 512
   /// unicode characters.

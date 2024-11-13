@@ -152,6 +152,8 @@ const QuotaIncreaseEligibility_IneligibilityReason$json = {
   '2': [
     {'1': 'INELIGIBILITY_REASON_UNSPECIFIED', '2': 0},
     {'1': 'NO_VALID_BILLING_ACCOUNT', '2': 1},
+    {'1': 'NOT_SUPPORTED', '2': 3},
+    {'1': 'NOT_ENOUGH_USAGE_HISTORY', '2': 4},
     {'1': 'OTHER', '2': 2},
   ],
 };
@@ -161,9 +163,10 @@ final $typed_data.Uint8List quotaIncreaseEligibilityDescriptor = $convert.base64
     'ChhRdW90YUluY3JlYXNlRWxpZ2liaWxpdHkSHwoLaXNfZWxpZ2libGUYASABKAhSCmlzRWxpZ2'
     'libGUSegoUaW5lbGlnaWJpbGl0eV9yZWFzb24YAiABKA4yRy5nb29nbGUuYXBpLmNsb3VkcXVv'
     'dGFzLnYxLlF1b3RhSW5jcmVhc2VFbGlnaWJpbGl0eS5JbmVsaWdpYmlsaXR5UmVhc29uUhNpbm'
-    'VsaWdpYmlsaXR5UmVhc29uImQKE0luZWxpZ2liaWxpdHlSZWFzb24SJAogSU5FTElHSUJJTElU'
-    'WV9SRUFTT05fVU5TUEVDSUZJRUQQABIcChhOT19WQUxJRF9CSUxMSU5HX0FDQ09VTlQQARIJCg'
-    'VPVEhFUhAC');
+    'VsaWdpYmlsaXR5UmVhc29uIpUBChNJbmVsaWdpYmlsaXR5UmVhc29uEiQKIElORUxJR0lCSUxJ'
+    'VFlfUkVBU09OX1VOU1BFQ0lGSUVEEAASHAoYTk9fVkFMSURfQklMTElOR19BQ0NPVU5UEAESEQ'
+    'oNTk9UX1NVUFBPUlRFRBADEhwKGE5PVF9FTk9VR0hfVVNBR0VfSElTVE9SWRAEEgkKBU9USEVS'
+    'EAI=');
 
 @$core.Deprecated('Use quotaPreferenceDescriptor instead')
 const QuotaPreference$json = {

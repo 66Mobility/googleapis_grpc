@@ -16,7 +16,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../../../protobuf/timestamp.pb.dart' as $302;
 import 'compute_routes_request.pb.dart' as $176;
 import 'compute_routes_request.pbenum.dart' as $176;
-import 'waypoint.pb.dart' as $482;
+import 'waypoint.pb.dart' as $483;
 
 /// ComputeRouteMatrix request message
 class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
@@ -172,7 +172,7 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
 /// A single origin for ComputeRouteMatrixRequest
 class RouteMatrixOrigin extends $pb.GeneratedMessage {
   factory RouteMatrixOrigin({
-    $482.Waypoint? waypoint,
+    $483.Waypoint? waypoint,
     $176.RouteModifiers? routeModifiers,
   }) {
     final $result = create();
@@ -197,8 +197,8 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routes.v1'),
       createEmptyInstance: create)
-    ..aOM<$482.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
-        subBuilder: $482.Waypoint.create)
+    ..aOM<$483.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
+        subBuilder: $483.Waypoint.create)
     ..aOM<$176.RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers',
         subBuilder: $176.RouteModifiers.create)
     ..hasRequiredFields = false;
@@ -228,9 +228,9 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
 
   /// Required. Origin waypoint
   @$pb.TagNumber(1)
-  $482.Waypoint get waypoint => $_getN(0);
+  $483.Waypoint get waypoint => $_getN(0);
   @$pb.TagNumber(1)
-  set waypoint($482.Waypoint v) {
+  set waypoint($483.Waypoint v) {
     setField(1, v);
   }
 
@@ -239,7 +239,7 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearWaypoint() => clearField(1);
   @$pb.TagNumber(1)
-  $482.Waypoint ensureWaypoint() => $_ensure(0);
+  $483.Waypoint ensureWaypoint() => $_ensure(0);
 
   /// Optional. Modifiers for every route that takes this as the origin
   @$pb.TagNumber(2)
@@ -260,7 +260,7 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
 /// A single destination for ComputeRouteMatrixRequest
 class RouteMatrixDestination extends $pb.GeneratedMessage {
   factory RouteMatrixDestination({
-    $482.Waypoint? waypoint,
+    $483.Waypoint? waypoint,
   }) {
     final $result = create();
     if (waypoint != null) {
@@ -281,8 +281,8 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routes.v1'),
       createEmptyInstance: create)
-    ..aOM<$482.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
-        subBuilder: $482.Waypoint.create)
+    ..aOM<$483.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
+        subBuilder: $483.Waypoint.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -312,9 +312,9 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
 
   /// Required. Destination waypoint
   @$pb.TagNumber(1)
-  $482.Waypoint get waypoint => $_getN(0);
+  $483.Waypoint get waypoint => $_getN(0);
   @$pb.TagNumber(1)
-  set waypoint($482.Waypoint v) {
+  set waypoint($483.Waypoint v) {
     setField(1, v);
   }
 
@@ -323,7 +323,7 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearWaypoint() => clearField(1);
   @$pb.TagNumber(1)
-  $482.Waypoint ensureWaypoint() => $_ensure(0);
+  $483.Waypoint ensureWaypoint() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

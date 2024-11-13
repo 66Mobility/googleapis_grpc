@@ -15,8 +15,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/duration.pb.dart' as $264;
 import '../../../rpc/status.pb.dart' as $322;
-import 'fallback_info.pb.dart' as $488;
-import 'route.pb.dart' as $486;
+import 'fallback_info.pb.dart' as $489;
+import 'route.pb.dart' as $487;
 import 'route_matrix_element.pbenum.dart';
 
 export 'route_matrix_element.pbenum.dart';
@@ -31,8 +31,8 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
     $core.int? distanceMeters,
     $264.Duration? duration,
     $264.Duration? staticDuration,
-    $486.RouteTravelAdvisory? travelAdvisory,
-    $488.FallbackInfo? fallbackInfo,
+    $487.RouteTravelAdvisory? travelAdvisory,
+    $489.FallbackInfo? fallbackInfo,
     RouteMatrixElementCondition? condition,
   }) {
     final $result = create();
@@ -89,10 +89,10 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
         subBuilder: $264.Duration.create)
     ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'staticDuration',
         subBuilder: $264.Duration.create)
-    ..aOM<$486.RouteTravelAdvisory>(7, _omitFieldNames ? '' : 'travelAdvisory',
-        subBuilder: $486.RouteTravelAdvisory.create)
-    ..aOM<$488.FallbackInfo>(8, _omitFieldNames ? '' : 'fallbackInfo',
-        subBuilder: $488.FallbackInfo.create)
+    ..aOM<$487.RouteTravelAdvisory>(7, _omitFieldNames ? '' : 'travelAdvisory',
+        subBuilder: $487.RouteTravelAdvisory.create)
+    ..aOM<$489.FallbackInfo>(8, _omitFieldNames ? '' : 'fallbackInfo',
+        subBuilder: $489.FallbackInfo.create)
     ..e<RouteMatrixElementCondition>(
         9, _omitFieldNames ? '' : 'condition', $pb.PbFieldType.OE,
         defaultOrMaker: RouteMatrixElementCondition
@@ -216,9 +216,9 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   /// Additional information about the route. For example: restriction
   /// information and toll information
   @$pb.TagNumber(7)
-  $486.RouteTravelAdvisory get travelAdvisory => $_getN(6);
+  $487.RouteTravelAdvisory get travelAdvisory => $_getN(6);
   @$pb.TagNumber(7)
-  set travelAdvisory($486.RouteTravelAdvisory v) {
+  set travelAdvisory($487.RouteTravelAdvisory v) {
     setField(7, v);
   }
 
@@ -227,7 +227,7 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearTravelAdvisory() => clearField(7);
   @$pb.TagNumber(7)
-  $486.RouteTravelAdvisory ensureTravelAdvisory() => $_ensure(6);
+  $487.RouteTravelAdvisory ensureTravelAdvisory() => $_ensure(6);
 
   /// In some cases when the server is not able to compute the route with the
   /// given preferences for this particular origin/destination pair, it may
@@ -235,9 +235,9 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   /// used, this field contains detailed information about the fallback response.
   /// Otherwise this field is unset.
   @$pb.TagNumber(8)
-  $488.FallbackInfo get fallbackInfo => $_getN(7);
+  $489.FallbackInfo get fallbackInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set fallbackInfo($488.FallbackInfo v) {
+  set fallbackInfo($489.FallbackInfo v) {
     setField(8, v);
   }
 
@@ -246,7 +246,7 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearFallbackInfo() => clearField(8);
   @$pb.TagNumber(8)
-  $488.FallbackInfo ensureFallbackInfo() => $_ensure(7);
+  $489.FallbackInfo ensureFallbackInfo() => $_ensure(7);
 
   /// Indicates whether the route was found or not. Independent of status.
   @$pb.TagNumber(9)

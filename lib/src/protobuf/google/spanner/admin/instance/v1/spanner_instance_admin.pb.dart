@@ -16,8 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../../../../longrunning/operations.pb.dart' as $13;
 import '../../../../protobuf/field_mask.pb.dart' as $333;
 import '../../../../protobuf/timestamp.pb.dart' as $302;
-import 'common.pb.dart' as $550;
-import 'common.pbenum.dart' as $550;
+import 'common.pb.dart' as $551;
+import 'common.pbenum.dart' as $551;
 import 'spanner_instance_admin.pbenum.dart';
 
 export 'spanner_instance_admin.pbenum.dart';
@@ -405,7 +405,7 @@ enum ReplicaComputeCapacity_ComputeCapacity {
 /// allocated to each replica identified by the replica selection.
 class ReplicaComputeCapacity extends $pb.GeneratedMessage {
   factory ReplicaComputeCapacity({
-    $550.ReplicaSelection? replicaSelection,
+    $551.ReplicaSelection? replicaSelection,
     $core.int? nodeCount,
     $core.int? processingUnits,
   }) {
@@ -441,8 +441,8 @@ class ReplicaComputeCapacity extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
       createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$550.ReplicaSelection>(1, _omitFieldNames ? '' : 'replicaSelection',
-        subBuilder: $550.ReplicaSelection.create)
+    ..aOM<$551.ReplicaSelection>(1, _omitFieldNames ? '' : 'replicaSelection',
+        subBuilder: $551.ReplicaSelection.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'nodeCount', $pb.PbFieldType.O3)
     ..a<$core.int>(
         3, _omitFieldNames ? '' : 'processingUnits', $pb.PbFieldType.O3)
@@ -480,9 +480,9 @@ class ReplicaComputeCapacity extends $pb.GeneratedMessage {
   /// Required. Identifies replicas by specified properties.
   /// All replicas in the selection have the same amount of compute capacity.
   @$pb.TagNumber(1)
-  $550.ReplicaSelection get replicaSelection => $_getN(0);
+  $551.ReplicaSelection get replicaSelection => $_getN(0);
   @$pb.TagNumber(1)
-  set replicaSelection($550.ReplicaSelection v) {
+  set replicaSelection($551.ReplicaSelection v) {
     setField(1, v);
   }
 
@@ -491,7 +491,7 @@ class ReplicaComputeCapacity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearReplicaSelection() => clearField(1);
   @$pb.TagNumber(1)
-  $550.ReplicaSelection ensureReplicaSelection() => $_ensure(0);
+  $551.ReplicaSelection ensureReplicaSelection() => $_ensure(0);
 
   ///  The number of nodes allocated to each replica.
   ///
@@ -924,7 +924,7 @@ class AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
 class AutoscalingConfig_AsymmetricAutoscalingOption
     extends $pb.GeneratedMessage {
   factory AutoscalingConfig_AsymmetricAutoscalingOption({
-    $550.ReplicaSelection? replicaSelection,
+    $551.ReplicaSelection? replicaSelection,
     AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides?
         overrides,
   }) {
@@ -951,8 +951,8 @@ class AutoscalingConfig_AsymmetricAutoscalingOption
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
       createEmptyInstance: create)
-    ..aOM<$550.ReplicaSelection>(1, _omitFieldNames ? '' : 'replicaSelection',
-        subBuilder: $550.ReplicaSelection.create)
+    ..aOM<$551.ReplicaSelection>(1, _omitFieldNames ? '' : 'replicaSelection',
+        subBuilder: $551.ReplicaSelection.create)
     ..aOM<AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides>(
         2, _omitFieldNames ? '' : 'overrides',
         subBuilder:
@@ -994,9 +994,9 @@ class AutoscalingConfig_AsymmetricAutoscalingOption
   /// Required. Selects the replicas to which this AsymmetricAutoscalingOption
   /// applies. Only read-only replicas are supported.
   @$pb.TagNumber(1)
-  $550.ReplicaSelection get replicaSelection => $_getN(0);
+  $551.ReplicaSelection get replicaSelection => $_getN(0);
   @$pb.TagNumber(1)
-  set replicaSelection($550.ReplicaSelection v) {
+  set replicaSelection($551.ReplicaSelection v) {
     setField(1, v);
   }
 
@@ -1005,7 +1005,7 @@ class AutoscalingConfig_AsymmetricAutoscalingOption
   @$pb.TagNumber(1)
   void clearReplicaSelection() => clearField(1);
   @$pb.TagNumber(1)
-  $550.ReplicaSelection ensureReplicaSelection() => $_ensure(0);
+  $551.ReplicaSelection ensureReplicaSelection() => $_ensure(0);
 
   /// Optional. Overrides applied to the top-level autoscaling configuration
   /// for the selected replicas.
@@ -3050,7 +3050,7 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
     $302.Timestamp? startTime,
     $302.Timestamp? cancelTime,
     $302.Timestamp? endTime,
-    $550.FulfillmentPeriod? expectedFulfillmentPeriod,
+    $551.FulfillmentPeriod? expectedFulfillmentPeriod,
   }) {
     final $result = create();
     if (instance != null) {
@@ -3091,11 +3091,11 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
         subBuilder: $302.Timestamp.create)
     ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
         subBuilder: $302.Timestamp.create)
-    ..e<$550.FulfillmentPeriod>(5,
+    ..e<$551.FulfillmentPeriod>(5,
         _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE,
-        defaultOrMaker: $550.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED,
-        valueOf: $550.FulfillmentPeriod.valueOf,
-        enumValues: $550.FulfillmentPeriod.values)
+        defaultOrMaker: $551.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED,
+        valueOf: $551.FulfillmentPeriod.valueOf,
+        enumValues: $551.FulfillmentPeriod.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3189,9 +3189,9 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
 
   /// The expected fulfillment period of this create operation.
   @$pb.TagNumber(5)
-  $550.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
+  $551.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
   @$pb.TagNumber(5)
-  set expectedFulfillmentPeriod($550.FulfillmentPeriod v) {
+  set expectedFulfillmentPeriod($551.FulfillmentPeriod v) {
     setField(5, v);
   }
 
@@ -3209,7 +3209,7 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
     $302.Timestamp? startTime,
     $302.Timestamp? cancelTime,
     $302.Timestamp? endTime,
-    $550.FulfillmentPeriod? expectedFulfillmentPeriod,
+    $551.FulfillmentPeriod? expectedFulfillmentPeriod,
   }) {
     final $result = create();
     if (instance != null) {
@@ -3250,11 +3250,11 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
         subBuilder: $302.Timestamp.create)
     ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
         subBuilder: $302.Timestamp.create)
-    ..e<$550.FulfillmentPeriod>(5,
+    ..e<$551.FulfillmentPeriod>(5,
         _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE,
-        defaultOrMaker: $550.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED,
-        valueOf: $550.FulfillmentPeriod.valueOf,
-        enumValues: $550.FulfillmentPeriod.values)
+        defaultOrMaker: $551.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED,
+        valueOf: $551.FulfillmentPeriod.valueOf,
+        enumValues: $551.FulfillmentPeriod.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3348,9 +3348,9 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
 
   /// The expected fulfillment period of this update operation.
   @$pb.TagNumber(5)
-  $550.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
+  $551.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
   @$pb.TagNumber(5)
-  set expectedFulfillmentPeriod($550.FulfillmentPeriod v) {
+  set expectedFulfillmentPeriod($551.FulfillmentPeriod v) {
     setField(5, v);
   }
 
@@ -3365,7 +3365,7 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
 class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   factory CreateInstanceConfigMetadata({
     InstanceConfig? instanceConfig,
-    $550.OperationProgress? progress,
+    $551.OperationProgress? progress,
     $302.Timestamp? cancelTime,
   }) {
     final $result = create();
@@ -3395,8 +3395,8 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig',
         subBuilder: InstanceConfig.create)
-    ..aOM<$550.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
-        subBuilder: $550.OperationProgress.create)
+    ..aOM<$551.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $551.OperationProgress.create)
     ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
         subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false;
@@ -3447,9 +3447,9 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   /// [CreateInstanceConfig][google.spanner.admin.instance.v1.InstanceAdmin.CreateInstanceConfig]
   /// operation.
   @$pb.TagNumber(2)
-  $550.OperationProgress get progress => $_getN(1);
+  $551.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($550.OperationProgress v) {
+  set progress($551.OperationProgress v) {
     setField(2, v);
   }
 
@@ -3458,7 +3458,7 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $550.OperationProgress ensureProgress() => $_ensure(1);
+  $551.OperationProgress ensureProgress() => $_ensure(1);
 
   /// The time at which this operation was cancelled.
   @$pb.TagNumber(3)
@@ -3481,7 +3481,7 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
 class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   factory UpdateInstanceConfigMetadata({
     InstanceConfig? instanceConfig,
-    $550.OperationProgress? progress,
+    $551.OperationProgress? progress,
     $302.Timestamp? cancelTime,
   }) {
     final $result = create();
@@ -3511,8 +3511,8 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig',
         subBuilder: InstanceConfig.create)
-    ..aOM<$550.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
-        subBuilder: $550.OperationProgress.create)
+    ..aOM<$551.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $551.OperationProgress.create)
     ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
         subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false;
@@ -3563,9 +3563,9 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   /// [UpdateInstanceConfig][google.spanner.admin.instance.v1.InstanceAdmin.UpdateInstanceConfig]
   /// operation.
   @$pb.TagNumber(2)
-  $550.OperationProgress get progress => $_getN(1);
+  $551.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($550.OperationProgress v) {
+  set progress($551.OperationProgress v) {
     setField(2, v);
   }
 
@@ -3574,7 +3574,7 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $550.OperationProgress ensureProgress() => $_ensure(1);
+  $551.OperationProgress ensureProgress() => $_ensure(1);
 
   /// The time at which this operation was cancelled.
   @$pb.TagNumber(3)
@@ -5201,7 +5201,7 @@ class MoveInstanceResponse extends $pb.GeneratedMessage {
 class MoveInstanceMetadata extends $pb.GeneratedMessage {
   factory MoveInstanceMetadata({
     $core.String? targetConfig,
-    $550.OperationProgress? progress,
+    $551.OperationProgress? progress,
     $302.Timestamp? cancelTime,
   }) {
     final $result = create();
@@ -5230,8 +5230,8 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'targetConfig')
-    ..aOM<$550.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
-        subBuilder: $550.OperationProgress.create)
+    ..aOM<$551.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $551.OperationProgress.create)
     ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
         subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false;
@@ -5280,9 +5280,9 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
   /// [progress_percent][google.spanner.admin.instance.v1.OperationProgress.progress_percent]
   /// is reset when cancellation is requested.
   @$pb.TagNumber(2)
-  $550.OperationProgress get progress => $_getN(1);
+  $551.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($550.OperationProgress v) {
+  set progress($551.OperationProgress v) {
     setField(2, v);
   }
 
@@ -5291,7 +5291,7 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $550.OperationProgress ensureProgress() => $_ensure(1);
+  $551.OperationProgress ensureProgress() => $_ensure(1);
 
   /// The time at which this operation was cancelled.
   @$pb.TagNumber(3)

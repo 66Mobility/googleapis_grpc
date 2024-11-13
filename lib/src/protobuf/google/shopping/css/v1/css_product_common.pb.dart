@@ -15,7 +15,7 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/timestamp.pb.dart' as $302;
-import '../../type/types.pb.dart' as $536;
+import '../../type/types.pb.dart' as $537;
 import 'css_product_common.pbenum.dart';
 
 export 'css_product_common.pbenum.dart';
@@ -25,11 +25,11 @@ class Attributes extends $pb.GeneratedMessage {
   factory Attributes({
     $core.String? cppLink,
     $core.String? cppMobileLink,
-    $536.Price? lowPrice,
-    $536.Price? highPrice,
+    $537.Price? lowPrice,
+    $537.Price? highPrice,
     $fixnum.Int64? numberOfOffers,
     $core.String? headlineOfferCondition,
-    $536.Price? headlineOfferPrice,
+    $537.Price? headlineOfferPrice,
     $core.String? headlineOfferLink,
     $core.String? headlineOfferMobileLink,
     $core.String? title,
@@ -61,7 +61,7 @@ class Attributes extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? productTypes,
     $core.Iterable<Certification>? certifications,
     $302.Timestamp? expirationDate,
-    $536.Price? headlineOfferShippingPrice,
+    $537.Price? headlineOfferShippingPrice,
     $core.String? cppAdsRedirect,
     $core.Iterable<$core.String>? includedDestinations,
     $core.Iterable<$core.String>? excludedDestinations,
@@ -242,14 +242,14 @@ class Attributes extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'cppLink')
     ..aOS(2, _omitFieldNames ? '' : 'cppMobileLink')
-    ..aOM<$536.Price>(3, _omitFieldNames ? '' : 'lowPrice',
-        subBuilder: $536.Price.create)
-    ..aOM<$536.Price>(4, _omitFieldNames ? '' : 'highPrice',
-        subBuilder: $536.Price.create)
+    ..aOM<$537.Price>(3, _omitFieldNames ? '' : 'lowPrice',
+        subBuilder: $537.Price.create)
+    ..aOM<$537.Price>(4, _omitFieldNames ? '' : 'highPrice',
+        subBuilder: $537.Price.create)
     ..aInt64(5, _omitFieldNames ? '' : 'numberOfOffers')
     ..aOS(6, _omitFieldNames ? '' : 'headlineOfferCondition')
-    ..aOM<$536.Price>(7, _omitFieldNames ? '' : 'headlineOfferPrice',
-        subBuilder: $536.Price.create)
+    ..aOM<$537.Price>(7, _omitFieldNames ? '' : 'headlineOfferPrice',
+        subBuilder: $537.Price.create)
     ..aOS(8, _omitFieldNames ? '' : 'headlineOfferLink')
     ..aOS(9, _omitFieldNames ? '' : 'headlineOfferMobileLink')
     ..aOS(10, _omitFieldNames ? '' : 'title')
@@ -290,8 +290,8 @@ class Attributes extends $pb.GeneratedMessage {
         subBuilder: Certification.create)
     ..aOM<$302.Timestamp>(40, _omitFieldNames ? '' : 'expirationDate',
         subBuilder: $302.Timestamp.create)
-    ..aOM<$536.Price>(41, _omitFieldNames ? '' : 'headlineOfferShippingPrice',
-        subBuilder: $536.Price.create)
+    ..aOM<$537.Price>(41, _omitFieldNames ? '' : 'headlineOfferShippingPrice',
+        subBuilder: $537.Price.create)
     ..aOS(42, _omitFieldNames ? '' : 'cppAdsRedirect')
     ..pPS(43, _omitFieldNames ? '' : 'includedDestinations')
     ..pPS(44, _omitFieldNames ? '' : 'excludedDestinations')
@@ -363,9 +363,9 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Low Price of the aggregate offer.
   @$pb.TagNumber(3)
-  $536.Price get lowPrice => $_getN(2);
+  $537.Price get lowPrice => $_getN(2);
   @$pb.TagNumber(3)
-  set lowPrice($536.Price v) {
+  set lowPrice($537.Price v) {
     setField(3, v);
   }
 
@@ -374,13 +374,13 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearLowPrice() => clearField(3);
   @$pb.TagNumber(3)
-  $536.Price ensureLowPrice() => $_ensure(2);
+  $537.Price ensureLowPrice() => $_ensure(2);
 
   /// High Price of the aggregate offer.
   @$pb.TagNumber(4)
-  $536.Price get highPrice => $_getN(3);
+  $537.Price get highPrice => $_getN(3);
   @$pb.TagNumber(4)
-  set highPrice($536.Price v) {
+  set highPrice($537.Price v) {
     setField(4, v);
   }
 
@@ -389,7 +389,7 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearHighPrice() => clearField(4);
   @$pb.TagNumber(4)
-  $536.Price ensureHighPrice() => $_ensure(3);
+  $537.Price ensureHighPrice() => $_ensure(3);
 
   /// The number of aggregate offers.
   @$pb.TagNumber(5)
@@ -419,9 +419,9 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Headline Price of the aggregate offer.
   @$pb.TagNumber(7)
-  $536.Price get headlineOfferPrice => $_getN(6);
+  $537.Price get headlineOfferPrice => $_getN(6);
   @$pb.TagNumber(7)
-  set headlineOfferPrice($536.Price v) {
+  set headlineOfferPrice($537.Price v) {
     setField(7, v);
   }
 
@@ -430,7 +430,7 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearHeadlineOfferPrice() => clearField(7);
   @$pb.TagNumber(7)
-  $536.Price ensureHeadlineOfferPrice() => $_ensure(6);
+  $537.Price ensureHeadlineOfferPrice() => $_ensure(6);
 
   /// Link to the headline offer.
   @$pb.TagNumber(8)
@@ -821,9 +821,9 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Headline Price of the aggregate offer.
   @$pb.TagNumber(41)
-  $536.Price get headlineOfferShippingPrice => $_getN(38);
+  $537.Price get headlineOfferShippingPrice => $_getN(38);
   @$pb.TagNumber(41)
-  set headlineOfferShippingPrice($536.Price v) {
+  set headlineOfferShippingPrice($537.Price v) {
     setField(41, v);
   }
 
@@ -832,7 +832,7 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(41)
   void clearHeadlineOfferShippingPrice() => clearField(41);
   @$pb.TagNumber(41)
-  $536.Price ensureHeadlineOfferShippingPrice() => $_ensure(38);
+  $537.Price ensureHeadlineOfferShippingPrice() => $_ensure(38);
 
   /// Allows advertisers to override the item URL when the product is shown
   /// within the context of Product Ads.
@@ -1797,7 +1797,7 @@ class HeadlineOfferSubscriptionCost extends $pb.GeneratedMessage {
   factory HeadlineOfferSubscriptionCost({
     SubscriptionPeriod? period,
     $fixnum.Int64? periodLength,
-    $536.Price? amount,
+    $537.Price? amount,
   }) {
     final $result = create();
     if (period != null) {
@@ -1830,8 +1830,8 @@ class HeadlineOfferSubscriptionCost extends $pb.GeneratedMessage {
         valueOf: SubscriptionPeriod.valueOf,
         enumValues: SubscriptionPeriod.values)
     ..aInt64(2, _omitFieldNames ? '' : 'periodLength')
-    ..aOM<$536.Price>(3, _omitFieldNames ? '' : 'amount',
-        subBuilder: $536.Price.create)
+    ..aOM<$537.Price>(3, _omitFieldNames ? '' : 'amount',
+        subBuilder: $537.Price.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1892,9 +1892,9 @@ class HeadlineOfferSubscriptionCost extends $pb.GeneratedMessage {
 
   /// The amount the buyer has to pay per subscription period.
   @$pb.TagNumber(3)
-  $536.Price get amount => $_getN(2);
+  $537.Price get amount => $_getN(2);
   @$pb.TagNumber(3)
-  set amount($536.Price v) {
+  set amount($537.Price v) {
     setField(3, v);
   }
 
@@ -1903,15 +1903,15 @@ class HeadlineOfferSubscriptionCost extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAmount() => clearField(3);
   @$pb.TagNumber(3)
-  $536.Price ensureAmount() => $_ensure(2);
+  $537.Price ensureAmount() => $_ensure(2);
 }
 
 /// A message that represents installment.
 class HeadlineOfferInstallment extends $pb.GeneratedMessage {
   factory HeadlineOfferInstallment({
     $fixnum.Int64? months,
-    $536.Price? amount,
-    $536.Price? downpayment,
+    $537.Price? amount,
+    $537.Price? downpayment,
   }) {
     final $result = create();
     if (months != null) {
@@ -1939,10 +1939,10 @@ class HeadlineOfferInstallment extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.shopping.css.v1'),
       createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'months')
-    ..aOM<$536.Price>(2, _omitFieldNames ? '' : 'amount',
-        subBuilder: $536.Price.create)
-    ..aOM<$536.Price>(3, _omitFieldNames ? '' : 'downpayment',
-        subBuilder: $536.Price.create)
+    ..aOM<$537.Price>(2, _omitFieldNames ? '' : 'amount',
+        subBuilder: $537.Price.create)
+    ..aOM<$537.Price>(3, _omitFieldNames ? '' : 'downpayment',
+        subBuilder: $537.Price.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1985,9 +1985,9 @@ class HeadlineOfferInstallment extends $pb.GeneratedMessage {
 
   /// The amount the buyer has to pay per month.
   @$pb.TagNumber(2)
-  $536.Price get amount => $_getN(1);
+  $537.Price get amount => $_getN(1);
   @$pb.TagNumber(2)
-  set amount($536.Price v) {
+  set amount($537.Price v) {
     setField(2, v);
   }
 
@@ -1996,13 +1996,13 @@ class HeadlineOfferInstallment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearAmount() => clearField(2);
   @$pb.TagNumber(2)
-  $536.Price ensureAmount() => $_ensure(1);
+  $537.Price ensureAmount() => $_ensure(1);
 
   /// The up-front down payment amount the buyer has to pay.
   @$pb.TagNumber(3)
-  $536.Price get downpayment => $_getN(2);
+  $537.Price get downpayment => $_getN(2);
   @$pb.TagNumber(3)
-  set downpayment($536.Price v) {
+  set downpayment($537.Price v) {
     setField(3, v);
   }
 
@@ -2011,7 +2011,7 @@ class HeadlineOfferInstallment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearDownpayment() => clearField(3);
   @$pb.TagNumber(3)
-  $536.Price ensureDownpayment() => $_ensure(2);
+  $537.Price ensureDownpayment() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

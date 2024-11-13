@@ -25,6 +25,7 @@ const RoutingSummary$json = {
       '6': '.google.maps.places.v1.RoutingSummary.Leg',
       '10': 'legs'
     },
+    {'1': 'directions_uri', '3': 2, '4': 1, '5': 9, '10': 'directionsUri'},
   ],
   '3': [RoutingSummary_Leg$json],
 };
@@ -48,6 +49,6 @@ const RoutingSummary_Leg$json = {
 /// Descriptor for `RoutingSummary`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List routingSummaryDescriptor = $convert.base64Decode(
     'Cg5Sb3V0aW5nU3VtbWFyeRI9CgRsZWdzGAEgAygLMikuZ29vZ2xlLm1hcHMucGxhY2VzLnYxLl'
-    'JvdXRpbmdTdW1tYXJ5LkxlZ1IEbGVncxplCgNMZWcSNQoIZHVyYXRpb24YASABKAsyGS5nb29n'
-    'bGUucHJvdG9idWYuRHVyYXRpb25SCGR1cmF0aW9uEicKD2Rpc3RhbmNlX21ldGVycxgCIAEoBV'
-    'IOZGlzdGFuY2VNZXRlcnM=');
+    'JvdXRpbmdTdW1tYXJ5LkxlZ1IEbGVncxIlCg5kaXJlY3Rpb25zX3VyaRgCIAEoCVINZGlyZWN0'
+    'aW9uc1VyaRplCgNMZWcSNQoIZHVyYXRpb24YASABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYX'
+    'Rpb25SCGR1cmF0aW9uEicKD2Rpc3RhbmNlX21ldGVycxgCIAEoBVIOZGlzdGFuY2VNZXRlcnM=');

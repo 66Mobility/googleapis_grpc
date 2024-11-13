@@ -16,8 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../../api/label.pb.dart' as $348;
 import '../../api/launch_stage.pbenum.dart' as $304;
 import '../../protobuf/wrappers.pb.dart' as $307;
-import 'common.pbenum.dart' as $531;
-import 'mutation_record.pb.dart' as $530;
+import 'common.pbenum.dart' as $532;
+import 'mutation_record.pb.dart' as $531;
 import 'notification.pbenum.dart';
 
 export 'notification.pbenum.dart';
@@ -32,7 +32,7 @@ class NotificationChannelDescriptor extends $pb.GeneratedMessage {
     $core.String? description,
     $core.Iterable<$348.LabelDescriptor>? labels,
     @$core.Deprecated('This field is deprecated.')
-    $core.Iterable<$531.ServiceTier>? supportedTiers,
+    $core.Iterable<$532.ServiceTier>? supportedTiers,
     $core.String? name,
     $304.LaunchStage? launchStage,
   }) {
@@ -80,11 +80,11 @@ class NotificationChannelDescriptor extends $pb.GeneratedMessage {
     ..pc<$348.LabelDescriptor>(
         4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM,
         subBuilder: $348.LabelDescriptor.create)
-    ..pc<$531.ServiceTier>(
+    ..pc<$532.ServiceTier>(
         5, _omitFieldNames ? '' : 'supportedTiers', $pb.PbFieldType.KE,
-        valueOf: $531.ServiceTier.valueOf,
-        enumValues: $531.ServiceTier.values,
-        defaultEnumValue: $531.ServiceTier.SERVICE_TIER_UNSPECIFIED)
+        valueOf: $532.ServiceTier.valueOf,
+        enumValues: $532.ServiceTier.values,
+        defaultEnumValue: $532.ServiceTier.SERVICE_TIER_UNSPECIFIED)
     ..aOS(6, _omitFieldNames ? '' : 'name')
     ..e<$304.LaunchStage>(
         7, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE,
@@ -176,7 +176,7 @@ class NotificationChannelDescriptor extends $pb.GeneratedMessage {
   /// must be one of the supported_tiers.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $core.List<$531.ServiceTier> get supportedTiers => $_getList(4);
+  $core.List<$532.ServiceTier> get supportedTiers => $_getList(4);
 
   ///  The full REST resource name for this descriptor. The format is:
   ///
@@ -224,8 +224,8 @@ class NotificationChannel extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? userLabels,
     NotificationChannel_VerificationStatus? verificationStatus,
     $307.BoolValue? enabled,
-    $530.MutationRecord? creationRecord,
-    $core.Iterable<$530.MutationRecord>? mutationRecords,
+    $531.MutationRecord? creationRecord,
+    $core.Iterable<$531.MutationRecord>? mutationRecords,
   }) {
     final $result = create();
     if (type != null) {
@@ -295,11 +295,11 @@ class NotificationChannel extends $pb.GeneratedMessage {
         enumValues: NotificationChannel_VerificationStatus.values)
     ..aOM<$307.BoolValue>(11, _omitFieldNames ? '' : 'enabled',
         subBuilder: $307.BoolValue.create)
-    ..aOM<$530.MutationRecord>(12, _omitFieldNames ? '' : 'creationRecord',
-        subBuilder: $530.MutationRecord.create)
-    ..pc<$530.MutationRecord>(
+    ..aOM<$531.MutationRecord>(12, _omitFieldNames ? '' : 'creationRecord',
+        subBuilder: $531.MutationRecord.create)
+    ..pc<$531.MutationRecord>(
         13, _omitFieldNames ? '' : 'mutationRecords', $pb.PbFieldType.PM,
-        subBuilder: $530.MutationRecord.create)
+        subBuilder: $531.MutationRecord.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -461,9 +461,9 @@ class NotificationChannel extends $pb.GeneratedMessage {
 
   /// Record of the creation of this channel.
   @$pb.TagNumber(12)
-  $530.MutationRecord get creationRecord => $_getN(8);
+  $531.MutationRecord get creationRecord => $_getN(8);
   @$pb.TagNumber(12)
-  set creationRecord($530.MutationRecord v) {
+  set creationRecord($531.MutationRecord v) {
     setField(12, v);
   }
 
@@ -472,11 +472,11 @@ class NotificationChannel extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearCreationRecord() => clearField(12);
   @$pb.TagNumber(12)
-  $530.MutationRecord ensureCreationRecord() => $_ensure(8);
+  $531.MutationRecord ensureCreationRecord() => $_ensure(8);
 
   /// Records of the modification of this channel.
   @$pb.TagNumber(13)
-  $core.List<$530.MutationRecord> get mutationRecords => $_getList(9);
+  $core.List<$531.MutationRecord> get mutationRecords => $_getList(9);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

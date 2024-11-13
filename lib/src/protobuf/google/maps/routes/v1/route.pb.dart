@@ -16,9 +16,9 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../../../geo/type/viewport.pb.dart' as $449;
 import '../../../protobuf/duration.pb.dart' as $264;
 import '../../../type/money.pb.dart' as $465;
-import 'polyline.pb.dart' as $483;
+import 'polyline.pb.dart' as $484;
 import 'route.pbenum.dart';
-import 'waypoint.pb.dart' as $482;
+import 'waypoint.pb.dart' as $483;
 
 export 'route.pbenum.dart';
 
@@ -30,7 +30,7 @@ class Route extends $pb.GeneratedMessage {
     $core.int? distanceMeters,
     $264.Duration? duration,
     $264.Duration? staticDuration,
-    $483.Polyline? polyline,
+    $484.Polyline? polyline,
     $core.String? description,
     $core.Iterable<$core.String>? warnings,
     $449.Viewport? viewport,
@@ -92,8 +92,8 @@ class Route extends $pb.GeneratedMessage {
         subBuilder: $264.Duration.create)
     ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'staticDuration',
         subBuilder: $264.Duration.create)
-    ..aOM<$483.Polyline>(5, _omitFieldNames ? '' : 'polyline',
-        subBuilder: $483.Polyline.create)
+    ..aOM<$484.Polyline>(5, _omitFieldNames ? '' : 'polyline',
+        subBuilder: $484.Polyline.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..pPS(7, _omitFieldNames ? '' : 'warnings')
     ..aOM<$449.Viewport>(8, _omitFieldNames ? '' : 'viewport',
@@ -188,9 +188,9 @@ class Route extends $pb.GeneratedMessage {
   /// The overall route polyline. This polyline is the combined polyline of all
   /// `legs`.
   @$pb.TagNumber(5)
-  $483.Polyline get polyline => $_getN(4);
+  $484.Polyline get polyline => $_getN(4);
   @$pb.TagNumber(5)
-  set polyline($483.Polyline v) {
+  set polyline($484.Polyline v) {
     setField(5, v);
   }
 
@@ -199,7 +199,7 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearPolyline() => clearField(5);
   @$pb.TagNumber(5)
-  $483.Polyline ensurePolyline() => $_ensure(4);
+  $484.Polyline ensurePolyline() => $_ensure(4);
 
   /// A description of the route.
   @$pb.TagNumber(6)
@@ -734,9 +734,9 @@ class RouteLeg extends $pb.GeneratedMessage {
     $core.int? distanceMeters,
     $264.Duration? duration,
     $264.Duration? staticDuration,
-    $483.Polyline? polyline,
-    $482.Location? startLocation,
-    $482.Location? endLocation,
+    $484.Polyline? polyline,
+    $483.Location? startLocation,
+    $483.Location? endLocation,
     $core.Iterable<RouteLegStep>? steps,
     RouteLegTravelAdvisory? travelAdvisory,
   }) {
@@ -786,12 +786,12 @@ class RouteLeg extends $pb.GeneratedMessage {
         subBuilder: $264.Duration.create)
     ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'staticDuration',
         subBuilder: $264.Duration.create)
-    ..aOM<$483.Polyline>(4, _omitFieldNames ? '' : 'polyline',
-        subBuilder: $483.Polyline.create)
-    ..aOM<$482.Location>(5, _omitFieldNames ? '' : 'startLocation',
-        subBuilder: $482.Location.create)
-    ..aOM<$482.Location>(6, _omitFieldNames ? '' : 'endLocation',
-        subBuilder: $482.Location.create)
+    ..aOM<$484.Polyline>(4, _omitFieldNames ? '' : 'polyline',
+        subBuilder: $484.Polyline.create)
+    ..aOM<$483.Location>(5, _omitFieldNames ? '' : 'startLocation',
+        subBuilder: $483.Location.create)
+    ..aOM<$483.Location>(6, _omitFieldNames ? '' : 'endLocation',
+        subBuilder: $483.Location.create)
     ..pc<RouteLegStep>(7, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM,
         subBuilder: RouteLegStep.create)
     ..aOM<RouteLegTravelAdvisory>(8, _omitFieldNames ? '' : 'travelAdvisory',
@@ -870,9 +870,9 @@ class RouteLeg extends $pb.GeneratedMessage {
   /// The overall polyline for this leg. This includes that each `step`'s
   /// polyline.
   @$pb.TagNumber(4)
-  $483.Polyline get polyline => $_getN(3);
+  $484.Polyline get polyline => $_getN(3);
   @$pb.TagNumber(4)
-  set polyline($483.Polyline v) {
+  set polyline($484.Polyline v) {
     setField(4, v);
   }
 
@@ -881,15 +881,15 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearPolyline() => clearField(4);
   @$pb.TagNumber(4)
-  $483.Polyline ensurePolyline() => $_ensure(3);
+  $484.Polyline ensurePolyline() => $_ensure(3);
 
   /// The start location of this leg. This might be different from the provided
   /// `origin`. For example, when the provided `origin` is not near a road, this
   /// is a point on the road.
   @$pb.TagNumber(5)
-  $482.Location get startLocation => $_getN(4);
+  $483.Location get startLocation => $_getN(4);
   @$pb.TagNumber(5)
-  set startLocation($482.Location v) {
+  set startLocation($483.Location v) {
     setField(5, v);
   }
 
@@ -898,15 +898,15 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearStartLocation() => clearField(5);
   @$pb.TagNumber(5)
-  $482.Location ensureStartLocation() => $_ensure(4);
+  $483.Location ensureStartLocation() => $_ensure(4);
 
   /// The end location of this leg. This might be different from the provided
   /// `destination`. For example, when the provided `destination` is not near a
   /// road, this is a point on the road.
   @$pb.TagNumber(6)
-  $482.Location get endLocation => $_getN(5);
+  $483.Location get endLocation => $_getN(5);
   @$pb.TagNumber(6)
-  set endLocation($482.Location v) {
+  set endLocation($483.Location v) {
     setField(6, v);
   }
 
@@ -915,7 +915,7 @@ class RouteLeg extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearEndLocation() => clearField(6);
   @$pb.TagNumber(6)
-  $482.Location ensureEndLocation() => $_ensure(5);
+  $483.Location ensureEndLocation() => $_ensure(5);
 
   /// An array of steps denoting segments within this leg. Each step represents
   /// one navigation instruction.
@@ -1004,9 +1004,9 @@ class RouteLegStep extends $pb.GeneratedMessage {
   factory RouteLegStep({
     $core.int? distanceMeters,
     $264.Duration? staticDuration,
-    $483.Polyline? polyline,
-    $482.Location? startLocation,
-    $482.Location? endLocation,
+    $484.Polyline? polyline,
+    $483.Location? startLocation,
+    $483.Location? endLocation,
     NavigationInstruction? navigationInstruction,
     RouteLegStepTravelAdvisory? travelAdvisory,
   }) {
@@ -1051,12 +1051,12 @@ class RouteLegStep extends $pb.GeneratedMessage {
         1, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
     ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'staticDuration',
         subBuilder: $264.Duration.create)
-    ..aOM<$483.Polyline>(3, _omitFieldNames ? '' : 'polyline',
-        subBuilder: $483.Polyline.create)
-    ..aOM<$482.Location>(4, _omitFieldNames ? '' : 'startLocation',
-        subBuilder: $482.Location.create)
-    ..aOM<$482.Location>(5, _omitFieldNames ? '' : 'endLocation',
-        subBuilder: $482.Location.create)
+    ..aOM<$484.Polyline>(3, _omitFieldNames ? '' : 'polyline',
+        subBuilder: $484.Polyline.create)
+    ..aOM<$483.Location>(4, _omitFieldNames ? '' : 'startLocation',
+        subBuilder: $483.Location.create)
+    ..aOM<$483.Location>(5, _omitFieldNames ? '' : 'endLocation',
+        subBuilder: $483.Location.create)
     ..aOM<NavigationInstruction>(
         6, _omitFieldNames ? '' : 'navigationInstruction',
         subBuilder: NavigationInstruction.create)
@@ -1121,9 +1121,9 @@ class RouteLegStep extends $pb.GeneratedMessage {
 
   /// The polyline associated with this step.
   @$pb.TagNumber(3)
-  $483.Polyline get polyline => $_getN(2);
+  $484.Polyline get polyline => $_getN(2);
   @$pb.TagNumber(3)
-  set polyline($483.Polyline v) {
+  set polyline($484.Polyline v) {
     setField(3, v);
   }
 
@@ -1132,13 +1132,13 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearPolyline() => clearField(3);
   @$pb.TagNumber(3)
-  $483.Polyline ensurePolyline() => $_ensure(2);
+  $484.Polyline ensurePolyline() => $_ensure(2);
 
   /// The start location of this step.
   @$pb.TagNumber(4)
-  $482.Location get startLocation => $_getN(3);
+  $483.Location get startLocation => $_getN(3);
   @$pb.TagNumber(4)
-  set startLocation($482.Location v) {
+  set startLocation($483.Location v) {
     setField(4, v);
   }
 
@@ -1147,13 +1147,13 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearStartLocation() => clearField(4);
   @$pb.TagNumber(4)
-  $482.Location ensureStartLocation() => $_ensure(3);
+  $483.Location ensureStartLocation() => $_ensure(3);
 
   /// The end location of this step.
   @$pb.TagNumber(5)
-  $482.Location get endLocation => $_getN(4);
+  $483.Location get endLocation => $_getN(4);
   @$pb.TagNumber(5)
-  set endLocation($482.Location v) {
+  set endLocation($483.Location v) {
     setField(5, v);
   }
 
@@ -1162,7 +1162,7 @@ class RouteLegStep extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearEndLocation() => clearField(5);
   @$pb.TagNumber(5)
-  $482.Location ensureEndLocation() => $_ensure(4);
+  $483.Location ensureEndLocation() => $_ensure(4);
 
   /// Navigation instructions.
   @$pb.TagNumber(6)

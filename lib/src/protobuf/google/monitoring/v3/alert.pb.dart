@@ -17,9 +17,9 @@ import '../../protobuf/duration.pb.dart' as $264;
 import '../../protobuf/wrappers.pb.dart' as $307;
 import '../../rpc/status.pb.dart' as $322;
 import 'alert.pbenum.dart';
-import 'common.pb.dart' as $531;
-import 'common.pbenum.dart' as $531;
-import 'mutation_record.pb.dart' as $530;
+import 'common.pb.dart' as $532;
+import 'common.pbenum.dart' as $532;
+import 'mutation_record.pb.dart' as $531;
 
 export 'alert.pbenum.dart';
 
@@ -442,13 +442,13 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions
 class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MetricThreshold({
     $core.String? filter,
-    $531.ComparisonType? comparison,
+    $532.ComparisonType? comparison,
     $core.double? thresholdValue,
     $264.Duration? duration,
     AlertPolicy_Condition_Trigger? trigger,
-    $core.Iterable<$531.Aggregation>? aggregations,
+    $core.Iterable<$532.Aggregation>? aggregations,
     $core.String? denominatorFilter,
-    $core.Iterable<$531.Aggregation>? denominatorAggregations,
+    $core.Iterable<$532.Aggregation>? denominatorAggregations,
     AlertPolicy_Condition_EvaluationMissingData? evaluationMissingData,
     AlertPolicy_Condition_MetricThreshold_ForecastOptions? forecastOptions,
   }) {
@@ -500,24 +500,24 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'filter')
-    ..e<$531.ComparisonType>(
+    ..e<$532.ComparisonType>(
         4, _omitFieldNames ? '' : 'comparison', $pb.PbFieldType.OE,
-        defaultOrMaker: $531.ComparisonType.COMPARISON_UNSPECIFIED,
-        valueOf: $531.ComparisonType.valueOf,
-        enumValues: $531.ComparisonType.values)
+        defaultOrMaker: $532.ComparisonType.COMPARISON_UNSPECIFIED,
+        valueOf: $532.ComparisonType.valueOf,
+        enumValues: $532.ComparisonType.values)
     ..a<$core.double>(
         5, _omitFieldNames ? '' : 'thresholdValue', $pb.PbFieldType.OD)
     ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'duration',
         subBuilder: $264.Duration.create)
     ..aOM<AlertPolicy_Condition_Trigger>(7, _omitFieldNames ? '' : 'trigger',
         subBuilder: AlertPolicy_Condition_Trigger.create)
-    ..pc<$531.Aggregation>(
+    ..pc<$532.Aggregation>(
         8, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM,
-        subBuilder: $531.Aggregation.create)
+        subBuilder: $532.Aggregation.create)
     ..aOS(9, _omitFieldNames ? '' : 'denominatorFilter')
-    ..pc<$531.Aggregation>(10, _omitFieldNames ? '' : 'denominatorAggregations',
+    ..pc<$532.Aggregation>(10, _omitFieldNames ? '' : 'denominatorAggregations',
         $pb.PbFieldType.PM,
-        subBuilder: $531.Aggregation.create)
+        subBuilder: $532.Aggregation.create)
     ..e<AlertPolicy_Condition_EvaluationMissingData>(
         11, _omitFieldNames ? '' : 'evaluationMissingData', $pb.PbFieldType.OE,
         defaultOrMaker: AlertPolicy_Condition_EvaluationMissingData
@@ -588,9 +588,9 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   ///
   ///  Only `COMPARISON_LT` and `COMPARISON_GT` are supported currently.
   @$pb.TagNumber(4)
-  $531.ComparisonType get comparison => $_getN(1);
+  $532.ComparisonType get comparison => $_getN(1);
   @$pb.TagNumber(4)
-  set comparison($531.ComparisonType v) {
+  set comparison($532.ComparisonType v) {
     setField(4, v);
   }
 
@@ -668,7 +668,7 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   ///  It is advisable to use the `ListTimeSeries` method when debugging this
   ///  field.
   @$pb.TagNumber(8)
-  $core.List<$531.Aggregation> get aggregations => $_getList(5);
+  $core.List<$532.Aggregation> get aggregations => $_getList(5);
 
   ///  A [filter](https://cloud.google.com/monitoring/api/v3/filters) that
   ///  identifies a time series that should be used as the denominator of a
@@ -702,7 +702,7 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   ///  `denominator_aggregations` fields must use the same alignment period
   ///  and produce time series that have the same periodicity and labels.
   @$pb.TagNumber(10)
-  $core.List<$531.Aggregation> get denominatorAggregations => $_getList(7);
+  $core.List<$532.Aggregation> get denominatorAggregations => $_getList(7);
 
   /// A condition control that determines how metric-threshold conditions
   /// are evaluated when data stops arriving. To use this control, the value
@@ -752,7 +752,7 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
     $core.String? filter,
     $264.Duration? duration,
     AlertPolicy_Condition_Trigger? trigger,
-    $core.Iterable<$531.Aggregation>? aggregations,
+    $core.Iterable<$532.Aggregation>? aggregations,
   }) {
     final $result = create();
     if (filter != null) {
@@ -788,9 +788,9 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
         subBuilder: $264.Duration.create)
     ..aOM<AlertPolicy_Condition_Trigger>(3, _omitFieldNames ? '' : 'trigger',
         subBuilder: AlertPolicy_Condition_Trigger.create)
-    ..pc<$531.Aggregation>(
+    ..pc<$532.Aggregation>(
         5, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM,
-        subBuilder: $531.Aggregation.create)
+        subBuilder: $532.Aggregation.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -895,7 +895,7 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   ///  It is advisable to use the `ListTimeSeries` method when debugging this
   ///  field.
   @$pb.TagNumber(5)
-  $core.List<$531.Aggregation> get aggregations => $_getList(3);
+  $core.List<$532.Aggregation> get aggregations => $_getList(3);
 }
 
 /// A condition type that checks whether a log message in the [scoping
@@ -1961,8 +1961,8 @@ class AlertPolicy extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     AlertPolicy_ConditionCombinerType? combiner,
-    $530.MutationRecord? creationRecord,
-    $530.MutationRecord? mutationRecord,
+    $531.MutationRecord? creationRecord,
+    $531.MutationRecord? mutationRecord,
     $core.Iterable<AlertPolicy_Condition>? conditions,
     AlertPolicy_Documentation? documentation,
     $core.Iterable<$core.String>? notificationChannels,
@@ -2034,10 +2034,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
         defaultOrMaker: AlertPolicy_ConditionCombinerType.COMBINE_UNSPECIFIED,
         valueOf: AlertPolicy_ConditionCombinerType.valueOf,
         enumValues: AlertPolicy_ConditionCombinerType.values)
-    ..aOM<$530.MutationRecord>(10, _omitFieldNames ? '' : 'creationRecord',
-        subBuilder: $530.MutationRecord.create)
-    ..aOM<$530.MutationRecord>(11, _omitFieldNames ? '' : 'mutationRecord',
-        subBuilder: $530.MutationRecord.create)
+    ..aOM<$531.MutationRecord>(10, _omitFieldNames ? '' : 'creationRecord',
+        subBuilder: $531.MutationRecord.create)
+    ..aOM<$531.MutationRecord>(11, _omitFieldNames ? '' : 'mutationRecord',
+        subBuilder: $531.MutationRecord.create)
     ..pc<AlertPolicy_Condition>(
         12, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM,
         subBuilder: AlertPolicy_Condition.create)
@@ -2147,9 +2147,9 @@ class AlertPolicy extends $pb.GeneratedMessage {
   /// A read-only record of the creation of the alerting policy. If provided
   /// in a call to create or update, this field will be ignored.
   @$pb.TagNumber(10)
-  $530.MutationRecord get creationRecord => $_getN(3);
+  $531.MutationRecord get creationRecord => $_getN(3);
   @$pb.TagNumber(10)
-  set creationRecord($530.MutationRecord v) {
+  set creationRecord($531.MutationRecord v) {
     setField(10, v);
   }
 
@@ -2158,14 +2158,14 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearCreationRecord() => clearField(10);
   @$pb.TagNumber(10)
-  $530.MutationRecord ensureCreationRecord() => $_ensure(3);
+  $531.MutationRecord ensureCreationRecord() => $_ensure(3);
 
   /// A read-only record of the most recent change to the alerting policy. If
   /// provided in a call to create or update, this field will be ignored.
   @$pb.TagNumber(11)
-  $530.MutationRecord get mutationRecord => $_getN(4);
+  $531.MutationRecord get mutationRecord => $_getN(4);
   @$pb.TagNumber(11)
-  set mutationRecord($530.MutationRecord v) {
+  set mutationRecord($531.MutationRecord v) {
     setField(11, v);
   }
 
@@ -2174,7 +2174,7 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearMutationRecord() => clearField(11);
   @$pb.TagNumber(11)
-  $530.MutationRecord ensureMutationRecord() => $_ensure(4);
+  $531.MutationRecord ensureMutationRecord() => $_ensure(4);
 
   /// A list of conditions for the policy. The conditions are combined by AND or
   /// OR according to the `combiner` field. If the combined conditions evaluate

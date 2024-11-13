@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $556;
+import 'common.pb.dart' as $557;
 import 'package.pbenum.dart';
 
 export 'package.pbenum.dart';
@@ -296,8 +296,8 @@ class PackageNote extends $pb.GeneratedMessage {
     $core.String? maintainer,
     $core.String? url,
     $core.String? description,
-    $556.License? license,
-    $core.Iterable<$556.Digest>? digest,
+    $557.License? license,
+    $core.Iterable<$557.Digest>? digest,
   }) {
     final $result = create();
     if (name != null) {
@@ -363,10 +363,10 @@ class PackageNote extends $pb.GeneratedMessage {
     ..aOS(15, _omitFieldNames ? '' : 'maintainer')
     ..aOS(16, _omitFieldNames ? '' : 'url')
     ..aOS(17, _omitFieldNames ? '' : 'description')
-    ..aOM<$556.License>(18, _omitFieldNames ? '' : 'license',
-        subBuilder: $556.License.create)
-    ..pc<$556.Digest>(19, _omitFieldNames ? '' : 'digest', $pb.PbFieldType.PM,
-        subBuilder: $556.Digest.create)
+    ..aOM<$557.License>(18, _omitFieldNames ? '' : 'license',
+        subBuilder: $557.License.create)
+    ..pc<$557.Digest>(19, _omitFieldNames ? '' : 'digest', $pb.PbFieldType.PM,
+        subBuilder: $557.Digest.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -508,9 +508,9 @@ class PackageNote extends $pb.GeneratedMessage {
 
   /// Licenses that have been declared by the authors of the package.
   @$pb.TagNumber(18)
-  $556.License get license => $_getN(9);
+  $557.License get license => $_getN(9);
   @$pb.TagNumber(18)
-  set license($556.License v) {
+  set license($557.License v) {
     setField(18, v);
   }
 
@@ -519,12 +519,12 @@ class PackageNote extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   void clearLicense() => clearField(18);
   @$pb.TagNumber(18)
-  $556.License ensureLicense() => $_ensure(9);
+  $557.License ensureLicense() => $_ensure(9);
 
   /// Hash value, typically a file digest, that allows unique
   /// identification a specific package.
   @$pb.TagNumber(19)
-  $core.List<$556.Digest> get digest => $_getList(10);
+  $core.List<$557.Digest> get digest => $_getList(10);
 }
 
 /// Details on how a particular software package was installed on a system.
@@ -535,7 +535,7 @@ class PackageOccurrence extends $pb.GeneratedMessage {
     $core.String? packageType,
     $core.String? cpeUri,
     Architecture? architecture,
-    $556.License? license,
+    $557.License? license,
     Version? version,
   }) {
     final $result = create();
@@ -584,8 +584,8 @@ class PackageOccurrence extends $pb.GeneratedMessage {
         defaultOrMaker: Architecture.ARCHITECTURE_UNSPECIFIED,
         valueOf: Architecture.valueOf,
         enumValues: Architecture.values)
-    ..aOM<$556.License>(6, _omitFieldNames ? '' : 'license',
-        subBuilder: $556.License.create)
+    ..aOM<$557.License>(6, _omitFieldNames ? '' : 'license',
+        subBuilder: $557.License.create)
     ..aOM<Version>(7, _omitFieldNames ? '' : 'version',
         subBuilder: Version.create)
     ..hasRequiredFields = false;
@@ -676,9 +676,9 @@ class PackageOccurrence extends $pb.GeneratedMessage {
 
   /// Licenses that have been declared by the authors of the package.
   @$pb.TagNumber(6)
-  $556.License get license => $_getN(5);
+  $557.License get license => $_getN(5);
   @$pb.TagNumber(6)
-  set license($556.License v) {
+  set license($557.License v) {
     setField(6, v);
   }
 
@@ -687,7 +687,7 @@ class PackageOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearLicense() => clearField(6);
   @$pb.TagNumber(6)
-  $556.License ensureLicense() => $_ensure(5);
+  $557.License ensureLicense() => $_ensure(5);
 
   /// The version of the package.
   @$pb.TagNumber(7)

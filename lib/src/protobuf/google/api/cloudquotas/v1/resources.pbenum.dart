@@ -74,6 +74,12 @@ class QuotaIncreaseEligibility_IneligibilityReason extends $pb.ProtobufEnum {
   static const QuotaIncreaseEligibility_IneligibilityReason
       NO_VALID_BILLING_ACCOUNT = QuotaIncreaseEligibility_IneligibilityReason._(
           1, _omitEnumNames ? '' : 'NO_VALID_BILLING_ACCOUNT');
+  static const QuotaIncreaseEligibility_IneligibilityReason NOT_SUPPORTED =
+      QuotaIncreaseEligibility_IneligibilityReason._(
+          3, _omitEnumNames ? '' : 'NOT_SUPPORTED');
+  static const QuotaIncreaseEligibility_IneligibilityReason
+      NOT_ENOUGH_USAGE_HISTORY = QuotaIncreaseEligibility_IneligibilityReason._(
+          4, _omitEnumNames ? '' : 'NOT_ENOUGH_USAGE_HISTORY');
   static const QuotaIncreaseEligibility_IneligibilityReason OTHER =
       QuotaIncreaseEligibility_IneligibilityReason._(
           2, _omitEnumNames ? '' : 'OTHER');
@@ -82,6 +88,8 @@ class QuotaIncreaseEligibility_IneligibilityReason extends $pb.ProtobufEnum {
       <QuotaIncreaseEligibility_IneligibilityReason>[
     INELIGIBILITY_REASON_UNSPECIFIED,
     NO_VALID_BILLING_ACCOUNT,
+    NOT_SUPPORTED,
+    NOT_ENOUGH_USAGE_HISTORY,
     OTHER,
   ];
 

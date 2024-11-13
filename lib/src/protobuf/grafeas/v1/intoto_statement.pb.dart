@@ -15,9 +15,9 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../google/protobuf/struct.pb.dart' as $261;
 import '../../google/protobuf/timestamp.pb.dart' as $302;
-import 'intoto_provenance.pb.dart' as $557;
-import 'slsa_provenance.pb.dart' as $558;
-import 'slsa_provenance_zero_two.pb.dart' as $559;
+import 'intoto_provenance.pb.dart' as $558;
+import 'slsa_provenance.pb.dart' as $559;
+import 'slsa_provenance_zero_two.pb.dart' as $560;
 
 enum InTotoStatement_Predicate {
   provenance,
@@ -35,9 +35,9 @@ class InTotoStatement extends $pb.GeneratedMessage {
     $core.String? type,
     $core.Iterable<Subject>? subject,
     $core.String? predicateType,
-    $557.InTotoProvenance? provenance,
-    $558.SlsaProvenance? slsaProvenance,
-    $559.SlsaProvenanceZeroTwo? slsaProvenanceZeroTwo,
+    $558.InTotoProvenance? provenance,
+    $559.SlsaProvenance? slsaProvenance,
+    $560.SlsaProvenanceZeroTwo? slsaProvenanceZeroTwo,
   }) {
     final $result = create();
     if (type != null) {
@@ -84,13 +84,13 @@ class InTotoStatement extends $pb.GeneratedMessage {
     ..pc<Subject>(2, _omitFieldNames ? '' : 'subject', $pb.PbFieldType.PM,
         subBuilder: Subject.create)
     ..aOS(3, _omitFieldNames ? '' : 'predicateType')
-    ..aOM<$557.InTotoProvenance>(4, _omitFieldNames ? '' : 'provenance',
-        subBuilder: $557.InTotoProvenance.create)
-    ..aOM<$558.SlsaProvenance>(5, _omitFieldNames ? '' : 'slsaProvenance',
-        subBuilder: $558.SlsaProvenance.create)
-    ..aOM<$559.SlsaProvenanceZeroTwo>(
+    ..aOM<$558.InTotoProvenance>(4, _omitFieldNames ? '' : 'provenance',
+        subBuilder: $558.InTotoProvenance.create)
+    ..aOM<$559.SlsaProvenance>(5, _omitFieldNames ? '' : 'slsaProvenance',
+        subBuilder: $559.SlsaProvenance.create)
+    ..aOM<$560.SlsaProvenanceZeroTwo>(
         6, _omitFieldNames ? '' : 'slsaProvenanceZeroTwo',
-        subBuilder: $559.SlsaProvenanceZeroTwo.create)
+        subBuilder: $560.SlsaProvenanceZeroTwo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -150,9 +150,9 @@ class InTotoStatement extends $pb.GeneratedMessage {
   void clearPredicateType() => clearField(3);
 
   @$pb.TagNumber(4)
-  $557.InTotoProvenance get provenance => $_getN(3);
+  $558.InTotoProvenance get provenance => $_getN(3);
   @$pb.TagNumber(4)
-  set provenance($557.InTotoProvenance v) {
+  set provenance($558.InTotoProvenance v) {
     setField(4, v);
   }
 
@@ -161,12 +161,12 @@ class InTotoStatement extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearProvenance() => clearField(4);
   @$pb.TagNumber(4)
-  $557.InTotoProvenance ensureProvenance() => $_ensure(3);
+  $558.InTotoProvenance ensureProvenance() => $_ensure(3);
 
   @$pb.TagNumber(5)
-  $558.SlsaProvenance get slsaProvenance => $_getN(4);
+  $559.SlsaProvenance get slsaProvenance => $_getN(4);
   @$pb.TagNumber(5)
-  set slsaProvenance($558.SlsaProvenance v) {
+  set slsaProvenance($559.SlsaProvenance v) {
     setField(5, v);
   }
 
@@ -175,12 +175,12 @@ class InTotoStatement extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearSlsaProvenance() => clearField(5);
   @$pb.TagNumber(5)
-  $558.SlsaProvenance ensureSlsaProvenance() => $_ensure(4);
+  $559.SlsaProvenance ensureSlsaProvenance() => $_ensure(4);
 
   @$pb.TagNumber(6)
-  $559.SlsaProvenanceZeroTwo get slsaProvenanceZeroTwo => $_getN(5);
+  $560.SlsaProvenanceZeroTwo get slsaProvenanceZeroTwo => $_getN(5);
   @$pb.TagNumber(6)
-  set slsaProvenanceZeroTwo($559.SlsaProvenanceZeroTwo v) {
+  set slsaProvenanceZeroTwo($560.SlsaProvenanceZeroTwo v) {
     setField(6, v);
   }
 
@@ -189,7 +189,7 @@ class InTotoStatement extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearSlsaProvenanceZeroTwo() => clearField(6);
   @$pb.TagNumber(6)
-  $559.SlsaProvenanceZeroTwo ensureSlsaProvenanceZeroTwo() => $_ensure(5);
+  $560.SlsaProvenanceZeroTwo ensureSlsaProvenanceZeroTwo() => $_ensure(5);
 }
 
 class Subject extends $pb.GeneratedMessage {

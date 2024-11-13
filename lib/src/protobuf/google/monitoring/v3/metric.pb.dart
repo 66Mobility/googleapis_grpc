@@ -18,13 +18,13 @@ import '../../api/label.pb.dart' as $348;
 import '../../api/metric.pb.dart' as $197;
 import '../../api/metric.pbenum.dart' as $197;
 import '../../api/monitored_resource.pb.dart' as $196;
-import 'common.pb.dart' as $531;
+import 'common.pb.dart' as $532;
 
 /// A single data point in a time series.
 class Point extends $pb.GeneratedMessage {
   factory Point({
-    $531.TimeInterval? interval,
-    $531.TypedValue? value,
+    $532.TimeInterval? interval,
+    $532.TypedValue? value,
   }) {
     final $result = create();
     if (interval != null) {
@@ -48,10 +48,10 @@ class Point extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..aOM<$531.TimeInterval>(1, _omitFieldNames ? '' : 'interval',
-        subBuilder: $531.TimeInterval.create)
-    ..aOM<$531.TypedValue>(2, _omitFieldNames ? '' : 'value',
-        subBuilder: $531.TypedValue.create)
+    ..aOM<$532.TimeInterval>(1, _omitFieldNames ? '' : 'interval',
+        subBuilder: $532.TimeInterval.create)
+    ..aOM<$532.TypedValue>(2, _omitFieldNames ? '' : 'value',
+        subBuilder: $532.TypedValue.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -85,9 +85,9 @@ class Point extends $pb.GeneratedMessage {
   /// until an event resets the cumulative value to zero and sets a new start
   /// time for the following points.
   @$pb.TagNumber(1)
-  $531.TimeInterval get interval => $_getN(0);
+  $532.TimeInterval get interval => $_getN(0);
   @$pb.TagNumber(1)
-  set interval($531.TimeInterval v) {
+  set interval($532.TimeInterval v) {
     setField(1, v);
   }
 
@@ -96,13 +96,13 @@ class Point extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearInterval() => clearField(1);
   @$pb.TagNumber(1)
-  $531.TimeInterval ensureInterval() => $_ensure(0);
+  $532.TimeInterval ensureInterval() => $_ensure(0);
 
   /// The value of the data point.
   @$pb.TagNumber(2)
-  $531.TypedValue get value => $_getN(1);
+  $532.TypedValue get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($531.TypedValue v) {
+  set value($532.TypedValue v) {
     setField(2, v);
   }
 
@@ -111,7 +111,7 @@ class Point extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $531.TypedValue ensureValue() => $_ensure(1);
+  $532.TypedValue ensureValue() => $_ensure(1);
 }
 
 /// A collection of data points that describes the time-varying values
@@ -536,8 +536,8 @@ class TimeSeriesDescriptor extends $pb.GeneratedMessage {
 /// the TimeSeriesDescriptor associated with this object.
 class TimeSeriesData_PointData extends $pb.GeneratedMessage {
   factory TimeSeriesData_PointData({
-    $core.Iterable<$531.TypedValue>? values,
-    $531.TimeInterval? timeInterval,
+    $core.Iterable<$532.TypedValue>? values,
+    $532.TimeInterval? timeInterval,
   }) {
     final $result = create();
     if (values != null) {
@@ -561,11 +561,11 @@ class TimeSeriesData_PointData extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..pc<$531.TypedValue>(
+    ..pc<$532.TypedValue>(
         1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM,
-        subBuilder: $531.TypedValue.create)
-    ..aOM<$531.TimeInterval>(2, _omitFieldNames ? '' : 'timeInterval',
-        subBuilder: $531.TimeInterval.create)
+        subBuilder: $532.TypedValue.create)
+    ..aOM<$532.TimeInterval>(2, _omitFieldNames ? '' : 'timeInterval',
+        subBuilder: $532.TimeInterval.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -595,13 +595,13 @@ class TimeSeriesData_PointData extends $pb.GeneratedMessage {
 
   /// The values that make up the point.
   @$pb.TagNumber(1)
-  $core.List<$531.TypedValue> get values => $_getList(0);
+  $core.List<$532.TypedValue> get values => $_getList(0);
 
   /// The time interval associated with the point.
   @$pb.TagNumber(2)
-  $531.TimeInterval get timeInterval => $_getN(1);
+  $532.TimeInterval get timeInterval => $_getN(1);
   @$pb.TagNumber(2)
-  set timeInterval($531.TimeInterval v) {
+  set timeInterval($532.TimeInterval v) {
     setField(2, v);
   }
 
@@ -610,7 +610,7 @@ class TimeSeriesData_PointData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearTimeInterval() => clearField(2);
   @$pb.TagNumber(2)
-  $531.TimeInterval ensureTimeInterval() => $_ensure(1);
+  $532.TimeInterval ensureTimeInterval() => $_ensure(1);
 }
 
 /// Represents the values of a time series associated with a

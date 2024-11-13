@@ -14,19 +14,19 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/field_mask.pb.dart' as $333;
-import '../../../../type/phone_number.pb.dart' as $541;
+import '../../../../type/phone_number.pb.dart' as $542;
 import '../../../../type/postal_address.pb.dart' as $448;
-import 'customerservice.pb.dart' as $542;
-import 'phoneverificationstate.pbenum.dart' as $543;
+import 'customerservice.pb.dart' as $543;
+import 'phoneverificationstate.pbenum.dart' as $544;
 
 /// Collection of information related to a business.
 class BusinessInfo extends $pb.GeneratedMessage {
   factory BusinessInfo({
     $core.String? name,
     $448.PostalAddress? address,
-    $541.PhoneNumber? phone,
-    $543.PhoneVerificationState? phoneVerificationState,
-    $542.CustomerService? customerService,
+    $542.PhoneNumber? phone,
+    $544.PhoneVerificationState? phoneVerificationState,
+    $543.CustomerService? customerService,
     $core.String? koreanBusinessRegistrationNumber,
   }) {
     final $result = create();
@@ -67,16 +67,16 @@ class BusinessInfo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<$448.PostalAddress>(2, _omitFieldNames ? '' : 'address',
         subBuilder: $448.PostalAddress.create)
-    ..aOM<$541.PhoneNumber>(3, _omitFieldNames ? '' : 'phone',
-        subBuilder: $541.PhoneNumber.create)
-    ..e<$543.PhoneVerificationState>(
+    ..aOM<$542.PhoneNumber>(3, _omitFieldNames ? '' : 'phone',
+        subBuilder: $542.PhoneNumber.create)
+    ..e<$544.PhoneVerificationState>(
         4, _omitFieldNames ? '' : 'phoneVerificationState', $pb.PbFieldType.OE,
         defaultOrMaker:
-            $543.PhoneVerificationState.PHONE_VERIFICATION_STATE_UNSPECIFIED,
-        valueOf: $543.PhoneVerificationState.valueOf,
-        enumValues: $543.PhoneVerificationState.values)
-    ..aOM<$542.CustomerService>(5, _omitFieldNames ? '' : 'customerService',
-        subBuilder: $542.CustomerService.create)
+            $544.PhoneVerificationState.PHONE_VERIFICATION_STATE_UNSPECIFIED,
+        valueOf: $544.PhoneVerificationState.valueOf,
+        enumValues: $544.PhoneVerificationState.values)
+    ..aOM<$543.CustomerService>(5, _omitFieldNames ? '' : 'customerService',
+        subBuilder: $543.CustomerService.create)
     ..aOS(6, _omitFieldNames ? '' : 'koreanBusinessRegistrationNumber')
     ..hasRequiredFields = false;
 
@@ -134,9 +134,9 @@ class BusinessInfo extends $pb.GeneratedMessage {
 
   /// Output only. The phone number of the business.
   @$pb.TagNumber(3)
-  $541.PhoneNumber get phone => $_getN(2);
+  $542.PhoneNumber get phone => $_getN(2);
   @$pb.TagNumber(3)
-  set phone($541.PhoneNumber v) {
+  set phone($542.PhoneNumber v) {
     setField(3, v);
   }
 
@@ -145,13 +145,13 @@ class BusinessInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearPhone() => clearField(3);
   @$pb.TagNumber(3)
-  $541.PhoneNumber ensurePhone() => $_ensure(2);
+  $542.PhoneNumber ensurePhone() => $_ensure(2);
 
   /// Output only. The phone verification state of the business.
   @$pb.TagNumber(4)
-  $543.PhoneVerificationState get phoneVerificationState => $_getN(3);
+  $544.PhoneVerificationState get phoneVerificationState => $_getN(3);
   @$pb.TagNumber(4)
-  set phoneVerificationState($543.PhoneVerificationState v) {
+  set phoneVerificationState($544.PhoneVerificationState v) {
     setField(4, v);
   }
 
@@ -162,9 +162,9 @@ class BusinessInfo extends $pb.GeneratedMessage {
 
   /// Optional. The customer service of the business.
   @$pb.TagNumber(5)
-  $542.CustomerService get customerService => $_getN(4);
+  $543.CustomerService get customerService => $_getN(4);
   @$pb.TagNumber(5)
-  set customerService($542.CustomerService v) {
+  set customerService($543.CustomerService v) {
     setField(5, v);
   }
 
@@ -173,7 +173,7 @@ class BusinessInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCustomerService() => clearField(5);
   @$pb.TagNumber(5)
-  $542.CustomerService ensureCustomerService() => $_ensure(4);
+  $543.CustomerService ensureCustomerService() => $_ensure(4);
 
   /// Optional. The 10-digit [Korean business registration
   /// number](https://support.google.com/merchants/answer/9037766) separated with

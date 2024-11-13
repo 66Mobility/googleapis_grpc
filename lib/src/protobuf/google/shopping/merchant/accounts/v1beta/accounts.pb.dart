@@ -16,7 +16,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/field_mask.pb.dart' as $333;
 import '../../../../type/datetime.pb.dart' as $328;
-import 'accountservices.pb.dart' as $540;
+import 'accountservices.pb.dart' as $541;
 import 'user.pb.dart' as $217;
 
 /// An account.
@@ -381,7 +381,7 @@ class CreateAndConfigureAccountRequest_AddAccountService
     extends $pb.GeneratedMessage {
   factory CreateAndConfigureAccountRequest_AddAccountService({
     $core.String? provider,
-    $540.AccountAggregation? accountAggregation,
+    $541.AccountAggregation? accountAggregation,
   }) {
     final $result = create();
     if (provider != null) {
@@ -418,9 +418,9 @@ class CreateAndConfigureAccountRequest_AddAccountService
       createEmptyInstance: create)
     ..oo(0, [103])
     ..aOS(1, _omitFieldNames ? '' : 'provider')
-    ..aOM<$540.AccountAggregation>(
+    ..aOM<$541.AccountAggregation>(
         103, _omitFieldNames ? '' : 'accountAggregation',
-        subBuilder: $540.AccountAggregation.create)
+        subBuilder: $541.AccountAggregation.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -479,9 +479,9 @@ class CreateAndConfigureAccountRequest_AddAccountService
   /// [aggregator](https://support.google.com/merchants/answer/188487) for
   /// the account. Payload for service type Account Aggregation.
   @$pb.TagNumber(103)
-  $540.AccountAggregation get accountAggregation => $_getN(1);
+  $541.AccountAggregation get accountAggregation => $_getN(1);
   @$pb.TagNumber(103)
-  set accountAggregation($540.AccountAggregation v) {
+  set accountAggregation($541.AccountAggregation v) {
     setField(103, v);
   }
 
@@ -490,7 +490,7 @@ class CreateAndConfigureAccountRequest_AddAccountService
   @$pb.TagNumber(103)
   void clearAccountAggregation() => clearField(103);
   @$pb.TagNumber(103)
-  $540.AccountAggregation ensureAccountAggregation() => $_ensure(1);
+  $541.AccountAggregation ensureAccountAggregation() => $_ensure(1);
 }
 
 /// Request message for the `CreateAndConfigureAccount` method.

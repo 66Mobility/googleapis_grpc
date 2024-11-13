@@ -14,14 +14,16 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../geo/type/viewport.pb.dart' as $449;
+import '../../../protobuf/timestamp.pb.dart' as $302;
 import '../../../type/date.pb.dart' as $327;
 import '../../../type/latlng.pb.dart' as $325;
 import '../../../type/localized_text.pb.dart' as $460;
-import 'content_block.pb.dart' as $468;
+import 'content_block.pb.dart' as $469;
 import 'ev_charging.pb.dart' as $467;
 import 'fuel_options.pb.dart' as $466;
 import 'photo.pb.dart' as $464;
 import 'place.pbenum.dart';
+import 'price_range.pb.dart' as $468;
 import 'reference.pb.dart' as $463;
 import 'review.pb.dart' as $462;
 
@@ -550,6 +552,8 @@ class Place_OpeningHours extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? weekdayDescriptions,
     Place_OpeningHours_SecondaryHoursType? secondaryHoursType,
     $core.Iterable<Place_OpeningHours_SpecialDay>? specialDays,
+    $302.Timestamp? nextOpenTime,
+    $302.Timestamp? nextCloseTime,
   }) {
     final $result = create();
     if (openNow != null) {
@@ -566,6 +570,12 @@ class Place_OpeningHours extends $pb.GeneratedMessage {
     }
     if (specialDays != null) {
       $result.specialDays.addAll(specialDays);
+    }
+    if (nextOpenTime != null) {
+      $result.nextOpenTime = nextOpenTime;
+    }
+    if (nextCloseTime != null) {
+      $result.nextCloseTime = nextCloseTime;
     }
     return $result;
   }
@@ -596,6 +606,10 @@ class Place_OpeningHours extends $pb.GeneratedMessage {
     ..pc<Place_OpeningHours_SpecialDay>(
         5, _omitFieldNames ? '' : 'specialDays', $pb.PbFieldType.PM,
         subBuilder: Place_OpeningHours_SpecialDay.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'nextOpenTime',
+        subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'nextCloseTime',
+        subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -670,6 +684,40 @@ class Place_OpeningHours extends $pb.GeneratedMessage {
   /// exceptional hours.
   @$pb.TagNumber(5)
   $core.List<Place_OpeningHours_SpecialDay> get specialDays => $_getList(4);
+
+  /// The next time the current opening hours period starts up to 7 days in the
+  /// future. This field is only populated if the opening hours period is not
+  /// active at the time of serving the request.
+  @$pb.TagNumber(6)
+  $302.Timestamp get nextOpenTime => $_getN(5);
+  @$pb.TagNumber(6)
+  set nextOpenTime($302.Timestamp v) {
+    setField(6, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasNextOpenTime() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearNextOpenTime() => clearField(6);
+  @$pb.TagNumber(6)
+  $302.Timestamp ensureNextOpenTime() => $_ensure(5);
+
+  /// The next time the current opening hours period ends up to 7 days in the
+  /// future. This field is only populated if the opening hours period is
+  /// active at the time of serving the request.
+  @$pb.TagNumber(7)
+  $302.Timestamp get nextCloseTime => $_getN(6);
+  @$pb.TagNumber(7)
+  set nextCloseTime($302.Timestamp v) {
+    setField(7, v);
+  }
+
+  @$pb.TagNumber(7)
+  $core.bool hasNextCloseTime() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearNextCloseTime() => clearField(7);
+  @$pb.TagNumber(7)
+  $302.Timestamp ensureNextCloseTime() => $_ensure(6);
 }
 
 /// Information about data providers of this place.
@@ -1375,7 +1423,7 @@ class Place_GenerativeSummary extends $pb.GeneratedMessage {
 ///  AI-generated summary of the area that the place is in.
 class Place_AreaSummary extends $pb.GeneratedMessage {
   factory Place_AreaSummary({
-    $core.Iterable<$468.ContentBlock>? contentBlocks,
+    $core.Iterable<$469.ContentBlock>? contentBlocks,
   }) {
     final $result = create();
     if (contentBlocks != null) {
@@ -1396,9 +1444,9 @@ class Place_AreaSummary extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
-    ..pc<$468.ContentBlock>(
+    ..pc<$469.ContentBlock>(
         4, _omitFieldNames ? '' : 'contentBlocks', $pb.PbFieldType.PM,
-        subBuilder: $468.ContentBlock.create)
+        subBuilder: $469.ContentBlock.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1427,7 +1475,91 @@ class Place_AreaSummary extends $pb.GeneratedMessage {
   /// Content blocks that compose the area summary. Each block has a separate
   /// topic about the area.
   @$pb.TagNumber(4)
-  $core.List<$468.ContentBlock> get contentBlocks => $_getList(0);
+  $core.List<$469.ContentBlock> get contentBlocks => $_getList(0);
+}
+
+/// Info about the place in which this place is located.
+class Place_ContainingPlace extends $pb.GeneratedMessage {
+  factory Place_ContainingPlace({
+    $core.String? name,
+    $core.String? id,
+  }) {
+    final $result = create();
+    if (name != null) {
+      $result.name = name;
+    }
+    if (id != null) {
+      $result.id = id;
+    }
+    return $result;
+  }
+  Place_ContainingPlace._() : super();
+  factory Place_ContainingPlace.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Place_ContainingPlace.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Place.ContainingPlace',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.maps.places.v1'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..aOS(2, _omitFieldNames ? '' : 'id')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Place_ContainingPlace clone() =>
+      Place_ContainingPlace()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Place_ContainingPlace copyWith(
+          void Function(Place_ContainingPlace) updates) =>
+      super.copyWith((message) => updates(message as Place_ContainingPlace))
+          as Place_ContainingPlace;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static Place_ContainingPlace create() => Place_ContainingPlace._();
+  Place_ContainingPlace createEmptyInstance() => create();
+  static $pb.PbList<Place_ContainingPlace> createRepeated() =>
+      $pb.PbList<Place_ContainingPlace>();
+  @$core.pragma('dart2js:noInline')
+  static Place_ContainingPlace getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Place_ContainingPlace>(create);
+  static Place_ContainingPlace? _defaultInstance;
+
+  /// The resource name of the place in which this place is located.
+  @$pb.TagNumber(1)
+  $core.String get name => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasName() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearName() => clearField(1);
+
+  /// The place id of the place in which this place is located.
+  @$pb.TagNumber(2)
+  $core.String get id => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set id($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasId() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearId() => clearField(2);
 }
 
 /// All the information representing a Place.
@@ -1496,6 +1628,9 @@ class Place extends $pb.GeneratedMessage {
     $467.EVChargeOptions? evChargeOptions,
     Place_GenerativeSummary? generativeSummary,
     Place_AreaSummary? areaSummary,
+    $core.Iterable<Place_ContainingPlace>? containingPlaces,
+    $core.bool? pureServiceAreaBusiness,
+    $468.PriceRange? priceRange,
   }) {
     final $result = create();
     if (name != null) {
@@ -1687,6 +1822,15 @@ class Place extends $pb.GeneratedMessage {
     if (areaSummary != null) {
       $result.areaSummary = areaSummary;
     }
+    if (containingPlaces != null) {
+      $result.containingPlaces.addAll(containingPlaces);
+    }
+    if (pureServiceAreaBusiness != null) {
+      $result.pureServiceAreaBusiness = pureServiceAreaBusiness;
+    }
+    if (priceRange != null) {
+      $result.priceRange = priceRange;
+    }
     return $result;
   }
   Place._() : super();
@@ -1808,6 +1952,12 @@ class Place extends $pb.GeneratedMessage {
         subBuilder: Place_GenerativeSummary.create)
     ..aOM<Place_AreaSummary>(81, _omitFieldNames ? '' : 'areaSummary',
         subBuilder: Place_AreaSummary.create)
+    ..pc<Place_ContainingPlace>(
+        82, _omitFieldNames ? '' : 'containingPlaces', $pb.PbFieldType.PM,
+        subBuilder: Place_ContainingPlace.create)
+    ..aOB(83, _omitFieldNames ? '' : 'pureServiceAreaBusiness')
+    ..aOM<$468.PriceRange>(86, _omitFieldNames ? '' : 'priceRange',
+        subBuilder: $468.PriceRange.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1951,7 +2101,9 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $325.LatLng ensureLocation() => $_ensure(8);
 
-  /// A viewport suitable for displaying the place on an average-sized map.
+  /// A viewport suitable for displaying the place on an average-sized map. This
+  /// viewport should not be used as the physical boundary or the service area of
+  /// the business.
   @$pb.TagNumber(13)
   $449.Viewport get viewport => $_getN(9);
   @$pb.TagNumber(13)
@@ -2051,7 +2203,6 @@ class Place extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   void clearAdrFormatAddress() => clearField(24);
 
-  /// The business status for the place.
   @$pb.TagNumber(25)
   Place_BusinessStatus get businessStatus => $_getN(16);
   @$pb.TagNumber(25)
@@ -2669,6 +2820,42 @@ class Place extends $pb.GeneratedMessage {
   void clearAreaSummary() => clearField(81);
   @$pb.TagNumber(81)
   Place_AreaSummary ensureAreaSummary() => $_ensure(62);
+
+  /// List of places in which the current place is located.
+  @$pb.TagNumber(82)
+  $core.List<Place_ContainingPlace> get containingPlaces => $_getList(63);
+
+  /// Indicates whether the place is a pure service area business. Pure service
+  /// area business is a business that visits or delivers to customers directly
+  /// but does not serve customers at their business address. For example,
+  /// businesses like cleaning services or plumbers. Those businesses may not
+  /// have a physical address or location on Google Maps.
+  @$pb.TagNumber(83)
+  $core.bool get pureServiceAreaBusiness => $_getBF(64);
+  @$pb.TagNumber(83)
+  set pureServiceAreaBusiness($core.bool v) {
+    $_setBool(64, v);
+  }
+
+  @$pb.TagNumber(83)
+  $core.bool hasPureServiceAreaBusiness() => $_has(64);
+  @$pb.TagNumber(83)
+  void clearPureServiceAreaBusiness() => clearField(83);
+
+  /// The price range associated with a Place.
+  @$pb.TagNumber(86)
+  $468.PriceRange get priceRange => $_getN(65);
+  @$pb.TagNumber(86)
+  set priceRange($468.PriceRange v) {
+    setField(86, v);
+  }
+
+  @$pb.TagNumber(86)
+  $core.bool hasPriceRange() => $_has(65);
+  @$pb.TagNumber(86)
+  void clearPriceRange() => clearField(86);
+  @$pb.TagNumber(86)
+  $468.PriceRange ensurePriceRange() => $_ensure(65);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

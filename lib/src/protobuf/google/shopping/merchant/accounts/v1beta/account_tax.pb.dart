@@ -15,14 +15,14 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/field_mask.pb.dart' as $333;
-import 'tax_rule.pb.dart' as $538;
+import 'tax_rule.pb.dart' as $539;
 
 /// The tax settings of a merchant account. All methods require the admin role.
 class AccountTax extends $pb.GeneratedMessage {
   factory AccountTax({
     $core.String? name,
     $fixnum.Int64? account,
-    $core.Iterable<$538.TaxRule>? taxRules,
+    $core.Iterable<$539.TaxRule>? taxRules,
   }) {
     final $result = create();
     if (name != null) {
@@ -51,8 +51,8 @@ class AccountTax extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'account')
-    ..pc<$538.TaxRule>(3, _omitFieldNames ? '' : 'taxRules', $pb.PbFieldType.PM,
-        subBuilder: $538.TaxRule.create)
+    ..pc<$539.TaxRule>(3, _omitFieldNames ? '' : 'taxRules', $pb.PbFieldType.PM,
+        subBuilder: $539.TaxRule.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -108,7 +108,7 @@ class AccountTax extends $pb.GeneratedMessage {
   /// Tax rules. "Define the tax rules in each region.
   /// No tax will be presented if a region has no rule."
   @$pb.TagNumber(3)
-  $core.List<$538.TaxRule> get taxRules => $_getList(2);
+  $core.List<$539.TaxRule> get taxRules => $_getList(2);
 }
 
 /// Request to get tax settings

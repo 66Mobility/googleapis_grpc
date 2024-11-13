@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'location.pb.dart' as $490;
+import 'location.pb.dart' as $491;
 
 enum Waypoint_LocationType { location, placeId, address, notSet }
 
@@ -21,7 +21,7 @@ enum Waypoint_LocationType { location, placeId, address, notSet }
 /// route, and include intermediate stops along the route.
 class Waypoint extends $pb.GeneratedMessage {
   factory Waypoint({
-    $490.Location? location,
+    $491.Location? location,
     $core.String? placeId,
     $core.bool? via,
     $core.bool? vehicleStopover,
@@ -70,8 +70,8 @@ class Waypoint extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.routing.v2'),
       createEmptyInstance: create)
     ..oo(0, [1, 2, 7])
-    ..aOM<$490.Location>(1, _omitFieldNames ? '' : 'location',
-        subBuilder: $490.Location.create)
+    ..aOM<$491.Location>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: $491.Location.create)
     ..aOS(2, _omitFieldNames ? '' : 'placeId')
     ..aOB(3, _omitFieldNames ? '' : 'via')
     ..aOB(4, _omitFieldNames ? '' : 'vehicleStopover')
@@ -107,9 +107,9 @@ class Waypoint extends $pb.GeneratedMessage {
   /// A point specified using geographic coordinates, including an optional
   /// heading.
   @$pb.TagNumber(1)
-  $490.Location get location => $_getN(0);
+  $491.Location get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($490.Location v) {
+  set location($491.Location v) {
     setField(1, v);
   }
 
@@ -118,7 +118,7 @@ class Waypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearLocation() => clearField(1);
   @$pb.TagNumber(1)
-  $490.Location ensureLocation() => $_ensure(0);
+  $491.Location ensureLocation() => $_ensure(0);
 
   /// The POI Place ID associated with the waypoint.
   @$pb.TagNumber(2)

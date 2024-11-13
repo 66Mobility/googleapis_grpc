@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/duration.pb.dart' as $264;
-import 'metrics.pb.dart' as $513;
+import 'metrics.pb.dart' as $514;
 import 'piechart.pbenum.dart';
 
 export 'piechart.pbenum.dart';
@@ -22,7 +22,7 @@ export 'piechart.pbenum.dart';
 /// Groups a time series query definition.
 class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   factory PieChart_PieChartDataSet({
-    $513.TimeSeriesQuery? timeSeriesQuery,
+    $514.TimeSeriesQuery? timeSeriesQuery,
     $core.String? sliceNameTemplate,
     $264.Duration? minAlignmentPeriod,
   }) {
@@ -51,8 +51,8 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
-    ..aOM<$513.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
-        subBuilder: $513.TimeSeriesQuery.create)
+    ..aOM<$514.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
+        subBuilder: $514.TimeSeriesQuery.create)
     ..aOS(2, _omitFieldNames ? '' : 'sliceNameTemplate')
     ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'minAlignmentPeriod',
         subBuilder: $264.Duration.create)
@@ -86,9 +86,9 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   /// Required. The query for the PieChart. See,
   /// `google.monitoring.dashboard.v1.TimeSeriesQuery`.
   @$pb.TagNumber(1)
-  $513.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $514.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($513.TimeSeriesQuery v) {
+  set timeSeriesQuery($514.TimeSeriesQuery v) {
     setField(1, v);
   }
 
@@ -97,7 +97,7 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $513.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $514.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// Optional. A template for the name of the slice. This name will be
   /// displayed in the legend and the tooltip of the pie chart. It replaces the

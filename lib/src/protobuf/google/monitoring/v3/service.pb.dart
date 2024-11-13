@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../protobuf/duration.pb.dart' as $264;
-import '../../type/calendar_period.pbenum.dart' as $533;
+import '../../type/calendar_period.pbenum.dart' as $534;
 
 export 'service.pbenum.dart';
 
@@ -1610,7 +1610,7 @@ class ServiceLevelObjective extends $pb.GeneratedMessage {
     ServiceLevelIndicator? serviceLevelIndicator,
     $core.double? goal,
     $264.Duration? rollingPeriod,
-    $533.CalendarPeriod? calendarPeriod,
+    $534.CalendarPeriod? calendarPeriod,
     $core.String? displayName,
     $core.Map<$core.String, $core.String>? userLabels,
   }) {
@@ -1665,11 +1665,11 @@ class ServiceLevelObjective extends $pb.GeneratedMessage {
     ..a<$core.double>(4, _omitFieldNames ? '' : 'goal', $pb.PbFieldType.OD)
     ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'rollingPeriod',
         subBuilder: $264.Duration.create)
-    ..e<$533.CalendarPeriod>(
+    ..e<$534.CalendarPeriod>(
         6, _omitFieldNames ? '' : 'calendarPeriod', $pb.PbFieldType.OE,
-        defaultOrMaker: $533.CalendarPeriod.CALENDAR_PERIOD_UNSPECIFIED,
-        valueOf: $533.CalendarPeriod.valueOf,
-        enumValues: $533.CalendarPeriod.values)
+        defaultOrMaker: $534.CalendarPeriod.CALENDAR_PERIOD_UNSPECIFIED,
+        valueOf: $534.CalendarPeriod.valueOf,
+        enumValues: $534.CalendarPeriod.values)
     ..aOS(11, _omitFieldNames ? '' : 'displayName')
     ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'userLabels',
         entryClassName: 'ServiceLevelObjective.UserLabelsEntry',
@@ -1773,9 +1773,9 @@ class ServiceLevelObjective extends $pb.GeneratedMessage {
   /// `<calendar_period>`". At this time, only `DAY`, `WEEK`, `FORTNIGHT`, and
   /// `MONTH` are supported.
   @$pb.TagNumber(6)
-  $533.CalendarPeriod get calendarPeriod => $_getN(4);
+  $534.CalendarPeriod get calendarPeriod => $_getN(4);
   @$pb.TagNumber(6)
-  set calendarPeriod($533.CalendarPeriod v) {
+  set calendarPeriod($534.CalendarPeriod v) {
     setField(6, v);
   }
 

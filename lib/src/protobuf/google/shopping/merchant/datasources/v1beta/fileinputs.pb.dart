@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../type/dayofweek.pbenum.dart' as $427;
-import '../../../../type/timeofday.pb.dart' as $535;
+import '../../../../type/timeofday.pb.dart' as $536;
 import 'fileinputs.pbenum.dart';
 
 export 'fileinputs.pbenum.dart';
@@ -24,7 +24,7 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   factory FileInput_FetchSettings({
     $core.bool? enabled,
     $core.int? dayOfMonth,
-    $535.TimeOfDay? timeOfDay,
+    $536.TimeOfDay? timeOfDay,
     $427.DayOfWeek? dayOfWeek,
     $core.String? timeZone,
     FileInput_FetchSettings_Frequency? frequency,
@@ -78,8 +78,8 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'dayOfMonth', $pb.PbFieldType.O3)
-    ..aOM<$535.TimeOfDay>(3, _omitFieldNames ? '' : 'timeOfDay',
-        subBuilder: $535.TimeOfDay.create)
+    ..aOM<$536.TimeOfDay>(3, _omitFieldNames ? '' : 'timeOfDay',
+        subBuilder: $536.TimeOfDay.create)
     ..e<$427.DayOfWeek>(
         4, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE,
         defaultOrMaker: $427.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
@@ -151,9 +151,9 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   /// Optional. The hour of the day when the data source file should be
   /// fetched. Minutes and seconds are not supported and will be ignored.
   @$pb.TagNumber(3)
-  $535.TimeOfDay get timeOfDay => $_getN(2);
+  $536.TimeOfDay get timeOfDay => $_getN(2);
   @$pb.TagNumber(3)
-  set timeOfDay($535.TimeOfDay v) {
+  set timeOfDay($536.TimeOfDay v) {
     setField(3, v);
   }
 
@@ -162,7 +162,7 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearTimeOfDay() => clearField(3);
   @$pb.TagNumber(3)
-  $535.TimeOfDay ensureTimeOfDay() => $_ensure(2);
+  $536.TimeOfDay ensureTimeOfDay() => $_ensure(2);
 
   /// Optional. The day of the week when the data source file should be
   /// fetched. This field can only be set for weekly frequency.
