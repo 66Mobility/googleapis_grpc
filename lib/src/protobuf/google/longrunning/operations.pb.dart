@@ -163,7 +163,7 @@ class Operation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $322.Status ensureError() => $_ensure(3);
 
-  /// The normal response of the operation in case of success.  If the original
+  /// The normal, successful response of the operation.  If the original
   /// method returns no data on success, such as `Delete`, the response is
   /// `google.protobuf.Empty`.  If the original method is standard
   /// `Get`/`Create`/`Update`, the response should be the resource.  For other
@@ -186,7 +186,8 @@ class Operation extends $pb.GeneratedMessage {
   $321.Any ensureResponse() => $_ensure(4);
 }
 
-/// The request message for [Operations.GetOperation][google.longrunning.Operations.GetOperation].
+/// The request message for
+/// [Operations.GetOperation][google.longrunning.Operations.GetOperation].
 class GetOperationRequest extends $pb.GeneratedMessage {
   factory GetOperationRequest({
     $core.String? name,
@@ -250,7 +251,8 @@ class GetOperationRequest extends $pb.GeneratedMessage {
   void clearName() => clearField(1);
 }
 
-/// The request message for [Operations.ListOperations][google.longrunning.Operations.ListOperations].
+/// The request message for
+/// [Operations.ListOperations][google.longrunning.Operations.ListOperations].
 class ListOperationsRequest extends $pb.GeneratedMessage {
   factory ListOperationsRequest({
     $core.String? filter,
@@ -370,7 +372,8 @@ class ListOperationsRequest extends $pb.GeneratedMessage {
   void clearName() => clearField(4);
 }
 
-/// The response message for [Operations.ListOperations][google.longrunning.Operations.ListOperations].
+/// The response message for
+/// [Operations.ListOperations][google.longrunning.Operations.ListOperations].
 class ListOperationsResponse extends $pb.GeneratedMessage {
   factory ListOperationsResponse({
     $core.Iterable<Operation>? operations,
@@ -446,7 +449,8 @@ class ListOperationsResponse extends $pb.GeneratedMessage {
   void clearNextPageToken() => clearField(2);
 }
 
-/// The request message for [Operations.CancelOperation][google.longrunning.Operations.CancelOperation].
+/// The request message for
+/// [Operations.CancelOperation][google.longrunning.Operations.CancelOperation].
 class CancelOperationRequest extends $pb.GeneratedMessage {
   factory CancelOperationRequest({
     $core.String? name,
@@ -512,7 +516,8 @@ class CancelOperationRequest extends $pb.GeneratedMessage {
   void clearName() => clearField(1);
 }
 
-/// The request message for [Operations.DeleteOperation][google.longrunning.Operations.DeleteOperation].
+/// The request message for
+/// [Operations.DeleteOperation][google.longrunning.Operations.DeleteOperation].
 class DeleteOperationRequest extends $pb.GeneratedMessage {
   factory DeleteOperationRequest({
     $core.String? name,
@@ -578,7 +583,8 @@ class DeleteOperationRequest extends $pb.GeneratedMessage {
   void clearName() => clearField(1);
 }
 
-/// The request message for [Operations.WaitOperation][google.longrunning.Operations.WaitOperation].
+/// The request message for
+/// [Operations.WaitOperation][google.longrunning.Operations.WaitOperation].
 class WaitOperationRequest extends $pb.GeneratedMessage {
   factory WaitOperationRequest({
     $core.String? name,
@@ -670,13 +676,12 @@ class WaitOperationRequest extends $pb.GeneratedMessage {
 ///
 ///  Example:
 ///
-///    rpc LongRunningRecognize(LongRunningRecognizeRequest)
-///        returns (google.longrunning.Operation) {
-///      option (google.longrunning.operation_info) = {
-///        response_type: "LongRunningRecognizeResponse"
-///        metadata_type: "LongRunningRecognizeMetadata"
-///      };
-///    }
+///      rpc Export(ExportRequest) returns (google.longrunning.Operation) {
+///        option (google.longrunning.operation_info) = {
+///          response_type: "ExportResponse"
+///          metadata_type: "ExportMetadata"
+///        };
+///      }
 class OperationInfo extends $pb.GeneratedMessage {
   factory OperationInfo({
     $core.String? responseType,
