@@ -248,6 +248,14 @@ const GenerateContentResponse$json = {
       '8': {},
       '10': 'usageMetadata'
     },
+    {
+      '1': 'model_version',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'modelVersion'
+    },
   ],
   '3': [
     GenerateContentResponse_PromptFeedback$json,
@@ -322,16 +330,17 @@ final $typed_data.Uint8List generateContentResponseDescriptor = $convert.base64D
     'X2ZlZWRiYWNrGAIgASgLMkcuZ29vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS52MS5HZW5lcm'
     'F0ZUNvbnRlbnRSZXNwb25zZS5Qcm9tcHRGZWVkYmFja1IOcHJvbXB0RmVlZGJhY2sScgoOdXNh'
     'Z2VfbWV0YWRhdGEYAyABKAsyRi5nb29nbGUuYWkuZ2VuZXJhdGl2ZWxhbmd1YWdlLnYxLkdlbm'
-    'VyYXRlQ29udGVudFJlc3BvbnNlLlVzYWdlTWV0YWRhdGFCA+BBA1INdXNhZ2VNZXRhZGF0YRrO'
-    'AgoOUHJvbXB0RmVlZGJhY2sSewoMYmxvY2tfcmVhc29uGAEgASgOMlMuZ29vZ2xlLmFpLmdlbm'
-    'VyYXRpdmVsYW5ndWFnZS52MS5HZW5lcmF0ZUNvbnRlbnRSZXNwb25zZS5Qcm9tcHRGZWVkYmFj'
-    'ay5CbG9ja1JlYXNvbkID4EEBUgtibG9ja1JlYXNvbhJUCg5zYWZldHlfcmF0aW5ncxgCIAMoCz'
-    'ItLmdvb2dsZS5haS5nZW5lcmF0aXZlbGFuZ3VhZ2UudjEuU2FmZXR5UmF0aW5nUg1zYWZldHlS'
-    'YXRpbmdzImkKC0Jsb2NrUmVhc29uEhwKGEJMT0NLX1JFQVNPTl9VTlNQRUNJRklFRBAAEgoKBl'
-    'NBRkVUWRABEgkKBU9USEVSEAISDQoJQkxPQ0tMSVNUEAMSFgoSUFJPSElCSVRFRF9DT05URU5U'
-    'EAQanwEKDVVzYWdlTWV0YWRhdGESLAoScHJvbXB0X3Rva2VuX2NvdW50GAEgASgFUhBwcm9tcH'
-    'RUb2tlbkNvdW50EjQKFmNhbmRpZGF0ZXNfdG9rZW5fY291bnQYAiABKAVSFGNhbmRpZGF0ZXNU'
-    'b2tlbkNvdW50EioKEXRvdGFsX3Rva2VuX2NvdW50GAMgASgFUg90b3RhbFRva2VuQ291bnQ=');
+    'VyYXRlQ29udGVudFJlc3BvbnNlLlVzYWdlTWV0YWRhdGFCA+BBA1INdXNhZ2VNZXRhZGF0YRIo'
+    'Cg1tb2RlbF92ZXJzaW9uGAQgASgJQgPgQQNSDG1vZGVsVmVyc2lvbhrOAgoOUHJvbXB0RmVlZG'
+    'JhY2sSewoMYmxvY2tfcmVhc29uGAEgASgOMlMuZ29vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFn'
+    'ZS52MS5HZW5lcmF0ZUNvbnRlbnRSZXNwb25zZS5Qcm9tcHRGZWVkYmFjay5CbG9ja1JlYXNvbk'
+    'ID4EEBUgtibG9ja1JlYXNvbhJUCg5zYWZldHlfcmF0aW5ncxgCIAMoCzItLmdvb2dsZS5haS5n'
+    'ZW5lcmF0aXZlbGFuZ3VhZ2UudjEuU2FmZXR5UmF0aW5nUg1zYWZldHlSYXRpbmdzImkKC0Jsb2'
+    'NrUmVhc29uEhwKGEJMT0NLX1JFQVNPTl9VTlNQRUNJRklFRBAAEgoKBlNBRkVUWRABEgkKBU9U'
+    'SEVSEAISDQoJQkxPQ0tMSVNUEAMSFgoSUFJPSElCSVRFRF9DT05URU5UEAQanwEKDVVzYWdlTW'
+    'V0YWRhdGESLAoScHJvbXB0X3Rva2VuX2NvdW50GAEgASgFUhBwcm9tcHRUb2tlbkNvdW50EjQK'
+    'FmNhbmRpZGF0ZXNfdG9rZW5fY291bnQYAiABKAVSFGNhbmRpZGF0ZXNUb2tlbkNvdW50EioKEX'
+    'RvdGFsX3Rva2VuX2NvdW50GAMgASgFUg90b3RhbFRva2VuQ291bnQ=');
 
 @$core.Deprecated('Use candidateDescriptor instead')
 const Candidate$json = {
@@ -384,6 +393,15 @@ const Candidate$json = {
     },
     {'1': 'token_count', '3': 7, '4': 1, '5': 5, '8': {}, '10': 'tokenCount'},
     {
+      '1': 'grounding_metadata',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1.GroundingMetadata',
+      '8': {},
+      '10': 'groundingMetadata'
+    },
+    {
       '1': 'avg_logprobs',
       '3': 10,
       '4': 1,
@@ -435,13 +453,15 @@ final $typed_data.Uint8List candidateDescriptor = $convert.base64Decode(
     'NhZmV0eVJhdGluZ1INc2FmZXR5UmF0aW5ncxJjChFjaXRhdGlvbl9tZXRhZGF0YRgGIAEoCzIx'
     'Lmdvb2dsZS5haS5nZW5lcmF0aXZlbGFuZ3VhZ2UudjEuQ2l0YXRpb25NZXRhZGF0YUID4EEDUh'
     'BjaXRhdGlvbk1ldGFkYXRhEiQKC3Rva2VuX2NvdW50GAcgASgFQgPgQQNSCnRva2VuQ291bnQS'
-    'JgoMYXZnX2xvZ3Byb2JzGAogASgBQgPgQQNSC2F2Z0xvZ3Byb2JzEl0KD2xvZ3Byb2JzX3Jlc3'
-    'VsdBgLIAEoCzIvLmdvb2dsZS5haS5nZW5lcmF0aXZlbGFuZ3VhZ2UudjEuTG9ncHJvYnNSZXN1'
-    'bHRCA+BBA1IObG9ncHJvYnNSZXN1bHQiygEKDEZpbmlzaFJlYXNvbhIdChlGSU5JU0hfUkVBU0'
-    '9OX1VOU1BFQ0lGSUVEEAASCAoEU1RPUBABEg4KCk1BWF9UT0tFTlMQAhIKCgZTQUZFVFkQAxIO'
-    'CgpSRUNJVEFUSU9OEAQSDAoITEFOR1VBR0UQBhIJCgVPVEhFUhAFEg0KCUJMT0NLTElTVBAHEh'
-    'YKElBST0hJQklURURfQ09OVEVOVBAIEggKBFNQSUkQCRIbChdNQUxGT1JNRURfRlVOQ1RJT05f'
-    'Q0FMTBAKQggKBl9pbmRleA==');
+    'ZgoSZ3JvdW5kaW5nX21ldGFkYXRhGAkgASgLMjIuZ29vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndW'
+    'FnZS52MS5Hcm91bmRpbmdNZXRhZGF0YUID4EEDUhFncm91bmRpbmdNZXRhZGF0YRImCgxhdmdf'
+    'bG9ncHJvYnMYCiABKAFCA+BBA1ILYXZnTG9ncHJvYnMSXQoPbG9ncHJvYnNfcmVzdWx0GAsgAS'
+    'gLMi8uZ29vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS52MS5Mb2dwcm9ic1Jlc3VsdEID4EED'
+    'Ug5sb2dwcm9ic1Jlc3VsdCLKAQoMRmluaXNoUmVhc29uEh0KGUZJTklTSF9SRUFTT05fVU5TUE'
+    'VDSUZJRUQQABIICgRTVE9QEAESDgoKTUFYX1RPS0VOUxACEgoKBlNBRkVUWRADEg4KClJFQ0lU'
+    'QVRJT04QBBIMCghMQU5HVUFHRRAGEgkKBU9USEVSEAUSDQoJQkxPQ0tMSVNUEAcSFgoSUFJPSE'
+    'lCSVRFRF9DT05URU5UEAgSCAoEU1BJSRAJEhsKF01BTEZPUk1FRF9GVU5DVElPTl9DQUxMEApC'
+    'CAoGX2luZGV4');
 
 @$core.Deprecated('Use logprobsResultDescriptor instead')
 const LogprobsResult$json = {
@@ -524,6 +544,213 @@ final $typed_data.Uint8List logprobsResultDescriptor = $convert.base64Decode(
     'aWxpdHmIAQFCCAoGX3Rva2VuQgsKCV90b2tlbl9pZEISChBfbG9nX3Byb2JhYmlsaXR5GmoKDV'
     'RvcENhbmRpZGF0ZXMSWQoKY2FuZGlkYXRlcxgBIAMoCzI5Lmdvb2dsZS5haS5nZW5lcmF0aXZl'
     'bGFuZ3VhZ2UudjEuTG9ncHJvYnNSZXN1bHQuQ2FuZGlkYXRlUgpjYW5kaWRhdGVz');
+
+@$core.Deprecated('Use retrievalMetadataDescriptor instead')
+const RetrievalMetadata$json = {
+  '1': 'RetrievalMetadata',
+  '2': [
+    {
+      '1': 'google_search_dynamic_retrieval_score',
+      '3': 2,
+      '4': 1,
+      '5': 2,
+      '8': {},
+      '10': 'googleSearchDynamicRetrievalScore'
+    },
+  ],
+};
+
+/// Descriptor for `RetrievalMetadata`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List retrievalMetadataDescriptor = $convert.base64Decode(
+    'ChFSZXRyaWV2YWxNZXRhZGF0YRJVCiVnb29nbGVfc2VhcmNoX2R5bmFtaWNfcmV0cmlldmFsX3'
+    'Njb3JlGAIgASgCQgPgQQFSIWdvb2dsZVNlYXJjaER5bmFtaWNSZXRyaWV2YWxTY29yZQ==');
+
+@$core.Deprecated('Use groundingMetadataDescriptor instead')
+const GroundingMetadata$json = {
+  '1': 'GroundingMetadata',
+  '2': [
+    {
+      '1': 'search_entry_point',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1.SearchEntryPoint',
+      '8': {},
+      '9': 0,
+      '10': 'searchEntryPoint',
+      '17': true
+    },
+    {
+      '1': 'grounding_chunks',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1.GroundingChunk',
+      '10': 'groundingChunks'
+    },
+    {
+      '1': 'grounding_supports',
+      '3': 3,
+      '4': 3,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1.GroundingSupport',
+      '10': 'groundingSupports'
+    },
+    {
+      '1': 'retrieval_metadata',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1.RetrievalMetadata',
+      '9': 1,
+      '10': 'retrievalMetadata',
+      '17': true
+    },
+    {
+      '1': 'web_search_queries',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '10': 'webSearchQueries'
+    },
+  ],
+  '8': [
+    {'1': '_search_entry_point'},
+    {'1': '_retrieval_metadata'},
+  ],
+};
+
+/// Descriptor for `GroundingMetadata`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List groundingMetadataDescriptor = $convert.base64Decode(
+    'ChFHcm91bmRpbmdNZXRhZGF0YRJpChJzZWFyY2hfZW50cnlfcG9pbnQYASABKAsyMS5nb29nbG'
+    'UuYWkuZ2VuZXJhdGl2ZWxhbmd1YWdlLnYxLlNlYXJjaEVudHJ5UG9pbnRCA+BBAUgAUhBzZWFy'
+    'Y2hFbnRyeVBvaW50iAEBEloKEGdyb3VuZGluZ19jaHVua3MYAiADKAsyLy5nb29nbGUuYWkuZ2'
+    'VuZXJhdGl2ZWxhbmd1YWdlLnYxLkdyb3VuZGluZ0NodW5rUg9ncm91bmRpbmdDaHVua3MSYAoS'
+    'Z3JvdW5kaW5nX3N1cHBvcnRzGAMgAygLMjEuZ29vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS'
+    '52MS5Hcm91bmRpbmdTdXBwb3J0UhFncm91bmRpbmdTdXBwb3J0cxJmChJyZXRyaWV2YWxfbWV0'
+    'YWRhdGEYBCABKAsyMi5nb29nbGUuYWkuZ2VuZXJhdGl2ZWxhbmd1YWdlLnYxLlJldHJpZXZhbE'
+    '1ldGFkYXRhSAFSEXJldHJpZXZhbE1ldGFkYXRhiAEBEiwKEndlYl9zZWFyY2hfcXVlcmllcxgF'
+    'IAMoCVIQd2ViU2VhcmNoUXVlcmllc0IVChNfc2VhcmNoX2VudHJ5X3BvaW50QhUKE19yZXRyaW'
+    'V2YWxfbWV0YWRhdGE=');
+
+@$core.Deprecated('Use searchEntryPointDescriptor instead')
+const SearchEntryPoint$json = {
+  '1': 'SearchEntryPoint',
+  '2': [
+    {
+      '1': 'rendered_content',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'renderedContent'
+    },
+    {'1': 'sdk_blob', '3': 2, '4': 1, '5': 12, '8': {}, '10': 'sdkBlob'},
+  ],
+};
+
+/// Descriptor for `SearchEntryPoint`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List searchEntryPointDescriptor = $convert.base64Decode(
+    'ChBTZWFyY2hFbnRyeVBvaW50Ei4KEHJlbmRlcmVkX2NvbnRlbnQYASABKAlCA+BBAVIPcmVuZG'
+    'VyZWRDb250ZW50Eh4KCHNka19ibG9iGAIgASgMQgPgQQFSB3Nka0Jsb2I=');
+
+@$core.Deprecated('Use groundingChunkDescriptor instead')
+const GroundingChunk$json = {
+  '1': 'GroundingChunk',
+  '2': [
+    {
+      '1': 'web',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1.GroundingChunk.Web',
+      '9': 0,
+      '10': 'web'
+    },
+  ],
+  '3': [GroundingChunk_Web$json],
+  '8': [
+    {'1': 'chunk_type'},
+  ],
+};
+
+@$core.Deprecated('Use groundingChunkDescriptor instead')
+const GroundingChunk_Web$json = {
+  '1': 'Web',
+  '2': [
+    {'1': 'uri', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'uri', '17': true},
+    {'1': 'title', '3': 2, '4': 1, '5': 9, '9': 1, '10': 'title', '17': true},
+  ],
+  '8': [
+    {'1': '_uri'},
+    {'1': '_title'},
+  ],
+};
+
+/// Descriptor for `GroundingChunk`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List groundingChunkDescriptor = $convert.base64Decode(
+    'Cg5Hcm91bmRpbmdDaHVuaxJHCgN3ZWIYASABKAsyMy5nb29nbGUuYWkuZ2VuZXJhdGl2ZWxhbm'
+    'd1YWdlLnYxLkdyb3VuZGluZ0NodW5rLldlYkgAUgN3ZWIaSQoDV2ViEhUKA3VyaRgBIAEoCUgA'
+    'UgN1cmmIAQESGQoFdGl0bGUYAiABKAlIAVIFdGl0bGWIAQFCBgoEX3VyaUIICgZfdGl0bGVCDA'
+    'oKY2h1bmtfdHlwZQ==');
+
+@$core.Deprecated('Use segmentDescriptor instead')
+const Segment$json = {
+  '1': 'Segment',
+  '2': [
+    {'1': 'part_index', '3': 1, '4': 1, '5': 5, '8': {}, '10': 'partIndex'},
+    {'1': 'start_index', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'startIndex'},
+    {'1': 'end_index', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'endIndex'},
+    {'1': 'text', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'text'},
+  ],
+};
+
+/// Descriptor for `Segment`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List segmentDescriptor = $convert.base64Decode(
+    'CgdTZWdtZW50EiIKCnBhcnRfaW5kZXgYASABKAVCA+BBA1IJcGFydEluZGV4EiQKC3N0YXJ0X2'
+    'luZGV4GAIgASgFQgPgQQNSCnN0YXJ0SW5kZXgSIAoJZW5kX2luZGV4GAMgASgFQgPgQQNSCGVu'
+    'ZEluZGV4EhcKBHRleHQYBCABKAlCA+BBA1IEdGV4dA==');
+
+@$core.Deprecated('Use groundingSupportDescriptor instead')
+const GroundingSupport$json = {
+  '1': 'GroundingSupport',
+  '2': [
+    {
+      '1': 'segment',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1.Segment',
+      '9': 0,
+      '10': 'segment',
+      '17': true
+    },
+    {
+      '1': 'grounding_chunk_indices',
+      '3': 2,
+      '4': 3,
+      '5': 5,
+      '10': 'groundingChunkIndices'
+    },
+    {
+      '1': 'confidence_scores',
+      '3': 3,
+      '4': 3,
+      '5': 2,
+      '10': 'confidenceScores'
+    },
+  ],
+  '8': [
+    {'1': '_segment'},
+  ],
+};
+
+/// Descriptor for `GroundingSupport`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List groundingSupportDescriptor = $convert.base64Decode(
+    'ChBHcm91bmRpbmdTdXBwb3J0EkcKB3NlZ21lbnQYASABKAsyKC5nb29nbGUuYWkuZ2VuZXJhdG'
+    'l2ZWxhbmd1YWdlLnYxLlNlZ21lbnRIAFIHc2VnbWVudIgBARI2Chdncm91bmRpbmdfY2h1bmtf'
+    'aW5kaWNlcxgCIAMoBVIVZ3JvdW5kaW5nQ2h1bmtJbmRpY2VzEisKEWNvbmZpZGVuY2Vfc2Nvcm'
+    'VzGAMgAygCUhBjb25maWRlbmNlU2NvcmVzQgoKCF9zZWdtZW50');
 
 @$core.Deprecated('Use embedContentRequestDescriptor instead')
 const EmbedContentRequest$json = {

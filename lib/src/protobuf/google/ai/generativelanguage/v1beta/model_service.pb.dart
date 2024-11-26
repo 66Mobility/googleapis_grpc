@@ -823,7 +823,7 @@ class UpdateTunedModelRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $16.TunedModel ensureTunedModel() => $_ensure(0);
 
-  /// Required. The list of fields to update.
+  /// Optional. The list of fields to update.
   @$pb.TagNumber(2)
   $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)

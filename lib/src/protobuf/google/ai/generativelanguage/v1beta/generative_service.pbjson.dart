@@ -376,6 +376,14 @@ const GenerateContentResponse$json = {
       '8': {},
       '10': 'usageMetadata'
     },
+    {
+      '1': 'model_version',
+      '3': 4,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'modelVersion'
+    },
   ],
   '3': [
     GenerateContentResponse_PromptFeedback$json,
@@ -458,17 +466,18 @@ final $typed_data.Uint8List generateContentResponseDescriptor = $convert.base64D
     'RhLkdlbmVyYXRlQ29udGVudFJlc3BvbnNlLlByb21wdEZlZWRiYWNrUg5wcm9tcHRGZWVkYmFj'
     'axJ2Cg51c2FnZV9tZXRhZGF0YRgDIAEoCzJKLmdvb2dsZS5haS5nZW5lcmF0aXZlbGFuZ3VhZ2'
     'UudjFiZXRhLkdlbmVyYXRlQ29udGVudFJlc3BvbnNlLlVzYWdlTWV0YWRhdGFCA+BBA1INdXNh'
-    'Z2VNZXRhZGF0YRrWAgoOUHJvbXB0RmVlZGJhY2sSfwoMYmxvY2tfcmVhc29uGAEgASgOMlcuZ2'
-    '9vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS52MWJldGEuR2VuZXJhdGVDb250ZW50UmVzcG9u'
-    'c2UuUHJvbXB0RmVlZGJhY2suQmxvY2tSZWFzb25CA+BBAVILYmxvY2tSZWFzb24SWAoOc2FmZX'
-    'R5X3JhdGluZ3MYAiADKAsyMS5nb29nbGUuYWkuZ2VuZXJhdGl2ZWxhbmd1YWdlLnYxYmV0YS5T'
-    'YWZldHlSYXRpbmdSDXNhZmV0eVJhdGluZ3MiaQoLQmxvY2tSZWFzb24SHAoYQkxPQ0tfUkVBU0'
-    '9OX1VOU1BFQ0lGSUVEEAASCgoGU0FGRVRZEAESCQoFT1RIRVIQAhINCglCTE9DS0xJU1QQAxIW'
-    'ChJQUk9ISUJJVEVEX0NPTlRFTlQQBBrcAQoNVXNhZ2VNZXRhZGF0YRIsChJwcm9tcHRfdG9rZW'
-    '5fY291bnQYASABKAVSEHByb21wdFRva2VuQ291bnQSOwoaY2FjaGVkX2NvbnRlbnRfdG9rZW5f'
-    'Y291bnQYBCABKAVSF2NhY2hlZENvbnRlbnRUb2tlbkNvdW50EjQKFmNhbmRpZGF0ZXNfdG9rZW'
-    '5fY291bnQYAiABKAVSFGNhbmRpZGF0ZXNUb2tlbkNvdW50EioKEXRvdGFsX3Rva2VuX2NvdW50'
-    'GAMgASgFUg90b3RhbFRva2VuQ291bnQ=');
+    'Z2VNZXRhZGF0YRIoCg1tb2RlbF92ZXJzaW9uGAQgASgJQgPgQQNSDG1vZGVsVmVyc2lvbhrWAg'
+    'oOUHJvbXB0RmVlZGJhY2sSfwoMYmxvY2tfcmVhc29uGAEgASgOMlcuZ29vZ2xlLmFpLmdlbmVy'
+    'YXRpdmVsYW5ndWFnZS52MWJldGEuR2VuZXJhdGVDb250ZW50UmVzcG9uc2UuUHJvbXB0RmVlZG'
+    'JhY2suQmxvY2tSZWFzb25CA+BBAVILYmxvY2tSZWFzb24SWAoOc2FmZXR5X3JhdGluZ3MYAiAD'
+    'KAsyMS5nb29nbGUuYWkuZ2VuZXJhdGl2ZWxhbmd1YWdlLnYxYmV0YS5TYWZldHlSYXRpbmdSDX'
+    'NhZmV0eVJhdGluZ3MiaQoLQmxvY2tSZWFzb24SHAoYQkxPQ0tfUkVBU09OX1VOU1BFQ0lGSUVE'
+    'EAASCgoGU0FGRVRZEAESCQoFT1RIRVIQAhINCglCTE9DS0xJU1QQAxIWChJQUk9ISUJJVEVEX0'
+    'NPTlRFTlQQBBrcAQoNVXNhZ2VNZXRhZGF0YRIsChJwcm9tcHRfdG9rZW5fY291bnQYASABKAVS'
+    'EHByb21wdFRva2VuQ291bnQSOwoaY2FjaGVkX2NvbnRlbnRfdG9rZW5fY291bnQYBCABKAVSF2'
+    'NhY2hlZENvbnRlbnRUb2tlbkNvdW50EjQKFmNhbmRpZGF0ZXNfdG9rZW5fY291bnQYAiABKAVS'
+    'FGNhbmRpZGF0ZXNUb2tlbkNvdW50EioKEXRvdGFsX3Rva2VuX2NvdW50GAMgASgFUg90b3RhbF'
+    'Rva2VuQ291bnQ=');
 
 @$core.Deprecated('Use candidateDescriptor instead')
 const Candidate$json = {
@@ -841,6 +850,13 @@ const GroundingMetadata$json = {
       '10': 'retrievalMetadata',
       '17': true
     },
+    {
+      '1': 'web_search_queries',
+      '3': 5,
+      '4': 3,
+      '5': 9,
+      '10': 'webSearchQueries'
+    },
   ],
   '8': [
     {'1': '_search_entry_point'},
@@ -857,8 +873,9 @@ final $typed_data.Uint8List groundingMetadataDescriptor = $convert.base64Decode(
     'dW5rcxJkChJncm91bmRpbmdfc3VwcG9ydHMYAyADKAsyNS5nb29nbGUuYWkuZ2VuZXJhdGl2ZW'
     'xhbmd1YWdlLnYxYmV0YS5Hcm91bmRpbmdTdXBwb3J0UhFncm91bmRpbmdTdXBwb3J0cxJqChJy'
     'ZXRyaWV2YWxfbWV0YWRhdGEYBCABKAsyNi5nb29nbGUuYWkuZ2VuZXJhdGl2ZWxhbmd1YWdlLn'
-    'YxYmV0YS5SZXRyaWV2YWxNZXRhZGF0YUgBUhFyZXRyaWV2YWxNZXRhZGF0YYgBAUIVChNfc2Vh'
-    'cmNoX2VudHJ5X3BvaW50QhUKE19yZXRyaWV2YWxfbWV0YWRhdGE=');
+    'YxYmV0YS5SZXRyaWV2YWxNZXRhZGF0YUgBUhFyZXRyaWV2YWxNZXRhZGF0YYgBARIsChJ3ZWJf'
+    'c2VhcmNoX3F1ZXJpZXMYBSADKAlSEHdlYlNlYXJjaFF1ZXJpZXNCFQoTX3NlYXJjaF9lbnRyeV'
+    '9wb2ludEIVChNfcmV0cmlldmFsX21ldGFkYXRh');
 
 @$core.Deprecated('Use searchEntryPointDescriptor instead')
 const SearchEntryPoint$json = {

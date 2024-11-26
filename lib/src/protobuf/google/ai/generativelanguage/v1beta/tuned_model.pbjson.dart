@@ -328,7 +328,6 @@ const TuningExamples$json = {
       '4': 3,
       '5': 11,
       '6': '.google.ai.generativelanguage.v1beta.TuningExample',
-      '8': {},
       '10': 'examples'
     },
   ],
@@ -336,8 +335,8 @@ const TuningExamples$json = {
 
 /// Descriptor for `TuningExamples`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List tuningExamplesDescriptor = $convert.base64Decode(
-    'Cg5UdW5pbmdFeGFtcGxlcxJTCghleGFtcGxlcxgBIAMoCzIyLmdvb2dsZS5haS5nZW5lcmF0aX'
-    'ZlbGFuZ3VhZ2UudjFiZXRhLlR1bmluZ0V4YW1wbGVCA+BBAlIIZXhhbXBsZXM=');
+    'Cg5UdW5pbmdFeGFtcGxlcxJOCghleGFtcGxlcxgBIAMoCzIyLmdvb2dsZS5haS5nZW5lcmF0aX'
+    'ZlbGFuZ3VhZ2UudjFiZXRhLlR1bmluZ0V4YW1wbGVSCGV4YW1wbGVz');
 
 @$core.Deprecated('Use tuningExampleDescriptor instead')
 const TuningExample$json = {

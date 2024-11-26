@@ -781,7 +781,7 @@ class Dataset extends $pb.GeneratedMessage {
   Dataset_Dataset whichDataset() => _Dataset_DatasetByTag[$_whichOneof(0)]!;
   void clearDataset() => clearField($_whichOneof(0));
 
-  /// Optional. Inline examples.
+  /// Optional. Inline examples with simple input/output text.
   @$pb.TagNumber(1)
   TuningExamples get examples => $_getN(0);
   @$pb.TagNumber(1)
@@ -849,8 +849,8 @@ class TuningExamples extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<TuningExamples>(create);
   static TuningExamples? _defaultInstance;
 
-  /// Required. The examples. Example input can be for text or discuss, but all
-  /// examples in a set must be of the same type.
+  /// The examples. Example input can be for text or discuss, but all examples
+  /// in a set must be of the same type.
   @$pb.TagNumber(1)
   $core.List<TuningExample> get examples => $_getList(0);
 }

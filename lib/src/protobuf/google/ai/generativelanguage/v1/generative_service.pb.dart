@@ -397,7 +397,7 @@ class GenerationConfig extends $pb.GeneratedMessage {
   ///  values will cause the model to start repeating a common token  until it
   ///  hits the
   ///  [max_output_tokens][google.ai.generativelanguage.v1.GenerationConfig.max_output_tokens]
-  ///  limit: "...the the the the the...".
+  ///  limit.
   @$pb.TagNumber(16)
   $core.double get frequencyPenalty => $_getN(7);
   @$pb.TagNumber(16)
@@ -657,6 +657,7 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
     $core.Iterable<Candidate>? candidates,
     GenerateContentResponse_PromptFeedback? promptFeedback,
     GenerateContentResponse_UsageMetadata? usageMetadata,
+    $core.String? modelVersion,
   }) {
     final $result = create();
     if (candidates != null) {
@@ -667,6 +668,9 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
     }
     if (usageMetadata != null) {
       $result.usageMetadata = usageMetadata;
+    }
+    if (modelVersion != null) {
+      $result.modelVersion = modelVersion;
     }
     return $result;
   }
@@ -691,6 +695,7 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
     ..aOM<GenerateContentResponse_UsageMetadata>(
         3, _omitFieldNames ? '' : 'usageMetadata',
         subBuilder: GenerateContentResponse_UsageMetadata.create)
+    ..aOS(4, _omitFieldNames ? '' : 'modelVersion')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -751,6 +756,19 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
   void clearUsageMetadata() => clearField(3);
   @$pb.TagNumber(3)
   GenerateContentResponse_UsageMetadata ensureUsageMetadata() => $_ensure(2);
+
+  /// Output only. The model version used to generate the response.
+  @$pb.TagNumber(4)
+  $core.String get modelVersion => $_getSZ(3);
+  @$pb.TagNumber(4)
+  set modelVersion($core.String v) {
+    $_setString(3, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasModelVersion() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearModelVersion() => clearField(4);
 }
 
 /// A response candidate generated from the model.
@@ -762,6 +780,7 @@ class Candidate extends $pb.GeneratedMessage {
     $core.Iterable<$330.SafetyRating>? safetyRatings,
     $331.CitationMetadata? citationMetadata,
     $core.int? tokenCount,
+    GroundingMetadata? groundingMetadata,
     $core.double? avgLogprobs,
     LogprobsResult? logprobsResult,
   }) {
@@ -783,6 +802,9 @@ class Candidate extends $pb.GeneratedMessage {
     }
     if (tokenCount != null) {
       $result.tokenCount = tokenCount;
+    }
+    if (groundingMetadata != null) {
+      $result.groundingMetadata = groundingMetadata;
     }
     if (avgLogprobs != null) {
       $result.avgLogprobs = avgLogprobs;
@@ -819,6 +841,8 @@ class Candidate extends $pb.GeneratedMessage {
     ..aOM<$331.CitationMetadata>(6, _omitFieldNames ? '' : 'citationMetadata',
         subBuilder: $331.CitationMetadata.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'tokenCount', $pb.PbFieldType.O3)
+    ..aOM<GroundingMetadata>(9, _omitFieldNames ? '' : 'groundingMetadata',
+        subBuilder: GroundingMetadata.create)
     ..a<$core.double>(
         10, _omitFieldNames ? '' : 'avgLogprobs', $pb.PbFieldType.OD)
     ..aOM<LogprobsResult>(11, _omitFieldNames ? '' : 'logprobsResult',
@@ -927,33 +951,50 @@ class Candidate extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearTokenCount() => clearField(7);
 
-  /// Output only.
+  ///  Output only. Grounding metadata for the candidate.
+  ///
+  ///  This field is populated for `GenerateContent` calls.
+  @$pb.TagNumber(9)
+  GroundingMetadata get groundingMetadata => $_getN(6);
+  @$pb.TagNumber(9)
+  set groundingMetadata(GroundingMetadata v) {
+    setField(9, v);
+  }
+
+  @$pb.TagNumber(9)
+  $core.bool hasGroundingMetadata() => $_has(6);
+  @$pb.TagNumber(9)
+  void clearGroundingMetadata() => clearField(9);
+  @$pb.TagNumber(9)
+  GroundingMetadata ensureGroundingMetadata() => $_ensure(6);
+
+  /// Output only. Average log probability score of the candidate.
   @$pb.TagNumber(10)
-  $core.double get avgLogprobs => $_getN(6);
+  $core.double get avgLogprobs => $_getN(7);
   @$pb.TagNumber(10)
   set avgLogprobs($core.double v) {
-    $_setDouble(6, v);
+    $_setDouble(7, v);
   }
 
   @$pb.TagNumber(10)
-  $core.bool hasAvgLogprobs() => $_has(6);
+  $core.bool hasAvgLogprobs() => $_has(7);
   @$pb.TagNumber(10)
   void clearAvgLogprobs() => clearField(10);
 
   /// Output only. Log-likelihood scores for the response tokens and top tokens
   @$pb.TagNumber(11)
-  LogprobsResult get logprobsResult => $_getN(7);
+  LogprobsResult get logprobsResult => $_getN(8);
   @$pb.TagNumber(11)
   set logprobsResult(LogprobsResult v) {
     setField(11, v);
   }
 
   @$pb.TagNumber(11)
-  $core.bool hasLogprobsResult() => $_has(7);
+  $core.bool hasLogprobsResult() => $_has(8);
   @$pb.TagNumber(11)
   void clearLogprobsResult() => clearField(11);
   @$pb.TagNumber(11)
-  LogprobsResult ensureLogprobsResult() => $_ensure(7);
+  LogprobsResult ensureLogprobsResult() => $_ensure(8);
 }
 
 /// Candidate for the logprobs token and score.
@@ -1187,6 +1228,653 @@ class LogprobsResult extends $pb.GeneratedMessage {
   /// The chosen candidates may or may not be in top_candidates.
   @$pb.TagNumber(2)
   $core.List<LogprobsResult_Candidate> get chosenCandidates => $_getList(1);
+}
+
+/// Metadata related to retrieval in the grounding flow.
+class RetrievalMetadata extends $pb.GeneratedMessage {
+  factory RetrievalMetadata({
+    $core.double? googleSearchDynamicRetrievalScore,
+  }) {
+    final $result = create();
+    if (googleSearchDynamicRetrievalScore != null) {
+      $result.googleSearchDynamicRetrievalScore =
+          googleSearchDynamicRetrievalScore;
+    }
+    return $result;
+  }
+  RetrievalMetadata._() : super();
+  factory RetrievalMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory RetrievalMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'RetrievalMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1'),
+      createEmptyInstance: create)
+    ..a<$core.double>(
+        2,
+        _omitFieldNames ? '' : 'googleSearchDynamicRetrievalScore',
+        $pb.PbFieldType.OF)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  RetrievalMetadata clone() => RetrievalMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  RetrievalMetadata copyWith(void Function(RetrievalMetadata) updates) =>
+      super.copyWith((message) => updates(message as RetrievalMetadata))
+          as RetrievalMetadata;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static RetrievalMetadata create() => RetrievalMetadata._();
+  RetrievalMetadata createEmptyInstance() => create();
+  static $pb.PbList<RetrievalMetadata> createRepeated() =>
+      $pb.PbList<RetrievalMetadata>();
+  @$core.pragma('dart2js:noInline')
+  static RetrievalMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<RetrievalMetadata>(create);
+  static RetrievalMetadata? _defaultInstance;
+
+  /// Optional. Score indicating how likely information from google search could
+  /// help answer the prompt. The score is in the range [0, 1], where 0 is the
+  /// least likely and 1 is the most likely. This score is only populated when
+  /// google search grounding and dynamic retrieval is enabled. It will be
+  /// compared to the threshold to determine whether to trigger google search.
+  @$pb.TagNumber(2)
+  $core.double get googleSearchDynamicRetrievalScore => $_getN(0);
+  @$pb.TagNumber(2)
+  set googleSearchDynamicRetrievalScore($core.double v) {
+    $_setFloat(0, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasGoogleSearchDynamicRetrievalScore() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearGoogleSearchDynamicRetrievalScore() => clearField(2);
+}
+
+/// Metadata returned to client when grounding is enabled.
+class GroundingMetadata extends $pb.GeneratedMessage {
+  factory GroundingMetadata({
+    SearchEntryPoint? searchEntryPoint,
+    $core.Iterable<GroundingChunk>? groundingChunks,
+    $core.Iterable<GroundingSupport>? groundingSupports,
+    RetrievalMetadata? retrievalMetadata,
+    $core.Iterable<$core.String>? webSearchQueries,
+  }) {
+    final $result = create();
+    if (searchEntryPoint != null) {
+      $result.searchEntryPoint = searchEntryPoint;
+    }
+    if (groundingChunks != null) {
+      $result.groundingChunks.addAll(groundingChunks);
+    }
+    if (groundingSupports != null) {
+      $result.groundingSupports.addAll(groundingSupports);
+    }
+    if (retrievalMetadata != null) {
+      $result.retrievalMetadata = retrievalMetadata;
+    }
+    if (webSearchQueries != null) {
+      $result.webSearchQueries.addAll(webSearchQueries);
+    }
+    return $result;
+  }
+  GroundingMetadata._() : super();
+  factory GroundingMetadata.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GroundingMetadata.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GroundingMetadata',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1'),
+      createEmptyInstance: create)
+    ..aOM<SearchEntryPoint>(1, _omitFieldNames ? '' : 'searchEntryPoint',
+        subBuilder: SearchEntryPoint.create)
+    ..pc<GroundingChunk>(
+        2, _omitFieldNames ? '' : 'groundingChunks', $pb.PbFieldType.PM,
+        subBuilder: GroundingChunk.create)
+    ..pc<GroundingSupport>(
+        3, _omitFieldNames ? '' : 'groundingSupports', $pb.PbFieldType.PM,
+        subBuilder: GroundingSupport.create)
+    ..aOM<RetrievalMetadata>(4, _omitFieldNames ? '' : 'retrievalMetadata',
+        subBuilder: RetrievalMetadata.create)
+    ..pPS(5, _omitFieldNames ? '' : 'webSearchQueries')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GroundingMetadata clone() => GroundingMetadata()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GroundingMetadata copyWith(void Function(GroundingMetadata) updates) =>
+      super.copyWith((message) => updates(message as GroundingMetadata))
+          as GroundingMetadata;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static GroundingMetadata create() => GroundingMetadata._();
+  GroundingMetadata createEmptyInstance() => create();
+  static $pb.PbList<GroundingMetadata> createRepeated() =>
+      $pb.PbList<GroundingMetadata>();
+  @$core.pragma('dart2js:noInline')
+  static GroundingMetadata getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GroundingMetadata>(create);
+  static GroundingMetadata? _defaultInstance;
+
+  /// Optional. Google search entry for the following-up web searches.
+  @$pb.TagNumber(1)
+  SearchEntryPoint get searchEntryPoint => $_getN(0);
+  @$pb.TagNumber(1)
+  set searchEntryPoint(SearchEntryPoint v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasSearchEntryPoint() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearSearchEntryPoint() => clearField(1);
+  @$pb.TagNumber(1)
+  SearchEntryPoint ensureSearchEntryPoint() => $_ensure(0);
+
+  /// List of supporting references retrieved from specified grounding source.
+  @$pb.TagNumber(2)
+  $core.List<GroundingChunk> get groundingChunks => $_getList(1);
+
+  /// List of grounding support.
+  @$pb.TagNumber(3)
+  $core.List<GroundingSupport> get groundingSupports => $_getList(2);
+
+  /// Metadata related to retrieval in the grounding flow.
+  @$pb.TagNumber(4)
+  RetrievalMetadata get retrievalMetadata => $_getN(3);
+  @$pb.TagNumber(4)
+  set retrievalMetadata(RetrievalMetadata v) {
+    setField(4, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasRetrievalMetadata() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearRetrievalMetadata() => clearField(4);
+  @$pb.TagNumber(4)
+  RetrievalMetadata ensureRetrievalMetadata() => $_ensure(3);
+
+  /// Web search queries for the following-up web search.
+  @$pb.TagNumber(5)
+  $core.List<$core.String> get webSearchQueries => $_getList(4);
+}
+
+/// Google search entry point.
+class SearchEntryPoint extends $pb.GeneratedMessage {
+  factory SearchEntryPoint({
+    $core.String? renderedContent,
+    $core.List<$core.int>? sdkBlob,
+  }) {
+    final $result = create();
+    if (renderedContent != null) {
+      $result.renderedContent = renderedContent;
+    }
+    if (sdkBlob != null) {
+      $result.sdkBlob = sdkBlob;
+    }
+    return $result;
+  }
+  SearchEntryPoint._() : super();
+  factory SearchEntryPoint.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SearchEntryPoint.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SearchEntryPoint',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'renderedContent')
+    ..a<$core.List<$core.int>>(
+        2, _omitFieldNames ? '' : 'sdkBlob', $pb.PbFieldType.OY)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SearchEntryPoint clone() => SearchEntryPoint()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SearchEntryPoint copyWith(void Function(SearchEntryPoint) updates) =>
+      super.copyWith((message) => updates(message as SearchEntryPoint))
+          as SearchEntryPoint;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static SearchEntryPoint create() => SearchEntryPoint._();
+  SearchEntryPoint createEmptyInstance() => create();
+  static $pb.PbList<SearchEntryPoint> createRepeated() =>
+      $pb.PbList<SearchEntryPoint>();
+  @$core.pragma('dart2js:noInline')
+  static SearchEntryPoint getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SearchEntryPoint>(create);
+  static SearchEntryPoint? _defaultInstance;
+
+  /// Optional. Web content snippet that can be embedded in a web page or an app
+  /// webview.
+  @$pb.TagNumber(1)
+  $core.String get renderedContent => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set renderedContent($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasRenderedContent() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearRenderedContent() => clearField(1);
+
+  /// Optional. Base64 encoded JSON representing array of <search term, search
+  /// url> tuple.
+  @$pb.TagNumber(2)
+  $core.List<$core.int> get sdkBlob => $_getN(1);
+  @$pb.TagNumber(2)
+  set sdkBlob($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasSdkBlob() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearSdkBlob() => clearField(2);
+}
+
+/// Chunk from the web.
+class GroundingChunk_Web extends $pb.GeneratedMessage {
+  factory GroundingChunk_Web({
+    $core.String? uri,
+    $core.String? title,
+  }) {
+    final $result = create();
+    if (uri != null) {
+      $result.uri = uri;
+    }
+    if (title != null) {
+      $result.title = title;
+    }
+    return $result;
+  }
+  GroundingChunk_Web._() : super();
+  factory GroundingChunk_Web.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GroundingChunk_Web.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GroundingChunk.Web',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'uri')
+    ..aOS(2, _omitFieldNames ? '' : 'title')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GroundingChunk_Web clone() => GroundingChunk_Web()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GroundingChunk_Web copyWith(void Function(GroundingChunk_Web) updates) =>
+      super.copyWith((message) => updates(message as GroundingChunk_Web))
+          as GroundingChunk_Web;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static GroundingChunk_Web create() => GroundingChunk_Web._();
+  GroundingChunk_Web createEmptyInstance() => create();
+  static $pb.PbList<GroundingChunk_Web> createRepeated() =>
+      $pb.PbList<GroundingChunk_Web>();
+  @$core.pragma('dart2js:noInline')
+  static GroundingChunk_Web getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GroundingChunk_Web>(create);
+  static GroundingChunk_Web? _defaultInstance;
+
+  /// URI reference of the chunk.
+  @$pb.TagNumber(1)
+  $core.String get uri => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set uri($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasUri() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearUri() => clearField(1);
+
+  /// Title of the chunk.
+  @$pb.TagNumber(2)
+  $core.String get title => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set title($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasTitle() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearTitle() => clearField(2);
+}
+
+enum GroundingChunk_ChunkType { web, notSet }
+
+/// Grounding chunk.
+class GroundingChunk extends $pb.GeneratedMessage {
+  factory GroundingChunk({
+    GroundingChunk_Web? web,
+  }) {
+    final $result = create();
+    if (web != null) {
+      $result.web = web;
+    }
+    return $result;
+  }
+  GroundingChunk._() : super();
+  factory GroundingChunk.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GroundingChunk.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, GroundingChunk_ChunkType>
+      _GroundingChunk_ChunkTypeByTag = {
+    1: GroundingChunk_ChunkType.web,
+    0: GroundingChunk_ChunkType.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GroundingChunk',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1'),
+      createEmptyInstance: create)
+    ..oo(0, [1])
+    ..aOM<GroundingChunk_Web>(1, _omitFieldNames ? '' : 'web',
+        subBuilder: GroundingChunk_Web.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GroundingChunk clone() => GroundingChunk()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GroundingChunk copyWith(void Function(GroundingChunk) updates) =>
+      super.copyWith((message) => updates(message as GroundingChunk))
+          as GroundingChunk;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static GroundingChunk create() => GroundingChunk._();
+  GroundingChunk createEmptyInstance() => create();
+  static $pb.PbList<GroundingChunk> createRepeated() =>
+      $pb.PbList<GroundingChunk>();
+  @$core.pragma('dart2js:noInline')
+  static GroundingChunk getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GroundingChunk>(create);
+  static GroundingChunk? _defaultInstance;
+
+  GroundingChunk_ChunkType whichChunkType() =>
+      _GroundingChunk_ChunkTypeByTag[$_whichOneof(0)]!;
+  void clearChunkType() => clearField($_whichOneof(0));
+
+  /// Grounding chunk from the web.
+  @$pb.TagNumber(1)
+  GroundingChunk_Web get web => $_getN(0);
+  @$pb.TagNumber(1)
+  set web(GroundingChunk_Web v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasWeb() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearWeb() => clearField(1);
+  @$pb.TagNumber(1)
+  GroundingChunk_Web ensureWeb() => $_ensure(0);
+}
+
+/// Segment of the content.
+class Segment extends $pb.GeneratedMessage {
+  factory Segment({
+    $core.int? partIndex,
+    $core.int? startIndex,
+    $core.int? endIndex,
+    $core.String? text,
+  }) {
+    final $result = create();
+    if (partIndex != null) {
+      $result.partIndex = partIndex;
+    }
+    if (startIndex != null) {
+      $result.startIndex = startIndex;
+    }
+    if (endIndex != null) {
+      $result.endIndex = endIndex;
+    }
+    if (text != null) {
+      $result.text = text;
+    }
+    return $result;
+  }
+  Segment._() : super();
+  factory Segment.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Segment.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Segment',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1'),
+      createEmptyInstance: create)
+    ..a<$core.int>(1, _omitFieldNames ? '' : 'partIndex', $pb.PbFieldType.O3)
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'startIndex', $pb.PbFieldType.O3)
+    ..a<$core.int>(3, _omitFieldNames ? '' : 'endIndex', $pb.PbFieldType.O3)
+    ..aOS(4, _omitFieldNames ? '' : 'text')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Segment clone() => Segment()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Segment copyWith(void Function(Segment) updates) =>
+      super.copyWith((message) => updates(message as Segment)) as Segment;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static Segment create() => Segment._();
+  Segment createEmptyInstance() => create();
+  static $pb.PbList<Segment> createRepeated() => $pb.PbList<Segment>();
+  @$core.pragma('dart2js:noInline')
+  static Segment getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Segment>(create);
+  static Segment? _defaultInstance;
+
+  /// Output only. The index of a Part object within its parent Content object.
+  @$pb.TagNumber(1)
+  $core.int get partIndex => $_getIZ(0);
+  @$pb.TagNumber(1)
+  set partIndex($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasPartIndex() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearPartIndex() => clearField(1);
+
+  /// Output only. Start index in the given Part, measured in bytes. Offset from
+  /// the start of the Part, inclusive, starting at zero.
+  @$pb.TagNumber(2)
+  $core.int get startIndex => $_getIZ(1);
+  @$pb.TagNumber(2)
+  set startIndex($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasStartIndex() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearStartIndex() => clearField(2);
+
+  /// Output only. End index in the given Part, measured in bytes. Offset from
+  /// the start of the Part, exclusive, starting at zero.
+  @$pb.TagNumber(3)
+  $core.int get endIndex => $_getIZ(2);
+  @$pb.TagNumber(3)
+  set endIndex($core.int v) {
+    $_setSignedInt32(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasEndIndex() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearEndIndex() => clearField(3);
+
+  /// Output only. The text corresponding to the segment from the response.
+  @$pb.TagNumber(4)
+  $core.String get text => $_getSZ(3);
+  @$pb.TagNumber(4)
+  set text($core.String v) {
+    $_setString(3, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasText() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearText() => clearField(4);
+}
+
+/// Grounding support.
+class GroundingSupport extends $pb.GeneratedMessage {
+  factory GroundingSupport({
+    Segment? segment,
+    $core.Iterable<$core.int>? groundingChunkIndices,
+    $core.Iterable<$core.double>? confidenceScores,
+  }) {
+    final $result = create();
+    if (segment != null) {
+      $result.segment = segment;
+    }
+    if (groundingChunkIndices != null) {
+      $result.groundingChunkIndices.addAll(groundingChunkIndices);
+    }
+    if (confidenceScores != null) {
+      $result.confidenceScores.addAll(confidenceScores);
+    }
+    return $result;
+  }
+  GroundingSupport._() : super();
+  factory GroundingSupport.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory GroundingSupport.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'GroundingSupport',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1'),
+      createEmptyInstance: create)
+    ..aOM<Segment>(1, _omitFieldNames ? '' : 'segment',
+        subBuilder: Segment.create)
+    ..p<$core.int>(
+        2, _omitFieldNames ? '' : 'groundingChunkIndices', $pb.PbFieldType.K3)
+    ..p<$core.double>(
+        3, _omitFieldNames ? '' : 'confidenceScores', $pb.PbFieldType.KF)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  GroundingSupport clone() => GroundingSupport()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  GroundingSupport copyWith(void Function(GroundingSupport) updates) =>
+      super.copyWith((message) => updates(message as GroundingSupport))
+          as GroundingSupport;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static GroundingSupport create() => GroundingSupport._();
+  GroundingSupport createEmptyInstance() => create();
+  static $pb.PbList<GroundingSupport> createRepeated() =>
+      $pb.PbList<GroundingSupport>();
+  @$core.pragma('dart2js:noInline')
+  static GroundingSupport getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<GroundingSupport>(create);
+  static GroundingSupport? _defaultInstance;
+
+  /// Segment of the content this support belongs to.
+  @$pb.TagNumber(1)
+  Segment get segment => $_getN(0);
+  @$pb.TagNumber(1)
+  set segment(Segment v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasSegment() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearSegment() => clearField(1);
+  @$pb.TagNumber(1)
+  Segment ensureSegment() => $_ensure(0);
+
+  /// A list of indices (into 'grounding_chunk') specifying the
+  /// citations associated with the claim. For instance [1,3,4] means
+  /// that grounding_chunk[1], grounding_chunk[3],
+  /// grounding_chunk[4] are the retrieved content attributed to the claim.
+  @$pb.TagNumber(2)
+  $core.List<$core.int> get groundingChunkIndices => $_getList(1);
+
+  /// Confidence score of the support references. Ranges from 0 to 1. 1 is the
+  /// most confident. This list must have the same size as the
+  /// grounding_chunk_indices.
+  @$pb.TagNumber(3)
+  $core.List<$core.double> get confidenceScores => $_getList(2);
 }
 
 /// Request containing the `Content` for the model to embed.

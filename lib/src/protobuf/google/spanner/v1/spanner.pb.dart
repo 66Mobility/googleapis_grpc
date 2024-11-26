@@ -1435,6 +1435,7 @@ class ExecuteSqlRequest extends $pb.GeneratedMessage {
     RequestOptions? requestOptions,
     DirectedReadOptions? directedReadOptions,
     $core.bool? dataBoostEnabled,
+    $core.bool? lastStatement,
   }) {
     final $result = create();
     if (session != null) {
@@ -1475,6 +1476,9 @@ class ExecuteSqlRequest extends $pb.GeneratedMessage {
     }
     if (dataBoostEnabled != null) {
       $result.dataBoostEnabled = dataBoostEnabled;
+    }
+    if (lastStatement != null) {
+      $result.lastStatement = lastStatement;
     }
     return $result;
   }
@@ -1522,6 +1526,7 @@ class ExecuteSqlRequest extends $pb.GeneratedMessage {
     ..aOM<DirectedReadOptions>(15, _omitFieldNames ? '' : 'directedReadOptions',
         subBuilder: DirectedReadOptions.create)
     ..aOB(16, _omitFieldNames ? '' : 'dataBoostEnabled')
+    ..aOB(17, _omitFieldNames ? '' : 'lastStatement')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1771,6 +1776,27 @@ class ExecuteSqlRequest extends $pb.GeneratedMessage {
   $core.bool hasDataBoostEnabled() => $_has(12);
   @$pb.TagNumber(16)
   void clearDataBoostEnabled() => clearField(16);
+
+  ///  Optional. If set to true, this statement marks the end of the transaction.
+  ///  The transaction should be committed or aborted after this statement
+  ///  executes, and attempts to execute any other requests against this
+  ///  transaction (including reads and queries) will be rejected.
+  ///
+  ///  For DML statements, setting this option may cause some error reporting to
+  ///  be deferred until commit time (e.g. validation of unique constraints).
+  ///  Given this, successful execution of a DML statement should not be assumed
+  ///  until a subsequent Commit call completes successfully.
+  @$pb.TagNumber(17)
+  $core.bool get lastStatement => $_getBF(13);
+  @$pb.TagNumber(17)
+  set lastStatement($core.bool v) {
+    $_setBool(13, v);
+  }
+
+  @$pb.TagNumber(17)
+  $core.bool hasLastStatement() => $_has(13);
+  @$pb.TagNumber(17)
+  void clearLastStatement() => clearField(17);
 }
 
 /// A single DML statement.
@@ -1906,6 +1932,7 @@ class ExecuteBatchDmlRequest extends $pb.GeneratedMessage {
     $core.Iterable<ExecuteBatchDmlRequest_Statement>? statements,
     $fixnum.Int64? seqno,
     RequestOptions? requestOptions,
+    $core.bool? lastStatements,
   }) {
     final $result = create();
     if (session != null) {
@@ -1922,6 +1949,9 @@ class ExecuteBatchDmlRequest extends $pb.GeneratedMessage {
     }
     if (requestOptions != null) {
       $result.requestOptions = requestOptions;
+    }
+    if (lastStatements != null) {
+      $result.lastStatements = lastStatements;
     }
     return $result;
   }
@@ -1947,6 +1977,7 @@ class ExecuteBatchDmlRequest extends $pb.GeneratedMessage {
     ..aInt64(4, _omitFieldNames ? '' : 'seqno')
     ..aOM<RequestOptions>(5, _omitFieldNames ? '' : 'requestOptions',
         subBuilder: RequestOptions.create)
+    ..aOB(6, _omitFieldNames ? '' : 'lastStatements')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2049,6 +2080,27 @@ class ExecuteBatchDmlRequest extends $pb.GeneratedMessage {
   void clearRequestOptions() => clearField(5);
   @$pb.TagNumber(5)
   RequestOptions ensureRequestOptions() => $_ensure(4);
+
+  ///  Optional. If set to true, this request marks the end of the transaction.
+  ///  The transaction should be committed or aborted after these statements
+  ///  execute, and attempts to execute any other requests against this
+  ///  transaction (including reads and queries) will be rejected.
+  ///
+  ///  Setting this option may cause some error reporting to be deferred until
+  ///  commit time (e.g. validation of unique constraints). Given this, successful
+  ///  execution of statements should not be assumed until a subsequent Commit
+  ///  call completes successfully.
+  @$pb.TagNumber(6)
+  $core.bool get lastStatements => $_getBF(5);
+  @$pb.TagNumber(6)
+  set lastStatements($core.bool v) {
+    $_setBool(5, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasLastStatements() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearLastStatements() => clearField(6);
 }
 
 ///  The response for

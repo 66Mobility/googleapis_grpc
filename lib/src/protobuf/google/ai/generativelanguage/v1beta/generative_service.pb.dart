@@ -538,7 +538,7 @@ class GenerationConfig extends $pb.GeneratedMessage {
   ///  values will cause the model to start repeating a common token  until it
   ///  hits the
   ///  [max_output_tokens][google.ai.generativelanguage.v1beta.GenerationConfig.max_output_tokens]
-  ///  limit: "...the the the the the...".
+  ///  limit.
   @$pb.TagNumber(16)
   $core.double get frequencyPenalty => $_getN(9);
   @$pb.TagNumber(16)
@@ -957,6 +957,7 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
     $core.Iterable<Candidate>? candidates,
     GenerateContentResponse_PromptFeedback? promptFeedback,
     GenerateContentResponse_UsageMetadata? usageMetadata,
+    $core.String? modelVersion,
   }) {
     final $result = create();
     if (candidates != null) {
@@ -967,6 +968,9 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
     }
     if (usageMetadata != null) {
       $result.usageMetadata = usageMetadata;
+    }
+    if (modelVersion != null) {
+      $result.modelVersion = modelVersion;
     }
     return $result;
   }
@@ -991,6 +995,7 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
     ..aOM<GenerateContentResponse_UsageMetadata>(
         3, _omitFieldNames ? '' : 'usageMetadata',
         subBuilder: GenerateContentResponse_UsageMetadata.create)
+    ..aOS(4, _omitFieldNames ? '' : 'modelVersion')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1051,6 +1056,19 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
   void clearUsageMetadata() => clearField(3);
   @$pb.TagNumber(3)
   GenerateContentResponse_UsageMetadata ensureUsageMetadata() => $_ensure(2);
+
+  /// Output only. The model version used to generate the response.
+  @$pb.TagNumber(4)
+  $core.String get modelVersion => $_getSZ(3);
+  @$pb.TagNumber(4)
+  set modelVersion($core.String v) {
+    $_setString(3, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasModelVersion() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearModelVersion() => clearField(4);
 }
 
 /// A response candidate generated from the model.
@@ -1264,7 +1282,7 @@ class Candidate extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   GroundingMetadata ensureGroundingMetadata() => $_ensure(7);
 
-  /// Output only.
+  /// Output only. Average log probability score of the candidate.
   @$pb.TagNumber(10)
   $core.double get avgLogprobs => $_getN(8);
   @$pb.TagNumber(10)
@@ -1987,6 +2005,7 @@ class GroundingMetadata extends $pb.GeneratedMessage {
     $core.Iterable<GroundingChunk>? groundingChunks,
     $core.Iterable<GroundingSupport>? groundingSupports,
     RetrievalMetadata? retrievalMetadata,
+    $core.Iterable<$core.String>? webSearchQueries,
   }) {
     final $result = create();
     if (searchEntryPoint != null) {
@@ -2000,6 +2019,9 @@ class GroundingMetadata extends $pb.GeneratedMessage {
     }
     if (retrievalMetadata != null) {
       $result.retrievalMetadata = retrievalMetadata;
+    }
+    if (webSearchQueries != null) {
+      $result.webSearchQueries.addAll(webSearchQueries);
     }
     return $result;
   }
@@ -2026,6 +2048,7 @@ class GroundingMetadata extends $pb.GeneratedMessage {
         subBuilder: GroundingSupport.create)
     ..aOM<RetrievalMetadata>(4, _omitFieldNames ? '' : 'retrievalMetadata',
         subBuilder: RetrievalMetadata.create)
+    ..pPS(5, _omitFieldNames ? '' : 'webSearchQueries')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2088,6 +2111,10 @@ class GroundingMetadata extends $pb.GeneratedMessage {
   void clearRetrievalMetadata() => clearField(4);
   @$pb.TagNumber(4)
   RetrievalMetadata ensureRetrievalMetadata() => $_ensure(3);
+
+  /// Web search queries for the following-up web search.
+  @$pb.TagNumber(5)
+  $core.List<$core.String> get webSearchQueries => $_getList(4);
 }
 
 /// Google search entry point.

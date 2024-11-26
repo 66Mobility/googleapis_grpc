@@ -212,7 +212,7 @@ const UpdateTunedModelRequest$json = {
 final $typed_data.Uint8List updateTunedModelRequestDescriptor = $convert.base64Decode(
     'ChdVcGRhdGVUdW5lZE1vZGVsUmVxdWVzdBJVCgt0dW5lZF9tb2RlbBgBIAEoCzIvLmdvb2dsZS'
     '5haS5nZW5lcmF0aXZlbGFuZ3VhZ2UudjFiZXRhLlR1bmVkTW9kZWxCA+BBAlIKdHVuZWRNb2Rl'
-    'bBJACgt1cGRhdGVfbWFzaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2tCA+BBAl'
+    'bBJACgt1cGRhdGVfbWFzaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2tCA+BBAV'
     'IKdXBkYXRlTWFzaw==');
 
 @$core.Deprecated('Use deleteTunedModelRequestDescriptor instead')
