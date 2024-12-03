@@ -21,6 +21,7 @@ class CppFeatures extends $pb.GeneratedMessage {
   factory CppFeatures({
     $core.bool? legacyClosedEnum,
     CppFeatures_StringType? stringType,
+    $core.bool? enumNameUsesStringView,
   }) {
     final $result = create();
     if (legacyClosedEnum != null) {
@@ -28,6 +29,9 @@ class CppFeatures extends $pb.GeneratedMessage {
     }
     if (stringType != null) {
       $result.stringType = stringType;
+    }
+    if (enumNameUsesStringView != null) {
+      $result.enumNameUsesStringView = enumNameUsesStringView;
     }
     return $result;
   }
@@ -49,6 +53,7 @@ class CppFeatures extends $pb.GeneratedMessage {
         defaultOrMaker: CppFeatures_StringType.STRING_TYPE_UNKNOWN,
         valueOf: CppFeatures_StringType.valueOf,
         enumValues: CppFeatures_StringType.values)
+    ..aOB(3, _omitFieldNames ? '' : 'enumNameUsesStringView')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -100,6 +105,18 @@ class CppFeatures extends $pb.GeneratedMessage {
   $core.bool hasStringType() => $_has(1);
   @$pb.TagNumber(2)
   void clearStringType() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.bool get enumNameUsesStringView => $_getBF(2);
+  @$pb.TagNumber(3)
+  set enumNameUsesStringView($core.bool v) {
+    $_setBool(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasEnumNameUsesStringView() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearEnumNameUsesStringView() => clearField(3);
 }
 
 class Cpp_features {

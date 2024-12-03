@@ -48,11 +48,15 @@ class ComputeRoutesRequest_ReferenceRoute extends $pb.ProtobufEnum {
   static const ComputeRoutesRequest_ReferenceRoute FUEL_EFFICIENT =
       ComputeRoutesRequest_ReferenceRoute._(
           1, _omitEnumNames ? '' : 'FUEL_EFFICIENT');
+  static const ComputeRoutesRequest_ReferenceRoute SHORTER_DISTANCE =
+      ComputeRoutesRequest_ReferenceRoute._(
+          2, _omitEnumNames ? '' : 'SHORTER_DISTANCE');
 
   static const $core.List<ComputeRoutesRequest_ReferenceRoute> values =
       <ComputeRoutesRequest_ReferenceRoute>[
     REFERENCE_ROUTE_UNSPECIFIED,
     FUEL_EFFICIENT,
+    SHORTER_DISTANCE,
   ];
 
   static final $core.Map<$core.int, ComputeRoutesRequest_ReferenceRoute>

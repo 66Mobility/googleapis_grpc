@@ -34,6 +34,14 @@ const CppFeatures$json = {
       '8': {},
       '10': 'stringType'
     },
+    {
+      '1': 'enum_name_uses_string_view',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'enumNameUsesStringView'
+    },
   ],
   '4': [CppFeatures_StringType$json],
 };
@@ -53,10 +61,12 @@ const CppFeatures_StringType$json = {
 final $typed_data.Uint8List cppFeaturesDescriptor = $convert.base64Decode(
     'CgtDcHBGZWF0dXJlcxKNAgoSbGVnYWN5X2Nsb3NlZF9lbnVtGAEgASgIQt4BiAEBmAEEmAEBog'
     'EJEgR0cnVlGIQHogEKEgVmYWxzZRjnB7IBuAEI6AcQ6AcarwFUaGUgbGVnYWN5IGNsb3NlZCBl'
-    'bnVtIHRyZWF0bWVudCBpbiBDKysgaXMgZGVwcmVjYXRlZCBhbmQgaXMgc2NoZWR1bGVkIHRvIG'
-    'JlIHJlbW92ZWQgaW4gZWRpdGlvbiAyMDI1LiAgTWFyayBlbnVtIHR5cGUgb24gdGhlIGVudW0g'
-    'ZGVmaW5pdGlvbnMgdGhlbXNlbHZlcyByYXRoZXIgdGhhbiBvbiBmaWVsZHMuUhBsZWdhY3lDbG'
+    'bnVtIGJlaGF2aW9yIGluIEMrKyBpcyBkZXByZWNhdGVkIGFuZCBpcyBzY2hlZHVsZWQgdG8gYm'
+    'UgcmVtb3ZlZCBpbiBlZGl0aW9uIDIwMjUuICBTZWUgaHR0cDovL3Byb3RvYnVmLmRldi9wcm9n'
+    'cmFtbWluZy1ndWlkZXMvZW51bS8jY3BwIGZvciBtb3JlIGluZm9ybWF0aW9uUhBsZWdhY3lDbG'
     '9zZWRFbnVtEmYKC3N0cmluZ190eXBlGAIgASgOMhoucGIuQ3BwRmVhdHVyZXMuU3RyaW5nVHlw'
     'ZUIpiAEBmAEEmAEBogELEgZTVFJJTkcYhAeiAQkSBFZJRVcY6QeyAQMI6AdSCnN0cmluZ1R5cG'
-    'UiRQoKU3RyaW5nVHlwZRIXChNTVFJJTkdfVFlQRV9VTktOT1dOEAASCAoEVklFVxABEggKBENP'
-    'UkQQAhIKCgZTVFJJTkcQAw==');
+    'USZAoaZW51bV9uYW1lX3VzZXNfc3RyaW5nX3ZpZXcYAyABKAhCKIgBApgBBpgBAaIBChIFZmFs'
+    'c2UYhAeiAQkSBHRydWUY6QeyAQMI6QdSFmVudW1OYW1lVXNlc1N0cmluZ1ZpZXciRQoKU3RyaW'
+    '5nVHlwZRIXChNTVFJJTkdfVFlQRV9VTktOT1dOEAASCAoEVklFVxABEggKBENPUkQQAhIKCgZT'
+    'VFJJTkcQAw==');

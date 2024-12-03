@@ -45,7 +45,8 @@ class FileDescriptorSet extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..pc<FileDescriptorProto>(
         1, _omitFieldNames ? '' : 'file', $pb.PbFieldType.PM,
-        subBuilder: FileDescriptorProto.create);
+        subBuilder: FileDescriptorProto.create)
+    ..hasExtensions = true;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
       'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -4556,7 +4557,7 @@ class SourceCodeInfo extends $pb.GeneratedMessage {
     ..pc<SourceCodeInfo_Location>(
         1, _omitFieldNames ? '' : 'location', $pb.PbFieldType.PM,
         subBuilder: SourceCodeInfo_Location.create)
-    ..hasRequiredFields = false;
+    ..hasExtensions = true;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
       'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '

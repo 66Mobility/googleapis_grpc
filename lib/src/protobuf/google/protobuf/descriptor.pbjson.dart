@@ -54,12 +54,15 @@ const FileDescriptorSet$json = {
       '10': 'file'
     },
   ],
+  '5': [
+    {'1': 536000000, '2': 536000001},
+  ],
 };
 
 /// Descriptor for `FileDescriptorSet`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List fileDescriptorSetDescriptor = $convert.base64Decode(
     'ChFGaWxlRGVzY3JpcHRvclNldBI4CgRmaWxlGAEgAygLMiQuZ29vZ2xlLnByb3RvYnVmLkZpbG'
-    'VEZXNjcmlwdG9yUHJvdG9SBGZpbGU=');
+    'VEZXNjcmlwdG9yUHJvdG9SBGZpbGUqDAiA7Mr/ARCB7Mr/AQ==');
 
 @$core.Deprecated('Use fileDescriptorProtoDescriptor instead')
 const FileDescriptorProto$json = {
@@ -1688,6 +1691,9 @@ const SourceCodeInfo$json = {
     },
   ],
   '3': [SourceCodeInfo_Location$json],
+  '5': [
+    {'1': 536000000, '2': 536000001},
+  ],
 };
 
 @$core.Deprecated('Use sourceCodeInfoDescriptor instead')
@@ -1735,7 +1741,7 @@ final $typed_data.Uint8List sourceCodeInfoDescriptor = $convert.base64Decode(
     'KAVCAhABUgRwYXRoEhYKBHNwYW4YAiADKAVCAhABUgRzcGFuEikKEGxlYWRpbmdfY29tbWVudH'
     'MYAyABKAlSD2xlYWRpbmdDb21tZW50cxIrChF0cmFpbGluZ19jb21tZW50cxgEIAEoCVIQdHJh'
     'aWxpbmdDb21tZW50cxI6ChlsZWFkaW5nX2RldGFjaGVkX2NvbW1lbnRzGAYgAygJUhdsZWFkaW'
-    '5nRGV0YWNoZWRDb21tZW50cw==');
+    '5nRGV0YWNoZWRDb21tZW50cyoMCIDsyv8BEIHsyv8B');
 
 @$core.Deprecated('Use generatedCodeInfoDescriptor instead')
 const GeneratedCodeInfo$json = {

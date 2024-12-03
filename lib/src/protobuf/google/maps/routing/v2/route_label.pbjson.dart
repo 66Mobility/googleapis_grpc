@@ -21,10 +21,12 @@ const RouteLabel$json = {
     {'1': 'DEFAULT_ROUTE', '2': 1},
     {'1': 'DEFAULT_ROUTE_ALTERNATE', '2': 2},
     {'1': 'FUEL_EFFICIENT', '2': 3},
+    {'1': 'SHORTER_DISTANCE', '2': 4},
   ],
 };
 
 /// Descriptor for `RouteLabel`. Decode as a `google.protobuf.EnumDescriptorProto`.
 final $typed_data.Uint8List routeLabelDescriptor = $convert.base64Decode(
     'CgpSb3V0ZUxhYmVsEhsKF1JPVVRFX0xBQkVMX1VOU1BFQ0lGSUVEEAASEQoNREVGQVVMVF9ST1'
-    'VURRABEhsKF0RFRkFVTFRfUk9VVEVfQUxURVJOQVRFEAISEgoORlVFTF9FRkZJQ0lFTlQQAw==');
+    'VURRABEhsKF0RFRkFVTFRfUk9VVEVfQUxURVJOQVRFEAISEgoORlVFTF9FRkZJQ0lFTlQQAxIU'
+    'ChBTSE9SVEVSX0RJU1RBTkNFEAQ=');

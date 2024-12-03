@@ -24,12 +24,15 @@ class RouteLabel extends $pb.ProtobufEnum {
       RouteLabel._(2, _omitEnumNames ? '' : 'DEFAULT_ROUTE_ALTERNATE');
   static const RouteLabel FUEL_EFFICIENT =
       RouteLabel._(3, _omitEnumNames ? '' : 'FUEL_EFFICIENT');
+  static const RouteLabel SHORTER_DISTANCE =
+      RouteLabel._(4, _omitEnumNames ? '' : 'SHORTER_DISTANCE');
 
   static const $core.List<RouteLabel> values = <RouteLabel>[
     ROUTE_LABEL_UNSPECIFIED,
     DEFAULT_ROUTE,
     DEFAULT_ROUTE_ALTERNATE,
     FUEL_EFFICIENT,
+    SHORTER_DISTANCE,
   ];
 
   static final $core.Map<$core.int, RouteLabel> _byValue =
