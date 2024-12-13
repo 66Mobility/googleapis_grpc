@@ -18,6 +18,7 @@ analyzer:
     empty_constructor_bodies: ignore
     implementation_imports: ignore
     unnecessary_library_name: ignore
+    unintended_html_in_doc_comment: ignore
 # Uncomment the following section to specify additional rules.
 
 # linter:
