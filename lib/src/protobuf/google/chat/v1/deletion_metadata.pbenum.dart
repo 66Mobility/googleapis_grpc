@@ -13,7 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-/// Who deleted the message and how it was deleted.
+/// Who deleted the message and how it was deleted. More values may be added in
+/// the future.
 class DeletionMetadata_DeletionType extends $pb.ProtobufEnum {
   static const DeletionMetadata_DeletionType DELETION_TYPE_UNSPECIFIED =
       DeletionMetadata_DeletionType._(

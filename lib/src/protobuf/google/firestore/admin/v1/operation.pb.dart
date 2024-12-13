@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 import 'index.pb.dart' as $119;
 import 'operation.pbenum.dart';
 
@@ -25,8 +25,8 @@ export 'operation.pbenum.dart';
 /// [FirestoreAdmin.CreateIndex][google.firestore.admin.v1.FirestoreAdmin.CreateIndex].
 class IndexOperationMetadata extends $pb.GeneratedMessage {
   factory IndexOperationMetadata({
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     $core.String? index,
     OperationState? state,
     Progress? progressDocuments,
@@ -66,10 +66,10 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.firestore.admin.v1'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'index')
     ..e<OperationState>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
         defaultOrMaker: OperationState.OPERATION_STATE_UNSPECIFIED,
@@ -108,9 +108,9 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
 
   /// The time this operation started.
   @$pb.TagNumber(1)
-  $302.Timestamp get startTime => $_getN(0);
+  $304.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -119,14 +119,14 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureStartTime() => $_ensure(0);
+  $304.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time this operation completed. Will be unset if operation still in
   /// progress.
   @$pb.TagNumber(2)
-  $302.Timestamp get endTime => $_getN(1);
+  $304.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -135,7 +135,7 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureEndTime() => $_ensure(1);
+  $304.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The index resource that this operation is acting on. For example:
   /// `projects/{project_id}/databases/{database_id}/collectionGroups/{collection_id}/indexes/{index_id}`
@@ -372,8 +372,8 @@ class FieldOperationMetadata_TtlConfigDelta extends $pb.GeneratedMessage {
 /// [FirestoreAdmin.UpdateField][google.firestore.admin.v1.FirestoreAdmin.UpdateField].
 class FieldOperationMetadata extends $pb.GeneratedMessage {
   factory FieldOperationMetadata({
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     $core.String? field_3,
     $core.Iterable<FieldOperationMetadata_IndexConfigDelta>? indexConfigDeltas,
     OperationState? state,
@@ -421,10 +421,10 @@ class FieldOperationMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.firestore.admin.v1'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'field')
     ..pc<FieldOperationMetadata_IndexConfigDelta>(
         4, _omitFieldNames ? '' : 'indexConfigDeltas', $pb.PbFieldType.PM,
@@ -469,9 +469,9 @@ class FieldOperationMetadata extends $pb.GeneratedMessage {
 
   /// The time this operation started.
   @$pb.TagNumber(1)
-  $302.Timestamp get startTime => $_getN(0);
+  $304.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -480,14 +480,14 @@ class FieldOperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureStartTime() => $_ensure(0);
+  $304.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time this operation completed. Will be unset if operation still in
   /// progress.
   @$pb.TagNumber(2)
-  $302.Timestamp get endTime => $_getN(1);
+  $304.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -496,7 +496,7 @@ class FieldOperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureEndTime() => $_ensure(1);
+  $304.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The field resource that this operation is acting on. For example:
   /// `projects/{project_id}/databases/{database_id}/collectionGroups/{collection_id}/fields/{field_path}`
@@ -583,15 +583,15 @@ class FieldOperationMetadata extends $pb.GeneratedMessage {
 /// [FirestoreAdmin.ExportDocuments][google.firestore.admin.v1.FirestoreAdmin.ExportDocuments].
 class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   factory ExportDocumentsMetadata({
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     OperationState? operationState,
     Progress? progressDocuments,
     Progress? progressBytes,
     $core.Iterable<$core.String>? collectionIds,
     $core.String? outputUriPrefix,
     $core.Iterable<$core.String>? namespaceIds,
-    $302.Timestamp? snapshotTime,
+    $304.Timestamp? snapshotTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -636,10 +636,10 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.firestore.admin.v1'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..e<OperationState>(
         3, _omitFieldNames ? '' : 'operationState', $pb.PbFieldType.OE,
         defaultOrMaker: OperationState.OPERATION_STATE_UNSPECIFIED,
@@ -652,8 +652,8 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
     ..pPS(6, _omitFieldNames ? '' : 'collectionIds')
     ..aOS(7, _omitFieldNames ? '' : 'outputUriPrefix')
     ..pPS(8, _omitFieldNames ? '' : 'namespaceIds')
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'snapshotTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(9, _omitFieldNames ? '' : 'snapshotTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -683,9 +683,9 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
 
   /// The time this operation started.
   @$pb.TagNumber(1)
-  $302.Timestamp get startTime => $_getN(0);
+  $304.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -694,14 +694,14 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureStartTime() => $_ensure(0);
+  $304.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time this operation completed. Will be unset if operation still in
   /// progress.
   @$pb.TagNumber(2)
-  $302.Timestamp get endTime => $_getN(1);
+  $304.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -710,7 +710,7 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureEndTime() => $_ensure(1);
+  $304.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The state of the export operation.
   @$pb.TagNumber(3)
@@ -780,9 +780,9 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   /// exported. If unspecified, there are no guarantees about the consistency of
   /// the documents being exported.
   @$pb.TagNumber(9)
-  $302.Timestamp get snapshotTime => $_getN(8);
+  $304.Timestamp get snapshotTime => $_getN(8);
   @$pb.TagNumber(9)
-  set snapshotTime($302.Timestamp v) {
+  set snapshotTime($304.Timestamp v) {
     setField(9, v);
   }
 
@@ -791,7 +791,7 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearSnapshotTime() => clearField(9);
   @$pb.TagNumber(9)
-  $302.Timestamp ensureSnapshotTime() => $_ensure(8);
+  $304.Timestamp ensureSnapshotTime() => $_ensure(8);
 }
 
 /// Metadata for [google.longrunning.Operation][google.longrunning.Operation]
@@ -799,8 +799,8 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
 /// [FirestoreAdmin.ImportDocuments][google.firestore.admin.v1.FirestoreAdmin.ImportDocuments].
 class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   factory ImportDocumentsMetadata({
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     OperationState? operationState,
     Progress? progressDocuments,
     Progress? progressBytes,
@@ -848,10 +848,10 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.firestore.admin.v1'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..e<OperationState>(
         3, _omitFieldNames ? '' : 'operationState', $pb.PbFieldType.OE,
         defaultOrMaker: OperationState.OPERATION_STATE_UNSPECIFIED,
@@ -893,9 +893,9 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
 
   /// The time this operation started.
   @$pb.TagNumber(1)
-  $302.Timestamp get startTime => $_getN(0);
+  $304.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -904,14 +904,14 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureStartTime() => $_ensure(0);
+  $304.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time this operation completed. Will be unset if operation still in
   /// progress.
   @$pb.TagNumber(2)
-  $302.Timestamp get endTime => $_getN(1);
+  $304.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -920,7 +920,7 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureEndTime() => $_ensure(1);
+  $304.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The state of the import operation.
   @$pb.TagNumber(3)
@@ -992,14 +992,14 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
 /// [FirestoreAdmin.BulkDeleteDocuments][google.firestore.admin.v1.FirestoreAdmin.BulkDeleteDocuments].
 class BulkDeleteDocumentsMetadata extends $pb.GeneratedMessage {
   factory BulkDeleteDocumentsMetadata({
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     OperationState? operationState,
     Progress? progressDocuments,
     Progress? progressBytes,
     $core.Iterable<$core.String>? collectionIds,
     $core.Iterable<$core.String>? namespaceIds,
-    $302.Timestamp? snapshotTime,
+    $304.Timestamp? snapshotTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -1041,10 +1041,10 @@ class BulkDeleteDocumentsMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.firestore.admin.v1'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..e<OperationState>(
         3, _omitFieldNames ? '' : 'operationState', $pb.PbFieldType.OE,
         defaultOrMaker: OperationState.OPERATION_STATE_UNSPECIFIED,
@@ -1056,8 +1056,8 @@ class BulkDeleteDocumentsMetadata extends $pb.GeneratedMessage {
         subBuilder: Progress.create)
     ..pPS(6, _omitFieldNames ? '' : 'collectionIds')
     ..pPS(7, _omitFieldNames ? '' : 'namespaceIds')
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'snapshotTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'snapshotTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1089,9 +1089,9 @@ class BulkDeleteDocumentsMetadata extends $pb.GeneratedMessage {
 
   /// The time this operation started.
   @$pb.TagNumber(1)
-  $302.Timestamp get startTime => $_getN(0);
+  $304.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -1100,14 +1100,14 @@ class BulkDeleteDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureStartTime() => $_ensure(0);
+  $304.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time this operation completed. Will be unset if operation still in
   /// progress.
   @$pb.TagNumber(2)
-  $302.Timestamp get endTime => $_getN(1);
+  $304.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -1116,7 +1116,7 @@ class BulkDeleteDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureEndTime() => $_ensure(1);
+  $304.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The state of the operation.
   @$pb.TagNumber(3)
@@ -1174,9 +1174,9 @@ class BulkDeleteDocumentsMetadata extends $pb.GeneratedMessage {
   /// the timestamp of PITR in case of disaster recovery (subject to PITR window
   /// limit).
   @$pb.TagNumber(8)
-  $302.Timestamp get snapshotTime => $_getN(7);
+  $304.Timestamp get snapshotTime => $_getN(7);
   @$pb.TagNumber(8)
-  set snapshotTime($302.Timestamp v) {
+  set snapshotTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -1185,7 +1185,7 @@ class BulkDeleteDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearSnapshotTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureSnapshotTime() => $_ensure(7);
+  $304.Timestamp ensureSnapshotTime() => $_ensure(7);
 }
 
 /// Returned in the [google.longrunning.Operation][google.longrunning.Operation]
@@ -1261,8 +1261,8 @@ class ExportDocumentsResponse extends $pb.GeneratedMessage {
 /// the [RestoreDatabase][google.firestore.admin.v1.RestoreDatabase] request.
 class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
   factory RestoreDatabaseMetadata({
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     OperationState? operationState,
     $core.String? database,
     $core.String? backup,
@@ -1302,10 +1302,10 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.firestore.admin.v1'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..e<OperationState>(
         3, _omitFieldNames ? '' : 'operationState', $pb.PbFieldType.OE,
         defaultOrMaker: OperationState.OPERATION_STATE_UNSPECIFIED,
@@ -1344,9 +1344,9 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
 
   /// The time the restore was started.
   @$pb.TagNumber(1)
-  $302.Timestamp get startTime => $_getN(0);
+  $304.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -1355,13 +1355,13 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureStartTime() => $_ensure(0);
+  $304.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the restore finished, unset for ongoing restores.
   @$pb.TagNumber(2)
-  $302.Timestamp get endTime => $_getN(1);
+  $304.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -1370,7 +1370,7 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureEndTime() => $_ensure(1);
+  $304.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The operation state of the restore.
   @$pb.TagNumber(3)

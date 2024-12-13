@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'entity_display.pb.dart' as $282;
+import 'entity_display.pb.dart' as $284;
 
 /// Represents an entity object that contains the regular expression that is
 /// used for comparison.
 class RegularExpressionType_Entity extends $pb.GeneratedMessage {
   factory RegularExpressionType_Entity({
-    $282.EntityDisplay? display,
+    $284.EntityDisplay? display,
     $core.Iterable<$core.String>? regularExpressions,
   }) {
     final $result = create();
@@ -45,8 +45,8 @@ class RegularExpressionType_Entity extends $pb.GeneratedMessage {
           ? ''
           : 'google.actions.sdk.v2.interactionmodel.type'),
       createEmptyInstance: create)
-    ..aOM<$282.EntityDisplay>(1, _omitFieldNames ? '' : 'display',
-        subBuilder: $282.EntityDisplay.create)
+    ..aOM<$284.EntityDisplay>(1, _omitFieldNames ? '' : 'display',
+        subBuilder: $284.EntityDisplay.create)
     ..pPS(2, _omitFieldNames ? '' : 'regularExpressions')
     ..hasRequiredFields = false;
 
@@ -80,9 +80,9 @@ class RegularExpressionType_Entity extends $pb.GeneratedMessage {
   /// Optional. Elements that will be displayed on the canvas once an entity is
   /// extracted from a query. Only relevant for canvas enabled apps.
   @$pb.TagNumber(1)
-  $282.EntityDisplay get display => $_getN(0);
+  $284.EntityDisplay get display => $_getN(0);
   @$pb.TagNumber(1)
-  set display($282.EntityDisplay v) {
+  set display($284.EntityDisplay v) {
     setField(1, v);
   }
 
@@ -91,7 +91,7 @@ class RegularExpressionType_Entity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearDisplay() => clearField(1);
   @$pb.TagNumber(1)
-  $282.EntityDisplay ensureDisplay() => $_ensure(0);
+  $284.EntityDisplay ensureDisplay() => $_ensure(0);
 
   /// Required. Uses RE2 regex syntax (See
   /// https://github.com/google/re2/wiki/Syntax for more details)

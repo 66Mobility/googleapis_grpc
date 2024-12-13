@@ -104,19 +104,20 @@ const ListNotificationChannelsRequest$json = {
   '1': 'ListNotificationChannelsRequest',
   '2': [
     {'1': 'name', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'filter', '3': 6, '4': 1, '5': 9, '10': 'filter'},
-    {'1': 'order_by', '3': 7, '4': 1, '5': 9, '10': 'orderBy'},
-    {'1': 'page_size', '3': 3, '4': 1, '5': 5, '10': 'pageSize'},
-    {'1': 'page_token', '3': 4, '4': 1, '5': 9, '10': 'pageToken'},
+    {'1': 'filter', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'filter'},
+    {'1': 'order_by', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'orderBy'},
+    {'1': 'page_size', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
+    {'1': 'page_token', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
   ],
 };
 
 /// Descriptor for `ListNotificationChannelsRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List listNotificationChannelsRequestDescriptor = $convert.base64Decode(
     'Ch9MaXN0Tm90aWZpY2F0aW9uQ2hhbm5lbHNSZXF1ZXN0EkkKBG5hbWUYBSABKAlCNeBBAvpBLx'
-    'ItbW9uaXRvcmluZy5nb29nbGVhcGlzLmNvbS9Ob3RpZmljYXRpb25DaGFubmVsUgRuYW1lEhYK'
-    'BmZpbHRlchgGIAEoCVIGZmlsdGVyEhkKCG9yZGVyX2J5GAcgASgJUgdvcmRlckJ5EhsKCXBhZ2'
-    'Vfc2l6ZRgDIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2tlbhgEIAEoCVIJcGFnZVRva2Vu');
+    'ItbW9uaXRvcmluZy5nb29nbGVhcGlzLmNvbS9Ob3RpZmljYXRpb25DaGFubmVsUgRuYW1lEhsK'
+    'BmZpbHRlchgGIAEoCUID4EEBUgZmaWx0ZXISHgoIb3JkZXJfYnkYByABKAlCA+BBAVIHb3JkZX'
+    'JCeRIgCglwYWdlX3NpemUYAyABKAVCA+BBAVIIcGFnZVNpemUSIgoKcGFnZV90b2tlbhgEIAEo'
+    'CUID4EEBUglwYWdlVG9rZW4=');
 
 @$core.Deprecated('Use listNotificationChannelsResponseDescriptor instead')
 const ListNotificationChannelsResponse$json = {
@@ -167,6 +168,7 @@ const UpdateNotificationChannelRequest$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.FieldMask',
+      '8': {},
       '10': 'updateMask'
     },
     {
@@ -184,10 +186,10 @@ const UpdateNotificationChannelRequest$json = {
 /// Descriptor for `UpdateNotificationChannelRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List updateNotificationChannelRequestDescriptor =
     $convert.base64Decode(
-        'CiBVcGRhdGVOb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBI7Cgt1cGRhdGVfbWFzaxgCIAEoCz'
-        'IaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2tSCnVwZGF0ZU1hc2sSYQoUbm90aWZpY2F0aW9u'
-        'X2NoYW5uZWwYAyABKAsyKS5nb29nbGUubW9uaXRvcmluZy52My5Ob3RpZmljYXRpb25DaGFubm'
-        'VsQgPgQQJSE25vdGlmaWNhdGlvbkNoYW5uZWw=');
+        'CiBVcGRhdGVOb3RpZmljYXRpb25DaGFubmVsUmVxdWVzdBJACgt1cGRhdGVfbWFzaxgCIAEoCz'
+        'IaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2tCA+BBAVIKdXBkYXRlTWFzaxJhChRub3RpZmlj'
+        'YXRpb25fY2hhbm5lbBgDIAEoCzIpLmdvb2dsZS5tb25pdG9yaW5nLnYzLk5vdGlmaWNhdGlvbk'
+        'NoYW5uZWxCA+BBAlITbm90aWZpY2F0aW9uQ2hhbm5lbA==');
 
 @$core.Deprecated('Use deleteNotificationChannelRequestDescriptor instead')
 const DeleteNotificationChannelRequest$json = {

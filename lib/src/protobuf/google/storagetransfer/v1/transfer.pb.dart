@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
-import 'transfer_types.pb.dart' as $256;
+import '../../protobuf/field_mask.pb.dart' as $335;
+import 'transfer_types.pb.dart' as $258;
 
 /// Request passed to GetGoogleServiceAccount.
 class GetGoogleServiceAccountRequest extends $pb.GeneratedMessage {
@@ -88,7 +88,7 @@ class GetGoogleServiceAccountRequest extends $pb.GeneratedMessage {
 /// Request passed to CreateTransferJob.
 class CreateTransferJobRequest extends $pb.GeneratedMessage {
   factory CreateTransferJobRequest({
-    $256.TransferJob? transferJob,
+    $258.TransferJob? transferJob,
   }) {
     final $result = create();
     if (transferJob != null) {
@@ -109,8 +109,8 @@ class CreateTransferJobRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.storagetransfer.v1'),
       createEmptyInstance: create)
-    ..aOM<$256.TransferJob>(1, _omitFieldNames ? '' : 'transferJob',
-        subBuilder: $256.TransferJob.create)
+    ..aOM<$258.TransferJob>(1, _omitFieldNames ? '' : 'transferJob',
+        subBuilder: $258.TransferJob.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -140,9 +140,9 @@ class CreateTransferJobRequest extends $pb.GeneratedMessage {
 
   /// Required. The job to create.
   @$pb.TagNumber(1)
-  $256.TransferJob get transferJob => $_getN(0);
+  $258.TransferJob get transferJob => $_getN(0);
   @$pb.TagNumber(1)
-  set transferJob($256.TransferJob v) {
+  set transferJob($258.TransferJob v) {
     setField(1, v);
   }
 
@@ -151,7 +151,7 @@ class CreateTransferJobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTransferJob() => clearField(1);
   @$pb.TagNumber(1)
-  $256.TransferJob ensureTransferJob() => $_ensure(0);
+  $258.TransferJob ensureTransferJob() => $_ensure(0);
 }
 
 /// Request passed to UpdateTransferJob.
@@ -159,8 +159,8 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
   factory UpdateTransferJobRequest({
     $core.String? jobName,
     $core.String? projectId,
-    $256.TransferJob? transferJob,
-    $333.FieldMask? updateTransferJobFieldMask,
+    $258.TransferJob? transferJob,
+    $335.FieldMask? updateTransferJobFieldMask,
   }) {
     final $result = create();
     if (jobName != null) {
@@ -192,11 +192,11 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'jobName')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
-    ..aOM<$256.TransferJob>(3, _omitFieldNames ? '' : 'transferJob',
-        subBuilder: $256.TransferJob.create)
-    ..aOM<$333.FieldMask>(
+    ..aOM<$258.TransferJob>(3, _omitFieldNames ? '' : 'transferJob',
+        subBuilder: $258.TransferJob.create)
+    ..aOM<$335.FieldMask>(
         4, _omitFieldNames ? '' : 'updateTransferJobFieldMask',
-        subBuilder: $333.FieldMask.create)
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -264,9 +264,9 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
   /// [DELETED][google.storagetransfer.v1.TransferJob.Status.DELETED] requires
   /// `storagetransfer.jobs.delete` permission.
   @$pb.TagNumber(3)
-  $256.TransferJob get transferJob => $_getN(2);
+  $258.TransferJob get transferJob => $_getN(2);
   @$pb.TagNumber(3)
-  set transferJob($256.TransferJob v) {
+  set transferJob($258.TransferJob v) {
     setField(3, v);
   }
 
@@ -275,7 +275,7 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearTransferJob() => clearField(3);
   @$pb.TagNumber(3)
-  $256.TransferJob ensureTransferJob() => $_ensure(2);
+  $258.TransferJob ensureTransferJob() => $_ensure(2);
 
   /// The field mask of the fields in `transferJob` that are to be updated in
   /// this request.  Fields in `transferJob` that can be updated are:
@@ -289,9 +289,9 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
   /// rejected with the error
   /// [INVALID_ARGUMENT][google.rpc.Code.INVALID_ARGUMENT].
   @$pb.TagNumber(4)
-  $333.FieldMask get updateTransferJobFieldMask => $_getN(3);
+  $335.FieldMask get updateTransferJobFieldMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTransferJobFieldMask($333.FieldMask v) {
+  set updateTransferJobFieldMask($335.FieldMask v) {
     setField(4, v);
   }
 
@@ -300,7 +300,7 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearUpdateTransferJobFieldMask() => clearField(4);
   @$pb.TagNumber(4)
-  $333.FieldMask ensureUpdateTransferJobFieldMask() => $_ensure(3);
+  $335.FieldMask ensureUpdateTransferJobFieldMask() => $_ensure(3);
 }
 
 /// Request passed to GetTransferJob.
@@ -590,7 +590,7 @@ class ListTransferJobsRequest extends $pb.GeneratedMessage {
 /// Response from ListTransferJobs.
 class ListTransferJobsResponse extends $pb.GeneratedMessage {
   factory ListTransferJobsResponse({
-    $core.Iterable<$256.TransferJob>? transferJobs,
+    $core.Iterable<$258.TransferJob>? transferJobs,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -615,9 +615,9 @@ class ListTransferJobsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.storagetransfer.v1'),
       createEmptyInstance: create)
-    ..pc<$256.TransferJob>(
+    ..pc<$258.TransferJob>(
         1, _omitFieldNames ? '' : 'transferJobs', $pb.PbFieldType.PM,
-        subBuilder: $256.TransferJob.create)
+        subBuilder: $258.TransferJob.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -648,7 +648,7 @@ class ListTransferJobsResponse extends $pb.GeneratedMessage {
 
   /// A list of transfer jobs.
   @$pb.TagNumber(1)
-  $core.List<$256.TransferJob> get transferJobs => $_getList(0);
+  $core.List<$258.TransferJob> get transferJobs => $_getList(0);
 
   /// The list next page token.
   @$pb.TagNumber(2)
@@ -889,7 +889,7 @@ class RunTransferJobRequest extends $pb.GeneratedMessage {
 class CreateAgentPoolRequest extends $pb.GeneratedMessage {
   factory CreateAgentPoolRequest({
     $core.String? projectId,
-    $256.AgentPool? agentPool,
+    $258.AgentPool? agentPool,
     $core.String? agentPoolId,
   }) {
     final $result = create();
@@ -918,8 +918,8 @@ class CreateAgentPoolRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.storagetransfer.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
-    ..aOM<$256.AgentPool>(2, _omitFieldNames ? '' : 'agentPool',
-        subBuilder: $256.AgentPool.create)
+    ..aOM<$258.AgentPool>(2, _omitFieldNames ? '' : 'agentPool',
+        subBuilder: $258.AgentPool.create)
     ..aOS(3, _omitFieldNames ? '' : 'agentPoolId')
     ..hasRequiredFields = false;
 
@@ -964,9 +964,9 @@ class CreateAgentPoolRequest extends $pb.GeneratedMessage {
 
   /// Required. The agent pool to create.
   @$pb.TagNumber(2)
-  $256.AgentPool get agentPool => $_getN(1);
+  $258.AgentPool get agentPool => $_getN(1);
   @$pb.TagNumber(2)
-  set agentPool($256.AgentPool v) {
+  set agentPool($258.AgentPool v) {
     setField(2, v);
   }
 
@@ -975,7 +975,7 @@ class CreateAgentPoolRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearAgentPool() => clearField(2);
   @$pb.TagNumber(2)
-  $256.AgentPool ensureAgentPool() => $_ensure(1);
+  $258.AgentPool ensureAgentPool() => $_ensure(1);
 
   ///  Required. The ID of the agent pool to create.
   ///
@@ -1006,8 +1006,8 @@ class CreateAgentPoolRequest extends $pb.GeneratedMessage {
 /// Specifies the request passed to UpdateAgentPool.
 class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
   factory UpdateAgentPoolRequest({
-    $256.AgentPool? agentPool,
-    $333.FieldMask? updateMask,
+    $258.AgentPool? agentPool,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (agentPool != null) {
@@ -1031,10 +1031,10 @@ class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.storagetransfer.v1'),
       createEmptyInstance: create)
-    ..aOM<$256.AgentPool>(1, _omitFieldNames ? '' : 'agentPool',
-        subBuilder: $256.AgentPool.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$258.AgentPool>(1, _omitFieldNames ? '' : 'agentPool',
+        subBuilder: $258.AgentPool.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1073,9 +1073,9 @@ class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
   ///  An `UpdateAgentPoolRequest` with any other fields is rejected
   ///  with the error [INVALID_ARGUMENT][google.rpc.Code.INVALID_ARGUMENT].
   @$pb.TagNumber(1)
-  $256.AgentPool get agentPool => $_getN(0);
+  $258.AgentPool get agentPool => $_getN(0);
   @$pb.TagNumber(1)
-  set agentPool($256.AgentPool v) {
+  set agentPool($258.AgentPool v) {
     setField(1, v);
   }
 
@@ -1084,7 +1084,7 @@ class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearAgentPool() => clearField(1);
   @$pb.TagNumber(1)
-  $256.AgentPool ensureAgentPool() => $_ensure(0);
+  $258.AgentPool ensureAgentPool() => $_ensure(0);
 
   ///  The [field mask]
   ///  (https://developers.google.com/protocol-buffers/docs/reference/google.protobuf)
@@ -1095,9 +1095,9 @@ class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
   ///
   ///  *  [bandwidth_limit][google.storagetransfer.v1.AgentPool.bandwidth_limit]
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -1106,7 +1106,7 @@ class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Specifies the request passed to GetAgentPool.
@@ -1369,7 +1369,7 @@ class ListAgentPoolsRequest extends $pb.GeneratedMessage {
 /// Response from ListAgentPools.
 class ListAgentPoolsResponse extends $pb.GeneratedMessage {
   factory ListAgentPoolsResponse({
-    $core.Iterable<$256.AgentPool>? agentPools,
+    $core.Iterable<$258.AgentPool>? agentPools,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1394,9 +1394,9 @@ class ListAgentPoolsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.storagetransfer.v1'),
       createEmptyInstance: create)
-    ..pc<$256.AgentPool>(
+    ..pc<$258.AgentPool>(
         1, _omitFieldNames ? '' : 'agentPools', $pb.PbFieldType.PM,
-        subBuilder: $256.AgentPool.create)
+        subBuilder: $258.AgentPool.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -1427,7 +1427,7 @@ class ListAgentPoolsResponse extends $pb.GeneratedMessage {
 
   /// A list of agent pools.
   @$pb.TagNumber(1)
-  $core.List<$256.AgentPool> get agentPools => $_getList(0);
+  $core.List<$258.AgentPool> get agentPools => $_getList(0);
 
   /// The list next page token.
   @$pb.TagNumber(2)

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../longrunning/operations.pb.dart' as $13;
-import '../../../../protobuf/field_mask.pb.dart' as $333;
-import '../../../../protobuf/timestamp.pb.dart' as $302;
-import 'common.pb.dart' as $551;
-import 'common.pbenum.dart' as $551;
+import '../../../../protobuf/field_mask.pb.dart' as $335;
+import '../../../../protobuf/timestamp.pb.dart' as $304;
+import 'common.pb.dart' as $556;
+import 'common.pbenum.dart' as $556;
 import 'spanner_instance_admin.pbenum.dart';
 
 export 'spanner_instance_admin.pbenum.dart';
@@ -405,7 +405,7 @@ enum ReplicaComputeCapacity_ComputeCapacity {
 /// allocated to each replica identified by the replica selection.
 class ReplicaComputeCapacity extends $pb.GeneratedMessage {
   factory ReplicaComputeCapacity({
-    $551.ReplicaSelection? replicaSelection,
+    $556.ReplicaSelection? replicaSelection,
     $core.int? nodeCount,
     $core.int? processingUnits,
   }) {
@@ -441,8 +441,8 @@ class ReplicaComputeCapacity extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
       createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$551.ReplicaSelection>(1, _omitFieldNames ? '' : 'replicaSelection',
-        subBuilder: $551.ReplicaSelection.create)
+    ..aOM<$556.ReplicaSelection>(1, _omitFieldNames ? '' : 'replicaSelection',
+        subBuilder: $556.ReplicaSelection.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'nodeCount', $pb.PbFieldType.O3)
     ..a<$core.int>(
         3, _omitFieldNames ? '' : 'processingUnits', $pb.PbFieldType.O3)
@@ -480,9 +480,9 @@ class ReplicaComputeCapacity extends $pb.GeneratedMessage {
   /// Required. Identifies replicas by specified properties.
   /// All replicas in the selection have the same amount of compute capacity.
   @$pb.TagNumber(1)
-  $551.ReplicaSelection get replicaSelection => $_getN(0);
+  $556.ReplicaSelection get replicaSelection => $_getN(0);
   @$pb.TagNumber(1)
-  set replicaSelection($551.ReplicaSelection v) {
+  set replicaSelection($556.ReplicaSelection v) {
     setField(1, v);
   }
 
@@ -491,7 +491,7 @@ class ReplicaComputeCapacity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearReplicaSelection() => clearField(1);
   @$pb.TagNumber(1)
-  $551.ReplicaSelection ensureReplicaSelection() => $_ensure(0);
+  $556.ReplicaSelection ensureReplicaSelection() => $_ensure(0);
 
   ///  The number of nodes allocated to each replica.
   ///
@@ -924,7 +924,7 @@ class AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides
 class AutoscalingConfig_AsymmetricAutoscalingOption
     extends $pb.GeneratedMessage {
   factory AutoscalingConfig_AsymmetricAutoscalingOption({
-    $551.ReplicaSelection? replicaSelection,
+    $556.ReplicaSelection? replicaSelection,
     AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides?
         overrides,
   }) {
@@ -951,8 +951,8 @@ class AutoscalingConfig_AsymmetricAutoscalingOption
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
       createEmptyInstance: create)
-    ..aOM<$551.ReplicaSelection>(1, _omitFieldNames ? '' : 'replicaSelection',
-        subBuilder: $551.ReplicaSelection.create)
+    ..aOM<$556.ReplicaSelection>(1, _omitFieldNames ? '' : 'replicaSelection',
+        subBuilder: $556.ReplicaSelection.create)
     ..aOM<AutoscalingConfig_AsymmetricAutoscalingOption_AutoscalingConfigOverrides>(
         2, _omitFieldNames ? '' : 'overrides',
         subBuilder:
@@ -994,9 +994,9 @@ class AutoscalingConfig_AsymmetricAutoscalingOption
   /// Required. Selects the replicas to which this AsymmetricAutoscalingOption
   /// applies. Only read-only replicas are supported.
   @$pb.TagNumber(1)
-  $551.ReplicaSelection get replicaSelection => $_getN(0);
+  $556.ReplicaSelection get replicaSelection => $_getN(0);
   @$pb.TagNumber(1)
-  set replicaSelection($551.ReplicaSelection v) {
+  set replicaSelection($556.ReplicaSelection v) {
     setField(1, v);
   }
 
@@ -1005,7 +1005,7 @@ class AutoscalingConfig_AsymmetricAutoscalingOption
   @$pb.TagNumber(1)
   void clearReplicaSelection() => clearField(1);
   @$pb.TagNumber(1)
-  $551.ReplicaSelection ensureReplicaSelection() => $_ensure(0);
+  $556.ReplicaSelection ensureReplicaSelection() => $_ensure(0);
 
   /// Optional. Overrides applied to the top-level autoscaling configuration
   /// for the selected replicas.
@@ -1153,8 +1153,8 @@ class Instance extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? labels,
     $core.Iterable<$core.String>? endpointUris,
     $core.int? processingUnits,
-    $302.Timestamp? createTime,
-    $302.Timestamp? updateTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? updateTime,
     AutoscalingConfig? autoscalingConfig,
     $core.Iterable<ReplicaComputeCapacity>? replicaComputeCapacity,
     Instance_Edition? edition,
@@ -1234,10 +1234,10 @@ class Instance extends $pb.GeneratedMessage {
     ..pPS(8, _omitFieldNames ? '' : 'endpointUris')
     ..a<$core.int>(
         9, _omitFieldNames ? '' : 'processingUnits', $pb.PbFieldType.O3)
-    ..aOM<$302.Timestamp>(11, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(12, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(11, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(12, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
     ..aOM<AutoscalingConfig>(17, _omitFieldNames ? '' : 'autoscalingConfig',
         subBuilder: AutoscalingConfig.create)
     ..pc<ReplicaComputeCapacity>(
@@ -1434,9 +1434,9 @@ class Instance extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the instance was created.
   @$pb.TagNumber(11)
-  $302.Timestamp get createTime => $_getN(8);
+  $304.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(11)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(11, v);
   }
 
@@ -1445,13 +1445,13 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $302.Timestamp ensureCreateTime() => $_ensure(8);
+  $304.Timestamp ensureCreateTime() => $_ensure(8);
 
   /// Output only. The time at which the instance was most recently updated.
   @$pb.TagNumber(12)
-  $302.Timestamp get updateTime => $_getN(9);
+  $304.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(12)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(12, v);
   }
 
@@ -1460,7 +1460,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $302.Timestamp ensureUpdateTime() => $_ensure(9);
+  $304.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// Optional. The autoscaling configuration. Autoscaling is enabled if this
   /// field is set. When autoscaling is enabled, node_count and processing_units
@@ -1923,7 +1923,7 @@ class CreateInstanceConfigRequest extends $pb.GeneratedMessage {
 class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
   factory UpdateInstanceConfigRequest({
     InstanceConfig? instanceConfig,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -1953,8 +1953,8 @@ class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig',
         subBuilder: InstanceConfig.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false;
 
@@ -2013,9 +2013,9 @@ class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
   /// from being erased accidentally by clients that do not know about them. Only
   /// display_name and labels can be updated.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -2024,7 +2024,7 @@ class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// An option to validate, but not actually execute, a request,
   /// and provide the same response.
@@ -2421,7 +2421,7 @@ class ListInstanceConfigOperationsResponse extends $pb.GeneratedMessage {
 class GetInstanceRequest extends $pb.GeneratedMessage {
   factory GetInstanceRequest({
     $core.String? name,
-    $333.FieldMask? fieldMask,
+    $335.FieldMask? fieldMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -2446,8 +2446,8 @@ class GetInstanceRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2492,9 +2492,9 @@ class GetInstanceRequest extends $pb.GeneratedMessage {
   /// returned. If absent, all
   /// [Instance][google.spanner.admin.instance.v1.Instance] fields are returned.
   @$pb.TagNumber(2)
-  $333.FieldMask get fieldMask => $_getN(1);
+  $335.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($333.FieldMask v) {
+  set fieldMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -2503,7 +2503,7 @@ class GetInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureFieldMask() => $_ensure(1);
+  $335.FieldMask ensureFieldMask() => $_ensure(1);
 }
 
 /// The request for
@@ -2624,7 +2624,7 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? filter,
-    $302.Timestamp? instanceDeadline,
+    $304.Timestamp? instanceDeadline,
   }) {
     final $result = create();
     if (parent != null) {
@@ -2661,8 +2661,8 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'filter')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'instanceDeadline',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'instanceDeadline',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2771,9 +2771,9 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
   /// in
   /// [ListInstancesResponse][google.spanner.admin.instance.v1.ListInstancesResponse].
   @$pb.TagNumber(5)
-  $302.Timestamp get instanceDeadline => $_getN(4);
+  $304.Timestamp get instanceDeadline => $_getN(4);
   @$pb.TagNumber(5)
-  set instanceDeadline($302.Timestamp v) {
+  set instanceDeadline($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -2782,7 +2782,7 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearInstanceDeadline() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureInstanceDeadline() => $_ensure(4);
+  $304.Timestamp ensureInstanceDeadline() => $_ensure(4);
 }
 
 /// The response for
@@ -2881,7 +2881,7 @@ class ListInstancesResponse extends $pb.GeneratedMessage {
 class UpdateInstanceRequest extends $pb.GeneratedMessage {
   factory UpdateInstanceRequest({
     Instance? instance,
-    $333.FieldMask? fieldMask,
+    $335.FieldMask? fieldMask,
   }) {
     final $result = create();
     if (instance != null) {
@@ -2907,8 +2907,8 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<Instance>(1, _omitFieldNames ? '' : 'instance',
         subBuilder: Instance.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2960,9 +2960,9 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
   /// [Instance][google.spanner.admin.instance.v1.Instance] from being erased
   /// accidentally by clients that do not know about them.
   @$pb.TagNumber(2)
-  $333.FieldMask get fieldMask => $_getN(1);
+  $335.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($333.FieldMask v) {
+  set fieldMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -2971,7 +2971,7 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureFieldMask() => $_ensure(1);
+  $335.FieldMask ensureFieldMask() => $_ensure(1);
 }
 
 /// The request for
@@ -3047,10 +3047,10 @@ class DeleteInstanceRequest extends $pb.GeneratedMessage {
 class CreateInstanceMetadata extends $pb.GeneratedMessage {
   factory CreateInstanceMetadata({
     Instance? instance,
-    $302.Timestamp? startTime,
-    $302.Timestamp? cancelTime,
-    $302.Timestamp? endTime,
-    $551.FulfillmentPeriod? expectedFulfillmentPeriod,
+    $304.Timestamp? startTime,
+    $304.Timestamp? cancelTime,
+    $304.Timestamp? endTime,
+    $556.FulfillmentPeriod? expectedFulfillmentPeriod,
   }) {
     final $result = create();
     if (instance != null) {
@@ -3085,17 +3085,17 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<Instance>(1, _omitFieldNames ? '' : 'instance',
         subBuilder: Instance.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
-    ..e<$551.FulfillmentPeriod>(5,
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
+    ..e<$556.FulfillmentPeriod>(5,
         _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE,
-        defaultOrMaker: $551.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED,
-        valueOf: $551.FulfillmentPeriod.valueOf,
-        enumValues: $551.FulfillmentPeriod.values)
+        defaultOrMaker: $556.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED,
+        valueOf: $556.FulfillmentPeriod.valueOf,
+        enumValues: $556.FulfillmentPeriod.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3142,9 +3142,9 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
   /// [CreateInstance][google.spanner.admin.instance.v1.InstanceAdmin.CreateInstance]
   /// request was received.
   @$pb.TagNumber(2)
-  $302.Timestamp get startTime => $_getN(1);
+  $304.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -3153,15 +3153,15 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureStartTime() => $_ensure(1);
+  $304.Timestamp ensureStartTime() => $_ensure(1);
 
   /// The time at which this operation was cancelled. If set, this operation is
   /// in the process of undoing itself (which is guaranteed to succeed) and
   /// cannot be cancelled again.
   @$pb.TagNumber(3)
-  $302.Timestamp get cancelTime => $_getN(2);
+  $304.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) {
+  set cancelTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -3170,13 +3170,13 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCancelTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureCancelTime() => $_ensure(2);
+  $304.Timestamp ensureCancelTime() => $_ensure(2);
 
   /// The time at which this operation failed or was completed successfully.
   @$pb.TagNumber(4)
-  $302.Timestamp get endTime => $_getN(3);
+  $304.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -3185,13 +3185,13 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureEndTime() => $_ensure(3);
+  $304.Timestamp ensureEndTime() => $_ensure(3);
 
   /// The expected fulfillment period of this create operation.
   @$pb.TagNumber(5)
-  $551.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
+  $556.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
   @$pb.TagNumber(5)
-  set expectedFulfillmentPeriod($551.FulfillmentPeriod v) {
+  set expectedFulfillmentPeriod($556.FulfillmentPeriod v) {
     setField(5, v);
   }
 
@@ -3206,10 +3206,10 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
 class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   factory UpdateInstanceMetadata({
     Instance? instance,
-    $302.Timestamp? startTime,
-    $302.Timestamp? cancelTime,
-    $302.Timestamp? endTime,
-    $551.FulfillmentPeriod? expectedFulfillmentPeriod,
+    $304.Timestamp? startTime,
+    $304.Timestamp? cancelTime,
+    $304.Timestamp? endTime,
+    $556.FulfillmentPeriod? expectedFulfillmentPeriod,
   }) {
     final $result = create();
     if (instance != null) {
@@ -3244,17 +3244,17 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<Instance>(1, _omitFieldNames ? '' : 'instance',
         subBuilder: Instance.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
-    ..e<$551.FulfillmentPeriod>(5,
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
+    ..e<$556.FulfillmentPeriod>(5,
         _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE,
-        defaultOrMaker: $551.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED,
-        valueOf: $551.FulfillmentPeriod.valueOf,
-        enumValues: $551.FulfillmentPeriod.values)
+        defaultOrMaker: $556.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED,
+        valueOf: $556.FulfillmentPeriod.valueOf,
+        enumValues: $556.FulfillmentPeriod.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3301,9 +3301,9 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   /// [UpdateInstance][google.spanner.admin.instance.v1.InstanceAdmin.UpdateInstance]
   /// request was received.
   @$pb.TagNumber(2)
-  $302.Timestamp get startTime => $_getN(1);
+  $304.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -3312,15 +3312,15 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureStartTime() => $_ensure(1);
+  $304.Timestamp ensureStartTime() => $_ensure(1);
 
   /// The time at which this operation was cancelled. If set, this operation is
   /// in the process of undoing itself (which is guaranteed to succeed) and
   /// cannot be cancelled again.
   @$pb.TagNumber(3)
-  $302.Timestamp get cancelTime => $_getN(2);
+  $304.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) {
+  set cancelTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -3329,13 +3329,13 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCancelTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureCancelTime() => $_ensure(2);
+  $304.Timestamp ensureCancelTime() => $_ensure(2);
 
   /// The time at which this operation failed or was completed successfully.
   @$pb.TagNumber(4)
-  $302.Timestamp get endTime => $_getN(3);
+  $304.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -3344,13 +3344,13 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureEndTime() => $_ensure(3);
+  $304.Timestamp ensureEndTime() => $_ensure(3);
 
   /// The expected fulfillment period of this update operation.
   @$pb.TagNumber(5)
-  $551.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
+  $556.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
   @$pb.TagNumber(5)
-  set expectedFulfillmentPeriod($551.FulfillmentPeriod v) {
+  set expectedFulfillmentPeriod($556.FulfillmentPeriod v) {
     setField(5, v);
   }
 
@@ -3365,8 +3365,8 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
 class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   factory CreateInstanceConfigMetadata({
     InstanceConfig? instanceConfig,
-    $551.OperationProgress? progress,
-    $302.Timestamp? cancelTime,
+    $556.OperationProgress? progress,
+    $304.Timestamp? cancelTime,
   }) {
     final $result = create();
     if (instanceConfig != null) {
@@ -3395,10 +3395,10 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig',
         subBuilder: InstanceConfig.create)
-    ..aOM<$551.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
-        subBuilder: $551.OperationProgress.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$556.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $556.OperationProgress.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3447,9 +3447,9 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   /// [CreateInstanceConfig][google.spanner.admin.instance.v1.InstanceAdmin.CreateInstanceConfig]
   /// operation.
   @$pb.TagNumber(2)
-  $551.OperationProgress get progress => $_getN(1);
+  $556.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($551.OperationProgress v) {
+  set progress($556.OperationProgress v) {
     setField(2, v);
   }
 
@@ -3458,13 +3458,13 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $551.OperationProgress ensureProgress() => $_ensure(1);
+  $556.OperationProgress ensureProgress() => $_ensure(1);
 
   /// The time at which this operation was cancelled.
   @$pb.TagNumber(3)
-  $302.Timestamp get cancelTime => $_getN(2);
+  $304.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) {
+  set cancelTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -3473,7 +3473,7 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCancelTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureCancelTime() => $_ensure(2);
+  $304.Timestamp ensureCancelTime() => $_ensure(2);
 }
 
 /// Metadata type for the operation returned by
@@ -3481,8 +3481,8 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
 class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   factory UpdateInstanceConfigMetadata({
     InstanceConfig? instanceConfig,
-    $551.OperationProgress? progress,
-    $302.Timestamp? cancelTime,
+    $556.OperationProgress? progress,
+    $304.Timestamp? cancelTime,
   }) {
     final $result = create();
     if (instanceConfig != null) {
@@ -3511,10 +3511,10 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig',
         subBuilder: InstanceConfig.create)
-    ..aOM<$551.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
-        subBuilder: $551.OperationProgress.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$556.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $556.OperationProgress.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3563,9 +3563,9 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   /// [UpdateInstanceConfig][google.spanner.admin.instance.v1.InstanceAdmin.UpdateInstanceConfig]
   /// operation.
   @$pb.TagNumber(2)
-  $551.OperationProgress get progress => $_getN(1);
+  $556.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($551.OperationProgress v) {
+  set progress($556.OperationProgress v) {
     setField(2, v);
   }
 
@@ -3574,13 +3574,13 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $551.OperationProgress ensureProgress() => $_ensure(1);
+  $556.OperationProgress ensureProgress() => $_ensure(1);
 
   /// The time at which this operation was cancelled.
   @$pb.TagNumber(3)
-  $302.Timestamp get cancelTime => $_getN(2);
+  $304.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) {
+  set cancelTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -3589,7 +3589,7 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCancelTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureCancelTime() => $_ensure(2);
+  $304.Timestamp ensureCancelTime() => $_ensure(2);
 }
 
 enum InstancePartition_ComputeCapacity { nodeCount, processingUnits, notSet }
@@ -3604,8 +3604,8 @@ class InstancePartition extends $pb.GeneratedMessage {
     $core.int? nodeCount,
     $core.int? processingUnits,
     InstancePartition_State? state,
-    $302.Timestamp? createTime,
-    $302.Timestamp? updateTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? updateTime,
     $core.Iterable<$core.String>? referencingDatabases,
     $core.Iterable<$core.String>? referencingBackups,
     $core.String? etag,
@@ -3677,10 +3677,10 @@ class InstancePartition extends $pb.GeneratedMessage {
         defaultOrMaker: InstancePartition_State.STATE_UNSPECIFIED,
         valueOf: InstancePartition_State.valueOf,
         enumValues: InstancePartition_State.values)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
     ..pPS(10, _omitFieldNames ? '' : 'referencingDatabases')
     ..pPS(11, _omitFieldNames ? '' : 'referencingBackups')
     ..aOS(12, _omitFieldNames ? '' : 'etag')
@@ -3814,9 +3814,9 @@ class InstancePartition extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the instance partition was created.
   @$pb.TagNumber(8)
-  $302.Timestamp get createTime => $_getN(6);
+  $304.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(8)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -3825,14 +3825,14 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureCreateTime() => $_ensure(6);
+  $304.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The time at which the instance partition was most recently
   /// updated.
   @$pb.TagNumber(9)
-  $302.Timestamp get updateTime => $_getN(7);
+  $304.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(9, v);
   }
 
@@ -3841,7 +3841,7 @@ class InstancePartition extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $302.Timestamp ensureUpdateTime() => $_ensure(7);
+  $304.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. The names of the databases that reference this
   /// instance partition. Referencing databases should share the parent instance.
@@ -3885,9 +3885,9 @@ class InstancePartition extends $pb.GeneratedMessage {
 class CreateInstancePartitionMetadata extends $pb.GeneratedMessage {
   factory CreateInstancePartitionMetadata({
     InstancePartition? instancePartition,
-    $302.Timestamp? startTime,
-    $302.Timestamp? cancelTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? cancelTime,
+    $304.Timestamp? endTime,
   }) {
     final $result = create();
     if (instancePartition != null) {
@@ -3919,12 +3919,12 @@ class CreateInstancePartitionMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<InstancePartition>(1, _omitFieldNames ? '' : 'instancePartition',
         subBuilder: InstancePartition.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3974,9 +3974,9 @@ class CreateInstancePartitionMetadata extends $pb.GeneratedMessage {
   /// [CreateInstancePartition][google.spanner.admin.instance.v1.InstanceAdmin.CreateInstancePartition]
   /// request was received.
   @$pb.TagNumber(2)
-  $302.Timestamp get startTime => $_getN(1);
+  $304.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -3985,15 +3985,15 @@ class CreateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureStartTime() => $_ensure(1);
+  $304.Timestamp ensureStartTime() => $_ensure(1);
 
   /// The time at which this operation was cancelled. If set, this operation is
   /// in the process of undoing itself (which is guaranteed to succeed) and
   /// cannot be cancelled again.
   @$pb.TagNumber(3)
-  $302.Timestamp get cancelTime => $_getN(2);
+  $304.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) {
+  set cancelTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -4002,13 +4002,13 @@ class CreateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCancelTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureCancelTime() => $_ensure(2);
+  $304.Timestamp ensureCancelTime() => $_ensure(2);
 
   /// The time at which this operation failed or was completed successfully.
   @$pb.TagNumber(4)
-  $302.Timestamp get endTime => $_getN(3);
+  $304.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -4017,7 +4017,7 @@ class CreateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureEndTime() => $_ensure(3);
+  $304.Timestamp ensureEndTime() => $_ensure(3);
 }
 
 /// The request for
@@ -4302,7 +4302,7 @@ class GetInstancePartitionRequest extends $pb.GeneratedMessage {
 class UpdateInstancePartitionRequest extends $pb.GeneratedMessage {
   factory UpdateInstancePartitionRequest({
     InstancePartition? instancePartition,
-    $333.FieldMask? fieldMask,
+    $335.FieldMask? fieldMask,
   }) {
     final $result = create();
     if (instancePartition != null) {
@@ -4328,8 +4328,8 @@ class UpdateInstancePartitionRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<InstancePartition>(1, _omitFieldNames ? '' : 'instancePartition',
         subBuilder: InstancePartition.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -4384,9 +4384,9 @@ class UpdateInstancePartitionRequest extends $pb.GeneratedMessage {
   /// [InstancePartition][google.spanner.admin.instance.v1.InstancePartition]
   /// from being erased accidentally by clients that do not know about them.
   @$pb.TagNumber(2)
-  $333.FieldMask get fieldMask => $_getN(1);
+  $335.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($333.FieldMask v) {
+  set fieldMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -4395,7 +4395,7 @@ class UpdateInstancePartitionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureFieldMask() => $_ensure(1);
+  $335.FieldMask ensureFieldMask() => $_ensure(1);
 }
 
 /// Metadata type for the operation returned by
@@ -4403,9 +4403,9 @@ class UpdateInstancePartitionRequest extends $pb.GeneratedMessage {
 class UpdateInstancePartitionMetadata extends $pb.GeneratedMessage {
   factory UpdateInstancePartitionMetadata({
     InstancePartition? instancePartition,
-    $302.Timestamp? startTime,
-    $302.Timestamp? cancelTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? cancelTime,
+    $304.Timestamp? endTime,
   }) {
     final $result = create();
     if (instancePartition != null) {
@@ -4437,12 +4437,12 @@ class UpdateInstancePartitionMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<InstancePartition>(1, _omitFieldNames ? '' : 'instancePartition',
         subBuilder: InstancePartition.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -4492,9 +4492,9 @@ class UpdateInstancePartitionMetadata extends $pb.GeneratedMessage {
   /// [UpdateInstancePartition][google.spanner.admin.instance.v1.InstanceAdmin.UpdateInstancePartition]
   /// request was received.
   @$pb.TagNumber(2)
-  $302.Timestamp get startTime => $_getN(1);
+  $304.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -4503,15 +4503,15 @@ class UpdateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureStartTime() => $_ensure(1);
+  $304.Timestamp ensureStartTime() => $_ensure(1);
 
   /// The time at which this operation was cancelled. If set, this operation is
   /// in the process of undoing itself (which is guaranteed to succeed) and
   /// cannot be cancelled again.
   @$pb.TagNumber(3)
-  $302.Timestamp get cancelTime => $_getN(2);
+  $304.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) {
+  set cancelTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -4520,13 +4520,13 @@ class UpdateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCancelTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureCancelTime() => $_ensure(2);
+  $304.Timestamp ensureCancelTime() => $_ensure(2);
 
   /// The time at which this operation failed or was completed successfully.
   @$pb.TagNumber(4)
-  $302.Timestamp get endTime => $_getN(3);
+  $304.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -4535,7 +4535,7 @@ class UpdateInstancePartitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureEndTime() => $_ensure(3);
+  $304.Timestamp ensureEndTime() => $_ensure(3);
 }
 
 /// The request for
@@ -4545,7 +4545,7 @@ class ListInstancePartitionsRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.int? pageSize,
     $core.String? pageToken,
-    $302.Timestamp? instancePartitionDeadline,
+    $304.Timestamp? instancePartitionDeadline,
   }) {
     final $result = create();
     if (parent != null) {
@@ -4578,8 +4578,8 @@ class ListInstancePartitionsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'instancePartitionDeadline',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'instancePartitionDeadline',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -4660,9 +4660,9 @@ class ListInstancePartitionsRequest extends $pb.GeneratedMessage {
   /// in
   /// [ListInstancePartitionsResponse][google.spanner.admin.instance.v1.ListInstancePartitionsResponse].
   @$pb.TagNumber(4)
-  $302.Timestamp get instancePartitionDeadline => $_getN(3);
+  $304.Timestamp get instancePartitionDeadline => $_getN(3);
   @$pb.TagNumber(4)
-  set instancePartitionDeadline($302.Timestamp v) {
+  set instancePartitionDeadline($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -4671,7 +4671,7 @@ class ListInstancePartitionsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearInstancePartitionDeadline() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureInstancePartitionDeadline() => $_ensure(3);
+  $304.Timestamp ensureInstancePartitionDeadline() => $_ensure(3);
 }
 
 /// The response for
@@ -4776,7 +4776,7 @@ class ListInstancePartitionOperationsRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $302.Timestamp? instancePartitionDeadline,
+    $304.Timestamp? instancePartitionDeadline,
   }) {
     final $result = create();
     if (parent != null) {
@@ -4814,8 +4814,8 @@ class ListInstancePartitionOperationsRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'instancePartitionDeadline',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'instancePartitionDeadline',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -4952,9 +4952,9 @@ class ListInstancePartitionOperationsRequest extends $pb.GeneratedMessage {
   /// [unreachable][ListInstancePartitionOperationsResponse.unreachable] in
   /// [ListInstancePartitionOperationsResponse][google.spanner.admin.instance.v1.ListInstancePartitionOperationsResponse].
   @$pb.TagNumber(5)
-  $302.Timestamp get instancePartitionDeadline => $_getN(4);
+  $304.Timestamp get instancePartitionDeadline => $_getN(4);
   @$pb.TagNumber(5)
-  set instancePartitionDeadline($302.Timestamp v) {
+  set instancePartitionDeadline($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -4963,7 +4963,7 @@ class ListInstancePartitionOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearInstancePartitionDeadline() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureInstancePartitionDeadline() => $_ensure(4);
+  $304.Timestamp ensureInstancePartitionDeadline() => $_ensure(4);
 }
 
 /// The response for
@@ -5201,8 +5201,8 @@ class MoveInstanceResponse extends $pb.GeneratedMessage {
 class MoveInstanceMetadata extends $pb.GeneratedMessage {
   factory MoveInstanceMetadata({
     $core.String? targetConfig,
-    $551.OperationProgress? progress,
-    $302.Timestamp? cancelTime,
+    $556.OperationProgress? progress,
+    $304.Timestamp? cancelTime,
   }) {
     final $result = create();
     if (targetConfig != null) {
@@ -5230,10 +5230,10 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.admin.instance.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'targetConfig')
-    ..aOM<$551.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
-        subBuilder: $551.OperationProgress.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$556.OperationProgress>(2, _omitFieldNames ? '' : 'progress',
+        subBuilder: $556.OperationProgress.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -5280,9 +5280,9 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
   /// [progress_percent][google.spanner.admin.instance.v1.OperationProgress.progress_percent]
   /// is reset when cancellation is requested.
   @$pb.TagNumber(2)
-  $551.OperationProgress get progress => $_getN(1);
+  $556.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($551.OperationProgress v) {
+  set progress($556.OperationProgress v) {
     setField(2, v);
   }
 
@@ -5291,13 +5291,13 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $551.OperationProgress ensureProgress() => $_ensure(1);
+  $556.OperationProgress ensureProgress() => $_ensure(1);
 
   /// The time at which this operation was cancelled.
   @$pb.TagNumber(3)
-  $302.Timestamp get cancelTime => $_getN(2);
+  $304.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($302.Timestamp v) {
+  set cancelTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -5306,7 +5306,7 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCancelTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureCancelTime() => $_ensure(2);
+  $304.Timestamp ensureCancelTime() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

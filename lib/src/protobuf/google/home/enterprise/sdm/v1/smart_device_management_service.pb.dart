@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $261;
+import '../../../../protobuf/struct.pb.dart' as $263;
 import 'device.pb.dart' as $141;
 import 'site.pb.dart' as $142;
 
@@ -284,7 +284,7 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   factory ExecuteDeviceCommandRequest({
     $core.String? name,
     $core.String? command,
-    $261.Struct? params,
+    $263.Struct? params,
   }) {
     final $result = create();
     if (name != null) {
@@ -313,8 +313,8 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'command')
-    ..aOM<$261.Struct>(3, _omitFieldNames ? '' : 'params',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(3, _omitFieldNames ? '' : 'params',
+        subBuilder: $263.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -374,9 +374,9 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
 
   /// The command message to execute, represented as a Struct.
   @$pb.TagNumber(3)
-  $261.Struct get params => $_getN(2);
+  $263.Struct get params => $_getN(2);
   @$pb.TagNumber(3)
-  set params($261.Struct v) {
+  set params($263.Struct v) {
     setField(3, v);
   }
 
@@ -385,13 +385,13 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearParams() => clearField(3);
   @$pb.TagNumber(3)
-  $261.Struct ensureParams() => $_ensure(2);
+  $263.Struct ensureParams() => $_ensure(2);
 }
 
 /// Response message for SmartDeviceManagementService.ExecuteDeviceCommand
 class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
   factory ExecuteDeviceCommandResponse({
-    $261.Struct? results,
+    $263.Struct? results,
   }) {
     final $result = create();
     if (results != null) {
@@ -412,8 +412,8 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
       createEmptyInstance: create)
-    ..aOM<$261.Struct>(1, _omitFieldNames ? '' : 'results',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(1, _omitFieldNames ? '' : 'results',
+        subBuilder: $263.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -445,9 +445,9 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
 
   /// The results of executing the command.
   @$pb.TagNumber(1)
-  $261.Struct get results => $_getN(0);
+  $263.Struct get results => $_getN(0);
   @$pb.TagNumber(1)
-  set results($261.Struct v) {
+  set results($263.Struct v) {
     setField(1, v);
   }
 
@@ -456,7 +456,7 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearResults() => clearField(1);
   @$pb.TagNumber(1)
-  $261.Struct ensureResults() => $_ensure(0);
+  $263.Struct ensureResults() => $_ensure(0);
 }
 
 /// Request message for SmartDeviceManagementService.GetStructure

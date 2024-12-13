@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 
 /// The representation of a key managed by the API Keys API.
 class Key extends $pb.GeneratedMessage {
@@ -21,10 +21,10 @@ class Key extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? keyString,
-    $302.Timestamp? createTime,
+    $304.Timestamp? createTime,
     $core.String? uid,
-    $302.Timestamp? updateTime,
-    $302.Timestamp? deleteTime,
+    $304.Timestamp? updateTime,
+    $304.Timestamp? deleteTime,
     $core.Map<$core.String, $core.String>? annotations,
     Restrictions? restrictions,
     $core.String? etag,
@@ -78,13 +78,13 @@ class Key extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'keyString')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'uid')
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $304.Timestamp.create)
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'annotations',
         entryClassName: 'Key.AnnotationsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -167,9 +167,9 @@ class Key extends $pb.GeneratedMessage {
   /// Output only. A timestamp identifying the time this key was originally
   /// created.
   @$pb.TagNumber(4)
-  $302.Timestamp get createTime => $_getN(3);
+  $304.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -178,7 +178,7 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureCreateTime() => $_ensure(3);
+  $304.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Unique id in UUID4 format.
   @$pb.TagNumber(5)
@@ -196,9 +196,9 @@ class Key extends $pb.GeneratedMessage {
   /// Output only. A timestamp identifying the time this key was last
   /// updated.
   @$pb.TagNumber(6)
-  $302.Timestamp get updateTime => $_getN(5);
+  $304.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -207,14 +207,14 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureUpdateTime() => $_ensure(5);
+  $304.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. A timestamp when this key was deleted. If the resource is not
   /// deleted, this must be empty.
   @$pb.TagNumber(7)
-  $302.Timestamp get deleteTime => $_getN(6);
+  $304.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(7)
-  set deleteTime($302.Timestamp v) {
+  set deleteTime($304.Timestamp v) {
     setField(7, v);
   }
 
@@ -223,7 +223,7 @@ class Key extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearDeleteTime() => clearField(7);
   @$pb.TagNumber(7)
-  $302.Timestamp ensureDeleteTime() => $_ensure(6);
+  $304.Timestamp ensureDeleteTime() => $_ensure(6);
 
   /// Annotations is an unstructured key-value map stored with a policy that
   /// may be set by external tools to store and retrieve arbitrary metadata.

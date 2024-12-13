@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../api/distribution.pb.dart' as $367;
+import '../../api/distribution.pb.dart' as $369;
 import '../../api/metric.pb.dart' as $197;
-import '../../protobuf/timestamp.pb.dart' as $302;
+import '../../protobuf/timestamp.pb.dart' as $304;
 import 'logging_metrics.pbenum.dart';
 
 export 'logging_metrics.pbenum.dart';
@@ -37,9 +37,9 @@ class LogMetric extends $pb.GeneratedMessage {
     $197.MetricDescriptor? metricDescriptor,
     $core.String? valueExtractor,
     $core.Map<$core.String, $core.String>? labelExtractors,
-    $367.Distribution_BucketOptions? bucketOptions,
-    $302.Timestamp? createTime,
-    $302.Timestamp? updateTime,
+    $369.Distribution_BucketOptions? bucketOptions,
+    $304.Timestamp? createTime,
+    $304.Timestamp? updateTime,
     $core.bool? disabled,
     $core.String? bucketName,
   }) {
@@ -112,13 +112,13 @@ class LogMetric extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.logging.v2'))
-    ..aOM<$367.Distribution_BucketOptions>(
+    ..aOM<$369.Distribution_BucketOptions>(
         8, _omitFieldNames ? '' : 'bucketOptions',
-        subBuilder: $367.Distribution_BucketOptions.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
+        subBuilder: $369.Distribution_BucketOptions.create)
+    ..aOM<$304.Timestamp>(9, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(10, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
     ..aOB(12, _omitFieldNames ? '' : 'disabled')
     ..aOS(13, _omitFieldNames ? '' : 'bucketName')
     ..hasRequiredFields = false;
@@ -308,9 +308,9 @@ class LogMetric extends $pb.GeneratedMessage {
   /// using a DISTRIBUTION value type and it describes the bucket boundaries
   /// used to create a histogram of the extracted values.
   @$pb.TagNumber(8)
-  $367.Distribution_BucketOptions get bucketOptions => $_getN(7);
+  $369.Distribution_BucketOptions get bucketOptions => $_getN(7);
   @$pb.TagNumber(8)
-  set bucketOptions($367.Distribution_BucketOptions v) {
+  set bucketOptions($369.Distribution_BucketOptions v) {
     setField(8, v);
   }
 
@@ -319,15 +319,15 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearBucketOptions() => clearField(8);
   @$pb.TagNumber(8)
-  $367.Distribution_BucketOptions ensureBucketOptions() => $_ensure(7);
+  $369.Distribution_BucketOptions ensureBucketOptions() => $_ensure(7);
 
   ///  Output only. The creation timestamp of the metric.
   ///
   ///  This field may not be present for older metrics.
   @$pb.TagNumber(9)
-  $302.Timestamp get createTime => $_getN(8);
+  $304.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(9)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(9, v);
   }
 
@@ -336,15 +336,15 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $302.Timestamp ensureCreateTime() => $_ensure(8);
+  $304.Timestamp ensureCreateTime() => $_ensure(8);
 
   ///  Output only. The last update timestamp of the metric.
   ///
   ///  This field may not be present for older metrics.
   @$pb.TagNumber(10)
-  $302.Timestamp get updateTime => $_getN(9);
+  $304.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(10, v);
   }
 
@@ -353,7 +353,7 @@ class LogMetric extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $302.Timestamp ensureUpdateTime() => $_ensure(9);
+  $304.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// Optional. If set to True, then this metric is disabled and it does not
   /// generate any points.

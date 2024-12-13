@@ -13,19 +13,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../geo/type/viewport.pb.dart' as $449;
-import '../../../type/latlng.pb.dart' as $325;
-import 'contextual_content.pb.dart' as $474;
-import 'ev_charging.pbenum.dart' as $467;
-import 'geometry.pb.dart' as $471;
+import '../../../geo/type/viewport.pb.dart' as $451;
+import '../../../type/latlng.pb.dart' as $327;
+import 'contextual_content.pb.dart' as $476;
+import 'ev_charging.pbenum.dart' as $469;
+import 'geometry.pb.dart' as $473;
 import 'place.pb.dart' as $171;
 import 'place.pbenum.dart' as $171;
 import 'places_service.pbenum.dart';
-import 'polyline.pb.dart' as $473;
-import 'route_modifiers.pb.dart' as $470;
-import 'routing_preference.pbenum.dart' as $476;
-import 'routing_summary.pb.dart' as $472;
-import 'travel_mode.pbenum.dart' as $475;
+import 'polyline.pb.dart' as $475;
+import 'route_modifiers.pb.dart' as $472;
+import 'routing_preference.pbenum.dart' as $478;
+import 'routing_summary.pb.dart' as $474;
+import 'travel_mode.pbenum.dart' as $477;
 
 export 'places_service.pbenum.dart';
 
@@ -34,10 +34,10 @@ export 'places_service.pbenum.dart';
 /// for calculating travel times on results.
 class RoutingParameters extends $pb.GeneratedMessage {
   factory RoutingParameters({
-    $325.LatLng? origin,
-    $475.TravelMode? travelMode,
-    $470.RouteModifiers? routeModifiers,
-    $476.RoutingPreference? routingPreference,
+    $327.LatLng? origin,
+    $477.TravelMode? travelMode,
+    $472.RouteModifiers? routeModifiers,
+    $478.RoutingPreference? routingPreference,
   }) {
     final $result = create();
     if (origin != null) {
@@ -67,20 +67,20 @@ class RoutingParameters extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'origin',
-        subBuilder: $325.LatLng.create)
-    ..e<$475.TravelMode>(
+    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'origin',
+        subBuilder: $327.LatLng.create)
+    ..e<$477.TravelMode>(
         2, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE,
-        defaultOrMaker: $475.TravelMode.TRAVEL_MODE_UNSPECIFIED,
-        valueOf: $475.TravelMode.valueOf,
-        enumValues: $475.TravelMode.values)
-    ..aOM<$470.RouteModifiers>(3, _omitFieldNames ? '' : 'routeModifiers',
-        subBuilder: $470.RouteModifiers.create)
-    ..e<$476.RoutingPreference>(
+        defaultOrMaker: $477.TravelMode.TRAVEL_MODE_UNSPECIFIED,
+        valueOf: $477.TravelMode.valueOf,
+        enumValues: $477.TravelMode.values)
+    ..aOM<$472.RouteModifiers>(3, _omitFieldNames ? '' : 'routeModifiers',
+        subBuilder: $472.RouteModifiers.create)
+    ..e<$478.RoutingPreference>(
         4, _omitFieldNames ? '' : 'routingPreference', $pb.PbFieldType.OE,
-        defaultOrMaker: $476.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED,
-        valueOf: $476.RoutingPreference.valueOf,
-        enumValues: $476.RoutingPreference.values)
+        defaultOrMaker: $478.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED,
+        valueOf: $478.RoutingPreference.valueOf,
+        enumValues: $478.RoutingPreference.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -109,9 +109,9 @@ class RoutingParameters extends $pb.GeneratedMessage {
   /// Optional. An explicit routing origin that overrides the origin defined in
   /// the polyline. By default, the polyline origin is used.
   @$pb.TagNumber(1)
-  $325.LatLng get origin => $_getN(0);
+  $327.LatLng get origin => $_getN(0);
   @$pb.TagNumber(1)
-  set origin($325.LatLng v) {
+  set origin($327.LatLng v) {
     setField(1, v);
   }
 
@@ -120,13 +120,13 @@ class RoutingParameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearOrigin() => clearField(1);
   @$pb.TagNumber(1)
-  $325.LatLng ensureOrigin() => $_ensure(0);
+  $327.LatLng ensureOrigin() => $_ensure(0);
 
   /// Optional. The travel mode.
   @$pb.TagNumber(2)
-  $475.TravelMode get travelMode => $_getN(1);
+  $477.TravelMode get travelMode => $_getN(1);
   @$pb.TagNumber(2)
-  set travelMode($475.TravelMode v) {
+  set travelMode($477.TravelMode v) {
     setField(2, v);
   }
 
@@ -137,9 +137,9 @@ class RoutingParameters extends $pb.GeneratedMessage {
 
   /// Optional. The route modifiers.
   @$pb.TagNumber(3)
-  $470.RouteModifiers get routeModifiers => $_getN(2);
+  $472.RouteModifiers get routeModifiers => $_getN(2);
   @$pb.TagNumber(3)
-  set routeModifiers($470.RouteModifiers v) {
+  set routeModifiers($472.RouteModifiers v) {
     setField(3, v);
   }
 
@@ -148,16 +148,16 @@ class RoutingParameters extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearRouteModifiers() => clearField(3);
   @$pb.TagNumber(3)
-  $470.RouteModifiers ensureRouteModifiers() => $_ensure(2);
+  $472.RouteModifiers ensureRouteModifiers() => $_ensure(2);
 
   /// Optional. Specifies how to compute the routing summaries. The server
   /// attempts to use the selected routing preference to compute the route. The
   /// traffic aware routing preference is only available for the `DRIVE` or
   /// `TWO_WHEELER` `travelMode`.
   @$pb.TagNumber(4)
-  $476.RoutingPreference get routingPreference => $_getN(3);
+  $478.RoutingPreference get routingPreference => $_getN(3);
   @$pb.TagNumber(4)
-  set routingPreference($476.RoutingPreference v) {
+  set routingPreference($478.RoutingPreference v) {
     setField(4, v);
   }
 
@@ -172,7 +172,7 @@ enum SearchNearbyRequest_LocationRestriction_Type { circle, notSet }
 /// The region to search.
 class SearchNearbyRequest_LocationRestriction extends $pb.GeneratedMessage {
   factory SearchNearbyRequest_LocationRestriction({
-    $471.Circle? circle,
+    $473.Circle? circle,
   }) {
     final $result = create();
     if (circle != null) {
@@ -201,8 +201,8 @@ class SearchNearbyRequest_LocationRestriction extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
     ..oo(0, [2])
-    ..aOM<$471.Circle>(2, _omitFieldNames ? '' : 'circle',
-        subBuilder: $471.Circle.create)
+    ..aOM<$473.Circle>(2, _omitFieldNames ? '' : 'circle',
+        subBuilder: $473.Circle.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -239,9 +239,9 @@ class SearchNearbyRequest_LocationRestriction extends $pb.GeneratedMessage {
 
   /// A circle defined by center point and radius.
   @$pb.TagNumber(2)
-  $471.Circle get circle => $_getN(0);
+  $473.Circle get circle => $_getN(0);
   @$pb.TagNumber(2)
-  set circle($471.Circle v) {
+  set circle($473.Circle v) {
     setField(2, v);
   }
 
@@ -250,7 +250,7 @@ class SearchNearbyRequest_LocationRestriction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCircle() => clearField(2);
   @$pb.TagNumber(2)
-  $471.Circle ensureCircle() => $_ensure(0);
+  $473.Circle ensureCircle() => $_ensure(0);
 }
 
 ///  Request proto for Search Nearby.
@@ -545,7 +545,7 @@ class SearchNearbyRequest extends $pb.GeneratedMessage {
 class SearchNearbyResponse extends $pb.GeneratedMessage {
   factory SearchNearbyResponse({
     $core.Iterable<$171.Place>? places,
-    $core.Iterable<$472.RoutingSummary>? routingSummaries,
+    $core.Iterable<$474.RoutingSummary>? routingSummaries,
   }) {
     final $result = create();
     if (places != null) {
@@ -571,9 +571,9 @@ class SearchNearbyResponse extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..pc<$171.Place>(1, _omitFieldNames ? '' : 'places', $pb.PbFieldType.PM,
         subBuilder: $171.Place.create)
-    ..pc<$472.RoutingSummary>(
+    ..pc<$474.RoutingSummary>(
         2, _omitFieldNames ? '' : 'routingSummaries', $pb.PbFieldType.PM,
-        subBuilder: $472.RoutingSummary.create)
+        subBuilder: $474.RoutingSummary.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -611,7 +611,7 @@ class SearchNearbyResponse extends $pb.GeneratedMessage {
   /// entry. This list should have as many entries as the list of places if
   /// requested.
   @$pb.TagNumber(2)
-  $core.List<$472.RoutingSummary> get routingSummaries => $_getList(1);
+  $core.List<$474.RoutingSummary> get routingSummaries => $_getList(1);
 }
 
 enum SearchTextRequest_LocationBias_Type { rectangle, circle, notSet }
@@ -620,8 +620,8 @@ enum SearchTextRequest_LocationBias_Type { rectangle, circle, notSet }
 /// around given location might be returned.
 class SearchTextRequest_LocationBias extends $pb.GeneratedMessage {
   factory SearchTextRequest_LocationBias({
-    $449.Viewport? rectangle,
-    $471.Circle? circle,
+    $451.Viewport? rectangle,
+    $473.Circle? circle,
   }) {
     final $result = create();
     if (rectangle != null) {
@@ -652,10 +652,10 @@ class SearchTextRequest_LocationBias extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
-        subBuilder: $449.Viewport.create)
-    ..aOM<$471.Circle>(2, _omitFieldNames ? '' : 'circle',
-        subBuilder: $471.Circle.create)
+    ..aOM<$451.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
+        subBuilder: $451.Viewport.create)
+    ..aOM<$473.Circle>(2, _omitFieldNames ? '' : 'circle',
+        subBuilder: $473.Circle.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -696,9 +696,9 @@ class SearchTextRequest_LocationBias extends $pb.GeneratedMessage {
   /// `rectangle.high().latitude()`. This will result in an empty latitude
   /// range. A rectangle viewport cannot be wider than 180 degrees.
   @$pb.TagNumber(1)
-  $449.Viewport get rectangle => $_getN(0);
+  $451.Viewport get rectangle => $_getN(0);
   @$pb.TagNumber(1)
-  set rectangle($449.Viewport v) {
+  set rectangle($451.Viewport v) {
     setField(1, v);
   }
 
@@ -707,13 +707,13 @@ class SearchTextRequest_LocationBias extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRectangle() => clearField(1);
   @$pb.TagNumber(1)
-  $449.Viewport ensureRectangle() => $_ensure(0);
+  $451.Viewport ensureRectangle() => $_ensure(0);
 
   /// A circle defined by center point and radius.
   @$pb.TagNumber(2)
-  $471.Circle get circle => $_getN(1);
+  $473.Circle get circle => $_getN(1);
   @$pb.TagNumber(2)
-  set circle($471.Circle v) {
+  set circle($473.Circle v) {
     setField(2, v);
   }
 
@@ -722,7 +722,7 @@ class SearchTextRequest_LocationBias extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCircle() => clearField(2);
   @$pb.TagNumber(2)
-  $471.Circle ensureCircle() => $_ensure(1);
+  $473.Circle ensureCircle() => $_ensure(1);
 }
 
 enum SearchTextRequest_LocationRestriction_Type { rectangle, notSet }
@@ -731,7 +731,7 @@ enum SearchTextRequest_LocationRestriction_Type { rectangle, notSet }
 /// results outside given location will not be returned.
 class SearchTextRequest_LocationRestriction extends $pb.GeneratedMessage {
   factory SearchTextRequest_LocationRestriction({
-    $449.Viewport? rectangle,
+    $451.Viewport? rectangle,
   }) {
     final $result = create();
     if (rectangle != null) {
@@ -759,8 +759,8 @@ class SearchTextRequest_LocationRestriction extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
-        subBuilder: $449.Viewport.create)
+    ..aOM<$451.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
+        subBuilder: $451.Viewport.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -802,9 +802,9 @@ class SearchTextRequest_LocationRestriction extends $pb.GeneratedMessage {
   /// `rectangle.high().latitude()`. This will result in an empty latitude
   /// range. A rectangle viewport cannot be wider than 180 degrees.
   @$pb.TagNumber(1)
-  $449.Viewport get rectangle => $_getN(0);
+  $451.Viewport get rectangle => $_getN(0);
   @$pb.TagNumber(1)
-  set rectangle($449.Viewport v) {
+  set rectangle($451.Viewport v) {
     setField(1, v);
   }
 
@@ -813,14 +813,14 @@ class SearchTextRequest_LocationRestriction extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRectangle() => clearField(1);
   @$pb.TagNumber(1)
-  $449.Viewport ensureRectangle() => $_ensure(0);
+  $451.Viewport ensureRectangle() => $_ensure(0);
 }
 
 /// Searchable EV options of a place search request.
 class SearchTextRequest_EVOptions extends $pb.GeneratedMessage {
   factory SearchTextRequest_EVOptions({
     $core.double? minimumChargingRateKw,
-    $core.Iterable<$467.EVConnectorType>? connectorTypes,
+    $core.Iterable<$469.EVConnectorType>? connectorTypes,
   }) {
     final $result = create();
     if (minimumChargingRateKw != null) {
@@ -846,11 +846,11 @@ class SearchTextRequest_EVOptions extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..a<$core.double>(
         1, _omitFieldNames ? '' : 'minimumChargingRateKw', $pb.PbFieldType.OD)
-    ..pc<$467.EVConnectorType>(
+    ..pc<$469.EVConnectorType>(
         2, _omitFieldNames ? '' : 'connectorTypes', $pb.PbFieldType.KE,
-        valueOf: $467.EVConnectorType.valueOf,
-        enumValues: $467.EVConnectorType.values,
-        defaultEnumValue: $467.EVConnectorType.EV_CONNECTOR_TYPE_UNSPECIFIED)
+        valueOf: $469.EVConnectorType.valueOf,
+        enumValues: $469.EVConnectorType.values,
+        defaultEnumValue: $469.EVConnectorType.EV_CONNECTOR_TYPE_UNSPECIFIED)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -897,7 +897,7 @@ class SearchTextRequest_EVOptions extends $pb.GeneratedMessage {
   /// Optional. The list of preferred EV connector types. A place that does not
   /// support any of the listed connector types is filtered out.
   @$pb.TagNumber(2)
-  $core.List<$467.EVConnectorType> get connectorTypes => $_getList(1);
+  $core.List<$469.EVConnectorType> get connectorTypes => $_getList(1);
 }
 
 ///  Specifies a precalculated polyline from the [Routes
@@ -917,7 +917,7 @@ class SearchTextRequest_EVOptions extends $pb.GeneratedMessage {
 class SearchTextRequest_SearchAlongRouteParameters
     extends $pb.GeneratedMessage {
   factory SearchTextRequest_SearchAlongRouteParameters({
-    $473.Polyline? polyline,
+    $475.Polyline? polyline,
   }) {
     final $result = create();
     if (polyline != null) {
@@ -939,8 +939,8 @@ class SearchTextRequest_SearchAlongRouteParameters
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
-    ..aOM<$473.Polyline>(1, _omitFieldNames ? '' : 'polyline',
-        subBuilder: $473.Polyline.create)
+    ..aOM<$475.Polyline>(1, _omitFieldNames ? '' : 'polyline',
+        subBuilder: $475.Polyline.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -976,9 +976,9 @@ class SearchTextRequest_SearchAlongRouteParameters
 
   /// Required. The route polyline.
   @$pb.TagNumber(1)
-  $473.Polyline get polyline => $_getN(0);
+  $475.Polyline get polyline => $_getN(0);
   @$pb.TagNumber(1)
-  set polyline($473.Polyline v) {
+  set polyline($475.Polyline v) {
     setField(1, v);
   }
 
@@ -987,7 +987,7 @@ class SearchTextRequest_SearchAlongRouteParameters
   @$pb.TagNumber(1)
   void clearPolyline() => clearField(1);
   @$pb.TagNumber(1)
-  $473.Polyline ensurePolyline() => $_ensure(0);
+  $475.Polyline ensurePolyline() => $_ensure(0);
 }
 
 ///  Request proto for SearchText.
@@ -1390,8 +1390,8 @@ class SearchTextRequest extends $pb.GeneratedMessage {
 class SearchTextResponse extends $pb.GeneratedMessage {
   factory SearchTextResponse({
     $core.Iterable<$171.Place>? places,
-    $core.Iterable<$472.RoutingSummary>? routingSummaries,
-    $core.Iterable<$474.ContextualContent>? contextualContents,
+    $core.Iterable<$474.RoutingSummary>? routingSummaries,
+    $core.Iterable<$476.ContextualContent>? contextualContents,
   }) {
     final $result = create();
     if (places != null) {
@@ -1420,12 +1420,12 @@ class SearchTextResponse extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..pc<$171.Place>(1, _omitFieldNames ? '' : 'places', $pb.PbFieldType.PM,
         subBuilder: $171.Place.create)
-    ..pc<$472.RoutingSummary>(
+    ..pc<$474.RoutingSummary>(
         2, _omitFieldNames ? '' : 'routingSummaries', $pb.PbFieldType.PM,
-        subBuilder: $472.RoutingSummary.create)
-    ..pc<$474.ContextualContent>(
+        subBuilder: $474.RoutingSummary.create)
+    ..pc<$476.ContextualContent>(
         3, _omitFieldNames ? '' : 'contextualContents', $pb.PbFieldType.PM,
-        subBuilder: $474.ContextualContent.create)
+        subBuilder: $476.ContextualContent.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1461,7 +1461,7 @@ class SearchTextResponse extends $pb.GeneratedMessage {
   /// entry. This list will have as many entries as the list of places if
   /// requested.
   @$pb.TagNumber(2)
-  $core.List<$472.RoutingSummary> get routingSummaries => $_getList(1);
+  $core.List<$474.RoutingSummary> get routingSummaries => $_getList(1);
 
   ///  Experimental: See
   ///  https://developers.google.com/maps/documentation/places/web-service/experimental/places-generative
@@ -1475,7 +1475,7 @@ class SearchTextResponse extends $pb.GeneratedMessage {
   ///  unavailable for this place. This list will have as many entries as the
   ///  list of places if requested.
   @$pb.TagNumber(3)
-  $core.List<$474.ContextualContent> get contextualContents => $_getList(2);
+  $core.List<$476.ContextualContent> get contextualContents => $_getList(2);
 }
 
 /// Request for fetching a photo of a place using a photo resource name.
@@ -1869,8 +1869,8 @@ enum AutocompletePlacesRequest_LocationBias_Type { rectangle, circle, notSet }
 /// region.
 class AutocompletePlacesRequest_LocationBias extends $pb.GeneratedMessage {
   factory AutocompletePlacesRequest_LocationBias({
-    $449.Viewport? rectangle,
-    $471.Circle? circle,
+    $451.Viewport? rectangle,
+    $473.Circle? circle,
   }) {
     final $result = create();
     if (rectangle != null) {
@@ -1902,10 +1902,10 @@ class AutocompletePlacesRequest_LocationBias extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
-        subBuilder: $449.Viewport.create)
-    ..aOM<$471.Circle>(2, _omitFieldNames ? '' : 'circle',
-        subBuilder: $471.Circle.create)
+    ..aOM<$451.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
+        subBuilder: $451.Viewport.create)
+    ..aOM<$473.Circle>(2, _omitFieldNames ? '' : 'circle',
+        subBuilder: $473.Circle.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1942,9 +1942,9 @@ class AutocompletePlacesRequest_LocationBias extends $pb.GeneratedMessage {
 
   /// A viewport defined by a northeast and a southwest corner.
   @$pb.TagNumber(1)
-  $449.Viewport get rectangle => $_getN(0);
+  $451.Viewport get rectangle => $_getN(0);
   @$pb.TagNumber(1)
-  set rectangle($449.Viewport v) {
+  set rectangle($451.Viewport v) {
     setField(1, v);
   }
 
@@ -1953,13 +1953,13 @@ class AutocompletePlacesRequest_LocationBias extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRectangle() => clearField(1);
   @$pb.TagNumber(1)
-  $449.Viewport ensureRectangle() => $_ensure(0);
+  $451.Viewport ensureRectangle() => $_ensure(0);
 
   /// A circle defined by a center point and radius.
   @$pb.TagNumber(2)
-  $471.Circle get circle => $_getN(1);
+  $473.Circle get circle => $_getN(1);
   @$pb.TagNumber(2)
-  set circle($471.Circle v) {
+  set circle($473.Circle v) {
     setField(2, v);
   }
 
@@ -1968,7 +1968,7 @@ class AutocompletePlacesRequest_LocationBias extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCircle() => clearField(2);
   @$pb.TagNumber(2)
-  $471.Circle ensureCircle() => $_ensure(1);
+  $473.Circle ensureCircle() => $_ensure(1);
 }
 
 enum AutocompletePlacesRequest_LocationRestriction_Type {
@@ -1982,8 +1982,8 @@ enum AutocompletePlacesRequest_LocationRestriction_Type {
 class AutocompletePlacesRequest_LocationRestriction
     extends $pb.GeneratedMessage {
   factory AutocompletePlacesRequest_LocationRestriction({
-    $449.Viewport? rectangle,
-    $471.Circle? circle,
+    $451.Viewport? rectangle,
+    $473.Circle? circle,
   }) {
     final $result = create();
     if (rectangle != null) {
@@ -2016,10 +2016,10 @@ class AutocompletePlacesRequest_LocationRestriction
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$449.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
-        subBuilder: $449.Viewport.create)
-    ..aOM<$471.Circle>(2, _omitFieldNames ? '' : 'circle',
-        subBuilder: $471.Circle.create)
+    ..aOM<$451.Viewport>(1, _omitFieldNames ? '' : 'rectangle',
+        subBuilder: $451.Viewport.create)
+    ..aOM<$473.Circle>(2, _omitFieldNames ? '' : 'circle',
+        subBuilder: $473.Circle.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2060,9 +2060,9 @@ class AutocompletePlacesRequest_LocationRestriction
 
   /// A viewport defined by a northeast and a southwest corner.
   @$pb.TagNumber(1)
-  $449.Viewport get rectangle => $_getN(0);
+  $451.Viewport get rectangle => $_getN(0);
   @$pb.TagNumber(1)
-  set rectangle($449.Viewport v) {
+  set rectangle($451.Viewport v) {
     setField(1, v);
   }
 
@@ -2071,13 +2071,13 @@ class AutocompletePlacesRequest_LocationRestriction
   @$pb.TagNumber(1)
   void clearRectangle() => clearField(1);
   @$pb.TagNumber(1)
-  $449.Viewport ensureRectangle() => $_ensure(0);
+  $451.Viewport ensureRectangle() => $_ensure(0);
 
   /// A circle defined by a center point and radius.
   @$pb.TagNumber(2)
-  $471.Circle get circle => $_getN(1);
+  $473.Circle get circle => $_getN(1);
   @$pb.TagNumber(2)
-  set circle($471.Circle v) {
+  set circle($473.Circle v) {
     setField(2, v);
   }
 
@@ -2086,7 +2086,7 @@ class AutocompletePlacesRequest_LocationRestriction
   @$pb.TagNumber(2)
   void clearCircle() => clearField(2);
   @$pb.TagNumber(2)
-  $471.Circle ensureCircle() => $_ensure(1);
+  $473.Circle ensureCircle() => $_ensure(1);
 }
 
 /// Request proto for AutocompletePlaces.
@@ -2099,7 +2099,7 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? includedRegionCodes,
     $core.String? languageCode,
     $core.String? regionCode,
-    $325.LatLng? origin,
+    $327.LatLng? origin,
     $core.int? inputOffset,
     $core.bool? includeQueryPredictions,
     $core.String? sessionToken,
@@ -2169,8 +2169,8 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
     ..pPS(5, _omitFieldNames ? '' : 'includedRegionCodes')
     ..aOS(6, _omitFieldNames ? '' : 'languageCode')
     ..aOS(7, _omitFieldNames ? '' : 'regionCode')
-    ..aOM<$325.LatLng>(8, _omitFieldNames ? '' : 'origin',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(8, _omitFieldNames ? '' : 'origin',
+        subBuilder: $327.LatLng.create)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'inputOffset', $pb.PbFieldType.O3)
     ..aOB(10, _omitFieldNames ? '' : 'includeQueryPredictions')
     ..aOS(11, _omitFieldNames ? '' : 'sessionToken')
@@ -2309,9 +2309,9 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
   /// destination (returned as `distance_meters`). If this value is omitted,
   /// geodesic distance will not be returned.
   @$pb.TagNumber(8)
-  $325.LatLng get origin => $_getN(7);
+  $327.LatLng get origin => $_getN(7);
   @$pb.TagNumber(8)
-  set origin($325.LatLng v) {
+  set origin($327.LatLng v) {
     setField(8, v);
   }
 
@@ -2320,7 +2320,7 @@ class AutocompletePlacesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearOrigin() => clearField(8);
   @$pb.TagNumber(8)
-  $325.LatLng ensureOrigin() => $_ensure(7);
+  $327.LatLng ensureOrigin() => $_ensure(7);
 
   ///  Optional. A zero-based Unicode character offset of `input` indicating the
   ///  cursor position in `input`. The cursor position may influence what

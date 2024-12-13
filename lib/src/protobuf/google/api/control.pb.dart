@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'policy.pb.dart' as $340;
+import 'policy.pb.dart' as $342;
 
 ///  Selects and configures the service controller used by the service.
 ///
@@ -24,7 +24,7 @@ import 'policy.pb.dart' as $340;
 class Control extends $pb.GeneratedMessage {
   factory Control({
     $core.String? environment,
-    $core.Iterable<$340.MethodPolicy>? methodPolicies,
+    $core.Iterable<$342.MethodPolicy>? methodPolicies,
   }) {
     final $result = create();
     if (environment != null) {
@@ -48,9 +48,9 @@ class Control extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'environment')
-    ..pc<$340.MethodPolicy>(
+    ..pc<$342.MethodPolicy>(
         4, _omitFieldNames ? '' : 'methodPolicies', $pb.PbFieldType.PM,
-        subBuilder: $340.MethodPolicy.create)
+        subBuilder: $342.MethodPolicy.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -91,7 +91,7 @@ class Control extends $pb.GeneratedMessage {
 
   /// Defines policies applying to the API methods of the service.
   @$pb.TagNumber(4)
-  $core.List<$340.MethodPolicy> get methodPolicies => $_getList(1);
+  $core.List<$342.MethodPolicy> get methodPolicies => $_getList(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
-import '../../protobuf/struct.pb.dart' as $261;
-import '../../protobuf/wrappers.pb.dart' as $307;
-import '../../rpc/status.pb.dart' as $322;
+import '../../protobuf/field_mask.pb.dart' as $335;
+import '../../protobuf/struct.pb.dart' as $263;
+import '../../protobuf/wrappers.pb.dart' as $309;
+import '../../rpc/status.pb.dart' as $324;
 import 'annotations.pbenum.dart';
 
 export 'annotations.pbenum.dart';
@@ -33,7 +33,7 @@ class AnnotationSet extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? sourceUri,
     AnnotationType? type,
-    $core.Map<$core.String, $261.ListValue>? info,
+    $core.Map<$core.String, $263.ListValue>? info,
   }) {
     final $result = create();
     if (id != null) {
@@ -81,12 +81,12 @@ class AnnotationSet extends $pb.GeneratedMessage {
         defaultOrMaker: AnnotationType.ANNOTATION_TYPE_UNSPECIFIED,
         valueOf: AnnotationType.valueOf,
         enumValues: AnnotationType.values)
-    ..m<$core.String, $261.ListValue>(17, _omitFieldNames ? '' : 'info',
+    ..m<$core.String, $263.ListValue>(17, _omitFieldNames ? '' : 'info',
         entryClassName: 'AnnotationSet.InfoEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OM,
-        valueCreator: $261.ListValue.create,
-        valueDefaultOrMaker: $261.ListValue.getDefault,
+        valueCreator: $263.ListValue.create,
+        valueDefaultOrMaker: $263.ListValue.getDefault,
         packageName: const $pb.PackageName('google.genomics.v1'))
     ..hasRequiredFields = false;
 
@@ -196,7 +196,7 @@ class AnnotationSet extends $pb.GeneratedMessage {
   /// A map of additional read alignment information. This must be of the form
   /// map<string, string[]> (string key mapping to a list of string values).
   @$pb.TagNumber(17)
-  $core.Map<$core.String, $261.ListValue> get info => $_getMap(6);
+  $core.Map<$core.String, $263.ListValue> get info => $_getMap(6);
 }
 
 enum Annotation_Value { variant, transcript, notSet }
@@ -220,7 +220,7 @@ class Annotation extends $pb.GeneratedMessage {
     AnnotationType? type,
     VariantAnnotation? variant,
     Transcript? transcript,
-    $core.Map<$core.String, $261.ListValue>? info,
+    $core.Map<$core.String, $263.ListValue>? info,
   }) {
     final $result = create();
     if (id != null) {
@@ -296,12 +296,12 @@ class Annotation extends $pb.GeneratedMessage {
         subBuilder: VariantAnnotation.create)
     ..aOM<Transcript>(11, _omitFieldNames ? '' : 'transcript',
         subBuilder: Transcript.create)
-    ..m<$core.String, $261.ListValue>(12, _omitFieldNames ? '' : 'info',
+    ..m<$core.String, $263.ListValue>(12, _omitFieldNames ? '' : 'info',
         entryClassName: 'Annotation.InfoEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OM,
-        valueCreator: $261.ListValue.create,
-        valueDefaultOrMaker: $261.ListValue.getDefault,
+        valueCreator: $263.ListValue.create,
+        valueDefaultOrMaker: $263.ListValue.getDefault,
         packageName: const $pb.PackageName('google.genomics.v1'))
     ..hasRequiredFields = false;
 
@@ -489,7 +489,7 @@ class Annotation extends $pb.GeneratedMessage {
   /// A map of additional read alignment information. This must be of the form
   /// map<string, string[]> (string key mapping to a list of string values).
   @$pb.TagNumber(12)
-  $core.Map<$core.String, $261.ListValue> get info => $_getMap(11);
+  $core.Map<$core.String, $263.ListValue> get info => $_getMap(11);
 }
 
 class VariantAnnotation_ClinicalCondition extends $pb.GeneratedMessage {
@@ -782,7 +782,7 @@ class Transcript_Exon extends $pb.GeneratedMessage {
   factory Transcript_Exon({
     $fixnum.Int64? start,
     $fixnum.Int64? end,
-    $307.Int32Value? frame,
+    $309.Int32Value? frame,
   }) {
     final $result = create();
     if (start != null) {
@@ -811,8 +811,8 @@ class Transcript_Exon extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'start')
     ..aInt64(2, _omitFieldNames ? '' : 'end')
-    ..aOM<$307.Int32Value>(3, _omitFieldNames ? '' : 'frame',
-        subBuilder: $307.Int32Value.create)
+    ..aOM<$309.Int32Value>(3, _omitFieldNames ? '' : 'frame',
+        subBuilder: $309.Int32Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -882,9 +882,9 @@ class Transcript_Exon extends $pb.GeneratedMessage {
   ///  of a transcript, the frame must be populated for all or none of the
   ///  coding exons.
   @$pb.TagNumber(3)
-  $307.Int32Value get frame => $_getN(2);
+  $309.Int32Value get frame => $_getN(2);
   @$pb.TagNumber(3)
-  set frame($307.Int32Value v) {
+  set frame($309.Int32Value v) {
     setField(3, v);
   }
 
@@ -893,7 +893,7 @@ class Transcript_Exon extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearFrame() => clearField(3);
   @$pb.TagNumber(3)
-  $307.Int32Value ensureFrame() => $_ensure(2);
+  $309.Int32Value ensureFrame() => $_ensure(2);
 }
 
 class Transcript_CodingSequence extends $pb.GeneratedMessage {
@@ -1319,7 +1319,7 @@ class UpdateAnnotationSetRequest extends $pb.GeneratedMessage {
   factory UpdateAnnotationSetRequest({
     $core.String? annotationSetId,
     AnnotationSet? annotationSet,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (annotationSetId != null) {
@@ -1349,8 +1349,8 @@ class UpdateAnnotationSetRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'annotationSetId')
     ..aOM<AnnotationSet>(2, _omitFieldNames ? '' : 'annotationSet',
         subBuilder: AnnotationSet.create)
-    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1413,9 +1413,9 @@ class UpdateAnnotationSetRequest extends $pb.GeneratedMessage {
   /// [info][google.genomics.v1.AnnotationSet.info]. If unspecified, all
   /// mutable fields will be updated.
   @$pb.TagNumber(3)
-  $333.FieldMask get updateMask => $_getN(2);
+  $335.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(3, v);
   }
 
@@ -1424,7 +1424,7 @@ class UpdateAnnotationSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $333.FieldMask ensureUpdateMask() => $_ensure(2);
+  $335.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 class DeleteAnnotationSetRequest extends $pb.GeneratedMessage {
@@ -1877,7 +1877,7 @@ class BatchCreateAnnotationsRequest extends $pb.GeneratedMessage {
 
 class BatchCreateAnnotationsResponse_Entry extends $pb.GeneratedMessage {
   factory BatchCreateAnnotationsResponse_Entry({
-    $322.Status? status,
+    $324.Status? status,
     Annotation? annotation,
   }) {
     final $result = create();
@@ -1903,8 +1903,8 @@ class BatchCreateAnnotationsResponse_Entry extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
       createEmptyInstance: create)
-    ..aOM<$322.Status>(1, _omitFieldNames ? '' : 'status',
-        subBuilder: $322.Status.create)
+    ..aOM<$324.Status>(1, _omitFieldNames ? '' : 'status',
+        subBuilder: $324.Status.create)
     ..aOM<Annotation>(2, _omitFieldNames ? '' : 'annotation',
         subBuilder: Annotation.create)
     ..hasRequiredFields = false;
@@ -1939,9 +1939,9 @@ class BatchCreateAnnotationsResponse_Entry extends $pb.GeneratedMessage {
 
   /// The creation status.
   @$pb.TagNumber(1)
-  $322.Status get status => $_getN(0);
+  $324.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($322.Status v) {
+  set status($324.Status v) {
     setField(1, v);
   }
 
@@ -1950,7 +1950,7 @@ class BatchCreateAnnotationsResponse_Entry extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $322.Status ensureStatus() => $_ensure(0);
+  $324.Status ensureStatus() => $_ensure(0);
 
   /// The created annotation, if creation was successful.
   @$pb.TagNumber(2)
@@ -2097,7 +2097,7 @@ class UpdateAnnotationRequest extends $pb.GeneratedMessage {
   factory UpdateAnnotationRequest({
     $core.String? annotationId,
     Annotation? annotation,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (annotationId != null) {
@@ -2127,8 +2127,8 @@ class UpdateAnnotationRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'annotationId')
     ..aOM<Annotation>(2, _omitFieldNames ? '' : 'annotation',
         subBuilder: Annotation.create)
-    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2191,9 +2191,9 @@ class UpdateAnnotationRequest extends $pb.GeneratedMessage {
   /// [info][google.genomics.v1.Annotation.info]. If unspecified, all mutable
   /// fields will be updated.
   @$pb.TagNumber(3)
-  $333.FieldMask get updateMask => $_getN(2);
+  $335.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(3, v);
   }
 
@@ -2202,7 +2202,7 @@ class UpdateAnnotationRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $333.FieldMask ensureUpdateMask() => $_ensure(2);
+  $335.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 class DeleteAnnotationRequest extends $pb.GeneratedMessage {

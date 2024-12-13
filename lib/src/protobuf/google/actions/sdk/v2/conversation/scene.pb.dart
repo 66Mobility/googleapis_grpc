@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $261;
-import 'prompt/prompt.pb.dart' as $320;
+import '../../../../protobuf/struct.pb.dart' as $263;
+import 'prompt/prompt.pb.dart' as $322;
 import 'scene.pbenum.dart';
 
 export 'scene.pbenum.dart';
@@ -24,9 +24,9 @@ class Slot extends $pb.GeneratedMessage {
   factory Slot({
     Slot_SlotMode? mode,
     Slot_SlotStatus? status,
-    $261.Value? value,
+    $263.Value? value,
     $core.bool? updated,
-    $320.Prompt? prompt,
+    $322.Prompt? prompt,
   }) {
     final $result = create();
     if (mode != null) {
@@ -67,11 +67,11 @@ class Slot extends $pb.GeneratedMessage {
         defaultOrMaker: Slot_SlotStatus.SLOT_UNSPECIFIED,
         valueOf: Slot_SlotStatus.valueOf,
         enumValues: Slot_SlotStatus.values)
-    ..aOM<$261.Value>(3, _omitFieldNames ? '' : 'value',
-        subBuilder: $261.Value.create)
+    ..aOM<$263.Value>(3, _omitFieldNames ? '' : 'value',
+        subBuilder: $263.Value.create)
     ..aOB(4, _omitFieldNames ? '' : 'updated')
-    ..aOM<$320.Prompt>(5, _omitFieldNames ? '' : 'prompt',
-        subBuilder: $320.Prompt.create)
+    ..aOM<$322.Prompt>(5, _omitFieldNames ? '' : 'prompt',
+        subBuilder: $322.Prompt.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -124,9 +124,9 @@ class Slot extends $pb.GeneratedMessage {
   /// The value of the slot. Changing this value in the response, will
   /// modify the value in slot filling.
   @$pb.TagNumber(3)
-  $261.Value get value => $_getN(2);
+  $263.Value get value => $_getN(2);
   @$pb.TagNumber(3)
-  set value($261.Value v) {
+  set value($263.Value v) {
     setField(3, v);
   }
 
@@ -135,7 +135,7 @@ class Slot extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearValue() => clearField(3);
   @$pb.TagNumber(3)
-  $261.Value ensureValue() => $_ensure(2);
+  $263.Value ensureValue() => $_ensure(2);
 
   /// Indicates if the slot value was collected on the last turn.
   /// This field is read-only.
@@ -155,9 +155,9 @@ class Slot extends $pb.GeneratedMessage {
   /// slot. This prompt overrides the existing prompt defined in the console.
   /// This field is not included in the webhook request.
   @$pb.TagNumber(5)
-  $320.Prompt get prompt => $_getN(4);
+  $322.Prompt get prompt => $_getN(4);
   @$pb.TagNumber(5)
-  set prompt($320.Prompt v) {
+  set prompt($322.Prompt v) {
     setField(5, v);
   }
 
@@ -166,7 +166,7 @@ class Slot extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearPrompt() => clearField(5);
   @$pb.TagNumber(5)
-  $320.Prompt ensurePrompt() => $_ensure(4);
+  $322.Prompt ensurePrompt() => $_ensure(4);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

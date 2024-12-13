@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/color.pb.dart' as $385;
+import '../../../type/color.pb.dart' as $387;
 import 'card.pbenum.dart';
 
 export 'card.pbenum.dart';
@@ -3318,7 +3318,7 @@ class Button extends $pb.GeneratedMessage {
   factory Button({
     $core.String? text,
     Icon? icon,
-    $385.Color? color,
+    $387.Color? color,
     OnClick? onClick,
     $core.bool? disabled,
     $core.String? altText,
@@ -3359,8 +3359,8 @@ class Button extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..aOM<Icon>(2, _omitFieldNames ? '' : 'icon', subBuilder: Icon.create)
-    ..aOM<$385.Color>(3, _omitFieldNames ? '' : 'color',
-        subBuilder: $385.Color.create)
+    ..aOM<$387.Color>(3, _omitFieldNames ? '' : 'color',
+        subBuilder: $387.Color.create)
     ..aOM<OnClick>(4, _omitFieldNames ? '' : 'onClick',
         subBuilder: OnClick.create)
     ..aOB(5, _omitFieldNames ? '' : 'disabled')
@@ -3450,9 +3450,9 @@ class Button extends $pb.GeneratedMessage {
   ///  }
   ///  ```
   @$pb.TagNumber(3)
-  $385.Color get color => $_getN(2);
+  $387.Color get color => $_getN(2);
   @$pb.TagNumber(3)
-  set color($385.Color v) {
+  set color($387.Color v) {
     setField(3, v);
   }
 
@@ -3461,7 +3461,7 @@ class Button extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $385.Color ensureColor() => $_ensure(2);
+  $387.Color ensureColor() => $_ensure(2);
 
   /// Required. The action to perform when a user clicks the button, such as
   /// opening a hyperlink or running a custom function.
@@ -3985,7 +3985,7 @@ class ImageCropStyle extends $pb.GeneratedMessage {
 class BorderStyle extends $pb.GeneratedMessage {
   factory BorderStyle({
     BorderStyle_BorderType? type,
-    $385.Color? strokeColor,
+    $387.Color? strokeColor,
     $core.int? cornerRadius,
   }) {
     final $result = create();
@@ -4018,8 +4018,8 @@ class BorderStyle extends $pb.GeneratedMessage {
         defaultOrMaker: BorderStyle_BorderType.BORDER_TYPE_UNSPECIFIED,
         valueOf: BorderStyle_BorderType.valueOf,
         enumValues: BorderStyle_BorderType.values)
-    ..aOM<$385.Color>(2, _omitFieldNames ? '' : 'strokeColor',
-        subBuilder: $385.Color.create)
+    ..aOM<$387.Color>(2, _omitFieldNames ? '' : 'strokeColor',
+        subBuilder: $387.Color.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'cornerRadius', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
@@ -4060,9 +4060,9 @@ class BorderStyle extends $pb.GeneratedMessage {
 
   /// The colors to use when the type is `BORDER_TYPE_STROKE`.
   @$pb.TagNumber(2)
-  $385.Color get strokeColor => $_getN(1);
+  $387.Color get strokeColor => $_getN(1);
   @$pb.TagNumber(2)
-  set strokeColor($385.Color v) {
+  set strokeColor($387.Color v) {
     setField(2, v);
   }
 
@@ -4071,7 +4071,7 @@ class BorderStyle extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStrokeColor() => clearField(2);
   @$pb.TagNumber(2)
-  $385.Color ensureStrokeColor() => $_ensure(1);
+  $387.Color ensureStrokeColor() => $_ensure(1);
 
   /// The corner radius for the border.
   @$pb.TagNumber(3)

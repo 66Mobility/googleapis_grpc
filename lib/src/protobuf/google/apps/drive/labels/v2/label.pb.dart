@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $302;
-import 'common.pb.dart' as $390;
-import 'field.pb.dart' as $391;
+import '../../../../protobuf/timestamp.pb.dart' as $304;
+import 'common.pb.dart' as $392;
+import 'field.pb.dart' as $393;
 import 'label.pbenum.dart';
 
 export 'label.pbenum.dart';
@@ -530,24 +530,24 @@ class Label extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? revisionId,
     Label_LabelType? labelType,
-    $390.UserInfo? creator,
-    $302.Timestamp? createTime,
-    $390.UserInfo? revisionCreator,
-    $302.Timestamp? revisionCreateTime,
-    $390.UserInfo? publisher,
-    $302.Timestamp? publishTime,
-    $390.UserInfo? disabler,
-    $302.Timestamp? disableTime,
+    $392.UserInfo? creator,
+    $304.Timestamp? createTime,
+    $392.UserInfo? revisionCreator,
+    $304.Timestamp? revisionCreateTime,
+    $392.UserInfo? publisher,
+    $304.Timestamp? publishTime,
+    $392.UserInfo? disabler,
+    $304.Timestamp? disableTime,
     $core.String? customer,
     Label_Properties? properties,
-    $390.Lifecycle? lifecycle,
+    $392.Lifecycle? lifecycle,
     Label_DisplayHints? displayHints,
     Label_AppliedCapabilities? appliedCapabilities,
     Label_SchemaCapabilities? schemaCapabilities,
     Label_AppliedLabelPolicy? appliedLabelPolicy,
-    $core.Iterable<$391.Field>? fields,
+    $core.Iterable<$393.Field>? fields,
     $core.String? learnMoreUri,
-    $390.LockStatus? lockStatus,
+    $392.LockStatus? lockStatus,
   }) {
     final $result = create();
     if (name != null) {
@@ -639,27 +639,27 @@ class Label extends $pb.GeneratedMessage {
         defaultOrMaker: Label_LabelType.LABEL_TYPE_UNSPECIFIED,
         valueOf: Label_LabelType.valueOf,
         enumValues: Label_LabelType.values)
-    ..aOM<$390.UserInfo>(5, _omitFieldNames ? '' : 'creator',
-        subBuilder: $390.UserInfo.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$390.UserInfo>(7, _omitFieldNames ? '' : 'revisionCreator',
-        subBuilder: $390.UserInfo.create)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'revisionCreateTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$390.UserInfo>(9, _omitFieldNames ? '' : 'publisher',
-        subBuilder: $390.UserInfo.create)
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'publishTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$390.UserInfo>(11, _omitFieldNames ? '' : 'disabler',
-        subBuilder: $390.UserInfo.create)
-    ..aOM<$302.Timestamp>(12, _omitFieldNames ? '' : 'disableTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$392.UserInfo>(5, _omitFieldNames ? '' : 'creator',
+        subBuilder: $392.UserInfo.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$392.UserInfo>(7, _omitFieldNames ? '' : 'revisionCreator',
+        subBuilder: $392.UserInfo.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'revisionCreateTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$392.UserInfo>(9, _omitFieldNames ? '' : 'publisher',
+        subBuilder: $392.UserInfo.create)
+    ..aOM<$304.Timestamp>(10, _omitFieldNames ? '' : 'publishTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$392.UserInfo>(11, _omitFieldNames ? '' : 'disabler',
+        subBuilder: $392.UserInfo.create)
+    ..aOM<$304.Timestamp>(12, _omitFieldNames ? '' : 'disableTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(13, _omitFieldNames ? '' : 'customer')
     ..aOM<Label_Properties>(14, _omitFieldNames ? '' : 'properties',
         subBuilder: Label_Properties.create)
-    ..aOM<$390.Lifecycle>(15, _omitFieldNames ? '' : 'lifecycle',
-        subBuilder: $390.Lifecycle.create)
+    ..aOM<$392.Lifecycle>(15, _omitFieldNames ? '' : 'lifecycle',
+        subBuilder: $392.Lifecycle.create)
     ..aOM<Label_DisplayHints>(16, _omitFieldNames ? '' : 'displayHints',
         subBuilder: Label_DisplayHints.create)
     ..aOM<Label_AppliedCapabilities>(
@@ -671,11 +671,11 @@ class Label extends $pb.GeneratedMessage {
     ..aOM<Label_AppliedLabelPolicy>(
         19, _omitFieldNames ? '' : 'appliedLabelPolicy',
         subBuilder: Label_AppliedLabelPolicy.create)
-    ..pc<$391.Field>(20, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM,
-        subBuilder: $391.Field.create)
+    ..pc<$393.Field>(20, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM,
+        subBuilder: $393.Field.create)
     ..aOS(21, _omitFieldNames ? '' : 'learnMoreUri')
-    ..aOM<$390.LockStatus>(22, _omitFieldNames ? '' : 'lockStatus',
-        subBuilder: $390.LockStatus.create)
+    ..aOM<$392.LockStatus>(22, _omitFieldNames ? '' : 'lockStatus',
+        subBuilder: $392.LockStatus.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -760,9 +760,9 @@ class Label extends $pb.GeneratedMessage {
 
   /// Output only. The user who created this label.
   @$pb.TagNumber(5)
-  $390.UserInfo get creator => $_getN(4);
+  $392.UserInfo get creator => $_getN(4);
   @$pb.TagNumber(5)
-  set creator($390.UserInfo v) {
+  set creator($392.UserInfo v) {
     setField(5, v);
   }
 
@@ -771,13 +771,13 @@ class Label extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCreator() => clearField(5);
   @$pb.TagNumber(5)
-  $390.UserInfo ensureCreator() => $_ensure(4);
+  $392.UserInfo ensureCreator() => $_ensure(4);
 
   /// Output only. The time this label was created.
   @$pb.TagNumber(6)
-  $302.Timestamp get createTime => $_getN(5);
+  $304.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -786,13 +786,13 @@ class Label extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureCreateTime() => $_ensure(5);
+  $304.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. The user who created this label revision.
   @$pb.TagNumber(7)
-  $390.UserInfo get revisionCreator => $_getN(6);
+  $392.UserInfo get revisionCreator => $_getN(6);
   @$pb.TagNumber(7)
-  set revisionCreator($390.UserInfo v) {
+  set revisionCreator($392.UserInfo v) {
     setField(7, v);
   }
 
@@ -801,13 +801,13 @@ class Label extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearRevisionCreator() => clearField(7);
   @$pb.TagNumber(7)
-  $390.UserInfo ensureRevisionCreator() => $_ensure(6);
+  $392.UserInfo ensureRevisionCreator() => $_ensure(6);
 
   /// Output only. The time this label revision was created.
   @$pb.TagNumber(8)
-  $302.Timestamp get revisionCreateTime => $_getN(7);
+  $304.Timestamp get revisionCreateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set revisionCreateTime($302.Timestamp v) {
+  set revisionCreateTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -816,14 +816,14 @@ class Label extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearRevisionCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureRevisionCreateTime() => $_ensure(7);
+  $304.Timestamp ensureRevisionCreateTime() => $_ensure(7);
 
   /// Output only. The user who published this label.  This value has no meaning
   /// when the label is not published.
   @$pb.TagNumber(9)
-  $390.UserInfo get publisher => $_getN(8);
+  $392.UserInfo get publisher => $_getN(8);
   @$pb.TagNumber(9)
-  set publisher($390.UserInfo v) {
+  set publisher($392.UserInfo v) {
     setField(9, v);
   }
 
@@ -832,14 +832,14 @@ class Label extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearPublisher() => clearField(9);
   @$pb.TagNumber(9)
-  $390.UserInfo ensurePublisher() => $_ensure(8);
+  $392.UserInfo ensurePublisher() => $_ensure(8);
 
   /// Output only. The time this label was published. This value has no meaning
   /// when the label is not published.
   @$pb.TagNumber(10)
-  $302.Timestamp get publishTime => $_getN(9);
+  $304.Timestamp get publishTime => $_getN(9);
   @$pb.TagNumber(10)
-  set publishTime($302.Timestamp v) {
+  set publishTime($304.Timestamp v) {
     setField(10, v);
   }
 
@@ -848,14 +848,14 @@ class Label extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearPublishTime() => clearField(10);
   @$pb.TagNumber(10)
-  $302.Timestamp ensurePublishTime() => $_ensure(9);
+  $304.Timestamp ensurePublishTime() => $_ensure(9);
 
   /// Output only. The user who disabled this label. This value has no meaning
   /// when the label is not disabled.
   @$pb.TagNumber(11)
-  $390.UserInfo get disabler => $_getN(10);
+  $392.UserInfo get disabler => $_getN(10);
   @$pb.TagNumber(11)
-  set disabler($390.UserInfo v) {
+  set disabler($392.UserInfo v) {
     setField(11, v);
   }
 
@@ -864,14 +864,14 @@ class Label extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearDisabler() => clearField(11);
   @$pb.TagNumber(11)
-  $390.UserInfo ensureDisabler() => $_ensure(10);
+  $392.UserInfo ensureDisabler() => $_ensure(10);
 
   /// Output only. The time this label was disabled. This value has no meaning
   /// when the label is not disabled.
   @$pb.TagNumber(12)
-  $302.Timestamp get disableTime => $_getN(11);
+  $304.Timestamp get disableTime => $_getN(11);
   @$pb.TagNumber(12)
-  set disableTime($302.Timestamp v) {
+  set disableTime($304.Timestamp v) {
     setField(12, v);
   }
 
@@ -880,7 +880,7 @@ class Label extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearDisableTime() => clearField(12);
   @$pb.TagNumber(12)
-  $302.Timestamp ensureDisableTime() => $_ensure(11);
+  $304.Timestamp ensureDisableTime() => $_ensure(11);
 
   /// Output only. The customer this label belongs to.
   /// For example: "customers/123abc789."
@@ -914,9 +914,9 @@ class Label extends $pb.GeneratedMessage {
   /// Output only. The lifecycle state of the label including whether it's
   /// published, deprecated, and has draft changes.
   @$pb.TagNumber(15)
-  $390.Lifecycle get lifecycle => $_getN(14);
+  $392.Lifecycle get lifecycle => $_getN(14);
   @$pb.TagNumber(15)
-  set lifecycle($390.Lifecycle v) {
+  set lifecycle($392.Lifecycle v) {
     setField(15, v);
   }
 
@@ -925,7 +925,7 @@ class Label extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   void clearLifecycle() => clearField(15);
   @$pb.TagNumber(15)
-  $390.Lifecycle ensureLifecycle() => $_ensure(14);
+  $392.Lifecycle ensureLifecycle() => $_ensure(14);
 
   /// Output only. UI display hints for rendering the label.
   @$pb.TagNumber(16)
@@ -989,7 +989,7 @@ class Label extends $pb.GeneratedMessage {
 
   /// List of fields in descending priority order.
   @$pb.TagNumber(20)
-  $core.List<$391.Field> get fields => $_getList(19);
+  $core.List<$393.Field> get fields => $_getList(19);
 
   /// Custom URL to present to users to allow them to learn more about this label
   /// and how it should be used.
@@ -1007,9 +1007,9 @@ class Label extends $pb.GeneratedMessage {
 
   /// Output only. The LockStatus of this label.
   @$pb.TagNumber(22)
-  $390.LockStatus get lockStatus => $_getN(21);
+  $392.LockStatus get lockStatus => $_getN(21);
   @$pb.TagNumber(22)
-  set lockStatus($390.LockStatus v) {
+  set lockStatus($392.LockStatus v) {
     setField(22, v);
   }
 
@@ -1018,7 +1018,7 @@ class Label extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   void clearLockStatus() => clearField(22);
   @$pb.TagNumber(22)
-  $390.LockStatus ensureLockStatus() => $_ensure(21);
+  $392.LockStatus ensureLockStatus() => $_ensure(21);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

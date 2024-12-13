@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
-import '../../config_change.pb.dart' as $376;
+import '../../../protobuf/timestamp.pb.dart' as $304;
+import '../../config_change.pb.dart' as $378;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -198,7 +198,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? resourceNames,
     $core.Iterable<OperationMetadata_Step>? steps,
     $core.int? progressPercentage,
-    $302.Timestamp? startTime,
+    $304.Timestamp? startTime,
   }) {
     final $result = create();
     if (resourceNames != null) {
@@ -234,8 +234,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
         subBuilder: OperationMetadata_Step.create)
     ..a<$core.int>(
         3, _omitFieldNames ? '' : 'progressPercentage', $pb.PbFieldType.O3)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -285,9 +285,9 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The start time of the operation.
   @$pb.TagNumber(4)
-  $302.Timestamp get startTime => $_getN(3);
+  $304.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -296,7 +296,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureStartTime() => $_ensure(3);
+  $304.Timestamp ensureStartTime() => $_ensure(3);
 }
 
 /// Represents a diagnostic message (error or warning)
@@ -650,7 +650,7 @@ class ConfigRef extends $pb.GeneratedMessage {
 ///  two service configurations.
 class ChangeReport extends $pb.GeneratedMessage {
   factory ChangeReport({
-    $core.Iterable<$376.ConfigChange>? configChanges,
+    $core.Iterable<$378.ConfigChange>? configChanges,
   }) {
     final $result = create();
     if (configChanges != null) {
@@ -671,9 +671,9 @@ class ChangeReport extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.api.servicemanagement.v1'),
       createEmptyInstance: create)
-    ..pc<$376.ConfigChange>(
+    ..pc<$378.ConfigChange>(
         1, _omitFieldNames ? '' : 'configChanges', $pb.PbFieldType.PM,
-        subBuilder: $376.ConfigChange.create)
+        subBuilder: $378.ConfigChange.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -705,7 +705,7 @@ class ChangeReport extends $pb.GeneratedMessage {
   /// A ConfigChange identifier is a dot separated path to the configuration.
   /// Example: visibility.rules[selector='LibraryService.CreateBook'].restriction
   @$pb.TagNumber(1)
-  $core.List<$376.ConfigChange> get configChanges => $_getList(0);
+  $core.List<$378.ConfigChange> get configChanges => $_getList(0);
 }
 
 ///  Strategy that specifies how clients of Google Service Controller want to
@@ -857,7 +857,7 @@ enum Rollout_Strategy { trafficPercentStrategy, deleteServiceStrategy, notSet }
 class Rollout extends $pb.GeneratedMessage {
   factory Rollout({
     $core.String? rolloutId,
-    $302.Timestamp? createTime,
+    $304.Timestamp? createTime,
     $core.String? createdBy,
     Rollout_RolloutStatus? status,
     Rollout_TrafficPercentStrategy? trafficPercentStrategy,
@@ -908,8 +908,8 @@ class Rollout extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [5, 200])
     ..aOS(1, _omitFieldNames ? '' : 'rolloutId')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'createdBy')
     ..e<Rollout_RolloutStatus>(
         4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
@@ -972,9 +972,9 @@ class Rollout extends $pb.GeneratedMessage {
 
   /// Creation time of the rollout. Readonly.
   @$pb.TagNumber(2)
-  $302.Timestamp get createTime => $_getN(1);
+  $304.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -983,7 +983,7 @@ class Rollout extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureCreateTime() => $_ensure(1);
+  $304.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// The user who created the Rollout. Readonly.
   @$pb.TagNumber(3)

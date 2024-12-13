@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $264;
+import '../../protobuf/duration.pb.dart' as $266;
 
 /// ReadIterationStats captures information about the iteration of rows or cells
 /// over the course of a read, e.g. how many results were scanned in a read
@@ -143,7 +143,7 @@ class ReadIterationStats extends $pb.GeneratedMessage {
 /// request took to execute within a frontend server.
 class RequestLatencyStats extends $pb.GeneratedMessage {
   factory RequestLatencyStats({
-    $264.Duration? frontendServerLatency,
+    $266.Duration? frontendServerLatency,
   }) {
     final $result = create();
     if (frontendServerLatency != null) {
@@ -164,8 +164,8 @@ class RequestLatencyStats extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
       createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'frontendServerLatency',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'frontendServerLatency',
+        subBuilder: $266.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -209,9 +209,9 @@ class RequestLatencyStats extends $pb.GeneratedMessage {
   ///  for results from nodes, and finally sending results from nodes back to the
   ///  caller.
   @$pb.TagNumber(1)
-  $264.Duration get frontendServerLatency => $_getN(0);
+  $266.Duration get frontendServerLatency => $_getN(0);
   @$pb.TagNumber(1)
-  set frontendServerLatency($264.Duration v) {
+  set frontendServerLatency($266.Duration v) {
     setField(1, v);
   }
 
@@ -220,7 +220,7 @@ class RequestLatencyStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearFrontendServerLatency() => clearField(1);
   @$pb.TagNumber(1)
-  $264.Duration ensureFrontendServerLatency() => $_ensure(0);
+  $266.Duration ensureFrontendServerLatency() => $_ensure(0);
 }
 
 /// FullReadStatsView captures all known information about a read.

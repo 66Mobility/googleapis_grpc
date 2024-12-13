@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $302;
-import '../../../type/types.pb.dart' as $537;
+import '../../../../protobuf/timestamp.pb.dart' as $304;
+import '../../../type/types.pb.dart' as $540;
 
 /// A sale for the merchant.
 class LfpSale extends $pb.GeneratedMessage {
@@ -27,9 +27,9 @@ class LfpSale extends $pb.GeneratedMessage {
     $core.String? regionCode,
     $core.String? contentLanguage,
     $core.String? gtin,
-    $537.Price? price,
+    $540.Price? price,
     $fixnum.Int64? quantity,
-    $302.Timestamp? saleTime,
+    $304.Timestamp? saleTime,
     $core.String? uid,
     $core.String? feedLabel,
   }) {
@@ -92,11 +92,11 @@ class LfpSale extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'regionCode')
     ..aOS(6, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(7, _omitFieldNames ? '' : 'gtin')
-    ..aOM<$537.Price>(8, _omitFieldNames ? '' : 'price',
-        subBuilder: $537.Price.create)
+    ..aOM<$540.Price>(8, _omitFieldNames ? '' : 'price',
+        subBuilder: $540.Price.create)
     ..aInt64(9, _omitFieldNames ? '' : 'quantity')
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'saleTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(10, _omitFieldNames ? '' : 'saleTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'uid')
     ..aOS(12, _omitFieldNames ? '' : 'feedLabel')
     ..hasRequiredFields = false;
@@ -225,9 +225,9 @@ class LfpSale extends $pb.GeneratedMessage {
 
   /// Required. The unit price of the product.
   @$pb.TagNumber(8)
-  $537.Price get price => $_getN(7);
+  $540.Price get price => $_getN(7);
   @$pb.TagNumber(8)
-  set price($537.Price v) {
+  set price($540.Price v) {
     setField(8, v);
   }
 
@@ -236,7 +236,7 @@ class LfpSale extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearPrice() => clearField(8);
   @$pb.TagNumber(8)
-  $537.Price ensurePrice() => $_ensure(7);
+  $540.Price ensurePrice() => $_ensure(7);
 
   /// Required. The relative change of the available quantity. Negative for items
   /// returned.
@@ -254,9 +254,9 @@ class LfpSale extends $pb.GeneratedMessage {
 
   /// Required. The timestamp for the sale.
   @$pb.TagNumber(10)
-  $302.Timestamp get saleTime => $_getN(9);
+  $304.Timestamp get saleTime => $_getN(9);
   @$pb.TagNumber(10)
-  set saleTime($302.Timestamp v) {
+  set saleTime($304.Timestamp v) {
     setField(10, v);
   }
 
@@ -265,7 +265,7 @@ class LfpSale extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearSaleTime() => clearField(10);
   @$pb.TagNumber(10)
-  $302.Timestamp ensureSaleTime() => $_ensure(9);
+  $304.Timestamp ensureSaleTime() => $_ensure(9);
 
   /// Output only. System generated globally unique ID for the `LfpSale`.
   @$pb.TagNumber(11)

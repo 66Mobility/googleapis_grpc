@@ -85,6 +85,12 @@ class ComputeRoutesRequest_ExtraComputation extends $pb.ProtobufEnum {
       HTML_FORMATTED_NAVIGATION_INSTRUCTIONS =
       ComputeRoutesRequest_ExtraComputation._(
           4, _omitEnumNames ? '' : 'HTML_FORMATTED_NAVIGATION_INSTRUCTIONS');
+  static const ComputeRoutesRequest_ExtraComputation FLYOVER_INFO_ON_POLYLINE =
+      ComputeRoutesRequest_ExtraComputation._(
+          7, _omitEnumNames ? '' : 'FLYOVER_INFO_ON_POLYLINE');
+  static const ComputeRoutesRequest_ExtraComputation
+      NARROW_ROAD_INFO_ON_POLYLINE = ComputeRoutesRequest_ExtraComputation._(
+          8, _omitEnumNames ? '' : 'NARROW_ROAD_INFO_ON_POLYLINE');
 
   static const $core.List<ComputeRoutesRequest_ExtraComputation> values =
       <ComputeRoutesRequest_ExtraComputation>[
@@ -93,6 +99,8 @@ class ComputeRoutesRequest_ExtraComputation extends $pb.ProtobufEnum {
     FUEL_CONSUMPTION,
     TRAFFIC_ON_POLYLINE,
     HTML_FORMATTED_NAVIGATION_INSTRUCTIONS,
+    FLYOVER_INFO_ON_POLYLINE,
+    NARROW_ROAD_INFO_ON_POLYLINE,
   ];
 
   static final $core.Map<$core.int, ComputeRoutesRequest_ExtraComputation>

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../../protobuf/field_mask.pb.dart' as $335;
 import 'businessidentity.pbenum.dart';
 
 export 'businessidentity.pbenum.dart';
@@ -380,7 +380,7 @@ class GetBusinessIdentityRequest extends $pb.GeneratedMessage {
 class UpdateBusinessIdentityRequest extends $pb.GeneratedMessage {
   factory UpdateBusinessIdentityRequest({
     BusinessIdentity? businessIdentity,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (businessIdentity != null) {
@@ -406,8 +406,8 @@ class UpdateBusinessIdentityRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<BusinessIdentity>(1, _omitFieldNames ? '' : 'businessIdentity',
         subBuilder: BusinessIdentity.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -454,9 +454,9 @@ class UpdateBusinessIdentityRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields being updated.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -465,7 +465,7 @@ class UpdateBusinessIdentityRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

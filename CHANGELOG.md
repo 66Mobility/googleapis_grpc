@@ -1,3 +1,8 @@
+## 1.0.26
+
+- Update protobuf definitions
+- New lints of Dart 3.6
+
 ## 1.0.25
 
 - Update protobuf definitions

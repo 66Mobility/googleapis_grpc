@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../protobuf/field_mask.pb.dart' as $335;
 import 'retriever.pb.dart' as $21;
 
 /// Request to create a `Corpus`.
@@ -152,7 +152,7 @@ class GetCorpusRequest extends $pb.GeneratedMessage {
 class UpdateCorpusRequest extends $pb.GeneratedMessage {
   factory UpdateCorpusRequest({
     $21.Corpus? corpus,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (corpus != null) {
@@ -178,8 +178,8 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<$21.Corpus>(1, _omitFieldNames ? '' : 'corpus',
         subBuilder: $21.Corpus.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -223,9 +223,9 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
   /// Required. The list of fields to update.
   /// Currently, this only supports updating `display_name`.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -234,7 +234,7 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete a `Corpus`.
@@ -938,7 +938,7 @@ class GetDocumentRequest extends $pb.GeneratedMessage {
 class UpdateDocumentRequest extends $pb.GeneratedMessage {
   factory UpdateDocumentRequest({
     $21.Document? document,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (document != null) {
@@ -964,8 +964,8 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<$21.Document>(1, _omitFieldNames ? '' : 'document',
         subBuilder: $21.Document.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1012,9 +1012,9 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
   /// Currently, this only supports updating `display_name` and
   /// `custom_metadata`.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -1023,7 +1023,7 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete a `Document`.
@@ -1805,7 +1805,7 @@ class GetChunkRequest extends $pb.GeneratedMessage {
 class UpdateChunkRequest extends $pb.GeneratedMessage {
   factory UpdateChunkRequest({
     $21.Chunk? chunk,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (chunk != null) {
@@ -1831,8 +1831,8 @@ class UpdateChunkRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<$21.Chunk>(1, _omitFieldNames ? '' : 'chunk',
         subBuilder: $21.Chunk.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1876,9 +1876,9 @@ class UpdateChunkRequest extends $pb.GeneratedMessage {
   /// Required. The list of fields to update.
   /// Currently, this only supports updating `custom_metadata` and `data`.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -1887,7 +1887,7 @@ class UpdateChunkRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to batch update `Chunk`s.

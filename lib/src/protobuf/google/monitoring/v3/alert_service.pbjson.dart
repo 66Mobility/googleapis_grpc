@@ -55,19 +55,20 @@ const ListAlertPoliciesRequest$json = {
   '1': 'ListAlertPoliciesRequest',
   '2': [
     {'1': 'name', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'filter', '3': 5, '4': 1, '5': 9, '10': 'filter'},
-    {'1': 'order_by', '3': 6, '4': 1, '5': 9, '10': 'orderBy'},
-    {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
-    {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
+    {'1': 'filter', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'filter'},
+    {'1': 'order_by', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'orderBy'},
+    {'1': 'page_size', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
+    {'1': 'page_token', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
   ],
 };
 
 /// Descriptor for `ListAlertPoliciesRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List listAlertPoliciesRequestDescriptor = $convert.base64Decode(
     'ChhMaXN0QWxlcnRQb2xpY2llc1JlcXVlc3QSQQoEbmFtZRgEIAEoCUIt4EEC+kEnEiVtb25pdG'
-    '9yaW5nLmdvb2dsZWFwaXMuY29tL0FsZXJ0UG9saWN5UgRuYW1lEhYKBmZpbHRlchgFIAEoCVIG'
-    'ZmlsdGVyEhkKCG9yZGVyX2J5GAYgASgJUgdvcmRlckJ5EhsKCXBhZ2Vfc2l6ZRgCIAEoBVIIcG'
-    'FnZVNpemUSHQoKcGFnZV90b2tlbhgDIAEoCVIJcGFnZVRva2Vu');
+    '9yaW5nLmdvb2dsZWFwaXMuY29tL0FsZXJ0UG9saWN5UgRuYW1lEhsKBmZpbHRlchgFIAEoCUID'
+    '4EEBUgZmaWx0ZXISHgoIb3JkZXJfYnkYBiABKAlCA+BBAVIHb3JkZXJCeRIgCglwYWdlX3Npem'
+    'UYAiABKAVCA+BBAVIIcGFnZVNpemUSIgoKcGFnZV90b2tlbhgDIAEoCUID4EEBUglwYWdlVG9r'
+    'ZW4=');
 
 @$core.Deprecated('Use listAlertPoliciesResponseDescriptor instead')
 const ListAlertPoliciesResponse$json = {
@@ -103,6 +104,7 @@ const UpdateAlertPolicyRequest$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.FieldMask',
+      '8': {},
       '10': 'updateMask'
     },
     {
@@ -119,9 +121,10 @@ const UpdateAlertPolicyRequest$json = {
 
 /// Descriptor for `UpdateAlertPolicyRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List updateAlertPolicyRequestDescriptor = $convert.base64Decode(
-    'ChhVcGRhdGVBbGVydFBvbGljeVJlcXVlc3QSOwoLdXBkYXRlX21hc2sYAiABKAsyGi5nb29nbG'
-    'UucHJvdG9idWYuRmllbGRNYXNrUgp1cGRhdGVNYXNrEkkKDGFsZXJ0X3BvbGljeRgDIAEoCzIh'
-    'Lmdvb2dsZS5tb25pdG9yaW5nLnYzLkFsZXJ0UG9saWN5QgPgQQJSC2FsZXJ0UG9saWN5');
+    'ChhVcGRhdGVBbGVydFBvbGljeVJlcXVlc3QSQAoLdXBkYXRlX21hc2sYAiABKAsyGi5nb29nbG'
+    'UucHJvdG9idWYuRmllbGRNYXNrQgPgQQFSCnVwZGF0ZU1hc2sSSQoMYWxlcnRfcG9saWN5GAMg'
+    'ASgLMiEuZ29vZ2xlLm1vbml0b3JpbmcudjMuQWxlcnRQb2xpY3lCA+BBAlILYWxlcnRQb2xpY3'
+    'k=');
 
 @$core.Deprecated('Use deleteAlertPolicyRequestDescriptor instead')
 const DeleteAlertPolicyRequest$json = {

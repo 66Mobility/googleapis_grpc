@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/context/attribute_context.pb.dart' as $375;
-import '../../../rpc/status.pb.dart' as $322;
+import '../../../rpc/context/attribute_context.pb.dart' as $377;
+import '../../../rpc/status.pb.dart' as $324;
 
 /// Request message for the Check method.
 class CheckRequest extends $pb.GeneratedMessage {
   factory CheckRequest({
     $core.String? serviceName,
     $core.String? serviceConfigId,
-    $375.AttributeContext? attributes,
+    $377.AttributeContext? attributes,
     $core.Iterable<ResourceInfo>? resources,
     $core.String? flags,
   }) {
@@ -58,8 +58,8 @@ class CheckRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
     ..aOS(2, _omitFieldNames ? '' : 'serviceConfigId')
-    ..aOM<$375.AttributeContext>(3, _omitFieldNames ? '' : 'attributes',
-        subBuilder: $375.AttributeContext.create)
+    ..aOM<$377.AttributeContext>(3, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $377.AttributeContext.create)
     ..pc<ResourceInfo>(
         4, _omitFieldNames ? '' : 'resources', $pb.PbFieldType.PM,
         subBuilder: ResourceInfo.create)
@@ -124,9 +124,9 @@ class CheckRequest extends $pb.GeneratedMessage {
 
   /// Describes attributes about the operation being executed by the service.
   @$pb.TagNumber(3)
-  $375.AttributeContext get attributes => $_getN(2);
+  $377.AttributeContext get attributes => $_getN(2);
   @$pb.TagNumber(3)
-  set attributes($375.AttributeContext v) {
+  set attributes($377.AttributeContext v) {
     setField(3, v);
   }
 
@@ -135,7 +135,7 @@ class CheckRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAttributes() => clearField(3);
   @$pb.TagNumber(3)
-  $375.AttributeContext ensureAttributes() => $_ensure(2);
+  $377.AttributeContext ensureAttributes() => $_ensure(2);
 
   /// Describes the resources and the policies applied to each resource.
   @$pb.TagNumber(4)
@@ -304,7 +304,7 @@ class ResourceInfo extends $pb.GeneratedMessage {
 /// Response message for the Check method.
 class CheckResponse extends $pb.GeneratedMessage {
   factory CheckResponse({
-    $322.Status? status,
+    $324.Status? status,
     $core.Map<$core.String, $core.String>? headers,
   }) {
     final $result = create();
@@ -329,8 +329,8 @@ class CheckResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.api.servicecontrol.v2'),
       createEmptyInstance: create)
-    ..aOM<$322.Status>(1, _omitFieldNames ? '' : 'status',
-        subBuilder: $322.Status.create)
+    ..aOM<$324.Status>(1, _omitFieldNames ? '' : 'status',
+        subBuilder: $324.Status.create)
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'headers',
         entryClassName: 'CheckResponse.HeadersEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -365,9 +365,9 @@ class CheckResponse extends $pb.GeneratedMessage {
   /// indicates a denial; [google.rpc.Status.details][google.rpc.Status.details]
   /// would contain additional details about the denial.
   @$pb.TagNumber(1)
-  $322.Status get status => $_getN(0);
+  $324.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($322.Status v) {
+  set status($324.Status v) {
     setField(1, v);
   }
 
@@ -376,7 +376,7 @@ class CheckResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $322.Status ensureStatus() => $_ensure(0);
+  $324.Status ensureStatus() => $_ensure(0);
 
   /// Returns a set of request contexts generated from the `CheckRequest`.
   @$pb.TagNumber(2)
@@ -388,7 +388,7 @@ class ReportRequest extends $pb.GeneratedMessage {
   factory ReportRequest({
     $core.String? serviceName,
     $core.String? serviceConfigId,
-    $core.Iterable<$375.AttributeContext>? operations,
+    $core.Iterable<$377.AttributeContext>? operations,
   }) {
     final $result = create();
     if (serviceName != null) {
@@ -417,9 +417,9 @@ class ReportRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
     ..aOS(2, _omitFieldNames ? '' : 'serviceConfigId')
-    ..pc<$375.AttributeContext>(
+    ..pc<$377.AttributeContext>(
         3, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM,
-        subBuilder: $375.AttributeContext.create)
+        subBuilder: $377.AttributeContext.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -482,7 +482,7 @@ class ReportRequest extends $pb.GeneratedMessage {
   /// represented as an AttributeContext, and contains all attributes around an
   /// API access.
   @$pb.TagNumber(3)
-  $core.List<$375.AttributeContext> get operations => $_getList(2);
+  $core.List<$377.AttributeContext> get operations => $_getList(2);
 }
 
 /// Response message for the Report method.

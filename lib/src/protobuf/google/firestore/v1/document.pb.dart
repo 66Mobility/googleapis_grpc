@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pbenum.dart' as $261;
-import '../../protobuf/timestamp.pb.dart' as $302;
-import '../../type/latlng.pb.dart' as $325;
+import '../../protobuf/struct.pbenum.dart' as $263;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../type/latlng.pb.dart' as $327;
 
 ///  A Firestore document.
 ///
@@ -25,8 +25,8 @@ class Document extends $pb.GeneratedMessage {
   factory Document({
     $core.String? name,
     $core.Map<$core.String, Value>? fields,
-    $302.Timestamp? createTime,
-    $302.Timestamp? updateTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -64,10 +64,10 @@ class Document extends $pb.GeneratedMessage {
         valueCreator: Value.create,
         valueDefaultOrMaker: Value.getDefault,
         packageName: const $pb.PackageName('google.firestore.v1'))
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -138,9 +138,9 @@ class Document extends $pb.GeneratedMessage {
   ///  recreated. It can also be compared to values from other documents and
   ///  the `read_time` of a query.
   @$pb.TagNumber(3)
-  $302.Timestamp get createTime => $_getN(2);
+  $304.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -149,7 +149,7 @@ class Document extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureCreateTime() => $_ensure(2);
+  $304.Timestamp ensureCreateTime() => $_ensure(2);
 
   ///  Output only. The time at which the document was last changed.
   ///
@@ -157,9 +157,9 @@ class Document extends $pb.GeneratedMessage {
   ///  monotonically with each change to the document. It can also be
   ///  compared to values from other documents and the `read_time` of a query.
   @$pb.TagNumber(4)
-  $302.Timestamp get updateTime => $_getN(3);
+  $304.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -168,7 +168,7 @@ class Document extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureUpdateTime() => $_ensure(3);
+  $304.Timestamp ensureUpdateTime() => $_ensure(3);
 }
 
 enum Value_ValueType {
@@ -194,10 +194,10 @@ class Value extends $pb.GeneratedMessage {
     $core.double? doubleValue,
     $core.String? referenceValue,
     MapValue? mapValue,
-    $325.LatLng? geoPointValue,
+    $327.LatLng? geoPointValue,
     ArrayValue? arrayValue,
-    $302.Timestamp? timestampValue,
-    $261.NullValue? nullValue,
+    $304.Timestamp? timestampValue,
+    $263.NullValue? nullValue,
     $core.String? stringValue,
     $core.List<$core.int>? bytesValue,
   }) {
@@ -272,17 +272,17 @@ class Value extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'referenceValue')
     ..aOM<MapValue>(6, _omitFieldNames ? '' : 'mapValue',
         subBuilder: MapValue.create)
-    ..aOM<$325.LatLng>(8, _omitFieldNames ? '' : 'geoPointValue',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(8, _omitFieldNames ? '' : 'geoPointValue',
+        subBuilder: $327.LatLng.create)
     ..aOM<ArrayValue>(9, _omitFieldNames ? '' : 'arrayValue',
         subBuilder: ArrayValue.create)
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'timestampValue',
-        subBuilder: $302.Timestamp.create)
-    ..e<$261.NullValue>(
+    ..aOM<$304.Timestamp>(10, _omitFieldNames ? '' : 'timestampValue',
+        subBuilder: $304.Timestamp.create)
+    ..e<$263.NullValue>(
         11, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE,
-        defaultOrMaker: $261.NullValue.NULL_VALUE,
-        valueOf: $261.NullValue.valueOf,
-        enumValues: $261.NullValue.values)
+        defaultOrMaker: $263.NullValue.NULL_VALUE,
+        valueOf: $263.NullValue.valueOf,
+        enumValues: $263.NullValue.values)
     ..aOS(17, _omitFieldNames ? '' : 'stringValue')
     ..a<$core.List<$core.int>>(
         18, _omitFieldNames ? '' : 'bytesValue', $pb.PbFieldType.OY)
@@ -382,9 +382,9 @@ class Value extends $pb.GeneratedMessage {
 
   /// A geo point value representing a point on the surface of Earth.
   @$pb.TagNumber(8)
-  $325.LatLng get geoPointValue => $_getN(5);
+  $327.LatLng get geoPointValue => $_getN(5);
   @$pb.TagNumber(8)
-  set geoPointValue($325.LatLng v) {
+  set geoPointValue($327.LatLng v) {
     setField(8, v);
   }
 
@@ -393,7 +393,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearGeoPointValue() => clearField(8);
   @$pb.TagNumber(8)
-  $325.LatLng ensureGeoPointValue() => $_ensure(5);
+  $327.LatLng ensureGeoPointValue() => $_ensure(5);
 
   ///  An array value.
   ///
@@ -418,9 +418,9 @@ class Value extends $pb.GeneratedMessage {
   ///  Precise only to microseconds. When stored, any additional precision is
   ///  rounded down.
   @$pb.TagNumber(10)
-  $302.Timestamp get timestampValue => $_getN(7);
+  $304.Timestamp get timestampValue => $_getN(7);
   @$pb.TagNumber(10)
-  set timestampValue($302.Timestamp v) {
+  set timestampValue($304.Timestamp v) {
     setField(10, v);
   }
 
@@ -429,13 +429,13 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearTimestampValue() => clearField(10);
   @$pb.TagNumber(10)
-  $302.Timestamp ensureTimestampValue() => $_ensure(7);
+  $304.Timestamp ensureTimestampValue() => $_ensure(7);
 
   /// A null value.
   @$pb.TagNumber(11)
-  $261.NullValue get nullValue => $_getN(8);
+  $263.NullValue get nullValue => $_getN(8);
   @$pb.TagNumber(11)
-  set nullValue($261.NullValue v) {
+  set nullValue($263.NullValue v) {
     setField(11, v);
   }
 

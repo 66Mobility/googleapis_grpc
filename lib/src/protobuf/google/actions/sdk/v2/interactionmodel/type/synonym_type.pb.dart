@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'entity_display.pb.dart' as $282;
+import 'entity_display.pb.dart' as $284;
 import 'synonym_type.pbenum.dart';
 
 export 'synonym_type.pbenum.dart';
@@ -22,7 +22,7 @@ export 'synonym_type.pbenum.dart';
 /// entry inside the type.
 class SynonymType_Entity extends $pb.GeneratedMessage {
   factory SynonymType_Entity({
-    $282.EntityDisplay? display,
+    $284.EntityDisplay? display,
     $core.Iterable<$core.String>? synonyms,
   }) {
     final $result = create();
@@ -48,8 +48,8 @@ class SynonymType_Entity extends $pb.GeneratedMessage {
           ? ''
           : 'google.actions.sdk.v2.interactionmodel.type'),
       createEmptyInstance: create)
-    ..aOM<$282.EntityDisplay>(1, _omitFieldNames ? '' : 'display',
-        subBuilder: $282.EntityDisplay.create)
+    ..aOM<$284.EntityDisplay>(1, _omitFieldNames ? '' : 'display',
+        subBuilder: $284.EntityDisplay.create)
     ..pPS(2, _omitFieldNames ? '' : 'synonyms')
     ..hasRequiredFields = false;
 
@@ -78,9 +78,9 @@ class SynonymType_Entity extends $pb.GeneratedMessage {
 
   /// Optional. The entity display details.
   @$pb.TagNumber(1)
-  $282.EntityDisplay get display => $_getN(0);
+  $284.EntityDisplay get display => $_getN(0);
   @$pb.TagNumber(1)
-  set display($282.EntityDisplay v) {
+  set display($284.EntityDisplay v) {
     setField(1, v);
   }
 
@@ -89,7 +89,7 @@ class SynonymType_Entity extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearDisplay() => clearField(1);
   @$pb.TagNumber(1)
-  $282.EntityDisplay ensureDisplay() => $_ensure(0);
+  $284.EntityDisplay ensureDisplay() => $_ensure(0);
 
   /// Optional. The list of synonyms for the entity.
   /// **This field is localizable.**

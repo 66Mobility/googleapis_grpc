@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 import 'backup.pbenum.dart';
 
 export 'backup.pbenum.dart';
@@ -128,8 +128,8 @@ class Backup extends $pb.GeneratedMessage {
   factory Backup({
     $core.String? name,
     $core.String? database,
-    $302.Timestamp? snapshotTime,
-    $302.Timestamp? expireTime,
+    $304.Timestamp? snapshotTime,
+    $304.Timestamp? expireTime,
     Backup_Stats? stats,
     $core.String? databaseUid,
     Backup_State? state,
@@ -173,10 +173,10 @@ class Backup extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'database')
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'snapshotTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'snapshotTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $304.Timestamp.create)
     ..aOM<Backup_Stats>(6, _omitFieldNames ? '' : 'stats',
         subBuilder: Backup_Stats.create)
     ..aOS(7, _omitFieldNames ? '' : 'databaseUid')
@@ -240,9 +240,9 @@ class Backup extends $pb.GeneratedMessage {
   /// Output only. The backup contains an externally consistent copy of the
   /// database at this time.
   @$pb.TagNumber(3)
-  $302.Timestamp get snapshotTime => $_getN(2);
+  $304.Timestamp get snapshotTime => $_getN(2);
   @$pb.TagNumber(3)
-  set snapshotTime($302.Timestamp v) {
+  set snapshotTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -251,13 +251,13 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearSnapshotTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureSnapshotTime() => $_ensure(2);
+  $304.Timestamp ensureSnapshotTime() => $_ensure(2);
 
   /// Output only. The timestamp at which this backup expires.
   @$pb.TagNumber(4)
-  $302.Timestamp get expireTime => $_getN(3);
+  $304.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expireTime($302.Timestamp v) {
+  set expireTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -266,7 +266,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearExpireTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureExpireTime() => $_ensure(3);
+  $304.Timestamp ensureExpireTime() => $_ensure(3);
 
   ///  Output only. Statistics about the backup.
   ///

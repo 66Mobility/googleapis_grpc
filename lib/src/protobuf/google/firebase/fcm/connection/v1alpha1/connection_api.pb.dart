@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../../protobuf/timestamp.pb.dart' as $304;
 
 enum UpstreamRequest_RequestType { ack, notSet }
 
@@ -244,8 +244,8 @@ class Ack extends $pb.GeneratedMessage {
 class Message extends $pb.GeneratedMessage {
   factory Message({
     $core.String? messageId,
-    $302.Timestamp? createTime,
-    $302.Timestamp? expireTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? expireTime,
     $core.Map<$core.String, $core.String>? data,
   }) {
     final $result = create();
@@ -277,10 +277,10 @@ class Message extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.firebase.fcm.connection.v1alpha1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'messageId')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $304.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'data',
         entryClassName: 'Message.DataEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -325,9 +325,9 @@ class Message extends $pb.GeneratedMessage {
 
   /// Time the message was received in FCM.
   @$pb.TagNumber(2)
-  $302.Timestamp get createTime => $_getN(1);
+  $304.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -336,13 +336,13 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureCreateTime() => $_ensure(1);
+  $304.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Expiry time of the message. Currently it is always 4 weeks.
   @$pb.TagNumber(3)
-  $302.Timestamp get expireTime => $_getN(2);
+  $304.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($302.Timestamp v) {
+  set expireTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -351,7 +351,7 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureExpireTime() => $_ensure(2);
+  $304.Timestamp ensureExpireTime() => $_ensure(2);
 
   /// The arbitrary payload set in the [Send
   /// API](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#resource-message).

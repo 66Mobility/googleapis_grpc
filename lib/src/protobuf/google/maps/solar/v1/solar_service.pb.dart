@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/date.pb.dart' as $327;
-import '../../../type/latlng.pb.dart' as $325;
-import '../../../type/money.pb.dart' as $465;
+import '../../../type/date.pb.dart' as $329;
+import '../../../type/latlng.pb.dart' as $327;
+import '../../../type/money.pb.dart' as $467;
 import 'solar_service.pbenum.dart';
 
 export 'solar_service.pbenum.dart';
@@ -23,7 +23,7 @@ export 'solar_service.pbenum.dart';
 /// Request message for `Solar.FindClosestBuildingInsights`.
 class FindClosestBuildingInsightsRequest extends $pb.GeneratedMessage {
   factory FindClosestBuildingInsightsRequest({
-    $325.LatLng? location,
+    $327.LatLng? location,
     ImageryQuality? requiredQuality,
     $core.bool? exactQualityRequired,
   }) {
@@ -52,8 +52,8 @@ class FindClosestBuildingInsightsRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.solar.v1'),
       createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: $327.LatLng.create)
     ..e<ImageryQuality>(
         3, _omitFieldNames ? '' : 'requiredQuality', $pb.PbFieldType.OE,
         defaultOrMaker: ImageryQuality.IMAGERY_QUALITY_UNSPECIFIED,
@@ -93,9 +93,9 @@ class FindClosestBuildingInsightsRequest extends $pb.GeneratedMessage {
   /// Required. The longitude and latitude from which the API looks for the
   /// nearest known building.
   @$pb.TagNumber(1)
-  $325.LatLng get location => $_getN(0);
+  $327.LatLng get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($325.LatLng v) {
+  set location($327.LatLng v) {
     setField(1, v);
   }
 
@@ -104,7 +104,7 @@ class FindClosestBuildingInsightsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearLocation() => clearField(1);
   @$pb.TagNumber(1)
-  $325.LatLng ensureLocation() => $_ensure(0);
+  $327.LatLng ensureLocation() => $_ensure(0);
 
   /// Optional. The minimum quality level allowed in the results. No result with
   /// lower quality than this will be returned. Not specifying this is
@@ -143,8 +143,8 @@ class FindClosestBuildingInsightsRequest extends $pb.GeneratedMessage {
 /// A bounding box in lat/lng coordinates.
 class LatLngBox extends $pb.GeneratedMessage {
   factory LatLngBox({
-    $325.LatLng? sw,
-    $325.LatLng? ne,
+    $327.LatLng? sw,
+    $327.LatLng? ne,
   }) {
     final $result = create();
     if (sw != null) {
@@ -168,10 +168,10 @@ class LatLngBox extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.solar.v1'),
       createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'sw',
-        subBuilder: $325.LatLng.create)
-    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'ne',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'sw',
+        subBuilder: $327.LatLng.create)
+    ..aOM<$327.LatLng>(2, _omitFieldNames ? '' : 'ne',
+        subBuilder: $327.LatLng.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -197,9 +197,9 @@ class LatLngBox extends $pb.GeneratedMessage {
 
   /// The southwest corner of the box.
   @$pb.TagNumber(1)
-  $325.LatLng get sw => $_getN(0);
+  $327.LatLng get sw => $_getN(0);
   @$pb.TagNumber(1)
-  set sw($325.LatLng v) {
+  set sw($327.LatLng v) {
     setField(1, v);
   }
 
@@ -208,13 +208,13 @@ class LatLngBox extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearSw() => clearField(1);
   @$pb.TagNumber(1)
-  $325.LatLng ensureSw() => $_ensure(0);
+  $327.LatLng ensureSw() => $_ensure(0);
 
   /// The northeast corner of the box.
   @$pb.TagNumber(2)
-  $325.LatLng get ne => $_getN(1);
+  $327.LatLng get ne => $_getN(1);
   @$pb.TagNumber(2)
-  set ne($325.LatLng v) {
+  set ne($327.LatLng v) {
     setField(2, v);
   }
 
@@ -223,7 +223,7 @@ class LatLngBox extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearNe() => clearField(2);
   @$pb.TagNumber(2)
-  $325.LatLng ensureNe() => $_ensure(1);
+  $327.LatLng ensureNe() => $_ensure(1);
 }
 
 /// Response message for `Solar.FindClosestBuildingInsights`.
@@ -232,8 +232,8 @@ class LatLngBox extends $pb.GeneratedMessage {
 class BuildingInsights extends $pb.GeneratedMessage {
   factory BuildingInsights({
     $core.String? name,
-    $325.LatLng? center,
-    $327.Date? imageryDate,
+    $327.LatLng? center,
+    $329.Date? imageryDate,
     $core.String? postalCode,
     $core.String? administrativeArea,
     $core.String? statisticalArea,
@@ -241,7 +241,7 @@ class BuildingInsights extends $pb.GeneratedMessage {
     SolarPotential? solarPotential,
     LatLngBox? boundingBox,
     ImageryQuality? imageryQuality,
-    $327.Date? imageryProcessedDate,
+    $329.Date? imageryProcessedDate,
   }) {
     final $result = create();
     if (name != null) {
@@ -293,10 +293,10 @@ class BuildingInsights extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.solar.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'center',
-        subBuilder: $325.LatLng.create)
-    ..aOM<$327.Date>(3, _omitFieldNames ? '' : 'imageryDate',
-        subBuilder: $327.Date.create)
+    ..aOM<$327.LatLng>(2, _omitFieldNames ? '' : 'center',
+        subBuilder: $327.LatLng.create)
+    ..aOM<$329.Date>(3, _omitFieldNames ? '' : 'imageryDate',
+        subBuilder: $329.Date.create)
     ..aOS(4, _omitFieldNames ? '' : 'postalCode')
     ..aOS(5, _omitFieldNames ? '' : 'administrativeArea')
     ..aOS(6, _omitFieldNames ? '' : 'statisticalArea')
@@ -310,8 +310,8 @@ class BuildingInsights extends $pb.GeneratedMessage {
         defaultOrMaker: ImageryQuality.IMAGERY_QUALITY_UNSPECIFIED,
         valueOf: ImageryQuality.valueOf,
         enumValues: ImageryQuality.values)
-    ..aOM<$327.Date>(11, _omitFieldNames ? '' : 'imageryProcessedDate',
-        subBuilder: $327.Date.create)
+    ..aOM<$329.Date>(11, _omitFieldNames ? '' : 'imageryProcessedDate',
+        subBuilder: $329.Date.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -352,9 +352,9 @@ class BuildingInsights extends $pb.GeneratedMessage {
 
   /// A point near the center of the building.
   @$pb.TagNumber(2)
-  $325.LatLng get center => $_getN(1);
+  $327.LatLng get center => $_getN(1);
   @$pb.TagNumber(2)
-  set center($325.LatLng v) {
+  set center($327.LatLng v) {
     setField(2, v);
   }
 
@@ -363,13 +363,13 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCenter() => clearField(2);
   @$pb.TagNumber(2)
-  $325.LatLng ensureCenter() => $_ensure(1);
+  $327.LatLng ensureCenter() => $_ensure(1);
 
   /// Date that the underlying imagery was acquired. This is approximate.
   @$pb.TagNumber(3)
-  $327.Date get imageryDate => $_getN(2);
+  $329.Date get imageryDate => $_getN(2);
   @$pb.TagNumber(3)
-  set imageryDate($327.Date v) {
+  set imageryDate($329.Date v) {
     setField(3, v);
   }
 
@@ -378,7 +378,7 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearImageryDate() => clearField(3);
   @$pb.TagNumber(3)
-  $327.Date ensureImageryDate() => $_ensure(2);
+  $329.Date ensureImageryDate() => $_ensure(2);
 
   /// Postal code (e.g., US zip code) this building is contained by.
   @$pb.TagNumber(4)
@@ -478,9 +478,9 @@ class BuildingInsights extends $pb.GeneratedMessage {
 
   /// When processing was completed on this imagery.
   @$pb.TagNumber(11)
-  $327.Date get imageryProcessedDate => $_getN(10);
+  $329.Date get imageryProcessedDate => $_getN(10);
   @$pb.TagNumber(11)
-  set imageryProcessedDate($327.Date v) {
+  set imageryProcessedDate($329.Date v) {
     setField(11, v);
   }
 
@@ -489,7 +489,7 @@ class BuildingInsights extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearImageryProcessedDate() => clearField(11);
   @$pb.TagNumber(11)
-  $327.Date ensureImageryProcessedDate() => $_ensure(10);
+  $329.Date ensureImageryProcessedDate() => $_ensure(10);
 }
 
 /// Information about the solar potential of a building. A number of
@@ -829,7 +829,7 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
     $core.double? pitchDegrees,
     $core.double? azimuthDegrees,
     SizeAndSunshineStats? stats,
-    $325.LatLng? center,
+    $327.LatLng? center,
     LatLngBox? boundingBox,
     $core.double? planeHeightAtCenterMeters,
   }) {
@@ -873,8 +873,8 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
         2, _omitFieldNames ? '' : 'azimuthDegrees', $pb.PbFieldType.OF)
     ..aOM<SizeAndSunshineStats>(3, _omitFieldNames ? '' : 'stats',
         subBuilder: SizeAndSunshineStats.create)
-    ..aOM<$325.LatLng>(4, _omitFieldNames ? '' : 'center',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(4, _omitFieldNames ? '' : 'center',
+        subBuilder: $327.LatLng.create)
     ..aOM<LatLngBox>(5, _omitFieldNames ? '' : 'boundingBox',
         subBuilder: LatLngBox.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'planeHeightAtCenterMeters',
@@ -956,9 +956,9 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
 
   /// A point near the center of the roof segment.
   @$pb.TagNumber(4)
-  $325.LatLng get center => $_getN(3);
+  $327.LatLng get center => $_getN(3);
   @$pb.TagNumber(4)
-  set center($325.LatLng v) {
+  set center($327.LatLng v) {
     setField(4, v);
   }
 
@@ -967,7 +967,7 @@ class RoofSegmentSizeAndSunshineStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCenter() => clearField(4);
   @$pb.TagNumber(4)
-  $325.LatLng ensureCenter() => $_ensure(3);
+  $327.LatLng ensureCenter() => $_ensure(3);
 
   /// The bounding box of the roof segment.
   @$pb.TagNumber(5)
@@ -1114,7 +1114,7 @@ class SizeAndSunshineStats extends $pb.GeneratedMessage {
 /// parameters of the panel.
 class SolarPanel extends $pb.GeneratedMessage {
   factory SolarPanel({
-    $325.LatLng? center,
+    $327.LatLng? center,
     SolarPanelOrientation? orientation,
     $core.double? yearlyEnergyDcKwh,
     $core.int? segmentIndex,
@@ -1147,8 +1147,8 @@ class SolarPanel extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.solar.v1'),
       createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'center',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'center',
+        subBuilder: $327.LatLng.create)
     ..e<SolarPanelOrientation>(
         2, _omitFieldNames ? '' : 'orientation', $pb.PbFieldType.OE,
         defaultOrMaker:
@@ -1183,9 +1183,9 @@ class SolarPanel extends $pb.GeneratedMessage {
 
   /// The centre of the panel.
   @$pb.TagNumber(1)
-  $325.LatLng get center => $_getN(0);
+  $327.LatLng get center => $_getN(0);
   @$pb.TagNumber(1)
-  set center($325.LatLng v) {
+  set center($327.LatLng v) {
     setField(1, v);
   }
 
@@ -1194,7 +1194,7 @@ class SolarPanel extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCenter() => clearField(1);
   @$pb.TagNumber(1)
-  $325.LatLng ensureCenter() => $_ensure(0);
+  $327.LatLng ensureCenter() => $_ensure(0);
 
   /// The orientation of the panel.
   @$pb.TagNumber(2)
@@ -1492,7 +1492,7 @@ class RoofSegmentSummary extends $pb.GeneratedMessage {
 /// particular electric bill size.
 class FinancialAnalysis extends $pb.GeneratedMessage {
   factory FinancialAnalysis({
-    $465.Money? monthlyBill,
+    $467.Money? monthlyBill,
     $core.bool? defaultBill,
     $core.double? averageKwhPerMonth,
     $core.int? panelConfigIndex,
@@ -1541,8 +1541,8 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.solar.v1'),
       createEmptyInstance: create)
-    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'monthlyBill',
-        subBuilder: $465.Money.create)
+    ..aOM<$467.Money>(3, _omitFieldNames ? '' : 'monthlyBill',
+        subBuilder: $467.Money.create)
     ..aOB(4, _omitFieldNames ? '' : 'defaultBill')
     ..a<$core.double>(
         5, _omitFieldNames ? '' : 'averageKwhPerMonth', $pb.PbFieldType.OF)
@@ -1584,9 +1584,9 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
 
   /// The monthly electric bill this analysis assumes.
   @$pb.TagNumber(3)
-  $465.Money get monthlyBill => $_getN(0);
+  $467.Money get monthlyBill => $_getN(0);
   @$pb.TagNumber(3)
-  set monthlyBill($465.Money v) {
+  set monthlyBill($467.Money v) {
     setField(3, v);
   }
 
@@ -1595,7 +1595,7 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearMonthlyBill() => clearField(3);
   @$pb.TagNumber(3)
-  $465.Money ensureMonthlyBill() => $_ensure(0);
+  $467.Money ensureMonthlyBill() => $_ensure(0);
 
   /// Whether this is the bill size selected to be the default bill for the
   /// area this building is in. Exactly one `FinancialAnalysis` in
@@ -1720,12 +1720,12 @@ class FinancialAnalysis extends $pb.GeneratedMessage {
 class FinancialDetails extends $pb.GeneratedMessage {
   factory FinancialDetails({
     $core.double? initialAcKwhPerYear,
-    $465.Money? remainingLifetimeUtilityBill,
-    $465.Money? federalIncentive,
-    $465.Money? stateIncentive,
-    $465.Money? utilityIncentive,
-    $465.Money? lifetimeSrecTotal,
-    $465.Money? costOfElectricityWithoutSolar,
+    $467.Money? remainingLifetimeUtilityBill,
+    $467.Money? federalIncentive,
+    $467.Money? stateIncentive,
+    $467.Money? utilityIncentive,
+    $467.Money? lifetimeSrecTotal,
+    $467.Money? costOfElectricityWithoutSolar,
     $core.bool? netMeteringAllowed,
     $core.double? solarPercentage,
     $core.double? percentageExportedToGrid,
@@ -1778,18 +1778,18 @@ class FinancialDetails extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..a<$core.double>(
         1, _omitFieldNames ? '' : 'initialAcKwhPerYear', $pb.PbFieldType.OF)
-    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'remainingLifetimeUtilityBill',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'federalIncentive',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(4, _omitFieldNames ? '' : 'stateIncentive',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(5, _omitFieldNames ? '' : 'utilityIncentive',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(6, _omitFieldNames ? '' : 'lifetimeSrecTotal',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(7, _omitFieldNames ? '' : 'costOfElectricityWithoutSolar',
-        subBuilder: $465.Money.create)
+    ..aOM<$467.Money>(2, _omitFieldNames ? '' : 'remainingLifetimeUtilityBill',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(3, _omitFieldNames ? '' : 'federalIncentive',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(4, _omitFieldNames ? '' : 'stateIncentive',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(5, _omitFieldNames ? '' : 'utilityIncentive',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(6, _omitFieldNames ? '' : 'lifetimeSrecTotal',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(7, _omitFieldNames ? '' : 'costOfElectricityWithoutSolar',
+        subBuilder: $467.Money.create)
     ..aOB(8, _omitFieldNames ? '' : 'netMeteringAllowed')
     ..a<$core.double>(
         9, _omitFieldNames ? '' : 'solarPercentage', $pb.PbFieldType.OF)
@@ -1837,9 +1837,9 @@ class FinancialDetails extends $pb.GeneratedMessage {
   /// Utility bill for electricity not produced by solar, for the
   /// lifetime of the panels.
   @$pb.TagNumber(2)
-  $465.Money get remainingLifetimeUtilityBill => $_getN(1);
+  $467.Money get remainingLifetimeUtilityBill => $_getN(1);
   @$pb.TagNumber(2)
-  set remainingLifetimeUtilityBill($465.Money v) {
+  set remainingLifetimeUtilityBill($467.Money v) {
     setField(2, v);
   }
 
@@ -1848,14 +1848,14 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRemainingLifetimeUtilityBill() => clearField(2);
   @$pb.TagNumber(2)
-  $465.Money ensureRemainingLifetimeUtilityBill() => $_ensure(1);
+  $467.Money ensureRemainingLifetimeUtilityBill() => $_ensure(1);
 
   /// Amount of money available from federal incentives; this applies if the
   /// user buys (with or without a loan) the panels.
   @$pb.TagNumber(3)
-  $465.Money get federalIncentive => $_getN(2);
+  $467.Money get federalIncentive => $_getN(2);
   @$pb.TagNumber(3)
-  set federalIncentive($465.Money v) {
+  set federalIncentive($467.Money v) {
     setField(3, v);
   }
 
@@ -1864,14 +1864,14 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearFederalIncentive() => clearField(3);
   @$pb.TagNumber(3)
-  $465.Money ensureFederalIncentive() => $_ensure(2);
+  $467.Money ensureFederalIncentive() => $_ensure(2);
 
   /// Amount of money available from state incentives; this applies if the
   /// user buys (with or without a loan) the panels.
   @$pb.TagNumber(4)
-  $465.Money get stateIncentive => $_getN(3);
+  $467.Money get stateIncentive => $_getN(3);
   @$pb.TagNumber(4)
-  set stateIncentive($465.Money v) {
+  set stateIncentive($467.Money v) {
     setField(4, v);
   }
 
@@ -1880,14 +1880,14 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearStateIncentive() => clearField(4);
   @$pb.TagNumber(4)
-  $465.Money ensureStateIncentive() => $_ensure(3);
+  $467.Money ensureStateIncentive() => $_ensure(3);
 
   /// Amount of money available from utility incentives; this applies if the
   /// user buys (with or without a loan) the panels.
   @$pb.TagNumber(5)
-  $465.Money get utilityIncentive => $_getN(4);
+  $467.Money get utilityIncentive => $_getN(4);
   @$pb.TagNumber(5)
-  set utilityIncentive($465.Money v) {
+  set utilityIncentive($467.Money v) {
     setField(5, v);
   }
 
@@ -1896,15 +1896,15 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearUtilityIncentive() => clearField(5);
   @$pb.TagNumber(5)
-  $465.Money ensureUtilityIncentive() => $_ensure(4);
+  $467.Money ensureUtilityIncentive() => $_ensure(4);
 
   /// Amount of money the user will receive from Solar Renewable Energy
   /// Credits over the panel lifetime; this applies if the user buys
   /// (with or without a loan) the panels.
   @$pb.TagNumber(6)
-  $465.Money get lifetimeSrecTotal => $_getN(5);
+  $467.Money get lifetimeSrecTotal => $_getN(5);
   @$pb.TagNumber(6)
-  set lifetimeSrecTotal($465.Money v) {
+  set lifetimeSrecTotal($467.Money v) {
     setField(6, v);
   }
 
@@ -1913,14 +1913,14 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearLifetimeSrecTotal() => clearField(6);
   @$pb.TagNumber(6)
-  $465.Money ensureLifetimeSrecTotal() => $_ensure(5);
+  $467.Money ensureLifetimeSrecTotal() => $_ensure(5);
 
   /// Total cost of electricity the user would have paid over the
   /// lifetime period if they didn't install solar.
   @$pb.TagNumber(7)
-  $465.Money get costOfElectricityWithoutSolar => $_getN(6);
+  $467.Money get costOfElectricityWithoutSolar => $_getN(6);
   @$pb.TagNumber(7)
-  set costOfElectricityWithoutSolar($465.Money v) {
+  set costOfElectricityWithoutSolar($467.Money v) {
     setField(7, v);
   }
 
@@ -1929,7 +1929,7 @@ class FinancialDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearCostOfElectricityWithoutSolar() => clearField(7);
   @$pb.TagNumber(7)
-  $465.Money ensureCostOfElectricityWithoutSolar() => $_ensure(6);
+  $467.Money ensureCostOfElectricityWithoutSolar() => $_ensure(6);
 
   /// Whether net metering is allowed.
   @$pb.TagNumber(8)
@@ -1977,12 +1977,12 @@ class FinancialDetails extends $pb.GeneratedMessage {
 /// Financial information that's shared between different financing methods.
 class SavingsOverTime extends $pb.GeneratedMessage {
   factory SavingsOverTime({
-    $465.Money? savingsYear1,
-    $465.Money? savingsYear20,
-    $465.Money? presentValueOfSavingsYear20,
+    $467.Money? savingsYear1,
+    $467.Money? savingsYear20,
+    $467.Money? presentValueOfSavingsYear20,
     $core.bool? financiallyViable,
-    $465.Money? savingsLifetime,
-    $465.Money? presentValueOfSavingsLifetime,
+    $467.Money? savingsLifetime,
+    $467.Money? presentValueOfSavingsLifetime,
   }) {
     final $result = create();
     if (savingsYear1 != null) {
@@ -2018,17 +2018,17 @@ class SavingsOverTime extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.solar.v1'),
       createEmptyInstance: create)
-    ..aOM<$465.Money>(1, _omitFieldNames ? '' : 'savingsYear1',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'savingsYear20',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'presentValueOfSavingsYear20',
-        subBuilder: $465.Money.create)
+    ..aOM<$467.Money>(1, _omitFieldNames ? '' : 'savingsYear1',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(2, _omitFieldNames ? '' : 'savingsYear20',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(3, _omitFieldNames ? '' : 'presentValueOfSavingsYear20',
+        subBuilder: $467.Money.create)
     ..aOB(4, _omitFieldNames ? '' : 'financiallyViable')
-    ..aOM<$465.Money>(5, _omitFieldNames ? '' : 'savingsLifetime',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(6, _omitFieldNames ? '' : 'presentValueOfSavingsLifetime',
-        subBuilder: $465.Money.create)
+    ..aOM<$467.Money>(5, _omitFieldNames ? '' : 'savingsLifetime',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(6, _omitFieldNames ? '' : 'presentValueOfSavingsLifetime',
+        subBuilder: $467.Money.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2056,9 +2056,9 @@ class SavingsOverTime extends $pb.GeneratedMessage {
 
   /// Savings in the first year after panel installation.
   @$pb.TagNumber(1)
-  $465.Money get savingsYear1 => $_getN(0);
+  $467.Money get savingsYear1 => $_getN(0);
   @$pb.TagNumber(1)
-  set savingsYear1($465.Money v) {
+  set savingsYear1($467.Money v) {
     setField(1, v);
   }
 
@@ -2067,13 +2067,13 @@ class SavingsOverTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearSavingsYear1() => clearField(1);
   @$pb.TagNumber(1)
-  $465.Money ensureSavingsYear1() => $_ensure(0);
+  $467.Money ensureSavingsYear1() => $_ensure(0);
 
   /// Savings in the first twenty years after panel installation.
   @$pb.TagNumber(2)
-  $465.Money get savingsYear20 => $_getN(1);
+  $467.Money get savingsYear20 => $_getN(1);
   @$pb.TagNumber(2)
-  set savingsYear20($465.Money v) {
+  set savingsYear20($467.Money v) {
     setField(2, v);
   }
 
@@ -2082,14 +2082,14 @@ class SavingsOverTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearSavingsYear20() => clearField(2);
   @$pb.TagNumber(2)
-  $465.Money ensureSavingsYear20() => $_ensure(1);
+  $467.Money ensureSavingsYear20() => $_ensure(1);
 
   /// Using the assumed discount rate, what is the present value of the
   /// cumulative 20-year savings?
   @$pb.TagNumber(3)
-  $465.Money get presentValueOfSavingsYear20 => $_getN(2);
+  $467.Money get presentValueOfSavingsYear20 => $_getN(2);
   @$pb.TagNumber(3)
-  set presentValueOfSavingsYear20($465.Money v) {
+  set presentValueOfSavingsYear20($467.Money v) {
     setField(3, v);
   }
 
@@ -2098,7 +2098,7 @@ class SavingsOverTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearPresentValueOfSavingsYear20() => clearField(3);
   @$pb.TagNumber(3)
-  $465.Money ensurePresentValueOfSavingsYear20() => $_ensure(2);
+  $467.Money ensurePresentValueOfSavingsYear20() => $_ensure(2);
 
   /// Indicates whether this scenario is financially viable.  Will be false for
   /// scenarios with poor financial viability (e.g., money-losing).
@@ -2116,9 +2116,9 @@ class SavingsOverTime extends $pb.GeneratedMessage {
 
   /// Savings in the entire panel lifetime.
   @$pb.TagNumber(5)
-  $465.Money get savingsLifetime => $_getN(4);
+  $467.Money get savingsLifetime => $_getN(4);
   @$pb.TagNumber(5)
-  set savingsLifetime($465.Money v) {
+  set savingsLifetime($467.Money v) {
     setField(5, v);
   }
 
@@ -2127,14 +2127,14 @@ class SavingsOverTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearSavingsLifetime() => clearField(5);
   @$pb.TagNumber(5)
-  $465.Money ensureSavingsLifetime() => $_ensure(4);
+  $467.Money ensureSavingsLifetime() => $_ensure(4);
 
   /// Using the assumed discount rate, what is the present value of the
   /// cumulative lifetime savings?
   @$pb.TagNumber(6)
-  $465.Money get presentValueOfSavingsLifetime => $_getN(5);
+  $467.Money get presentValueOfSavingsLifetime => $_getN(5);
   @$pb.TagNumber(6)
-  set presentValueOfSavingsLifetime($465.Money v) {
+  set presentValueOfSavingsLifetime($467.Money v) {
     setField(6, v);
   }
 
@@ -2143,7 +2143,7 @@ class SavingsOverTime extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearPresentValueOfSavingsLifetime() => clearField(6);
   @$pb.TagNumber(6)
-  $465.Money ensurePresentValueOfSavingsLifetime() => $_ensure(5);
+  $467.Money ensurePresentValueOfSavingsLifetime() => $_ensure(5);
 }
 
 /// Cost and benefit of leasing a particular configuration of solar panels
@@ -2152,7 +2152,7 @@ class LeasingSavings extends $pb.GeneratedMessage {
   factory LeasingSavings({
     $core.bool? leasesAllowed,
     $core.bool? leasesSupported,
-    $465.Money? annualLeasingCost,
+    $467.Money? annualLeasingCost,
     SavingsOverTime? savings,
   }) {
     final $result = create();
@@ -2185,8 +2185,8 @@ class LeasingSavings extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'leasesAllowed')
     ..aOB(2, _omitFieldNames ? '' : 'leasesSupported')
-    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'annualLeasingCost',
-        subBuilder: $465.Money.create)
+    ..aOM<$467.Money>(3, _omitFieldNames ? '' : 'annualLeasingCost',
+        subBuilder: $467.Money.create)
     ..aOM<SavingsOverTime>(4, _omitFieldNames ? '' : 'savings',
         subBuilder: SavingsOverTime.create)
     ..hasRequiredFields = false;
@@ -2248,9 +2248,9 @@ class LeasingSavings extends $pb.GeneratedMessage {
 
   /// Estimated annual leasing cost.
   @$pb.TagNumber(3)
-  $465.Money get annualLeasingCost => $_getN(2);
+  $467.Money get annualLeasingCost => $_getN(2);
   @$pb.TagNumber(3)
-  set annualLeasingCost($465.Money v) {
+  set annualLeasingCost($467.Money v) {
     setField(3, v);
   }
 
@@ -2259,7 +2259,7 @@ class LeasingSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAnnualLeasingCost() => clearField(3);
   @$pb.TagNumber(3)
-  $465.Money ensureAnnualLeasingCost() => $_ensure(2);
+  $467.Money ensureAnnualLeasingCost() => $_ensure(2);
 
   /// How much is saved (or not) over the lifetime period.
   @$pb.TagNumber(4)
@@ -2281,9 +2281,9 @@ class LeasingSavings extends $pb.GeneratedMessage {
 /// of solar panels with a particular electricity usage.
 class CashPurchaseSavings extends $pb.GeneratedMessage {
   factory CashPurchaseSavings({
-    $465.Money? outOfPocketCost,
-    $465.Money? upfrontCost,
-    $465.Money? rebateValue,
+    $467.Money? outOfPocketCost,
+    $467.Money? upfrontCost,
+    $467.Money? rebateValue,
     $core.double? paybackYears,
     SavingsOverTime? savings,
   }) {
@@ -2318,12 +2318,12 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.solar.v1'),
       createEmptyInstance: create)
-    ..aOM<$465.Money>(1, _omitFieldNames ? '' : 'outOfPocketCost',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'upfrontCost',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(3, _omitFieldNames ? '' : 'rebateValue',
-        subBuilder: $465.Money.create)
+    ..aOM<$467.Money>(1, _omitFieldNames ? '' : 'outOfPocketCost',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(2, _omitFieldNames ? '' : 'upfrontCost',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(3, _omitFieldNames ? '' : 'rebateValue',
+        subBuilder: $467.Money.create)
     ..a<$core.double>(
         4, _omitFieldNames ? '' : 'paybackYears', $pb.PbFieldType.OF)
     ..aOM<SavingsOverTime>(5, _omitFieldNames ? '' : 'savings',
@@ -2356,9 +2356,9 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
   /// Initial cost before tax incentives: the amount that must be paid
   /// out-of-pocket. Contrast with `upfront_cost`, which is after tax incentives.
   @$pb.TagNumber(1)
-  $465.Money get outOfPocketCost => $_getN(0);
+  $467.Money get outOfPocketCost => $_getN(0);
   @$pb.TagNumber(1)
-  set outOfPocketCost($465.Money v) {
+  set outOfPocketCost($467.Money v) {
     setField(1, v);
   }
 
@@ -2367,15 +2367,15 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearOutOfPocketCost() => clearField(1);
   @$pb.TagNumber(1)
-  $465.Money ensureOutOfPocketCost() => $_ensure(0);
+  $467.Money ensureOutOfPocketCost() => $_ensure(0);
 
   /// Initial cost after tax incentives: it's the amount that must be paid
   /// during first year. Contrast with `out_of_pocket_cost`, which is before tax
   /// incentives.
   @$pb.TagNumber(2)
-  $465.Money get upfrontCost => $_getN(1);
+  $467.Money get upfrontCost => $_getN(1);
   @$pb.TagNumber(2)
-  set upfrontCost($465.Money v) {
+  set upfrontCost($467.Money v) {
     setField(2, v);
   }
 
@@ -2384,13 +2384,13 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpfrontCost() => clearField(2);
   @$pb.TagNumber(2)
-  $465.Money ensureUpfrontCost() => $_ensure(1);
+  $467.Money ensureUpfrontCost() => $_ensure(1);
 
   /// The value of all tax rebates.
   @$pb.TagNumber(3)
-  $465.Money get rebateValue => $_getN(2);
+  $467.Money get rebateValue => $_getN(2);
   @$pb.TagNumber(3)
-  set rebateValue($465.Money v) {
+  set rebateValue($467.Money v) {
     setField(3, v);
   }
 
@@ -2399,7 +2399,7 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearRebateValue() => clearField(3);
   @$pb.TagNumber(3)
-  $465.Money ensureRebateValue() => $_ensure(2);
+  $467.Money ensureRebateValue() => $_ensure(2);
 
   /// Number of years until payback occurs. A negative value means payback
   /// never occurs within the lifetime period.
@@ -2435,8 +2435,8 @@ class CashPurchaseSavings extends $pb.GeneratedMessage {
 /// of solar panels with a particular electricity usage.
 class FinancedPurchaseSavings extends $pb.GeneratedMessage {
   factory FinancedPurchaseSavings({
-    $465.Money? annualLoanPayment,
-    $465.Money? rebateValue,
+    $467.Money? annualLoanPayment,
+    $467.Money? rebateValue,
     $core.double? loanInterestRate,
     SavingsOverTime? savings,
   }) {
@@ -2468,10 +2468,10 @@ class FinancedPurchaseSavings extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.solar.v1'),
       createEmptyInstance: create)
-    ..aOM<$465.Money>(1, _omitFieldNames ? '' : 'annualLoanPayment',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'rebateValue',
-        subBuilder: $465.Money.create)
+    ..aOM<$467.Money>(1, _omitFieldNames ? '' : 'annualLoanPayment',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(2, _omitFieldNames ? '' : 'rebateValue',
+        subBuilder: $467.Money.create)
     ..a<$core.double>(
         3, _omitFieldNames ? '' : 'loanInterestRate', $pb.PbFieldType.OF)
     ..aOM<SavingsOverTime>(4, _omitFieldNames ? '' : 'savings',
@@ -2505,9 +2505,9 @@ class FinancedPurchaseSavings extends $pb.GeneratedMessage {
 
   /// Annual loan payments.
   @$pb.TagNumber(1)
-  $465.Money get annualLoanPayment => $_getN(0);
+  $467.Money get annualLoanPayment => $_getN(0);
   @$pb.TagNumber(1)
-  set annualLoanPayment($465.Money v) {
+  set annualLoanPayment($467.Money v) {
     setField(1, v);
   }
 
@@ -2516,14 +2516,14 @@ class FinancedPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearAnnualLoanPayment() => clearField(1);
   @$pb.TagNumber(1)
-  $465.Money ensureAnnualLoanPayment() => $_ensure(0);
+  $467.Money ensureAnnualLoanPayment() => $_ensure(0);
 
   /// The value of all tax rebates (including Federal Investment Tax Credit
   /// (ITC)).
   @$pb.TagNumber(2)
-  $465.Money get rebateValue => $_getN(1);
+  $467.Money get rebateValue => $_getN(1);
   @$pb.TagNumber(2)
-  set rebateValue($465.Money v) {
+  set rebateValue($467.Money v) {
     setField(2, v);
   }
 
@@ -2532,7 +2532,7 @@ class FinancedPurchaseSavings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRebateValue() => clearField(2);
   @$pb.TagNumber(2)
-  $465.Money ensureRebateValue() => $_ensure(1);
+  $467.Money ensureRebateValue() => $_ensure(1);
 
   /// The interest rate on loans assumed in this set of calculations.
   @$pb.TagNumber(3)
@@ -2566,7 +2566,7 @@ class FinancedPurchaseSavings extends $pb.GeneratedMessage {
 /// Request message for `Solar.GetDataLayers`.
 class GetDataLayersRequest extends $pb.GeneratedMessage {
   factory GetDataLayersRequest({
-    $325.LatLng? location,
+    $327.LatLng? location,
     $core.double? radiusMeters,
     DataLayerView? view,
     ImageryQuality? requiredQuality,
@@ -2607,8 +2607,8 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.solar.v1'),
       createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: $327.LatLng.create)
     ..a<$core.double>(
         2, _omitFieldNames ? '' : 'radiusMeters', $pb.PbFieldType.OF)
     ..e<DataLayerView>(3, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE,
@@ -2652,9 +2652,9 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
   /// Required. The longitude and latitude for the center of the region to get
   /// data for.
   @$pb.TagNumber(1)
-  $325.LatLng get location => $_getN(0);
+  $327.LatLng get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($325.LatLng v) {
+  set location($327.LatLng v) {
     setField(1, v);
   }
 
@@ -2663,7 +2663,7 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearLocation() => clearField(1);
   @$pb.TagNumber(1)
-  $325.LatLng ensureLocation() => $_ensure(0);
+  $327.LatLng ensureLocation() => $_ensure(0);
 
   ///  Required. The radius, in meters, defining the region surrounding that
   ///  centre point for which data should be returned. The limitations
@@ -2765,8 +2765,8 @@ class GetDataLayersRequest extends $pb.GeneratedMessage {
 /// files will be that value.
 class DataLayers extends $pb.GeneratedMessage {
   factory DataLayers({
-    $327.Date? imageryDate,
-    $327.Date? imageryProcessedDate,
+    $329.Date? imageryDate,
+    $329.Date? imageryProcessedDate,
     $core.String? dsmUrl,
     $core.String? rgbUrl,
     $core.String? maskUrl,
@@ -2818,10 +2818,10 @@ class DataLayers extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.solar.v1'),
       createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'imageryDate',
-        subBuilder: $327.Date.create)
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'imageryProcessedDate',
-        subBuilder: $327.Date.create)
+    ..aOM<$329.Date>(1, _omitFieldNames ? '' : 'imageryDate',
+        subBuilder: $329.Date.create)
+    ..aOM<$329.Date>(2, _omitFieldNames ? '' : 'imageryProcessedDate',
+        subBuilder: $329.Date.create)
     ..aOS(3, _omitFieldNames ? '' : 'dsmUrl')
     ..aOS(4, _omitFieldNames ? '' : 'rgbUrl')
     ..aOS(5, _omitFieldNames ? '' : 'maskUrl')
@@ -2860,9 +2860,9 @@ class DataLayers extends $pb.GeneratedMessage {
   /// region was taken. It is necessarily somewhat approximate, as the images may
   /// have been taken over more than one day.
   @$pb.TagNumber(1)
-  $327.Date get imageryDate => $_getN(0);
+  $329.Date get imageryDate => $_getN(0);
   @$pb.TagNumber(1)
-  set imageryDate($327.Date v) {
+  set imageryDate($329.Date v) {
     setField(1, v);
   }
 
@@ -2871,13 +2871,13 @@ class DataLayers extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearImageryDate() => clearField(1);
   @$pb.TagNumber(1)
-  $327.Date ensureImageryDate() => $_ensure(0);
+  $329.Date ensureImageryDate() => $_ensure(0);
 
   /// When processing was completed on this imagery.
   @$pb.TagNumber(2)
-  $327.Date get imageryProcessedDate => $_getN(1);
+  $329.Date get imageryProcessedDate => $_getN(1);
   @$pb.TagNumber(2)
-  set imageryProcessedDate($327.Date v) {
+  set imageryProcessedDate($329.Date v) {
     setField(2, v);
   }
 
@@ -2886,7 +2886,7 @@ class DataLayers extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearImageryProcessedDate() => clearField(2);
   @$pb.TagNumber(2)
-  $327.Date ensureImageryProcessedDate() => $_ensure(1);
+  $329.Date ensureImageryProcessedDate() => $_ensure(1);
 
   /// The URL for an image of the DSM (Digital Surface Model) of the region.
   /// Values are in meters above EGM96 geoid (i.e., sea level). Invalid locations

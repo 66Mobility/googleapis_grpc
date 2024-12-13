@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
+import '../../protobuf/field_mask.pb.dart' as $335;
 import 'alert.pb.dart' as $192;
 
 /// The protocol for the `CreateAlertPolicy` request.
@@ -257,7 +257,7 @@ class ListAlertPoliciesRequest extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<ListAlertPoliciesRequest>(create);
   static ListAlertPoliciesRequest? _defaultInstance;
 
-  /// The maximum number of results to return in a single response.
+  /// Optional. The maximum number of results to return in a single response.
   @$pb.TagNumber(2)
   $core.int get pageSize => $_getIZ(0);
   @$pb.TagNumber(2)
@@ -270,9 +270,10 @@ class ListAlertPoliciesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearPageSize() => clearField(2);
 
-  /// If this field is not empty then it must contain the `nextPageToken` value
-  /// returned by a previous call to this method.  Using this field causes the
-  /// method to return more results from the previous method call.
+  /// Optional. If this field is not empty then it must contain the
+  /// `nextPageToken` value returned by a previous call to this method.  Using
+  /// this field causes the method to return more results from the previous
+  /// method call.
   @$pb.TagNumber(3)
   $core.String get pageToken => $_getSZ(1);
   @$pb.TagNumber(3)
@@ -308,8 +309,8 @@ class ListAlertPoliciesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearName() => clearField(4);
 
-  ///  If provided, this field specifies the criteria that must be met by
-  ///  alert policies to be included in the response.
+  ///  Optional. If provided, this field specifies the criteria that must be met
+  ///  by alert policies to be included in the response.
   ///
   ///  For more details, see [sorting and
   ///  filtering](https://cloud.google.com/monitoring/api/v3/sorting-and-filtering).
@@ -325,9 +326,9 @@ class ListAlertPoliciesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearFilter() => clearField(5);
 
-  ///  A comma-separated list of fields by which to sort the result. Supports
-  ///  the same set of field references as the `filter` field. Entries can be
-  ///  prefixed with a minus sign to sort by the field in descending order.
+  ///  Optional. A comma-separated list of fields by which to sort the result.
+  ///  Supports the same set of field references as the `filter` field. Entries
+  ///  can be prefixed with a minus sign to sort by the field in descending order.
   ///
   ///  For more details, see [sorting and
   ///  filtering](https://cloud.google.com/monitoring/api/v3/sorting-and-filtering).
@@ -445,7 +446,7 @@ class ListAlertPoliciesResponse extends $pb.GeneratedMessage {
 /// The protocol for the `UpdateAlertPolicy` request.
 class UpdateAlertPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateAlertPolicyRequest({
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     $192.AlertPolicy? alertPolicy,
   }) {
     final $result = create();
@@ -470,8 +471,8 @@ class UpdateAlertPolicyRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..aOM<$192.AlertPolicy>(3, _omitFieldNames ? '' : 'alertPolicy',
         subBuilder: $192.AlertPolicy.create)
     ..hasRequiredFields = false;
@@ -523,9 +524,9 @@ class UpdateAlertPolicyRequest extends $pb.GeneratedMessage {
   ///      `[CONDITION_ID]`. If the supplied condition omits the `name` field,
   ///      then a new `[CONDITION_ID]` is created.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(0);
+  $335.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -534,7 +535,7 @@ class UpdateAlertPolicyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(0);
+  $335.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The updated alerting policy or the updated values for the
   /// fields listed in `update_mask`.

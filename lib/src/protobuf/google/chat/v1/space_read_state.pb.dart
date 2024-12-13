@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
-import '../../protobuf/timestamp.pb.dart' as $302;
+import '../../protobuf/field_mask.pb.dart' as $335;
+import '../../protobuf/timestamp.pb.dart' as $304;
 
 /// A user's read state within a space, used to identify read and unread
 /// messages.
 class SpaceReadState extends $pb.GeneratedMessage {
   factory SpaceReadState({
     $core.String? name,
-    $302.Timestamp? lastReadTime,
+    $304.Timestamp? lastReadTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -45,8 +45,8 @@ class SpaceReadState extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'lastReadTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'lastReadTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -91,9 +91,9 @@ class SpaceReadState extends $pb.GeneratedMessage {
   /// this corresponds with either the timestamp of the last read message, or a
   /// timestamp specified by the user to mark the last read position in a space.
   @$pb.TagNumber(2)
-  $302.Timestamp get lastReadTime => $_getN(1);
+  $304.Timestamp get lastReadTime => $_getN(1);
   @$pb.TagNumber(2)
-  set lastReadTime($302.Timestamp v) {
+  set lastReadTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -102,7 +102,7 @@ class SpaceReadState extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearLastReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureLastReadTime() => $_ensure(1);
+  $304.Timestamp ensureLastReadTime() => $_ensure(1);
 }
 
 /// Request message for GetSpaceReadState API.
@@ -188,7 +188,7 @@ class GetSpaceReadStateRequest extends $pb.GeneratedMessage {
 class UpdateSpaceReadStateRequest extends $pb.GeneratedMessage {
   factory UpdateSpaceReadStateRequest({
     SpaceReadState? spaceReadState,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (spaceReadState != null) {
@@ -213,8 +213,8 @@ class UpdateSpaceReadStateRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<SpaceReadState>(1, _omitFieldNames ? '' : 'spaceReadState',
         subBuilder: SpaceReadState.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -287,9 +287,9 @@ class UpdateSpaceReadStateRequest extends $pb.GeneratedMessage {
   ///  top-level conversation. Replies in threads are unaffected by this
   ///  timestamp, and instead rely on the thread read state.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -298,7 +298,7 @@ class UpdateSpaceReadStateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

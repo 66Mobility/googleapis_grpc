@@ -13,20 +13,20 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../apps/card/v1/card.pb.dart' as $415;
-import '../../protobuf/field_mask.pb.dart' as $333;
-import '../../protobuf/timestamp.pb.dart' as $302;
-import 'action_status.pb.dart' as $416;
-import 'annotation.pb.dart' as $411;
+import '../../apps/card/v1/card.pb.dart' as $417;
+import '../../protobuf/field_mask.pb.dart' as $335;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import 'action_status.pb.dart' as $418;
+import 'annotation.pb.dart' as $413;
 import 'attachment.pb.dart' as $97;
-import 'contextual_addon.pb.dart' as $410;
-import 'deletion_metadata.pb.dart' as $414;
-import 'matched_url.pb.dart' as $413;
+import 'contextual_addon.pb.dart' as $412;
+import 'deletion_metadata.pb.dart' as $416;
+import 'matched_url.pb.dart' as $415;
 import 'message.pbenum.dart';
 import 'reaction.pb.dart' as $100;
-import 'slash_command.pb.dart' as $412;
+import 'slash_command.pb.dart' as $414;
 import 'space.pb.dart' as $98;
-import 'user.pb.dart' as $406;
+import 'user.pb.dart' as $408;
 
 export 'message.pbenum.dart';
 
@@ -34,28 +34,28 @@ export 'message.pbenum.dart';
 class Message extends $pb.GeneratedMessage {
   factory Message({
     $core.String? name,
-    $406.User? sender,
-    $302.Timestamp? createTime,
+    $408.User? sender,
+    $304.Timestamp? createTime,
     $core.String? text,
     @$core.Deprecated('This field is deprecated.')
-    $core.Iterable<$410.ContextualAddOnMarkup_Card>? cards,
-    $core.Iterable<$411.Annotation>? annotations,
+    $core.Iterable<$412.ContextualAddOnMarkup_Card>? cards,
+    $core.Iterable<$413.Annotation>? annotations,
     Thread? thread,
     $98.Space? space,
     $core.String? fallbackText,
     ActionResponse? actionResponse,
     $core.String? argumentText,
-    $412.SlashCommand? slashCommand,
+    $414.SlashCommand? slashCommand,
     $core.Iterable<$97.Attachment>? attachment,
-    $413.MatchedUrl? matchedUrl,
+    $415.MatchedUrl? matchedUrl,
     $core.Iterable<CardWithId>? cardsV2,
-    $302.Timestamp? lastUpdateTime,
+    $304.Timestamp? lastUpdateTime,
     $core.bool? threadReply,
-    $302.Timestamp? deleteTime,
+    $304.Timestamp? deleteTime,
     $core.String? clientAssignedMessageId,
     $core.Iterable<$100.EmojiReactionSummary>? emojiReactionSummaries,
-    $406.User? privateMessageViewer,
-    $414.DeletionMetadata? deletionMetadata,
+    $408.User? privateMessageViewer,
+    $416.DeletionMetadata? deletionMetadata,
     QuotedMessageMetadata? quotedMessageMetadata,
     $core.Iterable<AttachedGif>? attachedGifs,
     $core.String? formattedText,
@@ -156,17 +156,17 @@ class Message extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$406.User>(2, _omitFieldNames ? '' : 'sender',
-        subBuilder: $406.User.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$408.User>(2, _omitFieldNames ? '' : 'sender',
+        subBuilder: $408.User.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'text')
-    ..pc<$410.ContextualAddOnMarkup_Card>(
+    ..pc<$412.ContextualAddOnMarkup_Card>(
         5, _omitFieldNames ? '' : 'cards', $pb.PbFieldType.PM,
-        subBuilder: $410.ContextualAddOnMarkup_Card.create)
-    ..pc<$411.Annotation>(
+        subBuilder: $412.ContextualAddOnMarkup_Card.create)
+    ..pc<$413.Annotation>(
         10, _omitFieldNames ? '' : 'annotations', $pb.PbFieldType.PM,
-        subBuilder: $411.Annotation.create)
+        subBuilder: $413.Annotation.create)
     ..aOM<Thread>(11, _omitFieldNames ? '' : 'thread',
         subBuilder: Thread.create)
     ..aOM<$98.Space>(12, _omitFieldNames ? '' : 'space',
@@ -175,28 +175,28 @@ class Message extends $pb.GeneratedMessage {
     ..aOM<ActionResponse>(14, _omitFieldNames ? '' : 'actionResponse',
         subBuilder: ActionResponse.create)
     ..aOS(15, _omitFieldNames ? '' : 'argumentText')
-    ..aOM<$412.SlashCommand>(17, _omitFieldNames ? '' : 'slashCommand',
-        subBuilder: $412.SlashCommand.create)
+    ..aOM<$414.SlashCommand>(17, _omitFieldNames ? '' : 'slashCommand',
+        subBuilder: $414.SlashCommand.create)
     ..pc<$97.Attachment>(
         18, _omitFieldNames ? '' : 'attachment', $pb.PbFieldType.PM,
         subBuilder: $97.Attachment.create)
-    ..aOM<$413.MatchedUrl>(20, _omitFieldNames ? '' : 'matchedUrl',
-        subBuilder: $413.MatchedUrl.create)
+    ..aOM<$415.MatchedUrl>(20, _omitFieldNames ? '' : 'matchedUrl',
+        subBuilder: $415.MatchedUrl.create)
     ..pc<CardWithId>(22, _omitFieldNames ? '' : 'cardsV2', $pb.PbFieldType.PM,
         subBuilder: CardWithId.create)
-    ..aOM<$302.Timestamp>(23, _omitFieldNames ? '' : 'lastUpdateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(23, _omitFieldNames ? '' : 'lastUpdateTime',
+        subBuilder: $304.Timestamp.create)
     ..aOB(25, _omitFieldNames ? '' : 'threadReply')
-    ..aOM<$302.Timestamp>(26, _omitFieldNames ? '' : 'deleteTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(26, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(32, _omitFieldNames ? '' : 'clientAssignedMessageId')
     ..pc<$100.EmojiReactionSummary>(
         33, _omitFieldNames ? '' : 'emojiReactionSummaries', $pb.PbFieldType.PM,
         subBuilder: $100.EmojiReactionSummary.create)
-    ..aOM<$406.User>(36, _omitFieldNames ? '' : 'privateMessageViewer',
-        subBuilder: $406.User.create)
-    ..aOM<$414.DeletionMetadata>(38, _omitFieldNames ? '' : 'deletionMetadata',
-        subBuilder: $414.DeletionMetadata.create)
+    ..aOM<$408.User>(36, _omitFieldNames ? '' : 'privateMessageViewer',
+        subBuilder: $408.User.create)
+    ..aOM<$416.DeletionMetadata>(38, _omitFieldNames ? '' : 'deletionMetadata',
+        subBuilder: $416.DeletionMetadata.create)
     ..aOM<QuotedMessageMetadata>(
         39, _omitFieldNames ? '' : 'quotedMessageMetadata',
         subBuilder: QuotedMessageMetadata.create)
@@ -230,7 +230,7 @@ class Message extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Message>(create);
   static Message? _defaultInstance;
 
-  ///  Resource name of the message.
+  ///  Identifier. Resource name of the message.
   ///
   ///  Format: `spaces/{space}/messages/{message}`
   ///
@@ -264,9 +264,9 @@ class Message extends $pb.GeneratedMessage {
   /// [user](https://developers.google.com/workspace/chat/api/reference/rest/v1/User)
   /// `name` and `type`.
   @$pb.TagNumber(2)
-  $406.User get sender => $_getN(1);
+  $408.User get sender => $_getN(1);
   @$pb.TagNumber(2)
-  set sender($406.User v) {
+  set sender($408.User v) {
     setField(2, v);
   }
 
@@ -275,7 +275,7 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearSender() => clearField(2);
   @$pb.TagNumber(2)
-  $406.User ensureSender() => $_ensure(1);
+  $408.User ensureSender() => $_ensure(1);
 
   ///  Optional. Immutable. For spaces created in Chat, the time at which the
   ///  message was created. This field is output only, except when used in import
@@ -285,9 +285,9 @@ class Message extends $pb.GeneratedMessage {
   ///  the message was created in the source in order to preserve the original
   ///  creation time.
   @$pb.TagNumber(3)
-  $302.Timestamp get createTime => $_getN(2);
+  $304.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -296,12 +296,12 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureCreateTime() => $_ensure(2);
+  $304.Timestamp ensureCreateTime() => $_ensure(2);
 
-  ///  Plain-text body of the message. The first link to an image, video, or web
-  ///  page generates a
-  ///  [preview chip](https://developers.google.com/workspace/chat/preview-links).
-  ///  You can also [@mention a Google Chat
+  ///  Optional. Plain-text body of the message. The first link to an image,
+  ///  video, or web page generates a [preview
+  ///  chip](https://developers.google.com/workspace/chat/preview-links). You can
+  ///  also [@mention a Google Chat
   ///  user](https://developers.google.com/workspace/chat/format-messages#messages-@mention),
   ///  or everyone in the space.
   ///
@@ -327,11 +327,11 @@ class Message extends $pb.GeneratedMessage {
   ///  `cards_v2` can have a maximum size of 32 KB.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $core.List<$410.ContextualAddOnMarkup_Card> get cards => $_getList(4);
+  $core.List<$412.ContextualAddOnMarkup_Card> get cards => $_getList(4);
 
   /// Output only. Annotations associated with the `text` in this message.
   @$pb.TagNumber(10)
-  $core.List<$411.Annotation> get annotations => $_getList(5);
+  $core.List<$413.Annotation> get annotations => $_getList(5);
 
   /// The thread the message belongs to. For example usage, see
   /// [Start or reply to a message
@@ -350,9 +350,9 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Thread ensureThread() => $_ensure(6);
 
-  /// If your Chat app [authenticates as a
+  /// Output only. If your Chat app [authenticates as a
   /// user](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user),
-  /// the output populates the
+  /// the output only populates the
   /// [space](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces)
   /// `name`.
   @$pb.TagNumber(12)
@@ -369,8 +369,8 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $98.Space ensureSpace() => $_ensure(7);
 
-  /// A plain-text description of the message's cards, used when the actual cards
-  /// can't be displayed—for example, mobile notifications.
+  /// Optional. A plain-text description of the message's cards, used when the
+  /// actual cards can't be displayed—for example, mobile notifications.
   @$pb.TagNumber(13)
   $core.String get fallbackText => $_getSZ(8);
   @$pb.TagNumber(13)
@@ -415,9 +415,9 @@ class Message extends $pb.GeneratedMessage {
 
   /// Output only. Slash command information, if applicable.
   @$pb.TagNumber(17)
-  $412.SlashCommand get slashCommand => $_getN(11);
+  $414.SlashCommand get slashCommand => $_getN(11);
   @$pb.TagNumber(17)
-  set slashCommand($412.SlashCommand v) {
+  set slashCommand($414.SlashCommand v) {
     setField(17, v);
   }
 
@@ -426,9 +426,9 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearSlashCommand() => clearField(17);
   @$pb.TagNumber(17)
-  $412.SlashCommand ensureSlashCommand() => $_ensure(11);
+  $414.SlashCommand ensureSlashCommand() => $_ensure(11);
 
-  /// User-uploaded attachment.
+  /// Optional. User-uploaded attachment.
   @$pb.TagNumber(18)
   $core.List<$97.Attachment> get attachment => $_getList(12);
 
@@ -436,9 +436,9 @@ class Message extends $pb.GeneratedMessage {
   /// pattern. For more information, see [Preview
   /// links](https://developers.google.com/workspace/chat/preview-links).
   @$pb.TagNumber(20)
-  $413.MatchedUrl get matchedUrl => $_getN(13);
+  $415.MatchedUrl get matchedUrl => $_getN(13);
   @$pb.TagNumber(20)
-  set matchedUrl($413.MatchedUrl v) {
+  set matchedUrl($415.MatchedUrl v) {
     setField(20, v);
   }
 
@@ -447,9 +447,9 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   void clearMatchedUrl() => clearField(20);
   @$pb.TagNumber(20)
-  $413.MatchedUrl ensureMatchedUrl() => $_ensure(13);
+  $415.MatchedUrl ensureMatchedUrl() => $_ensure(13);
 
-  ///  An array of
+  ///  Optional. An array of
   ///  [cards](https://developers.google.com/workspace/chat/api/reference/rest/v1/cards).
   ///
   ///  Only Chat apps can create cards. If your Chat app [authenticates as a
@@ -466,9 +466,9 @@ class Message extends $pb.GeneratedMessage {
   /// Output only. The time at which the message was last edited by a user. If
   /// the message has never been edited, this field is empty.
   @$pb.TagNumber(23)
-  $302.Timestamp get lastUpdateTime => $_getN(15);
+  $304.Timestamp get lastUpdateTime => $_getN(15);
   @$pb.TagNumber(23)
-  set lastUpdateTime($302.Timestamp v) {
+  set lastUpdateTime($304.Timestamp v) {
     setField(23, v);
   }
 
@@ -477,7 +477,7 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   void clearLastUpdateTime() => clearField(23);
   @$pb.TagNumber(23)
-  $302.Timestamp ensureLastUpdateTime() => $_ensure(15);
+  $304.Timestamp ensureLastUpdateTime() => $_ensure(15);
 
   ///  Output only. When `true`, the message is a response in a reply thread. When
   ///  `false`, the message is visible in the space's top-level conversation as
@@ -500,9 +500,9 @@ class Message extends $pb.GeneratedMessage {
   /// Output only. The time at which the message was deleted in
   /// Google Chat. If the message is never deleted, this field is empty.
   @$pb.TagNumber(26)
-  $302.Timestamp get deleteTime => $_getN(17);
+  $304.Timestamp get deleteTime => $_getN(17);
   @$pb.TagNumber(26)
-  set deleteTime($302.Timestamp v) {
+  set deleteTime($304.Timestamp v) {
     setField(26, v);
   }
 
@@ -511,7 +511,7 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   void clearDeleteTime() => clearField(26);
   @$pb.TagNumber(26)
-  $302.Timestamp ensureDeleteTime() => $_ensure(17);
+  $304.Timestamp ensureDeleteTime() => $_ensure(17);
 
   /// Optional. A custom ID for the message. You can use field to identify a
   /// message, or to get, delete, or update a message. To set a custom ID,
@@ -536,10 +536,10 @@ class Message extends $pb.GeneratedMessage {
   $core.List<$100.EmojiReactionSummary> get emojiReactionSummaries =>
       $_getList(19);
 
-  ///  Immutable. Input for creating a message, otherwise output only. The user
-  ///  that can view the message. When set, the message is private and only
-  ///  visible to the specified user and the Chat app. To include this field in
-  ///  your request, you must call the Chat API using [app
+  ///  Optional. Immutable. Input for creating a message, otherwise output only.
+  ///  The user that can view the message. When set, the message is private and
+  ///  only visible to the specified user and the Chat app. To include this field
+  ///  in your request, you must call the Chat API using [app
   ///  authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-app)
   ///  and omit the following:
   ///
@@ -550,9 +550,9 @@ class Message extends $pb.GeneratedMessage {
   ///  For details, see [Send a message
   ///  privately](https://developers.google.com/workspace/chat/create-messages#private).
   @$pb.TagNumber(36)
-  $406.User get privateMessageViewer => $_getN(20);
+  $408.User get privateMessageViewer => $_getN(20);
   @$pb.TagNumber(36)
-  set privateMessageViewer($406.User v) {
+  set privateMessageViewer($408.User v) {
     setField(36, v);
   }
 
@@ -561,14 +561,14 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(36)
   void clearPrivateMessageViewer() => clearField(36);
   @$pb.TagNumber(36)
-  $406.User ensurePrivateMessageViewer() => $_ensure(20);
+  $408.User ensurePrivateMessageViewer() => $_ensure(20);
 
   /// Output only. Information about a deleted message. A message is deleted when
   /// `delete_time` is set.
   @$pb.TagNumber(38)
-  $414.DeletionMetadata get deletionMetadata => $_getN(21);
+  $416.DeletionMetadata get deletionMetadata => $_getN(21);
   @$pb.TagNumber(38)
-  set deletionMetadata($414.DeletionMetadata v) {
+  set deletionMetadata($416.DeletionMetadata v) {
     setField(38, v);
   }
 
@@ -577,7 +577,7 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(38)
   void clearDeletionMetadata() => clearField(38);
   @$pb.TagNumber(38)
-  $414.DeletionMetadata ensureDeletionMetadata() => $_ensure(21);
+  $416.DeletionMetadata ensureDeletionMetadata() => $_ensure(21);
 
   /// Output only. Information about a message that's quoted by a Google Chat
   /// user in a space. Google Chat users can quote a message to reply to it.
@@ -634,10 +634,10 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(43)
   void clearFormattedText() => clearField(43);
 
-  ///  One or more interactive widgets that appear at the bottom of a message.
-  ///  You can add accessory widgets to messages that contain text, cards, or both
-  ///  text and cards. Not supported for messages that contain dialogs. For
-  ///  details, see [Add interactive widgets at the bottom of a
+  ///  Optional. One or more interactive widgets that appear at the bottom of a
+  ///  message. You can add accessory widgets to messages that contain text,
+  ///  cards, or both text and cards. Not supported for messages that contain
+  ///  dialogs. For details, see [Add interactive widgets at the bottom of a
   ///  message](https://developers.google.com/workspace/chat/create-messages#add-accessory-widgets).
   ///
   ///  Creating a message with accessory widgets requires [app
@@ -713,7 +713,7 @@ class AttachedGif extends $pb.GeneratedMessage {
 class QuotedMessageMetadata extends $pb.GeneratedMessage {
   factory QuotedMessageMetadata({
     $core.String? name,
-    $302.Timestamp? lastUpdateTime,
+    $304.Timestamp? lastUpdateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -737,8 +737,8 @@ class QuotedMessageMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'lastUpdateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'lastUpdateTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -784,9 +784,9 @@ class QuotedMessageMetadata extends $pb.GeneratedMessage {
   /// Output only. The timestamp when the quoted message was created or when the
   /// quoted message was last updated.
   @$pb.TagNumber(2)
-  $302.Timestamp get lastUpdateTime => $_getN(1);
+  $304.Timestamp get lastUpdateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set lastUpdateTime($302.Timestamp v) {
+  set lastUpdateTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -795,7 +795,7 @@ class QuotedMessageMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearLastUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureLastUpdateTime() => $_ensure(1);
+  $304.Timestamp ensureLastUpdateTime() => $_ensure(1);
 }
 
 ///  A thread in a Google Chat space. For example usage, see
@@ -856,7 +856,7 @@ class Thread extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Thread>(create);
   static Thread? _defaultInstance;
 
-  ///  Resource name of the thread.
+  ///  Identifier. Resource name of the thread.
   ///
   ///  Example: `spaces/{space}/threads/{thread}`
   @$pb.TagNumber(1)
@@ -895,7 +895,7 @@ class Thread extends $pb.GeneratedMessage {
 /// List of widget autocomplete results.
 class ActionResponse_SelectionItems extends $pb.GeneratedMessage {
   factory ActionResponse_SelectionItems({
-    $core.Iterable<$415.SelectionInput_SelectionItem>? items,
+    $core.Iterable<$417.SelectionInput_SelectionItem>? items,
   }) {
     final $result = create();
     if (items != null) {
@@ -915,9 +915,9 @@ class ActionResponse_SelectionItems extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'ActionResponse.SelectionItems',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
-    ..pc<$415.SelectionInput_SelectionItem>(
+    ..pc<$417.SelectionInput_SelectionItem>(
         1, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM,
-        subBuilder: $415.SelectionInput_SelectionItem.create)
+        subBuilder: $417.SelectionInput_SelectionItem.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -949,13 +949,13 @@ class ActionResponse_SelectionItems extends $pb.GeneratedMessage {
 
   /// An array of the SelectionItem objects.
   @$pb.TagNumber(1)
-  $core.List<$415.SelectionInput_SelectionItem> get items => $_getList(0);
+  $core.List<$417.SelectionInput_SelectionItem> get items => $_getList(0);
 }
 
 enum ActionResponse_UpdatedWidget_UpdatedWidget { suggestions, notSet }
 
-/// The response of the updated widget.
-/// Used to provide autocomplete options for a widget.
+/// For `selectionInput` widgets, returns autocomplete suggestions for a
+/// multiselect menu.
 class ActionResponse_UpdatedWidget extends $pb.GeneratedMessage {
   factory ActionResponse_UpdatedWidget({
     ActionResponse_SelectionItems? suggestions,
@@ -1193,7 +1193,7 @@ enum AccessoryWidget_Action { buttonList, notSet }
 /// message](https://developers.google.com/workspace/chat/create-messages#add-accessory-widgets).
 class AccessoryWidget extends $pb.GeneratedMessage {
   factory AccessoryWidget({
-    $415.ButtonList? buttonList,
+    $417.ButtonList? buttonList,
   }) {
     final $result = create();
     if (buttonList != null) {
@@ -1219,8 +1219,8 @@ class AccessoryWidget extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$415.ButtonList>(1, _omitFieldNames ? '' : 'buttonList',
-        subBuilder: $415.ButtonList.create)
+    ..aOM<$417.ButtonList>(1, _omitFieldNames ? '' : 'buttonList',
+        subBuilder: $417.ButtonList.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1252,9 +1252,9 @@ class AccessoryWidget extends $pb.GeneratedMessage {
 
   /// A list of buttons.
   @$pb.TagNumber(1)
-  $415.ButtonList get buttonList => $_getN(0);
+  $417.ButtonList get buttonList => $_getN(0);
   @$pb.TagNumber(1)
-  set buttonList($415.ButtonList v) {
+  set buttonList($417.ButtonList v) {
     setField(1, v);
   }
 
@@ -1263,7 +1263,7 @@ class AccessoryWidget extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearButtonList() => clearField(1);
   @$pb.TagNumber(1)
-  $415.ButtonList ensureButtonList() => $_ensure(0);
+  $417.ButtonList ensureButtonList() => $_ensure(0);
 }
 
 /// Request to get a message.
@@ -1411,8 +1411,8 @@ class DeleteMessageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 
-  ///  When `true`, deleting a message also deletes its threaded replies. When
-  ///  `false`, if a message has threaded replies, deletion fails.
+  ///  Optional. When `true`, deleting a message also deletes its threaded
+  ///  replies. When `false`, if a message has threaded replies, deletion fails.
   ///
   ///  Only applies when [authenticating as a
   ///  user](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
@@ -1435,7 +1435,7 @@ class DeleteMessageRequest extends $pb.GeneratedMessage {
 class UpdateMessageRequest extends $pb.GeneratedMessage {
   factory UpdateMessageRequest({
     Message? message,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     $core.bool? allowMissing,
   }) {
     final $result = create();
@@ -1464,8 +1464,8 @@ class UpdateMessageRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<Message>(1, _omitFieldNames ? '' : 'message',
         subBuilder: Message.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false;
 
@@ -1526,9 +1526,9 @@ class UpdateMessageRequest extends $pb.GeneratedMessage {
   ///  - `accessory_widgets`  (Requires [app
   ///  authentication](/chat/api/guides/auth/service-accounts).)
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -1537,7 +1537,7 @@ class UpdateMessageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. If `true` and the message isn't found, a new message is created
   /// and `updateMask` is ignored. The specified message ID must be
@@ -1706,8 +1706,14 @@ class CreateMessageRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearRequestId() => clearField(7);
 
-  /// Optional. Specifies whether a message starts a thread or replies to one.
-  /// Only supported in named spaces.
+  ///  Optional. Specifies whether a message starts a thread or replies to one.
+  ///  Only supported in named spaces.
+  ///
+  ///  When [responding to user
+  ///  interactions](https://developers.google.com/workspace/chat/receive-respond-interactions),
+  ///  this field is ignored. For interactions within a thread, the reply is
+  ///  created in the same thread. Otherwise, the reply is created as a new
+  ///  thread.
   @$pb.TagNumber(8)
   CreateMessageRequest_MessageReplyOption get messageReplyOption => $_getN(4);
   @$pb.TagNumber(8)
@@ -1837,8 +1843,8 @@ class ListMessagesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearParent() => clearField(1);
 
-  ///  The maximum number of messages returned. The service might return fewer
-  ///  messages than this value.
+  ///  Optional. The maximum number of messages returned. The service might return
+  ///  fewer messages than this value.
   ///
   ///  If unspecified, at most 25 are returned.
   ///
@@ -1858,10 +1864,8 @@ class ListMessagesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearPageSize() => clearField(2);
 
-  ///  Optional, if resuming from a previous query.
-  ///
-  ///  A page token received from a previous list messages call. Provide this
-  ///  parameter to retrieve the subsequent page.
+  ///  Optional. A page token received from a previous list messages call. Provide
+  ///  this parameter to retrieve the subsequent page.
   ///
   ///  When paginating, all other parameters provided should match the call that
   ///  provided the page token. Passing different values to the other parameters
@@ -1878,7 +1882,7 @@ class ListMessagesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearPageToken() => clearField(3);
 
-  ///  A query filter.
+  ///  Optional. A query filter.
   ///
   ///  You can filter messages by date (`create_time`) and thread (`thread.name`).
   ///
@@ -1927,10 +1931,8 @@ class ListMessagesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearFilter() => clearField(4);
 
-  ///  Optional, if resuming from a previous query.
-  ///
-  ///  How the list of messages is ordered. Specify a value to order by an
-  ///  ordering operation. Valid ordering operation values are as follows:
+  ///  Optional. How the list of messages is ordered. Specify a value to order by
+  ///  an ordering operation. Valid ordering operation values are as follows:
   ///
   ///  - `ASC` for ascending.
   ///
@@ -1949,8 +1951,9 @@ class ListMessagesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearOrderBy() => clearField(5);
 
-  /// Whether to include deleted messages. Deleted messages include deleted time
-  /// and metadata about their deletion, but message content is unavailable.
+  /// Optional. Whether to include deleted messages. Deleted messages include
+  /// deleted time and metadata about their deletion, but message content is
+  /// unavailable.
   @$pb.TagNumber(6)
   $core.bool get showDeleted => $_getBF(5);
   @$pb.TagNumber(6)
@@ -2047,7 +2050,7 @@ enum DialogAction_Action { dialog, notSet }
 class DialogAction extends $pb.GeneratedMessage {
   factory DialogAction({
     Dialog? dialog,
-    $416.ActionStatus? actionStatus,
+    $418.ActionStatus? actionStatus,
   }) {
     final $result = create();
     if (dialog != null) {
@@ -2077,8 +2080,8 @@ class DialogAction extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [1])
     ..aOM<Dialog>(1, _omitFieldNames ? '' : 'dialog', subBuilder: Dialog.create)
-    ..aOM<$416.ActionStatus>(2, _omitFieldNames ? '' : 'actionStatus',
-        subBuilder: $416.ActionStatus.create)
+    ..aOM<$418.ActionStatus>(2, _omitFieldNames ? '' : 'actionStatus',
+        subBuilder: $418.ActionStatus.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2130,9 +2133,9 @@ class DialogAction extends $pb.GeneratedMessage {
   /// a status and message to users, if necessary.
   /// For example, in case of an error or success.
   @$pb.TagNumber(2)
-  $416.ActionStatus get actionStatus => $_getN(1);
+  $418.ActionStatus get actionStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set actionStatus($416.ActionStatus v) {
+  set actionStatus($418.ActionStatus v) {
     setField(2, v);
   }
 
@@ -2141,13 +2144,13 @@ class DialogAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearActionStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $416.ActionStatus ensureActionStatus() => $_ensure(1);
+  $418.ActionStatus ensureActionStatus() => $_ensure(1);
 }
 
 /// Wrapper around the card body of the dialog.
 class Dialog extends $pb.GeneratedMessage {
   factory Dialog({
-    $415.Card? body,
+    $417.Card? body,
   }) {
     final $result = create();
     if (body != null) {
@@ -2167,8 +2170,8 @@ class Dialog extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'Dialog',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
-    ..aOM<$415.Card>(1, _omitFieldNames ? '' : 'body',
-        subBuilder: $415.Card.create)
+    ..aOM<$417.Card>(1, _omitFieldNames ? '' : 'body',
+        subBuilder: $417.Card.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2196,9 +2199,9 @@ class Dialog extends $pb.GeneratedMessage {
   /// Google Chat apps don't support the following card entities:
   /// `DateTimePicker`, `OnChangeAction`.
   @$pb.TagNumber(1)
-  $415.Card get body => $_getN(0);
+  $417.Card get body => $_getN(0);
   @$pb.TagNumber(1)
-  set body($415.Card v) {
+  set body($417.Card v) {
     setField(1, v);
   }
 
@@ -2207,7 +2210,7 @@ class Dialog extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearBody() => clearField(1);
   @$pb.TagNumber(1)
-  $415.Card ensureBody() => $_ensure(0);
+  $417.Card ensureBody() => $_ensure(0);
 }
 
 ///  A
@@ -2222,7 +2225,7 @@ class Dialog extends $pb.GeneratedMessage {
 class CardWithId extends $pb.GeneratedMessage {
   factory CardWithId({
     $core.String? cardId,
-    $415.Card? card,
+    $417.Card? card,
   }) {
     final $result = create();
     if (cardId != null) {
@@ -2246,8 +2249,8 @@ class CardWithId extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'cardId')
-    ..aOM<$415.Card>(2, _omitFieldNames ? '' : 'card',
-        subBuilder: $415.Card.create)
+    ..aOM<$417.Card>(2, _omitFieldNames ? '' : 'card',
+        subBuilder: $417.Card.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2287,9 +2290,9 @@ class CardWithId extends $pb.GeneratedMessage {
 
   /// A card. Maximum size is 32 KB.
   @$pb.TagNumber(2)
-  $415.Card get card => $_getN(1);
+  $417.Card get card => $_getN(1);
   @$pb.TagNumber(2)
-  set card($415.Card v) {
+  set card($417.Card v) {
     setField(2, v);
   }
 
@@ -2298,7 +2301,7 @@ class CardWithId extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCard() => clearField(2);
   @$pb.TagNumber(2)
-  $415.Card ensureCard() => $_ensure(1);
+  $417.Card ensureCard() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

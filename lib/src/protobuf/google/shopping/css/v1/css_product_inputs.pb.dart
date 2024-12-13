@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
-import '../../type/types.pb.dart' as $537;
-import 'css_product_common.pb.dart' as $538;
+import '../../../protobuf/timestamp.pb.dart' as $304;
+import '../../type/types.pb.dart' as $540;
+import 'css_product_common.pb.dart' as $541;
 
 /// This resource represents input data you submit for a CSS Product, not
 /// the processed CSS Product that you see in CSS Center, in Shopping Ads, or
@@ -28,9 +28,9 @@ class CssProductInput extends $pb.GeneratedMessage {
     $core.String? rawProvidedId,
     $core.String? contentLanguage,
     $core.String? feedLabel,
-    $302.Timestamp? freshnessTime,
-    $538.Attributes? attributes,
-    $core.Iterable<$537.CustomAttribute>? customAttributes,
+    $304.Timestamp? freshnessTime,
+    $541.Attributes? attributes,
+    $core.Iterable<$540.CustomAttribute>? customAttributes,
   }) {
     final $result = create();
     if (name != null) {
@@ -77,13 +77,13 @@ class CssProductInput extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'rawProvidedId')
     ..aOS(4, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(5, _omitFieldNames ? '' : 'feedLabel')
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'freshnessTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$538.Attributes>(7, _omitFieldNames ? '' : 'attributes',
-        subBuilder: $538.Attributes.create)
-    ..pc<$537.CustomAttribute>(
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'freshnessTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$541.Attributes>(7, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $541.Attributes.create)
+    ..pc<$540.CustomAttribute>(
         8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM,
-        subBuilder: $537.CustomAttribute.create)
+        subBuilder: $540.CustomAttribute.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -207,9 +207,9 @@ class CssProductInput extends $pb.GeneratedMessage {
   ///  If the operation is prevented, the aborted exception will be
   ///  thrown.
   @$pb.TagNumber(6)
-  $302.Timestamp get freshnessTime => $_getN(5);
+  $304.Timestamp get freshnessTime => $_getN(5);
   @$pb.TagNumber(6)
-  set freshnessTime($302.Timestamp v) {
+  set freshnessTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -218,13 +218,13 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearFreshnessTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureFreshnessTime() => $_ensure(5);
+  $304.Timestamp ensureFreshnessTime() => $_ensure(5);
 
   /// A list of CSS Product attributes.
   @$pb.TagNumber(7)
-  $538.Attributes get attributes => $_getN(6);
+  $541.Attributes get attributes => $_getN(6);
   @$pb.TagNumber(7)
-  set attributes($538.Attributes v) {
+  set attributes($541.Attributes v) {
     setField(7, v);
   }
 
@@ -233,7 +233,7 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearAttributes() => clearField(7);
   @$pb.TagNumber(7)
-  $538.Attributes ensureAttributes() => $_ensure(6);
+  $541.Attributes ensureAttributes() => $_ensure(6);
 
   /// A list of custom (CSS-provided) attributes. It can also be used for
   /// submitting any attribute of the feed specification in its generic
@@ -242,7 +242,7 @@ class CssProductInput extends $pb.GeneratedMessage {
   /// This is useful for submitting attributes not explicitly exposed by the
   /// API, such as additional attributes used for Buy on Google.
   @$pb.TagNumber(8)
-  $core.List<$537.CustomAttribute> get customAttributes => $_getList(7);
+  $core.List<$540.CustomAttribute> get customAttributes => $_getList(7);
 }
 
 /// Request message for the InsertCssProductInput method.

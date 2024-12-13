@@ -259,8 +259,8 @@ const ListSpaceEventsRequest$json = {
   '1': 'ListSpaceEventsRequest',
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'page_size', '3': 5, '4': 1, '5': 5, '10': 'pageSize'},
-    {'1': 'page_token', '3': 6, '4': 1, '5': 9, '10': 'pageToken'},
+    {'1': 'page_size', '3': 5, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
+    {'1': 'page_token', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
     {'1': 'filter', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'filter'},
   ],
 };
@@ -268,9 +268,9 @@ const ListSpaceEventsRequest$json = {
 /// Descriptor for `ListSpaceEventsRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List listSpaceEventsRequestDescriptor = $convert.base64Decode(
     'ChZMaXN0U3BhY2VFdmVudHNSZXF1ZXN0Ej4KBnBhcmVudBgBIAEoCUIm4EEC+kEgEh5jaGF0Lm'
-    'dvb2dsZWFwaXMuY29tL1NwYWNlRXZlbnRSBnBhcmVudBIbCglwYWdlX3NpemUYBSABKAVSCHBh'
-    'Z2VTaXplEh0KCnBhZ2VfdG9rZW4YBiABKAlSCXBhZ2VUb2tlbhIbCgZmaWx0ZXIYCCABKAlCA+'
-    'BBAlIGZmlsdGVy');
+    'dvb2dsZWFwaXMuY29tL1NwYWNlRXZlbnRSBnBhcmVudBIgCglwYWdlX3NpemUYBSABKAVCA+BB'
+    'AVIIcGFnZVNpemUSIgoKcGFnZV90b2tlbhgGIAEoCUID4EEBUglwYWdlVG9rZW4SGwoGZmlsdG'
+    'VyGAggASgJQgPgQQJSBmZpbHRlcg==');
 
 @$core.Deprecated('Use listSpaceEventsResponseDescriptor instead')
 const ListSpaceEventsResponse$json = {

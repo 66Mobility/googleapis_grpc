@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../extension_point.pb.dart' as $396;
+import '../extension_point.pb.dart' as $398;
 
 /// Sheets add-on manifest.
 class SheetsAddOnManifest extends $pb.GeneratedMessage {
   factory SheetsAddOnManifest({
-    $396.HomepageExtensionPoint? homepageTrigger,
+    $398.HomepageExtensionPoint? homepageTrigger,
     SheetsExtensionPoint? onFileScopeGrantedTrigger,
   }) {
     final $result = create();
@@ -43,9 +43,9 @@ class SheetsAddOnManifest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.script.type.sheets'),
       createEmptyInstance: create)
-    ..aOM<$396.HomepageExtensionPoint>(
+    ..aOM<$398.HomepageExtensionPoint>(
         3, _omitFieldNames ? '' : 'homepageTrigger',
-        subBuilder: $396.HomepageExtensionPoint.create)
+        subBuilder: $398.HomepageExtensionPoint.create)
     ..aOM<SheetsExtensionPoint>(
         5, _omitFieldNames ? '' : 'onFileScopeGrantedTrigger',
         subBuilder: SheetsExtensionPoint.create)
@@ -77,9 +77,9 @@ class SheetsAddOnManifest extends $pb.GeneratedMessage {
   /// If present, this overrides the configuration from
   /// `addOns.common.homepageTrigger`.
   @$pb.TagNumber(3)
-  $396.HomepageExtensionPoint get homepageTrigger => $_getN(0);
+  $398.HomepageExtensionPoint get homepageTrigger => $_getN(0);
   @$pb.TagNumber(3)
-  set homepageTrigger($396.HomepageExtensionPoint v) {
+  set homepageTrigger($398.HomepageExtensionPoint v) {
     setField(3, v);
   }
 
@@ -88,7 +88,7 @@ class SheetsAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearHomepageTrigger() => clearField(3);
   @$pb.TagNumber(3)
-  $396.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(0);
+  $398.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(0);
 
   /// Endpoint to execute when file scope authorization is granted
   /// for this document/user pair.

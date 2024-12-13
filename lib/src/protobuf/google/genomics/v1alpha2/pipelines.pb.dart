@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $264;
-import '../../protobuf/timestamp.pb.dart' as $302;
-import '../../rpc/code.pbenum.dart' as $405;
+import '../../protobuf/duration.pb.dart' as $266;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../rpc/code.pbenum.dart' as $407;
 import 'pipelines.pbenum.dart';
 
 export 'pipelines.pbenum.dart';
@@ -487,7 +487,7 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
     $core.String? clientId,
     PipelineResources? resources,
     LoggingOptions? logging,
-    $264.Duration? keepVmAliveOnFailureDuration,
+    $266.Duration? keepVmAliveOnFailureDuration,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -551,9 +551,9 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
         subBuilder: PipelineResources.create)
     ..aOM<LoggingOptions>(7, _omitFieldNames ? '' : 'logging',
         subBuilder: LoggingOptions.create)
-    ..aOM<$264.Duration>(
+    ..aOM<$266.Duration>(
         8, _omitFieldNames ? '' : 'keepVmAliveOnFailureDuration',
-        subBuilder: $264.Duration.create)
+        subBuilder: $266.Duration.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels',
         entryClassName: 'RunPipelineArgs.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -679,9 +679,9 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
   /// failed, copying input or output files failed, etc). While the VM is up, one
   /// can ssh into the VM to debug. Default is 0; maximum allowed value is 1 day.
   @$pb.TagNumber(8)
-  $264.Duration get keepVmAliveOnFailureDuration => $_getN(7);
+  $266.Duration get keepVmAliveOnFailureDuration => $_getN(7);
   @$pb.TagNumber(8)
-  set keepVmAliveOnFailureDuration($264.Duration v) {
+  set keepVmAliveOnFailureDuration($266.Duration v) {
     setField(8, v);
   }
 
@@ -690,7 +690,7 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearKeepVmAliveOnFailureDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $264.Duration ensureKeepVmAliveOnFailureDuration() => $_ensure(7);
+  $266.Duration ensureKeepVmAliveOnFailureDuration() => $_ensure(7);
 
   /// Labels to apply to this pipeline run. Labels will also be applied to
   /// compute resources (VM, disks) created by this pipeline run. When listing
@@ -1496,7 +1496,7 @@ class ControllerConfig extends $pb.GeneratedMessage {
 class TimestampEvent extends $pb.GeneratedMessage {
   factory TimestampEvent({
     $core.String? description,
-    $302.Timestamp? timestamp,
+    $304.Timestamp? timestamp,
   }) {
     final $result = create();
     if (description != null) {
@@ -1521,8 +1521,8 @@ class TimestampEvent extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.genomics.v1alpha2'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'description')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'timestamp',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'timestamp',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1563,9 +1563,9 @@ class TimestampEvent extends $pb.GeneratedMessage {
 
   /// The time this event occured.
   @$pb.TagNumber(2)
-  $302.Timestamp get timestamp => $_getN(1);
+  $304.Timestamp get timestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set timestamp($302.Timestamp v) {
+  set timestamp($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -1574,7 +1574,7 @@ class TimestampEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearTimestamp() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureTimestamp() => $_ensure(1);
+  $304.Timestamp ensureTimestamp() => $_ensure(1);
 }
 
 /// Request to set operation status. Should only be used by VMs
@@ -1583,7 +1583,7 @@ class SetOperationStatusRequest extends $pb.GeneratedMessage {
   factory SetOperationStatusRequest({
     $core.String? operationId,
     $core.Iterable<TimestampEvent>? timestampEvents,
-    $405.Code? errorCode,
+    $407.Code? errorCode,
     $core.String? errorMessage,
     $fixnum.Int64? validationToken,
   }) {
@@ -1622,10 +1622,10 @@ class SetOperationStatusRequest extends $pb.GeneratedMessage {
     ..pc<TimestampEvent>(
         2, _omitFieldNames ? '' : 'timestampEvents', $pb.PbFieldType.PM,
         subBuilder: TimestampEvent.create)
-    ..e<$405.Code>(3, _omitFieldNames ? '' : 'errorCode', $pb.PbFieldType.OE,
-        defaultOrMaker: $405.Code.OK,
-        valueOf: $405.Code.valueOf,
-        enumValues: $405.Code.values)
+    ..e<$407.Code>(3, _omitFieldNames ? '' : 'errorCode', $pb.PbFieldType.OE,
+        defaultOrMaker: $407.Code.OK,
+        valueOf: $407.Code.valueOf,
+        enumValues: $407.Code.values)
     ..aOS(4, _omitFieldNames ? '' : 'errorMessage')
     ..a<$fixnum.Int64>(
         5, _omitFieldNames ? '' : 'validationToken', $pb.PbFieldType.OU6,
@@ -1673,9 +1673,9 @@ class SetOperationStatusRequest extends $pb.GeneratedMessage {
   $core.List<TimestampEvent> get timestampEvents => $_getList(1);
 
   @$pb.TagNumber(3)
-  $405.Code get errorCode => $_getN(2);
+  $407.Code get errorCode => $_getN(2);
   @$pb.TagNumber(3)
-  set errorCode($405.Code v) {
+  set errorCode($407.Code v) {
     setField(3, v);
   }
 

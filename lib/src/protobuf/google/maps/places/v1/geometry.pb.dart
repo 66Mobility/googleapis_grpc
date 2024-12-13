@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/latlng.pb.dart' as $325;
+import '../../../type/latlng.pb.dart' as $327;
 
 /// Circle with a LatLng as center and radius.
 class Circle extends $pb.GeneratedMessage {
   factory Circle({
-    $325.LatLng? center,
+    $327.LatLng? center,
     $core.double? radius,
   }) {
     final $result = create();
@@ -43,8 +43,8 @@ class Circle extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'center',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'center',
+        subBuilder: $327.LatLng.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'radius', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
 
@@ -74,9 +74,9 @@ class Circle extends $pb.GeneratedMessage {
   ///  The range of latitude must be within [-90.0, 90.0]. The range of the
   ///  longitude must be within [-180.0, 180.0].
   @$pb.TagNumber(1)
-  $325.LatLng get center => $_getN(0);
+  $327.LatLng get center => $_getN(0);
   @$pb.TagNumber(1)
-  set center($325.LatLng v) {
+  set center($327.LatLng v) {
     setField(1, v);
   }
 
@@ -85,7 +85,7 @@ class Circle extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCenter() => clearField(1);
   @$pb.TagNumber(1)
-  $325.LatLng ensureCenter() => $_ensure(0);
+  $327.LatLng ensureCenter() => $_ensure(0);
 
   /// Required. Radius measured in meters. The radius must be within [0.0,
   /// 50000.0].

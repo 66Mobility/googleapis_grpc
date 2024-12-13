@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $321;
+import '../../../protobuf/any.pb.dart' as $323;
 import '../../service.pb.dart' as $44;
 import 'resources.pb.dart' as $43;
 import 'servicemanager.pbenum.dart';
@@ -1562,8 +1562,8 @@ class EnableServiceResponse extends $pb.GeneratedMessage {
 /// Request message for GenerateConfigReport method.
 class GenerateConfigReportRequest extends $pb.GeneratedMessage {
   factory GenerateConfigReportRequest({
-    $321.Any? newConfig,
-    $321.Any? oldConfig,
+    $323.Any? newConfig,
+    $323.Any? oldConfig,
   }) {
     final $result = create();
     if (newConfig != null) {
@@ -1587,10 +1587,10 @@ class GenerateConfigReportRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.api.servicemanagement.v1'),
       createEmptyInstance: create)
-    ..aOM<$321.Any>(1, _omitFieldNames ? '' : 'newConfig',
-        subBuilder: $321.Any.create)
-    ..aOM<$321.Any>(2, _omitFieldNames ? '' : 'oldConfig',
-        subBuilder: $321.Any.create)
+    ..aOM<$323.Any>(1, _omitFieldNames ? '' : 'newConfig',
+        subBuilder: $323.Any.create)
+    ..aOM<$323.Any>(2, _omitFieldNames ? '' : 'oldConfig',
+        subBuilder: $323.Any.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1626,9 +1626,9 @@ class GenerateConfigReportRequest extends $pb.GeneratedMessage {
   /// [google.api.servicemanagement.v1.ConfigSource][google.api.servicemanagement.v1.ConfigSource],
   /// and [google.api.Service][google.api.Service]
   @$pb.TagNumber(1)
-  $321.Any get newConfig => $_getN(0);
+  $323.Any get newConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set newConfig($321.Any v) {
+  set newConfig($323.Any v) {
     setField(1, v);
   }
 
@@ -1637,7 +1637,7 @@ class GenerateConfigReportRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearNewConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $321.Any ensureNewConfig() => $_ensure(0);
+  $323.Any ensureNewConfig() => $_ensure(0);
 
   /// Optional. Service configuration against which the comparison will be done.
   /// For this version of API, the supported types are
@@ -1645,9 +1645,9 @@ class GenerateConfigReportRequest extends $pb.GeneratedMessage {
   /// [google.api.servicemanagement.v1.ConfigSource][google.api.servicemanagement.v1.ConfigSource],
   /// and [google.api.Service][google.api.Service]
   @$pb.TagNumber(2)
-  $321.Any get oldConfig => $_getN(1);
+  $323.Any get oldConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set oldConfig($321.Any v) {
+  set oldConfig($323.Any v) {
     setField(2, v);
   }
 
@@ -1656,7 +1656,7 @@ class GenerateConfigReportRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearOldConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $321.Any ensureOldConfig() => $_ensure(1);
+  $323.Any ensureOldConfig() => $_ensure(1);
 }
 
 /// Response message for GenerateConfigReport method.

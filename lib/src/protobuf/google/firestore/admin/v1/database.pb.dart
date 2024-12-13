@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $264;
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/duration.pb.dart' as $266;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 import 'database.pbenum.dart';
 
 export 'database.pbenum.dart';
@@ -639,14 +639,14 @@ class Database extends $pb.GeneratedMessage {
   factory Database({
     $core.String? name,
     $core.String? uid,
-    $302.Timestamp? createTime,
-    $302.Timestamp? updateTime,
-    $302.Timestamp? deleteTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? updateTime,
+    $304.Timestamp? deleteTime,
     $core.String? locationId,
     Database_DatabaseType? type,
     Database_ConcurrencyMode? concurrencyMode,
-    $264.Duration? versionRetentionPeriod,
-    $302.Timestamp? earliestVersionTime,
+    $266.Duration? versionRetentionPeriod,
+    $304.Timestamp? earliestVersionTime,
     Database_AppEngineIntegrationMode? appEngineIntegrationMode,
     $core.String? keyPrefix,
     Database_PointInTimeRecoveryEnablement? pointInTimeRecoveryEnablement,
@@ -728,12 +728,12 @@ class Database extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'uid')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'locationId')
     ..e<Database_DatabaseType>(
         10, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
@@ -745,10 +745,10 @@ class Database extends $pb.GeneratedMessage {
         defaultOrMaker: Database_ConcurrencyMode.CONCURRENCY_MODE_UNSPECIFIED,
         valueOf: Database_ConcurrencyMode.valueOf,
         enumValues: Database_ConcurrencyMode.values)
-    ..aOM<$264.Duration>(17, _omitFieldNames ? '' : 'versionRetentionPeriod',
-        subBuilder: $264.Duration.create)
-    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'earliestVersionTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$266.Duration>(17, _omitFieldNames ? '' : 'versionRetentionPeriod',
+        subBuilder: $266.Duration.create)
+    ..aOM<$304.Timestamp>(18, _omitFieldNames ? '' : 'earliestVersionTime',
+        subBuilder: $304.Timestamp.create)
     ..e<Database_AppEngineIntegrationMode>(19,
         _omitFieldNames ? '' : 'appEngineIntegrationMode', $pb.PbFieldType.OE,
         defaultOrMaker: Database_AppEngineIntegrationMode
@@ -829,9 +829,9 @@ class Database extends $pb.GeneratedMessage {
   /// Output only. The timestamp at which this database was created. Databases
   /// created before 2016 do not populate create_time.
   @$pb.TagNumber(5)
-  $302.Timestamp get createTime => $_getN(2);
+  $304.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(5)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -840,15 +840,15 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureCreateTime() => $_ensure(2);
+  $304.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp at which this database was most recently
   /// updated. Note this only includes updates to the database resource and not
   /// data contained by the database.
   @$pb.TagNumber(6)
-  $302.Timestamp get updateTime => $_getN(3);
+  $304.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(6)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -857,14 +857,14 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureUpdateTime() => $_ensure(3);
+  $304.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. The timestamp at which this database was deleted. Only set if
   /// the database has been deleted.
   @$pb.TagNumber(7)
-  $302.Timestamp get deleteTime => $_getN(4);
+  $304.Timestamp get deleteTime => $_getN(4);
   @$pb.TagNumber(7)
-  set deleteTime($302.Timestamp v) {
+  set deleteTime($304.Timestamp v) {
     setField(7, v);
   }
 
@@ -873,7 +873,7 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearDeleteTime() => clearField(7);
   @$pb.TagNumber(7)
-  $302.Timestamp ensureDeleteTime() => $_ensure(4);
+  $304.Timestamp ensureDeleteTime() => $_ensure(4);
 
   /// The location of the database. Available locations are listed at
   /// https://cloud.google.com/firestore/docs/locations.
@@ -928,9 +928,9 @@ class Database extends $pb.GeneratedMessage {
   ///  If the PITR feature is enabled, the retention period is 7 days. Otherwise,
   ///  the retention period is 1 hour.
   @$pb.TagNumber(17)
-  $264.Duration get versionRetentionPeriod => $_getN(8);
+  $266.Duration get versionRetentionPeriod => $_getN(8);
   @$pb.TagNumber(17)
-  set versionRetentionPeriod($264.Duration v) {
+  set versionRetentionPeriod($266.Duration v) {
     setField(17, v);
   }
 
@@ -939,7 +939,7 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearVersionRetentionPeriod() => clearField(17);
   @$pb.TagNumber(17)
-  $264.Duration ensureVersionRetentionPeriod() => $_ensure(8);
+  $266.Duration ensureVersionRetentionPeriod() => $_ensure(8);
 
   ///  Output only. The earliest timestamp at which older versions of the data can
   ///  be read from the database. See [version_retention_period] above; this field
@@ -950,9 +950,9 @@ class Database extends $pb.GeneratedMessage {
   ///  for the time from the moment when the value is queried to the moment when
   ///  you initiate the recovery.
   @$pb.TagNumber(18)
-  $302.Timestamp get earliestVersionTime => $_getN(9);
+  $304.Timestamp get earliestVersionTime => $_getN(9);
   @$pb.TagNumber(18)
-  set earliestVersionTime($302.Timestamp v) {
+  set earliestVersionTime($304.Timestamp v) {
     setField(18, v);
   }
 
@@ -961,7 +961,7 @@ class Database extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   void clearEarliestVersionTime() => clearField(18);
   @$pb.TagNumber(18)
-  $302.Timestamp ensureEarliestVersionTime() => $_ensure(9);
+  $304.Timestamp ensureEarliestVersionTime() => $_ensure(9);
 
   /// The App Engine integration mode to use for this database.
   @$pb.TagNumber(19)

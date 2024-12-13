@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
-import '../../protobuf/timestamp.pb.dart' as $302;
+import '../../protobuf/field_mask.pb.dart' as $335;
+import '../../protobuf/timestamp.pb.dart' as $304;
 
 ///  A Dataset is a collection of genomic data.
 ///
@@ -25,7 +25,7 @@ class Dataset extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? projectId,
     $core.String? name,
-    $302.Timestamp? createTime,
+    $304.Timestamp? createTime,
   }) {
     final $result = create();
     if (id != null) {
@@ -58,8 +58,8 @@ class Dataset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -124,9 +124,9 @@ class Dataset extends $pb.GeneratedMessage {
 
   /// The time this dataset was created, in seconds from the epoch.
   @$pb.TagNumber(4)
-  $302.Timestamp get createTime => $_getN(3);
+  $304.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -135,7 +135,7 @@ class Dataset extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureCreateTime() => $_ensure(3);
+  $304.Timestamp ensureCreateTime() => $_ensure(3);
 }
 
 /// The dataset list request.
@@ -389,7 +389,7 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
   factory UpdateDatasetRequest({
     $core.String? datasetId,
     Dataset? dataset,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (datasetId != null) {
@@ -419,8 +419,8 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'datasetId')
     ..aOM<Dataset>(2, _omitFieldNames ? '' : 'dataset',
         subBuilder: Dataset.create)
-    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -480,9 +480,9 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
   /// acceptable value is "name". If unspecified, all mutable fields will be
   /// updated.
   @$pb.TagNumber(3)
-  $333.FieldMask get updateMask => $_getN(2);
+  $335.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(3, v);
   }
 
@@ -491,7 +491,7 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $333.FieldMask ensureUpdateMask() => $_ensure(2);
+  $335.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 class DeleteDatasetRequest extends $pb.GeneratedMessage {

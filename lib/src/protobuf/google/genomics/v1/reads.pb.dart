@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
-import 'range.pb.dart' as $440;
-import 'readalignment.pb.dart' as $441;
+import '../../protobuf/field_mask.pb.dart' as $335;
+import 'range.pb.dart' as $442;
+import 'readalignment.pb.dart' as $443;
 import 'readgroupset.pb.dart' as $136;
 import 'reads.pbenum.dart';
 
@@ -532,7 +532,7 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
   factory UpdateReadGroupSetRequest({
     $core.String? readGroupSetId,
     $136.ReadGroupSet? readGroupSet,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (readGroupSetId != null) {
@@ -562,8 +562,8 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'readGroupSetId')
     ..aOM<$136.ReadGroupSet>(2, _omitFieldNames ? '' : 'readGroupSet',
         subBuilder: $136.ReadGroupSet.create)
-    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -629,9 +629,9 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
   ///  Leaving `updateMask` unset is equivalent to specifying all mutable
   ///  fields.
   @$pb.TagNumber(3)
-  $333.FieldMask get updateMask => $_getN(2);
+  $335.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(3, v);
   }
 
@@ -640,7 +640,7 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $333.FieldMask ensureUpdateMask() => $_ensure(2);
+  $335.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 class DeleteReadGroupSetRequest extends $pb.GeneratedMessage {
@@ -965,7 +965,7 @@ class ListCoverageBucketsRequest extends $pb.GeneratedMessage {
 /// to a specific range of the reference sequence.
 class CoverageBucket extends $pb.GeneratedMessage {
   factory CoverageBucket({
-    $440.Range? range,
+    $442.Range? range,
     $core.double? meanCoverage,
   }) {
     final $result = create();
@@ -990,8 +990,8 @@ class CoverageBucket extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
       createEmptyInstance: create)
-    ..aOM<$440.Range>(1, _omitFieldNames ? '' : 'range',
-        subBuilder: $440.Range.create)
+    ..aOM<$442.Range>(1, _omitFieldNames ? '' : 'range',
+        subBuilder: $442.Range.create)
     ..a<$core.double>(
         2, _omitFieldNames ? '' : 'meanCoverage', $pb.PbFieldType.OF)
     ..hasRequiredFields = false;
@@ -1021,9 +1021,9 @@ class CoverageBucket extends $pb.GeneratedMessage {
 
   /// The genomic coordinate range spanned by this bucket.
   @$pb.TagNumber(1)
-  $440.Range get range => $_getN(0);
+  $442.Range get range => $_getN(0);
   @$pb.TagNumber(1)
-  set range($440.Range v) {
+  set range($442.Range v) {
     setField(1, v);
   }
 
@@ -1032,7 +1032,7 @@ class CoverageBucket extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRange() => clearField(1);
   @$pb.TagNumber(1)
-  $440.Range ensureRange() => $_ensure(0);
+  $442.Range ensureRange() => $_ensure(0);
 
   /// The average number of reads which are aligned to each individual
   /// reference base in this bucket.
@@ -1322,7 +1322,7 @@ class SearchReadsRequest extends $pb.GeneratedMessage {
 /// The read search response.
 class SearchReadsResponse extends $pb.GeneratedMessage {
   factory SearchReadsResponse({
-    $core.Iterable<$441.Read>? alignments,
+    $core.Iterable<$443.Read>? alignments,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1347,8 +1347,8 @@ class SearchReadsResponse extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
       createEmptyInstance: create)
-    ..pc<$441.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM,
-        subBuilder: $441.Read.create)
+    ..pc<$443.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM,
+        subBuilder: $443.Read.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -1380,7 +1380,7 @@ class SearchReadsResponse extends $pb.GeneratedMessage {
   /// which have no position, are returned contiguously and are sorted in
   /// ascending lexicographic order by fragment name.
   @$pb.TagNumber(1)
-  $core.List<$441.Read> get alignments => $_getList(0);
+  $core.List<$443.Read> get alignments => $_getList(0);
 
   /// The continuation token, which is used to page through large result sets.
   /// Provide this value in a subsequent request to return the next page of
@@ -1595,7 +1595,7 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
 
 class StreamReadsResponse extends $pb.GeneratedMessage {
   factory StreamReadsResponse({
-    $core.Iterable<$441.Read>? alignments,
+    $core.Iterable<$443.Read>? alignments,
   }) {
     final $result = create();
     if (alignments != null) {
@@ -1616,8 +1616,8 @@ class StreamReadsResponse extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'),
       createEmptyInstance: create)
-    ..pc<$441.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM,
-        subBuilder: $441.Read.create)
+    ..pc<$443.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM,
+        subBuilder: $443.Read.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1644,7 +1644,7 @@ class StreamReadsResponse extends $pb.GeneratedMessage {
   static StreamReadsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<$441.Read> get alignments => $_getList(0);
+  $core.List<$443.Read> get alignments => $_getList(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -14,16 +14,16 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../geo/type/viewport.pb.dart' as $449;
-import '../../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../../geo/type/viewport.pb.dart' as $451;
+import '../../../../protobuf/field_mask.pb.dart' as $335;
 import 'delivery_vehicles.pb.dart' as $161;
-import 'header.pb.dart' as $455;
+import 'header.pb.dart' as $457;
 import 'tasks.pb.dart' as $162;
 
 /// The `CreateDeliveryVehicle` request message.
 class CreateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   factory CreateDeliveryVehicleRequest({
-    $455.DeliveryRequestHeader? header,
+    $457.DeliveryRequestHeader? header,
     $core.String? parent,
     $core.String? deliveryVehicleId,
     $161.DeliveryVehicle? deliveryVehicle,
@@ -56,8 +56,8 @@ class CreateDeliveryVehicleRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
       createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$457.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $457.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..aOS(4, _omitFieldNames ? '' : 'deliveryVehicleId')
     ..aOM<$161.DeliveryVehicle>(5, _omitFieldNames ? '' : 'deliveryVehicle',
@@ -93,9 +93,9 @@ class CreateDeliveryVehicleRequest extends $pb.GeneratedMessage {
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader get header => $_getN(0);
+  $457.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) {
+  set header($457.DeliveryRequestHeader v) {
     setField(1, v);
   }
 
@@ -104,7 +104,7 @@ class CreateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader ensureHeader() => $_ensure(0);
+  $457.DeliveryRequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}`. The provider must
   /// be the Google Cloud Project ID. For example, `sample-cloud-project`.
@@ -168,7 +168,7 @@ class CreateDeliveryVehicleRequest extends $pb.GeneratedMessage {
 /// The `GetDeliveryVehicle` request message.
 class GetDeliveryVehicleRequest extends $pb.GeneratedMessage {
   factory GetDeliveryVehicleRequest({
-    $455.DeliveryRequestHeader? header,
+    $457.DeliveryRequestHeader? header,
     $core.String? name,
   }) {
     final $result = create();
@@ -193,8 +193,8 @@ class GetDeliveryVehicleRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
       createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$457.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $457.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false;
 
@@ -225,9 +225,9 @@ class GetDeliveryVehicleRequest extends $pb.GeneratedMessage {
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader get header => $_getN(0);
+  $457.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) {
+  set header($457.DeliveryRequestHeader v) {
     setField(1, v);
   }
 
@@ -236,7 +236,7 @@ class GetDeliveryVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader ensureHeader() => $_ensure(0);
+  $457.DeliveryRequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format
   /// `providers/{provider}/deliveryVehicles/{delivery_vehicle}`.
@@ -258,12 +258,12 @@ class GetDeliveryVehicleRequest extends $pb.GeneratedMessage {
 /// The `ListDeliveryVehicles` request message.
 class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
   factory ListDeliveryVehiclesRequest({
-    $455.DeliveryRequestHeader? header,
+    $457.DeliveryRequestHeader? header,
     $core.String? parent,
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? filter,
-    $449.Viewport? viewport,
+    $451.Viewport? viewport,
   }) {
     final $result = create();
     if (header != null) {
@@ -299,14 +299,14 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
       createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$457.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $457.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
     ..aOS(6, _omitFieldNames ? '' : 'filter')
-    ..aOM<$449.Viewport>(7, _omitFieldNames ? '' : 'viewport',
-        subBuilder: $449.Viewport.create)
+    ..aOM<$451.Viewport>(7, _omitFieldNames ? '' : 'viewport',
+        subBuilder: $451.Viewport.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -338,9 +338,9 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader get header => $_getN(0);
+  $457.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) {
+  set header($457.DeliveryRequestHeader v) {
     setField(1, v);
   }
 
@@ -349,7 +349,7 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader ensureHeader() => $_ensure(0);
+  $457.DeliveryRequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}`.
   /// The `provider` must be the Google Cloud Project ID.
@@ -431,9 +431,9 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
   /// Optional. A filter that limits the vehicles returned to those whose last
   /// known location was in the rectangular area defined by the viewport.
   @$pb.TagNumber(7)
-  $449.Viewport get viewport => $_getN(5);
+  $451.Viewport get viewport => $_getN(5);
   @$pb.TagNumber(7)
-  set viewport($449.Viewport v) {
+  set viewport($451.Viewport v) {
     setField(7, v);
   }
 
@@ -442,7 +442,7 @@ class ListDeliveryVehiclesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearViewport() => clearField(7);
   @$pb.TagNumber(7)
-  $449.Viewport ensureViewport() => $_ensure(5);
+  $451.Viewport ensureViewport() => $_ensure(5);
 }
 
 /// The `ListDeliveryVehicles` response message.
@@ -551,9 +551,9 @@ class ListDeliveryVehiclesResponse extends $pb.GeneratedMessage {
 /// The `UpdateDeliveryVehicle` request message.
 class UpdateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   factory UpdateDeliveryVehicleRequest({
-    $455.DeliveryRequestHeader? header,
+    $457.DeliveryRequestHeader? header,
     $161.DeliveryVehicle? deliveryVehicle,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (header != null) {
@@ -580,12 +580,12 @@ class UpdateDeliveryVehicleRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
       createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$457.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $457.DeliveryRequestHeader.create)
     ..aOM<$161.DeliveryVehicle>(3, _omitFieldNames ? '' : 'deliveryVehicle',
         subBuilder: $161.DeliveryVehicle.create)
-    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(4, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -617,9 +617,9 @@ class UpdateDeliveryVehicleRequest extends $pb.GeneratedMessage {
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader get header => $_getN(0);
+  $457.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) {
+  set header($457.DeliveryRequestHeader v) {
     setField(1, v);
   }
 
@@ -628,7 +628,7 @@ class UpdateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader ensureHeader() => $_ensure(0);
+  $457.DeliveryRequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. The `DeliveryVehicle` entity update to apply.
   /// Note: You cannot update the name of the `DeliveryVehicle`.
@@ -652,9 +652,9 @@ class UpdateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   ///  This is a comma-separated list of fully qualified names of fields. Example:
   ///  `"remaining_vehicle_journey_segments"`.
   @$pb.TagNumber(4)
-  $333.FieldMask get updateMask => $_getN(2);
+  $335.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(4, v);
   }
 
@@ -663,13 +663,13 @@ class UpdateDeliveryVehicleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $333.FieldMask ensureUpdateMask() => $_ensure(2);
+  $335.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The `BatchCreateTask` request message.
 class BatchCreateTasksRequest extends $pb.GeneratedMessage {
   factory BatchCreateTasksRequest({
-    $455.DeliveryRequestHeader? header,
+    $457.DeliveryRequestHeader? header,
     $core.String? parent,
     $core.Iterable<CreateTaskRequest>? requests,
   }) {
@@ -698,8 +698,8 @@ class BatchCreateTasksRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
       createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$457.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $457.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..pc<CreateTaskRequest>(
         4, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.PM,
@@ -736,9 +736,9 @@ class BatchCreateTasksRequest extends $pb.GeneratedMessage {
   /// `CreateTaskRequest` messages must either be empty, or it must match this
   /// field.
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader get header => $_getN(0);
+  $457.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) {
+  set header($457.DeliveryRequestHeader v) {
     setField(1, v);
   }
 
@@ -747,7 +747,7 @@ class BatchCreateTasksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader ensureHeader() => $_ensure(0);
+  $457.DeliveryRequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. The parent resource shared by all tasks. This value must be in
   /// the format `providers/{provider}`. The `provider` must be the Google Cloud
@@ -833,7 +833,7 @@ class BatchCreateTasksResponse extends $pb.GeneratedMessage {
 /// The `CreateTask` request message.
 class CreateTaskRequest extends $pb.GeneratedMessage {
   factory CreateTaskRequest({
-    $455.DeliveryRequestHeader? header,
+    $457.DeliveryRequestHeader? header,
     $core.String? parent,
     $162.Task? task,
     $core.String? taskId,
@@ -866,8 +866,8 @@ class CreateTaskRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
       createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$457.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $457.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..aOM<$162.Task>(4, _omitFieldNames ? '' : 'task',
         subBuilder: $162.Task.create)
@@ -899,9 +899,9 @@ class CreateTaskRequest extends $pb.GeneratedMessage {
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader get header => $_getN(0);
+  $457.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) {
+  set header($457.DeliveryRequestHeader v) {
     setField(1, v);
   }
 
@@ -910,7 +910,7 @@ class CreateTaskRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader ensureHeader() => $_ensure(0);
+  $457.DeliveryRequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}`. The `provider` must
   /// be the Google Cloud Project ID. For example, `sample-cloud-project`.
@@ -979,7 +979,7 @@ class CreateTaskRequest extends $pb.GeneratedMessage {
 /// The `GetTask` request message.
 class GetTaskRequest extends $pb.GeneratedMessage {
   factory GetTaskRequest({
-    $455.DeliveryRequestHeader? header,
+    $457.DeliveryRequestHeader? header,
     $core.String? name,
   }) {
     final $result = create();
@@ -1004,8 +1004,8 @@ class GetTaskRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
       createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$457.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $457.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false;
 
@@ -1034,9 +1034,9 @@ class GetTaskRequest extends $pb.GeneratedMessage {
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader get header => $_getN(0);
+  $457.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) {
+  set header($457.DeliveryRequestHeader v) {
     setField(1, v);
   }
 
@@ -1045,7 +1045,7 @@ class GetTaskRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader ensureHeader() => $_ensure(0);
+  $457.DeliveryRequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}/tasks/{task}`. The
   /// `provider` must be the Google Cloud Project ID. For example,
@@ -1066,9 +1066,9 @@ class GetTaskRequest extends $pb.GeneratedMessage {
 /// The `UpdateTask` request message.
 class UpdateTaskRequest extends $pb.GeneratedMessage {
   factory UpdateTaskRequest({
-    $455.DeliveryRequestHeader? header,
+    $457.DeliveryRequestHeader? header,
     $162.Task? task,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (header != null) {
@@ -1095,12 +1095,12 @@ class UpdateTaskRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
       createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$457.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $457.DeliveryRequestHeader.create)
     ..aOM<$162.Task>(3, _omitFieldNames ? '' : 'task',
         subBuilder: $162.Task.create)
-    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(4, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1128,9 +1128,9 @@ class UpdateTaskRequest extends $pb.GeneratedMessage {
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader get header => $_getN(0);
+  $457.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) {
+  set header($457.DeliveryRequestHeader v) {
     setField(1, v);
   }
 
@@ -1139,7 +1139,7 @@ class UpdateTaskRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader ensureHeader() => $_ensure(0);
+  $457.DeliveryRequestHeader ensureHeader() => $_ensure(0);
 
   ///  Required. The Task associated with the update.
   ///  The following fields are maintained by Fleet Engine. Do not update
@@ -1177,9 +1177,9 @@ class UpdateTaskRequest extends $pb.GeneratedMessage {
   ///  This is a comma-separated list of fully qualified names of fields. Example:
   ///  `"task_outcome,task_outcome_time,task_outcome_location"`.
   @$pb.TagNumber(4)
-  $333.FieldMask get updateMask => $_getN(2);
+  $335.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(4, v);
   }
 
@@ -1188,13 +1188,13 @@ class UpdateTaskRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $333.FieldMask ensureUpdateMask() => $_ensure(2);
+  $335.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The `ListTasks` request message.
 class ListTasksRequest extends $pb.GeneratedMessage {
   factory ListTasksRequest({
-    $455.DeliveryRequestHeader? header,
+    $457.DeliveryRequestHeader? header,
     $core.String? parent,
     $core.int? pageSize,
     $core.String? pageToken,
@@ -1231,8 +1231,8 @@ class ListTasksRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
       createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$457.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $457.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
@@ -1264,9 +1264,9 @@ class ListTasksRequest extends $pb.GeneratedMessage {
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader get header => $_getN(0);
+  $457.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) {
+  set header($457.DeliveryRequestHeader v) {
     setField(1, v);
   }
 
@@ -1275,7 +1275,7 @@ class ListTasksRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader ensureHeader() => $_ensure(0);
+  $457.DeliveryRequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}`.
   /// The `provider` must be the Google Cloud Project ID. For example,
@@ -1444,7 +1444,7 @@ class ListTasksResponse extends $pb.GeneratedMessage {
 /// The `GetTaskTrackingInfoRequest` request message.
 class GetTaskTrackingInfoRequest extends $pb.GeneratedMessage {
   factory GetTaskTrackingInfoRequest({
-    $455.DeliveryRequestHeader? header,
+    $457.DeliveryRequestHeader? header,
     $core.String? name,
   }) {
     final $result = create();
@@ -1469,8 +1469,8 @@ class GetTaskTrackingInfoRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'),
       createEmptyInstance: create)
-    ..aOM<$455.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $455.DeliveryRequestHeader.create)
+    ..aOM<$457.DeliveryRequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $457.DeliveryRequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false;
 
@@ -1502,9 +1502,9 @@ class GetTaskTrackingInfoRequest extends $pb.GeneratedMessage {
 
   /// Optional. The standard Delivery API request header.
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader get header => $_getN(0);
+  $457.DeliveryRequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($455.DeliveryRequestHeader v) {
+  set header($457.DeliveryRequestHeader v) {
     setField(1, v);
   }
 
@@ -1513,7 +1513,7 @@ class GetTaskTrackingInfoRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $455.DeliveryRequestHeader ensureHeader() => $_ensure(0);
+  $457.DeliveryRequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format
   /// `providers/{provider}/taskTrackingInfo/{tracking_id}`. The `provider`

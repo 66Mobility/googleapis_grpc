@@ -42,6 +42,7 @@ const Membership$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.User',
+      '8': {},
       '9': 0,
       '10': 'member'
     },
@@ -51,6 +52,7 @@ const Membership$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Group',
+      '8': {},
       '9': 0,
       '10': 'groupMember'
     },
@@ -103,19 +105,19 @@ const Membership_MembershipRole$json = {
 
 /// Descriptor for `Membership`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List membershipDescriptor = $convert.base64Decode(
-    'CgpNZW1iZXJzaGlwEjcKBG5hbWUYASABKAlCI/pBIAoeY2hhdC5nb29nbGVhcGlzLmNvbS9NZW'
-    '1iZXJzaGlwUgRuYW1lEkUKBXN0YXRlGAIgASgOMiouZ29vZ2xlLmNoYXQudjEuTWVtYmVyc2hp'
-    'cC5NZW1iZXJzaGlwU3RhdGVCA+BBA1IFc3RhdGUSQgoEcm9sZRgHIAEoDjIpLmdvb2dsZS5jaG'
-    'F0LnYxLk1lbWJlcnNoaXAuTWVtYmVyc2hpcFJvbGVCA+BBAVIEcm9sZRIuCgZtZW1iZXIYAyAB'
-    'KAsyFC5nb29nbGUuY2hhdC52MS5Vc2VySABSBm1lbWJlchI6Cgxncm91cF9tZW1iZXIYBSABKA'
-    'syFS5nb29nbGUuY2hhdC52MS5Hcm91cEgAUgtncm91cE1lbWJlchJDCgtjcmVhdGVfdGltZRgE'
-    'IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCBuBBBeBBAVIKY3JlYXRlVGltZRJDCg'
-    'tkZWxldGVfdGltZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCBuBBBeBBAVIK'
-    'ZGVsZXRlVGltZSJeCg9NZW1iZXJzaGlwU3RhdGUSIAocTUVNQkVSU0hJUF9TVEFURV9VTlNQRU'
-    'NJRklFRBAAEgoKBkpPSU5FRBABEgsKB0lOVklURUQQAhIQCgxOT1RfQV9NRU1CRVIQAyJUCg5N'
-    'ZW1iZXJzaGlwUm9sZRIfChtNRU1CRVJTSElQX1JPTEVfVU5TUEVDSUZJRUQQABIPCgtST0xFX0'
-    '1FTUJFUhABEhAKDFJPTEVfTUFOQUdFUhACOkTqQUEKHmNoYXQuZ29vZ2xlYXBpcy5jb20vTWVt'
-    'YmVyc2hpcBIfc3BhY2VzL3tzcGFjZX0vbWVtYmVycy97bWVtYmVyfUIMCgptZW1iZXJUeXBl');
+    'CgpNZW1iZXJzaGlwEhcKBG5hbWUYASABKAlCA+BBCFIEbmFtZRJFCgVzdGF0ZRgCIAEoDjIqLm'
+    'dvb2dsZS5jaGF0LnYxLk1lbWJlcnNoaXAuTWVtYmVyc2hpcFN0YXRlQgPgQQNSBXN0YXRlEkIK'
+    'BHJvbGUYByABKA4yKS5nb29nbGUuY2hhdC52MS5NZW1iZXJzaGlwLk1lbWJlcnNoaXBSb2xlQg'
+    'PgQQFSBHJvbGUSMwoGbWVtYmVyGAMgASgLMhQuZ29vZ2xlLmNoYXQudjEuVXNlckID4EEBSABS'
+    'Bm1lbWJlchI/Cgxncm91cF9tZW1iZXIYBSABKAsyFS5nb29nbGUuY2hhdC52MS5Hcm91cEID4E'
+    'EBSABSC2dyb3VwTWVtYmVyEkMKC2NyZWF0ZV90aW1lGAQgASgLMhouZ29vZ2xlLnByb3RvYnVm'
+    'LlRpbWVzdGFtcEIG4EEF4EEBUgpjcmVhdGVUaW1lEkMKC2RlbGV0ZV90aW1lGAggASgLMhouZ2'
+    '9vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIG4EEF4EEBUgpkZWxldGVUaW1lIl4KD01lbWJlcnNo'
+    'aXBTdGF0ZRIgChxNRU1CRVJTSElQX1NUQVRFX1VOU1BFQ0lGSUVEEAASCgoGSk9JTkVEEAESCw'
+    'oHSU5WSVRFRBACEhAKDE5PVF9BX01FTUJFUhADIlQKDk1lbWJlcnNoaXBSb2xlEh8KG01FTUJF'
+    'UlNISVBfUk9MRV9VTlNQRUNJRklFRBAAEg8KC1JPTEVfTUVNQkVSEAESEAoMUk9MRV9NQU5BR0'
+    'VSEAI6ROpBQQoeY2hhdC5nb29nbGVhcGlzLmNvbS9NZW1iZXJzaGlwEh9zcGFjZXMve3NwYWNl'
+    'fS9tZW1iZXJzL3ttZW1iZXJ9QgwKCm1lbWJlclR5cGU=');
 
 @$core.Deprecated('Use createMembershipRequestDescriptor instead')
 const CreateMembershipRequest$json = {
@@ -131,7 +133,14 @@ const CreateMembershipRequest$json = {
       '8': {},
       '10': 'membership'
     },
-    {'1': 'use_admin_access', '3': 5, '4': 1, '5': 8, '10': 'useAdminAccess'},
+    {
+      '1': 'use_admin_access',
+      '3': 5,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useAdminAccess'
+    },
   ],
 };
 
@@ -139,8 +148,8 @@ const CreateMembershipRequest$json = {
 final $typed_data.Uint8List createMembershipRequestDescriptor = $convert.base64Decode(
     'ChdDcmVhdGVNZW1iZXJzaGlwUmVxdWVzdBI+CgZwYXJlbnQYASABKAlCJuBBAvpBIBIeY2hhdC'
     '5nb29nbGVhcGlzLmNvbS9NZW1iZXJzaGlwUgZwYXJlbnQSPwoKbWVtYmVyc2hpcBgCIAEoCzIa'
-    'Lmdvb2dsZS5jaGF0LnYxLk1lbWJlcnNoaXBCA+BBAlIKbWVtYmVyc2hpcBIoChB1c2VfYWRtaW'
-    '5fYWNjZXNzGAUgASgIUg51c2VBZG1pbkFjY2Vzcw==');
+    'Lmdvb2dsZS5jaGF0LnYxLk1lbWJlcnNoaXBCA+BBAlIKbWVtYmVyc2hpcBItChB1c2VfYWRtaW'
+    '5fYWNjZXNzGAUgASgIQgPgQQFSDnVzZUFkbWluQWNjZXNz');
 
 @$core.Deprecated('Use updateMembershipRequestDescriptor instead')
 const UpdateMembershipRequest$json = {
@@ -164,7 +173,14 @@ const UpdateMembershipRequest$json = {
       '8': {},
       '10': 'updateMask'
     },
-    {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
+    {
+      '1': 'use_admin_access',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useAdminAccess'
+    },
   ],
 };
 
@@ -172,8 +188,8 @@ const UpdateMembershipRequest$json = {
 final $typed_data.Uint8List updateMembershipRequestDescriptor = $convert.base64Decode(
     'ChdVcGRhdGVNZW1iZXJzaGlwUmVxdWVzdBI/CgptZW1iZXJzaGlwGAEgASgLMhouZ29vZ2xlLm'
     'NoYXQudjEuTWVtYmVyc2hpcEID4EECUgptZW1iZXJzaGlwEkAKC3VwZGF0ZV9tYXNrGAIgASgL'
-    'MhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cGRhdGVNYXNrEigKEHVzZV9hZG'
-    '1pbl9hY2Nlc3MYAyABKAhSDnVzZUFkbWluQWNjZXNz');
+    'MhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cGRhdGVNYXNrEi0KEHVzZV9hZG'
+    '1pbl9hY2Nlc3MYAyABKAhCA+BBAVIOdXNlQWRtaW5BY2Nlc3M=');
 
 @$core.Deprecated('Use listMembershipsRequestDescriptor instead')
 const ListMembershipsRequest$json = {
@@ -185,7 +201,14 @@ const ListMembershipsRequest$json = {
     {'1': 'filter', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'filter'},
     {'1': 'show_groups', '3': 6, '4': 1, '5': 8, '8': {}, '10': 'showGroups'},
     {'1': 'show_invited', '3': 7, '4': 1, '5': 8, '8': {}, '10': 'showInvited'},
-    {'1': 'use_admin_access', '3': 8, '4': 1, '5': 8, '10': 'useAdminAccess'},
+    {
+      '1': 'use_admin_access',
+      '3': 8,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useAdminAccess'
+    },
   ],
 };
 
@@ -195,8 +218,8 @@ final $typed_data.Uint8List listMembershipsRequestDescriptor = $convert.base64De
     'dvb2dsZWFwaXMuY29tL01lbWJlcnNoaXBSBnBhcmVudBIgCglwYWdlX3NpemUYAiABKAVCA+BB'
     'AVIIcGFnZVNpemUSIgoKcGFnZV90b2tlbhgDIAEoCUID4EEBUglwYWdlVG9rZW4SGwoGZmlsdG'
     'VyGAUgASgJQgPgQQFSBmZpbHRlchIkCgtzaG93X2dyb3VwcxgGIAEoCEID4EEBUgpzaG93R3Jv'
-    'dXBzEiYKDHNob3dfaW52aXRlZBgHIAEoCEID4EEBUgtzaG93SW52aXRlZBIoChB1c2VfYWRtaW'
-    '5fYWNjZXNzGAggASgIUg51c2VBZG1pbkFjY2Vzcw==');
+    'dXBzEiYKDHNob3dfaW52aXRlZBgHIAEoCEID4EEBUgtzaG93SW52aXRlZBItChB1c2VfYWRtaW'
+    '5fYWNjZXNzGAggASgIQgPgQQFSDnVzZUFkbWluQWNjZXNz');
 
 @$core.Deprecated('Use listMembershipsResponseDescriptor instead')
 const ListMembershipsResponse$json = {
@@ -226,27 +249,41 @@ const GetMembershipRequest$json = {
   '1': 'GetMembershipRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
+    {
+      '1': 'use_admin_access',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useAdminAccess'
+    },
   ],
 };
 
 /// Descriptor for `GetMembershipRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List getMembershipRequestDescriptor = $convert.base64Decode(
     'ChRHZXRNZW1iZXJzaGlwUmVxdWVzdBI6CgRuYW1lGAEgASgJQibgQQL6QSAKHmNoYXQuZ29vZ2'
-    'xlYXBpcy5jb20vTWVtYmVyc2hpcFIEbmFtZRIoChB1c2VfYWRtaW5fYWNjZXNzGAMgASgIUg51'
-    'c2VBZG1pbkFjY2Vzcw==');
+    'xlYXBpcy5jb20vTWVtYmVyc2hpcFIEbmFtZRItChB1c2VfYWRtaW5fYWNjZXNzGAMgASgIQgPg'
+    'QQFSDnVzZUFkbWluQWNjZXNz');
 
 @$core.Deprecated('Use deleteMembershipRequestDescriptor instead')
 const DeleteMembershipRequest$json = {
   '1': 'DeleteMembershipRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'use_admin_access', '3': 2, '4': 1, '5': 8, '10': 'useAdminAccess'},
+    {
+      '1': 'use_admin_access',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useAdminAccess'
+    },
   ],
 };
 
 /// Descriptor for `DeleteMembershipRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List deleteMembershipRequestDescriptor = $convert.base64Decode(
     'ChdEZWxldGVNZW1iZXJzaGlwUmVxdWVzdBI6CgRuYW1lGAEgASgJQibgQQL6QSAKHmNoYXQuZ2'
-    '9vZ2xlYXBpcy5jb20vTWVtYmVyc2hpcFIEbmFtZRIoChB1c2VfYWRtaW5fYWNjZXNzGAIgASgI'
-    'Ug51c2VBZG1pbkFjY2Vzcw==');
+    '9vZ2xlYXBpcy5jb20vTWVtYmVyc2hpcFIEbmFtZRItChB1c2VfYWRtaW5fYWNjZXNzGAIgASgI'
+    'QgPgQQFSDnVzZUFkbWluQWNjZXNz');

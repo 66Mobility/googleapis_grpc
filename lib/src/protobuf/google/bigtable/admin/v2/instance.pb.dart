@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
-import 'common.pbenum.dart' as $398;
+import '../../../protobuf/timestamp.pb.dart' as $304;
+import 'common.pbenum.dart' as $400;
 import 'instance.pbenum.dart';
 
 export 'instance.pbenum.dart';
@@ -30,7 +30,7 @@ class Instance extends $pb.GeneratedMessage {
     Instance_State? state,
     Instance_Type? type,
     $core.Map<$core.String, $core.String>? labels,
-    $302.Timestamp? createTime,
+    $304.Timestamp? createTime,
     $core.bool? satisfiesPzs,
   }) {
     final $result = create();
@@ -85,8 +85,8 @@ class Instance extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.bigtable.admin.v2'))
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
     ..aOB(8, _omitFieldNames ? '' : 'satisfiesPzs')
     ..hasRequiredFields = false;
 
@@ -185,9 +185,9 @@ class Instance extends $pb.GeneratedMessage {
   /// was created. For instances created before this field was added (August
   /// 2021), this value is `seconds: 0, nanos: 1`.
   @$pb.TagNumber(7)
-  $302.Timestamp get createTime => $_getN(5);
+  $304.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(7)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(7, v);
   }
 
@@ -196,7 +196,7 @@ class Instance extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $302.Timestamp ensureCreateTime() => $_ensure(5);
+  $304.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(8)
@@ -639,7 +639,7 @@ class Cluster extends $pb.GeneratedMessage {
     $core.String? location,
     Cluster_State? state,
     $core.int? serveNodes,
-    $398.StorageType? defaultStorageType,
+    $400.StorageType? defaultStorageType,
     Cluster_EncryptionConfig? encryptionConfig,
     Cluster_ClusterConfig? clusterConfig,
     Cluster_NodeScalingFactor? nodeScalingFactor,
@@ -696,11 +696,11 @@ class Cluster extends $pb.GeneratedMessage {
         valueOf: Cluster_State.valueOf,
         enumValues: Cluster_State.values)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'serveNodes', $pb.PbFieldType.O3)
-    ..e<$398.StorageType>(
+    ..e<$400.StorageType>(
         5, _omitFieldNames ? '' : 'defaultStorageType', $pb.PbFieldType.OE,
-        defaultOrMaker: $398.StorageType.STORAGE_TYPE_UNSPECIFIED,
-        valueOf: $398.StorageType.valueOf,
-        enumValues: $398.StorageType.values)
+        defaultOrMaker: $400.StorageType.STORAGE_TYPE_UNSPECIFIED,
+        valueOf: $400.StorageType.valueOf,
+        enumValues: $400.StorageType.values)
     ..aOM<Cluster_EncryptionConfig>(
         6, _omitFieldNames ? '' : 'encryptionConfig',
         subBuilder: Cluster_EncryptionConfig.create)
@@ -798,9 +798,9 @@ class Cluster extends $pb.GeneratedMessage {
   /// Immutable. The type of storage used by this cluster to serve its
   /// parent instance's tables, unless explicitly overridden.
   @$pb.TagNumber(5)
-  $398.StorageType get defaultStorageType => $_getN(4);
+  $400.StorageType get defaultStorageType => $_getN(4);
   @$pb.TagNumber(5)
-  set defaultStorageType($398.StorageType v) {
+  set defaultStorageType($400.StorageType v) {
     setField(5, v);
   }
 
@@ -1553,8 +1553,8 @@ class HotTablet extends $pb.GeneratedMessage {
   factory HotTablet({
     $core.String? name,
     $core.String? tableName,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     $core.String? startKey,
     $core.String? endKey,
     $core.double? nodeCpuUsagePercent,
@@ -1598,10 +1598,10 @@ class HotTablet extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'tableName')
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'startKey')
     ..aOS(6, _omitFieldNames ? '' : 'endKey')
     ..a<$core.double>(
@@ -1659,9 +1659,9 @@ class HotTablet extends $pb.GeneratedMessage {
 
   /// Output only. The start time of the hot tablet.
   @$pb.TagNumber(3)
-  $302.Timestamp get startTime => $_getN(2);
+  $304.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -1670,13 +1670,13 @@ class HotTablet extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureStartTime() => $_ensure(2);
+  $304.Timestamp ensureStartTime() => $_ensure(2);
 
   /// Output only. The end time of the hot tablet.
   @$pb.TagNumber(4)
-  $302.Timestamp get endTime => $_getN(3);
+  $304.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -1685,7 +1685,7 @@ class HotTablet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureEndTime() => $_ensure(3);
+  $304.Timestamp ensureEndTime() => $_ensure(3);
 
   /// Tablet Start Key (inclusive).
   @$pb.TagNumber(5)

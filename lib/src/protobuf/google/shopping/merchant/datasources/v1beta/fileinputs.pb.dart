@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/dayofweek.pbenum.dart' as $427;
-import '../../../../type/timeofday.pb.dart' as $536;
+import '../../../../type/dayofweek.pbenum.dart' as $429;
+import '../../../../type/timeofday.pb.dart' as $539;
 import 'fileinputs.pbenum.dart';
 
 export 'fileinputs.pbenum.dart';
@@ -24,8 +24,8 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   factory FileInput_FetchSettings({
     $core.bool? enabled,
     $core.int? dayOfMonth,
-    $536.TimeOfDay? timeOfDay,
-    $427.DayOfWeek? dayOfWeek,
+    $539.TimeOfDay? timeOfDay,
+    $429.DayOfWeek? dayOfWeek,
     $core.String? timeZone,
     FileInput_FetchSettings_Frequency? frequency,
     $core.String? fetchUri,
@@ -78,13 +78,13 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'dayOfMonth', $pb.PbFieldType.O3)
-    ..aOM<$536.TimeOfDay>(3, _omitFieldNames ? '' : 'timeOfDay',
-        subBuilder: $536.TimeOfDay.create)
-    ..e<$427.DayOfWeek>(
+    ..aOM<$539.TimeOfDay>(3, _omitFieldNames ? '' : 'timeOfDay',
+        subBuilder: $539.TimeOfDay.create)
+    ..e<$429.DayOfWeek>(
         4, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE,
-        defaultOrMaker: $427.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
-        valueOf: $427.DayOfWeek.valueOf,
-        enumValues: $427.DayOfWeek.values)
+        defaultOrMaker: $429.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
+        valueOf: $429.DayOfWeek.valueOf,
+        enumValues: $429.DayOfWeek.values)
     ..aOS(5, _omitFieldNames ? '' : 'timeZone')
     ..e<FileInput_FetchSettings_Frequency>(
         6, _omitFieldNames ? '' : 'frequency', $pb.PbFieldType.OE,
@@ -151,9 +151,9 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   /// Optional. The hour of the day when the data source file should be
   /// fetched. Minutes and seconds are not supported and will be ignored.
   @$pb.TagNumber(3)
-  $536.TimeOfDay get timeOfDay => $_getN(2);
+  $539.TimeOfDay get timeOfDay => $_getN(2);
   @$pb.TagNumber(3)
-  set timeOfDay($536.TimeOfDay v) {
+  set timeOfDay($539.TimeOfDay v) {
     setField(3, v);
   }
 
@@ -162,14 +162,14 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearTimeOfDay() => clearField(3);
   @$pb.TagNumber(3)
-  $536.TimeOfDay ensureTimeOfDay() => $_ensure(2);
+  $539.TimeOfDay ensureTimeOfDay() => $_ensure(2);
 
   /// Optional. The day of the week when the data source file should be
   /// fetched. This field can only be set for weekly frequency.
   @$pb.TagNumber(4)
-  $427.DayOfWeek get dayOfWeek => $_getN(3);
+  $429.DayOfWeek get dayOfWeek => $_getN(3);
   @$pb.TagNumber(4)
-  set dayOfWeek($427.DayOfWeek v) {
+  set dayOfWeek($429.DayOfWeek v) {
     setField(4, v);
   }
 

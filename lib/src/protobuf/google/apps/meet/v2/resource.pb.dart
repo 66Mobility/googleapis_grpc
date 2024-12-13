@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 import 'resource.pbenum.dart';
 
 export 'resource.pbenum.dart';
@@ -327,9 +327,9 @@ class SpaceConfig extends $pb.GeneratedMessage {
 class ConferenceRecord extends $pb.GeneratedMessage {
   factory ConferenceRecord({
     $core.String? name,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
-    $302.Timestamp? expireTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
+    $304.Timestamp? expireTime,
     $core.String? space,
   }) {
     final $result = create();
@@ -364,12 +364,12 @@ class ConferenceRecord extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'space')
     ..hasRequiredFields = false;
 
@@ -413,9 +413,9 @@ class ConferenceRecord extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the conference started. Always set.
   @$pb.TagNumber(2)
-  $302.Timestamp get startTime => $_getN(1);
+  $304.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -424,14 +424,14 @@ class ConferenceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureStartTime() => $_ensure(1);
+  $304.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Output only. Timestamp when the conference ended.
   /// Set for past conferences. Unset if the conference is ongoing.
   @$pb.TagNumber(3)
-  $302.Timestamp get endTime => $_getN(2);
+  $304.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -440,15 +440,15 @@ class ConferenceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureEndTime() => $_ensure(2);
+  $304.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Output only. Server enforced expiration time for when this conference
   /// record resource is deleted. The resource is deleted 30 days after the
   /// conference ends.
   @$pb.TagNumber(4)
-  $302.Timestamp get expireTime => $_getN(3);
+  $304.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expireTime($302.Timestamp v) {
+  set expireTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -457,7 +457,7 @@ class ConferenceRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearExpireTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureExpireTime() => $_ensure(3);
+  $304.Timestamp ensureExpireTime() => $_ensure(3);
 
   /// Output only. The space where the conference was held.
   @$pb.TagNumber(5)
@@ -482,8 +482,8 @@ class Participant extends $pb.GeneratedMessage {
     SignedinUser? signedinUser,
     AnonymousUser? anonymousUser,
     PhoneUser? phoneUser,
-    $302.Timestamp? earliestStartTime,
-    $302.Timestamp? latestEndTime,
+    $304.Timestamp? earliestStartTime,
+    $304.Timestamp? latestEndTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -533,10 +533,10 @@ class Participant extends $pb.GeneratedMessage {
         subBuilder: AnonymousUser.create)
     ..aOM<PhoneUser>(6, _omitFieldNames ? '' : 'phoneUser',
         subBuilder: PhoneUser.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'earliestStartTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'latestEndTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'earliestStartTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'latestEndTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -625,9 +625,9 @@ class Participant extends $pb.GeneratedMessage {
 
   /// Output only. Time when the participant first joined the meeting.
   @$pb.TagNumber(7)
-  $302.Timestamp get earliestStartTime => $_getN(4);
+  $304.Timestamp get earliestStartTime => $_getN(4);
   @$pb.TagNumber(7)
-  set earliestStartTime($302.Timestamp v) {
+  set earliestStartTime($304.Timestamp v) {
     setField(7, v);
   }
 
@@ -636,14 +636,14 @@ class Participant extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearEarliestStartTime() => clearField(7);
   @$pb.TagNumber(7)
-  $302.Timestamp ensureEarliestStartTime() => $_ensure(4);
+  $304.Timestamp ensureEarliestStartTime() => $_ensure(4);
 
   /// Output only. Time when the participant left the meeting for the last time.
   /// This can be null if it's an active meeting.
   @$pb.TagNumber(8)
-  $302.Timestamp get latestEndTime => $_getN(5);
+  $304.Timestamp get latestEndTime => $_getN(5);
   @$pb.TagNumber(8)
-  set latestEndTime($302.Timestamp v) {
+  set latestEndTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -652,7 +652,7 @@ class Participant extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearLatestEndTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureLatestEndTime() => $_ensure(5);
+  $304.Timestamp ensureLatestEndTime() => $_ensure(5);
 }
 
 /// Refers to each unique join or leave session when a user joins a conference
@@ -663,8 +663,8 @@ class Participant extends $pb.GeneratedMessage {
 class ParticipantSession extends $pb.GeneratedMessage {
   factory ParticipantSession({
     $core.String? name,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -692,10 +692,10 @@ class ParticipantSession extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -736,9 +736,9 @@ class ParticipantSession extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the user session starts.
   @$pb.TagNumber(2)
-  $302.Timestamp get startTime => $_getN(1);
+  $304.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -747,14 +747,14 @@ class ParticipantSession extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureStartTime() => $_ensure(1);
+  $304.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Output only. Timestamp when the user session ends. Unset if the user
   /// session hasn’t ended.
   @$pb.TagNumber(3)
-  $302.Timestamp get endTime => $_getN(2);
+  $304.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -763,7 +763,7 @@ class ParticipantSession extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureEndTime() => $_ensure(2);
+  $304.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// A signed-in user can be:
@@ -988,8 +988,8 @@ class Recording extends $pb.GeneratedMessage {
   factory Recording({
     $core.String? name,
     Recording_State? state,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     DriveDestination? driveDestination,
   }) {
     final $result = create();
@@ -1034,10 +1034,10 @@ class Recording extends $pb.GeneratedMessage {
         defaultOrMaker: Recording_State.STATE_UNSPECIFIED,
         valueOf: Recording_State.valueOf,
         enumValues: Recording_State.values)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..aOM<DriveDestination>(6, _omitFieldNames ? '' : 'driveDestination',
         subBuilder: DriveDestination.create)
     ..hasRequiredFields = false;
@@ -1098,9 +1098,9 @@ class Recording extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the recording started.
   @$pb.TagNumber(4)
-  $302.Timestamp get startTime => $_getN(2);
+  $304.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -1109,13 +1109,13 @@ class Recording extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureStartTime() => $_ensure(2);
+  $304.Timestamp ensureStartTime() => $_ensure(2);
 
   /// Output only. Timestamp when the recording ended.
   @$pb.TagNumber(5)
-  $302.Timestamp get endTime => $_getN(3);
+  $304.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(5)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -1124,7 +1124,7 @@ class Recording extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureEndTime() => $_ensure(3);
+  $304.Timestamp ensureEndTime() => $_ensure(3);
 
   /// Output only. Recording is saved to Google Drive as an MP4 file. The
   /// `drive_destination` includes the Drive `fileId` that can be used to
@@ -1239,8 +1239,8 @@ class Transcript extends $pb.GeneratedMessage {
   factory Transcript({
     $core.String? name,
     Transcript_State? state,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     DocsDestination? docsDestination,
   }) {
     final $result = create();
@@ -1285,10 +1285,10 @@ class Transcript extends $pb.GeneratedMessage {
         defaultOrMaker: Transcript_State.STATE_UNSPECIFIED,
         valueOf: Transcript_State.valueOf,
         enumValues: Transcript_State.values)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..aOM<DocsDestination>(6, _omitFieldNames ? '' : 'docsDestination',
         subBuilder: DocsDestination.create)
     ..hasRequiredFields = false;
@@ -1349,9 +1349,9 @@ class Transcript extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the transcript started.
   @$pb.TagNumber(4)
-  $302.Timestamp get startTime => $_getN(2);
+  $304.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -1360,13 +1360,13 @@ class Transcript extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureStartTime() => $_ensure(2);
+  $304.Timestamp ensureStartTime() => $_ensure(2);
 
   /// Output only. Timestamp when the transcript stopped.
   @$pb.TagNumber(5)
-  $302.Timestamp get endTime => $_getN(3);
+  $304.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(5)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -1375,7 +1375,7 @@ class Transcript extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureEndTime() => $_ensure(3);
+  $304.Timestamp ensureEndTime() => $_ensure(3);
 
   /// Output only. Where the Google Docs transcript is saved.
   @$pb.TagNumber(6)
@@ -1488,8 +1488,8 @@ class TranscriptEntry extends $pb.GeneratedMessage {
     $core.String? participant,
     $core.String? text,
     $core.String? languageCode,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1529,10 +1529,10 @@ class TranscriptEntry extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'participant')
     ..aOS(3, _omitFieldNames ? '' : 'text')
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1615,9 +1615,9 @@ class TranscriptEntry extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the transcript entry started.
   @$pb.TagNumber(5)
-  $302.Timestamp get startTime => $_getN(4);
+  $304.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(5)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -1626,13 +1626,13 @@ class TranscriptEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearStartTime() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureStartTime() => $_ensure(4);
+  $304.Timestamp ensureStartTime() => $_ensure(4);
 
   /// Output only. Timestamp when the transcript entry ended.
   @$pb.TagNumber(6)
-  $302.Timestamp get endTime => $_getN(5);
+  $304.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(6)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -1641,7 +1641,7 @@ class TranscriptEntry extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearEndTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureEndTime() => $_ensure(5);
+  $304.Timestamp ensureEndTime() => $_ensure(5);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

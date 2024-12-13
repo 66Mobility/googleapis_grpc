@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../protobuf/struct.pb.dart' as $261;
+import '../../../../../../protobuf/struct.pb.dart' as $263;
 
 /// Represents an Interactive Canvas response to be sent to the user.
 /// This can be used in conjunction with the "first_simple" field in the
@@ -23,7 +23,7 @@ class Canvas extends $pb.GeneratedMessage {
   factory Canvas({
     $core.String? url,
     $core.bool? suppressMic,
-    $core.Iterable<$261.Value>? data,
+    $core.Iterable<$263.Value>? data,
     $core.bool? enableFullScreen,
   }) {
     final $result = create();
@@ -56,8 +56,8 @@ class Canvas extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'url')
     ..aOB(3, _omitFieldNames ? '' : 'suppressMic')
-    ..pc<$261.Value>(4, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM,
-        subBuilder: $261.Value.create)
+    ..pc<$263.Value>(4, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM,
+        subBuilder: $263.Value.create)
     ..aOB(8, _omitFieldNames ? '' : 'enableFullScreen')
     ..hasRequiredFields = false;
 
@@ -115,7 +115,7 @@ class Canvas extends $pb.GeneratedMessage {
   /// defined in this Canvas prompt will be added after data values defined in
   /// previous Canvas prompts.
   @$pb.TagNumber(4)
-  $core.List<$261.Value> get data => $_getList(2);
+  $core.List<$263.Value> get data => $_getList(2);
 
   /// If `true` the canvas application occupies the full screen and won't
   /// have a header at the top. A toast message will also be displayed on the

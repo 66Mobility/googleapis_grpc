@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'user.pb.dart' as $406;
+import 'user.pb.dart' as $408;
 
 /// A reaction to a message.
 class Reaction extends $pb.GeneratedMessage {
   factory Reaction({
     $core.String? name,
-    $406.User? user,
+    $408.User? user,
     Emoji? emoji,
   }) {
     final $result = create();
@@ -47,8 +47,8 @@ class Reaction extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$406.User>(2, _omitFieldNames ? '' : 'user',
-        subBuilder: $406.User.create)
+    ..aOM<$408.User>(2, _omitFieldNames ? '' : 'user',
+        subBuilder: $408.User.create)
     ..aOM<Emoji>(3, _omitFieldNames ? '' : 'emoji', subBuilder: Emoji.create)
     ..hasRequiredFields = false;
 
@@ -73,7 +73,7 @@ class Reaction extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Reaction>(create);
   static Reaction? _defaultInstance;
 
-  ///  The resource name of the reaction.
+  ///  Identifier. The resource name of the reaction.
   ///
   ///  Format: `spaces/{space}/messages/{message}/reactions/{reaction}`
   @$pb.TagNumber(1)
@@ -90,9 +90,9 @@ class Reaction extends $pb.GeneratedMessage {
 
   /// Output only. The user who created the reaction.
   @$pb.TagNumber(2)
-  $406.User get user => $_getN(1);
+  $408.User get user => $_getN(1);
   @$pb.TagNumber(2)
-  set user($406.User v) {
+  set user($408.User v) {
     setField(2, v);
   }
 
@@ -101,9 +101,9 @@ class Reaction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUser() => clearField(2);
   @$pb.TagNumber(2)
-  $406.User ensureUser() => $_ensure(1);
+  $408.User ensureUser() => $_ensure(1);
 
-  /// The emoji used in the reaction.
+  /// Required. The emoji used in the reaction.
   @$pb.TagNumber(3)
   Emoji get emoji => $_getN(2);
   @$pb.TagNumber(3)
@@ -183,7 +183,7 @@ class Emoji extends $pb.GeneratedMessage {
   Emoji_Content whichContent() => _Emoji_ContentByTag[$_whichOneof(0)]!;
   void clearContent() => clearField($_whichOneof(0));
 
-  /// A basic emoji represented by a unicode string.
+  /// Optional. A basic emoji represented by a unicode string.
   @$pb.TagNumber(1)
   $core.String get unicode => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -330,7 +330,7 @@ class EmojiReactionSummary extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<EmojiReactionSummary>(create);
   static EmojiReactionSummary? _defaultInstance;
 
-  /// Emoji associated with the reactions.
+  /// Output only. Emoji associated with the reactions.
   @$pb.TagNumber(1)
   Emoji get emoji => $_getN(0);
   @$pb.TagNumber(1)
@@ -345,7 +345,7 @@ class EmojiReactionSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Emoji ensureEmoji() => $_ensure(0);
 
-  /// The total number of reactions using the associated emoji.
+  /// Output only. The total number of reactions using the associated emoji.
   @$pb.TagNumber(2)
   $core.int get reactionCount => $_getIZ(1);
   @$pb.TagNumber(2)

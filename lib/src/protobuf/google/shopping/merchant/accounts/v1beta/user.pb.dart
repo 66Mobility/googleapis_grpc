@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $333;
-import 'accessright.pbenum.dart' as $540;
+import '../../../../protobuf/field_mask.pb.dart' as $335;
+import 'accessright.pbenum.dart' as $543;
 import 'user.pbenum.dart';
 
 export 'user.pbenum.dart';
@@ -24,7 +24,7 @@ class User extends $pb.GeneratedMessage {
   factory User({
     $core.String? name,
     User_State? state,
-    $core.Iterable<$540.AccessRight>? accessRights,
+    $core.Iterable<$543.AccessRight>? accessRights,
   }) {
     final $result = create();
     if (name != null) {
@@ -56,11 +56,11 @@ class User extends $pb.GeneratedMessage {
         defaultOrMaker: User_State.STATE_UNSPECIFIED,
         valueOf: User_State.valueOf,
         enumValues: User_State.values)
-    ..pc<$540.AccessRight>(
+    ..pc<$543.AccessRight>(
         4, _omitFieldNames ? '' : 'accessRights', $pb.PbFieldType.KE,
-        valueOf: $540.AccessRight.valueOf,
-        enumValues: $540.AccessRight.values,
-        defaultEnumValue: $540.AccessRight.ACCESS_RIGHT_UNSPECIFIED)
+        valueOf: $543.AccessRight.valueOf,
+        enumValues: $543.AccessRight.values,
+        defaultEnumValue: $543.AccessRight.ACCESS_RIGHT_UNSPECIFIED)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -118,7 +118,7 @@ class User extends $pb.GeneratedMessage {
   /// rights](https://support.google.com/merchants/answer/12160472?sjid=6789834943175119429-EU#accesstypes)
   /// the user has.
   @$pb.TagNumber(4)
-  $core.List<$540.AccessRight> get accessRights => $_getList(2);
+  $core.List<$543.AccessRight> get accessRights => $_getList(2);
 }
 
 /// Request message for the `GetUser` method.
@@ -366,7 +366,7 @@ class DeleteUserRequest extends $pb.GeneratedMessage {
 class UpdateUserRequest extends $pb.GeneratedMessage {
   factory UpdateUserRequest({
     User? user,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (user != null) {
@@ -391,8 +391,8 @@ class UpdateUserRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
       createEmptyInstance: create)
     ..aOM<User>(1, _omitFieldNames ? '' : 'user', subBuilder: User.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -438,9 +438,9 @@ class UpdateUserRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields being updated.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -449,7 +449,7 @@ class UpdateUserRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the `ListUsers` method.

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'event_handler.pb.dart' as $277;
+import 'event_handler.pb.dart' as $279;
 
 ///  Defines a global intent handler. Global intent events are scoped to the
 ///  entire Actions project and may be overridden by intent handlers in a scene.
@@ -27,7 +27,7 @@ import 'event_handler.pb.dart' as $277;
 class GlobalIntentEvent extends $pb.GeneratedMessage {
   factory GlobalIntentEvent({
     $core.String? transitionToScene,
-    $277.EventHandler? handler,
+    $279.EventHandler? handler,
   }) {
     final $result = create();
     if (transitionToScene != null) {
@@ -52,8 +52,8 @@ class GlobalIntentEvent extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'transitionToScene')
-    ..aOM<$277.EventHandler>(2, _omitFieldNames ? '' : 'handler',
-        subBuilder: $277.EventHandler.create)
+    ..aOM<$279.EventHandler>(2, _omitFieldNames ? '' : 'handler',
+        subBuilder: $279.EventHandler.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -97,9 +97,9 @@ class GlobalIntentEvent extends $pb.GeneratedMessage {
   /// before transitioning to the destination scene. Useful to generate Prompts
   /// in response to events.
   @$pb.TagNumber(2)
-  $277.EventHandler get handler => $_getN(1);
+  $279.EventHandler get handler => $_getN(1);
   @$pb.TagNumber(2)
-  set handler($277.EventHandler v) {
+  set handler($279.EventHandler v) {
     setField(2, v);
   }
 
@@ -108,7 +108,7 @@ class GlobalIntentEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearHandler() => clearField(2);
   @$pb.TagNumber(2)
-  $277.EventHandler ensureHandler() => $_ensure(1);
+  $279.EventHandler ensureHandler() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

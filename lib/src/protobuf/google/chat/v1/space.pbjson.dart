@@ -17,7 +17,7 @@ import 'dart:typed_data' as $typed_data;
 const Space$json = {
   '1': 'Space',
   '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {
       '1': 'type',
       '3': 2,
@@ -33,6 +33,7 @@ const Space$json = {
       '4': 1,
       '5': 14,
       '6': '.google.chat.v1.Space.SpaceType',
+      '8': {},
       '10': 'spaceType'
     },
     {
@@ -51,7 +52,7 @@ const Space$json = {
       '8': {'3': true},
       '10': 'threaded',
     },
-    {'1': 'display_name', '3': 3, '4': 1, '5': 9, '10': 'displayName'},
+    {'1': 'display_name', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
     {
       '1': 'external_user_allowed',
       '3': 8,
@@ -75,6 +76,7 @@ const Space$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Space.SpaceDetails',
+      '8': {},
       '10': 'spaceDetails'
     },
     {
@@ -83,6 +85,7 @@ const Space$json = {
       '4': 1,
       '5': 14,
       '6': '.google.chat.v1.HistoryState',
+      '8': {},
       '10': 'spaceHistoryState'
     },
     {'1': 'import_mode', '3': 16, '4': 1, '5': 8, '8': {}, '10': 'importMode'},
@@ -151,6 +154,15 @@ const Space$json = {
       '9': 0,
       '10': 'permissionSettings'
     },
+    {
+      '1': 'import_mode_expire_time',
+      '3': 28,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'importModeExpireTime'
+    },
   ],
   '3': [
     Space_SpaceDetails$json,
@@ -175,8 +187,8 @@ const Space$json = {
 const Space_SpaceDetails$json = {
   '1': 'SpaceDetails',
   '2': [
-    {'1': 'description', '3': 1, '4': 1, '5': 9, '10': 'description'},
-    {'1': 'guidelines', '3': 2, '4': 1, '5': 9, '10': 'guidelines'},
+    {'1': 'description', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'description'},
+    {'1': 'guidelines', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'guidelines'},
   ],
 };
 
@@ -189,6 +201,7 @@ const Space_MembershipCount$json = {
       '3': 4,
       '4': 1,
       '5': 5,
+      '8': {},
       '10': 'joinedDirectHumanUserCount'
     },
     {
@@ -196,6 +209,7 @@ const Space_MembershipCount$json = {
       '3': 5,
       '4': 1,
       '5': 5,
+      '8': {},
       '10': 'joinedGroupCount'
     },
   ],
@@ -239,6 +253,7 @@ const Space_PermissionSettings$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Space.PermissionSetting',
+      '8': {},
       '9': 0,
       '10': 'manageMembersAndGroups',
       '17': true
@@ -249,6 +264,7 @@ const Space_PermissionSettings$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Space.PermissionSetting',
+      '8': {},
       '9': 1,
       '10': 'modifySpaceDetails',
       '17': true
@@ -259,6 +275,7 @@ const Space_PermissionSettings$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Space.PermissionSetting',
+      '8': {},
       '9': 2,
       '10': 'toggleHistory',
       '17': true
@@ -269,6 +286,7 @@ const Space_PermissionSettings$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Space.PermissionSetting',
+      '8': {},
       '9': 3,
       '10': 'useAtMentionAll',
       '17': true
@@ -279,6 +297,7 @@ const Space_PermissionSettings$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Space.PermissionSetting',
+      '8': {},
       '9': 4,
       '10': 'manageApps',
       '17': true
@@ -289,6 +308,7 @@ const Space_PermissionSettings$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Space.PermissionSetting',
+      '8': {},
       '9': 5,
       '10': 'manageWebhooks',
       '17': true
@@ -310,6 +330,7 @@ const Space_PermissionSettings$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Space.PermissionSetting',
+      '8': {},
       '9': 7,
       '10': 'replyMessages',
       '17': true
@@ -331,8 +352,22 @@ const Space_PermissionSettings$json = {
 const Space_PermissionSetting$json = {
   '1': 'PermissionSetting',
   '2': [
-    {'1': 'managers_allowed', '3': 1, '4': 1, '5': 8, '10': 'managersAllowed'},
-    {'1': 'members_allowed', '3': 2, '4': 1, '5': 8, '10': 'membersAllowed'},
+    {
+      '1': 'managers_allowed',
+      '3': 1,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'managersAllowed'
+    },
+    {
+      '1': 'members_allowed',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'membersAllowed'
+    },
   ],
 };
 
@@ -380,63 +415,67 @@ const Space_PredefinedPermissionSettings$json = {
 
 /// Descriptor for `Space`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List spaceDescriptor = $convert.base64Decode(
-    'CgVTcGFjZRISCgRuYW1lGAEgASgJUgRuYW1lEjUKBHR5cGUYAiABKA4yGi5nb29nbGUuY2hhdC'
-    '52MS5TcGFjZS5UeXBlQgUYAeBBA1IEdHlwZRI+CgpzcGFjZV90eXBlGAogASgOMh8uZ29vZ2xl'
-    'LmNoYXQudjEuU3BhY2UuU3BhY2VUeXBlUglzcGFjZVR5cGUSMAoSc2luZ2xlX3VzZXJfYm90X2'
-    'RtGAQgASgIQgPgQQFSD3NpbmdsZVVzZXJCb3REbRIhCgh0aHJlYWRlZBgFIAEoCEIFGAHgQQNS'
-    'CHRocmVhZGVkEiEKDGRpc3BsYXlfbmFtZRgDIAEoCVILZGlzcGxheU5hbWUSNwoVZXh0ZXJuYW'
-    'xfdXNlcl9hbGxvd2VkGAggASgIQgPgQQVSE2V4dGVybmFsVXNlckFsbG93ZWQSYgoVc3BhY2Vf'
-    'dGhyZWFkaW5nX3N0YXRlGAkgASgOMikuZ29vZ2xlLmNoYXQudjEuU3BhY2UuU3BhY2VUaHJlYW'
-    'RpbmdTdGF0ZUID4EEDUhNzcGFjZVRocmVhZGluZ1N0YXRlEkcKDXNwYWNlX2RldGFpbHMYCyAB'
-    'KAsyIi5nb29nbGUuY2hhdC52MS5TcGFjZS5TcGFjZURldGFpbHNSDHNwYWNlRGV0YWlscxJMCh'
-    'NzcGFjZV9oaXN0b3J5X3N0YXRlGA0gASgOMhwuZ29vZ2xlLmNoYXQudjEuSGlzdG9yeVN0YXRl'
-    'UhFzcGFjZUhpc3RvcnlTdGF0ZRIkCgtpbXBvcnRfbW9kZRgQIAEoCEID4EEBUgppbXBvcnRNb2'
-    'RlEkMKC2NyZWF0ZV90aW1lGBEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIG4EEF'
-    '4EEBUgpjcmVhdGVUaW1lEkkKEGxhc3RfYWN0aXZlX3RpbWUYEiABKAsyGi5nb29nbGUucHJvdG'
-    '9idWYuVGltZXN0YW1wQgPgQQNSDmxhc3RBY3RpdmVUaW1lEiwKD2FkbWluX2luc3RhbGxlZBgT'
-    'IAEoCEID4EEDUg5hZG1pbkluc3RhbGxlZBJVChBtZW1iZXJzaGlwX2NvdW50GBQgASgLMiUuZ2'
-    '9vZ2xlLmNoYXQudjEuU3BhY2UuTWVtYmVyc2hpcENvdW50QgPgQQNSD21lbWJlcnNoaXBDb3Vu'
-    'dBJSCg9hY2Nlc3Nfc2V0dGluZ3MYFyABKAsyJC5nb29nbGUuY2hhdC52MS5TcGFjZS5BY2Nlc3'
-    'NTZXR0aW5nc0ID4EEBUg5hY2Nlc3NTZXR0aW5ncxIgCglzcGFjZV91cmkYGSABKAlCA+BBA1II'
-    'c3BhY2VVcmkSggEKHnByZWRlZmluZWRfcGVybWlzc2lvbl9zZXR0aW5ncxgaIAEoDjIyLmdvb2'
-    'dsZS5jaGF0LnYxLlNwYWNlLlByZWRlZmluZWRQZXJtaXNzaW9uU2V0dGluZ3NCBuBBBOBBAUgA'
-    'UhxwcmVkZWZpbmVkUGVybWlzc2lvblNldHRpbmdzEmAKE3Blcm1pc3Npb25fc2V0dGluZ3MYGy'
-    'ABKAsyKC5nb29nbGUuY2hhdC52MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ3NCA+BBAUgAUhJw'
-    'ZXJtaXNzaW9uU2V0dGluZ3MaUAoMU3BhY2VEZXRhaWxzEiAKC2Rlc2NyaXB0aW9uGAEgASgJUg'
-    'tkZXNjcmlwdGlvbhIeCgpndWlkZWxpbmVzGAIgASgJUgpndWlkZWxpbmVzGoMBCg9NZW1iZXJz'
-    'aGlwQ291bnQSQgoeam9pbmVkX2RpcmVjdF9odW1hbl91c2VyX2NvdW50GAQgASgFUhpqb2luZW'
-    'REaXJlY3RIdW1hblVzZXJDb3VudBIsChJqb2luZWRfZ3JvdXBfY291bnQYBSABKAVSEGpvaW5l'
-    'ZEdyb3VwQ291bnQa1wEKDkFjY2Vzc1NldHRpbmdzElgKDGFjY2Vzc19zdGF0ZRgBIAEoDjIwLm'
-    'dvb2dsZS5jaGF0LnYxLlNwYWNlLkFjY2Vzc1NldHRpbmdzLkFjY2Vzc1N0YXRlQgPgQQNSC2Fj'
-    'Y2Vzc1N0YXRlEh8KCGF1ZGllbmNlGAMgASgJQgPgQQFSCGF1ZGllbmNlIkoKC0FjY2Vzc1N0YX'
-    'RlEhwKGEFDQ0VTU19TVEFURV9VTlNQRUNJRklFRBAAEgsKB1BSSVZBVEUQARIQCgxESVNDT1ZF'
-    'UkFCTEUQAhqKBwoSUGVybWlzc2lvblNldHRpbmdzEmcKGW1hbmFnZV9tZW1iZXJzX2FuZF9ncm'
-    '91cHMYASABKAsyJy5nb29nbGUuY2hhdC52MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ0gAUhZt'
-    'YW5hZ2VNZW1iZXJzQW5kR3JvdXBziAEBEl4KFG1vZGlmeV9zcGFjZV9kZXRhaWxzGAIgASgLMi'
-    'cuZ29vZ2xlLmNoYXQudjEuU3BhY2UuUGVybWlzc2lvblNldHRpbmdIAVISbW9kaWZ5U3BhY2VE'
-    'ZXRhaWxziAEBElMKDnRvZ2dsZV9oaXN0b3J5GAMgASgLMicuZ29vZ2xlLmNoYXQudjEuU3BhY2'
-    'UuUGVybWlzc2lvblNldHRpbmdIAlINdG9nZ2xlSGlzdG9yeYgBARJZChJ1c2VfYXRfbWVudGlv'
-    'bl9hbGwYBCABKAsyJy5nb29nbGUuY2hhdC52MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ0gDUg'
-    '91c2VBdE1lbnRpb25BbGyIAQESTQoLbWFuYWdlX2FwcHMYBSABKAsyJy5nb29nbGUuY2hhdC52'
-    'MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ0gEUgptYW5hZ2VBcHBziAEBElUKD21hbmFnZV93ZW'
-    'Job29rcxgGIAEoCzInLmdvb2dsZS5jaGF0LnYxLlNwYWNlLlBlcm1pc3Npb25TZXR0aW5nSAVS'
-    'Dm1hbmFnZVdlYmhvb2tziAEBElYKDXBvc3RfbWVzc2FnZXMYByABKAsyJy5nb29nbGUuY2hhdC'
-    '52MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ0ID4EEDSAZSDHBvc3RNZXNzYWdlc4gBARJTCg5y'
-    'ZXBseV9tZXNzYWdlcxgIIAEoCzInLmdvb2dsZS5jaGF0LnYxLlNwYWNlLlBlcm1pc3Npb25TZX'
-    'R0aW5nSAdSDXJlcGx5TWVzc2FnZXOIAQFCHAoaX21hbmFnZV9tZW1iZXJzX2FuZF9ncm91cHNC'
-    'FwoVX21vZGlmeV9zcGFjZV9kZXRhaWxzQhEKD190b2dnbGVfaGlzdG9yeUIVChNfdXNlX2F0X2'
-    '1lbnRpb25fYWxsQg4KDF9tYW5hZ2VfYXBwc0ISChBfbWFuYWdlX3dlYmhvb2tzQhAKDl9wb3N0'
-    'X21lc3NhZ2VzQhEKD19yZXBseV9tZXNzYWdlcxpnChFQZXJtaXNzaW9uU2V0dGluZxIpChBtYW'
-    '5hZ2Vyc19hbGxvd2VkGAEgASgIUg9tYW5hZ2Vyc0FsbG93ZWQSJwoPbWVtYmVyc19hbGxvd2Vk'
-    'GAIgASgIUg5tZW1iZXJzQWxsb3dlZCIuCgRUeXBlEhQKEFRZUEVfVU5TUEVDSUZJRUQQABIICg'
-    'RST09NEAESBgoCRE0QAiJWCglTcGFjZVR5cGUSGgoWU1BBQ0VfVFlQRV9VTlNQRUNJRklFRBAA'
-    'EgkKBVNQQUNFEAESDgoKR1JPVVBfQ0hBVBACEhIKDkRJUkVDVF9NRVNTQUdFEAMiggEKE1NwYW'
-    'NlVGhyZWFkaW5nU3RhdGUSJQohU1BBQ0VfVEhSRUFESU5HX1NUQVRFX1VOU1BFQ0lGSUVEEAAS'
-    'FQoRVEhSRUFERURfTUVTU0FHRVMQAhIUChBHUk9VUEVEX01FU1NBR0VTEAMSFwoTVU5USFJFQU'
-    'RFRF9NRVNTQUdFUxAEIn8KHFByZWRlZmluZWRQZXJtaXNzaW9uU2V0dGluZ3MSLgoqUFJFREVG'
-    'SU5FRF9QRVJNSVNTSU9OX1NFVFRJTkdTX1VOU1BFQ0lGSUVEEAASFwoTQ09MTEFCT1JBVElPTl'
-    '9TUEFDRRABEhYKEkFOTk9VTkNFTUVOVF9TUEFDRRACOi7qQSsKGWNoYXQuZ29vZ2xlYXBpcy5j'
-    'b20vU3BhY2USDnNwYWNlcy97c3BhY2V9QhsKGXNwYWNlX3Blcm1pc3Npb25fc2V0dGluZ3M=');
+    'CgVTcGFjZRIXCgRuYW1lGAEgASgJQgPgQQhSBG5hbWUSNQoEdHlwZRgCIAEoDjIaLmdvb2dsZS'
+    '5jaGF0LnYxLlNwYWNlLlR5cGVCBRgB4EEDUgR0eXBlEkMKCnNwYWNlX3R5cGUYCiABKA4yHy5n'
+    'b29nbGUuY2hhdC52MS5TcGFjZS5TcGFjZVR5cGVCA+BBAVIJc3BhY2VUeXBlEjAKEnNpbmdsZV'
+    '91c2VyX2JvdF9kbRgEIAEoCEID4EEBUg9zaW5nbGVVc2VyQm90RG0SIQoIdGhyZWFkZWQYBSAB'
+    'KAhCBRgB4EEDUgh0aHJlYWRlZBImCgxkaXNwbGF5X25hbWUYAyABKAlCA+BBAVILZGlzcGxheU'
+    '5hbWUSOgoVZXh0ZXJuYWxfdXNlcl9hbGxvd2VkGAggASgIQgbgQQXgQQFSE2V4dGVybmFsVXNl'
+    'ckFsbG93ZWQSYgoVc3BhY2VfdGhyZWFkaW5nX3N0YXRlGAkgASgOMikuZ29vZ2xlLmNoYXQudj'
+    'EuU3BhY2UuU3BhY2VUaHJlYWRpbmdTdGF0ZUID4EEDUhNzcGFjZVRocmVhZGluZ1N0YXRlEkwK'
+    'DXNwYWNlX2RldGFpbHMYCyABKAsyIi5nb29nbGUuY2hhdC52MS5TcGFjZS5TcGFjZURldGFpbH'
+    'NCA+BBAVIMc3BhY2VEZXRhaWxzElEKE3NwYWNlX2hpc3Rvcnlfc3RhdGUYDSABKA4yHC5nb29n'
+    'bGUuY2hhdC52MS5IaXN0b3J5U3RhdGVCA+BBAVIRc3BhY2VIaXN0b3J5U3RhdGUSJAoLaW1wb3'
+    'J0X21vZGUYECABKAhCA+BBAVIKaW1wb3J0TW9kZRJDCgtjcmVhdGVfdGltZRgRIAEoCzIaLmdv'
+    'b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCBuBBBeBBAVIKY3JlYXRlVGltZRJJChBsYXN0X2FjdG'
+    'l2ZV90aW1lGBIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EEDUg5sYXN0QWN0'
+    'aXZlVGltZRIsCg9hZG1pbl9pbnN0YWxsZWQYEyABKAhCA+BBA1IOYWRtaW5JbnN0YWxsZWQSVQ'
+    'oQbWVtYmVyc2hpcF9jb3VudBgUIAEoCzIlLmdvb2dsZS5jaGF0LnYxLlNwYWNlLk1lbWJlcnNo'
+    'aXBDb3VudEID4EEDUg9tZW1iZXJzaGlwQ291bnQSUgoPYWNjZXNzX3NldHRpbmdzGBcgASgLMi'
+    'QuZ29vZ2xlLmNoYXQudjEuU3BhY2UuQWNjZXNzU2V0dGluZ3NCA+BBAVIOYWNjZXNzU2V0dGlu'
+    'Z3MSIAoJc3BhY2VfdXJpGBkgASgJQgPgQQNSCHNwYWNlVXJpEoIBCh5wcmVkZWZpbmVkX3Blcm'
+    '1pc3Npb25fc2V0dGluZ3MYGiABKA4yMi5nb29nbGUuY2hhdC52MS5TcGFjZS5QcmVkZWZpbmVk'
+    'UGVybWlzc2lvblNldHRpbmdzQgbgQQTgQQFIAFIccHJlZGVmaW5lZFBlcm1pc3Npb25TZXR0aW'
+    '5ncxJgChNwZXJtaXNzaW9uX3NldHRpbmdzGBsgASgLMiguZ29vZ2xlLmNoYXQudjEuU3BhY2Uu'
+    'UGVybWlzc2lvblNldHRpbmdzQgPgQQFIAFIScGVybWlzc2lvblNldHRpbmdzElYKF2ltcG9ydF'
+    '9tb2RlX2V4cGlyZV90aW1lGBwgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EED'
+    'UhRpbXBvcnRNb2RlRXhwaXJlVGltZRpaCgxTcGFjZURldGFpbHMSJQoLZGVzY3JpcHRpb24YAS'
+    'ABKAlCA+BBAVILZGVzY3JpcHRpb24SIwoKZ3VpZGVsaW5lcxgCIAEoCUID4EEBUgpndWlkZWxp'
+    'bmVzGo0BCg9NZW1iZXJzaGlwQ291bnQSRwoeam9pbmVkX2RpcmVjdF9odW1hbl91c2VyX2NvdW'
+    '50GAQgASgFQgPgQQNSGmpvaW5lZERpcmVjdEh1bWFuVXNlckNvdW50EjEKEmpvaW5lZF9ncm91'
+    'cF9jb3VudBgFIAEoBUID4EEDUhBqb2luZWRHcm91cENvdW50GtcBCg5BY2Nlc3NTZXR0aW5ncx'
+    'JYCgxhY2Nlc3Nfc3RhdGUYASABKA4yMC5nb29nbGUuY2hhdC52MS5TcGFjZS5BY2Nlc3NTZXR0'
+    'aW5ncy5BY2Nlc3NTdGF0ZUID4EEDUgthY2Nlc3NTdGF0ZRIfCghhdWRpZW5jZRgDIAEoCUID4E'
+    'EBUghhdWRpZW5jZSJKCgtBY2Nlc3NTdGF0ZRIcChhBQ0NFU1NfU1RBVEVfVU5TUEVDSUZJRUQQ'
+    'ABILCgdQUklWQVRFEAESEAoMRElTQ09WRVJBQkxFEAIarQcKElBlcm1pc3Npb25TZXR0aW5ncx'
+    'JsChltYW5hZ2VfbWVtYmVyc19hbmRfZ3JvdXBzGAEgASgLMicuZ29vZ2xlLmNoYXQudjEuU3Bh'
+    'Y2UuUGVybWlzc2lvblNldHRpbmdCA+BBAUgAUhZtYW5hZ2VNZW1iZXJzQW5kR3JvdXBziAEBEm'
+    'MKFG1vZGlmeV9zcGFjZV9kZXRhaWxzGAIgASgLMicuZ29vZ2xlLmNoYXQudjEuU3BhY2UuUGVy'
+    'bWlzc2lvblNldHRpbmdCA+BBAUgBUhJtb2RpZnlTcGFjZURldGFpbHOIAQESWAoOdG9nZ2xlX2'
+    'hpc3RvcnkYAyABKAsyJy5nb29nbGUuY2hhdC52MS5TcGFjZS5QZXJtaXNzaW9uU2V0dGluZ0ID'
+    '4EEBSAJSDXRvZ2dsZUhpc3RvcnmIAQESXgoSdXNlX2F0X21lbnRpb25fYWxsGAQgASgLMicuZ2'
+    '9vZ2xlLmNoYXQudjEuU3BhY2UuUGVybWlzc2lvblNldHRpbmdCA+BBAUgDUg91c2VBdE1lbnRp'
+    'b25BbGyIAQESUgoLbWFuYWdlX2FwcHMYBSABKAsyJy5nb29nbGUuY2hhdC52MS5TcGFjZS5QZX'
+    'JtaXNzaW9uU2V0dGluZ0ID4EEBSARSCm1hbmFnZUFwcHOIAQESWgoPbWFuYWdlX3dlYmhvb2tz'
+    'GAYgASgLMicuZ29vZ2xlLmNoYXQudjEuU3BhY2UuUGVybWlzc2lvblNldHRpbmdCA+BBAUgFUg'
+    '5tYW5hZ2VXZWJob29rc4gBARJWCg1wb3N0X21lc3NhZ2VzGAcgASgLMicuZ29vZ2xlLmNoYXQu'
+    'djEuU3BhY2UuUGVybWlzc2lvblNldHRpbmdCA+BBA0gGUgxwb3N0TWVzc2FnZXOIAQESWAoOcm'
+    'VwbHlfbWVzc2FnZXMYCCABKAsyJy5nb29nbGUuY2hhdC52MS5TcGFjZS5QZXJtaXNzaW9uU2V0'
+    'dGluZ0ID4EEBSAdSDXJlcGx5TWVzc2FnZXOIAQFCHAoaX21hbmFnZV9tZW1iZXJzX2FuZF9ncm'
+    '91cHNCFwoVX21vZGlmeV9zcGFjZV9kZXRhaWxzQhEKD190b2dnbGVfaGlzdG9yeUIVChNfdXNl'
+    'X2F0X21lbnRpb25fYWxsQg4KDF9tYW5hZ2VfYXBwc0ISChBfbWFuYWdlX3dlYmhvb2tzQhAKDl'
+    '9wb3N0X21lc3NhZ2VzQhEKD19yZXBseV9tZXNzYWdlcxpxChFQZXJtaXNzaW9uU2V0dGluZxIu'
+    'ChBtYW5hZ2Vyc19hbGxvd2VkGAEgASgIQgPgQQFSD21hbmFnZXJzQWxsb3dlZBIsCg9tZW1iZX'
+    'JzX2FsbG93ZWQYAiABKAhCA+BBAVIObWVtYmVyc0FsbG93ZWQiLgoEVHlwZRIUChBUWVBFX1VO'
+    'U1BFQ0lGSUVEEAASCAoEUk9PTRABEgYKAkRNEAIiVgoJU3BhY2VUeXBlEhoKFlNQQUNFX1RZUE'
+    'VfVU5TUEVDSUZJRUQQABIJCgVTUEFDRRABEg4KCkdST1VQX0NIQVQQAhISCg5ESVJFQ1RfTUVT'
+    'U0FHRRADIoIBChNTcGFjZVRocmVhZGluZ1N0YXRlEiUKIVNQQUNFX1RIUkVBRElOR19TVEFURV'
+    '9VTlNQRUNJRklFRBAAEhUKEVRIUkVBREVEX01FU1NBR0VTEAISFAoQR1JPVVBFRF9NRVNTQUdF'
+    'UxADEhcKE1VOVEhSRUFERURfTUVTU0FHRVMQBCJ/ChxQcmVkZWZpbmVkUGVybWlzc2lvblNldH'
+    'RpbmdzEi4KKlBSRURFRklORURfUEVSTUlTU0lPTl9TRVRUSU5HU19VTlNQRUNJRklFRBAAEhcK'
+    'E0NPTExBQk9SQVRJT05fU1BBQ0UQARIWChJBTk5PVU5DRU1FTlRfU1BBQ0UQAjou6kErChljaG'
+    'F0Lmdvb2dsZWFwaXMuY29tL1NwYWNlEg5zcGFjZXMve3NwYWNlfUIbChlzcGFjZV9wZXJtaXNz'
+    'aW9uX3NldHRpbmdz');
 
 @$core.Deprecated('Use createSpaceRequestDescriptor instead')
 const CreateSpaceRequest$json = {
@@ -502,15 +541,22 @@ const GetSpaceRequest$json = {
   '1': 'GetSpaceRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'use_admin_access', '3': 2, '4': 1, '5': 8, '10': 'useAdminAccess'},
+    {
+      '1': 'use_admin_access',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useAdminAccess'
+    },
   ],
 };
 
 /// Descriptor for `GetSpaceRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List getSpaceRequestDescriptor = $convert.base64Decode(
     'Cg9HZXRTcGFjZVJlcXVlc3QSNQoEbmFtZRgBIAEoCUIh4EEC+kEbChljaGF0Lmdvb2dsZWFwaX'
-    'MuY29tL1NwYWNlUgRuYW1lEigKEHVzZV9hZG1pbl9hY2Nlc3MYAiABKAhSDnVzZUFkbWluQWNj'
-    'ZXNz');
+    'MuY29tL1NwYWNlUgRuYW1lEi0KEHVzZV9hZG1pbl9hY2Nlc3MYAiABKAhCA+BBAVIOdXNlQWRt'
+    'aW5BY2Nlc3M=');
 
 @$core.Deprecated('Use findDirectMessageRequestDescriptor instead')
 const FindDirectMessageRequest$json = {
@@ -544,18 +590,26 @@ const UpdateSpaceRequest$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.FieldMask',
+      '8': {},
       '10': 'updateMask'
     },
-    {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
+    {
+      '1': 'use_admin_access',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useAdminAccess'
+    },
   ],
 };
 
 /// Descriptor for `UpdateSpaceRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List updateSpaceRequestDescriptor = $convert.base64Decode(
     'ChJVcGRhdGVTcGFjZVJlcXVlc3QSMAoFc3BhY2UYASABKAsyFS5nb29nbGUuY2hhdC52MS5TcG'
-    'FjZUID4EECUgVzcGFjZRI7Cgt1cGRhdGVfbWFzaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5G'
-    'aWVsZE1hc2tSCnVwZGF0ZU1hc2sSKAoQdXNlX2FkbWluX2FjY2VzcxgDIAEoCFIOdXNlQWRtaW'
-    '5BY2Nlc3M=');
+    'FjZUID4EECUgVzcGFjZRJACgt1cGRhdGVfbWFzaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5G'
+    'aWVsZE1hc2tCA+BBAlIKdXBkYXRlTWFzaxItChB1c2VfYWRtaW5fYWNjZXNzGAMgASgIQgPgQQ'
+    'FSDnVzZUFkbWluQWNjZXNz');
 
 @$core.Deprecated('Use searchSpacesRequestDescriptor instead')
 const SearchSpacesRequest$json = {
@@ -604,15 +658,22 @@ const DeleteSpaceRequest$json = {
   '1': 'DeleteSpaceRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'use_admin_access', '3': 2, '4': 1, '5': 8, '10': 'useAdminAccess'},
+    {
+      '1': 'use_admin_access',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '10': 'useAdminAccess'
+    },
   ],
 };
 
 /// Descriptor for `DeleteSpaceRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List deleteSpaceRequestDescriptor = $convert.base64Decode(
     'ChJEZWxldGVTcGFjZVJlcXVlc3QSNQoEbmFtZRgBIAEoCUIh4EEC+kEbChljaGF0Lmdvb2dsZW'
-    'FwaXMuY29tL1NwYWNlUgRuYW1lEigKEHVzZV9hZG1pbl9hY2Nlc3MYAiABKAhSDnVzZUFkbWlu'
-    'QWNjZXNz');
+    'FwaXMuY29tL1NwYWNlUgRuYW1lEi0KEHVzZV9hZG1pbl9hY2Nlc3MYAiABKAhCA+BBAVIOdXNl'
+    'QWRtaW5BY2Nlc3M=');
 
 @$core.Deprecated('Use completeImportSpaceRequestDescriptor instead')
 const CompleteImportSpaceRequest$json = {

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $264;
-import '../../protobuf/struct.pb.dart' as $261;
+import '../../protobuf/duration.pb.dart' as $266;
+import '../../protobuf/struct.pb.dart' as $263;
 
 /// Explain options for the query.
 class ExplainOptions extends $pb.GeneratedMessage {
@@ -180,7 +180,7 @@ class ExplainMetrics extends $pb.GeneratedMessage {
 /// Planning phase information for the query.
 class PlanSummary extends $pb.GeneratedMessage {
   factory PlanSummary({
-    $core.Iterable<$261.Struct>? indexesUsed,
+    $core.Iterable<$263.Struct>? indexesUsed,
   }) {
     final $result = create();
     if (indexesUsed != null) {
@@ -201,9 +201,9 @@ class PlanSummary extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..pc<$261.Struct>(
+    ..pc<$263.Struct>(
         1, _omitFieldNames ? '' : 'indexesUsed', $pb.PbFieldType.PM,
-        subBuilder: $261.Struct.create)
+        subBuilder: $263.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -234,16 +234,16 @@ class PlanSummary extends $pb.GeneratedMessage {
   ///    {"query_scope": "Collection", "properties": "(bar ASC, __name__ ASC)"}
   ///  ]
   @$pb.TagNumber(1)
-  $core.List<$261.Struct> get indexesUsed => $_getList(0);
+  $core.List<$263.Struct> get indexesUsed => $_getList(0);
 }
 
 /// Execution statistics for the query.
 class ExecutionStats extends $pb.GeneratedMessage {
   factory ExecutionStats({
     $fixnum.Int64? resultsReturned,
-    $264.Duration? executionDuration,
+    $266.Duration? executionDuration,
     $fixnum.Int64? readOperations,
-    $261.Struct? debugStats,
+    $263.Struct? debugStats,
   }) {
     final $result = create();
     if (resultsReturned != null) {
@@ -274,11 +274,11 @@ class ExecutionStats extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'resultsReturned')
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'executionDuration',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(3, _omitFieldNames ? '' : 'executionDuration',
+        subBuilder: $266.Duration.create)
     ..aInt64(4, _omitFieldNames ? '' : 'readOperations')
-    ..aOM<$261.Struct>(5, _omitFieldNames ? '' : 'debugStats',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(5, _omitFieldNames ? '' : 'debugStats',
+        subBuilder: $263.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -320,9 +320,9 @@ class ExecutionStats extends $pb.GeneratedMessage {
 
   /// Total time to execute the query in the backend.
   @$pb.TagNumber(3)
-  $264.Duration get executionDuration => $_getN(1);
+  $266.Duration get executionDuration => $_getN(1);
   @$pb.TagNumber(3)
-  set executionDuration($264.Duration v) {
+  set executionDuration($266.Duration v) {
     setField(3, v);
   }
 
@@ -331,7 +331,7 @@ class ExecutionStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearExecutionDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $264.Duration ensureExecutionDuration() => $_ensure(1);
+  $266.Duration ensureExecutionDuration() => $_ensure(1);
 
   /// Total billable read operations.
   @$pb.TagNumber(4)
@@ -359,9 +359,9 @@ class ExecutionStats extends $pb.GeneratedMessage {
   ///    }
   ///  }
   @$pb.TagNumber(5)
-  $261.Struct get debugStats => $_getN(3);
+  $263.Struct get debugStats => $_getN(3);
   @$pb.TagNumber(5)
-  set debugStats($261.Struct v) {
+  set debugStats($263.Struct v) {
     setField(5, v);
   }
 
@@ -370,7 +370,7 @@ class ExecutionStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearDebugStats() => clearField(5);
   @$pb.TagNumber(5)
-  $261.Struct ensureDebugStats() => $_ensure(3);
+  $263.Struct ensureDebugStats() => $_ensure(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

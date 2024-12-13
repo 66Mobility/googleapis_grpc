@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
+import '../../protobuf/field_mask.pb.dart' as $335;
 import 'uptime.pb.dart' as $205;
 
 /// The protocol for the `ListUptimeCheckConfigs` request.
@@ -419,7 +419,7 @@ class CreateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
 /// The protocol for the `UpdateUptimeCheckConfig` request.
 class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   factory UpdateUptimeCheckConfigRequest({
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     $205.UptimeCheckConfig? uptimeCheckConfig,
   }) {
     final $result = create();
@@ -444,8 +444,8 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..aOM<$205.UptimeCheckConfig>(3, _omitFieldNames ? '' : 'uptimeCheckConfig',
         subBuilder: $205.UptimeCheckConfig.create)
     ..hasRequiredFields = false;
@@ -482,9 +482,9 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   /// field is empty, then the current configuration is completely replaced with
   /// the new configuration.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(0);
+  $335.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -493,7 +493,7 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(0);
+  $335.FieldMask ensureUpdateMask() => $_ensure(0);
 
   ///  Required. If an `updateMask` has been specified, this field gives
   ///  the values for the set of fields mentioned in the `updateMask`. If an

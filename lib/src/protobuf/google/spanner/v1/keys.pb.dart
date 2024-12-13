@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $261;
+import '../../protobuf/struct.pb.dart' as $263;
 
 enum KeyRange_StartKeyType { startClosed, startOpen, notSet }
 
@@ -109,10 +109,10 @@ enum KeyRange_EndKeyType { endClosed, endOpen, notSet }
 ///  because `Key` is a descending column in the schema.
 class KeyRange extends $pb.GeneratedMessage {
   factory KeyRange({
-    $261.ListValue? startClosed,
-    $261.ListValue? startOpen,
-    $261.ListValue? endClosed,
-    $261.ListValue? endOpen,
+    $263.ListValue? startClosed,
+    $263.ListValue? startOpen,
+    $263.ListValue? endClosed,
+    $263.ListValue? endOpen,
   }) {
     final $result = create();
     if (startClosed != null) {
@@ -156,14 +156,14 @@ class KeyRange extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..oo(1, [3, 4])
-    ..aOM<$261.ListValue>(1, _omitFieldNames ? '' : 'startClosed',
-        subBuilder: $261.ListValue.create)
-    ..aOM<$261.ListValue>(2, _omitFieldNames ? '' : 'startOpen',
-        subBuilder: $261.ListValue.create)
-    ..aOM<$261.ListValue>(3, _omitFieldNames ? '' : 'endClosed',
-        subBuilder: $261.ListValue.create)
-    ..aOM<$261.ListValue>(4, _omitFieldNames ? '' : 'endOpen',
-        subBuilder: $261.ListValue.create)
+    ..aOM<$263.ListValue>(1, _omitFieldNames ? '' : 'startClosed',
+        subBuilder: $263.ListValue.create)
+    ..aOM<$263.ListValue>(2, _omitFieldNames ? '' : 'startOpen',
+        subBuilder: $263.ListValue.create)
+    ..aOM<$263.ListValue>(3, _omitFieldNames ? '' : 'endClosed',
+        subBuilder: $263.ListValue.create)
+    ..aOM<$263.ListValue>(4, _omitFieldNames ? '' : 'endOpen',
+        subBuilder: $263.ListValue.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -198,9 +198,9 @@ class KeyRange extends $pb.GeneratedMessage {
   /// If the start is closed, then the range includes all rows whose
   /// first `len(start_closed)` key columns exactly match `start_closed`.
   @$pb.TagNumber(1)
-  $261.ListValue get startClosed => $_getN(0);
+  $263.ListValue get startClosed => $_getN(0);
   @$pb.TagNumber(1)
-  set startClosed($261.ListValue v) {
+  set startClosed($263.ListValue v) {
     setField(1, v);
   }
 
@@ -209,14 +209,14 @@ class KeyRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartClosed() => clearField(1);
   @$pb.TagNumber(1)
-  $261.ListValue ensureStartClosed() => $_ensure(0);
+  $263.ListValue ensureStartClosed() => $_ensure(0);
 
   /// If the start is open, then the range excludes rows whose first
   /// `len(start_open)` key columns exactly match `start_open`.
   @$pb.TagNumber(2)
-  $261.ListValue get startOpen => $_getN(1);
+  $263.ListValue get startOpen => $_getN(1);
   @$pb.TagNumber(2)
-  set startOpen($261.ListValue v) {
+  set startOpen($263.ListValue v) {
     setField(2, v);
   }
 
@@ -225,14 +225,14 @@ class KeyRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartOpen() => clearField(2);
   @$pb.TagNumber(2)
-  $261.ListValue ensureStartOpen() => $_ensure(1);
+  $263.ListValue ensureStartOpen() => $_ensure(1);
 
   /// If the end is closed, then the range includes all rows whose
   /// first `len(end_closed)` key columns exactly match `end_closed`.
   @$pb.TagNumber(3)
-  $261.ListValue get endClosed => $_getN(2);
+  $263.ListValue get endClosed => $_getN(2);
   @$pb.TagNumber(3)
-  set endClosed($261.ListValue v) {
+  set endClosed($263.ListValue v) {
     setField(3, v);
   }
 
@@ -241,14 +241,14 @@ class KeyRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEndClosed() => clearField(3);
   @$pb.TagNumber(3)
-  $261.ListValue ensureEndClosed() => $_ensure(2);
+  $263.ListValue ensureEndClosed() => $_ensure(2);
 
   /// If the end is open, then the range excludes rows whose first
   /// `len(end_open)` key columns exactly match `end_open`.
   @$pb.TagNumber(4)
-  $261.ListValue get endOpen => $_getN(3);
+  $263.ListValue get endOpen => $_getN(3);
   @$pb.TagNumber(4)
-  set endOpen($261.ListValue v) {
+  set endOpen($263.ListValue v) {
     setField(4, v);
   }
 
@@ -257,7 +257,7 @@ class KeyRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearEndOpen() => clearField(4);
   @$pb.TagNumber(4)
-  $261.ListValue ensureEndOpen() => $_ensure(3);
+  $263.ListValue ensureEndOpen() => $_ensure(3);
 }
 
 ///  `KeySet` defines a collection of Cloud Spanner keys and/or key ranges. All
@@ -269,7 +269,7 @@ class KeyRange extends $pb.GeneratedMessage {
 ///  behaves as if the key were only specified once.
 class KeySet extends $pb.GeneratedMessage {
   factory KeySet({
-    $core.Iterable<$261.ListValue>? keys,
+    $core.Iterable<$263.ListValue>? keys,
     $core.Iterable<KeyRange>? ranges,
     $core.bool? all,
   }) {
@@ -298,8 +298,8 @@ class KeySet extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
       createEmptyInstance: create)
-    ..pc<$261.ListValue>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
-        subBuilder: $261.ListValue.create)
+    ..pc<$263.ListValue>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
+        subBuilder: $263.ListValue.create)
     ..pc<KeyRange>(2, _omitFieldNames ? '' : 'ranges', $pb.PbFieldType.PM,
         subBuilder: KeyRange.create)
     ..aOB(3, _omitFieldNames ? '' : 'all')
@@ -331,7 +331,7 @@ class KeySet extends $pb.GeneratedMessage {
   /// with which this `KeySet` is used.  Individual key values are
   /// encoded as described [here][google.spanner.v1.TypeCode].
   @$pb.TagNumber(1)
-  $core.List<$261.ListValue> get keys => $_getList(0);
+  $core.List<$263.ListValue> get keys => $_getList(0);
 
   /// A list of key ranges. See [KeyRange][google.spanner.v1.KeyRange] for more information about
   /// key range specifications.

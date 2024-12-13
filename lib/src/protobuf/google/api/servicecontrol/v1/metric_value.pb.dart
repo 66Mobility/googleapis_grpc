@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
-import 'distribution.pb.dart' as $370;
+import '../../../protobuf/timestamp.pb.dart' as $304;
+import 'distribution.pb.dart' as $372;
 
 enum MetricValue_Value {
   boolValue,
@@ -30,13 +30,13 @@ enum MetricValue_Value {
 class MetricValue extends $pb.GeneratedMessage {
   factory MetricValue({
     $core.Map<$core.String, $core.String>? labels,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     $core.bool? boolValue,
     $fixnum.Int64? int64Value,
     $core.double? doubleValue,
     $core.String? stringValue,
-    $370.Distribution? distributionValue,
+    $372.Distribution? distributionValue,
   }) {
     final $result = create();
     if (labels != null) {
@@ -93,17 +93,17 @@ class MetricValue extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.api.servicecontrol.v1'))
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..aOB(4, _omitFieldNames ? '' : 'boolValue')
     ..aInt64(5, _omitFieldNames ? '' : 'int64Value')
     ..a<$core.double>(
         6, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
     ..aOS(7, _omitFieldNames ? '' : 'stringValue')
-    ..aOM<$370.Distribution>(8, _omitFieldNames ? '' : 'distributionValue',
-        subBuilder: $370.Distribution.create)
+    ..aOM<$372.Distribution>(8, _omitFieldNames ? '' : 'distributionValue',
+        subBuilder: $372.Distribution.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -144,9 +144,9 @@ class MetricValue extends $pb.GeneratedMessage {
   /// documentation in the service configuration for details. If not specified,
   /// [google.api.servicecontrol.v1.Operation.start_time][google.api.servicecontrol.v1.Operation.start_time] will be used.
   @$pb.TagNumber(2)
-  $302.Timestamp get startTime => $_getN(1);
+  $304.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -155,15 +155,15 @@ class MetricValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureStartTime() => $_ensure(1);
+  $304.Timestamp ensureStartTime() => $_ensure(1);
 
   /// The end of the time period over which this metric value's measurement
   /// applies.  If not specified,
   /// [google.api.servicecontrol.v1.Operation.end_time][google.api.servicecontrol.v1.Operation.end_time] will be used.
   @$pb.TagNumber(3)
-  $302.Timestamp get endTime => $_getN(2);
+  $304.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -172,7 +172,7 @@ class MetricValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureEndTime() => $_ensure(2);
+  $304.Timestamp ensureEndTime() => $_ensure(2);
 
   /// A boolean value.
   @$pb.TagNumber(4)
@@ -228,9 +228,9 @@ class MetricValue extends $pb.GeneratedMessage {
 
   /// A distribution value.
   @$pb.TagNumber(8)
-  $370.Distribution get distributionValue => $_getN(7);
+  $372.Distribution get distributionValue => $_getN(7);
   @$pb.TagNumber(8)
-  set distributionValue($370.Distribution v) {
+  set distributionValue($372.Distribution v) {
     setField(8, v);
   }
 
@@ -239,7 +239,7 @@ class MetricValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearDistributionValue() => clearField(8);
   @$pb.TagNumber(8)
-  $370.Distribution ensureDistributionValue() => $_ensure(7);
+  $372.Distribution ensureDistributionValue() => $_ensure(7);
 }
 
 /// Represents a set of metric values in the same metric.

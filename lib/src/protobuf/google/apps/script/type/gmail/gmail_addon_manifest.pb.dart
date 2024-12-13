@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../extension_point.pb.dart' as $396;
+import '../extension_point.pb.dart' as $398;
 import 'gmail_addon_manifest.pbenum.dart';
 
 export 'gmail_addon_manifest.pbenum.dart';
@@ -25,7 +25,7 @@ class GmailAddOnManifest extends $pb.GeneratedMessage {
     $core.Iterable<UniversalAction>? universalActions,
     $core.String? authorizationCheckFunction,
     ComposeTrigger? composeTrigger,
-    $396.HomepageExtensionPoint? homepageTrigger,
+    $398.HomepageExtensionPoint? homepageTrigger,
   }) {
     final $result = create();
     if (contextualTriggers != null) {
@@ -67,9 +67,9 @@ class GmailAddOnManifest extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'authorizationCheckFunction')
     ..aOM<ComposeTrigger>(12, _omitFieldNames ? '' : 'composeTrigger',
         subBuilder: ComposeTrigger.create)
-    ..aOM<$396.HomepageExtensionPoint>(
+    ..aOM<$398.HomepageExtensionPoint>(
         14, _omitFieldNames ? '' : 'homepageTrigger',
-        subBuilder: $396.HomepageExtensionPoint.create)
+        subBuilder: $398.HomepageExtensionPoint.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -150,9 +150,9 @@ class GmailAddOnManifest extends $pb.GeneratedMessage {
   ///  If present, this overrides the configuration from
   ///  `addOns.common.homepageTrigger`.
   @$pb.TagNumber(14)
-  $396.HomepageExtensionPoint get homepageTrigger => $_getN(4);
+  $398.HomepageExtensionPoint get homepageTrigger => $_getN(4);
   @$pb.TagNumber(14)
-  set homepageTrigger($396.HomepageExtensionPoint v) {
+  set homepageTrigger($398.HomepageExtensionPoint v) {
     setField(14, v);
   }
 
@@ -161,7 +161,7 @@ class GmailAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   void clearHomepageTrigger() => clearField(14);
   @$pb.TagNumber(14)
-  $396.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(4);
+  $398.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(4);
 }
 
 enum UniversalAction_ActionType { openLink, runFunction, notSet }
@@ -285,7 +285,7 @@ class UniversalAction extends $pb.GeneratedMessage {
 class ComposeTrigger extends $pb.GeneratedMessage {
   factory ComposeTrigger({
     ComposeTrigger_DraftAccess? draftAccess,
-    $core.Iterable<$396.MenuItemExtensionPoint>? actions,
+    $core.Iterable<$398.MenuItemExtensionPoint>? actions,
   }) {
     final $result = create();
     if (draftAccess != null) {
@@ -314,9 +314,9 @@ class ComposeTrigger extends $pb.GeneratedMessage {
         defaultOrMaker: ComposeTrigger_DraftAccess.UNSPECIFIED,
         valueOf: ComposeTrigger_DraftAccess.valueOf,
         enumValues: ComposeTrigger_DraftAccess.values)
-    ..pc<$396.MenuItemExtensionPoint>(
+    ..pc<$398.MenuItemExtensionPoint>(
         5, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM,
-        subBuilder: $396.MenuItemExtensionPoint.create)
+        subBuilder: $398.MenuItemExtensionPoint.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -358,7 +358,7 @@ class ComposeTrigger extends $pb.GeneratedMessage {
   /// Defines the set of actions for compose time add-on. These are actions
   /// that user can trigger on a compose time addon.
   @$pb.TagNumber(5)
-  $core.List<$396.MenuItemExtensionPoint> get actions => $_getList(1);
+  $core.List<$398.MenuItemExtensionPoint> get actions => $_getList(1);
 }
 
 enum ContextualTrigger_Trigger { unconditional, notSet }

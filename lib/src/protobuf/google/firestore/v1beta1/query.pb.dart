@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/wrappers.pb.dart' as $307;
+import '../../protobuf/wrappers.pb.dart' as $309;
 import 'document.pb.dart' as $132;
 import 'query.pbenum.dart';
 
@@ -775,7 +775,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
     $core.Iterable<StructuredQuery_CollectionSelector>? from,
     StructuredQuery_Filter? where,
     $core.Iterable<StructuredQuery_Order>? orderBy,
-    $307.Int32Value? limit,
+    $309.Int32Value? limit,
     $core.int? offset,
     Cursor? startAt,
     Cursor? endAt,
@@ -830,8 +830,8 @@ class StructuredQuery extends $pb.GeneratedMessage {
     ..pc<StructuredQuery_Order>(
         4, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.PM,
         subBuilder: StructuredQuery_Order.create)
-    ..aOM<$307.Int32Value>(5, _omitFieldNames ? '' : 'limit',
-        subBuilder: $307.Int32Value.create)
+    ..aOM<$309.Int32Value>(5, _omitFieldNames ? '' : 'limit',
+        subBuilder: $309.Int32Value.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
     ..aOM<Cursor>(7, _omitFieldNames ? '' : 'startAt',
         subBuilder: Cursor.create)
@@ -921,9 +921,9 @@ class StructuredQuery extends $pb.GeneratedMessage {
   ///  Applies after all other constraints.
   ///  Must be >= 0 if specified.
   @$pb.TagNumber(5)
-  $307.Int32Value get limit => $_getN(4);
+  $309.Int32Value get limit => $_getN(4);
   @$pb.TagNumber(5)
-  set limit($307.Int32Value v) {
+  set limit($309.Int32Value v) {
     setField(5, v);
   }
 
@@ -932,7 +932,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearLimit() => clearField(5);
   @$pb.TagNumber(5)
-  $307.Int32Value ensureLimit() => $_ensure(4);
+  $309.Int32Value ensureLimit() => $_ensure(4);
 
   ///  The number of results to skip.
   ///

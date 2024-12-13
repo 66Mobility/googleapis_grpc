@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../google/protobuf/struct.pb.dart' as $261;
-import '../../google/protobuf/timestamp.pb.dart' as $302;
-import 'intoto_provenance.pb.dart' as $558;
-import 'slsa_provenance.pb.dart' as $559;
-import 'slsa_provenance_zero_two.pb.dart' as $560;
+import '../../google/protobuf/struct.pb.dart' as $263;
+import '../../google/protobuf/timestamp.pb.dart' as $304;
+import 'intoto_provenance.pb.dart' as $563;
+import 'slsa_provenance.pb.dart' as $564;
+import 'slsa_provenance_zero_two.pb.dart' as $565;
 
 enum InTotoStatement_Predicate {
   provenance,
@@ -35,9 +35,9 @@ class InTotoStatement extends $pb.GeneratedMessage {
     $core.String? type,
     $core.Iterable<Subject>? subject,
     $core.String? predicateType,
-    $558.InTotoProvenance? provenance,
-    $559.SlsaProvenance? slsaProvenance,
-    $560.SlsaProvenanceZeroTwo? slsaProvenanceZeroTwo,
+    $563.InTotoProvenance? provenance,
+    $564.SlsaProvenance? slsaProvenance,
+    $565.SlsaProvenanceZeroTwo? slsaProvenanceZeroTwo,
   }) {
     final $result = create();
     if (type != null) {
@@ -84,13 +84,13 @@ class InTotoStatement extends $pb.GeneratedMessage {
     ..pc<Subject>(2, _omitFieldNames ? '' : 'subject', $pb.PbFieldType.PM,
         subBuilder: Subject.create)
     ..aOS(3, _omitFieldNames ? '' : 'predicateType')
-    ..aOM<$558.InTotoProvenance>(4, _omitFieldNames ? '' : 'provenance',
-        subBuilder: $558.InTotoProvenance.create)
-    ..aOM<$559.SlsaProvenance>(5, _omitFieldNames ? '' : 'slsaProvenance',
-        subBuilder: $559.SlsaProvenance.create)
-    ..aOM<$560.SlsaProvenanceZeroTwo>(
+    ..aOM<$563.InTotoProvenance>(4, _omitFieldNames ? '' : 'provenance',
+        subBuilder: $563.InTotoProvenance.create)
+    ..aOM<$564.SlsaProvenance>(5, _omitFieldNames ? '' : 'slsaProvenance',
+        subBuilder: $564.SlsaProvenance.create)
+    ..aOM<$565.SlsaProvenanceZeroTwo>(
         6, _omitFieldNames ? '' : 'slsaProvenanceZeroTwo',
-        subBuilder: $560.SlsaProvenanceZeroTwo.create)
+        subBuilder: $565.SlsaProvenanceZeroTwo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -150,9 +150,9 @@ class InTotoStatement extends $pb.GeneratedMessage {
   void clearPredicateType() => clearField(3);
 
   @$pb.TagNumber(4)
-  $558.InTotoProvenance get provenance => $_getN(3);
+  $563.InTotoProvenance get provenance => $_getN(3);
   @$pb.TagNumber(4)
-  set provenance($558.InTotoProvenance v) {
+  set provenance($563.InTotoProvenance v) {
     setField(4, v);
   }
 
@@ -161,12 +161,12 @@ class InTotoStatement extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearProvenance() => clearField(4);
   @$pb.TagNumber(4)
-  $558.InTotoProvenance ensureProvenance() => $_ensure(3);
+  $563.InTotoProvenance ensureProvenance() => $_ensure(3);
 
   @$pb.TagNumber(5)
-  $559.SlsaProvenance get slsaProvenance => $_getN(4);
+  $564.SlsaProvenance get slsaProvenance => $_getN(4);
   @$pb.TagNumber(5)
-  set slsaProvenance($559.SlsaProvenance v) {
+  set slsaProvenance($564.SlsaProvenance v) {
     setField(5, v);
   }
 
@@ -175,12 +175,12 @@ class InTotoStatement extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearSlsaProvenance() => clearField(5);
   @$pb.TagNumber(5)
-  $559.SlsaProvenance ensureSlsaProvenance() => $_ensure(4);
+  $564.SlsaProvenance ensureSlsaProvenance() => $_ensure(4);
 
   @$pb.TagNumber(6)
-  $560.SlsaProvenanceZeroTwo get slsaProvenanceZeroTwo => $_getN(5);
+  $565.SlsaProvenanceZeroTwo get slsaProvenanceZeroTwo => $_getN(5);
   @$pb.TagNumber(6)
-  set slsaProvenanceZeroTwo($560.SlsaProvenanceZeroTwo v) {
+  set slsaProvenanceZeroTwo($565.SlsaProvenanceZeroTwo v) {
     setField(6, v);
   }
 
@@ -189,7 +189,7 @@ class InTotoStatement extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearSlsaProvenanceZeroTwo() => clearField(6);
   @$pb.TagNumber(6)
-  $560.SlsaProvenanceZeroTwo ensureSlsaProvenanceZeroTwo() => $_ensure(5);
+  $565.SlsaProvenanceZeroTwo ensureSlsaProvenanceZeroTwo() => $_ensure(5);
 }
 
 class Subject extends $pb.GeneratedMessage {
@@ -365,8 +365,8 @@ class InTotoSlsaProvenanceV1_SlsaProvenanceV1 extends $pb.GeneratedMessage {
 class InTotoSlsaProvenanceV1_BuildDefinition extends $pb.GeneratedMessage {
   factory InTotoSlsaProvenanceV1_BuildDefinition({
     $core.String? buildType,
-    $261.Struct? externalParameters,
-    $261.Struct? internalParameters,
+    $263.Struct? externalParameters,
+    $263.Struct? internalParameters,
     $core.Iterable<InTotoSlsaProvenanceV1_ResourceDescriptor>?
         resolvedDependencies,
   }) {
@@ -399,10 +399,10 @@ class InTotoSlsaProvenanceV1_BuildDefinition extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'buildType')
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'externalParameters',
-        subBuilder: $261.Struct.create)
-    ..aOM<$261.Struct>(3, _omitFieldNames ? '' : 'internalParameters',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'externalParameters',
+        subBuilder: $263.Struct.create)
+    ..aOM<$263.Struct>(3, _omitFieldNames ? '' : 'internalParameters',
+        subBuilder: $263.Struct.create)
     ..pc<InTotoSlsaProvenanceV1_ResourceDescriptor>(
         4, _omitFieldNames ? '' : 'resolvedDependencies', $pb.PbFieldType.PM,
         subBuilder: InTotoSlsaProvenanceV1_ResourceDescriptor.create)
@@ -449,9 +449,9 @@ class InTotoSlsaProvenanceV1_BuildDefinition extends $pb.GeneratedMessage {
   void clearBuildType() => clearField(1);
 
   @$pb.TagNumber(2)
-  $261.Struct get externalParameters => $_getN(1);
+  $263.Struct get externalParameters => $_getN(1);
   @$pb.TagNumber(2)
-  set externalParameters($261.Struct v) {
+  set externalParameters($263.Struct v) {
     setField(2, v);
   }
 
@@ -460,12 +460,12 @@ class InTotoSlsaProvenanceV1_BuildDefinition extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearExternalParameters() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Struct ensureExternalParameters() => $_ensure(1);
+  $263.Struct ensureExternalParameters() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $261.Struct get internalParameters => $_getN(2);
+  $263.Struct get internalParameters => $_getN(2);
   @$pb.TagNumber(3)
-  set internalParameters($261.Struct v) {
+  set internalParameters($263.Struct v) {
     setField(3, v);
   }
 
@@ -474,7 +474,7 @@ class InTotoSlsaProvenanceV1_BuildDefinition extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearInternalParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $261.Struct ensureInternalParameters() => $_ensure(2);
+  $263.Struct ensureInternalParameters() => $_ensure(2);
 
   @$pb.TagNumber(4)
   $core.List<InTotoSlsaProvenanceV1_ResourceDescriptor>
@@ -489,7 +489,7 @@ class InTotoSlsaProvenanceV1_ResourceDescriptor extends $pb.GeneratedMessage {
     $core.List<$core.int>? content,
     $core.String? downloadLocation,
     $core.String? mediaType,
-    $core.Map<$core.String, $261.Value>? annotations,
+    $core.Map<$core.String, $263.Value>? annotations,
   }) {
     final $result = create();
     if (name != null) {
@@ -539,13 +539,13 @@ class InTotoSlsaProvenanceV1_ResourceDescriptor extends $pb.GeneratedMessage {
         4, _omitFieldNames ? '' : 'content', $pb.PbFieldType.OY)
     ..aOS(5, _omitFieldNames ? '' : 'downloadLocation')
     ..aOS(6, _omitFieldNames ? '' : 'mediaType')
-    ..m<$core.String, $261.Value>(7, _omitFieldNames ? '' : 'annotations',
+    ..m<$core.String, $263.Value>(7, _omitFieldNames ? '' : 'annotations',
         entryClassName:
             'InTotoSlsaProvenanceV1.ResourceDescriptor.AnnotationsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OM,
-        valueCreator: $261.Value.create,
-        valueDefaultOrMaker: $261.Value.getDefault,
+        valueCreator: $263.Value.create,
+        valueDefaultOrMaker: $263.Value.getDefault,
         packageName: const $pb.PackageName('grafeas.v1'))
     ..hasRequiredFields = false;
 
@@ -642,7 +642,7 @@ class InTotoSlsaProvenanceV1_ResourceDescriptor extends $pb.GeneratedMessage {
   void clearMediaType() => clearField(6);
 
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $261.Value> get annotations => $_getMap(6);
+  $core.Map<$core.String, $263.Value> get annotations => $_getMap(6);
 }
 
 class InTotoSlsaProvenanceV1_RunDetails extends $pb.GeneratedMessage {
@@ -842,8 +842,8 @@ class InTotoSlsaProvenanceV1_ProvenanceBuilder extends $pb.GeneratedMessage {
 class InTotoSlsaProvenanceV1_BuildMetadata extends $pb.GeneratedMessage {
   factory InTotoSlsaProvenanceV1_BuildMetadata({
     $core.String? invocationId,
-    $302.Timestamp? startedOn,
-    $302.Timestamp? finishedOn,
+    $304.Timestamp? startedOn,
+    $304.Timestamp? finishedOn,
   }) {
     final $result = create();
     if (invocationId != null) {
@@ -871,10 +871,10 @@ class InTotoSlsaProvenanceV1_BuildMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'invocationId')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startedOn',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'finishedOn',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startedOn',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'finishedOn',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -918,9 +918,9 @@ class InTotoSlsaProvenanceV1_BuildMetadata extends $pb.GeneratedMessage {
   void clearInvocationId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $302.Timestamp get startedOn => $_getN(1);
+  $304.Timestamp get startedOn => $_getN(1);
   @$pb.TagNumber(2)
-  set startedOn($302.Timestamp v) {
+  set startedOn($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -929,12 +929,12 @@ class InTotoSlsaProvenanceV1_BuildMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartedOn() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureStartedOn() => $_ensure(1);
+  $304.Timestamp ensureStartedOn() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $302.Timestamp get finishedOn => $_getN(2);
+  $304.Timestamp get finishedOn => $_getN(2);
   @$pb.TagNumber(3)
-  set finishedOn($302.Timestamp v) {
+  set finishedOn($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -943,7 +943,7 @@ class InTotoSlsaProvenanceV1_BuildMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearFinishedOn() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureFinishedOn() => $_ensure(2);
+  $304.Timestamp ensureFinishedOn() => $_ensure(2);
 }
 
 class InTotoSlsaProvenanceV1 extends $pb.GeneratedMessage {

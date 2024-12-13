@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'prompt/static_prompt.pb.dart' as $276;
+import 'prompt/static_prompt.pb.dart' as $278;
 
 enum EventHandler_Prompt { staticPrompt, staticPromptName, notSet }
 
@@ -22,7 +22,7 @@ enum EventHandler_Prompt { staticPrompt, staticPromptName, notSet }
 class EventHandler extends $pb.GeneratedMessage {
   factory EventHandler({
     $core.String? webhookHandler,
-    $276.StaticPrompt? staticPrompt,
+    $278.StaticPrompt? staticPrompt,
     $core.String? staticPromptName,
   }) {
     final $result = create();
@@ -58,8 +58,8 @@ class EventHandler extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'webhookHandler')
-    ..aOM<$276.StaticPrompt>(2, _omitFieldNames ? '' : 'staticPrompt',
-        subBuilder: $276.StaticPrompt.create)
+    ..aOM<$278.StaticPrompt>(2, _omitFieldNames ? '' : 'staticPrompt',
+        subBuilder: $278.StaticPrompt.create)
     ..aOS(3, _omitFieldNames ? '' : 'staticPromptName')
     ..hasRequiredFields = false;
 
@@ -106,9 +106,9 @@ class EventHandler extends $pb.GeneratedMessage {
   /// Inlined static prompt. Can contain references to string resources in
   /// bundles.
   @$pb.TagNumber(2)
-  $276.StaticPrompt get staticPrompt => $_getN(1);
+  $278.StaticPrompt get staticPrompt => $_getN(1);
   @$pb.TagNumber(2)
-  set staticPrompt($276.StaticPrompt v) {
+  set staticPrompt($278.StaticPrompt v) {
     setField(2, v);
   }
 
@@ -117,7 +117,7 @@ class EventHandler extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStaticPrompt() => clearField(2);
   @$pb.TagNumber(2)
-  $276.StaticPrompt ensureStaticPrompt() => $_ensure(1);
+  $278.StaticPrompt ensureStaticPrompt() => $_ensure(1);
 
   /// Name of the static prompt to invoke.
   @$pb.TagNumber(3)

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $333;
-import '../../../../type/latlng.pb.dart' as $325;
+import '../../../../protobuf/field_mask.pb.dart' as $335;
+import '../../../../type/latlng.pb.dart' as $327;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -30,8 +30,8 @@ class PlayableLocation extends $pb.GeneratedMessage {
     $core.String? placeId,
     $core.String? plusCode,
     $core.Iterable<$core.String>? types,
-    $325.LatLng? centerPoint,
-    $325.LatLng? snappedPoint,
+    $327.LatLng? centerPoint,
+    $327.LatLng? snappedPoint,
   }) {
     final $result = create();
     if (name != null) {
@@ -78,10 +78,10 @@ class PlayableLocation extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'placeId')
     ..aOS(3, _omitFieldNames ? '' : 'plusCode')
     ..pPS(4, _omitFieldNames ? '' : 'types')
-    ..aOM<$325.LatLng>(5, _omitFieldNames ? '' : 'centerPoint',
-        subBuilder: $325.LatLng.create)
-    ..aOM<$325.LatLng>(6, _omitFieldNames ? '' : 'snappedPoint',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(5, _omitFieldNames ? '' : 'centerPoint',
+        subBuilder: $327.LatLng.create)
+    ..aOM<$327.LatLng>(6, _omitFieldNames ? '' : 'snappedPoint',
+        subBuilder: $327.LatLng.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -164,9 +164,9 @@ class PlayableLocation extends $pb.GeneratedMessage {
   ///  [SamplePlayableLocations][google.maps.playablelocations.v3.PlayableLocations.SamplePlayableLocations]
   ///  use center-point coordinates.
   @$pb.TagNumber(5)
-  $325.LatLng get centerPoint => $_getN(4);
+  $327.LatLng get centerPoint => $_getN(4);
   @$pb.TagNumber(5)
-  set centerPoint($325.LatLng v) {
+  set centerPoint($327.LatLng v) {
     setField(5, v);
   }
 
@@ -175,14 +175,14 @@ class PlayableLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCenterPoint() => clearField(5);
   @$pb.TagNumber(5)
-  $325.LatLng ensureCenterPoint() => $_ensure(4);
+  $327.LatLng ensureCenterPoint() => $_ensure(4);
 
   /// The playable location's coordinates, snapped to the sidewalk of the
   /// nearest road, if a nearby road exists.
   @$pb.TagNumber(6)
-  $325.LatLng get snappedPoint => $_getN(5);
+  $327.LatLng get snappedPoint => $_getN(5);
   @$pb.TagNumber(6)
-  set snappedPoint($325.LatLng v) {
+  set snappedPoint($327.LatLng v) {
     setField(6, v);
   }
 
@@ -191,7 +191,7 @@ class PlayableLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearSnappedPoint() => clearField(6);
   @$pb.TagNumber(6)
-  $325.LatLng ensureSnappedPoint() => $_ensure(5);
+  $327.LatLng ensureSnappedPoint() => $_ensure(5);
 }
 
 /// A set of options that specifies the separation between playable locations.
@@ -430,7 +430,7 @@ class Criterion extends $pb.GeneratedMessage {
   factory Criterion({
     $core.int? gameObjectType,
     Filter? filter,
-    $333.FieldMask? fieldsToReturn,
+    $335.FieldMask? fieldsToReturn,
   }) {
     final $result = create();
     if (gameObjectType != null) {
@@ -460,8 +460,8 @@ class Criterion extends $pb.GeneratedMessage {
     ..a<$core.int>(
         1, _omitFieldNames ? '' : 'gameObjectType', $pb.PbFieldType.O3)
     ..aOM<Filter>(2, _omitFieldNames ? '' : 'filter', subBuilder: Filter.create)
-    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'fieldsToReturn',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'fieldsToReturn',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -536,9 +536,9 @@ class Criterion extends $pb.GeneratedMessage {
   ///  Note: The more fields you include, the more expensive in terms of data and
   ///  associated latency your query will be.
   @$pb.TagNumber(3)
-  $333.FieldMask get fieldsToReturn => $_getN(2);
+  $335.FieldMask get fieldsToReturn => $_getN(2);
   @$pb.TagNumber(3)
-  set fieldsToReturn($333.FieldMask v) {
+  set fieldsToReturn($335.FieldMask v) {
     setField(3, v);
   }
 
@@ -547,7 +547,7 @@ class Criterion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearFieldsToReturn() => clearField(3);
   @$pb.TagNumber(3)
-  $333.FieldMask ensureFieldsToReturn() => $_ensure(2);
+  $335.FieldMask ensureFieldsToReturn() => $_ensure(2);
 }
 
 /// Specifies the area to search for playable locations.

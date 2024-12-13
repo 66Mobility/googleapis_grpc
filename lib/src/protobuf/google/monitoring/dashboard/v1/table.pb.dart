@@ -13,20 +13,20 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $264;
-import 'metrics.pb.dart' as $514;
+import '../../../protobuf/duration.pb.dart' as $266;
+import 'metrics.pb.dart' as $517;
 import 'table.pbenum.dart';
-import 'table_display_options.pb.dart' as $515;
+import 'table_display_options.pb.dart' as $518;
 
 export 'table.pbenum.dart';
 
 /// Groups a time series query definition with table options.
 class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   factory TimeSeriesTable_TableDataSet({
-    $514.TimeSeriesQuery? timeSeriesQuery,
+    $517.TimeSeriesQuery? timeSeriesQuery,
     $core.String? tableTemplate,
-    $264.Duration? minAlignmentPeriod,
-    $515.TableDisplayOptions? tableDisplayOptions,
+    $266.Duration? minAlignmentPeriod,
+    $518.TableDisplayOptions? tableDisplayOptions,
   }) {
     final $result = create();
     if (timeSeriesQuery != null) {
@@ -56,14 +56,14 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
-    ..aOM<$514.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
-        subBuilder: $514.TimeSeriesQuery.create)
+    ..aOM<$517.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
+        subBuilder: $517.TimeSeriesQuery.create)
     ..aOS(2, _omitFieldNames ? '' : 'tableTemplate')
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'minAlignmentPeriod',
-        subBuilder: $264.Duration.create)
-    ..aOM<$515.TableDisplayOptions>(
+    ..aOM<$266.Duration>(3, _omitFieldNames ? '' : 'minAlignmentPeriod',
+        subBuilder: $266.Duration.create)
+    ..aOM<$518.TableDisplayOptions>(
         4, _omitFieldNames ? '' : 'tableDisplayOptions',
-        subBuilder: $515.TableDisplayOptions.create)
+        subBuilder: $518.TableDisplayOptions.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -96,9 +96,9 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   /// Required. Fields for querying time series data from the
   /// Stackdriver metrics API.
   @$pb.TagNumber(1)
-  $514.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $517.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($514.TimeSeriesQuery v) {
+  set timeSeriesQuery($517.TimeSeriesQuery v) {
     setField(1, v);
   }
 
@@ -107,7 +107,7 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $514.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $517.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// Optional. A template string for naming `TimeSeries` in the resulting data
   /// set. This should be a string with interpolations of the form
@@ -131,9 +131,9 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   /// the `min_alignment_period` should be at least 10 minutes. It would not
   /// make sense to fetch and align data at one minute intervals.
   @$pb.TagNumber(3)
-  $264.Duration get minAlignmentPeriod => $_getN(2);
+  $266.Duration get minAlignmentPeriod => $_getN(2);
   @$pb.TagNumber(3)
-  set minAlignmentPeriod($264.Duration v) {
+  set minAlignmentPeriod($266.Duration v) {
     setField(3, v);
   }
 
@@ -142,14 +142,14 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearMinAlignmentPeriod() => clearField(3);
   @$pb.TagNumber(3)
-  $264.Duration ensureMinAlignmentPeriod() => $_ensure(2);
+  $266.Duration ensureMinAlignmentPeriod() => $_ensure(2);
 
   /// Optional. Table display options for configuring how the table is
   /// rendered.
   @$pb.TagNumber(4)
-  $515.TableDisplayOptions get tableDisplayOptions => $_getN(3);
+  $518.TableDisplayOptions get tableDisplayOptions => $_getN(3);
   @$pb.TagNumber(4)
-  set tableDisplayOptions($515.TableDisplayOptions v) {
+  set tableDisplayOptions($518.TableDisplayOptions v) {
     setField(4, v);
   }
 
@@ -158,7 +158,7 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearTableDisplayOptions() => clearField(4);
   @$pb.TagNumber(4)
-  $515.TableDisplayOptions ensureTableDisplayOptions() => $_ensure(3);
+  $518.TableDisplayOptions ensureTableDisplayOptions() => $_ensure(3);
 }
 
 /// The persistent settings for a table's columns.

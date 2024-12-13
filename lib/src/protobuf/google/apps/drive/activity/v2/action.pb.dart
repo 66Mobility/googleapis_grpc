@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../../protobuf/timestamp.pb.dart' as $304;
 import 'action.pbenum.dart';
-import 'actor.pb.dart' as $386;
-import 'common.pb.dart' as $387;
-import 'target.pb.dart' as $388;
+import 'actor.pb.dart' as $388;
+import 'common.pb.dart' as $389;
+import 'target.pb.dart' as $390;
 
 export 'action.pbenum.dart';
 
@@ -28,10 +28,10 @@ enum Action_Time { timestamp, timeRange, notSet }
 class Action extends $pb.GeneratedMessage {
   factory Action({
     ActionDetail? detail,
-    $386.Actor? actor,
-    $388.Target? target,
-    $302.Timestamp? timestamp,
-    $387.TimeRange? timeRange,
+    $388.Actor? actor,
+    $390.Target? target,
+    $304.Timestamp? timestamp,
+    $389.TimeRange? timeRange,
   }) {
     final $result = create();
     if (detail != null) {
@@ -72,14 +72,14 @@ class Action extends $pb.GeneratedMessage {
     ..oo(0, [5, 6])
     ..aOM<ActionDetail>(1, _omitFieldNames ? '' : 'detail',
         subBuilder: ActionDetail.create)
-    ..aOM<$386.Actor>(3, _omitFieldNames ? '' : 'actor',
-        subBuilder: $386.Actor.create)
-    ..aOM<$388.Target>(4, _omitFieldNames ? '' : 'target',
-        subBuilder: $388.Target.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'timestamp',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$387.TimeRange>(6, _omitFieldNames ? '' : 'timeRange',
-        subBuilder: $387.TimeRange.create)
+    ..aOM<$388.Actor>(3, _omitFieldNames ? '' : 'actor',
+        subBuilder: $388.Actor.create)
+    ..aOM<$390.Target>(4, _omitFieldNames ? '' : 'target',
+        subBuilder: $390.Target.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'timestamp',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$389.TimeRange>(6, _omitFieldNames ? '' : 'timeRange',
+        subBuilder: $389.TimeRange.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -124,9 +124,9 @@ class Action extends $pb.GeneratedMessage {
   /// The actor responsible for this action (or empty if all actors are
   /// responsible).
   @$pb.TagNumber(3)
-  $386.Actor get actor => $_getN(1);
+  $388.Actor get actor => $_getN(1);
   @$pb.TagNumber(3)
-  set actor($386.Actor v) {
+  set actor($388.Actor v) {
     setField(3, v);
   }
 
@@ -135,14 +135,14 @@ class Action extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearActor() => clearField(3);
   @$pb.TagNumber(3)
-  $386.Actor ensureActor() => $_ensure(1);
+  $388.Actor ensureActor() => $_ensure(1);
 
   /// The target this action affects (or empty if affecting all targets). This
   /// represents the state of the target immediately after this action occurred.
   @$pb.TagNumber(4)
-  $388.Target get target => $_getN(2);
+  $390.Target get target => $_getN(2);
   @$pb.TagNumber(4)
-  set target($388.Target v) {
+  set target($390.Target v) {
     setField(4, v);
   }
 
@@ -151,13 +151,13 @@ class Action extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearTarget() => clearField(4);
   @$pb.TagNumber(4)
-  $388.Target ensureTarget() => $_ensure(2);
+  $390.Target ensureTarget() => $_ensure(2);
 
   /// The action occurred at this specific time.
   @$pb.TagNumber(5)
-  $302.Timestamp get timestamp => $_getN(3);
+  $304.Timestamp get timestamp => $_getN(3);
   @$pb.TagNumber(5)
-  set timestamp($302.Timestamp v) {
+  set timestamp($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -166,13 +166,13 @@ class Action extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearTimestamp() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureTimestamp() => $_ensure(3);
+  $304.Timestamp ensureTimestamp() => $_ensure(3);
 
   /// The action occurred over this time range.
   @$pb.TagNumber(6)
-  $387.TimeRange get timeRange => $_getN(4);
+  $389.TimeRange get timeRange => $_getN(4);
   @$pb.TagNumber(6)
-  set timeRange($387.TimeRange v) {
+  set timeRange($389.TimeRange v) {
     setField(6, v);
   }
 
@@ -181,7 +181,7 @@ class Action extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearTimeRange() => clearField(6);
   @$pb.TagNumber(6)
-  $387.TimeRange ensureTimeRange() => $_ensure(4);
+  $389.TimeRange ensureTimeRange() => $_ensure(4);
 }
 
 enum ActionDetail_ActionDetail {
@@ -599,7 +599,7 @@ class Create_Upload extends $pb.GeneratedMessage {
 /// An object was created by copying an existing object.
 class Create_Copy extends $pb.GeneratedMessage {
   factory Create_Copy({
-    $388.TargetReference? originalObject,
+    $390.TargetReference? originalObject,
   }) {
     final $result = create();
     if (originalObject != null) {
@@ -620,8 +620,8 @@ class Create_Copy extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
       createEmptyInstance: create)
-    ..aOM<$388.TargetReference>(1, _omitFieldNames ? '' : 'originalObject',
-        subBuilder: $388.TargetReference.create)
+    ..aOM<$390.TargetReference>(1, _omitFieldNames ? '' : 'originalObject',
+        subBuilder: $390.TargetReference.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -648,9 +648,9 @@ class Create_Copy extends $pb.GeneratedMessage {
 
   /// The original object.
   @$pb.TagNumber(1)
-  $388.TargetReference get originalObject => $_getN(0);
+  $390.TargetReference get originalObject => $_getN(0);
   @$pb.TagNumber(1)
-  set originalObject($388.TargetReference v) {
+  set originalObject($390.TargetReference v) {
     setField(1, v);
   }
 
@@ -659,7 +659,7 @@ class Create_Copy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearOriginalObject() => clearField(1);
   @$pb.TagNumber(1)
-  $388.TargetReference ensureOriginalObject() => $_ensure(0);
+  $390.TargetReference ensureOriginalObject() => $_ensure(0);
 }
 
 enum Create_Origin { new_1, upload, copy, notSet }
@@ -827,8 +827,8 @@ class Edit extends $pb.GeneratedMessage {
 /// An object was moved.
 class Move extends $pb.GeneratedMessage {
   factory Move({
-    $core.Iterable<$388.TargetReference>? addedParents,
-    $core.Iterable<$388.TargetReference>? removedParents,
+    $core.Iterable<$390.TargetReference>? addedParents,
+    $core.Iterable<$390.TargetReference>? removedParents,
   }) {
     final $result = create();
     if (addedParents != null) {
@@ -852,12 +852,12 @@ class Move extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
       createEmptyInstance: create)
-    ..pc<$388.TargetReference>(
+    ..pc<$390.TargetReference>(
         1, _omitFieldNames ? '' : 'addedParents', $pb.PbFieldType.PM,
-        subBuilder: $388.TargetReference.create)
-    ..pc<$388.TargetReference>(
+        subBuilder: $390.TargetReference.create)
+    ..pc<$390.TargetReference>(
         2, _omitFieldNames ? '' : 'removedParents', $pb.PbFieldType.PM,
-        subBuilder: $388.TargetReference.create)
+        subBuilder: $390.TargetReference.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -883,11 +883,11 @@ class Move extends $pb.GeneratedMessage {
 
   /// The added parent object(s).
   @$pb.TagNumber(1)
-  $core.List<$388.TargetReference> get addedParents => $_getList(0);
+  $core.List<$390.TargetReference> get addedParents => $_getList(0);
 
   /// The removed parent object(s).
   @$pb.TagNumber(2)
-  $core.List<$388.TargetReference> get removedParents => $_getList(1);
+  $core.List<$390.TargetReference> get removedParents => $_getList(1);
 }
 
 /// An object was renamed.
@@ -1216,9 +1216,9 @@ enum Permission_Scope { user, group, domain, anyone, notSet }
 class Permission extends $pb.GeneratedMessage {
   factory Permission({
     Permission_Role? role,
-    $386.User? user,
-    $387.Group? group,
-    $387.Domain? domain,
+    $388.User? user,
+    $389.Group? group,
+    $389.Domain? domain,
     Permission_Anyone? anyone,
     $core.bool? allowDiscovery,
   }) {
@@ -1268,12 +1268,12 @@ class Permission extends $pb.GeneratedMessage {
         defaultOrMaker: Permission_Role.ROLE_UNSPECIFIED,
         valueOf: Permission_Role.valueOf,
         enumValues: Permission_Role.values)
-    ..aOM<$386.User>(2, _omitFieldNames ? '' : 'user',
-        subBuilder: $386.User.create)
-    ..aOM<$387.Group>(3, _omitFieldNames ? '' : 'group',
-        subBuilder: $387.Group.create)
-    ..aOM<$387.Domain>(4, _omitFieldNames ? '' : 'domain',
-        subBuilder: $387.Domain.create)
+    ..aOM<$388.User>(2, _omitFieldNames ? '' : 'user',
+        subBuilder: $388.User.create)
+    ..aOM<$389.Group>(3, _omitFieldNames ? '' : 'group',
+        subBuilder: $389.Group.create)
+    ..aOM<$389.Domain>(4, _omitFieldNames ? '' : 'domain',
+        subBuilder: $389.Domain.create)
     ..aOM<Permission_Anyone>(5, _omitFieldNames ? '' : 'anyone',
         subBuilder: Permission_Anyone.create)
     ..aOB(6, _omitFieldNames ? '' : 'allowDiscovery')
@@ -1321,9 +1321,9 @@ class Permission extends $pb.GeneratedMessage {
 
   /// The user to whom this permission applies.
   @$pb.TagNumber(2)
-  $386.User get user => $_getN(1);
+  $388.User get user => $_getN(1);
   @$pb.TagNumber(2)
-  set user($386.User v) {
+  set user($388.User v) {
     setField(2, v);
   }
 
@@ -1332,13 +1332,13 @@ class Permission extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUser() => clearField(2);
   @$pb.TagNumber(2)
-  $386.User ensureUser() => $_ensure(1);
+  $388.User ensureUser() => $_ensure(1);
 
   /// The group to whom this permission applies.
   @$pb.TagNumber(3)
-  $387.Group get group => $_getN(2);
+  $389.Group get group => $_getN(2);
   @$pb.TagNumber(3)
-  set group($387.Group v) {
+  set group($389.Group v) {
     setField(3, v);
   }
 
@@ -1347,13 +1347,13 @@ class Permission extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearGroup() => clearField(3);
   @$pb.TagNumber(3)
-  $387.Group ensureGroup() => $_ensure(2);
+  $389.Group ensureGroup() => $_ensure(2);
 
   /// The domain to whom this permission applies.
   @$pb.TagNumber(4)
-  $387.Domain get domain => $_getN(3);
+  $389.Domain get domain => $_getN(3);
   @$pb.TagNumber(4)
-  set domain($387.Domain v) {
+  set domain($389.Domain v) {
     setField(4, v);
   }
 
@@ -1362,7 +1362,7 @@ class Permission extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearDomain() => clearField(4);
   @$pb.TagNumber(4)
-  $387.Domain ensureDomain() => $_ensure(3);
+  $389.Domain ensureDomain() => $_ensure(3);
 
   /// If set, this permission applies to anyone, even logged out users.
   @$pb.TagNumber(5)
@@ -1466,7 +1466,7 @@ class Comment_Post extends $pb.GeneratedMessage {
 class Comment_Assignment extends $pb.GeneratedMessage {
   factory Comment_Assignment({
     Comment_Assignment_Subtype? subtype,
-    $386.User? assignedUser,
+    $388.User? assignedUser,
   }) {
     final $result = create();
     if (subtype != null) {
@@ -1495,8 +1495,8 @@ class Comment_Assignment extends $pb.GeneratedMessage {
         defaultOrMaker: Comment_Assignment_Subtype.SUBTYPE_UNSPECIFIED,
         valueOf: Comment_Assignment_Subtype.valueOf,
         enumValues: Comment_Assignment_Subtype.values)
-    ..aOM<$386.User>(7, _omitFieldNames ? '' : 'assignedUser',
-        subBuilder: $386.User.create)
+    ..aOM<$388.User>(7, _omitFieldNames ? '' : 'assignedUser',
+        subBuilder: $388.User.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1537,9 +1537,9 @@ class Comment_Assignment extends $pb.GeneratedMessage {
 
   /// The user to whom the comment was assigned.
   @$pb.TagNumber(7)
-  $386.User get assignedUser => $_getN(1);
+  $388.User get assignedUser => $_getN(1);
   @$pb.TagNumber(7)
-  set assignedUser($386.User v) {
+  set assignedUser($388.User v) {
     setField(7, v);
   }
 
@@ -1548,7 +1548,7 @@ class Comment_Assignment extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearAssignedUser() => clearField(7);
   @$pb.TagNumber(7)
-  $386.User ensureAssignedUser() => $_ensure(1);
+  $388.User ensureAssignedUser() => $_ensure(1);
 }
 
 /// A suggestion.
@@ -1627,7 +1627,7 @@ class Comment extends $pb.GeneratedMessage {
     Comment_Post? post,
     Comment_Assignment? assignment,
     Comment_Suggestion? suggestion,
-    $core.Iterable<$386.User>? mentionedUsers,
+    $core.Iterable<$388.User>? mentionedUsers,
   }) {
     final $result = create();
     if (post != null) {
@@ -1670,9 +1670,9 @@ class Comment extends $pb.GeneratedMessage {
         subBuilder: Comment_Assignment.create)
     ..aOM<Comment_Suggestion>(3, _omitFieldNames ? '' : 'suggestion',
         subBuilder: Comment_Suggestion.create)
-    ..pc<$386.User>(
+    ..pc<$388.User>(
         7, _omitFieldNames ? '' : 'mentionedUsers', $pb.PbFieldType.PM,
-        subBuilder: $386.User.create)
+        subBuilder: $388.User.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1746,7 +1746,7 @@ class Comment extends $pb.GeneratedMessage {
 
   /// Users who are mentioned in this comment.
   @$pb.TagNumber(7)
-  $core.List<$386.User> get mentionedUsers => $_getList(3);
+  $core.List<$388.User> get mentionedUsers => $_getList(3);
 }
 
 /// A change in the object's data leak prevention status.
@@ -2665,7 +2665,7 @@ class AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Us
 class AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Date
     extends $pb.GeneratedMessage {
   factory AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Date({
-    $302.Timestamp? value,
+    $304.Timestamp? value,
   }) {
     final $result = create();
     if (value != null) {
@@ -2691,8 +2691,8 @@ class AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Da
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'value',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'value',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2736,9 +2736,9 @@ class AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Da
 
   /// Date value.
   @$pb.TagNumber(1)
-  $302.Timestamp get value => $_getN(0);
+  $304.Timestamp get value => $_getN(0);
   @$pb.TagNumber(1)
-  set value($302.Timestamp v) {
+  set value($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -2747,7 +2747,7 @@ class AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Da
   @$pb.TagNumber(1)
   void clearValue() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureValue() => $_ensure(0);
+  $304.Timestamp ensureValue() => $_ensure(0);
 }
 
 enum AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Value {

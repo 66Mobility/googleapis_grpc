@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $302;
-import '../../../../type/date.pb.dart' as $327;
-import '../../../type/types.pb.dart' as $537;
-import '../../../type/types.pbenum.dart' as $537;
+import '../../../../protobuf/timestamp.pb.dart' as $304;
+import '../../../../type/date.pb.dart' as $329;
+import '../../../type/types.pb.dart' as $540;
+import '../../../type/types.pbenum.dart' as $540;
 import 'reports.pbenum.dart';
 
 export 'reports.pbenum.dart';
@@ -523,8 +523,8 @@ class ReportRow extends $pb.GeneratedMessage {
 class ProductPerformanceView extends $pb.GeneratedMessage {
   factory ProductPerformanceView({
     MarketingMethod_MarketingMethodEnum? marketingMethod,
-    $327.Date? date,
-    $327.Date? week,
+    $329.Date? date,
+    $329.Date? week,
     $core.String? customerCountryCode,
     $core.String? offerId,
     $core.String? title,
@@ -548,7 +548,7 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
     $fixnum.Int64? impressions,
     $core.double? clickThroughRate,
     $core.double? conversions,
-    $537.Price? conversionValue,
+    $540.Price? conversionValue,
     $core.double? conversionRate,
   }) {
     final $result = create();
@@ -657,10 +657,10 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
             .MARKETING_METHOD_ENUM_UNSPECIFIED,
         valueOf: MarketingMethod_MarketingMethodEnum.valueOf,
         enumValues: MarketingMethod_MarketingMethodEnum.values)
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'date',
-        subBuilder: $327.Date.create)
-    ..aOM<$327.Date>(3, _omitFieldNames ? '' : 'week',
-        subBuilder: $327.Date.create)
+    ..aOM<$329.Date>(2, _omitFieldNames ? '' : 'date',
+        subBuilder: $329.Date.create)
+    ..aOM<$329.Date>(3, _omitFieldNames ? '' : 'week',
+        subBuilder: $329.Date.create)
     ..aOS(4, _omitFieldNames ? '' : 'customerCountryCode')
     ..aOS(5, _omitFieldNames ? '' : 'offerId')
     ..aOS(6, _omitFieldNames ? '' : 'title')
@@ -686,8 +686,8 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
         25, _omitFieldNames ? '' : 'clickThroughRate', $pb.PbFieldType.OD)
     ..a<$core.double>(
         26, _omitFieldNames ? '' : 'conversions', $pb.PbFieldType.OD)
-    ..aOM<$537.Price>(27, _omitFieldNames ? '' : 'conversionValue',
-        subBuilder: $537.Price.create)
+    ..aOM<$540.Price>(27, _omitFieldNames ? '' : 'conversionValue',
+        subBuilder: $540.Price.create)
     ..a<$core.double>(
         28, _omitFieldNames ? '' : 'conversionRate', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
@@ -734,9 +734,9 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   ///
   ///  Condition on `date` is required in the `WHERE` clause.
   @$pb.TagNumber(2)
-  $327.Date get date => $_getN(1);
+  $329.Date get date => $_getN(1);
   @$pb.TagNumber(2)
-  set date($327.Date v) {
+  set date($329.Date v) {
     setField(2, v);
   }
 
@@ -745,14 +745,14 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDate() => clearField(2);
   @$pb.TagNumber(2)
-  $327.Date ensureDate() => $_ensure(1);
+  $329.Date ensureDate() => $_ensure(1);
 
   /// First day of the week (Monday) of the metrics date in the merchant
   /// timezone. Segment.
   @$pb.TagNumber(3)
-  $327.Date get week => $_getN(2);
+  $329.Date get week => $_getN(2);
   @$pb.TagNumber(3)
-  set week($327.Date v) {
+  set week($329.Date v) {
     setField(3, v);
   }
 
@@ -761,7 +761,7 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearWeek() => clearField(3);
   @$pb.TagNumber(3)
-  $327.Date ensureWeek() => $_ensure(2);
+  $329.Date ensureWeek() => $_ensure(2);
 
   ///  Code of the country where the customer is located at the time of the event.
   ///  Represented in the ISO 3166 format. Segment.
@@ -1098,9 +1098,9 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   ///
   ///  Available only for the `FREE` traffic source.
   @$pb.TagNumber(27)
-  $537.Price get conversionValue => $_getN(26);
+  $540.Price get conversionValue => $_getN(26);
   @$pb.TagNumber(27)
-  set conversionValue($537.Price v) {
+  set conversionValue($540.Price v) {
     setField(27, v);
   }
 
@@ -1109,7 +1109,7 @@ class ProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   void clearConversionValue() => clearField(27);
   @$pb.TagNumber(27)
-  $537.Price ensureConversionValue() => $_ensure(26);
+  $540.Price ensureConversionValue() => $_ensure(26);
 
   ///  Number of conversions divided by the number of clicks, reported on the
   ///  impression date. Metric.
@@ -1221,7 +1221,7 @@ class ProductView_ItemIssue_ItemIssueType extends $pb.GeneratedMessage {
 class ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
     extends $pb.GeneratedMessage {
   factory ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext({
-    $537.ReportingContext_ReportingContextEnum? reportingContext,
+    $540.ReportingContext_ReportingContextEnum? reportingContext,
     $core.Iterable<$core.String>? disapprovedCountries,
     $core.Iterable<$core.String>? demotedCountries,
   }) {
@@ -1255,12 +1255,12 @@ class ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
       createEmptyInstance: create)
-    ..e<$537.ReportingContext_ReportingContextEnum>(
+    ..e<$540.ReportingContext_ReportingContextEnum>(
         1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE,
-        defaultOrMaker: $537.ReportingContext_ReportingContextEnum
+        defaultOrMaker: $540.ReportingContext_ReportingContextEnum
             .REPORTING_CONTEXT_ENUM_UNSPECIFIED,
-        valueOf: $537.ReportingContext_ReportingContextEnum.valueOf,
-        enumValues: $537.ReportingContext_ReportingContextEnum.values)
+        valueOf: $540.ReportingContext_ReportingContextEnum.valueOf,
+        enumValues: $540.ReportingContext_ReportingContextEnum.values)
     ..pPS(2, _omitFieldNames ? '' : 'disapprovedCountries')
     ..pPS(3, _omitFieldNames ? '' : 'demotedCountries')
     ..hasRequiredFields = false;
@@ -1306,9 +1306,9 @@ class ProductView_ItemIssue_ItemIssueSeverity_IssueSeverityPerReportingContext
 
   /// Reporting context the issue applies to.
   @$pb.TagNumber(1)
-  $537.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
+  $540.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
   @$pb.TagNumber(1)
-  set reportingContext($537.ReportingContext_ReportingContextEnum v) {
+  set reportingContext($540.ReportingContext_ReportingContextEnum v) {
     setField(1, v);
   }
 
@@ -1574,19 +1574,19 @@ class ProductView extends $pb.GeneratedMessage {
     $core.String? productTypeL3,
     $core.String? productTypeL4,
     $core.String? productTypeL5,
-    $537.Price? price,
+    $540.Price? price,
     $core.String? condition,
     $core.String? availability,
     $core.String? shippingLabel,
     $core.Iterable<$core.String>? gtin,
     $core.String? itemGroupId,
     $core.String? thumbnailLink,
-    $302.Timestamp? creationTime,
-    $327.Date? expirationDate,
+    $304.Timestamp? creationTime,
+    $329.Date? expirationDate,
     ProductView_AggregatedReportingContextStatus?
         aggregatedReportingContextStatus,
     $core.Iterable<ProductView_ItemIssue>? itemIssues,
-    $537.Channel_ChannelEnum? channel,
+    $540.Channel_ChannelEnum? channel,
     ProductView_ClickPotential? clickPotential,
     $fixnum.Int64? clickPotentialRank,
   }) {
@@ -1713,18 +1713,18 @@ class ProductView extends $pb.GeneratedMessage {
     ..aOS(14, _omitFieldNames ? '' : 'productTypeL3')
     ..aOS(15, _omitFieldNames ? '' : 'productTypeL4')
     ..aOS(16, _omitFieldNames ? '' : 'productTypeL5')
-    ..aOM<$537.Price>(17, _omitFieldNames ? '' : 'price',
-        subBuilder: $537.Price.create)
+    ..aOM<$540.Price>(17, _omitFieldNames ? '' : 'price',
+        subBuilder: $540.Price.create)
     ..aOS(18, _omitFieldNames ? '' : 'condition')
     ..aOS(19, _omitFieldNames ? '' : 'availability')
     ..aOS(20, _omitFieldNames ? '' : 'shippingLabel')
     ..pPS(21, _omitFieldNames ? '' : 'gtin')
     ..aOS(22, _omitFieldNames ? '' : 'itemGroupId')
     ..aOS(23, _omitFieldNames ? '' : 'thumbnailLink')
-    ..aOM<$302.Timestamp>(24, _omitFieldNames ? '' : 'creationTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$327.Date>(25, _omitFieldNames ? '' : 'expirationDate',
-        subBuilder: $327.Date.create)
+    ..aOM<$304.Timestamp>(24, _omitFieldNames ? '' : 'creationTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$329.Date>(25, _omitFieldNames ? '' : 'expirationDate',
+        subBuilder: $329.Date.create)
     ..e<ProductView_AggregatedReportingContextStatus>(
         26,
         _omitFieldNames ? '' : 'aggregatedReportingContextStatus',
@@ -1736,11 +1736,11 @@ class ProductView extends $pb.GeneratedMessage {
     ..pc<ProductView_ItemIssue>(
         27, _omitFieldNames ? '' : 'itemIssues', $pb.PbFieldType.PM,
         subBuilder: ProductView_ItemIssue.create)
-    ..e<$537.Channel_ChannelEnum>(
+    ..e<$540.Channel_ChannelEnum>(
         28, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE,
-        defaultOrMaker: $537.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED,
-        valueOf: $537.Channel_ChannelEnum.valueOf,
-        enumValues: $537.Channel_ChannelEnum.values)
+        defaultOrMaker: $540.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED,
+        valueOf: $540.Channel_ChannelEnum.valueOf,
+        enumValues: $540.Channel_ChannelEnum.values)
     ..e<ProductView_ClickPotential>(
         29, _omitFieldNames ? '' : 'clickPotential', $pb.PbFieldType.OE,
         defaultOrMaker: ProductView_ClickPotential.CLICK_POTENTIAL_UNSPECIFIED,
@@ -1996,9 +1996,9 @@ class ProductView extends $pb.GeneratedMessage {
   /// Product price. Absent if the information about the price of the product is
   /// not available.
   @$pb.TagNumber(17)
-  $537.Price get price => $_getN(16);
+  $540.Price get price => $_getN(16);
   @$pb.TagNumber(17)
-  set price($537.Price v) {
+  set price($540.Price v) {
     setField(17, v);
   }
 
@@ -2007,7 +2007,7 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearPrice() => clearField(17);
   @$pb.TagNumber(17)
-  $537.Price ensurePrice() => $_ensure(16);
+  $540.Price ensurePrice() => $_ensure(16);
 
   /// [Condition](https://support.google.com/merchants/answer/6324469) of the
   /// product.
@@ -2085,9 +2085,9 @@ class ProductView extends $pb.GeneratedMessage {
 
   /// The time the merchant created the product in timestamp seconds.
   @$pb.TagNumber(24)
-  $302.Timestamp get creationTime => $_getN(23);
+  $304.Timestamp get creationTime => $_getN(23);
   @$pb.TagNumber(24)
-  set creationTime($302.Timestamp v) {
+  set creationTime($304.Timestamp v) {
     setField(24, v);
   }
 
@@ -2096,13 +2096,13 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   void clearCreationTime() => clearField(24);
   @$pb.TagNumber(24)
-  $302.Timestamp ensureCreationTime() => $_ensure(23);
+  $304.Timestamp ensureCreationTime() => $_ensure(23);
 
   /// Expiration date for the product, specified on insertion.
   @$pb.TagNumber(25)
-  $327.Date get expirationDate => $_getN(24);
+  $329.Date get expirationDate => $_getN(24);
   @$pb.TagNumber(25)
-  set expirationDate($327.Date v) {
+  set expirationDate($329.Date v) {
     setField(25, v);
   }
 
@@ -2111,7 +2111,7 @@ class ProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   void clearExpirationDate() => clearField(25);
   @$pb.TagNumber(25)
-  $327.Date ensureExpirationDate() => $_ensure(24);
+  $329.Date ensureExpirationDate() => $_ensure(24);
 
   /// Aggregated status.
   @$pb.TagNumber(26)
@@ -2140,9 +2140,9 @@ class ProductView extends $pb.GeneratedMessage {
 
   /// Channel of the product. Can be `ONLINE` or `LOCAL`.
   @$pb.TagNumber(28)
-  $537.Channel_ChannelEnum get channel => $_getN(27);
+  $540.Channel_ChannelEnum get channel => $_getN(27);
   @$pb.TagNumber(28)
-  set channel($537.Channel_ChannelEnum v) {
+  set channel($540.Channel_ChannelEnum v) {
     setField(28, v);
   }
 
@@ -2205,8 +2205,8 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
     $core.String? productTypeL3,
     $core.String? productTypeL4,
     $core.String? productTypeL5,
-    $537.Price? price,
-    $537.Price? benchmarkPrice,
+    $540.Price? price,
+    $540.Price? benchmarkPrice,
   }) {
     final $result = create();
     if (reportCountryCode != null) {
@@ -2290,10 +2290,10 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
     ..aOS(13, _omitFieldNames ? '' : 'productTypeL3')
     ..aOS(14, _omitFieldNames ? '' : 'productTypeL4')
     ..aOS(15, _omitFieldNames ? '' : 'productTypeL5')
-    ..aOM<$537.Price>(16, _omitFieldNames ? '' : 'price',
-        subBuilder: $537.Price.create)
-    ..aOM<$537.Price>(17, _omitFieldNames ? '' : 'benchmarkPrice',
-        subBuilder: $537.Price.create)
+    ..aOM<$540.Price>(16, _omitFieldNames ? '' : 'price',
+        subBuilder: $540.Price.create)
+    ..aOM<$540.Price>(17, _omitFieldNames ? '' : 'benchmarkPrice',
+        subBuilder: $540.Price.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2537,9 +2537,9 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
 
   /// Current price of the product.
   @$pb.TagNumber(16)
-  $537.Price get price => $_getN(15);
+  $540.Price get price => $_getN(15);
   @$pb.TagNumber(16)
-  set price($537.Price v) {
+  set price($540.Price v) {
     setField(16, v);
   }
 
@@ -2548,14 +2548,14 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   void clearPrice() => clearField(16);
   @$pb.TagNumber(16)
-  $537.Price ensurePrice() => $_ensure(15);
+  $540.Price ensurePrice() => $_ensure(15);
 
   /// Latest available price benchmark for the product's catalog in the benchmark
   /// country.
   @$pb.TagNumber(17)
-  $537.Price get benchmarkPrice => $_getN(16);
+  $540.Price get benchmarkPrice => $_getN(16);
   @$pb.TagNumber(17)
-  set benchmarkPrice($537.Price v) {
+  set benchmarkPrice($540.Price v) {
     setField(17, v);
   }
 
@@ -2564,7 +2564,7 @@ class PriceCompetitivenessProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearBenchmarkPrice() => clearField(17);
   @$pb.TagNumber(17)
-  $537.Price ensureBenchmarkPrice() => $_ensure(16);
+  $540.Price ensureBenchmarkPrice() => $_ensure(16);
 }
 
 ///  Fields available for query in `price_insights_product_view` table.
@@ -2590,8 +2590,8 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
     $core.String? productTypeL3,
     $core.String? productTypeL4,
     $core.String? productTypeL5,
-    $537.Price? price,
-    $537.Price? suggestedPrice,
+    $540.Price? price,
+    $540.Price? suggestedPrice,
     $core.double? predictedImpressionsChangeFraction,
     $core.double? predictedClicksChangeFraction,
     $core.double? predictedConversionsChangeFraction,
@@ -2689,10 +2689,10 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
     ..aOS(12, _omitFieldNames ? '' : 'productTypeL3')
     ..aOS(13, _omitFieldNames ? '' : 'productTypeL4')
     ..aOS(14, _omitFieldNames ? '' : 'productTypeL5')
-    ..aOM<$537.Price>(15, _omitFieldNames ? '' : 'price',
-        subBuilder: $537.Price.create)
-    ..aOM<$537.Price>(16, _omitFieldNames ? '' : 'suggestedPrice',
-        subBuilder: $537.Price.create)
+    ..aOM<$540.Price>(15, _omitFieldNames ? '' : 'price',
+        subBuilder: $540.Price.create)
+    ..aOM<$540.Price>(16, _omitFieldNames ? '' : 'suggestedPrice',
+        subBuilder: $540.Price.create)
     ..a<$core.double>(
         17,
         _omitFieldNames ? '' : 'predictedImpressionsChangeFraction',
@@ -2936,9 +2936,9 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
 
   /// Current price of the product.
   @$pb.TagNumber(15)
-  $537.Price get price => $_getN(14);
+  $540.Price get price => $_getN(14);
   @$pb.TagNumber(15)
-  set price($537.Price v) {
+  set price($540.Price v) {
     setField(15, v);
   }
 
@@ -2947,13 +2947,13 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   void clearPrice() => clearField(15);
   @$pb.TagNumber(15)
-  $537.Price ensurePrice() => $_ensure(14);
+  $540.Price ensurePrice() => $_ensure(14);
 
   /// Latest suggested price for the product.
   @$pb.TagNumber(16)
-  $537.Price get suggestedPrice => $_getN(15);
+  $540.Price get suggestedPrice => $_getN(15);
   @$pb.TagNumber(16)
-  set suggestedPrice($537.Price v) {
+  set suggestedPrice($540.Price v) {
     setField(16, v);
   }
 
@@ -2962,7 +2962,7 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   void clearSuggestedPrice() => clearField(16);
   @$pb.TagNumber(16)
-  $537.Price ensureSuggestedPrice() => $_ensure(15);
+  $540.Price ensureSuggestedPrice() => $_ensure(15);
 
   /// Predicted change in impressions as a fraction after introducing the
   /// suggested price compared to current active price. For example, 0.05 is a 5%
@@ -3034,7 +3034,7 @@ class PriceInsightsProductView extends $pb.GeneratedMessage {
 ///  query.
 class BestSellersProductClusterView extends $pb.GeneratedMessage {
   factory BestSellersProductClusterView({
-    $327.Date? reportDate,
+    $329.Date? reportDate,
     ReportGranularity_ReportGranularityEnum? reportGranularity,
     $core.String? reportCountryCode,
     $fixnum.Int64? reportCategoryId,
@@ -3127,8 +3127,8 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'reportDate',
-        subBuilder: $327.Date.create)
+    ..aOM<$329.Date>(1, _omitFieldNames ? '' : 'reportDate',
+        subBuilder: $329.Date.create)
     ..e<ReportGranularity_ReportGranularityEnum>(
         2, _omitFieldNames ? '' : 'reportGranularity', $pb.PbFieldType.OE,
         defaultOrMaker: ReportGranularity_ReportGranularityEnum
@@ -3216,9 +3216,9 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   ///  not specified in the query, the latest available weekly or monthly report
   ///  is returned.
   @$pb.TagNumber(1)
-  $327.Date get reportDate => $_getN(0);
+  $329.Date get reportDate => $_getN(0);
   @$pb.TagNumber(1)
-  set reportDate($327.Date v) {
+  set reportDate($329.Date v) {
     setField(1, v);
   }
 
@@ -3227,7 +3227,7 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearReportDate() => clearField(1);
   @$pb.TagNumber(1)
-  $327.Date ensureReportDate() => $_ensure(0);
+  $329.Date ensureReportDate() => $_ensure(0);
 
   ///  Granularity of the report. The ranking can be done over a week or a month
   ///  timeframe.
@@ -3505,7 +3505,7 @@ class BestSellersProductClusterView extends $pb.GeneratedMessage {
 ///  query.
 class BestSellersBrandView extends $pb.GeneratedMessage {
   factory BestSellersBrandView({
-    $327.Date? reportDate,
+    $329.Date? reportDate,
     ReportGranularity_ReportGranularityEnum? reportGranularity,
     $core.String? reportCountryCode,
     $fixnum.Int64? reportCategoryId,
@@ -3562,8 +3562,8 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'reportDate',
-        subBuilder: $327.Date.create)
+    ..aOM<$329.Date>(1, _omitFieldNames ? '' : 'reportDate',
+        subBuilder: $329.Date.create)
     ..e<ReportGranularity_ReportGranularityEnum>(
         2, _omitFieldNames ? '' : 'reportGranularity', $pb.PbFieldType.OE,
         defaultOrMaker: ReportGranularity_ReportGranularityEnum
@@ -3629,9 +3629,9 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   ///  not specified in the query, the latest available weekly or monthly report
   ///  is returned.
   @$pb.TagNumber(1)
-  $327.Date get reportDate => $_getN(0);
+  $329.Date get reportDate => $_getN(0);
   @$pb.TagNumber(1)
-  set reportDate($327.Date v) {
+  set reportDate($329.Date v) {
     setField(1, v);
   }
 
@@ -3640,7 +3640,7 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearReportDate() => clearField(1);
   @$pb.TagNumber(1)
-  $327.Date ensureReportDate() => $_ensure(0);
+  $329.Date ensureReportDate() => $_ensure(0);
 
   ///  Granularity of the report. The ranking can be done over a week or a month
   ///  timeframe.
@@ -3793,8 +3793,8 @@ class BestSellersBrandView extends $pb.GeneratedMessage {
 ///  query.
 class NonProductPerformanceView extends $pb.GeneratedMessage {
   factory NonProductPerformanceView({
-    $327.Date? date,
-    $327.Date? week,
+    $329.Date? date,
+    $329.Date? week,
     $fixnum.Int64? clicks,
     $fixnum.Int64? impressions,
     $core.double? clickThroughRate,
@@ -3830,10 +3830,10 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date',
-        subBuilder: $327.Date.create)
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'week',
-        subBuilder: $327.Date.create)
+    ..aOM<$329.Date>(1, _omitFieldNames ? '' : 'date',
+        subBuilder: $329.Date.create)
+    ..aOM<$329.Date>(2, _omitFieldNames ? '' : 'week',
+        subBuilder: $329.Date.create)
     ..aInt64(3, _omitFieldNames ? '' : 'clicks')
     ..aInt64(4, _omitFieldNames ? '' : 'impressions')
     ..a<$core.double>(
@@ -3869,9 +3869,9 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
   ///
   ///  Condition on `date` is required in the `WHERE` clause.
   @$pb.TagNumber(1)
-  $327.Date get date => $_getN(0);
+  $329.Date get date => $_getN(0);
   @$pb.TagNumber(1)
-  set date($327.Date v) {
+  set date($329.Date v) {
     setField(1, v);
   }
 
@@ -3880,14 +3880,14 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearDate() => clearField(1);
   @$pb.TagNumber(1)
-  $327.Date ensureDate() => $_ensure(0);
+  $329.Date ensureDate() => $_ensure(0);
 
   /// First day of the week (Monday) of the metrics date in the merchant
   /// timezone. Segment.
   @$pb.TagNumber(2)
-  $327.Date get week => $_getN(1);
+  $329.Date get week => $_getN(1);
   @$pb.TagNumber(2)
-  set week($327.Date v) {
+  set week($329.Date v) {
     setField(2, v);
   }
 
@@ -3896,7 +3896,7 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearWeek() => clearField(2);
   @$pb.TagNumber(2)
-  $327.Date ensureWeek() => $_ensure(1);
+  $329.Date ensureWeek() => $_ensure(1);
 
   /// Number of clicks on images and online store links leading to your
   /// non-product pages. Metric.
@@ -3952,7 +3952,7 @@ class NonProductPerformanceView extends $pb.GeneratedMessage {
 ///  query.
 class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   factory CompetitiveVisibilityCompetitorView({
-    $327.Date? date,
+    $329.Date? date,
     $core.String? domain,
     $core.bool? isYourDomain,
     $core.String? reportCountryCode,
@@ -4014,8 +4014,8 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date',
-        subBuilder: $327.Date.create)
+    ..aOM<$329.Date>(1, _omitFieldNames ? '' : 'date',
+        subBuilder: $329.Date.create)
     ..aOS(2, _omitFieldNames ? '' : 'domain')
     ..aOB(3, _omitFieldNames ? '' : 'isYourDomain')
     ..aOS(4, _omitFieldNames ? '' : 'reportCountryCode')
@@ -4069,9 +4069,9 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   ///
   ///  A condition on `date` is required in the `WHERE` clause.
   @$pb.TagNumber(1)
-  $327.Date get date => $_getN(0);
+  $329.Date get date => $_getN(0);
   @$pb.TagNumber(1)
-  set date($327.Date v) {
+  set date($329.Date v) {
     setField(1, v);
   }
 
@@ -4080,7 +4080,7 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearDate() => clearField(1);
   @$pb.TagNumber(1)
-  $327.Date ensureDate() => $_ensure(0);
+  $329.Date ensureDate() => $_ensure(0);
 
   ///  Domain of your competitor or your domain, if 'is_your_domain' is true.
   ///
@@ -4265,7 +4265,7 @@ class CompetitiveVisibilityCompetitorView extends $pb.GeneratedMessage {
 ///  query.
 class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   factory CompetitiveVisibilityTopMerchantView({
-    $327.Date? date,
+    $329.Date? date,
     $core.String? domain,
     $core.bool? isYourDomain,
     $core.String? reportCountryCode,
@@ -4323,8 +4323,8 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date',
-        subBuilder: $327.Date.create)
+    ..aOM<$329.Date>(1, _omitFieldNames ? '' : 'date',
+        subBuilder: $329.Date.create)
     ..aOS(2, _omitFieldNames ? '' : 'domain')
     ..aOB(3, _omitFieldNames ? '' : 'isYourDomain')
     ..aOS(4, _omitFieldNames ? '' : 'reportCountryCode')
@@ -4377,9 +4377,9 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   ///  Cannot be selected in the `SELECT` clause. A condition on `date` is
   ///  required in the `WHERE` clause.
   @$pb.TagNumber(1)
-  $327.Date get date => $_getN(0);
+  $329.Date get date => $_getN(0);
   @$pb.TagNumber(1)
-  set date($327.Date v) {
+  set date($329.Date v) {
     setField(1, v);
   }
 
@@ -4388,7 +4388,7 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearDate() => clearField(1);
   @$pb.TagNumber(1)
-  $327.Date ensureDate() => $_ensure(0);
+  $329.Date ensureDate() => $_ensure(0);
 
   ///  Domain of your competitor or your domain, if 'is_your_domain' is true.
   ///
@@ -4552,7 +4552,7 @@ class CompetitiveVisibilityTopMerchantView extends $pb.GeneratedMessage {
 ///  query.
 class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
   factory CompetitiveVisibilityBenchmarkView({
-    $327.Date? date,
+    $329.Date? date,
     $core.String? reportCountryCode,
     $fixnum.Int64? reportCategoryId,
     TrafficSource_TrafficSourceEnum? trafficSource,
@@ -4594,8 +4594,8 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.shopping.merchant.reports.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date',
-        subBuilder: $327.Date.create)
+    ..aOM<$329.Date>(1, _omitFieldNames ? '' : 'date',
+        subBuilder: $329.Date.create)
     ..aOS(2, _omitFieldNames ? '' : 'reportCountryCode')
     ..aInt64(3, _omitFieldNames ? '' : 'reportCategoryId')
     ..e<TrafficSource_TrafficSourceEnum>(
@@ -4645,9 +4645,9 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
   ///  Required in the `SELECT` clause. A condition on `date` is required in the
   ///  `WHERE` clause.
   @$pb.TagNumber(1)
-  $327.Date get date => $_getN(0);
+  $329.Date get date => $_getN(0);
   @$pb.TagNumber(1)
-  set date($327.Date v) {
+  set date($329.Date v) {
     setField(1, v);
   }
 
@@ -4656,7 +4656,7 @@ class CompetitiveVisibilityBenchmarkView extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearDate() => clearField(1);
   @$pb.TagNumber(1)
-  $327.Date ensureDate() => $_ensure(0);
+  $329.Date ensureDate() => $_ensure(0);
 
   ///  Country where impressions appeared.
   ///

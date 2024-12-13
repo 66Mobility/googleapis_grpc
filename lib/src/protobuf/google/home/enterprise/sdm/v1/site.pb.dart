@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $261;
+import '../../../../protobuf/struct.pb.dart' as $263;
 
 /// Structure resource represents an instance of enterprise managed home or hotel
 /// room.
 class Structure extends $pb.GeneratedMessage {
   factory Structure({
     $core.String? name,
-    $261.Struct? traits,
+    $263.Struct? traits,
   }) {
     final $result = create();
     if (name != null) {
@@ -45,8 +45,8 @@ class Structure extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'traits',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'traits',
+        subBuilder: $263.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -86,9 +86,9 @@ class Structure extends $pb.GeneratedMessage {
 
   /// Structure traits.
   @$pb.TagNumber(2)
-  $261.Struct get traits => $_getN(1);
+  $263.Struct get traits => $_getN(1);
   @$pb.TagNumber(2)
-  set traits($261.Struct v) {
+  set traits($263.Struct v) {
     setField(2, v);
   }
 
@@ -97,7 +97,7 @@ class Structure extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearTraits() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Struct ensureTraits() => $_ensure(1);
+  $263.Struct ensureTraits() => $_ensure(1);
 }
 
 /// Room resource represents an instance of sub-space within a structure such as
@@ -105,7 +105,7 @@ class Structure extends $pb.GeneratedMessage {
 class Room extends $pb.GeneratedMessage {
   factory Room({
     $core.String? name,
-    $261.Struct? traits,
+    $263.Struct? traits,
   }) {
     final $result = create();
     if (name != null) {
@@ -130,8 +130,8 @@ class Room extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'traits',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'traits',
+        subBuilder: $263.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -171,9 +171,9 @@ class Room extends $pb.GeneratedMessage {
 
   /// Room traits.
   @$pb.TagNumber(2)
-  $261.Struct get traits => $_getN(1);
+  $263.Struct get traits => $_getN(1);
   @$pb.TagNumber(2)
-  set traits($261.Struct v) {
+  set traits($263.Struct v) {
     setField(2, v);
   }
 
@@ -182,7 +182,7 @@ class Room extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearTraits() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Struct ensureTraits() => $_ensure(1);
+  $263.Struct ensureTraits() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

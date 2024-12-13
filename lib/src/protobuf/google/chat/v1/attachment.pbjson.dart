@@ -17,7 +17,7 @@ import 'dart:typed_data' as $typed_data;
 const Attachment$json = {
   '1': 'Attachment',
   '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {'1': 'content_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'contentName'},
     {'1': 'content_type', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'contentType'},
     {
@@ -26,6 +26,7 @@ const Attachment$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.AttachmentDataRef',
+      '8': {},
       '9': 0,
       '10': 'attachmentDataRef'
     },
@@ -77,17 +78,17 @@ const Attachment_Source$json = {
 
 /// Descriptor for `Attachment`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List attachmentDescriptor = $convert.base64Decode(
-    'CgpBdHRhY2htZW50EhIKBG5hbWUYASABKAlSBG5hbWUSJgoMY29udGVudF9uYW1lGAIgASgJQg'
-    'PgQQNSC2NvbnRlbnROYW1lEiYKDGNvbnRlbnRfdHlwZRgDIAEoCUID4EEDUgtjb250ZW50VHlw'
-    'ZRJTChNhdHRhY2htZW50X2RhdGFfcmVmGAQgASgLMiEuZ29vZ2xlLmNoYXQudjEuQXR0YWNobW'
-    'VudERhdGFSZWZIAFIRYXR0YWNobWVudERhdGFSZWYSSQoOZHJpdmVfZGF0YV9yZWYYByABKAsy'
-    'HC5nb29nbGUuY2hhdC52MS5Ecml2ZURhdGFSZWZCA+BBA0gAUgxkcml2ZURhdGFSZWYSKAoNdG'
-    'h1bWJuYWlsX3VyaRgFIAEoCUID4EEDUgx0aHVtYm5haWxVcmkSJgoMZG93bmxvYWRfdXJpGAYg'
-    'ASgJQgPgQQNSC2Rvd25sb2FkVXJpEj4KBnNvdXJjZRgJIAEoDjIhLmdvb2dsZS5jaGF0LnYxLk'
-    'F0dGFjaG1lbnQuU291cmNlQgPgQQNSBnNvdXJjZSJGCgZTb3VyY2USFgoSU09VUkNFX1VOU1BF'
-    'Q0lGSUVEEAASDgoKRFJJVkVfRklMRRABEhQKEFVQTE9BREVEX0NPTlRFTlQQAjpf6kFcCh5jaG'
-    'F0Lmdvb2dsZWFwaXMuY29tL0F0dGFjaG1lbnQSOnNwYWNlcy97c3BhY2V9L21lc3NhZ2VzL3tt'
-    'ZXNzYWdlfS9hdHRhY2htZW50cy97YXR0YWNobWVudH1CCgoIZGF0YV9yZWY=');
+    'CgpBdHRhY2htZW50EhcKBG5hbWUYASABKAlCA+BBAVIEbmFtZRImCgxjb250ZW50X25hbWUYAi'
+    'ABKAlCA+BBA1ILY29udGVudE5hbWUSJgoMY29udGVudF90eXBlGAMgASgJQgPgQQNSC2NvbnRl'
+    'bnRUeXBlElgKE2F0dGFjaG1lbnRfZGF0YV9yZWYYBCABKAsyIS5nb29nbGUuY2hhdC52MS5BdH'
+    'RhY2htZW50RGF0YVJlZkID4EEBSABSEWF0dGFjaG1lbnREYXRhUmVmEkkKDmRyaXZlX2RhdGFf'
+    'cmVmGAcgASgLMhwuZ29vZ2xlLmNoYXQudjEuRHJpdmVEYXRhUmVmQgPgQQNIAFIMZHJpdmVEYX'
+    'RhUmVmEigKDXRodW1ibmFpbF91cmkYBSABKAlCA+BBA1IMdGh1bWJuYWlsVXJpEiYKDGRvd25s'
+    'b2FkX3VyaRgGIAEoCUID4EEDUgtkb3dubG9hZFVyaRI+CgZzb3VyY2UYCSABKA4yIS5nb29nbG'
+    'UuY2hhdC52MS5BdHRhY2htZW50LlNvdXJjZUID4EEDUgZzb3VyY2UiRgoGU291cmNlEhYKElNP'
+    'VVJDRV9VTlNQRUNJRklFRBAAEg4KCkRSSVZFX0ZJTEUQARIUChBVUExPQURFRF9DT05URU5UEA'
+    'I6X+pBXAoeY2hhdC5nb29nbGVhcGlzLmNvbS9BdHRhY2htZW50EjpzcGFjZXMve3NwYWNlfS9t'
+    'ZXNzYWdlcy97bWVzc2FnZX0vYXR0YWNobWVudHMve2F0dGFjaG1lbnR9QgoKCGRhdGFfcmVm');
 
 @$core.Deprecated('Use driveDataRefDescriptor instead')
 const DriveDataRef$json = {
@@ -105,12 +106,20 @@ final $typed_data.Uint8List driveDataRefDescriptor = $convert.base64Decode(
 const AttachmentDataRef$json = {
   '1': 'AttachmentDataRef',
   '2': [
-    {'1': 'resource_name', '3': 1, '4': 1, '5': 9, '10': 'resourceName'},
+    {
+      '1': 'resource_name',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {},
+      '10': 'resourceName'
+    },
     {
       '1': 'attachment_upload_token',
       '3': 2,
       '4': 1,
       '5': 9,
+      '8': {},
       '10': 'attachmentUploadToken'
     },
   ],
@@ -118,9 +127,9 @@ const AttachmentDataRef$json = {
 
 /// Descriptor for `AttachmentDataRef`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List attachmentDataRefDescriptor = $convert.base64Decode(
-    'ChFBdHRhY2htZW50RGF0YVJlZhIjCg1yZXNvdXJjZV9uYW1lGAEgASgJUgxyZXNvdXJjZU5hbW'
-    'USNgoXYXR0YWNobWVudF91cGxvYWRfdG9rZW4YAiABKAlSFWF0dGFjaG1lbnRVcGxvYWRUb2tl'
-    'bg==');
+    'ChFBdHRhY2htZW50RGF0YVJlZhIoCg1yZXNvdXJjZV9uYW1lGAEgASgJQgPgQQFSDHJlc291cm'
+    'NlTmFtZRI7ChdhdHRhY2htZW50X3VwbG9hZF90b2tlbhgCIAEoCUID4EEBUhVhdHRhY2htZW50'
+    'VXBsb2FkVG9rZW4=');
 
 @$core.Deprecated('Use getAttachmentRequestDescriptor instead')
 const GetAttachmentRequest$json = {

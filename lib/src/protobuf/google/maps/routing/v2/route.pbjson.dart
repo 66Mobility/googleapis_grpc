@@ -92,6 +92,14 @@ const Route$json = {
       '10': 'localizedValues'
     },
     {'1': 'route_token', '3': 12, '4': 1, '5': 9, '10': 'routeToken'},
+    {
+      '1': 'polyline_details',
+      '3': 14,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routing.v2.PolylineDetails',
+      '10': 'polylineDetails'
+    },
   ],
   '3': [Route_RouteLocalizedValues$json],
 };
@@ -150,12 +158,14 @@ final $typed_data.Uint8List routeDescriptor = $convert.base64Decode(
     'dmlzb3J5ElEKJW9wdGltaXplZF9pbnRlcm1lZGlhdGVfd2F5cG9pbnRfaW5kZXgYCiADKAVSIm'
     '9wdGltaXplZEludGVybWVkaWF0ZVdheXBvaW50SW5kZXgSXQoQbG9jYWxpemVkX3ZhbHVlcxgL'
     'IAEoCzIyLmdvb2dsZS5tYXBzLnJvdXRpbmcudjIuUm91dGUuUm91dGVMb2NhbGl6ZWRWYWx1ZX'
-    'NSD2xvY2FsaXplZFZhbHVlcxIfCgtyb3V0ZV90b2tlbhgMIAEoCVIKcm91dGVUb2tlbhqKAgoU'
-    'Um91dGVMb2NhbGl6ZWRWYWx1ZXMSNgoIZGlzdGFuY2UYASABKAsyGi5nb29nbGUudHlwZS5Mb2'
-    'NhbGl6ZWRUZXh0UghkaXN0YW5jZRI2CghkdXJhdGlvbhgCIAEoCzIaLmdvb2dsZS50eXBlLkxv'
-    'Y2FsaXplZFRleHRSCGR1cmF0aW9uEkMKD3N0YXRpY19kdXJhdGlvbhgDIAEoCzIaLmdvb2dsZS'
-    '50eXBlLkxvY2FsaXplZFRleHRSDnN0YXRpY0R1cmF0aW9uEj0KDHRyYW5zaXRfZmFyZRgEIAEo'
-    'CzIaLmdvb2dsZS50eXBlLkxvY2FsaXplZFRleHRSC3RyYW5zaXRGYXJl');
+    'NSD2xvY2FsaXplZFZhbHVlcxIfCgtyb3V0ZV90b2tlbhgMIAEoCVIKcm91dGVUb2tlbhJSChBw'
+    'b2x5bGluZV9kZXRhaWxzGA4gASgLMicuZ29vZ2xlLm1hcHMucm91dGluZy52Mi5Qb2x5bGluZU'
+    'RldGFpbHNSD3BvbHlsaW5lRGV0YWlscxqKAgoUUm91dGVMb2NhbGl6ZWRWYWx1ZXMSNgoIZGlz'
+    'dGFuY2UYASABKAsyGi5nb29nbGUudHlwZS5Mb2NhbGl6ZWRUZXh0UghkaXN0YW5jZRI2CghkdX'
+    'JhdGlvbhgCIAEoCzIaLmdvb2dsZS50eXBlLkxvY2FsaXplZFRleHRSCGR1cmF0aW9uEkMKD3N0'
+    'YXRpY19kdXJhdGlvbhgDIAEoCzIaLmdvb2dsZS50eXBlLkxvY2FsaXplZFRleHRSDnN0YXRpY0'
+    'R1cmF0aW9uEj0KDHRyYW5zaXRfZmFyZRgEIAEoCzIaLmdvb2dsZS50eXBlLkxvY2FsaXplZFRl'
+    'eHRSC3RyYW5zaXRGYXJl');
 
 @$core.Deprecated('Use routeTravelAdvisoryDescriptor instead')
 const RouteTravelAdvisory$json = {

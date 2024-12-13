@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../extension_point.pb.dart' as $396;
+import '../extension_point.pb.dart' as $398;
 import 'calendar_addon_manifest.pbenum.dart';
 
 export 'calendar_addon_manifest.pbenum.dart';
@@ -23,7 +23,7 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   factory CalendarAddOnManifest({
     $core.Iterable<ConferenceSolution>? conferenceSolution,
     $core.String? createSettingsUrlFunction,
-    $396.HomepageExtensionPoint? homepageTrigger,
+    $398.HomepageExtensionPoint? homepageTrigger,
     CalendarExtensionPoint? eventOpenTrigger,
     CalendarExtensionPoint? eventUpdateTrigger,
     CalendarAddOnManifest_EventAccess? currentEventAccess,
@@ -66,9 +66,9 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
         3, _omitFieldNames ? '' : 'conferenceSolution', $pb.PbFieldType.PM,
         subBuilder: ConferenceSolution.create)
     ..aOS(5, _omitFieldNames ? '' : 'createSettingsUrlFunction')
-    ..aOM<$396.HomepageExtensionPoint>(
+    ..aOM<$398.HomepageExtensionPoint>(
         6, _omitFieldNames ? '' : 'homepageTrigger',
-        subBuilder: $396.HomepageExtensionPoint.create)
+        subBuilder: $398.HomepageExtensionPoint.create)
     ..aOM<CalendarExtensionPoint>(10, _omitFieldNames ? '' : 'eventOpenTrigger',
         subBuilder: CalendarExtensionPoint.create)
     ..aOM<CalendarExtensionPoint>(
@@ -131,9 +131,9 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   ///  If present, this overrides the configuration from
   ///  `addOns.common.homepageTrigger`.
   @$pb.TagNumber(6)
-  $396.HomepageExtensionPoint get homepageTrigger => $_getN(2);
+  $398.HomepageExtensionPoint get homepageTrigger => $_getN(2);
   @$pb.TagNumber(6)
-  set homepageTrigger($396.HomepageExtensionPoint v) {
+  set homepageTrigger($398.HomepageExtensionPoint v) {
     setField(6, v);
   }
 
@@ -142,7 +142,7 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearHomepageTrigger() => clearField(6);
   @$pb.TagNumber(6)
-  $396.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(2);
+  $398.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(2);
 
   /// An endpoint to trigger when an event is opened (viewed/edited).
   @$pb.TagNumber(10)

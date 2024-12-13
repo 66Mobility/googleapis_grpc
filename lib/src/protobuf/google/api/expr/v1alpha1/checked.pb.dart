@@ -15,9 +15,9 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/empty.pb.dart' as $3;
-import '../../../protobuf/struct.pbenum.dart' as $261;
+import '../../../protobuf/struct.pbenum.dart' as $263;
 import 'checked.pbenum.dart';
-import 'syntax.pb.dart' as $341;
+import 'syntax.pb.dart' as $343;
 
 export 'checked.pbenum.dart';
 
@@ -26,8 +26,8 @@ class CheckedExpr extends $pb.GeneratedMessage {
   factory CheckedExpr({
     $core.Map<$fixnum.Int64, Reference>? referenceMap,
     $core.Map<$fixnum.Int64, Type>? typeMap,
-    $341.Expr? expr,
-    $341.SourceInfo? sourceInfo,
+    $343.Expr? expr,
+    $343.SourceInfo? sourceInfo,
     $core.String? exprVersion,
   }) {
     final $result = create();
@@ -75,10 +75,10 @@ class CheckedExpr extends $pb.GeneratedMessage {
         valueCreator: Type.create,
         valueDefaultOrMaker: Type.getDefault,
         packageName: const $pb.PackageName('google.api.expr.v1alpha1'))
-    ..aOM<$341.Expr>(4, _omitFieldNames ? '' : 'expr',
-        subBuilder: $341.Expr.create)
-    ..aOM<$341.SourceInfo>(5, _omitFieldNames ? '' : 'sourceInfo',
-        subBuilder: $341.SourceInfo.create)
+    ..aOM<$343.Expr>(4, _omitFieldNames ? '' : 'expr',
+        subBuilder: $343.Expr.create)
+    ..aOM<$343.SourceInfo>(5, _omitFieldNames ? '' : 'sourceInfo',
+        subBuilder: $343.SourceInfo.create)
     ..aOS(6, _omitFieldNames ? '' : 'exprVersion')
     ..hasRequiredFields = false;
 
@@ -133,9 +133,9 @@ class CheckedExpr extends $pb.GeneratedMessage {
   /// The checked expression. Semantically equivalent to the parsed `expr`, but
   /// may have structural differences.
   @$pb.TagNumber(4)
-  $341.Expr get expr => $_getN(2);
+  $343.Expr get expr => $_getN(2);
   @$pb.TagNumber(4)
-  set expr($341.Expr v) {
+  set expr($343.Expr v) {
     setField(4, v);
   }
 
@@ -144,14 +144,14 @@ class CheckedExpr extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearExpr() => clearField(4);
   @$pb.TagNumber(4)
-  $341.Expr ensureExpr() => $_ensure(2);
+  $343.Expr ensureExpr() => $_ensure(2);
 
   /// The source info derived from input that generated the parsed `expr` and
   /// any optimizations made during the type-checking pass.
   @$pb.TagNumber(5)
-  $341.SourceInfo get sourceInfo => $_getN(3);
+  $343.SourceInfo get sourceInfo => $_getN(3);
   @$pb.TagNumber(5)
-  set sourceInfo($341.SourceInfo v) {
+  set sourceInfo($343.SourceInfo v) {
     setField(5, v);
   }
 
@@ -160,7 +160,7 @@ class CheckedExpr extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearSourceInfo() => clearField(5);
   @$pb.TagNumber(5)
-  $341.SourceInfo ensureSourceInfo() => $_ensure(3);
+  $343.SourceInfo ensureSourceInfo() => $_ensure(3);
 
   ///  The expr version indicates the major / minor version number of the `expr`
   ///  representation.
@@ -505,7 +505,7 @@ enum Type_TypeKind {
 class Type extends $pb.GeneratedMessage {
   factory Type({
     $3.Empty? dyn,
-    $261.NullValue? null_2,
+    $263.NullValue? null_2,
     Type_PrimitiveType? primitive,
     Type_PrimitiveType? wrapper,
     Type_WellKnownType? wellKnown,
@@ -592,10 +592,10 @@ class Type extends $pb.GeneratedMessage {
     ..oo(0, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14])
     ..aOM<$3.Empty>(1, _omitFieldNames ? '' : 'dyn',
         subBuilder: $3.Empty.create)
-    ..e<$261.NullValue>(2, _omitFieldNames ? '' : 'null', $pb.PbFieldType.OE,
-        defaultOrMaker: $261.NullValue.NULL_VALUE,
-        valueOf: $261.NullValue.valueOf,
-        enumValues: $261.NullValue.values)
+    ..e<$263.NullValue>(2, _omitFieldNames ? '' : 'null', $pb.PbFieldType.OE,
+        defaultOrMaker: $263.NullValue.NULL_VALUE,
+        valueOf: $263.NullValue.valueOf,
+        enumValues: $263.NullValue.values)
     ..e<Type_PrimitiveType>(
         3, _omitFieldNames ? '' : 'primitive', $pb.PbFieldType.OE,
         defaultOrMaker: Type_PrimitiveType.PRIMITIVE_TYPE_UNSPECIFIED,
@@ -667,9 +667,9 @@ class Type extends $pb.GeneratedMessage {
 
   /// Null value.
   @$pb.TagNumber(2)
-  $261.NullValue get null_2 => $_getN(1);
+  $263.NullValue get null_2 => $_getN(1);
   @$pb.TagNumber(2)
-  set null_2($261.NullValue v) {
+  set null_2($263.NullValue v) {
     setField(2, v);
   }
 
@@ -857,7 +857,7 @@ class Type extends $pb.GeneratedMessage {
 class Decl_IdentDecl extends $pb.GeneratedMessage {
   factory Decl_IdentDecl({
     Type? type,
-    $341.Constant? value,
+    $343.Constant? value,
     $core.String? doc,
   }) {
     final $result = create();
@@ -886,8 +886,8 @@ class Decl_IdentDecl extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.api.expr.v1alpha1'),
       createEmptyInstance: create)
     ..aOM<Type>(1, _omitFieldNames ? '' : 'type', subBuilder: Type.create)
-    ..aOM<$341.Constant>(2, _omitFieldNames ? '' : 'value',
-        subBuilder: $341.Constant.create)
+    ..aOM<$343.Constant>(2, _omitFieldNames ? '' : 'value',
+        subBuilder: $343.Constant.create)
     ..aOS(3, _omitFieldNames ? '' : 'doc')
     ..hasRequiredFields = false;
 
@@ -932,9 +932,9 @@ class Decl_IdentDecl extends $pb.GeneratedMessage {
   /// The constant value of the identifier. If not specified, the identifier
   /// must be supplied at evaluation time.
   @$pb.TagNumber(2)
-  $341.Constant get value => $_getN(1);
+  $343.Constant get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($341.Constant v) {
+  set value($343.Constant v) {
     setField(2, v);
   }
 
@@ -943,7 +943,7 @@ class Decl_IdentDecl extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $341.Constant ensureValue() => $_ensure(1);
+  $343.Constant ensureValue() => $_ensure(1);
 
   /// Documentation string for the identifier.
   @$pb.TagNumber(3)
@@ -1326,7 +1326,7 @@ class Reference extends $pb.GeneratedMessage {
   factory Reference({
     $core.String? name,
     $core.Iterable<$core.String>? overloadId,
-    $341.Constant? value,
+    $343.Constant? value,
   }) {
     final $result = create();
     if (name != null) {
@@ -1355,8 +1355,8 @@ class Reference extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(3, _omitFieldNames ? '' : 'overloadId')
-    ..aOM<$341.Constant>(4, _omitFieldNames ? '' : 'value',
-        subBuilder: $341.Constant.create)
+    ..aOM<$343.Constant>(4, _omitFieldNames ? '' : 'value',
+        subBuilder: $343.Constant.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1408,9 +1408,9 @@ class Reference extends $pb.GeneratedMessage {
   /// For references to constants, this may contain the value of the
   /// constant if known at compile time.
   @$pb.TagNumber(4)
-  $341.Constant get value => $_getN(2);
+  $343.Constant get value => $_getN(2);
   @$pb.TagNumber(4)
-  set value($341.Constant v) {
+  set value($343.Constant v) {
     setField(4, v);
   }
 
@@ -1419,7 +1419,7 @@ class Reference extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearValue() => clearField(4);
   @$pb.TagNumber(4)
-  $341.Constant ensureValue() => $_ensure(2);
+  $343.Constant ensureValue() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/money.pb.dart' as $465;
+import '../../../type/money.pb.dart' as $467;
 
 /// The price range associated with a Place. `end_price` could be unset, which
 /// indicates a range without upper bound (e.g. "More than $100").
 class PriceRange extends $pb.GeneratedMessage {
   factory PriceRange({
-    $465.Money? startPrice,
-    $465.Money? endPrice,
+    $467.Money? startPrice,
+    $467.Money? endPrice,
   }) {
     final $result = create();
     if (startPrice != null) {
@@ -44,10 +44,10 @@ class PriceRange extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
-    ..aOM<$465.Money>(1, _omitFieldNames ? '' : 'startPrice',
-        subBuilder: $465.Money.create)
-    ..aOM<$465.Money>(2, _omitFieldNames ? '' : 'endPrice',
-        subBuilder: $465.Money.create)
+    ..aOM<$467.Money>(1, _omitFieldNames ? '' : 'startPrice',
+        subBuilder: $467.Money.create)
+    ..aOM<$467.Money>(2, _omitFieldNames ? '' : 'endPrice',
+        subBuilder: $467.Money.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -74,9 +74,9 @@ class PriceRange extends $pb.GeneratedMessage {
   /// The low end of the price range (inclusive). Price should be at or above
   /// this amount.
   @$pb.TagNumber(1)
-  $465.Money get startPrice => $_getN(0);
+  $467.Money get startPrice => $_getN(0);
   @$pb.TagNumber(1)
-  set startPrice($465.Money v) {
+  set startPrice($467.Money v) {
     setField(1, v);
   }
 
@@ -85,14 +85,14 @@ class PriceRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartPrice() => clearField(1);
   @$pb.TagNumber(1)
-  $465.Money ensureStartPrice() => $_ensure(0);
+  $467.Money ensureStartPrice() => $_ensure(0);
 
   /// The high end of the price range (exclusive). Price should be lower than
   /// this amount.
   @$pb.TagNumber(2)
-  $465.Money get endPrice => $_getN(1);
+  $467.Money get endPrice => $_getN(1);
   @$pb.TagNumber(2)
-  set endPrice($465.Money v) {
+  set endPrice($467.Money v) {
     setField(2, v);
   }
 
@@ -101,7 +101,7 @@ class PriceRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndPrice() => clearField(2);
   @$pb.TagNumber(2)
-  $465.Money ensureEndPrice() => $_ensure(1);
+  $467.Money ensureEndPrice() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

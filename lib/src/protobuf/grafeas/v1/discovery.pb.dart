@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../google/protobuf/timestamp.pb.dart' as $302;
-import '../../google/rpc/status.pb.dart' as $322;
-import 'common.pbenum.dart' as $557;
+import '../../google/protobuf/timestamp.pb.dart' as $304;
+import '../../google/rpc/status.pb.dart' as $324;
+import 'common.pbenum.dart' as $562;
 import 'discovery.pbenum.dart';
 
 export 'discovery.pbenum.dart';
@@ -25,7 +25,7 @@ export 'discovery.pbenum.dart';
 /// consumer's project at the start of analysis.
 class DiscoveryNote extends $pb.GeneratedMessage {
   factory DiscoveryNote({
-    $557.NoteKind? analysisKind,
+    $562.NoteKind? analysisKind,
   }) {
     final $result = create();
     if (analysisKind != null) {
@@ -45,11 +45,11 @@ class DiscoveryNote extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'DiscoveryNote',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
       createEmptyInstance: create)
-    ..e<$557.NoteKind>(
+    ..e<$562.NoteKind>(
         1, _omitFieldNames ? '' : 'analysisKind', $pb.PbFieldType.OE,
-        defaultOrMaker: $557.NoteKind.NOTE_KIND_UNSPECIFIED,
-        valueOf: $557.NoteKind.valueOf,
-        enumValues: $557.NoteKind.values)
+        defaultOrMaker: $562.NoteKind.NOTE_KIND_UNSPECIFIED,
+        valueOf: $562.NoteKind.valueOf,
+        enumValues: $562.NoteKind.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -78,9 +78,9 @@ class DiscoveryNote extends $pb.GeneratedMessage {
   /// Required. Immutable. The kind of analysis that is handled by this
   /// discovery.
   @$pb.TagNumber(1)
-  $557.NoteKind get analysisKind => $_getN(0);
+  $562.NoteKind get analysisKind => $_getN(0);
   @$pb.TagNumber(1)
-  set analysisKind($557.NoteKind v) {
+  set analysisKind($562.NoteKind v) {
     setField(1, v);
   }
 
@@ -245,7 +245,7 @@ class DiscoveryOccurrence_SBOMStatus extends $pb.GeneratedMessage {
 class DiscoveryOccurrence_VulnerabilityAttestation
     extends $pb.GeneratedMessage {
   factory DiscoveryOccurrence_VulnerabilityAttestation({
-    $302.Timestamp? lastAttemptTime,
+    $304.Timestamp? lastAttemptTime,
     DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState?
         state,
     $core.String? error,
@@ -275,8 +275,8 @@ class DiscoveryOccurrence_VulnerabilityAttestation
       _omitMessageNames ? '' : 'DiscoveryOccurrence.VulnerabilityAttestation',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'lastAttemptTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'lastAttemptTime',
+        subBuilder: $304.Timestamp.create)
     ..e<DiscoveryOccurrence_VulnerabilityAttestation_VulnerabilityAttestationState>(
         2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
         defaultOrMaker:
@@ -324,9 +324,9 @@ class DiscoveryOccurrence_VulnerabilityAttestation
 
   /// The last time we attempted to generate an attestation.
   @$pb.TagNumber(1)
-  $302.Timestamp get lastAttemptTime => $_getN(0);
+  $304.Timestamp get lastAttemptTime => $_getN(0);
   @$pb.TagNumber(1)
-  set lastAttemptTime($302.Timestamp v) {
+  set lastAttemptTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -335,7 +335,7 @@ class DiscoveryOccurrence_VulnerabilityAttestation
   @$pb.TagNumber(1)
   void clearLastAttemptTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureLastAttemptTime() => $_ensure(0);
+  $304.Timestamp ensureLastAttemptTime() => $_ensure(0);
 
   /// The success/failure state of the latest attestation attempt.
   @$pb.TagNumber(2)
@@ -372,12 +372,12 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   factory DiscoveryOccurrence({
     DiscoveryOccurrence_ContinuousAnalysis? continuousAnalysis,
     DiscoveryOccurrence_AnalysisStatus? analysisStatus,
-    $322.Status? analysisStatusError,
+    $324.Status? analysisStatusError,
     $core.String? cpe,
-    $302.Timestamp? lastScanTime,
-    $302.Timestamp? archiveTime,
+    $304.Timestamp? lastScanTime,
+    $304.Timestamp? archiveTime,
     DiscoveryOccurrence_AnalysisCompleted? analysisCompleted,
-    $core.Iterable<$322.Status>? analysisError,
+    $core.Iterable<$324.Status>? analysisError,
     DiscoveryOccurrence_SBOMStatus? sbomStatus,
     DiscoveryOccurrence_VulnerabilityAttestation? vulnerabilityAttestation,
   }) {
@@ -438,19 +438,19 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
             DiscoveryOccurrence_AnalysisStatus.ANALYSIS_STATUS_UNSPECIFIED,
         valueOf: DiscoveryOccurrence_AnalysisStatus.valueOf,
         enumValues: DiscoveryOccurrence_AnalysisStatus.values)
-    ..aOM<$322.Status>(3, _omitFieldNames ? '' : 'analysisStatusError',
-        subBuilder: $322.Status.create)
+    ..aOM<$324.Status>(3, _omitFieldNames ? '' : 'analysisStatusError',
+        subBuilder: $324.Status.create)
     ..aOS(4, _omitFieldNames ? '' : 'cpe')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'lastScanTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'archiveTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'lastScanTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'archiveTime',
+        subBuilder: $304.Timestamp.create)
     ..aOM<DiscoveryOccurrence_AnalysisCompleted>(
         7, _omitFieldNames ? '' : 'analysisCompleted',
         subBuilder: DiscoveryOccurrence_AnalysisCompleted.create)
-    ..pc<$322.Status>(
+    ..pc<$324.Status>(
         8, _omitFieldNames ? '' : 'analysisError', $pb.PbFieldType.PM,
-        subBuilder: $322.Status.create)
+        subBuilder: $324.Status.create)
     ..aOM<DiscoveryOccurrence_SBOMStatus>(
         9, _omitFieldNames ? '' : 'sbomStatus',
         subBuilder: DiscoveryOccurrence_SBOMStatus.create)
@@ -512,9 +512,9 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   /// details to show to the user. The LocalizedMessage is output only and
   /// populated by the API.
   @$pb.TagNumber(3)
-  $322.Status get analysisStatusError => $_getN(2);
+  $324.Status get analysisStatusError => $_getN(2);
   @$pb.TagNumber(3)
-  set analysisStatusError($322.Status v) {
+  set analysisStatusError($324.Status v) {
     setField(3, v);
   }
 
@@ -523,7 +523,7 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAnalysisStatusError() => clearField(3);
   @$pb.TagNumber(3)
-  $322.Status ensureAnalysisStatusError() => $_ensure(2);
+  $324.Status ensureAnalysisStatusError() => $_ensure(2);
 
   /// The CPE of the resource being scanned.
   @$pb.TagNumber(4)
@@ -540,9 +540,9 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
 
   /// The last time this resource was scanned.
   @$pb.TagNumber(5)
-  $302.Timestamp get lastScanTime => $_getN(4);
+  $304.Timestamp get lastScanTime => $_getN(4);
   @$pb.TagNumber(5)
-  set lastScanTime($302.Timestamp v) {
+  set lastScanTime($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -551,13 +551,13 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearLastScanTime() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureLastScanTime() => $_ensure(4);
+  $304.Timestamp ensureLastScanTime() => $_ensure(4);
 
   /// The time occurrences related to this discovery occurrence were archived.
   @$pb.TagNumber(6)
-  $302.Timestamp get archiveTime => $_getN(5);
+  $304.Timestamp get archiveTime => $_getN(5);
   @$pb.TagNumber(6)
-  set archiveTime($302.Timestamp v) {
+  set archiveTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -566,7 +566,7 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearArchiveTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureArchiveTime() => $_ensure(5);
+  $304.Timestamp ensureArchiveTime() => $_ensure(5);
 
   @$pb.TagNumber(7)
   DiscoveryOccurrence_AnalysisCompleted get analysisCompleted => $_getN(6);
@@ -586,7 +586,7 @@ class DiscoveryOccurrence extends $pb.GeneratedMessage {
   /// Indicates any errors encountered during analysis of a resource. There
   /// could be 0 or more of these errors.
   @$pb.TagNumber(8)
-  $core.List<$322.Status> get analysisError => $_getList(7);
+  $core.List<$324.Status> get analysisError => $_getList(7);
 
   /// The status of an SBOM generation.
   @$pb.TagNumber(9)

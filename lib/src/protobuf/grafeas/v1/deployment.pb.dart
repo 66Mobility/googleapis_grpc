@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../google/protobuf/timestamp.pb.dart' as $302;
+import '../../google/protobuf/timestamp.pb.dart' as $304;
 import 'deployment.pbenum.dart';
 
 export 'deployment.pbenum.dart';
@@ -76,8 +76,8 @@ class DeploymentNote extends $pb.GeneratedMessage {
 class DeploymentOccurrence extends $pb.GeneratedMessage {
   factory DeploymentOccurrence({
     $core.String? userEmail,
-    $302.Timestamp? deployTime,
-    $302.Timestamp? undeployTime,
+    $304.Timestamp? deployTime,
+    $304.Timestamp? undeployTime,
     $core.String? config,
     $core.String? address,
     $core.Iterable<$core.String>? resourceUri,
@@ -120,10 +120,10 @@ class DeploymentOccurrence extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'userEmail')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'deployTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'undeployTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'deployTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'undeployTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'config')
     ..aOS(5, _omitFieldNames ? '' : 'address')
     ..pPS(6, _omitFieldNames ? '' : 'resourceUri')
@@ -173,9 +173,9 @@ class DeploymentOccurrence extends $pb.GeneratedMessage {
 
   /// Required. Beginning of the lifetime of this deployment.
   @$pb.TagNumber(2)
-  $302.Timestamp get deployTime => $_getN(1);
+  $304.Timestamp get deployTime => $_getN(1);
   @$pb.TagNumber(2)
-  set deployTime($302.Timestamp v) {
+  set deployTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -184,13 +184,13 @@ class DeploymentOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDeployTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureDeployTime() => $_ensure(1);
+  $304.Timestamp ensureDeployTime() => $_ensure(1);
 
   /// End of the lifetime of this deployment.
   @$pb.TagNumber(3)
-  $302.Timestamp get undeployTime => $_getN(2);
+  $304.Timestamp get undeployTime => $_getN(2);
   @$pb.TagNumber(3)
-  set undeployTime($302.Timestamp v) {
+  set undeployTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -199,7 +199,7 @@ class DeploymentOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUndeployTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureUndeployTime() => $_ensure(2);
+  $304.Timestamp ensureUndeployTime() => $_ensure(2);
 
   /// Configuration used to create this deployment.
   @$pb.TagNumber(4)

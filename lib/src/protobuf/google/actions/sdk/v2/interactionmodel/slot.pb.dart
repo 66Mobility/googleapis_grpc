@@ -13,20 +13,20 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $261;
-import 'event_handler.pb.dart' as $277;
-import 'type/class_reference.pb.dart' as $278;
+import '../../../../protobuf/struct.pb.dart' as $263;
+import 'event_handler.pb.dart' as $279;
+import 'type/class_reference.pb.dart' as $280;
 
 /// A single place where slot prompts are defined.
 class Slot_PromptSettings extends $pb.GeneratedMessage {
   factory Slot_PromptSettings({
-    $277.EventHandler? initialPrompt,
-    $277.EventHandler? noMatchPrompt1,
-    $277.EventHandler? noMatchPrompt2,
-    $277.EventHandler? noMatchFinalPrompt,
-    $277.EventHandler? noInputPrompt1,
-    $277.EventHandler? noInputPrompt2,
-    $277.EventHandler? noInputFinalPrompt,
+    $279.EventHandler? initialPrompt,
+    $279.EventHandler? noMatchPrompt1,
+    $279.EventHandler? noMatchPrompt2,
+    $279.EventHandler? noMatchFinalPrompt,
+    $279.EventHandler? noInputPrompt1,
+    $279.EventHandler? noInputPrompt2,
+    $279.EventHandler? noInputFinalPrompt,
   }) {
     final $result = create();
     if (initialPrompt != null) {
@@ -65,20 +65,20 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
       createEmptyInstance: create)
-    ..aOM<$277.EventHandler>(1, _omitFieldNames ? '' : 'initialPrompt',
-        subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(2, _omitFieldNames ? '' : 'noMatchPrompt1',
-        subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(3, _omitFieldNames ? '' : 'noMatchPrompt2',
-        subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(4, _omitFieldNames ? '' : 'noMatchFinalPrompt',
-        subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(5, _omitFieldNames ? '' : 'noInputPrompt1',
-        subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(6, _omitFieldNames ? '' : 'noInputPrompt2',
-        subBuilder: $277.EventHandler.create)
-    ..aOM<$277.EventHandler>(7, _omitFieldNames ? '' : 'noInputFinalPrompt',
-        subBuilder: $277.EventHandler.create)
+    ..aOM<$279.EventHandler>(1, _omitFieldNames ? '' : 'initialPrompt',
+        subBuilder: $279.EventHandler.create)
+    ..aOM<$279.EventHandler>(2, _omitFieldNames ? '' : 'noMatchPrompt1',
+        subBuilder: $279.EventHandler.create)
+    ..aOM<$279.EventHandler>(3, _omitFieldNames ? '' : 'noMatchPrompt2',
+        subBuilder: $279.EventHandler.create)
+    ..aOM<$279.EventHandler>(4, _omitFieldNames ? '' : 'noMatchFinalPrompt',
+        subBuilder: $279.EventHandler.create)
+    ..aOM<$279.EventHandler>(5, _omitFieldNames ? '' : 'noInputPrompt1',
+        subBuilder: $279.EventHandler.create)
+    ..aOM<$279.EventHandler>(6, _omitFieldNames ? '' : 'noInputPrompt2',
+        subBuilder: $279.EventHandler.create)
+    ..aOM<$279.EventHandler>(7, _omitFieldNames ? '' : 'noInputFinalPrompt',
+        subBuilder: $279.EventHandler.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -106,9 +106,9 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
 
   /// Prompt for the slot value itself. Example: "What size did you want?"
   @$pb.TagNumber(1)
-  $277.EventHandler get initialPrompt => $_getN(0);
+  $279.EventHandler get initialPrompt => $_getN(0);
   @$pb.TagNumber(1)
-  set initialPrompt($277.EventHandler v) {
+  set initialPrompt($279.EventHandler v) {
     setField(1, v);
   }
 
@@ -117,15 +117,15 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearInitialPrompt() => clearField(1);
   @$pb.TagNumber(1)
-  $277.EventHandler ensureInitialPrompt() => $_ensure(0);
+  $279.EventHandler ensureInitialPrompt() => $_ensure(0);
 
   /// Prompt to give when the user's input does not match the expected
   /// value type for the slot for the first time. Example: "Sorry, I
   /// didn't get that."
   @$pb.TagNumber(2)
-  $277.EventHandler get noMatchPrompt1 => $_getN(1);
+  $279.EventHandler get noMatchPrompt1 => $_getN(1);
   @$pb.TagNumber(2)
-  set noMatchPrompt1($277.EventHandler v) {
+  set noMatchPrompt1($279.EventHandler v) {
     setField(2, v);
   }
 
@@ -134,15 +134,15 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearNoMatchPrompt1() => clearField(2);
   @$pb.TagNumber(2)
-  $277.EventHandler ensureNoMatchPrompt1() => $_ensure(1);
+  $279.EventHandler ensureNoMatchPrompt1() => $_ensure(1);
 
   /// Prompt to give when the user's input does not match the expected
   /// value type for the slot for the second time. Example: "Sorry, I
   /// didn't get that."
   @$pb.TagNumber(3)
-  $277.EventHandler get noMatchPrompt2 => $_getN(2);
+  $279.EventHandler get noMatchPrompt2 => $_getN(2);
   @$pb.TagNumber(3)
-  set noMatchPrompt2($277.EventHandler v) {
+  set noMatchPrompt2($279.EventHandler v) {
     setField(3, v);
   }
 
@@ -151,15 +151,15 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearNoMatchPrompt2() => clearField(3);
   @$pb.TagNumber(3)
-  $277.EventHandler ensureNoMatchPrompt2() => $_ensure(2);
+  $279.EventHandler ensureNoMatchPrompt2() => $_ensure(2);
 
   /// Prompt to give when the user's input does not match the expected
   /// value type for the slot for the last time. Example: "Sorry, I
   /// didn't get that."
   @$pb.TagNumber(4)
-  $277.EventHandler get noMatchFinalPrompt => $_getN(3);
+  $279.EventHandler get noMatchFinalPrompt => $_getN(3);
   @$pb.TagNumber(4)
-  set noMatchFinalPrompt($277.EventHandler v) {
+  set noMatchFinalPrompt($279.EventHandler v) {
     setField(4, v);
   }
 
@@ -168,14 +168,14 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearNoMatchFinalPrompt() => clearField(4);
   @$pb.TagNumber(4)
-  $277.EventHandler ensureNoMatchFinalPrompt() => $_ensure(3);
+  $279.EventHandler ensureNoMatchFinalPrompt() => $_ensure(3);
 
   /// Prompt to give when the user does not provide an input for the first
   /// time. Example: "Sorry, I didn't get that."
   @$pb.TagNumber(5)
-  $277.EventHandler get noInputPrompt1 => $_getN(4);
+  $279.EventHandler get noInputPrompt1 => $_getN(4);
   @$pb.TagNumber(5)
-  set noInputPrompt1($277.EventHandler v) {
+  set noInputPrompt1($279.EventHandler v) {
     setField(5, v);
   }
 
@@ -184,14 +184,14 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearNoInputPrompt1() => clearField(5);
   @$pb.TagNumber(5)
-  $277.EventHandler ensureNoInputPrompt1() => $_ensure(4);
+  $279.EventHandler ensureNoInputPrompt1() => $_ensure(4);
 
   /// Prompt to give when the user does not provide an input for the second
   /// time. Example: "Sorry, I didn't get that."
   @$pb.TagNumber(6)
-  $277.EventHandler get noInputPrompt2 => $_getN(5);
+  $279.EventHandler get noInputPrompt2 => $_getN(5);
   @$pb.TagNumber(6)
-  set noInputPrompt2($277.EventHandler v) {
+  set noInputPrompt2($279.EventHandler v) {
     setField(6, v);
   }
 
@@ -200,14 +200,14 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearNoInputPrompt2() => clearField(6);
   @$pb.TagNumber(6)
-  $277.EventHandler ensureNoInputPrompt2() => $_ensure(5);
+  $279.EventHandler ensureNoInputPrompt2() => $_ensure(5);
 
   /// Prompt to give when the user does not provide an input for the last
   /// time. Example: "Sorry, I didn't get that."
   @$pb.TagNumber(7)
-  $277.EventHandler get noInputFinalPrompt => $_getN(6);
+  $279.EventHandler get noInputFinalPrompt => $_getN(6);
   @$pb.TagNumber(7)
-  set noInputFinalPrompt($277.EventHandler v) {
+  set noInputFinalPrompt($279.EventHandler v) {
     setField(7, v);
   }
 
@@ -216,7 +216,7 @@ class Slot_PromptSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearNoInputFinalPrompt() => clearField(7);
   @$pb.TagNumber(7)
-  $277.EventHandler ensureNoInputFinalPrompt() => $_ensure(6);
+  $279.EventHandler ensureNoInputFinalPrompt() => $_ensure(6);
 }
 
 /// Message describing the commit behavior associated with the slot after it
@@ -292,7 +292,7 @@ class Slot_CommitBehavior extends $pb.GeneratedMessage {
 class Slot_DefaultValue extends $pb.GeneratedMessage {
   factory Slot_DefaultValue({
     $core.String? sessionParam,
-    $261.Value? constant,
+    $263.Value? constant,
   }) {
     final $result = create();
     if (sessionParam != null) {
@@ -317,8 +317,8 @@ class Slot_DefaultValue extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sessionParam')
-    ..aOM<$261.Value>(2, _omitFieldNames ? '' : 'constant',
-        subBuilder: $261.Value.create)
+    ..aOM<$263.Value>(2, _omitFieldNames ? '' : 'constant',
+        subBuilder: $263.Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -365,9 +365,9 @@ class Slot_DefaultValue extends $pb.GeneratedMessage {
   /// for this slot was not populated through the `session_param`. The
   /// type for this value must match the type of the slot.
   @$pb.TagNumber(2)
-  $261.Value get constant => $_getN(1);
+  $263.Value get constant => $_getN(1);
   @$pb.TagNumber(2)
-  set constant($261.Value v) {
+  set constant($263.Value v) {
     setField(2, v);
   }
 
@@ -376,7 +376,7 @@ class Slot_DefaultValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearConstant() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Value ensureConstant() => $_ensure(1);
+  $263.Value ensureConstant() => $_ensure(1);
 }
 
 /// Configuration for a slot. Slots are single units of data that can be filled
@@ -385,11 +385,11 @@ class Slot_DefaultValue extends $pb.GeneratedMessage {
 class Slot extends $pb.GeneratedMessage {
   factory Slot({
     $core.String? name,
-    $278.ClassReference? type,
+    $280.ClassReference? type,
     $core.bool? required,
     Slot_PromptSettings? promptSettings,
     Slot_CommitBehavior? commitBehavior,
-    $261.Value? config,
+    $263.Value? config,
     Slot_DefaultValue? defaultValue,
   }) {
     final $result = create();
@@ -430,15 +430,15 @@ class Slot extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$278.ClassReference>(2, _omitFieldNames ? '' : 'type',
-        subBuilder: $278.ClassReference.create)
+    ..aOM<$280.ClassReference>(2, _omitFieldNames ? '' : 'type',
+        subBuilder: $280.ClassReference.create)
     ..aOB(3, _omitFieldNames ? '' : 'required')
     ..aOM<Slot_PromptSettings>(4, _omitFieldNames ? '' : 'promptSettings',
         subBuilder: Slot_PromptSettings.create)
     ..aOM<Slot_CommitBehavior>(5, _omitFieldNames ? '' : 'commitBehavior',
         subBuilder: Slot_CommitBehavior.create)
-    ..aOM<$261.Value>(6, _omitFieldNames ? '' : 'config',
-        subBuilder: $261.Value.create)
+    ..aOM<$263.Value>(6, _omitFieldNames ? '' : 'config',
+        subBuilder: $263.Value.create)
     ..aOM<Slot_DefaultValue>(7, _omitFieldNames ? '' : 'defaultValue',
         subBuilder: Slot_DefaultValue.create)
     ..hasRequiredFields = false;
@@ -479,9 +479,9 @@ class Slot extends $pb.GeneratedMessage {
 
   /// Required. Declares the data type of this slot.
   @$pb.TagNumber(2)
-  $278.ClassReference get type => $_getN(1);
+  $280.ClassReference get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($278.ClassReference v) {
+  set type($280.ClassReference v) {
     setField(2, v);
   }
 
@@ -490,7 +490,7 @@ class Slot extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $278.ClassReference ensureType() => $_ensure(1);
+  $280.ClassReference ensureType() => $_ensure(1);
 
   /// Optional. Indicates whether the slot is required to be filled before
   /// advancing. Required slots that are not filled will trigger a customizable
@@ -558,9 +558,9 @@ class Slot extends $pb.GeneratedMessage {
   ///       }
   ///     }
   @$pb.TagNumber(6)
-  $261.Value get config => $_getN(5);
+  $263.Value get config => $_getN(5);
   @$pb.TagNumber(6)
-  set config($261.Value v) {
+  set config($263.Value v) {
     setField(6, v);
   }
 
@@ -569,7 +569,7 @@ class Slot extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearConfig() => clearField(6);
   @$pb.TagNumber(6)
-  $261.Value ensureConfig() => $_ensure(5);
+  $263.Value ensureConfig() => $_ensure(5);
 
   /// Optional. Configuration to populate a default value for this slot.
   @$pb.TagNumber(7)

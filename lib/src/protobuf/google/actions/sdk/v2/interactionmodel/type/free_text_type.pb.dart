@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'entity_display.pb.dart' as $282;
+import 'entity_display.pb.dart' as $284;
 
 /// Type that matches any text if surrounding words context is close to provided
 /// training examples.
 class FreeTextType extends $pb.GeneratedMessage {
   factory FreeTextType({
-    $282.EntityDisplay? display,
+    $284.EntityDisplay? display,
   }) {
     final $result = create();
     if (display != null) {
@@ -41,8 +41,8 @@ class FreeTextType extends $pb.GeneratedMessage {
           ? ''
           : 'google.actions.sdk.v2.interactionmodel.type'),
       createEmptyInstance: create)
-    ..aOM<$282.EntityDisplay>(2, _omitFieldNames ? '' : 'display',
-        subBuilder: $282.EntityDisplay.create)
+    ..aOM<$284.EntityDisplay>(2, _omitFieldNames ? '' : 'display',
+        subBuilder: $284.EntityDisplay.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -71,9 +71,9 @@ class FreeTextType extends $pb.GeneratedMessage {
   /// Optional. Elements that will be displayed on the canvas once an entity is extracted
   /// from a query. Only relevant for canvas enabled apps.
   @$pb.TagNumber(2)
-  $282.EntityDisplay get display => $_getN(0);
+  $284.EntityDisplay get display => $_getN(0);
   @$pb.TagNumber(2)
-  set display($282.EntityDisplay v) {
+  set display($284.EntityDisplay v) {
     setField(2, v);
   }
 
@@ -82,7 +82,7 @@ class FreeTextType extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDisplay() => clearField(2);
   @$pb.TagNumber(2)
-  $282.EntityDisplay ensureDisplay() => $_ensure(0);
+  $284.EntityDisplay ensureDisplay() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/latlng.pb.dart' as $325;
+import '../../../type/latlng.pb.dart' as $327;
 import 'area_insights_service.pbenum.dart';
 
 export 'area_insights_service.pbenum.dart';
@@ -388,7 +388,7 @@ enum LocationFilter_Circle_Center { latLng, place, notSet }
 /// A circle is defined by a center point and radius in meters.
 class LocationFilter_Circle extends $pb.GeneratedMessage {
   factory LocationFilter_Circle({
-    $325.LatLng? latLng,
+    $327.LatLng? latLng,
     $core.String? place,
     $core.int? radius,
   }) {
@@ -424,8 +424,8 @@ class LocationFilter_Circle extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
       createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'latLng',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'latLng',
+        subBuilder: $327.LatLng.create)
     ..aOS(2, _omitFieldNames ? '' : 'place')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'radius', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
@@ -461,9 +461,9 @@ class LocationFilter_Circle extends $pb.GeneratedMessage {
 
   /// The latitude and longitude of the center of the circle.
   @$pb.TagNumber(1)
-  $325.LatLng get latLng => $_getN(0);
+  $327.LatLng get latLng => $_getN(0);
   @$pb.TagNumber(1)
-  set latLng($325.LatLng v) {
+  set latLng($327.LatLng v) {
     setField(1, v);
   }
 
@@ -472,7 +472,7 @@ class LocationFilter_Circle extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearLatLng() => clearField(1);
   @$pb.TagNumber(1)
-  $325.LatLng ensureLatLng() => $_ensure(0);
+  $327.LatLng ensureLatLng() => $_ensure(0);
 
   /// The Place resource name of the center of the circle. Only point places
   /// are supported.
@@ -589,7 +589,7 @@ class LocationFilter_Region extends $pb.GeneratedMessage {
 /// exterior ring).
 class LocationFilter_CustomArea_Polygon extends $pb.GeneratedMessage {
   factory LocationFilter_CustomArea_Polygon({
-    $core.Iterable<$325.LatLng>? coordinates,
+    $core.Iterable<$327.LatLng>? coordinates,
   }) {
     final $result = create();
     if (coordinates != null) {
@@ -610,9 +610,9 @@ class LocationFilter_CustomArea_Polygon extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.areainsights.v1'),
       createEmptyInstance: create)
-    ..pc<$325.LatLng>(
+    ..pc<$327.LatLng>(
         1, _omitFieldNames ? '' : 'coordinates', $pb.PbFieldType.PM,
-        subBuilder: $325.LatLng.create)
+        subBuilder: $327.LatLng.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -645,7 +645,7 @@ class LocationFilter_CustomArea_Polygon extends $pb.GeneratedMessage {
 
   /// Optional. The coordinates that define the polygon.
   @$pb.TagNumber(1)
-  $core.List<$325.LatLng> get coordinates => $_getList(0);
+  $core.List<$327.LatLng> get coordinates => $_getList(0);
 }
 
 /// Custom Area.

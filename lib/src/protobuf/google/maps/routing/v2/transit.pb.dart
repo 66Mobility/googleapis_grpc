@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/localized_text.pb.dart' as $460;
-import 'location.pb.dart' as $491;
+import '../../../type/localized_text.pb.dart' as $462;
+import 'location.pb.dart' as $493;
 import 'transit.pbenum.dart';
 
 export 'transit.pbenum.dart';
@@ -311,7 +311,7 @@ class TransitLine extends $pb.GeneratedMessage {
 class TransitStop extends $pb.GeneratedMessage {
   factory TransitStop({
     $core.String? name,
-    $491.Location? location,
+    $493.Location? location,
   }) {
     final $result = create();
     if (name != null) {
@@ -336,8 +336,8 @@ class TransitStop extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.routing.v2'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$491.Location>(2, _omitFieldNames ? '' : 'location',
-        subBuilder: $491.Location.create)
+    ..aOM<$493.Location>(2, _omitFieldNames ? '' : 'location',
+        subBuilder: $493.Location.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -377,9 +377,9 @@ class TransitStop extends $pb.GeneratedMessage {
 
   /// The location of the stop expressed in latitude/longitude coordinates.
   @$pb.TagNumber(2)
-  $491.Location get location => $_getN(1);
+  $493.Location get location => $_getN(1);
   @$pb.TagNumber(2)
-  set location($491.Location v) {
+  set location($493.Location v) {
     setField(2, v);
   }
 
@@ -388,13 +388,13 @@ class TransitStop extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearLocation() => clearField(2);
   @$pb.TagNumber(2)
-  $491.Location ensureLocation() => $_ensure(1);
+  $493.Location ensureLocation() => $_ensure(1);
 }
 
 /// Information about a vehicle used in transit routes.
 class TransitVehicle extends $pb.GeneratedMessage {
   factory TransitVehicle({
-    $460.LocalizedText? name,
+    $462.LocalizedText? name,
     TransitVehicle_TransitVehicleType? type,
     $core.String? iconUri,
     $core.String? localIconUri,
@@ -427,8 +427,8 @@ class TransitVehicle extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routing.v2'),
       createEmptyInstance: create)
-    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'name',
-        subBuilder: $460.LocalizedText.create)
+    ..aOM<$462.LocalizedText>(1, _omitFieldNames ? '' : 'name',
+        subBuilder: $462.LocalizedText.create)
     ..e<TransitVehicle_TransitVehicleType>(
         2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
         defaultOrMaker:
@@ -464,9 +464,9 @@ class TransitVehicle extends $pb.GeneratedMessage {
 
   /// The name of this vehicle, capitalized.
   @$pb.TagNumber(1)
-  $460.LocalizedText get name => $_getN(0);
+  $462.LocalizedText get name => $_getN(0);
   @$pb.TagNumber(1)
-  set name($460.LocalizedText v) {
+  set name($462.LocalizedText v) {
     setField(1, v);
   }
 
@@ -475,7 +475,7 @@ class TransitVehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
   @$pb.TagNumber(1)
-  $460.LocalizedText ensureName() => $_ensure(0);
+  $462.LocalizedText ensureName() => $_ensure(0);
 
   /// The type of vehicle used.
   @$pb.TagNumber(2)

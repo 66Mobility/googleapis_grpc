@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'region_identifier.pb.dart' as $480;
-import 'region_match.pb.dart' as $481;
-import 'region_search_values.pb.dart' as $482;
+import 'region_identifier.pb.dart' as $482;
+import 'region_match.pb.dart' as $483;
+import 'region_search_values.pb.dart' as $484;
 
 ///  Lookup Region Request.
 ///
 ///  Next available tag: 4
 class LookupRegionRequest extends $pb.GeneratedMessage {
   factory LookupRegionRequest({
-    $core.Iterable<$480.RegionIdentifier>? identifiers,
+    $core.Iterable<$482.RegionIdentifier>? identifiers,
     $core.int? pageSize,
     $core.String? pageToken,
   }) {
@@ -51,9 +51,9 @@ class LookupRegionRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'),
       createEmptyInstance: create)
-    ..pc<$480.RegionIdentifier>(
+    ..pc<$482.RegionIdentifier>(
         1, _omitFieldNames ? '' : 'identifiers', $pb.PbFieldType.PM,
-        subBuilder: $480.RegionIdentifier.create)
+        subBuilder: $482.RegionIdentifier.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..hasRequiredFields = false;
@@ -84,7 +84,7 @@ class LookupRegionRequest extends $pb.GeneratedMessage {
   /// Each `RegionIdentifier` represents the desired fields used to lookup a
   /// single region. See `RegionIdentifier` proto for more details and examples.
   @$pb.TagNumber(1)
-  $core.List<$480.RegionIdentifier> get identifiers => $_getList(0);
+  $core.List<$482.RegionIdentifier> get identifiers => $_getList(0);
 
   ///  The maximum number of matches to return. The service may return fewer than
   ///  this value.
@@ -126,7 +126,7 @@ class LookupRegionRequest extends $pb.GeneratedMessage {
 ///  Next available tag: 3
 class LookupRegionResponse extends $pb.GeneratedMessage {
   factory LookupRegionResponse({
-    $core.Iterable<$481.RegionMatch>? matches,
+    $core.Iterable<$483.RegionMatch>? matches,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -151,9 +151,9 @@ class LookupRegionResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'),
       createEmptyInstance: create)
-    ..pc<$481.RegionMatch>(
+    ..pc<$483.RegionMatch>(
         1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM,
-        subBuilder: $481.RegionMatch.create)
+        subBuilder: $483.RegionMatch.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -184,7 +184,7 @@ class LookupRegionResponse extends $pb.GeneratedMessage {
   /// Lookup region matches, one for each `RegionIdentifier` in
   /// `LookupRegionRequest.identifiers`.
   @$pb.TagNumber(1)
-  $core.List<$481.RegionMatch> get matches => $_getList(0);
+  $core.List<$483.RegionMatch> get matches => $_getList(0);
 
   /// A token that can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no subsequent pages.
@@ -206,7 +206,7 @@ class LookupRegionResponse extends $pb.GeneratedMessage {
 ///  Next available tag: 4
 class SearchRegionRequest extends $pb.GeneratedMessage {
   factory SearchRegionRequest({
-    $core.Iterable<$482.RegionSearchValue>? searchValues,
+    $core.Iterable<$484.RegionSearchValue>? searchValues,
     $core.int? pageSize,
     $core.String? pageToken,
   }) {
@@ -235,9 +235,9 @@ class SearchRegionRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'),
       createEmptyInstance: create)
-    ..pc<$482.RegionSearchValue>(
+    ..pc<$484.RegionSearchValue>(
         1, _omitFieldNames ? '' : 'searchValues', $pb.PbFieldType.PM,
-        subBuilder: $482.RegionSearchValue.create)
+        subBuilder: $484.RegionSearchValue.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..hasRequiredFields = false;
@@ -269,7 +269,7 @@ class SearchRegionRequest extends $pb.GeneratedMessage {
   /// The API tries to match them to Place IDs. See `RegionSearchValue`
   /// proto for more info and examples.
   @$pb.TagNumber(1)
-  $core.List<$482.RegionSearchValue> get searchValues => $_getList(0);
+  $core.List<$484.RegionSearchValue> get searchValues => $_getList(0);
 
   ///  The maximum number of matches to return. The service may return fewer than
   ///  this value.
@@ -311,7 +311,7 @@ class SearchRegionRequest extends $pb.GeneratedMessage {
 ///  Next available tag: 3
 class SearchRegionResponse extends $pb.GeneratedMessage {
   factory SearchRegionResponse({
-    $core.Iterable<$481.RegionMatch>? matches,
+    $core.Iterable<$483.RegionMatch>? matches,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -336,9 +336,9 @@ class SearchRegionResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'),
       createEmptyInstance: create)
-    ..pc<$481.RegionMatch>(
+    ..pc<$483.RegionMatch>(
         1, _omitFieldNames ? '' : 'matches', $pb.PbFieldType.PM,
-        subBuilder: $481.RegionMatch.create)
+        subBuilder: $483.RegionMatch.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -369,7 +369,7 @@ class SearchRegionResponse extends $pb.GeneratedMessage {
   /// Search region matches, one for each `RegionSearchValue` in
   /// `SearchRegionRequest.search_values`.
   @$pb.TagNumber(1)
-  $core.List<$481.RegionMatch> get matches => $_getList(0);
+  $core.List<$483.RegionMatch> get matches => $_getList(0);
 
   /// A token that can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no subsequent pages.

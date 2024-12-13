@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $302;
-import 'transaction.pb.dart' as $250;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import 'transaction.pb.dart' as $252;
 
 /// Additional statistics about a commit.
 class CommitResponse_CommitStats extends $pb.GeneratedMessage {
@@ -95,9 +95,9 @@ enum CommitResponse_MultiplexedSessionRetry { precommitToken, notSet }
 /// The response for [Commit][google.spanner.v1.Spanner.Commit].
 class CommitResponse extends $pb.GeneratedMessage {
   factory CommitResponse({
-    $302.Timestamp? commitTimestamp,
+    $304.Timestamp? commitTimestamp,
     CommitResponse_CommitStats? commitStats,
-    $250.MultiplexedSessionPrecommitToken? precommitToken,
+    $252.MultiplexedSessionPrecommitToken? precommitToken,
   }) {
     final $result = create();
     if (commitTimestamp != null) {
@@ -130,13 +130,13 @@ class CommitResponse extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
       createEmptyInstance: create)
     ..oo(0, [4])
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'commitTimestamp',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'commitTimestamp',
+        subBuilder: $304.Timestamp.create)
     ..aOM<CommitResponse_CommitStats>(2, _omitFieldNames ? '' : 'commitStats',
         subBuilder: CommitResponse_CommitStats.create)
-    ..aOM<$250.MultiplexedSessionPrecommitToken>(
+    ..aOM<$252.MultiplexedSessionPrecommitToken>(
         4, _omitFieldNames ? '' : 'precommitToken',
-        subBuilder: $250.MultiplexedSessionPrecommitToken.create)
+        subBuilder: $252.MultiplexedSessionPrecommitToken.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -168,9 +168,9 @@ class CommitResponse extends $pb.GeneratedMessage {
 
   /// The Cloud Spanner timestamp at which the transaction committed.
   @$pb.TagNumber(1)
-  $302.Timestamp get commitTimestamp => $_getN(0);
+  $304.Timestamp get commitTimestamp => $_getN(0);
   @$pb.TagNumber(1)
-  set commitTimestamp($302.Timestamp v) {
+  set commitTimestamp($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -179,7 +179,7 @@ class CommitResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCommitTimestamp() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureCommitTimestamp() => $_ensure(0);
+  $304.Timestamp ensureCommitTimestamp() => $_ensure(0);
 
   /// The statistics about this Commit. Not returned by default.
   /// For more information, see
@@ -201,9 +201,9 @@ class CommitResponse extends $pb.GeneratedMessage {
   /// If specified, transaction has not committed yet.
   /// Clients must retry the commit with the new precommit token.
   @$pb.TagNumber(4)
-  $250.MultiplexedSessionPrecommitToken get precommitToken => $_getN(2);
+  $252.MultiplexedSessionPrecommitToken get precommitToken => $_getN(2);
   @$pb.TagNumber(4)
-  set precommitToken($250.MultiplexedSessionPrecommitToken v) {
+  set precommitToken($252.MultiplexedSessionPrecommitToken v) {
     setField(4, v);
   }
 
@@ -212,7 +212,7 @@ class CommitResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearPrecommitToken() => clearField(4);
   @$pb.TagNumber(4)
-  $250.MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(2);
+  $252.MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/latlng.pb.dart' as $325;
+import '../../../type/latlng.pb.dart' as $327;
 import 'region_search_values.pbenum.dart';
 
 export 'region_search_values.pbenum.dart';
@@ -62,7 +62,7 @@ enum RegionSearchValue_Location { address, latlng, placeId, notSet }
 class RegionSearchValue extends $pb.GeneratedMessage {
   factory RegionSearchValue({
     $core.String? address,
-    $325.LatLng? latlng,
+    $327.LatLng? latlng,
     $core.String? placeId,
     RegionSearchValue_PlaceType? placeType,
     $core.String? languageCode,
@@ -111,8 +111,8 @@ class RegionSearchValue extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'address')
-    ..aOM<$325.LatLng>(2, _omitFieldNames ? '' : 'latlng',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(2, _omitFieldNames ? '' : 'latlng',
+        subBuilder: $327.LatLng.create)
     ..aOS(3, _omitFieldNames ? '' : 'placeId')
     ..e<RegionSearchValue_PlaceType>(
         6, _omitFieldNames ? '' : 'placeType', $pb.PbFieldType.OE,
@@ -166,9 +166,9 @@ class RegionSearchValue extends $pb.GeneratedMessage {
 
   /// The latitude and longitude that is contained inside a region to match.
   @$pb.TagNumber(2)
-  $325.LatLng get latlng => $_getN(1);
+  $327.LatLng get latlng => $_getN(1);
   @$pb.TagNumber(2)
-  set latlng($325.LatLng v) {
+  set latlng($327.LatLng v) {
     setField(2, v);
   }
 
@@ -177,7 +177,7 @@ class RegionSearchValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearLatlng() => clearField(2);
   @$pb.TagNumber(2)
-  $325.LatLng ensureLatlng() => $_ensure(1);
+  $327.LatLng ensureLatlng() => $_ensure(1);
 
   /// The Place ID that is contained inside a region to match.
   @$pb.TagNumber(3)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../protobuf/field_mask.pb.dart' as $335;
 import 'cached_content.pb.dart' as $8;
 
 /// Request to list CachedContents.
@@ -327,7 +327,7 @@ class GetCachedContentRequest extends $pb.GeneratedMessage {
 class UpdateCachedContentRequest extends $pb.GeneratedMessage {
   factory UpdateCachedContentRequest({
     $8.CachedContent? cachedContent,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (cachedContent != null) {
@@ -353,8 +353,8 @@ class UpdateCachedContentRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<$8.CachedContent>(1, _omitFieldNames ? '' : 'cachedContent',
         subBuilder: $8.CachedContent.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -400,9 +400,9 @@ class UpdateCachedContentRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to update.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -411,7 +411,7 @@ class UpdateCachedContentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete CachedContent.

@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $333;
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/field_mask.pb.dart' as $335;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 
 /// Cluster resource.
 class Cluster extends $pb.GeneratedMessage {
   factory Cluster({
     $core.String? name,
-    $302.Timestamp? createTime,
-    $302.Timestamp? updateTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? certificate,
     $core.String? serviceEndpoint,
@@ -61,10 +61,10 @@ class Cluster extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Cluster.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -111,9 +111,9 @@ class Cluster extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this cluster was created.
   @$pb.TagNumber(2)
-  $302.Timestamp get createTime => $_getN(1);
+  $304.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -122,13 +122,13 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureCreateTime() => $_ensure(1);
+  $304.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time at which this cluster was updated.
   @$pb.TagNumber(3)
-  $302.Timestamp get updateTime => $_getN(2);
+  $304.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -137,7 +137,7 @@ class Cluster extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureUpdateTime() => $_ensure(2);
+  $304.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels with user-defined metadata.
   @$pb.TagNumber(4)
@@ -596,7 +596,7 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
 /// Request message for 'UpdateCluster'.
 class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest({
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     Cluster? cluster,
     $core.String? requestId,
   }) {
@@ -625,8 +625,8 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
       createEmptyInstance: create)
-    ..aOM<$333.FieldMask>(1, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(1, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..aOM<Cluster>(2, _omitFieldNames ? '' : 'cluster',
         subBuilder: Cluster.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
@@ -662,9 +662,9 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $333.FieldMask get updateMask => $_getN(0);
+  $335.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(1, v);
   }
 
@@ -673,7 +673,7 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $333.FieldMask ensureUpdateMask() => $_ensure(0);
+  $335.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The Cluster resource to update.
   @$pb.TagNumber(2)
@@ -815,8 +815,8 @@ class DeleteClusterRequest extends $pb.GeneratedMessage {
 class Stream extends $pb.GeneratedMessage {
   factory Stream({
     $core.String? name,
-    $302.Timestamp? createTime,
-    $302.Timestamp? updateTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -848,10 +848,10 @@ class Stream extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Stream.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -896,9 +896,9 @@ class Stream extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this Stream was created.
   @$pb.TagNumber(2)
-  $302.Timestamp get createTime => $_getN(1);
+  $304.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -907,13 +907,13 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureCreateTime() => $_ensure(1);
+  $304.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time at which this Stream was updated.
   @$pb.TagNumber(3)
-  $302.Timestamp get updateTime => $_getN(2);
+  $304.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -922,7 +922,7 @@ class Stream extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureUpdateTime() => $_ensure(2);
+  $304.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The labels of the stream.
   @$pb.TagNumber(4)
@@ -1351,7 +1351,7 @@ class CreateStreamRequest extends $pb.GeneratedMessage {
 /// Request message for 'UpdateStream'.
 class UpdateStreamRequest extends $pb.GeneratedMessage {
   factory UpdateStreamRequest({
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     Stream? stream,
     $core.String? requestId,
   }) {
@@ -1380,8 +1380,8 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
       createEmptyInstance: create)
-    ..aOM<$333.FieldMask>(1, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(1, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..aOM<Stream>(2, _omitFieldNames ? '' : 'stream', subBuilder: Stream.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false;
@@ -1415,9 +1415,9 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $333.FieldMask get updateMask => $_getN(0);
+  $335.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(1, v);
   }
 
@@ -1426,7 +1426,7 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $333.FieldMask ensureUpdateMask() => $_ensure(0);
+  $335.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The stream resource to update.
   @$pb.TagNumber(2)
@@ -1566,8 +1566,8 @@ class DeleteStreamRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $302.Timestamp? createTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -1611,10 +1611,10 @@ class OperationMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -1647,9 +1647,9 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $302.Timestamp get createTime => $_getN(0);
+  $304.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -1658,13 +1658,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureCreateTime() => $_ensure(0);
+  $304.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $302.Timestamp get endTime => $_getN(1);
+  $304.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -1673,7 +1673,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureEndTime() => $_ensure(1);
+  $304.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'image.pb.dart' as $309;
-import 'link.pb.dart' as $310;
+import 'image.pb.dart' as $311;
+import 'link.pb.dart' as $312;
 import 'table.pbenum.dart';
 
 export 'table.pbenum.dart';
@@ -24,10 +24,10 @@ class Table extends $pb.GeneratedMessage {
   factory Table({
     $core.String? title,
     $core.String? subtitle,
-    $309.Image? image,
+    $311.Image? image,
     $core.Iterable<TableColumn>? columns,
     $core.Iterable<TableRow>? rows,
-    $310.Link? button,
+    $312.Link? button,
   }) {
     final $result = create();
     if (title != null) {
@@ -65,14 +65,14 @@ class Table extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
-    ..aOM<$309.Image>(4, _omitFieldNames ? '' : 'image',
-        subBuilder: $309.Image.create)
+    ..aOM<$311.Image>(4, _omitFieldNames ? '' : 'image',
+        subBuilder: $311.Image.create)
     ..pc<TableColumn>(5, _omitFieldNames ? '' : 'columns', $pb.PbFieldType.PM,
         subBuilder: TableColumn.create)
     ..pc<TableRow>(6, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM,
         subBuilder: TableRow.create)
-    ..aOM<$310.Link>(7, _omitFieldNames ? '' : 'button',
-        subBuilder: $310.Link.create)
+    ..aOM<$312.Link>(7, _omitFieldNames ? '' : 'button',
+        subBuilder: $312.Link.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -124,9 +124,9 @@ class Table extends $pb.GeneratedMessage {
 
   /// Image associated with the table. Optional.
   @$pb.TagNumber(4)
-  $309.Image get image => $_getN(2);
+  $311.Image get image => $_getN(2);
   @$pb.TagNumber(4)
-  set image($309.Image v) {
+  set image($311.Image v) {
     setField(4, v);
   }
 
@@ -135,7 +135,7 @@ class Table extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearImage() => clearField(4);
   @$pb.TagNumber(4)
-  $309.Image ensureImage() => $_ensure(2);
+  $311.Image ensureImage() => $_ensure(2);
 
   /// Headers and alignment of columns.
   @$pb.TagNumber(5)
@@ -151,9 +151,9 @@ class Table extends $pb.GeneratedMessage {
 
   /// Button.
   @$pb.TagNumber(7)
-  $310.Link get button => $_getN(5);
+  $312.Link get button => $_getN(5);
   @$pb.TagNumber(7)
-  set button($310.Link v) {
+  set button($312.Link v) {
     setField(7, v);
   }
 
@@ -162,7 +162,7 @@ class Table extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearButton() => clearField(7);
   @$pb.TagNumber(7)
-  $310.Link ensureButton() => $_ensure(5);
+  $312.Link ensureButton() => $_ensure(5);
 }
 
 /// Describes a column in a table.

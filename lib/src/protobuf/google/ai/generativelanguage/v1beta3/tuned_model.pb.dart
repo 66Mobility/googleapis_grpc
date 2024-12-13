@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 import 'tuned_model.pbenum.dart';
 
 export 'tuned_model.pbenum.dart';
@@ -29,8 +29,8 @@ class TunedModel extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     TunedModel_State? state,
-    $302.Timestamp? createTime,
-    $302.Timestamp? updateTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? updateTime,
     TuningTask? tuningTask,
     $core.double? temperature,
     $core.double? topP,
@@ -105,10 +105,10 @@ class TunedModel extends $pb.GeneratedMessage {
         defaultOrMaker: TunedModel_State.STATE_UNSPECIFIED,
         valueOf: TunedModel_State.valueOf,
         enumValues: TunedModel_State.values)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
     ..aOM<TuningTask>(10, _omitFieldNames ? '' : 'tuningTask',
         subBuilder: TuningTask.create)
     ..a<$core.double>(
@@ -233,9 +233,9 @@ class TunedModel extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this model was created.
   @$pb.TagNumber(8)
-  $302.Timestamp get createTime => $_getN(6);
+  $304.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(8)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -244,13 +244,13 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureCreateTime() => $_ensure(6);
+  $304.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The timestamp when this model was updated.
   @$pb.TagNumber(9)
-  $302.Timestamp get updateTime => $_getN(7);
+  $304.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(9, v);
   }
 
@@ -259,7 +259,7 @@ class TunedModel extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $302.Timestamp ensureUpdateTime() => $_ensure(7);
+  $304.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Required. The tuning task that creates the tuned model.
   @$pb.TagNumber(10)
@@ -424,8 +424,8 @@ class TunedModelSource extends $pb.GeneratedMessage {
 /// Tuning tasks that create tuned models.
 class TuningTask extends $pb.GeneratedMessage {
   factory TuningTask({
-    $302.Timestamp? startTime,
-    $302.Timestamp? completeTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? completeTime,
     $core.Iterable<TuningSnapshot>? snapshots,
     Dataset? trainingData,
     Hyperparameters? hyperparameters,
@@ -461,10 +461,10 @@ class TuningTask extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta3'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'completeTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'completeTime',
+        subBuilder: $304.Timestamp.create)
     ..pc<TuningSnapshot>(
         3, _omitFieldNames ? '' : 'snapshots', $pb.PbFieldType.PM,
         subBuilder: TuningSnapshot.create)
@@ -497,9 +497,9 @@ class TuningTask extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when tuning this model started.
   @$pb.TagNumber(1)
-  $302.Timestamp get startTime => $_getN(0);
+  $304.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -508,13 +508,13 @@ class TuningTask extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureStartTime() => $_ensure(0);
+  $304.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Output only. The timestamp when tuning this model completed.
   @$pb.TagNumber(2)
-  $302.Timestamp get completeTime => $_getN(1);
+  $304.Timestamp get completeTime => $_getN(1);
   @$pb.TagNumber(2)
-  set completeTime($302.Timestamp v) {
+  set completeTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -523,7 +523,7 @@ class TuningTask extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCompleteTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureCompleteTime() => $_ensure(1);
+  $304.Timestamp ensureCompleteTime() => $_ensure(1);
 
   /// Output only. Metrics collected during tuning.
   @$pb.TagNumber(3)
@@ -900,7 +900,7 @@ class TuningSnapshot extends $pb.GeneratedMessage {
     $core.int? step,
     $core.int? epoch,
     $core.double? meanLoss,
-    $302.Timestamp? computeTime,
+    $304.Timestamp? computeTime,
   }) {
     final $result = create();
     if (step != null) {
@@ -933,8 +933,8 @@ class TuningSnapshot extends $pb.GeneratedMessage {
     ..a<$core.int>(1, _omitFieldNames ? '' : 'step', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'epoch', $pb.PbFieldType.O3)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'meanLoss', $pb.PbFieldType.OF)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'computeTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'computeTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1001,9 +1001,9 @@ class TuningSnapshot extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this metric was computed.
   @$pb.TagNumber(4)
-  $302.Timestamp get computeTime => $_getN(3);
+  $304.Timestamp get computeTime => $_getN(3);
   @$pb.TagNumber(4)
-  set computeTime($302.Timestamp v) {
+  set computeTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -1012,7 +1012,7 @@ class TuningSnapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearComputeTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureComputeTime() => $_ensure(3);
+  $304.Timestamp ensureComputeTime() => $_ensure(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

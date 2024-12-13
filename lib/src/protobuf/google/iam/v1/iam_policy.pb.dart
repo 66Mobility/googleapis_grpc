@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
-import 'options.pb.dart' as $400;
+import '../../protobuf/field_mask.pb.dart' as $335;
+import 'options.pb.dart' as $402;
 import 'policy.pb.dart' as $88;
 
 /// Request message for `SetIamPolicy` method.
@@ -22,7 +22,7 @@ class SetIamPolicyRequest extends $pb.GeneratedMessage {
   factory SetIamPolicyRequest({
     $core.String? resource,
     $88.Policy? policy,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (resource != null) {
@@ -51,8 +51,8 @@ class SetIamPolicyRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resource')
     ..aOM<$88.Policy>(2, _omitFieldNames ? '' : 'policy',
         subBuilder: $88.Policy.create)
-    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -116,9 +116,9 @@ class SetIamPolicyRequest extends $pb.GeneratedMessage {
   ///
   ///  `paths: "bindings, etag"`
   @$pb.TagNumber(3)
-  $333.FieldMask get updateMask => $_getN(2);
+  $335.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(3, v);
   }
 
@@ -127,14 +127,14 @@ class SetIamPolicyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $333.FieldMask ensureUpdateMask() => $_ensure(2);
+  $335.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for `GetIamPolicy` method.
 class GetIamPolicyRequest extends $pb.GeneratedMessage {
   factory GetIamPolicyRequest({
     $core.String? resource,
-    $400.GetPolicyOptions? options,
+    $402.GetPolicyOptions? options,
   }) {
     final $result = create();
     if (resource != null) {
@@ -158,8 +158,8 @@ class GetIamPolicyRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resource')
-    ..aOM<$400.GetPolicyOptions>(2, _omitFieldNames ? '' : 'options',
-        subBuilder: $400.GetPolicyOptions.create)
+    ..aOM<$402.GetPolicyOptions>(2, _omitFieldNames ? '' : 'options',
+        subBuilder: $402.GetPolicyOptions.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -202,9 +202,9 @@ class GetIamPolicyRequest extends $pb.GeneratedMessage {
   /// OPTIONAL: A `GetPolicyOptions` object for specifying options to
   /// `GetIamPolicy`.
   @$pb.TagNumber(2)
-  $400.GetPolicyOptions get options => $_getN(1);
+  $402.GetPolicyOptions get options => $_getN(1);
   @$pb.TagNumber(2)
-  set options($400.GetPolicyOptions v) {
+  set options($402.GetPolicyOptions v) {
     setField(2, v);
   }
 
@@ -213,7 +213,7 @@ class GetIamPolicyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearOptions() => clearField(2);
   @$pb.TagNumber(2)
-  $400.GetPolicyOptions ensureOptions() => $_ensure(1);
+  $402.GetPolicyOptions ensureOptions() => $_ensure(1);
 }
 
 /// Request message for `TestIamPermissions` method.

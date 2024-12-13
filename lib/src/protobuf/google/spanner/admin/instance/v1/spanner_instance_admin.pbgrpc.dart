@@ -19,78 +19,78 @@ import '../../../../iam/v1/iam_policy.pb.dart' as $87;
 import '../../../../iam/v1/policy.pb.dart' as $88;
 import '../../../../longrunning/operations.pb.dart' as $13;
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'spanner_instance_admin.pb.dart' as $247;
+import 'spanner_instance_admin.pb.dart' as $249;
 
 export 'spanner_instance_admin.pb.dart';
 
 @$pb.GrpcServiceName('google.spanner.admin.instance.v1.InstanceAdmin')
 class InstanceAdminClient extends $grpc.Client {
   static final _$listInstanceConfigs = $grpc.ClientMethod<
-          $247.ListInstanceConfigsRequest, $247.ListInstanceConfigsResponse>(
+          $249.ListInstanceConfigsRequest, $249.ListInstanceConfigsResponse>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/ListInstanceConfigs',
-      ($247.ListInstanceConfigsRequest value) => value.writeToBuffer(),
+      ($249.ListInstanceConfigsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $247.ListInstanceConfigsResponse.fromBuffer(value));
+          $249.ListInstanceConfigsResponse.fromBuffer(value));
   static final _$getInstanceConfig =
-      $grpc.ClientMethod<$247.GetInstanceConfigRequest, $247.InstanceConfig>(
+      $grpc.ClientMethod<$249.GetInstanceConfigRequest, $249.InstanceConfig>(
           '/google.spanner.admin.instance.v1.InstanceAdmin/GetInstanceConfig',
-          ($247.GetInstanceConfigRequest value) => value.writeToBuffer(),
+          ($249.GetInstanceConfigRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $247.InstanceConfig.fromBuffer(value));
+              $249.InstanceConfig.fromBuffer(value));
   static final _$createInstanceConfig = $grpc.ClientMethod<
-          $247.CreateInstanceConfigRequest, $13.Operation>(
+          $249.CreateInstanceConfigRequest, $13.Operation>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/CreateInstanceConfig',
-      ($247.CreateInstanceConfigRequest value) => value.writeToBuffer(),
+      ($249.CreateInstanceConfigRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$updateInstanceConfig = $grpc.ClientMethod<
-          $247.UpdateInstanceConfigRequest, $13.Operation>(
+          $249.UpdateInstanceConfigRequest, $13.Operation>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/UpdateInstanceConfig',
-      ($247.UpdateInstanceConfigRequest value) => value.writeToBuffer(),
+      ($249.UpdateInstanceConfigRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$deleteInstanceConfig = $grpc.ClientMethod<
-          $247.DeleteInstanceConfigRequest, $3.Empty>(
+          $249.DeleteInstanceConfigRequest, $3.Empty>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/DeleteInstanceConfig',
-      ($247.DeleteInstanceConfigRequest value) => value.writeToBuffer(),
+      ($249.DeleteInstanceConfigRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$listInstanceConfigOperations = $grpc.ClientMethod<
-          $247.ListInstanceConfigOperationsRequest,
-          $247.ListInstanceConfigOperationsResponse>(
+          $249.ListInstanceConfigOperationsRequest,
+          $249.ListInstanceConfigOperationsResponse>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/ListInstanceConfigOperations',
-      ($247.ListInstanceConfigOperationsRequest value) => value.writeToBuffer(),
+      ($249.ListInstanceConfigOperationsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $247.ListInstanceConfigOperationsResponse.fromBuffer(value));
+          $249.ListInstanceConfigOperationsResponse.fromBuffer(value));
   static final _$listInstances =
-      $grpc.ClientMethod<$247.ListInstancesRequest, $247.ListInstancesResponse>(
+      $grpc.ClientMethod<$249.ListInstancesRequest, $249.ListInstancesResponse>(
           '/google.spanner.admin.instance.v1.InstanceAdmin/ListInstances',
-          ($247.ListInstancesRequest value) => value.writeToBuffer(),
+          ($249.ListInstancesRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $247.ListInstancesResponse.fromBuffer(value));
+              $249.ListInstancesResponse.fromBuffer(value));
   static final _$listInstancePartitions = $grpc.ClientMethod<
-          $247.ListInstancePartitionsRequest,
-          $247.ListInstancePartitionsResponse>(
+          $249.ListInstancePartitionsRequest,
+          $249.ListInstancePartitionsResponse>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/ListInstancePartitions',
-      ($247.ListInstancePartitionsRequest value) => value.writeToBuffer(),
+      ($249.ListInstancePartitionsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $247.ListInstancePartitionsResponse.fromBuffer(value));
+          $249.ListInstancePartitionsResponse.fromBuffer(value));
   static final _$getInstance =
-      $grpc.ClientMethod<$247.GetInstanceRequest, $247.Instance>(
+      $grpc.ClientMethod<$249.GetInstanceRequest, $249.Instance>(
           '/google.spanner.admin.instance.v1.InstanceAdmin/GetInstance',
-          ($247.GetInstanceRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $247.Instance.fromBuffer(value));
+          ($249.GetInstanceRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $249.Instance.fromBuffer(value));
   static final _$createInstance =
-      $grpc.ClientMethod<$247.CreateInstanceRequest, $13.Operation>(
+      $grpc.ClientMethod<$249.CreateInstanceRequest, $13.Operation>(
           '/google.spanner.admin.instance.v1.InstanceAdmin/CreateInstance',
-          ($247.CreateInstanceRequest value) => value.writeToBuffer(),
+          ($249.CreateInstanceRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$updateInstance =
-      $grpc.ClientMethod<$247.UpdateInstanceRequest, $13.Operation>(
+      $grpc.ClientMethod<$249.UpdateInstanceRequest, $13.Operation>(
           '/google.spanner.admin.instance.v1.InstanceAdmin/UpdateInstance',
-          ($247.UpdateInstanceRequest value) => value.writeToBuffer(),
+          ($249.UpdateInstanceRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$deleteInstance =
-      $grpc.ClientMethod<$247.DeleteInstanceRequest, $3.Empty>(
+      $grpc.ClientMethod<$249.DeleteInstanceRequest, $3.Empty>(
           '/google.spanner.admin.instance.v1.InstanceAdmin/DeleteInstance',
-          ($247.DeleteInstanceRequest value) => value.writeToBuffer(),
+          ($249.DeleteInstanceRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$setIamPolicy =
       $grpc.ClientMethod<$87.SetIamPolicyRequest, $88.Policy>(
@@ -109,38 +109,38 @@ class InstanceAdminClient extends $grpc.Client {
       ($core.List<$core.int> value) =>
           $87.TestIamPermissionsResponse.fromBuffer(value));
   static final _$getInstancePartition = $grpc.ClientMethod<
-          $247.GetInstancePartitionRequest, $247.InstancePartition>(
+          $249.GetInstancePartitionRequest, $249.InstancePartition>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/GetInstancePartition',
-      ($247.GetInstancePartitionRequest value) => value.writeToBuffer(),
+      ($249.GetInstancePartitionRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $247.InstancePartition.fromBuffer(value));
+          $249.InstancePartition.fromBuffer(value));
   static final _$createInstancePartition = $grpc.ClientMethod<
-          $247.CreateInstancePartitionRequest, $13.Operation>(
+          $249.CreateInstancePartitionRequest, $13.Operation>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/CreateInstancePartition',
-      ($247.CreateInstancePartitionRequest value) => value.writeToBuffer(),
+      ($249.CreateInstancePartitionRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$deleteInstancePartition = $grpc.ClientMethod<
-          $247.DeleteInstancePartitionRequest, $3.Empty>(
+          $249.DeleteInstancePartitionRequest, $3.Empty>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/DeleteInstancePartition',
-      ($247.DeleteInstancePartitionRequest value) => value.writeToBuffer(),
+      ($249.DeleteInstancePartitionRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$updateInstancePartition = $grpc.ClientMethod<
-          $247.UpdateInstancePartitionRequest, $13.Operation>(
+          $249.UpdateInstancePartitionRequest, $13.Operation>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/UpdateInstancePartition',
-      ($247.UpdateInstancePartitionRequest value) => value.writeToBuffer(),
+      ($249.UpdateInstancePartitionRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$listInstancePartitionOperations = $grpc.ClientMethod<
-          $247.ListInstancePartitionOperationsRequest,
-          $247.ListInstancePartitionOperationsResponse>(
+          $249.ListInstancePartitionOperationsRequest,
+          $249.ListInstancePartitionOperationsResponse>(
       '/google.spanner.admin.instance.v1.InstanceAdmin/ListInstancePartitionOperations',
-      ($247.ListInstancePartitionOperationsRequest value) =>
+      ($249.ListInstancePartitionOperationsRequest value) =>
           value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $247.ListInstancePartitionOperationsResponse.fromBuffer(value));
+          $249.ListInstancePartitionOperationsResponse.fromBuffer(value));
   static final _$moveInstance =
-      $grpc.ClientMethod<$247.MoveInstanceRequest, $13.Operation>(
+      $grpc.ClientMethod<$249.MoveInstanceRequest, $13.Operation>(
           '/google.spanner.admin.instance.v1.InstanceAdmin/MoveInstance',
-          ($247.MoveInstanceRequest value) => value.writeToBuffer(),
+          ($249.MoveInstanceRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
 
   InstanceAdminClient($grpc.ClientChannel channel,
@@ -148,77 +148,77 @@ class InstanceAdminClient extends $grpc.Client {
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$247.ListInstanceConfigsResponse> listInstanceConfigs(
-      $247.ListInstanceConfigsRequest request,
+  $grpc.ResponseFuture<$249.ListInstanceConfigsResponse> listInstanceConfigs(
+      $249.ListInstanceConfigsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listInstanceConfigs, request, options: options);
   }
 
-  $grpc.ResponseFuture<$247.InstanceConfig> getInstanceConfig(
-      $247.GetInstanceConfigRequest request,
+  $grpc.ResponseFuture<$249.InstanceConfig> getInstanceConfig(
+      $249.GetInstanceConfigRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getInstanceConfig, request, options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> createInstanceConfig(
-      $247.CreateInstanceConfigRequest request,
+      $249.CreateInstanceConfigRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createInstanceConfig, request, options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> updateInstanceConfig(
-      $247.UpdateInstanceConfigRequest request,
+      $249.UpdateInstanceConfigRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateInstanceConfig, request, options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> deleteInstanceConfig(
-      $247.DeleteInstanceConfigRequest request,
+      $249.DeleteInstanceConfigRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteInstanceConfig, request, options: options);
   }
 
-  $grpc.ResponseFuture<$247.ListInstanceConfigOperationsResponse>
+  $grpc.ResponseFuture<$249.ListInstanceConfigOperationsResponse>
       listInstanceConfigOperations(
-          $247.ListInstanceConfigOperationsRequest request,
+          $249.ListInstanceConfigOperationsRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listInstanceConfigOperations, request,
         options: options);
   }
 
-  $grpc.ResponseFuture<$247.ListInstancesResponse> listInstances(
-      $247.ListInstancesRequest request,
+  $grpc.ResponseFuture<$249.ListInstancesResponse> listInstances(
+      $249.ListInstancesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listInstances, request, options: options);
   }
 
-  $grpc.ResponseFuture<$247.ListInstancePartitionsResponse>
-      listInstancePartitions($247.ListInstancePartitionsRequest request,
+  $grpc.ResponseFuture<$249.ListInstancePartitionsResponse>
+      listInstancePartitions($249.ListInstancePartitionsRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listInstancePartitions, request,
         options: options);
   }
 
-  $grpc.ResponseFuture<$247.Instance> getInstance(
-      $247.GetInstanceRequest request,
+  $grpc.ResponseFuture<$249.Instance> getInstance(
+      $249.GetInstanceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getInstance, request, options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> createInstance(
-      $247.CreateInstanceRequest request,
+      $249.CreateInstanceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createInstance, request, options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> updateInstance(
-      $247.UpdateInstanceRequest request,
+      $249.UpdateInstanceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateInstance, request, options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> deleteInstance(
-      $247.DeleteInstanceRequest request,
+      $249.DeleteInstanceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteInstance, request, options: options);
   }
@@ -239,43 +239,43 @@ class InstanceAdminClient extends $grpc.Client {
     return $createUnaryCall(_$testIamPermissions, request, options: options);
   }
 
-  $grpc.ResponseFuture<$247.InstancePartition> getInstancePartition(
-      $247.GetInstancePartitionRequest request,
+  $grpc.ResponseFuture<$249.InstancePartition> getInstancePartition(
+      $249.GetInstancePartitionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getInstancePartition, request, options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> createInstancePartition(
-      $247.CreateInstancePartitionRequest request,
+      $249.CreateInstancePartitionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createInstancePartition, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> deleteInstancePartition(
-      $247.DeleteInstancePartitionRequest request,
+      $249.DeleteInstancePartitionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteInstancePartition, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> updateInstancePartition(
-      $247.UpdateInstancePartitionRequest request,
+      $249.UpdateInstancePartitionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateInstancePartition, request,
         options: options);
   }
 
-  $grpc.ResponseFuture<$247.ListInstancePartitionOperationsResponse>
+  $grpc.ResponseFuture<$249.ListInstancePartitionOperationsResponse>
       listInstancePartitionOperations(
-          $247.ListInstancePartitionOperationsRequest request,
+          $249.ListInstancePartitionOperationsRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listInstancePartitionOperations, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> moveInstance(
-      $247.MoveInstanceRequest request,
+      $249.MoveInstanceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$moveInstance, request, options: options);
   }
@@ -286,109 +286,109 @@ abstract class InstanceAdminServiceBase extends $grpc.Service {
   $core.String get $name => 'google.spanner.admin.instance.v1.InstanceAdmin';
 
   InstanceAdminServiceBase() {
-    $addMethod($grpc.ServiceMethod<$247.ListInstanceConfigsRequest,
-            $247.ListInstanceConfigsResponse>(
+    $addMethod($grpc.ServiceMethod<$249.ListInstanceConfigsRequest,
+            $249.ListInstanceConfigsResponse>(
         'ListInstanceConfigs',
         listInstanceConfigs_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.ListInstanceConfigsRequest.fromBuffer(value),
-        ($247.ListInstanceConfigsResponse value) => value.writeToBuffer()));
+            $249.ListInstanceConfigsRequest.fromBuffer(value),
+        ($249.ListInstanceConfigsResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$247.GetInstanceConfigRequest, $247.InstanceConfig>(
+        $grpc.ServiceMethod<$249.GetInstanceConfigRequest, $249.InstanceConfig>(
             'GetInstanceConfig',
             getInstanceConfig_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $247.GetInstanceConfigRequest.fromBuffer(value),
-            ($247.InstanceConfig value) => value.writeToBuffer()));
+                $249.GetInstanceConfigRequest.fromBuffer(value),
+            ($249.InstanceConfig value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$247.CreateInstanceConfigRequest, $13.Operation>(
+        $grpc.ServiceMethod<$249.CreateInstanceConfigRequest, $13.Operation>(
             'CreateInstanceConfig',
             createInstanceConfig_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $247.CreateInstanceConfigRequest.fromBuffer(value),
+                $249.CreateInstanceConfigRequest.fromBuffer(value),
             ($13.Operation value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$247.UpdateInstanceConfigRequest, $13.Operation>(
+        $grpc.ServiceMethod<$249.UpdateInstanceConfigRequest, $13.Operation>(
             'UpdateInstanceConfig',
             updateInstanceConfig_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $247.UpdateInstanceConfigRequest.fromBuffer(value),
+                $249.UpdateInstanceConfigRequest.fromBuffer(value),
             ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.DeleteInstanceConfigRequest, $3.Empty>(
+    $addMethod($grpc.ServiceMethod<$249.DeleteInstanceConfigRequest, $3.Empty>(
         'DeleteInstanceConfig',
         deleteInstanceConfig_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.DeleteInstanceConfigRequest.fromBuffer(value),
+            $249.DeleteInstanceConfigRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.ListInstanceConfigOperationsRequest,
-            $247.ListInstanceConfigOperationsResponse>(
+    $addMethod($grpc.ServiceMethod<$249.ListInstanceConfigOperationsRequest,
+            $249.ListInstanceConfigOperationsResponse>(
         'ListInstanceConfigOperations',
         listInstanceConfigOperations_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.ListInstanceConfigOperationsRequest.fromBuffer(value),
-        ($247.ListInstanceConfigOperationsResponse value) =>
+            $249.ListInstanceConfigOperationsRequest.fromBuffer(value),
+        ($249.ListInstanceConfigOperationsResponse value) =>
             value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.ListInstancesRequest,
-            $247.ListInstancesResponse>(
+    $addMethod($grpc.ServiceMethod<$249.ListInstancesRequest,
+            $249.ListInstancesResponse>(
         'ListInstances',
         listInstances_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.ListInstancesRequest.fromBuffer(value),
-        ($247.ListInstancesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.ListInstancePartitionsRequest,
-            $247.ListInstancePartitionsResponse>(
+            $249.ListInstancesRequest.fromBuffer(value),
+        ($249.ListInstancesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$249.ListInstancePartitionsRequest,
+            $249.ListInstancePartitionsResponse>(
         'ListInstancePartitions',
         listInstancePartitions_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.ListInstancePartitionsRequest.fromBuffer(value),
-        ($247.ListInstancePartitionsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.GetInstanceRequest, $247.Instance>(
+            $249.ListInstancePartitionsRequest.fromBuffer(value),
+        ($249.ListInstancePartitionsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$249.GetInstanceRequest, $249.Instance>(
         'GetInstance',
         getInstance_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.GetInstanceRequest.fromBuffer(value),
-        ($247.Instance value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.CreateInstanceRequest, $13.Operation>(
+            $249.GetInstanceRequest.fromBuffer(value),
+        ($249.Instance value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$249.CreateInstanceRequest, $13.Operation>(
         'CreateInstance',
         createInstance_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.CreateInstanceRequest.fromBuffer(value),
+            $249.CreateInstanceRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.UpdateInstanceRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$249.UpdateInstanceRequest, $13.Operation>(
         'UpdateInstance',
         updateInstance_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.UpdateInstanceRequest.fromBuffer(value),
+            $249.UpdateInstanceRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.DeleteInstanceRequest, $3.Empty>(
+    $addMethod($grpc.ServiceMethod<$249.DeleteInstanceRequest, $3.Empty>(
         'DeleteInstance',
         deleteInstance_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.DeleteInstanceRequest.fromBuffer(value),
+            $249.DeleteInstanceRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
     $addMethod($grpc.ServiceMethod<$87.SetIamPolicyRequest, $88.Policy>(
         'SetIamPolicy',
@@ -415,126 +415,126 @@ abstract class InstanceAdminServiceBase extends $grpc.Service {
         ($core.List<$core.int> value) =>
             $87.TestIamPermissionsRequest.fromBuffer(value),
         ($87.TestIamPermissionsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.GetInstancePartitionRequest,
-            $247.InstancePartition>(
+    $addMethod($grpc.ServiceMethod<$249.GetInstancePartitionRequest,
+            $249.InstancePartition>(
         'GetInstancePartition',
         getInstancePartition_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.GetInstancePartitionRequest.fromBuffer(value),
-        ($247.InstancePartition value) => value.writeToBuffer()));
+            $249.GetInstancePartitionRequest.fromBuffer(value),
+        ($249.InstancePartition value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$247.CreateInstancePartitionRequest, $13.Operation>(
+        $grpc.ServiceMethod<$249.CreateInstancePartitionRequest, $13.Operation>(
             'CreateInstancePartition',
             createInstancePartition_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $247.CreateInstancePartitionRequest.fromBuffer(value),
+                $249.CreateInstancePartitionRequest.fromBuffer(value),
             ($13.Operation value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$247.DeleteInstancePartitionRequest, $3.Empty>(
+        $grpc.ServiceMethod<$249.DeleteInstancePartitionRequest, $3.Empty>(
             'DeleteInstancePartition',
             deleteInstancePartition_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $247.DeleteInstancePartitionRequest.fromBuffer(value),
+                $249.DeleteInstancePartitionRequest.fromBuffer(value),
             ($3.Empty value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$247.UpdateInstancePartitionRequest, $13.Operation>(
+        $grpc.ServiceMethod<$249.UpdateInstancePartitionRequest, $13.Operation>(
             'UpdateInstancePartition',
             updateInstancePartition_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $247.UpdateInstancePartitionRequest.fromBuffer(value),
+                $249.UpdateInstancePartitionRequest.fromBuffer(value),
             ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.ListInstancePartitionOperationsRequest,
-            $247.ListInstancePartitionOperationsResponse>(
+    $addMethod($grpc.ServiceMethod<$249.ListInstancePartitionOperationsRequest,
+            $249.ListInstancePartitionOperationsResponse>(
         'ListInstancePartitionOperations',
         listInstancePartitionOperations_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.ListInstancePartitionOperationsRequest.fromBuffer(value),
-        ($247.ListInstancePartitionOperationsResponse value) =>
+            $249.ListInstancePartitionOperationsRequest.fromBuffer(value),
+        ($249.ListInstancePartitionOperationsResponse value) =>
             value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$247.MoveInstanceRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$249.MoveInstanceRequest, $13.Operation>(
         'MoveInstance',
         moveInstance_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $247.MoveInstanceRequest.fromBuffer(value),
+            $249.MoveInstanceRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
   }
 
-  $async.Future<$247.ListInstanceConfigsResponse> listInstanceConfigs_Pre(
+  $async.Future<$249.ListInstanceConfigsResponse> listInstanceConfigs_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$247.ListInstanceConfigsRequest> request) async {
+      $async.Future<$249.ListInstanceConfigsRequest> request) async {
     return listInstanceConfigs(call, await request);
   }
 
-  $async.Future<$247.InstanceConfig> getInstanceConfig_Pre(
+  $async.Future<$249.InstanceConfig> getInstanceConfig_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$247.GetInstanceConfigRequest> request) async {
+      $async.Future<$249.GetInstanceConfigRequest> request) async {
     return getInstanceConfig(call, await request);
   }
 
   $async.Future<$13.Operation> createInstanceConfig_Pre($grpc.ServiceCall call,
-      $async.Future<$247.CreateInstanceConfigRequest> request) async {
+      $async.Future<$249.CreateInstanceConfigRequest> request) async {
     return createInstanceConfig(call, await request);
   }
 
   $async.Future<$13.Operation> updateInstanceConfig_Pre($grpc.ServiceCall call,
-      $async.Future<$247.UpdateInstanceConfigRequest> request) async {
+      $async.Future<$249.UpdateInstanceConfigRequest> request) async {
     return updateInstanceConfig(call, await request);
   }
 
   $async.Future<$3.Empty> deleteInstanceConfig_Pre($grpc.ServiceCall call,
-      $async.Future<$247.DeleteInstanceConfigRequest> request) async {
+      $async.Future<$249.DeleteInstanceConfigRequest> request) async {
     return deleteInstanceConfig(call, await request);
   }
 
-  $async.Future<$247.ListInstanceConfigOperationsResponse>
+  $async.Future<$249.ListInstanceConfigOperationsResponse>
       listInstanceConfigOperations_Pre(
           $grpc.ServiceCall call,
-          $async.Future<$247.ListInstanceConfigOperationsRequest>
+          $async.Future<$249.ListInstanceConfigOperationsRequest>
               request) async {
     return listInstanceConfigOperations(call, await request);
   }
 
-  $async.Future<$247.ListInstancesResponse> listInstances_Pre(
+  $async.Future<$249.ListInstancesResponse> listInstances_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$247.ListInstancesRequest> request) async {
+      $async.Future<$249.ListInstancesRequest> request) async {
     return listInstances(call, await request);
   }
 
-  $async.Future<$247.ListInstancePartitionsResponse> listInstancePartitions_Pre(
+  $async.Future<$249.ListInstancePartitionsResponse> listInstancePartitions_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$247.ListInstancePartitionsRequest> request) async {
+      $async.Future<$249.ListInstancePartitionsRequest> request) async {
     return listInstancePartitions(call, await request);
   }
 
-  $async.Future<$247.Instance> getInstance_Pre($grpc.ServiceCall call,
-      $async.Future<$247.GetInstanceRequest> request) async {
+  $async.Future<$249.Instance> getInstance_Pre($grpc.ServiceCall call,
+      $async.Future<$249.GetInstanceRequest> request) async {
     return getInstance(call, await request);
   }
 
   $async.Future<$13.Operation> createInstance_Pre($grpc.ServiceCall call,
-      $async.Future<$247.CreateInstanceRequest> request) async {
+      $async.Future<$249.CreateInstanceRequest> request) async {
     return createInstance(call, await request);
   }
 
   $async.Future<$13.Operation> updateInstance_Pre($grpc.ServiceCall call,
-      $async.Future<$247.UpdateInstanceRequest> request) async {
+      $async.Future<$249.UpdateInstanceRequest> request) async {
     return updateInstance(call, await request);
   }
 
   $async.Future<$3.Empty> deleteInstance_Pre($grpc.ServiceCall call,
-      $async.Future<$247.DeleteInstanceRequest> request) async {
+      $async.Future<$249.DeleteInstanceRequest> request) async {
     return deleteInstance(call, await request);
   }
 
@@ -554,84 +554,84 @@ abstract class InstanceAdminServiceBase extends $grpc.Service {
     return testIamPermissions(call, await request);
   }
 
-  $async.Future<$247.InstancePartition> getInstancePartition_Pre(
+  $async.Future<$249.InstancePartition> getInstancePartition_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$247.GetInstancePartitionRequest> request) async {
+      $async.Future<$249.GetInstancePartitionRequest> request) async {
     return getInstancePartition(call, await request);
   }
 
   $async.Future<$13.Operation> createInstancePartition_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$247.CreateInstancePartitionRequest> request) async {
+      $async.Future<$249.CreateInstancePartitionRequest> request) async {
     return createInstancePartition(call, await request);
   }
 
   $async.Future<$3.Empty> deleteInstancePartition_Pre($grpc.ServiceCall call,
-      $async.Future<$247.DeleteInstancePartitionRequest> request) async {
+      $async.Future<$249.DeleteInstancePartitionRequest> request) async {
     return deleteInstancePartition(call, await request);
   }
 
   $async.Future<$13.Operation> updateInstancePartition_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$247.UpdateInstancePartitionRequest> request) async {
+      $async.Future<$249.UpdateInstancePartitionRequest> request) async {
     return updateInstancePartition(call, await request);
   }
 
-  $async.Future<$247.ListInstancePartitionOperationsResponse>
+  $async.Future<$249.ListInstancePartitionOperationsResponse>
       listInstancePartitionOperations_Pre(
           $grpc.ServiceCall call,
-          $async.Future<$247.ListInstancePartitionOperationsRequest>
+          $async.Future<$249.ListInstancePartitionOperationsRequest>
               request) async {
     return listInstancePartitionOperations(call, await request);
   }
 
   $async.Future<$13.Operation> moveInstance_Pre($grpc.ServiceCall call,
-      $async.Future<$247.MoveInstanceRequest> request) async {
+      $async.Future<$249.MoveInstanceRequest> request) async {
     return moveInstance(call, await request);
   }
 
-  $async.Future<$247.ListInstanceConfigsResponse> listInstanceConfigs(
-      $grpc.ServiceCall call, $247.ListInstanceConfigsRequest request);
-  $async.Future<$247.InstanceConfig> getInstanceConfig(
-      $grpc.ServiceCall call, $247.GetInstanceConfigRequest request);
+  $async.Future<$249.ListInstanceConfigsResponse> listInstanceConfigs(
+      $grpc.ServiceCall call, $249.ListInstanceConfigsRequest request);
+  $async.Future<$249.InstanceConfig> getInstanceConfig(
+      $grpc.ServiceCall call, $249.GetInstanceConfigRequest request);
   $async.Future<$13.Operation> createInstanceConfig(
-      $grpc.ServiceCall call, $247.CreateInstanceConfigRequest request);
+      $grpc.ServiceCall call, $249.CreateInstanceConfigRequest request);
   $async.Future<$13.Operation> updateInstanceConfig(
-      $grpc.ServiceCall call, $247.UpdateInstanceConfigRequest request);
+      $grpc.ServiceCall call, $249.UpdateInstanceConfigRequest request);
   $async.Future<$3.Empty> deleteInstanceConfig(
-      $grpc.ServiceCall call, $247.DeleteInstanceConfigRequest request);
-  $async.Future<$247.ListInstanceConfigOperationsResponse>
+      $grpc.ServiceCall call, $249.DeleteInstanceConfigRequest request);
+  $async.Future<$249.ListInstanceConfigOperationsResponse>
       listInstanceConfigOperations($grpc.ServiceCall call,
-          $247.ListInstanceConfigOperationsRequest request);
-  $async.Future<$247.ListInstancesResponse> listInstances(
-      $grpc.ServiceCall call, $247.ListInstancesRequest request);
-  $async.Future<$247.ListInstancePartitionsResponse> listInstancePartitions(
-      $grpc.ServiceCall call, $247.ListInstancePartitionsRequest request);
-  $async.Future<$247.Instance> getInstance(
-      $grpc.ServiceCall call, $247.GetInstanceRequest request);
+          $249.ListInstanceConfigOperationsRequest request);
+  $async.Future<$249.ListInstancesResponse> listInstances(
+      $grpc.ServiceCall call, $249.ListInstancesRequest request);
+  $async.Future<$249.ListInstancePartitionsResponse> listInstancePartitions(
+      $grpc.ServiceCall call, $249.ListInstancePartitionsRequest request);
+  $async.Future<$249.Instance> getInstance(
+      $grpc.ServiceCall call, $249.GetInstanceRequest request);
   $async.Future<$13.Operation> createInstance(
-      $grpc.ServiceCall call, $247.CreateInstanceRequest request);
+      $grpc.ServiceCall call, $249.CreateInstanceRequest request);
   $async.Future<$13.Operation> updateInstance(
-      $grpc.ServiceCall call, $247.UpdateInstanceRequest request);
+      $grpc.ServiceCall call, $249.UpdateInstanceRequest request);
   $async.Future<$3.Empty> deleteInstance(
-      $grpc.ServiceCall call, $247.DeleteInstanceRequest request);
+      $grpc.ServiceCall call, $249.DeleteInstanceRequest request);
   $async.Future<$88.Policy> setIamPolicy(
       $grpc.ServiceCall call, $87.SetIamPolicyRequest request);
   $async.Future<$88.Policy> getIamPolicy(
       $grpc.ServiceCall call, $87.GetIamPolicyRequest request);
   $async.Future<$87.TestIamPermissionsResponse> testIamPermissions(
       $grpc.ServiceCall call, $87.TestIamPermissionsRequest request);
-  $async.Future<$247.InstancePartition> getInstancePartition(
-      $grpc.ServiceCall call, $247.GetInstancePartitionRequest request);
+  $async.Future<$249.InstancePartition> getInstancePartition(
+      $grpc.ServiceCall call, $249.GetInstancePartitionRequest request);
   $async.Future<$13.Operation> createInstancePartition(
-      $grpc.ServiceCall call, $247.CreateInstancePartitionRequest request);
+      $grpc.ServiceCall call, $249.CreateInstancePartitionRequest request);
   $async.Future<$3.Empty> deleteInstancePartition(
-      $grpc.ServiceCall call, $247.DeleteInstancePartitionRequest request);
+      $grpc.ServiceCall call, $249.DeleteInstancePartitionRequest request);
   $async.Future<$13.Operation> updateInstancePartition(
-      $grpc.ServiceCall call, $247.UpdateInstancePartitionRequest request);
-  $async.Future<$247.ListInstancePartitionOperationsResponse>
+      $grpc.ServiceCall call, $249.UpdateInstancePartitionRequest request);
+  $async.Future<$249.ListInstancePartitionOperationsResponse>
       listInstancePartitionOperations($grpc.ServiceCall call,
-          $247.ListInstancePartitionOperationsRequest request);
+          $249.ListInstancePartitionOperationsRequest request);
   $async.Future<$13.Operation> moveInstance(
-      $grpc.ServiceCall call, $247.MoveInstanceRequest request);
+      $grpc.ServiceCall call, $249.MoveInstanceRequest request);
 }

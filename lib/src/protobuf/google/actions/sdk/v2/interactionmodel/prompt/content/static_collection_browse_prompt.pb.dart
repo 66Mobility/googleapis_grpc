@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'static_image_prompt.pb.dart' as $262;
-import 'static_image_prompt.pbenum.dart' as $262;
-import 'static_link_prompt.pb.dart' as $263;
+import 'static_image_prompt.pb.dart' as $264;
+import 'static_image_prompt.pbenum.dart' as $264;
+import 'static_link_prompt.pb.dart' as $265;
 
 /// Item in the collection.
 class StaticCollectionBrowsePrompt_CollectionBrowseItem
@@ -24,8 +24,8 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem
     $core.String? title,
     $core.String? description,
     $core.String? footer,
-    $262.StaticImagePrompt? image,
-    $263.OpenUrl? openUriAction,
+    $264.StaticImagePrompt? image,
+    $265.OpenUrl? openUriAction,
   }) {
     final $result = create();
     if (title != null) {
@@ -66,10 +66,10 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'footer')
-    ..aOM<$262.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image',
-        subBuilder: $262.StaticImagePrompt.create)
-    ..aOM<$263.OpenUrl>(5, _omitFieldNames ? '' : 'openUriAction',
-        subBuilder: $263.OpenUrl.create)
+    ..aOM<$264.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image',
+        subBuilder: $264.StaticImagePrompt.create)
+    ..aOM<$265.OpenUrl>(5, _omitFieldNames ? '' : 'openUriAction',
+        subBuilder: $265.OpenUrl.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -146,9 +146,9 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem
 
   /// Image for the collection item.
   @$pb.TagNumber(4)
-  $262.StaticImagePrompt get image => $_getN(3);
+  $264.StaticImagePrompt get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image($262.StaticImagePrompt v) {
+  set image($264.StaticImagePrompt v) {
     setField(4, v);
   }
 
@@ -157,13 +157,13 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem
   @$pb.TagNumber(4)
   void clearImage() => clearField(4);
   @$pb.TagNumber(4)
-  $262.StaticImagePrompt ensureImage() => $_ensure(3);
+  $264.StaticImagePrompt ensureImage() => $_ensure(3);
 
   /// Required. URI to open if the item selected.
   @$pb.TagNumber(5)
-  $263.OpenUrl get openUriAction => $_getN(4);
+  $265.OpenUrl get openUriAction => $_getN(4);
   @$pb.TagNumber(5)
-  set openUriAction($263.OpenUrl v) {
+  set openUriAction($265.OpenUrl v) {
     setField(5, v);
   }
 
@@ -172,7 +172,7 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem
   @$pb.TagNumber(5)
   void clearOpenUriAction() => clearField(5);
   @$pb.TagNumber(5)
-  $263.OpenUrl ensureOpenUriAction() => $_ensure(4);
+  $265.OpenUrl ensureOpenUriAction() => $_ensure(4);
 }
 
 /// Presents a set of web documents as a collection of large-tile items. Items
@@ -180,7 +180,7 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem
 class StaticCollectionBrowsePrompt extends $pb.GeneratedMessage {
   factory StaticCollectionBrowsePrompt({
     $core.Iterable<StaticCollectionBrowsePrompt_CollectionBrowseItem>? items,
-    $262.StaticImagePrompt_ImageFill? imageFill,
+    $264.StaticImagePrompt_ImageFill? imageFill,
   }) {
     final $result = create();
     if (items != null) {
@@ -208,11 +208,11 @@ class StaticCollectionBrowsePrompt extends $pb.GeneratedMessage {
     ..pc<StaticCollectionBrowsePrompt_CollectionBrowseItem>(
         1, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM,
         subBuilder: StaticCollectionBrowsePrompt_CollectionBrowseItem.create)
-    ..e<$262.StaticImagePrompt_ImageFill>(
+    ..e<$264.StaticImagePrompt_ImageFill>(
         2, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE,
-        defaultOrMaker: $262.StaticImagePrompt_ImageFill.UNSPECIFIED,
-        valueOf: $262.StaticImagePrompt_ImageFill.valueOf,
-        enumValues: $262.StaticImagePrompt_ImageFill.values)
+        defaultOrMaker: $264.StaticImagePrompt_ImageFill.UNSPECIFIED,
+        valueOf: $264.StaticImagePrompt_ImageFill.valueOf,
+        enumValues: $264.StaticImagePrompt_ImageFill.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -250,9 +250,9 @@ class StaticCollectionBrowsePrompt extends $pb.GeneratedMessage {
 
   /// Image display option for images in the collection.
   @$pb.TagNumber(2)
-  $262.StaticImagePrompt_ImageFill get imageFill => $_getN(1);
+  $264.StaticImagePrompt_ImageFill get imageFill => $_getN(1);
   @$pb.TagNumber(2)
-  set imageFill($262.StaticImagePrompt_ImageFill v) {
+  set imageFill($264.StaticImagePrompt_ImageFill v) {
     setField(2, v);
   }
 

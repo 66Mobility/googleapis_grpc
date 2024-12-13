@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $261;
+import '../../../protobuf/struct.pb.dart' as $263;
 import 'content.pbenum.dart';
 
 export 'content.pbenum.dart';
@@ -1262,7 +1262,7 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
 class FunctionCall extends $pb.GeneratedMessage {
   factory FunctionCall({
     $core.String? name,
-    $261.Struct? args,
+    $263.Struct? args,
   }) {
     final $result = create();
     if (name != null) {
@@ -1287,8 +1287,8 @@ class FunctionCall extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'args',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'args',
+        subBuilder: $263.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1331,9 +1331,9 @@ class FunctionCall extends $pb.GeneratedMessage {
 
   /// Optional. The function parameters and values in JSON object format.
   @$pb.TagNumber(2)
-  $261.Struct get args => $_getN(1);
+  $263.Struct get args => $_getN(1);
   @$pb.TagNumber(2)
-  set args($261.Struct v) {
+  set args($263.Struct v) {
     setField(2, v);
   }
 
@@ -1342,7 +1342,7 @@ class FunctionCall extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearArgs() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Struct ensureArgs() => $_ensure(1);
+  $263.Struct ensureArgs() => $_ensure(1);
 }
 
 /// The result output from a `FunctionCall` that contains a string
@@ -1353,7 +1353,7 @@ class FunctionCall extends $pb.GeneratedMessage {
 class FunctionResponse extends $pb.GeneratedMessage {
   factory FunctionResponse({
     $core.String? name,
-    $261.Struct? response,
+    $263.Struct? response,
   }) {
     final $result = create();
     if (name != null) {
@@ -1378,8 +1378,8 @@ class FunctionResponse extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'response',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'response',
+        subBuilder: $263.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1422,9 +1422,9 @@ class FunctionResponse extends $pb.GeneratedMessage {
 
   /// Required. The function response in JSON object format.
   @$pb.TagNumber(2)
-  $261.Struct get response => $_getN(1);
+  $263.Struct get response => $_getN(1);
   @$pb.TagNumber(2)
-  set response($261.Struct v) {
+  set response($263.Struct v) {
     setField(2, v);
   }
 
@@ -1433,7 +1433,7 @@ class FunctionResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearResponse() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Struct ensureResponse() => $_ensure(1);
+  $263.Struct ensureResponse() => $_ensure(1);
 }
 
 /// The `Schema` object allows the definition of input and output data types.

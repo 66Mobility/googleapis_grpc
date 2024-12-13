@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/any.pb.dart' as $321;
+import '../protobuf/any.pb.dart' as $323;
 
 ///  The `Status` type defines a logical error model that is suitable for
 ///  different programming environments, including REST APIs and RPC APIs. It is
@@ -26,7 +26,7 @@ class Status extends $pb.GeneratedMessage {
   factory Status({
     $core.int? code,
     $core.String? message,
-    $core.Iterable<$321.Any>? details,
+    $core.Iterable<$323.Any>? details,
   }) {
     final $result = create();
     if (code != null) {
@@ -54,8 +54,8 @@ class Status extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..pc<$321.Any>(3, _omitFieldNames ? '' : 'details', $pb.PbFieldType.PM,
-        subBuilder: $321.Any.create)
+    ..pc<$323.Any>(3, _omitFieldNames ? '' : 'details', $pb.PbFieldType.PM,
+        subBuilder: $323.Any.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -112,7 +112,7 @@ class Status extends $pb.GeneratedMessage {
   /// A list of messages that carry the error details.  There is a common set of
   /// message types for APIs to use.
   @$pb.TagNumber(3)
-  $core.List<$321.Any> get details => $_getList(2);
+  $core.List<$323.Any> get details => $_getList(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

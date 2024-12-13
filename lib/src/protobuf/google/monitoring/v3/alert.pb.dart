@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $264;
-import '../../protobuf/wrappers.pb.dart' as $307;
-import '../../rpc/status.pb.dart' as $322;
+import '../../protobuf/duration.pb.dart' as $266;
+import '../../protobuf/wrappers.pb.dart' as $309;
+import '../../rpc/status.pb.dart' as $324;
 import 'alert.pbenum.dart';
-import 'common.pb.dart' as $532;
-import 'common.pbenum.dart' as $532;
-import 'mutation_record.pb.dart' as $531;
+import 'common.pb.dart' as $535;
+import 'common.pbenum.dart' as $535;
+import 'mutation_record.pb.dart' as $534;
 
 export 'alert.pbenum.dart';
 
@@ -188,7 +188,7 @@ class AlertPolicy_Documentation extends $pb.GeneratedMessage {
   /// The content may not exceed 8,192 Unicode characters and may not exceed
   /// more than 10,240 bytes when encoded in UTF-8 format, whichever is
   /// smaller. This text can be [templatized by using
-  /// variables](https://cloud.google.com/monitoring/alerts/doc-variables).
+  /// variables](https://cloud.google.com/monitoring/alerts/doc-variables#doc-vars).
   @$pb.TagNumber(1)
   $core.String get content => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -226,7 +226,7 @@ class AlertPolicy_Documentation extends $pb.GeneratedMessage {
   ///  it is common to define textual fields in databases as VARCHAR(255).
   ///
   ///  The contents of the subject line can be [templatized by using
-  ///  variables](https://cloud.google.com/monitoring/alerts/doc-variables).
+  ///  variables](https://cloud.google.com/monitoring/alerts/doc-variables#doc-vars).
   ///  If this field is missing or empty, a default subject line will be
   ///  generated.
   @$pb.TagNumber(3)
@@ -354,7 +354,7 @@ class AlertPolicy_Condition_Trigger extends $pb.GeneratedMessage {
 class AlertPolicy_Condition_MetricThreshold_ForecastOptions
     extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MetricThreshold_ForecastOptions({
-    $264.Duration? forecastHorizon,
+    $266.Duration? forecastHorizon,
   }) {
     final $result = create();
     if (forecastHorizon != null) {
@@ -379,8 +379,8 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'forecastHorizon',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'forecastHorizon',
+        subBuilder: $266.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -423,9 +423,9 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions
   /// considered to be failing.
   /// The forecast horizon can range from 1 hour to 60 hours.
   @$pb.TagNumber(1)
-  $264.Duration get forecastHorizon => $_getN(0);
+  $266.Duration get forecastHorizon => $_getN(0);
   @$pb.TagNumber(1)
-  set forecastHorizon($264.Duration v) {
+  set forecastHorizon($266.Duration v) {
     setField(1, v);
   }
 
@@ -434,7 +434,7 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions
   @$pb.TagNumber(1)
   void clearForecastHorizon() => clearField(1);
   @$pb.TagNumber(1)
-  $264.Duration ensureForecastHorizon() => $_ensure(0);
+  $266.Duration ensureForecastHorizon() => $_ensure(0);
 }
 
 /// A condition type that compares a collection of time series
@@ -442,13 +442,13 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions
 class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MetricThreshold({
     $core.String? filter,
-    $532.ComparisonType? comparison,
+    $535.ComparisonType? comparison,
     $core.double? thresholdValue,
-    $264.Duration? duration,
+    $266.Duration? duration,
     AlertPolicy_Condition_Trigger? trigger,
-    $core.Iterable<$532.Aggregation>? aggregations,
+    $core.Iterable<$535.Aggregation>? aggregations,
     $core.String? denominatorFilter,
-    $core.Iterable<$532.Aggregation>? denominatorAggregations,
+    $core.Iterable<$535.Aggregation>? denominatorAggregations,
     AlertPolicy_Condition_EvaluationMissingData? evaluationMissingData,
     AlertPolicy_Condition_MetricThreshold_ForecastOptions? forecastOptions,
   }) {
@@ -500,24 +500,24 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'filter')
-    ..e<$532.ComparisonType>(
+    ..e<$535.ComparisonType>(
         4, _omitFieldNames ? '' : 'comparison', $pb.PbFieldType.OE,
-        defaultOrMaker: $532.ComparisonType.COMPARISON_UNSPECIFIED,
-        valueOf: $532.ComparisonType.valueOf,
-        enumValues: $532.ComparisonType.values)
+        defaultOrMaker: $535.ComparisonType.COMPARISON_UNSPECIFIED,
+        valueOf: $535.ComparisonType.valueOf,
+        enumValues: $535.ComparisonType.values)
     ..a<$core.double>(
         5, _omitFieldNames ? '' : 'thresholdValue', $pb.PbFieldType.OD)
-    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'duration',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(6, _omitFieldNames ? '' : 'duration',
+        subBuilder: $266.Duration.create)
     ..aOM<AlertPolicy_Condition_Trigger>(7, _omitFieldNames ? '' : 'trigger',
         subBuilder: AlertPolicy_Condition_Trigger.create)
-    ..pc<$532.Aggregation>(
+    ..pc<$535.Aggregation>(
         8, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM,
-        subBuilder: $532.Aggregation.create)
+        subBuilder: $535.Aggregation.create)
     ..aOS(9, _omitFieldNames ? '' : 'denominatorFilter')
-    ..pc<$532.Aggregation>(10, _omitFieldNames ? '' : 'denominatorAggregations',
+    ..pc<$535.Aggregation>(10, _omitFieldNames ? '' : 'denominatorAggregations',
         $pb.PbFieldType.PM,
-        subBuilder: $532.Aggregation.create)
+        subBuilder: $535.Aggregation.create)
     ..e<AlertPolicy_Condition_EvaluationMissingData>(
         11, _omitFieldNames ? '' : 'evaluationMissingData', $pb.PbFieldType.OE,
         defaultOrMaker: AlertPolicy_Condition_EvaluationMissingData
@@ -588,9 +588,9 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   ///
   ///  Only `COMPARISON_LT` and `COMPARISON_GT` are supported currently.
   @$pb.TagNumber(4)
-  $532.ComparisonType get comparison => $_getN(1);
+  $535.ComparisonType get comparison => $_getN(1);
   @$pb.TagNumber(4)
-  set comparison($532.ComparisonType v) {
+  set comparison($535.ComparisonType v) {
     setField(4, v);
   }
 
@@ -623,9 +623,9 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   /// outlier does not generate spurious alerts, but short enough that
   /// unhealthy states are detected and alerted on quickly.
   @$pb.TagNumber(6)
-  $264.Duration get duration => $_getN(3);
+  $266.Duration get duration => $_getN(3);
   @$pb.TagNumber(6)
-  set duration($264.Duration v) {
+  set duration($266.Duration v) {
     setField(6, v);
   }
 
@@ -634,7 +634,7 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $264.Duration ensureDuration() => $_ensure(3);
+  $266.Duration ensureDuration() => $_ensure(3);
 
   /// The number/percent of time series for which the comparison must hold
   /// in order for the condition to trigger. If unspecified, then the
@@ -668,7 +668,7 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   ///  It is advisable to use the `ListTimeSeries` method when debugging this
   ///  field.
   @$pb.TagNumber(8)
-  $core.List<$532.Aggregation> get aggregations => $_getList(5);
+  $core.List<$535.Aggregation> get aggregations => $_getList(5);
 
   ///  A [filter](https://cloud.google.com/monitoring/api/v3/filters) that
   ///  identifies a time series that should be used as the denominator of a
@@ -702,7 +702,7 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   ///  `denominator_aggregations` fields must use the same alignment period
   ///  and produce time series that have the same periodicity and labels.
   @$pb.TagNumber(10)
-  $core.List<$532.Aggregation> get denominatorAggregations => $_getList(7);
+  $core.List<$535.Aggregation> get denominatorAggregations => $_getList(7);
 
   /// A condition control that determines how metric-threshold conditions
   /// are evaluated when data stops arriving. To use this control, the value
@@ -750,9 +750,9 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
 class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MetricAbsence({
     $core.String? filter,
-    $264.Duration? duration,
+    $266.Duration? duration,
     AlertPolicy_Condition_Trigger? trigger,
-    $core.Iterable<$532.Aggregation>? aggregations,
+    $core.Iterable<$535.Aggregation>? aggregations,
   }) {
     final $result = create();
     if (filter != null) {
@@ -784,13 +784,13 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'filter')
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $266.Duration.create)
     ..aOM<AlertPolicy_Condition_Trigger>(3, _omitFieldNames ? '' : 'trigger',
         subBuilder: AlertPolicy_Condition_Trigger.create)
-    ..pc<$532.Aggregation>(
+    ..pc<$535.Aggregation>(
         5, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM,
-        subBuilder: $532.Aggregation.create)
+        subBuilder: $535.Aggregation.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -852,9 +852,9 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   /// error will be returned. The `Duration.nanos` field is
   /// ignored.
   @$pb.TagNumber(2)
-  $264.Duration get duration => $_getN(1);
+  $266.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($264.Duration v) {
+  set duration($266.Duration v) {
     setField(2, v);
   }
 
@@ -863,7 +863,7 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $264.Duration ensureDuration() => $_ensure(1);
+  $266.Duration ensureDuration() => $_ensure(1);
 
   /// The number/percent of time series for which the comparison must hold
   /// in order for the condition to trigger. If unspecified, then the
@@ -895,7 +895,7 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   ///  It is advisable to use the `ListTimeSeries` method when debugging this
   ///  field.
   @$pb.TagNumber(5)
-  $core.List<$532.Aggregation> get aggregations => $_getList(3);
+  $core.List<$535.Aggregation> get aggregations => $_getList(3);
 }
 
 /// A condition type that checks whether a log message in the [scoping
@@ -994,13 +994,13 @@ class AlertPolicy_Condition_LogMatch extends $pb.GeneratedMessage {
   $core.Map<$core.String, $core.String> get labelExtractors => $_getMap(1);
 }
 
-/// A condition type that allows alert policies to be defined using
+/// A condition type that allows alerting policies to be defined using
 /// [Monitoring Query Language](https://cloud.google.com/monitoring/mql).
 class AlertPolicy_Condition_MonitoringQueryLanguageCondition
     extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MonitoringQueryLanguageCondition({
     $core.String? query,
-    $264.Duration? duration,
+    $266.Duration? duration,
     AlertPolicy_Condition_Trigger? trigger,
     AlertPolicy_Condition_EvaluationMissingData? evaluationMissingData,
   }) {
@@ -1037,8 +1037,8 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'query')
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $266.Duration.create)
     ..aOM<AlertPolicy_Condition_Trigger>(3, _omitFieldNames ? '' : 'trigger',
         subBuilder: AlertPolicy_Condition_Trigger.create)
     ..e<AlertPolicy_Condition_EvaluationMissingData>(
@@ -1107,9 +1107,9 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition
   /// outlier does not generate spurious alerts, but short enough that
   /// unhealthy states are detected and alerted on quickly.
   @$pb.TagNumber(2)
-  $264.Duration get duration => $_getN(1);
+  $266.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($264.Duration v) {
+  set duration($266.Duration v) {
     setField(2, v);
   }
 
@@ -1118,7 +1118,7 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $264.Duration ensureDuration() => $_ensure(1);
+  $266.Duration ensureDuration() => $_ensure(1);
 
   /// The number/percent of time series for which the comparison must hold
   /// in order for the condition to trigger. If unspecified, then the
@@ -1156,7 +1156,7 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition
   void clearEvaluationMissingData() => clearField(4);
 }
 
-///  A condition type that allows alert policies to be defined using
+///  A condition type that allows alerting policies to be defined using
 ///  [Prometheus Query Language
 ///  (PromQL)](https://prometheus.io/docs/prometheus/latest/querying/basics/).
 ///
@@ -1191,8 +1191,8 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
     extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_PrometheusQueryLanguageCondition({
     $core.String? query,
-    $264.Duration? duration,
-    $264.Duration? evaluationInterval,
+    $266.Duration? duration,
+    $266.Duration? evaluationInterval,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? ruleGroup,
     $core.String? alertRule,
@@ -1236,10 +1236,10 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'query')
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration',
-        subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'evaluationInterval',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $266.Duration.create)
+    ..aOM<$266.Duration>(3, _omitFieldNames ? '' : 'evaluationInterval',
+        subBuilder: $266.Duration.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName:
             'AlertPolicy.Condition.PrometheusQueryLanguageCondition.LabelsEntry',
@@ -1305,9 +1305,9 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
   /// Must be a non-negative duration or missing.
   /// This field is optional. Its default value is zero.
   @$pb.TagNumber(2)
-  $264.Duration get duration => $_getN(1);
+  $266.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($264.Duration v) {
+  set duration($266.Duration v) {
     setField(2, v);
   }
 
@@ -1316,7 +1316,7 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $264.Duration ensureDuration() => $_ensure(1);
+  $266.Duration ensureDuration() => $_ensure(1);
 
   /// Optional. How often this rule should be evaluated.
   /// Must be a positive multiple of 30 seconds or missing.
@@ -1325,9 +1325,9 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
   /// Prometheus alerting rule, then this value should be taken from the
   /// enclosing rule group.
   @$pb.TagNumber(3)
-  $264.Duration get evaluationInterval => $_getN(2);
+  $266.Duration get evaluationInterval => $_getN(2);
   @$pb.TagNumber(3)
-  set evaluationInterval($264.Duration v) {
+  set evaluationInterval($266.Duration v) {
     setField(3, v);
   }
 
@@ -1336,13 +1336,13 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
   @$pb.TagNumber(3)
   void clearEvaluationInterval() => clearField(3);
   @$pb.TagNumber(3)
-  $264.Duration ensureEvaluationInterval() => $_ensure(2);
+  $266.Duration ensureEvaluationInterval() => $_ensure(2);
 
   /// Optional. Labels to add to or overwrite in the PromQL query result.
   /// Label names [must be
   /// valid](https://prometheus.io/docs/concepts/data_model/#metric-names-and-labels).
   /// Label values can be [templatized by using
-  /// variables](https://cloud.google.com/monitoring/alerts/doc-variables).
+  /// variables](https://cloud.google.com/monitoring/alerts/doc-variables#doc-vars).
   /// The only available variable names are the names of the labels in the
   /// PromQL result, including "__name__" and "value". "labels" may be empty.
   @$pb.TagNumber(4)
@@ -1659,12 +1659,12 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
       ensureConditionPrometheusQueryLanguage() => $_ensure(6);
 }
 
-/// Control over the rate of notifications sent to this alert policy's
+/// Control over the rate of notifications sent to this alerting policy's
 /// notification channels.
 class AlertPolicy_AlertStrategy_NotificationRateLimit
     extends $pb.GeneratedMessage {
   factory AlertPolicy_AlertStrategy_NotificationRateLimit({
-    $264.Duration? period,
+    $266.Duration? period,
   }) {
     final $result = create();
     if (period != null) {
@@ -1689,8 +1689,8 @@ class AlertPolicy_AlertStrategy_NotificationRateLimit
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'period',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'period',
+        subBuilder: $266.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1726,9 +1726,9 @@ class AlertPolicy_AlertStrategy_NotificationRateLimit
 
   /// Not more than one notification per `period`.
   @$pb.TagNumber(1)
-  $264.Duration get period => $_getN(0);
+  $266.Duration get period => $_getN(0);
   @$pb.TagNumber(1)
-  set period($264.Duration v) {
+  set period($266.Duration v) {
     setField(1, v);
   }
 
@@ -1737,7 +1737,7 @@ class AlertPolicy_AlertStrategy_NotificationRateLimit
   @$pb.TagNumber(1)
   void clearPeriod() => clearField(1);
   @$pb.TagNumber(1)
-  $264.Duration ensurePeriod() => $_ensure(0);
+  $266.Duration ensurePeriod() => $_ensure(0);
 }
 
 /// Control over how the notification channels in `notification_channels`
@@ -1746,7 +1746,7 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy
     extends $pb.GeneratedMessage {
   factory AlertPolicy_AlertStrategy_NotificationChannelStrategy({
     $core.Iterable<$core.String>? notificationChannelNames,
-    $264.Duration? renotifyInterval,
+    $266.Duration? renotifyInterval,
   }) {
     final $result = create();
     if (notificationChannelNames != null) {
@@ -1775,8 +1775,8 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'notificationChannelNames')
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'renotifyInterval',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'renotifyInterval',
+        subBuilder: $266.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1825,9 +1825,9 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy
   /// The frequency at which to send reminder notifications for open
   /// incidents.
   @$pb.TagNumber(2)
-  $264.Duration get renotifyInterval => $_getN(1);
+  $266.Duration get renotifyInterval => $_getN(1);
   @$pb.TagNumber(2)
-  set renotifyInterval($264.Duration v) {
+  set renotifyInterval($266.Duration v) {
     setField(2, v);
   }
 
@@ -1836,7 +1836,7 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy
   @$pb.TagNumber(2)
   void clearRenotifyInterval() => clearField(2);
   @$pb.TagNumber(2)
-  $264.Duration ensureRenotifyInterval() => $_ensure(1);
+  $266.Duration ensureRenotifyInterval() => $_ensure(1);
 }
 
 /// Control over how the notification channels in `notification_channels`
@@ -1844,13 +1844,18 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy
 class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
   factory AlertPolicy_AlertStrategy({
     AlertPolicy_AlertStrategy_NotificationRateLimit? notificationRateLimit,
-    $264.Duration? autoClose,
+    $core.Iterable<AlertPolicy_AlertStrategy_NotificationPrompt>?
+        notificationPrompts,
+    $266.Duration? autoClose,
     $core.Iterable<AlertPolicy_AlertStrategy_NotificationChannelStrategy>?
         notificationChannelStrategy,
   }) {
     final $result = create();
     if (notificationRateLimit != null) {
       $result.notificationRateLimit = notificationRateLimit;
+    }
+    if (notificationPrompts != null) {
+      $result.notificationPrompts.addAll(notificationPrompts);
     }
     if (autoClose != null) {
       $result.autoClose = autoClose;
@@ -1876,8 +1881,14 @@ class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
     ..aOM<AlertPolicy_AlertStrategy_NotificationRateLimit>(
         1, _omitFieldNames ? '' : 'notificationRateLimit',
         subBuilder: AlertPolicy_AlertStrategy_NotificationRateLimit.create)
-    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'autoClose',
-        subBuilder: $264.Duration.create)
+    ..pc<AlertPolicy_AlertStrategy_NotificationPrompt>(
+        2, _omitFieldNames ? '' : 'notificationPrompts', $pb.PbFieldType.KE,
+        valueOf: AlertPolicy_AlertStrategy_NotificationPrompt.valueOf,
+        enumValues: AlertPolicy_AlertStrategy_NotificationPrompt.values,
+        defaultEnumValue: AlertPolicy_AlertStrategy_NotificationPrompt
+            .NOTIFICATION_PROMPT_UNSPECIFIED)
+    ..aOM<$266.Duration>(3, _omitFieldNames ? '' : 'autoClose',
+        subBuilder: $266.Duration.create)
     ..pc<AlertPolicy_AlertStrategy_NotificationChannelStrategy>(
         4,
         _omitFieldNames ? '' : 'notificationChannelStrategy',
@@ -1911,9 +1922,11 @@ class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<AlertPolicy_AlertStrategy>(create);
   static AlertPolicy_AlertStrategy? _defaultInstance;
 
-  ///  Required for alert policies with a `LogMatch` condition.
+  ///  Required for log-based alerting policies, i.e. policies with a `LogMatch`
+  ///  condition.
   ///
-  ///  This limit is not implemented for alert policies that are not log-based.
+  ///  This limit is not implemented for alerting policies that do not have
+  ///  a LogMatch condition.
   @$pb.TagNumber(1)
   AlertPolicy_AlertStrategy_NotificationRateLimit get notificationRateLimit =>
       $_getN(0);
@@ -1930,45 +1943,52 @@ class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
   AlertPolicy_AlertStrategy_NotificationRateLimit
       ensureNotificationRateLimit() => $_ensure(0);
 
-  /// If an alert policy that was active has no data for this long, any open
+  /// For log-based alert policies, the notification prompts is always
+  /// [OPENED]. For non log-based alert policies, the notification prompts can
+  /// be [OPENED] or [OPENED, CLOSED].
+  @$pb.TagNumber(2)
+  $core.List<AlertPolicy_AlertStrategy_NotificationPrompt>
+      get notificationPrompts => $_getList(1);
+
+  /// If an alerting policy that was active has no data for this long, any open
   /// incidents will close
   @$pb.TagNumber(3)
-  $264.Duration get autoClose => $_getN(1);
+  $266.Duration get autoClose => $_getN(2);
   @$pb.TagNumber(3)
-  set autoClose($264.Duration v) {
+  set autoClose($266.Duration v) {
     setField(3, v);
   }
 
   @$pb.TagNumber(3)
-  $core.bool hasAutoClose() => $_has(1);
+  $core.bool hasAutoClose() => $_has(2);
   @$pb.TagNumber(3)
   void clearAutoClose() => clearField(3);
   @$pb.TagNumber(3)
-  $264.Duration ensureAutoClose() => $_ensure(1);
+  $266.Duration ensureAutoClose() => $_ensure(2);
 
   /// Control how notifications will be sent out, on a per-channel basis.
   @$pb.TagNumber(4)
   $core.List<AlertPolicy_AlertStrategy_NotificationChannelStrategy>
-      get notificationChannelStrategy => $_getList(2);
+      get notificationChannelStrategy => $_getList(3);
 }
 
 ///  A description of the conditions under which some aspect of your system is
 ///  considered to be "unhealthy" and the ways to notify people or services about
-///  this state. For an overview of alert policies, see
+///  this state. For an overview of alerting policies, see
 ///  [Introduction to Alerting](https://cloud.google.com/monitoring/alerts/).
 class AlertPolicy extends $pb.GeneratedMessage {
   factory AlertPolicy({
     $core.String? name,
     $core.String? displayName,
     AlertPolicy_ConditionCombinerType? combiner,
-    $531.MutationRecord? creationRecord,
-    $531.MutationRecord? mutationRecord,
+    $534.MutationRecord? creationRecord,
+    $534.MutationRecord? mutationRecord,
     $core.Iterable<AlertPolicy_Condition>? conditions,
     AlertPolicy_Documentation? documentation,
     $core.Iterable<$core.String>? notificationChannels,
     $core.Map<$core.String, $core.String>? userLabels,
-    $307.BoolValue? enabled,
-    $322.Status? validity,
+    $309.BoolValue? enabled,
+    $324.Status? validity,
     AlertPolicy_AlertStrategy? alertStrategy,
     AlertPolicy_Severity? severity,
   }) {
@@ -2034,10 +2054,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
         defaultOrMaker: AlertPolicy_ConditionCombinerType.COMBINE_UNSPECIFIED,
         valueOf: AlertPolicy_ConditionCombinerType.valueOf,
         enumValues: AlertPolicy_ConditionCombinerType.values)
-    ..aOM<$531.MutationRecord>(10, _omitFieldNames ? '' : 'creationRecord',
-        subBuilder: $531.MutationRecord.create)
-    ..aOM<$531.MutationRecord>(11, _omitFieldNames ? '' : 'mutationRecord',
-        subBuilder: $531.MutationRecord.create)
+    ..aOM<$534.MutationRecord>(10, _omitFieldNames ? '' : 'creationRecord',
+        subBuilder: $534.MutationRecord.create)
+    ..aOM<$534.MutationRecord>(11, _omitFieldNames ? '' : 'mutationRecord',
+        subBuilder: $534.MutationRecord.create)
     ..pc<AlertPolicy_Condition>(
         12, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM,
         subBuilder: AlertPolicy_Condition.create)
@@ -2049,10 +2069,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.monitoring.v3'))
-    ..aOM<$307.BoolValue>(17, _omitFieldNames ? '' : 'enabled',
-        subBuilder: $307.BoolValue.create)
-    ..aOM<$322.Status>(18, _omitFieldNames ? '' : 'validity',
-        subBuilder: $322.Status.create)
+    ..aOM<$309.BoolValue>(17, _omitFieldNames ? '' : 'enabled',
+        subBuilder: $309.BoolValue.create)
+    ..aOM<$324.Status>(18, _omitFieldNames ? '' : 'validity',
+        subBuilder: $324.Status.create)
     ..aOM<AlertPolicy_AlertStrategy>(21, _omitFieldNames ? '' : 'alertStrategy',
         subBuilder: AlertPolicy_AlertStrategy.create)
     ..e<AlertPolicy_Severity>(
@@ -2084,8 +2104,8 @@ class AlertPolicy extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<AlertPolicy>(create);
   static AlertPolicy? _defaultInstance;
 
-  ///  Required if the policy exists. The resource name for this policy. The
-  ///  format is:
+  ///  Identifier. Required if the policy exists. The resource name for this
+  ///  policy. The format is:
   ///
   ///      projects/[PROJECT_ID_OR_NUMBER]/alertPolicies/[ALERT_POLICY_ID]
   ///
@@ -2147,9 +2167,9 @@ class AlertPolicy extends $pb.GeneratedMessage {
   /// A read-only record of the creation of the alerting policy. If provided
   /// in a call to create or update, this field will be ignored.
   @$pb.TagNumber(10)
-  $531.MutationRecord get creationRecord => $_getN(3);
+  $534.MutationRecord get creationRecord => $_getN(3);
   @$pb.TagNumber(10)
-  set creationRecord($531.MutationRecord v) {
+  set creationRecord($534.MutationRecord v) {
     setField(10, v);
   }
 
@@ -2158,14 +2178,14 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearCreationRecord() => clearField(10);
   @$pb.TagNumber(10)
-  $531.MutationRecord ensureCreationRecord() => $_ensure(3);
+  $534.MutationRecord ensureCreationRecord() => $_ensure(3);
 
   /// A read-only record of the most recent change to the alerting policy. If
   /// provided in a call to create or update, this field will be ignored.
   @$pb.TagNumber(11)
-  $531.MutationRecord get mutationRecord => $_getN(4);
+  $534.MutationRecord get mutationRecord => $_getN(4);
   @$pb.TagNumber(11)
-  set mutationRecord($531.MutationRecord v) {
+  set mutationRecord($534.MutationRecord v) {
     setField(11, v);
   }
 
@@ -2174,7 +2194,7 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearMutationRecord() => clearField(11);
   @$pb.TagNumber(11)
-  $531.MutationRecord ensureMutationRecord() => $_ensure(4);
+  $534.MutationRecord ensureMutationRecord() => $_ensure(4);
 
   /// A list of conditions for the policy. The conditions are combined by AND or
   /// OR according to the `combiner` field. If the combined conditions evaluate
@@ -2242,9 +2262,9 @@ class AlertPolicy extends $pb.GeneratedMessage {
   /// field should always be populated on List and Get operations, unless
   /// a field projection has been specified that strips it out.
   @$pb.TagNumber(17)
-  $307.BoolValue get enabled => $_getN(9);
+  $309.BoolValue get enabled => $_getN(9);
   @$pb.TagNumber(17)
-  set enabled($307.BoolValue v) {
+  set enabled($309.BoolValue v) {
     setField(17, v);
   }
 
@@ -2253,15 +2273,15 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearEnabled() => clearField(17);
   @$pb.TagNumber(17)
-  $307.BoolValue ensureEnabled() => $_ensure(9);
+  $309.BoolValue ensureEnabled() => $_ensure(9);
 
-  /// Read-only description of how the alert policy is invalid. This field is
-  /// only set when the alert policy is invalid. An invalid alert policy will not
-  /// generate incidents.
+  /// Read-only description of how the alerting policy is invalid. This field is
+  /// only set when the alerting policy is invalid. An invalid alerting policy
+  /// will not generate incidents.
   @$pb.TagNumber(18)
-  $322.Status get validity => $_getN(10);
+  $324.Status get validity => $_getN(10);
   @$pb.TagNumber(18)
-  set validity($322.Status v) {
+  set validity($324.Status v) {
     setField(18, v);
   }
 
@@ -2270,9 +2290,9 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   void clearValidity() => clearField(18);
   @$pb.TagNumber(18)
-  $322.Status ensureValidity() => $_ensure(10);
+  $324.Status ensureValidity() => $_ensure(10);
 
-  /// Control over how this alert policy's notification channels are notified.
+  /// Control over how this alerting policy's notification channels are notified.
   @$pb.TagNumber(21)
   AlertPolicy_AlertStrategy get alertStrategy => $_getN(11);
   @$pb.TagNumber(21)
@@ -2287,9 +2307,9 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   AlertPolicy_AlertStrategy ensureAlertStrategy() => $_ensure(11);
 
-  /// Optional. The severity of an alert policy indicates how important incidents
-  /// generated by that policy are. The severity level will be displayed on the
-  /// Incident detail page and in notifications.
+  /// Optional. The severity of an alerting policy indicates how important
+  /// incidents generated by that policy are. The severity level will be
+  /// displayed on the Incident detail page and in notifications.
   @$pb.TagNumber(22)
   AlertPolicy_Severity get severity => $_getN(12);
   @$pb.TagNumber(22)

@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $264;
-import '../../protobuf/timestamp.pb.dart' as $302;
-import '../../protobuf/wrappers.pb.dart' as $307;
-import '../../rpc/status.pb.dart' as $322;
+import '../../protobuf/duration.pb.dart' as $266;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../protobuf/wrappers.pb.dart' as $309;
+import '../../rpc/status.pb.dart' as $324;
 import 'bigtable.pbenum.dart';
-import 'data.pb.dart' as $403;
-import 'request_stats.pb.dart' as $404;
+import 'data.pb.dart' as $405;
+import 'request_stats.pb.dart' as $406;
 
 export 'bigtable.pbenum.dart';
 
@@ -28,8 +28,8 @@ export 'bigtable.pbenum.dart';
 class ReadRowsRequest extends $pb.GeneratedMessage {
   factory ReadRowsRequest({
     $core.String? tableName,
-    $403.RowSet? rows,
-    $403.RowFilter? filter,
+    $405.RowSet? rows,
+    $405.RowFilter? filter,
     $fixnum.Int64? rowsLimit,
     $core.String? appProfileId,
     ReadRowsRequest_RequestStatsView? requestStatsView,
@@ -77,10 +77,10 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
-    ..aOM<$403.RowSet>(2, _omitFieldNames ? '' : 'rows',
-        subBuilder: $403.RowSet.create)
-    ..aOM<$403.RowFilter>(3, _omitFieldNames ? '' : 'filter',
-        subBuilder: $403.RowFilter.create)
+    ..aOM<$405.RowSet>(2, _omitFieldNames ? '' : 'rows',
+        subBuilder: $405.RowSet.create)
+    ..aOM<$405.RowFilter>(3, _omitFieldNames ? '' : 'filter',
+        subBuilder: $405.RowFilter.create)
     ..aInt64(4, _omitFieldNames ? '' : 'rowsLimit')
     ..aOS(5, _omitFieldNames ? '' : 'appProfileId')
     ..e<ReadRowsRequest_RequestStatsView>(
@@ -135,9 +135,9 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   /// The row keys and/or ranges to read sequentially. If not specified, reads
   /// from all rows.
   @$pb.TagNumber(2)
-  $403.RowSet get rows => $_getN(1);
+  $405.RowSet get rows => $_getN(1);
   @$pb.TagNumber(2)
-  set rows($403.RowSet v) {
+  set rows($405.RowSet v) {
     setField(2, v);
   }
 
@@ -146,14 +146,14 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRows() => clearField(2);
   @$pb.TagNumber(2)
-  $403.RowSet ensureRows() => $_ensure(1);
+  $405.RowSet ensureRows() => $_ensure(1);
 
   /// The filter to apply to the contents of the specified row(s). If unset,
   /// reads the entirety of each row.
   @$pb.TagNumber(3)
-  $403.RowFilter get filter => $_getN(2);
+  $405.RowFilter get filter => $_getN(2);
   @$pb.TagNumber(3)
-  set filter($403.RowFilter v) {
+  set filter($405.RowFilter v) {
     setField(3, v);
   }
 
@@ -162,7 +162,7 @@ class ReadRowsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearFilter() => clearField(3);
   @$pb.TagNumber(3)
-  $403.RowFilter ensureFilter() => $_ensure(2);
+  $405.RowFilter ensureFilter() => $_ensure(2);
 
   /// The read will stop after committing to N rows' worth of results. The
   /// default (zero) is to return all results.
@@ -253,8 +253,8 @@ enum ReadRowsResponse_CellChunk_RowStatus { resetRow, commitRow, notSet }
 class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   factory ReadRowsResponse_CellChunk({
     $core.List<$core.int>? rowKey,
-    $307.StringValue? familyName,
-    $307.BytesValue? qualifier,
+    $309.StringValue? familyName,
+    $309.BytesValue? qualifier,
     $fixnum.Int64? timestampMicros,
     $core.Iterable<$core.String>? labels,
     $core.List<$core.int>? value,
@@ -314,10 +314,10 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
     ..oo(0, [8, 9])
     ..a<$core.List<$core.int>>(
         1, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..aOM<$307.StringValue>(2, _omitFieldNames ? '' : 'familyName',
-        subBuilder: $307.StringValue.create)
-    ..aOM<$307.BytesValue>(3, _omitFieldNames ? '' : 'qualifier',
-        subBuilder: $307.BytesValue.create)
+    ..aOM<$309.StringValue>(2, _omitFieldNames ? '' : 'familyName',
+        subBuilder: $309.StringValue.create)
+    ..aOM<$309.BytesValue>(3, _omitFieldNames ? '' : 'qualifier',
+        subBuilder: $309.BytesValue.create)
     ..aInt64(4, _omitFieldNames ? '' : 'timestampMicros')
     ..pPS(5, _omitFieldNames ? '' : 'labels')
     ..a<$core.List<$core.int>>(
@@ -380,9 +380,9 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   /// explicitly for the presence of this message, not just for
   /// `family_name.value` being non-empty.
   @$pb.TagNumber(2)
-  $307.StringValue get familyName => $_getN(1);
+  $309.StringValue get familyName => $_getN(1);
   @$pb.TagNumber(2)
-  set familyName($307.StringValue v) {
+  set familyName($309.StringValue v) {
     setField(2, v);
   }
 
@@ -391,7 +391,7 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearFamilyName() => clearField(2);
   @$pb.TagNumber(2)
-  $307.StringValue ensureFamilyName() => $_ensure(1);
+  $309.StringValue ensureFamilyName() => $_ensure(1);
 
   /// The column qualifier for this chunk of data.  If this message
   /// is not present, this CellChunk is a continuation of the same column
@@ -399,9 +399,9 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   /// clients must check for the presence of this message, not just
   /// for `qualifier.value` being non-empty.
   @$pb.TagNumber(3)
-  $307.BytesValue get qualifier => $_getN(2);
+  $309.BytesValue get qualifier => $_getN(2);
   @$pb.TagNumber(3)
-  set qualifier($307.BytesValue v) {
+  set qualifier($309.BytesValue v) {
     setField(3, v);
   }
 
@@ -410,7 +410,7 @@ class ReadRowsResponse_CellChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearQualifier() => clearField(3);
   @$pb.TagNumber(3)
-  $307.BytesValue ensureQualifier() => $_ensure(2);
+  $309.BytesValue ensureQualifier() => $_ensure(2);
 
   /// The cell's stored timestamp, which also uniquely identifies it
   /// within its column.  Values are always expressed in
@@ -505,7 +505,7 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
   factory ReadRowsResponse({
     $core.Iterable<ReadRowsResponse_CellChunk>? chunks,
     $core.List<$core.int>? lastScannedRowKey,
-    $404.RequestStats? requestStats,
+    $406.RequestStats? requestStats,
   }) {
     final $result = create();
     if (chunks != null) {
@@ -537,8 +537,8 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
         subBuilder: ReadRowsResponse_CellChunk.create)
     ..a<$core.List<$core.int>>(
         2, _omitFieldNames ? '' : 'lastScannedRowKey', $pb.PbFieldType.OY)
-    ..aOM<$404.RequestStats>(3, _omitFieldNames ? '' : 'requestStats',
-        subBuilder: $404.RequestStats.create)
+    ..aOM<$406.RequestStats>(3, _omitFieldNames ? '' : 'requestStats',
+        subBuilder: $406.RequestStats.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -608,9 +608,9 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
   ///    \________________________________/
   ///       Trailer of RequestStats info
   @$pb.TagNumber(3)
-  $404.RequestStats get requestStats => $_getN(2);
+  $406.RequestStats get requestStats => $_getN(2);
   @$pb.TagNumber(3)
-  set requestStats($404.RequestStats v) {
+  set requestStats($406.RequestStats v) {
     setField(3, v);
   }
 
@@ -619,7 +619,7 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearRequestStats() => clearField(3);
   @$pb.TagNumber(3)
-  $404.RequestStats ensureRequestStats() => $_ensure(2);
+  $406.RequestStats ensureRequestStats() => $_ensure(2);
 }
 
 /// Request message for Bigtable.SampleRowKeys.
@@ -830,7 +830,7 @@ class MutateRowRequest extends $pb.GeneratedMessage {
   factory MutateRowRequest({
     $core.String? tableName,
     $core.List<$core.int>? rowKey,
-    $core.Iterable<$403.Mutation>? mutations,
+    $core.Iterable<$405.Mutation>? mutations,
     $core.String? appProfileId,
     $core.String? authorizedViewName,
   }) {
@@ -868,9 +868,9 @@ class MutateRowRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
     ..a<$core.List<$core.int>>(
         2, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..pc<$403.Mutation>(
+    ..pc<$405.Mutation>(
         3, _omitFieldNames ? '' : 'mutations', $pb.PbFieldType.PM,
-        subBuilder: $403.Mutation.create)
+        subBuilder: $405.Mutation.create)
     ..aOS(4, _omitFieldNames ? '' : 'appProfileId')
     ..aOS(6, _omitFieldNames ? '' : 'authorizedViewName')
     ..hasRequiredFields = false;
@@ -932,7 +932,7 @@ class MutateRowRequest extends $pb.GeneratedMessage {
   /// are applied in order, meaning that earlier mutations can be masked by later
   /// ones. Must contain at least one entry and at most 100000.
   @$pb.TagNumber(3)
-  $core.List<$403.Mutation> get mutations => $_getList(2);
+  $core.List<$405.Mutation> get mutations => $_getList(2);
 
   /// This value specifies routing for replication. If not specified, the
   /// "default" application profile will be used.
@@ -1012,7 +1012,7 @@ class MutateRowResponse extends $pb.GeneratedMessage {
 class MutateRowsRequest_Entry extends $pb.GeneratedMessage {
   factory MutateRowsRequest_Entry({
     $core.List<$core.int>? rowKey,
-    $core.Iterable<$403.Mutation>? mutations,
+    $core.Iterable<$405.Mutation>? mutations,
   }) {
     final $result = create();
     if (rowKey != null) {
@@ -1038,9 +1038,9 @@ class MutateRowsRequest_Entry extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..a<$core.List<$core.int>>(
         1, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..pc<$403.Mutation>(
+    ..pc<$405.Mutation>(
         2, _omitFieldNames ? '' : 'mutations', $pb.PbFieldType.PM,
-        subBuilder: $403.Mutation.create)
+        subBuilder: $405.Mutation.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1085,7 +1085,7 @@ class MutateRowsRequest_Entry extends $pb.GeneratedMessage {
   /// Mutations are applied in order, meaning that earlier mutations can be
   /// masked by later ones. You must specify at least one mutation.
   @$pb.TagNumber(2)
-  $core.List<$403.Mutation> get mutations => $_getList(1);
+  $core.List<$405.Mutation> get mutations => $_getList(1);
 }
 
 /// Request message for BigtableService.MutateRows.
@@ -1216,7 +1216,7 @@ class MutateRowsRequest extends $pb.GeneratedMessage {
 class MutateRowsResponse_Entry extends $pb.GeneratedMessage {
   factory MutateRowsResponse_Entry({
     $fixnum.Int64? index,
-    $322.Status? status,
+    $324.Status? status,
   }) {
     final $result = create();
     if (index != null) {
@@ -1241,8 +1241,8 @@ class MutateRowsResponse_Entry extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
       createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'index')
-    ..aOM<$322.Status>(2, _omitFieldNames ? '' : 'status',
-        subBuilder: $322.Status.create)
+    ..aOM<$324.Status>(2, _omitFieldNames ? '' : 'status',
+        subBuilder: $324.Status.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1289,9 +1289,9 @@ class MutateRowsResponse_Entry extends $pb.GeneratedMessage {
   /// for one Entry to fail due to an error with another Entry. In the event
   /// that this occurs, the same error will be reported for both entries.
   @$pb.TagNumber(2)
-  $322.Status get status => $_getN(1);
+  $324.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($322.Status v) {
+  set status($324.Status v) {
     setField(2, v);
   }
 
@@ -1300,7 +1300,7 @@ class MutateRowsResponse_Entry extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $322.Status ensureStatus() => $_ensure(1);
+  $324.Status ensureStatus() => $_ensure(1);
 }
 
 /// Response message for BigtableService.MutateRows.
@@ -1386,7 +1386,7 @@ class MutateRowsResponse extends $pb.GeneratedMessage {
 /// Information about how client should adjust the load to Bigtable.
 class RateLimitInfo extends $pb.GeneratedMessage {
   factory RateLimitInfo({
-    $264.Duration? period,
+    $266.Duration? period,
     $core.double? factor,
   }) {
     final $result = create();
@@ -1411,8 +1411,8 @@ class RateLimitInfo extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
       createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'period',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'period',
+        subBuilder: $266.Duration.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'factor', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
 
@@ -1446,9 +1446,9 @@ class RateLimitInfo extends $pb.GeneratedMessage {
   /// will not be responsive to load changes on server side, and may
   /// over-throttle or under-throttle.
   @$pb.TagNumber(1)
-  $264.Duration get period => $_getN(0);
+  $266.Duration get period => $_getN(0);
   @$pb.TagNumber(1)
-  set period($264.Duration v) {
+  set period($266.Duration v) {
     setField(1, v);
   }
 
@@ -1457,7 +1457,7 @@ class RateLimitInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearPeriod() => clearField(1);
   @$pb.TagNumber(1)
-  $264.Duration ensurePeriod() => $_ensure(0);
+  $266.Duration ensurePeriod() => $_ensure(0);
 
   ///  If it has been at least one `period` since the last load adjustment, the
   ///  client should multiply the current load by this value to get the new target
@@ -1486,9 +1486,9 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
   factory CheckAndMutateRowRequest({
     $core.String? tableName,
     $core.List<$core.int>? rowKey,
-    $core.Iterable<$403.Mutation>? trueMutations,
-    $core.Iterable<$403.Mutation>? falseMutations,
-    $403.RowFilter? predicateFilter,
+    $core.Iterable<$405.Mutation>? trueMutations,
+    $core.Iterable<$405.Mutation>? falseMutations,
+    $405.RowFilter? predicateFilter,
     $core.String? appProfileId,
     $core.String? authorizedViewName,
   }) {
@@ -1532,14 +1532,14 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
     ..a<$core.List<$core.int>>(
         2, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..pc<$403.Mutation>(
+    ..pc<$405.Mutation>(
         4, _omitFieldNames ? '' : 'trueMutations', $pb.PbFieldType.PM,
-        subBuilder: $403.Mutation.create)
-    ..pc<$403.Mutation>(
+        subBuilder: $405.Mutation.create)
+    ..pc<$405.Mutation>(
         5, _omitFieldNames ? '' : 'falseMutations', $pb.PbFieldType.PM,
-        subBuilder: $403.Mutation.create)
-    ..aOM<$403.RowFilter>(6, _omitFieldNames ? '' : 'predicateFilter',
-        subBuilder: $403.RowFilter.create)
+        subBuilder: $405.Mutation.create)
+    ..aOM<$405.RowFilter>(6, _omitFieldNames ? '' : 'predicateFilter',
+        subBuilder: $405.RowFilter.create)
     ..aOS(7, _omitFieldNames ? '' : 'appProfileId')
     ..aOS(9, _omitFieldNames ? '' : 'authorizedViewName')
     ..hasRequiredFields = false;
@@ -1606,7 +1606,7 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
   /// Must contain at least one entry if `false_mutations` is empty, and at most
   /// 100000.
   @$pb.TagNumber(4)
-  $core.List<$403.Mutation> get trueMutations => $_getList(2);
+  $core.List<$405.Mutation> get trueMutations => $_getList(2);
 
   /// Changes to be atomically applied to the specified row if `predicate_filter`
   /// does not yield any cells when applied to `row_key`. Entries are applied in
@@ -1614,16 +1614,16 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
   /// Must contain at least one entry if `true_mutations` is empty, and at most
   /// 100000.
   @$pb.TagNumber(5)
-  $core.List<$403.Mutation> get falseMutations => $_getList(3);
+  $core.List<$405.Mutation> get falseMutations => $_getList(3);
 
   /// The filter to be applied to the contents of the specified row. Depending
   /// on whether or not any results are yielded, either `true_mutations` or
   /// `false_mutations` will be executed. If unset, checks that the row contains
   /// any values at all.
   @$pb.TagNumber(6)
-  $403.RowFilter get predicateFilter => $_getN(4);
+  $405.RowFilter get predicateFilter => $_getN(4);
   @$pb.TagNumber(6)
-  set predicateFilter($403.RowFilter v) {
+  set predicateFilter($405.RowFilter v) {
     setField(6, v);
   }
 
@@ -1632,7 +1632,7 @@ class CheckAndMutateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearPredicateFilter() => clearField(6);
   @$pb.TagNumber(6)
-  $403.RowFilter ensurePredicateFilter() => $_ensure(4);
+  $405.RowFilter ensurePredicateFilter() => $_ensure(4);
 
   /// This value specifies routing for replication. If not specified, the
   /// "default" application profile will be used.
@@ -1865,7 +1865,7 @@ class ReadModifyWriteRowRequest extends $pb.GeneratedMessage {
   factory ReadModifyWriteRowRequest({
     $core.String? tableName,
     $core.List<$core.int>? rowKey,
-    $core.Iterable<$403.ReadModifyWriteRule>? rules,
+    $core.Iterable<$405.ReadModifyWriteRule>? rules,
     $core.String? appProfileId,
     $core.String? authorizedViewName,
   }) {
@@ -1903,9 +1903,9 @@ class ReadModifyWriteRowRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
     ..a<$core.List<$core.int>>(
         2, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..pc<$403.ReadModifyWriteRule>(
+    ..pc<$405.ReadModifyWriteRule>(
         3, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM,
-        subBuilder: $403.ReadModifyWriteRule.create)
+        subBuilder: $405.ReadModifyWriteRule.create)
     ..aOS(4, _omitFieldNames ? '' : 'appProfileId')
     ..aOS(6, _omitFieldNames ? '' : 'authorizedViewName')
     ..hasRequiredFields = false;
@@ -1970,7 +1970,7 @@ class ReadModifyWriteRowRequest extends $pb.GeneratedMessage {
   /// transformed into writes. Entries are applied in order, meaning that earlier
   /// rules will affect the results of later ones.
   @$pb.TagNumber(3)
-  $core.List<$403.ReadModifyWriteRule> get rules => $_getList(2);
+  $core.List<$405.ReadModifyWriteRule> get rules => $_getList(2);
 
   /// This value specifies routing for replication. If not specified, the
   /// "default" application profile will be used.
@@ -2007,7 +2007,7 @@ class ReadModifyWriteRowRequest extends $pb.GeneratedMessage {
 /// Response message for Bigtable.ReadModifyWriteRow.
 class ReadModifyWriteRowResponse extends $pb.GeneratedMessage {
   factory ReadModifyWriteRowResponse({
-    $403.Row? row,
+    $405.Row? row,
   }) {
     final $result = create();
     if (row != null) {
@@ -2028,8 +2028,8 @@ class ReadModifyWriteRowResponse extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
       createEmptyInstance: create)
-    ..aOM<$403.Row>(1, _omitFieldNames ? '' : 'row',
-        subBuilder: $403.Row.create)
+    ..aOM<$405.Row>(1, _omitFieldNames ? '' : 'row',
+        subBuilder: $405.Row.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2060,9 +2060,9 @@ class ReadModifyWriteRowResponse extends $pb.GeneratedMessage {
 
   /// A Row containing the new contents of all cells modified by the request.
   @$pb.TagNumber(1)
-  $403.Row get row => $_getN(0);
+  $405.Row get row => $_getN(0);
   @$pb.TagNumber(1)
-  set row($403.Row v) {
+  set row($405.Row v) {
     setField(1, v);
   }
 
@@ -2071,7 +2071,7 @@ class ReadModifyWriteRowResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRow() => clearField(1);
   @$pb.TagNumber(1)
-  $403.Row ensureRow() => $_ensure(0);
+  $405.Row ensureRow() => $_ensure(0);
 }
 
 /// NOTE: This API is intended to be used by Apache Beam BigtableIO.
@@ -2177,7 +2177,7 @@ class GenerateInitialChangeStreamPartitionsRequest
 class GenerateInitialChangeStreamPartitionsResponse
     extends $pb.GeneratedMessage {
   factory GenerateInitialChangeStreamPartitionsResponse({
-    $403.StreamPartition? partition,
+    $405.StreamPartition? partition,
   }) {
     final $result = create();
     if (partition != null) {
@@ -2199,8 +2199,8 @@ class GenerateInitialChangeStreamPartitionsResponse
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
       createEmptyInstance: create)
-    ..aOM<$403.StreamPartition>(1, _omitFieldNames ? '' : 'partition',
-        subBuilder: $403.StreamPartition.create)
+    ..aOM<$405.StreamPartition>(1, _omitFieldNames ? '' : 'partition',
+        subBuilder: $405.StreamPartition.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2236,9 +2236,9 @@ class GenerateInitialChangeStreamPartitionsResponse
 
   /// A partition of the change stream.
   @$pb.TagNumber(1)
-  $403.StreamPartition get partition => $_getN(0);
+  $405.StreamPartition get partition => $_getN(0);
   @$pb.TagNumber(1)
-  set partition($403.StreamPartition v) {
+  set partition($405.StreamPartition v) {
     setField(1, v);
   }
 
@@ -2247,7 +2247,7 @@ class GenerateInitialChangeStreamPartitionsResponse
   @$pb.TagNumber(1)
   void clearPartition() => clearField(1);
   @$pb.TagNumber(1)
-  $403.StreamPartition ensurePartition() => $_ensure(0);
+  $405.StreamPartition ensurePartition() => $_ensure(0);
 }
 
 enum ReadChangeStreamRequest_StartFrom { startTime, continuationTokens, notSet }
@@ -2258,11 +2258,11 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   factory ReadChangeStreamRequest({
     $core.String? tableName,
     $core.String? appProfileId,
-    $403.StreamPartition? partition,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
-    $403.StreamContinuationTokens? continuationTokens,
-    $264.Duration? heartbeatDuration,
+    $405.StreamPartition? partition,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
+    $405.StreamContinuationTokens? continuationTokens,
+    $266.Duration? heartbeatDuration,
   }) {
     final $result = create();
     if (tableName != null) {
@@ -2310,17 +2310,17 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
     ..oo(0, [4, 6])
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
     ..aOS(2, _omitFieldNames ? '' : 'appProfileId')
-    ..aOM<$403.StreamPartition>(3, _omitFieldNames ? '' : 'partition',
-        subBuilder: $403.StreamPartition.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$403.StreamContinuationTokens>(
+    ..aOM<$405.StreamPartition>(3, _omitFieldNames ? '' : 'partition',
+        subBuilder: $405.StreamPartition.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$405.StreamContinuationTokens>(
         6, _omitFieldNames ? '' : 'continuationTokens',
-        subBuilder: $403.StreamContinuationTokens.create)
-    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'heartbeatDuration',
-        subBuilder: $264.Duration.create)
+        subBuilder: $405.StreamContinuationTokens.create)
+    ..aOM<$266.Duration>(7, _omitFieldNames ? '' : 'heartbeatDuration',
+        subBuilder: $266.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2385,9 +2385,9 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
 
   /// The partition to read changes from.
   @$pb.TagNumber(3)
-  $403.StreamPartition get partition => $_getN(2);
+  $405.StreamPartition get partition => $_getN(2);
   @$pb.TagNumber(3)
-  set partition($403.StreamPartition v) {
+  set partition($405.StreamPartition v) {
     setField(3, v);
   }
 
@@ -2396,16 +2396,16 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearPartition() => clearField(3);
   @$pb.TagNumber(3)
-  $403.StreamPartition ensurePartition() => $_ensure(2);
+  $405.StreamPartition ensurePartition() => $_ensure(2);
 
   /// Start reading the stream at the specified timestamp. This timestamp must
   /// be within the change stream retention period, less than or equal to the
   /// current time, and after change stream creation, whichever is greater.
   /// This value is inclusive and will be truncated to microsecond granularity.
   @$pb.TagNumber(4)
-  $302.Timestamp get startTime => $_getN(3);
+  $304.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -2414,15 +2414,15 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureStartTime() => $_ensure(3);
+  $304.Timestamp ensureStartTime() => $_ensure(3);
 
   /// If specified, OK will be returned when the stream advances beyond
   /// this time. Otherwise, changes will be continuously delivered on the stream.
   /// This value is inclusive and will be truncated to microsecond granularity.
   @$pb.TagNumber(5)
-  $302.Timestamp get endTime => $_getN(4);
+  $304.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -2431,7 +2431,7 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureEndTime() => $_ensure(4);
+  $304.Timestamp ensureEndTime() => $_ensure(4);
 
   ///  Tokens that describe how to resume reading a stream where reading
   ///  previously left off. If specified, changes will be read starting at the
@@ -2444,9 +2444,9 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   ///  cover the request’s partition. Otherwise, INVALID_ARGUMENT will be
   ///  returned.
   @$pb.TagNumber(6)
-  $403.StreamContinuationTokens get continuationTokens => $_getN(5);
+  $405.StreamContinuationTokens get continuationTokens => $_getN(5);
   @$pb.TagNumber(6)
-  set continuationTokens($403.StreamContinuationTokens v) {
+  set continuationTokens($405.StreamContinuationTokens v) {
     setField(6, v);
   }
 
@@ -2455,14 +2455,14 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearContinuationTokens() => clearField(6);
   @$pb.TagNumber(6)
-  $403.StreamContinuationTokens ensureContinuationTokens() => $_ensure(5);
+  $405.StreamContinuationTokens ensureContinuationTokens() => $_ensure(5);
 
   /// If specified, the duration between `Heartbeat` messages on the stream.
   /// Otherwise, defaults to 5 seconds.
   @$pb.TagNumber(7)
-  $264.Duration get heartbeatDuration => $_getN(6);
+  $266.Duration get heartbeatDuration => $_getN(6);
   @$pb.TagNumber(7)
-  set heartbeatDuration($264.Duration v) {
+  set heartbeatDuration($266.Duration v) {
     setField(7, v);
   }
 
@@ -2471,7 +2471,7 @@ class ReadChangeStreamRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearHeartbeatDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $264.Duration ensureHeartbeatDuration() => $_ensure(6);
+  $266.Duration ensureHeartbeatDuration() => $_ensure(6);
 }
 
 /// Information about the chunking of this mutation.
@@ -2597,7 +2597,7 @@ class ReadChangeStreamResponse_MutationChunk_ChunkInfo
 class ReadChangeStreamResponse_MutationChunk extends $pb.GeneratedMessage {
   factory ReadChangeStreamResponse_MutationChunk({
     ReadChangeStreamResponse_MutationChunk_ChunkInfo? chunkInfo,
-    $403.Mutation? mutation,
+    $405.Mutation? mutation,
   }) {
     final $result = create();
     if (chunkInfo != null) {
@@ -2625,8 +2625,8 @@ class ReadChangeStreamResponse_MutationChunk extends $pb.GeneratedMessage {
     ..aOM<ReadChangeStreamResponse_MutationChunk_ChunkInfo>(
         1, _omitFieldNames ? '' : 'chunkInfo',
         subBuilder: ReadChangeStreamResponse_MutationChunk_ChunkInfo.create)
-    ..aOM<$403.Mutation>(2, _omitFieldNames ? '' : 'mutation',
-        subBuilder: $403.Mutation.create)
+    ..aOM<$405.Mutation>(2, _omitFieldNames ? '' : 'mutation',
+        subBuilder: $405.Mutation.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2678,9 +2678,9 @@ class ReadChangeStreamResponse_MutationChunk extends $pb.GeneratedMessage {
   /// 0), ignore all fields except the `SetCell`'s value and merge it with
   /// the previous message by concatenating the value fields.
   @$pb.TagNumber(2)
-  $403.Mutation get mutation => $_getN(1);
+  $405.Mutation get mutation => $_getN(1);
   @$pb.TagNumber(2)
-  set mutation($403.Mutation v) {
+  set mutation($405.Mutation v) {
     setField(2, v);
   }
 
@@ -2689,7 +2689,7 @@ class ReadChangeStreamResponse_MutationChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearMutation() => clearField(2);
   @$pb.TagNumber(2)
-  $403.Mutation ensureMutation() => $_ensure(1);
+  $405.Mutation ensureMutation() => $_ensure(1);
 }
 
 /// A message corresponding to one or more mutations to the partition
@@ -2703,12 +2703,12 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
     ReadChangeStreamResponse_DataChange_Type? type,
     $core.String? sourceClusterId,
     $core.List<$core.int>? rowKey,
-    $302.Timestamp? commitTimestamp,
+    $304.Timestamp? commitTimestamp,
     $core.int? tiebreaker,
     $core.Iterable<ReadChangeStreamResponse_MutationChunk>? chunks,
     $core.bool? done,
     $core.String? token,
-    $302.Timestamp? estimatedLowWatermark,
+    $304.Timestamp? estimatedLowWatermark,
   }) {
     final $result = create();
     if (type != null) {
@@ -2763,16 +2763,16 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'sourceClusterId')
     ..a<$core.List<$core.int>>(
         3, _omitFieldNames ? '' : 'rowKey', $pb.PbFieldType.OY)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'commitTimestamp',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'commitTimestamp',
+        subBuilder: $304.Timestamp.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'tiebreaker', $pb.PbFieldType.O3)
     ..pc<ReadChangeStreamResponse_MutationChunk>(
         6, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
         subBuilder: ReadChangeStreamResponse_MutationChunk.create)
     ..aOB(8, _omitFieldNames ? '' : 'done')
     ..aOS(9, _omitFieldNames ? '' : 'token')
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'estimatedLowWatermark',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(10, _omitFieldNames ? '' : 'estimatedLowWatermark',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2847,9 +2847,9 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
 
   /// The timestamp at which the mutation was applied on the Bigtable server.
   @$pb.TagNumber(4)
-  $302.Timestamp get commitTimestamp => $_getN(3);
+  $304.Timestamp get commitTimestamp => $_getN(3);
   @$pb.TagNumber(4)
-  set commitTimestamp($302.Timestamp v) {
+  set commitTimestamp($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -2858,7 +2858,7 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCommitTimestamp() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureCommitTimestamp() => $_ensure(3);
+  $304.Timestamp ensureCommitTimestamp() => $_ensure(3);
 
   /// A value that lets stream consumers reconstruct Bigtable's
   /// conflict resolution semantics.
@@ -2920,9 +2920,9 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
   /// an example usage see
   /// https://beam.apache.org/documentation/basics/#watermarks
   @$pb.TagNumber(10)
-  $302.Timestamp get estimatedLowWatermark => $_getN(8);
+  $304.Timestamp get estimatedLowWatermark => $_getN(8);
   @$pb.TagNumber(10)
-  set estimatedLowWatermark($302.Timestamp v) {
+  set estimatedLowWatermark($304.Timestamp v) {
     setField(10, v);
   }
 
@@ -2931,15 +2931,15 @@ class ReadChangeStreamResponse_DataChange extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearEstimatedLowWatermark() => clearField(10);
   @$pb.TagNumber(10)
-  $302.Timestamp ensureEstimatedLowWatermark() => $_ensure(8);
+  $304.Timestamp ensureEstimatedLowWatermark() => $_ensure(8);
 }
 
 /// A periodic message with information that can be used to checkpoint
 /// the state of a stream.
 class ReadChangeStreamResponse_Heartbeat extends $pb.GeneratedMessage {
   factory ReadChangeStreamResponse_Heartbeat({
-    $403.StreamContinuationToken? continuationToken,
-    $302.Timestamp? estimatedLowWatermark,
+    $405.StreamContinuationToken? continuationToken,
+    $304.Timestamp? estimatedLowWatermark,
   }) {
     final $result = create();
     if (continuationToken != null) {
@@ -2963,11 +2963,11 @@ class ReadChangeStreamResponse_Heartbeat extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
       createEmptyInstance: create)
-    ..aOM<$403.StreamContinuationToken>(
+    ..aOM<$405.StreamContinuationToken>(
         1, _omitFieldNames ? '' : 'continuationToken',
-        subBuilder: $403.StreamContinuationToken.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'estimatedLowWatermark',
-        subBuilder: $302.Timestamp.create)
+        subBuilder: $405.StreamContinuationToken.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'estimatedLowWatermark',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3001,9 +3001,9 @@ class ReadChangeStreamResponse_Heartbeat extends $pb.GeneratedMessage {
   /// A token that can be provided to a subsequent `ReadChangeStream` call
   /// to pick up reading at the current stream position.
   @$pb.TagNumber(1)
-  $403.StreamContinuationToken get continuationToken => $_getN(0);
+  $405.StreamContinuationToken get continuationToken => $_getN(0);
   @$pb.TagNumber(1)
-  set continuationToken($403.StreamContinuationToken v) {
+  set continuationToken($405.StreamContinuationToken v) {
     setField(1, v);
   }
 
@@ -3012,7 +3012,7 @@ class ReadChangeStreamResponse_Heartbeat extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearContinuationToken() => clearField(1);
   @$pb.TagNumber(1)
-  $403.StreamContinuationToken ensureContinuationToken() => $_ensure(0);
+  $405.StreamContinuationToken ensureContinuationToken() => $_ensure(0);
 
   /// An estimate of the commit timestamp that is usually lower than or equal
   /// to any timestamp for a record that will be delivered in the future on the
@@ -3021,9 +3021,9 @@ class ReadChangeStreamResponse_Heartbeat extends $pb.GeneratedMessage {
   /// an example usage see
   /// https://beam.apache.org/documentation/basics/#watermarks
   @$pb.TagNumber(2)
-  $302.Timestamp get estimatedLowWatermark => $_getN(1);
+  $304.Timestamp get estimatedLowWatermark => $_getN(1);
   @$pb.TagNumber(2)
-  set estimatedLowWatermark($302.Timestamp v) {
+  set estimatedLowWatermark($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -3032,7 +3032,7 @@ class ReadChangeStreamResponse_Heartbeat extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEstimatedLowWatermark() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureEstimatedLowWatermark() => $_ensure(1);
+  $304.Timestamp ensureEstimatedLowWatermark() => $_ensure(1);
 }
 
 /// A message indicating that the client should stop reading from the stream.
@@ -3057,9 +3057,9 @@ class ReadChangeStreamResponse_Heartbeat extends $pb.GeneratedMessage {
 /// ContinuationToken[B,C).
 class ReadChangeStreamResponse_CloseStream extends $pb.GeneratedMessage {
   factory ReadChangeStreamResponse_CloseStream({
-    $322.Status? status,
-    $core.Iterable<$403.StreamContinuationToken>? continuationTokens,
-    $core.Iterable<$403.StreamPartition>? newPartitions,
+    $324.Status? status,
+    $core.Iterable<$405.StreamContinuationToken>? continuationTokens,
+    $core.Iterable<$405.StreamPartition>? newPartitions,
   }) {
     final $result = create();
     if (status != null) {
@@ -3087,14 +3087,14 @@ class ReadChangeStreamResponse_CloseStream extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
       createEmptyInstance: create)
-    ..aOM<$322.Status>(1, _omitFieldNames ? '' : 'status',
-        subBuilder: $322.Status.create)
-    ..pc<$403.StreamContinuationToken>(
+    ..aOM<$324.Status>(1, _omitFieldNames ? '' : 'status',
+        subBuilder: $324.Status.create)
+    ..pc<$405.StreamContinuationToken>(
         2, _omitFieldNames ? '' : 'continuationTokens', $pb.PbFieldType.PM,
-        subBuilder: $403.StreamContinuationToken.create)
-    ..pc<$403.StreamPartition>(
+        subBuilder: $405.StreamContinuationToken.create)
+    ..pc<$405.StreamPartition>(
         3, _omitFieldNames ? '' : 'newPartitions', $pb.PbFieldType.PM,
-        subBuilder: $403.StreamPartition.create)
+        subBuilder: $405.StreamPartition.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3127,9 +3127,9 @@ class ReadChangeStreamResponse_CloseStream extends $pb.GeneratedMessage {
 
   /// The status of the stream.
   @$pb.TagNumber(1)
-  $322.Status get status => $_getN(0);
+  $324.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($322.Status v) {
+  set status($324.Status v) {
     setField(1, v);
   }
 
@@ -3138,19 +3138,19 @@ class ReadChangeStreamResponse_CloseStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $322.Status ensureStatus() => $_ensure(0);
+  $324.Status ensureStatus() => $_ensure(0);
 
   /// If non-empty, contains the information needed to resume reading their
   /// associated partitions.
   @$pb.TagNumber(2)
-  $core.List<$403.StreamContinuationToken> get continuationTokens =>
+  $core.List<$405.StreamContinuationToken> get continuationTokens =>
       $_getList(1);
 
   /// If non-empty, contains the new partitions to start reading from, which
   /// are related to but not necessarily identical to the partitions for the
   /// above `continuation_tokens`.
   @$pb.TagNumber(3)
-  $core.List<$403.StreamPartition> get newPartitions => $_getList(2);
+  $core.List<$405.StreamPartition> get newPartitions => $_getList(2);
 }
 
 enum ReadChangeStreamResponse_StreamRecord {
@@ -3295,8 +3295,8 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
     $core.String? instanceName,
     $core.String? appProfileId,
     $core.String? query,
-    $403.ProtoFormat? protoFormat,
-    $core.Map<$core.String, $403.Value>? params,
+    $405.ProtoFormat? protoFormat,
+    $core.Map<$core.String, $405.Value>? params,
     $core.List<$core.int>? resumeToken,
   }) {
     final $result = create();
@@ -3342,14 +3342,14 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'instanceName')
     ..aOS(2, _omitFieldNames ? '' : 'appProfileId')
     ..aOS(3, _omitFieldNames ? '' : 'query')
-    ..aOM<$403.ProtoFormat>(4, _omitFieldNames ? '' : 'protoFormat',
-        subBuilder: $403.ProtoFormat.create)
-    ..m<$core.String, $403.Value>(7, _omitFieldNames ? '' : 'params',
+    ..aOM<$405.ProtoFormat>(4, _omitFieldNames ? '' : 'protoFormat',
+        subBuilder: $405.ProtoFormat.create)
+    ..m<$core.String, $405.Value>(7, _omitFieldNames ? '' : 'params',
         entryClassName: 'ExecuteQueryRequest.ParamsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OM,
-        valueCreator: $403.Value.create,
-        valueDefaultOrMaker: $403.Value.getDefault,
+        valueCreator: $405.Value.create,
+        valueDefaultOrMaker: $405.Value.getDefault,
         packageName: const $pb.PackageName('google.bigtable.v2'))
     ..a<$core.List<$core.int>>(
         8, _omitFieldNames ? '' : 'resumeToken', $pb.PbFieldType.OY)
@@ -3427,9 +3427,9 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
   /// Protocol buffer format as described by ProtoSchema and ProtoRows
   /// messages.
   @$pb.TagNumber(4)
-  $403.ProtoFormat get protoFormat => $_getN(3);
+  $405.ProtoFormat get protoFormat => $_getN(3);
   @$pb.TagNumber(4)
-  set protoFormat($403.ProtoFormat v) {
+  set protoFormat($405.ProtoFormat v) {
     setField(4, v);
   }
 
@@ -3438,7 +3438,7 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearProtoFormat() => clearField(4);
   @$pb.TagNumber(4)
-  $403.ProtoFormat ensureProtoFormat() => $_ensure(3);
+  $405.ProtoFormat ensureProtoFormat() => $_ensure(3);
 
   ///  Required. params contains string type keys and Bigtable type values that
   ///  bind to placeholders in the query string. In query string, a parameter
@@ -3460,7 +3460,7 @@ class ExecuteQueryRequest extends $pb.GeneratedMessage {
   ///  Value.kind. If Value.type is not set, we will return INVALID_ARGUMENT
   ///  error.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $403.Value> get params => $_getMap(4);
+  $core.Map<$core.String, $405.Value> get params => $_getMap(4);
 
   /// Optional. If this request is resuming a previously interrupted query
   /// execution, `resume_token` should be copied from the last
@@ -3487,8 +3487,8 @@ enum ExecuteQueryResponse_Response { metadata, results, notSet }
 /// Response message for Bigtable.ExecuteQuery
 class ExecuteQueryResponse extends $pb.GeneratedMessage {
   factory ExecuteQueryResponse({
-    $403.ResultSetMetadata? metadata,
-    $403.PartialResultSet? results,
+    $405.ResultSetMetadata? metadata,
+    $405.PartialResultSet? results,
   }) {
     final $result = create();
     if (metadata != null) {
@@ -3519,10 +3519,10 @@ class ExecuteQueryResponse extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'),
       createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$403.ResultSetMetadata>(1, _omitFieldNames ? '' : 'metadata',
-        subBuilder: $403.ResultSetMetadata.create)
-    ..aOM<$403.PartialResultSet>(2, _omitFieldNames ? '' : 'results',
-        subBuilder: $403.PartialResultSet.create)
+    ..aOM<$405.ResultSetMetadata>(1, _omitFieldNames ? '' : 'metadata',
+        subBuilder: $405.ResultSetMetadata.create)
+    ..aOM<$405.PartialResultSet>(2, _omitFieldNames ? '' : 'results',
+        subBuilder: $405.PartialResultSet.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3556,9 +3556,9 @@ class ExecuteQueryResponse extends $pb.GeneratedMessage {
   /// Structure of rows in this response stream. The first (and only the first)
   /// response streamed from the server will be of this type.
   @$pb.TagNumber(1)
-  $403.ResultSetMetadata get metadata => $_getN(0);
+  $405.ResultSetMetadata get metadata => $_getN(0);
   @$pb.TagNumber(1)
-  set metadata($403.ResultSetMetadata v) {
+  set metadata($405.ResultSetMetadata v) {
     setField(1, v);
   }
 
@@ -3567,15 +3567,15 @@ class ExecuteQueryResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $403.ResultSetMetadata ensureMetadata() => $_ensure(0);
+  $405.ResultSetMetadata ensureMetadata() => $_ensure(0);
 
   /// A partial result set with row data potentially including additional
   /// instructions on how recent past and future partial responses should be
   /// interpreted.
   @$pb.TagNumber(2)
-  $403.PartialResultSet get results => $_getN(1);
+  $405.PartialResultSet get results => $_getN(1);
   @$pb.TagNumber(2)
-  set results($403.PartialResultSet v) {
+  set results($405.PartialResultSet v) {
     setField(2, v);
   }
 
@@ -3584,7 +3584,7 @@ class ExecuteQueryResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearResults() => clearField(2);
   @$pb.TagNumber(2)
-  $403.PartialResultSet ensureResults() => $_ensure(1);
+  $405.PartialResultSet ensureResults() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $264;
-import 'metrics.pb.dart' as $514;
+import '../../../protobuf/duration.pb.dart' as $266;
+import 'metrics.pb.dart' as $517;
 import 'xychart.pbenum.dart';
 
 export 'xychart.pbenum.dart';
@@ -22,10 +22,10 @@ export 'xychart.pbenum.dart';
 /// Groups a time series query definition with charting options.
 class XyChart_DataSet extends $pb.GeneratedMessage {
   factory XyChart_DataSet({
-    $514.TimeSeriesQuery? timeSeriesQuery,
+    $517.TimeSeriesQuery? timeSeriesQuery,
     XyChart_DataSet_PlotType? plotType,
     $core.String? legendTemplate,
-    $264.Duration? minAlignmentPeriod,
+    $266.Duration? minAlignmentPeriod,
     XyChart_DataSet_TargetAxis? targetAxis,
   }) {
     final $result = create();
@@ -59,16 +59,16 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
-    ..aOM<$514.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
-        subBuilder: $514.TimeSeriesQuery.create)
+    ..aOM<$517.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
+        subBuilder: $517.TimeSeriesQuery.create)
     ..e<XyChart_DataSet_PlotType>(
         2, _omitFieldNames ? '' : 'plotType', $pb.PbFieldType.OE,
         defaultOrMaker: XyChart_DataSet_PlotType.PLOT_TYPE_UNSPECIFIED,
         valueOf: XyChart_DataSet_PlotType.valueOf,
         enumValues: XyChart_DataSet_PlotType.values)
     ..aOS(3, _omitFieldNames ? '' : 'legendTemplate')
-    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'minAlignmentPeriod',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(4, _omitFieldNames ? '' : 'minAlignmentPeriod',
+        subBuilder: $266.Duration.create)
     ..e<XyChart_DataSet_TargetAxis>(
         5, _omitFieldNames ? '' : 'targetAxis', $pb.PbFieldType.OE,
         defaultOrMaker: XyChart_DataSet_TargetAxis.TARGET_AXIS_UNSPECIFIED,
@@ -102,9 +102,9 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   /// Required. Fields for querying time series data from the
   /// Stackdriver metrics API.
   @$pb.TagNumber(1)
-  $514.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $517.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($514.TimeSeriesQuery v) {
+  set timeSeriesQuery($517.TimeSeriesQuery v) {
     setField(1, v);
   }
 
@@ -113,7 +113,7 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $514.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $517.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// How this data should be plotted on the chart.
   @$pb.TagNumber(2)
@@ -149,9 +149,9 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   /// the `min_alignment_period` should be at least 10 minutes. It would not
   /// make sense to fetch and align data at one minute intervals.
   @$pb.TagNumber(4)
-  $264.Duration get minAlignmentPeriod => $_getN(3);
+  $266.Duration get minAlignmentPeriod => $_getN(3);
   @$pb.TagNumber(4)
-  set minAlignmentPeriod($264.Duration v) {
+  set minAlignmentPeriod($266.Duration v) {
     setField(4, v);
   }
 
@@ -160,7 +160,7 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearMinAlignmentPeriod() => clearField(4);
   @$pb.TagNumber(4)
-  $264.Duration ensureMinAlignmentPeriod() => $_ensure(3);
+  $266.Duration ensureMinAlignmentPeriod() => $_ensure(3);
 
   /// Optional. The target axis to use for plotting the metric.
   @$pb.TagNumber(5)
@@ -266,8 +266,8 @@ class XyChart_Axis extends $pb.GeneratedMessage {
 class XyChart extends $pb.GeneratedMessage {
   factory XyChart({
     $core.Iterable<XyChart_DataSet>? dataSets,
-    $264.Duration? timeshiftDuration,
-    $core.Iterable<$514.Threshold>? thresholds,
+    $266.Duration? timeshiftDuration,
+    $core.Iterable<$517.Threshold>? thresholds,
     XyChart_Axis? xAxis,
     XyChart_Axis? yAxis,
     ChartOptions? chartOptions,
@@ -313,11 +313,11 @@ class XyChart extends $pb.GeneratedMessage {
     ..pc<XyChart_DataSet>(
         1, _omitFieldNames ? '' : 'dataSets', $pb.PbFieldType.PM,
         subBuilder: XyChart_DataSet.create)
-    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'timeshiftDuration',
-        subBuilder: $264.Duration.create)
-    ..pc<$514.Threshold>(
+    ..aOM<$266.Duration>(4, _omitFieldNames ? '' : 'timeshiftDuration',
+        subBuilder: $266.Duration.create)
+    ..pc<$517.Threshold>(
         5, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM,
-        subBuilder: $514.Threshold.create)
+        subBuilder: $517.Threshold.create)
     ..aOM<XyChart_Axis>(6, _omitFieldNames ? '' : 'xAxis',
         subBuilder: XyChart_Axis.create)
     ..aOM<XyChart_Axis>(7, _omitFieldNames ? '' : 'yAxis',
@@ -359,9 +359,9 @@ class XyChart extends $pb.GeneratedMessage {
   /// The duration must be positive, and it can only be applied to charts with
   /// data sets of LINE plot type.
   @$pb.TagNumber(4)
-  $264.Duration get timeshiftDuration => $_getN(1);
+  $266.Duration get timeshiftDuration => $_getN(1);
   @$pb.TagNumber(4)
-  set timeshiftDuration($264.Duration v) {
+  set timeshiftDuration($266.Duration v) {
     setField(4, v);
   }
 
@@ -370,11 +370,11 @@ class XyChart extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearTimeshiftDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $264.Duration ensureTimeshiftDuration() => $_ensure(1);
+  $266.Duration ensureTimeshiftDuration() => $_ensure(1);
 
   /// Threshold lines drawn horizontally across the chart.
   @$pb.TagNumber(5)
-  $core.List<$514.Threshold> get thresholds => $_getList(2);
+  $core.List<$517.Threshold> get thresholds => $_getList(2);
 
   /// The properties applied to the x-axis.
   @$pb.TagNumber(6)

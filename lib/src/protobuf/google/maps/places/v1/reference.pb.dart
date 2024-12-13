@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'review.pb.dart' as $462;
+import 'review.pb.dart' as $464;
 
 ///  Experimental: See
 ///  https://developers.google.com/maps/documentation/places/web-service/experimental/places-generative
@@ -22,7 +22,7 @@ import 'review.pb.dart' as $462;
 ///  Reference that the generative content is related to.
 class References extends $pb.GeneratedMessage {
   factory References({
-    $core.Iterable<$462.Review>? reviews,
+    $core.Iterable<$464.Review>? reviews,
     $core.Iterable<$core.String>? places,
   }) {
     final $result = create();
@@ -47,8 +47,8 @@ class References extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
-    ..pc<$462.Review>(1, _omitFieldNames ? '' : 'reviews', $pb.PbFieldType.PM,
-        subBuilder: $462.Review.create)
+    ..pc<$464.Review>(1, _omitFieldNames ? '' : 'reviews', $pb.PbFieldType.PM,
+        subBuilder: $464.Review.create)
     ..pPS(2, _omitFieldNames ? '' : 'places')
     ..hasRequiredFields = false;
 
@@ -75,7 +75,7 @@ class References extends $pb.GeneratedMessage {
 
   /// Reviews that serve as references.
   @$pb.TagNumber(1)
-  $core.List<$462.Review> get reviews => $_getList(0);
+  $core.List<$464.Review> get reviews => $_getList(0);
 
   /// The list of resource names of the referenced places. This name can be used
   /// in other APIs that accept Place resource names.

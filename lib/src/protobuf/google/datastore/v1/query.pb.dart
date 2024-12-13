@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $302;
-import '../../protobuf/wrappers.pb.dart' as $307;
-import 'entity.pb.dart' as $421;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../protobuf/wrappers.pb.dart' as $309;
+import 'entity.pb.dart' as $423;
 import 'query.pbenum.dart';
 
 export 'query.pbenum.dart';
@@ -24,11 +24,11 @@ export 'query.pbenum.dart';
 /// The result of fetching an entity from Datastore.
 class EntityResult extends $pb.GeneratedMessage {
   factory EntityResult({
-    $421.Entity? entity,
+    $423.Entity? entity,
     $core.List<$core.int>? cursor,
     $fixnum.Int64? version,
-    $302.Timestamp? updateTime,
-    $302.Timestamp? createTime,
+    $304.Timestamp? updateTime,
+    $304.Timestamp? createTime,
   }) {
     final $result = create();
     if (entity != null) {
@@ -61,15 +61,15 @@ class EntityResult extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$421.Entity>(1, _omitFieldNames ? '' : 'entity',
-        subBuilder: $421.Entity.create)
+    ..aOM<$423.Entity>(1, _omitFieldNames ? '' : 'entity',
+        subBuilder: $423.Entity.create)
     ..a<$core.List<$core.int>>(
         3, _omitFieldNames ? '' : 'cursor', $pb.PbFieldType.OY)
     ..aInt64(4, _omitFieldNames ? '' : 'version')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -97,9 +97,9 @@ class EntityResult extends $pb.GeneratedMessage {
 
   /// The resulting entity.
   @$pb.TagNumber(1)
-  $421.Entity get entity => $_getN(0);
+  $423.Entity get entity => $_getN(0);
   @$pb.TagNumber(1)
-  set entity($421.Entity v) {
+  set entity($423.Entity v) {
     setField(1, v);
   }
 
@@ -108,7 +108,7 @@ class EntityResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearEntity() => clearField(1);
   @$pb.TagNumber(1)
-  $421.Entity ensureEntity() => $_ensure(0);
+  $423.Entity ensureEntity() => $_ensure(0);
 
   /// A cursor that points to the position after the result entity.
   /// Set only when the `EntityResult` is part of a `QueryResultBatch` message.
@@ -150,9 +150,9 @@ class EntityResult extends $pb.GeneratedMessage {
   /// [`FULL`][google.datastore.v1.EntityResult.ResultType.FULL] entity results.
   /// If this entity is missing, this field will not be set.
   @$pb.TagNumber(5)
-  $302.Timestamp get updateTime => $_getN(3);
+  $304.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(5)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -161,16 +161,16 @@ class EntityResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureUpdateTime() => $_ensure(3);
+  $304.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// The time at which the entity was created.
   /// This field is set for
   /// [`FULL`][google.datastore.v1.EntityResult.ResultType.FULL] entity results.
   /// If this entity is missing, this field will not be set.
   @$pb.TagNumber(6)
-  $302.Timestamp get createTime => $_getN(4);
+  $304.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -179,7 +179,7 @@ class EntityResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureCreateTime() => $_ensure(4);
+  $304.Timestamp ensureCreateTime() => $_ensure(4);
 }
 
 ///  A query for entities.
@@ -202,7 +202,7 @@ class Query extends $pb.GeneratedMessage {
     $core.List<$core.int>? startCursor,
     $core.List<$core.int>? endCursor,
     $core.int? offset,
-    $307.Int32Value? limit,
+    $309.Int32Value? limit,
     FindNearest? findNearest,
   }) {
     final $result = create();
@@ -266,8 +266,8 @@ class Query extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(
         8, _omitFieldNames ? '' : 'endCursor', $pb.PbFieldType.OY)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
-    ..aOM<$307.Int32Value>(12, _omitFieldNames ? '' : 'limit',
-        subBuilder: $307.Int32Value.create)
+    ..aOM<$309.Int32Value>(12, _omitFieldNames ? '' : 'limit',
+        subBuilder: $309.Int32Value.create)
     ..aOM<FindNearest>(13, _omitFieldNames ? '' : 'findNearest',
         subBuilder: FindNearest.create)
     ..hasRequiredFields = false;
@@ -383,9 +383,9 @@ class Query extends $pb.GeneratedMessage {
   /// Unspecified is interpreted as no limit.
   /// Must be >= 0 if specified.
   @$pb.TagNumber(12)
-  $307.Int32Value get limit => $_getN(8);
+  $309.Int32Value get limit => $_getN(8);
   @$pb.TagNumber(12)
-  set limit($307.Int32Value v) {
+  set limit($309.Int32Value v) {
     setField(12, v);
   }
 
@@ -394,7 +394,7 @@ class Query extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearLimit() => clearField(12);
   @$pb.TagNumber(12)
-  $307.Int32Value ensureLimit() => $_ensure(8);
+  $309.Int32Value ensureLimit() => $_ensure(8);
 
   ///  Optional. A potential Nearest Neighbors Search.
   ///
@@ -422,7 +422,7 @@ class Query extends $pb.GeneratedMessage {
 ///  so it does not require a field reference.
 class AggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
   factory AggregationQuery_Aggregation_Count({
-    $307.Int64Value? upTo,
+    $309.Int64Value? upTo,
   }) {
     final $result = create();
     if (upTo != null) {
@@ -443,8 +443,8 @@ class AggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$307.Int64Value>(1, _omitFieldNames ? '' : 'upTo',
-        subBuilder: $307.Int64Value.create)
+    ..aOM<$309.Int64Value>(1, _omitFieldNames ? '' : 'upTo',
+        subBuilder: $309.Int64Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -496,9 +496,9 @@ class AggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
   ///
   ///  * Must be non-negative when present.
   @$pb.TagNumber(1)
-  $307.Int64Value get upTo => $_getN(0);
+  $309.Int64Value get upTo => $_getN(0);
   @$pb.TagNumber(1)
-  set upTo($307.Int64Value v) {
+  set upTo($309.Int64Value v) {
     setField(1, v);
   }
 
@@ -507,7 +507,7 @@ class AggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearUpTo() => clearField(1);
   @$pb.TagNumber(1)
-  $307.Int64Value ensureUpTo() => $_ensure(0);
+  $309.Int64Value ensureUpTo() => $_ensure(0);
 }
 
 ///  Sum of the values of the requested property.
@@ -1433,7 +1433,7 @@ class PropertyFilter extends $pb.GeneratedMessage {
   factory PropertyFilter({
     PropertyReference? property,
     PropertyFilter_Operator? op,
-    $421.Value? value,
+    $423.Value? value,
   }) {
     final $result = create();
     if (property != null) {
@@ -1467,8 +1467,8 @@ class PropertyFilter extends $pb.GeneratedMessage {
         defaultOrMaker: PropertyFilter_Operator.OPERATOR_UNSPECIFIED,
         valueOf: PropertyFilter_Operator.valueOf,
         enumValues: PropertyFilter_Operator.values)
-    ..aOM<$421.Value>(3, _omitFieldNames ? '' : 'value',
-        subBuilder: $421.Value.create)
+    ..aOM<$423.Value>(3, _omitFieldNames ? '' : 'value',
+        subBuilder: $423.Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1524,9 +1524,9 @@ class PropertyFilter extends $pb.GeneratedMessage {
 
   /// The value to compare the property to.
   @$pb.TagNumber(3)
-  $421.Value get value => $_getN(2);
+  $423.Value get value => $_getN(2);
   @$pb.TagNumber(3)
-  set value($421.Value v) {
+  set value($423.Value v) {
     setField(3, v);
   }
 
@@ -1535,7 +1535,7 @@ class PropertyFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearValue() => clearField(3);
   @$pb.TagNumber(3)
-  $421.Value ensureValue() => $_ensure(2);
+  $423.Value ensureValue() => $_ensure(2);
 }
 
 /// Nearest Neighbors search config. The ordering provided by FindNearest
@@ -1545,11 +1545,11 @@ class PropertyFilter extends $pb.GeneratedMessage {
 class FindNearest extends $pb.GeneratedMessage {
   factory FindNearest({
     PropertyReference? vectorProperty,
-    $421.Value? queryVector,
+    $423.Value? queryVector,
     FindNearest_DistanceMeasure? distanceMeasure,
-    $307.Int32Value? limit,
+    $309.Int32Value? limit,
     $core.String? distanceResultProperty,
-    $307.DoubleValue? distanceThreshold,
+    $309.DoubleValue? distanceThreshold,
   }) {
     final $result = create();
     if (vectorProperty != null) {
@@ -1587,19 +1587,19 @@ class FindNearest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'vectorProperty',
         subBuilder: PropertyReference.create)
-    ..aOM<$421.Value>(2, _omitFieldNames ? '' : 'queryVector',
-        subBuilder: $421.Value.create)
+    ..aOM<$423.Value>(2, _omitFieldNames ? '' : 'queryVector',
+        subBuilder: $423.Value.create)
     ..e<FindNearest_DistanceMeasure>(
         3, _omitFieldNames ? '' : 'distanceMeasure', $pb.PbFieldType.OE,
         defaultOrMaker:
             FindNearest_DistanceMeasure.DISTANCE_MEASURE_UNSPECIFIED,
         valueOf: FindNearest_DistanceMeasure.valueOf,
         enumValues: FindNearest_DistanceMeasure.values)
-    ..aOM<$307.Int32Value>(4, _omitFieldNames ? '' : 'limit',
-        subBuilder: $307.Int32Value.create)
+    ..aOM<$309.Int32Value>(4, _omitFieldNames ? '' : 'limit',
+        subBuilder: $309.Int32Value.create)
     ..aOS(5, _omitFieldNames ? '' : 'distanceResultProperty')
-    ..aOM<$307.DoubleValue>(6, _omitFieldNames ? '' : 'distanceThreshold',
-        subBuilder: $307.DoubleValue.create)
+    ..aOM<$309.DoubleValue>(6, _omitFieldNames ? '' : 'distanceThreshold',
+        subBuilder: $309.DoubleValue.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1644,9 +1644,9 @@ class FindNearest extends $pb.GeneratedMessage {
   /// Required. The query vector that we are searching on. Must be a vector of no
   /// more than 2048 dimensions.
   @$pb.TagNumber(2)
-  $421.Value get queryVector => $_getN(1);
+  $423.Value get queryVector => $_getN(1);
   @$pb.TagNumber(2)
-  set queryVector($421.Value v) {
+  set queryVector($423.Value v) {
     setField(2, v);
   }
 
@@ -1655,7 +1655,7 @@ class FindNearest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearQueryVector() => clearField(2);
   @$pb.TagNumber(2)
-  $421.Value ensureQueryVector() => $_ensure(1);
+  $423.Value ensureQueryVector() => $_ensure(1);
 
   /// Required. The Distance Measure to use, required.
   @$pb.TagNumber(3)
@@ -1673,9 +1673,9 @@ class FindNearest extends $pb.GeneratedMessage {
   /// Required. The number of nearest neighbors to return. Must be a positive
   /// integer of no more than 100.
   @$pb.TagNumber(4)
-  $307.Int32Value get limit => $_getN(3);
+  $309.Int32Value get limit => $_getN(3);
   @$pb.TagNumber(4)
-  set limit($307.Int32Value v) {
+  set limit($309.Int32Value v) {
     setField(4, v);
   }
 
@@ -1684,7 +1684,7 @@ class FindNearest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearLimit() => clearField(4);
   @$pb.TagNumber(4)
-  $307.Int32Value ensureLimit() => $_ensure(3);
+  $309.Int32Value ensureLimit() => $_ensure(3);
 
   /// Optional. Optional name of the field to output the result of the vector
   /// distance calculation. Must conform to [entity
@@ -1709,9 +1709,9 @@ class FindNearest extends $pb.GeneratedMessage {
   ///  For EUCLIDEAN, COSINE: WHERE distance <= distance_threshold
   ///  For DOT_PRODUCT:       WHERE distance >= distance_threshold
   @$pb.TagNumber(6)
-  $307.DoubleValue get distanceThreshold => $_getN(5);
+  $309.DoubleValue get distanceThreshold => $_getN(5);
   @$pb.TagNumber(6)
-  set distanceThreshold($307.DoubleValue v) {
+  set distanceThreshold($309.DoubleValue v) {
     setField(6, v);
   }
 
@@ -1720,7 +1720,7 @@ class FindNearest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearDistanceThreshold() => clearField(6);
   @$pb.TagNumber(6)
-  $307.DoubleValue ensureDistanceThreshold() => $_ensure(5);
+  $309.DoubleValue ensureDistanceThreshold() => $_ensure(5);
 }
 
 /// A [GQL
@@ -1848,7 +1848,7 @@ enum GqlQueryParameter_ParameterType { value, cursor, notSet }
 /// A binding parameter for a GQL query.
 class GqlQueryParameter extends $pb.GeneratedMessage {
   factory GqlQueryParameter({
-    $421.Value? value,
+    $423.Value? value,
     $core.List<$core.int>? cursor,
   }) {
     final $result = create();
@@ -1880,8 +1880,8 @@ class GqlQueryParameter extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$421.Value>(2, _omitFieldNames ? '' : 'value',
-        subBuilder: $421.Value.create)
+    ..aOM<$423.Value>(2, _omitFieldNames ? '' : 'value',
+        subBuilder: $423.Value.create)
     ..a<$core.List<$core.int>>(
         3, _omitFieldNames ? '' : 'cursor', $pb.PbFieldType.OY)
     ..hasRequiredFields = false;
@@ -1915,9 +1915,9 @@ class GqlQueryParameter extends $pb.GeneratedMessage {
 
   /// A value parameter.
   @$pb.TagNumber(2)
-  $421.Value get value => $_getN(0);
+  $423.Value get value => $_getN(0);
   @$pb.TagNumber(2)
-  set value($421.Value v) {
+  set value($423.Value v) {
     setField(2, v);
   }
 
@@ -1926,7 +1926,7 @@ class GqlQueryParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $421.Value ensureValue() => $_ensure(0);
+  $423.Value ensureValue() => $_ensure(0);
 
   /// A query cursor. Query cursors are returned in query
   /// result batches.
@@ -1953,7 +1953,7 @@ class QueryResultBatch extends $pb.GeneratedMessage {
     QueryResultBatch_MoreResultsType? moreResults,
     $core.int? skippedResults,
     $fixnum.Int64? snapshotVersion,
-    $302.Timestamp? readTime,
+    $304.Timestamp? readTime,
   }) {
     final $result = create();
     if (entityResultType != null) {
@@ -2016,8 +2016,8 @@ class QueryResultBatch extends $pb.GeneratedMessage {
     ..a<$core.int>(
         6, _omitFieldNames ? '' : 'skippedResults', $pb.PbFieldType.O3)
     ..aInt64(7, _omitFieldNames ? '' : 'snapshotVersion')
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'readTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'readTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2145,9 +2145,9 @@ class QueryResultBatch extends $pb.GeneratedMessage {
   ///  This value will not be set for eventually consistent queries in Cloud
   ///  Datastore.
   @$pb.TagNumber(8)
-  $302.Timestamp get readTime => $_getN(7);
+  $304.Timestamp get readTime => $_getN(7);
   @$pb.TagNumber(8)
-  set readTime($302.Timestamp v) {
+  set readTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -2156,7 +2156,7 @@ class QueryResultBatch extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearReadTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureReadTime() => $_ensure(7);
+  $304.Timestamp ensureReadTime() => $_ensure(7);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

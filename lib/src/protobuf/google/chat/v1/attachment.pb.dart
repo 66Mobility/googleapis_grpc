@@ -118,7 +118,7 @@ class Attachment extends $pb.GeneratedMessage {
       _Attachment_DataRefByTag[$_whichOneof(0)]!;
   void clearDataRef() => clearField($_whichOneof(0));
 
-  /// Resource name of the attachment, in the form
+  /// Optional. Resource name of the attachment, in the form
   /// `spaces/{space}/messages/{message}/attachments/{attachment}`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
@@ -158,8 +158,9 @@ class Attachment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearContentType() => clearField(3);
 
-  /// A reference to the attachment data. This field is used with the media API
-  /// to download the attachment data.
+  /// Optional. A reference to the attachment data. This field is used to
+  /// create or update messages with attachments, or with the media API to
+  /// download the attachment data.
   @$pb.TagNumber(4)
   AttachmentDataRef get attachmentDataRef => $_getN(3);
   @$pb.TagNumber(4)
@@ -351,8 +352,8 @@ class AttachmentDataRef extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<AttachmentDataRef>(create);
   static AttachmentDataRef? _defaultInstance;
 
-  /// The resource name of the attachment data. This field is used with the media
-  /// API to download the attachment data.
+  /// Optional. The resource name of the attachment data. This field is used with
+  /// the media API to download the attachment data.
   @$pb.TagNumber(1)
   $core.String get resourceName => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -365,9 +366,9 @@ class AttachmentDataRef extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearResourceName() => clearField(1);
 
-  /// Opaque token containing a reference to an uploaded attachment. Treated by
-  /// clients as an opaque string and used to create or update Chat messages with
-  /// attachments.
+  /// Optional. Opaque token containing a reference to an uploaded attachment.
+  /// Treated by clients as an opaque string and used to create or update Chat
+  /// messages with attachments.
   @$pb.TagNumber(2)
   $core.String get attachmentUploadToken => $_getSZ(1);
   @$pb.TagNumber(2)

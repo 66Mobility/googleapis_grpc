@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../logging/type/log_severity.pbenum.dart' as $369;
-import '../../../protobuf/duration.pb.dart' as $264;
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../logging/type/log_severity.pbenum.dart' as $371;
+import '../../../protobuf/duration.pb.dart' as $266;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 
 /// Application log line emitted while processing a request.
 class LogLine extends $pb.GeneratedMessage {
   factory LogLine({
-    $302.Timestamp? time,
-    $369.LogSeverity? severity,
+    $304.Timestamp? time,
+    $371.LogSeverity? severity,
     $core.String? logMessage,
     SourceLocation? sourceLocation,
   }) {
@@ -54,13 +54,13 @@ class LogLine extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.logging.v1'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'time',
-        subBuilder: $302.Timestamp.create)
-    ..e<$369.LogSeverity>(
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'time',
+        subBuilder: $304.Timestamp.create)
+    ..e<$371.LogSeverity>(
         2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE,
-        defaultOrMaker: $369.LogSeverity.DEFAULT,
-        valueOf: $369.LogSeverity.valueOf,
-        enumValues: $369.LogSeverity.values)
+        defaultOrMaker: $371.LogSeverity.DEFAULT,
+        valueOf: $371.LogSeverity.valueOf,
+        enumValues: $371.LogSeverity.values)
     ..aOS(3, _omitFieldNames ? '' : 'logMessage')
     ..aOM<SourceLocation>(4, _omitFieldNames ? '' : 'sourceLocation',
         subBuilder: SourceLocation.create)
@@ -89,9 +89,9 @@ class LogLine extends $pb.GeneratedMessage {
 
   /// Approximate time when this log entry was made.
   @$pb.TagNumber(1)
-  $302.Timestamp get time => $_getN(0);
+  $304.Timestamp get time => $_getN(0);
   @$pb.TagNumber(1)
-  set time($302.Timestamp v) {
+  set time($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -100,13 +100,13 @@ class LogLine extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureTime() => $_ensure(0);
+  $304.Timestamp ensureTime() => $_ensure(0);
 
   /// Severity of this log entry.
   @$pb.TagNumber(2)
-  $369.LogSeverity get severity => $_getN(1);
+  $371.LogSeverity get severity => $_getN(1);
   @$pb.TagNumber(2)
-  set severity($369.LogSeverity v) {
+  set severity($371.LogSeverity v) {
     setField(2, v);
   }
 
@@ -343,9 +343,9 @@ class RequestLog extends $pb.GeneratedMessage {
     $core.String? versionId,
     $core.String? requestId,
     $core.String? ip,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
-    $264.Duration? latency,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
+    $266.Duration? latency,
     $fixnum.Int64? megaCycles,
     $core.String? method,
     $core.String? resource,
@@ -360,7 +360,7 @@ class RequestLog extends $pb.GeneratedMessage {
     $core.String? taskQueueName,
     $core.String? taskName,
     $core.bool? wasLoadingRequest,
-    $264.Duration? pendingTime,
+    $266.Duration? pendingTime,
     $core.int? instanceIndex,
     $core.bool? finished,
     $core.String? instanceId,
@@ -492,12 +492,12 @@ class RequestLog extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'versionId')
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOS(4, _omitFieldNames ? '' : 'ip')
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'latency',
-        subBuilder: $264.Duration.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$266.Duration>(8, _omitFieldNames ? '' : 'latency',
+        subBuilder: $266.Duration.create)
     ..aInt64(9, _omitFieldNames ? '' : 'megaCycles')
     ..aOS(10, _omitFieldNames ? '' : 'method')
     ..aOS(11, _omitFieldNames ? '' : 'resource')
@@ -512,8 +512,8 @@ class RequestLog extends $pb.GeneratedMessage {
     ..aOS(22, _omitFieldNames ? '' : 'taskQueueName')
     ..aOS(23, _omitFieldNames ? '' : 'taskName')
     ..aOB(24, _omitFieldNames ? '' : 'wasLoadingRequest')
-    ..aOM<$264.Duration>(25, _omitFieldNames ? '' : 'pendingTime',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(25, _omitFieldNames ? '' : 'pendingTime',
+        subBuilder: $266.Duration.create)
     ..a<$core.int>(
         26, _omitFieldNames ? '' : 'instanceIndex', $pb.PbFieldType.O3)
     ..aOB(27, _omitFieldNames ? '' : 'finished')
@@ -608,9 +608,9 @@ class RequestLog extends $pb.GeneratedMessage {
 
   /// Time when the request started.
   @$pb.TagNumber(6)
-  $302.Timestamp get startTime => $_getN(4);
+  $304.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(6)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -619,13 +619,13 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearStartTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureStartTime() => $_ensure(4);
+  $304.Timestamp ensureStartTime() => $_ensure(4);
 
   /// Time when the request finished.
   @$pb.TagNumber(7)
-  $302.Timestamp get endTime => $_getN(5);
+  $304.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(7)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(7, v);
   }
 
@@ -634,13 +634,13 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearEndTime() => clearField(7);
   @$pb.TagNumber(7)
-  $302.Timestamp ensureEndTime() => $_ensure(5);
+  $304.Timestamp ensureEndTime() => $_ensure(5);
 
   /// Latency of the request.
   @$pb.TagNumber(8)
-  $264.Duration get latency => $_getN(6);
+  $266.Duration get latency => $_getN(6);
   @$pb.TagNumber(8)
-  set latency($264.Duration v) {
+  set latency($266.Duration v) {
     setField(8, v);
   }
 
@@ -649,7 +649,7 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearLatency() => clearField(8);
   @$pb.TagNumber(8)
-  $264.Duration ensureLatency() => $_ensure(6);
+  $266.Duration ensureLatency() => $_ensure(6);
 
   /// Number of CPU megacycles used to process request.
   @$pb.TagNumber(9)
@@ -838,9 +838,9 @@ class RequestLog extends $pb.GeneratedMessage {
 
   /// Time this request spent in the pending request queue.
   @$pb.TagNumber(25)
-  $264.Duration get pendingTime => $_getN(21);
+  $266.Duration get pendingTime => $_getN(21);
   @$pb.TagNumber(25)
-  set pendingTime($264.Duration v) {
+  set pendingTime($266.Duration v) {
     setField(25, v);
   }
 
@@ -849,7 +849,7 @@ class RequestLog extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   void clearPendingTime() => clearField(25);
   @$pb.TagNumber(25)
-  $264.Duration ensurePendingTime() => $_ensure(21);
+  $266.Duration ensurePendingTime() => $_ensure(21);
 
   /// If the instance processing this request belongs to a manually scaled
   /// module, then this is the 0-based index of the instance. Otherwise, this

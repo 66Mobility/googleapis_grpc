@@ -13,23 +13,23 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'content/canvas.pb.dart' as $314;
-import 'content/content.pb.dart' as $318;
-import 'content/link.pb.dart' as $310;
-import 'simple.pb.dart' as $317;
-import 'suggestion.pb.dart' as $319;
+import 'content/canvas.pb.dart' as $316;
+import 'content/content.pb.dart' as $320;
+import 'content/link.pb.dart' as $312;
+import 'simple.pb.dart' as $319;
+import 'suggestion.pb.dart' as $321;
 
 /// Represent a response to a user.
 class Prompt extends $pb.GeneratedMessage {
   factory Prompt({
     @$core.Deprecated('This field is deprecated.') $core.bool? append,
-    $317.Simple? firstSimple,
-    $318.Content? content,
-    $317.Simple? lastSimple,
-    $core.Iterable<$319.Suggestion>? suggestions,
-    $310.Link? link,
+    $319.Simple? firstSimple,
+    $320.Content? content,
+    $319.Simple? lastSimple,
+    $core.Iterable<$321.Suggestion>? suggestions,
+    $312.Link? link,
     $core.bool? override,
-    $314.Canvas? canvas,
+    $316.Canvas? canvas,
   }) {
     final $result = create();
     if (append != null) {
@@ -73,20 +73,20 @@ class Prompt extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
       createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'append')
-    ..aOM<$317.Simple>(2, _omitFieldNames ? '' : 'firstSimple',
-        subBuilder: $317.Simple.create)
-    ..aOM<$318.Content>(3, _omitFieldNames ? '' : 'content',
-        subBuilder: $318.Content.create)
-    ..aOM<$317.Simple>(4, _omitFieldNames ? '' : 'lastSimple',
-        subBuilder: $317.Simple.create)
-    ..pc<$319.Suggestion>(
+    ..aOM<$319.Simple>(2, _omitFieldNames ? '' : 'firstSimple',
+        subBuilder: $319.Simple.create)
+    ..aOM<$320.Content>(3, _omitFieldNames ? '' : 'content',
+        subBuilder: $320.Content.create)
+    ..aOM<$319.Simple>(4, _omitFieldNames ? '' : 'lastSimple',
+        subBuilder: $319.Simple.create)
+    ..pc<$321.Suggestion>(
         5, _omitFieldNames ? '' : 'suggestions', $pb.PbFieldType.PM,
-        subBuilder: $319.Suggestion.create)
-    ..aOM<$310.Link>(6, _omitFieldNames ? '' : 'link',
-        subBuilder: $310.Link.create)
+        subBuilder: $321.Suggestion.create)
+    ..aOM<$312.Link>(6, _omitFieldNames ? '' : 'link',
+        subBuilder: $312.Link.create)
     ..aOB(8, _omitFieldNames ? '' : 'override')
-    ..aOM<$314.Canvas>(9, _omitFieldNames ? '' : 'canvas',
-        subBuilder: $314.Canvas.create)
+    ..aOM<$316.Canvas>(9, _omitFieldNames ? '' : 'canvas',
+        subBuilder: $316.Canvas.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -139,9 +139,9 @@ class Prompt extends $pb.GeneratedMessage {
 
   /// Optional. The first voice and text-only response.
   @$pb.TagNumber(2)
-  $317.Simple get firstSimple => $_getN(1);
+  $319.Simple get firstSimple => $_getN(1);
   @$pb.TagNumber(2)
-  set firstSimple($317.Simple v) {
+  set firstSimple($319.Simple v) {
     setField(2, v);
   }
 
@@ -150,13 +150,13 @@ class Prompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearFirstSimple() => clearField(2);
   @$pb.TagNumber(2)
-  $317.Simple ensureFirstSimple() => $_ensure(1);
+  $319.Simple ensureFirstSimple() => $_ensure(1);
 
   /// Optional. A content like a card, list or media to display to the user.
   @$pb.TagNumber(3)
-  $318.Content get content => $_getN(2);
+  $320.Content get content => $_getN(2);
   @$pb.TagNumber(3)
-  set content($318.Content v) {
+  set content($320.Content v) {
     setField(3, v);
   }
 
@@ -165,13 +165,13 @@ class Prompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearContent() => clearField(3);
   @$pb.TagNumber(3)
-  $318.Content ensureContent() => $_ensure(2);
+  $320.Content ensureContent() => $_ensure(2);
 
   /// Optional. The last voice and text-only response.
   @$pb.TagNumber(4)
-  $317.Simple get lastSimple => $_getN(3);
+  $319.Simple get lastSimple => $_getN(3);
   @$pb.TagNumber(4)
-  set lastSimple($317.Simple v) {
+  set lastSimple($319.Simple v) {
     setField(4, v);
   }
 
@@ -180,7 +180,7 @@ class Prompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearLastSimple() => clearField(4);
   @$pb.TagNumber(4)
-  $317.Simple ensureLastSimple() => $_ensure(3);
+  $319.Simple ensureLastSimple() => $_ensure(3);
 
   /// Optional. Suggestions to be displayed to the user which will always appear
   /// at the end of the response.
@@ -188,15 +188,15 @@ class Prompt extends $pb.GeneratedMessage {
   /// defined in this field will be added to titles defined in any previously
   /// defined suggestions prompts and duplicate values will be removed.
   @$pb.TagNumber(5)
-  $core.List<$319.Suggestion> get suggestions => $_getList(4);
+  $core.List<$321.Suggestion> get suggestions => $_getList(4);
 
   /// Optional. An additional suggestion chip that can link out to the associated app
   /// or site.
   /// The chip will be rendered with the title "Open <name>". Max 20 chars.
   @$pb.TagNumber(6)
-  $310.Link get link => $_getN(5);
+  $312.Link get link => $_getN(5);
   @$pb.TagNumber(6)
-  set link($310.Link v) {
+  set link($312.Link v) {
     setField(6, v);
   }
 
@@ -205,7 +205,7 @@ class Prompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearLink() => clearField(6);
   @$pb.TagNumber(6)
-  $310.Link ensureLink() => $_ensure(5);
+  $312.Link ensureLink() => $_ensure(5);
 
   /// Optional. Mode for how this messages should be merged with previously
   /// defined messages.
@@ -232,9 +232,9 @@ class Prompt extends $pb.GeneratedMessage {
 
   /// Optional. Represents a Interactive Canvas response to be sent to the user.
   @$pb.TagNumber(9)
-  $314.Canvas get canvas => $_getN(7);
+  $316.Canvas get canvas => $_getN(7);
   @$pb.TagNumber(9)
-  set canvas($314.Canvas v) {
+  set canvas($316.Canvas v) {
     setField(9, v);
   }
 
@@ -243,7 +243,7 @@ class Prompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearCanvas() => clearField(9);
   @$pb.TagNumber(9)
-  $314.Canvas ensureCanvas() => $_ensure(7);
+  $316.Canvas ensureCanvas() => $_ensure(7);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

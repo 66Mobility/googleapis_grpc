@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'citation.pb.dart' as $335;
-import 'safety.pb.dart' as $334;
+import 'citation.pb.dart' as $337;
+import 'safety.pb.dart' as $336;
 
 /// Request to generate a message response from the model.
 class GenerateMessageRequest extends $pb.GeneratedMessage {
@@ -209,7 +209,7 @@ class GenerateMessageResponse extends $pb.GeneratedMessage {
   factory GenerateMessageResponse({
     $core.Iterable<Message>? candidates,
     $core.Iterable<Message>? messages,
-    $core.Iterable<$334.ContentFilter>? filters,
+    $core.Iterable<$336.ContentFilter>? filters,
   }) {
     final $result = create();
     if (candidates != null) {
@@ -240,9 +240,9 @@ class GenerateMessageResponse extends $pb.GeneratedMessage {
         subBuilder: Message.create)
     ..pc<Message>(2, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM,
         subBuilder: Message.create)
-    ..pc<$334.ContentFilter>(
+    ..pc<$336.ContentFilter>(
         3, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM,
-        subBuilder: $334.ContentFilter.create)
+        subBuilder: $336.ContentFilter.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -285,7 +285,7 @@ class GenerateMessageResponse extends $pb.GeneratedMessage {
   ///  candidate from this response, the lowest `HarmProbability`
   ///  that triggered a block, and the HarmThreshold setting for that category.
   @$pb.TagNumber(3)
-  $core.List<$334.ContentFilter> get filters => $_getList(2);
+  $core.List<$336.ContentFilter> get filters => $_getList(2);
 }
 
 ///  The base unit of structured text.
@@ -299,7 +299,7 @@ class Message extends $pb.GeneratedMessage {
   factory Message({
     $core.String? author,
     $core.String? content,
-    $335.CitationMetadata? citationMetadata,
+    $337.CitationMetadata? citationMetadata,
   }) {
     final $result = create();
     if (author != null) {
@@ -328,8 +328,8 @@ class Message extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'author')
     ..aOS(2, _omitFieldNames ? '' : 'content')
-    ..aOM<$335.CitationMetadata>(3, _omitFieldNames ? '' : 'citationMetadata',
-        subBuilder: $335.CitationMetadata.create)
+    ..aOM<$337.CitationMetadata>(3, _omitFieldNames ? '' : 'citationMetadata',
+        subBuilder: $337.CitationMetadata.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -391,9 +391,9 @@ class Message extends $pb.GeneratedMessage {
   ///  populated with attribution information for any text included in the
   ///  `content`. This field is used only on output.
   @$pb.TagNumber(3)
-  $335.CitationMetadata get citationMetadata => $_getN(2);
+  $337.CitationMetadata get citationMetadata => $_getN(2);
   @$pb.TagNumber(3)
-  set citationMetadata($335.CitationMetadata v) {
+  set citationMetadata($337.CitationMetadata v) {
     setField(3, v);
   }
 
@@ -402,7 +402,7 @@ class Message extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCitationMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $335.CitationMetadata ensureCitationMetadata() => $_ensure(2);
+  $337.CitationMetadata ensureCitationMetadata() => $_ensure(2);
 }
 
 ///  All of the structured input text passed to the model as a prompt.

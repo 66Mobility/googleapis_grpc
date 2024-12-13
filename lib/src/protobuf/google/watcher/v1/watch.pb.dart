@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/any.pb.dart' as $321;
+import '../../protobuf/any.pb.dart' as $323;
 import 'watch.pbenum.dart';
 
 export 'watch.pbenum.dart';
@@ -212,7 +212,7 @@ class Change extends $pb.GeneratedMessage {
     Change_State? state,
     $core.List<$core.int>? resumeMarker,
     $core.bool? continued,
-    $321.Any? data,
+    $323.Any? data,
   }) {
     final $result = create();
     if (element != null) {
@@ -253,8 +253,8 @@ class Change extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(
         4, _omitFieldNames ? '' : 'resumeMarker', $pb.PbFieldType.OY)
     ..aOB(5, _omitFieldNames ? '' : 'continued')
-    ..aOM<$321.Any>(6, _omitFieldNames ? '' : 'data',
-        subBuilder: $321.Any.create)
+    ..aOM<$323.Any>(6, _omitFieldNames ? '' : 'data',
+        subBuilder: $323.Any.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -341,9 +341,9 @@ class Change extends $pb.GeneratedMessage {
   /// or `state() == ERROR`. Please see
   /// [google.protobuf.Any][google.protobuf.Any] about how to use the Any type.
   @$pb.TagNumber(6)
-  $321.Any get data => $_getN(4);
+  $323.Any get data => $_getN(4);
   @$pb.TagNumber(6)
-  set data($321.Any v) {
+  set data($323.Any v) {
     setField(6, v);
   }
 
@@ -352,7 +352,7 @@ class Change extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearData() => clearField(6);
   @$pb.TagNumber(6)
-  $321.Any ensureData() => $_ensure(4);
+  $323.Any ensureData() => $_ensure(4);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

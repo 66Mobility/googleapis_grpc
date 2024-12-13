@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
-import '../../protobuf/timestamp.pb.dart' as $302;
-import 'group.pb.dart' as $407;
+import '../../protobuf/field_mask.pb.dart' as $335;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import 'group.pb.dart' as $409;
 import 'membership.pbenum.dart';
-import 'user.pb.dart' as $406;
+import 'user.pb.dart' as $408;
 
 export 'membership.pbenum.dart';
 
@@ -29,11 +29,11 @@ class Membership extends $pb.GeneratedMessage {
   factory Membership({
     $core.String? name,
     Membership_MembershipState? state,
-    $406.User? member,
-    $302.Timestamp? createTime,
-    $407.Group? groupMember,
+    $408.User? member,
+    $304.Timestamp? createTime,
+    $409.Group? groupMember,
     Membership_MembershipRole? role,
-    $302.Timestamp? deleteTime,
+    $304.Timestamp? deleteTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -84,19 +84,19 @@ class Membership extends $pb.GeneratedMessage {
         defaultOrMaker: Membership_MembershipState.MEMBERSHIP_STATE_UNSPECIFIED,
         valueOf: Membership_MembershipState.valueOf,
         enumValues: Membership_MembershipState.values)
-    ..aOM<$406.User>(3, _omitFieldNames ? '' : 'member',
-        subBuilder: $406.User.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$407.Group>(5, _omitFieldNames ? '' : 'groupMember',
-        subBuilder: $407.Group.create)
+    ..aOM<$408.User>(3, _omitFieldNames ? '' : 'member',
+        subBuilder: $408.User.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$409.Group>(5, _omitFieldNames ? '' : 'groupMember',
+        subBuilder: $409.Group.create)
     ..e<Membership_MembershipRole>(
         7, _omitFieldNames ? '' : 'role', $pb.PbFieldType.OE,
         defaultOrMaker: Membership_MembershipRole.MEMBERSHIP_ROLE_UNSPECIFIED,
         valueOf: Membership_MembershipRole.valueOf,
         enumValues: Membership_MembershipRole.values)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -124,7 +124,7 @@ class Membership extends $pb.GeneratedMessage {
       _Membership_MemberTypeByTag[$_whichOneof(0)]!;
   void clearMemberType() => clearField($_whichOneof(0));
 
-  ///  Resource name of the membership, assigned by the server.
+  ///  Identifier. Resource name of the membership, assigned by the server.
   ///
   ///  Format: `spaces/{space}/members/{member}`
   @$pb.TagNumber(1)
@@ -152,16 +152,16 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearState() => clearField(2);
 
-  /// The Google Chat user or app the membership corresponds to.
+  /// Optional. The Google Chat user or app the membership corresponds to.
   /// If your Chat app [authenticates as a
   /// user](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user),
   /// the output populates the
   /// [user](https://developers.google.com/workspace/chat/api/reference/rest/v1/User)
   /// `name` and `type`.
   @$pb.TagNumber(3)
-  $406.User get member => $_getN(2);
+  $408.User get member => $_getN(2);
   @$pb.TagNumber(3)
-  set member($406.User v) {
+  set member($408.User v) {
     setField(3, v);
   }
 
@@ -170,15 +170,15 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearMember() => clearField(3);
   @$pb.TagNumber(3)
-  $406.User ensureMember() => $_ensure(2);
+  $408.User ensureMember() => $_ensure(2);
 
   /// Optional. Immutable. The creation time of the membership, such as when a
   /// member joined or was invited to join a space. This field is output only,
   /// except when used to import historical memberships in import mode spaces.
   @$pb.TagNumber(4)
-  $302.Timestamp get createTime => $_getN(3);
+  $304.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -187,13 +187,16 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureCreateTime() => $_ensure(3);
+  $304.Timestamp ensureCreateTime() => $_ensure(3);
 
-  /// The Google Group the membership corresponds to.
+  ///  Optional. The Google Group the membership corresponds to.
+  ///
+  ///  Reading or mutating memberships for Google Groups requires [user
+  ///  authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
   @$pb.TagNumber(5)
-  $407.Group get groupMember => $_getN(4);
+  $409.Group get groupMember => $_getN(4);
   @$pb.TagNumber(5)
-  set groupMember($407.Group v) {
+  set groupMember($409.Group v) {
     setField(5, v);
   }
 
@@ -202,7 +205,7 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearGroupMember() => clearField(5);
   @$pb.TagNumber(5)
-  $407.Group ensureGroupMember() => $_ensure(4);
+  $409.Group ensureGroupMember() => $_ensure(4);
 
   ///  Optional. User's role within a Chat space, which determines their permitted
   ///  actions in the space.
@@ -224,9 +227,9 @@ class Membership extends $pb.GeneratedMessage {
   /// member left or was removed from a space. This field is output only, except
   /// when used to import historical memberships in import mode spaces.
   @$pb.TagNumber(8)
-  $302.Timestamp get deleteTime => $_getN(6);
+  $304.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(8)
-  set deleteTime($302.Timestamp v) {
+  set deleteTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -235,7 +238,7 @@ class Membership extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureDeleteTime() => $_ensure(6);
+  $304.Timestamp ensureDeleteTime() => $_ensure(6);
 }
 
 /// Request message for creating a membership.
@@ -316,22 +319,43 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearParent() => clearField(1);
 
-  /// Required. The membership relation to create.
-  /// The `memberType` field must contain a user with the `user.name` and
-  /// `user.type` fields populated. The server will assign a resource name
-  /// and overwrite anything specified.
-  /// When a Chat app creates a membership relation for a human user, it must use
-  /// the `chat.memberships` scope, set `user.type` to `HUMAN`, and set
-  /// `user.name` with format `users/{user}`, where `{user}` can be the email
-  /// address for the user. For users in the same Workspace organization `{user}`
-  /// can also be the `id` of the
-  /// [person](https://developers.google.com/people/api/rest/v1/people) from the
-  /// People API, or the `id` for the user in the Directory API. For example, if
-  /// the People API Person profile ID for `user@example.com` is `123456789`, you
-  /// can add the user to the space by setting the `membership.member.name` to
-  /// `users/user@example.com` or `users/123456789`. When a Chat app creates a
-  /// membership relation for itself, it must use the `chat.memberships.app`
-  /// scope, set `user.type` to `BOT`, and set `user.name` to `users/app`.
+  ///  Required. The membership relation to create.
+  ///
+  ///  The `memberType` field must contain a user with the `user.name` and
+  ///  `user.type` fields populated. The server will assign a resource name
+  ///  and overwrite anything specified.
+  ///
+  ///  When a Chat app creates a membership relation for a human user, it must use
+  ///  certain authorization scopes and set specific values for certain fields:
+  ///
+  ///  - When [authenticating as a
+  ///  user](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user),
+  ///  the `chat.memberships` authorization scope is required.
+  ///
+  ///  - When [authenticating as an
+  ///  app](https://developers.google.com/workspace/chat/authenticate-authorize-chat-app),
+  ///  the `chat.app.memberships` authorization scope is required.
+  ///  Authenticating as an app is available in [Developer
+  ///  Preview](https://developers.google.com/workspace/preview).
+  ///
+  ///  - Set `user.type` to `HUMAN`, and set `user.name` with format
+  ///  `users/{user}`, where `{user}` can be the email address for the user. For
+  ///  users in the same Workspace organization `{user}` can also be the `id` of
+  ///  the [person](https://developers.google.com/people/api/rest/v1/people) from
+  ///  the People API, or the `id` for the user in the Directory API. For example,
+  ///  if the People API Person profile ID for `user@example.com` is `123456789`,
+  ///  you can add the user to the space by setting the `membership.member.name`
+  ///  to `users/user@example.com` or `users/123456789`.
+  ///
+  ///  Inviting users external to the Workspace organization that owns the space
+  ///  requires [user
+  ///  authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
+  ///
+  ///  When a Chat app creates a membership relation for itself, it must
+  ///  [authenticate as a
+  ///  user](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user)
+  ///  and use the `chat.memberships.app` scope, set `user.type` to `BOT`, and set
+  ///  `user.name` to `users/app`.
   @$pb.TagNumber(2)
   Membership get membership => $_getN(1);
   @$pb.TagNumber(2)
@@ -346,7 +370,7 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Membership ensureMembership() => $_ensure(1);
 
-  ///  When `true`, the method runs using the user's Google Workspace
+  ///  Optional. When `true`, the method runs using the user's Google Workspace
   ///  administrator privileges.
   ///
   ///  The calling user must be a Google Workspace administrator with the
@@ -376,7 +400,7 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
 class UpdateMembershipRequest extends $pb.GeneratedMessage {
   factory UpdateMembershipRequest({
     Membership? membership,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     $core.bool? useAdminAccess,
   }) {
     final $result = create();
@@ -405,8 +429,8 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<Membership>(1, _omitFieldNames ? '' : 'membership',
         subBuilder: Membership.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false;
 
@@ -458,9 +482,9 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
   ///
   ///  - `role`
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -469,9 +493,9 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 
-  ///  When `true`, the method runs using the user's Google Workspace
+  ///  Optional. When `true`, the method runs using the user's Google Workspace
   ///  administrator privileges.
   ///
   ///  The calling user must be a Google Workspace administrator with the
@@ -717,7 +741,7 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearShowInvited() => clearField(7);
 
-  ///  When `true`, the method runs using the user's Google Workspace
+  ///  Optional. When `true`, the method runs using the user's Google Workspace
   ///  administrator privileges.
   ///
   ///  The calling user must be a Google Workspace administrator with the
@@ -882,9 +906,7 @@ class GetMembershipRequest extends $pb.GeneratedMessage {
   ///
   ///  Format: `spaces/{space}/members/{member}` or `spaces/{space}/members/app`
   ///
-  ///  When [authenticated as a
-  ///  user](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user),
-  ///  you can use the user's email as an alias for `{member}`. For example,
+  ///  You can use the user's email as an alias for `{member}`. For example,
   ///  `spaces/{space}/members/example@gmail.com` where `example@gmail.com` is the
   ///  email of the Google Chat user.
   @$pb.TagNumber(1)
@@ -899,7 +921,7 @@ class GetMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 
-  ///  When `true`, the method runs using the user's Google Workspace
+  ///  Optional. When `true`, the method runs using the user's Google Workspace
   ///  administrator privileges.
   ///
   ///  The calling user must be a Google Workspace administrator with the
@@ -1006,7 +1028,7 @@ class DeleteMembershipRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 
-  ///  When `true`, the method runs using the user's Google Workspace
+  ///  Optional. When `true`, the method runs using the user's Google Workspace
   ///  administrator privileges.
   ///
   ///  The calling user must be a Google Workspace administrator with the

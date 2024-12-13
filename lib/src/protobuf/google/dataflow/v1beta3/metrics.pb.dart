@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $261;
-import '../../protobuf/timestamp.pb.dart' as $302;
+import '../../protobuf/struct.pb.dart' as $263;
+import '../../protobuf/timestamp.pb.dart' as $304;
 import 'metrics.pbenum.dart';
 
 export 'metrics.pbenum.dart';
@@ -128,14 +128,14 @@ class MetricUpdate extends $pb.GeneratedMessage {
     MetricStructuredName? name,
     $core.String? kind,
     $core.bool? cumulative,
-    $261.Value? scalar,
-    $261.Value? meanSum,
-    $261.Value? meanCount,
-    $261.Value? set,
-    $261.Value? internal,
-    $302.Timestamp? updateTime,
-    $261.Value? distribution,
-    $261.Value? gauge,
+    $263.Value? scalar,
+    $263.Value? meanSum,
+    $263.Value? meanCount,
+    $263.Value? set,
+    $263.Value? internal,
+    $304.Timestamp? updateTime,
+    $263.Value? distribution,
+    $263.Value? gauge,
   }) {
     final $result = create();
     if (name != null) {
@@ -190,22 +190,22 @@ class MetricUpdate extends $pb.GeneratedMessage {
         subBuilder: MetricStructuredName.create)
     ..aOS(2, _omitFieldNames ? '' : 'kind')
     ..aOB(3, _omitFieldNames ? '' : 'cumulative')
-    ..aOM<$261.Value>(4, _omitFieldNames ? '' : 'scalar',
-        subBuilder: $261.Value.create)
-    ..aOM<$261.Value>(5, _omitFieldNames ? '' : 'meanSum',
-        subBuilder: $261.Value.create)
-    ..aOM<$261.Value>(6, _omitFieldNames ? '' : 'meanCount',
-        subBuilder: $261.Value.create)
-    ..aOM<$261.Value>(7, _omitFieldNames ? '' : 'set',
-        subBuilder: $261.Value.create)
-    ..aOM<$261.Value>(8, _omitFieldNames ? '' : 'internal',
-        subBuilder: $261.Value.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$261.Value>(11, _omitFieldNames ? '' : 'distribution',
-        subBuilder: $261.Value.create)
-    ..aOM<$261.Value>(12, _omitFieldNames ? '' : 'gauge',
-        subBuilder: $261.Value.create)
+    ..aOM<$263.Value>(4, _omitFieldNames ? '' : 'scalar',
+        subBuilder: $263.Value.create)
+    ..aOM<$263.Value>(5, _omitFieldNames ? '' : 'meanSum',
+        subBuilder: $263.Value.create)
+    ..aOM<$263.Value>(6, _omitFieldNames ? '' : 'meanCount',
+        subBuilder: $263.Value.create)
+    ..aOM<$263.Value>(7, _omitFieldNames ? '' : 'set',
+        subBuilder: $263.Value.create)
+    ..aOM<$263.Value>(8, _omitFieldNames ? '' : 'internal',
+        subBuilder: $263.Value.create)
+    ..aOM<$304.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$263.Value>(11, _omitFieldNames ? '' : 'distribution',
+        subBuilder: $263.Value.create)
+    ..aOM<$263.Value>(12, _omitFieldNames ? '' : 'gauge',
+        subBuilder: $263.Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -283,9 +283,9 @@ class MetricUpdate extends $pb.GeneratedMessage {
   /// Worker-computed aggregate value for aggregation kinds "Sum", "Max", "Min",
   /// "And", and "Or".  The possible value types are Long, Double, and Boolean.
   @$pb.TagNumber(4)
-  $261.Value get scalar => $_getN(3);
+  $263.Value get scalar => $_getN(3);
   @$pb.TagNumber(4)
-  set scalar($261.Value v) {
+  set scalar($263.Value v) {
     setField(4, v);
   }
 
@@ -294,16 +294,16 @@ class MetricUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearScalar() => clearField(4);
   @$pb.TagNumber(4)
-  $261.Value ensureScalar() => $_ensure(3);
+  $263.Value ensureScalar() => $_ensure(3);
 
   /// Worker-computed aggregate value for the "Mean" aggregation kind.
   /// This holds the sum of the aggregated values and is used in combination
   /// with mean_count below to obtain the actual mean aggregate value.
   /// The only possible value types are Long and Double.
   @$pb.TagNumber(5)
-  $261.Value get meanSum => $_getN(4);
+  $263.Value get meanSum => $_getN(4);
   @$pb.TagNumber(5)
-  set meanSum($261.Value v) {
+  set meanSum($263.Value v) {
     setField(5, v);
   }
 
@@ -312,16 +312,16 @@ class MetricUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearMeanSum() => clearField(5);
   @$pb.TagNumber(5)
-  $261.Value ensureMeanSum() => $_ensure(4);
+  $263.Value ensureMeanSum() => $_ensure(4);
 
   /// Worker-computed aggregate value for the "Mean" aggregation kind.
   /// This holds the count of the aggregated values and is used in combination
   /// with mean_sum above to obtain the actual mean aggregate value.
   /// The only possible value type is Long.
   @$pb.TagNumber(6)
-  $261.Value get meanCount => $_getN(5);
+  $263.Value get meanCount => $_getN(5);
   @$pb.TagNumber(6)
-  set meanCount($261.Value v) {
+  set meanCount($263.Value v) {
     setField(6, v);
   }
 
@@ -330,16 +330,16 @@ class MetricUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearMeanCount() => clearField(6);
   @$pb.TagNumber(6)
-  $261.Value ensureMeanCount() => $_ensure(5);
+  $263.Value ensureMeanCount() => $_ensure(5);
 
   /// Worker-computed aggregate value for the "Set" aggregation kind.  The only
   /// possible value type is a list of Values whose type can be Long, Double,
   /// or String, according to the metric's type.  All Values in the list must
   /// be of the same type.
   @$pb.TagNumber(7)
-  $261.Value get set => $_getN(6);
+  $263.Value get set => $_getN(6);
   @$pb.TagNumber(7)
-  set set($261.Value v) {
+  set set($263.Value v) {
     setField(7, v);
   }
 
@@ -348,14 +348,14 @@ class MetricUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearSet() => clearField(7);
   @$pb.TagNumber(7)
-  $261.Value ensureSet() => $_ensure(6);
+  $263.Value ensureSet() => $_ensure(6);
 
   /// Worker-computed aggregate value for internal use by the Dataflow
   /// service.
   @$pb.TagNumber(8)
-  $261.Value get internal => $_getN(7);
+  $263.Value get internal => $_getN(7);
   @$pb.TagNumber(8)
-  set internal($261.Value v) {
+  set internal($263.Value v) {
     setField(8, v);
   }
 
@@ -364,15 +364,15 @@ class MetricUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearInternal() => clearField(8);
   @$pb.TagNumber(8)
-  $261.Value ensureInternal() => $_ensure(7);
+  $263.Value ensureInternal() => $_ensure(7);
 
   /// Timestamp associated with the metric value. Optional when workers are
   /// reporting work progress; it will be filled in responses from the
   /// metrics API.
   @$pb.TagNumber(9)
-  $302.Timestamp get updateTime => $_getN(8);
+  $304.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(9, v);
   }
 
@@ -381,13 +381,13 @@ class MetricUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $302.Timestamp ensureUpdateTime() => $_ensure(8);
+  $304.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// A struct value describing properties of a distribution of numeric values.
   @$pb.TagNumber(11)
-  $261.Value get distribution => $_getN(9);
+  $263.Value get distribution => $_getN(9);
   @$pb.TagNumber(11)
-  set distribution($261.Value v) {
+  set distribution($263.Value v) {
     setField(11, v);
   }
 
@@ -396,15 +396,15 @@ class MetricUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearDistribution() => clearField(11);
   @$pb.TagNumber(11)
-  $261.Value ensureDistribution() => $_ensure(9);
+  $263.Value ensureDistribution() => $_ensure(9);
 
   /// A struct value describing properties of a Gauge.
   /// Metrics of gauge type show the value of a metric across time, and is
   /// aggregated based on the newest value.
   @$pb.TagNumber(12)
-  $261.Value get gauge => $_getN(10);
+  $263.Value get gauge => $_getN(10);
   @$pb.TagNumber(12)
-  set gauge($261.Value v) {
+  set gauge($263.Value v) {
     setField(12, v);
   }
 
@@ -413,7 +413,7 @@ class MetricUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearGauge() => clearField(12);
   @$pb.TagNumber(12)
-  $261.Value ensureGauge() => $_ensure(10);
+  $263.Value ensureGauge() => $_ensure(10);
 }
 
 /// Request to get job metrics.
@@ -421,7 +421,7 @@ class GetJobMetricsRequest extends $pb.GeneratedMessage {
   factory GetJobMetricsRequest({
     $core.String? projectId,
     $core.String? jobId,
-    $302.Timestamp? startTime,
+    $304.Timestamp? startTime,
     $core.String? location,
   }) {
     final $result = create();
@@ -454,8 +454,8 @@ class GetJobMetricsRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'jobId')
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'location')
     ..hasRequiredFields = false;
 
@@ -512,9 +512,9 @@ class GetJobMetricsRequest extends $pb.GeneratedMessage {
   /// Return only metric data that has changed since this time.
   /// Default is to return all information about all metrics for the job.
   @$pb.TagNumber(3)
-  $302.Timestamp get startTime => $_getN(2);
+  $304.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -523,7 +523,7 @@ class GetJobMetricsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureStartTime() => $_ensure(2);
+  $304.Timestamp ensureStartTime() => $_ensure(2);
 
   /// The [regional endpoint]
   /// (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
@@ -550,7 +550,7 @@ class GetJobMetricsRequest extends $pb.GeneratedMessage {
 ///  from Cloud Monitoring.
 class JobMetrics extends $pb.GeneratedMessage {
   factory JobMetrics({
-    $302.Timestamp? metricTime,
+    $304.Timestamp? metricTime,
     $core.Iterable<MetricUpdate>? metrics,
   }) {
     final $result = create();
@@ -575,8 +575,8 @@ class JobMetrics extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'metricTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'metricTime',
+        subBuilder: $304.Timestamp.create)
     ..pc<MetricUpdate>(2, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM,
         subBuilder: MetricUpdate.create)
     ..hasRequiredFields = false;
@@ -604,9 +604,9 @@ class JobMetrics extends $pb.GeneratedMessage {
 
   /// Timestamp as of which metric values are current.
   @$pb.TagNumber(1)
-  $302.Timestamp get metricTime => $_getN(0);
+  $304.Timestamp get metricTime => $_getN(0);
   @$pb.TagNumber(1)
-  set metricTime($302.Timestamp v) {
+  set metricTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -615,7 +615,7 @@ class JobMetrics extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearMetricTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureMetricTime() => $_ensure(0);
+  $304.Timestamp ensureMetricTime() => $_ensure(0);
 
   /// All metrics for this job.
   @$pb.TagNumber(2)
@@ -771,7 +771,7 @@ class GetJobExecutionDetailsRequest extends $pb.GeneratedMessage {
 /// A point in the timeseries.
 class ProgressTimeseries_Point extends $pb.GeneratedMessage {
   factory ProgressTimeseries_Point({
-    $302.Timestamp? time,
+    $304.Timestamp? time,
     $core.double? value,
   }) {
     final $result = create();
@@ -796,8 +796,8 @@ class ProgressTimeseries_Point extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'time',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'time',
+        subBuilder: $304.Timestamp.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
 
@@ -828,9 +828,9 @@ class ProgressTimeseries_Point extends $pb.GeneratedMessage {
 
   /// The timestamp of the point.
   @$pb.TagNumber(1)
-  $302.Timestamp get time => $_getN(0);
+  $304.Timestamp get time => $_getN(0);
   @$pb.TagNumber(1)
-  set time($302.Timestamp v) {
+  set time($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -839,7 +839,7 @@ class ProgressTimeseries_Point extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureTime() => $_ensure(0);
+  $304.Timestamp ensureTime() => $_ensure(0);
 
   /// The value of the point.
   @$pb.TagNumber(2)
@@ -938,8 +938,8 @@ class StageSummary extends $pb.GeneratedMessage {
   factory StageSummary({
     $core.String? stageId,
     ExecutionState? state,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     ProgressTimeseries? progress,
     $core.Iterable<MetricUpdate>? metrics,
   }) {
@@ -982,10 +982,10 @@ class StageSummary extends $pb.GeneratedMessage {
         defaultOrMaker: ExecutionState.EXECUTION_STATE_UNKNOWN,
         valueOf: ExecutionState.valueOf,
         enumValues: ExecutionState.values)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..aOM<ProgressTimeseries>(5, _omitFieldNames ? '' : 'progress',
         subBuilder: ProgressTimeseries.create)
     ..pc<MetricUpdate>(6, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM,
@@ -1043,9 +1043,9 @@ class StageSummary extends $pb.GeneratedMessage {
 
   /// Start time of this stage.
   @$pb.TagNumber(3)
-  $302.Timestamp get startTime => $_getN(2);
+  $304.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -1054,16 +1054,16 @@ class StageSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureStartTime() => $_ensure(2);
+  $304.Timestamp ensureStartTime() => $_ensure(2);
 
   ///  End time of this stage.
   ///
   ///  If the work item is completed, this is the actual end time of the stage.
   ///  Otherwise, it is the predicted end time.
   @$pb.TagNumber(4)
-  $302.Timestamp get endTime => $_getN(3);
+  $304.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -1072,7 +1072,7 @@ class StageSummary extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureEndTime() => $_ensure(3);
+  $304.Timestamp ensureEndTime() => $_ensure(3);
 
   /// Progress for this stage.
   /// Only applicable to Batch jobs.
@@ -1181,8 +1181,8 @@ class GetStageExecutionDetailsRequest extends $pb.GeneratedMessage {
     $core.String? stageId,
     $core.int? pageSize,
     $core.String? pageToken,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -1230,10 +1230,10 @@ class GetStageExecutionDetailsRequest extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'stageId')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(6, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1350,9 +1350,9 @@ class GetStageExecutionDetailsRequest extends $pb.GeneratedMessage {
 
   /// Lower time bound of work items to include, by start time.
   @$pb.TagNumber(7)
-  $302.Timestamp get startTime => $_getN(6);
+  $304.Timestamp get startTime => $_getN(6);
   @$pb.TagNumber(7)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(7, v);
   }
 
@@ -1361,13 +1361,13 @@ class GetStageExecutionDetailsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearStartTime() => clearField(7);
   @$pb.TagNumber(7)
-  $302.Timestamp ensureStartTime() => $_ensure(6);
+  $304.Timestamp ensureStartTime() => $_ensure(6);
 
   /// Upper time bound of work items to include, by start time.
   @$pb.TagNumber(8)
-  $302.Timestamp get endTime => $_getN(7);
+  $304.Timestamp get endTime => $_getN(7);
   @$pb.TagNumber(8)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -1376,7 +1376,7 @@ class GetStageExecutionDetailsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearEndTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureEndTime() => $_ensure(7);
+  $304.Timestamp ensureEndTime() => $_ensure(7);
 }
 
 /// Information about an individual work item execution.
@@ -1384,8 +1384,8 @@ class WorkItemDetails extends $pb.GeneratedMessage {
   factory WorkItemDetails({
     $core.String? taskId,
     $core.String? attemptId,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     ExecutionState? state,
     ProgressTimeseries? progress,
     $core.Iterable<MetricUpdate>? metrics,
@@ -1429,10 +1429,10 @@ class WorkItemDetails extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'taskId')
     ..aOS(2, _omitFieldNames ? '' : 'attemptId')
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..e<ExecutionState>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
         defaultOrMaker: ExecutionState.EXECUTION_STATE_UNKNOWN,
         valueOf: ExecutionState.valueOf,
@@ -1494,9 +1494,9 @@ class WorkItemDetails extends $pb.GeneratedMessage {
 
   /// Start time of this work item attempt.
   @$pb.TagNumber(3)
-  $302.Timestamp get startTime => $_getN(2);
+  $304.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -1505,16 +1505,16 @@ class WorkItemDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureStartTime() => $_ensure(2);
+  $304.Timestamp ensureStartTime() => $_ensure(2);
 
   ///  End time of this work item attempt.
   ///
   ///  If the work item is completed, this is the actual end time of the work
   ///  item.  Otherwise, it is the predicted end time.
   @$pb.TagNumber(4)
-  $302.Timestamp get endTime => $_getN(3);
+  $304.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -1523,7 +1523,7 @@ class WorkItemDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureEndTime() => $_ensure(3);
+  $304.Timestamp ensureEndTime() => $_ensure(3);
 
   /// State of this work item.
   @$pb.TagNumber(5)

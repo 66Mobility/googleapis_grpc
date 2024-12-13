@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $322;
+import '../../../rpc/status.pb.dart' as $324;
 import 'check_error.pbenum.dart';
 
 export 'check_error.pbenum.dart';
@@ -24,7 +24,7 @@ class CheckError extends $pb.GeneratedMessage {
   factory CheckError({
     CheckError_Code? code,
     $core.String? detail,
-    $322.Status? status,
+    $324.Status? status,
     $core.String? subject,
   }) {
     final $result = create();
@@ -60,8 +60,8 @@ class CheckError extends $pb.GeneratedMessage {
         valueOf: CheckError_Code.valueOf,
         enumValues: CheckError_Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'detail')
-    ..aOM<$322.Status>(3, _omitFieldNames ? '' : 'status',
-        subBuilder: $322.Status.create)
+    ..aOM<$324.Status>(3, _omitFieldNames ? '' : 'status',
+        subBuilder: $324.Status.create)
     ..aOS(4, _omitFieldNames ? '' : 'subject')
     ..hasRequiredFields = false;
 
@@ -116,9 +116,9 @@ class CheckError extends $pb.GeneratedMessage {
   /// `status.code` will be non zero and client can propagate it out as public
   /// error.
   @$pb.TagNumber(3)
-  $322.Status get status => $_getN(2);
+  $324.Status get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($322.Status v) {
+  set status($324.Status v) {
     setField(3, v);
   }
 
@@ -127,7 +127,7 @@ class CheckError extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $322.Status ensureStatus() => $_ensure(2);
+  $324.Status ensureStatus() => $_ensure(2);
 
   ///  Subject to whom this error applies. See the specific code enum for more
   ///  details on this field. For example:

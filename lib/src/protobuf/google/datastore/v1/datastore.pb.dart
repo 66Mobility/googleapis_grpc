@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $302;
-import 'aggregation_result.pb.dart' as $424;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import 'aggregation_result.pb.dart' as $426;
 import 'datastore.pbenum.dart';
-import 'entity.pb.dart' as $421;
-import 'query.pb.dart' as $422;
-import 'query_profile.pb.dart' as $423;
+import 'entity.pb.dart' as $423;
+import 'query.pb.dart' as $424;
+import 'query_profile.pb.dart' as $425;
 
 export 'datastore.pbenum.dart';
 
@@ -27,7 +27,7 @@ export 'datastore.pbenum.dart';
 class LookupRequest extends $pb.GeneratedMessage {
   factory LookupRequest({
     ReadOptions? readOptions,
-    $core.Iterable<$421.Key>? keys,
+    $core.Iterable<$423.Key>? keys,
     PropertyMask? propertyMask,
     $core.String? projectId,
     $core.String? databaseId,
@@ -65,8 +65,8 @@ class LookupRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<ReadOptions>(1, _omitFieldNames ? '' : 'readOptions',
         subBuilder: ReadOptions.create)
-    ..pc<$421.Key>(3, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
-        subBuilder: $421.Key.create)
+    ..pc<$423.Key>(3, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
+        subBuilder: $423.Key.create)
     ..aOM<PropertyMask>(5, _omitFieldNames ? '' : 'propertyMask',
         subBuilder: PropertyMask.create)
     ..aOS(8, _omitFieldNames ? '' : 'projectId')
@@ -113,7 +113,7 @@ class LookupRequest extends $pb.GeneratedMessage {
 
   /// Required. Keys of entities to look up.
   @$pb.TagNumber(3)
-  $core.List<$421.Key> get keys => $_getList(1);
+  $core.List<$423.Key> get keys => $_getList(1);
 
   ///  The properties to return. Defaults to returning all properties.
   ///
@@ -168,11 +168,11 @@ class LookupRequest extends $pb.GeneratedMessage {
 /// The response for [Datastore.Lookup][google.datastore.v1.Datastore.Lookup].
 class LookupResponse extends $pb.GeneratedMessage {
   factory LookupResponse({
-    $core.Iterable<$422.EntityResult>? found,
-    $core.Iterable<$422.EntityResult>? missing,
-    $core.Iterable<$421.Key>? deferred,
+    $core.Iterable<$424.EntityResult>? found,
+    $core.Iterable<$424.EntityResult>? missing,
+    $core.Iterable<$423.Key>? deferred,
     $core.List<$core.int>? transaction,
-    $302.Timestamp? readTime,
+    $304.Timestamp? readTime,
   }) {
     final $result = create();
     if (found != null) {
@@ -205,18 +205,18 @@ class LookupResponse extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..pc<$422.EntityResult>(
+    ..pc<$424.EntityResult>(
         1, _omitFieldNames ? '' : 'found', $pb.PbFieldType.PM,
-        subBuilder: $422.EntityResult.create)
-    ..pc<$422.EntityResult>(
+        subBuilder: $424.EntityResult.create)
+    ..pc<$424.EntityResult>(
         2, _omitFieldNames ? '' : 'missing', $pb.PbFieldType.PM,
-        subBuilder: $422.EntityResult.create)
-    ..pc<$421.Key>(3, _omitFieldNames ? '' : 'deferred', $pb.PbFieldType.PM,
-        subBuilder: $421.Key.create)
+        subBuilder: $424.EntityResult.create)
+    ..pc<$423.Key>(3, _omitFieldNames ? '' : 'deferred', $pb.PbFieldType.PM,
+        subBuilder: $423.Key.create)
     ..a<$core.List<$core.int>>(
         5, _omitFieldNames ? '' : 'transaction', $pb.PbFieldType.OY)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'readTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'readTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -246,19 +246,19 @@ class LookupResponse extends $pb.GeneratedMessage {
   /// field is undefined and has no relation to the order of the keys in the
   /// input.
   @$pb.TagNumber(1)
-  $core.List<$422.EntityResult> get found => $_getList(0);
+  $core.List<$424.EntityResult> get found => $_getList(0);
 
   /// Entities not found as `ResultType.KEY_ONLY` entities. The order of results
   /// in this field is undefined and has no relation to the order of the keys
   /// in the input.
   @$pb.TagNumber(2)
-  $core.List<$422.EntityResult> get missing => $_getList(1);
+  $core.List<$424.EntityResult> get missing => $_getList(1);
 
   /// A list of keys that were not looked up due to resource constraints. The
   /// order of results in this field is undefined and has no relation to the
   /// order of the keys in the input.
   @$pb.TagNumber(3)
-  $core.List<$421.Key> get deferred => $_getList(2);
+  $core.List<$423.Key> get deferred => $_getList(2);
 
   ///  The identifier of the transaction that was started as part of this Lookup
   ///  request.
@@ -281,9 +281,9 @@ class LookupResponse extends $pb.GeneratedMessage {
 
   /// The time at which these entities were read or found missing.
   @$pb.TagNumber(7)
-  $302.Timestamp get readTime => $_getN(4);
+  $304.Timestamp get readTime => $_getN(4);
   @$pb.TagNumber(7)
-  set readTime($302.Timestamp v) {
+  set readTime($304.Timestamp v) {
     setField(7, v);
   }
 
@@ -292,7 +292,7 @@ class LookupResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearReadTime() => clearField(7);
   @$pb.TagNumber(7)
-  $302.Timestamp ensureReadTime() => $_ensure(4);
+  $304.Timestamp ensureReadTime() => $_ensure(4);
 }
 
 enum RunQueryRequest_QueryType { query, gqlQuery, notSet }
@@ -301,13 +301,13 @@ enum RunQueryRequest_QueryType { query, gqlQuery, notSet }
 class RunQueryRequest extends $pb.GeneratedMessage {
   factory RunQueryRequest({
     ReadOptions? readOptions,
-    $421.PartitionId? partitionId,
-    $422.Query? query,
-    $422.GqlQuery? gqlQuery,
+    $423.PartitionId? partitionId,
+    $424.Query? query,
+    $424.GqlQuery? gqlQuery,
     $core.String? projectId,
     $core.String? databaseId,
     PropertyMask? propertyMask,
-    $423.ExplainOptions? explainOptions,
+    $425.ExplainOptions? explainOptions,
   }) {
     final $result = create();
     if (readOptions != null) {
@@ -358,18 +358,18 @@ class RunQueryRequest extends $pb.GeneratedMessage {
     ..oo(0, [3, 7])
     ..aOM<ReadOptions>(1, _omitFieldNames ? '' : 'readOptions',
         subBuilder: ReadOptions.create)
-    ..aOM<$421.PartitionId>(2, _omitFieldNames ? '' : 'partitionId',
-        subBuilder: $421.PartitionId.create)
-    ..aOM<$422.Query>(3, _omitFieldNames ? '' : 'query',
-        subBuilder: $422.Query.create)
-    ..aOM<$422.GqlQuery>(7, _omitFieldNames ? '' : 'gqlQuery',
-        subBuilder: $422.GqlQuery.create)
+    ..aOM<$423.PartitionId>(2, _omitFieldNames ? '' : 'partitionId',
+        subBuilder: $423.PartitionId.create)
+    ..aOM<$424.Query>(3, _omitFieldNames ? '' : 'query',
+        subBuilder: $424.Query.create)
+    ..aOM<$424.GqlQuery>(7, _omitFieldNames ? '' : 'gqlQuery',
+        subBuilder: $424.GqlQuery.create)
     ..aOS(8, _omitFieldNames ? '' : 'projectId')
     ..aOS(9, _omitFieldNames ? '' : 'databaseId')
     ..aOM<PropertyMask>(10, _omitFieldNames ? '' : 'propertyMask',
         subBuilder: PropertyMask.create)
-    ..aOM<$423.ExplainOptions>(12, _omitFieldNames ? '' : 'explainOptions',
-        subBuilder: $423.ExplainOptions.create)
+    ..aOM<$425.ExplainOptions>(12, _omitFieldNames ? '' : 'explainOptions',
+        subBuilder: $425.ExplainOptions.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -419,9 +419,9 @@ class RunQueryRequest extends $pb.GeneratedMessage {
   /// This partition ID is normalized with the standard default context
   /// partition ID.
   @$pb.TagNumber(2)
-  $421.PartitionId get partitionId => $_getN(1);
+  $423.PartitionId get partitionId => $_getN(1);
   @$pb.TagNumber(2)
-  set partitionId($421.PartitionId v) {
+  set partitionId($423.PartitionId v) {
     setField(2, v);
   }
 
@@ -430,13 +430,13 @@ class RunQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearPartitionId() => clearField(2);
   @$pb.TagNumber(2)
-  $421.PartitionId ensurePartitionId() => $_ensure(1);
+  $423.PartitionId ensurePartitionId() => $_ensure(1);
 
   /// The query to run.
   @$pb.TagNumber(3)
-  $422.Query get query => $_getN(2);
+  $424.Query get query => $_getN(2);
   @$pb.TagNumber(3)
-  set query($422.Query v) {
+  set query($424.Query v) {
     setField(3, v);
   }
 
@@ -445,13 +445,13 @@ class RunQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearQuery() => clearField(3);
   @$pb.TagNumber(3)
-  $422.Query ensureQuery() => $_ensure(2);
+  $424.Query ensureQuery() => $_ensure(2);
 
   /// The GQL query to run. This query must be a non-aggregation query.
   @$pb.TagNumber(7)
-  $422.GqlQuery get gqlQuery => $_getN(3);
+  $424.GqlQuery get gqlQuery => $_getN(3);
   @$pb.TagNumber(7)
-  set gqlQuery($422.GqlQuery v) {
+  set gqlQuery($424.GqlQuery v) {
     setField(7, v);
   }
 
@@ -460,7 +460,7 @@ class RunQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearGqlQuery() => clearField(7);
   @$pb.TagNumber(7)
-  $422.GqlQuery ensureGqlQuery() => $_ensure(3);
+  $424.GqlQuery ensureGqlQuery() => $_ensure(3);
 
   /// Required. The ID of the project against which to make the request.
   @$pb.TagNumber(8)
@@ -513,9 +513,9 @@ class RunQueryRequest extends $pb.GeneratedMessage {
   /// Optional. Explain options for the query. If set, additional query
   /// statistics will be returned. If not, only query results will be returned.
   @$pb.TagNumber(12)
-  $423.ExplainOptions get explainOptions => $_getN(7);
+  $425.ExplainOptions get explainOptions => $_getN(7);
   @$pb.TagNumber(12)
-  set explainOptions($423.ExplainOptions v) {
+  set explainOptions($425.ExplainOptions v) {
     setField(12, v);
   }
 
@@ -524,17 +524,17 @@ class RunQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearExplainOptions() => clearField(12);
   @$pb.TagNumber(12)
-  $423.ExplainOptions ensureExplainOptions() => $_ensure(7);
+  $425.ExplainOptions ensureExplainOptions() => $_ensure(7);
 }
 
 /// The response for
 /// [Datastore.RunQuery][google.datastore.v1.Datastore.RunQuery].
 class RunQueryResponse extends $pb.GeneratedMessage {
   factory RunQueryResponse({
-    $422.QueryResultBatch? batch,
-    $422.Query? query,
+    $424.QueryResultBatch? batch,
+    $424.Query? query,
     $core.List<$core.int>? transaction,
-    $423.ExplainMetrics? explainMetrics,
+    $425.ExplainMetrics? explainMetrics,
   }) {
     final $result = create();
     if (batch != null) {
@@ -564,14 +564,14 @@ class RunQueryResponse extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$422.QueryResultBatch>(1, _omitFieldNames ? '' : 'batch',
-        subBuilder: $422.QueryResultBatch.create)
-    ..aOM<$422.Query>(2, _omitFieldNames ? '' : 'query',
-        subBuilder: $422.Query.create)
+    ..aOM<$424.QueryResultBatch>(1, _omitFieldNames ? '' : 'batch',
+        subBuilder: $424.QueryResultBatch.create)
+    ..aOM<$424.Query>(2, _omitFieldNames ? '' : 'query',
+        subBuilder: $424.Query.create)
     ..a<$core.List<$core.int>>(
         5, _omitFieldNames ? '' : 'transaction', $pb.PbFieldType.OY)
-    ..aOM<$423.ExplainMetrics>(9, _omitFieldNames ? '' : 'explainMetrics',
-        subBuilder: $423.ExplainMetrics.create)
+    ..aOM<$425.ExplainMetrics>(9, _omitFieldNames ? '' : 'explainMetrics',
+        subBuilder: $425.ExplainMetrics.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -599,9 +599,9 @@ class RunQueryResponse extends $pb.GeneratedMessage {
 
   /// A batch of query results (always present).
   @$pb.TagNumber(1)
-  $422.QueryResultBatch get batch => $_getN(0);
+  $424.QueryResultBatch get batch => $_getN(0);
   @$pb.TagNumber(1)
-  set batch($422.QueryResultBatch v) {
+  set batch($424.QueryResultBatch v) {
     setField(1, v);
   }
 
@@ -610,13 +610,13 @@ class RunQueryResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearBatch() => clearField(1);
   @$pb.TagNumber(1)
-  $422.QueryResultBatch ensureBatch() => $_ensure(0);
+  $424.QueryResultBatch ensureBatch() => $_ensure(0);
 
   /// The parsed form of the `GqlQuery` from the request, if it was set.
   @$pb.TagNumber(2)
-  $422.Query get query => $_getN(1);
+  $424.Query get query => $_getN(1);
   @$pb.TagNumber(2)
-  set query($422.Query v) {
+  set query($424.Query v) {
     setField(2, v);
   }
 
@@ -625,7 +625,7 @@ class RunQueryResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearQuery() => clearField(2);
   @$pb.TagNumber(2)
-  $422.Query ensureQuery() => $_ensure(1);
+  $424.Query ensureQuery() => $_ensure(1);
 
   ///  The identifier of the transaction that was started as part of this
   ///  RunQuery request.
@@ -650,9 +650,9 @@ class RunQueryResponse extends $pb.GeneratedMessage {
   /// [RunQueryRequest.explain_options][google.datastore.v1.RunQueryRequest.explain_options]
   /// is provided, and it is sent only once with the last response in the stream.
   @$pb.TagNumber(9)
-  $423.ExplainMetrics get explainMetrics => $_getN(3);
+  $425.ExplainMetrics get explainMetrics => $_getN(3);
   @$pb.TagNumber(9)
-  set explainMetrics($423.ExplainMetrics v) {
+  set explainMetrics($425.ExplainMetrics v) {
     setField(9, v);
   }
 
@@ -661,7 +661,7 @@ class RunQueryResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearExplainMetrics() => clearField(9);
   @$pb.TagNumber(9)
-  $423.ExplainMetrics ensureExplainMetrics() => $_ensure(3);
+  $425.ExplainMetrics ensureExplainMetrics() => $_ensure(3);
 }
 
 enum RunAggregationQueryRequest_QueryType { aggregationQuery, gqlQuery, notSet }
@@ -671,12 +671,12 @@ enum RunAggregationQueryRequest_QueryType { aggregationQuery, gqlQuery, notSet }
 class RunAggregationQueryRequest extends $pb.GeneratedMessage {
   factory RunAggregationQueryRequest({
     ReadOptions? readOptions,
-    $421.PartitionId? partitionId,
-    $422.AggregationQuery? aggregationQuery,
-    $422.GqlQuery? gqlQuery,
+    $423.PartitionId? partitionId,
+    $424.AggregationQuery? aggregationQuery,
+    $424.GqlQuery? gqlQuery,
     $core.String? projectId,
     $core.String? databaseId,
-    $423.ExplainOptions? explainOptions,
+    $425.ExplainOptions? explainOptions,
   }) {
     final $result = create();
     if (readOptions != null) {
@@ -724,16 +724,16 @@ class RunAggregationQueryRequest extends $pb.GeneratedMessage {
     ..oo(0, [3, 7])
     ..aOM<ReadOptions>(1, _omitFieldNames ? '' : 'readOptions',
         subBuilder: ReadOptions.create)
-    ..aOM<$421.PartitionId>(2, _omitFieldNames ? '' : 'partitionId',
-        subBuilder: $421.PartitionId.create)
-    ..aOM<$422.AggregationQuery>(3, _omitFieldNames ? '' : 'aggregationQuery',
-        subBuilder: $422.AggregationQuery.create)
-    ..aOM<$422.GqlQuery>(7, _omitFieldNames ? '' : 'gqlQuery',
-        subBuilder: $422.GqlQuery.create)
+    ..aOM<$423.PartitionId>(2, _omitFieldNames ? '' : 'partitionId',
+        subBuilder: $423.PartitionId.create)
+    ..aOM<$424.AggregationQuery>(3, _omitFieldNames ? '' : 'aggregationQuery',
+        subBuilder: $424.AggregationQuery.create)
+    ..aOM<$424.GqlQuery>(7, _omitFieldNames ? '' : 'gqlQuery',
+        subBuilder: $424.GqlQuery.create)
     ..aOS(8, _omitFieldNames ? '' : 'projectId')
     ..aOS(9, _omitFieldNames ? '' : 'databaseId')
-    ..aOM<$423.ExplainOptions>(11, _omitFieldNames ? '' : 'explainOptions',
-        subBuilder: $423.ExplainOptions.create)
+    ..aOM<$425.ExplainOptions>(11, _omitFieldNames ? '' : 'explainOptions',
+        subBuilder: $425.ExplainOptions.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -786,9 +786,9 @@ class RunAggregationQueryRequest extends $pb.GeneratedMessage {
   /// This partition ID is normalized with the standard default context
   /// partition ID.
   @$pb.TagNumber(2)
-  $421.PartitionId get partitionId => $_getN(1);
+  $423.PartitionId get partitionId => $_getN(1);
   @$pb.TagNumber(2)
-  set partitionId($421.PartitionId v) {
+  set partitionId($423.PartitionId v) {
     setField(2, v);
   }
 
@@ -797,13 +797,13 @@ class RunAggregationQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearPartitionId() => clearField(2);
   @$pb.TagNumber(2)
-  $421.PartitionId ensurePartitionId() => $_ensure(1);
+  $423.PartitionId ensurePartitionId() => $_ensure(1);
 
   /// The query to run.
   @$pb.TagNumber(3)
-  $422.AggregationQuery get aggregationQuery => $_getN(2);
+  $424.AggregationQuery get aggregationQuery => $_getN(2);
   @$pb.TagNumber(3)
-  set aggregationQuery($422.AggregationQuery v) {
+  set aggregationQuery($424.AggregationQuery v) {
     setField(3, v);
   }
 
@@ -812,13 +812,13 @@ class RunAggregationQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAggregationQuery() => clearField(3);
   @$pb.TagNumber(3)
-  $422.AggregationQuery ensureAggregationQuery() => $_ensure(2);
+  $424.AggregationQuery ensureAggregationQuery() => $_ensure(2);
 
   /// The GQL query to run. This query must be an aggregation query.
   @$pb.TagNumber(7)
-  $422.GqlQuery get gqlQuery => $_getN(3);
+  $424.GqlQuery get gqlQuery => $_getN(3);
   @$pb.TagNumber(7)
-  set gqlQuery($422.GqlQuery v) {
+  set gqlQuery($424.GqlQuery v) {
     setField(7, v);
   }
 
@@ -827,7 +827,7 @@ class RunAggregationQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearGqlQuery() => clearField(7);
   @$pb.TagNumber(7)
-  $422.GqlQuery ensureGqlQuery() => $_ensure(3);
+  $424.GqlQuery ensureGqlQuery() => $_ensure(3);
 
   /// Required. The ID of the project against which to make the request.
   @$pb.TagNumber(8)
@@ -861,9 +861,9 @@ class RunAggregationQueryRequest extends $pb.GeneratedMessage {
   /// Optional. Explain options for the query. If set, additional query
   /// statistics will be returned. If not, only query results will be returned.
   @$pb.TagNumber(11)
-  $423.ExplainOptions get explainOptions => $_getN(6);
+  $425.ExplainOptions get explainOptions => $_getN(6);
   @$pb.TagNumber(11)
-  set explainOptions($423.ExplainOptions v) {
+  set explainOptions($425.ExplainOptions v) {
     setField(11, v);
   }
 
@@ -872,17 +872,17 @@ class RunAggregationQueryRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearExplainOptions() => clearField(11);
   @$pb.TagNumber(11)
-  $423.ExplainOptions ensureExplainOptions() => $_ensure(6);
+  $425.ExplainOptions ensureExplainOptions() => $_ensure(6);
 }
 
 /// The response for
 /// [Datastore.RunAggregationQuery][google.datastore.v1.Datastore.RunAggregationQuery].
 class RunAggregationQueryResponse extends $pb.GeneratedMessage {
   factory RunAggregationQueryResponse({
-    $424.AggregationResultBatch? batch,
-    $422.AggregationQuery? query,
+    $426.AggregationResultBatch? batch,
+    $424.AggregationQuery? query,
     $core.List<$core.int>? transaction,
-    $423.ExplainMetrics? explainMetrics,
+    $425.ExplainMetrics? explainMetrics,
   }) {
     final $result = create();
     if (batch != null) {
@@ -912,14 +912,14 @@ class RunAggregationQueryResponse extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$424.AggregationResultBatch>(1, _omitFieldNames ? '' : 'batch',
-        subBuilder: $424.AggregationResultBatch.create)
-    ..aOM<$422.AggregationQuery>(2, _omitFieldNames ? '' : 'query',
-        subBuilder: $422.AggregationQuery.create)
+    ..aOM<$426.AggregationResultBatch>(1, _omitFieldNames ? '' : 'batch',
+        subBuilder: $426.AggregationResultBatch.create)
+    ..aOM<$424.AggregationQuery>(2, _omitFieldNames ? '' : 'query',
+        subBuilder: $424.AggregationQuery.create)
     ..a<$core.List<$core.int>>(
         5, _omitFieldNames ? '' : 'transaction', $pb.PbFieldType.OY)
-    ..aOM<$423.ExplainMetrics>(9, _omitFieldNames ? '' : 'explainMetrics',
-        subBuilder: $423.ExplainMetrics.create)
+    ..aOM<$425.ExplainMetrics>(9, _omitFieldNames ? '' : 'explainMetrics',
+        subBuilder: $425.ExplainMetrics.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -951,9 +951,9 @@ class RunAggregationQueryResponse extends $pb.GeneratedMessage {
 
   /// A batch of aggregation results. Always present.
   @$pb.TagNumber(1)
-  $424.AggregationResultBatch get batch => $_getN(0);
+  $426.AggregationResultBatch get batch => $_getN(0);
   @$pb.TagNumber(1)
-  set batch($424.AggregationResultBatch v) {
+  set batch($426.AggregationResultBatch v) {
     setField(1, v);
   }
 
@@ -962,13 +962,13 @@ class RunAggregationQueryResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearBatch() => clearField(1);
   @$pb.TagNumber(1)
-  $424.AggregationResultBatch ensureBatch() => $_ensure(0);
+  $426.AggregationResultBatch ensureBatch() => $_ensure(0);
 
   /// The parsed form of the `GqlQuery` from the request, if it was set.
   @$pb.TagNumber(2)
-  $422.AggregationQuery get query => $_getN(1);
+  $424.AggregationQuery get query => $_getN(1);
   @$pb.TagNumber(2)
-  set query($422.AggregationQuery v) {
+  set query($424.AggregationQuery v) {
     setField(2, v);
   }
 
@@ -977,7 +977,7 @@ class RunAggregationQueryResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearQuery() => clearField(2);
   @$pb.TagNumber(2)
-  $422.AggregationQuery ensureQuery() => $_ensure(1);
+  $424.AggregationQuery ensureQuery() => $_ensure(1);
 
   ///  The identifier of the transaction that was started as part of this
   ///  RunAggregationQuery request.
@@ -1002,9 +1002,9 @@ class RunAggregationQueryResponse extends $pb.GeneratedMessage {
   /// [RunAggregationQueryRequest.explain_options][google.datastore.v1.RunAggregationQueryRequest.explain_options]
   /// is provided, and it is sent only once with the last response in the stream.
   @$pb.TagNumber(9)
-  $423.ExplainMetrics get explainMetrics => $_getN(3);
+  $425.ExplainMetrics get explainMetrics => $_getN(3);
   @$pb.TagNumber(9)
-  set explainMetrics($423.ExplainMetrics v) {
+  set explainMetrics($425.ExplainMetrics v) {
     setField(9, v);
   }
 
@@ -1013,7 +1013,7 @@ class RunAggregationQueryResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearExplainMetrics() => clearField(9);
   @$pb.TagNumber(9)
-  $423.ExplainMetrics ensureExplainMetrics() => $_ensure(3);
+  $425.ExplainMetrics ensureExplainMetrics() => $_ensure(3);
 }
 
 /// The request for
@@ -1538,7 +1538,7 @@ class CommitResponse extends $pb.GeneratedMessage {
   factory CommitResponse({
     $core.Iterable<MutationResult>? mutationResults,
     $core.int? indexUpdates,
-    $302.Timestamp? commitTime,
+    $304.Timestamp? commitTime,
   }) {
     final $result = create();
     if (mutationResults != null) {
@@ -1569,8 +1569,8 @@ class CommitResponse extends $pb.GeneratedMessage {
         3, _omitFieldNames ? '' : 'mutationResults', $pb.PbFieldType.PM,
         subBuilder: MutationResult.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'indexUpdates', $pb.PbFieldType.O3)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'commitTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'commitTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1617,9 +1617,9 @@ class CommitResponse extends $pb.GeneratedMessage {
 
   /// The transaction commit timestamp. Not set for non-transactional commits.
   @$pb.TagNumber(8)
-  $302.Timestamp get commitTime => $_getN(2);
+  $304.Timestamp get commitTime => $_getN(2);
   @$pb.TagNumber(8)
-  set commitTime($302.Timestamp v) {
+  set commitTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -1628,14 +1628,14 @@ class CommitResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearCommitTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureCommitTime() => $_ensure(2);
+  $304.Timestamp ensureCommitTime() => $_ensure(2);
 }
 
 /// The request for
 /// [Datastore.AllocateIds][google.datastore.v1.Datastore.AllocateIds].
 class AllocateIdsRequest extends $pb.GeneratedMessage {
   factory AllocateIdsRequest({
-    $core.Iterable<$421.Key>? keys,
+    $core.Iterable<$423.Key>? keys,
     $core.String? projectId,
     $core.String? databaseId,
   }) {
@@ -1664,8 +1664,8 @@ class AllocateIdsRequest extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..pc<$421.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
-        subBuilder: $421.Key.create)
+    ..pc<$423.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
+        subBuilder: $423.Key.create)
     ..aOS(8, _omitFieldNames ? '' : 'projectId')
     ..aOS(9, _omitFieldNames ? '' : 'databaseId')
     ..hasRequiredFields = false;
@@ -1696,7 +1696,7 @@ class AllocateIdsRequest extends $pb.GeneratedMessage {
   /// Required. A list of keys with incomplete key paths for which to allocate
   /// IDs. No key may be reserved/read-only.
   @$pb.TagNumber(1)
-  $core.List<$421.Key> get keys => $_getList(0);
+  $core.List<$423.Key> get keys => $_getList(0);
 
   /// Required. The ID of the project against which to make the request.
   @$pb.TagNumber(8)
@@ -1732,7 +1732,7 @@ class AllocateIdsRequest extends $pb.GeneratedMessage {
 /// [Datastore.AllocateIds][google.datastore.v1.Datastore.AllocateIds].
 class AllocateIdsResponse extends $pb.GeneratedMessage {
   factory AllocateIdsResponse({
-    $core.Iterable<$421.Key>? keys,
+    $core.Iterable<$423.Key>? keys,
   }) {
     final $result = create();
     if (keys != null) {
@@ -1753,8 +1753,8 @@ class AllocateIdsResponse extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..pc<$421.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
-        subBuilder: $421.Key.create)
+    ..pc<$423.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
+        subBuilder: $423.Key.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1783,14 +1783,14 @@ class AllocateIdsResponse extends $pb.GeneratedMessage {
   /// The keys specified in the request (in the same order), each with
   /// its key path completed with a newly allocated ID.
   @$pb.TagNumber(1)
-  $core.List<$421.Key> get keys => $_getList(0);
+  $core.List<$423.Key> get keys => $_getList(0);
 }
 
 /// The request for
 /// [Datastore.ReserveIds][google.datastore.v1.Datastore.ReserveIds].
 class ReserveIdsRequest extends $pb.GeneratedMessage {
   factory ReserveIdsRequest({
-    $core.Iterable<$421.Key>? keys,
+    $core.Iterable<$423.Key>? keys,
     $core.String? projectId,
     $core.String? databaseId,
   }) {
@@ -1819,8 +1819,8 @@ class ReserveIdsRequest extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..pc<$421.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
-        subBuilder: $421.Key.create)
+    ..pc<$423.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM,
+        subBuilder: $423.Key.create)
     ..aOS(8, _omitFieldNames ? '' : 'projectId')
     ..aOS(9, _omitFieldNames ? '' : 'databaseId')
     ..hasRequiredFields = false;
@@ -1851,7 +1851,7 @@ class ReserveIdsRequest extends $pb.GeneratedMessage {
   /// Required. A list of keys with complete key paths whose numeric IDs should
   /// not be auto-allocated.
   @$pb.TagNumber(1)
-  $core.List<$421.Key> get keys => $_getList(0);
+  $core.List<$423.Key> get keys => $_getList(0);
 
   /// Required. The ID of the project against which to make the request.
   @$pb.TagNumber(8)
@@ -1933,14 +1933,14 @@ enum Mutation_ConflictDetectionStrategy { baseVersion, updateTime, notSet }
 /// A mutation to apply to an entity.
 class Mutation extends $pb.GeneratedMessage {
   factory Mutation({
-    $421.Entity? insert,
-    $421.Entity? update,
-    $421.Entity? upsert,
-    $421.Key? delete,
+    $423.Entity? insert,
+    $423.Entity? update,
+    $423.Entity? upsert,
+    $423.Key? delete,
     $fixnum.Int64? baseVersion,
     PropertyMask? propertyMask,
     Mutation_ConflictResolutionStrategy? conflictResolutionStrategy,
-    $302.Timestamp? updateTime,
+    $304.Timestamp? updateTime,
     $core.Iterable<PropertyTransform>? propertyTransforms,
   }) {
     final $result = create();
@@ -2002,14 +2002,14 @@ class Mutation extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [4, 5, 6, 7])
     ..oo(1, [8, 11])
-    ..aOM<$421.Entity>(4, _omitFieldNames ? '' : 'insert',
-        subBuilder: $421.Entity.create)
-    ..aOM<$421.Entity>(5, _omitFieldNames ? '' : 'update',
-        subBuilder: $421.Entity.create)
-    ..aOM<$421.Entity>(6, _omitFieldNames ? '' : 'upsert',
-        subBuilder: $421.Entity.create)
-    ..aOM<$421.Key>(7, _omitFieldNames ? '' : 'delete',
-        subBuilder: $421.Key.create)
+    ..aOM<$423.Entity>(4, _omitFieldNames ? '' : 'insert',
+        subBuilder: $423.Entity.create)
+    ..aOM<$423.Entity>(5, _omitFieldNames ? '' : 'update',
+        subBuilder: $423.Entity.create)
+    ..aOM<$423.Entity>(6, _omitFieldNames ? '' : 'upsert',
+        subBuilder: $423.Entity.create)
+    ..aOM<$423.Key>(7, _omitFieldNames ? '' : 'delete',
+        subBuilder: $423.Key.create)
     ..aInt64(8, _omitFieldNames ? '' : 'baseVersion')
     ..aOM<PropertyMask>(9, _omitFieldNames ? '' : 'propertyMask',
         subBuilder: PropertyMask.create)
@@ -2019,8 +2019,8 @@ class Mutation extends $pb.GeneratedMessage {
             Mutation_ConflictResolutionStrategy.STRATEGY_UNSPECIFIED,
         valueOf: Mutation_ConflictResolutionStrategy.valueOf,
         enumValues: Mutation_ConflictResolutionStrategy.values)
-    ..aOM<$302.Timestamp>(11, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(11, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
     ..pc<PropertyTransform>(
         12, _omitFieldNames ? '' : 'propertyTransforms', $pb.PbFieldType.PM,
         subBuilder: PropertyTransform.create)
@@ -2058,9 +2058,9 @@ class Mutation extends $pb.GeneratedMessage {
   /// The entity to insert. The entity must not already exist.
   /// The entity key's final path element may be incomplete.
   @$pb.TagNumber(4)
-  $421.Entity get insert => $_getN(0);
+  $423.Entity get insert => $_getN(0);
   @$pb.TagNumber(4)
-  set insert($421.Entity v) {
+  set insert($423.Entity v) {
     setField(4, v);
   }
 
@@ -2069,14 +2069,14 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearInsert() => clearField(4);
   @$pb.TagNumber(4)
-  $421.Entity ensureInsert() => $_ensure(0);
+  $423.Entity ensureInsert() => $_ensure(0);
 
   /// The entity to update. The entity must already exist.
   /// Must have a complete key path.
   @$pb.TagNumber(5)
-  $421.Entity get update => $_getN(1);
+  $423.Entity get update => $_getN(1);
   @$pb.TagNumber(5)
-  set update($421.Entity v) {
+  set update($423.Entity v) {
     setField(5, v);
   }
 
@@ -2085,14 +2085,14 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearUpdate() => clearField(5);
   @$pb.TagNumber(5)
-  $421.Entity ensureUpdate() => $_ensure(1);
+  $423.Entity ensureUpdate() => $_ensure(1);
 
   /// The entity to upsert. The entity may or may not already exist.
   /// The entity key's final path element may be incomplete.
   @$pb.TagNumber(6)
-  $421.Entity get upsert => $_getN(2);
+  $423.Entity get upsert => $_getN(2);
   @$pb.TagNumber(6)
-  set upsert($421.Entity v) {
+  set upsert($423.Entity v) {
     setField(6, v);
   }
 
@@ -2101,14 +2101,14 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearUpsert() => clearField(6);
   @$pb.TagNumber(6)
-  $421.Entity ensureUpsert() => $_ensure(2);
+  $423.Entity ensureUpsert() => $_ensure(2);
 
   /// The key of the entity to delete. The entity may or may not already exist.
   /// Must have a complete key path and must not be reserved/read-only.
   @$pb.TagNumber(7)
-  $421.Key get delete => $_getN(3);
+  $423.Key get delete => $_getN(3);
   @$pb.TagNumber(7)
-  set delete($421.Key v) {
+  set delete($423.Key v) {
     setField(7, v);
   }
 
@@ -2117,7 +2117,7 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearDelete() => clearField(7);
   @$pb.TagNumber(7)
-  $421.Key ensureDelete() => $_ensure(3);
+  $423.Key ensureDelete() => $_ensure(3);
 
   /// The version of the entity that this mutation is being applied
   /// to. If this does not match the current version on the server, the
@@ -2176,9 +2176,9 @@ class Mutation extends $pb.GeneratedMessage {
   /// to. If this does not match the current update time on the server, the
   /// mutation conflicts.
   @$pb.TagNumber(11)
-  $302.Timestamp get updateTime => $_getN(7);
+  $304.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(11)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(11, v);
   }
 
@@ -2187,7 +2187,7 @@ class Mutation extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $302.Timestamp ensureUpdateTime() => $_ensure(7);
+  $304.Timestamp ensureUpdateTime() => $_ensure(7);
 
   ///  Optional. The transforms to perform on the entity.
   ///
@@ -2213,11 +2213,11 @@ class PropertyTransform extends $pb.GeneratedMessage {
   factory PropertyTransform({
     $core.String? property,
     PropertyTransform_ServerValue? setToServerValue,
-    $421.Value? increment,
-    $421.Value? maximum,
-    $421.Value? minimum,
-    $421.ArrayValue? appendMissingElements,
-    $421.ArrayValue? removeAllFromArray,
+    $423.Value? increment,
+    $423.Value? maximum,
+    $423.Value? minimum,
+    $423.ArrayValue? appendMissingElements,
+    $423.ArrayValue? removeAllFromArray,
   }) {
     final $result = create();
     if (property != null) {
@@ -2273,16 +2273,16 @@ class PropertyTransform extends $pb.GeneratedMessage {
         defaultOrMaker: PropertyTransform_ServerValue.SERVER_VALUE_UNSPECIFIED,
         valueOf: PropertyTransform_ServerValue.valueOf,
         enumValues: PropertyTransform_ServerValue.values)
-    ..aOM<$421.Value>(3, _omitFieldNames ? '' : 'increment',
-        subBuilder: $421.Value.create)
-    ..aOM<$421.Value>(4, _omitFieldNames ? '' : 'maximum',
-        subBuilder: $421.Value.create)
-    ..aOM<$421.Value>(5, _omitFieldNames ? '' : 'minimum',
-        subBuilder: $421.Value.create)
-    ..aOM<$421.ArrayValue>(6, _omitFieldNames ? '' : 'appendMissingElements',
-        subBuilder: $421.ArrayValue.create)
-    ..aOM<$421.ArrayValue>(7, _omitFieldNames ? '' : 'removeAllFromArray',
-        subBuilder: $421.ArrayValue.create)
+    ..aOM<$423.Value>(3, _omitFieldNames ? '' : 'increment',
+        subBuilder: $423.Value.create)
+    ..aOM<$423.Value>(4, _omitFieldNames ? '' : 'maximum',
+        subBuilder: $423.Value.create)
+    ..aOM<$423.Value>(5, _omitFieldNames ? '' : 'minimum',
+        subBuilder: $423.Value.create)
+    ..aOM<$423.ArrayValue>(6, _omitFieldNames ? '' : 'appendMissingElements',
+        subBuilder: $423.ArrayValue.create)
+    ..aOM<$423.ArrayValue>(7, _omitFieldNames ? '' : 'removeAllFromArray',
+        subBuilder: $423.ArrayValue.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2356,9 +2356,9 @@ class PropertyTransform extends $pb.GeneratedMessage {
   ///  If there is positive/negative integer overflow, the property is resolved
   ///  to the largest magnitude positive/negative integer.
   @$pb.TagNumber(3)
-  $421.Value get increment => $_getN(2);
+  $423.Value get increment => $_getN(2);
   @$pb.TagNumber(3)
-  set increment($421.Value v) {
+  set increment($423.Value v) {
     setField(3, v);
   }
 
@@ -2367,7 +2367,7 @@ class PropertyTransform extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearIncrement() => clearField(3);
   @$pb.TagNumber(3)
-  $421.Value ensureIncrement() => $_ensure(2);
+  $423.Value ensureIncrement() => $_ensure(2);
 
   ///  Sets the property to the maximum of its current value and the given
   ///  value.
@@ -2383,9 +2383,9 @@ class PropertyTransform extends $pb.GeneratedMessage {
   ///  zero input value is always the stored value.
   ///  The maximum of any numeric value x and NaN is NaN.
   @$pb.TagNumber(4)
-  $421.Value get maximum => $_getN(3);
+  $423.Value get maximum => $_getN(3);
   @$pb.TagNumber(4)
-  set maximum($421.Value v) {
+  set maximum($423.Value v) {
     setField(4, v);
   }
 
@@ -2394,7 +2394,7 @@ class PropertyTransform extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearMaximum() => clearField(4);
   @$pb.TagNumber(4)
-  $421.Value ensureMaximum() => $_ensure(3);
+  $423.Value ensureMaximum() => $_ensure(3);
 
   ///  Sets the property to the minimum of its current value and the given
   ///  value.
@@ -2410,9 +2410,9 @@ class PropertyTransform extends $pb.GeneratedMessage {
   ///  value is always the stored value. The minimum of any numeric value x and
   ///  NaN is NaN.
   @$pb.TagNumber(5)
-  $421.Value get minimum => $_getN(4);
+  $423.Value get minimum => $_getN(4);
   @$pb.TagNumber(5)
-  set minimum($421.Value v) {
+  set minimum($423.Value v) {
     setField(5, v);
   }
 
@@ -2421,7 +2421,7 @@ class PropertyTransform extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearMinimum() => clearField(5);
   @$pb.TagNumber(5)
-  $421.Value ensureMinimum() => $_ensure(4);
+  $423.Value ensureMinimum() => $_ensure(4);
 
   ///  Appends the given elements in order if they are not already present in
   ///  the current property value.
@@ -2436,9 +2436,9 @@ class PropertyTransform extends $pb.GeneratedMessage {
   ///
   ///  The corresponding transform result will be the null value.
   @$pb.TagNumber(6)
-  $421.ArrayValue get appendMissingElements => $_getN(5);
+  $423.ArrayValue get appendMissingElements => $_getN(5);
   @$pb.TagNumber(6)
-  set appendMissingElements($421.ArrayValue v) {
+  set appendMissingElements($423.ArrayValue v) {
     setField(6, v);
   }
 
@@ -2447,7 +2447,7 @@ class PropertyTransform extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearAppendMissingElements() => clearField(6);
   @$pb.TagNumber(6)
-  $421.ArrayValue ensureAppendMissingElements() => $_ensure(5);
+  $423.ArrayValue ensureAppendMissingElements() => $_ensure(5);
 
   ///  Removes all of the given elements from the array in the property.
   ///  If the property is not an array, or if the property does not yet exist,
@@ -2460,9 +2460,9 @@ class PropertyTransform extends $pb.GeneratedMessage {
   ///
   ///  The corresponding transform result will be the null value.
   @$pb.TagNumber(7)
-  $421.ArrayValue get removeAllFromArray => $_getN(6);
+  $423.ArrayValue get removeAllFromArray => $_getN(6);
   @$pb.TagNumber(7)
-  set removeAllFromArray($421.ArrayValue v) {
+  set removeAllFromArray($423.ArrayValue v) {
     setField(7, v);
   }
 
@@ -2471,18 +2471,18 @@ class PropertyTransform extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearRemoveAllFromArray() => clearField(7);
   @$pb.TagNumber(7)
-  $421.ArrayValue ensureRemoveAllFromArray() => $_ensure(6);
+  $423.ArrayValue ensureRemoveAllFromArray() => $_ensure(6);
 }
 
 /// The result of applying a mutation.
 class MutationResult extends $pb.GeneratedMessage {
   factory MutationResult({
-    $421.Key? key,
+    $423.Key? key,
     $fixnum.Int64? version,
     $core.bool? conflictDetected,
-    $302.Timestamp? updateTime,
-    $302.Timestamp? createTime,
-    $core.Iterable<$421.Value>? transformResults,
+    $304.Timestamp? updateTime,
+    $304.Timestamp? createTime,
+    $core.Iterable<$423.Value>? transformResults,
   }) {
     final $result = create();
     if (key != null) {
@@ -2518,17 +2518,17 @@ class MutationResult extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$421.Key>(3, _omitFieldNames ? '' : 'key',
-        subBuilder: $421.Key.create)
+    ..aOM<$423.Key>(3, _omitFieldNames ? '' : 'key',
+        subBuilder: $423.Key.create)
     ..aInt64(4, _omitFieldNames ? '' : 'version')
     ..aOB(5, _omitFieldNames ? '' : 'conflictDetected')
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..pc<$421.Value>(
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..pc<$423.Value>(
         8, _omitFieldNames ? '' : 'transformResults', $pb.PbFieldType.PM,
-        subBuilder: $421.Value.create)
+        subBuilder: $423.Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2557,9 +2557,9 @@ class MutationResult extends $pb.GeneratedMessage {
   /// The automatically allocated key.
   /// Set only when the mutation allocated a key.
   @$pb.TagNumber(3)
-  $421.Key get key => $_getN(0);
+  $423.Key get key => $_getN(0);
   @$pb.TagNumber(3)
-  set key($421.Key v) {
+  set key($423.Key v) {
     setField(3, v);
   }
 
@@ -2568,7 +2568,7 @@ class MutationResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearKey() => clearField(3);
   @$pb.TagNumber(3)
-  $421.Key ensureKey() => $_ensure(0);
+  $423.Key ensureKey() => $_ensure(0);
 
   /// The version of the entity on the server after processing the mutation. If
   /// the mutation doesn't change anything on the server, then the version will
@@ -2606,9 +2606,9 @@ class MutationResult extends $pb.GeneratedMessage {
   /// will be the update timestamp of the current entity. This field will not be
   /// set after a 'delete'.
   @$pb.TagNumber(6)
-  $302.Timestamp get updateTime => $_getN(3);
+  $304.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(6)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -2617,13 +2617,13 @@ class MutationResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureUpdateTime() => $_ensure(3);
+  $304.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// The create time of the entity. This field will not be set after a 'delete'.
   @$pb.TagNumber(7)
-  $302.Timestamp get createTime => $_getN(4);
+  $304.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(7)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(7, v);
   }
 
@@ -2632,13 +2632,13 @@ class MutationResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $302.Timestamp ensureCreateTime() => $_ensure(4);
+  $304.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// The results of applying each
   /// [PropertyTransform][google.datastore.v1.PropertyTransform], in the same
   /// order of the request.
   @$pb.TagNumber(8)
-  $core.List<$421.Value> get transformResults => $_getList(5);
+  $core.List<$423.Value> get transformResults => $_getList(5);
 }
 
 /// The set of arbitrarily nested property paths used to restrict an operation to
@@ -2721,7 +2721,7 @@ class ReadOptions extends $pb.GeneratedMessage {
     ReadOptions_ReadConsistency? readConsistency,
     $core.List<$core.int>? transaction,
     TransactionOptions? newTransaction,
-    $302.Timestamp? readTime,
+    $304.Timestamp? readTime,
   }) {
     final $result = create();
     if (readConsistency != null) {
@@ -2770,8 +2770,8 @@ class ReadOptions extends $pb.GeneratedMessage {
         2, _omitFieldNames ? '' : 'transaction', $pb.PbFieldType.OY)
     ..aOM<TransactionOptions>(3, _omitFieldNames ? '' : 'newTransaction',
         subBuilder: TransactionOptions.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'readTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'readTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2856,9 +2856,9 @@ class ReadOptions extends $pb.GeneratedMessage {
   ///  or if Point-in-Time Recovery is enabled, can additionally be a whole
   ///  minute timestamp within the past 7 days.
   @$pb.TagNumber(4)
-  $302.Timestamp get readTime => $_getN(3);
+  $304.Timestamp get readTime => $_getN(3);
   @$pb.TagNumber(4)
-  set readTime($302.Timestamp v) {
+  set readTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -2867,7 +2867,7 @@ class ReadOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearReadTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureReadTime() => $_ensure(3);
+  $304.Timestamp ensureReadTime() => $_ensure(3);
 }
 
 /// Options specific to read / write transactions.
@@ -2942,7 +2942,7 @@ class TransactionOptions_ReadWrite extends $pb.GeneratedMessage {
 /// Options specific to read-only transactions.
 class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   factory TransactionOptions_ReadOnly({
-    $302.Timestamp? readTime,
+    $304.Timestamp? readTime,
   }) {
     final $result = create();
     if (readTime != null) {
@@ -2963,8 +2963,8 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'readTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'readTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3000,9 +3000,9 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   ///  or if Point-in-Time Recovery is enabled, can additionally be a whole
   ///  minute timestamp within the past 7 days.
   @$pb.TagNumber(1)
-  $302.Timestamp get readTime => $_getN(0);
+  $304.Timestamp get readTime => $_getN(0);
   @$pb.TagNumber(1)
-  set readTime($302.Timestamp v) {
+  set readTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -3011,7 +3011,7 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearReadTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureReadTime() => $_ensure(0);
+  $304.Timestamp ensureReadTime() => $_ensure(0);
 }
 
 enum TransactionOptions_Mode { readWrite, readOnly, notSet }

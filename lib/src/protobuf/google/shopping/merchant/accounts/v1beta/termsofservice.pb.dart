@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'termsofservicekind.pbenum.dart' as $545;
+import 'termsofservicekind.pbenum.dart' as $548;
 
 /// A `TermsOfService`.
 class TermsOfService extends $pb.GeneratedMessage {
   factory TermsOfService({
     $core.String? name,
     $core.String? regionCode,
-    $545.TermsOfServiceKind? kind,
+    $548.TermsOfServiceKind? kind,
     $core.String? fileUri,
     $core.bool? external,
   }) {
@@ -57,12 +57,12 @@ class TermsOfService extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'regionCode')
-    ..e<$545.TermsOfServiceKind>(
+    ..e<$548.TermsOfServiceKind>(
         3, _omitFieldNames ? '' : 'kind', $pb.PbFieldType.OE,
         defaultOrMaker:
-            $545.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED,
-        valueOf: $545.TermsOfServiceKind.valueOf,
-        enumValues: $545.TermsOfServiceKind.values)
+            $548.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED,
+        valueOf: $548.TermsOfServiceKind.valueOf,
+        enumValues: $548.TermsOfServiceKind.values)
     ..aOS(4, _omitFieldNames ? '' : 'fileUri')
     ..aOB(5, _omitFieldNames ? '' : 'external')
     ..hasRequiredFields = false;
@@ -124,9 +124,9 @@ class TermsOfService extends $pb.GeneratedMessage {
 
   /// The Kind this terms of service version applies to.
   @$pb.TagNumber(3)
-  $545.TermsOfServiceKind get kind => $_getN(2);
+  $548.TermsOfServiceKind get kind => $_getN(2);
   @$pb.TagNumber(3)
-  set kind($545.TermsOfServiceKind v) {
+  set kind($548.TermsOfServiceKind v) {
     setField(3, v);
   }
 
@@ -235,7 +235,7 @@ class GetTermsOfServiceRequest extends $pb.GeneratedMessage {
 class RetrieveLatestTermsOfServiceRequest extends $pb.GeneratedMessage {
   factory RetrieveLatestTermsOfServiceRequest({
     $core.String? regionCode,
-    $545.TermsOfServiceKind? kind,
+    $548.TermsOfServiceKind? kind,
   }) {
     final $result = create();
     if (regionCode != null) {
@@ -261,12 +261,12 @@ class RetrieveLatestTermsOfServiceRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'regionCode')
-    ..e<$545.TermsOfServiceKind>(
+    ..e<$548.TermsOfServiceKind>(
         2, _omitFieldNames ? '' : 'kind', $pb.PbFieldType.OE,
         defaultOrMaker:
-            $545.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED,
-        valueOf: $545.TermsOfServiceKind.valueOf,
-        enumValues: $545.TermsOfServiceKind.values)
+            $548.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED,
+        valueOf: $548.TermsOfServiceKind.valueOf,
+        enumValues: $548.TermsOfServiceKind.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -314,9 +314,9 @@ class RetrieveLatestTermsOfServiceRequest extends $pb.GeneratedMessage {
 
   /// Required. The Kind this terms of service version applies to.
   @$pb.TagNumber(2)
-  $545.TermsOfServiceKind get kind => $_getN(1);
+  $548.TermsOfServiceKind get kind => $_getN(1);
   @$pb.TagNumber(2)
-  set kind($545.TermsOfServiceKind v) {
+  set kind($548.TermsOfServiceKind v) {
     setField(2, v);
   }
 

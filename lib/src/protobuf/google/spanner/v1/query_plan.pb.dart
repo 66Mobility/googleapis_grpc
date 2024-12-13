@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $261;
+import '../../protobuf/struct.pb.dart' as $263;
 import 'query_plan.pbenum.dart';
 
 export 'query_plan.pbenum.dart';
@@ -223,8 +223,8 @@ class PlanNode extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.Iterable<PlanNode_ChildLink>? childLinks,
     PlanNode_ShortRepresentation? shortRepresentation,
-    $261.Struct? metadata,
-    $261.Struct? executionStats,
+    $263.Struct? metadata,
+    $263.Struct? executionStats,
   }) {
     final $result = create();
     if (index != null) {
@@ -275,10 +275,10 @@ class PlanNode extends $pb.GeneratedMessage {
     ..aOM<PlanNode_ShortRepresentation>(
         5, _omitFieldNames ? '' : 'shortRepresentation',
         subBuilder: PlanNode_ShortRepresentation.create)
-    ..aOM<$261.Struct>(6, _omitFieldNames ? '' : 'metadata',
-        subBuilder: $261.Struct.create)
-    ..aOM<$261.Struct>(7, _omitFieldNames ? '' : 'executionStats',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(6, _omitFieldNames ? '' : 'metadata',
+        subBuilder: $263.Struct.create)
+    ..aOM<$263.Struct>(7, _omitFieldNames ? '' : 'executionStats',
+        subBuilder: $263.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -373,9 +373,9 @@ class PlanNode extends $pb.GeneratedMessage {
   ///        "parameter_type": "array"
   ///      }
   @$pb.TagNumber(6)
-  $261.Struct get metadata => $_getN(5);
+  $263.Struct get metadata => $_getN(5);
   @$pb.TagNumber(6)
-  set metadata($261.Struct v) {
+  set metadata($263.Struct v) {
     setField(6, v);
   }
 
@@ -384,16 +384,16 @@ class PlanNode extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $261.Struct ensureMetadata() => $_ensure(5);
+  $263.Struct ensureMetadata() => $_ensure(5);
 
   /// The execution statistics associated with the node, contained in a group of
   /// key-value pairs. Only present if the plan was returned as a result of a
   /// profile query. For example, number of executions, number of rows/time per
   /// execution etc.
   @$pb.TagNumber(7)
-  $261.Struct get executionStats => $_getN(6);
+  $263.Struct get executionStats => $_getN(6);
   @$pb.TagNumber(7)
-  set executionStats($261.Struct v) {
+  set executionStats($263.Struct v) {
     setField(7, v);
   }
 
@@ -402,7 +402,7 @@ class PlanNode extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearExecutionStats() => clearField(7);
   @$pb.TagNumber(7)
-  $261.Struct ensureExecutionStats() => $_ensure(6);
+  $263.Struct ensureExecutionStats() => $_ensure(6);
 }
 
 /// Contains an ordered list of nodes appearing in the query plan.

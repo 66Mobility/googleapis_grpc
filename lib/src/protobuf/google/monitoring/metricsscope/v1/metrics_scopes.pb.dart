@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 import 'metrics_scope.pb.dart' as $190;
 import 'metrics_scopes.pbenum.dart';
 
@@ -399,8 +399,8 @@ class DeleteMonitoredProjectRequest extends $pb.GeneratedMessage {
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
     OperationMetadata_State? state,
-    $302.Timestamp? createTime,
-    $302.Timestamp? updateTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? updateTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -432,10 +432,10 @@ class OperationMetadata extends $pb.GeneratedMessage {
         defaultOrMaker: OperationMetadata_State.STATE_UNSPECIFIED,
         valueOf: OperationMetadata_State.valueOf,
         enumValues: OperationMetadata_State.values)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -476,9 +476,9 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time when the batch request was received.
   @$pb.TagNumber(5)
-  $302.Timestamp get createTime => $_getN(1);
+  $304.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(5)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -487,13 +487,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureCreateTime() => $_ensure(1);
+  $304.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// The time when the operation result was last updated.
   @$pb.TagNumber(6)
-  $302.Timestamp get updateTime => $_getN(2);
+  $304.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(6)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -502,7 +502,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureUpdateTime() => $_ensure(2);
+  $304.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

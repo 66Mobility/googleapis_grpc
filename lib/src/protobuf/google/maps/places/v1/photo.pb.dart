@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'attribution.pb.dart' as $461;
+import 'attribution.pb.dart' as $463;
 
 /// Information about a photo of a place.
 class Photo extends $pb.GeneratedMessage {
@@ -21,7 +21,7 @@ class Photo extends $pb.GeneratedMessage {
     $core.String? name,
     $core.int? widthPx,
     $core.int? heightPx,
-    $core.Iterable<$461.AuthorAttribution>? authorAttributions,
+    $core.Iterable<$463.AuthorAttribution>? authorAttributions,
   }) {
     final $result = create();
     if (name != null) {
@@ -54,9 +54,9 @@ class Photo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'widthPx', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'heightPx', $pb.PbFieldType.O3)
-    ..pc<$461.AuthorAttribution>(
+    ..pc<$463.AuthorAttribution>(
         4, _omitFieldNames ? '' : 'authorAttributions', $pb.PbFieldType.PM,
-        subBuilder: $461.AuthorAttribution.create)
+        subBuilder: $463.AuthorAttribution.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -123,7 +123,7 @@ class Photo extends $pb.GeneratedMessage {
 
   /// This photo's authors.
   @$pb.TagNumber(4)
-  $core.List<$461.AuthorAttribution> get authorAttributions => $_getList(3);
+  $core.List<$463.AuthorAttribution> get authorAttributions => $_getList(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

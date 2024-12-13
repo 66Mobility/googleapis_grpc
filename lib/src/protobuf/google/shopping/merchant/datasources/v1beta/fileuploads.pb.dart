@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../../protobuf/timestamp.pb.dart' as $304;
 import 'fileuploads.pbenum.dart';
 
 export 'fileuploads.pbenum.dart';
@@ -196,7 +196,7 @@ class FileUpload extends $pb.GeneratedMessage {
     $fixnum.Int64? itemsTotal,
     $fixnum.Int64? itemsCreated,
     $fixnum.Int64? itemsUpdated,
-    $302.Timestamp? uploadTime,
+    $304.Timestamp? uploadTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -252,8 +252,8 @@ class FileUpload extends $pb.GeneratedMessage {
     ..aInt64(5, _omitFieldNames ? '' : 'itemsTotal')
     ..aInt64(6, _omitFieldNames ? '' : 'itemsCreated')
     ..aInt64(7, _omitFieldNames ? '' : 'itemsUpdated')
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'uploadTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'uploadTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -363,9 +363,9 @@ class FileUpload extends $pb.GeneratedMessage {
 
   /// Output only. The date at which the file of the data source was uploaded.
   @$pb.TagNumber(8)
-  $302.Timestamp get uploadTime => $_getN(7);
+  $304.Timestamp get uploadTime => $_getN(7);
   @$pb.TagNumber(8)
-  set uploadTime($302.Timestamp v) {
+  set uploadTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -374,7 +374,7 @@ class FileUpload extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearUploadTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureUploadTime() => $_ensure(7);
+  $304.Timestamp ensureUploadTime() => $_ensure(7);
 }
 
 /// Request message for the GetFileUploadRequest method.

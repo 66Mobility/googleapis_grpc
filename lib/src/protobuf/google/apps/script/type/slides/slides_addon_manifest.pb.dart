@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../extension_point.pb.dart' as $396;
+import '../extension_point.pb.dart' as $398;
 
 /// Slides add-on manifest.
 class SlidesAddOnManifest extends $pb.GeneratedMessage {
   factory SlidesAddOnManifest({
-    $396.HomepageExtensionPoint? homepageTrigger,
+    $398.HomepageExtensionPoint? homepageTrigger,
     SlidesExtensionPoint? onFileScopeGrantedTrigger,
   }) {
     final $result = create();
@@ -43,9 +43,9 @@ class SlidesAddOnManifest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.script.type.slides'),
       createEmptyInstance: create)
-    ..aOM<$396.HomepageExtensionPoint>(
+    ..aOM<$398.HomepageExtensionPoint>(
         1, _omitFieldNames ? '' : 'homepageTrigger',
-        subBuilder: $396.HomepageExtensionPoint.create)
+        subBuilder: $398.HomepageExtensionPoint.create)
     ..aOM<SlidesExtensionPoint>(
         2, _omitFieldNames ? '' : 'onFileScopeGrantedTrigger',
         subBuilder: SlidesExtensionPoint.create)
@@ -77,9 +77,9 @@ class SlidesAddOnManifest extends $pb.GeneratedMessage {
   /// If present, this overrides the configuration from
   /// `addOns.common.homepageTrigger`.
   @$pb.TagNumber(1)
-  $396.HomepageExtensionPoint get homepageTrigger => $_getN(0);
+  $398.HomepageExtensionPoint get homepageTrigger => $_getN(0);
   @$pb.TagNumber(1)
-  set homepageTrigger($396.HomepageExtensionPoint v) {
+  set homepageTrigger($398.HomepageExtensionPoint v) {
     setField(1, v);
   }
 
@@ -88,7 +88,7 @@ class SlidesAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHomepageTrigger() => clearField(1);
   @$pb.TagNumber(1)
-  $396.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(0);
+  $398.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(0);
 
   /// Endpoint to execute when file scope authorization is granted
   /// for this document/user pair.

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $261;
+import '../../protobuf/struct.pb.dart' as $263;
 
 class ReadGroup_Experiment extends $pb.GeneratedMessage {
   factory ReadGroup_Experiment({
@@ -288,7 +288,7 @@ class ReadGroup extends $pb.GeneratedMessage {
     $core.int? predictedInsertSize,
     $core.Iterable<ReadGroup_Program>? programs,
     $core.String? referenceSetId,
-    $core.Map<$core.String, $261.ListValue>? info,
+    $core.Map<$core.String, $263.ListValue>? info,
   }) {
     final $result = create();
     if (id != null) {
@@ -349,12 +349,12 @@ class ReadGroup extends $pb.GeneratedMessage {
         10, _omitFieldNames ? '' : 'programs', $pb.PbFieldType.PM,
         subBuilder: ReadGroup_Program.create)
     ..aOS(11, _omitFieldNames ? '' : 'referenceSetId')
-    ..m<$core.String, $261.ListValue>(12, _omitFieldNames ? '' : 'info',
+    ..m<$core.String, $263.ListValue>(12, _omitFieldNames ? '' : 'info',
         entryClassName: 'ReadGroup.InfoEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OM,
-        valueCreator: $261.ListValue.create,
-        valueDefaultOrMaker: $261.ListValue.getDefault,
+        valueCreator: $263.ListValue.create,
+        valueDefaultOrMaker: $263.ListValue.getDefault,
         packageName: const $pb.PackageName('google.genomics.v1'))
     ..hasRequiredFields = false;
 
@@ -498,7 +498,7 @@ class ReadGroup extends $pb.GeneratedMessage {
   /// A map of additional read group information. This must be of the form
   /// map<string, string[]> (string key mapping to a list of string values).
   @$pb.TagNumber(12)
-  $core.Map<$core.String, $261.ListValue> get info => $_getMap(9);
+  $core.Map<$core.String, $263.ListValue> get info => $_getMap(9);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

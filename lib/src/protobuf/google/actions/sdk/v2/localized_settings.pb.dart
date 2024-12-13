@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'theme_customization.pb.dart' as $286;
+import 'theme_customization.pb.dart' as $288;
 
 /// Represents settings of an Actions project that are specific to a user locale.
 /// In this instance, user means the end user who invokes your Actions.
@@ -32,7 +32,7 @@ class LocalizedSettings extends $pb.GeneratedMessage {
     $core.String? voice,
     $core.String? privacyPolicyUrl,
     $core.Iterable<$core.String>? sampleInvocations,
-    $286.ThemeCustomization? themeCustomization,
+    $288.ThemeCustomization? themeCustomization,
     $core.String? voiceLocale,
   }) {
     final $result = create();
@@ -105,9 +105,9 @@ class LocalizedSettings extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'voice')
     ..aOS(11, _omitFieldNames ? '' : 'privacyPolicyUrl')
     ..pPS(12, _omitFieldNames ? '' : 'sampleInvocations')
-    ..aOM<$286.ThemeCustomization>(
+    ..aOM<$288.ThemeCustomization>(
         13, _omitFieldNames ? '' : 'themeCustomization',
-        subBuilder: $286.ThemeCustomization.create)
+        subBuilder: $288.ThemeCustomization.create)
     ..aOS(14, _omitFieldNames ? '' : 'voiceLocale')
     ..hasRequiredFields = false;
 
@@ -301,9 +301,9 @@ class LocalizedSettings extends $pb.GeneratedMessage {
 
   /// Optional. Theme customizations for visual components of your Actions.
   @$pb.TagNumber(13)
-  $286.ThemeCustomization get themeCustomization => $_getN(12);
+  $288.ThemeCustomization get themeCustomization => $_getN(12);
   @$pb.TagNumber(13)
-  set themeCustomization($286.ThemeCustomization v) {
+  set themeCustomization($288.ThemeCustomization v) {
     setField(13, v);
   }
 
@@ -312,7 +312,7 @@ class LocalizedSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   void clearThemeCustomization() => clearField(13);
   @$pb.TagNumber(13)
-  $286.ThemeCustomization ensureThemeCustomization() => $_ensure(12);
+  $288.ThemeCustomization ensureThemeCustomization() => $_ensure(12);
 
   /// Optional. The locale for the specified voice. If not specified, this resolves
   /// to the user's Assistant locale. If specified, the voice locale must have

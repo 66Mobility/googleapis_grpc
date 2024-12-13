@@ -43,7 +43,7 @@ class AlertPolicy_ConditionCombinerType extends $pb.ProtobufEnum {
       : super(v, n);
 }
 
-/// An enumeration of possible severity level for an Alert Policy.
+/// An enumeration of possible severity level for an alerting policy.
 class AlertPolicy_Severity extends $pb.ProtobufEnum {
   static const AlertPolicy_Severity SEVERITY_UNSPECIFIED =
       AlertPolicy_Severity._(0, _omitEnumNames ? '' : 'SEVERITY_UNSPECIFIED');
@@ -104,6 +104,38 @@ class AlertPolicy_Condition_EvaluationMissingData extends $pb.ProtobufEnum {
       _byValue[value];
 
   const AlertPolicy_Condition_EvaluationMissingData._(
+      $core.int v, $core.String n)
+      : super(v, n);
+}
+
+/// Control when notifications will be sent out.
+class AlertPolicy_AlertStrategy_NotificationPrompt extends $pb.ProtobufEnum {
+  static const AlertPolicy_AlertStrategy_NotificationPrompt
+      NOTIFICATION_PROMPT_UNSPECIFIED =
+      AlertPolicy_AlertStrategy_NotificationPrompt._(
+          0, _omitEnumNames ? '' : 'NOTIFICATION_PROMPT_UNSPECIFIED');
+  static const AlertPolicy_AlertStrategy_NotificationPrompt OPENED =
+      AlertPolicy_AlertStrategy_NotificationPrompt._(
+          1, _omitEnumNames ? '' : 'OPENED');
+  static const AlertPolicy_AlertStrategy_NotificationPrompt CLOSED =
+      AlertPolicy_AlertStrategy_NotificationPrompt._(
+          3, _omitEnumNames ? '' : 'CLOSED');
+
+  static const $core.List<AlertPolicy_AlertStrategy_NotificationPrompt> values =
+      <AlertPolicy_AlertStrategy_NotificationPrompt>[
+    NOTIFICATION_PROMPT_UNSPECIFIED,
+    OPENED,
+    CLOSED,
+  ];
+
+  static final $core
+      .Map<$core.int, AlertPolicy_AlertStrategy_NotificationPrompt> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
+  static AlertPolicy_AlertStrategy_NotificationPrompt? valueOf(
+          $core.int value) =>
+      _byValue[value];
+
+  const AlertPolicy_AlertStrategy_NotificationPrompt._(
       $core.int v, $core.String n)
       : super(v, n);
 }

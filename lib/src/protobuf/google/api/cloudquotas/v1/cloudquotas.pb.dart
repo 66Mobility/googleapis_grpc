@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../protobuf/field_mask.pb.dart' as $335;
 import 'resources.pb.dart' as $37;
 import 'resources.pbenum.dart' as $37;
 
@@ -717,7 +717,7 @@ class CreateQuotaPreferenceRequest extends $pb.GeneratedMessage {
 /// Message for updating a QuotaPreference
 class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   factory UpdateQuotaPreferenceRequest({
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     $37.QuotaPreference? quotaPreference,
     $core.bool? allowMissing,
     $core.bool? validateOnly,
@@ -754,8 +754,8 @@ class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.api.cloudquotas.v1'),
       createEmptyInstance: create)
-    ..aOM<$333.FieldMask>(1, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(1, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..aOM<$37.QuotaPreference>(2, _omitFieldNames ? '' : 'quotaPreference',
         subBuilder: $37.QuotaPreference.create)
     ..aOB(3, _omitFieldNames ? '' : 'allowMissing')
@@ -800,9 +800,9 @@ class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $333.FieldMask get updateMask => $_getN(0);
+  $335.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(1, v);
   }
 
@@ -811,7 +811,7 @@ class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $333.FieldMask ensureUpdateMask() => $_ensure(0);
+  $335.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../protobuf/struct.pb.dart' as $261;
+import '../../../../../../protobuf/struct.pb.dart' as $263;
 
 /// Represents a Interactive Canvas response to be sent to the user.
 /// This can be used in conjunction with the `first_simple` field in the
@@ -22,7 +22,7 @@ import '../../../../../../protobuf/struct.pb.dart' as $261;
 class StaticCanvasPrompt extends $pb.GeneratedMessage {
   factory StaticCanvasPrompt({
     $core.String? url,
-    $core.Iterable<$261.Value>? data,
+    $core.Iterable<$263.Value>? data,
     $core.bool? suppressMic,
     $core.bool? sendStateDataToCanvasApp,
     $core.bool? enableFullScreen,
@@ -60,8 +60,8 @@ class StaticCanvasPrompt extends $pb.GeneratedMessage {
           : 'google.actions.sdk.v2.interactionmodel.prompt'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'url')
-    ..pc<$261.Value>(2, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM,
-        subBuilder: $261.Value.create)
+    ..pc<$263.Value>(2, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM,
+        subBuilder: $263.Value.create)
     ..aOB(3, _omitFieldNames ? '' : 'suppressMic')
     ..aOB(5, _omitFieldNames ? '' : 'sendStateDataToCanvasApp')
     ..aOB(6, _omitFieldNames ? '' : 'enableFullScreen')
@@ -108,7 +108,7 @@ class StaticCanvasPrompt extends $pb.GeneratedMessage {
   /// values defined in this Canvas prompt will be added after data values
   /// defined in previous Canvas prompts.
   @$pb.TagNumber(2)
-  $core.List<$261.Value> get data => $_getList(1);
+  $core.List<$263.Value> get data => $_getList(1);
 
   /// Optional. A true value means that the mic won't be opened for capturing input after
   /// this immersive response is presented to the user.

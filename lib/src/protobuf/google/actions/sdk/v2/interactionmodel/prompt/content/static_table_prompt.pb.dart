@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'static_image_prompt.pb.dart' as $262;
-import 'static_link_prompt.pb.dart' as $263;
+import 'static_image_prompt.pb.dart' as $264;
+import 'static_link_prompt.pb.dart' as $265;
 import 'static_table_prompt.pbenum.dart';
 
 export 'static_table_prompt.pbenum.dart';
@@ -24,10 +24,10 @@ class StaticTablePrompt extends $pb.GeneratedMessage {
   factory StaticTablePrompt({
     $core.String? title,
     $core.String? subtitle,
-    $262.StaticImagePrompt? image,
+    $264.StaticImagePrompt? image,
     $core.Iterable<TableColumn>? columns,
     $core.Iterable<TableRow>? rows,
-    $263.StaticLinkPrompt? button,
+    $265.StaticLinkPrompt? button,
   }) {
     final $result = create();
     if (title != null) {
@@ -66,14 +66,14 @@ class StaticTablePrompt extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
-    ..aOM<$262.StaticImagePrompt>(3, _omitFieldNames ? '' : 'image',
-        subBuilder: $262.StaticImagePrompt.create)
+    ..aOM<$264.StaticImagePrompt>(3, _omitFieldNames ? '' : 'image',
+        subBuilder: $264.StaticImagePrompt.create)
     ..pc<TableColumn>(4, _omitFieldNames ? '' : 'columns', $pb.PbFieldType.PM,
         subBuilder: TableColumn.create)
     ..pc<TableRow>(5, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM,
         subBuilder: TableRow.create)
-    ..aOM<$263.StaticLinkPrompt>(6, _omitFieldNames ? '' : 'button',
-        subBuilder: $263.StaticLinkPrompt.create)
+    ..aOM<$265.StaticLinkPrompt>(6, _omitFieldNames ? '' : 'button',
+        subBuilder: $265.StaticLinkPrompt.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -127,9 +127,9 @@ class StaticTablePrompt extends $pb.GeneratedMessage {
 
   /// Optional. Image associated with the table.
   @$pb.TagNumber(3)
-  $262.StaticImagePrompt get image => $_getN(2);
+  $264.StaticImagePrompt get image => $_getN(2);
   @$pb.TagNumber(3)
-  set image($262.StaticImagePrompt v) {
+  set image($264.StaticImagePrompt v) {
     setField(3, v);
   }
 
@@ -138,7 +138,7 @@ class StaticTablePrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearImage() => clearField(3);
   @$pb.TagNumber(3)
-  $262.StaticImagePrompt ensureImage() => $_ensure(2);
+  $264.StaticImagePrompt ensureImage() => $_ensure(2);
 
   /// Optional. Headers and alignment of columns.
   @$pb.TagNumber(4)
@@ -154,9 +154,9 @@ class StaticTablePrompt extends $pb.GeneratedMessage {
 
   /// Optional. Button.
   @$pb.TagNumber(6)
-  $263.StaticLinkPrompt get button => $_getN(5);
+  $265.StaticLinkPrompt get button => $_getN(5);
   @$pb.TagNumber(6)
-  set button($263.StaticLinkPrompt v) {
+  set button($265.StaticLinkPrompt v) {
     setField(6, v);
   }
 
@@ -165,7 +165,7 @@ class StaticTablePrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearButton() => clearField(6);
   @$pb.TagNumber(6)
-  $263.StaticLinkPrompt ensureButton() => $_ensure(5);
+  $265.StaticLinkPrompt ensureButton() => $_ensure(5);
 }
 
 /// Describes a column in the table.

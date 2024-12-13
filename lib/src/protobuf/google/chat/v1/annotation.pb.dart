@@ -16,7 +16,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'annotation.pbenum.dart';
 import 'attachment.pb.dart' as $97;
-import 'user.pb.dart' as $406;
+import 'user.pb.dart' as $408;
 
 export 'annotation.pbenum.dart';
 
@@ -228,7 +228,7 @@ class Annotation extends $pb.GeneratedMessage {
 /// Annotation metadata for user mentions (@).
 class UserMentionMetadata extends $pb.GeneratedMessage {
   factory UserMentionMetadata({
-    $406.User? user,
+    $408.User? user,
     UserMentionMetadata_Type? type,
   }) {
     final $result = create();
@@ -252,8 +252,8 @@ class UserMentionMetadata extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'UserMentionMetadata',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
-    ..aOM<$406.User>(1, _omitFieldNames ? '' : 'user',
-        subBuilder: $406.User.create)
+    ..aOM<$408.User>(1, _omitFieldNames ? '' : 'user',
+        subBuilder: $408.User.create)
     ..e<UserMentionMetadata_Type>(
         2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
         defaultOrMaker: UserMentionMetadata_Type.TYPE_UNSPECIFIED,
@@ -286,9 +286,9 @@ class UserMentionMetadata extends $pb.GeneratedMessage {
 
   /// The user mentioned.
   @$pb.TagNumber(1)
-  $406.User get user => $_getN(0);
+  $408.User get user => $_getN(0);
   @$pb.TagNumber(1)
-  set user($406.User v) {
+  set user($408.User v) {
     setField(1, v);
   }
 
@@ -297,7 +297,7 @@ class UserMentionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearUser() => clearField(1);
   @$pb.TagNumber(1)
-  $406.User ensureUser() => $_ensure(0);
+  $408.User ensureUser() => $_ensure(0);
 
   /// The type of user mention.
   @$pb.TagNumber(2)
@@ -316,7 +316,7 @@ class UserMentionMetadata extends $pb.GeneratedMessage {
 /// Annotation metadata for slash commands (/).
 class SlashCommandMetadata extends $pb.GeneratedMessage {
   factory SlashCommandMetadata({
-    $406.User? bot,
+    $408.User? bot,
     SlashCommandMetadata_Type? type,
     $core.String? commandName,
     $fixnum.Int64? commandId,
@@ -352,8 +352,8 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'SlashCommandMetadata',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
-    ..aOM<$406.User>(1, _omitFieldNames ? '' : 'bot',
-        subBuilder: $406.User.create)
+    ..aOM<$408.User>(1, _omitFieldNames ? '' : 'bot',
+        subBuilder: $408.User.create)
     ..e<SlashCommandMetadata_Type>(
         2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE,
         defaultOrMaker: SlashCommandMetadata_Type.TYPE_UNSPECIFIED,
@@ -390,9 +390,9 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
 
   /// The Chat app whose command was invoked.
   @$pb.TagNumber(1)
-  $406.User get bot => $_getN(0);
+  $408.User get bot => $_getN(0);
   @$pb.TagNumber(1)
-  set bot($406.User v) {
+  set bot($408.User v) {
     setField(1, v);
   }
 
@@ -401,7 +401,7 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearBot() => clearField(1);
   @$pb.TagNumber(1)
-  $406.User ensureBot() => $_ensure(0);
+  $408.User ensureBot() => $_ensure(0);
 
   /// The type of slash command.
   @$pb.TagNumber(2)

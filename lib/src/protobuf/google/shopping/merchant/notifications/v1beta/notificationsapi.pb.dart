@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $333;
-import '../../../type/types.pbenum.dart' as $537;
+import '../../../../protobuf/field_mask.pb.dart' as $335;
+import '../../../type/types.pbenum.dart' as $540;
 import 'notificationsapi.pbenum.dart';
 
 export 'notificationsapi.pbenum.dart';
@@ -187,7 +187,7 @@ class CreateNotificationSubscriptionRequest extends $pb.GeneratedMessage {
 class UpdateNotificationSubscriptionRequest extends $pb.GeneratedMessage {
   factory UpdateNotificationSubscriptionRequest({
     NotificationSubscription? notificationSubscription,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (notificationSubscription != null) {
@@ -216,8 +216,8 @@ class UpdateNotificationSubscriptionRequest extends $pb.GeneratedMessage {
     ..aOM<NotificationSubscription>(
         1, _omitFieldNames ? '' : 'notificationSubscription',
         subBuilder: NotificationSubscription.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -266,9 +266,9 @@ class UpdateNotificationSubscriptionRequest extends $pb.GeneratedMessage {
 
   /// List of fields being updated.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -277,7 +277,7 @@ class UpdateNotificationSubscriptionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the DeleteNotificationSubscription method.
@@ -722,7 +722,7 @@ class ProductChange extends $pb.GeneratedMessage {
     $core.String? oldValue,
     $core.String? newValue,
     $core.String? regionCode,
-    $537.ReportingContext_ReportingContextEnum? reportingContext,
+    $540.ReportingContext_ReportingContextEnum? reportingContext,
   }) {
     final $result = create();
     if (oldValue != null) {
@@ -756,12 +756,12 @@ class ProductChange extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'oldValue')
     ..aOS(2, _omitFieldNames ? '' : 'newValue')
     ..aOS(3, _omitFieldNames ? '' : 'regionCode')
-    ..e<$537.ReportingContext_ReportingContextEnum>(
+    ..e<$540.ReportingContext_ReportingContextEnum>(
         4, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE,
-        defaultOrMaker: $537.ReportingContext_ReportingContextEnum
+        defaultOrMaker: $540.ReportingContext_ReportingContextEnum
             .REPORTING_CONTEXT_ENUM_UNSPECIFIED,
-        valueOf: $537.ReportingContext_ReportingContextEnum.valueOf,
-        enumValues: $537.ReportingContext_ReportingContextEnum.values)
+        valueOf: $540.ReportingContext_ReportingContextEnum.valueOf,
+        enumValues: $540.ReportingContext_ReportingContextEnum.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -828,9 +828,9 @@ class ProductChange extends $pb.GeneratedMessage {
 
   /// Reporting contexts that have the change (if applicable)
   @$pb.TagNumber(4)
-  $537.ReportingContext_ReportingContextEnum get reportingContext => $_getN(3);
+  $540.ReportingContext_ReportingContextEnum get reportingContext => $_getN(3);
   @$pb.TagNumber(4)
-  set reportingContext($537.ReportingContext_ReportingContextEnum v) {
+  set reportingContext($540.ReportingContext_ReportingContextEnum v) {
     setField(4, v);
   }
 

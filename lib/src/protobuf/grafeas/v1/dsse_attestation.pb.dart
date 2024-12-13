@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $557;
-import 'intoto_statement.pb.dart' as $562;
+import 'common.pb.dart' as $562;
+import 'intoto_statement.pb.dart' as $567;
 
 /// This submessage provides human-readable hints about the purpose of the
 /// authority. Because the name of a note acts as its resource reference, it is
@@ -161,8 +161,8 @@ enum DSSEAttestationOccurrence_DecodedPayload { statement, notSet }
 /// Envelope at the top level of the Occurrence.
 class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
   factory DSSEAttestationOccurrence({
-    $557.Envelope? envelope,
-    $562.InTotoStatement? statement,
+    $562.Envelope? envelope,
+    $567.InTotoStatement? statement,
   }) {
     final $result = create();
     if (envelope != null) {
@@ -191,10 +191,10 @@ class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
       createEmptyInstance: create)
     ..oo(0, [2])
-    ..aOM<$557.Envelope>(1, _omitFieldNames ? '' : 'envelope',
-        subBuilder: $557.Envelope.create)
-    ..aOM<$562.InTotoStatement>(2, _omitFieldNames ? '' : 'statement',
-        subBuilder: $562.InTotoStatement.create)
+    ..aOM<$562.Envelope>(1, _omitFieldNames ? '' : 'envelope',
+        subBuilder: $562.Envelope.create)
+    ..aOM<$567.InTotoStatement>(2, _omitFieldNames ? '' : 'statement',
+        subBuilder: $567.InTotoStatement.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -229,9 +229,9 @@ class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
   /// If doing something security critical, make sure to verify the signatures in
   /// this metadata.
   @$pb.TagNumber(1)
-  $557.Envelope get envelope => $_getN(0);
+  $562.Envelope get envelope => $_getN(0);
   @$pb.TagNumber(1)
-  set envelope($557.Envelope v) {
+  set envelope($562.Envelope v) {
     setField(1, v);
   }
 
@@ -240,12 +240,12 @@ class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearEnvelope() => clearField(1);
   @$pb.TagNumber(1)
-  $557.Envelope ensureEnvelope() => $_ensure(0);
+  $562.Envelope ensureEnvelope() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $562.InTotoStatement get statement => $_getN(1);
+  $567.InTotoStatement get statement => $_getN(1);
   @$pb.TagNumber(2)
-  set statement($562.InTotoStatement v) {
+  set statement($567.InTotoStatement v) {
     setField(2, v);
   }
 
@@ -254,7 +254,7 @@ class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStatement() => clearField(2);
   @$pb.TagNumber(2)
-  $562.InTotoStatement ensureStatement() => $_ensure(1);
+  $567.InTotoStatement ensureStatement() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

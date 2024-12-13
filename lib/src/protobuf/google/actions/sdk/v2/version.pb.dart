@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 import 'version.pbenum.dart';
 
 export 'version.pbenum.dart';
@@ -111,7 +111,7 @@ class Version extends $pb.GeneratedMessage {
     $core.String? name,
     Version_VersionState? versionState,
     $core.String? creator,
-    $302.Timestamp? updateTime,
+    $304.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -145,8 +145,8 @@ class Version extends $pb.GeneratedMessage {
     ..aOM<Version_VersionState>(2, _omitFieldNames ? '' : 'versionState',
         subBuilder: Version_VersionState.create)
     ..aOS(3, _omitFieldNames ? '' : 'creator')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -214,9 +214,9 @@ class Version extends $pb.GeneratedMessage {
 
   /// Timestamp of the last change to this version.
   @$pb.TagNumber(4)
-  $302.Timestamp get updateTime => $_getN(3);
+  $304.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -225,7 +225,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureUpdateTime() => $_ensure(3);
+  $304.Timestamp ensureUpdateTime() => $_ensure(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

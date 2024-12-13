@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../protobuf/field_mask.pb.dart' as $335;
 import 'resources.pb.dart' as $48;
 import 'resources.pbenum.dart' as $48;
 import 'serviceusage.pbenum.dart';
@@ -1063,7 +1063,7 @@ class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
     $core.String? name,
     $48.QuotaOverride? override,
     $core.bool? force,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     $core.Iterable<$48.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
@@ -1101,8 +1101,8 @@ class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
     ..aOM<$48.QuotaOverride>(2, _omitFieldNames ? '' : 'override',
         subBuilder: $48.QuotaOverride.create)
     ..aOB(3, _omitFieldNames ? '' : 'force')
-    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(4, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..pc<$48.QuotaSafetyCheck>(
         5, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE,
         valueOf: $48.QuotaSafetyCheck.valueOf,
@@ -1186,9 +1186,9 @@ class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
   /// Update only the specified fields of the override.
   /// If unset, all fields will be updated.
   @$pb.TagNumber(4)
-  $333.FieldMask get updateMask => $_getN(3);
+  $335.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(4, v);
   }
 
@@ -1197,7 +1197,7 @@ class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $333.FieldMask ensureUpdateMask() => $_ensure(3);
+  $335.FieldMask ensureUpdateMask() => $_ensure(3);
 
   /// The list of quota safety checks to ignore before the override mutation.
   /// Unlike 'force' field that ignores all the quota safety checks, the
@@ -1945,7 +1945,7 @@ class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
     $core.String? name,
     $48.QuotaOverride? override,
     $core.bool? force,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     $core.Iterable<$48.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
@@ -1983,8 +1983,8 @@ class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
     ..aOM<$48.QuotaOverride>(2, _omitFieldNames ? '' : 'override',
         subBuilder: $48.QuotaOverride.create)
     ..aOB(3, _omitFieldNames ? '' : 'force')
-    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(4, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..pc<$48.QuotaSafetyCheck>(
         5, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE,
         valueOf: $48.QuotaSafetyCheck.valueOf,
@@ -2069,9 +2069,9 @@ class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
   /// Update only the specified fields of the override.
   /// If unset, all fields will be updated.
   @$pb.TagNumber(4)
-  $333.FieldMask get updateMask => $_getN(3);
+  $335.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(4, v);
   }
 
@@ -2080,7 +2080,7 @@ class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $333.FieldMask ensureUpdateMask() => $_ensure(3);
+  $335.FieldMask ensureUpdateMask() => $_ensure(3);
 
   /// The list of quota safety checks to ignore before the override mutation.
   /// Unlike 'force' field that ignores all the quota safety checks, the

@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $264;
-import '../../../protobuf/field_mask.pb.dart' as $333;
-import '../../../protobuf/timestamp.pb.dart' as $302;
-import 'fleetengine.pbenum.dart' as $457;
-import 'header.pb.dart' as $458;
+import '../../../protobuf/duration.pb.dart' as $266;
+import '../../../protobuf/field_mask.pb.dart' as $335;
+import '../../../protobuf/timestamp.pb.dart' as $304;
+import 'fleetengine.pbenum.dart' as $459;
+import 'header.pb.dart' as $460;
 import 'trip_api.pbenum.dart';
 import 'trips.pb.dart' as $165;
 import 'trips.pbenum.dart' as $165;
@@ -27,7 +27,7 @@ export 'trip_api.pbenum.dart';
 /// CreateTrip request message.
 class CreateTripRequest extends $pb.GeneratedMessage {
   factory CreateTripRequest({
-    $458.RequestHeader? header,
+    $460.RequestHeader? header,
     $core.String? parent,
     $165.Trip? trip,
     $core.String? tripId,
@@ -60,8 +60,8 @@ class CreateTripRequest extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
       createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $458.RequestHeader.create)
+    ..aOM<$460.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $460.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..aOM<$165.Trip>(4, _omitFieldNames ? '' : 'trip',
         subBuilder: $165.Trip.create)
@@ -93,9 +93,9 @@ class CreateTripRequest extends $pb.GeneratedMessage {
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
-  $458.RequestHeader get header => $_getN(0);
+  $460.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) {
+  set header($460.RequestHeader v) {
     setField(1, v);
   }
 
@@ -104,7 +104,7 @@ class CreateTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $458.RequestHeader ensureHeader() => $_ensure(0);
+  $460.RequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}`.
   /// The provider must be the Project ID (for example, `sample-cloud-project`)
@@ -196,13 +196,13 @@ class CreateTripRequest extends $pb.GeneratedMessage {
 /// GetTrip request message.
 class GetTripRequest extends $pb.GeneratedMessage {
   factory GetTripRequest({
-    $458.RequestHeader? header,
+    $460.RequestHeader? header,
     $core.String? name,
-    $302.Timestamp? currentRouteSegmentVersion,
-    $302.Timestamp? remainingWaypointsVersion,
-    $457.PolylineFormatType? routeFormatType,
-    $302.Timestamp? currentRouteSegmentTrafficVersion,
-    $302.Timestamp? remainingWaypointsRouteVersion,
+    $304.Timestamp? currentRouteSegmentVersion,
+    $304.Timestamp? remainingWaypointsVersion,
+    $459.PolylineFormatType? routeFormatType,
+    $304.Timestamp? currentRouteSegmentTrafficVersion,
+    $304.Timestamp? remainingWaypointsRouteVersion,
     $165.TripView? view,
   }) {
     final $result = create();
@@ -246,25 +246,25 @@ class GetTripRequest extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
       createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $458.RequestHeader.create)
+    ..aOM<$460.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $460.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(
+    ..aOM<$304.Timestamp>(
         6, _omitFieldNames ? '' : 'currentRouteSegmentVersion',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'remainingWaypointsVersion',
-        subBuilder: $302.Timestamp.create)
-    ..e<$457.PolylineFormatType>(
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'remainingWaypointsVersion',
+        subBuilder: $304.Timestamp.create)
+    ..e<$459.PolylineFormatType>(
         8, _omitFieldNames ? '' : 'routeFormatType', $pb.PbFieldType.OE,
-        defaultOrMaker: $457.PolylineFormatType.UNKNOWN_FORMAT_TYPE,
-        valueOf: $457.PolylineFormatType.valueOf,
-        enumValues: $457.PolylineFormatType.values)
-    ..aOM<$302.Timestamp>(
+        defaultOrMaker: $459.PolylineFormatType.UNKNOWN_FORMAT_TYPE,
+        valueOf: $459.PolylineFormatType.valueOf,
+        enumValues: $459.PolylineFormatType.values)
+    ..aOM<$304.Timestamp>(
         9, _omitFieldNames ? '' : 'currentRouteSegmentTrafficVersion',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(
         10, _omitFieldNames ? '' : 'remainingWaypointsRouteVersion',
-        subBuilder: $302.Timestamp.create)
+        subBuilder: $304.Timestamp.create)
     ..e<$165.TripView>(11, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE,
         defaultOrMaker: $165.TripView.TRIP_VIEW_UNSPECIFIED,
         valueOf: $165.TripView.valueOf,
@@ -296,9 +296,9 @@ class GetTripRequest extends $pb.GeneratedMessage {
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
-  $458.RequestHeader get header => $_getN(0);
+  $460.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) {
+  set header($460.RequestHeader v) {
     setField(1, v);
   }
 
@@ -307,7 +307,7 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $458.RequestHeader ensureHeader() => $_ensure(0);
+  $460.RequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}/trips/{trip}`.
   /// The provider must be the Project ID (for example, `sample-cloud-project`)
@@ -330,9 +330,9 @@ class GetTripRequest extends $pb.GeneratedMessage {
   /// unchanged since this timestamp, the route field is not set in the response.
   /// If a minimum is unspecified, the route data are always retrieved.
   @$pb.TagNumber(6)
-  $302.Timestamp get currentRouteSegmentVersion => $_getN(2);
+  $304.Timestamp get currentRouteSegmentVersion => $_getN(2);
   @$pb.TagNumber(6)
-  set currentRouteSegmentVersion($302.Timestamp v) {
+  set currentRouteSegmentVersion($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -341,16 +341,16 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearCurrentRouteSegmentVersion() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureCurrentRouteSegmentVersion() => $_ensure(2);
+  $304.Timestamp ensureCurrentRouteSegmentVersion() => $_ensure(2);
 
   /// Indicates the minimum timestamp (exclusive) for which
   /// `Trip.remaining_waypoints` are retrieved. If they are unchanged since this
   /// timestamp, the `remaining_waypoints` are not set in the response. If this
   /// field is unspecified, `remaining_waypoints` is always retrieved.
   @$pb.TagNumber(7)
-  $302.Timestamp get remainingWaypointsVersion => $_getN(3);
+  $304.Timestamp get remainingWaypointsVersion => $_getN(3);
   @$pb.TagNumber(7)
-  set remainingWaypointsVersion($302.Timestamp v) {
+  set remainingWaypointsVersion($304.Timestamp v) {
     setField(7, v);
   }
 
@@ -359,15 +359,15 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearRemainingWaypointsVersion() => clearField(7);
   @$pb.TagNumber(7)
-  $302.Timestamp ensureRemainingWaypointsVersion() => $_ensure(3);
+  $304.Timestamp ensureRemainingWaypointsVersion() => $_ensure(3);
 
   /// The returned current route format, `LAT_LNG_LIST_TYPE` (in `Trip.route`),
   /// or `ENCODED_POLYLINE_TYPE` (in `Trip.current_route_segment`). The default
   /// is `LAT_LNG_LIST_TYPE`.
   @$pb.TagNumber(8)
-  $457.PolylineFormatType get routeFormatType => $_getN(4);
+  $459.PolylineFormatType get routeFormatType => $_getN(4);
   @$pb.TagNumber(8)
-  set routeFormatType($457.PolylineFormatType v) {
+  set routeFormatType($459.PolylineFormatType v) {
     setField(8, v);
   }
 
@@ -383,9 +383,9 @@ class GetTripRequest extends $pb.GeneratedMessage {
   /// are always retrieved. Note that traffic is only available for On-Demand
   /// Rides and Deliveries Solution customers.
   @$pb.TagNumber(9)
-  $302.Timestamp get currentRouteSegmentTrafficVersion => $_getN(5);
+  $304.Timestamp get currentRouteSegmentTrafficVersion => $_getN(5);
   @$pb.TagNumber(9)
-  set currentRouteSegmentTrafficVersion($302.Timestamp v) {
+  set currentRouteSegmentTrafficVersion($304.Timestamp v) {
     setField(9, v);
   }
 
@@ -394,7 +394,7 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearCurrentRouteSegmentTrafficVersion() => clearField(9);
   @$pb.TagNumber(9)
-  $302.Timestamp ensureCurrentRouteSegmentTrafficVersion() => $_ensure(5);
+  $304.Timestamp ensureCurrentRouteSegmentTrafficVersion() => $_ensure(5);
 
   /// Indicates the minimum timestamp (exclusive) for which
   /// `Trip.remaining_waypoints.traffic_to_waypoint` and
@@ -403,9 +403,9 @@ class GetTripRequest extends $pb.GeneratedMessage {
   /// not set in the response. If `remaining_waypoints_route_version` is
   /// unspecified, traffic and path are always retrieved.
   @$pb.TagNumber(10)
-  $302.Timestamp get remainingWaypointsRouteVersion => $_getN(6);
+  $304.Timestamp get remainingWaypointsRouteVersion => $_getN(6);
   @$pb.TagNumber(10)
-  set remainingWaypointsRouteVersion($302.Timestamp v) {
+  set remainingWaypointsRouteVersion($304.Timestamp v) {
     setField(10, v);
   }
 
@@ -414,7 +414,7 @@ class GetTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearRemainingWaypointsRouteVersion() => clearField(10);
   @$pb.TagNumber(10)
-  $302.Timestamp ensureRemainingWaypointsRouteVersion() => $_ensure(6);
+  $304.Timestamp ensureRemainingWaypointsRouteVersion() => $_ensure(6);
 
   /// The subset of Trip fields that should be returned and their interpretation.
   @$pb.TagNumber(11)
@@ -581,10 +581,10 @@ class ReportBillableTripRequest extends $pb.GeneratedMessage {
 /// UpdateTrip request message.
 class UpdateTripRequest extends $pb.GeneratedMessage {
   factory UpdateTripRequest({
-    $458.RequestHeader? header,
+    $460.RequestHeader? header,
     $core.String? name,
     $165.Trip? trip,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (header != null) {
@@ -614,13 +614,13 @@ class UpdateTripRequest extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
       createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $458.RequestHeader.create)
+    ..aOM<$460.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $460.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOM<$165.Trip>(4, _omitFieldNames ? '' : 'trip',
         subBuilder: $165.Trip.create)
-    ..aOM<$333.FieldMask>(5, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(5, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -648,9 +648,9 @@ class UpdateTripRequest extends $pb.GeneratedMessage {
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
-  $458.RequestHeader get header => $_getN(0);
+  $460.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) {
+  set header($460.RequestHeader v) {
     setField(1, v);
   }
 
@@ -659,7 +659,7 @@ class UpdateTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $458.RequestHeader ensureHeader() => $_ensure(0);
+  $460.RequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format
   /// `providers/{provider}/trips/{trip}`. The provider must
@@ -735,9 +735,9 @@ class UpdateTripRequest extends $pb.GeneratedMessage {
   /// Required. The field mask indicating which fields in Trip to update.
   /// The `update_mask` must contain at least one field.
   @$pb.TagNumber(5)
-  $333.FieldMask get updateMask => $_getN(3);
+  $335.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(5)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(5, v);
   }
 
@@ -746,19 +746,19 @@ class UpdateTripRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearUpdateMask() => clearField(5);
   @$pb.TagNumber(5)
-  $333.FieldMask ensureUpdateMask() => $_ensure(3);
+  $335.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// SearchTrips request message.
 class SearchTripsRequest extends $pb.GeneratedMessage {
   factory SearchTripsRequest({
-    $458.RequestHeader? header,
+    $460.RequestHeader? header,
     $core.String? parent,
     $core.String? vehicleId,
     $core.bool? activeTripsOnly,
     $core.int? pageSize,
     $core.String? pageToken,
-    $264.Duration? minimumStaleness,
+    $266.Duration? minimumStaleness,
   }) {
     final $result = create();
     if (header != null) {
@@ -797,15 +797,15 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
       createEmptyInstance: create)
-    ..aOM<$458.RequestHeader>(1, _omitFieldNames ? '' : 'header',
-        subBuilder: $458.RequestHeader.create)
+    ..aOM<$460.RequestHeader>(1, _omitFieldNames ? '' : 'header',
+        subBuilder: $460.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..aOS(4, _omitFieldNames ? '' : 'vehicleId')
     ..aOB(5, _omitFieldNames ? '' : 'activeTripsOnly')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(7, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'minimumStaleness',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(8, _omitFieldNames ? '' : 'minimumStaleness',
+        subBuilder: $266.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -833,9 +833,9 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
-  $458.RequestHeader get header => $_getN(0);
+  $460.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($458.RequestHeader v) {
+  set header($460.RequestHeader v) {
     setField(1, v);
   }
 
@@ -844,7 +844,7 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $458.RequestHeader ensureHeader() => $_ensure(0);
+  $460.RequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}`.
   /// The provider must be the Project ID (for example, `sample-cloud-project`)
@@ -925,9 +925,9 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
   /// If specified, returns the trips that have not been updated after the time
   /// `(current - minimum_staleness)`.
   @$pb.TagNumber(8)
-  $264.Duration get minimumStaleness => $_getN(6);
+  $266.Duration get minimumStaleness => $_getN(6);
   @$pb.TagNumber(8)
-  set minimumStaleness($264.Duration v) {
+  set minimumStaleness($266.Duration v) {
     setField(8, v);
   }
 
@@ -936,7 +936,7 @@ class SearchTripsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearMinimumStaleness() => clearField(8);
   @$pb.TagNumber(8)
-  $264.Duration ensureMinimumStaleness() => $_ensure(6);
+  $266.Duration ensureMinimumStaleness() => $_ensure(6);
 }
 
 /// SearchTrips response message.

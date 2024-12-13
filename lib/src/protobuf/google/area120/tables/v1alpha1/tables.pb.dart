@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $333;
-import '../../../protobuf/struct.pb.dart' as $261;
+import '../../../protobuf/field_mask.pb.dart' as $335;
+import '../../../protobuf/struct.pb.dart' as $263;
 import 'tables.pbenum.dart';
 
 export 'tables.pbenum.dart';
@@ -1045,7 +1045,7 @@ class BatchCreateRowsResponse extends $pb.GeneratedMessage {
 class UpdateRowRequest extends $pb.GeneratedMessage {
   factory UpdateRowRequest({
     Row? row,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     View? view,
   }) {
     final $result = create();
@@ -1074,8 +1074,8 @@ class UpdateRowRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.area120.tables.v1alpha1'),
       createEmptyInstance: create)
     ..aOM<Row>(1, _omitFieldNames ? '' : 'row', subBuilder: Row.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..e<View>(3, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE,
         defaultOrMaker: View.VIEW_UNSPECIFIED,
         valueOf: View.valueOf,
@@ -1122,9 +1122,9 @@ class UpdateRowRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to update.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -1133,7 +1133,7 @@ class UpdateRowRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. Column key to use for values in the row.
   /// Defaults to user entered name.
@@ -1922,7 +1922,7 @@ class LookupDetails extends $pb.GeneratedMessage {
 class Row extends $pb.GeneratedMessage {
   factory Row({
     $core.String? name,
-    $core.Map<$core.String, $261.Value>? values,
+    $core.Map<$core.String, $263.Value>? values,
   }) {
     final $result = create();
     if (name != null) {
@@ -1947,12 +1947,12 @@ class Row extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.area120.tables.v1alpha1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..m<$core.String, $261.Value>(2, _omitFieldNames ? '' : 'values',
+    ..m<$core.String, $263.Value>(2, _omitFieldNames ? '' : 'values',
         entryClassName: 'Row.ValuesEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OM,
-        valueCreator: $261.Value.create,
-        valueDefaultOrMaker: $261.Value.getDefault,
+        valueCreator: $263.Value.create,
+        valueDefaultOrMaker: $263.Value.getDefault,
         packageName: const $pb.PackageName('google.area120.tables.v1alpha1'))
     ..hasRequiredFields = false;
 
@@ -1996,7 +1996,7 @@ class Row extends $pb.GeneratedMessage {
   /// Key is user entered name(default) or the internal column id based on
   /// the view in the request.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $261.Value> get values => $_getMap(1);
+  $core.Map<$core.String, $263.Value> get values => $_getMap(1);
 }
 
 /// A single workspace.

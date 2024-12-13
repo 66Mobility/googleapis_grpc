@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../protobuf/duration.pb.dart' as $264;
-import 'image.pb.dart' as $309;
+import '../../../../../../protobuf/duration.pb.dart' as $266;
+import 'image.pb.dart' as $311;
 import 'media.pbenum.dart';
 
 export 'media.pbenum.dart';
@@ -23,7 +23,7 @@ export 'media.pbenum.dart';
 /// Contains information about the media, such as name, description, url, etc.
 class Media extends $pb.GeneratedMessage {
   factory Media({
-    $264.Duration? startOffset,
+    $266.Duration? startOffset,
     $core.Iterable<Media_OptionalMediaControls>? optionalMediaControls,
     $core.Iterable<MediaObject>? mediaObjects,
     Media_MediaType? mediaType,
@@ -56,8 +56,8 @@ class Media extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
       createEmptyInstance: create)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'startOffset',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(5, _omitFieldNames ? '' : 'startOffset',
+        subBuilder: $266.Duration.create)
     ..pc<Media_OptionalMediaControls>(
         6, _omitFieldNames ? '' : 'optionalMediaControls', $pb.PbFieldType.KE,
         valueOf: Media_OptionalMediaControls.valueOf,
@@ -97,9 +97,9 @@ class Media extends $pb.GeneratedMessage {
 
   /// Start offset of the first media object.
   @$pb.TagNumber(5)
-  $264.Duration get startOffset => $_getN(0);
+  $266.Duration get startOffset => $_getN(0);
   @$pb.TagNumber(5)
-  set startOffset($264.Duration v) {
+  set startOffset($266.Duration v) {
     setField(5, v);
   }
 
@@ -108,7 +108,7 @@ class Media extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearStartOffset() => clearField(5);
   @$pb.TagNumber(5)
-  $264.Duration ensureStartOffset() => $_ensure(0);
+  $266.Duration ensureStartOffset() => $_ensure(0);
 
   /// Optional media control types this media response session can support.
   /// If set, request will be made to 3p when a certain media event happens.
@@ -261,8 +261,8 @@ enum MediaImage_Image { large, icon, notSet }
 /// Image to show with the media card.
 class MediaImage extends $pb.GeneratedMessage {
   factory MediaImage({
-    $309.Image? large,
-    $309.Image? icon,
+    $311.Image? large,
+    $311.Image? icon,
   }) {
     final $result = create();
     if (large != null) {
@@ -292,10 +292,10 @@ class MediaImage extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
       createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$309.Image>(1, _omitFieldNames ? '' : 'large',
-        subBuilder: $309.Image.create)
-    ..aOM<$309.Image>(2, _omitFieldNames ? '' : 'icon',
-        subBuilder: $309.Image.create)
+    ..aOM<$311.Image>(1, _omitFieldNames ? '' : 'large',
+        subBuilder: $311.Image.create)
+    ..aOM<$311.Image>(2, _omitFieldNames ? '' : 'icon',
+        subBuilder: $311.Image.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -324,9 +324,9 @@ class MediaImage extends $pb.GeneratedMessage {
 
   /// A large image, such as the cover of the album, etc.
   @$pb.TagNumber(1)
-  $309.Image get large => $_getN(0);
+  $311.Image get large => $_getN(0);
   @$pb.TagNumber(1)
-  set large($309.Image v) {
+  set large($311.Image v) {
     setField(1, v);
   }
 
@@ -335,14 +335,14 @@ class MediaImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearLarge() => clearField(1);
   @$pb.TagNumber(1)
-  $309.Image ensureLarge() => $_ensure(0);
+  $311.Image ensureLarge() => $_ensure(0);
 
   /// A small image icon displayed on the right from the title.
   /// It's resized to 36x36 dp.
   @$pb.TagNumber(2)
-  $309.Image get icon => $_getN(1);
+  $311.Image get icon => $_getN(1);
   @$pb.TagNumber(2)
-  set icon($309.Image v) {
+  set icon($311.Image v) {
     setField(2, v);
   }
 
@@ -351,7 +351,7 @@ class MediaImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearIcon() => clearField(2);
   @$pb.TagNumber(2)
-  $309.Image ensureIcon() => $_ensure(1);
+  $311.Image ensureIcon() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

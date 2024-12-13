@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $264;
-import '../../protobuf/timestamp.pb.dart' as $302;
-import '../../rpc/code.pbenum.dart' as $405;
-import '../../type/date.pb.dart' as $327;
-import '../../type/timeofday.pb.dart' as $536;
+import '../../protobuf/duration.pb.dart' as $266;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../rpc/code.pbenum.dart' as $407;
+import '../../type/date.pb.dart' as $329;
+import '../../type/timeofday.pb.dart' as $539;
 import 'transfer_types.pbenum.dart';
 
 export 'transfer_types.pbenum.dart';
@@ -278,12 +278,12 @@ class AzureCredentials extends $pb.GeneratedMessage {
 ///  source or destination don't support `ObjectConditions`.
 class ObjectConditions extends $pb.GeneratedMessage {
   factory ObjectConditions({
-    $264.Duration? minTimeElapsedSinceLastModification,
-    $264.Duration? maxTimeElapsedSinceLastModification,
+    $266.Duration? minTimeElapsedSinceLastModification,
+    $266.Duration? maxTimeElapsedSinceLastModification,
     $core.Iterable<$core.String>? includePrefixes,
     $core.Iterable<$core.String>? excludePrefixes,
-    $302.Timestamp? lastModifiedSince,
-    $302.Timestamp? lastModifiedBefore,
+    $304.Timestamp? lastModifiedSince,
+    $304.Timestamp? lastModifiedBefore,
   }) {
     final $result = create();
     if (minTimeElapsedSinceLastModification != null) {
@@ -321,18 +321,18 @@ class ObjectConditions extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.storagetransfer.v1'),
       createEmptyInstance: create)
-    ..aOM<$264.Duration>(
+    ..aOM<$266.Duration>(
         1, _omitFieldNames ? '' : 'minTimeElapsedSinceLastModification',
-        subBuilder: $264.Duration.create)
-    ..aOM<$264.Duration>(
+        subBuilder: $266.Duration.create)
+    ..aOM<$266.Duration>(
         2, _omitFieldNames ? '' : 'maxTimeElapsedSinceLastModification',
-        subBuilder: $264.Duration.create)
+        subBuilder: $266.Duration.create)
     ..pPS(3, _omitFieldNames ? '' : 'includePrefixes')
     ..pPS(4, _omitFieldNames ? '' : 'excludePrefixes')
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'lastModifiedSince',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'lastModifiedBefore',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'lastModifiedSince',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'lastModifiedBefore',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -368,9 +368,9 @@ class ObjectConditions extends $pb.GeneratedMessage {
   /// to or greater than the value of min_time_elapsed_since_last_modification`.
   /// Objects that do not have a "last modification time" are also transferred.
   @$pb.TagNumber(1)
-  $264.Duration get minTimeElapsedSinceLastModification => $_getN(0);
+  $266.Duration get minTimeElapsedSinceLastModification => $_getN(0);
   @$pb.TagNumber(1)
-  set minTimeElapsedSinceLastModification($264.Duration v) {
+  set minTimeElapsedSinceLastModification($266.Duration v) {
     setField(1, v);
   }
 
@@ -379,7 +379,7 @@ class ObjectConditions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearMinTimeElapsedSinceLastModification() => clearField(1);
   @$pb.TagNumber(1)
-  $264.Duration ensureMinTimeElapsedSinceLastModification() => $_ensure(0);
+  $266.Duration ensureMinTimeElapsedSinceLastModification() => $_ensure(0);
 
   /// Ensures that objects are not transferred if a specific maximum time
   /// has elapsed since the "last modification time".
@@ -391,9 +391,9 @@ class ObjectConditions extends $pb.GeneratedMessage {
   ///  is less than the value of max_time_elapsed_since_last_modification`.
   /// Objects that do not have a "last modification time" are also transferred.
   @$pb.TagNumber(2)
-  $264.Duration get maxTimeElapsedSinceLastModification => $_getN(1);
+  $266.Duration get maxTimeElapsedSinceLastModification => $_getN(1);
   @$pb.TagNumber(2)
-  set maxTimeElapsedSinceLastModification($264.Duration v) {
+  set maxTimeElapsedSinceLastModification($266.Duration v) {
     setField(2, v);
   }
 
@@ -402,7 +402,7 @@ class ObjectConditions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearMaxTimeElapsedSinceLastModification() => clearField(2);
   @$pb.TagNumber(2)
-  $264.Duration ensureMaxTimeElapsedSinceLastModification() => $_ensure(1);
+  $266.Duration ensureMaxTimeElapsedSinceLastModification() => $_ensure(1);
 
   ///  If you specify `include_prefixes`, Storage Transfer Service uses the items
   ///  in the `include_prefixes` array to determine which objects to include in a
@@ -483,9 +483,9 @@ class ObjectConditions extends $pb.GeneratedMessage {
   ///
   ///  *  `last_modified_before` to the end of the day
   @$pb.TagNumber(5)
-  $302.Timestamp get lastModifiedSince => $_getN(4);
+  $304.Timestamp get lastModifiedSince => $_getN(4);
   @$pb.TagNumber(5)
-  set lastModifiedSince($302.Timestamp v) {
+  set lastModifiedSince($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -494,15 +494,15 @@ class ObjectConditions extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearLastModifiedSince() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureLastModifiedSince() => $_ensure(4);
+  $304.Timestamp ensureLastModifiedSince() => $_ensure(4);
 
   /// If specified, only objects with a "last modification time" before this
   /// timestamp and objects that don't have a "last modification time" are
   /// transferred.
   @$pb.TagNumber(6)
-  $302.Timestamp get lastModifiedBefore => $_getN(5);
+  $304.Timestamp get lastModifiedBefore => $_getN(5);
   @$pb.TagNumber(6)
-  set lastModifiedBefore($302.Timestamp v) {
+  set lastModifiedBefore($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -511,7 +511,7 @@ class ObjectConditions extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearLastModifiedBefore() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureLastModifiedBefore() => $_ensure(5);
+  $304.Timestamp ensureLastModifiedBefore() => $_ensure(5);
 }
 
 /// In a GcsData resource, an object's name is the Cloud Storage object's
@@ -2691,11 +2691,11 @@ class TransferManifest extends $pb.GeneratedMessage {
 /// Transfers can be scheduled to recur or to run just once.
 class Schedule extends $pb.GeneratedMessage {
   factory Schedule({
-    $327.Date? scheduleStartDate,
-    $327.Date? scheduleEndDate,
-    $536.TimeOfDay? startTimeOfDay,
-    $536.TimeOfDay? endTimeOfDay,
-    $264.Duration? repeatInterval,
+    $329.Date? scheduleStartDate,
+    $329.Date? scheduleEndDate,
+    $539.TimeOfDay? startTimeOfDay,
+    $539.TimeOfDay? endTimeOfDay,
+    $266.Duration? repeatInterval,
   }) {
     final $result = create();
     if (scheduleStartDate != null) {
@@ -2728,16 +2728,16 @@ class Schedule extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.storagetransfer.v1'),
       createEmptyInstance: create)
-    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'scheduleStartDate',
-        subBuilder: $327.Date.create)
-    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'scheduleEndDate',
-        subBuilder: $327.Date.create)
-    ..aOM<$536.TimeOfDay>(3, _omitFieldNames ? '' : 'startTimeOfDay',
-        subBuilder: $536.TimeOfDay.create)
-    ..aOM<$536.TimeOfDay>(4, _omitFieldNames ? '' : 'endTimeOfDay',
-        subBuilder: $536.TimeOfDay.create)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'repeatInterval',
-        subBuilder: $264.Duration.create)
+    ..aOM<$329.Date>(1, _omitFieldNames ? '' : 'scheduleStartDate',
+        subBuilder: $329.Date.create)
+    ..aOM<$329.Date>(2, _omitFieldNames ? '' : 'scheduleEndDate',
+        subBuilder: $329.Date.create)
+    ..aOM<$539.TimeOfDay>(3, _omitFieldNames ? '' : 'startTimeOfDay',
+        subBuilder: $539.TimeOfDay.create)
+    ..aOM<$539.TimeOfDay>(4, _omitFieldNames ? '' : 'endTimeOfDay',
+        subBuilder: $539.TimeOfDay.create)
+    ..aOM<$266.Duration>(5, _omitFieldNames ? '' : 'repeatInterval',
+        subBuilder: $266.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2776,9 +2776,9 @@ class Schedule extends $pb.GeneratedMessage {
   ///  [TransferOperation][google.storagetransfer.v1.TransferOperation] takes
   ///  place on June 3 at midnight UTC.
   @$pb.TagNumber(1)
-  $327.Date get scheduleStartDate => $_getN(0);
+  $329.Date get scheduleStartDate => $_getN(0);
   @$pb.TagNumber(1)
-  set scheduleStartDate($327.Date v) {
+  set scheduleStartDate($329.Date v) {
     setField(1, v);
   }
 
@@ -2787,7 +2787,7 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearScheduleStartDate() => clearField(1);
   @$pb.TagNumber(1)
-  $327.Date ensureScheduleStartDate() => $_ensure(0);
+  $329.Date ensureScheduleStartDate() => $_ensure(0);
 
   ///  The last day a transfer runs. Date boundaries are determined relative to
   ///  UTC time. A job runs once per 24 hours within the following guidelines:
@@ -2802,9 +2802,9 @@ class Schedule extends $pb.GeneratedMessage {
   ///      [start_time_of_day][google.storagetransfer.v1.Schedule.start_time_of_day]
   ///      through `schedule_end_date`.
   @$pb.TagNumber(2)
-  $327.Date get scheduleEndDate => $_getN(1);
+  $329.Date get scheduleEndDate => $_getN(1);
   @$pb.TagNumber(2)
-  set scheduleEndDate($327.Date v) {
+  set scheduleEndDate($329.Date v) {
     setField(2, v);
   }
 
@@ -2813,7 +2813,7 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearScheduleEndDate() => clearField(2);
   @$pb.TagNumber(2)
-  $327.Date ensureScheduleEndDate() => $_ensure(1);
+  $329.Date ensureScheduleEndDate() => $_ensure(1);
 
   ///  The time in UTC that a transfer job is scheduled to run. Transfers may
   ///  start later than this time.
@@ -2831,9 +2831,9 @@ class Schedule extends $pb.GeneratedMessage {
   ///  *   Recurring transfers run at the specified time each day, through
   ///      `schedule_end_date`.
   @$pb.TagNumber(3)
-  $536.TimeOfDay get startTimeOfDay => $_getN(2);
+  $539.TimeOfDay get startTimeOfDay => $_getN(2);
   @$pb.TagNumber(3)
-  set startTimeOfDay($536.TimeOfDay v) {
+  set startTimeOfDay($539.TimeOfDay v) {
     setField(3, v);
   }
 
@@ -2842,7 +2842,7 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearStartTimeOfDay() => clearField(3);
   @$pb.TagNumber(3)
-  $536.TimeOfDay ensureStartTimeOfDay() => $_ensure(2);
+  $539.TimeOfDay ensureStartTimeOfDay() => $_ensure(2);
 
   ///  The time in UTC that no further transfer operations are scheduled. Combined
   ///  with
@@ -2861,9 +2861,9 @@ class Schedule extends $pb.GeneratedMessage {
   ///  *   If `end_time_of_day` is set and `schedule_end_date` is not set, then
   ///      [INVALID_ARGUMENT][google.rpc.Code.INVALID_ARGUMENT] is returned.
   @$pb.TagNumber(4)
-  $536.TimeOfDay get endTimeOfDay => $_getN(3);
+  $539.TimeOfDay get endTimeOfDay => $_getN(3);
   @$pb.TagNumber(4)
-  set endTimeOfDay($536.TimeOfDay v) {
+  set endTimeOfDay($539.TimeOfDay v) {
     setField(4, v);
   }
 
@@ -2872,15 +2872,15 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearEndTimeOfDay() => clearField(4);
   @$pb.TagNumber(4)
-  $536.TimeOfDay ensureEndTimeOfDay() => $_ensure(3);
+  $539.TimeOfDay ensureEndTimeOfDay() => $_ensure(3);
 
   /// Interval between the start of each scheduled TransferOperation. If
   /// unspecified, the default value is 24 hours. This value may not be less than
   /// 1 hour.
   @$pb.TagNumber(5)
-  $264.Duration get repeatInterval => $_getN(4);
+  $266.Duration get repeatInterval => $_getN(4);
   @$pb.TagNumber(5)
-  set repeatInterval($264.Duration v) {
+  set repeatInterval($266.Duration v) {
     setField(5, v);
   }
 
@@ -2889,7 +2889,7 @@ class Schedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearRepeatInterval() => clearField(5);
   @$pb.TagNumber(5)
-  $264.Duration ensureRepeatInterval() => $_ensure(4);
+  $266.Duration ensureRepeatInterval() => $_ensure(4);
 }
 
 /// Specifies the Event-driven transfer options. Event-driven transfers listen to
@@ -2897,8 +2897,8 @@ class Schedule extends $pb.GeneratedMessage {
 class EventStream extends $pb.GeneratedMessage {
   factory EventStream({
     $core.String? name,
-    $302.Timestamp? eventStreamStartTime,
-    $302.Timestamp? eventStreamExpirationTime,
+    $304.Timestamp? eventStreamStartTime,
+    $304.Timestamp? eventStreamExpirationTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -2926,10 +2926,10 @@ class EventStream extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.storagetransfer.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'eventStreamStartTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'eventStreamExpirationTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'eventStreamStartTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'eventStreamExpirationTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2975,9 +2975,9 @@ class EventStream extends $pb.GeneratedMessage {
   /// start time is in the past, Storage Transfer Service starts listening
   /// immediately.
   @$pb.TagNumber(2)
-  $302.Timestamp get eventStreamStartTime => $_getN(1);
+  $304.Timestamp get eventStreamStartTime => $_getN(1);
   @$pb.TagNumber(2)
-  set eventStreamStartTime($302.Timestamp v) {
+  set eventStreamStartTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -2986,15 +2986,15 @@ class EventStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEventStreamStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureEventStreamStartTime() => $_ensure(1);
+  $304.Timestamp ensureEventStreamStartTime() => $_ensure(1);
 
   /// Specifies the data and time at which Storage Transfer Service stops
   /// listening for events from this stream. After this time, any transfers in
   /// progress will complete, but no new transfers are initiated.
   @$pb.TagNumber(3)
-  $302.Timestamp get eventStreamExpirationTime => $_getN(2);
+  $304.Timestamp get eventStreamExpirationTime => $_getN(2);
   @$pb.TagNumber(3)
-  set eventStreamExpirationTime($302.Timestamp v) {
+  set eventStreamExpirationTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -3003,7 +3003,7 @@ class EventStream extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEventStreamExpirationTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureEventStreamExpirationTime() => $_ensure(2);
+  $304.Timestamp ensureEventStreamExpirationTime() => $_ensure(2);
 }
 
 /// This resource represents the configuration of a transfer job that runs
@@ -3016,9 +3016,9 @@ class TransferJob extends $pb.GeneratedMessage {
     TransferSpec? transferSpec,
     Schedule? schedule,
     TransferJob_Status? status,
-    $302.Timestamp? creationTime,
-    $302.Timestamp? lastModificationTime,
-    $302.Timestamp? deletionTime,
+    $304.Timestamp? creationTime,
+    $304.Timestamp? lastModificationTime,
+    $304.Timestamp? deletionTime,
     NotificationConfig? notificationConfig,
     $core.String? latestOperationName,
     LoggingConfig? loggingConfig,
@@ -3091,12 +3091,12 @@ class TransferJob extends $pb.GeneratedMessage {
         defaultOrMaker: TransferJob_Status.STATUS_UNSPECIFIED,
         valueOf: TransferJob_Status.valueOf,
         enumValues: TransferJob_Status.values)
-    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'creationTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'lastModificationTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'deletionTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'creationTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'lastModificationTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(9, _omitFieldNames ? '' : 'deletionTime',
+        subBuilder: $304.Timestamp.create)
     ..aOM<NotificationConfig>(11, _omitFieldNames ? '' : 'notificationConfig',
         subBuilder: NotificationConfig.create)
     ..aOS(12, _omitFieldNames ? '' : 'latestOperationName')
@@ -3248,9 +3248,9 @@ class TransferJob extends $pb.GeneratedMessage {
 
   /// Output only. The time that the transfer job was created.
   @$pb.TagNumber(7)
-  $302.Timestamp get creationTime => $_getN(6);
+  $304.Timestamp get creationTime => $_getN(6);
   @$pb.TagNumber(7)
-  set creationTime($302.Timestamp v) {
+  set creationTime($304.Timestamp v) {
     setField(7, v);
   }
 
@@ -3259,13 +3259,13 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearCreationTime() => clearField(7);
   @$pb.TagNumber(7)
-  $302.Timestamp ensureCreationTime() => $_ensure(6);
+  $304.Timestamp ensureCreationTime() => $_ensure(6);
 
   /// Output only. The time that the transfer job was last modified.
   @$pb.TagNumber(8)
-  $302.Timestamp get lastModificationTime => $_getN(7);
+  $304.Timestamp get lastModificationTime => $_getN(7);
   @$pb.TagNumber(8)
-  set lastModificationTime($302.Timestamp v) {
+  set lastModificationTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -3274,13 +3274,13 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearLastModificationTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureLastModificationTime() => $_ensure(7);
+  $304.Timestamp ensureLastModificationTime() => $_ensure(7);
 
   /// Output only. The time that the transfer job was deleted.
   @$pb.TagNumber(9)
-  $302.Timestamp get deletionTime => $_getN(8);
+  $304.Timestamp get deletionTime => $_getN(8);
   @$pb.TagNumber(9)
-  set deletionTime($302.Timestamp v) {
+  set deletionTime($304.Timestamp v) {
     setField(9, v);
   }
 
@@ -3289,7 +3289,7 @@ class TransferJob extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearDeletionTime() => clearField(9);
   @$pb.TagNumber(9)
-  $302.Timestamp ensureDeletionTime() => $_ensure(8);
+  $304.Timestamp ensureDeletionTime() => $_ensure(8);
 
   /// Notification configuration.
   @$pb.TagNumber(11)
@@ -3430,7 +3430,7 @@ class ErrorLogEntry extends $pb.GeneratedMessage {
 /// entries.
 class ErrorSummary extends $pb.GeneratedMessage {
   factory ErrorSummary({
-    $405.Code? errorCode,
+    $407.Code? errorCode,
     $fixnum.Int64? errorCount,
     $core.Iterable<ErrorLogEntry>? errorLogEntries,
   }) {
@@ -3459,10 +3459,10 @@ class ErrorSummary extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.storagetransfer.v1'),
       createEmptyInstance: create)
-    ..e<$405.Code>(1, _omitFieldNames ? '' : 'errorCode', $pb.PbFieldType.OE,
-        defaultOrMaker: $405.Code.OK,
-        valueOf: $405.Code.valueOf,
-        enumValues: $405.Code.values)
+    ..e<$407.Code>(1, _omitFieldNames ? '' : 'errorCode', $pb.PbFieldType.OE,
+        defaultOrMaker: $407.Code.OK,
+        valueOf: $407.Code.valueOf,
+        enumValues: $407.Code.values)
     ..aInt64(2, _omitFieldNames ? '' : 'errorCount')
     ..pc<ErrorLogEntry>(
         3, _omitFieldNames ? '' : 'errorLogEntries', $pb.PbFieldType.PM,
@@ -3494,9 +3494,9 @@ class ErrorSummary extends $pb.GeneratedMessage {
 
   /// Required.
   @$pb.TagNumber(1)
-  $405.Code get errorCode => $_getN(0);
+  $407.Code get errorCode => $_getN(0);
   @$pb.TagNumber(1)
-  set errorCode($405.Code v) {
+  set errorCode($407.Code v) {
     setField(1, v);
   }
 
@@ -4209,8 +4209,8 @@ class TransferOperation extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? projectId,
     TransferSpec? transferSpec,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
     TransferOperation_Status? status,
     TransferCounters? counters,
     $core.Iterable<ErrorSummary>? errorBreakdowns,
@@ -4271,10 +4271,10 @@ class TransferOperation extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..aOM<TransferSpec>(3, _omitFieldNames ? '' : 'transferSpec',
         subBuilder: TransferSpec.create)
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..e<TransferOperation_Status>(
         6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
         defaultOrMaker: TransferOperation_Status.STATUS_UNSPECIFIED,
@@ -4358,9 +4358,9 @@ class TransferOperation extends $pb.GeneratedMessage {
 
   /// Start time of this transfer execution.
   @$pb.TagNumber(4)
-  $302.Timestamp get startTime => $_getN(3);
+  $304.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -4369,13 +4369,13 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureStartTime() => $_ensure(3);
+  $304.Timestamp ensureStartTime() => $_ensure(3);
 
   /// End time of this transfer execution.
   @$pb.TagNumber(5)
-  $302.Timestamp get endTime => $_getN(4);
+  $304.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -4384,7 +4384,7 @@ class TransferOperation extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureEndTime() => $_ensure(4);
+  $304.Timestamp ensureEndTime() => $_ensure(4);
 
   /// Status of the transfer operation.
   @$pb.TagNumber(6)

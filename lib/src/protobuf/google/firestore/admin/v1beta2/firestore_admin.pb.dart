@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../protobuf/field_mask.pb.dart' as $335;
 import 'field.pb.dart' as $128;
 import 'index.pb.dart' as $127;
 
@@ -433,7 +433,7 @@ class DeleteIndexRequest extends $pb.GeneratedMessage {
 class UpdateFieldRequest extends $pb.GeneratedMessage {
   factory UpdateFieldRequest({
     $128.Field? field_1,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -459,8 +459,8 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<$128.Field>(1, _omitFieldNames ? '' : 'field',
         subBuilder: $128.Field.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -504,9 +504,9 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
   /// A mask, relative to the field. If specified, only configuration specified
   /// by this field_mask will be updated in the field.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -515,7 +515,7 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request for [FirestoreAdmin.GetField][google.firestore.admin.v1beta2.FirestoreAdmin.GetField].

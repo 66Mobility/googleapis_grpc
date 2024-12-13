@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/timestamp.pb.dart' as $304;
 import 'compute_routes_request.pb.dart' as $176;
 import 'compute_routes_request.pbenum.dart' as $176;
-import 'waypoint.pb.dart' as $483;
+import 'waypoint.pb.dart' as $485;
 
 /// ComputeRouteMatrix request message
 class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
@@ -25,7 +25,7 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
     $core.Iterable<RouteMatrixDestination>? destinations,
     $176.RouteTravelMode? travelMode,
     $176.RoutingPreference? routingPreference,
-    $302.Timestamp? departureTime,
+    $304.Timestamp? departureTime,
   }) {
     final $result = create();
     if (origins != null) {
@@ -74,8 +74,8 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
         defaultOrMaker: $176.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED,
         valueOf: $176.RoutingPreference.valueOf,
         enumValues: $176.RoutingPreference.values)
-    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'departureTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'departureTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -155,9 +155,9 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
   /// the time that you made the request. If you set this value to a time that
   /// has already occurred, the request fails.
   @$pb.TagNumber(5)
-  $302.Timestamp get departureTime => $_getN(4);
+  $304.Timestamp get departureTime => $_getN(4);
   @$pb.TagNumber(5)
-  set departureTime($302.Timestamp v) {
+  set departureTime($304.Timestamp v) {
     setField(5, v);
   }
 
@@ -166,13 +166,13 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearDepartureTime() => clearField(5);
   @$pb.TagNumber(5)
-  $302.Timestamp ensureDepartureTime() => $_ensure(4);
+  $304.Timestamp ensureDepartureTime() => $_ensure(4);
 }
 
 /// A single origin for ComputeRouteMatrixRequest
 class RouteMatrixOrigin extends $pb.GeneratedMessage {
   factory RouteMatrixOrigin({
-    $483.Waypoint? waypoint,
+    $485.Waypoint? waypoint,
     $176.RouteModifiers? routeModifiers,
   }) {
     final $result = create();
@@ -197,8 +197,8 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routes.v1'),
       createEmptyInstance: create)
-    ..aOM<$483.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
-        subBuilder: $483.Waypoint.create)
+    ..aOM<$485.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
+        subBuilder: $485.Waypoint.create)
     ..aOM<$176.RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers',
         subBuilder: $176.RouteModifiers.create)
     ..hasRequiredFields = false;
@@ -228,9 +228,9 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
 
   /// Required. Origin waypoint
   @$pb.TagNumber(1)
-  $483.Waypoint get waypoint => $_getN(0);
+  $485.Waypoint get waypoint => $_getN(0);
   @$pb.TagNumber(1)
-  set waypoint($483.Waypoint v) {
+  set waypoint($485.Waypoint v) {
     setField(1, v);
   }
 
@@ -239,7 +239,7 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearWaypoint() => clearField(1);
   @$pb.TagNumber(1)
-  $483.Waypoint ensureWaypoint() => $_ensure(0);
+  $485.Waypoint ensureWaypoint() => $_ensure(0);
 
   /// Optional. Modifiers for every route that takes this as the origin
   @$pb.TagNumber(2)
@@ -260,7 +260,7 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
 /// A single destination for ComputeRouteMatrixRequest
 class RouteMatrixDestination extends $pb.GeneratedMessage {
   factory RouteMatrixDestination({
-    $483.Waypoint? waypoint,
+    $485.Waypoint? waypoint,
   }) {
     final $result = create();
     if (waypoint != null) {
@@ -281,8 +281,8 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routes.v1'),
       createEmptyInstance: create)
-    ..aOM<$483.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
-        subBuilder: $483.Waypoint.create)
+    ..aOM<$485.Waypoint>(1, _omitFieldNames ? '' : 'waypoint',
+        subBuilder: $485.Waypoint.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -312,9 +312,9 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
 
   /// Required. Destination waypoint
   @$pb.TagNumber(1)
-  $483.Waypoint get waypoint => $_getN(0);
+  $485.Waypoint get waypoint => $_getN(0);
   @$pb.TagNumber(1)
-  set waypoint($483.Waypoint v) {
+  set waypoint($485.Waypoint v) {
     setField(1, v);
   }
 
@@ -323,7 +323,7 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearWaypoint() => clearField(1);
   @$pb.TagNumber(1)
-  $483.Waypoint ensureWaypoint() => $_ensure(0);
+  $485.Waypoint ensureWaypoint() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

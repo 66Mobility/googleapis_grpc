@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'expr.pb.dart' as $346;
+import 'expr.pb.dart' as $348;
 
 enum Decl_Kind { ident, function, notSet }
 
@@ -264,7 +264,7 @@ class DeclType extends $pb.GeneratedMessage {
 class IdentDecl extends $pb.GeneratedMessage {
   factory IdentDecl({
     DeclType? type,
-    $346.Expr? value,
+    $348.Expr? value,
   }) {
     final $result = create();
     if (type != null) {
@@ -290,8 +290,8 @@ class IdentDecl extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<DeclType>(3, _omitFieldNames ? '' : 'type',
         subBuilder: DeclType.create)
-    ..aOM<$346.Expr>(4, _omitFieldNames ? '' : 'value',
-        subBuilder: $346.Expr.create)
+    ..aOM<$348.Expr>(4, _omitFieldNames ? '' : 'value',
+        subBuilder: $348.Expr.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -332,9 +332,9 @@ class IdentDecl extends $pb.GeneratedMessage {
 
   /// Optional value of the identifier.
   @$pb.TagNumber(4)
-  $346.Expr get value => $_getN(1);
+  $348.Expr get value => $_getN(1);
   @$pb.TagNumber(4)
-  set value($346.Expr v) {
+  set value($348.Expr v) {
     setField(4, v);
   }
 
@@ -343,7 +343,7 @@ class IdentDecl extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearValue() => clearField(4);
   @$pb.TagNumber(4)
-  $346.Expr ensureValue() => $_ensure(1);
+  $348.Expr ensureValue() => $_ensure(1);
 }
 
 /// A function declaration.

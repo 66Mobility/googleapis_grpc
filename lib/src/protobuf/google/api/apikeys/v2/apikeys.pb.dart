@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../protobuf/field_mask.pb.dart' as $335;
 import 'resources.pb.dart' as $35;
 
 /// Request message for `CreateKey` method.
@@ -518,7 +518,7 @@ class GetKeyStringResponse extends $pb.GeneratedMessage {
 class UpdateKeyRequest extends $pb.GeneratedMessage {
   factory UpdateKeyRequest({
     $35.Key? key,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (key != null) {
@@ -543,8 +543,8 @@ class UpdateKeyRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.api.apikeys.v2'),
       createEmptyInstance: create)
     ..aOM<$35.Key>(1, _omitFieldNames ? '' : 'key', subBuilder: $35.Key.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -595,9 +595,9 @@ class UpdateKeyRequest extends $pb.GeneratedMessage {
   /// mask has a special value "*", the service treats it equivalent to replace
   /// all allowed mutable fields.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -606,7 +606,7 @@ class UpdateKeyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for `DeleteKey` method.

@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'event_handler.pb.dart' as $277;
+import 'event_handler.pb.dart' as $279;
 
 /// Registers Events which trigger as the result of an intent match.
 class IntentEvent extends $pb.GeneratedMessage {
   factory IntentEvent({
     $core.String? intent,
     $core.String? transitionToScene,
-    $277.EventHandler? handler,
+    $279.EventHandler? handler,
   }) {
     final $result = create();
     if (intent != null) {
@@ -49,8 +49,8 @@ class IntentEvent extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'intent')
     ..aOS(2, _omitFieldNames ? '' : 'transitionToScene')
-    ..aOM<$277.EventHandler>(3, _omitFieldNames ? '' : 'handler',
-        subBuilder: $277.EventHandler.create)
+    ..aOM<$279.EventHandler>(3, _omitFieldNames ? '' : 'handler',
+        subBuilder: $279.EventHandler.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -106,9 +106,9 @@ class IntentEvent extends $pb.GeneratedMessage {
   /// before transitioning to the destination scene. Useful to generate prompts
   /// in response to events.
   @$pb.TagNumber(3)
-  $277.EventHandler get handler => $_getN(2);
+  $279.EventHandler get handler => $_getN(2);
   @$pb.TagNumber(3)
-  set handler($277.EventHandler v) {
+  set handler($279.EventHandler v) {
     setField(3, v);
   }
 
@@ -117,7 +117,7 @@ class IntentEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearHandler() => clearField(3);
   @$pb.TagNumber(3)
-  $277.EventHandler ensureHandler() => $_ensure(2);
+  $279.EventHandler ensureHandler() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

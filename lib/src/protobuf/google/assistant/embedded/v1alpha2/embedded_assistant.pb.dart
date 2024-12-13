@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/latlng.pb.dart' as $325;
+import '../../../type/latlng.pb.dart' as $327;
 import 'embedded_assistant.pbenum.dart';
 
 export 'embedded_assistant.pbenum.dart';
@@ -1636,7 +1636,7 @@ enum DeviceLocation_Type { coordinates, notSet }
 ///     above are specified.
 class DeviceLocation extends $pb.GeneratedMessage {
   factory DeviceLocation({
-    $325.LatLng? coordinates,
+    $327.LatLng? coordinates,
   }) {
     final $result = create();
     if (coordinates != null) {
@@ -1663,8 +1663,8 @@ class DeviceLocation extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'),
       createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'coordinates',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'coordinates',
+        subBuilder: $327.LatLng.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1696,9 +1696,9 @@ class DeviceLocation extends $pb.GeneratedMessage {
 
   /// Latitude and longitude of device.
   @$pb.TagNumber(1)
-  $325.LatLng get coordinates => $_getN(0);
+  $327.LatLng get coordinates => $_getN(0);
   @$pb.TagNumber(1)
-  set coordinates($325.LatLng v) {
+  set coordinates($327.LatLng v) {
     setField(1, v);
   }
 
@@ -1707,7 +1707,7 @@ class DeviceLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCoordinates() => clearField(1);
   @$pb.TagNumber(1)
-  $325.LatLng ensureCoordinates() => $_ensure(0);
+  $327.LatLng ensureCoordinates() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

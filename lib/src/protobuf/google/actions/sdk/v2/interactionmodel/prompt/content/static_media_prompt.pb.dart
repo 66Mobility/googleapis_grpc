@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../protobuf/duration.pb.dart' as $264;
-import 'static_image_prompt.pb.dart' as $262;
+import '../../../../../../protobuf/duration.pb.dart' as $266;
+import 'static_image_prompt.pb.dart' as $264;
 import 'static_media_prompt.pbenum.dart';
 
 export 'static_media_prompt.pbenum.dart';
@@ -23,7 +23,7 @@ export 'static_media_prompt.pbenum.dart';
 /// Next id: 11
 class StaticMediaPrompt extends $pb.GeneratedMessage {
   factory StaticMediaPrompt({
-    $264.Duration? startOffset,
+    $266.Duration? startOffset,
     $core.Iterable<StaticMediaPrompt_OptionalMediaControls>?
         optionalMediaControls,
     $core.Iterable<MediaObject>? mediaObjects,
@@ -62,8 +62,8 @@ class StaticMediaPrompt extends $pb.GeneratedMessage {
           ? ''
           : 'google.actions.sdk.v2.interactionmodel.prompt'),
       createEmptyInstance: create)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'startOffset',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(5, _omitFieldNames ? '' : 'startOffset',
+        subBuilder: $266.Duration.create)
     ..pc<StaticMediaPrompt_OptionalMediaControls>(
         6, _omitFieldNames ? '' : 'optionalMediaControls', $pb.PbFieldType.KE,
         valueOf: StaticMediaPrompt_OptionalMediaControls.valueOf,
@@ -110,9 +110,9 @@ class StaticMediaPrompt extends $pb.GeneratedMessage {
 
   /// Start offset of the first media object.
   @$pb.TagNumber(5)
-  $264.Duration get startOffset => $_getN(0);
+  $266.Duration get startOffset => $_getN(0);
   @$pb.TagNumber(5)
-  set startOffset($264.Duration v) {
+  set startOffset($266.Duration v) {
     setField(5, v);
   }
 
@@ -121,7 +121,7 @@ class StaticMediaPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearStartOffset() => clearField(5);
   @$pb.TagNumber(5)
-  $264.Duration ensureStartOffset() => $_ensure(0);
+  $266.Duration ensureStartOffset() => $_ensure(0);
 
   /// Optional media control types this media response session can support.
   /// If set, request will be made to 3p when a certain media event happens.
@@ -288,8 +288,8 @@ enum MediaImage_Image { large, icon, notSet }
 /// Image to be shown inside a MediaPrompt.
 class MediaImage extends $pb.GeneratedMessage {
   factory MediaImage({
-    $262.StaticImagePrompt? large,
-    $262.StaticImagePrompt? icon,
+    $264.StaticImagePrompt? large,
+    $264.StaticImagePrompt? icon,
   }) {
     final $result = create();
     if (large != null) {
@@ -320,10 +320,10 @@ class MediaImage extends $pb.GeneratedMessage {
           : 'google.actions.sdk.v2.interactionmodel.prompt'),
       createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$262.StaticImagePrompt>(1, _omitFieldNames ? '' : 'large',
-        subBuilder: $262.StaticImagePrompt.create)
-    ..aOM<$262.StaticImagePrompt>(2, _omitFieldNames ? '' : 'icon',
-        subBuilder: $262.StaticImagePrompt.create)
+    ..aOM<$264.StaticImagePrompt>(1, _omitFieldNames ? '' : 'large',
+        subBuilder: $264.StaticImagePrompt.create)
+    ..aOM<$264.StaticImagePrompt>(2, _omitFieldNames ? '' : 'icon',
+        subBuilder: $264.StaticImagePrompt.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -352,9 +352,9 @@ class MediaImage extends $pb.GeneratedMessage {
 
   /// A large image, such as the cover of the album, etc.
   @$pb.TagNumber(1)
-  $262.StaticImagePrompt get large => $_getN(0);
+  $264.StaticImagePrompt get large => $_getN(0);
   @$pb.TagNumber(1)
-  set large($262.StaticImagePrompt v) {
+  set large($264.StaticImagePrompt v) {
     setField(1, v);
   }
 
@@ -363,14 +363,14 @@ class MediaImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearLarge() => clearField(1);
   @$pb.TagNumber(1)
-  $262.StaticImagePrompt ensureLarge() => $_ensure(0);
+  $264.StaticImagePrompt ensureLarge() => $_ensure(0);
 
   /// A small image icon displayed on the right from the title.
   /// It's resized to 36x36 dp.
   @$pb.TagNumber(2)
-  $262.StaticImagePrompt get icon => $_getN(1);
+  $264.StaticImagePrompt get icon => $_getN(1);
   @$pb.TagNumber(2)
-  set icon($262.StaticImagePrompt v) {
+  set icon($264.StaticImagePrompt v) {
     setField(2, v);
   }
 
@@ -379,7 +379,7 @@ class MediaImage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearIcon() => clearField(2);
   @$pb.TagNumber(2)
-  $262.StaticImagePrompt ensureIcon() => $_ensure(1);
+  $264.StaticImagePrompt ensureIcon() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

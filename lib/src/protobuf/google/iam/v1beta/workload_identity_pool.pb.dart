@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
+import '../../protobuf/field_mask.pb.dart' as $335;
 import 'workload_identity_pool.pbenum.dart';
 
 export 'workload_identity_pool.pbenum.dart';
@@ -1048,7 +1048,7 @@ class CreateWorkloadIdentityPoolRequest extends $pb.GeneratedMessage {
 class UpdateWorkloadIdentityPoolRequest extends $pb.GeneratedMessage {
   factory UpdateWorkloadIdentityPoolRequest({
     WorkloadIdentityPool? workloadIdentityPool,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (workloadIdentityPool != null) {
@@ -1075,8 +1075,8 @@ class UpdateWorkloadIdentityPoolRequest extends $pb.GeneratedMessage {
     ..aOM<WorkloadIdentityPool>(
         1, _omitFieldNames ? '' : 'workloadIdentityPool',
         subBuilder: WorkloadIdentityPool.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1124,9 +1124,9 @@ class UpdateWorkloadIdentityPoolRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields update.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -1135,7 +1135,7 @@ class UpdateWorkloadIdentityPoolRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for DeleteWorkloadIdentityPool.
@@ -1682,7 +1682,7 @@ class CreateWorkloadIdentityPoolProviderRequest extends $pb.GeneratedMessage {
 class UpdateWorkloadIdentityPoolProviderRequest extends $pb.GeneratedMessage {
   factory UpdateWorkloadIdentityPoolProviderRequest({
     WorkloadIdentityPoolProvider? workloadIdentityPoolProvider,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (workloadIdentityPoolProvider != null) {
@@ -1710,8 +1710,8 @@ class UpdateWorkloadIdentityPoolProviderRequest extends $pb.GeneratedMessage {
     ..aOM<WorkloadIdentityPoolProvider>(
         1, _omitFieldNames ? '' : 'workloadIdentityPoolProvider',
         subBuilder: WorkloadIdentityPoolProvider.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1761,9 +1761,9 @@ class UpdateWorkloadIdentityPoolProviderRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields to update.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -1772,7 +1772,7 @@ class UpdateWorkloadIdentityPoolProviderRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for DeleteWorkloadIdentityPoolProvider.

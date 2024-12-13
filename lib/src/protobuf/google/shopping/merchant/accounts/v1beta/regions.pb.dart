@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $333;
-import '../../../../protobuf/wrappers.pb.dart' as $307;
+import '../../../../protobuf/field_mask.pb.dart' as $335;
+import '../../../../protobuf/wrappers.pb.dart' as $309;
 
 /// Request message for the `GetRegion` method.
 class GetRegionRequest extends $pb.GeneratedMessage {
@@ -190,7 +190,7 @@ class CreateRegionRequest extends $pb.GeneratedMessage {
 class UpdateRegionRequest extends $pb.GeneratedMessage {
   factory UpdateRegionRequest({
     Region? region,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
   }) {
     final $result = create();
     if (region != null) {
@@ -215,8 +215,8 @@ class UpdateRegionRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'),
       createEmptyInstance: create)
     ..aOM<Region>(1, _omitFieldNames ? '' : 'region', subBuilder: Region.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -261,9 +261,9 @@ class UpdateRegionRequest extends $pb.GeneratedMessage {
   /// Example:
   /// `"displayName,postalCodeArea.regionCode"`.
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -272,7 +272,7 @@ class UpdateRegionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the `DeleteRegion` method.
@@ -773,8 +773,8 @@ class Region extends $pb.GeneratedMessage {
     $core.String? displayName,
     Region_PostalCodeArea? postalCodeArea,
     Region_GeoTargetArea? geotargetArea,
-    $307.BoolValue? regionalInventoryEligible,
-    $307.BoolValue? shippingEligible,
+    $309.BoolValue? regionalInventoryEligible,
+    $309.BoolValue? shippingEligible,
   }) {
     final $result = create();
     if (name != null) {
@@ -816,10 +816,10 @@ class Region extends $pb.GeneratedMessage {
         subBuilder: Region_PostalCodeArea.create)
     ..aOM<Region_GeoTargetArea>(4, _omitFieldNames ? '' : 'geotargetArea',
         subBuilder: Region_GeoTargetArea.create)
-    ..aOM<$307.BoolValue>(5, _omitFieldNames ? '' : 'regionalInventoryEligible',
-        subBuilder: $307.BoolValue.create)
-    ..aOM<$307.BoolValue>(6, _omitFieldNames ? '' : 'shippingEligible',
-        subBuilder: $307.BoolValue.create)
+    ..aOM<$309.BoolValue>(5, _omitFieldNames ? '' : 'regionalInventoryEligible',
+        subBuilder: $309.BoolValue.create)
+    ..aOM<$309.BoolValue>(6, _omitFieldNames ? '' : 'shippingEligible',
+        subBuilder: $309.BoolValue.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -903,9 +903,9 @@ class Region extends $pb.GeneratedMessage {
   /// Output only. Indicates if the region is eligible for use in the Regional
   /// Inventory configuration.
   @$pb.TagNumber(5)
-  $307.BoolValue get regionalInventoryEligible => $_getN(4);
+  $309.BoolValue get regionalInventoryEligible => $_getN(4);
   @$pb.TagNumber(5)
-  set regionalInventoryEligible($307.BoolValue v) {
+  set regionalInventoryEligible($309.BoolValue v) {
     setField(5, v);
   }
 
@@ -914,14 +914,14 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearRegionalInventoryEligible() => clearField(5);
   @$pb.TagNumber(5)
-  $307.BoolValue ensureRegionalInventoryEligible() => $_ensure(4);
+  $309.BoolValue ensureRegionalInventoryEligible() => $_ensure(4);
 
   /// Output only. Indicates if the region is eligible for use in the Shipping
   /// Services configuration.
   @$pb.TagNumber(6)
-  $307.BoolValue get shippingEligible => $_getN(5);
+  $309.BoolValue get shippingEligible => $_getN(5);
   @$pb.TagNumber(6)
-  set shippingEligible($307.BoolValue v) {
+  set shippingEligible($309.BoolValue v) {
     setField(6, v);
   }
 
@@ -930,7 +930,7 @@ class Region extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearShippingEligible() => clearField(6);
   @$pb.TagNumber(6)
-  $307.BoolValue ensureShippingEligible() => $_ensure(5);
+  $309.BoolValue ensureShippingEligible() => $_ensure(5);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

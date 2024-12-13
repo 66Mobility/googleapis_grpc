@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/phone_number.pb.dart' as $542;
+import '../../../../type/phone_number.pb.dart' as $545;
 
 /// Customer service information.
 class CustomerService extends $pb.GeneratedMessage {
   factory CustomerService({
     $core.String? uri,
     $core.String? email,
-    $542.PhoneNumber? phone,
+    $545.PhoneNumber? phone,
   }) {
     final $result = create();
     if (uri != null) {
@@ -49,8 +49,8 @@ class CustomerService extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uri')
     ..aOS(2, _omitFieldNames ? '' : 'email')
-    ..aOM<$542.PhoneNumber>(3, _omitFieldNames ? '' : 'phone',
-        subBuilder: $542.PhoneNumber.create)
+    ..aOM<$545.PhoneNumber>(3, _omitFieldNames ? '' : 'phone',
+        subBuilder: $545.PhoneNumber.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -104,9 +104,9 @@ class CustomerService extends $pb.GeneratedMessage {
 
   /// Optional. The phone number where customer service may be called.
   @$pb.TagNumber(3)
-  $542.PhoneNumber get phone => $_getN(2);
+  $545.PhoneNumber get phone => $_getN(2);
   @$pb.TagNumber(3)
-  set phone($542.PhoneNumber v) {
+  set phone($545.PhoneNumber v) {
     setField(3, v);
   }
 
@@ -115,7 +115,7 @@ class CustomerService extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearPhone() => clearField(3);
   @$pb.TagNumber(3)
-  $542.PhoneNumber ensurePhone() => $_ensure(2);
+  $545.PhoneNumber ensurePhone() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

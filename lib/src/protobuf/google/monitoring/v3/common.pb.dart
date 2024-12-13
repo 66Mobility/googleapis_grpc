@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../api/distribution.pb.dart' as $367;
-import '../../protobuf/duration.pb.dart' as $264;
-import '../../protobuf/timestamp.pb.dart' as $302;
+import '../../api/distribution.pb.dart' as $369;
+import '../../protobuf/duration.pb.dart' as $266;
+import '../../protobuf/timestamp.pb.dart' as $304;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -37,7 +37,7 @@ class TypedValue extends $pb.GeneratedMessage {
     $fixnum.Int64? int64Value,
     $core.double? doubleValue,
     $core.String? stringValue,
-    $367.Distribution? distributionValue,
+    $369.Distribution? distributionValue,
   }) {
     final $result = create();
     if (boolValue != null) {
@@ -84,8 +84,8 @@ class TypedValue extends $pb.GeneratedMessage {
     ..a<$core.double>(
         3, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
     ..aOS(4, _omitFieldNames ? '' : 'stringValue')
-    ..aOM<$367.Distribution>(5, _omitFieldNames ? '' : 'distributionValue',
-        subBuilder: $367.Distribution.create)
+    ..aOM<$369.Distribution>(5, _omitFieldNames ? '' : 'distributionValue',
+        subBuilder: $369.Distribution.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -168,9 +168,9 @@ class TypedValue extends $pb.GeneratedMessage {
 
   /// A distribution value.
   @$pb.TagNumber(5)
-  $367.Distribution get distributionValue => $_getN(4);
+  $369.Distribution get distributionValue => $_getN(4);
   @$pb.TagNumber(5)
-  set distributionValue($367.Distribution v) {
+  set distributionValue($369.Distribution v) {
     setField(5, v);
   }
 
@@ -179,7 +179,7 @@ class TypedValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearDistributionValue() => clearField(5);
   @$pb.TagNumber(5)
-  $367.Distribution ensureDistributionValue() => $_ensure(4);
+  $369.Distribution ensureDistributionValue() => $_ensure(4);
 }
 
 ///  Describes a time interval:
@@ -222,8 +222,8 @@ class TypedValue extends $pb.GeneratedMessage {
 ///        overwrite data written at the previous end time.
 class TimeInterval extends $pb.GeneratedMessage {
   factory TimeInterval({
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -247,10 +247,10 @@ class TimeInterval extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -280,9 +280,9 @@ class TimeInterval extends $pb.GeneratedMessage {
   /// for the start time is the end time. The start time must not be
   /// later than the end time.
   @$pb.TagNumber(1)
-  $302.Timestamp get startTime => $_getN(0);
+  $304.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(1, v);
   }
 
@@ -291,13 +291,13 @@ class TimeInterval extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $302.Timestamp ensureStartTime() => $_ensure(0);
+  $304.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Required. The end of the time interval.
   @$pb.TagNumber(2)
-  $302.Timestamp get endTime => $_getN(1);
+  $304.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -306,7 +306,7 @@ class TimeInterval extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureEndTime() => $_ensure(1);
+  $304.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 ///  Describes how to combine multiple time series to provide a different view of
@@ -337,7 +337,7 @@ class TimeInterval extends $pb.GeneratedMessage {
 ///  aggregation](https://cloud.google.com/monitoring/api/v3/aggregation).
 class Aggregation extends $pb.GeneratedMessage {
   factory Aggregation({
-    $264.Duration? alignmentPeriod,
+    $266.Duration? alignmentPeriod,
     Aggregation_Aligner? perSeriesAligner,
     Aggregation_Reducer? crossSeriesReducer,
     $core.Iterable<$core.String>? groupByFields,
@@ -370,8 +370,8 @@ class Aggregation extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'alignmentPeriod',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'alignmentPeriod',
+        subBuilder: $266.Duration.create)
     ..e<Aggregation_Aligner>(
         2, _omitFieldNames ? '' : 'perSeriesAligner', $pb.PbFieldType.OE,
         defaultOrMaker: Aggregation_Aligner.ALIGN_NONE,
@@ -421,9 +421,9 @@ class Aggregation extends $pb.GeneratedMessage {
   ///  The maximum value of the `alignment_period` is 104 weeks (2 years) for
   ///  charts, and 90,000 seconds (25 hours) for alerting policies.
   @$pb.TagNumber(1)
-  $264.Duration get alignmentPeriod => $_getN(0);
+  $266.Duration get alignmentPeriod => $_getN(0);
   @$pb.TagNumber(1)
-  set alignmentPeriod($264.Duration v) {
+  set alignmentPeriod($266.Duration v) {
     setField(1, v);
   }
 
@@ -432,7 +432,7 @@ class Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearAlignmentPeriod() => clearField(1);
   @$pb.TagNumber(1)
-  $264.Duration ensureAlignmentPeriod() => $_ensure(0);
+  $266.Duration ensureAlignmentPeriod() => $_ensure(0);
 
   ///  An `Aligner` describes how to bring the data points in a single
   ///  time series into temporal alignment. Except for `ALIGN_NONE`, all

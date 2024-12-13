@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $322;
-import 'check_error.pb.dart' as $374;
-import 'operation.pb.dart' as $373;
+import '../../../rpc/status.pb.dart' as $324;
+import 'check_error.pb.dart' as $376;
+import 'operation.pb.dart' as $375;
 import 'service_controller.pbenum.dart';
 
 export 'service_controller.pbenum.dart';
@@ -25,7 +25,7 @@ export 'service_controller.pbenum.dart';
 class CheckRequest extends $pb.GeneratedMessage {
   factory CheckRequest({
     $core.String? serviceName,
-    $373.Operation? operation,
+    $375.Operation? operation,
     $core.String? serviceConfigId,
   }) {
     final $result = create();
@@ -54,8 +54,8 @@ class CheckRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.api.servicecontrol.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
-    ..aOM<$373.Operation>(2, _omitFieldNames ? '' : 'operation',
-        subBuilder: $373.Operation.create)
+    ..aOM<$375.Operation>(2, _omitFieldNames ? '' : 'operation',
+        subBuilder: $375.Operation.create)
     ..aOS(4, _omitFieldNames ? '' : 'serviceConfigId')
     ..hasRequiredFields = false;
 
@@ -102,9 +102,9 @@ class CheckRequest extends $pb.GeneratedMessage {
 
   /// The operation to be checked.
   @$pb.TagNumber(2)
-  $373.Operation get operation => $_getN(1);
+  $375.Operation get operation => $_getN(1);
   @$pb.TagNumber(2)
-  set operation($373.Operation v) {
+  set operation($375.Operation v) {
     setField(2, v);
   }
 
@@ -113,7 +113,7 @@ class CheckRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearOperation() => clearField(2);
   @$pb.TagNumber(2)
-  $373.Operation ensureOperation() => $_ensure(1);
+  $375.Operation ensureOperation() => $_ensure(1);
 
   ///  Specifies which version of service configuration should be used to process
   ///  the request.
@@ -352,7 +352,7 @@ class CheckResponse_ConsumerInfo extends $pb.GeneratedMessage {
 class CheckResponse extends $pb.GeneratedMessage {
   factory CheckResponse({
     $core.String? operationId,
-    $core.Iterable<$374.CheckError>? checkErrors,
+    $core.Iterable<$376.CheckError>? checkErrors,
     $core.String? serviceConfigId,
     CheckResponse_CheckInfo? checkInfo,
     $core.String? serviceRolloutId,
@@ -389,9 +389,9 @@ class CheckResponse extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.api.servicecontrol.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'operationId')
-    ..pc<$374.CheckError>(
+    ..pc<$376.CheckError>(
         2, _omitFieldNames ? '' : 'checkErrors', $pb.PbFieldType.PM,
-        subBuilder: $374.CheckError.create)
+        subBuilder: $376.CheckError.create)
     ..aOS(5, _omitFieldNames ? '' : 'serviceConfigId')
     ..aOM<CheckResponse_CheckInfo>(6, _omitFieldNames ? '' : 'checkInfo',
         subBuilder: CheckResponse_CheckInfo.create)
@@ -442,7 +442,7 @@ class CheckResponse extends $pb.GeneratedMessage {
   ///  Otherwise the service should use the list of errors to determine the
   ///  appropriate action.
   @$pb.TagNumber(2)
-  $core.List<$374.CheckError> get checkErrors => $_getList(1);
+  $core.List<$376.CheckError> get checkErrors => $_getList(1);
 
   /// The actual config id used to process the request.
   @$pb.TagNumber(5)
@@ -490,7 +490,7 @@ class CheckResponse extends $pb.GeneratedMessage {
 class ReportRequest extends $pb.GeneratedMessage {
   factory ReportRequest({
     $core.String? serviceName,
-    $core.Iterable<$373.Operation>? operations,
+    $core.Iterable<$375.Operation>? operations,
     $core.String? serviceConfigId,
   }) {
     final $result = create();
@@ -519,9 +519,9 @@ class ReportRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.api.servicecontrol.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
-    ..pc<$373.Operation>(
+    ..pc<$375.Operation>(
         2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM,
-        subBuilder: $373.Operation.create)
+        subBuilder: $375.Operation.create)
     ..aOS(3, _omitFieldNames ? '' : 'serviceConfigId')
     ..hasRequiredFields = false;
 
@@ -578,7 +578,7 @@ class ReportRequest extends $pb.GeneratedMessage {
   ///  [ReportResponse.report_errors][google.api.servicecontrol.v1.ReportResponse.report_errors]
   ///  for partial failure behavior.
   @$pb.TagNumber(2)
-  $core.List<$373.Operation> get operations => $_getList(1);
+  $core.List<$375.Operation> get operations => $_getList(1);
 
   ///  Specifies which version of service config should be used to process the
   ///  request.
@@ -603,7 +603,7 @@ class ReportRequest extends $pb.GeneratedMessage {
 class ReportResponse_ReportError extends $pb.GeneratedMessage {
   factory ReportResponse_ReportError({
     $core.String? operationId,
-    $322.Status? status,
+    $324.Status? status,
   }) {
     final $result = create();
     if (operationId != null) {
@@ -628,8 +628,8 @@ class ReportResponse_ReportError extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.api.servicecontrol.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'operationId')
-    ..aOM<$322.Status>(2, _omitFieldNames ? '' : 'status',
-        subBuilder: $322.Status.create)
+    ..aOM<$324.Status>(2, _omitFieldNames ? '' : 'status',
+        subBuilder: $324.Status.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -676,9 +676,9 @@ class ReportResponse_ReportError extends $pb.GeneratedMessage {
   /// Details of the error when processing the
   /// [Operation][google.api.servicecontrol.v1.Operation].
   @$pb.TagNumber(2)
-  $322.Status get status => $_getN(1);
+  $324.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($322.Status v) {
+  set status($324.Status v) {
     setField(2, v);
   }
 
@@ -687,7 +687,7 @@ class ReportResponse_ReportError extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $322.Status ensureStatus() => $_ensure(1);
+  $324.Status ensureStatus() => $_ensure(1);
 }
 
 /// Response message for the Report method.

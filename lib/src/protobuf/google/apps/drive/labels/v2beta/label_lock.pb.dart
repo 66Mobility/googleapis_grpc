@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $302;
-import 'common.pb.dart' as $393;
+import '../../../../protobuf/timestamp.pb.dart' as $304;
+import 'common.pb.dart' as $395;
 import 'label_lock.pbenum.dart';
 
 export 'label_lock.pbenum.dart';
@@ -91,9 +91,9 @@ class LabelLock extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? fieldId,
     $core.String? choiceId,
-    $302.Timestamp? createTime,
-    $393.UserInfo? creator,
-    $302.Timestamp? deleteTime,
+    $304.Timestamp? createTime,
+    $395.UserInfo? creator,
+    $304.Timestamp? deleteTime,
     LabelLock_Capabilities? capabilities,
     LabelLock_State? state,
   }) {
@@ -140,12 +140,12 @@ class LabelLock extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'fieldId')
     ..aOS(3, _omitFieldNames ? '' : 'choiceId')
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$393.UserInfo>(5, _omitFieldNames ? '' : 'creator',
-        subBuilder: $393.UserInfo.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'deleteTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$395.UserInfo>(5, _omitFieldNames ? '' : 'creator',
+        subBuilder: $395.UserInfo.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $304.Timestamp.create)
     ..aOM<LabelLock_Capabilities>(8, _omitFieldNames ? '' : 'capabilities',
         subBuilder: LabelLock_Capabilities.create)
     ..e<LabelLock_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
@@ -218,9 +218,9 @@ class LabelLock extends $pb.GeneratedMessage {
 
   /// Output only. The time this LabelLock was created.
   @$pb.TagNumber(4)
-  $302.Timestamp get createTime => $_getN(3);
+  $304.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -229,15 +229,15 @@ class LabelLock extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureCreateTime() => $_ensure(3);
+  $304.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The user whose credentials were used to create the LabelLock.
   /// This will not be present if no user was responsible for creating the
   /// LabelLock.
   @$pb.TagNumber(5)
-  $393.UserInfo get creator => $_getN(4);
+  $395.UserInfo get creator => $_getN(4);
   @$pb.TagNumber(5)
-  set creator($393.UserInfo v) {
+  set creator($395.UserInfo v) {
     setField(5, v);
   }
 
@@ -246,15 +246,15 @@ class LabelLock extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCreator() => clearField(5);
   @$pb.TagNumber(5)
-  $393.UserInfo ensureCreator() => $_ensure(4);
+  $395.UserInfo ensureCreator() => $_ensure(4);
 
   /// Output only. A timestamp indicating when this LabelLock was scheduled for
   /// deletion. This will be present only if this LabelLock is in the DELETING
   /// state.
   @$pb.TagNumber(6)
-  $302.Timestamp get deleteTime => $_getN(5);
+  $304.Timestamp get deleteTime => $_getN(5);
   @$pb.TagNumber(6)
-  set deleteTime($302.Timestamp v) {
+  set deleteTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -263,7 +263,7 @@ class LabelLock extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearDeleteTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensureDeleteTime() => $_ensure(5);
+  $304.Timestamp ensureDeleteTime() => $_ensure(5);
 
   /// Output only. The user's capabilities on this LabelLock.
   @$pb.TagNumber(8)

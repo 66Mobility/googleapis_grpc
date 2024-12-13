@@ -15,26 +15,26 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'cloud_executor.pb.dart' as $252;
+import 'cloud_executor.pb.dart' as $254;
 
 export 'cloud_executor.pb.dart';
 
 @$pb.GrpcServiceName('google.spanner.executor.v1.SpannerExecutorProxy')
 class SpannerExecutorProxyClient extends $grpc.Client {
   static final _$executeActionAsync = $grpc.ClientMethod<
-          $252.SpannerAsyncActionRequest, $252.SpannerAsyncActionResponse>(
+          $254.SpannerAsyncActionRequest, $254.SpannerAsyncActionResponse>(
       '/google.spanner.executor.v1.SpannerExecutorProxy/ExecuteActionAsync',
-      ($252.SpannerAsyncActionRequest value) => value.writeToBuffer(),
+      ($254.SpannerAsyncActionRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $252.SpannerAsyncActionResponse.fromBuffer(value));
+          $254.SpannerAsyncActionResponse.fromBuffer(value));
 
   SpannerExecutorProxyClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseStream<$252.SpannerAsyncActionResponse> executeActionAsync(
-      $async.Stream<$252.SpannerAsyncActionRequest> request,
+  $grpc.ResponseStream<$254.SpannerAsyncActionResponse> executeActionAsync(
+      $async.Stream<$254.SpannerAsyncActionRequest> request,
       {$grpc.CallOptions? options}) {
     return $createStreamingCall(_$executeActionAsync, request,
         options: options);
@@ -46,18 +46,18 @@ abstract class SpannerExecutorProxyServiceBase extends $grpc.Service {
   $core.String get $name => 'google.spanner.executor.v1.SpannerExecutorProxy';
 
   SpannerExecutorProxyServiceBase() {
-    $addMethod($grpc.ServiceMethod<$252.SpannerAsyncActionRequest,
-            $252.SpannerAsyncActionResponse>(
+    $addMethod($grpc.ServiceMethod<$254.SpannerAsyncActionRequest,
+            $254.SpannerAsyncActionResponse>(
         'ExecuteActionAsync',
         executeActionAsync,
         true,
         true,
         ($core.List<$core.int> value) =>
-            $252.SpannerAsyncActionRequest.fromBuffer(value),
-        ($252.SpannerAsyncActionResponse value) => value.writeToBuffer()));
+            $254.SpannerAsyncActionRequest.fromBuffer(value),
+        ($254.SpannerAsyncActionResponse value) => value.writeToBuffer()));
   }
 
-  $async.Stream<$252.SpannerAsyncActionResponse> executeActionAsync(
+  $async.Stream<$254.SpannerAsyncActionResponse> executeActionAsync(
       $grpc.ServiceCall call,
-      $async.Stream<$252.SpannerAsyncActionRequest> request);
+      $async.Stream<$254.SpannerAsyncActionRequest> request);
 }

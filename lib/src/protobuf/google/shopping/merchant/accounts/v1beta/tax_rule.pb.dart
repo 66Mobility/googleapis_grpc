@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/interval.pb.dart' as $512;
+import '../../../../type/interval.pb.dart' as $515;
 
 /// A range of postal codes that defines the area.
 class TaxRule_TaxPostalCodeRange extends $pb.GeneratedMessage {
@@ -127,7 +127,7 @@ class TaxRule extends $pb.GeneratedMessage {
     $core.bool? useGoogleRate,
     $fixnum.Int64? selfSpecifiedRateMicros,
     $core.bool? shippingTaxed,
-    $512.Interval? effectiveTimePeriod,
+    $515.Interval? effectiveTimePeriod,
   }) {
     final $result = create();
     if (regionCode != null) {
@@ -186,8 +186,8 @@ class TaxRule extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'useGoogleRate')
     ..aInt64(5, _omitFieldNames ? '' : 'selfSpecifiedRateMicros')
     ..aOB(6, _omitFieldNames ? '' : 'shippingTaxed')
-    ..aOM<$512.Interval>(7, _omitFieldNames ? '' : 'effectiveTimePeriod',
-        subBuilder: $512.Interval.create)
+    ..aOM<$515.Interval>(7, _omitFieldNames ? '' : 'effectiveTimePeriod',
+        subBuilder: $515.Interval.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -308,9 +308,9 @@ class TaxRule extends $pb.GeneratedMessage {
   /// missing from effective_time listed, then it is open ended to the future.
   /// The start of this time period is inclusive, and the end is exclusive.
   @$pb.TagNumber(7)
-  $512.Interval get effectiveTimePeriod => $_getN(6);
+  $515.Interval get effectiveTimePeriod => $_getN(6);
   @$pb.TagNumber(7)
-  set effectiveTimePeriod($512.Interval v) {
+  set effectiveTimePeriod($515.Interval v) {
     setField(7, v);
   }
 
@@ -319,7 +319,7 @@ class TaxRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearEffectiveTimePeriod() => clearField(7);
   @$pb.TagNumber(7)
-  $512.Interval ensureEffectiveTimePeriod() => $_ensure(6);
+  $515.Interval ensureEffectiveTimePeriod() => $_ensure(6);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../type/expr.pb.dart' as $399;
+import '../../type/expr.pb.dart' as $401;
 import 'policy.pbenum.dart';
 
 export 'policy.pbenum.dart';
@@ -240,7 +240,7 @@ class Binding extends $pb.GeneratedMessage {
   factory Binding({
     $core.String? role,
     $core.Iterable<$core.String>? members,
-    $399.Expr? condition,
+    $401.Expr? condition,
   }) {
     final $result = create();
     if (role != null) {
@@ -268,8 +268,8 @@ class Binding extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'role')
     ..pPS(2, _omitFieldNames ? '' : 'members')
-    ..aOM<$399.Expr>(3, _omitFieldNames ? '' : 'condition',
-        subBuilder: $399.Expr.create)
+    ..aOM<$401.Expr>(3, _omitFieldNames ? '' : 'condition',
+        subBuilder: $401.Expr.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -365,9 +365,9 @@ class Binding extends $pb.GeneratedMessage {
   ///  [IAM
   ///  documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
   @$pb.TagNumber(3)
-  $399.Expr get condition => $_getN(2);
+  $401.Expr get condition => $_getN(2);
   @$pb.TagNumber(3)
-  set condition($399.Expr v) {
+  set condition($401.Expr v) {
     setField(3, v);
   }
 
@@ -376,7 +376,7 @@ class Binding extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCondition() => clearField(3);
   @$pb.TagNumber(3)
-  $399.Expr ensureCondition() => $_ensure(2);
+  $401.Expr ensureCondition() => $_ensure(2);
 }
 
 ///  Specifies the audit configuration for a service.
@@ -674,7 +674,7 @@ class BindingDelta extends $pb.GeneratedMessage {
     BindingDelta_Action? action,
     $core.String? role,
     $core.String? member,
-    $399.Expr? condition,
+    $401.Expr? condition,
   }) {
     final $result = create();
     if (action != null) {
@@ -710,8 +710,8 @@ class BindingDelta extends $pb.GeneratedMessage {
         enumValues: BindingDelta_Action.values)
     ..aOS(2, _omitFieldNames ? '' : 'role')
     ..aOS(3, _omitFieldNames ? '' : 'member')
-    ..aOM<$399.Expr>(4, _omitFieldNames ? '' : 'condition',
-        subBuilder: $399.Expr.create)
+    ..aOM<$401.Expr>(4, _omitFieldNames ? '' : 'condition',
+        subBuilder: $401.Expr.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -783,9 +783,9 @@ class BindingDelta extends $pb.GeneratedMessage {
 
   /// The condition that is associated with this binding.
   @$pb.TagNumber(4)
-  $399.Expr get condition => $_getN(3);
+  $401.Expr get condition => $_getN(3);
   @$pb.TagNumber(4)
-  set condition($399.Expr v) {
+  set condition($401.Expr v) {
     setField(4, v);
   }
 
@@ -794,7 +794,7 @@ class BindingDelta extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCondition() => clearField(4);
   @$pb.TagNumber(4)
-  $399.Expr ensureCondition() => $_ensure(3);
+  $401.Expr ensureCondition() => $_ensure(3);
 }
 
 /// One delta entry for AuditConfig. Each individual change (only one

@@ -52,7 +52,7 @@ const Snooze_Criteria$json = {
 
 /// Descriptor for `Snooze`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List snoozeDescriptor = $convert.base64Decode(
-    'CgZTbm9vemUSFwoEbmFtZRgBIAEoCUID4EECUgRuYW1lEkYKCGNyaXRlcmlhGAMgASgLMiUuZ2'
+    'CgZTbm9vemUSFwoEbmFtZRgBIAEoCUID4EEIUgRuYW1lEkYKCGNyaXRlcmlhGAMgASgLMiUuZ2'
     '9vZ2xlLm1vbml0b3JpbmcudjMuU25vb3plLkNyaXRlcmlhQgPgQQJSCGNyaXRlcmlhEkMKCGlu'
     'dGVydmFsGAQgASgLMiIuZ29vZ2xlLm1vbml0b3JpbmcudjMuVGltZUludGVydmFsQgPgQQJSCG'
     'ludGVydmFsEiYKDGRpc3BsYXlfbmFtZRgFIAEoCUID4EECUgtkaXNwbGF5TmFtZRpSCghDcml0'

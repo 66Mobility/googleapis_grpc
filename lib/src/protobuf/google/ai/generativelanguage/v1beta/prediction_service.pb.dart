@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $261;
+import '../../../protobuf/struct.pb.dart' as $263;
 
 /// Request message for
 /// [PredictionService.Predict][google.ai.generativelanguage.v1beta.PredictionService.Predict].
 class PredictRequest extends $pb.GeneratedMessage {
   factory PredictRequest({
     $core.String? model,
-    $core.Iterable<$261.Value>? instances,
-    $261.Value? parameters,
+    $core.Iterable<$263.Value>? instances,
+    $263.Value? parameters,
   }) {
     final $result = create();
     if (model != null) {
@@ -49,10 +49,10 @@ class PredictRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..pc<$261.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM,
-        subBuilder: $261.Value.create)
-    ..aOM<$261.Value>(3, _omitFieldNames ? '' : 'parameters',
-        subBuilder: $261.Value.create)
+    ..pc<$263.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM,
+        subBuilder: $263.Value.create)
+    ..aOM<$263.Value>(3, _omitFieldNames ? '' : 'parameters',
+        subBuilder: $263.Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -94,13 +94,13 @@ class PredictRequest extends $pb.GeneratedMessage {
 
   /// Required. The instances that are the input to the prediction call.
   @$pb.TagNumber(2)
-  $core.List<$261.Value> get instances => $_getList(1);
+  $core.List<$263.Value> get instances => $_getList(1);
 
   /// Optional. The parameters that govern the prediction call.
   @$pb.TagNumber(3)
-  $261.Value get parameters => $_getN(2);
+  $263.Value get parameters => $_getN(2);
   @$pb.TagNumber(3)
-  set parameters($261.Value v) {
+  set parameters($263.Value v) {
     setField(3, v);
   }
 
@@ -109,13 +109,13 @@ class PredictRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $261.Value ensureParameters() => $_ensure(2);
+  $263.Value ensureParameters() => $_ensure(2);
 }
 
 /// Response message for [PredictionService.Predict].
 class PredictResponse extends $pb.GeneratedMessage {
   factory PredictResponse({
-    $core.Iterable<$261.Value>? predictions,
+    $core.Iterable<$263.Value>? predictions,
   }) {
     final $result = create();
     if (predictions != null) {
@@ -136,9 +136,9 @@ class PredictResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..pc<$261.Value>(
+    ..pc<$263.Value>(
         1, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM,
-        subBuilder: $261.Value.create)
+        subBuilder: $263.Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -166,7 +166,7 @@ class PredictResponse extends $pb.GeneratedMessage {
 
   /// The outputs of the prediction call.
   @$pb.TagNumber(1)
-  $core.List<$261.Value> get predictions => $_getList(0);
+  $core.List<$263.Value> get predictions => $_getList(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

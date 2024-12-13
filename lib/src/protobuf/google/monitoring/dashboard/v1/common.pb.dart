@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $264;
-import '../../../type/interval.pb.dart' as $512;
+import '../../../protobuf/duration.pb.dart' as $266;
+import '../../../type/interval.pb.dart' as $515;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -47,7 +47,7 @@ export 'common.pbenum.dart';
 ///  aggregation](https://cloud.google.com/monitoring/api/v3/aggregation).
 class Aggregation extends $pb.GeneratedMessage {
   factory Aggregation({
-    $264.Duration? alignmentPeriod,
+    $266.Duration? alignmentPeriod,
     Aggregation_Aligner? perSeriesAligner,
     Aggregation_Reducer? crossSeriesReducer,
     $core.Iterable<$core.String>? groupByFields,
@@ -80,8 +80,8 @@ class Aggregation extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
-    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'alignmentPeriod',
-        subBuilder: $264.Duration.create)
+    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'alignmentPeriod',
+        subBuilder: $266.Duration.create)
     ..e<Aggregation_Aligner>(
         2, _omitFieldNames ? '' : 'perSeriesAligner', $pb.PbFieldType.OE,
         defaultOrMaker: Aggregation_Aligner.ALIGN_NONE,
@@ -130,9 +130,9 @@ class Aggregation extends $pb.GeneratedMessage {
   ///
   ///  The maximum value of the `alignment_period` is 2 years, or 104 weeks.
   @$pb.TagNumber(1)
-  $264.Duration get alignmentPeriod => $_getN(0);
+  $266.Duration get alignmentPeriod => $_getN(0);
   @$pb.TagNumber(1)
-  set alignmentPeriod($264.Duration v) {
+  set alignmentPeriod($266.Duration v) {
     setField(1, v);
   }
 
@@ -141,7 +141,7 @@ class Aggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearAlignmentPeriod() => clearField(1);
   @$pb.TagNumber(1)
-  $264.Duration ensureAlignmentPeriod() => $_ensure(0);
+  $266.Duration ensureAlignmentPeriod() => $_ensure(0);
 
   ///  An `Aligner` describes how to bring the data points in a single
   ///  time series into temporal alignment. Except for `ALIGN_NONE`, all
@@ -227,7 +227,7 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
     PickTimeSeriesFilter_Method? rankingMethod,
     $core.int? numTimeSeries,
     PickTimeSeriesFilter_Direction? direction,
-    $512.Interval? interval,
+    $515.Interval? interval,
   }) {
     final $result = create();
     if (rankingMethod != null) {
@@ -269,8 +269,8 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
         defaultOrMaker: PickTimeSeriesFilter_Direction.DIRECTION_UNSPECIFIED,
         valueOf: PickTimeSeriesFilter_Direction.valueOf,
         enumValues: PickTimeSeriesFilter_Direction.values)
-    ..aOM<$512.Interval>(4, _omitFieldNames ? '' : 'interval',
-        subBuilder: $512.Interval.create)
+    ..aOM<$515.Interval>(4, _omitFieldNames ? '' : 'interval',
+        subBuilder: $515.Interval.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -340,9 +340,9 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
 
   /// Select the top N streams/time series within this time interval
   @$pb.TagNumber(4)
-  $512.Interval get interval => $_getN(3);
+  $515.Interval get interval => $_getN(3);
   @$pb.TagNumber(4)
-  set interval($512.Interval v) {
+  set interval($515.Interval v) {
     setField(4, v);
   }
 
@@ -351,7 +351,7 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearInterval() => clearField(4);
   @$pb.TagNumber(4)
-  $512.Interval ensureInterval() => $_ensure(3);
+  $515.Interval ensureInterval() => $_ensure(3);
 }
 
 /// A filter that ranks streams based on their statistical relation to other

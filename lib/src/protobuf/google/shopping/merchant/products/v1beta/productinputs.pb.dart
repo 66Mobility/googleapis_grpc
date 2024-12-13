@@ -14,24 +14,24 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/types.pb.dart' as $537;
-import '../../../type/types.pbenum.dart' as $537;
-import 'products_common.pb.dart' as $548;
+import '../../../type/types.pb.dart' as $540;
+import '../../../type/types.pbenum.dart' as $540;
+import 'products_common.pb.dart' as $551;
 
 ///  This resource represents input data you submit for a product, not the
 ///  processed product that you see in Merchant Center, in Shopping ads, or across
 ///  Google surfaces. Product inputs, rules and supplemental data source data are
 ///  combined to create the processed
-///  [product][google.shopping.content.bundles.Products.Product].
+///  [Product][google.shopping.merchant.products.v1beta.Product].
 ///
 ///  Required product input attributes to pass data validation checks are
 ///  primarily defined in the [Products Data
 ///  Specification](https://support.google.com/merchants/answer/188494).
 ///
 ///  The following attributes are required:
-///  [feedLabel][google.shopping.content.bundles.Products.feed_label],
-///  [contentLanguage][google.shopping.content.bundles.Products.content_language]
-///  and [offerId][google.shopping.content.bundles.Products.offer_id].
+///  [feedLabel][google.shopping.merchant.products.v1beta.Product.feed_label],
+///  [contentLanguage][google.shopping.merchant.products.v1beta.Product.content_language]
+///  and [offerId][google.shopping.merchant.products.v1beta.Product.offer_id].
 ///
 ///  After inserting, updating, or deleting a product input, it may take several
 ///  minutes before the processed product can be retrieved.
@@ -43,13 +43,13 @@ class ProductInput extends $pb.GeneratedMessage {
   factory ProductInput({
     $core.String? name,
     $core.String? product,
-    $537.Channel_ChannelEnum? channel,
+    $540.Channel_ChannelEnum? channel,
     $core.String? offerId,
     $core.String? contentLanguage,
     $core.String? feedLabel,
     $fixnum.Int64? versionNumber,
-    $548.Attributes? attributes,
-    $core.Iterable<$537.CustomAttribute>? customAttributes,
+    $551.Attributes? attributes,
+    $core.Iterable<$540.CustomAttribute>? customAttributes,
   }) {
     final $result = create();
     if (name != null) {
@@ -96,20 +96,20 @@ class ProductInput extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'product')
-    ..e<$537.Channel_ChannelEnum>(
+    ..e<$540.Channel_ChannelEnum>(
         3, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE,
-        defaultOrMaker: $537.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED,
-        valueOf: $537.Channel_ChannelEnum.valueOf,
-        enumValues: $537.Channel_ChannelEnum.values)
+        defaultOrMaker: $540.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED,
+        valueOf: $540.Channel_ChannelEnum.valueOf,
+        enumValues: $540.Channel_ChannelEnum.values)
     ..aOS(4, _omitFieldNames ? '' : 'offerId')
     ..aOS(5, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(6, _omitFieldNames ? '' : 'feedLabel')
     ..aInt64(7, _omitFieldNames ? '' : 'versionNumber')
-    ..aOM<$548.Attributes>(8, _omitFieldNames ? '' : 'attributes',
-        subBuilder: $548.Attributes.create)
-    ..pc<$537.CustomAttribute>(
+    ..aOM<$551.Attributes>(8, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $551.Attributes.create)
+    ..pc<$540.CustomAttribute>(
         9, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM,
-        subBuilder: $537.CustomAttribute.create)
+        subBuilder: $540.CustomAttribute.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -138,6 +138,10 @@ class ProductInput extends $pb.GeneratedMessage {
   /// Identifier. The name of the product input.
   /// Format:
   /// `"{productinput.name=accounts/{account}/productInputs/{productinput}}"`
+  /// where the last section `productinput` consists of 4 parts:
+  /// channel~content_language~feed_label~offer_id
+  /// example for product input name is
+  /// "accounts/123/productInputs/online~en~US~sku123"
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -169,9 +173,9 @@ class ProductInput extends $pb.GeneratedMessage {
   /// [channel](https://support.google.com/merchants/answer/7361332) of the
   /// product.
   @$pb.TagNumber(3)
-  $537.Channel_ChannelEnum get channel => $_getN(2);
+  $540.Channel_ChannelEnum get channel => $_getN(2);
   @$pb.TagNumber(3)
-  set channel($537.Channel_ChannelEnum v) {
+  set channel($540.Channel_ChannelEnum v) {
     setField(3, v);
   }
 
@@ -255,9 +259,9 @@ class ProductInput extends $pb.GeneratedMessage {
 
   /// Optional. A list of product attributes.
   @$pb.TagNumber(8)
-  $548.Attributes get attributes => $_getN(7);
+  $551.Attributes get attributes => $_getN(7);
   @$pb.TagNumber(8)
-  set attributes($548.Attributes v) {
+  set attributes($551.Attributes v) {
     setField(8, v);
   }
 
@@ -266,7 +270,7 @@ class ProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearAttributes() => clearField(8);
   @$pb.TagNumber(8)
-  $548.Attributes ensureAttributes() => $_ensure(7);
+  $551.Attributes ensureAttributes() => $_ensure(7);
 
   /// Optional. A list of custom (merchant-provided) attributes. It can also be
   /// used for submitting any attribute of the data specification in its generic
@@ -280,7 +284,7 @@ class ProductInput extends $pb.GeneratedMessage {
   /// size of 102.4kB. Underscores in custom attribute names are replaced by
   /// spaces upon insertion.
   @$pb.TagNumber(9)
-  $core.List<$537.CustomAttribute> get customAttributes => $_getList(8);
+  $core.List<$540.CustomAttribute> get customAttributes => $_getList(8);
 }
 
 /// Request message for the InsertProductInput method.
@@ -451,6 +455,10 @@ class DeleteProductInputRequest extends $pb.GeneratedMessage {
 
   /// Required. The name of the product input resource to delete.
   /// Format: accounts/{account}/productInputs/{product}
+  /// where the last section `product` consists of 4 parts:
+  /// channel~content_language~feed_label~offer_id
+  /// example for product name is
+  /// "accounts/123/productInputs/online~en~US~sku123"
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)

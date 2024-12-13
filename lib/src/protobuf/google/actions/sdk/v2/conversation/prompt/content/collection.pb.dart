@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'image.pbenum.dart' as $309;
+import 'image.pbenum.dart' as $311;
 
 /// An item in the collection
 class Collection_CollectionItem extends $pb.GeneratedMessage {
@@ -88,7 +88,7 @@ class Collection extends $pb.GeneratedMessage {
     $core.String? title,
     $core.String? subtitle,
     $core.Iterable<Collection_CollectionItem>? items,
-    $309.Image_ImageFill? imageFill,
+    $311.Image_ImageFill? imageFill,
   }) {
     final $result = create();
     if (title != null) {
@@ -123,11 +123,11 @@ class Collection extends $pb.GeneratedMessage {
     ..pc<Collection_CollectionItem>(
         3, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM,
         subBuilder: Collection_CollectionItem.create)
-    ..e<$309.Image_ImageFill>(
+    ..e<$311.Image_ImageFill>(
         4, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE,
-        defaultOrMaker: $309.Image_ImageFill.UNSPECIFIED,
-        valueOf: $309.Image_ImageFill.valueOf,
-        enumValues: $309.Image_ImageFill.values)
+        defaultOrMaker: $311.Image_ImageFill.UNSPECIFIED,
+        valueOf: $311.Image_ImageFill.valueOf,
+        enumValues: $311.Image_ImageFill.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -183,9 +183,9 @@ class Collection extends $pb.GeneratedMessage {
 
   /// How the image backgrounds of collection items will be filled. Optional.
   @$pb.TagNumber(4)
-  $309.Image_ImageFill get imageFill => $_getN(3);
+  $311.Image_ImageFill get imageFill => $_getN(3);
   @$pb.TagNumber(4)
-  set imageFill($309.Image_ImageFill v) {
+  set imageFill($311.Image_ImageFill v) {
     setField(4, v);
   }
 

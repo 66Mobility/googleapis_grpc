@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'type/class_reference.pb.dart' as $278;
+import 'type/class_reference.pb.dart' as $280;
 
 /// A reference to the set of allowed entities for this intent parameter.
 class Intent_IntentParameter_EntitySetReferences_EntitySetReference
@@ -175,7 +175,7 @@ enum Intent_IntentParameter_ParameterType { type, entitySetReferences, notSet }
 class Intent_IntentParameter extends $pb.GeneratedMessage {
   factory Intent_IntentParameter({
     $core.String? name,
-    $278.ClassReference? type,
+    $280.ClassReference? type,
     Intent_IntentParameter_EntitySetReferences? entitySetReferences,
   }) {
     final $result = create();
@@ -211,8 +211,8 @@ class Intent_IntentParameter extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$278.ClassReference>(2, _omitFieldNames ? '' : 'type',
-        subBuilder: $278.ClassReference.create)
+    ..aOM<$280.ClassReference>(2, _omitFieldNames ? '' : 'type',
+        subBuilder: $280.ClassReference.create)
     ..aOM<Intent_IntentParameter_EntitySetReferences>(
         3, _omitFieldNames ? '' : 'entitySetReferences',
         subBuilder: Intent_IntentParameter_EntitySetReferences.create)
@@ -265,9 +265,9 @@ class Intent_IntentParameter extends $pb.GeneratedMessage {
   /// Optional. Declares the data type of this parameter.
   /// This should not be set for built-in intents.
   @$pb.TagNumber(2)
-  $278.ClassReference get type => $_getN(1);
+  $280.ClassReference get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($278.ClassReference v) {
+  set type($280.ClassReference v) {
     setField(2, v);
   }
 
@@ -276,7 +276,7 @@ class Intent_IntentParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $278.ClassReference ensureType() => $_ensure(1);
+  $280.ClassReference ensureType() => $_ensure(1);
 
   /// Optional. References to the sets of allowed entities for this intent parameter.
   /// Only valid for parameters of a built-in intent. These

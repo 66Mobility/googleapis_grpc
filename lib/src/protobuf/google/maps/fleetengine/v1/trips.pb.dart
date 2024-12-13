@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $264;
-import '../../../protobuf/timestamp.pb.dart' as $302;
-import '../../../protobuf/wrappers.pb.dart' as $307;
-import '../../../type/latlng.pb.dart' as $325;
-import 'fleetengine.pb.dart' as $457;
-import 'fleetengine.pbenum.dart' as $457;
-import 'traffic.pb.dart' as $456;
+import '../../../protobuf/duration.pb.dart' as $266;
+import '../../../protobuf/timestamp.pb.dart' as $304;
+import '../../../protobuf/wrappers.pb.dart' as $309;
+import '../../../type/latlng.pb.dart' as $327;
+import 'fleetengine.pb.dart' as $459;
+import 'fleetengine.pbenum.dart' as $459;
+import 'traffic.pb.dart' as $458;
 import 'trips.pbenum.dart';
 
 export 'trips.pbenum.dart';
@@ -30,32 +30,32 @@ class Trip extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? vehicleId,
     TripStatus? tripStatus,
-    $457.TripType? tripType,
-    $457.TerminalLocation? pickupPoint,
-    $302.Timestamp? pickupTime,
-    $457.TerminalLocation? dropoffPoint,
-    $302.Timestamp? dropoffTime,
-    $core.Iterable<$325.LatLng>? route,
+    $459.TripType? tripType,
+    $459.TerminalLocation? pickupPoint,
+    $304.Timestamp? pickupTime,
+    $459.TerminalLocation? dropoffPoint,
+    $304.Timestamp? dropoffTime,
+    $core.Iterable<$327.LatLng>? route,
     $core.int? numberOfPassengers,
-    $457.VehicleLocation? lastLocation,
-    $307.Int32Value? remainingDistanceMeters,
-    $302.Timestamp? etaToFirstWaypoint,
-    $core.Iterable<$457.TerminalLocation>? intermediateDestinations,
+    $459.VehicleLocation? lastLocation,
+    $309.Int32Value? remainingDistanceMeters,
+    $304.Timestamp? etaToFirstWaypoint,
+    $core.Iterable<$459.TerminalLocation>? intermediateDestinations,
     $core.int? intermediateDestinationIndex,
-    $core.Iterable<$457.TripWaypoint>? remainingWaypoints,
-    $302.Timestamp? currentRouteSegmentVersion,
-    $302.Timestamp? remainingWaypointsVersion,
-    $core.Iterable<$457.TripWaypoint>? vehicleWaypoints,
+    $core.Iterable<$459.TripWaypoint>? remainingWaypoints,
+    $304.Timestamp? currentRouteSegmentVersion,
+    $304.Timestamp? remainingWaypointsVersion,
+    $core.Iterable<$459.TripWaypoint>? vehicleWaypoints,
     $core.String? currentRouteSegment,
     StopLocation? actualPickupPoint,
     StopLocation? actualDropoffPoint,
-    $457.TripWaypoint? currentRouteSegmentEndPoint,
-    $302.Timestamp? intermediateDestinationsVersion,
+    $459.TripWaypoint? currentRouteSegmentEndPoint,
+    $304.Timestamp? intermediateDestinationsVersion,
     $core.bool? lastLocationSnappable,
-    $264.Duration? remainingTimeToFirstWaypoint,
-    $456.ConsumableTrafficPolyline? currentRouteSegmentTraffic,
-    $302.Timestamp? remainingWaypointsRouteVersion,
-    $302.Timestamp? currentRouteSegmentTrafficVersion,
+    $266.Duration? remainingTimeToFirstWaypoint,
+    $458.ConsumableTrafficPolyline? currentRouteSegmentTraffic,
+    $304.Timestamp? remainingWaypointsRouteVersion,
+    $304.Timestamp? currentRouteSegmentTrafficVersion,
     TripView? view,
     StopLocation? actualPickupArrivalPoint,
     $core.Iterable<StopLocation>? actualIntermediateDestinationArrivalPoints,
@@ -185,69 +185,69 @@ class Trip extends $pb.GeneratedMessage {
         defaultOrMaker: TripStatus.UNKNOWN_TRIP_STATUS,
         valueOf: TripStatus.valueOf,
         enumValues: TripStatus.values)
-    ..e<$457.TripType>(4, _omitFieldNames ? '' : 'tripType', $pb.PbFieldType.OE,
-        defaultOrMaker: $457.TripType.UNKNOWN_TRIP_TYPE,
-        valueOf: $457.TripType.valueOf,
-        enumValues: $457.TripType.values)
-    ..aOM<$457.TerminalLocation>(5, _omitFieldNames ? '' : 'pickupPoint',
-        subBuilder: $457.TerminalLocation.create)
-    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'pickupTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$457.TerminalLocation>(7, _omitFieldNames ? '' : 'dropoffPoint',
-        subBuilder: $457.TerminalLocation.create)
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'dropoffTime',
-        subBuilder: $302.Timestamp.create)
-    ..pc<$325.LatLng>(9, _omitFieldNames ? '' : 'route', $pb.PbFieldType.PM,
-        subBuilder: $325.LatLng.create)
+    ..e<$459.TripType>(4, _omitFieldNames ? '' : 'tripType', $pb.PbFieldType.OE,
+        defaultOrMaker: $459.TripType.UNKNOWN_TRIP_TYPE,
+        valueOf: $459.TripType.valueOf,
+        enumValues: $459.TripType.values)
+    ..aOM<$459.TerminalLocation>(5, _omitFieldNames ? '' : 'pickupPoint',
+        subBuilder: $459.TerminalLocation.create)
+    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'pickupTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$459.TerminalLocation>(7, _omitFieldNames ? '' : 'dropoffPoint',
+        subBuilder: $459.TerminalLocation.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'dropoffTime',
+        subBuilder: $304.Timestamp.create)
+    ..pc<$327.LatLng>(9, _omitFieldNames ? '' : 'route', $pb.PbFieldType.PM,
+        subBuilder: $327.LatLng.create)
     ..a<$core.int>(
         10, _omitFieldNames ? '' : 'numberOfPassengers', $pb.PbFieldType.O3)
-    ..aOM<$457.VehicleLocation>(11, _omitFieldNames ? '' : 'lastLocation',
-        subBuilder: $457.VehicleLocation.create)
-    ..aOM<$307.Int32Value>(12, _omitFieldNames ? '' : 'remainingDistanceMeters',
-        subBuilder: $307.Int32Value.create)
-    ..aOM<$302.Timestamp>(13, _omitFieldNames ? '' : 'etaToFirstWaypoint',
-        subBuilder: $302.Timestamp.create)
-    ..pc<$457.TerminalLocation>(14,
+    ..aOM<$459.VehicleLocation>(11, _omitFieldNames ? '' : 'lastLocation',
+        subBuilder: $459.VehicleLocation.create)
+    ..aOM<$309.Int32Value>(12, _omitFieldNames ? '' : 'remainingDistanceMeters',
+        subBuilder: $309.Int32Value.create)
+    ..aOM<$304.Timestamp>(13, _omitFieldNames ? '' : 'etaToFirstWaypoint',
+        subBuilder: $304.Timestamp.create)
+    ..pc<$459.TerminalLocation>(14,
         _omitFieldNames ? '' : 'intermediateDestinations', $pb.PbFieldType.PM,
-        subBuilder: $457.TerminalLocation.create)
+        subBuilder: $459.TerminalLocation.create)
     ..a<$core.int>(15, _omitFieldNames ? '' : 'intermediateDestinationIndex',
         $pb.PbFieldType.O3)
-    ..pc<$457.TripWaypoint>(
+    ..pc<$459.TripWaypoint>(
         16, _omitFieldNames ? '' : 'remainingWaypoints', $pb.PbFieldType.PM,
-        subBuilder: $457.TripWaypoint.create)
-    ..aOM<$302.Timestamp>(
+        subBuilder: $459.TripWaypoint.create)
+    ..aOM<$304.Timestamp>(
         17, _omitFieldNames ? '' : 'currentRouteSegmentVersion',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(
         19, _omitFieldNames ? '' : 'remainingWaypointsVersion',
-        subBuilder: $302.Timestamp.create)
-    ..pc<$457.TripWaypoint>(
+        subBuilder: $304.Timestamp.create)
+    ..pc<$459.TripWaypoint>(
         20, _omitFieldNames ? '' : 'vehicleWaypoints', $pb.PbFieldType.PM,
-        subBuilder: $457.TripWaypoint.create)
+        subBuilder: $459.TripWaypoint.create)
     ..aOS(21, _omitFieldNames ? '' : 'currentRouteSegment')
     ..aOM<StopLocation>(22, _omitFieldNames ? '' : 'actualPickupPoint',
         subBuilder: StopLocation.create)
     ..aOM<StopLocation>(23, _omitFieldNames ? '' : 'actualDropoffPoint',
         subBuilder: StopLocation.create)
-    ..aOM<$457.TripWaypoint>(
+    ..aOM<$459.TripWaypoint>(
         24, _omitFieldNames ? '' : 'currentRouteSegmentEndPoint',
-        subBuilder: $457.TripWaypoint.create)
-    ..aOM<$302.Timestamp>(
+        subBuilder: $459.TripWaypoint.create)
+    ..aOM<$304.Timestamp>(
         25, _omitFieldNames ? '' : 'intermediateDestinationsVersion',
-        subBuilder: $302.Timestamp.create)
+        subBuilder: $304.Timestamp.create)
     ..aOB(26, _omitFieldNames ? '' : 'lastLocationSnappable')
-    ..aOM<$264.Duration>(
+    ..aOM<$266.Duration>(
         27, _omitFieldNames ? '' : 'remainingTimeToFirstWaypoint',
-        subBuilder: $264.Duration.create)
-    ..aOM<$456.ConsumableTrafficPolyline>(
+        subBuilder: $266.Duration.create)
+    ..aOM<$458.ConsumableTrafficPolyline>(
         28, _omitFieldNames ? '' : 'currentRouteSegmentTraffic',
-        subBuilder: $456.ConsumableTrafficPolyline.create)
-    ..aOM<$302.Timestamp>(
+        subBuilder: $458.ConsumableTrafficPolyline.create)
+    ..aOM<$304.Timestamp>(
         29, _omitFieldNames ? '' : 'remainingWaypointsRouteVersion',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(
         30, _omitFieldNames ? '' : 'currentRouteSegmentTrafficVersion',
-        subBuilder: $302.Timestamp.create)
+        subBuilder: $304.Timestamp.create)
     ..e<TripView>(31, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE,
         defaultOrMaker: TripView.TRIP_VIEW_UNSPECIFIED,
         valueOf: TripView.valueOf,
@@ -328,9 +328,9 @@ class Trip extends $pb.GeneratedMessage {
 
   /// The type of the trip.
   @$pb.TagNumber(4)
-  $457.TripType get tripType => $_getN(3);
+  $459.TripType get tripType => $_getN(3);
   @$pb.TagNumber(4)
-  set tripType($457.TripType v) {
+  set tripType($459.TripType v) {
     setField(4, v);
   }
 
@@ -341,9 +341,9 @@ class Trip extends $pb.GeneratedMessage {
 
   /// Location where customer indicates they will be picked up.
   @$pb.TagNumber(5)
-  $457.TerminalLocation get pickupPoint => $_getN(4);
+  $459.TerminalLocation get pickupPoint => $_getN(4);
   @$pb.TagNumber(5)
-  set pickupPoint($457.TerminalLocation v) {
+  set pickupPoint($459.TerminalLocation v) {
     setField(5, v);
   }
 
@@ -352,14 +352,14 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearPickupPoint() => clearField(5);
   @$pb.TagNumber(5)
-  $457.TerminalLocation ensurePickupPoint() => $_ensure(4);
+  $459.TerminalLocation ensurePickupPoint() => $_ensure(4);
 
   /// Output only. Either the estimated future time when the rider(s) will be
   /// picked up, or the actual time when they were picked up.
   @$pb.TagNumber(6)
-  $302.Timestamp get pickupTime => $_getN(5);
+  $304.Timestamp get pickupTime => $_getN(5);
   @$pb.TagNumber(6)
-  set pickupTime($302.Timestamp v) {
+  set pickupTime($304.Timestamp v) {
     setField(6, v);
   }
 
@@ -368,13 +368,13 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearPickupTime() => clearField(6);
   @$pb.TagNumber(6)
-  $302.Timestamp ensurePickupTime() => $_ensure(5);
+  $304.Timestamp ensurePickupTime() => $_ensure(5);
 
   /// Location where customer indicates they will be dropped off.
   @$pb.TagNumber(7)
-  $457.TerminalLocation get dropoffPoint => $_getN(6);
+  $459.TerminalLocation get dropoffPoint => $_getN(6);
   @$pb.TagNumber(7)
-  set dropoffPoint($457.TerminalLocation v) {
+  set dropoffPoint($459.TerminalLocation v) {
     setField(7, v);
   }
 
@@ -383,15 +383,15 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearDropoffPoint() => clearField(7);
   @$pb.TagNumber(7)
-  $457.TerminalLocation ensureDropoffPoint() => $_ensure(6);
+  $459.TerminalLocation ensureDropoffPoint() => $_ensure(6);
 
   /// Output only. Either the estimated future time when the rider(s) will be
   /// dropped off at the final destination, or the actual time when they were
   /// dropped off.
   @$pb.TagNumber(8)
-  $302.Timestamp get dropoffTime => $_getN(7);
+  $304.Timestamp get dropoffTime => $_getN(7);
   @$pb.TagNumber(8)
-  set dropoffTime($302.Timestamp v) {
+  set dropoffTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -400,13 +400,13 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearDropoffTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureDropoffTime() => $_ensure(7);
+  $304.Timestamp ensureDropoffTime() => $_ensure(7);
 
   /// Output only. Anticipated route for this trip to the first entry in
   /// remaining_waypoints. Note that the first waypoint may belong to a different
   /// trip.
   @$pb.TagNumber(9)
-  $core.List<$325.LatLng> get route => $_getList(8);
+  $core.List<$327.LatLng> get route => $_getList(8);
 
   /// Immutable. Indicates the number of passengers on this trip and does not
   /// include the driver. A vehicle must have available capacity to be returned
@@ -426,9 +426,9 @@ class Trip extends $pb.GeneratedMessage {
   /// Output only. Indicates the last reported location of the vehicle along the
   /// route.
   @$pb.TagNumber(11)
-  $457.VehicleLocation get lastLocation => $_getN(10);
+  $459.VehicleLocation get lastLocation => $_getN(10);
   @$pb.TagNumber(11)
-  set lastLocation($457.VehicleLocation v) {
+  set lastLocation($459.VehicleLocation v) {
     setField(11, v);
   }
 
@@ -437,15 +437,15 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearLastLocation() => clearField(11);
   @$pb.TagNumber(11)
-  $457.VehicleLocation ensureLastLocation() => $_ensure(10);
+  $459.VehicleLocation ensureLastLocation() => $_ensure(10);
 
   /// Output only. The remaining driving distance in the `current_route_segment`
   /// field. The value is unspecified if the trip is not assigned to a vehicle,
   /// or the trip is completed or cancelled.
   @$pb.TagNumber(12)
-  $307.Int32Value get remainingDistanceMeters => $_getN(11);
+  $309.Int32Value get remainingDistanceMeters => $_getN(11);
   @$pb.TagNumber(12)
-  set remainingDistanceMeters($307.Int32Value v) {
+  set remainingDistanceMeters($309.Int32Value v) {
     setField(12, v);
   }
 
@@ -454,15 +454,15 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearRemainingDistanceMeters() => clearField(12);
   @$pb.TagNumber(12)
-  $307.Int32Value ensureRemainingDistanceMeters() => $_ensure(11);
+  $309.Int32Value ensureRemainingDistanceMeters() => $_ensure(11);
 
   /// Output only. The ETA to the next waypoint (the first entry in the
   /// `remaining_waypoints` field). The value is unspecified if the trip is not
   /// assigned to a vehicle, or the trip is inactive (completed or cancelled).
   @$pb.TagNumber(13)
-  $302.Timestamp get etaToFirstWaypoint => $_getN(12);
+  $304.Timestamp get etaToFirstWaypoint => $_getN(12);
   @$pb.TagNumber(13)
-  set etaToFirstWaypoint($302.Timestamp v) {
+  set etaToFirstWaypoint($304.Timestamp v) {
     setField(13, v);
   }
 
@@ -471,13 +471,13 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   void clearEtaToFirstWaypoint() => clearField(13);
   @$pb.TagNumber(13)
-  $302.Timestamp ensureEtaToFirstWaypoint() => $_ensure(12);
+  $304.Timestamp ensureEtaToFirstWaypoint() => $_ensure(12);
 
   /// Intermediate stops in order that the trip requests (in addition
   /// to pickup and dropoff). Initially this will not be supported for shared
   /// trips.
   @$pb.TagNumber(14)
-  $core.List<$457.TerminalLocation> get intermediateDestinations =>
+  $core.List<$459.TerminalLocation> get intermediateDestinations =>
       $_getList(13);
 
   /// When `TripStatus` is `ENROUTE_TO_INTERMEDIATE_DESTINATION`, a number
@@ -501,16 +501,16 @@ class Trip extends $pb.GeneratedMessage {
   /// Output only. The full path from the current location to the dropoff point,
   /// inclusive. This path could include waypoints from other trips.
   @$pb.TagNumber(16)
-  $core.List<$457.TripWaypoint> get remainingWaypoints => $_getList(15);
+  $core.List<$459.TripWaypoint> get remainingWaypoints => $_getList(15);
 
   ///  Output only. Indicates the last time the route was modified.
   ///
   ///  Note: This field is intended only for use by the Driver SDK and Consumer
   ///  SDK.
   @$pb.TagNumber(17)
-  $302.Timestamp get currentRouteSegmentVersion => $_getN(16);
+  $304.Timestamp get currentRouteSegmentVersion => $_getN(16);
   @$pb.TagNumber(17)
-  set currentRouteSegmentVersion($302.Timestamp v) {
+  set currentRouteSegmentVersion($304.Timestamp v) {
     setField(17, v);
   }
 
@@ -519,14 +519,14 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearCurrentRouteSegmentVersion() => clearField(17);
   @$pb.TagNumber(17)
-  $302.Timestamp ensureCurrentRouteSegmentVersion() => $_ensure(16);
+  $304.Timestamp ensureCurrentRouteSegmentVersion() => $_ensure(16);
 
   /// Output only. Indicates the last time that `remaining_waypoints` was changed
   /// (a waypoint was added, removed, or changed).
   @$pb.TagNumber(19)
-  $302.Timestamp get remainingWaypointsVersion => $_getN(17);
+  $304.Timestamp get remainingWaypointsVersion => $_getN(17);
   @$pb.TagNumber(19)
-  set remainingWaypointsVersion($302.Timestamp v) {
+  set remainingWaypointsVersion($304.Timestamp v) {
     setField(19, v);
   }
 
@@ -535,7 +535,7 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   void clearRemainingWaypointsVersion() => clearField(19);
   @$pb.TagNumber(19)
-  $302.Timestamp ensureRemainingWaypointsVersion() => $_ensure(17);
+  $304.Timestamp ensureRemainingWaypointsVersion() => $_ensure(17);
 
   /// This field supports manual ordering of the waypoints for the trip. It
   /// contains all of the remaining waypoints for the assigned vehicle, as well
@@ -544,7 +544,7 @@ class Trip extends $pb.GeneratedMessage {
   /// reasons, this field is only populated by the server on `UpdateTrip` and
   /// `CreateTrip` calls, NOT on `GetTrip` calls.
   @$pb.TagNumber(20)
-  $core.List<$457.TripWaypoint> get vehicleWaypoints => $_getList(18);
+  $core.List<$459.TripWaypoint> get vehicleWaypoints => $_getList(18);
 
   ///  Output only. An encoded path to the next waypoint.
   ///
@@ -598,9 +598,9 @@ class Trip extends $pb.GeneratedMessage {
 
   /// Output only. The waypoint where `current_route_segment` ends.
   @$pb.TagNumber(24)
-  $457.TripWaypoint get currentRouteSegmentEndPoint => $_getN(22);
+  $459.TripWaypoint get currentRouteSegmentEndPoint => $_getN(22);
   @$pb.TagNumber(24)
-  set currentRouteSegmentEndPoint($457.TripWaypoint v) {
+  set currentRouteSegmentEndPoint($459.TripWaypoint v) {
     setField(24, v);
   }
 
@@ -609,16 +609,16 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   void clearCurrentRouteSegmentEndPoint() => clearField(24);
   @$pb.TagNumber(24)
-  $457.TripWaypoint ensureCurrentRouteSegmentEndPoint() => $_ensure(22);
+  $459.TripWaypoint ensureCurrentRouteSegmentEndPoint() => $_ensure(22);
 
   /// Indicates the last time the `intermediate_destinations` was modified.
   /// Your server should cache this value and pass it in `UpdateTripRequest`
   /// when update `intermediate_destination_index` to ensure the
   /// `intermediate_destinations` is not changed.
   @$pb.TagNumber(25)
-  $302.Timestamp get intermediateDestinationsVersion => $_getN(23);
+  $304.Timestamp get intermediateDestinationsVersion => $_getN(23);
   @$pb.TagNumber(25)
-  set intermediateDestinationsVersion($302.Timestamp v) {
+  set intermediateDestinationsVersion($304.Timestamp v) {
     setField(25, v);
   }
 
@@ -627,7 +627,7 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   void clearIntermediateDestinationsVersion() => clearField(25);
   @$pb.TagNumber(25)
-  $302.Timestamp ensureIntermediateDestinationsVersion() => $_ensure(23);
+  $304.Timestamp ensureIntermediateDestinationsVersion() => $_ensure(23);
 
   /// Output only. Indicates whether the vehicle's `last_location` can be snapped
   /// to the current_route_segment. False if `last_location` or
@@ -650,9 +650,9 @@ class Trip extends $pb.GeneratedMessage {
   /// not assigned to a vehicle, or the trip is inactive (completed or
   /// cancelled).
   @$pb.TagNumber(27)
-  $264.Duration get remainingTimeToFirstWaypoint => $_getN(25);
+  $266.Duration get remainingTimeToFirstWaypoint => $_getN(25);
   @$pb.TagNumber(27)
-  set remainingTimeToFirstWaypoint($264.Duration v) {
+  set remainingTimeToFirstWaypoint($266.Duration v) {
     setField(27, v);
   }
 
@@ -661,7 +661,7 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   void clearRemainingTimeToFirstWaypoint() => clearField(27);
   @$pb.TagNumber(27)
-  $264.Duration ensureRemainingTimeToFirstWaypoint() => $_ensure(25);
+  $266.Duration ensureRemainingTimeToFirstWaypoint() => $_ensure(25);
 
   ///  Output only. Indicates the traffic conditions along the
   ///  `current_route_segment` when they're available.
@@ -669,9 +669,9 @@ class Trip extends $pb.GeneratedMessage {
   ///  Note: This field is intended only for use by the Driver SDK and Consumer
   ///  SDK.
   @$pb.TagNumber(28)
-  $456.ConsumableTrafficPolyline get currentRouteSegmentTraffic => $_getN(26);
+  $458.ConsumableTrafficPolyline get currentRouteSegmentTraffic => $_getN(26);
   @$pb.TagNumber(28)
-  set currentRouteSegmentTraffic($456.ConsumableTrafficPolyline v) {
+  set currentRouteSegmentTraffic($458.ConsumableTrafficPolyline v) {
     setField(28, v);
   }
 
@@ -680,7 +680,7 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   void clearCurrentRouteSegmentTraffic() => clearField(28);
   @$pb.TagNumber(28)
-  $456.ConsumableTrafficPolyline ensureCurrentRouteSegmentTraffic() =>
+  $458.ConsumableTrafficPolyline ensureCurrentRouteSegmentTraffic() =>
       $_ensure(26);
 
   /// Output only. Indicates the last time the
@@ -689,9 +689,9 @@ class Trip extends $pb.GeneratedMessage {
   /// should cache this value and pass it in `GetTripRequest` to ensure the
   /// paths and traffic for `remaining_waypoints` are only returned if updated.
   @$pb.TagNumber(29)
-  $302.Timestamp get remainingWaypointsRouteVersion => $_getN(27);
+  $304.Timestamp get remainingWaypointsRouteVersion => $_getN(27);
   @$pb.TagNumber(29)
-  set remainingWaypointsRouteVersion($302.Timestamp v) {
+  set remainingWaypointsRouteVersion($304.Timestamp v) {
     setField(29, v);
   }
 
@@ -700,7 +700,7 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(29)
   void clearRemainingWaypointsRouteVersion() => clearField(29);
   @$pb.TagNumber(29)
-  $302.Timestamp ensureRemainingWaypointsRouteVersion() => $_ensure(27);
+  $304.Timestamp ensureRemainingWaypointsRouteVersion() => $_ensure(27);
 
   ///  Output only. Indicates the last time the `current_route_segment_traffic`
   ///  was modified.
@@ -708,9 +708,9 @@ class Trip extends $pb.GeneratedMessage {
   ///  Note: This field is intended only for use by the Driver SDK and Consumer
   ///  SDK.
   @$pb.TagNumber(30)
-  $302.Timestamp get currentRouteSegmentTrafficVersion => $_getN(28);
+  $304.Timestamp get currentRouteSegmentTrafficVersion => $_getN(28);
   @$pb.TagNumber(30)
-  set currentRouteSegmentTrafficVersion($302.Timestamp v) {
+  set currentRouteSegmentTrafficVersion($304.Timestamp v) {
     setField(30, v);
   }
 
@@ -719,7 +719,7 @@ class Trip extends $pb.GeneratedMessage {
   @$pb.TagNumber(30)
   void clearCurrentRouteSegmentTrafficVersion() => clearField(30);
   @$pb.TagNumber(30)
-  $302.Timestamp ensureCurrentRouteSegmentTrafficVersion() => $_ensure(28);
+  $304.Timestamp ensureCurrentRouteSegmentTrafficVersion() => $_ensure(28);
 
   /// The subset of Trip fields that are populated and how they should be
   /// interpreted.
@@ -771,9 +771,9 @@ class Trip extends $pb.GeneratedMessage {
 /// The actual location where a stop (pickup/dropoff) happened.
 class StopLocation extends $pb.GeneratedMessage {
   factory StopLocation({
-    $325.LatLng? point,
-    $302.Timestamp? timestamp,
-    @$core.Deprecated('This field is deprecated.') $302.Timestamp? stopTime,
+    $327.LatLng? point,
+    $304.Timestamp? timestamp,
+    @$core.Deprecated('This field is deprecated.') $304.Timestamp? stopTime,
   }) {
     final $result = create();
     if (point != null) {
@@ -801,12 +801,12 @@ class StopLocation extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'),
       createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'point',
-        subBuilder: $325.LatLng.create)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'timestamp',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'stopTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'point',
+        subBuilder: $327.LatLng.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'timestamp',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'stopTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -834,9 +834,9 @@ class StopLocation extends $pb.GeneratedMessage {
 
   /// Required. Denotes the actual location.
   @$pb.TagNumber(1)
-  $325.LatLng get point => $_getN(0);
+  $327.LatLng get point => $_getN(0);
   @$pb.TagNumber(1)
-  set point($325.LatLng v) {
+  set point($327.LatLng v) {
     setField(1, v);
   }
 
@@ -845,13 +845,13 @@ class StopLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearPoint() => clearField(1);
   @$pb.TagNumber(1)
-  $325.LatLng ensurePoint() => $_ensure(0);
+  $327.LatLng ensurePoint() => $_ensure(0);
 
   /// Indicates when the stop happened.
   @$pb.TagNumber(2)
-  $302.Timestamp get timestamp => $_getN(1);
+  $304.Timestamp get timestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set timestamp($302.Timestamp v) {
+  set timestamp($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -860,15 +860,15 @@ class StopLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearTimestamp() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureTimestamp() => $_ensure(1);
+  $304.Timestamp ensureTimestamp() => $_ensure(1);
 
   /// Input only. Deprecated.  Use the timestamp field.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  $302.Timestamp get stopTime => $_getN(2);
+  $304.Timestamp get stopTime => $_getN(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  set stopTime($302.Timestamp v) {
+  set stopTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -880,7 +880,7 @@ class StopLocation extends $pb.GeneratedMessage {
   void clearStopTime() => clearField(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  $302.Timestamp ensureStopTime() => $_ensure(2);
+  $304.Timestamp ensureStopTime() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

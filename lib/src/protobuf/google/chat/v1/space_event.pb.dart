@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $302;
-import 'event_payload.pb.dart' as $417;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import 'event_payload.pb.dart' as $419;
 
 enum SpaceEvent_Payload {
   messageCreatedEventData,
@@ -44,26 +44,26 @@ enum SpaceEvent_Payload {
 class SpaceEvent extends $pb.GeneratedMessage {
   factory SpaceEvent({
     $core.String? name,
-    $302.Timestamp? eventTime,
+    $304.Timestamp? eventTime,
     $core.String? eventType,
-    $417.MessageCreatedEventData? messageCreatedEventData,
-    $417.MessageUpdatedEventData? messageUpdatedEventData,
-    $417.MessageDeletedEventData? messageDeletedEventData,
-    $417.SpaceUpdatedEventData? spaceUpdatedEventData,
-    $417.MembershipCreatedEventData? membershipCreatedEventData,
-    $417.MembershipUpdatedEventData? membershipUpdatedEventData,
-    $417.ReactionCreatedEventData? reactionCreatedEventData,
-    $417.ReactionDeletedEventData? reactionDeletedEventData,
-    $417.MessageBatchCreatedEventData? messageBatchCreatedEventData,
-    $417.MessageBatchUpdatedEventData? messageBatchUpdatedEventData,
-    $417.MessageBatchDeletedEventData? messageBatchDeletedEventData,
-    $417.SpaceBatchUpdatedEventData? spaceBatchUpdatedEventData,
-    $417.MembershipBatchCreatedEventData? membershipBatchCreatedEventData,
-    $417.MembershipBatchUpdatedEventData? membershipBatchUpdatedEventData,
-    $417.MembershipBatchDeletedEventData? membershipBatchDeletedEventData,
-    $417.ReactionBatchCreatedEventData? reactionBatchCreatedEventData,
-    $417.ReactionBatchDeletedEventData? reactionBatchDeletedEventData,
-    $417.MembershipDeletedEventData? membershipDeletedEventData,
+    $419.MessageCreatedEventData? messageCreatedEventData,
+    $419.MessageUpdatedEventData? messageUpdatedEventData,
+    $419.MessageDeletedEventData? messageDeletedEventData,
+    $419.SpaceUpdatedEventData? spaceUpdatedEventData,
+    $419.MembershipCreatedEventData? membershipCreatedEventData,
+    $419.MembershipUpdatedEventData? membershipUpdatedEventData,
+    $419.ReactionCreatedEventData? reactionCreatedEventData,
+    $419.ReactionDeletedEventData? reactionDeletedEventData,
+    $419.MessageBatchCreatedEventData? messageBatchCreatedEventData,
+    $419.MessageBatchUpdatedEventData? messageBatchUpdatedEventData,
+    $419.MessageBatchDeletedEventData? messageBatchDeletedEventData,
+    $419.SpaceBatchUpdatedEventData? spaceBatchUpdatedEventData,
+    $419.MembershipBatchCreatedEventData? membershipBatchCreatedEventData,
+    $419.MembershipBatchUpdatedEventData? membershipBatchUpdatedEventData,
+    $419.MembershipBatchDeletedEventData? membershipBatchDeletedEventData,
+    $419.ReactionBatchCreatedEventData? reactionBatchCreatedEventData,
+    $419.ReactionBatchDeletedEventData? reactionBatchDeletedEventData,
+    $419.MembershipDeletedEventData? membershipDeletedEventData,
   }) {
     final $result = create();
     if (name != null) {
@@ -186,63 +186,63 @@ class SpaceEvent extends $pb.GeneratedMessage {
       219
     ])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'eventTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'eventTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'eventType')
-    ..aOM<$417.MessageCreatedEventData>(
+    ..aOM<$419.MessageCreatedEventData>(
         12, _omitFieldNames ? '' : 'messageCreatedEventData',
-        subBuilder: $417.MessageCreatedEventData.create)
-    ..aOM<$417.MessageUpdatedEventData>(
+        subBuilder: $419.MessageCreatedEventData.create)
+    ..aOM<$419.MessageUpdatedEventData>(
         13, _omitFieldNames ? '' : 'messageUpdatedEventData',
-        subBuilder: $417.MessageUpdatedEventData.create)
-    ..aOM<$417.MessageDeletedEventData>(
+        subBuilder: $419.MessageUpdatedEventData.create)
+    ..aOM<$419.MessageDeletedEventData>(
         14, _omitFieldNames ? '' : 'messageDeletedEventData',
-        subBuilder: $417.MessageDeletedEventData.create)
-    ..aOM<$417.SpaceUpdatedEventData>(
+        subBuilder: $419.MessageDeletedEventData.create)
+    ..aOM<$419.SpaceUpdatedEventData>(
         15, _omitFieldNames ? '' : 'spaceUpdatedEventData',
-        subBuilder: $417.SpaceUpdatedEventData.create)
-    ..aOM<$417.MembershipCreatedEventData>(
+        subBuilder: $419.SpaceUpdatedEventData.create)
+    ..aOM<$419.MembershipCreatedEventData>(
         17, _omitFieldNames ? '' : 'membershipCreatedEventData',
-        subBuilder: $417.MembershipCreatedEventData.create)
-    ..aOM<$417.MembershipUpdatedEventData>(
+        subBuilder: $419.MembershipCreatedEventData.create)
+    ..aOM<$419.MembershipUpdatedEventData>(
         18, _omitFieldNames ? '' : 'membershipUpdatedEventData',
-        subBuilder: $417.MembershipUpdatedEventData.create)
-    ..aOM<$417.ReactionCreatedEventData>(
+        subBuilder: $419.MembershipUpdatedEventData.create)
+    ..aOM<$419.ReactionCreatedEventData>(
         21, _omitFieldNames ? '' : 'reactionCreatedEventData',
-        subBuilder: $417.ReactionCreatedEventData.create)
-    ..aOM<$417.ReactionDeletedEventData>(
+        subBuilder: $419.ReactionCreatedEventData.create)
+    ..aOM<$419.ReactionDeletedEventData>(
         22, _omitFieldNames ? '' : 'reactionDeletedEventData',
-        subBuilder: $417.ReactionDeletedEventData.create)
-    ..aOM<$417.MessageBatchCreatedEventData>(
+        subBuilder: $419.ReactionDeletedEventData.create)
+    ..aOM<$419.MessageBatchCreatedEventData>(
         26, _omitFieldNames ? '' : 'messageBatchCreatedEventData',
-        subBuilder: $417.MessageBatchCreatedEventData.create)
-    ..aOM<$417.MessageBatchUpdatedEventData>(
+        subBuilder: $419.MessageBatchCreatedEventData.create)
+    ..aOM<$419.MessageBatchUpdatedEventData>(
         27, _omitFieldNames ? '' : 'messageBatchUpdatedEventData',
-        subBuilder: $417.MessageBatchUpdatedEventData.create)
-    ..aOM<$417.MessageBatchDeletedEventData>(
+        subBuilder: $419.MessageBatchUpdatedEventData.create)
+    ..aOM<$419.MessageBatchDeletedEventData>(
         28, _omitFieldNames ? '' : 'messageBatchDeletedEventData',
-        subBuilder: $417.MessageBatchDeletedEventData.create)
-    ..aOM<$417.SpaceBatchUpdatedEventData>(
+        subBuilder: $419.MessageBatchDeletedEventData.create)
+    ..aOM<$419.SpaceBatchUpdatedEventData>(
         29, _omitFieldNames ? '' : 'spaceBatchUpdatedEventData',
-        subBuilder: $417.SpaceBatchUpdatedEventData.create)
-    ..aOM<$417.MembershipBatchCreatedEventData>(
+        subBuilder: $419.SpaceBatchUpdatedEventData.create)
+    ..aOM<$419.MembershipBatchCreatedEventData>(
         31, _omitFieldNames ? '' : 'membershipBatchCreatedEventData',
-        subBuilder: $417.MembershipBatchCreatedEventData.create)
-    ..aOM<$417.MembershipBatchUpdatedEventData>(
+        subBuilder: $419.MembershipBatchCreatedEventData.create)
+    ..aOM<$419.MembershipBatchUpdatedEventData>(
         32, _omitFieldNames ? '' : 'membershipBatchUpdatedEventData',
-        subBuilder: $417.MembershipBatchUpdatedEventData.create)
-    ..aOM<$417.MembershipBatchDeletedEventData>(
+        subBuilder: $419.MembershipBatchUpdatedEventData.create)
+    ..aOM<$419.MembershipBatchDeletedEventData>(
         33, _omitFieldNames ? '' : 'membershipBatchDeletedEventData',
-        subBuilder: $417.MembershipBatchDeletedEventData.create)
-    ..aOM<$417.ReactionBatchCreatedEventData>(
+        subBuilder: $419.MembershipBatchDeletedEventData.create)
+    ..aOM<$419.ReactionBatchCreatedEventData>(
         34, _omitFieldNames ? '' : 'reactionBatchCreatedEventData',
-        subBuilder: $417.ReactionBatchCreatedEventData.create)
-    ..aOM<$417.ReactionBatchDeletedEventData>(
+        subBuilder: $419.ReactionBatchCreatedEventData.create)
+    ..aOM<$419.ReactionBatchDeletedEventData>(
         35, _omitFieldNames ? '' : 'reactionBatchDeletedEventData',
-        subBuilder: $417.ReactionBatchDeletedEventData.create)
-    ..aOM<$417.MembershipDeletedEventData>(
+        subBuilder: $419.ReactionBatchDeletedEventData.create)
+    ..aOM<$419.MembershipDeletedEventData>(
         219, _omitFieldNames ? '' : 'membershipDeletedEventData',
-        subBuilder: $417.MembershipDeletedEventData.create)
+        subBuilder: $419.MembershipDeletedEventData.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -287,9 +287,9 @@ class SpaceEvent extends $pb.GeneratedMessage {
 
   /// Time when the event occurred.
   @$pb.TagNumber(3)
-  $302.Timestamp get eventTime => $_getN(1);
+  $304.Timestamp get eventTime => $_getN(1);
   @$pb.TagNumber(3)
-  set eventTime($302.Timestamp v) {
+  set eventTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -298,7 +298,7 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEventTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureEventTime() => $_ensure(1);
+  $304.Timestamp ensureEventTime() => $_ensure(1);
 
   ///  Type of space event. Each event type has a batch version, which
   ///  represents multiple instances of the event type that occur in a short
@@ -362,9 +362,9 @@ class SpaceEvent extends $pb.GeneratedMessage {
   ///
   ///  Event type: `google.workspace.chat.message.v1.created`
   @$pb.TagNumber(12)
-  $417.MessageCreatedEventData get messageCreatedEventData => $_getN(3);
+  $419.MessageCreatedEventData get messageCreatedEventData => $_getN(3);
   @$pb.TagNumber(12)
-  set messageCreatedEventData($417.MessageCreatedEventData v) {
+  set messageCreatedEventData($419.MessageCreatedEventData v) {
     setField(12, v);
   }
 
@@ -373,15 +373,15 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearMessageCreatedEventData() => clearField(12);
   @$pb.TagNumber(12)
-  $417.MessageCreatedEventData ensureMessageCreatedEventData() => $_ensure(3);
+  $419.MessageCreatedEventData ensureMessageCreatedEventData() => $_ensure(3);
 
   ///  Event payload for an updated message.
   ///
   ///  Event type: `google.workspace.chat.message.v1.updated`
   @$pb.TagNumber(13)
-  $417.MessageUpdatedEventData get messageUpdatedEventData => $_getN(4);
+  $419.MessageUpdatedEventData get messageUpdatedEventData => $_getN(4);
   @$pb.TagNumber(13)
-  set messageUpdatedEventData($417.MessageUpdatedEventData v) {
+  set messageUpdatedEventData($419.MessageUpdatedEventData v) {
     setField(13, v);
   }
 
@@ -390,15 +390,15 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   void clearMessageUpdatedEventData() => clearField(13);
   @$pb.TagNumber(13)
-  $417.MessageUpdatedEventData ensureMessageUpdatedEventData() => $_ensure(4);
+  $419.MessageUpdatedEventData ensureMessageUpdatedEventData() => $_ensure(4);
 
   ///  Event payload for a deleted message.
   ///
   ///  Event type: `google.workspace.chat.message.v1.deleted`
   @$pb.TagNumber(14)
-  $417.MessageDeletedEventData get messageDeletedEventData => $_getN(5);
+  $419.MessageDeletedEventData get messageDeletedEventData => $_getN(5);
   @$pb.TagNumber(14)
-  set messageDeletedEventData($417.MessageDeletedEventData v) {
+  set messageDeletedEventData($419.MessageDeletedEventData v) {
     setField(14, v);
   }
 
@@ -407,15 +407,15 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   void clearMessageDeletedEventData() => clearField(14);
   @$pb.TagNumber(14)
-  $417.MessageDeletedEventData ensureMessageDeletedEventData() => $_ensure(5);
+  $419.MessageDeletedEventData ensureMessageDeletedEventData() => $_ensure(5);
 
   ///  Event payload for a space update.
   ///
   ///  Event type: `google.workspace.chat.space.v1.updated`
   @$pb.TagNumber(15)
-  $417.SpaceUpdatedEventData get spaceUpdatedEventData => $_getN(6);
+  $419.SpaceUpdatedEventData get spaceUpdatedEventData => $_getN(6);
   @$pb.TagNumber(15)
-  set spaceUpdatedEventData($417.SpaceUpdatedEventData v) {
+  set spaceUpdatedEventData($419.SpaceUpdatedEventData v) {
     setField(15, v);
   }
 
@@ -424,15 +424,15 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   void clearSpaceUpdatedEventData() => clearField(15);
   @$pb.TagNumber(15)
-  $417.SpaceUpdatedEventData ensureSpaceUpdatedEventData() => $_ensure(6);
+  $419.SpaceUpdatedEventData ensureSpaceUpdatedEventData() => $_ensure(6);
 
   ///  Event payload for a new membership.
   ///
   ///  Event type: `google.workspace.chat.membership.v1.created`
   @$pb.TagNumber(17)
-  $417.MembershipCreatedEventData get membershipCreatedEventData => $_getN(7);
+  $419.MembershipCreatedEventData get membershipCreatedEventData => $_getN(7);
   @$pb.TagNumber(17)
-  set membershipCreatedEventData($417.MembershipCreatedEventData v) {
+  set membershipCreatedEventData($419.MembershipCreatedEventData v) {
     setField(17, v);
   }
 
@@ -441,16 +441,16 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearMembershipCreatedEventData() => clearField(17);
   @$pb.TagNumber(17)
-  $417.MembershipCreatedEventData ensureMembershipCreatedEventData() =>
+  $419.MembershipCreatedEventData ensureMembershipCreatedEventData() =>
       $_ensure(7);
 
   ///  Event payload for an updated membership.
   ///
   ///  Event type: `google.workspace.chat.membership.v1.updated`
   @$pb.TagNumber(18)
-  $417.MembershipUpdatedEventData get membershipUpdatedEventData => $_getN(8);
+  $419.MembershipUpdatedEventData get membershipUpdatedEventData => $_getN(8);
   @$pb.TagNumber(18)
-  set membershipUpdatedEventData($417.MembershipUpdatedEventData v) {
+  set membershipUpdatedEventData($419.MembershipUpdatedEventData v) {
     setField(18, v);
   }
 
@@ -459,16 +459,16 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   void clearMembershipUpdatedEventData() => clearField(18);
   @$pb.TagNumber(18)
-  $417.MembershipUpdatedEventData ensureMembershipUpdatedEventData() =>
+  $419.MembershipUpdatedEventData ensureMembershipUpdatedEventData() =>
       $_ensure(8);
 
   ///  Event payload for a new reaction.
   ///
   ///  Event type: `google.workspace.chat.reaction.v1.created`
   @$pb.TagNumber(21)
-  $417.ReactionCreatedEventData get reactionCreatedEventData => $_getN(9);
+  $419.ReactionCreatedEventData get reactionCreatedEventData => $_getN(9);
   @$pb.TagNumber(21)
-  set reactionCreatedEventData($417.ReactionCreatedEventData v) {
+  set reactionCreatedEventData($419.ReactionCreatedEventData v) {
     setField(21, v);
   }
 
@@ -477,15 +477,15 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   void clearReactionCreatedEventData() => clearField(21);
   @$pb.TagNumber(21)
-  $417.ReactionCreatedEventData ensureReactionCreatedEventData() => $_ensure(9);
+  $419.ReactionCreatedEventData ensureReactionCreatedEventData() => $_ensure(9);
 
   ///  Event payload for a deleted reaction.
   ///
   ///  Event type: `google.workspace.chat.reaction.v1.deleted`
   @$pb.TagNumber(22)
-  $417.ReactionDeletedEventData get reactionDeletedEventData => $_getN(10);
+  $419.ReactionDeletedEventData get reactionDeletedEventData => $_getN(10);
   @$pb.TagNumber(22)
-  set reactionDeletedEventData($417.ReactionDeletedEventData v) {
+  set reactionDeletedEventData($419.ReactionDeletedEventData v) {
     setField(22, v);
   }
 
@@ -494,17 +494,17 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   void clearReactionDeletedEventData() => clearField(22);
   @$pb.TagNumber(22)
-  $417.ReactionDeletedEventData ensureReactionDeletedEventData() =>
+  $419.ReactionDeletedEventData ensureReactionDeletedEventData() =>
       $_ensure(10);
 
   ///  Event payload for multiple new messages.
   ///
   ///  Event type: `google.workspace.chat.message.v1.batchCreated`
   @$pb.TagNumber(26)
-  $417.MessageBatchCreatedEventData get messageBatchCreatedEventData =>
+  $419.MessageBatchCreatedEventData get messageBatchCreatedEventData =>
       $_getN(11);
   @$pb.TagNumber(26)
-  set messageBatchCreatedEventData($417.MessageBatchCreatedEventData v) {
+  set messageBatchCreatedEventData($419.MessageBatchCreatedEventData v) {
     setField(26, v);
   }
 
@@ -513,17 +513,17 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   void clearMessageBatchCreatedEventData() => clearField(26);
   @$pb.TagNumber(26)
-  $417.MessageBatchCreatedEventData ensureMessageBatchCreatedEventData() =>
+  $419.MessageBatchCreatedEventData ensureMessageBatchCreatedEventData() =>
       $_ensure(11);
 
   ///  Event payload for multiple updated messages.
   ///
   ///  Event type: `google.workspace.chat.message.v1.batchUpdated`
   @$pb.TagNumber(27)
-  $417.MessageBatchUpdatedEventData get messageBatchUpdatedEventData =>
+  $419.MessageBatchUpdatedEventData get messageBatchUpdatedEventData =>
       $_getN(12);
   @$pb.TagNumber(27)
-  set messageBatchUpdatedEventData($417.MessageBatchUpdatedEventData v) {
+  set messageBatchUpdatedEventData($419.MessageBatchUpdatedEventData v) {
     setField(27, v);
   }
 
@@ -532,17 +532,17 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   void clearMessageBatchUpdatedEventData() => clearField(27);
   @$pb.TagNumber(27)
-  $417.MessageBatchUpdatedEventData ensureMessageBatchUpdatedEventData() =>
+  $419.MessageBatchUpdatedEventData ensureMessageBatchUpdatedEventData() =>
       $_ensure(12);
 
   ///  Event payload for multiple deleted messages.
   ///
   ///  Event type: `google.workspace.chat.message.v1.batchDeleted`
   @$pb.TagNumber(28)
-  $417.MessageBatchDeletedEventData get messageBatchDeletedEventData =>
+  $419.MessageBatchDeletedEventData get messageBatchDeletedEventData =>
       $_getN(13);
   @$pb.TagNumber(28)
-  set messageBatchDeletedEventData($417.MessageBatchDeletedEventData v) {
+  set messageBatchDeletedEventData($419.MessageBatchDeletedEventData v) {
     setField(28, v);
   }
 
@@ -551,16 +551,16 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   void clearMessageBatchDeletedEventData() => clearField(28);
   @$pb.TagNumber(28)
-  $417.MessageBatchDeletedEventData ensureMessageBatchDeletedEventData() =>
+  $419.MessageBatchDeletedEventData ensureMessageBatchDeletedEventData() =>
       $_ensure(13);
 
   ///  Event payload for multiple updates to a space.
   ///
   ///  Event type: `google.workspace.chat.space.v1.batchUpdated`
   @$pb.TagNumber(29)
-  $417.SpaceBatchUpdatedEventData get spaceBatchUpdatedEventData => $_getN(14);
+  $419.SpaceBatchUpdatedEventData get spaceBatchUpdatedEventData => $_getN(14);
   @$pb.TagNumber(29)
-  set spaceBatchUpdatedEventData($417.SpaceBatchUpdatedEventData v) {
+  set spaceBatchUpdatedEventData($419.SpaceBatchUpdatedEventData v) {
     setField(29, v);
   }
 
@@ -569,17 +569,17 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(29)
   void clearSpaceBatchUpdatedEventData() => clearField(29);
   @$pb.TagNumber(29)
-  $417.SpaceBatchUpdatedEventData ensureSpaceBatchUpdatedEventData() =>
+  $419.SpaceBatchUpdatedEventData ensureSpaceBatchUpdatedEventData() =>
       $_ensure(14);
 
   ///  Event payload for multiple new memberships.
   ///
   ///  Event type: `google.workspace.chat.membership.v1.batchCreated`
   @$pb.TagNumber(31)
-  $417.MembershipBatchCreatedEventData get membershipBatchCreatedEventData =>
+  $419.MembershipBatchCreatedEventData get membershipBatchCreatedEventData =>
       $_getN(15);
   @$pb.TagNumber(31)
-  set membershipBatchCreatedEventData($417.MembershipBatchCreatedEventData v) {
+  set membershipBatchCreatedEventData($419.MembershipBatchCreatedEventData v) {
     setField(31, v);
   }
 
@@ -588,17 +588,17 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(31)
   void clearMembershipBatchCreatedEventData() => clearField(31);
   @$pb.TagNumber(31)
-  $417.MembershipBatchCreatedEventData
+  $419.MembershipBatchCreatedEventData
       ensureMembershipBatchCreatedEventData() => $_ensure(15);
 
   ///  Event payload for multiple updated memberships.
   ///
   ///  Event type: `google.workspace.chat.membership.v1.batchUpdated`
   @$pb.TagNumber(32)
-  $417.MembershipBatchUpdatedEventData get membershipBatchUpdatedEventData =>
+  $419.MembershipBatchUpdatedEventData get membershipBatchUpdatedEventData =>
       $_getN(16);
   @$pb.TagNumber(32)
-  set membershipBatchUpdatedEventData($417.MembershipBatchUpdatedEventData v) {
+  set membershipBatchUpdatedEventData($419.MembershipBatchUpdatedEventData v) {
     setField(32, v);
   }
 
@@ -607,17 +607,17 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(32)
   void clearMembershipBatchUpdatedEventData() => clearField(32);
   @$pb.TagNumber(32)
-  $417.MembershipBatchUpdatedEventData
+  $419.MembershipBatchUpdatedEventData
       ensureMembershipBatchUpdatedEventData() => $_ensure(16);
 
   ///  Event payload for multiple deleted memberships.
   ///
   ///  Event type: `google.workspace.chat.membership.v1.batchDeleted`
   @$pb.TagNumber(33)
-  $417.MembershipBatchDeletedEventData get membershipBatchDeletedEventData =>
+  $419.MembershipBatchDeletedEventData get membershipBatchDeletedEventData =>
       $_getN(17);
   @$pb.TagNumber(33)
-  set membershipBatchDeletedEventData($417.MembershipBatchDeletedEventData v) {
+  set membershipBatchDeletedEventData($419.MembershipBatchDeletedEventData v) {
     setField(33, v);
   }
 
@@ -626,17 +626,17 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(33)
   void clearMembershipBatchDeletedEventData() => clearField(33);
   @$pb.TagNumber(33)
-  $417.MembershipBatchDeletedEventData
+  $419.MembershipBatchDeletedEventData
       ensureMembershipBatchDeletedEventData() => $_ensure(17);
 
   ///  Event payload for multiple new reactions.
   ///
   ///  Event type: `google.workspace.chat.reaction.v1.batchCreated`
   @$pb.TagNumber(34)
-  $417.ReactionBatchCreatedEventData get reactionBatchCreatedEventData =>
+  $419.ReactionBatchCreatedEventData get reactionBatchCreatedEventData =>
       $_getN(18);
   @$pb.TagNumber(34)
-  set reactionBatchCreatedEventData($417.ReactionBatchCreatedEventData v) {
+  set reactionBatchCreatedEventData($419.ReactionBatchCreatedEventData v) {
     setField(34, v);
   }
 
@@ -645,17 +645,17 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(34)
   void clearReactionBatchCreatedEventData() => clearField(34);
   @$pb.TagNumber(34)
-  $417.ReactionBatchCreatedEventData ensureReactionBatchCreatedEventData() =>
+  $419.ReactionBatchCreatedEventData ensureReactionBatchCreatedEventData() =>
       $_ensure(18);
 
   ///  Event payload for multiple deleted reactions.
   ///
   ///  Event type: `google.workspace.chat.reaction.v1.batchDeleted`
   @$pb.TagNumber(35)
-  $417.ReactionBatchDeletedEventData get reactionBatchDeletedEventData =>
+  $419.ReactionBatchDeletedEventData get reactionBatchDeletedEventData =>
       $_getN(19);
   @$pb.TagNumber(35)
-  set reactionBatchDeletedEventData($417.ReactionBatchDeletedEventData v) {
+  set reactionBatchDeletedEventData($419.ReactionBatchDeletedEventData v) {
     setField(35, v);
   }
 
@@ -664,16 +664,16 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(35)
   void clearReactionBatchDeletedEventData() => clearField(35);
   @$pb.TagNumber(35)
-  $417.ReactionBatchDeletedEventData ensureReactionBatchDeletedEventData() =>
+  $419.ReactionBatchDeletedEventData ensureReactionBatchDeletedEventData() =>
       $_ensure(19);
 
   ///  Event payload for a deleted membership.
   ///
   ///  Event type: `google.workspace.chat.membership.v1.deleted`
   @$pb.TagNumber(219)
-  $417.MembershipDeletedEventData get membershipDeletedEventData => $_getN(20);
+  $419.MembershipDeletedEventData get membershipDeletedEventData => $_getN(20);
   @$pb.TagNumber(219)
-  set membershipDeletedEventData($417.MembershipDeletedEventData v) {
+  set membershipDeletedEventData($419.MembershipDeletedEventData v) {
     setField(219, v);
   }
 
@@ -682,7 +682,7 @@ class SpaceEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(219)
   void clearMembershipDeletedEventData() => clearField(219);
   @$pb.TagNumber(219)
-  $417.MembershipDeletedEventData ensureMembershipDeletedEventData() =>
+  $419.MembershipDeletedEventData ensureMembershipDeletedEventData() =>
       $_ensure(20);
 }
 
@@ -851,8 +851,8 @@ class ListSpaceEventsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearPageSize() => clearField(5);
 
-  ///  A page token, received from a previous list space events call. Provide this
-  ///  to retrieve the subsequent page.
+  ///  Optional. A page token, received from a previous list space events call.
+  ///  Provide this to retrieve the subsequent page.
   ///
   ///  When paginating, all other parameters provided to list space events must
   ///  match the call that provided the page token. Passing different values to

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $322;
+import '../../../rpc/status.pb.dart' as $324;
 
 /// Contains [`GeocodedWaypoints`][google.maps.routing.v2.GeocodedWaypoint] for
 /// origin, destination and intermediate waypoints. Only populated for address
@@ -123,7 +123,7 @@ class GeocodingResults extends $pb.GeneratedMessage {
 /// determining what the address was geocoded to.
 class GeocodedWaypoint extends $pb.GeneratedMessage {
   factory GeocodedWaypoint({
-    $322.Status? geocoderStatus,
+    $324.Status? geocoderStatus,
     $core.int? intermediateWaypointRequestIndex,
     $core.Iterable<$core.String>? type,
     $core.bool? partialMatch,
@@ -161,8 +161,8 @@ class GeocodedWaypoint extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routing.v2'),
       createEmptyInstance: create)
-    ..aOM<$322.Status>(1, _omitFieldNames ? '' : 'geocoderStatus',
-        subBuilder: $322.Status.create)
+    ..aOM<$324.Status>(1, _omitFieldNames ? '' : 'geocoderStatus',
+        subBuilder: $324.Status.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'intermediateWaypointRequestIndex',
         $pb.PbFieldType.O3)
     ..pPS(3, _omitFieldNames ? '' : 'type')
@@ -195,9 +195,9 @@ class GeocodedWaypoint extends $pb.GeneratedMessage {
 
   /// Indicates the status code resulting from the geocoding operation.
   @$pb.TagNumber(1)
-  $322.Status get geocoderStatus => $_getN(0);
+  $324.Status get geocoderStatus => $_getN(0);
   @$pb.TagNumber(1)
-  set geocoderStatus($322.Status v) {
+  set geocoderStatus($324.Status v) {
     setField(1, v);
   }
 
@@ -206,7 +206,7 @@ class GeocodedWaypoint extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearGeocoderStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $322.Status ensureGeocoderStatus() => $_ensure(0);
+  $324.Status ensureGeocoderStatus() => $_ensure(0);
 
   /// The index of the corresponding intermediate waypoint in the request.
   /// Only populated if the corresponding waypoint is an intermediate

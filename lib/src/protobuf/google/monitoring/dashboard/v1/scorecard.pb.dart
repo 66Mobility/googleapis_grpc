@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $264;
+import '../../../protobuf/duration.pb.dart' as $266;
 import '../../../protobuf/empty.pb.dart' as $3;
-import 'metrics.pb.dart' as $514;
-import 'metrics.pbenum.dart' as $514;
+import 'metrics.pb.dart' as $517;
+import 'metrics.pbenum.dart' as $517;
 
 /// A gauge chart shows where the current value sits within a pre-defined
 /// range. The upper and lower bounds should define the possible range of
@@ -112,8 +112,8 @@ class Scorecard_GaugeView extends $pb.GeneratedMessage {
 /// timeseries.
 class Scorecard_SparkChartView extends $pb.GeneratedMessage {
   factory Scorecard_SparkChartView({
-    $514.SparkChartType? sparkChartType,
-    $264.Duration? minAlignmentPeriod,
+    $517.SparkChartType? sparkChartType,
+    $266.Duration? minAlignmentPeriod,
   }) {
     final $result = create();
     if (sparkChartType != null) {
@@ -137,13 +137,13 @@ class Scorecard_SparkChartView extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
-    ..e<$514.SparkChartType>(
+    ..e<$517.SparkChartType>(
         1, _omitFieldNames ? '' : 'sparkChartType', $pb.PbFieldType.OE,
-        defaultOrMaker: $514.SparkChartType.SPARK_CHART_TYPE_UNSPECIFIED,
-        valueOf: $514.SparkChartType.valueOf,
-        enumValues: $514.SparkChartType.values)
-    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'minAlignmentPeriod',
-        subBuilder: $264.Duration.create)
+        defaultOrMaker: $517.SparkChartType.SPARK_CHART_TYPE_UNSPECIFIED,
+        valueOf: $517.SparkChartType.valueOf,
+        enumValues: $517.SparkChartType.values)
+    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'minAlignmentPeriod',
+        subBuilder: $266.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -173,9 +173,9 @@ class Scorecard_SparkChartView extends $pb.GeneratedMessage {
 
   /// Required. The type of sparkchart to show in this chartView.
   @$pb.TagNumber(1)
-  $514.SparkChartType get sparkChartType => $_getN(0);
+  $517.SparkChartType get sparkChartType => $_getN(0);
   @$pb.TagNumber(1)
-  set sparkChartType($514.SparkChartType v) {
+  set sparkChartType($517.SparkChartType v) {
     setField(1, v);
   }
 
@@ -190,9 +190,9 @@ class Scorecard_SparkChartView extends $pb.GeneratedMessage {
   /// make sense to fetch and align data at one minute intervals. This field is
   /// optional and exists only as a hint.
   @$pb.TagNumber(2)
-  $264.Duration get minAlignmentPeriod => $_getN(1);
+  $266.Duration get minAlignmentPeriod => $_getN(1);
   @$pb.TagNumber(2)
-  set minAlignmentPeriod($264.Duration v) {
+  set minAlignmentPeriod($266.Duration v) {
     setField(2, v);
   }
 
@@ -201,7 +201,7 @@ class Scorecard_SparkChartView extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearMinAlignmentPeriod() => clearField(2);
   @$pb.TagNumber(2)
-  $264.Duration ensureMinAlignmentPeriod() => $_ensure(1);
+  $266.Duration ensureMinAlignmentPeriod() => $_ensure(1);
 }
 
 enum Scorecard_DataView { gaugeView, sparkChartView, blankView, notSet }
@@ -210,10 +210,10 @@ enum Scorecard_DataView { gaugeView, sparkChartView, blankView, notSet }
 /// one or more thresholds.
 class Scorecard extends $pb.GeneratedMessage {
   factory Scorecard({
-    $514.TimeSeriesQuery? timeSeriesQuery,
+    $517.TimeSeriesQuery? timeSeriesQuery,
     Scorecard_GaugeView? gaugeView,
     Scorecard_SparkChartView? sparkChartView,
-    $core.Iterable<$514.Threshold>? thresholds,
+    $core.Iterable<$517.Threshold>? thresholds,
     $3.Empty? blankView,
   }) {
     final $result = create();
@@ -255,15 +255,15 @@ class Scorecard extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
     ..oo(0, [4, 5, 7])
-    ..aOM<$514.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
-        subBuilder: $514.TimeSeriesQuery.create)
+    ..aOM<$517.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery',
+        subBuilder: $517.TimeSeriesQuery.create)
     ..aOM<Scorecard_GaugeView>(4, _omitFieldNames ? '' : 'gaugeView',
         subBuilder: Scorecard_GaugeView.create)
     ..aOM<Scorecard_SparkChartView>(5, _omitFieldNames ? '' : 'sparkChartView',
         subBuilder: Scorecard_SparkChartView.create)
-    ..pc<$514.Threshold>(
+    ..pc<$517.Threshold>(
         6, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM,
-        subBuilder: $514.Threshold.create)
+        subBuilder: $517.Threshold.create)
     ..aOM<$3.Empty>(7, _omitFieldNames ? '' : 'blankView',
         subBuilder: $3.Empty.create)
     ..hasRequiredFields = false;
@@ -296,9 +296,9 @@ class Scorecard extends $pb.GeneratedMessage {
   /// Required. Fields for querying time series data from the
   /// Stackdriver metrics API.
   @$pb.TagNumber(1)
-  $514.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $517.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($514.TimeSeriesQuery v) {
+  set timeSeriesQuery($517.TimeSeriesQuery v) {
     setField(1, v);
   }
 
@@ -307,7 +307,7 @@ class Scorecard extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $514.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $517.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// Will cause the scorecard to show a gauge chart.
   @$pb.TagNumber(4)
@@ -378,7 +378,7 @@ class Scorecard extends $pb.GeneratedMessage {
   ///  to 70 but less than 90 a WARNING state, and values greater than or equal to
   ///  90 a DANGER state.
   @$pb.TagNumber(6)
-  $core.List<$514.Threshold> get thresholds => $_getList(3);
+  $core.List<$517.Threshold> get thresholds => $_getList(3);
 
   /// Will cause the `Scorecard` to show only the value, with no indicator to
   /// its value relative to its thresholds.

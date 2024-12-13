@@ -14,19 +14,19 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $261;
-import 'query_plan.pb.dart' as $554;
-import 'transaction.pb.dart' as $250;
-import 'type.pb.dart' as $553;
+import '../../protobuf/struct.pb.dart' as $263;
+import 'query_plan.pb.dart' as $559;
+import 'transaction.pb.dart' as $252;
+import 'type.pb.dart' as $558;
 
 /// Results from [Read][google.spanner.v1.Spanner.Read] or
 /// [ExecuteSql][google.spanner.v1.Spanner.ExecuteSql].
 class ResultSet extends $pb.GeneratedMessage {
   factory ResultSet({
     ResultSetMetadata? metadata,
-    $core.Iterable<$261.ListValue>? rows,
+    $core.Iterable<$263.ListValue>? rows,
     ResultSetStats? stats,
-    $250.MultiplexedSessionPrecommitToken? precommitToken,
+    $252.MultiplexedSessionPrecommitToken? precommitToken,
   }) {
     final $result = create();
     if (metadata != null) {
@@ -58,13 +58,13 @@ class ResultSet extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<ResultSetMetadata>(1, _omitFieldNames ? '' : 'metadata',
         subBuilder: ResultSetMetadata.create)
-    ..pc<$261.ListValue>(2, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM,
-        subBuilder: $261.ListValue.create)
+    ..pc<$263.ListValue>(2, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM,
+        subBuilder: $263.ListValue.create)
     ..aOM<ResultSetStats>(3, _omitFieldNames ? '' : 'stats',
         subBuilder: ResultSetStats.create)
-    ..aOM<$250.MultiplexedSessionPrecommitToken>(
+    ..aOM<$252.MultiplexedSessionPrecommitToken>(
         5, _omitFieldNames ? '' : 'precommitToken',
-        subBuilder: $250.MultiplexedSessionPrecommitToken.create)
+        subBuilder: $252.MultiplexedSessionPrecommitToken.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -110,7 +110,7 @@ class ResultSet extends $pb.GeneratedMessage {
   /// encoded based on type as described
   /// [here][google.spanner.v1.TypeCode].
   @$pb.TagNumber(2)
-  $core.List<$261.ListValue> get rows => $_getList(1);
+  $core.List<$263.ListValue> get rows => $_getList(1);
 
   /// Query plan and execution statistics for the SQL statement that
   /// produced this result set. These can be requested by setting
@@ -142,9 +142,9 @@ class ResultSet extends $pb.GeneratedMessage {
   /// This feature is not yet supported and will result in an UNIMPLEMENTED
   /// error.
   @$pb.TagNumber(5)
-  $250.MultiplexedSessionPrecommitToken get precommitToken => $_getN(3);
+  $252.MultiplexedSessionPrecommitToken get precommitToken => $_getN(3);
   @$pb.TagNumber(5)
-  set precommitToken($250.MultiplexedSessionPrecommitToken v) {
+  set precommitToken($252.MultiplexedSessionPrecommitToken v) {
     setField(5, v);
   }
 
@@ -153,7 +153,7 @@ class ResultSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearPrecommitToken() => clearField(5);
   @$pb.TagNumber(5)
-  $250.MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(3);
+  $252.MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(3);
 }
 
 /// Partial results from a streaming read or SQL query. Streaming reads and
@@ -162,11 +162,11 @@ class ResultSet extends $pb.GeneratedMessage {
 class PartialResultSet extends $pb.GeneratedMessage {
   factory PartialResultSet({
     ResultSetMetadata? metadata,
-    $core.Iterable<$261.Value>? values,
+    $core.Iterable<$263.Value>? values,
     $core.bool? chunkedValue,
     $core.List<$core.int>? resumeToken,
     ResultSetStats? stats,
-    $250.MultiplexedSessionPrecommitToken? precommitToken,
+    $252.MultiplexedSessionPrecommitToken? precommitToken,
   }) {
     final $result = create();
     if (metadata != null) {
@@ -204,16 +204,16 @@ class PartialResultSet extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<ResultSetMetadata>(1, _omitFieldNames ? '' : 'metadata',
         subBuilder: ResultSetMetadata.create)
-    ..pc<$261.Value>(2, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM,
-        subBuilder: $261.Value.create)
+    ..pc<$263.Value>(2, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM,
+        subBuilder: $263.Value.create)
     ..aOB(3, _omitFieldNames ? '' : 'chunkedValue')
     ..a<$core.List<$core.int>>(
         4, _omitFieldNames ? '' : 'resumeToken', $pb.PbFieldType.OY)
     ..aOM<ResultSetStats>(5, _omitFieldNames ? '' : 'stats',
         subBuilder: ResultSetStats.create)
-    ..aOM<$250.MultiplexedSessionPrecommitToken>(
+    ..aOM<$252.MultiplexedSessionPrecommitToken>(
         8, _omitFieldNames ? '' : 'precommitToken',
-        subBuilder: $250.MultiplexedSessionPrecommitToken.create)
+        subBuilder: $252.MultiplexedSessionPrecommitToken.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -329,7 +329,7 @@ class PartialResultSet extends $pb.GeneratedMessage {
   ///  containing the field value `"Hello"`, and a second containing the
   ///  field value `"World" = "W" + "orl" + "d"`.
   @$pb.TagNumber(2)
-  $core.List<$261.Value> get values => $_getList(1);
+  $core.List<$263.Value> get values => $_getList(1);
 
   /// If true, then the final value in [values][google.spanner.v1.PartialResultSet.values] is chunked, and must
   /// be combined with more values from subsequent `PartialResultSet`s
@@ -391,9 +391,9 @@ class PartialResultSet extends $pb.GeneratedMessage {
   /// This feature is not yet supported and will result in an UNIMPLEMENTED
   /// error.
   @$pb.TagNumber(8)
-  $250.MultiplexedSessionPrecommitToken get precommitToken => $_getN(5);
+  $252.MultiplexedSessionPrecommitToken get precommitToken => $_getN(5);
   @$pb.TagNumber(8)
-  set precommitToken($250.MultiplexedSessionPrecommitToken v) {
+  set precommitToken($252.MultiplexedSessionPrecommitToken v) {
     setField(8, v);
   }
 
@@ -402,15 +402,15 @@ class PartialResultSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearPrecommitToken() => clearField(8);
   @$pb.TagNumber(8)
-  $250.MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(5);
+  $252.MultiplexedSessionPrecommitToken ensurePrecommitToken() => $_ensure(5);
 }
 
 /// Metadata about a [ResultSet][google.spanner.v1.ResultSet] or [PartialResultSet][google.spanner.v1.PartialResultSet].
 class ResultSetMetadata extends $pb.GeneratedMessage {
   factory ResultSetMetadata({
-    $553.StructType? rowType,
-    $250.Transaction? transaction,
-    $553.StructType? undeclaredParameters,
+    $558.StructType? rowType,
+    $252.Transaction? transaction,
+    $558.StructType? undeclaredParameters,
   }) {
     final $result = create();
     if (rowType != null) {
@@ -437,12 +437,12 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
       createEmptyInstance: create)
-    ..aOM<$553.StructType>(1, _omitFieldNames ? '' : 'rowType',
-        subBuilder: $553.StructType.create)
-    ..aOM<$250.Transaction>(2, _omitFieldNames ? '' : 'transaction',
-        subBuilder: $250.Transaction.create)
-    ..aOM<$553.StructType>(3, _omitFieldNames ? '' : 'undeclaredParameters',
-        subBuilder: $553.StructType.create)
+    ..aOM<$558.StructType>(1, _omitFieldNames ? '' : 'rowType',
+        subBuilder: $558.StructType.create)
+    ..aOM<$252.Transaction>(2, _omitFieldNames ? '' : 'transaction',
+        subBuilder: $252.Transaction.create)
+    ..aOM<$558.StructType>(3, _omitFieldNames ? '' : 'undeclaredParameters',
+        subBuilder: $558.StructType.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -477,9 +477,9 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   ///        { "name": "UserName", "type": { "code": "STRING" } },
   ///      ]
   @$pb.TagNumber(1)
-  $553.StructType get rowType => $_getN(0);
+  $558.StructType get rowType => $_getN(0);
   @$pb.TagNumber(1)
-  set rowType($553.StructType v) {
+  set rowType($558.StructType v) {
     setField(1, v);
   }
 
@@ -488,14 +488,14 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRowType() => clearField(1);
   @$pb.TagNumber(1)
-  $553.StructType ensureRowType() => $_ensure(0);
+  $558.StructType ensureRowType() => $_ensure(0);
 
   /// If the read or SQL query began a transaction as a side-effect, the
   /// information about the new transaction is yielded here.
   @$pb.TagNumber(2)
-  $250.Transaction get transaction => $_getN(1);
+  $252.Transaction get transaction => $_getN(1);
   @$pb.TagNumber(2)
-  set transaction($250.Transaction v) {
+  set transaction($252.Transaction v) {
     setField(2, v);
   }
 
@@ -504,7 +504,7 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearTransaction() => clearField(2);
   @$pb.TagNumber(2)
-  $250.Transaction ensureTransaction() => $_ensure(1);
+  $252.Transaction ensureTransaction() => $_ensure(1);
 
   ///  A SQL query can be parameterized. In PLAN mode, these parameters can be
   ///  undeclared. This indicates the field names and types for those undeclared
@@ -517,9 +517,9 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   ///        { "name": "UserName", "type": { "code": "STRING" } },
   ///      ]
   @$pb.TagNumber(3)
-  $553.StructType get undeclaredParameters => $_getN(2);
+  $558.StructType get undeclaredParameters => $_getN(2);
   @$pb.TagNumber(3)
-  set undeclaredParameters($553.StructType v) {
+  set undeclaredParameters($558.StructType v) {
     setField(3, v);
   }
 
@@ -528,7 +528,7 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUndeclaredParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $553.StructType ensureUndeclaredParameters() => $_ensure(2);
+  $558.StructType ensureUndeclaredParameters() => $_ensure(2);
 }
 
 enum ResultSetStats_RowCount { rowCountExact, rowCountLowerBound, notSet }
@@ -536,8 +536,8 @@ enum ResultSetStats_RowCount { rowCountExact, rowCountLowerBound, notSet }
 /// Additional statistics about a [ResultSet][google.spanner.v1.ResultSet] or [PartialResultSet][google.spanner.v1.PartialResultSet].
 class ResultSetStats extends $pb.GeneratedMessage {
   factory ResultSetStats({
-    $554.QueryPlan? queryPlan,
-    $261.Struct? queryStats,
+    $559.QueryPlan? queryPlan,
+    $263.Struct? queryStats,
     $fixnum.Int64? rowCountExact,
     $fixnum.Int64? rowCountLowerBound,
   }) {
@@ -576,10 +576,10 @@ class ResultSetStats extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'),
       createEmptyInstance: create)
     ..oo(0, [3, 4])
-    ..aOM<$554.QueryPlan>(1, _omitFieldNames ? '' : 'queryPlan',
-        subBuilder: $554.QueryPlan.create)
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'queryStats',
-        subBuilder: $261.Struct.create)
+    ..aOM<$559.QueryPlan>(1, _omitFieldNames ? '' : 'queryPlan',
+        subBuilder: $559.QueryPlan.create)
+    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'queryStats',
+        subBuilder: $263.Struct.create)
     ..aInt64(3, _omitFieldNames ? '' : 'rowCountExact')
     ..aInt64(4, _omitFieldNames ? '' : 'rowCountLowerBound')
     ..hasRequiredFields = false;
@@ -613,9 +613,9 @@ class ResultSetStats extends $pb.GeneratedMessage {
 
   /// [QueryPlan][google.spanner.v1.QueryPlan] for the query associated with this result.
   @$pb.TagNumber(1)
-  $554.QueryPlan get queryPlan => $_getN(0);
+  $559.QueryPlan get queryPlan => $_getN(0);
   @$pb.TagNumber(1)
-  set queryPlan($554.QueryPlan v) {
+  set queryPlan($559.QueryPlan v) {
     setField(1, v);
   }
 
@@ -624,7 +624,7 @@ class ResultSetStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearQueryPlan() => clearField(1);
   @$pb.TagNumber(1)
-  $554.QueryPlan ensureQueryPlan() => $_ensure(0);
+  $559.QueryPlan ensureQueryPlan() => $_ensure(0);
 
   ///  Aggregated statistics from the execution of the query. Only present when
   ///  the query is profiled. For example, a query could return the statistics as
@@ -636,9 +636,9 @@ class ResultSetStats extends $pb.GeneratedMessage {
   ///        "cpu_time": "1.19 secs"
   ///      }
   @$pb.TagNumber(2)
-  $261.Struct get queryStats => $_getN(1);
+  $263.Struct get queryStats => $_getN(1);
   @$pb.TagNumber(2)
-  set queryStats($261.Struct v) {
+  set queryStats($263.Struct v) {
     setField(2, v);
   }
 
@@ -647,7 +647,7 @@ class ResultSetStats extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearQueryStats() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Struct ensureQueryStats() => $_ensure(1);
+  $263.Struct ensureQueryStats() => $_ensure(1);
 
   /// Standard DML returns an exact count of rows that were modified.
   @$pb.TagNumber(3)

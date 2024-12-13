@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $333;
-import '../../protobuf/timestamp.pb.dart' as $302;
-import 'history_state.pbenum.dart' as $409;
+import '../../protobuf/field_mask.pb.dart' as $335;
+import '../../protobuf/timestamp.pb.dart' as $304;
+import 'history_state.pbenum.dart' as $411;
 import 'space.pbenum.dart';
 
 export 'space.pbenum.dart';
@@ -164,8 +164,8 @@ class Space_MembershipCount extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<Space_MembershipCount>(create);
   static Space_MembershipCount? _defaultInstance;
 
-  /// Count of human users that have directly joined the space, not counting
-  /// users joined by having membership in a joined group.
+  /// Output only. Count of human users that have directly joined the space,
+  /// not counting users joined by having membership in a joined group.
   @$pb.TagNumber(4)
   $core.int get joinedDirectHumanUserCount => $_getIZ(0);
   @$pb.TagNumber(4)
@@ -178,7 +178,7 @@ class Space_MembershipCount extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearJoinedDirectHumanUserCount() => clearField(4);
 
-  /// Count of all groups that have directly joined the space.
+  /// Output only. Count of all groups that have directly joined the space.
   @$pb.TagNumber(5)
   $core.int get joinedGroupCount => $_getIZ(1);
   @$pb.TagNumber(5)
@@ -279,8 +279,23 @@ class Space_AccessSettings extends $pb.GeneratedMessage {
   ///  To use the default target audience for the Google Workspace organization,
   ///  set to `audiences/default`.
   ///
+  ///  Reading the target audience supports:
+  ///
+  ///  - [User
+  ///  authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user)
+  ///
+  ///  - [App
+  ///  authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-app)
+  ///  with [administrator
+  ///  approval](https://support.google.com/a?p=chat-app-auth)
+  ///  with the `chat.app.spaces` scope in [Developer
+  ///  Preview](https://developers.google.com/workspace/preview).
+  ///
   ///  This field is not populated when using the `chat.bot` scope with [app
   ///  authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-app).
+  ///
+  ///  Setting the target audience requires [user
+  ///  authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
   @$pb.TagNumber(3)
   $core.String get audience => $_getSZ(1);
   @$pb.TagNumber(3)
@@ -394,7 +409,7 @@ class Space_PermissionSettings extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<Space_PermissionSettings>(create);
   static Space_PermissionSettings? _defaultInstance;
 
-  /// Setting for managing members and groups in a space.
+  /// Optional. Setting for managing members and groups in a space.
   @$pb.TagNumber(1)
   Space_PermissionSetting get manageMembersAndGroups => $_getN(0);
   @$pb.TagNumber(1)
@@ -409,7 +424,8 @@ class Space_PermissionSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   Space_PermissionSetting ensureManageMembersAndGroups() => $_ensure(0);
 
-  /// Setting for updating space name, avatar, description and guidelines.
+  /// Optional. Setting for updating space name, avatar, description and
+  /// guidelines.
   @$pb.TagNumber(2)
   Space_PermissionSetting get modifySpaceDetails => $_getN(1);
   @$pb.TagNumber(2)
@@ -424,7 +440,7 @@ class Space_PermissionSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Space_PermissionSetting ensureModifySpaceDetails() => $_ensure(1);
 
-  /// Setting for toggling space history on and off.
+  /// Optional. Setting for toggling space history on and off.
   @$pb.TagNumber(3)
   Space_PermissionSetting get toggleHistory => $_getN(2);
   @$pb.TagNumber(3)
@@ -439,7 +455,7 @@ class Space_PermissionSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Space_PermissionSetting ensureToggleHistory() => $_ensure(2);
 
-  /// Setting for using @all in a space.
+  /// Optional. Setting for using @all in a space.
   @$pb.TagNumber(4)
   Space_PermissionSetting get useAtMentionAll => $_getN(3);
   @$pb.TagNumber(4)
@@ -454,7 +470,7 @@ class Space_PermissionSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   Space_PermissionSetting ensureUseAtMentionAll() => $_ensure(3);
 
-  /// Setting for managing apps in a space.
+  /// Optional. Setting for managing apps in a space.
   @$pb.TagNumber(5)
   Space_PermissionSetting get manageApps => $_getN(4);
   @$pb.TagNumber(5)
@@ -469,7 +485,7 @@ class Space_PermissionSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Space_PermissionSetting ensureManageApps() => $_ensure(4);
 
-  /// Setting for managing webhooks in a space.
+  /// Optional. Setting for managing webhooks in a space.
   @$pb.TagNumber(6)
   Space_PermissionSetting get manageWebhooks => $_getN(5);
   @$pb.TagNumber(6)
@@ -499,7 +515,7 @@ class Space_PermissionSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   Space_PermissionSetting ensurePostMessages() => $_ensure(6);
 
-  /// Setting for replying to messages in a space.
+  /// Optional. Setting for replying to messages in a space.
   @$pb.TagNumber(8)
   Space_PermissionSetting get replyMessages => $_getN(7);
   @$pb.TagNumber(8)
@@ -571,7 +587,7 @@ class Space_PermissionSetting extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<Space_PermissionSetting>(create);
   static Space_PermissionSetting? _defaultInstance;
 
-  /// Whether spaces managers have this permission.
+  /// Optional. Whether spaces managers have this permission.
   @$pb.TagNumber(1)
   $core.bool get managersAllowed => $_getBF(0);
   @$pb.TagNumber(1)
@@ -584,7 +600,7 @@ class Space_PermissionSetting extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearManagersAllowed() => clearField(1);
 
-  /// Whether non-manager members have this permission.
+  /// Optional. Whether non-manager members have this permission.
   @$pb.TagNumber(2)
   $core.bool get membersAllowed => $_getBF(1);
   @$pb.TagNumber(2)
@@ -617,16 +633,17 @@ class Space extends $pb.GeneratedMessage {
     Space_SpaceThreadingState? spaceThreadingState,
     Space_SpaceType? spaceType,
     Space_SpaceDetails? spaceDetails,
-    $409.HistoryState? spaceHistoryState,
+    $411.HistoryState? spaceHistoryState,
     $core.bool? importMode,
-    $302.Timestamp? createTime,
-    $302.Timestamp? lastActiveTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? lastActiveTime,
     $core.bool? adminInstalled,
     Space_MembershipCount? membershipCount,
     Space_AccessSettings? accessSettings,
     $core.String? spaceUri,
     Space_PredefinedPermissionSettings? predefinedPermissionSettings,
     Space_PermissionSettings? permissionSettings,
+    $304.Timestamp? importModeExpireTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -688,6 +705,9 @@ class Space extends $pb.GeneratedMessage {
     if (permissionSettings != null) {
       $result.permissionSettings = permissionSettings;
     }
+    if (importModeExpireTime != null) {
+      $result.importModeExpireTime = importModeExpireTime;
+    }
     return $result;
   }
   Space._() : super();
@@ -731,16 +751,16 @@ class Space extends $pb.GeneratedMessage {
         enumValues: Space_SpaceType.values)
     ..aOM<Space_SpaceDetails>(11, _omitFieldNames ? '' : 'spaceDetails',
         subBuilder: Space_SpaceDetails.create)
-    ..e<$409.HistoryState>(
+    ..e<$411.HistoryState>(
         13, _omitFieldNames ? '' : 'spaceHistoryState', $pb.PbFieldType.OE,
-        defaultOrMaker: $409.HistoryState.HISTORY_STATE_UNSPECIFIED,
-        valueOf: $409.HistoryState.valueOf,
-        enumValues: $409.HistoryState.values)
+        defaultOrMaker: $411.HistoryState.HISTORY_STATE_UNSPECIFIED,
+        valueOf: $411.HistoryState.valueOf,
+        enumValues: $411.HistoryState.values)
     ..aOB(16, _omitFieldNames ? '' : 'importMode')
-    ..aOM<$302.Timestamp>(17, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'lastActiveTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(17, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(18, _omitFieldNames ? '' : 'lastActiveTime',
+        subBuilder: $304.Timestamp.create)
     ..aOB(19, _omitFieldNames ? '' : 'adminInstalled')
     ..aOM<Space_MembershipCount>(20, _omitFieldNames ? '' : 'membershipCount',
         subBuilder: Space_MembershipCount.create)
@@ -758,6 +778,8 @@ class Space extends $pb.GeneratedMessage {
     ..aOM<Space_PermissionSettings>(
         27, _omitFieldNames ? '' : 'permissionSettings',
         subBuilder: Space_PermissionSettings.create)
+    ..aOM<$304.Timestamp>(28, _omitFieldNames ? '' : 'importModeExpireTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -785,7 +807,7 @@ class Space extends $pb.GeneratedMessage {
       _Space_SpacePermissionSettingsByTag[$_whichOneof(0)]!;
   void clearSpacePermissionSettings() => clearField($_whichOneof(0));
 
-  ///  Resource name of the space.
+  ///  Identifier. Resource name of the space.
   ///
   ///  Format: `spaces/{space}`
   ///
@@ -825,7 +847,7 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
 
-  ///  The space's display name. Required when [creating a
+  ///  Optional. The space's display name. Required when [creating a
   ///  space](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces/create)
   ///  with a `spaceType` of `SPACE`. If you receive the error message
   ///  `ALREADY_EXISTS` when creating a space or updating the `displayName`, try a
@@ -879,9 +901,9 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearThreaded() => clearField(5);
 
-  ///  Immutable. Whether this space permits any Google Chat user as a member.
-  ///  Input when creating a space in a Google Workspace organization. Omit this
-  ///  field when creating spaces in the following conditions:
+  ///  Optional. Immutable. Whether this space permits any Google Chat user as a
+  ///  member. Input when creating a space in a Google Workspace organization.
+  ///  Omit this field when creating spaces in the following conditions:
   ///
   ///    * The authenticated user uses a consumer account (unmanaged user
   ///      account). By default, a space created by a consumer account permits any
@@ -913,8 +935,8 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearSpaceThreadingState() => clearField(9);
 
-  /// The type of space. Required when creating a space or updating the space
-  /// type of a space. Output only for other usage.
+  /// Optional. The type of space. Required when creating a space or updating the
+  /// space type of a space. Output only for other usage.
   @$pb.TagNumber(10)
   Space_SpaceType get spaceType => $_getN(7);
   @$pb.TagNumber(10)
@@ -927,7 +949,7 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearSpaceType() => clearField(10);
 
-  /// Details about the space including description and rules.
+  /// Optional. Details about the space including description and rules.
   @$pb.TagNumber(11)
   Space_SpaceDetails get spaceDetails => $_getN(8);
   @$pb.TagNumber(11)
@@ -942,11 +964,11 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   Space_SpaceDetails ensureSpaceDetails() => $_ensure(8);
 
-  /// The message history state for messages and threads in this space.
+  /// Optional. The message history state for messages and threads in this space.
   @$pb.TagNumber(13)
-  $409.HistoryState get spaceHistoryState => $_getN(9);
+  $411.HistoryState get spaceHistoryState => $_getN(9);
   @$pb.TagNumber(13)
-  set spaceHistoryState($409.HistoryState v) {
+  set spaceHistoryState($411.HistoryState v) {
     setField(13, v);
   }
 
@@ -955,9 +977,12 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   void clearSpaceHistoryState() => clearField(13);
 
-  /// Optional. Whether this space is created in `Import Mode` as part of a data
-  /// migration into Google Workspace. While spaces are being imported, they
-  /// aren't visible to users until the import is complete.
+  ///  Optional. Whether this space is created in `Import Mode` as part of a data
+  ///  migration into Google Workspace. While spaces are being imported, they
+  ///  aren't visible to users until the import is complete.
+  ///
+  ///  Creating a space in `Import Mode`requires [user
+  ///  authentication](https://developers.google.com/workspace/chat/authenticate-authorize-chat-user).
   @$pb.TagNumber(16)
   $core.bool get importMode => $_getBF(10);
   @$pb.TagNumber(16)
@@ -979,9 +1004,9 @@ class Space extends $pb.GeneratedMessage {
   ///
   ///  Only populated in the output when `spaceType` is `GROUP_CHAT` or `SPACE`.
   @$pb.TagNumber(17)
-  $302.Timestamp get createTime => $_getN(11);
+  $304.Timestamp get createTime => $_getN(11);
   @$pb.TagNumber(17)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(17, v);
   }
 
@@ -990,13 +1015,13 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearCreateTime() => clearField(17);
   @$pb.TagNumber(17)
-  $302.Timestamp ensureCreateTime() => $_ensure(11);
+  $304.Timestamp ensureCreateTime() => $_ensure(11);
 
   /// Output only. Timestamp of the last message in the space.
   @$pb.TagNumber(18)
-  $302.Timestamp get lastActiveTime => $_getN(12);
+  $304.Timestamp get lastActiveTime => $_getN(12);
   @$pb.TagNumber(18)
-  set lastActiveTime($302.Timestamp v) {
+  set lastActiveTime($304.Timestamp v) {
     setField(18, v);
   }
 
@@ -1005,7 +1030,7 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   void clearLastActiveTime() => clearField(18);
   @$pb.TagNumber(18)
-  $302.Timestamp ensureLastActiveTime() => $_ensure(12);
+  $304.Timestamp ensureLastActiveTime() => $_ensure(12);
 
   ///  Output only. For direct message (DM) spaces with a Chat app, whether the
   ///  space was created by a Google Workspace administrator. Administrators can
@@ -1105,6 +1130,27 @@ class Space extends $pb.GeneratedMessage {
   void clearPermissionSettings() => clearField(27);
   @$pb.TagNumber(27)
   Space_PermissionSettings ensurePermissionSettings() => $_ensure(18);
+
+  ///  Output only. The time when the space will be automatically deleted by the
+  ///  system if it remains in import mode.
+  ///
+  ///  Each space created in import mode must exit this mode before this expire
+  ///  time using `spaces.completeImport`.
+  ///
+  ///  This field is only populated for spaces that were created with import mode.
+  @$pb.TagNumber(28)
+  $304.Timestamp get importModeExpireTime => $_getN(19);
+  @$pb.TagNumber(28)
+  set importModeExpireTime($304.Timestamp v) {
+    setField(28, v);
+  }
+
+  @$pb.TagNumber(28)
+  $core.bool hasImportModeExpireTime() => $_has(19);
+  @$pb.TagNumber(28)
+  void clearImportModeExpireTime() => clearField(28);
+  @$pb.TagNumber(28)
+  $304.Timestamp ensureImportModeExpireTime() => $_ensure(19);
 }
 
 /// A request to create a named space with no members.
@@ -1162,15 +1208,13 @@ class CreateSpaceRequest extends $pb.GeneratedMessage {
   static CreateSpaceRequest? _defaultInstance;
 
   ///  Required. The `displayName` and `spaceType` fields must be populated.  Only
-  ///  `SpaceType.SPACE` is supported.
+  ///  `SpaceType.SPACE`  and `SpaceType.GROUP_CHAT` are supported.
+  ///  `SpaceType.GROUP_CHAT` can only be used if `importMode` is set to true.
   ///
   ///  If you receive the error message `ALREADY_EXISTS`,
   ///  try a different `displayName`. An existing space within the Google
   ///  Workspace organization might already use this display name.
   ///
-  ///  If you're a member of the [Developer Preview
-  ///  program](https://developers.google.com/workspace/preview),
-  ///  `SpaceType.GROUP_CHAT` can be used if `importMode` is set to true.
   ///
   ///  The space `name` is assigned on the server so anything specified in this
   ///  field will be ignored.
@@ -1481,7 +1525,7 @@ class GetSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 
-  ///  When `true`, the method runs using the user's Google Workspace
+  ///  Optional. When `true`, the method runs using the user's Google Workspace
   ///  administrator privileges.
   ///
   ///  The calling user must be a Google Workspace administrator with the
@@ -1584,7 +1628,7 @@ class FindDirectMessageRequest extends $pb.GeneratedMessage {
 class UpdateSpaceRequest extends $pb.GeneratedMessage {
   factory UpdateSpaceRequest({
     Space? space,
-    $333.FieldMask? updateMask,
+    $335.FieldMask? updateMask,
     $core.bool? useAdminAccess,
   }) {
     final $result = create();
@@ -1612,8 +1656,8 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
     ..aOM<Space>(1, _omitFieldNames ? '' : 'space', subBuilder: Space.create)
-    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $333.FieldMask.create)
+    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $335.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false;
 
@@ -1719,9 +1763,9 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   ///  - `permission_settings.manageWebhooks`
   ///  - `permission_settings.replyMessages`
   @$pb.TagNumber(2)
-  $333.FieldMask get updateMask => $_getN(1);
+  $335.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($333.FieldMask v) {
+  set updateMask($335.FieldMask v) {
     setField(2, v);
   }
 
@@ -1730,9 +1774,9 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $333.FieldMask ensureUpdateMask() => $_ensure(1);
+  $335.FieldMask ensureUpdateMask() => $_ensure(1);
 
-  ///  When `true`, the method runs using the user's Google Workspace
+  ///  Optional. When `true`, the method runs using the user's Google Workspace
   ///  administrator privileges.
   ///
   ///  The calling user must be a Google Workspace administrator with the
@@ -2168,7 +2212,7 @@ class DeleteSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 
-  ///  When `true`, the method runs using the user's Google Workspace
+  ///  Optional. When `true`, the method runs using the user's Google Workspace
   ///  administrator privileges.
   ///
   ///  The calling user must be a Google Workspace administrator with the

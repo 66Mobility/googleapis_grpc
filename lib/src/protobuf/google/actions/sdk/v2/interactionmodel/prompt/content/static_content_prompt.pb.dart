@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'static_card_prompt.pb.dart' as $265;
-import 'static_collection_browse_prompt.pb.dart' as $270;
-import 'static_collection_prompt.pb.dart' as $269;
-import 'static_image_prompt.pb.dart' as $262;
-import 'static_list_prompt.pb.dart' as $268;
-import 'static_media_prompt.pb.dart' as $267;
-import 'static_table_prompt.pb.dart' as $266;
+import 'static_card_prompt.pb.dart' as $267;
+import 'static_collection_browse_prompt.pb.dart' as $272;
+import 'static_collection_prompt.pb.dart' as $271;
+import 'static_image_prompt.pb.dart' as $264;
+import 'static_list_prompt.pb.dart' as $270;
+import 'static_media_prompt.pb.dart' as $269;
+import 'static_table_prompt.pb.dart' as $268;
 
 enum StaticContentPrompt_Content {
   card,
@@ -35,13 +35,13 @@ enum StaticContentPrompt_Content {
 /// A placeholder for the Content part of a StaticPrompt.
 class StaticContentPrompt extends $pb.GeneratedMessage {
   factory StaticContentPrompt({
-    $265.StaticCardPrompt? card,
-    $262.StaticImagePrompt? image,
-    $266.StaticTablePrompt? table,
-    $267.StaticMediaPrompt? media,
-    $268.StaticListPrompt? list,
-    $269.StaticCollectionPrompt? collection,
-    $270.StaticCollectionBrowsePrompt? collectionBrowse,
+    $267.StaticCardPrompt? card,
+    $264.StaticImagePrompt? image,
+    $268.StaticTablePrompt? table,
+    $269.StaticMediaPrompt? media,
+    $270.StaticListPrompt? list,
+    $271.StaticCollectionPrompt? collection,
+    $272.StaticCollectionBrowsePrompt? collectionBrowse,
   }) {
     final $result = create();
     if (card != null) {
@@ -93,21 +93,21 @@ class StaticContentPrompt extends $pb.GeneratedMessage {
           : 'google.actions.sdk.v2.interactionmodel.prompt'),
       createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6, 7])
-    ..aOM<$265.StaticCardPrompt>(1, _omitFieldNames ? '' : 'card',
-        subBuilder: $265.StaticCardPrompt.create)
-    ..aOM<$262.StaticImagePrompt>(2, _omitFieldNames ? '' : 'image',
-        subBuilder: $262.StaticImagePrompt.create)
-    ..aOM<$266.StaticTablePrompt>(3, _omitFieldNames ? '' : 'table',
-        subBuilder: $266.StaticTablePrompt.create)
-    ..aOM<$267.StaticMediaPrompt>(4, _omitFieldNames ? '' : 'media',
-        subBuilder: $267.StaticMediaPrompt.create)
-    ..aOM<$268.StaticListPrompt>(5, _omitFieldNames ? '' : 'list',
-        subBuilder: $268.StaticListPrompt.create)
-    ..aOM<$269.StaticCollectionPrompt>(6, _omitFieldNames ? '' : 'collection',
-        subBuilder: $269.StaticCollectionPrompt.create)
-    ..aOM<$270.StaticCollectionBrowsePrompt>(
+    ..aOM<$267.StaticCardPrompt>(1, _omitFieldNames ? '' : 'card',
+        subBuilder: $267.StaticCardPrompt.create)
+    ..aOM<$264.StaticImagePrompt>(2, _omitFieldNames ? '' : 'image',
+        subBuilder: $264.StaticImagePrompt.create)
+    ..aOM<$268.StaticTablePrompt>(3, _omitFieldNames ? '' : 'table',
+        subBuilder: $268.StaticTablePrompt.create)
+    ..aOM<$269.StaticMediaPrompt>(4, _omitFieldNames ? '' : 'media',
+        subBuilder: $269.StaticMediaPrompt.create)
+    ..aOM<$270.StaticListPrompt>(5, _omitFieldNames ? '' : 'list',
+        subBuilder: $270.StaticListPrompt.create)
+    ..aOM<$271.StaticCollectionPrompt>(6, _omitFieldNames ? '' : 'collection',
+        subBuilder: $271.StaticCollectionPrompt.create)
+    ..aOM<$272.StaticCollectionBrowsePrompt>(
         7, _omitFieldNames ? '' : 'collectionBrowse',
-        subBuilder: $270.StaticCollectionBrowsePrompt.create)
+        subBuilder: $272.StaticCollectionBrowsePrompt.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -139,9 +139,9 @@ class StaticContentPrompt extends $pb.GeneratedMessage {
 
   /// A basic card.
   @$pb.TagNumber(1)
-  $265.StaticCardPrompt get card => $_getN(0);
+  $267.StaticCardPrompt get card => $_getN(0);
   @$pb.TagNumber(1)
-  set card($265.StaticCardPrompt v) {
+  set card($267.StaticCardPrompt v) {
     setField(1, v);
   }
 
@@ -150,13 +150,13 @@ class StaticContentPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCard() => clearField(1);
   @$pb.TagNumber(1)
-  $265.StaticCardPrompt ensureCard() => $_ensure(0);
+  $267.StaticCardPrompt ensureCard() => $_ensure(0);
 
   /// An image.
   @$pb.TagNumber(2)
-  $262.StaticImagePrompt get image => $_getN(1);
+  $264.StaticImagePrompt get image => $_getN(1);
   @$pb.TagNumber(2)
-  set image($262.StaticImagePrompt v) {
+  set image($264.StaticImagePrompt v) {
     setField(2, v);
   }
 
@@ -165,13 +165,13 @@ class StaticContentPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearImage() => clearField(2);
   @$pb.TagNumber(2)
-  $262.StaticImagePrompt ensureImage() => $_ensure(1);
+  $264.StaticImagePrompt ensureImage() => $_ensure(1);
 
   /// Table card.
   @$pb.TagNumber(3)
-  $266.StaticTablePrompt get table => $_getN(2);
+  $268.StaticTablePrompt get table => $_getN(2);
   @$pb.TagNumber(3)
-  set table($266.StaticTablePrompt v) {
+  set table($268.StaticTablePrompt v) {
     setField(3, v);
   }
 
@@ -180,13 +180,13 @@ class StaticContentPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearTable() => clearField(3);
   @$pb.TagNumber(3)
-  $266.StaticTablePrompt ensureTable() => $_ensure(2);
+  $268.StaticTablePrompt ensureTable() => $_ensure(2);
 
   /// Response indicating a set of media to be played.
   @$pb.TagNumber(4)
-  $267.StaticMediaPrompt get media => $_getN(3);
+  $269.StaticMediaPrompt get media => $_getN(3);
   @$pb.TagNumber(4)
-  set media($267.StaticMediaPrompt v) {
+  set media($269.StaticMediaPrompt v) {
     setField(4, v);
   }
 
@@ -195,13 +195,13 @@ class StaticContentPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearMedia() => clearField(4);
   @$pb.TagNumber(4)
-  $267.StaticMediaPrompt ensureMedia() => $_ensure(3);
+  $269.StaticMediaPrompt ensureMedia() => $_ensure(3);
 
   /// A card for presenting a list of options to select from.
   @$pb.TagNumber(5)
-  $268.StaticListPrompt get list => $_getN(4);
+  $270.StaticListPrompt get list => $_getN(4);
   @$pb.TagNumber(5)
-  set list($268.StaticListPrompt v) {
+  set list($270.StaticListPrompt v) {
     setField(5, v);
   }
 
@@ -210,13 +210,13 @@ class StaticContentPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearList() => clearField(5);
   @$pb.TagNumber(5)
-  $268.StaticListPrompt ensureList() => $_ensure(4);
+  $270.StaticListPrompt ensureList() => $_ensure(4);
 
   /// A card presenting a list of options to select from.
   @$pb.TagNumber(6)
-  $269.StaticCollectionPrompt get collection => $_getN(5);
+  $271.StaticCollectionPrompt get collection => $_getN(5);
   @$pb.TagNumber(6)
-  set collection($269.StaticCollectionPrompt v) {
+  set collection($271.StaticCollectionPrompt v) {
     setField(6, v);
   }
 
@@ -225,13 +225,13 @@ class StaticContentPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearCollection() => clearField(6);
   @$pb.TagNumber(6)
-  $269.StaticCollectionPrompt ensureCollection() => $_ensure(5);
+  $271.StaticCollectionPrompt ensureCollection() => $_ensure(5);
 
   /// A card presenting a collection of web pages to open.
   @$pb.TagNumber(7)
-  $270.StaticCollectionBrowsePrompt get collectionBrowse => $_getN(6);
+  $272.StaticCollectionBrowsePrompt get collectionBrowse => $_getN(6);
   @$pb.TagNumber(7)
-  set collectionBrowse($270.StaticCollectionBrowsePrompt v) {
+  set collectionBrowse($272.StaticCollectionBrowsePrompt v) {
     setField(7, v);
   }
 
@@ -240,7 +240,7 @@ class StaticContentPrompt extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearCollectionBrowse() => clearField(7);
   @$pb.TagNumber(7)
-  $270.StaticCollectionBrowsePrompt ensureCollectionBrowse() => $_ensure(6);
+  $272.StaticCollectionBrowsePrompt ensureCollectionBrowse() => $_ensure(6);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

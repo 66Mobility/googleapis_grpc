@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'image.pb.dart' as $309;
-import 'image.pbenum.dart' as $309;
-import 'link.pb.dart' as $310;
+import 'image.pb.dart' as $311;
+import 'image.pbenum.dart' as $311;
+import 'link.pb.dart' as $312;
 
 /// A basic card for displaying some information, e.g. an image and/or text.
 class Card extends $pb.GeneratedMessage {
@@ -23,9 +23,9 @@ class Card extends $pb.GeneratedMessage {
     $core.String? title,
     $core.String? subtitle,
     $core.String? text,
-    $309.Image? image,
-    $309.Image_ImageFill? imageFill,
-    $310.Link? button,
+    $311.Image? image,
+    $311.Image_ImageFill? imageFill,
+    $312.Link? button,
   }) {
     final $result = create();
     if (title != null) {
@@ -64,15 +64,15 @@ class Card extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
     ..aOS(3, _omitFieldNames ? '' : 'text')
-    ..aOM<$309.Image>(4, _omitFieldNames ? '' : 'image',
-        subBuilder: $309.Image.create)
-    ..e<$309.Image_ImageFill>(
+    ..aOM<$311.Image>(4, _omitFieldNames ? '' : 'image',
+        subBuilder: $311.Image.create)
+    ..e<$311.Image_ImageFill>(
         5, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE,
-        defaultOrMaker: $309.Image_ImageFill.UNSPECIFIED,
-        valueOf: $309.Image_ImageFill.valueOf,
-        enumValues: $309.Image_ImageFill.values)
-    ..aOM<$310.Link>(6, _omitFieldNames ? '' : 'button',
-        subBuilder: $310.Link.create)
+        defaultOrMaker: $311.Image_ImageFill.UNSPECIFIED,
+        valueOf: $311.Image_ImageFill.valueOf,
+        enumValues: $311.Image_ImageFill.values)
+    ..aOM<$312.Link>(6, _omitFieldNames ? '' : 'button',
+        subBuilder: $312.Link.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -141,9 +141,9 @@ class Card extends $pb.GeneratedMessage {
   /// A hero image for the card. The height is fixed to 192dp.
   /// Optional.
   @$pb.TagNumber(4)
-  $309.Image get image => $_getN(3);
+  $311.Image get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image($309.Image v) {
+  set image($311.Image v) {
     setField(4, v);
   }
 
@@ -152,13 +152,13 @@ class Card extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearImage() => clearField(4);
   @$pb.TagNumber(4)
-  $309.Image ensureImage() => $_ensure(3);
+  $311.Image ensureImage() => $_ensure(3);
 
   /// How the image background will be filled. Optional.
   @$pb.TagNumber(5)
-  $309.Image_ImageFill get imageFill => $_getN(4);
+  $311.Image_ImageFill get imageFill => $_getN(4);
   @$pb.TagNumber(5)
-  set imageFill($309.Image_ImageFill v) {
+  set imageFill($311.Image_ImageFill v) {
     setField(5, v);
   }
 
@@ -170,9 +170,9 @@ class Card extends $pb.GeneratedMessage {
   /// Button.
   /// Optional.
   @$pb.TagNumber(6)
-  $310.Link get button => $_getN(5);
+  $312.Link get button => $_getN(5);
   @$pb.TagNumber(6)
-  set button($310.Link v) {
+  set button($312.Link v) {
     setField(6, v);
   }
 
@@ -181,7 +181,7 @@ class Card extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearButton() => clearField(6);
   @$pb.TagNumber(6)
-  $310.Link ensureButton() => $_ensure(5);
+  $312.Link ensureButton() => $_ensure(5);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

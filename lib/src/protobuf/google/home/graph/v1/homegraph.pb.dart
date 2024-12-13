@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $261;
-import 'device.pb.dart' as $442;
+import '../../../protobuf/struct.pb.dart' as $263;
+import 'device.pb.dart' as $444;
 
 /// Request type for the
 /// [`RequestSyncDevices`](#google.home.graph.v1.HomeGraphApiService.RequestSyncDevices)
@@ -475,8 +475,8 @@ class StateAndNotificationPayload extends $pb.GeneratedMessage {
 /// The states and notifications specific to a device.
 class ReportStateAndNotificationDevice extends $pb.GeneratedMessage {
   factory ReportStateAndNotificationDevice({
-    $261.Struct? states,
-    $261.Struct? notifications,
+    $263.Struct? states,
+    $263.Struct? notifications,
   }) {
     final $result = create();
     if (states != null) {
@@ -500,10 +500,10 @@ class ReportStateAndNotificationDevice extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.home.graph.v1'),
       createEmptyInstance: create)
-    ..aOM<$261.Struct>(1, _omitFieldNames ? '' : 'states',
-        subBuilder: $261.Struct.create)
-    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'notifications',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(1, _omitFieldNames ? '' : 'states',
+        subBuilder: $263.Struct.create)
+    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'notifications',
+        subBuilder: $263.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -538,9 +538,9 @@ class ReportStateAndNotificationDevice extends $pb.GeneratedMessage {
   /// of the individual trait [reference
   /// guides](https://developers.home.google.com/cloud-to-cloud/traits).
   @$pb.TagNumber(1)
-  $261.Struct get states => $_getN(0);
+  $263.Struct get states => $_getN(0);
   @$pb.TagNumber(1)
-  set states($261.Struct v) {
+  set states($263.Struct v) {
     setField(1, v);
   }
 
@@ -549,15 +549,15 @@ class ReportStateAndNotificationDevice extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStates() => clearField(1);
   @$pb.TagNumber(1)
-  $261.Struct ensureStates() => $_ensure(0);
+  $263.Struct ensureStates() => $_ensure(0);
 
   /// Notifications metadata for devices. See the **Device NOTIFICATIONS**
   /// section of the individual trait [reference
   /// guides](https://developers.home.google.com/cloud-to-cloud/traits).
   @$pb.TagNumber(2)
-  $261.Struct get notifications => $_getN(1);
+  $263.Struct get notifications => $_getN(1);
   @$pb.TagNumber(2)
-  set notifications($261.Struct v) {
+  set notifications($263.Struct v) {
     setField(2, v);
   }
 
@@ -566,7 +566,7 @@ class ReportStateAndNotificationDevice extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearNotifications() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Struct ensureNotifications() => $_ensure(1);
+  $263.Struct ensureNotifications() => $_ensure(1);
 }
 
 /// Request type for the
@@ -1054,7 +1054,7 @@ class QueryResponse extends $pb.GeneratedMessage {
 /// Payload containing device states information.
 class QueryResponsePayload extends $pb.GeneratedMessage {
   factory QueryResponsePayload({
-    $core.Map<$core.String, $261.Struct>? devices,
+    $core.Map<$core.String, $263.Struct>? devices,
   }) {
     final $result = create();
     if (devices != null) {
@@ -1075,12 +1075,12 @@ class QueryResponsePayload extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.home.graph.v1'),
       createEmptyInstance: create)
-    ..m<$core.String, $261.Struct>(1, _omitFieldNames ? '' : 'devices',
+    ..m<$core.String, $263.Struct>(1, _omitFieldNames ? '' : 'devices',
         entryClassName: 'QueryResponsePayload.DevicesEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OM,
-        valueCreator: $261.Struct.create,
-        valueDefaultOrMaker: $261.Struct.getDefault,
+        valueCreator: $263.Struct.create,
+        valueDefaultOrMaker: $263.Struct.getDefault,
         packageName: const $pb.PackageName('google.home.graph.v1'))
     ..hasRequiredFields = false;
 
@@ -1111,7 +1111,7 @@ class QueryResponsePayload extends $pb.GeneratedMessage {
   /// States of the devices. Map of third-party device ID to struct of device
   /// states.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $261.Struct> get devices => $_getMap(0);
+  $core.Map<$core.String, $263.Struct> get devices => $_getMap(0);
 }
 
 /// Request type for the [`Sync`](#google.home.graph.v1.HomeGraphApiService.Sync)
@@ -1324,7 +1324,7 @@ class SyncResponse extends $pb.GeneratedMessage {
 class SyncResponsePayload extends $pb.GeneratedMessage {
   factory SyncResponsePayload({
     $core.String? agentUserId,
-    $core.Iterable<$442.Device>? devices,
+    $core.Iterable<$444.Device>? devices,
   }) {
     final $result = create();
     if (agentUserId != null) {
@@ -1349,8 +1349,8 @@ class SyncResponsePayload extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.home.graph.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'agentUserId')
-    ..pc<$442.Device>(2, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM,
-        subBuilder: $442.Device.create)
+    ..pc<$444.Device>(2, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM,
+        subBuilder: $444.Device.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1391,7 +1391,7 @@ class SyncResponsePayload extends $pb.GeneratedMessage {
 
   /// Devices associated with the third-party user.
   @$pb.TagNumber(2)
-  $core.List<$442.Device> get devices => $_getList(1);
+  $core.List<$444.Device> get devices => $_getList(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

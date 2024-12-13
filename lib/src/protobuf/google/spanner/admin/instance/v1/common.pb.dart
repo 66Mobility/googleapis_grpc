@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../../protobuf/timestamp.pb.dart' as $304;
 
 export 'common.pbenum.dart';
 
@@ -22,8 +22,8 @@ export 'common.pbenum.dart';
 class OperationProgress extends $pb.GeneratedMessage {
   factory OperationProgress({
     $core.int? progressPercent,
-    $302.Timestamp? startTime,
-    $302.Timestamp? endTime,
+    $304.Timestamp? startTime,
+    $304.Timestamp? endTime,
   }) {
     final $result = create();
     if (progressPercent != null) {
@@ -52,10 +52,10 @@ class OperationProgress extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..a<$core.int>(
         1, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
-    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $304.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -97,9 +97,9 @@ class OperationProgress extends $pb.GeneratedMessage {
 
   /// Time the request was received.
   @$pb.TagNumber(2)
-  $302.Timestamp get startTime => $_getN(1);
+  $304.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($302.Timestamp v) {
+  set startTime($304.Timestamp v) {
     setField(2, v);
   }
 
@@ -108,14 +108,14 @@ class OperationProgress extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $302.Timestamp ensureStartTime() => $_ensure(1);
+  $304.Timestamp ensureStartTime() => $_ensure(1);
 
   /// If set, the time at which this operation failed or was completed
   /// successfully.
   @$pb.TagNumber(3)
-  $302.Timestamp get endTime => $_getN(2);
+  $304.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($302.Timestamp v) {
+  set endTime($304.Timestamp v) {
     setField(3, v);
   }
 
@@ -124,7 +124,7 @@ class OperationProgress extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $302.Timestamp ensureEndTime() => $_ensure(2);
+  $304.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// ReplicaSelection identifies replicas with common properties.

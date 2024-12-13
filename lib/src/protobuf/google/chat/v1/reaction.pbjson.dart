@@ -17,7 +17,7 @@ import 'dart:typed_data' as $typed_data;
 const Reaction$json = {
   '1': 'Reaction',
   '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {
       '1': 'user',
       '3': 2,
@@ -33,6 +33,7 @@ const Reaction$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Emoji',
+      '8': {},
       '10': 'emoji'
     },
   ],
@@ -41,16 +42,17 @@ const Reaction$json = {
 
 /// Descriptor for `Reaction`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List reactionDescriptor = $convert.base64Decode(
-    'CghSZWFjdGlvbhISCgRuYW1lGAEgASgJUgRuYW1lEi0KBHVzZXIYAiABKAsyFC5nb29nbGUuY2'
-    'hhdC52MS5Vc2VyQgPgQQNSBHVzZXISKwoFZW1vamkYAyABKAsyFS5nb29nbGUuY2hhdC52MS5F'
-    'bW9qaVIFZW1vamk6WepBVgocY2hhdC5nb29nbGVhcGlzLmNvbS9SZWFjdGlvbhI2c3BhY2VzL3'
-    'tzcGFjZX0vbWVzc2FnZXMve21lc3NhZ2V9L3JlYWN0aW9ucy97cmVhY3Rpb259');
+    'CghSZWFjdGlvbhIXCgRuYW1lGAEgASgJQgPgQQhSBG5hbWUSLQoEdXNlchgCIAEoCzIULmdvb2'
+    'dsZS5jaGF0LnYxLlVzZXJCA+BBA1IEdXNlchIwCgVlbW9qaRgDIAEoCzIVLmdvb2dsZS5jaGF0'
+    'LnYxLkVtb2ppQgPgQQJSBWVtb2ppOlnqQVYKHGNoYXQuZ29vZ2xlYXBpcy5jb20vUmVhY3Rpb2'
+    '4SNnNwYWNlcy97c3BhY2V9L21lc3NhZ2VzL3ttZXNzYWdlfS9yZWFjdGlvbnMve3JlYWN0aW9u'
+    'fQ==');
 
 @$core.Deprecated('Use emojiDescriptor instead')
 const Emoji$json = {
   '1': 'Emoji',
   '2': [
-    {'1': 'unicode', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'unicode'},
+    {'1': 'unicode', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'unicode'},
     {
       '1': 'custom_emoji',
       '3': 2,
@@ -69,9 +71,9 @@ const Emoji$json = {
 
 /// Descriptor for `Emoji`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List emojiDescriptor = $convert.base64Decode(
-    'CgVFbW9qaRIaCgd1bmljb2RlGAEgASgJSABSB3VuaWNvZGUSRQoMY3VzdG9tX2Vtb2ppGAIgAS'
-    'gLMhsuZ29vZ2xlLmNoYXQudjEuQ3VzdG9tRW1vamlCA+BBA0gAUgtjdXN0b21FbW9qaUIJCgdj'
-    'b250ZW50');
+    'CgVFbW9qaRIfCgd1bmljb2RlGAEgASgJQgPgQQFIAFIHdW5pY29kZRJFCgxjdXN0b21fZW1vam'
+    'kYAiABKAsyGy5nb29nbGUuY2hhdC52MS5DdXN0b21FbW9qaUID4EEDSABSC2N1c3RvbUVtb2pp'
+    'QgkKB2NvbnRlbnQ=');
 
 @$core.Deprecated('Use customEmojiDescriptor instead')
 const CustomEmoji$json = {
@@ -82,8 +84,8 @@ const CustomEmoji$json = {
 };
 
 /// Descriptor for `CustomEmoji`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List customEmojiDescriptor =
-    $convert.base64Decode('CgtDdXN0b21FbW9qaRIVCgN1aWQYASABKAlCA+BBA1IDdWlk');
+final $typed_data.Uint8List customEmojiDescriptor = $convert.base64Decode(
+    'CgtDdXN0b21FbW9qaRIdCgN1aWQYASABKAlCC+BBA+KMz9cIAggBUgN1aWQ=');
 
 @$core.Deprecated('Use emojiReactionSummaryDescriptor instead')
 const EmojiReactionSummary$json = {
@@ -95,6 +97,7 @@ const EmojiReactionSummary$json = {
       '4': 1,
       '5': 11,
       '6': '.google.chat.v1.Emoji',
+      '8': {},
       '10': 'emoji'
     },
     {
@@ -102,6 +105,7 @@ const EmojiReactionSummary$json = {
       '3': 2,
       '4': 1,
       '5': 5,
+      '8': {},
       '9': 0,
       '10': 'reactionCount',
       '17': true
@@ -114,9 +118,9 @@ const EmojiReactionSummary$json = {
 
 /// Descriptor for `EmojiReactionSummary`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List emojiReactionSummaryDescriptor = $convert.base64Decode(
-    'ChRFbW9qaVJlYWN0aW9uU3VtbWFyeRIrCgVlbW9qaRgBIAEoCzIVLmdvb2dsZS5jaGF0LnYxLk'
-    'Vtb2ppUgVlbW9qaRIqCg5yZWFjdGlvbl9jb3VudBgCIAEoBUgAUg1yZWFjdGlvbkNvdW50iAEB'
-    'QhEKD19yZWFjdGlvbl9jb3VudA==');
+    'ChRFbW9qaVJlYWN0aW9uU3VtbWFyeRIwCgVlbW9qaRgBIAEoCzIVLmdvb2dsZS5jaGF0LnYxLk'
+    'Vtb2ppQgPgQQNSBWVtb2ppEi8KDnJlYWN0aW9uX2NvdW50GAIgASgFQgPgQQNIAFINcmVhY3Rp'
+    'b25Db3VudIgBAUIRCg9fcmVhY3Rpb25fY291bnQ=');
 
 @$core.Deprecated('Use createReactionRequestDescriptor instead')
 const CreateReactionRequest$json = {

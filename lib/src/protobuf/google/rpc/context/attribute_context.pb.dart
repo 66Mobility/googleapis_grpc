@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/any.pb.dart' as $321;
-import '../../protobuf/duration.pb.dart' as $264;
-import '../../protobuf/struct.pb.dart' as $261;
-import '../../protobuf/timestamp.pb.dart' as $302;
+import '../../protobuf/any.pb.dart' as $323;
+import '../../protobuf/duration.pb.dart' as $266;
+import '../../protobuf/struct.pb.dart' as $263;
+import '../../protobuf/timestamp.pb.dart' as $304;
 
 /// This message defines attributes for a node that handles a network request.
 /// The node can be either a service or an application that sends, forwards,
@@ -294,7 +294,7 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
     $core.String? principal,
     $core.Iterable<$core.String>? audiences,
     $core.String? presenter,
-    $261.Struct? claims,
+    $263.Struct? claims,
     $core.Iterable<$core.String>? accessLevels,
   }) {
     final $result = create();
@@ -331,8 +331,8 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'principal')
     ..pPS(2, _omitFieldNames ? '' : 'audiences')
     ..aOS(3, _omitFieldNames ? '' : 'presenter')
-    ..aOM<$261.Struct>(4, _omitFieldNames ? '' : 'claims',
-        subBuilder: $261.Struct.create)
+    ..aOM<$263.Struct>(4, _omitFieldNames ? '' : 'claims',
+        subBuilder: $263.Struct.create)
     ..pPS(5, _omitFieldNames ? '' : 'accessLevels')
     ..hasRequiredFields = false;
 
@@ -427,9 +427,9 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
   ///  SAML assertions are similarly specified, but with an identity provider
   ///  dependent structure.
   @$pb.TagNumber(4)
-  $261.Struct get claims => $_getN(3);
+  $263.Struct get claims => $_getN(3);
   @$pb.TagNumber(4)
-  set claims($261.Struct v) {
+  set claims($263.Struct v) {
     setField(4, v);
   }
 
@@ -438,7 +438,7 @@ class AttributeContext_Auth extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearClaims() => clearField(4);
   @$pb.TagNumber(4)
-  $261.Struct ensureClaims() => $_ensure(3);
+  $263.Struct ensureClaims() => $_ensure(3);
 
   ///  A list of access level resource names that allow resources to be
   ///  accessed by authenticated requester. It is part of Secure GCP processing
@@ -463,7 +463,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
     $core.String? host,
     $core.String? scheme,
     $core.String? query,
-    $302.Timestamp? time,
+    $304.Timestamp? time,
     $fixnum.Int64? size,
     $core.String? protocol,
     $core.String? reason,
@@ -532,8 +532,8 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'host')
     ..aOS(6, _omitFieldNames ? '' : 'scheme')
     ..aOS(7, _omitFieldNames ? '' : 'query')
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'time',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(9, _omitFieldNames ? '' : 'time',
+        subBuilder: $304.Timestamp.create)
     ..aInt64(10, _omitFieldNames ? '' : 'size')
     ..aOS(11, _omitFieldNames ? '' : 'protocol')
     ..aOS(12, _omitFieldNames ? '' : 'reason')
@@ -656,9 +656,9 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   /// The timestamp when the `destination` service receives the last byte of
   /// the request.
   @$pb.TagNumber(9)
-  $302.Timestamp get time => $_getN(7);
+  $304.Timestamp get time => $_getN(7);
   @$pb.TagNumber(9)
-  set time($302.Timestamp v) {
+  set time($304.Timestamp v) {
     setField(9, v);
   }
 
@@ -667,7 +667,7 @@ class AttributeContext_Request extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearTime() => clearField(9);
   @$pb.TagNumber(9)
-  $302.Timestamp ensureTime() => $_ensure(7);
+  $304.Timestamp ensureTime() => $_ensure(7);
 
   /// The HTTP request size in bytes. If unknown, it must be -1.
   @$pb.TagNumber(10)
@@ -736,8 +736,8 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
     $fixnum.Int64? code,
     $fixnum.Int64? size,
     $core.Map<$core.String, $core.String>? headers,
-    $302.Timestamp? time,
-    $264.Duration? backendLatency,
+    $304.Timestamp? time,
+    $266.Duration? backendLatency,
   }) {
     final $result = create();
     if (code != null) {
@@ -777,10 +777,10 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.rpc.context'))
-    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'time',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'backendLatency',
-        subBuilder: $264.Duration.create)
+    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'time',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$266.Duration>(5, _omitFieldNames ? '' : 'backendLatency',
+        subBuilder: $266.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -843,9 +843,9 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
   /// The timestamp when the `destination` service sends the last byte of
   /// the response.
   @$pb.TagNumber(4)
-  $302.Timestamp get time => $_getN(3);
+  $304.Timestamp get time => $_getN(3);
   @$pb.TagNumber(4)
-  set time($302.Timestamp v) {
+  set time($304.Timestamp v) {
     setField(4, v);
   }
 
@@ -854,16 +854,16 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearTime() => clearField(4);
   @$pb.TagNumber(4)
-  $302.Timestamp ensureTime() => $_ensure(3);
+  $304.Timestamp ensureTime() => $_ensure(3);
 
   /// The amount of time it takes the backend service to fully respond to a
   /// request. Measured from when the destination service starts to send the
   /// request to the backend until when the destination service receives the
   /// complete response from the backend.
   @$pb.TagNumber(5)
-  $264.Duration get backendLatency => $_getN(4);
+  $266.Duration get backendLatency => $_getN(4);
   @$pb.TagNumber(5)
-  set backendLatency($264.Duration v) {
+  set backendLatency($266.Duration v) {
     setField(5, v);
   }
 
@@ -872,7 +872,7 @@ class AttributeContext_Response extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearBackendLatency() => clearField(5);
   @$pb.TagNumber(5)
-  $264.Duration ensureBackendLatency() => $_ensure(4);
+  $266.Duration ensureBackendLatency() => $_ensure(4);
 }
 
 /// This message defines core attributes for a resource. A resource is an
@@ -887,9 +887,9 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
     $core.String? uid,
     $core.Map<$core.String, $core.String>? annotations,
     $core.String? displayName,
-    $302.Timestamp? createTime,
-    $302.Timestamp? updateTime,
-    $302.Timestamp? deleteTime,
+    $304.Timestamp? createTime,
+    $304.Timestamp? updateTime,
+    $304.Timestamp? deleteTime,
     $core.String? etag,
     $core.String? location,
   }) {
@@ -960,12 +960,12 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.rpc.context'))
     ..aOS(7, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $302.Timestamp.create)
-    ..aOM<$302.Timestamp>(10, _omitFieldNames ? '' : 'deleteTime',
-        subBuilder: $302.Timestamp.create)
+    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(9, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $304.Timestamp.create)
+    ..aOM<$304.Timestamp>(10, _omitFieldNames ? '' : 'deleteTime',
+        subBuilder: $304.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'etag')
     ..aOS(12, _omitFieldNames ? '' : 'location')
     ..hasRequiredFields = false;
@@ -1097,9 +1097,9 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
   /// Output only. The timestamp when the resource was created. This may
   /// be either the time creation was initiated or when it was completed.
   @$pb.TagNumber(8)
-  $302.Timestamp get createTime => $_getN(7);
+  $304.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($302.Timestamp v) {
+  set createTime($304.Timestamp v) {
     setField(8, v);
   }
 
@@ -1108,15 +1108,15 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $302.Timestamp ensureCreateTime() => $_ensure(7);
+  $304.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. The timestamp when the resource was last updated. Any
   /// change to the resource made by users must refresh this value.
   /// Changes to a resource made by the service should refresh this value.
   @$pb.TagNumber(9)
-  $302.Timestamp get updateTime => $_getN(8);
+  $304.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($302.Timestamp v) {
+  set updateTime($304.Timestamp v) {
     setField(9, v);
   }
 
@@ -1125,14 +1125,14 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $302.Timestamp ensureUpdateTime() => $_ensure(8);
+  $304.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. The timestamp when the resource was deleted.
   /// If the resource is not deleted, this must be empty.
   @$pb.TagNumber(10)
-  $302.Timestamp get deleteTime => $_getN(9);
+  $304.Timestamp get deleteTime => $_getN(9);
   @$pb.TagNumber(10)
-  set deleteTime($302.Timestamp v) {
+  set deleteTime($304.Timestamp v) {
     setField(10, v);
   }
 
@@ -1141,7 +1141,7 @@ class AttributeContext_Resource extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearDeleteTime() => clearField(10);
   @$pb.TagNumber(10)
-  $302.Timestamp ensureDeleteTime() => $_ensure(9);
+  $304.Timestamp ensureDeleteTime() => $_ensure(9);
 
   /// Output only. An opaque value that uniquely identifies a version or
   /// generation of a resource. It can be used to confirm that the client
@@ -1205,7 +1205,7 @@ class AttributeContext extends $pb.GeneratedMessage {
     AttributeContext_Resource? resource,
     AttributeContext_Api? api,
     AttributeContext_Peer? origin,
-    $core.Iterable<$321.Any>? extensions,
+    $core.Iterable<$323.Any>? extensions,
   }) {
     final $result = create();
     if (source != null) {
@@ -1261,8 +1261,8 @@ class AttributeContext extends $pb.GeneratedMessage {
         subBuilder: AttributeContext_Api.create)
     ..aOM<AttributeContext_Peer>(7, _omitFieldNames ? '' : 'origin',
         subBuilder: AttributeContext_Peer.create)
-    ..pc<$321.Any>(8, _omitFieldNames ? '' : 'extensions', $pb.PbFieldType.PM,
-        subBuilder: $321.Any.create)
+    ..pc<$323.Any>(8, _omitFieldNames ? '' : 'extensions', $pb.PbFieldType.PM,
+        subBuilder: $323.Any.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1403,7 +1403,7 @@ class AttributeContext extends $pb.GeneratedMessage {
 
   /// Supports extensions for advanced use cases, such as logs and metrics.
   @$pb.TagNumber(8)
-  $core.List<$321.Any> get extensions => $_getList(7);
+  $core.List<$323.Any> get extensions => $_getList(7);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

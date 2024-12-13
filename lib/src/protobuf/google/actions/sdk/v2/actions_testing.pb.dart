@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/latlng.pb.dart' as $325;
+import '../../../type/latlng.pb.dart' as $327;
 import 'actions_testing.pbenum.dart';
-import 'conversation/intent.pb.dart' as $324;
-import 'conversation/prompt/content/canvas.pb.dart' as $314;
-import 'conversation/prompt/prompt.pb.dart' as $320;
-import 'event_logs.pb.dart' as $326;
+import 'conversation/intent.pb.dart' as $326;
+import 'conversation/prompt/content/canvas.pb.dart' as $316;
+import 'conversation/prompt/prompt.pb.dart' as $322;
+import 'event_logs.pb.dart' as $328;
 
 export 'actions_testing.pbenum.dart';
 
@@ -369,7 +369,7 @@ class DeviceProperties extends $pb.GeneratedMessage {
 /// Container that represents a location.
 class Location extends $pb.GeneratedMessage {
   factory Location({
-    $325.LatLng? coordinates,
+    $327.LatLng? coordinates,
     $core.String? formattedAddress,
     $core.String? zipCode,
     $core.String? city,
@@ -402,8 +402,8 @@ class Location extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.actions.sdk.v2'),
       createEmptyInstance: create)
-    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'coordinates',
-        subBuilder: $325.LatLng.create)
+    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'coordinates',
+        subBuilder: $327.LatLng.create)
     ..aOS(2, _omitFieldNames ? '' : 'formattedAddress')
     ..aOS(3, _omitFieldNames ? '' : 'zipCode')
     ..aOS(4, _omitFieldNames ? '' : 'city')
@@ -434,9 +434,9 @@ class Location extends $pb.GeneratedMessage {
   /// Requires the [DEVICE_PRECISE_LOCATION]
   /// [google.actions.v2.Permission.DEVICE_PRECISE_LOCATION] permission.
   @$pb.TagNumber(1)
-  $325.LatLng get coordinates => $_getN(0);
+  $327.LatLng get coordinates => $_getN(0);
   @$pb.TagNumber(1)
-  set coordinates($325.LatLng v) {
+  set coordinates($327.LatLng v) {
     setField(1, v);
   }
 
@@ -445,7 +445,7 @@ class Location extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCoordinates() => clearField(1);
   @$pb.TagNumber(1)
-  $325.LatLng ensureCoordinates() => $_ensure(0);
+  $327.LatLng ensureCoordinates() => $_ensure(0);
 
   /// Display address, e.g., "1600 Amphitheatre Pkwy, Mountain View, CA 94043".
   /// Requires the [DEVICE_PRECISE_LOCATION]
@@ -610,8 +610,8 @@ class Output extends $pb.GeneratedMessage {
   factory Output({
     $core.String? text,
     $core.Iterable<$core.String>? speech,
-    $314.Canvas? canvas,
-    $320.Prompt? actionsBuilderPrompt,
+    $316.Canvas? canvas,
+    $322.Prompt? actionsBuilderPrompt,
   }) {
     final $result = create();
     if (text != null) {
@@ -643,10 +643,10 @@ class Output extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..pPS(2, _omitFieldNames ? '' : 'speech')
-    ..aOM<$314.Canvas>(3, _omitFieldNames ? '' : 'canvas',
-        subBuilder: $314.Canvas.create)
-    ..aOM<$320.Prompt>(4, _omitFieldNames ? '' : 'actionsBuilderPrompt',
-        subBuilder: $320.Prompt.create)
+    ..aOM<$316.Canvas>(3, _omitFieldNames ? '' : 'canvas',
+        subBuilder: $316.Canvas.create)
+    ..aOM<$322.Prompt>(4, _omitFieldNames ? '' : 'actionsBuilderPrompt',
+        subBuilder: $322.Prompt.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -690,9 +690,9 @@ class Output extends $pb.GeneratedMessage {
 
   /// Interactive Canvas content.
   @$pb.TagNumber(3)
-  $314.Canvas get canvas => $_getN(2);
+  $316.Canvas get canvas => $_getN(2);
   @$pb.TagNumber(3)
-  set canvas($314.Canvas v) {
+  set canvas($316.Canvas v) {
     setField(3, v);
   }
 
@@ -701,15 +701,15 @@ class Output extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCanvas() => clearField(3);
   @$pb.TagNumber(3)
-  $314.Canvas ensureCanvas() => $_ensure(2);
+  $316.Canvas ensureCanvas() => $_ensure(2);
 
   /// State of the prompt at the end of the conversation round.
   /// More information about the prompt:
   /// https://developers.google.com/assistant/conversational/prompts
   @$pb.TagNumber(4)
-  $320.Prompt get actionsBuilderPrompt => $_getN(3);
+  $322.Prompt get actionsBuilderPrompt => $_getN(3);
   @$pb.TagNumber(4)
-  set actionsBuilderPrompt($320.Prompt v) {
+  set actionsBuilderPrompt($322.Prompt v) {
     setField(4, v);
   }
 
@@ -718,13 +718,13 @@ class Output extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearActionsBuilderPrompt() => clearField(4);
   @$pb.TagNumber(4)
-  $320.Prompt ensureActionsBuilderPrompt() => $_ensure(3);
+  $322.Prompt ensureActionsBuilderPrompt() => $_ensure(3);
 }
 
 /// Diagnostics information related to the conversation round.
 class Diagnostics extends $pb.GeneratedMessage {
   factory Diagnostics({
-    $core.Iterable<$326.ExecutionEvent>? actionsBuilderEvents,
+    $core.Iterable<$328.ExecutionEvent>? actionsBuilderEvents,
   }) {
     final $result = create();
     if (actionsBuilderEvents != null) {
@@ -745,9 +745,9 @@ class Diagnostics extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.actions.sdk.v2'),
       createEmptyInstance: create)
-    ..pc<$326.ExecutionEvent>(
+    ..pc<$328.ExecutionEvent>(
         1, _omitFieldNames ? '' : 'actionsBuilderEvents', $pb.PbFieldType.PM,
-        subBuilder: $326.ExecutionEvent.create)
+        subBuilder: $328.ExecutionEvent.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -776,7 +776,7 @@ class Diagnostics extends $pb.GeneratedMessage {
   /// throughout the stages of the Actions Builder interaction model.
   /// Populated for Actions Builder & Actions SDK apps only.
   @$pb.TagNumber(1)
-  $core.List<$326.ExecutionEvent> get actionsBuilderEvents => $_getList(0);
+  $core.List<$328.ExecutionEvent> get actionsBuilderEvents => $_getList(0);
 }
 
 /// Request for finding matching intents.
@@ -886,7 +886,7 @@ class MatchIntentsRequest extends $pb.GeneratedMessage {
 /// Response for finding matching intents.
 class MatchIntentsResponse extends $pb.GeneratedMessage {
   factory MatchIntentsResponse({
-    $core.Iterable<$324.Intent>? matchedIntents,
+    $core.Iterable<$326.Intent>? matchedIntents,
   }) {
     final $result = create();
     if (matchedIntents != null) {
@@ -907,9 +907,9 @@ class MatchIntentsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.actions.sdk.v2'),
       createEmptyInstance: create)
-    ..pc<$324.Intent>(
+    ..pc<$326.Intent>(
         1, _omitFieldNames ? '' : 'matchedIntents', $pb.PbFieldType.PM,
-        subBuilder: $324.Intent.create)
+        subBuilder: $326.Intent.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -939,7 +939,7 @@ class MatchIntentsResponse extends $pb.GeneratedMessage {
   /// Intents matched, ordered from most to least relevant. Only the first
   /// 50 matches are returned.
   @$pb.TagNumber(1)
-  $core.List<$324.Intent> get matchedIntents => $_getList(0);
+  $core.List<$326.Intent> get matchedIntents => $_getList(0);
 }
 
 /// Request for setting Web & App Activity preferences.
