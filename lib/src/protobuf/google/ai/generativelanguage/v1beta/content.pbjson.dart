@@ -262,7 +262,22 @@ const Tool$json = {
       '8': {},
       '10': 'codeExecution'
     },
+    {
+      '1': 'google_search',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Tool.GoogleSearch',
+      '8': {},
+      '10': 'googleSearch'
+    },
   ],
+  '3': [Tool_GoogleSearch$json],
+};
+
+@$core.Deprecated('Use toolDescriptor instead')
+const Tool_GoogleSearch$json = {
+  '1': 'GoogleSearch',
 };
 
 /// Descriptor for `Tool`. Decode as a `google.protobuf.DescriptorProto`.
@@ -273,7 +288,9 @@ final $typed_data.Uint8List toolDescriptor = $convert.base64Decode(
     'kuZ2VuZXJhdGl2ZWxhbmd1YWdlLnYxYmV0YS5Hb29nbGVTZWFyY2hSZXRyaWV2YWxCA+BBAVIV'
     'Z29vZ2xlU2VhcmNoUmV0cmlldmFsEl4KDmNvZGVfZXhlY3V0aW9uGAMgASgLMjIuZ29vZ2xlLm'
     'FpLmdlbmVyYXRpdmVsYW5ndWFnZS52MWJldGEuQ29kZUV4ZWN1dGlvbkID4EEBUg1jb2RlRXhl'
-    'Y3V0aW9u');
+    'Y3V0aW9uEmAKDWdvb2dsZV9zZWFyY2gYBCABKAsyNi5nb29nbGUuYWkuZ2VuZXJhdGl2ZWxhbm'
+    'd1YWdlLnYxYmV0YS5Ub29sLkdvb2dsZVNlYXJjaEID4EEBUgxnb29nbGVTZWFyY2gaDgoMR29v'
+    'Z2xlU2VhcmNo');
 
 @$core.Deprecated('Use googleSearchRetrievalDescriptor instead')
 const GoogleSearchRetrieval$json = {
@@ -433,9 +450,21 @@ const FunctionDeclaration$json = {
       '10': 'parameters',
       '17': true
     },
+    {
+      '1': 'response',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.ai.generativelanguage.v1beta.Schema',
+      '8': {},
+      '9': 1,
+      '10': 'response',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_parameters'},
+    {'1': '_response'},
   ],
 };
 
@@ -444,12 +473,15 @@ final $typed_data.Uint8List functionDeclarationDescriptor = $convert.base64Decod
     'ChNGdW5jdGlvbkRlY2xhcmF0aW9uEhcKBG5hbWUYASABKAlCA+BBAlIEbmFtZRIlCgtkZXNjcm'
     'lwdGlvbhgCIAEoCUID4EECUgtkZXNjcmlwdGlvbhJVCgpwYXJhbWV0ZXJzGAMgASgLMisuZ29v'
     'Z2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS52MWJldGEuU2NoZW1hQgPgQQFIAFIKcGFyYW1ldG'
-    'Vyc4gBAUINCgtfcGFyYW1ldGVycw==');
+    'Vyc4gBARJRCghyZXNwb25zZRgEIAEoCzIrLmdvb2dsZS5haS5nZW5lcmF0aXZlbGFuZ3VhZ2Uu'
+    'djFiZXRhLlNjaGVtYUID4EEBSAFSCHJlc3BvbnNliAEBQg0KC19wYXJhbWV0ZXJzQgsKCV9yZX'
+    'Nwb25zZQ==');
 
 @$core.Deprecated('Use functionCallDescriptor instead')
 const FunctionCall$json = {
   '1': 'FunctionCall',
   '2': [
+    {'1': 'id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'id'},
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {
       '1': 'args',
@@ -470,13 +502,15 @@ const FunctionCall$json = {
 
 /// Descriptor for `FunctionCall`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List functionCallDescriptor = $convert.base64Decode(
-    'CgxGdW5jdGlvbkNhbGwSFwoEbmFtZRgBIAEoCUID4EECUgRuYW1lEjUKBGFyZ3MYAiABKAsyFy'
-    '5nb29nbGUucHJvdG9idWYuU3RydWN0QgPgQQFIAFIEYXJnc4gBAUIHCgVfYXJncw==');
+    'CgxGdW5jdGlvbkNhbGwSEwoCaWQYAyABKAlCA+BBAVICaWQSFwoEbmFtZRgBIAEoCUID4EECUg'
+    'RuYW1lEjUKBGFyZ3MYAiABKAsyFy5nb29nbGUucHJvdG9idWYuU3RydWN0QgPgQQFIAFIEYXJn'
+    'c4gBAUIHCgVfYXJncw==');
 
 @$core.Deprecated('Use functionResponseDescriptor instead')
 const FunctionResponse$json = {
   '1': 'FunctionResponse',
   '2': [
+    {'1': 'id', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'id'},
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {
       '1': 'response',
@@ -492,8 +526,9 @@ const FunctionResponse$json = {
 
 /// Descriptor for `FunctionResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List functionResponseDescriptor = $convert.base64Decode(
-    'ChBGdW5jdGlvblJlc3BvbnNlEhcKBG5hbWUYASABKAlCA+BBAlIEbmFtZRI4CghyZXNwb25zZR'
-    'gCIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RCA+BBAlIIcmVzcG9uc2U=');
+    'ChBGdW5jdGlvblJlc3BvbnNlEhMKAmlkGAMgASgJQgPgQQFSAmlkEhcKBG5hbWUYASABKAlCA+'
+    'BBAlIEbmFtZRI4CghyZXNwb25zZRgCIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RCA+BB'
+    'AlIIcmVzcG9uc2U=');
 
 @$core.Deprecated('Use schemaDescriptor instead')
 const Schema$json = {

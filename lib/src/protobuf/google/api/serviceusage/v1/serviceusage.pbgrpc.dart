@@ -16,45 +16,45 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $13;
-import 'resources.pb.dart' as $46;
-import 'serviceusage.pb.dart' as $45;
+import 'resources.pb.dart' as $64;
+import 'serviceusage.pb.dart' as $63;
 
 export 'serviceusage.pb.dart';
 
 @$pb.GrpcServiceName('google.api.serviceusage.v1.ServiceUsage')
 class ServiceUsageClient extends $grpc.Client {
   static final _$enableService =
-      $grpc.ClientMethod<$45.EnableServiceRequest, $13.Operation>(
+      $grpc.ClientMethod<$63.EnableServiceRequest, $13.Operation>(
           '/google.api.serviceusage.v1.ServiceUsage/EnableService',
-          ($45.EnableServiceRequest value) => value.writeToBuffer(),
+          ($63.EnableServiceRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$disableService =
-      $grpc.ClientMethod<$45.DisableServiceRequest, $13.Operation>(
+      $grpc.ClientMethod<$63.DisableServiceRequest, $13.Operation>(
           '/google.api.serviceusage.v1.ServiceUsage/DisableService',
-          ($45.DisableServiceRequest value) => value.writeToBuffer(),
+          ($63.DisableServiceRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$getService =
-      $grpc.ClientMethod<$45.GetServiceRequest, $46.Service>(
+      $grpc.ClientMethod<$63.GetServiceRequest, $64.Service>(
           '/google.api.serviceusage.v1.ServiceUsage/GetService',
-          ($45.GetServiceRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $46.Service.fromBuffer(value));
+          ($63.GetServiceRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $64.Service.fromBuffer(value));
   static final _$listServices =
-      $grpc.ClientMethod<$45.ListServicesRequest, $45.ListServicesResponse>(
+      $grpc.ClientMethod<$63.ListServicesRequest, $63.ListServicesResponse>(
           '/google.api.serviceusage.v1.ServiceUsage/ListServices',
-          ($45.ListServicesRequest value) => value.writeToBuffer(),
+          ($63.ListServicesRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $45.ListServicesResponse.fromBuffer(value));
+              $63.ListServicesResponse.fromBuffer(value));
   static final _$batchEnableServices =
-      $grpc.ClientMethod<$45.BatchEnableServicesRequest, $13.Operation>(
+      $grpc.ClientMethod<$63.BatchEnableServicesRequest, $13.Operation>(
           '/google.api.serviceusage.v1.ServiceUsage/BatchEnableServices',
-          ($45.BatchEnableServicesRequest value) => value.writeToBuffer(),
+          ($63.BatchEnableServicesRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$batchGetServices = $grpc.ClientMethod<
-          $45.BatchGetServicesRequest, $45.BatchGetServicesResponse>(
+          $63.BatchGetServicesRequest, $63.BatchGetServicesResponse>(
       '/google.api.serviceusage.v1.ServiceUsage/BatchGetServices',
-      ($45.BatchGetServicesRequest value) => value.writeToBuffer(),
+      ($63.BatchGetServicesRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $45.BatchGetServicesResponse.fromBuffer(value));
+          $63.BatchGetServicesResponse.fromBuffer(value));
 
   ServiceUsageClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -62,36 +62,36 @@ class ServiceUsageClient extends $grpc.Client {
       : super(channel, options: options, interceptors: interceptors);
 
   $grpc.ResponseFuture<$13.Operation> enableService(
-      $45.EnableServiceRequest request,
+      $63.EnableServiceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$enableService, request, options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> disableService(
-      $45.DisableServiceRequest request,
+      $63.DisableServiceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$disableService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$46.Service> getService($45.GetServiceRequest request,
+  $grpc.ResponseFuture<$64.Service> getService($63.GetServiceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$45.ListServicesResponse> listServices(
-      $45.ListServicesRequest request,
+  $grpc.ResponseFuture<$63.ListServicesResponse> listServices(
+      $63.ListServicesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listServices, request, options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> batchEnableServices(
-      $45.BatchEnableServicesRequest request,
+      $63.BatchEnableServicesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchEnableServices, request, options: options);
   }
 
-  $grpc.ResponseFuture<$45.BatchGetServicesResponse> batchGetServices(
-      $45.BatchGetServicesRequest request,
+  $grpc.ResponseFuture<$63.BatchGetServicesResponse> batchGetServices(
+      $63.BatchGetServicesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchGetServices, request, options: options);
   }
@@ -102,101 +102,101 @@ abstract class ServiceUsageServiceBase extends $grpc.Service {
   $core.String get $name => 'google.api.serviceusage.v1.ServiceUsage';
 
   ServiceUsageServiceBase() {
-    $addMethod($grpc.ServiceMethod<$45.EnableServiceRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$63.EnableServiceRequest, $13.Operation>(
         'EnableService',
         enableService_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $45.EnableServiceRequest.fromBuffer(value),
+            $63.EnableServiceRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$45.DisableServiceRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$63.DisableServiceRequest, $13.Operation>(
         'DisableService',
         disableService_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $45.DisableServiceRequest.fromBuffer(value),
+            $63.DisableServiceRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$45.GetServiceRequest, $46.Service>(
+    $addMethod($grpc.ServiceMethod<$63.GetServiceRequest, $64.Service>(
         'GetService',
         getService_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $45.GetServiceRequest.fromBuffer(value),
-        ($46.Service value) => value.writeToBuffer()));
+            $63.GetServiceRequest.fromBuffer(value),
+        ($64.Service value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$45.ListServicesRequest, $45.ListServicesResponse>(
+        $grpc.ServiceMethod<$63.ListServicesRequest, $63.ListServicesResponse>(
             'ListServices',
             listServices_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $45.ListServicesRequest.fromBuffer(value),
-            ($45.ListServicesResponse value) => value.writeToBuffer()));
+                $63.ListServicesRequest.fromBuffer(value),
+            ($63.ListServicesResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$45.BatchEnableServicesRequest, $13.Operation>(
+        $grpc.ServiceMethod<$63.BatchEnableServicesRequest, $13.Operation>(
             'BatchEnableServices',
             batchEnableServices_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $45.BatchEnableServicesRequest.fromBuffer(value),
+                $63.BatchEnableServicesRequest.fromBuffer(value),
             ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$45.BatchGetServicesRequest,
-            $45.BatchGetServicesResponse>(
+    $addMethod($grpc.ServiceMethod<$63.BatchGetServicesRequest,
+            $63.BatchGetServicesResponse>(
         'BatchGetServices',
         batchGetServices_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $45.BatchGetServicesRequest.fromBuffer(value),
-        ($45.BatchGetServicesResponse value) => value.writeToBuffer()));
+            $63.BatchGetServicesRequest.fromBuffer(value),
+        ($63.BatchGetServicesResponse value) => value.writeToBuffer()));
   }
 
   $async.Future<$13.Operation> enableService_Pre($grpc.ServiceCall call,
-      $async.Future<$45.EnableServiceRequest> request) async {
+      $async.Future<$63.EnableServiceRequest> request) async {
     return enableService(call, await request);
   }
 
   $async.Future<$13.Operation> disableService_Pre($grpc.ServiceCall call,
-      $async.Future<$45.DisableServiceRequest> request) async {
+      $async.Future<$63.DisableServiceRequest> request) async {
     return disableService(call, await request);
   }
 
-  $async.Future<$46.Service> getService_Pre($grpc.ServiceCall call,
-      $async.Future<$45.GetServiceRequest> request) async {
+  $async.Future<$64.Service> getService_Pre($grpc.ServiceCall call,
+      $async.Future<$63.GetServiceRequest> request) async {
     return getService(call, await request);
   }
 
-  $async.Future<$45.ListServicesResponse> listServices_Pre(
+  $async.Future<$63.ListServicesResponse> listServices_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$45.ListServicesRequest> request) async {
+      $async.Future<$63.ListServicesRequest> request) async {
     return listServices(call, await request);
   }
 
   $async.Future<$13.Operation> batchEnableServices_Pre($grpc.ServiceCall call,
-      $async.Future<$45.BatchEnableServicesRequest> request) async {
+      $async.Future<$63.BatchEnableServicesRequest> request) async {
     return batchEnableServices(call, await request);
   }
 
-  $async.Future<$45.BatchGetServicesResponse> batchGetServices_Pre(
+  $async.Future<$63.BatchGetServicesResponse> batchGetServices_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$45.BatchGetServicesRequest> request) async {
+      $async.Future<$63.BatchGetServicesRequest> request) async {
     return batchGetServices(call, await request);
   }
 
   $async.Future<$13.Operation> enableService(
-      $grpc.ServiceCall call, $45.EnableServiceRequest request);
+      $grpc.ServiceCall call, $63.EnableServiceRequest request);
   $async.Future<$13.Operation> disableService(
-      $grpc.ServiceCall call, $45.DisableServiceRequest request);
-  $async.Future<$46.Service> getService(
-      $grpc.ServiceCall call, $45.GetServiceRequest request);
-  $async.Future<$45.ListServicesResponse> listServices(
-      $grpc.ServiceCall call, $45.ListServicesRequest request);
+      $grpc.ServiceCall call, $63.DisableServiceRequest request);
+  $async.Future<$64.Service> getService(
+      $grpc.ServiceCall call, $63.GetServiceRequest request);
+  $async.Future<$63.ListServicesResponse> listServices(
+      $grpc.ServiceCall call, $63.ListServicesRequest request);
   $async.Future<$13.Operation> batchEnableServices(
-      $grpc.ServiceCall call, $45.BatchEnableServicesRequest request);
-  $async.Future<$45.BatchGetServicesResponse> batchGetServices(
-      $grpc.ServiceCall call, $45.BatchGetServicesRequest request);
+      $grpc.ServiceCall call, $63.BatchEnableServicesRequest request);
+  $async.Future<$63.BatchGetServicesResponse> batchGetServices(
+      $grpc.ServiceCall call, $63.BatchGetServicesRequest request);
 }

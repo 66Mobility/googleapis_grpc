@@ -14,18 +14,18 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $304;
+import '../../../protobuf/timestamp.pb.dart' as $330;
 import 'datastore_admin.pbenum.dart';
-import 'index.pb.dart' as $112;
-import 'migration.pbenum.dart' as $422;
+import 'index.pb.dart' as $130;
+import 'migration.pbenum.dart' as $451;
 
 export 'datastore_admin.pbenum.dart';
 
 /// Metadata common to all Datastore Admin operations.
 class CommonMetadata extends $pb.GeneratedMessage {
   factory CommonMetadata({
-    $304.Timestamp? startTime,
-    $304.Timestamp? endTime,
+    $330.Timestamp? startTime,
+    $330.Timestamp? endTime,
     OperationType? operationType,
     $core.Map<$core.String, $core.String>? labels,
     CommonMetadata_State? state,
@@ -61,10 +61,10 @@ class CommonMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.datastore.admin.v1'),
       createEmptyInstance: create)
-    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $330.Timestamp.create)
     ..e<OperationType>(
         3, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE,
         defaultOrMaker: OperationType.OPERATION_TYPE_UNSPECIFIED,
@@ -107,9 +107,9 @@ class CommonMetadata extends $pb.GeneratedMessage {
 
   /// The time that work began on the operation.
   @$pb.TagNumber(1)
-  $304.Timestamp get startTime => $_getN(0);
+  $330.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($304.Timestamp v) {
+  set startTime($330.Timestamp v) {
     setField(1, v);
   }
 
@@ -118,13 +118,13 @@ class CommonMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Timestamp ensureStartTime() => $_ensure(0);
+  $330.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the operation ended, either successfully or otherwise.
   @$pb.TagNumber(2)
-  $304.Timestamp get endTime => $_getN(1);
+  $330.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($304.Timestamp v) {
+  set endTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -133,7 +133,7 @@ class CommonMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureEndTime() => $_ensure(1);
+  $330.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The type of the operation. Can be used as a filter in
   /// ListOperationsRequest.
@@ -991,7 +991,7 @@ class EntityFilter extends $pb.GeneratedMessage {
 class CreateIndexRequest extends $pb.GeneratedMessage {
   factory CreateIndexRequest({
     $core.String? projectId,
-    $112.Index? index,
+    $130.Index? index,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -1016,8 +1016,8 @@ class CreateIndexRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.datastore.admin.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
-    ..aOM<$112.Index>(3, _omitFieldNames ? '' : 'index',
-        subBuilder: $112.Index.create)
+    ..aOM<$130.Index>(3, _omitFieldNames ? '' : 'index',
+        subBuilder: $130.Index.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1059,9 +1059,9 @@ class CreateIndexRequest extends $pb.GeneratedMessage {
   /// The index to create. The name and state fields are output only and will be
   /// ignored. Single property indexes cannot be created or deleted.
   @$pb.TagNumber(3)
-  $112.Index get index => $_getN(1);
+  $130.Index get index => $_getN(1);
   @$pb.TagNumber(3)
-  set index($112.Index v) {
+  set index($130.Index v) {
     setField(3, v);
   }
 
@@ -1070,7 +1070,7 @@ class CreateIndexRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearIndex() => clearField(3);
   @$pb.TagNumber(3)
-  $112.Index ensureIndex() => $_ensure(1);
+  $130.Index ensureIndex() => $_ensure(1);
 }
 
 /// The request for
@@ -1362,7 +1362,7 @@ class ListIndexesRequest extends $pb.GeneratedMessage {
 /// [google.datastore.admin.v1.DatastoreAdmin.ListIndexes][google.datastore.admin.v1.DatastoreAdmin.ListIndexes].
 class ListIndexesResponse extends $pb.GeneratedMessage {
   factory ListIndexesResponse({
-    $core.Iterable<$112.Index>? indexes,
+    $core.Iterable<$130.Index>? indexes,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1387,8 +1387,8 @@ class ListIndexesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.datastore.admin.v1'),
       createEmptyInstance: create)
-    ..pc<$112.Index>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.PM,
-        subBuilder: $112.Index.create)
+    ..pc<$130.Index>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.PM,
+        subBuilder: $130.Index.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -1417,7 +1417,7 @@ class ListIndexesResponse extends $pb.GeneratedMessage {
 
   /// The indexes.
   @$pb.TagNumber(1)
-  $core.List<$112.Index> get indexes => $_getList(0);
+  $core.List<$130.Index> get indexes => $_getList(0);
 
   /// The standard List next-page token.
   @$pb.TagNumber(2)
@@ -1551,8 +1551,8 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
 ///  "projects/{project_id}/operations/datastore-firestore-migration"
 class DatastoreFirestoreMigrationMetadata extends $pb.GeneratedMessage {
   factory DatastoreFirestoreMigrationMetadata({
-    $422.MigrationState? migrationState,
-    $422.MigrationStep? migrationStep,
+    $451.MigrationState? migrationState,
+    $451.MigrationStep? migrationStep,
   }) {
     final $result = create();
     if (migrationState != null) {
@@ -1577,16 +1577,16 @@ class DatastoreFirestoreMigrationMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.datastore.admin.v1'),
       createEmptyInstance: create)
-    ..e<$422.MigrationState>(
+    ..e<$451.MigrationState>(
         1, _omitFieldNames ? '' : 'migrationState', $pb.PbFieldType.OE,
-        defaultOrMaker: $422.MigrationState.MIGRATION_STATE_UNSPECIFIED,
-        valueOf: $422.MigrationState.valueOf,
-        enumValues: $422.MigrationState.values)
-    ..e<$422.MigrationStep>(
+        defaultOrMaker: $451.MigrationState.MIGRATION_STATE_UNSPECIFIED,
+        valueOf: $451.MigrationState.valueOf,
+        enumValues: $451.MigrationState.values)
+    ..e<$451.MigrationStep>(
         2, _omitFieldNames ? '' : 'migrationStep', $pb.PbFieldType.OE,
-        defaultOrMaker: $422.MigrationStep.MIGRATION_STEP_UNSPECIFIED,
-        valueOf: $422.MigrationStep.valueOf,
-        enumValues: $422.MigrationStep.values)
+        defaultOrMaker: $451.MigrationStep.MIGRATION_STEP_UNSPECIFIED,
+        valueOf: $451.MigrationStep.valueOf,
+        enumValues: $451.MigrationStep.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1620,9 +1620,9 @@ class DatastoreFirestoreMigrationMetadata extends $pb.GeneratedMessage {
   /// The current state of migration from Cloud Datastore to Cloud Firestore in
   /// Datastore mode.
   @$pb.TagNumber(1)
-  $422.MigrationState get migrationState => $_getN(0);
+  $451.MigrationState get migrationState => $_getN(0);
   @$pb.TagNumber(1)
-  set migrationState($422.MigrationState v) {
+  set migrationState($451.MigrationState v) {
     setField(1, v);
   }
 
@@ -1634,9 +1634,9 @@ class DatastoreFirestoreMigrationMetadata extends $pb.GeneratedMessage {
   /// The current step of migration from Cloud Datastore to Cloud Firestore in
   /// Datastore mode.
   @$pb.TagNumber(2)
-  $422.MigrationStep get migrationStep => $_getN(1);
+  $451.MigrationStep get migrationStep => $_getN(1);
   @$pb.TagNumber(2)
-  set migrationStep($422.MigrationStep v) {
+  set migrationStep($451.MigrationStep v) {
     setField(2, v);
   }
 

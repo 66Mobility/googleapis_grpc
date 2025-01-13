@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $335;
+import '../../../../protobuf/field_mask.pb.dart' as $361;
 import 'datasources.pbenum.dart';
-import 'datasourcetypes.pb.dart' as $549;
-import 'fileinputs.pb.dart' as $550;
+import 'datasourcetypes.pb.dart' as $578;
+import 'fileinputs.pb.dart' as $579;
 
 export 'datasources.pbenum.dart';
 
@@ -27,6 +27,8 @@ enum DataSource_Type {
   localInventoryDataSource,
   regionalInventoryDataSource,
   promotionDataSource,
+  productReviewDataSource,
+  merchantReviewDataSource,
   notSet
 }
 
@@ -37,13 +39,15 @@ class DataSource extends $pb.GeneratedMessage {
     $core.String? name,
     $fixnum.Int64? dataSourceId,
     $core.String? displayName,
-    $549.PrimaryProductDataSource? primaryProductDataSource,
-    $549.SupplementalProductDataSource? supplementalProductDataSource,
-    $549.LocalInventoryDataSource? localInventoryDataSource,
-    $549.RegionalInventoryDataSource? regionalInventoryDataSource,
-    $549.PromotionDataSource? promotionDataSource,
+    $578.PrimaryProductDataSource? primaryProductDataSource,
+    $578.SupplementalProductDataSource? supplementalProductDataSource,
+    $578.LocalInventoryDataSource? localInventoryDataSource,
+    $578.RegionalInventoryDataSource? regionalInventoryDataSource,
+    $578.PromotionDataSource? promotionDataSource,
+    $578.ProductReviewDataSource? productReviewDataSource,
     DataSource_Input? input,
-    $550.FileInput? fileInput,
+    $579.FileInput? fileInput,
+    $578.MerchantReviewDataSource? merchantReviewDataSource,
   }) {
     final $result = create();
     if (name != null) {
@@ -70,11 +74,17 @@ class DataSource extends $pb.GeneratedMessage {
     if (promotionDataSource != null) {
       $result.promotionDataSource = promotionDataSource;
     }
+    if (productReviewDataSource != null) {
+      $result.productReviewDataSource = productReviewDataSource;
+    }
     if (input != null) {
       $result.input = input;
     }
     if (fileInput != null) {
       $result.fileInput = fileInput;
+    }
+    if (merchantReviewDataSource != null) {
+      $result.merchantReviewDataSource = merchantReviewDataSource;
     }
     return $result;
   }
@@ -92,6 +102,8 @@ class DataSource extends $pb.GeneratedMessage {
     6: DataSource_Type.localInventoryDataSource,
     7: DataSource_Type.regionalInventoryDataSource,
     8: DataSource_Type.promotionDataSource,
+    9: DataSource_Type.productReviewDataSource,
+    12: DataSource_Type.merchantReviewDataSource,
     0: DataSource_Type.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
@@ -100,32 +112,38 @@ class DataSource extends $pb.GeneratedMessage {
           ? ''
           : 'google.shopping.merchant.datasources.v1beta'),
       createEmptyInstance: create)
-    ..oo(0, [4, 5, 6, 7, 8])
+    ..oo(0, [4, 5, 6, 7, 8, 9, 12])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'dataSourceId')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$549.PrimaryProductDataSource>(
+    ..aOM<$578.PrimaryProductDataSource>(
         4, _omitFieldNames ? '' : 'primaryProductDataSource',
-        subBuilder: $549.PrimaryProductDataSource.create)
-    ..aOM<$549.SupplementalProductDataSource>(
+        subBuilder: $578.PrimaryProductDataSource.create)
+    ..aOM<$578.SupplementalProductDataSource>(
         5, _omitFieldNames ? '' : 'supplementalProductDataSource',
-        subBuilder: $549.SupplementalProductDataSource.create)
-    ..aOM<$549.LocalInventoryDataSource>(
+        subBuilder: $578.SupplementalProductDataSource.create)
+    ..aOM<$578.LocalInventoryDataSource>(
         6, _omitFieldNames ? '' : 'localInventoryDataSource',
-        subBuilder: $549.LocalInventoryDataSource.create)
-    ..aOM<$549.RegionalInventoryDataSource>(
+        subBuilder: $578.LocalInventoryDataSource.create)
+    ..aOM<$578.RegionalInventoryDataSource>(
         7, _omitFieldNames ? '' : 'regionalInventoryDataSource',
-        subBuilder: $549.RegionalInventoryDataSource.create)
-    ..aOM<$549.PromotionDataSource>(
+        subBuilder: $578.RegionalInventoryDataSource.create)
+    ..aOM<$578.PromotionDataSource>(
         8, _omitFieldNames ? '' : 'promotionDataSource',
-        subBuilder: $549.PromotionDataSource.create)
+        subBuilder: $578.PromotionDataSource.create)
+    ..aOM<$578.ProductReviewDataSource>(
+        9, _omitFieldNames ? '' : 'productReviewDataSource',
+        subBuilder: $578.ProductReviewDataSource.create)
     ..e<DataSource_Input>(
         10, _omitFieldNames ? '' : 'input', $pb.PbFieldType.OE,
         defaultOrMaker: DataSource_Input.INPUT_UNSPECIFIED,
         valueOf: DataSource_Input.valueOf,
         enumValues: DataSource_Input.values)
-    ..aOM<$550.FileInput>(11, _omitFieldNames ? '' : 'fileInput',
-        subBuilder: $550.FileInput.create)
+    ..aOM<$579.FileInput>(11, _omitFieldNames ? '' : 'fileInput',
+        subBuilder: $579.FileInput.create)
+    ..aOM<$578.MerchantReviewDataSource>(
+        12, _omitFieldNames ? '' : 'merchantReviewDataSource',
+        subBuilder: $578.MerchantReviewDataSource.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -193,13 +211,13 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearDisplayName() => clearField(3);
 
-  /// Required. The [primary data
+  /// The [primary data
   /// source](https://support.google.com/merchants/answer/7439058) for local
   /// and online products.
   @$pb.TagNumber(4)
-  $549.PrimaryProductDataSource get primaryProductDataSource => $_getN(3);
+  $578.PrimaryProductDataSource get primaryProductDataSource => $_getN(3);
   @$pb.TagNumber(4)
-  set primaryProductDataSource($549.PrimaryProductDataSource v) {
+  set primaryProductDataSource($578.PrimaryProductDataSource v) {
     setField(4, v);
   }
 
@@ -208,16 +226,16 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearPrimaryProductDataSource() => clearField(4);
   @$pb.TagNumber(4)
-  $549.PrimaryProductDataSource ensurePrimaryProductDataSource() => $_ensure(3);
+  $578.PrimaryProductDataSource ensurePrimaryProductDataSource() => $_ensure(3);
 
-  /// Required. The [supplemental data
+  /// The [supplemental data
   /// source](https://support.google.com/merchants/answer/7439058) for local
   /// and online products.
   @$pb.TagNumber(5)
-  $549.SupplementalProductDataSource get supplementalProductDataSource =>
+  $578.SupplementalProductDataSource get supplementalProductDataSource =>
       $_getN(4);
   @$pb.TagNumber(5)
-  set supplementalProductDataSource($549.SupplementalProductDataSource v) {
+  set supplementalProductDataSource($578.SupplementalProductDataSource v) {
     setField(5, v);
   }
 
@@ -226,16 +244,16 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearSupplementalProductDataSource() => clearField(5);
   @$pb.TagNumber(5)
-  $549.SupplementalProductDataSource ensureSupplementalProductDataSource() =>
+  $578.SupplementalProductDataSource ensureSupplementalProductDataSource() =>
       $_ensure(4);
 
-  /// Required. The [local
+  /// The [local
   /// inventory](https://support.google.com/merchants/answer/7023001) data
   /// source.
   @$pb.TagNumber(6)
-  $549.LocalInventoryDataSource get localInventoryDataSource => $_getN(5);
+  $578.LocalInventoryDataSource get localInventoryDataSource => $_getN(5);
   @$pb.TagNumber(6)
-  set localInventoryDataSource($549.LocalInventoryDataSource v) {
+  set localInventoryDataSource($578.LocalInventoryDataSource v) {
     setField(6, v);
   }
 
@@ -244,15 +262,15 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearLocalInventoryDataSource() => clearField(6);
   @$pb.TagNumber(6)
-  $549.LocalInventoryDataSource ensureLocalInventoryDataSource() => $_ensure(5);
+  $578.LocalInventoryDataSource ensureLocalInventoryDataSource() => $_ensure(5);
 
-  /// Required. The [regional
+  /// The [regional
   /// inventory](https://support.google.com/merchants/answer/7439058) data
   /// source.
   @$pb.TagNumber(7)
-  $549.RegionalInventoryDataSource get regionalInventoryDataSource => $_getN(6);
+  $578.RegionalInventoryDataSource get regionalInventoryDataSource => $_getN(6);
   @$pb.TagNumber(7)
-  set regionalInventoryDataSource($549.RegionalInventoryDataSource v) {
+  set regionalInventoryDataSource($578.RegionalInventoryDataSource v) {
     setField(7, v);
   }
 
@@ -261,16 +279,16 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearRegionalInventoryDataSource() => clearField(7);
   @$pb.TagNumber(7)
-  $549.RegionalInventoryDataSource ensureRegionalInventoryDataSource() =>
+  $578.RegionalInventoryDataSource ensureRegionalInventoryDataSource() =>
       $_ensure(6);
 
-  /// Required. The
+  /// The
   /// [promotion](https://support.google.com/merchants/answer/2906014) data
   /// source.
   @$pb.TagNumber(8)
-  $549.PromotionDataSource get promotionDataSource => $_getN(7);
+  $578.PromotionDataSource get promotionDataSource => $_getN(7);
   @$pb.TagNumber(8)
-  set promotionDataSource($549.PromotionDataSource v) {
+  set promotionDataSource($578.PromotionDataSource v) {
     setField(8, v);
   }
 
@@ -279,37 +297,72 @@ class DataSource extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearPromotionDataSource() => clearField(8);
   @$pb.TagNumber(8)
-  $549.PromotionDataSource ensurePromotionDataSource() => $_ensure(7);
+  $578.PromotionDataSource ensurePromotionDataSource() => $_ensure(7);
+
+  /// The [product
+  /// review](https://support.google.com/merchants/answer/7045996)
+  /// data source.
+  @$pb.TagNumber(9)
+  $578.ProductReviewDataSource get productReviewDataSource => $_getN(8);
+  @$pb.TagNumber(9)
+  set productReviewDataSource($578.ProductReviewDataSource v) {
+    setField(9, v);
+  }
+
+  @$pb.TagNumber(9)
+  $core.bool hasProductReviewDataSource() => $_has(8);
+  @$pb.TagNumber(9)
+  void clearProductReviewDataSource() => clearField(9);
+  @$pb.TagNumber(9)
+  $578.ProductReviewDataSource ensureProductReviewDataSource() => $_ensure(8);
 
   /// Output only. Determines the type of input to the data source. Based on the
   /// input some settings might not work. Only generic data sources can be
   /// created through the API.
   @$pb.TagNumber(10)
-  DataSource_Input get input => $_getN(8);
+  DataSource_Input get input => $_getN(9);
   @$pb.TagNumber(10)
   set input(DataSource_Input v) {
     setField(10, v);
   }
 
   @$pb.TagNumber(10)
-  $core.bool hasInput() => $_has(8);
+  $core.bool hasInput() => $_has(9);
   @$pb.TagNumber(10)
   void clearInput() => clearField(10);
 
   /// Optional. The field is used only when data is managed through a file.
   @$pb.TagNumber(11)
-  $550.FileInput get fileInput => $_getN(9);
+  $579.FileInput get fileInput => $_getN(10);
   @$pb.TagNumber(11)
-  set fileInput($550.FileInput v) {
+  set fileInput($579.FileInput v) {
     setField(11, v);
   }
 
   @$pb.TagNumber(11)
-  $core.bool hasFileInput() => $_has(9);
+  $core.bool hasFileInput() => $_has(10);
   @$pb.TagNumber(11)
   void clearFileInput() => clearField(11);
   @$pb.TagNumber(11)
-  $550.FileInput ensureFileInput() => $_ensure(9);
+  $579.FileInput ensureFileInput() => $_ensure(10);
+
+  /// The [merchant
+  /// review](https://support.google.com/merchants/answer/7045996)
+  /// data source.
+  @$pb.TagNumber(12)
+  $578.MerchantReviewDataSource get merchantReviewDataSource => $_getN(11);
+  @$pb.TagNumber(12)
+  set merchantReviewDataSource($578.MerchantReviewDataSource v) {
+    setField(12, v);
+  }
+
+  @$pb.TagNumber(12)
+  $core.bool hasMerchantReviewDataSource() => $_has(11);
+  @$pb.TagNumber(12)
+  void clearMerchantReviewDataSource() => clearField(12);
+  @$pb.TagNumber(12)
+  $578.MerchantReviewDataSource ensureMerchantReviewDataSource() =>
+      $_ensure(11);
 }
 
 /// Request message for the GetDataSource method.
@@ -662,7 +715,7 @@ class CreateDataSourceRequest extends $pb.GeneratedMessage {
 class UpdateDataSourceRequest extends $pb.GeneratedMessage {
   factory UpdateDataSourceRequest({
     DataSource? dataSource,
-    $335.FieldMask? updateMask,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataSource != null) {
@@ -689,8 +742,8 @@ class UpdateDataSourceRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<DataSource>(1, _omitFieldNames ? '' : 'dataSource',
         subBuilder: DataSource.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -741,9 +794,9 @@ class UpdateDataSourceRequest extends $pb.GeneratedMessage {
   ///  Providing special "*" value for full data source replacement is not
   ///  supported.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -752,7 +805,7 @@ class UpdateDataSourceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the FetchDataSource method.

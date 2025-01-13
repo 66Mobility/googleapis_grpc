@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'canvas.pb.dart' as $316;
-import 'card.pb.dart' as $313;
-import 'collection.pb.dart' as $317;
-import 'image.pb.dart' as $311;
-import 'list.pb.dart' as $318;
-import 'media.pb.dart' as $315;
-import 'table.pb.dart' as $314;
+import 'canvas.pb.dart' as $342;
+import 'card.pb.dart' as $339;
+import 'collection.pb.dart' as $343;
+import 'image.pb.dart' as $337;
+import 'list.pb.dart' as $344;
+import 'media.pb.dart' as $341;
+import 'table.pb.dart' as $340;
 
 enum Content_Content {
   card,
@@ -35,13 +35,13 @@ enum Content_Content {
 /// Content to be shown.
 class Content extends $pb.GeneratedMessage {
   factory Content({
-    $313.Card? card,
-    $311.Image? image,
-    $314.Table? table,
-    $315.Media? media,
-    @$core.Deprecated('This field is deprecated.') $316.Canvas? canvas,
-    $317.Collection? collection,
-    $318.List_? list,
+    $339.Card? card,
+    $337.Image? image,
+    $340.Table? table,
+    $341.Media? media,
+    @$core.Deprecated('This field is deprecated.') $342.Canvas? canvas,
+    $343.Collection? collection,
+    $344.List_? list,
   }) {
     final $result = create();
     if (card != null) {
@@ -92,20 +92,20 @@ class Content extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'),
       createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6, 7])
-    ..aOM<$313.Card>(1, _omitFieldNames ? '' : 'card',
-        subBuilder: $313.Card.create)
-    ..aOM<$311.Image>(2, _omitFieldNames ? '' : 'image',
-        subBuilder: $311.Image.create)
-    ..aOM<$314.Table>(3, _omitFieldNames ? '' : 'table',
-        subBuilder: $314.Table.create)
-    ..aOM<$315.Media>(4, _omitFieldNames ? '' : 'media',
-        subBuilder: $315.Media.create)
-    ..aOM<$316.Canvas>(5, _omitFieldNames ? '' : 'canvas',
-        subBuilder: $316.Canvas.create)
-    ..aOM<$317.Collection>(6, _omitFieldNames ? '' : 'collection',
-        subBuilder: $317.Collection.create)
-    ..aOM<$318.List_>(7, _omitFieldNames ? '' : 'list',
-        subBuilder: $318.List_.create)
+    ..aOM<$339.Card>(1, _omitFieldNames ? '' : 'card',
+        subBuilder: $339.Card.create)
+    ..aOM<$337.Image>(2, _omitFieldNames ? '' : 'image',
+        subBuilder: $337.Image.create)
+    ..aOM<$340.Table>(3, _omitFieldNames ? '' : 'table',
+        subBuilder: $340.Table.create)
+    ..aOM<$341.Media>(4, _omitFieldNames ? '' : 'media',
+        subBuilder: $341.Media.create)
+    ..aOM<$342.Canvas>(5, _omitFieldNames ? '' : 'canvas',
+        subBuilder: $342.Canvas.create)
+    ..aOM<$343.Collection>(6, _omitFieldNames ? '' : 'collection',
+        subBuilder: $343.Collection.create)
+    ..aOM<$344.List_>(7, _omitFieldNames ? '' : 'list',
+        subBuilder: $344.List_.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -134,9 +134,9 @@ class Content extends $pb.GeneratedMessage {
 
   /// A basic card.
   @$pb.TagNumber(1)
-  $313.Card get card => $_getN(0);
+  $339.Card get card => $_getN(0);
   @$pb.TagNumber(1)
-  set card($313.Card v) {
+  set card($339.Card v) {
     setField(1, v);
   }
 
@@ -145,13 +145,13 @@ class Content extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCard() => clearField(1);
   @$pb.TagNumber(1)
-  $313.Card ensureCard() => $_ensure(0);
+  $339.Card ensureCard() => $_ensure(0);
 
   /// An image.
   @$pb.TagNumber(2)
-  $311.Image get image => $_getN(1);
+  $337.Image get image => $_getN(1);
   @$pb.TagNumber(2)
-  set image($311.Image v) {
+  set image($337.Image v) {
     setField(2, v);
   }
 
@@ -160,13 +160,13 @@ class Content extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearImage() => clearField(2);
   @$pb.TagNumber(2)
-  $311.Image ensureImage() => $_ensure(1);
+  $337.Image ensureImage() => $_ensure(1);
 
   /// Table card.
   @$pb.TagNumber(3)
-  $314.Table get table => $_getN(2);
+  $340.Table get table => $_getN(2);
   @$pb.TagNumber(3)
-  set table($314.Table v) {
+  set table($340.Table v) {
     setField(3, v);
   }
 
@@ -175,13 +175,13 @@ class Content extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearTable() => clearField(3);
   @$pb.TagNumber(3)
-  $314.Table ensureTable() => $_ensure(2);
+  $340.Table ensureTable() => $_ensure(2);
 
   /// Response indicating a set of media to be played.
   @$pb.TagNumber(4)
-  $315.Media get media => $_getN(3);
+  $341.Media get media => $_getN(3);
   @$pb.TagNumber(4)
-  set media($315.Media v) {
+  set media($341.Media v) {
     setField(4, v);
   }
 
@@ -190,15 +190,15 @@ class Content extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearMedia() => clearField(4);
   @$pb.TagNumber(4)
-  $315.Media ensureMedia() => $_ensure(3);
+  $341.Media ensureMedia() => $_ensure(3);
 
   /// A response to be used for interactive canvas experience.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $316.Canvas get canvas => $_getN(4);
+  $342.Canvas get canvas => $_getN(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  set canvas($316.Canvas v) {
+  set canvas($342.Canvas v) {
     setField(5, v);
   }
 
@@ -210,13 +210,13 @@ class Content extends $pb.GeneratedMessage {
   void clearCanvas() => clearField(5);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $316.Canvas ensureCanvas() => $_ensure(4);
+  $342.Canvas ensureCanvas() => $_ensure(4);
 
   /// A card presenting a collection of options to select from.
   @$pb.TagNumber(6)
-  $317.Collection get collection => $_getN(5);
+  $343.Collection get collection => $_getN(5);
   @$pb.TagNumber(6)
-  set collection($317.Collection v) {
+  set collection($343.Collection v) {
     setField(6, v);
   }
 
@@ -225,13 +225,13 @@ class Content extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearCollection() => clearField(6);
   @$pb.TagNumber(6)
-  $317.Collection ensureCollection() => $_ensure(5);
+  $343.Collection ensureCollection() => $_ensure(5);
 
   /// A card presenting a list of options to select from.
   @$pb.TagNumber(7)
-  $318.List_ get list => $_getN(6);
+  $344.List_ get list => $_getN(6);
   @$pb.TagNumber(7)
-  set list($318.List_ v) {
+  set list($344.List_ v) {
     setField(7, v);
   }
 
@@ -240,7 +240,7 @@ class Content extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearList() => clearField(7);
   @$pb.TagNumber(7)
-  $318.List_ ensureList() => $_ensure(6);
+  $344.List_ ensureList() => $_ensure(6);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../protobuf/timestamp.pb.dart' as $330;
 
 enum OperationMetadataV1_MethodMetadata { createVersionMetadata, notSet }
 
@@ -21,8 +21,8 @@ enum OperationMetadataV1_MethodMetadata { createVersionMetadata, notSet }
 class OperationMetadataV1 extends $pb.GeneratedMessage {
   factory OperationMetadataV1({
     $core.String? method,
-    $304.Timestamp? insertTime,
-    $304.Timestamp? endTime,
+    $330.Timestamp? insertTime,
+    $330.Timestamp? endTime,
     $core.String? user,
     $core.String? target,
     $core.String? ephemeralMessage,
@@ -76,10 +76,10 @@ class OperationMetadataV1 extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [8])
     ..aOS(1, _omitFieldNames ? '' : 'method')
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'insertTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'insertTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $330.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'user')
     ..aOS(5, _omitFieldNames ? '' : 'target')
     ..aOS(6, _omitFieldNames ? '' : 'ephemeralMessage')
@@ -136,9 +136,9 @@ class OperationMetadataV1 extends $pb.GeneratedMessage {
   ///
   ///  @OutputOnly
   @$pb.TagNumber(2)
-  $304.Timestamp get insertTime => $_getN(1);
+  $330.Timestamp get insertTime => $_getN(1);
   @$pb.TagNumber(2)
-  set insertTime($304.Timestamp v) {
+  set insertTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -147,15 +147,15 @@ class OperationMetadataV1 extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearInsertTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureInsertTime() => $_ensure(1);
+  $330.Timestamp ensureInsertTime() => $_ensure(1);
 
   ///  Time that this operation completed.
   ///
   ///  @OutputOnly
   @$pb.TagNumber(3)
-  $304.Timestamp get endTime => $_getN(2);
+  $330.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($304.Timestamp v) {
+  set endTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -164,7 +164,7 @@ class OperationMetadataV1 extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureEndTime() => $_ensure(2);
+  $330.Timestamp ensureEndTime() => $_ensure(2);
 
   ///  User who requested this operation.
   ///

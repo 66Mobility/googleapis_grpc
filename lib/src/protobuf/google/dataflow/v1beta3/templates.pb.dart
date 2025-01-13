@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../rpc/status.pb.dart' as $324;
-import 'environment.pbenum.dart' as $421;
-import 'jobs.pb.dart' as $107;
+import '../../rpc/status.pb.dart' as $350;
+import 'environment.pbenum.dart' as $450;
+import 'jobs.pb.dart' as $125;
 import 'templates.pbenum.dart';
 
 export 'templates.pbenum.dart';
@@ -23,7 +23,7 @@ export 'templates.pbenum.dart';
 /// Response to the request to launch a job from Flex Template.
 class LaunchFlexTemplateResponse extends $pb.GeneratedMessage {
   factory LaunchFlexTemplateResponse({
-    $107.Job? job,
+    $125.Job? job,
   }) {
     final $result = create();
     if (job != null) {
@@ -44,8 +44,8 @@ class LaunchFlexTemplateResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
       createEmptyInstance: create)
-    ..aOM<$107.Job>(1, _omitFieldNames ? '' : 'job',
-        subBuilder: $107.Job.create)
+    ..aOM<$125.Job>(1, _omitFieldNames ? '' : 'job',
+        subBuilder: $125.Job.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -77,9 +77,9 @@ class LaunchFlexTemplateResponse extends $pb.GeneratedMessage {
   /// The job that was launched, if the request was not a dry run and
   /// the job was successfully launched.
   @$pb.TagNumber(1)
-  $107.Job get job => $_getN(0);
+  $125.Job get job => $_getN(0);
   @$pb.TagNumber(1)
-  set job($107.Job v) {
+  set job($125.Job v) {
     setField(1, v);
   }
 
@@ -88,7 +88,7 @@ class LaunchFlexTemplateResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearJob() => clearField(1);
   @$pb.TagNumber(1)
-  $107.Job ensureJob() => $_ensure(0);
+  $125.Job ensureJob() => $_ensure(0);
 }
 
 /// Container Spec.
@@ -447,15 +447,15 @@ class FlexTemplateRuntimeEnvironment extends $pb.GeneratedMessage {
     $core.String? subnetwork,
     $core.Map<$core.String, $core.String>? additionalUserLabels,
     $core.String? kmsKeyName,
-    $421.WorkerIPAddressConfiguration? ipConfiguration,
+    $450.WorkerIPAddressConfiguration? ipConfiguration,
     $core.String? workerRegion,
     $core.String? workerZone,
     $core.bool? enableStreamingEngine,
-    $421.FlexResourceSchedulingGoal? flexrsGoal,
+    $450.FlexResourceSchedulingGoal? flexrsGoal,
     $core.String? stagingLocation,
     $core.String? sdkContainerImage,
     $core.int? diskSizeGb,
-    $421.AutoscalingAlgorithm? autoscalingAlgorithm,
+    $450.AutoscalingAlgorithm? autoscalingAlgorithm,
     $core.bool? dumpHeapOnOom,
     $core.String? saveHeapDumpsToGcsPath,
     $core.String? launcherMachineType,
@@ -562,27 +562,27 @@ class FlexTemplateRuntimeEnvironment extends $pb.GeneratedMessage {
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.dataflow.v1beta3'))
     ..aOS(11, _omitFieldNames ? '' : 'kmsKeyName')
-    ..e<$421.WorkerIPAddressConfiguration>(
+    ..e<$450.WorkerIPAddressConfiguration>(
         12, _omitFieldNames ? '' : 'ipConfiguration', $pb.PbFieldType.OE,
-        defaultOrMaker: $421.WorkerIPAddressConfiguration.WORKER_IP_UNSPECIFIED,
-        valueOf: $421.WorkerIPAddressConfiguration.valueOf,
-        enumValues: $421.WorkerIPAddressConfiguration.values)
+        defaultOrMaker: $450.WorkerIPAddressConfiguration.WORKER_IP_UNSPECIFIED,
+        valueOf: $450.WorkerIPAddressConfiguration.valueOf,
+        enumValues: $450.WorkerIPAddressConfiguration.values)
     ..aOS(13, _omitFieldNames ? '' : 'workerRegion')
     ..aOS(14, _omitFieldNames ? '' : 'workerZone')
     ..aOB(15, _omitFieldNames ? '' : 'enableStreamingEngine')
-    ..e<$421.FlexResourceSchedulingGoal>(
+    ..e<$450.FlexResourceSchedulingGoal>(
         16, _omitFieldNames ? '' : 'flexrsGoal', $pb.PbFieldType.OE,
-        defaultOrMaker: $421.FlexResourceSchedulingGoal.FLEXRS_UNSPECIFIED,
-        valueOf: $421.FlexResourceSchedulingGoal.valueOf,
-        enumValues: $421.FlexResourceSchedulingGoal.values)
+        defaultOrMaker: $450.FlexResourceSchedulingGoal.FLEXRS_UNSPECIFIED,
+        valueOf: $450.FlexResourceSchedulingGoal.valueOf,
+        enumValues: $450.FlexResourceSchedulingGoal.values)
     ..aOS(17, _omitFieldNames ? '' : 'stagingLocation')
     ..aOS(18, _omitFieldNames ? '' : 'sdkContainerImage')
     ..a<$core.int>(20, _omitFieldNames ? '' : 'diskSizeGb', $pb.PbFieldType.O3)
-    ..e<$421.AutoscalingAlgorithm>(
+    ..e<$450.AutoscalingAlgorithm>(
         21, _omitFieldNames ? '' : 'autoscalingAlgorithm', $pb.PbFieldType.OE,
-        defaultOrMaker: $421.AutoscalingAlgorithm.AUTOSCALING_ALGORITHM_UNKNOWN,
-        valueOf: $421.AutoscalingAlgorithm.valueOf,
-        enumValues: $421.AutoscalingAlgorithm.values)
+        defaultOrMaker: $450.AutoscalingAlgorithm.AUTOSCALING_ALGORITHM_UNKNOWN,
+        valueOf: $450.AutoscalingAlgorithm.valueOf,
+        enumValues: $450.AutoscalingAlgorithm.values)
     ..aOB(22, _omitFieldNames ? '' : 'dumpHeapOnOom')
     ..aOS(23, _omitFieldNames ? '' : 'saveHeapDumpsToGcsPath')
     ..aOS(24, _omitFieldNames ? '' : 'launcherMachineType')
@@ -761,9 +761,9 @@ class FlexTemplateRuntimeEnvironment extends $pb.GeneratedMessage {
 
   /// Configuration for VM IPs.
   @$pb.TagNumber(12)
-  $421.WorkerIPAddressConfiguration get ipConfiguration => $_getN(11);
+  $450.WorkerIPAddressConfiguration get ipConfiguration => $_getN(11);
   @$pb.TagNumber(12)
-  set ipConfiguration($421.WorkerIPAddressConfiguration v) {
+  set ipConfiguration($450.WorkerIPAddressConfiguration v) {
     setField(12, v);
   }
 
@@ -823,9 +823,9 @@ class FlexTemplateRuntimeEnvironment extends $pb.GeneratedMessage {
   /// Set FlexRS goal for the job.
   /// https://cloud.google.com/dataflow/docs/guides/flexrs
   @$pb.TagNumber(16)
-  $421.FlexResourceSchedulingGoal get flexrsGoal => $_getN(15);
+  $450.FlexResourceSchedulingGoal get flexrsGoal => $_getN(15);
   @$pb.TagNumber(16)
-  set flexrsGoal($421.FlexResourceSchedulingGoal v) {
+  set flexrsGoal($450.FlexResourceSchedulingGoal v) {
     setField(16, v);
   }
 
@@ -878,9 +878,9 @@ class FlexTemplateRuntimeEnvironment extends $pb.GeneratedMessage {
 
   /// The algorithm to use for autoscaling
   @$pb.TagNumber(21)
-  $421.AutoscalingAlgorithm get autoscalingAlgorithm => $_getN(19);
+  $450.AutoscalingAlgorithm get autoscalingAlgorithm => $_getN(19);
   @$pb.TagNumber(21)
-  set autoscalingAlgorithm($421.AutoscalingAlgorithm v) {
+  set autoscalingAlgorithm($450.AutoscalingAlgorithm v) {
     setField(21, v);
   }
 
@@ -1077,7 +1077,7 @@ class RuntimeEnvironment extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? additionalUserLabels,
     $core.int? numWorkers,
     $core.String? kmsKeyName,
-    $421.WorkerIPAddressConfiguration? ipConfiguration,
+    $450.WorkerIPAddressConfiguration? ipConfiguration,
     $core.String? workerRegion,
     $core.String? workerZone,
     $core.bool? enableStreamingEngine,
@@ -1163,11 +1163,11 @@ class RuntimeEnvironment extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.dataflow.v1beta3'))
     ..a<$core.int>(11, _omitFieldNames ? '' : 'numWorkers', $pb.PbFieldType.O3)
     ..aOS(12, _omitFieldNames ? '' : 'kmsKeyName')
-    ..e<$421.WorkerIPAddressConfiguration>(
+    ..e<$450.WorkerIPAddressConfiguration>(
         14, _omitFieldNames ? '' : 'ipConfiguration', $pb.PbFieldType.OE,
-        defaultOrMaker: $421.WorkerIPAddressConfiguration.WORKER_IP_UNSPECIFIED,
-        valueOf: $421.WorkerIPAddressConfiguration.valueOf,
-        enumValues: $421.WorkerIPAddressConfiguration.values)
+        defaultOrMaker: $450.WorkerIPAddressConfiguration.WORKER_IP_UNSPECIFIED,
+        valueOf: $450.WorkerIPAddressConfiguration.valueOf,
+        enumValues: $450.WorkerIPAddressConfiguration.values)
     ..aOS(15, _omitFieldNames ? '' : 'workerRegion')
     ..aOS(16, _omitFieldNames ? '' : 'workerZone')
     ..aOB(17, _omitFieldNames ? '' : 'enableStreamingEngine')
@@ -1357,9 +1357,9 @@ class RuntimeEnvironment extends $pb.GeneratedMessage {
 
   /// Configuration for VM IPs.
   @$pb.TagNumber(14)
-  $421.WorkerIPAddressConfiguration get ipConfiguration => $_getN(12);
+  $450.WorkerIPAddressConfiguration get ipConfiguration => $_getN(12);
   @$pb.TagNumber(14)
-  set ipConfiguration($421.WorkerIPAddressConfiguration v) {
+  set ipConfiguration($450.WorkerIPAddressConfiguration v) {
     setField(14, v);
   }
 
@@ -2148,7 +2148,7 @@ class GetTemplateRequest extends $pb.GeneratedMessage {
 /// The response to a GetTemplate request.
 class GetTemplateResponse extends $pb.GeneratedMessage {
   factory GetTemplateResponse({
-    $324.Status? status,
+    $350.Status? status,
     TemplateMetadata? metadata,
     GetTemplateResponse_TemplateType? templateType,
     RuntimeMetadata? runtimeMetadata,
@@ -2181,8 +2181,8 @@ class GetTemplateResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
       createEmptyInstance: create)
-    ..aOM<$324.Status>(1, _omitFieldNames ? '' : 'status',
-        subBuilder: $324.Status.create)
+    ..aOM<$350.Status>(1, _omitFieldNames ? '' : 'status',
+        subBuilder: $350.Status.create)
     ..aOM<TemplateMetadata>(2, _omitFieldNames ? '' : 'metadata',
         subBuilder: TemplateMetadata.create)
     ..e<GetTemplateResponse_TemplateType>(
@@ -2220,9 +2220,9 @@ class GetTemplateResponse extends $pb.GeneratedMessage {
   /// The status of the get template request. Any problems with the
   /// request will be indicated in the error_details.
   @$pb.TagNumber(1)
-  $324.Status get status => $_getN(0);
+  $350.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($324.Status v) {
+  set status($350.Status v) {
     setField(1, v);
   }
 
@@ -2231,7 +2231,7 @@ class GetTemplateResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $324.Status ensureStatus() => $_ensure(0);
+  $350.Status ensureStatus() => $_ensure(0);
 
   /// The template metadata describing the template name, available
   /// parameters, etc.
@@ -2598,7 +2598,7 @@ class LaunchTemplateRequest extends $pb.GeneratedMessage {
 /// Response to the request to launch a template.
 class LaunchTemplateResponse extends $pb.GeneratedMessage {
   factory LaunchTemplateResponse({
-    $107.Job? job,
+    $125.Job? job,
   }) {
     final $result = create();
     if (job != null) {
@@ -2619,8 +2619,8 @@ class LaunchTemplateResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.dataflow.v1beta3'),
       createEmptyInstance: create)
-    ..aOM<$107.Job>(1, _omitFieldNames ? '' : 'job',
-        subBuilder: $107.Job.create)
+    ..aOM<$125.Job>(1, _omitFieldNames ? '' : 'job',
+        subBuilder: $125.Job.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2651,9 +2651,9 @@ class LaunchTemplateResponse extends $pb.GeneratedMessage {
   /// The job that was launched, if the request was not a dry run and
   /// the job was successfully launched.
   @$pb.TagNumber(1)
-  $107.Job get job => $_getN(0);
+  $125.Job get job => $_getN(0);
   @$pb.TagNumber(1)
-  set job($107.Job v) {
+  set job($125.Job v) {
     setField(1, v);
   }
 
@@ -2662,7 +2662,7 @@ class LaunchTemplateResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearJob() => clearField(1);
   @$pb.TagNumber(1)
-  $107.Job ensureJob() => $_ensure(0);
+  $125.Job ensureJob() => $_ensure(0);
 }
 
 /// A specific template-parameter violation.

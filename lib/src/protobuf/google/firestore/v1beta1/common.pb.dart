@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../protobuf/timestamp.pb.dart' as $330;
 
 /// A set of field paths on a document.
 /// Used to restrict a get or update operation on a document to a subset of its
@@ -81,7 +81,7 @@ enum Precondition_ConditionType { exists, updateTime, notSet }
 class Precondition extends $pb.GeneratedMessage {
   factory Precondition({
     $core.bool? exists,
-    $304.Timestamp? updateTime,
+    $330.Timestamp? updateTime,
   }) {
     final $result = create();
     if (exists != null) {
@@ -113,8 +113,8 @@ class Precondition extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOB(1, _omitFieldNames ? '' : 'exists')
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -161,9 +161,9 @@ class Precondition extends $pb.GeneratedMessage {
   /// When set, the target document must exist and have been last updated at
   /// that time.
   @$pb.TagNumber(2)
-  $304.Timestamp get updateTime => $_getN(1);
+  $330.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($304.Timestamp v) {
+  set updateTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -172,7 +172,7 @@ class Precondition extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureUpdateTime() => $_ensure(1);
+  $330.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Options for a transaction that can be used to read and write documents.
@@ -249,7 +249,7 @@ enum TransactionOptions_ReadOnly_ConsistencySelector { readTime, notSet }
 /// Options for a transaction that can only be used to read documents.
 class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   factory TransactionOptions_ReadOnly({
-    $304.Timestamp? readTime,
+    $330.Timestamp? readTime,
   }) {
     final $result = create();
     if (readTime != null) {
@@ -277,8 +277,8 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.firestore.v1beta1'),
       createEmptyInstance: create)
     ..oo(0, [2])
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'readTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'readTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -315,9 +315,9 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   /// Reads documents at the given time.
   /// This may not be older than 60 seconds.
   @$pb.TagNumber(2)
-  $304.Timestamp get readTime => $_getN(0);
+  $330.Timestamp get readTime => $_getN(0);
   @$pb.TagNumber(2)
-  set readTime($304.Timestamp v) {
+  set readTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -326,7 +326,7 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureReadTime() => $_ensure(0);
+  $330.Timestamp ensureReadTime() => $_ensure(0);
 }
 
 enum TransactionOptions_Mode { readOnly, readWrite, notSet }

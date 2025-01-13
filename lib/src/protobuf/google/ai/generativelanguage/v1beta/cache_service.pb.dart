@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $335;
-import 'cached_content.pb.dart' as $8;
+import '../../../protobuf/field_mask.pb.dart' as $361;
+import 'cached_content.pb.dart' as $24;
 
 /// Request to list CachedContents.
 class ListCachedContentsRequest extends $pb.GeneratedMessage {
@@ -110,7 +110,7 @@ class ListCachedContentsRequest extends $pb.GeneratedMessage {
 /// Response with CachedContents list.
 class ListCachedContentsResponse extends $pb.GeneratedMessage {
   factory ListCachedContentsResponse({
-    $core.Iterable<$8.CachedContent>? cachedContents,
+    $core.Iterable<$24.CachedContent>? cachedContents,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -135,9 +135,9 @@ class ListCachedContentsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..pc<$8.CachedContent>(
+    ..pc<$24.CachedContent>(
         1, _omitFieldNames ? '' : 'cachedContents', $pb.PbFieldType.PM,
-        subBuilder: $8.CachedContent.create)
+        subBuilder: $24.CachedContent.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -169,7 +169,7 @@ class ListCachedContentsResponse extends $pb.GeneratedMessage {
 
   /// List of cached contents.
   @$pb.TagNumber(1)
-  $core.List<$8.CachedContent> get cachedContents => $_getList(0);
+  $core.List<$24.CachedContent> get cachedContents => $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no subsequent pages.
@@ -189,7 +189,7 @@ class ListCachedContentsResponse extends $pb.GeneratedMessage {
 /// Request to create CachedContent.
 class CreateCachedContentRequest extends $pb.GeneratedMessage {
   factory CreateCachedContentRequest({
-    $8.CachedContent? cachedContent,
+    $24.CachedContent? cachedContent,
   }) {
     final $result = create();
     if (cachedContent != null) {
@@ -210,8 +210,8 @@ class CreateCachedContentRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$8.CachedContent>(1, _omitFieldNames ? '' : 'cachedContent',
-        subBuilder: $8.CachedContent.create)
+    ..aOM<$24.CachedContent>(1, _omitFieldNames ? '' : 'cachedContent',
+        subBuilder: $24.CachedContent.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -242,9 +242,9 @@ class CreateCachedContentRequest extends $pb.GeneratedMessage {
 
   /// Required. The cached content to create.
   @$pb.TagNumber(1)
-  $8.CachedContent get cachedContent => $_getN(0);
+  $24.CachedContent get cachedContent => $_getN(0);
   @$pb.TagNumber(1)
-  set cachedContent($8.CachedContent v) {
+  set cachedContent($24.CachedContent v) {
     setField(1, v);
   }
 
@@ -253,7 +253,7 @@ class CreateCachedContentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCachedContent() => clearField(1);
   @$pb.TagNumber(1)
-  $8.CachedContent ensureCachedContent() => $_ensure(0);
+  $24.CachedContent ensureCachedContent() => $_ensure(0);
 }
 
 /// Request to read CachedContent.
@@ -326,8 +326,8 @@ class GetCachedContentRequest extends $pb.GeneratedMessage {
 /// Request to update CachedContent.
 class UpdateCachedContentRequest extends $pb.GeneratedMessage {
   factory UpdateCachedContentRequest({
-    $8.CachedContent? cachedContent,
-    $335.FieldMask? updateMask,
+    $24.CachedContent? cachedContent,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (cachedContent != null) {
@@ -351,10 +351,10 @@ class UpdateCachedContentRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$8.CachedContent>(1, _omitFieldNames ? '' : 'cachedContent',
-        subBuilder: $8.CachedContent.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$24.CachedContent>(1, _omitFieldNames ? '' : 'cachedContent',
+        subBuilder: $24.CachedContent.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -385,9 +385,9 @@ class UpdateCachedContentRequest extends $pb.GeneratedMessage {
 
   /// Required. The content cache entry to update
   @$pb.TagNumber(1)
-  $8.CachedContent get cachedContent => $_getN(0);
+  $24.CachedContent get cachedContent => $_getN(0);
   @$pb.TagNumber(1)
-  set cachedContent($8.CachedContent v) {
+  set cachedContent($24.CachedContent v) {
     setField(1, v);
   }
 
@@ -396,13 +396,13 @@ class UpdateCachedContentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCachedContent() => clearField(1);
   @$pb.TagNumber(1)
-  $8.CachedContent ensureCachedContent() => $_ensure(0);
+  $24.CachedContent ensureCachedContent() => $_ensure(0);
 
   /// The list of fields to update.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -411,7 +411,7 @@ class UpdateCachedContentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete CachedContent.

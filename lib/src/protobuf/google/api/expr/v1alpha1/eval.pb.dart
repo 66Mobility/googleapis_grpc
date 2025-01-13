@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $324;
-import 'value.pb.dart' as $344;
+import '../../../rpc/status.pb.dart' as $350;
+import 'value.pb.dart' as $373;
 
 /// A single evalution result.
 class EvalState_Result extends $pb.GeneratedMessage {
@@ -174,7 +174,7 @@ enum ExprValue_Kind { value, error, unknown, notSet }
 /// The value of an evaluated expression.
 class ExprValue extends $pb.GeneratedMessage {
   factory ExprValue({
-    $344.Value? value,
+    $373.Value? value,
     ErrorSet? error,
     UnknownSet? unknown,
   }) {
@@ -210,8 +210,8 @@ class ExprValue extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.api.expr.v1alpha1'),
       createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$344.Value>(1, _omitFieldNames ? '' : 'value',
-        subBuilder: $344.Value.create)
+    ..aOM<$373.Value>(1, _omitFieldNames ? '' : 'value',
+        subBuilder: $373.Value.create)
     ..aOM<ErrorSet>(2, _omitFieldNames ? '' : 'error',
         subBuilder: ErrorSet.create)
     ..aOM<UnknownSet>(3, _omitFieldNames ? '' : 'unknown',
@@ -244,9 +244,9 @@ class ExprValue extends $pb.GeneratedMessage {
 
   /// A concrete value.
   @$pb.TagNumber(1)
-  $344.Value get value => $_getN(0);
+  $373.Value get value => $_getN(0);
   @$pb.TagNumber(1)
-  set value($344.Value v) {
+  set value($373.Value v) {
     setField(1, v);
   }
 
@@ -255,7 +255,7 @@ class ExprValue extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearValue() => clearField(1);
   @$pb.TagNumber(1)
-  $344.Value ensureValue() => $_ensure(0);
+  $373.Value ensureValue() => $_ensure(0);
 
   ///  The set of errors in the critical path of evalution.
   ///
@@ -331,7 +331,7 @@ class ExprValue extends $pb.GeneratedMessage {
 ///  The errors included depend on the context. See `ExprValue.error`.
 class ErrorSet extends $pb.GeneratedMessage {
   factory ErrorSet({
-    $core.Iterable<$324.Status>? errors,
+    $core.Iterable<$350.Status>? errors,
   }) {
     final $result = create();
     if (errors != null) {
@@ -352,8 +352,8 @@ class ErrorSet extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.api.expr.v1alpha1'),
       createEmptyInstance: create)
-    ..pc<$324.Status>(1, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM,
-        subBuilder: $324.Status.create)
+    ..pc<$350.Status>(1, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM,
+        subBuilder: $350.Status.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -379,7 +379,7 @@ class ErrorSet extends $pb.GeneratedMessage {
 
   /// The errors in the set.
   @$pb.TagNumber(1)
-  $core.List<$324.Status> get errors => $_getList(0);
+  $core.List<$350.Status> get errors => $_getList(0);
 }
 
 ///  A set of expressions for which the value is unknown.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/types.pb.dart' as $540;
-import 'productreviews_common.pb.dart' as $554;
+import '../../../type/types.pb.dart' as $569;
+import 'productreviews_common.pb.dart' as $583;
 
 /// Request message for the GetProductReview method.
 class GetProductReviewRequest extends $pb.GeneratedMessage {
@@ -453,10 +453,10 @@ class ProductReview extends $pb.GeneratedMessage {
   factory ProductReview({
     $core.String? name,
     $core.String? productReviewId,
-    $554.ProductReviewAttributes? attributes,
-    $core.Iterable<$540.CustomAttribute>? customAttributes,
+    $583.ProductReviewAttributes? attributes,
+    $core.Iterable<$569.CustomAttribute>? customAttributes,
     $core.String? dataSource,
-    $554.ProductReviewStatus? productReviewStatus,
+    $583.ProductReviewStatus? productReviewStatus,
   }) {
     final $result = create();
     if (name != null) {
@@ -494,15 +494,15 @@ class ProductReview extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'productReviewId')
-    ..aOM<$554.ProductReviewAttributes>(3, _omitFieldNames ? '' : 'attributes',
-        subBuilder: $554.ProductReviewAttributes.create)
-    ..pc<$540.CustomAttribute>(
+    ..aOM<$583.ProductReviewAttributes>(3, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $583.ProductReviewAttributes.create)
+    ..pc<$569.CustomAttribute>(
         4, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM,
-        subBuilder: $540.CustomAttribute.create)
+        subBuilder: $569.CustomAttribute.create)
     ..aOS(5, _omitFieldNames ? '' : 'dataSource')
-    ..aOM<$554.ProductReviewStatus>(
+    ..aOM<$583.ProductReviewStatus>(
         6, _omitFieldNames ? '' : 'productReviewStatus',
-        subBuilder: $554.ProductReviewStatus.create)
+        subBuilder: $583.ProductReviewStatus.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -559,9 +559,9 @@ class ProductReview extends $pb.GeneratedMessage {
 
   /// Optional. A list of product review attributes.
   @$pb.TagNumber(3)
-  $554.ProductReviewAttributes get attributes => $_getN(2);
+  $583.ProductReviewAttributes get attributes => $_getN(2);
   @$pb.TagNumber(3)
-  set attributes($554.ProductReviewAttributes v) {
+  set attributes($583.ProductReviewAttributes v) {
     setField(3, v);
   }
 
@@ -570,11 +570,11 @@ class ProductReview extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAttributes() => clearField(3);
   @$pb.TagNumber(3)
-  $554.ProductReviewAttributes ensureAttributes() => $_ensure(2);
+  $583.ProductReviewAttributes ensureAttributes() => $_ensure(2);
 
   /// Optional. A list of custom (merchant-provided) attributes.
   @$pb.TagNumber(4)
-  $core.List<$540.CustomAttribute> get customAttributes => $_getList(3);
+  $core.List<$569.CustomAttribute> get customAttributes => $_getList(3);
 
   /// Output only. The primary data source of the product review.
   @$pb.TagNumber(5)
@@ -592,9 +592,9 @@ class ProductReview extends $pb.GeneratedMessage {
   /// Output only. The status of a product review, data validation issues, that
   /// is, information about a product review computed asynchronously.
   @$pb.TagNumber(6)
-  $554.ProductReviewStatus get productReviewStatus => $_getN(5);
+  $583.ProductReviewStatus get productReviewStatus => $_getN(5);
   @$pb.TagNumber(6)
-  set productReviewStatus($554.ProductReviewStatus v) {
+  set productReviewStatus($583.ProductReviewStatus v) {
     setField(6, v);
   }
 
@@ -603,7 +603,7 @@ class ProductReview extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearProductReviewStatus() => clearField(6);
   @$pb.TagNumber(6)
-  $554.ProductReviewStatus ensureProductReviewStatus() => $_ensure(5);
+  $583.ProductReviewStatus ensureProductReviewStatus() => $_ensure(5);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

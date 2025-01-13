@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'citation.pb.dart' as $337;
-import 'content.pb.dart' as $334;
+import 'citation.pb.dart' as $366;
+import 'content.pb.dart' as $364;
 import 'generative_service.pbenum.dart';
-import 'retriever.pb.dart' as $21;
-import 'safety.pb.dart' as $336;
+import 'retriever.pb.dart' as $36;
+import 'safety.pb.dart' as $365;
 
 export 'generative_service.pbenum.dart';
 
@@ -25,12 +25,12 @@ export 'generative_service.pbenum.dart';
 class GenerateContentRequest extends $pb.GeneratedMessage {
   factory GenerateContentRequest({
     $core.String? model,
-    $core.Iterable<$334.Content>? contents,
-    $core.Iterable<$336.SafetySetting>? safetySettings,
+    $core.Iterable<$364.Content>? contents,
+    $core.Iterable<$365.SafetySetting>? safetySettings,
     GenerationConfig? generationConfig,
-    $core.Iterable<$334.Tool>? tools,
-    $334.ToolConfig? toolConfig,
-    $334.Content? systemInstruction,
+    $core.Iterable<$364.Tool>? tools,
+    $364.ToolConfig? toolConfig,
+    $364.Content? systemInstruction,
     $core.String? cachedContent,
   }) {
     final $result = create();
@@ -74,19 +74,19 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..pc<$334.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM,
-        subBuilder: $334.Content.create)
-    ..pc<$336.SafetySetting>(
+    ..pc<$364.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM,
+        subBuilder: $364.Content.create)
+    ..pc<$365.SafetySetting>(
         3, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM,
-        subBuilder: $336.SafetySetting.create)
+        subBuilder: $365.SafetySetting.create)
     ..aOM<GenerationConfig>(4, _omitFieldNames ? '' : 'generationConfig',
         subBuilder: GenerationConfig.create)
-    ..pc<$334.Tool>(5, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM,
-        subBuilder: $334.Tool.create)
-    ..aOM<$334.ToolConfig>(7, _omitFieldNames ? '' : 'toolConfig',
-        subBuilder: $334.ToolConfig.create)
-    ..aOM<$334.Content>(8, _omitFieldNames ? '' : 'systemInstruction',
-        subBuilder: $334.Content.create)
+    ..pc<$364.Tool>(5, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM,
+        subBuilder: $364.Tool.create)
+    ..aOM<$364.ToolConfig>(7, _omitFieldNames ? '' : 'toolConfig',
+        subBuilder: $364.ToolConfig.create)
+    ..aOM<$364.Content>(8, _omitFieldNames ? '' : 'systemInstruction',
+        subBuilder: $364.Content.create)
     ..aOS(9, _omitFieldNames ? '' : 'cachedContent')
     ..hasRequiredFields = false;
 
@@ -117,7 +117,7 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
 
   ///  Required. The name of the `Model` to use for generating the completion.
   ///
-  ///  Format: `name=models/{model}`.
+  ///  Format: `models/{model}`.
   @$pb.TagNumber(1)
   $core.String get model => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -137,7 +137,7 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   ///  this is a repeated field that contains the conversation history and the
   ///  latest request.
   @$pb.TagNumber(2)
-  $core.List<$334.Content> get contents => $_getList(1);
+  $core.List<$364.Content> get contents => $_getList(1);
 
   ///  Optional. A list of unique `SafetySetting` instances for blocking unsafe
   ///  content.
@@ -151,13 +151,13 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   ///  `SafetyCategory` provided in the list, the API will use the default safety
   ///  setting for that category. Harm categories HARM_CATEGORY_HATE_SPEECH,
   ///  HARM_CATEGORY_SEXUALLY_EXPLICIT, HARM_CATEGORY_DANGEROUS_CONTENT,
-  ///  HARM_CATEGORY_HARASSMENT are supported. Refer to the
-  ///  [guide](https://ai.google.dev/gemini-api/docs/safety-settings)
+  ///  HARM_CATEGORY_HARASSMENT, HARM_CATEGORY_CIVIC_INTEGRITY are supported.
+  ///  Refer to the [guide](https://ai.google.dev/gemini-api/docs/safety-settings)
   ///  for detailed information on available safety settings. Also refer to the
   ///  [Safety guidance](https://ai.google.dev/gemini-api/docs/safety-guidance) to
   ///  learn how to incorporate safety considerations in your AI applications.
   @$pb.TagNumber(3)
-  $core.List<$336.SafetySetting> get safetySettings => $_getList(2);
+  $core.List<$365.SafetySetting> get safetySettings => $_getList(2);
 
   /// Optional. Configuration options for model generation and outputs.
   @$pb.TagNumber(4)
@@ -185,16 +185,16 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   ///  [Code execution](https://ai.google.dev/gemini-api/docs/code-execution)
   ///  guides to learn more.
   @$pb.TagNumber(5)
-  $core.List<$334.Tool> get tools => $_getList(4);
+  $core.List<$364.Tool> get tools => $_getList(4);
 
   /// Optional. Tool configuration for any `Tool` specified in the request. Refer
   /// to the [Function calling
   /// guide](https://ai.google.dev/gemini-api/docs/function-calling#function_calling_mode)
   /// for a usage example.
   @$pb.TagNumber(7)
-  $334.ToolConfig get toolConfig => $_getN(5);
+  $364.ToolConfig get toolConfig => $_getN(5);
   @$pb.TagNumber(7)
-  set toolConfig($334.ToolConfig v) {
+  set toolConfig($364.ToolConfig v) {
     setField(7, v);
   }
 
@@ -203,15 +203,15 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearToolConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $334.ToolConfig ensureToolConfig() => $_ensure(5);
+  $364.ToolConfig ensureToolConfig() => $_ensure(5);
 
   /// Optional. Developer set [system
   /// instruction(s)](https://ai.google.dev/gemini-api/docs/system-instructions).
   /// Currently, text only.
   @$pb.TagNumber(8)
-  $334.Content get systemInstruction => $_getN(6);
+  $364.Content get systemInstruction => $_getN(6);
   @$pb.TagNumber(8)
-  set systemInstruction($334.Content v) {
+  set systemInstruction($364.Content v) {
     setField(8, v);
   }
 
@@ -220,7 +220,7 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearSystemInstruction() => clearField(8);
   @$pb.TagNumber(8)
-  $334.Content ensureSystemInstruction() => $_ensure(6);
+  $364.Content ensureSystemInstruction() => $_ensure(6);
 
   /// Optional. The name of the content
   /// [cached](https://ai.google.dev/gemini-api/docs/caching) to use as context
@@ -238,6 +238,215 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   void clearCachedContent() => clearField(9);
 }
 
+/// The configuration for the prebuilt speaker to use.
+class PrebuiltVoiceConfig extends $pb.GeneratedMessage {
+  factory PrebuiltVoiceConfig({
+    $core.String? voiceName,
+  }) {
+    final $result = create();
+    if (voiceName != null) {
+      $result.voiceName = voiceName;
+    }
+    return $result;
+  }
+  PrebuiltVoiceConfig._() : super();
+  factory PrebuiltVoiceConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PrebuiltVoiceConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'PrebuiltVoiceConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'voiceName')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  PrebuiltVoiceConfig clone() => PrebuiltVoiceConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PrebuiltVoiceConfig copyWith(void Function(PrebuiltVoiceConfig) updates) =>
+      super.copyWith((message) => updates(message as PrebuiltVoiceConfig))
+          as PrebuiltVoiceConfig;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static PrebuiltVoiceConfig create() => PrebuiltVoiceConfig._();
+  PrebuiltVoiceConfig createEmptyInstance() => create();
+  static $pb.PbList<PrebuiltVoiceConfig> createRepeated() =>
+      $pb.PbList<PrebuiltVoiceConfig>();
+  @$core.pragma('dart2js:noInline')
+  static PrebuiltVoiceConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<PrebuiltVoiceConfig>(create);
+  static PrebuiltVoiceConfig? _defaultInstance;
+
+  /// The name of the preset voice to use.
+  @$pb.TagNumber(1)
+  $core.String get voiceName => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set voiceName($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasVoiceName() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearVoiceName() => clearField(1);
+}
+
+enum VoiceConfig_VoiceConfig { prebuiltVoiceConfig, notSet }
+
+/// The configuration for the voice to use.
+class VoiceConfig extends $pb.GeneratedMessage {
+  factory VoiceConfig({
+    PrebuiltVoiceConfig? prebuiltVoiceConfig,
+  }) {
+    final $result = create();
+    if (prebuiltVoiceConfig != null) {
+      $result.prebuiltVoiceConfig = prebuiltVoiceConfig;
+    }
+    return $result;
+  }
+  VoiceConfig._() : super();
+  factory VoiceConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VoiceConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, VoiceConfig_VoiceConfig>
+      _VoiceConfig_VoiceConfigByTag = {
+    1: VoiceConfig_VoiceConfig.prebuiltVoiceConfig,
+    0: VoiceConfig_VoiceConfig.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VoiceConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..oo(0, [1])
+    ..aOM<PrebuiltVoiceConfig>(1, _omitFieldNames ? '' : 'prebuiltVoiceConfig',
+        subBuilder: PrebuiltVoiceConfig.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  VoiceConfig clone() => VoiceConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VoiceConfig copyWith(void Function(VoiceConfig) updates) =>
+      super.copyWith((message) => updates(message as VoiceConfig))
+          as VoiceConfig;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static VoiceConfig create() => VoiceConfig._();
+  VoiceConfig createEmptyInstance() => create();
+  static $pb.PbList<VoiceConfig> createRepeated() => $pb.PbList<VoiceConfig>();
+  @$core.pragma('dart2js:noInline')
+  static VoiceConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VoiceConfig>(create);
+  static VoiceConfig? _defaultInstance;
+
+  VoiceConfig_VoiceConfig whichVoiceConfig() =>
+      _VoiceConfig_VoiceConfigByTag[$_whichOneof(0)]!;
+  void clearVoiceConfig() => clearField($_whichOneof(0));
+
+  /// The configuration for the prebuilt voice to use.
+  @$pb.TagNumber(1)
+  PrebuiltVoiceConfig get prebuiltVoiceConfig => $_getN(0);
+  @$pb.TagNumber(1)
+  set prebuiltVoiceConfig(PrebuiltVoiceConfig v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasPrebuiltVoiceConfig() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearPrebuiltVoiceConfig() => clearField(1);
+  @$pb.TagNumber(1)
+  PrebuiltVoiceConfig ensurePrebuiltVoiceConfig() => $_ensure(0);
+}
+
+/// The speech generation config.
+class SpeechConfig extends $pb.GeneratedMessage {
+  factory SpeechConfig({
+    VoiceConfig? voiceConfig,
+  }) {
+    final $result = create();
+    if (voiceConfig != null) {
+      $result.voiceConfig = voiceConfig;
+    }
+    return $result;
+  }
+  SpeechConfig._() : super();
+  factory SpeechConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SpeechConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SpeechConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..aOM<VoiceConfig>(1, _omitFieldNames ? '' : 'voiceConfig',
+        subBuilder: VoiceConfig.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SpeechConfig clone() => SpeechConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SpeechConfig copyWith(void Function(SpeechConfig) updates) =>
+      super.copyWith((message) => updates(message as SpeechConfig))
+          as SpeechConfig;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static SpeechConfig create() => SpeechConfig._();
+  SpeechConfig createEmptyInstance() => create();
+  static $pb.PbList<SpeechConfig> createRepeated() =>
+      $pb.PbList<SpeechConfig>();
+  @$core.pragma('dart2js:noInline')
+  static SpeechConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SpeechConfig>(create);
+  static SpeechConfig? _defaultInstance;
+
+  /// The configuration for the speaker to use.
+  @$pb.TagNumber(1)
+  VoiceConfig get voiceConfig => $_getN(0);
+  @$pb.TagNumber(1)
+  set voiceConfig(VoiceConfig v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasVoiceConfig() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearVoiceConfig() => clearField(1);
+  @$pb.TagNumber(1)
+  VoiceConfig ensureVoiceConfig() => $_ensure(0);
+}
+
 /// Configuration options for model generation and outputs. Not all parameters
 /// are configurable for every model.
 class GenerationConfig extends $pb.GeneratedMessage {
@@ -249,11 +458,14 @@ class GenerationConfig extends $pb.GeneratedMessage {
     $core.double? topP,
     $core.int? topK,
     $core.String? responseMimeType,
-    $334.Schema? responseSchema,
+    $364.Schema? responseSchema,
     $core.double? presencePenalty,
     $core.double? frequencyPenalty,
     $core.bool? responseLogprobs,
     $core.int? logprobs,
+    $core.bool? enableEnhancedCivicAnswers,
+    $core.Iterable<GenerationConfig_Modality>? responseModalities,
+    SpeechConfig? speechConfig,
   }) {
     final $result = create();
     if (candidateCount != null) {
@@ -292,6 +504,15 @@ class GenerationConfig extends $pb.GeneratedMessage {
     if (logprobs != null) {
       $result.logprobs = logprobs;
     }
+    if (enableEnhancedCivicAnswers != null) {
+      $result.enableEnhancedCivicAnswers = enableEnhancedCivicAnswers;
+    }
+    if (responseModalities != null) {
+      $result.responseModalities.addAll(responseModalities);
+    }
+    if (speechConfig != null) {
+      $result.speechConfig = speechConfig;
+    }
     return $result;
   }
   GenerationConfig._() : super();
@@ -317,14 +538,22 @@ class GenerationConfig extends $pb.GeneratedMessage {
     ..a<$core.double>(6, _omitFieldNames ? '' : 'topP', $pb.PbFieldType.OF)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'topK', $pb.PbFieldType.O3)
     ..aOS(13, _omitFieldNames ? '' : 'responseMimeType')
-    ..aOM<$334.Schema>(14, _omitFieldNames ? '' : 'responseSchema',
-        subBuilder: $334.Schema.create)
+    ..aOM<$364.Schema>(14, _omitFieldNames ? '' : 'responseSchema',
+        subBuilder: $364.Schema.create)
     ..a<$core.double>(
         15, _omitFieldNames ? '' : 'presencePenalty', $pb.PbFieldType.OF)
     ..a<$core.double>(
         16, _omitFieldNames ? '' : 'frequencyPenalty', $pb.PbFieldType.OF)
     ..aOB(17, _omitFieldNames ? '' : 'responseLogprobs')
     ..a<$core.int>(18, _omitFieldNames ? '' : 'logprobs', $pb.PbFieldType.O3)
+    ..aOB(19, _omitFieldNames ? '' : 'enableEnhancedCivicAnswers')
+    ..pc<GenerationConfig_Modality>(
+        20, _omitFieldNames ? '' : 'responseModalities', $pb.PbFieldType.KE,
+        valueOf: GenerationConfig_Modality.valueOf,
+        enumValues: GenerationConfig_Modality.values,
+        defaultEnumValue: GenerationConfig_Modality.MODALITY_UNSPECIFIED)
+    ..aOM<SpeechConfig>(21, _omitFieldNames ? '' : 'speechConfig',
+        subBuilder: SpeechConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -485,9 +714,9 @@ class GenerationConfig extends $pb.GeneratedMessage {
   ///  Refer to the [JSON text generation
   ///  guide](https://ai.google.dev/gemini-api/docs/json-mode) for more details.
   @$pb.TagNumber(14)
-  $334.Schema get responseSchema => $_getN(7);
+  $364.Schema get responseSchema => $_getN(7);
   @$pb.TagNumber(14)
-  set responseSchema($334.Schema v) {
+  set responseSchema($364.Schema v) {
     setField(14, v);
   }
 
@@ -496,7 +725,7 @@ class GenerationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   void clearResponseSchema() => clearField(14);
   @$pb.TagNumber(14)
-  $334.Schema ensureResponseSchema() => $_ensure(7);
+  $364.Schema ensureResponseSchema() => $_ensure(7);
 
   ///  Optional. Presence penalty applied to the next token's logprobs if the
   ///  token has already been seen in the response.
@@ -579,6 +808,47 @@ class GenerationConfig extends $pb.GeneratedMessage {
   $core.bool hasLogprobs() => $_has(11);
   @$pb.TagNumber(18)
   void clearLogprobs() => clearField(18);
+
+  /// Optional. Enables enhanced civic answers. It may not be available for all
+  /// models.
+  @$pb.TagNumber(19)
+  $core.bool get enableEnhancedCivicAnswers => $_getBF(12);
+  @$pb.TagNumber(19)
+  set enableEnhancedCivicAnswers($core.bool v) {
+    $_setBool(12, v);
+  }
+
+  @$pb.TagNumber(19)
+  $core.bool hasEnableEnhancedCivicAnswers() => $_has(12);
+  @$pb.TagNumber(19)
+  void clearEnableEnhancedCivicAnswers() => clearField(19);
+
+  ///  Optional. The requested modalities of the response. Represents the set of
+  ///  modalities that the model can return, and should be expected in the
+  ///  response. This is an exact match to the modalities of the response.
+  ///
+  ///  A model may have multiple combinations of supported modalities. If the
+  ///  requested modalities do not match any of the supported combinations, an
+  ///  error will be returned.
+  ///
+  ///  An empty list is equivalent to requesting only text.
+  @$pb.TagNumber(20)
+  $core.List<GenerationConfig_Modality> get responseModalities => $_getList(13);
+
+  /// Optional. The speech generation config.
+  @$pb.TagNumber(21)
+  SpeechConfig get speechConfig => $_getN(14);
+  @$pb.TagNumber(21)
+  set speechConfig(SpeechConfig v) {
+    setField(21, v);
+  }
+
+  @$pb.TagNumber(21)
+  $core.bool hasSpeechConfig() => $_has(14);
+  @$pb.TagNumber(21)
+  void clearSpeechConfig() => clearField(21);
+  @$pb.TagNumber(21)
+  SpeechConfig ensureSpeechConfig() => $_ensure(14);
 }
 
 /// Configuration for retrieving grounding content from a `Corpus` or
@@ -586,8 +856,8 @@ class GenerationConfig extends $pb.GeneratedMessage {
 class SemanticRetrieverConfig extends $pb.GeneratedMessage {
   factory SemanticRetrieverConfig({
     $core.String? source,
-    $334.Content? query,
-    $core.Iterable<$21.MetadataFilter>? metadataFilters,
+    $364.Content? query,
+    $core.Iterable<$36.MetadataFilter>? metadataFilters,
     $core.int? maxChunksCount,
     $core.double? minimumRelevanceScore,
   }) {
@@ -623,11 +893,11 @@ class SemanticRetrieverConfig extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'source')
-    ..aOM<$334.Content>(2, _omitFieldNames ? '' : 'query',
-        subBuilder: $334.Content.create)
-    ..pc<$21.MetadataFilter>(
+    ..aOM<$364.Content>(2, _omitFieldNames ? '' : 'query',
+        subBuilder: $364.Content.create)
+    ..pc<$36.MetadataFilter>(
         3, _omitFieldNames ? '' : 'metadataFilters', $pb.PbFieldType.PM,
-        subBuilder: $21.MetadataFilter.create)
+        subBuilder: $36.MetadataFilter.create)
     ..a<$core.int>(
         4, _omitFieldNames ? '' : 'maxChunksCount', $pb.PbFieldType.O3)
     ..a<$core.double>(
@@ -676,9 +946,9 @@ class SemanticRetrieverConfig extends $pb.GeneratedMessage {
   /// Required. Query to use for matching `Chunk`s in the given resource by
   /// similarity.
   @$pb.TagNumber(2)
-  $334.Content get query => $_getN(1);
+  $364.Content get query => $_getN(1);
   @$pb.TagNumber(2)
-  set query($334.Content v) {
+  set query($364.Content v) {
     setField(2, v);
   }
 
@@ -687,12 +957,12 @@ class SemanticRetrieverConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearQuery() => clearField(2);
   @$pb.TagNumber(2)
-  $334.Content ensureQuery() => $_ensure(1);
+  $364.Content ensureQuery() => $_ensure(1);
 
   /// Optional. Filters for selecting `Document`s and/or `Chunk`s from the
   /// resource.
   @$pb.TagNumber(3)
-  $core.List<$21.MetadataFilter> get metadataFilters => $_getList(2);
+  $core.List<$36.MetadataFilter> get metadataFilters => $_getList(2);
 
   /// Optional. Maximum number of relevant `Chunk`s to retrieve.
   @$pb.TagNumber(4)
@@ -726,7 +996,7 @@ class SemanticRetrieverConfig extends $pb.GeneratedMessage {
 class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
   factory GenerateContentResponse_PromptFeedback({
     GenerateContentResponse_PromptFeedback_BlockReason? blockReason,
-    $core.Iterable<$336.SafetyRating>? safetyRatings,
+    $core.Iterable<$365.SafetyRating>? safetyRatings,
   }) {
     final $result = create();
     if (blockReason != null) {
@@ -757,9 +1027,9 @@ class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
             .BLOCK_REASON_UNSPECIFIED,
         valueOf: GenerateContentResponse_PromptFeedback_BlockReason.valueOf,
         enumValues: GenerateContentResponse_PromptFeedback_BlockReason.values)
-    ..pc<$336.SafetyRating>(
+    ..pc<$365.SafetyRating>(
         2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM,
-        subBuilder: $336.SafetyRating.create)
+        subBuilder: $365.SafetyRating.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -808,7 +1078,7 @@ class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
   /// Ratings for safety of the prompt.
   /// There is at most one rating per category.
   @$pb.TagNumber(2)
-  $core.List<$336.SafetyRating> get safetyRatings => $_getList(1);
+  $core.List<$365.SafetyRating> get safetyRatings => $_getList(1);
 }
 
 /// Metadata on the generation request's token usage.
@@ -1074,11 +1344,11 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
 /// A response candidate generated from the model.
 class Candidate extends $pb.GeneratedMessage {
   factory Candidate({
-    $334.Content? content,
+    $364.Content? content,
     Candidate_FinishReason? finishReason,
     $core.int? index,
-    $core.Iterable<$336.SafetyRating>? safetyRatings,
-    $337.CitationMetadata? citationMetadata,
+    $core.Iterable<$365.SafetyRating>? safetyRatings,
+    $366.CitationMetadata? citationMetadata,
     $core.int? tokenCount,
     $core.Iterable<GroundingAttribution>? groundingAttributions,
     GroundingMetadata? groundingMetadata,
@@ -1131,19 +1401,19 @@ class Candidate extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$334.Content>(1, _omitFieldNames ? '' : 'content',
-        subBuilder: $334.Content.create)
+    ..aOM<$364.Content>(1, _omitFieldNames ? '' : 'content',
+        subBuilder: $364.Content.create)
     ..e<Candidate_FinishReason>(
         2, _omitFieldNames ? '' : 'finishReason', $pb.PbFieldType.OE,
         defaultOrMaker: Candidate_FinishReason.FINISH_REASON_UNSPECIFIED,
         valueOf: Candidate_FinishReason.valueOf,
         enumValues: Candidate_FinishReason.values)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'index', $pb.PbFieldType.O3)
-    ..pc<$336.SafetyRating>(
+    ..pc<$365.SafetyRating>(
         5, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM,
-        subBuilder: $336.SafetyRating.create)
-    ..aOM<$337.CitationMetadata>(6, _omitFieldNames ? '' : 'citationMetadata',
-        subBuilder: $337.CitationMetadata.create)
+        subBuilder: $365.SafetyRating.create)
+    ..aOM<$366.CitationMetadata>(6, _omitFieldNames ? '' : 'citationMetadata',
+        subBuilder: $366.CitationMetadata.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'tokenCount', $pb.PbFieldType.O3)
     ..pc<GroundingAttribution>(
         8, _omitFieldNames ? '' : 'groundingAttributions', $pb.PbFieldType.PM,
@@ -1179,9 +1449,9 @@ class Candidate extends $pb.GeneratedMessage {
 
   /// Output only. Generated content returned from the model.
   @$pb.TagNumber(1)
-  $334.Content get content => $_getN(0);
+  $364.Content get content => $_getN(0);
   @$pb.TagNumber(1)
-  set content($334.Content v) {
+  set content($364.Content v) {
     setField(1, v);
   }
 
@@ -1190,7 +1460,7 @@ class Candidate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearContent() => clearField(1);
   @$pb.TagNumber(1)
-  $334.Content ensureContent() => $_ensure(0);
+  $364.Content ensureContent() => $_ensure(0);
 
   ///  Optional. Output only. The reason why the model stopped generating tokens.
   ///
@@ -1224,7 +1494,7 @@ class Candidate extends $pb.GeneratedMessage {
   ///
   ///  There is at most one rating per category.
   @$pb.TagNumber(5)
-  $core.List<$336.SafetyRating> get safetyRatings => $_getList(3);
+  $core.List<$365.SafetyRating> get safetyRatings => $_getList(3);
 
   ///  Output only. Citation information for model-generated candidate.
   ///
@@ -1232,9 +1502,9 @@ class Candidate extends $pb.GeneratedMessage {
   ///  included in the `content`. These are passages that are "recited" from
   ///  copyrighted material in the foundational LLM's training data.
   @$pb.TagNumber(6)
-  $337.CitationMetadata get citationMetadata => $_getN(4);
+  $366.CitationMetadata get citationMetadata => $_getN(4);
   @$pb.TagNumber(6)
-  set citationMetadata($337.CitationMetadata v) {
+  set citationMetadata($366.CitationMetadata v) {
     setField(6, v);
   }
 
@@ -1243,7 +1513,7 @@ class Candidate extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearCitationMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $337.CitationMetadata ensureCitationMetadata() => $_ensure(4);
+  $366.CitationMetadata ensureCitationMetadata() => $_ensure(4);
 
   /// Output only. Token count for this candidate.
   @$pb.TagNumber(7)
@@ -1840,7 +2110,7 @@ class AttributionSourceId extends $pb.GeneratedMessage {
 /// Attribution for a source that contributed to an answer.
 class GroundingAttribution extends $pb.GeneratedMessage {
   factory GroundingAttribution({
-    $334.Content? content,
+    $364.Content? content,
     AttributionSourceId? sourceId,
   }) {
     final $result = create();
@@ -1865,8 +2135,8 @@ class GroundingAttribution extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$334.Content>(2, _omitFieldNames ? '' : 'content',
-        subBuilder: $334.Content.create)
+    ..aOM<$364.Content>(2, _omitFieldNames ? '' : 'content',
+        subBuilder: $364.Content.create)
     ..aOM<AttributionSourceId>(3, _omitFieldNames ? '' : 'sourceId',
         subBuilder: AttributionSourceId.create)
     ..hasRequiredFields = false;
@@ -1897,9 +2167,9 @@ class GroundingAttribution extends $pb.GeneratedMessage {
 
   /// Grounding source content that makes up this attribution.
   @$pb.TagNumber(2)
-  $334.Content get content => $_getN(0);
+  $364.Content get content => $_getN(0);
   @$pb.TagNumber(2)
-  set content($334.Content v) {
+  set content($364.Content v) {
     setField(2, v);
   }
 
@@ -1908,7 +2178,7 @@ class GroundingAttribution extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearContent() => clearField(2);
   @$pb.TagNumber(2)
-  $334.Content ensureContent() => $_ensure(0);
+  $364.Content ensureContent() => $_ensure(0);
 
   /// Output only. Identifier for the source contributing to this attribution.
   @$pb.TagNumber(3)
@@ -2583,11 +2853,11 @@ enum GenerateAnswerRequest_GroundingSource {
 class GenerateAnswerRequest extends $pb.GeneratedMessage {
   factory GenerateAnswerRequest({
     $core.String? model,
-    $core.Iterable<$334.Content>? contents,
-    $core.Iterable<$336.SafetySetting>? safetySettings,
+    $core.Iterable<$364.Content>? contents,
+    $core.Iterable<$365.SafetySetting>? safetySettings,
     $core.double? temperature,
     GenerateAnswerRequest_AnswerStyle? answerStyle,
-    $334.GroundingPassages? inlinePassages,
+    $364.GroundingPassages? inlinePassages,
     SemanticRetrieverConfig? semanticRetriever,
   }) {
     final $result = create();
@@ -2635,11 +2905,11 @@ class GenerateAnswerRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [6, 7])
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..pc<$334.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM,
-        subBuilder: $334.Content.create)
-    ..pc<$336.SafetySetting>(
+    ..pc<$364.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM,
+        subBuilder: $364.Content.create)
+    ..pc<$365.SafetySetting>(
         3, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM,
-        subBuilder: $336.SafetySetting.create)
+        subBuilder: $365.SafetySetting.create)
     ..a<$core.double>(
         4, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
     ..e<GenerateAnswerRequest_AnswerStyle>(
@@ -2648,8 +2918,8 @@ class GenerateAnswerRequest extends $pb.GeneratedMessage {
             GenerateAnswerRequest_AnswerStyle.ANSWER_STYLE_UNSPECIFIED,
         valueOf: GenerateAnswerRequest_AnswerStyle.valueOf,
         enumValues: GenerateAnswerRequest_AnswerStyle.values)
-    ..aOM<$334.GroundingPassages>(6, _omitFieldNames ? '' : 'inlinePassages',
-        subBuilder: $334.GroundingPassages.create)
+    ..aOM<$364.GroundingPassages>(6, _omitFieldNames ? '' : 'inlinePassages',
+        subBuilder: $364.GroundingPassages.create)
     ..aOM<SemanticRetrieverConfig>(
         7, _omitFieldNames ? '' : 'semanticRetriever',
         subBuilder: SemanticRetrieverConfig.create)
@@ -2707,7 +2977,7 @@ class GenerateAnswerRequest extends $pb.GeneratedMessage {
   ///
   ///  Note: `GenerateAnswer` only supports queries in English.
   @$pb.TagNumber(2)
-  $core.List<$334.Content> get contents => $_getList(1);
+  $core.List<$364.Content> get contents => $_getList(1);
 
   ///  Optional. A list of unique `SafetySetting` instances for blocking unsafe
   ///  content.
@@ -2728,7 +2998,7 @@ class GenerateAnswerRequest extends $pb.GeneratedMessage {
   ///  [Safety guidance](https://ai.google.dev/gemini-api/docs/safety-guidance) to
   ///  learn how to incorporate safety considerations in your AI applications.
   @$pb.TagNumber(3)
-  $core.List<$336.SafetySetting> get safetySettings => $_getList(2);
+  $core.List<$365.SafetySetting> get safetySettings => $_getList(2);
 
   ///  Optional. Controls the randomness of the output.
   ///
@@ -2764,9 +3034,9 @@ class GenerateAnswerRequest extends $pb.GeneratedMessage {
 
   /// Passages provided inline with the request.
   @$pb.TagNumber(6)
-  $334.GroundingPassages get inlinePassages => $_getN(5);
+  $364.GroundingPassages get inlinePassages => $_getN(5);
   @$pb.TagNumber(6)
-  set inlinePassages($334.GroundingPassages v) {
+  set inlinePassages($364.GroundingPassages v) {
     setField(6, v);
   }
 
@@ -2775,7 +3045,7 @@ class GenerateAnswerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearInlinePassages() => clearField(6);
   @$pb.TagNumber(6)
-  $334.GroundingPassages ensureInlinePassages() => $_ensure(5);
+  $364.GroundingPassages ensureInlinePassages() => $_ensure(5);
 
   /// Content retrieved from resources created via the Semantic Retriever
   /// API.
@@ -2799,7 +3069,7 @@ class GenerateAnswerRequest extends $pb.GeneratedMessage {
 class GenerateAnswerResponse_InputFeedback extends $pb.GeneratedMessage {
   factory GenerateAnswerResponse_InputFeedback({
     GenerateAnswerResponse_InputFeedback_BlockReason? blockReason,
-    $core.Iterable<$336.SafetyRating>? safetyRatings,
+    $core.Iterable<$365.SafetyRating>? safetyRatings,
   }) {
     final $result = create();
     if (blockReason != null) {
@@ -2830,9 +3100,9 @@ class GenerateAnswerResponse_InputFeedback extends $pb.GeneratedMessage {
             .BLOCK_REASON_UNSPECIFIED,
         valueOf: GenerateAnswerResponse_InputFeedback_BlockReason.valueOf,
         enumValues: GenerateAnswerResponse_InputFeedback_BlockReason.values)
-    ..pc<$336.SafetyRating>(
+    ..pc<$365.SafetyRating>(
         2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM,
-        subBuilder: $336.SafetyRating.create)
+        subBuilder: $365.SafetyRating.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2880,7 +3150,7 @@ class GenerateAnswerResponse_InputFeedback extends $pb.GeneratedMessage {
   /// Ratings for safety of the input.
   /// There is at most one rating per category.
   @$pb.TagNumber(2)
-  $core.List<$336.SafetyRating> get safetyRatings => $_getList(1);
+  $core.List<$365.SafetyRating> get safetyRatings => $_getList(1);
 }
 
 /// Response from the model for a grounded answer.
@@ -3023,7 +3293,7 @@ class GenerateAnswerResponse extends $pb.GeneratedMessage {
 class EmbedContentRequest extends $pb.GeneratedMessage {
   factory EmbedContentRequest({
     $core.String? model,
-    $334.Content? content,
+    $364.Content? content,
     TaskType? taskType,
     $core.String? title,
     $core.int? outputDimensionality,
@@ -3060,8 +3330,8 @@ class EmbedContentRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..aOM<$334.Content>(2, _omitFieldNames ? '' : 'content',
-        subBuilder: $334.Content.create)
+    ..aOM<$364.Content>(2, _omitFieldNames ? '' : 'content',
+        subBuilder: $364.Content.create)
     ..e<TaskType>(3, _omitFieldNames ? '' : 'taskType', $pb.PbFieldType.OE,
         defaultOrMaker: TaskType.TASK_TYPE_UNSPECIFIED,
         valueOf: TaskType.valueOf,
@@ -3115,9 +3385,9 @@ class EmbedContentRequest extends $pb.GeneratedMessage {
   /// Required. The content to embed. Only the `parts.text` fields will be
   /// counted.
   @$pb.TagNumber(2)
-  $334.Content get content => $_getN(1);
+  $364.Content get content => $_getN(1);
   @$pb.TagNumber(2)
-  set content($334.Content v) {
+  set content($364.Content v) {
     setField(2, v);
   }
 
@@ -3126,7 +3396,7 @@ class EmbedContentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearContent() => clearField(2);
   @$pb.TagNumber(2)
-  $334.Content ensureContent() => $_ensure(1);
+  $364.Content ensureContent() => $_ensure(1);
 
   /// Optional. Optional task type for which the embeddings will be used. Can
   /// only be set for `models/embedding-001`.
@@ -3450,7 +3720,7 @@ class BatchEmbedContentsResponse extends $pb.GeneratedMessage {
 class CountTokensRequest extends $pb.GeneratedMessage {
   factory CountTokensRequest({
     $core.String? model,
-    $core.Iterable<$334.Content>? contents,
+    $core.Iterable<$364.Content>? contents,
     GenerateContentRequest? generateContentRequest,
   }) {
     final $result = create();
@@ -3479,8 +3749,8 @@ class CountTokensRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..pc<$334.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM,
-        subBuilder: $334.Content.create)
+    ..pc<$364.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM,
+        subBuilder: $364.Content.create)
     ..aOM<GenerateContentRequest>(
         3, _omitFieldNames ? '' : 'generateContentRequest',
         subBuilder: GenerateContentRequest.create)
@@ -3530,7 +3800,7 @@ class CountTokensRequest extends $pb.GeneratedMessage {
   /// Optional. The input given to the model as a prompt. This field is ignored
   /// when `generate_content_request` is set.
   @$pb.TagNumber(2)
-  $core.List<$334.Content> get contents => $_getList(1);
+  $core.List<$364.Content> get contents => $_getList(1);
 
   /// Optional. The overall input given to the `Model`. This includes the prompt
   /// as well as other model steering information like [system

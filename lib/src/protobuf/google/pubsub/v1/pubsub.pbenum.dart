@@ -103,6 +103,153 @@ class IngestionDataSourceSettings_CloudStorage_State extends $pb.ProtobufEnum {
       : super(v, n);
 }
 
+/// Possible states for managed ingestion from Event Hubs.
+class IngestionDataSourceSettings_AzureEventHubs_State
+    extends $pb.ProtobufEnum {
+  static const IngestionDataSourceSettings_AzureEventHubs_State
+      STATE_UNSPECIFIED = IngestionDataSourceSettings_AzureEventHubs_State._(
+          0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const IngestionDataSourceSettings_AzureEventHubs_State ACTIVE =
+      IngestionDataSourceSettings_AzureEventHubs_State._(
+          1, _omitEnumNames ? '' : 'ACTIVE');
+  static const IngestionDataSourceSettings_AzureEventHubs_State
+      EVENT_HUBS_PERMISSION_DENIED =
+      IngestionDataSourceSettings_AzureEventHubs_State._(
+          2, _omitEnumNames ? '' : 'EVENT_HUBS_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_AzureEventHubs_State
+      PUBLISH_PERMISSION_DENIED =
+      IngestionDataSourceSettings_AzureEventHubs_State._(
+          3, _omitEnumNames ? '' : 'PUBLISH_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_AzureEventHubs_State
+      NAMESPACE_NOT_FOUND = IngestionDataSourceSettings_AzureEventHubs_State._(
+          4, _omitEnumNames ? '' : 'NAMESPACE_NOT_FOUND');
+  static const IngestionDataSourceSettings_AzureEventHubs_State
+      EVENT_HUB_NOT_FOUND = IngestionDataSourceSettings_AzureEventHubs_State._(
+          5, _omitEnumNames ? '' : 'EVENT_HUB_NOT_FOUND');
+  static const IngestionDataSourceSettings_AzureEventHubs_State
+      SUBSCRIPTION_NOT_FOUND =
+      IngestionDataSourceSettings_AzureEventHubs_State._(
+          6, _omitEnumNames ? '' : 'SUBSCRIPTION_NOT_FOUND');
+  static const IngestionDataSourceSettings_AzureEventHubs_State
+      RESOURCE_GROUP_NOT_FOUND =
+      IngestionDataSourceSettings_AzureEventHubs_State._(
+          7, _omitEnumNames ? '' : 'RESOURCE_GROUP_NOT_FOUND');
+
+  static const $core.List<IngestionDataSourceSettings_AzureEventHubs_State>
+      values = <IngestionDataSourceSettings_AzureEventHubs_State>[
+    STATE_UNSPECIFIED,
+    ACTIVE,
+    EVENT_HUBS_PERMISSION_DENIED,
+    PUBLISH_PERMISSION_DENIED,
+    NAMESPACE_NOT_FOUND,
+    EVENT_HUB_NOT_FOUND,
+    SUBSCRIPTION_NOT_FOUND,
+    RESOURCE_GROUP_NOT_FOUND,
+  ];
+
+  static final $core
+      .Map<$core.int, IngestionDataSourceSettings_AzureEventHubs_State>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static IngestionDataSourceSettings_AzureEventHubs_State? valueOf(
+          $core.int value) =>
+      _byValue[value];
+
+  const IngestionDataSourceSettings_AzureEventHubs_State._(
+      $core.int v, $core.String n)
+      : super(v, n);
+}
+
+/// Possible states for managed ingestion from Amazon MSK.
+class IngestionDataSourceSettings_AwsMsk_State extends $pb.ProtobufEnum {
+  static const IngestionDataSourceSettings_AwsMsk_State STATE_UNSPECIFIED =
+      IngestionDataSourceSettings_AwsMsk_State._(
+          0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const IngestionDataSourceSettings_AwsMsk_State ACTIVE =
+      IngestionDataSourceSettings_AwsMsk_State._(
+          1, _omitEnumNames ? '' : 'ACTIVE');
+  static const IngestionDataSourceSettings_AwsMsk_State MSK_PERMISSION_DENIED =
+      IngestionDataSourceSettings_AwsMsk_State._(
+          2, _omitEnumNames ? '' : 'MSK_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_AwsMsk_State
+      PUBLISH_PERMISSION_DENIED = IngestionDataSourceSettings_AwsMsk_State._(
+          3, _omitEnumNames ? '' : 'PUBLISH_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_AwsMsk_State CLUSTER_NOT_FOUND =
+      IngestionDataSourceSettings_AwsMsk_State._(
+          4, _omitEnumNames ? '' : 'CLUSTER_NOT_FOUND');
+  static const IngestionDataSourceSettings_AwsMsk_State TOPIC_NOT_FOUND =
+      IngestionDataSourceSettings_AwsMsk_State._(
+          5, _omitEnumNames ? '' : 'TOPIC_NOT_FOUND');
+
+  static const $core.List<IngestionDataSourceSettings_AwsMsk_State> values =
+      <IngestionDataSourceSettings_AwsMsk_State>[
+    STATE_UNSPECIFIED,
+    ACTIVE,
+    MSK_PERMISSION_DENIED,
+    PUBLISH_PERMISSION_DENIED,
+    CLUSTER_NOT_FOUND,
+    TOPIC_NOT_FOUND,
+  ];
+
+  static final $core.Map<$core.int, IngestionDataSourceSettings_AwsMsk_State>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static IngestionDataSourceSettings_AwsMsk_State? valueOf($core.int value) =>
+      _byValue[value];
+
+  const IngestionDataSourceSettings_AwsMsk_State._($core.int v, $core.String n)
+      : super(v, n);
+}
+
+/// Possible states for managed ingestion from Confluent Cloud.
+class IngestionDataSourceSettings_ConfluentCloud_State
+    extends $pb.ProtobufEnum {
+  static const IngestionDataSourceSettings_ConfluentCloud_State
+      STATE_UNSPECIFIED = IngestionDataSourceSettings_ConfluentCloud_State._(
+          0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const IngestionDataSourceSettings_ConfluentCloud_State ACTIVE =
+      IngestionDataSourceSettings_ConfluentCloud_State._(
+          1, _omitEnumNames ? '' : 'ACTIVE');
+  static const IngestionDataSourceSettings_ConfluentCloud_State
+      CONFLUENT_CLOUD_PERMISSION_DENIED =
+      IngestionDataSourceSettings_ConfluentCloud_State._(
+          2, _omitEnumNames ? '' : 'CONFLUENT_CLOUD_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_ConfluentCloud_State
+      PUBLISH_PERMISSION_DENIED =
+      IngestionDataSourceSettings_ConfluentCloud_State._(
+          3, _omitEnumNames ? '' : 'PUBLISH_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_ConfluentCloud_State
+      UNREACHABLE_BOOTSTRAP_SERVER =
+      IngestionDataSourceSettings_ConfluentCloud_State._(
+          4, _omitEnumNames ? '' : 'UNREACHABLE_BOOTSTRAP_SERVER');
+  static const IngestionDataSourceSettings_ConfluentCloud_State
+      CLUSTER_NOT_FOUND = IngestionDataSourceSettings_ConfluentCloud_State._(
+          5, _omitEnumNames ? '' : 'CLUSTER_NOT_FOUND');
+  static const IngestionDataSourceSettings_ConfluentCloud_State
+      TOPIC_NOT_FOUND = IngestionDataSourceSettings_ConfluentCloud_State._(
+          6, _omitEnumNames ? '' : 'TOPIC_NOT_FOUND');
+
+  static const $core.List<IngestionDataSourceSettings_ConfluentCloud_State>
+      values = <IngestionDataSourceSettings_ConfluentCloud_State>[
+    STATE_UNSPECIFIED,
+    ACTIVE,
+    CONFLUENT_CLOUD_PERMISSION_DENIED,
+    PUBLISH_PERMISSION_DENIED,
+    UNREACHABLE_BOOTSTRAP_SERVER,
+    CLUSTER_NOT_FOUND,
+    TOPIC_NOT_FOUND,
+  ];
+
+  static final $core
+      .Map<$core.int, IngestionDataSourceSettings_ConfluentCloud_State>
+      _byValue = $pb.ProtobufEnum.initByValue(values);
+  static IngestionDataSourceSettings_ConfluentCloud_State? valueOf(
+          $core.int value) =>
+      _byValue[value];
+
+  const IngestionDataSourceSettings_ConfluentCloud_State._(
+      $core.int v, $core.String n)
+      : super(v, n);
+}
+
 /// Severity levels of Platform Logs.
 class PlatformLogsSettings_Severity extends $pb.ProtobufEnum {
   static const PlatformLogsSettings_Severity SEVERITY_UNSPECIFIED =

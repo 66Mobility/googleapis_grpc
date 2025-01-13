@@ -15,7 +15,7 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'online_return_policy.pb.dart' as $224;
+import 'online_return_policy.pb.dart' as $250;
 
 export 'online_return_policy.pb.dart';
 
@@ -23,32 +23,32 @@ export 'online_return_policy.pb.dart';
     'google.shopping.merchant.accounts.v1beta.OnlineReturnPolicyService')
 class OnlineReturnPolicyServiceClient extends $grpc.Client {
   static final _$getOnlineReturnPolicy = $grpc.ClientMethod<
-          $224.GetOnlineReturnPolicyRequest, $224.OnlineReturnPolicy>(
+          $250.GetOnlineReturnPolicyRequest, $250.OnlineReturnPolicy>(
       '/google.shopping.merchant.accounts.v1beta.OnlineReturnPolicyService/GetOnlineReturnPolicy',
-      ($224.GetOnlineReturnPolicyRequest value) => value.writeToBuffer(),
+      ($250.GetOnlineReturnPolicyRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $224.OnlineReturnPolicy.fromBuffer(value));
+          $250.OnlineReturnPolicy.fromBuffer(value));
   static final _$listOnlineReturnPolicies = $grpc.ClientMethod<
-          $224.ListOnlineReturnPoliciesRequest,
-          $224.ListOnlineReturnPoliciesResponse>(
+          $250.ListOnlineReturnPoliciesRequest,
+          $250.ListOnlineReturnPoliciesResponse>(
       '/google.shopping.merchant.accounts.v1beta.OnlineReturnPolicyService/ListOnlineReturnPolicies',
-      ($224.ListOnlineReturnPoliciesRequest value) => value.writeToBuffer(),
+      ($250.ListOnlineReturnPoliciesRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $224.ListOnlineReturnPoliciesResponse.fromBuffer(value));
+          $250.ListOnlineReturnPoliciesResponse.fromBuffer(value));
 
   OnlineReturnPolicyServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$224.OnlineReturnPolicy> getOnlineReturnPolicy(
-      $224.GetOnlineReturnPolicyRequest request,
+  $grpc.ResponseFuture<$250.OnlineReturnPolicy> getOnlineReturnPolicy(
+      $250.GetOnlineReturnPolicyRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getOnlineReturnPolicy, request, options: options);
   }
 
-  $grpc.ResponseFuture<$224.ListOnlineReturnPoliciesResponse>
-      listOnlineReturnPolicies($224.ListOnlineReturnPoliciesRequest request,
+  $grpc.ResponseFuture<$250.ListOnlineReturnPoliciesResponse>
+      listOnlineReturnPolicies($250.ListOnlineReturnPoliciesRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listOnlineReturnPolicies, request,
         options: options);
@@ -62,41 +62,41 @@ abstract class OnlineReturnPolicyServiceBase extends $grpc.Service {
       'google.shopping.merchant.accounts.v1beta.OnlineReturnPolicyService';
 
   OnlineReturnPolicyServiceBase() {
-    $addMethod($grpc.ServiceMethod<$224.GetOnlineReturnPolicyRequest,
-            $224.OnlineReturnPolicy>(
+    $addMethod($grpc.ServiceMethod<$250.GetOnlineReturnPolicyRequest,
+            $250.OnlineReturnPolicy>(
         'GetOnlineReturnPolicy',
         getOnlineReturnPolicy_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $224.GetOnlineReturnPolicyRequest.fromBuffer(value),
-        ($224.OnlineReturnPolicy value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$224.ListOnlineReturnPoliciesRequest,
-            $224.ListOnlineReturnPoliciesResponse>(
+            $250.GetOnlineReturnPolicyRequest.fromBuffer(value),
+        ($250.OnlineReturnPolicy value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$250.ListOnlineReturnPoliciesRequest,
+            $250.ListOnlineReturnPoliciesResponse>(
         'ListOnlineReturnPolicies',
         listOnlineReturnPolicies_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $224.ListOnlineReturnPoliciesRequest.fromBuffer(value),
-        ($224.ListOnlineReturnPoliciesResponse value) =>
+            $250.ListOnlineReturnPoliciesRequest.fromBuffer(value),
+        ($250.ListOnlineReturnPoliciesResponse value) =>
             value.writeToBuffer()));
   }
 
-  $async.Future<$224.OnlineReturnPolicy> getOnlineReturnPolicy_Pre(
+  $async.Future<$250.OnlineReturnPolicy> getOnlineReturnPolicy_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$224.GetOnlineReturnPolicyRequest> request) async {
+      $async.Future<$250.GetOnlineReturnPolicyRequest> request) async {
     return getOnlineReturnPolicy(call, await request);
   }
 
-  $async.Future<$224.ListOnlineReturnPoliciesResponse>
+  $async.Future<$250.ListOnlineReturnPoliciesResponse>
       listOnlineReturnPolicies_Pre($grpc.ServiceCall call,
-          $async.Future<$224.ListOnlineReturnPoliciesRequest> request) async {
+          $async.Future<$250.ListOnlineReturnPoliciesRequest> request) async {
     return listOnlineReturnPolicies(call, await request);
   }
 
-  $async.Future<$224.OnlineReturnPolicy> getOnlineReturnPolicy(
-      $grpc.ServiceCall call, $224.GetOnlineReturnPolicyRequest request);
-  $async.Future<$224.ListOnlineReturnPoliciesResponse> listOnlineReturnPolicies(
-      $grpc.ServiceCall call, $224.ListOnlineReturnPoliciesRequest request);
+  $async.Future<$250.OnlineReturnPolicy> getOnlineReturnPolicy(
+      $grpc.ServiceCall call, $250.GetOnlineReturnPolicyRequest request);
+  $async.Future<$250.ListOnlineReturnPoliciesResponse> listOnlineReturnPolicies(
+      $grpc.ServiceCall call, $250.ListOnlineReturnPoliciesRequest request);
 }

@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $335;
+import '../../protobuf/field_mask.pb.dart' as $361;
 import 'appengine.pbenum.dart';
-import 'application.pb.dart' as $58;
-import 'certificate.pb.dart' as $63;
-import 'domain.pb.dart' as $386;
-import 'domain_mapping.pb.dart' as $64;
-import 'firewall.pb.dart' as $62;
-import 'instance.pb.dart' as $61;
-import 'service.pb.dart' as $59;
-import 'version.pb.dart' as $60;
+import 'application.pb.dart' as $76;
+import 'certificate.pb.dart' as $81;
+import 'domain.pb.dart' as $415;
+import 'domain_mapping.pb.dart' as $82;
+import 'firewall.pb.dart' as $80;
+import 'instance.pb.dart' as $79;
+import 'service.pb.dart' as $77;
+import 'version.pb.dart' as $78;
 
 export 'appengine.pbenum.dart';
 
@@ -95,7 +95,7 @@ class GetApplicationRequest extends $pb.GeneratedMessage {
 /// Request message for `Applications.CreateApplication`.
 class CreateApplicationRequest extends $pb.GeneratedMessage {
   factory CreateApplicationRequest({
-    $58.Application? application,
+    $76.Application? application,
   }) {
     final $result = create();
     if (application != null) {
@@ -116,8 +116,8 @@ class CreateApplicationRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$58.Application>(2, _omitFieldNames ? '' : 'application',
-        subBuilder: $58.Application.create)
+    ..aOM<$76.Application>(2, _omitFieldNames ? '' : 'application',
+        subBuilder: $76.Application.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -147,9 +147,9 @@ class CreateApplicationRequest extends $pb.GeneratedMessage {
 
   /// Application configuration.
   @$pb.TagNumber(2)
-  $58.Application get application => $_getN(0);
+  $76.Application get application => $_getN(0);
   @$pb.TagNumber(2)
-  set application($58.Application v) {
+  set application($76.Application v) {
     setField(2, v);
   }
 
@@ -158,15 +158,15 @@ class CreateApplicationRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearApplication() => clearField(2);
   @$pb.TagNumber(2)
-  $58.Application ensureApplication() => $_ensure(0);
+  $76.Application ensureApplication() => $_ensure(0);
 }
 
 /// Request message for `Applications.UpdateApplication`.
 class UpdateApplicationRequest extends $pb.GeneratedMessage {
   factory UpdateApplicationRequest({
     $core.String? name,
-    $58.Application? application,
-    $335.FieldMask? updateMask,
+    $76.Application? application,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -194,10 +194,10 @@ class UpdateApplicationRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$58.Application>(2, _omitFieldNames ? '' : 'application',
-        subBuilder: $58.Application.create)
-    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$76.Application>(2, _omitFieldNames ? '' : 'application',
+        subBuilder: $76.Application.create)
+    ..aOM<$361.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -240,9 +240,9 @@ class UpdateApplicationRequest extends $pb.GeneratedMessage {
 
   /// An Application containing the updated resource.
   @$pb.TagNumber(2)
-  $58.Application get application => $_getN(1);
+  $76.Application get application => $_getN(1);
   @$pb.TagNumber(2)
-  set application($58.Application v) {
+  set application($76.Application v) {
     setField(2, v);
   }
 
@@ -251,13 +251,13 @@ class UpdateApplicationRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearApplication() => clearField(2);
   @$pb.TagNumber(2)
-  $58.Application ensureApplication() => $_ensure(1);
+  $76.Application ensureApplication() => $_ensure(1);
 
   /// Standard field mask for the set of fields to be updated.
   @$pb.TagNumber(3)
-  $335.FieldMask get updateMask => $_getN(2);
+  $361.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(3, v);
   }
 
@@ -266,7 +266,7 @@ class UpdateApplicationRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $335.FieldMask ensureUpdateMask() => $_ensure(2);
+  $361.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for 'Applications.RepairApplication'.
@@ -438,7 +438,7 @@ class ListServicesRequest extends $pb.GeneratedMessage {
 /// Response message for `Services.ListServices`.
 class ListServicesResponse extends $pb.GeneratedMessage {
   factory ListServicesResponse({
-    $core.Iterable<$59.Service>? services,
+    $core.Iterable<$77.Service>? services,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -463,8 +463,8 @@ class ListServicesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..pc<$59.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM,
-        subBuilder: $59.Service.create)
+    ..pc<$77.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM,
+        subBuilder: $77.Service.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -494,7 +494,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
 
   /// The services belonging to the requested application.
   @$pb.TagNumber(1)
-  $core.List<$59.Service> get services => $_getList(0);
+  $core.List<$77.Service> get services => $_getList(0);
 
   /// Continuation token for fetching the next page of results.
   @$pb.TagNumber(2)
@@ -578,8 +578,8 @@ class GetServiceRequest extends $pb.GeneratedMessage {
 class UpdateServiceRequest extends $pb.GeneratedMessage {
   factory UpdateServiceRequest({
     $core.String? name,
-    $59.Service? service,
-    $335.FieldMask? updateMask,
+    $77.Service? service,
+    $361.FieldMask? updateMask,
     $core.bool? migrateTraffic,
   }) {
     final $result = create();
@@ -611,10 +611,10 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$59.Service>(2, _omitFieldNames ? '' : 'service',
-        subBuilder: $59.Service.create)
-    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$77.Service>(2, _omitFieldNames ? '' : 'service',
+        subBuilder: $77.Service.create)
+    ..aOM<$361.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..aOB(4, _omitFieldNames ? '' : 'migrateTraffic')
     ..hasRequiredFields = false;
 
@@ -658,9 +658,9 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
   /// A Service resource containing the updated service. Only fields set in the
   /// field mask will be updated.
   @$pb.TagNumber(2)
-  $59.Service get service => $_getN(1);
+  $77.Service get service => $_getN(1);
   @$pb.TagNumber(2)
-  set service($59.Service v) {
+  set service($77.Service v) {
     setField(2, v);
   }
 
@@ -669,13 +669,13 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearService() => clearField(2);
   @$pb.TagNumber(2)
-  $59.Service ensureService() => $_ensure(1);
+  $77.Service ensureService() => $_ensure(1);
 
   /// Standard field mask for the set of fields to be updated.
   @$pb.TagNumber(3)
-  $335.FieldMask get updateMask => $_getN(2);
+  $361.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(3, v);
   }
 
@@ -684,7 +684,7 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $335.FieldMask ensureUpdateMask() => $_ensure(2);
+  $361.FieldMask ensureUpdateMask() => $_ensure(2);
 
   /// Set to `true` to gradually shift traffic to one or more versions that you
   /// specify. By default, traffic is shifted immediately.
@@ -901,7 +901,7 @@ class ListVersionsRequest extends $pb.GeneratedMessage {
 /// Response message for `Versions.ListVersions`.
 class ListVersionsResponse extends $pb.GeneratedMessage {
   factory ListVersionsResponse({
-    $core.Iterable<$60.Version>? versions,
+    $core.Iterable<$78.Version>? versions,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -926,8 +926,8 @@ class ListVersionsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..pc<$60.Version>(1, _omitFieldNames ? '' : 'versions', $pb.PbFieldType.PM,
-        subBuilder: $60.Version.create)
+    ..pc<$78.Version>(1, _omitFieldNames ? '' : 'versions', $pb.PbFieldType.PM,
+        subBuilder: $78.Version.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -957,7 +957,7 @@ class ListVersionsResponse extends $pb.GeneratedMessage {
 
   /// The versions belonging to the requested service.
   @$pb.TagNumber(1)
-  $core.List<$60.Version> get versions => $_getList(0);
+  $core.List<$78.Version> get versions => $_getList(0);
 
   /// Continuation token for fetching the next page of results.
   @$pb.TagNumber(2)
@@ -1063,7 +1063,7 @@ class GetVersionRequest extends $pb.GeneratedMessage {
 class CreateVersionRequest extends $pb.GeneratedMessage {
   factory CreateVersionRequest({
     $core.String? parent,
-    $60.Version? version,
+    $78.Version? version,
   }) {
     final $result = create();
     if (parent != null) {
@@ -1088,8 +1088,8 @@ class CreateVersionRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$60.Version>(2, _omitFieldNames ? '' : 'version',
-        subBuilder: $60.Version.create)
+    ..aOM<$78.Version>(2, _omitFieldNames ? '' : 'version',
+        subBuilder: $78.Version.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1132,9 +1132,9 @@ class CreateVersionRequest extends $pb.GeneratedMessage {
 
   /// Application deployment configuration.
   @$pb.TagNumber(2)
-  $60.Version get version => $_getN(1);
+  $78.Version get version => $_getN(1);
   @$pb.TagNumber(2)
-  set version($60.Version v) {
+  set version($78.Version v) {
     setField(2, v);
   }
 
@@ -1143,15 +1143,15 @@ class CreateVersionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearVersion() => clearField(2);
   @$pb.TagNumber(2)
-  $60.Version ensureVersion() => $_ensure(1);
+  $78.Version ensureVersion() => $_ensure(1);
 }
 
 /// Request message for `Versions.UpdateVersion`.
 class UpdateVersionRequest extends $pb.GeneratedMessage {
   factory UpdateVersionRequest({
     $core.String? name,
-    $60.Version? version,
-    $335.FieldMask? updateMask,
+    $78.Version? version,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -1179,10 +1179,10 @@ class UpdateVersionRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$60.Version>(2, _omitFieldNames ? '' : 'version',
-        subBuilder: $60.Version.create)
-    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$78.Version>(2, _omitFieldNames ? '' : 'version',
+        subBuilder: $78.Version.create)
+    ..aOM<$361.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1226,9 +1226,9 @@ class UpdateVersionRequest extends $pb.GeneratedMessage {
   /// A Version containing the updated resource. Only fields set in the field
   /// mask will be updated.
   @$pb.TagNumber(2)
-  $60.Version get version => $_getN(1);
+  $78.Version get version => $_getN(1);
   @$pb.TagNumber(2)
-  set version($60.Version v) {
+  set version($78.Version v) {
     setField(2, v);
   }
 
@@ -1237,13 +1237,13 @@ class UpdateVersionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearVersion() => clearField(2);
   @$pb.TagNumber(2)
-  $60.Version ensureVersion() => $_ensure(1);
+  $78.Version ensureVersion() => $_ensure(1);
 
   /// Standard field mask for the set of fields to be updated.
   @$pb.TagNumber(3)
-  $335.FieldMask get updateMask => $_getN(2);
+  $361.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(3, v);
   }
 
@@ -1252,7 +1252,7 @@ class UpdateVersionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $335.FieldMask ensureUpdateMask() => $_ensure(2);
+  $361.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for `Versions.DeleteVersion`.
@@ -1426,7 +1426,7 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
 /// Response message for `Instances.ListInstances`.
 class ListInstancesResponse extends $pb.GeneratedMessage {
   factory ListInstancesResponse({
-    $core.Iterable<$61.Instance>? instances,
+    $core.Iterable<$79.Instance>? instances,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1451,9 +1451,9 @@ class ListInstancesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..pc<$61.Instance>(
+    ..pc<$79.Instance>(
         1, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM,
-        subBuilder: $61.Instance.create)
+        subBuilder: $79.Instance.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -1484,7 +1484,7 @@ class ListInstancesResponse extends $pb.GeneratedMessage {
 
   /// The instances belonging to the requested version.
   @$pb.TagNumber(1)
-  $core.List<$61.Instance> get instances => $_getList(0);
+  $core.List<$79.Instance> get instances => $_getList(0);
 
   /// Continuation token for fetching the next page of results.
   @$pb.TagNumber(2)
@@ -1848,7 +1848,7 @@ class ListIngressRulesRequest extends $pb.GeneratedMessage {
 /// Response message for `Firewall.ListIngressRules`.
 class ListIngressRulesResponse extends $pb.GeneratedMessage {
   factory ListIngressRulesResponse({
-    $core.Iterable<$62.FirewallRule>? ingressRules,
+    $core.Iterable<$80.FirewallRule>? ingressRules,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1873,9 +1873,9 @@ class ListIngressRulesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..pc<$62.FirewallRule>(
+    ..pc<$80.FirewallRule>(
         1, _omitFieldNames ? '' : 'ingressRules', $pb.PbFieldType.PM,
-        subBuilder: $62.FirewallRule.create)
+        subBuilder: $80.FirewallRule.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -1906,7 +1906,7 @@ class ListIngressRulesResponse extends $pb.GeneratedMessage {
 
   /// The ingress FirewallRules for this application.
   @$pb.TagNumber(1)
-  $core.List<$62.FirewallRule> get ingressRules => $_getList(0);
+  $core.List<$80.FirewallRule> get ingressRules => $_getList(0);
 
   /// Continuation token for fetching the next page of results.
   @$pb.TagNumber(2)
@@ -1926,7 +1926,7 @@ class ListIngressRulesResponse extends $pb.GeneratedMessage {
 class BatchUpdateIngressRulesRequest extends $pb.GeneratedMessage {
   factory BatchUpdateIngressRulesRequest({
     $core.String? name,
-    $core.Iterable<$62.FirewallRule>? ingressRules,
+    $core.Iterable<$80.FirewallRule>? ingressRules,
   }) {
     final $result = create();
     if (name != null) {
@@ -1951,9 +1951,9 @@ class BatchUpdateIngressRulesRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<$62.FirewallRule>(
+    ..pc<$80.FirewallRule>(
         2, _omitFieldNames ? '' : 'ingressRules', $pb.PbFieldType.PM,
-        subBuilder: $62.FirewallRule.create)
+        subBuilder: $80.FirewallRule.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1999,13 +1999,13 @@ class BatchUpdateIngressRulesRequest extends $pb.GeneratedMessage {
 
   /// A list of FirewallRules to replace the existing set.
   @$pb.TagNumber(2)
-  $core.List<$62.FirewallRule> get ingressRules => $_getList(1);
+  $core.List<$80.FirewallRule> get ingressRules => $_getList(1);
 }
 
 /// Response message for `Firewall.UpdateAllIngressRules`.
 class BatchUpdateIngressRulesResponse extends $pb.GeneratedMessage {
   factory BatchUpdateIngressRulesResponse({
-    $core.Iterable<$62.FirewallRule>? ingressRules,
+    $core.Iterable<$80.FirewallRule>? ingressRules,
   }) {
     final $result = create();
     if (ingressRules != null) {
@@ -2026,9 +2026,9 @@ class BatchUpdateIngressRulesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..pc<$62.FirewallRule>(
+    ..pc<$80.FirewallRule>(
         1, _omitFieldNames ? '' : 'ingressRules', $pb.PbFieldType.PM,
-        subBuilder: $62.FirewallRule.create)
+        subBuilder: $80.FirewallRule.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2061,14 +2061,14 @@ class BatchUpdateIngressRulesResponse extends $pb.GeneratedMessage {
 
   /// The full list of ingress FirewallRules for this application.
   @$pb.TagNumber(1)
-  $core.List<$62.FirewallRule> get ingressRules => $_getList(0);
+  $core.List<$80.FirewallRule> get ingressRules => $_getList(0);
 }
 
 /// Request message for `Firewall.CreateIngressRule`.
 class CreateIngressRuleRequest extends $pb.GeneratedMessage {
   factory CreateIngressRuleRequest({
     $core.String? parent,
-    $62.FirewallRule? rule,
+    $80.FirewallRule? rule,
   }) {
     final $result = create();
     if (parent != null) {
@@ -2093,8 +2093,8 @@ class CreateIngressRuleRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$62.FirewallRule>(2, _omitFieldNames ? '' : 'rule',
-        subBuilder: $62.FirewallRule.create)
+    ..aOM<$80.FirewallRule>(2, _omitFieldNames ? '' : 'rule',
+        subBuilder: $80.FirewallRule.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2147,9 +2147,9 @@ class CreateIngressRuleRequest extends $pb.GeneratedMessage {
   ///  last rule in the sequence before the required default allow-all or deny-all
   ///  rule.
   @$pb.TagNumber(2)
-  $62.FirewallRule get rule => $_getN(1);
+  $80.FirewallRule get rule => $_getN(1);
   @$pb.TagNumber(2)
-  set rule($62.FirewallRule v) {
+  set rule($80.FirewallRule v) {
     setField(2, v);
   }
 
@@ -2158,7 +2158,7 @@ class CreateIngressRuleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRule() => clearField(2);
   @$pb.TagNumber(2)
-  $62.FirewallRule ensureRule() => $_ensure(1);
+  $80.FirewallRule ensureRule() => $_ensure(1);
 }
 
 /// Request message for `Firewall.GetIngressRule`.
@@ -2232,8 +2232,8 @@ class GetIngressRuleRequest extends $pb.GeneratedMessage {
 class UpdateIngressRuleRequest extends $pb.GeneratedMessage {
   factory UpdateIngressRuleRequest({
     $core.String? name,
-    $62.FirewallRule? rule,
-    $335.FieldMask? updateMask,
+    $80.FirewallRule? rule,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -2261,10 +2261,10 @@ class UpdateIngressRuleRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$62.FirewallRule>(2, _omitFieldNames ? '' : 'rule',
-        subBuilder: $62.FirewallRule.create)
-    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$80.FirewallRule>(2, _omitFieldNames ? '' : 'rule',
+        subBuilder: $80.FirewallRule.create)
+    ..aOM<$361.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2308,9 +2308,9 @@ class UpdateIngressRuleRequest extends $pb.GeneratedMessage {
 
   /// A FirewallRule containing the updated resource
   @$pb.TagNumber(2)
-  $62.FirewallRule get rule => $_getN(1);
+  $80.FirewallRule get rule => $_getN(1);
   @$pb.TagNumber(2)
-  set rule($62.FirewallRule v) {
+  set rule($80.FirewallRule v) {
     setField(2, v);
   }
 
@@ -2319,13 +2319,13 @@ class UpdateIngressRuleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRule() => clearField(2);
   @$pb.TagNumber(2)
-  $62.FirewallRule ensureRule() => $_ensure(1);
+  $80.FirewallRule ensureRule() => $_ensure(1);
 
   /// Standard field mask for the set of fields to be updated.
   @$pb.TagNumber(3)
-  $335.FieldMask get updateMask => $_getN(2);
+  $361.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(3, v);
   }
 
@@ -2334,7 +2334,7 @@ class UpdateIngressRuleRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $335.FieldMask ensureUpdateMask() => $_ensure(2);
+  $361.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for `Firewall.DeleteIngressRule`.
@@ -2511,7 +2511,7 @@ class ListAuthorizedDomainsRequest extends $pb.GeneratedMessage {
 /// Response message for `AuthorizedDomains.ListAuthorizedDomains`.
 class ListAuthorizedDomainsResponse extends $pb.GeneratedMessage {
   factory ListAuthorizedDomainsResponse({
-    $core.Iterable<$386.AuthorizedDomain>? domains,
+    $core.Iterable<$415.AuthorizedDomain>? domains,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -2536,9 +2536,9 @@ class ListAuthorizedDomainsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..pc<$386.AuthorizedDomain>(
+    ..pc<$415.AuthorizedDomain>(
         1, _omitFieldNames ? '' : 'domains', $pb.PbFieldType.PM,
-        subBuilder: $386.AuthorizedDomain.create)
+        subBuilder: $415.AuthorizedDomain.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -2571,7 +2571,7 @@ class ListAuthorizedDomainsResponse extends $pb.GeneratedMessage {
 
   /// The authorized domains belonging to the user.
   @$pb.TagNumber(1)
-  $core.List<$386.AuthorizedDomain> get domains => $_getList(0);
+  $core.List<$415.AuthorizedDomain> get domains => $_getList(0);
 
   /// Continuation token for fetching the next page of results.
   @$pb.TagNumber(2)
@@ -2717,7 +2717,7 @@ class ListAuthorizedCertificatesRequest extends $pb.GeneratedMessage {
 /// Response message for `AuthorizedCertificates.ListAuthorizedCertificates`.
 class ListAuthorizedCertificatesResponse extends $pb.GeneratedMessage {
   factory ListAuthorizedCertificatesResponse({
-    $core.Iterable<$63.AuthorizedCertificate>? certificates,
+    $core.Iterable<$81.AuthorizedCertificate>? certificates,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -2742,9 +2742,9 @@ class ListAuthorizedCertificatesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..pc<$63.AuthorizedCertificate>(
+    ..pc<$81.AuthorizedCertificate>(
         1, _omitFieldNames ? '' : 'certificates', $pb.PbFieldType.PM,
-        subBuilder: $63.AuthorizedCertificate.create)
+        subBuilder: $81.AuthorizedCertificate.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -2778,7 +2778,7 @@ class ListAuthorizedCertificatesResponse extends $pb.GeneratedMessage {
 
   /// The SSL certificates the user is authorized to administer.
   @$pb.TagNumber(1)
-  $core.List<$63.AuthorizedCertificate> get certificates => $_getList(0);
+  $core.List<$81.AuthorizedCertificate> get certificates => $_getList(0);
 
   /// Continuation token for fetching the next page of results.
   @$pb.TagNumber(2)
@@ -2890,7 +2890,7 @@ class GetAuthorizedCertificateRequest extends $pb.GeneratedMessage {
 class CreateAuthorizedCertificateRequest extends $pb.GeneratedMessage {
   factory CreateAuthorizedCertificateRequest({
     $core.String? parent,
-    $63.AuthorizedCertificate? certificate,
+    $81.AuthorizedCertificate? certificate,
   }) {
     final $result = create();
     if (parent != null) {
@@ -2915,8 +2915,8 @@ class CreateAuthorizedCertificateRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$63.AuthorizedCertificate>(2, _omitFieldNames ? '' : 'certificate',
-        subBuilder: $63.AuthorizedCertificate.create)
+    ..aOM<$81.AuthorizedCertificate>(2, _omitFieldNames ? '' : 'certificate',
+        subBuilder: $81.AuthorizedCertificate.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2962,9 +2962,9 @@ class CreateAuthorizedCertificateRequest extends $pb.GeneratedMessage {
 
   /// SSL certificate data.
   @$pb.TagNumber(2)
-  $63.AuthorizedCertificate get certificate => $_getN(1);
+  $81.AuthorizedCertificate get certificate => $_getN(1);
   @$pb.TagNumber(2)
-  set certificate($63.AuthorizedCertificate v) {
+  set certificate($81.AuthorizedCertificate v) {
     setField(2, v);
   }
 
@@ -2973,15 +2973,15 @@ class CreateAuthorizedCertificateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCertificate() => clearField(2);
   @$pb.TagNumber(2)
-  $63.AuthorizedCertificate ensureCertificate() => $_ensure(1);
+  $81.AuthorizedCertificate ensureCertificate() => $_ensure(1);
 }
 
 /// Request message for `AuthorizedCertificates.UpdateAuthorizedCertificate`.
 class UpdateAuthorizedCertificateRequest extends $pb.GeneratedMessage {
   factory UpdateAuthorizedCertificateRequest({
     $core.String? name,
-    $63.AuthorizedCertificate? certificate,
-    $335.FieldMask? updateMask,
+    $81.AuthorizedCertificate? certificate,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -3009,10 +3009,10 @@ class UpdateAuthorizedCertificateRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$63.AuthorizedCertificate>(2, _omitFieldNames ? '' : 'certificate',
-        subBuilder: $63.AuthorizedCertificate.create)
-    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$81.AuthorizedCertificate>(2, _omitFieldNames ? '' : 'certificate',
+        subBuilder: $81.AuthorizedCertificate.create)
+    ..aOM<$361.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3060,9 +3060,9 @@ class UpdateAuthorizedCertificateRequest extends $pb.GeneratedMessage {
   /// An `AuthorizedCertificate` containing the updated resource. Only fields set
   /// in the field mask will be updated.
   @$pb.TagNumber(2)
-  $63.AuthorizedCertificate get certificate => $_getN(1);
+  $81.AuthorizedCertificate get certificate => $_getN(1);
   @$pb.TagNumber(2)
-  set certificate($63.AuthorizedCertificate v) {
+  set certificate($81.AuthorizedCertificate v) {
     setField(2, v);
   }
 
@@ -3071,14 +3071,14 @@ class UpdateAuthorizedCertificateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCertificate() => clearField(2);
   @$pb.TagNumber(2)
-  $63.AuthorizedCertificate ensureCertificate() => $_ensure(1);
+  $81.AuthorizedCertificate ensureCertificate() => $_ensure(1);
 
   /// Standard field mask for the set of fields to be updated. Updates are only
   /// supported on the `certificate_raw_data` and `display_name` fields.
   @$pb.TagNumber(3)
-  $335.FieldMask get updateMask => $_getN(2);
+  $361.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(3, v);
   }
 
@@ -3087,7 +3087,7 @@ class UpdateAuthorizedCertificateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $335.FieldMask ensureUpdateMask() => $_ensure(2);
+  $361.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for `AuthorizedCertificates.DeleteAuthorizedCertificate`.
@@ -3265,7 +3265,7 @@ class ListDomainMappingsRequest extends $pb.GeneratedMessage {
 /// Response message for `DomainMappings.ListDomainMappings`.
 class ListDomainMappingsResponse extends $pb.GeneratedMessage {
   factory ListDomainMappingsResponse({
-    $core.Iterable<$64.DomainMapping>? domainMappings,
+    $core.Iterable<$82.DomainMapping>? domainMappings,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -3290,9 +3290,9 @@ class ListDomainMappingsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..pc<$64.DomainMapping>(
+    ..pc<$82.DomainMapping>(
         1, _omitFieldNames ? '' : 'domainMappings', $pb.PbFieldType.PM,
-        subBuilder: $64.DomainMapping.create)
+        subBuilder: $82.DomainMapping.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -3324,7 +3324,7 @@ class ListDomainMappingsResponse extends $pb.GeneratedMessage {
 
   /// The domain mappings for the application.
   @$pb.TagNumber(1)
-  $core.List<$64.DomainMapping> get domainMappings => $_getList(0);
+  $core.List<$82.DomainMapping> get domainMappings => $_getList(0);
 
   /// Continuation token for fetching the next page of results.
   @$pb.TagNumber(2)
@@ -3411,7 +3411,7 @@ class GetDomainMappingRequest extends $pb.GeneratedMessage {
 class CreateDomainMappingRequest extends $pb.GeneratedMessage {
   factory CreateDomainMappingRequest({
     $core.String? parent,
-    $64.DomainMapping? domainMapping,
+    $82.DomainMapping? domainMapping,
     DomainOverrideStrategy? overrideStrategy,
   }) {
     final $result = create();
@@ -3440,8 +3440,8 @@ class CreateDomainMappingRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$64.DomainMapping>(2, _omitFieldNames ? '' : 'domainMapping',
-        subBuilder: $64.DomainMapping.create)
+    ..aOM<$82.DomainMapping>(2, _omitFieldNames ? '' : 'domainMapping',
+        subBuilder: $82.DomainMapping.create)
     ..e<DomainOverrideStrategy>(
         4, _omitFieldNames ? '' : 'overrideStrategy', $pb.PbFieldType.OE,
         defaultOrMaker:
@@ -3491,9 +3491,9 @@ class CreateDomainMappingRequest extends $pb.GeneratedMessage {
 
   /// Domain mapping configuration.
   @$pb.TagNumber(2)
-  $64.DomainMapping get domainMapping => $_getN(1);
+  $82.DomainMapping get domainMapping => $_getN(1);
   @$pb.TagNumber(2)
-  set domainMapping($64.DomainMapping v) {
+  set domainMapping($82.DomainMapping v) {
     setField(2, v);
   }
 
@@ -3502,7 +3502,7 @@ class CreateDomainMappingRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDomainMapping() => clearField(2);
   @$pb.TagNumber(2)
-  $64.DomainMapping ensureDomainMapping() => $_ensure(1);
+  $82.DomainMapping ensureDomainMapping() => $_ensure(1);
 
   /// Whether the domain creation should override any existing mappings for this
   /// domain. By default, overrides are rejected.
@@ -3523,8 +3523,8 @@ class CreateDomainMappingRequest extends $pb.GeneratedMessage {
 class UpdateDomainMappingRequest extends $pb.GeneratedMessage {
   factory UpdateDomainMappingRequest({
     $core.String? name,
-    $64.DomainMapping? domainMapping,
-    $335.FieldMask? updateMask,
+    $82.DomainMapping? domainMapping,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -3552,10 +3552,10 @@ class UpdateDomainMappingRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$64.DomainMapping>(2, _omitFieldNames ? '' : 'domainMapping',
-        subBuilder: $64.DomainMapping.create)
-    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$82.DomainMapping>(2, _omitFieldNames ? '' : 'domainMapping',
+        subBuilder: $82.DomainMapping.create)
+    ..aOM<$361.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3601,9 +3601,9 @@ class UpdateDomainMappingRequest extends $pb.GeneratedMessage {
   /// A domain mapping containing the updated resource. Only fields set
   /// in the field mask will be updated.
   @$pb.TagNumber(2)
-  $64.DomainMapping get domainMapping => $_getN(1);
+  $82.DomainMapping get domainMapping => $_getN(1);
   @$pb.TagNumber(2)
-  set domainMapping($64.DomainMapping v) {
+  set domainMapping($82.DomainMapping v) {
     setField(2, v);
   }
 
@@ -3612,13 +3612,13 @@ class UpdateDomainMappingRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDomainMapping() => clearField(2);
   @$pb.TagNumber(2)
-  $64.DomainMapping ensureDomainMapping() => $_ensure(1);
+  $82.DomainMapping ensureDomainMapping() => $_ensure(1);
 
   /// Standard field mask for the set of fields to be updated.
   @$pb.TagNumber(3)
-  $335.FieldMask get updateMask => $_getN(2);
+  $361.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(3, v);
   }
 
@@ -3627,7 +3627,7 @@ class UpdateDomainMappingRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $335.FieldMask ensureUpdateMask() => $_ensure(2);
+  $361.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for `DomainMappings.DeleteDomainMapping`.

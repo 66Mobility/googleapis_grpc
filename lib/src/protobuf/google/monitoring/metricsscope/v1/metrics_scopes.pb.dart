@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $304;
-import 'metrics_scope.pb.dart' as $190;
+import '../../../protobuf/timestamp.pb.dart' as $330;
+import 'metrics_scope.pb.dart' as $216;
 import 'metrics_scopes.pbenum.dart';
 
 export 'metrics_scopes.pbenum.dart';
@@ -163,7 +163,7 @@ class ListMetricsScopesByMonitoredProjectRequest extends $pb.GeneratedMessage {
 /// Response for the `ListMetricsScopesByMonitoredProject` method.
 class ListMetricsScopesByMonitoredProjectResponse extends $pb.GeneratedMessage {
   factory ListMetricsScopesByMonitoredProjectResponse({
-    $core.Iterable<$190.MetricsScope>? metricsScopes,
+    $core.Iterable<$216.MetricsScope>? metricsScopes,
   }) {
     final $result = create();
     if (metricsScopes != null) {
@@ -185,9 +185,9 @@ class ListMetricsScopesByMonitoredProjectResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.metricsscope.v1'),
       createEmptyInstance: create)
-    ..pc<$190.MetricsScope>(
+    ..pc<$216.MetricsScope>(
         1, _omitFieldNames ? '' : 'metricsScopes', $pb.PbFieldType.PM,
-        subBuilder: $190.MetricsScope.create)
+        subBuilder: $216.MetricsScope.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -222,14 +222,14 @@ class ListMetricsScopesByMonitoredProjectResponse extends $pb.GeneratedMessage {
   /// A set of all metrics scopes that the specified monitored project has been
   /// added to.
   @$pb.TagNumber(1)
-  $core.List<$190.MetricsScope> get metricsScopes => $_getList(0);
+  $core.List<$216.MetricsScope> get metricsScopes => $_getList(0);
 }
 
 /// Request for the `CreateMonitoredProject` method.
 class CreateMonitoredProjectRequest extends $pb.GeneratedMessage {
   factory CreateMonitoredProjectRequest({
     $core.String? parent,
-    $190.MonitoredProject? monitoredProject,
+    $216.MonitoredProject? monitoredProject,
   }) {
     final $result = create();
     if (parent != null) {
@@ -254,8 +254,8 @@ class CreateMonitoredProjectRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.monitoring.metricsscope.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$190.MonitoredProject>(2, _omitFieldNames ? '' : 'monitoredProject',
-        subBuilder: $190.MonitoredProject.create)
+    ..aOM<$216.MonitoredProject>(2, _omitFieldNames ? '' : 'monitoredProject',
+        subBuilder: $216.MonitoredProject.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -306,9 +306,9 @@ class CreateMonitoredProjectRequest extends $pb.GeneratedMessage {
   /// ignored. The `monitored_project.name` must be in the format:
   /// `locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}/projects/{MONITORED_PROJECT_ID_OR_NUMBER}`
   @$pb.TagNumber(2)
-  $190.MonitoredProject get monitoredProject => $_getN(1);
+  $216.MonitoredProject get monitoredProject => $_getN(1);
   @$pb.TagNumber(2)
-  set monitoredProject($190.MonitoredProject v) {
+  set monitoredProject($216.MonitoredProject v) {
     setField(2, v);
   }
 
@@ -317,7 +317,7 @@ class CreateMonitoredProjectRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearMonitoredProject() => clearField(2);
   @$pb.TagNumber(2)
-  $190.MonitoredProject ensureMonitoredProject() => $_ensure(1);
+  $216.MonitoredProject ensureMonitoredProject() => $_ensure(1);
 }
 
 /// Request for the `DeleteMonitoredProject` method.
@@ -399,8 +399,8 @@ class DeleteMonitoredProjectRequest extends $pb.GeneratedMessage {
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
     OperationMetadata_State? state,
-    $304.Timestamp? createTime,
-    $304.Timestamp? updateTime,
+    $330.Timestamp? createTime,
+    $330.Timestamp? updateTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -432,10 +432,10 @@ class OperationMetadata extends $pb.GeneratedMessage {
         defaultOrMaker: OperationMetadata_State.STATE_UNSPECIFIED,
         valueOf: OperationMetadata_State.valueOf,
         enumValues: OperationMetadata_State.values)
-    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -476,9 +476,9 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time when the batch request was received.
   @$pb.TagNumber(5)
-  $304.Timestamp get createTime => $_getN(1);
+  $330.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(5)
-  set createTime($304.Timestamp v) {
+  set createTime($330.Timestamp v) {
     setField(5, v);
   }
 
@@ -487,13 +487,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $304.Timestamp ensureCreateTime() => $_ensure(1);
+  $330.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// The time when the operation result was last updated.
   @$pb.TagNumber(6)
-  $304.Timestamp get updateTime => $_getN(2);
+  $330.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(6)
-  set updateTime($304.Timestamp v) {
+  set updateTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -502,7 +502,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureUpdateTime() => $_ensure(2);
+  $330.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

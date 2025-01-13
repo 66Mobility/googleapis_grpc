@@ -15,26 +15,26 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'area_insights_service.pb.dart' as $159;
+import 'area_insights_service.pb.dart' as $185;
 
 export 'area_insights_service.pb.dart';
 
 @$pb.GrpcServiceName('google.maps.areainsights.v1.AreaInsights')
 class AreaInsightsClient extends $grpc.Client {
   static final _$computeInsights = $grpc.ClientMethod<
-          $159.ComputeInsightsRequest, $159.ComputeInsightsResponse>(
+          $185.ComputeInsightsRequest, $185.ComputeInsightsResponse>(
       '/google.maps.areainsights.v1.AreaInsights/ComputeInsights',
-      ($159.ComputeInsightsRequest value) => value.writeToBuffer(),
+      ($185.ComputeInsightsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $159.ComputeInsightsResponse.fromBuffer(value));
+          $185.ComputeInsightsResponse.fromBuffer(value));
 
   AreaInsightsClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$159.ComputeInsightsResponse> computeInsights(
-      $159.ComputeInsightsRequest request,
+  $grpc.ResponseFuture<$185.ComputeInsightsResponse> computeInsights(
+      $185.ComputeInsightsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$computeInsights, request, options: options);
   }
@@ -45,23 +45,23 @@ abstract class AreaInsightsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.maps.areainsights.v1.AreaInsights';
 
   AreaInsightsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$159.ComputeInsightsRequest,
-            $159.ComputeInsightsResponse>(
+    $addMethod($grpc.ServiceMethod<$185.ComputeInsightsRequest,
+            $185.ComputeInsightsResponse>(
         'ComputeInsights',
         computeInsights_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $159.ComputeInsightsRequest.fromBuffer(value),
-        ($159.ComputeInsightsResponse value) => value.writeToBuffer()));
+            $185.ComputeInsightsRequest.fromBuffer(value),
+        ($185.ComputeInsightsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$159.ComputeInsightsResponse> computeInsights_Pre(
+  $async.Future<$185.ComputeInsightsResponse> computeInsights_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$159.ComputeInsightsRequest> request) async {
+      $async.Future<$185.ComputeInsightsRequest> request) async {
     return computeInsights(call, await request);
   }
 
-  $async.Future<$159.ComputeInsightsResponse> computeInsights(
-      $grpc.ServiceCall call, $159.ComputeInsightsRequest request);
+  $async.Future<$185.ComputeInsightsResponse> computeInsights(
+      $grpc.ServiceCall call, $185.ComputeInsightsRequest request);
 }

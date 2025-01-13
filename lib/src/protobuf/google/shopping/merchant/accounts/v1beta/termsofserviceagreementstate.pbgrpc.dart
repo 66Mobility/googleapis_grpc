@@ -15,7 +15,7 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'termsofserviceagreementstate.pb.dart' as $229;
+import 'termsofserviceagreementstate.pb.dart' as $255;
 
 export 'termsofserviceagreementstate.pb.dart';
 
@@ -23,40 +23,40 @@ export 'termsofserviceagreementstate.pb.dart';
     'google.shopping.merchant.accounts.v1beta.TermsOfServiceAgreementStateService')
 class TermsOfServiceAgreementStateServiceClient extends $grpc.Client {
   static final _$getTermsOfServiceAgreementState = $grpc.ClientMethod<
-          $229.GetTermsOfServiceAgreementStateRequest,
-          $229.TermsOfServiceAgreementState>(
+          $255.GetTermsOfServiceAgreementStateRequest,
+          $255.TermsOfServiceAgreementState>(
       '/google.shopping.merchant.accounts.v1beta.TermsOfServiceAgreementStateService/GetTermsOfServiceAgreementState',
-      ($229.GetTermsOfServiceAgreementStateRequest value) =>
+      ($255.GetTermsOfServiceAgreementStateRequest value) =>
           value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $229.TermsOfServiceAgreementState.fromBuffer(value));
+          $255.TermsOfServiceAgreementState.fromBuffer(value));
   static final _$retrieveForApplicationTermsOfServiceAgreementState =
       $grpc.ClientMethod<
-              $229.RetrieveForApplicationTermsOfServiceAgreementStateRequest,
-              $229.TermsOfServiceAgreementState>(
+              $255.RetrieveForApplicationTermsOfServiceAgreementStateRequest,
+              $255.TermsOfServiceAgreementState>(
           '/google.shopping.merchant.accounts.v1beta.TermsOfServiceAgreementStateService/RetrieveForApplicationTermsOfServiceAgreementState',
-          ($229.RetrieveForApplicationTermsOfServiceAgreementStateRequest
+          ($255.RetrieveForApplicationTermsOfServiceAgreementStateRequest
                   value) =>
               value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $229.TermsOfServiceAgreementState.fromBuffer(value));
+              $255.TermsOfServiceAgreementState.fromBuffer(value));
 
   TermsOfServiceAgreementStateServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$229.TermsOfServiceAgreementState>
+  $grpc.ResponseFuture<$255.TermsOfServiceAgreementState>
       getTermsOfServiceAgreementState(
-          $229.GetTermsOfServiceAgreementStateRequest request,
+          $255.GetTermsOfServiceAgreementStateRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getTermsOfServiceAgreementState, request,
         options: options);
   }
 
-  $grpc.ResponseFuture<$229.TermsOfServiceAgreementState>
+  $grpc.ResponseFuture<$255.TermsOfServiceAgreementState>
       retrieveForApplicationTermsOfServiceAgreementState(
-          $229.RetrieveForApplicationTermsOfServiceAgreementStateRequest
+          $255.RetrieveForApplicationTermsOfServiceAgreementStateRequest
               request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(
@@ -72,53 +72,53 @@ abstract class TermsOfServiceAgreementStateServiceBase extends $grpc.Service {
       'google.shopping.merchant.accounts.v1beta.TermsOfServiceAgreementStateService';
 
   TermsOfServiceAgreementStateServiceBase() {
-    $addMethod($grpc.ServiceMethod<$229.GetTermsOfServiceAgreementStateRequest,
-            $229.TermsOfServiceAgreementState>(
+    $addMethod($grpc.ServiceMethod<$255.GetTermsOfServiceAgreementStateRequest,
+            $255.TermsOfServiceAgreementState>(
         'GetTermsOfServiceAgreementState',
         getTermsOfServiceAgreementState_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $229.GetTermsOfServiceAgreementStateRequest.fromBuffer(value),
-        ($229.TermsOfServiceAgreementState value) => value.writeToBuffer()));
+            $255.GetTermsOfServiceAgreementStateRequest.fromBuffer(value),
+        ($255.TermsOfServiceAgreementState value) => value.writeToBuffer()));
     $addMethod($grpc.ServiceMethod<
-            $229.RetrieveForApplicationTermsOfServiceAgreementStateRequest,
-            $229.TermsOfServiceAgreementState>(
+            $255.RetrieveForApplicationTermsOfServiceAgreementStateRequest,
+            $255.TermsOfServiceAgreementState>(
         'RetrieveForApplicationTermsOfServiceAgreementState',
         retrieveForApplicationTermsOfServiceAgreementState_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $229.RetrieveForApplicationTermsOfServiceAgreementStateRequest
+            $255.RetrieveForApplicationTermsOfServiceAgreementStateRequest
                 .fromBuffer(value),
-        ($229.TermsOfServiceAgreementState value) => value.writeToBuffer()));
+        ($255.TermsOfServiceAgreementState value) => value.writeToBuffer()));
   }
 
-  $async.Future<$229.TermsOfServiceAgreementState>
+  $async.Future<$255.TermsOfServiceAgreementState>
       getTermsOfServiceAgreementState_Pre(
           $grpc.ServiceCall call,
-          $async.Future<$229.GetTermsOfServiceAgreementStateRequest>
+          $async.Future<$255.GetTermsOfServiceAgreementStateRequest>
               request) async {
     return getTermsOfServiceAgreementState(call, await request);
   }
 
-  $async.Future<$229.TermsOfServiceAgreementState>
+  $async.Future<$255.TermsOfServiceAgreementState>
       retrieveForApplicationTermsOfServiceAgreementState_Pre(
           $grpc.ServiceCall call,
           $async.Future<
-                  $229
+                  $255
                   .RetrieveForApplicationTermsOfServiceAgreementStateRequest>
               request) async {
     return retrieveForApplicationTermsOfServiceAgreementState(
         call, await request);
   }
 
-  $async.Future<$229.TermsOfServiceAgreementState>
+  $async.Future<$255.TermsOfServiceAgreementState>
       getTermsOfServiceAgreementState($grpc.ServiceCall call,
-          $229.GetTermsOfServiceAgreementStateRequest request);
-  $async.Future<$229.TermsOfServiceAgreementState>
+          $255.GetTermsOfServiceAgreementStateRequest request);
+  $async.Future<$255.TermsOfServiceAgreementState>
       retrieveForApplicationTermsOfServiceAgreementState(
           $grpc.ServiceCall call,
-          $229.RetrieveForApplicationTermsOfServiceAgreementStateRequest
+          $255.RetrieveForApplicationTermsOfServiceAgreementStateRequest
               request);
 }

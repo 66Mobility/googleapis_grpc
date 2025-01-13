@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $263;
+import '../../../protobuf/struct.pb.dart' as $289;
 import 'content.pbenum.dart';
 
 export 'content.pbenum.dart';
@@ -672,6 +672,49 @@ class CodeExecutionResult extends $pb.GeneratedMessage {
   void clearOutput() => clearField(2);
 }
 
+/// GoogleSearch tool type.
+/// Tool to support Google Search in Model. Powered by Google.
+class Tool_GoogleSearch extends $pb.GeneratedMessage {
+  factory Tool_GoogleSearch() => create();
+  Tool_GoogleSearch._() : super();
+  factory Tool_GoogleSearch.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Tool_GoogleSearch.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Tool.GoogleSearch',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  Tool_GoogleSearch clone() => Tool_GoogleSearch()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Tool_GoogleSearch copyWith(void Function(Tool_GoogleSearch) updates) =>
+      super.copyWith((message) => updates(message as Tool_GoogleSearch))
+          as Tool_GoogleSearch;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static Tool_GoogleSearch create() => Tool_GoogleSearch._();
+  Tool_GoogleSearch createEmptyInstance() => create();
+  static $pb.PbList<Tool_GoogleSearch> createRepeated() =>
+      $pb.PbList<Tool_GoogleSearch>();
+  @$core.pragma('dart2js:noInline')
+  static Tool_GoogleSearch getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<Tool_GoogleSearch>(create);
+  static Tool_GoogleSearch? _defaultInstance;
+}
+
 ///  Tool details that the model may use to generate response.
 ///
 ///  A `Tool` is a piece of code that enables the system to interact with
@@ -682,6 +725,7 @@ class Tool extends $pb.GeneratedMessage {
     $core.Iterable<FunctionDeclaration>? functionDeclarations,
     GoogleSearchRetrieval? googleSearchRetrieval,
     CodeExecution? codeExecution,
+    Tool_GoogleSearch? googleSearch,
   }) {
     final $result = create();
     if (functionDeclarations != null) {
@@ -692,6 +736,9 @@ class Tool extends $pb.GeneratedMessage {
     }
     if (codeExecution != null) {
       $result.codeExecution = codeExecution;
+    }
+    if (googleSearch != null) {
+      $result.googleSearch = googleSearch;
     }
     return $result;
   }
@@ -716,6 +763,8 @@ class Tool extends $pb.GeneratedMessage {
         subBuilder: GoogleSearchRetrieval.create)
     ..aOM<CodeExecution>(3, _omitFieldNames ? '' : 'codeExecution',
         subBuilder: CodeExecution.create)
+    ..aOM<Tool_GoogleSearch>(4, _omitFieldNames ? '' : 'googleSearch',
+        subBuilder: Tool_GoogleSearch.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -784,6 +833,22 @@ class Tool extends $pb.GeneratedMessage {
   void clearCodeExecution() => clearField(3);
   @$pb.TagNumber(3)
   CodeExecution ensureCodeExecution() => $_ensure(2);
+
+  /// Optional. GoogleSearch tool type.
+  /// Tool to support Google Search in Model. Powered by Google.
+  @$pb.TagNumber(4)
+  Tool_GoogleSearch get googleSearch => $_getN(3);
+  @$pb.TagNumber(4)
+  set googleSearch(Tool_GoogleSearch v) {
+    setField(4, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasGoogleSearch() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearGoogleSearch() => clearField(4);
+  @$pb.TagNumber(4)
+  Tool_GoogleSearch ensureGoogleSearch() => $_ensure(3);
 }
 
 /// Tool to retrieve public web data for grounding, powered by Google.
@@ -1154,6 +1219,7 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? description,
     Schema? parameters,
+    Schema? response,
   }) {
     final $result = create();
     if (name != null) {
@@ -1164,6 +1230,9 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
     }
     if (parameters != null) {
       $result.parameters = parameters;
+    }
+    if (response != null) {
+      $result.response = response;
     }
     return $result;
   }
@@ -1183,6 +1252,8 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOM<Schema>(3, _omitFieldNames ? '' : 'parameters',
+        subBuilder: Schema.create)
+    ..aOM<Schema>(4, _omitFieldNames ? '' : 'response',
         subBuilder: Schema.create)
     ..hasRequiredFields = false;
 
@@ -1254,6 +1325,23 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
   void clearParameters() => clearField(3);
   @$pb.TagNumber(3)
   Schema ensureParameters() => $_ensure(2);
+
+  /// Optional. Describes the output from this function in JSON Schema format.
+  /// Reflects the Open API 3.03 Response Object. The Schema defines the type
+  /// used for the response value of the function.
+  @$pb.TagNumber(4)
+  Schema get response => $_getN(3);
+  @$pb.TagNumber(4)
+  set response(Schema v) {
+    setField(4, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasResponse() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearResponse() => clearField(4);
+  @$pb.TagNumber(4)
+  Schema ensureResponse() => $_ensure(3);
 }
 
 /// A predicted `FunctionCall` returned from the model that contains
@@ -1262,7 +1350,8 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
 class FunctionCall extends $pb.GeneratedMessage {
   factory FunctionCall({
     $core.String? name,
-    $263.Struct? args,
+    $289.Struct? args,
+    $core.String? id,
   }) {
     final $result = create();
     if (name != null) {
@@ -1270,6 +1359,9 @@ class FunctionCall extends $pb.GeneratedMessage {
     }
     if (args != null) {
       $result.args = args;
+    }
+    if (id != null) {
+      $result.id = id;
     }
     return $result;
   }
@@ -1287,8 +1379,9 @@ class FunctionCall extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'args',
-        subBuilder: $263.Struct.create)
+    ..aOM<$289.Struct>(2, _omitFieldNames ? '' : 'args',
+        subBuilder: $289.Struct.create)
+    ..aOS(3, _omitFieldNames ? '' : 'id')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1331,9 +1424,9 @@ class FunctionCall extends $pb.GeneratedMessage {
 
   /// Optional. The function parameters and values in JSON object format.
   @$pb.TagNumber(2)
-  $263.Struct get args => $_getN(1);
+  $289.Struct get args => $_getN(1);
   @$pb.TagNumber(2)
-  set args($263.Struct v) {
+  set args($289.Struct v) {
     setField(2, v);
   }
 
@@ -1342,7 +1435,21 @@ class FunctionCall extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearArgs() => clearField(2);
   @$pb.TagNumber(2)
-  $263.Struct ensureArgs() => $_ensure(1);
+  $289.Struct ensureArgs() => $_ensure(1);
+
+  /// Optional. The unique id of the function call. If populated, the client to
+  /// execute the `function_call` and return the response with the matching `id`.
+  @$pb.TagNumber(3)
+  $core.String get id => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set id($core.String v) {
+    $_setString(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasId() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearId() => clearField(3);
 }
 
 /// The result output from a `FunctionCall` that contains a string
@@ -1353,7 +1460,8 @@ class FunctionCall extends $pb.GeneratedMessage {
 class FunctionResponse extends $pb.GeneratedMessage {
   factory FunctionResponse({
     $core.String? name,
-    $263.Struct? response,
+    $289.Struct? response,
+    $core.String? id,
   }) {
     final $result = create();
     if (name != null) {
@@ -1361,6 +1469,9 @@ class FunctionResponse extends $pb.GeneratedMessage {
     }
     if (response != null) {
       $result.response = response;
+    }
+    if (id != null) {
+      $result.id = id;
     }
     return $result;
   }
@@ -1378,8 +1489,9 @@ class FunctionResponse extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'response',
-        subBuilder: $263.Struct.create)
+    ..aOM<$289.Struct>(2, _omitFieldNames ? '' : 'response',
+        subBuilder: $289.Struct.create)
+    ..aOS(3, _omitFieldNames ? '' : 'id')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1422,9 +1534,9 @@ class FunctionResponse extends $pb.GeneratedMessage {
 
   /// Required. The function response in JSON object format.
   @$pb.TagNumber(2)
-  $263.Struct get response => $_getN(1);
+  $289.Struct get response => $_getN(1);
   @$pb.TagNumber(2)
-  set response($263.Struct v) {
+  set response($289.Struct v) {
     setField(2, v);
   }
 
@@ -1433,7 +1545,21 @@ class FunctionResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearResponse() => clearField(2);
   @$pb.TagNumber(2)
-  $263.Struct ensureResponse() => $_ensure(1);
+  $289.Struct ensureResponse() => $_ensure(1);
+
+  /// Optional. The id of the function call this response is for. Populated by
+  /// the client to match the corresponding function call `id`.
+  @$pb.TagNumber(3)
+  $core.String get id => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set id($core.String v) {
+    $_setString(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasId() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearId() => clearField(3);
 }
 
 /// The `Schema` object allows the definition of input and output data types.

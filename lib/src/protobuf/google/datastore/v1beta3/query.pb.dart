@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/wrappers.pb.dart' as $309;
-import 'entity.pb.dart' as $427;
+import '../../protobuf/wrappers.pb.dart' as $335;
+import 'entity.pb.dart' as $456;
 import 'query.pbenum.dart';
 
 export 'query.pbenum.dart';
@@ -23,7 +23,7 @@ export 'query.pbenum.dart';
 /// The result of fetching an entity from Datastore.
 class EntityResult extends $pb.GeneratedMessage {
   factory EntityResult({
-    $427.Entity? entity,
+    $456.Entity? entity,
     $core.List<$core.int>? cursor,
     $fixnum.Int64? version,
   }) {
@@ -52,8 +52,8 @@ class EntityResult extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.datastore.v1beta3'),
       createEmptyInstance: create)
-    ..aOM<$427.Entity>(1, _omitFieldNames ? '' : 'entity',
-        subBuilder: $427.Entity.create)
+    ..aOM<$456.Entity>(1, _omitFieldNames ? '' : 'entity',
+        subBuilder: $456.Entity.create)
     ..a<$core.List<$core.int>>(
         3, _omitFieldNames ? '' : 'cursor', $pb.PbFieldType.OY)
     ..aInt64(4, _omitFieldNames ? '' : 'version')
@@ -84,9 +84,9 @@ class EntityResult extends $pb.GeneratedMessage {
 
   /// The resulting entity.
   @$pb.TagNumber(1)
-  $427.Entity get entity => $_getN(0);
+  $456.Entity get entity => $_getN(0);
   @$pb.TagNumber(1)
-  set entity($427.Entity v) {
+  set entity($456.Entity v) {
     setField(1, v);
   }
 
@@ -95,7 +95,7 @@ class EntityResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearEntity() => clearField(1);
   @$pb.TagNumber(1)
-  $427.Entity ensureEntity() => $_ensure(0);
+  $456.Entity ensureEntity() => $_ensure(0);
 
   /// A cursor that points to the position after the result entity.
   /// Set only when the `EntityResult` is part of a `QueryResultBatch` message.
@@ -145,7 +145,7 @@ class Query extends $pb.GeneratedMessage {
     $core.List<$core.int>? startCursor,
     $core.List<$core.int>? endCursor,
     $core.int? offset,
-    $309.Int32Value? limit,
+    $335.Int32Value? limit,
   }) {
     final $result = create();
     if (projection != null) {
@@ -205,8 +205,8 @@ class Query extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(
         8, _omitFieldNames ? '' : 'endCursor', $pb.PbFieldType.OY)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
-    ..aOM<$309.Int32Value>(12, _omitFieldNames ? '' : 'limit',
-        subBuilder: $309.Int32Value.create)
+    ..aOM<$335.Int32Value>(12, _omitFieldNames ? '' : 'limit',
+        subBuilder: $335.Int32Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -315,9 +315,9 @@ class Query extends $pb.GeneratedMessage {
   /// Unspecified is interpreted as no limit.
   /// Must be >= 0 if specified.
   @$pb.TagNumber(12)
-  $309.Int32Value get limit => $_getN(8);
+  $335.Int32Value get limit => $_getN(8);
   @$pb.TagNumber(12)
-  set limit($309.Int32Value v) {
+  set limit($335.Int32Value v) {
     setField(12, v);
   }
 
@@ -326,7 +326,7 @@ class Query extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearLimit() => clearField(12);
   @$pb.TagNumber(12)
-  $309.Int32Value ensureLimit() => $_ensure(8);
+  $335.Int32Value ensureLimit() => $_ensure(8);
 }
 
 /// A representation of a kind.
@@ -795,7 +795,7 @@ class PropertyFilter extends $pb.GeneratedMessage {
   factory PropertyFilter({
     PropertyReference? property,
     PropertyFilter_Operator? op,
-    $427.Value? value,
+    $456.Value? value,
   }) {
     final $result = create();
     if (property != null) {
@@ -829,8 +829,8 @@ class PropertyFilter extends $pb.GeneratedMessage {
         defaultOrMaker: PropertyFilter_Operator.OPERATOR_UNSPECIFIED,
         valueOf: PropertyFilter_Operator.valueOf,
         enumValues: PropertyFilter_Operator.values)
-    ..aOM<$427.Value>(3, _omitFieldNames ? '' : 'value',
-        subBuilder: $427.Value.create)
+    ..aOM<$456.Value>(3, _omitFieldNames ? '' : 'value',
+        subBuilder: $456.Value.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -886,9 +886,9 @@ class PropertyFilter extends $pb.GeneratedMessage {
 
   /// The value to compare the property to.
   @$pb.TagNumber(3)
-  $427.Value get value => $_getN(2);
+  $456.Value get value => $_getN(2);
   @$pb.TagNumber(3)
-  set value($427.Value v) {
+  set value($456.Value v) {
     setField(3, v);
   }
 
@@ -897,7 +897,7 @@ class PropertyFilter extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearValue() => clearField(3);
   @$pb.TagNumber(3)
-  $427.Value ensureValue() => $_ensure(2);
+  $456.Value ensureValue() => $_ensure(2);
 }
 
 /// A [GQL
@@ -1025,7 +1025,7 @@ enum GqlQueryParameter_ParameterType { value, cursor, notSet }
 /// A binding parameter for a GQL query.
 class GqlQueryParameter extends $pb.GeneratedMessage {
   factory GqlQueryParameter({
-    $427.Value? value,
+    $456.Value? value,
     $core.List<$core.int>? cursor,
   }) {
     final $result = create();
@@ -1057,8 +1057,8 @@ class GqlQueryParameter extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.datastore.v1beta3'),
       createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$427.Value>(2, _omitFieldNames ? '' : 'value',
-        subBuilder: $427.Value.create)
+    ..aOM<$456.Value>(2, _omitFieldNames ? '' : 'value',
+        subBuilder: $456.Value.create)
     ..a<$core.List<$core.int>>(
         3, _omitFieldNames ? '' : 'cursor', $pb.PbFieldType.OY)
     ..hasRequiredFields = false;
@@ -1092,9 +1092,9 @@ class GqlQueryParameter extends $pb.GeneratedMessage {
 
   /// A value parameter.
   @$pb.TagNumber(2)
-  $427.Value get value => $_getN(0);
+  $456.Value get value => $_getN(0);
   @$pb.TagNumber(2)
-  set value($427.Value v) {
+  set value($456.Value v) {
     setField(2, v);
   }
 
@@ -1103,7 +1103,7 @@ class GqlQueryParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $427.Value ensureValue() => $_ensure(0);
+  $456.Value ensureValue() => $_ensure(0);
 
   /// A query cursor. Query cursors are returned in query
   /// result batches.

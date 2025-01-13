@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../distribution.pb.dart' as $369;
+import '../../distribution.pb.dart' as $398;
 
 /// Describing buckets with constant width.
 class Distribution_LinearBuckets extends $pb.GeneratedMessage {
@@ -341,7 +341,7 @@ class Distribution extends $pb.GeneratedMessage {
     Distribution_LinearBuckets? linearBuckets,
     Distribution_ExponentialBuckets? exponentialBuckets,
     Distribution_ExplicitBuckets? explicitBuckets,
-    $core.Iterable<$369.Distribution_Exemplar>? exemplars,
+    $core.Iterable<$398.Distribution_Exemplar>? exemplars,
   }) {
     final $result = create();
     if (count != null) {
@@ -413,9 +413,9 @@ class Distribution extends $pb.GeneratedMessage {
     ..aOM<Distribution_ExplicitBuckets>(
         9, _omitFieldNames ? '' : 'explicitBuckets',
         subBuilder: Distribution_ExplicitBuckets.create)
-    ..pc<$369.Distribution_Exemplar>(
+    ..pc<$398.Distribution_Exemplar>(
         10, _omitFieldNames ? '' : 'exemplars', $pb.PbFieldType.PM,
-        subBuilder: $369.Distribution_Exemplar.create)
+        subBuilder: $398.Distribution_Exemplar.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -575,7 +575,7 @@ class Distribution extends $pb.GeneratedMessage {
 
   /// Example points. Must be in increasing order of `value` field.
   @$pb.TagNumber(10)
-  $core.List<$369.Distribution_Exemplar> get exemplars => $_getList(9);
+  $core.List<$398.Distribution_Exemplar> get exemplars => $_getList(9);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

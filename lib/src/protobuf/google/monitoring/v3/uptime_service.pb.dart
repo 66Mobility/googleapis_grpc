@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $335;
-import 'uptime.pb.dart' as $205;
+import '../../protobuf/field_mask.pb.dart' as $361;
+import 'uptime.pb.dart' as $231;
 
 /// The protocol for the `ListUptimeCheckConfigs` request.
 class ListUptimeCheckConfigsRequest extends $pb.GeneratedMessage {
@@ -154,7 +154,7 @@ class ListUptimeCheckConfigsRequest extends $pb.GeneratedMessage {
 /// The protocol for the `ListUptimeCheckConfigs` response.
 class ListUptimeCheckConfigsResponse extends $pb.GeneratedMessage {
   factory ListUptimeCheckConfigsResponse({
-    $core.Iterable<$205.UptimeCheckConfig>? uptimeCheckConfigs,
+    $core.Iterable<$231.UptimeCheckConfig>? uptimeCheckConfigs,
     $core.String? nextPageToken,
     $core.int? totalSize,
   }) {
@@ -183,9 +183,9 @@ class ListUptimeCheckConfigsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..pc<$205.UptimeCheckConfig>(
+    ..pc<$231.UptimeCheckConfig>(
         1, _omitFieldNames ? '' : 'uptimeCheckConfigs', $pb.PbFieldType.PM,
-        subBuilder: $205.UptimeCheckConfig.create)
+        subBuilder: $231.UptimeCheckConfig.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
@@ -219,7 +219,7 @@ class ListUptimeCheckConfigsResponse extends $pb.GeneratedMessage {
 
   /// The returned Uptime check configurations.
   @$pb.TagNumber(1)
-  $core.List<$205.UptimeCheckConfig> get uptimeCheckConfigs => $_getList(0);
+  $core.List<$231.UptimeCheckConfig> get uptimeCheckConfigs => $_getList(0);
 
   /// This field represents the pagination token to retrieve the next page of
   /// results. If the value is empty, it means no further results for the
@@ -327,7 +327,7 @@ class GetUptimeCheckConfigRequest extends $pb.GeneratedMessage {
 class CreateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   factory CreateUptimeCheckConfigRequest({
     $core.String? parent,
-    $205.UptimeCheckConfig? uptimeCheckConfig,
+    $231.UptimeCheckConfig? uptimeCheckConfig,
   }) {
     final $result = create();
     if (parent != null) {
@@ -352,8 +352,8 @@ class CreateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$205.UptimeCheckConfig>(2, _omitFieldNames ? '' : 'uptimeCheckConfig',
-        subBuilder: $205.UptimeCheckConfig.create)
+    ..aOM<$231.UptimeCheckConfig>(2, _omitFieldNames ? '' : 'uptimeCheckConfig',
+        subBuilder: $231.UptimeCheckConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -402,9 +402,9 @@ class CreateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
 
   /// Required. The new Uptime check configuration.
   @$pb.TagNumber(2)
-  $205.UptimeCheckConfig get uptimeCheckConfig => $_getN(1);
+  $231.UptimeCheckConfig get uptimeCheckConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set uptimeCheckConfig($205.UptimeCheckConfig v) {
+  set uptimeCheckConfig($231.UptimeCheckConfig v) {
     setField(2, v);
   }
 
@@ -413,14 +413,14 @@ class CreateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUptimeCheckConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $205.UptimeCheckConfig ensureUptimeCheckConfig() => $_ensure(1);
+  $231.UptimeCheckConfig ensureUptimeCheckConfig() => $_ensure(1);
 }
 
 /// The protocol for the `UpdateUptimeCheckConfig` request.
 class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   factory UpdateUptimeCheckConfigRequest({
-    $335.FieldMask? updateMask,
-    $205.UptimeCheckConfig? uptimeCheckConfig,
+    $361.FieldMask? updateMask,
+    $231.UptimeCheckConfig? uptimeCheckConfig,
   }) {
     final $result = create();
     if (updateMask != null) {
@@ -444,10 +444,10 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
-    ..aOM<$205.UptimeCheckConfig>(3, _omitFieldNames ? '' : 'uptimeCheckConfig',
-        subBuilder: $205.UptimeCheckConfig.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
+    ..aOM<$231.UptimeCheckConfig>(3, _omitFieldNames ? '' : 'uptimeCheckConfig',
+        subBuilder: $231.UptimeCheckConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -482,9 +482,9 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   /// field is empty, then the current configuration is completely replaced with
   /// the new configuration.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(0);
+  $361.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -493,7 +493,7 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(0);
+  $361.FieldMask ensureUpdateMask() => $_ensure(0);
 
   ///  Required. If an `updateMask` has been specified, this field gives
   ///  the values for the set of fields mentioned in the `updateMask`. If an
@@ -507,9 +507,9 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   ///  `http_check`, `tcp_check`, `timeout`, `content_matchers`, and
   ///  `selected_regions`.
   @$pb.TagNumber(3)
-  $205.UptimeCheckConfig get uptimeCheckConfig => $_getN(1);
+  $231.UptimeCheckConfig get uptimeCheckConfig => $_getN(1);
   @$pb.TagNumber(3)
-  set uptimeCheckConfig($205.UptimeCheckConfig v) {
+  set uptimeCheckConfig($231.UptimeCheckConfig v) {
     setField(3, v);
   }
 
@@ -518,7 +518,7 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUptimeCheckConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $205.UptimeCheckConfig ensureUptimeCheckConfig() => $_ensure(1);
+  $231.UptimeCheckConfig ensureUptimeCheckConfig() => $_ensure(1);
 }
 
 /// The protocol for the `DeleteUptimeCheckConfig` request.
@@ -685,7 +685,7 @@ class ListUptimeCheckIpsRequest extends $pb.GeneratedMessage {
 /// The protocol for the `ListUptimeCheckIps` response.
 class ListUptimeCheckIpsResponse extends $pb.GeneratedMessage {
   factory ListUptimeCheckIpsResponse({
-    $core.Iterable<$205.UptimeCheckIp>? uptimeCheckIps,
+    $core.Iterable<$231.UptimeCheckIp>? uptimeCheckIps,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -710,9 +710,9 @@ class ListUptimeCheckIpsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..pc<$205.UptimeCheckIp>(
+    ..pc<$231.UptimeCheckIp>(
         1, _omitFieldNames ? '' : 'uptimeCheckIps', $pb.PbFieldType.PM,
-        subBuilder: $205.UptimeCheckIp.create)
+        subBuilder: $231.UptimeCheckIp.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -745,7 +745,7 @@ class ListUptimeCheckIpsResponse extends $pb.GeneratedMessage {
   /// The returned list of IP addresses (including region and location) that the
   /// checkers run from.
   @$pb.TagNumber(1)
-  $core.List<$205.UptimeCheckIp> get uptimeCheckIps => $_getList(0);
+  $core.List<$231.UptimeCheckIp> get uptimeCheckIps => $_getList(0);
 
   /// This field represents the pagination token to retrieve the next page of
   /// results. If the value is empty, it means no further results for the

@@ -17,43 +17,43 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $13;
 import '../../../protobuf/empty.pb.dart' as $3;
-import 'firestore_admin.pb.dart' as $124;
-import 'index.pb.dart' as $125;
+import 'firestore_admin.pb.dart' as $142;
+import 'index.pb.dart' as $143;
 
 export 'firestore_admin.pb.dart';
 
 @$pb.GrpcServiceName('google.firestore.admin.v1beta1.FirestoreAdmin')
 class FirestoreAdminClient extends $grpc.Client {
   static final _$createIndex =
-      $grpc.ClientMethod<$124.CreateIndexRequest, $13.Operation>(
+      $grpc.ClientMethod<$142.CreateIndexRequest, $13.Operation>(
           '/google.firestore.admin.v1beta1.FirestoreAdmin/CreateIndex',
-          ($124.CreateIndexRequest value) => value.writeToBuffer(),
+          ($142.CreateIndexRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$listIndexes =
-      $grpc.ClientMethod<$124.ListIndexesRequest, $124.ListIndexesResponse>(
+      $grpc.ClientMethod<$142.ListIndexesRequest, $142.ListIndexesResponse>(
           '/google.firestore.admin.v1beta1.FirestoreAdmin/ListIndexes',
-          ($124.ListIndexesRequest value) => value.writeToBuffer(),
+          ($142.ListIndexesRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $124.ListIndexesResponse.fromBuffer(value));
+              $142.ListIndexesResponse.fromBuffer(value));
   static final _$getIndex =
-      $grpc.ClientMethod<$124.GetIndexRequest, $125.Index>(
+      $grpc.ClientMethod<$142.GetIndexRequest, $143.Index>(
           '/google.firestore.admin.v1beta1.FirestoreAdmin/GetIndex',
-          ($124.GetIndexRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $125.Index.fromBuffer(value));
+          ($142.GetIndexRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $143.Index.fromBuffer(value));
   static final _$deleteIndex =
-      $grpc.ClientMethod<$124.DeleteIndexRequest, $3.Empty>(
+      $grpc.ClientMethod<$142.DeleteIndexRequest, $3.Empty>(
           '/google.firestore.admin.v1beta1.FirestoreAdmin/DeleteIndex',
-          ($124.DeleteIndexRequest value) => value.writeToBuffer(),
+          ($142.DeleteIndexRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$exportDocuments =
-      $grpc.ClientMethod<$124.ExportDocumentsRequest, $13.Operation>(
+      $grpc.ClientMethod<$142.ExportDocumentsRequest, $13.Operation>(
           '/google.firestore.admin.v1beta1.FirestoreAdmin/ExportDocuments',
-          ($124.ExportDocumentsRequest value) => value.writeToBuffer(),
+          ($142.ExportDocumentsRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$importDocuments =
-      $grpc.ClientMethod<$124.ImportDocumentsRequest, $13.Operation>(
+      $grpc.ClientMethod<$142.ImportDocumentsRequest, $13.Operation>(
           '/google.firestore.admin.v1beta1.FirestoreAdmin/ImportDocuments',
-          ($124.ImportDocumentsRequest value) => value.writeToBuffer(),
+          ($142.ImportDocumentsRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
 
   FirestoreAdminClient($grpc.ClientChannel channel,
@@ -62,35 +62,35 @@ class FirestoreAdminClient extends $grpc.Client {
       : super(channel, options: options, interceptors: interceptors);
 
   $grpc.ResponseFuture<$13.Operation> createIndex(
-      $124.CreateIndexRequest request,
+      $142.CreateIndexRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createIndex, request, options: options);
   }
 
-  $grpc.ResponseFuture<$124.ListIndexesResponse> listIndexes(
-      $124.ListIndexesRequest request,
+  $grpc.ResponseFuture<$142.ListIndexesResponse> listIndexes(
+      $142.ListIndexesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listIndexes, request, options: options);
   }
 
-  $grpc.ResponseFuture<$125.Index> getIndex($124.GetIndexRequest request,
+  $grpc.ResponseFuture<$143.Index> getIndex($142.GetIndexRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getIndex, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteIndex($124.DeleteIndexRequest request,
+  $grpc.ResponseFuture<$3.Empty> deleteIndex($142.DeleteIndexRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteIndex, request, options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> exportDocuments(
-      $124.ExportDocumentsRequest request,
+      $142.ExportDocumentsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$exportDocuments, request, options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> importDocuments(
-      $124.ImportDocumentsRequest request,
+      $142.ImportDocumentsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$importDocuments, request, options: options);
   }
@@ -101,97 +101,97 @@ abstract class FirestoreAdminServiceBase extends $grpc.Service {
   $core.String get $name => 'google.firestore.admin.v1beta1.FirestoreAdmin';
 
   FirestoreAdminServiceBase() {
-    $addMethod($grpc.ServiceMethod<$124.CreateIndexRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$142.CreateIndexRequest, $13.Operation>(
         'CreateIndex',
         createIndex_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $124.CreateIndexRequest.fromBuffer(value),
+            $142.CreateIndexRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$124.ListIndexesRequest, $124.ListIndexesResponse>(
+        $grpc.ServiceMethod<$142.ListIndexesRequest, $142.ListIndexesResponse>(
             'ListIndexes',
             listIndexes_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $124.ListIndexesRequest.fromBuffer(value),
-            ($124.ListIndexesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$124.GetIndexRequest, $125.Index>(
+                $142.ListIndexesRequest.fromBuffer(value),
+            ($142.ListIndexesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$142.GetIndexRequest, $143.Index>(
         'GetIndex',
         getIndex_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $124.GetIndexRequest.fromBuffer(value),
-        ($125.Index value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$124.DeleteIndexRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $142.GetIndexRequest.fromBuffer(value),
+        ($143.Index value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$142.DeleteIndexRequest, $3.Empty>(
         'DeleteIndex',
         deleteIndex_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $124.DeleteIndexRequest.fromBuffer(value),
+            $142.DeleteIndexRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$124.ExportDocumentsRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$142.ExportDocumentsRequest, $13.Operation>(
         'ExportDocuments',
         exportDocuments_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $124.ExportDocumentsRequest.fromBuffer(value),
+            $142.ExportDocumentsRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$124.ImportDocumentsRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$142.ImportDocumentsRequest, $13.Operation>(
         'ImportDocuments',
         importDocuments_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $124.ImportDocumentsRequest.fromBuffer(value),
+            $142.ImportDocumentsRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
   }
 
   $async.Future<$13.Operation> createIndex_Pre($grpc.ServiceCall call,
-      $async.Future<$124.CreateIndexRequest> request) async {
+      $async.Future<$142.CreateIndexRequest> request) async {
     return createIndex(call, await request);
   }
 
-  $async.Future<$124.ListIndexesResponse> listIndexes_Pre(
+  $async.Future<$142.ListIndexesResponse> listIndexes_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$124.ListIndexesRequest> request) async {
+      $async.Future<$142.ListIndexesRequest> request) async {
     return listIndexes(call, await request);
   }
 
-  $async.Future<$125.Index> getIndex_Pre($grpc.ServiceCall call,
-      $async.Future<$124.GetIndexRequest> request) async {
+  $async.Future<$143.Index> getIndex_Pre($grpc.ServiceCall call,
+      $async.Future<$142.GetIndexRequest> request) async {
     return getIndex(call, await request);
   }
 
   $async.Future<$3.Empty> deleteIndex_Pre($grpc.ServiceCall call,
-      $async.Future<$124.DeleteIndexRequest> request) async {
+      $async.Future<$142.DeleteIndexRequest> request) async {
     return deleteIndex(call, await request);
   }
 
   $async.Future<$13.Operation> exportDocuments_Pre($grpc.ServiceCall call,
-      $async.Future<$124.ExportDocumentsRequest> request) async {
+      $async.Future<$142.ExportDocumentsRequest> request) async {
     return exportDocuments(call, await request);
   }
 
   $async.Future<$13.Operation> importDocuments_Pre($grpc.ServiceCall call,
-      $async.Future<$124.ImportDocumentsRequest> request) async {
+      $async.Future<$142.ImportDocumentsRequest> request) async {
     return importDocuments(call, await request);
   }
 
   $async.Future<$13.Operation> createIndex(
-      $grpc.ServiceCall call, $124.CreateIndexRequest request);
-  $async.Future<$124.ListIndexesResponse> listIndexes(
-      $grpc.ServiceCall call, $124.ListIndexesRequest request);
-  $async.Future<$125.Index> getIndex(
-      $grpc.ServiceCall call, $124.GetIndexRequest request);
+      $grpc.ServiceCall call, $142.CreateIndexRequest request);
+  $async.Future<$142.ListIndexesResponse> listIndexes(
+      $grpc.ServiceCall call, $142.ListIndexesRequest request);
+  $async.Future<$143.Index> getIndex(
+      $grpc.ServiceCall call, $142.GetIndexRequest request);
   $async.Future<$3.Empty> deleteIndex(
-      $grpc.ServiceCall call, $124.DeleteIndexRequest request);
+      $grpc.ServiceCall call, $142.DeleteIndexRequest request);
   $async.Future<$13.Operation> exportDocuments(
-      $grpc.ServiceCall call, $124.ExportDocumentsRequest request);
+      $grpc.ServiceCall call, $142.ExportDocumentsRequest request);
   $async.Future<$13.Operation> importDocuments(
-      $grpc.ServiceCall call, $124.ImportDocumentsRequest request);
+      $grpc.ServiceCall call, $142.ImportDocumentsRequest request);
 }

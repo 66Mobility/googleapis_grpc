@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../type/expr.pb.dart' as $401;
+import '../../type/expr.pb.dart' as $430;
 
 /// A deny rule in an IAM deny policy.
 class DenyRule extends $pb.GeneratedMessage {
@@ -22,7 +22,7 @@ class DenyRule extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? exceptionPrincipals,
     $core.Iterable<$core.String>? deniedPermissions,
     $core.Iterable<$core.String>? exceptionPermissions,
-    $401.Expr? denialCondition,
+    $430.Expr? denialCondition,
   }) {
     final $result = create();
     if (deniedPrincipals != null) {
@@ -58,8 +58,8 @@ class DenyRule extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'exceptionPrincipals')
     ..pPS(3, _omitFieldNames ? '' : 'deniedPermissions')
     ..pPS(4, _omitFieldNames ? '' : 'exceptionPermissions')
-    ..aOM<$401.Expr>(5, _omitFieldNames ? '' : 'denialCondition',
-        subBuilder: $401.Expr.create)
+    ..aOM<$430.Expr>(5, _omitFieldNames ? '' : 'denialCondition',
+        subBuilder: $430.Expr.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -166,9 +166,9 @@ class DenyRule extends $pb.GeneratedMessage {
   ///  tags](https://cloud.google.com/iam/help/conditions/resource-tags). Other
   ///  functions and operators are not supported.
   @$pb.TagNumber(5)
-  $401.Expr get denialCondition => $_getN(4);
+  $430.Expr get denialCondition => $_getN(4);
   @$pb.TagNumber(5)
-  set denialCondition($401.Expr v) {
+  set denialCondition($430.Expr v) {
     setField(5, v);
   }
 
@@ -177,7 +177,7 @@ class DenyRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearDenialCondition() => clearField(5);
   @$pb.TagNumber(5)
-  $401.Expr ensureDenialCondition() => $_ensure(4);
+  $430.Expr ensureDenialCondition() => $_ensure(4);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

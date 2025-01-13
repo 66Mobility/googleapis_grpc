@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/duration.pb.dart' as $266;
+import '../protobuf/duration.pb.dart' as $292;
 
 ///  Describes the cause of the error with structured details.
 ///
@@ -136,11 +136,12 @@ class ErrorInfo extends $pb.GeneratedMessage {
 
   ///  Additional structured details about this error.
   ///
-  ///  Keys should match /[a-zA-Z0-9-_]/ and be limited to 64 characters in
+  ///  Keys must match a regular expression of `[a-z][a-zA-Z0-9-_]+` but should
+  ///  ideally be lowerCamelCase. Also, they must be limited to 64 characters in
   ///  length. When identifying the current value of an exceeded limit, the units
   ///  should be contained in the key, not the value.  For example, rather than
-  ///  {"instanceLimit": "100/request"}, should be returned as,
-  ///  {"instanceLimitPerRequest": "100"}, if the client exceeds the number of
+  ///  `{"instanceLimit": "100/request"}`, should be returned as,
+  ///  `{"instanceLimitPerRequest": "100"}`, if the client exceeds the number of
   ///  instances that can be created in a single (batch) request.
   @$pb.TagNumber(3)
   $core.Map<$core.String, $core.String> get metadata => $_getMap(2);
@@ -161,7 +162,7 @@ class ErrorInfo extends $pb.GeneratedMessage {
 ///  reached.
 class RetryInfo extends $pb.GeneratedMessage {
   factory RetryInfo({
-    $266.Duration? retryDelay,
+    $292.Duration? retryDelay,
   }) {
     final $result = create();
     if (retryDelay != null) {
@@ -181,8 +182,8 @@ class RetryInfo extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'RetryInfo',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.rpc'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'retryDelay',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'retryDelay',
+        subBuilder: $292.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -208,9 +209,9 @@ class RetryInfo extends $pb.GeneratedMessage {
 
   /// Clients should wait at least this long between retrying the same request.
   @$pb.TagNumber(1)
-  $266.Duration get retryDelay => $_getN(0);
+  $292.Duration get retryDelay => $_getN(0);
   @$pb.TagNumber(1)
-  set retryDelay($266.Duration v) {
+  set retryDelay($292.Duration v) {
     setField(1, v);
   }
 
@@ -219,7 +220,7 @@ class RetryInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRetryDelay() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensureRetryDelay() => $_ensure(0);
+  $292.Duration ensureRetryDelay() => $_ensure(0);
 }
 
 /// Describes additional debugging info.
@@ -625,6 +626,8 @@ class BadRequest_FieldViolation extends $pb.GeneratedMessage {
   factory BadRequest_FieldViolation({
     $core.String? field_1,
     $core.String? description,
+    $core.String? reason,
+    LocalizedMessage? localizedMessage,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -632,6 +635,12 @@ class BadRequest_FieldViolation extends $pb.GeneratedMessage {
     }
     if (description != null) {
       $result.description = description;
+    }
+    if (reason != null) {
+      $result.reason = reason;
+    }
+    if (localizedMessage != null) {
+      $result.localizedMessage = localizedMessage;
     }
     return $result;
   }
@@ -649,6 +658,9 @@ class BadRequest_FieldViolation extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'field')
     ..aOS(2, _omitFieldNames ? '' : 'description')
+    ..aOS(3, _omitFieldNames ? '' : 'reason')
+    ..aOM<LocalizedMessage>(4, _omitFieldNames ? '' : 'localizedMessage',
+        subBuilder: LocalizedMessage.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -737,6 +749,40 @@ class BadRequest_FieldViolation extends $pb.GeneratedMessage {
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
   void clearDescription() => clearField(2);
+
+  /// The reason of the field-level error. This is a constant value that
+  /// identifies the proximate cause of the field-level error. It should
+  /// uniquely identify the type of the FieldViolation within the scope of the
+  /// google.rpc.ErrorInfo.domain. This should be at most 63
+  /// characters and match a regular expression of `[A-Z][A-Z0-9_]+[A-Z0-9]`,
+  /// which represents UPPER_SNAKE_CASE.
+  @$pb.TagNumber(3)
+  $core.String get reason => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set reason($core.String v) {
+    $_setString(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasReason() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearReason() => clearField(3);
+
+  /// Provides a localized error message for field-level errors that is safe to
+  /// return to the API consumer.
+  @$pb.TagNumber(4)
+  LocalizedMessage get localizedMessage => $_getN(3);
+  @$pb.TagNumber(4)
+  set localizedMessage(LocalizedMessage v) {
+    setField(4, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasLocalizedMessage() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearLocalizedMessage() => clearField(4);
+  @$pb.TagNumber(4)
+  LocalizedMessage ensureLocalizedMessage() => $_ensure(3);
 }
 
 /// Describes violations in a client request. This error type focuses on the

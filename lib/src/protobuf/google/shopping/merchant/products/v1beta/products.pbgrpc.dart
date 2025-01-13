@@ -15,36 +15,36 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'products.pb.dart' as $240;
+import 'products.pb.dart' as $266;
 
 export 'products.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.products.v1beta.ProductsService')
 class ProductsServiceClient extends $grpc.Client {
-  static final _$getProduct = $grpc.ClientMethod<$240.GetProductRequest,
-          $240.Product>(
+  static final _$getProduct = $grpc.ClientMethod<$266.GetProductRequest,
+          $266.Product>(
       '/google.shopping.merchant.products.v1beta.ProductsService/GetProduct',
-      ($240.GetProductRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $240.Product.fromBuffer(value));
-  static final _$listProducts = $grpc.ClientMethod<$240.ListProductsRequest,
-          $240.ListProductsResponse>(
+      ($266.GetProductRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $266.Product.fromBuffer(value));
+  static final _$listProducts = $grpc.ClientMethod<$266.ListProductsRequest,
+          $266.ListProductsResponse>(
       '/google.shopping.merchant.products.v1beta.ProductsService/ListProducts',
-      ($240.ListProductsRequest value) => value.writeToBuffer(),
+      ($266.ListProductsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $240.ListProductsResponse.fromBuffer(value));
+          $266.ListProductsResponse.fromBuffer(value));
 
   ProductsServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$240.Product> getProduct($240.GetProductRequest request,
+  $grpc.ResponseFuture<$266.Product> getProduct($266.GetProductRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getProduct, request, options: options);
   }
 
-  $grpc.ResponseFuture<$240.ListProductsResponse> listProducts(
-      $240.ListProductsRequest request,
+  $grpc.ResponseFuture<$266.ListProductsResponse> listProducts(
+      $266.ListProductsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listProducts, request, options: options);
   }
@@ -56,38 +56,38 @@ abstract class ProductsServiceBase extends $grpc.Service {
       'google.shopping.merchant.products.v1beta.ProductsService';
 
   ProductsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$240.GetProductRequest, $240.Product>(
+    $addMethod($grpc.ServiceMethod<$266.GetProductRequest, $266.Product>(
         'GetProduct',
         getProduct_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $240.GetProductRequest.fromBuffer(value),
-        ($240.Product value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$240.ListProductsRequest,
-            $240.ListProductsResponse>(
+            $266.GetProductRequest.fromBuffer(value),
+        ($266.Product value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$266.ListProductsRequest,
+            $266.ListProductsResponse>(
         'ListProducts',
         listProducts_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $240.ListProductsRequest.fromBuffer(value),
-        ($240.ListProductsResponse value) => value.writeToBuffer()));
+            $266.ListProductsRequest.fromBuffer(value),
+        ($266.ListProductsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$240.Product> getProduct_Pre($grpc.ServiceCall call,
-      $async.Future<$240.GetProductRequest> request) async {
+  $async.Future<$266.Product> getProduct_Pre($grpc.ServiceCall call,
+      $async.Future<$266.GetProductRequest> request) async {
     return getProduct(call, await request);
   }
 
-  $async.Future<$240.ListProductsResponse> listProducts_Pre(
+  $async.Future<$266.ListProductsResponse> listProducts_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$240.ListProductsRequest> request) async {
+      $async.Future<$266.ListProductsRequest> request) async {
     return listProducts(call, await request);
   }
 
-  $async.Future<$240.Product> getProduct(
-      $grpc.ServiceCall call, $240.GetProductRequest request);
-  $async.Future<$240.ListProductsResponse> listProducts(
-      $grpc.ServiceCall call, $240.ListProductsRequest request);
+  $async.Future<$266.Product> getProduct(
+      $grpc.ServiceCall call, $266.GetProductRequest request);
+  $async.Future<$266.ListProductsResponse> listProducts(
+      $grpc.ServiceCall call, $266.ListProductsRequest request);
 }

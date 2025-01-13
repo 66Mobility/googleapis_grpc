@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $335;
-import 'retriever.pb.dart' as $21;
+import '../../../protobuf/field_mask.pb.dart' as $361;
+import 'retriever.pb.dart' as $36;
 
 /// Request to create a `Corpus`.
 class CreateCorpusRequest extends $pb.GeneratedMessage {
   factory CreateCorpusRequest({
-    $21.Corpus? corpus,
+    $36.Corpus? corpus,
   }) {
     final $result = create();
     if (corpus != null) {
@@ -40,8 +40,8 @@ class CreateCorpusRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$21.Corpus>(1, _omitFieldNames ? '' : 'corpus',
-        subBuilder: $21.Corpus.create)
+    ..aOM<$36.Corpus>(1, _omitFieldNames ? '' : 'corpus',
+        subBuilder: $36.Corpus.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -69,9 +69,9 @@ class CreateCorpusRequest extends $pb.GeneratedMessage {
 
   /// Required. The `Corpus` to create.
   @$pb.TagNumber(1)
-  $21.Corpus get corpus => $_getN(0);
+  $36.Corpus get corpus => $_getN(0);
   @$pb.TagNumber(1)
-  set corpus($21.Corpus v) {
+  set corpus($36.Corpus v) {
     setField(1, v);
   }
 
@@ -80,7 +80,7 @@ class CreateCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCorpus() => clearField(1);
   @$pb.TagNumber(1)
-  $21.Corpus ensureCorpus() => $_ensure(0);
+  $36.Corpus ensureCorpus() => $_ensure(0);
 }
 
 /// Request for getting information about a specific `Corpus`.
@@ -151,8 +151,8 @@ class GetCorpusRequest extends $pb.GeneratedMessage {
 /// Request to update a `Corpus`.
 class UpdateCorpusRequest extends $pb.GeneratedMessage {
   factory UpdateCorpusRequest({
-    $21.Corpus? corpus,
-    $335.FieldMask? updateMask,
+    $36.Corpus? corpus,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (corpus != null) {
@@ -176,10 +176,10 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$21.Corpus>(1, _omitFieldNames ? '' : 'corpus',
-        subBuilder: $21.Corpus.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$36.Corpus>(1, _omitFieldNames ? '' : 'corpus',
+        subBuilder: $36.Corpus.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -207,9 +207,9 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
 
   /// Required. The `Corpus` to update.
   @$pb.TagNumber(1)
-  $21.Corpus get corpus => $_getN(0);
+  $36.Corpus get corpus => $_getN(0);
   @$pb.TagNumber(1)
-  set corpus($21.Corpus v) {
+  set corpus($36.Corpus v) {
     setField(1, v);
   }
 
@@ -218,14 +218,14 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCorpus() => clearField(1);
   @$pb.TagNumber(1)
-  $21.Corpus ensureCorpus() => $_ensure(0);
+  $36.Corpus ensureCorpus() => $_ensure(0);
 
   /// Required. The list of fields to update.
   /// Currently, this only supports updating `display_name`.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -234,7 +234,7 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete a `Corpus`.
@@ -420,7 +420,7 @@ class ListCorporaRequest extends $pb.GeneratedMessage {
 /// The results are sorted by ascending `corpus.create_time`.
 class ListCorporaResponse extends $pb.GeneratedMessage {
   factory ListCorporaResponse({
-    $core.Iterable<$21.Corpus>? corpora,
+    $core.Iterable<$36.Corpus>? corpora,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -445,8 +445,8 @@ class ListCorporaResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..pc<$21.Corpus>(1, _omitFieldNames ? '' : 'corpora', $pb.PbFieldType.PM,
-        subBuilder: $21.Corpus.create)
+    ..pc<$36.Corpus>(1, _omitFieldNames ? '' : 'corpora', $pb.PbFieldType.PM,
+        subBuilder: $36.Corpus.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -475,7 +475,7 @@ class ListCorporaResponse extends $pb.GeneratedMessage {
 
   /// The returned corpora.
   @$pb.TagNumber(1)
-  $core.List<$21.Corpus> get corpora => $_getList(0);
+  $core.List<$36.Corpus> get corpora => $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no more pages.
@@ -497,7 +497,7 @@ class QueryCorpusRequest extends $pb.GeneratedMessage {
   factory QueryCorpusRequest({
     $core.String? name,
     $core.String? query,
-    $core.Iterable<$21.MetadataFilter>? metadataFilters,
+    $core.Iterable<$36.MetadataFilter>? metadataFilters,
     $core.int? resultsCount,
   }) {
     final $result = create();
@@ -530,9 +530,9 @@ class QueryCorpusRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'query')
-    ..pc<$21.MetadataFilter>(
+    ..pc<$36.MetadataFilter>(
         3, _omitFieldNames ? '' : 'metadataFilters', $pb.PbFieldType.PM,
-        subBuilder: $21.MetadataFilter.create)
+        subBuilder: $36.MetadataFilter.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'resultsCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
@@ -618,7 +618,7 @@ class QueryCorpusRequest extends $pb.GeneratedMessage {
   ///  Note: "AND"s for the same key are only supported for numeric values. String
   ///  values only support "OR"s for the same key.
   @$pb.TagNumber(3)
-  $core.List<$21.MetadataFilter> get metadataFilters => $_getList(2);
+  $core.List<$36.MetadataFilter> get metadataFilters => $_getList(2);
 
   ///  Optional. The maximum number of `Chunk`s to return.
   ///  The service may return fewer `Chunk`s.
@@ -699,7 +699,7 @@ class QueryCorpusResponse extends $pb.GeneratedMessage {
 class RelevantChunk extends $pb.GeneratedMessage {
   factory RelevantChunk({
     $core.double? chunkRelevanceScore,
-    $21.Chunk? chunk,
+    $36.Chunk? chunk,
   }) {
     final $result = create();
     if (chunkRelevanceScore != null) {
@@ -725,8 +725,8 @@ class RelevantChunk extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..a<$core.double>(
         1, _omitFieldNames ? '' : 'chunkRelevanceScore', $pb.PbFieldType.OF)
-    ..aOM<$21.Chunk>(2, _omitFieldNames ? '' : 'chunk',
-        subBuilder: $21.Chunk.create)
+    ..aOM<$36.Chunk>(2, _omitFieldNames ? '' : 'chunk',
+        subBuilder: $36.Chunk.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -767,9 +767,9 @@ class RelevantChunk extends $pb.GeneratedMessage {
 
   /// `Chunk` associated with the query.
   @$pb.TagNumber(2)
-  $21.Chunk get chunk => $_getN(1);
+  $36.Chunk get chunk => $_getN(1);
   @$pb.TagNumber(2)
-  set chunk($21.Chunk v) {
+  set chunk($36.Chunk v) {
     setField(2, v);
   }
 
@@ -778,14 +778,14 @@ class RelevantChunk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearChunk() => clearField(2);
   @$pb.TagNumber(2)
-  $21.Chunk ensureChunk() => $_ensure(1);
+  $36.Chunk ensureChunk() => $_ensure(1);
 }
 
 /// Request to create a `Document`.
 class CreateDocumentRequest extends $pb.GeneratedMessage {
   factory CreateDocumentRequest({
     $core.String? parent,
-    $21.Document? document,
+    $36.Document? document,
   }) {
     final $result = create();
     if (parent != null) {
@@ -810,8 +810,8 @@ class CreateDocumentRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$21.Document>(2, _omitFieldNames ? '' : 'document',
-        subBuilder: $21.Document.create)
+    ..aOM<$36.Document>(2, _omitFieldNames ? '' : 'document',
+        subBuilder: $36.Document.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -855,9 +855,9 @@ class CreateDocumentRequest extends $pb.GeneratedMessage {
 
   /// Required. The `Document` to create.
   @$pb.TagNumber(2)
-  $21.Document get document => $_getN(1);
+  $36.Document get document => $_getN(1);
   @$pb.TagNumber(2)
-  set document($21.Document v) {
+  set document($36.Document v) {
     setField(2, v);
   }
 
@@ -866,7 +866,7 @@ class CreateDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDocument() => clearField(2);
   @$pb.TagNumber(2)
-  $21.Document ensureDocument() => $_ensure(1);
+  $36.Document ensureDocument() => $_ensure(1);
 }
 
 /// Request for getting information about a specific `Document`.
@@ -937,8 +937,8 @@ class GetDocumentRequest extends $pb.GeneratedMessage {
 /// Request to update a `Document`.
 class UpdateDocumentRequest extends $pb.GeneratedMessage {
   factory UpdateDocumentRequest({
-    $21.Document? document,
-    $335.FieldMask? updateMask,
+    $36.Document? document,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (document != null) {
@@ -962,10 +962,10 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$21.Document>(1, _omitFieldNames ? '' : 'document',
-        subBuilder: $21.Document.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$36.Document>(1, _omitFieldNames ? '' : 'document',
+        subBuilder: $36.Document.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -995,9 +995,9 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
 
   /// Required. The `Document` to update.
   @$pb.TagNumber(1)
-  $21.Document get document => $_getN(0);
+  $36.Document get document => $_getN(0);
   @$pb.TagNumber(1)
-  set document($21.Document v) {
+  set document($36.Document v) {
     setField(1, v);
   }
 
@@ -1006,15 +1006,15 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearDocument() => clearField(1);
   @$pb.TagNumber(1)
-  $21.Document ensureDocument() => $_ensure(0);
+  $36.Document ensureDocument() => $_ensure(0);
 
   /// Required. The list of fields to update.
   /// Currently, this only supports updating `display_name` and
   /// `custom_metadata`.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -1023,7 +1023,7 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete a `Document`.
@@ -1231,7 +1231,7 @@ class ListDocumentsRequest extends $pb.GeneratedMessage {
 /// The `Document`s are sorted by ascending `document.create_time`.
 class ListDocumentsResponse extends $pb.GeneratedMessage {
   factory ListDocumentsResponse({
-    $core.Iterable<$21.Document>? documents,
+    $core.Iterable<$36.Document>? documents,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1256,9 +1256,9 @@ class ListDocumentsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..pc<$21.Document>(
+    ..pc<$36.Document>(
         1, _omitFieldNames ? '' : 'documents', $pb.PbFieldType.PM,
-        subBuilder: $21.Document.create)
+        subBuilder: $36.Document.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -1289,7 +1289,7 @@ class ListDocumentsResponse extends $pb.GeneratedMessage {
 
   /// The returned `Document`s.
   @$pb.TagNumber(1)
-  $core.List<$21.Document> get documents => $_getList(0);
+  $core.List<$36.Document> get documents => $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no more pages.
@@ -1312,7 +1312,7 @@ class QueryDocumentRequest extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? query,
     $core.int? resultsCount,
-    $core.Iterable<$21.MetadataFilter>? metadataFilters,
+    $core.Iterable<$36.MetadataFilter>? metadataFilters,
   }) {
     final $result = create();
     if (name != null) {
@@ -1345,9 +1345,9 @@ class QueryDocumentRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'query')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'resultsCount', $pb.PbFieldType.O3)
-    ..pc<$21.MetadataFilter>(
+    ..pc<$36.MetadataFilter>(
         4, _omitFieldNames ? '' : 'metadataFilters', $pb.PbFieldType.PM,
-        subBuilder: $21.MetadataFilter.create)
+        subBuilder: $36.MetadataFilter.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1450,7 +1450,7 @@ class QueryDocumentRequest extends $pb.GeneratedMessage {
   ///  Note: "AND"s for the same key are only supported for numeric values. String
   ///  values only support "OR"s for the same key.
   @$pb.TagNumber(4)
-  $core.List<$21.MetadataFilter> get metadataFilters => $_getList(3);
+  $core.List<$36.MetadataFilter> get metadataFilters => $_getList(3);
 }
 
 /// Response from `QueryDocument` containing a list of relevant chunks.
@@ -1516,7 +1516,7 @@ class QueryDocumentResponse extends $pb.GeneratedMessage {
 class CreateChunkRequest extends $pb.GeneratedMessage {
   factory CreateChunkRequest({
     $core.String? parent,
-    $21.Chunk? chunk,
+    $36.Chunk? chunk,
   }) {
     final $result = create();
     if (parent != null) {
@@ -1541,8 +1541,8 @@ class CreateChunkRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$21.Chunk>(2, _omitFieldNames ? '' : 'chunk',
-        subBuilder: $21.Chunk.create)
+    ..aOM<$36.Chunk>(2, _omitFieldNames ? '' : 'chunk',
+        subBuilder: $36.Chunk.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1584,9 +1584,9 @@ class CreateChunkRequest extends $pb.GeneratedMessage {
 
   /// Required. The `Chunk` to create.
   @$pb.TagNumber(2)
-  $21.Chunk get chunk => $_getN(1);
+  $36.Chunk get chunk => $_getN(1);
   @$pb.TagNumber(2)
-  set chunk($21.Chunk v) {
+  set chunk($36.Chunk v) {
     setField(2, v);
   }
 
@@ -1595,7 +1595,7 @@ class CreateChunkRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearChunk() => clearField(2);
   @$pb.TagNumber(2)
-  $21.Chunk ensureChunk() => $_ensure(1);
+  $36.Chunk ensureChunk() => $_ensure(1);
 }
 
 /// Request to batch create `Chunk`s.
@@ -1681,7 +1681,7 @@ class BatchCreateChunksRequest extends $pb.GeneratedMessage {
 /// Response from `BatchCreateChunks` containing a list of created `Chunk`s.
 class BatchCreateChunksResponse extends $pb.GeneratedMessage {
   factory BatchCreateChunksResponse({
-    $core.Iterable<$21.Chunk>? chunks,
+    $core.Iterable<$36.Chunk>? chunks,
   }) {
     final $result = create();
     if (chunks != null) {
@@ -1702,8 +1702,8 @@ class BatchCreateChunksResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..pc<$21.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
-        subBuilder: $21.Chunk.create)
+    ..pc<$36.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
+        subBuilder: $36.Chunk.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1733,7 +1733,7 @@ class BatchCreateChunksResponse extends $pb.GeneratedMessage {
 
   /// `Chunk`s created.
   @$pb.TagNumber(1)
-  $core.List<$21.Chunk> get chunks => $_getList(0);
+  $core.List<$36.Chunk> get chunks => $_getList(0);
 }
 
 /// Request for getting information about a specific `Chunk`.
@@ -1804,8 +1804,8 @@ class GetChunkRequest extends $pb.GeneratedMessage {
 /// Request to update a `Chunk`.
 class UpdateChunkRequest extends $pb.GeneratedMessage {
   factory UpdateChunkRequest({
-    $21.Chunk? chunk,
-    $335.FieldMask? updateMask,
+    $36.Chunk? chunk,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (chunk != null) {
@@ -1829,10 +1829,10 @@ class UpdateChunkRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$21.Chunk>(1, _omitFieldNames ? '' : 'chunk',
-        subBuilder: $21.Chunk.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$36.Chunk>(1, _omitFieldNames ? '' : 'chunk',
+        subBuilder: $36.Chunk.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1860,9 +1860,9 @@ class UpdateChunkRequest extends $pb.GeneratedMessage {
 
   /// Required. The `Chunk` to update.
   @$pb.TagNumber(1)
-  $21.Chunk get chunk => $_getN(0);
+  $36.Chunk get chunk => $_getN(0);
   @$pb.TagNumber(1)
-  set chunk($21.Chunk v) {
+  set chunk($36.Chunk v) {
     setField(1, v);
   }
 
@@ -1871,14 +1871,14 @@ class UpdateChunkRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearChunk() => clearField(1);
   @$pb.TagNumber(1)
-  $21.Chunk ensureChunk() => $_ensure(0);
+  $36.Chunk ensureChunk() => $_ensure(0);
 
   /// Required. The list of fields to update.
   /// Currently, this only supports updating `custom_metadata` and `data`.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -1887,7 +1887,7 @@ class UpdateChunkRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to batch update `Chunk`s.
@@ -1973,7 +1973,7 @@ class BatchUpdateChunksRequest extends $pb.GeneratedMessage {
 /// Response from `BatchUpdateChunks` containing a list of updated `Chunk`s.
 class BatchUpdateChunksResponse extends $pb.GeneratedMessage {
   factory BatchUpdateChunksResponse({
-    $core.Iterable<$21.Chunk>? chunks,
+    $core.Iterable<$36.Chunk>? chunks,
   }) {
     final $result = create();
     if (chunks != null) {
@@ -1994,8 +1994,8 @@ class BatchUpdateChunksResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..pc<$21.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
-        subBuilder: $21.Chunk.create)
+    ..pc<$36.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
+        subBuilder: $36.Chunk.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2025,7 +2025,7 @@ class BatchUpdateChunksResponse extends $pb.GeneratedMessage {
 
   /// `Chunk`s updated.
   @$pb.TagNumber(1)
-  $core.List<$21.Chunk> get chunks => $_getList(0);
+  $core.List<$36.Chunk> get chunks => $_getList(0);
 }
 
 /// Request to delete a `Chunk`.
@@ -2287,7 +2287,7 @@ class ListChunksRequest extends $pb.GeneratedMessage {
 /// The `Chunk`s are sorted by ascending `chunk.create_time`.
 class ListChunksResponse extends $pb.GeneratedMessage {
   factory ListChunksResponse({
-    $core.Iterable<$21.Chunk>? chunks,
+    $core.Iterable<$36.Chunk>? chunks,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -2312,8 +2312,8 @@ class ListChunksResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..pc<$21.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
-        subBuilder: $21.Chunk.create)
+    ..pc<$36.Chunk>(1, _omitFieldNames ? '' : 'chunks', $pb.PbFieldType.PM,
+        subBuilder: $36.Chunk.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -2342,7 +2342,7 @@ class ListChunksResponse extends $pb.GeneratedMessage {
 
   /// The returned `Chunk`s.
   @$pb.TagNumber(1)
-  $core.List<$21.Chunk> get chunks => $_getList(0);
+  $core.List<$36.Chunk> get chunks => $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no more pages.

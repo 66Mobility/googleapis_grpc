@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../extension_point.pb.dart' as $398;
+import '../extension_point.pb.dart' as $427;
 
 /// Drive add-on manifest.
 class DriveAddOnManifest extends $pb.GeneratedMessage {
   factory DriveAddOnManifest({
-    $398.HomepageExtensionPoint? homepageTrigger,
+    $427.HomepageExtensionPoint? homepageTrigger,
     DriveExtensionPoint? onItemsSelectedTrigger,
   }) {
     final $result = create();
@@ -43,9 +43,9 @@ class DriveAddOnManifest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.script.type.drive'),
       createEmptyInstance: create)
-    ..aOM<$398.HomepageExtensionPoint>(
+    ..aOM<$427.HomepageExtensionPoint>(
         1, _omitFieldNames ? '' : 'homepageTrigger',
-        subBuilder: $398.HomepageExtensionPoint.create)
+        subBuilder: $427.HomepageExtensionPoint.create)
     ..aOM<DriveExtensionPoint>(
         2, _omitFieldNames ? '' : 'onItemsSelectedTrigger',
         subBuilder: DriveExtensionPoint.create)
@@ -77,9 +77,9 @@ class DriveAddOnManifest extends $pb.GeneratedMessage {
   /// If present, this overrides the configuration from
   /// `addOns.common.homepageTrigger`.
   @$pb.TagNumber(1)
-  $398.HomepageExtensionPoint get homepageTrigger => $_getN(0);
+  $427.HomepageExtensionPoint get homepageTrigger => $_getN(0);
   @$pb.TagNumber(1)
-  set homepageTrigger($398.HomepageExtensionPoint v) {
+  set homepageTrigger($427.HomepageExtensionPoint v) {
     setField(1, v);
   }
 
@@ -88,7 +88,7 @@ class DriveAddOnManifest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHomepageTrigger() => clearField(1);
   @$pb.TagNumber(1)
-  $398.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(0);
+  $427.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(0);
 
   /// Corresponds to behvior that should execute when items are selected
   /// in relevant Drive view (e.g. the My Drive Doclist).

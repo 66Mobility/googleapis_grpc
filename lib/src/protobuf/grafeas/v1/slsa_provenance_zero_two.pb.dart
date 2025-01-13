@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../google/protobuf/struct.pb.dart' as $263;
-import '../../google/protobuf/timestamp.pb.dart' as $304;
+import '../../google/protobuf/struct.pb.dart' as $289;
+import '../../google/protobuf/timestamp.pb.dart' as $330;
 
 /// Identifies the entity that executed the recipe, which is trusted to have
 /// correctly performed the operation and populated this provenance.
@@ -168,8 +168,8 @@ class SlsaProvenanceZeroTwo_SlsaMaterial extends $pb.GeneratedMessage {
 class SlsaProvenanceZeroTwo_SlsaInvocation extends $pb.GeneratedMessage {
   factory SlsaProvenanceZeroTwo_SlsaInvocation({
     SlsaProvenanceZeroTwo_SlsaConfigSource? configSource,
-    $263.Struct? parameters,
-    $263.Struct? environment,
+    $289.Struct? parameters,
+    $289.Struct? environment,
   }) {
     final $result = create();
     if (configSource != null) {
@@ -199,10 +199,10 @@ class SlsaProvenanceZeroTwo_SlsaInvocation extends $pb.GeneratedMessage {
     ..aOM<SlsaProvenanceZeroTwo_SlsaConfigSource>(
         1, _omitFieldNames ? '' : 'configSource',
         subBuilder: SlsaProvenanceZeroTwo_SlsaConfigSource.create)
-    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'parameters',
-        subBuilder: $263.Struct.create)
-    ..aOM<$263.Struct>(3, _omitFieldNames ? '' : 'environment',
-        subBuilder: $263.Struct.create)
+    ..aOM<$289.Struct>(2, _omitFieldNames ? '' : 'parameters',
+        subBuilder: $289.Struct.create)
+    ..aOM<$289.Struct>(3, _omitFieldNames ? '' : 'environment',
+        subBuilder: $289.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -248,9 +248,9 @@ class SlsaProvenanceZeroTwo_SlsaInvocation extends $pb.GeneratedMessage {
   SlsaProvenanceZeroTwo_SlsaConfigSource ensureConfigSource() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $263.Struct get parameters => $_getN(1);
+  $289.Struct get parameters => $_getN(1);
   @$pb.TagNumber(2)
-  set parameters($263.Struct v) {
+  set parameters($289.Struct v) {
     setField(2, v);
   }
 
@@ -259,12 +259,12 @@ class SlsaProvenanceZeroTwo_SlsaInvocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearParameters() => clearField(2);
   @$pb.TagNumber(2)
-  $263.Struct ensureParameters() => $_ensure(1);
+  $289.Struct ensureParameters() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $263.Struct get environment => $_getN(2);
+  $289.Struct get environment => $_getN(2);
   @$pb.TagNumber(3)
-  set environment($263.Struct v) {
+  set environment($289.Struct v) {
     setField(3, v);
   }
 
@@ -273,7 +273,7 @@ class SlsaProvenanceZeroTwo_SlsaInvocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEnvironment() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Struct ensureEnvironment() => $_ensure(2);
+  $289.Struct ensureEnvironment() => $_ensure(2);
 }
 
 /// Describes where the config file that kicked off the build came from.
@@ -378,8 +378,8 @@ class SlsaProvenanceZeroTwo_SlsaConfigSource extends $pb.GeneratedMessage {
 class SlsaProvenanceZeroTwo_SlsaMetadata extends $pb.GeneratedMessage {
   factory SlsaProvenanceZeroTwo_SlsaMetadata({
     $core.String? buildInvocationId,
-    $304.Timestamp? buildStartedOn,
-    $304.Timestamp? buildFinishedOn,
+    $330.Timestamp? buildStartedOn,
+    $330.Timestamp? buildFinishedOn,
     SlsaProvenanceZeroTwo_SlsaCompleteness? completeness,
     $core.bool? reproducible,
   }) {
@@ -414,10 +414,10 @@ class SlsaProvenanceZeroTwo_SlsaMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'buildInvocationId')
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'buildStartedOn',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'buildFinishedOn',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'buildStartedOn',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'buildFinishedOn',
+        subBuilder: $330.Timestamp.create)
     ..aOM<SlsaProvenanceZeroTwo_SlsaCompleteness>(
         4, _omitFieldNames ? '' : 'completeness',
         subBuilder: SlsaProvenanceZeroTwo_SlsaCompleteness.create)
@@ -465,9 +465,9 @@ class SlsaProvenanceZeroTwo_SlsaMetadata extends $pb.GeneratedMessage {
   void clearBuildInvocationId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $304.Timestamp get buildStartedOn => $_getN(1);
+  $330.Timestamp get buildStartedOn => $_getN(1);
   @$pb.TagNumber(2)
-  set buildStartedOn($304.Timestamp v) {
+  set buildStartedOn($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -476,12 +476,12 @@ class SlsaProvenanceZeroTwo_SlsaMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearBuildStartedOn() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureBuildStartedOn() => $_ensure(1);
+  $330.Timestamp ensureBuildStartedOn() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $304.Timestamp get buildFinishedOn => $_getN(2);
+  $330.Timestamp get buildFinishedOn => $_getN(2);
   @$pb.TagNumber(3)
-  set buildFinishedOn($304.Timestamp v) {
+  set buildFinishedOn($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -490,7 +490,7 @@ class SlsaProvenanceZeroTwo_SlsaMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearBuildFinishedOn() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureBuildFinishedOn() => $_ensure(2);
+  $330.Timestamp ensureBuildFinishedOn() => $_ensure(2);
 
   @$pb.TagNumber(4)
   SlsaProvenanceZeroTwo_SlsaCompleteness get completeness => $_getN(3);
@@ -627,7 +627,7 @@ class SlsaProvenanceZeroTwo extends $pb.GeneratedMessage {
     SlsaProvenanceZeroTwo_SlsaBuilder? builder,
     $core.String? buildType,
     SlsaProvenanceZeroTwo_SlsaInvocation? invocation,
-    $263.Struct? buildConfig,
+    $289.Struct? buildConfig,
     SlsaProvenanceZeroTwo_SlsaMetadata? metadata,
     $core.Iterable<SlsaProvenanceZeroTwo_SlsaMaterial>? materials,
   }) {
@@ -671,8 +671,8 @@ class SlsaProvenanceZeroTwo extends $pb.GeneratedMessage {
     ..aOM<SlsaProvenanceZeroTwo_SlsaInvocation>(
         3, _omitFieldNames ? '' : 'invocation',
         subBuilder: SlsaProvenanceZeroTwo_SlsaInvocation.create)
-    ..aOM<$263.Struct>(4, _omitFieldNames ? '' : 'buildConfig',
-        subBuilder: $263.Struct.create)
+    ..aOM<$289.Struct>(4, _omitFieldNames ? '' : 'buildConfig',
+        subBuilder: $289.Struct.create)
     ..aOM<SlsaProvenanceZeroTwo_SlsaMetadata>(
         5, _omitFieldNames ? '' : 'metadata',
         subBuilder: SlsaProvenanceZeroTwo_SlsaMetadata.create)
@@ -747,9 +747,9 @@ class SlsaProvenanceZeroTwo extends $pb.GeneratedMessage {
   SlsaProvenanceZeroTwo_SlsaInvocation ensureInvocation() => $_ensure(2);
 
   @$pb.TagNumber(4)
-  $263.Struct get buildConfig => $_getN(3);
+  $289.Struct get buildConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set buildConfig($263.Struct v) {
+  set buildConfig($289.Struct v) {
     setField(4, v);
   }
 
@@ -758,7 +758,7 @@ class SlsaProvenanceZeroTwo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearBuildConfig() => clearField(4);
   @$pb.TagNumber(4)
-  $263.Struct ensureBuildConfig() => $_ensure(3);
+  $289.Struct ensureBuildConfig() => $_ensure(3);
 
   @$pb.TagNumber(5)
   SlsaProvenanceZeroTwo_SlsaMetadata get metadata => $_getN(4);

@@ -16,7 +16,7 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'productreviews.pb.dart' as $245;
+import 'productreviews.pb.dart' as $271;
 
 export 'productreviews.pb.dart';
 
@@ -24,25 +24,25 @@ export 'productreviews.pb.dart';
     'google.shopping.merchant.reviews.v1beta.ProductReviewsService')
 class ProductReviewsServiceClient extends $grpc.Client {
   static final _$getProductReview = $grpc.ClientMethod<
-          $245.GetProductReviewRequest, $245.ProductReview>(
+          $271.GetProductReviewRequest, $271.ProductReview>(
       '/google.shopping.merchant.reviews.v1beta.ProductReviewsService/GetProductReview',
-      ($245.GetProductReviewRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $245.ProductReview.fromBuffer(value));
+      ($271.GetProductReviewRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $271.ProductReview.fromBuffer(value));
   static final _$listProductReviews = $grpc.ClientMethod<
-          $245.ListProductReviewsRequest, $245.ListProductReviewsResponse>(
+          $271.ListProductReviewsRequest, $271.ListProductReviewsResponse>(
       '/google.shopping.merchant.reviews.v1beta.ProductReviewsService/ListProductReviews',
-      ($245.ListProductReviewsRequest value) => value.writeToBuffer(),
+      ($271.ListProductReviewsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $245.ListProductReviewsResponse.fromBuffer(value));
+          $271.ListProductReviewsResponse.fromBuffer(value));
   static final _$insertProductReview = $grpc.ClientMethod<
-          $245.InsertProductReviewRequest, $245.ProductReview>(
+          $271.InsertProductReviewRequest, $271.ProductReview>(
       '/google.shopping.merchant.reviews.v1beta.ProductReviewsService/InsertProductReview',
-      ($245.InsertProductReviewRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $245.ProductReview.fromBuffer(value));
+      ($271.InsertProductReviewRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $271.ProductReview.fromBuffer(value));
   static final _$deleteProductReview = $grpc.ClientMethod<
-          $245.DeleteProductReviewRequest, $3.Empty>(
+          $271.DeleteProductReviewRequest, $3.Empty>(
       '/google.shopping.merchant.reviews.v1beta.ProductReviewsService/DeleteProductReview',
-      ($245.DeleteProductReviewRequest value) => value.writeToBuffer(),
+      ($271.DeleteProductReviewRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
 
   ProductReviewsServiceClient($grpc.ClientChannel channel,
@@ -50,26 +50,26 @@ class ProductReviewsServiceClient extends $grpc.Client {
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$245.ProductReview> getProductReview(
-      $245.GetProductReviewRequest request,
+  $grpc.ResponseFuture<$271.ProductReview> getProductReview(
+      $271.GetProductReviewRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getProductReview, request, options: options);
   }
 
-  $grpc.ResponseFuture<$245.ListProductReviewsResponse> listProductReviews(
-      $245.ListProductReviewsRequest request,
+  $grpc.ResponseFuture<$271.ListProductReviewsResponse> listProductReviews(
+      $271.ListProductReviewsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listProductReviews, request, options: options);
   }
 
-  $grpc.ResponseFuture<$245.ProductReview> insertProductReview(
-      $245.InsertProductReviewRequest request,
+  $grpc.ResponseFuture<$271.ProductReview> insertProductReview(
+      $271.InsertProductReviewRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$insertProductReview, request, options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> deleteProductReview(
-      $245.DeleteProductReviewRequest request,
+      $271.DeleteProductReviewRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteProductReview, request, options: options);
   }
@@ -83,70 +83,70 @@ abstract class ProductReviewsServiceBase extends $grpc.Service {
 
   ProductReviewsServiceBase() {
     $addMethod(
-        $grpc.ServiceMethod<$245.GetProductReviewRequest, $245.ProductReview>(
+        $grpc.ServiceMethod<$271.GetProductReviewRequest, $271.ProductReview>(
             'GetProductReview',
             getProductReview_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $245.GetProductReviewRequest.fromBuffer(value),
-            ($245.ProductReview value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$245.ListProductReviewsRequest,
-            $245.ListProductReviewsResponse>(
+                $271.GetProductReviewRequest.fromBuffer(value),
+            ($271.ProductReview value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$271.ListProductReviewsRequest,
+            $271.ListProductReviewsResponse>(
         'ListProductReviews',
         listProductReviews_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $245.ListProductReviewsRequest.fromBuffer(value),
-        ($245.ListProductReviewsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$245.InsertProductReviewRequest,
-            $245.ProductReview>(
+            $271.ListProductReviewsRequest.fromBuffer(value),
+        ($271.ListProductReviewsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$271.InsertProductReviewRequest,
+            $271.ProductReview>(
         'InsertProductReview',
         insertProductReview_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $245.InsertProductReviewRequest.fromBuffer(value),
-        ($245.ProductReview value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$245.DeleteProductReviewRequest, $3.Empty>(
+            $271.InsertProductReviewRequest.fromBuffer(value),
+        ($271.ProductReview value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$271.DeleteProductReviewRequest, $3.Empty>(
         'DeleteProductReview',
         deleteProductReview_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $245.DeleteProductReviewRequest.fromBuffer(value),
+            $271.DeleteProductReviewRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$245.ProductReview> getProductReview_Pre($grpc.ServiceCall call,
-      $async.Future<$245.GetProductReviewRequest> request) async {
+  $async.Future<$271.ProductReview> getProductReview_Pre($grpc.ServiceCall call,
+      $async.Future<$271.GetProductReviewRequest> request) async {
     return getProductReview(call, await request);
   }
 
-  $async.Future<$245.ListProductReviewsResponse> listProductReviews_Pre(
+  $async.Future<$271.ListProductReviewsResponse> listProductReviews_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$245.ListProductReviewsRequest> request) async {
+      $async.Future<$271.ListProductReviewsRequest> request) async {
     return listProductReviews(call, await request);
   }
 
-  $async.Future<$245.ProductReview> insertProductReview_Pre(
+  $async.Future<$271.ProductReview> insertProductReview_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$245.InsertProductReviewRequest> request) async {
+      $async.Future<$271.InsertProductReviewRequest> request) async {
     return insertProductReview(call, await request);
   }
 
   $async.Future<$3.Empty> deleteProductReview_Pre($grpc.ServiceCall call,
-      $async.Future<$245.DeleteProductReviewRequest> request) async {
+      $async.Future<$271.DeleteProductReviewRequest> request) async {
     return deleteProductReview(call, await request);
   }
 
-  $async.Future<$245.ProductReview> getProductReview(
-      $grpc.ServiceCall call, $245.GetProductReviewRequest request);
-  $async.Future<$245.ListProductReviewsResponse> listProductReviews(
-      $grpc.ServiceCall call, $245.ListProductReviewsRequest request);
-  $async.Future<$245.ProductReview> insertProductReview(
-      $grpc.ServiceCall call, $245.InsertProductReviewRequest request);
+  $async.Future<$271.ProductReview> getProductReview(
+      $grpc.ServiceCall call, $271.GetProductReviewRequest request);
+  $async.Future<$271.ListProductReviewsResponse> listProductReviews(
+      $grpc.ServiceCall call, $271.ListProductReviewsRequest request);
+  $async.Future<$271.ProductReview> insertProductReview(
+      $grpc.ServiceCall call, $271.InsertProductReviewRequest request);
   $async.Future<$3.Empty> deleteProductReview(
-      $grpc.ServiceCall call, $245.DeleteProductReviewRequest request);
+      $grpc.ServiceCall call, $271.DeleteProductReviewRequest request);
 }

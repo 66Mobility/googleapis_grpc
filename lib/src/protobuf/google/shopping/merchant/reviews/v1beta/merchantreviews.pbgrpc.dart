@@ -16,7 +16,7 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'merchantreviews.pb.dart' as $244;
+import 'merchantreviews.pb.dart' as $270;
 
 export 'merchantreviews.pb.dart';
 
@@ -24,25 +24,25 @@ export 'merchantreviews.pb.dart';
     'google.shopping.merchant.reviews.v1beta.MerchantReviewsService')
 class MerchantReviewsServiceClient extends $grpc.Client {
   static final _$getMerchantReview = $grpc.ClientMethod<
-          $244.GetMerchantReviewRequest, $244.MerchantReview>(
+          $270.GetMerchantReviewRequest, $270.MerchantReview>(
       '/google.shopping.merchant.reviews.v1beta.MerchantReviewsService/GetMerchantReview',
-      ($244.GetMerchantReviewRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $244.MerchantReview.fromBuffer(value));
+      ($270.GetMerchantReviewRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $270.MerchantReview.fromBuffer(value));
   static final _$listMerchantReviews = $grpc.ClientMethod<
-          $244.ListMerchantReviewsRequest, $244.ListMerchantReviewsResponse>(
+          $270.ListMerchantReviewsRequest, $270.ListMerchantReviewsResponse>(
       '/google.shopping.merchant.reviews.v1beta.MerchantReviewsService/ListMerchantReviews',
-      ($244.ListMerchantReviewsRequest value) => value.writeToBuffer(),
+      ($270.ListMerchantReviewsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $244.ListMerchantReviewsResponse.fromBuffer(value));
+          $270.ListMerchantReviewsResponse.fromBuffer(value));
   static final _$insertMerchantReview = $grpc.ClientMethod<
-          $244.InsertMerchantReviewRequest, $244.MerchantReview>(
+          $270.InsertMerchantReviewRequest, $270.MerchantReview>(
       '/google.shopping.merchant.reviews.v1beta.MerchantReviewsService/InsertMerchantReview',
-      ($244.InsertMerchantReviewRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $244.MerchantReview.fromBuffer(value));
+      ($270.InsertMerchantReviewRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $270.MerchantReview.fromBuffer(value));
   static final _$deleteMerchantReview = $grpc.ClientMethod<
-          $244.DeleteMerchantReviewRequest, $3.Empty>(
+          $270.DeleteMerchantReviewRequest, $3.Empty>(
       '/google.shopping.merchant.reviews.v1beta.MerchantReviewsService/DeleteMerchantReview',
-      ($244.DeleteMerchantReviewRequest value) => value.writeToBuffer(),
+      ($270.DeleteMerchantReviewRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
 
   MerchantReviewsServiceClient($grpc.ClientChannel channel,
@@ -50,26 +50,26 @@ class MerchantReviewsServiceClient extends $grpc.Client {
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$244.MerchantReview> getMerchantReview(
-      $244.GetMerchantReviewRequest request,
+  $grpc.ResponseFuture<$270.MerchantReview> getMerchantReview(
+      $270.GetMerchantReviewRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getMerchantReview, request, options: options);
   }
 
-  $grpc.ResponseFuture<$244.ListMerchantReviewsResponse> listMerchantReviews(
-      $244.ListMerchantReviewsRequest request,
+  $grpc.ResponseFuture<$270.ListMerchantReviewsResponse> listMerchantReviews(
+      $270.ListMerchantReviewsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listMerchantReviews, request, options: options);
   }
 
-  $grpc.ResponseFuture<$244.MerchantReview> insertMerchantReview(
-      $244.InsertMerchantReviewRequest request,
+  $grpc.ResponseFuture<$270.MerchantReview> insertMerchantReview(
+      $270.InsertMerchantReviewRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$insertMerchantReview, request, options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> deleteMerchantReview(
-      $244.DeleteMerchantReviewRequest request,
+      $270.DeleteMerchantReviewRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteMerchantReview, request, options: options);
   }
@@ -83,71 +83,71 @@ abstract class MerchantReviewsServiceBase extends $grpc.Service {
 
   MerchantReviewsServiceBase() {
     $addMethod(
-        $grpc.ServiceMethod<$244.GetMerchantReviewRequest, $244.MerchantReview>(
+        $grpc.ServiceMethod<$270.GetMerchantReviewRequest, $270.MerchantReview>(
             'GetMerchantReview',
             getMerchantReview_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $244.GetMerchantReviewRequest.fromBuffer(value),
-            ($244.MerchantReview value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$244.ListMerchantReviewsRequest,
-            $244.ListMerchantReviewsResponse>(
+                $270.GetMerchantReviewRequest.fromBuffer(value),
+            ($270.MerchantReview value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$270.ListMerchantReviewsRequest,
+            $270.ListMerchantReviewsResponse>(
         'ListMerchantReviews',
         listMerchantReviews_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $244.ListMerchantReviewsRequest.fromBuffer(value),
-        ($244.ListMerchantReviewsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$244.InsertMerchantReviewRequest,
-            $244.MerchantReview>(
+            $270.ListMerchantReviewsRequest.fromBuffer(value),
+        ($270.ListMerchantReviewsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$270.InsertMerchantReviewRequest,
+            $270.MerchantReview>(
         'InsertMerchantReview',
         insertMerchantReview_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $244.InsertMerchantReviewRequest.fromBuffer(value),
-        ($244.MerchantReview value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$244.DeleteMerchantReviewRequest, $3.Empty>(
+            $270.InsertMerchantReviewRequest.fromBuffer(value),
+        ($270.MerchantReview value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$270.DeleteMerchantReviewRequest, $3.Empty>(
         'DeleteMerchantReview',
         deleteMerchantReview_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $244.DeleteMerchantReviewRequest.fromBuffer(value),
+            $270.DeleteMerchantReviewRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$244.MerchantReview> getMerchantReview_Pre(
+  $async.Future<$270.MerchantReview> getMerchantReview_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$244.GetMerchantReviewRequest> request) async {
+      $async.Future<$270.GetMerchantReviewRequest> request) async {
     return getMerchantReview(call, await request);
   }
 
-  $async.Future<$244.ListMerchantReviewsResponse> listMerchantReviews_Pre(
+  $async.Future<$270.ListMerchantReviewsResponse> listMerchantReviews_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$244.ListMerchantReviewsRequest> request) async {
+      $async.Future<$270.ListMerchantReviewsRequest> request) async {
     return listMerchantReviews(call, await request);
   }
 
-  $async.Future<$244.MerchantReview> insertMerchantReview_Pre(
+  $async.Future<$270.MerchantReview> insertMerchantReview_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$244.InsertMerchantReviewRequest> request) async {
+      $async.Future<$270.InsertMerchantReviewRequest> request) async {
     return insertMerchantReview(call, await request);
   }
 
   $async.Future<$3.Empty> deleteMerchantReview_Pre($grpc.ServiceCall call,
-      $async.Future<$244.DeleteMerchantReviewRequest> request) async {
+      $async.Future<$270.DeleteMerchantReviewRequest> request) async {
     return deleteMerchantReview(call, await request);
   }
 
-  $async.Future<$244.MerchantReview> getMerchantReview(
-      $grpc.ServiceCall call, $244.GetMerchantReviewRequest request);
-  $async.Future<$244.ListMerchantReviewsResponse> listMerchantReviews(
-      $grpc.ServiceCall call, $244.ListMerchantReviewsRequest request);
-  $async.Future<$244.MerchantReview> insertMerchantReview(
-      $grpc.ServiceCall call, $244.InsertMerchantReviewRequest request);
+  $async.Future<$270.MerchantReview> getMerchantReview(
+      $grpc.ServiceCall call, $270.GetMerchantReviewRequest request);
+  $async.Future<$270.ListMerchantReviewsResponse> listMerchantReviews(
+      $grpc.ServiceCall call, $270.ListMerchantReviewsRequest request);
+  $async.Future<$270.MerchantReview> insertMerchantReview(
+      $grpc.ServiceCall call, $270.InsertMerchantReviewRequest request);
   $async.Future<$3.Empty> deleteMerchantReview(
-      $grpc.ServiceCall call, $244.DeleteMerchantReviewRequest request);
+      $grpc.ServiceCall call, $270.DeleteMerchantReviewRequest request);
 }

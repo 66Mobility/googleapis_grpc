@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $335;
-import 'resource.pb.dart' as $83;
+import '../../../protobuf/field_mask.pb.dart' as $361;
+import 'resource.pb.dart' as $101;
 
 /// Request to create a space.
 class CreateSpaceRequest extends $pb.GeneratedMessage {
   factory CreateSpaceRequest({
-    $83.Space? space,
+    $101.Space? space,
   }) {
     final $result = create();
     if (space != null) {
@@ -40,8 +40,8 @@ class CreateSpaceRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.meet.v2beta'),
       createEmptyInstance: create)
-    ..aOM<$83.Space>(1, _omitFieldNames ? '' : 'space',
-        subBuilder: $83.Space.create)
+    ..aOM<$101.Space>(1, _omitFieldNames ? '' : 'space',
+        subBuilder: $101.Space.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -70,9 +70,9 @@ class CreateSpaceRequest extends $pb.GeneratedMessage {
   /// Space to be created. As of May 2023, the input space can be empty. Later on
   /// the input space can be non-empty when space configuration is introduced.
   @$pb.TagNumber(1)
-  $83.Space get space => $_getN(0);
+  $101.Space get space => $_getN(0);
   @$pb.TagNumber(1)
-  set space($83.Space v) {
+  set space($101.Space v) {
     setField(1, v);
   }
 
@@ -81,7 +81,7 @@ class CreateSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearSpace() => clearField(1);
   @$pb.TagNumber(1)
-  $83.Space ensureSpace() => $_ensure(0);
+  $101.Space ensureSpace() => $_ensure(0);
 }
 
 /// Request to get a space.
@@ -151,8 +151,8 @@ class GetSpaceRequest extends $pb.GeneratedMessage {
 /// Request to update a space.
 class UpdateSpaceRequest extends $pb.GeneratedMessage {
   factory UpdateSpaceRequest({
-    $83.Space? space,
-    $335.FieldMask? updateMask,
+    $101.Space? space,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (space != null) {
@@ -176,10 +176,10 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.meet.v2beta'),
       createEmptyInstance: create)
-    ..aOM<$83.Space>(1, _omitFieldNames ? '' : 'space',
-        subBuilder: $83.Space.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$101.Space>(1, _omitFieldNames ? '' : 'space',
+        subBuilder: $101.Space.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -207,9 +207,9 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
 
   /// Required. Space to be updated.
   @$pb.TagNumber(1)
-  $83.Space get space => $_getN(0);
+  $101.Space get space => $_getN(0);
   @$pb.TagNumber(1)
-  set space($83.Space v) {
+  set space($101.Space v) {
     setField(1, v);
   }
 
@@ -218,16 +218,16 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearSpace() => clearField(1);
   @$pb.TagNumber(1)
-  $83.Space ensureSpace() => $_ensure(0);
+  $101.Space ensureSpace() => $_ensure(0);
 
   /// Optional. Field mask used to specify the fields to be updated in the space.
   /// If update_mask isn't provided, it defaults to '*' and updates all
   /// fields provided in the request, including deleting fields not set in the
   /// request.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -236,7 +236,7 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to end an ongoing conference of a space.
@@ -491,7 +491,7 @@ class ListConferenceRecordsRequest extends $pb.GeneratedMessage {
 /// Response of ListConferenceRecords method.
 class ListConferenceRecordsResponse extends $pb.GeneratedMessage {
   factory ListConferenceRecordsResponse({
-    $core.Iterable<$83.ConferenceRecord>? conferenceRecords,
+    $core.Iterable<$101.ConferenceRecord>? conferenceRecords,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -516,9 +516,9 @@ class ListConferenceRecordsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.meet.v2beta'),
       createEmptyInstance: create)
-    ..pc<$83.ConferenceRecord>(
+    ..pc<$101.ConferenceRecord>(
         1, _omitFieldNames ? '' : 'conferenceRecords', $pb.PbFieldType.PM,
-        subBuilder: $83.ConferenceRecord.create)
+        subBuilder: $101.ConferenceRecord.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -551,7 +551,7 @@ class ListConferenceRecordsResponse extends $pb.GeneratedMessage {
 
   /// List of conferences in one page.
   @$pb.TagNumber(1)
-  $core.List<$83.ConferenceRecord> get conferenceRecords => $_getList(0);
+  $core.List<$101.ConferenceRecord> get conferenceRecords => $_getList(0);
 
   /// Token to be circulated back for further List call if current List does NOT
   /// include all the Conferences. Unset if all conferences have been returned.
@@ -768,7 +768,7 @@ class ListParticipantsRequest extends $pb.GeneratedMessage {
 /// Response of ListParticipants method.
 class ListParticipantsResponse extends $pb.GeneratedMessage {
   factory ListParticipantsResponse({
-    $core.Iterable<$83.Participant>? participants,
+    $core.Iterable<$101.Participant>? participants,
     $core.String? nextPageToken,
     $core.int? totalSize,
   }) {
@@ -797,9 +797,9 @@ class ListParticipantsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.meet.v2beta'),
       createEmptyInstance: create)
-    ..pc<$83.Participant>(
+    ..pc<$101.Participant>(
         1, _omitFieldNames ? '' : 'participants', $pb.PbFieldType.PM,
-        subBuilder: $83.Participant.create)
+        subBuilder: $101.Participant.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
@@ -831,7 +831,7 @@ class ListParticipantsResponse extends $pb.GeneratedMessage {
 
   /// List of participants in one page.
   @$pb.TagNumber(1)
-  $core.List<$83.Participant> get participants => $_getList(0);
+  $core.List<$101.Participant> get participants => $_getList(0);
 
   /// Token to be circulated back for further List call if current List doesn't
   /// include all the participants. Unset if all participants are returned.
@@ -1069,7 +1069,7 @@ class ListParticipantSessionsRequest extends $pb.GeneratedMessage {
 /// Response of ListParticipants method.
 class ListParticipantSessionsResponse extends $pb.GeneratedMessage {
   factory ListParticipantSessionsResponse({
-    $core.Iterable<$83.ParticipantSession>? participantSessions,
+    $core.Iterable<$101.ParticipantSession>? participantSessions,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1094,9 +1094,9 @@ class ListParticipantSessionsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.meet.v2beta'),
       createEmptyInstance: create)
-    ..pc<$83.ParticipantSession>(
+    ..pc<$101.ParticipantSession>(
         1, _omitFieldNames ? '' : 'participantSessions', $pb.PbFieldType.PM,
-        subBuilder: $83.ParticipantSession.create)
+        subBuilder: $101.ParticipantSession.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -1130,7 +1130,7 @@ class ListParticipantSessionsResponse extends $pb.GeneratedMessage {
 
   /// List of participants in one page.
   @$pb.TagNumber(1)
-  $core.List<$83.ParticipantSession> get participantSessions => $_getList(0);
+  $core.List<$101.ParticipantSession> get participantSessions => $_getList(0);
 
   /// Token to be circulated back for further List call if current List doesn't
   /// include all the participants. Unset if all participants are returned.
@@ -1320,7 +1320,7 @@ class ListRecordingsRequest extends $pb.GeneratedMessage {
 /// Response for ListRecordings method.
 class ListRecordingsResponse extends $pb.GeneratedMessage {
   factory ListRecordingsResponse({
-    $core.Iterable<$83.Recording>? recordings,
+    $core.Iterable<$101.Recording>? recordings,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1345,9 +1345,9 @@ class ListRecordingsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.meet.v2beta'),
       createEmptyInstance: create)
-    ..pc<$83.Recording>(
+    ..pc<$101.Recording>(
         1, _omitFieldNames ? '' : 'recordings', $pb.PbFieldType.PM,
-        subBuilder: $83.Recording.create)
+        subBuilder: $101.Recording.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -1378,7 +1378,7 @@ class ListRecordingsResponse extends $pb.GeneratedMessage {
 
   /// List of recordings in one page.
   @$pb.TagNumber(1)
-  $core.List<$83.Recording> get recordings => $_getList(0);
+  $core.List<$101.Recording> get recordings => $_getList(0);
 
   /// Token to be circulated back for further List call if current List doesn't
   /// include all the recordings. Unset if all recordings are returned.
@@ -1569,7 +1569,7 @@ class ListTranscriptsRequest extends $pb.GeneratedMessage {
 /// Response for ListTranscripts method.
 class ListTranscriptsResponse extends $pb.GeneratedMessage {
   factory ListTranscriptsResponse({
-    $core.Iterable<$83.Transcript>? transcripts,
+    $core.Iterable<$101.Transcript>? transcripts,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1594,9 +1594,9 @@ class ListTranscriptsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.meet.v2beta'),
       createEmptyInstance: create)
-    ..pc<$83.Transcript>(
+    ..pc<$101.Transcript>(
         1, _omitFieldNames ? '' : 'transcripts', $pb.PbFieldType.PM,
-        subBuilder: $83.Transcript.create)
+        subBuilder: $101.Transcript.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -1627,7 +1627,7 @@ class ListTranscriptsResponse extends $pb.GeneratedMessage {
 
   /// List of transcripts in one page.
   @$pb.TagNumber(1)
-  $core.List<$83.Transcript> get transcripts => $_getList(0);
+  $core.List<$101.Transcript> get transcripts => $_getList(0);
 
   /// Token to be circulated back for further List call if current List doesn't
   /// include all the transcripts. Unset if all transcripts are returned.
@@ -1822,7 +1822,7 @@ class ListTranscriptEntriesRequest extends $pb.GeneratedMessage {
 /// Response for ListTranscriptEntries method
 class ListTranscriptEntriesResponse extends $pb.GeneratedMessage {
   factory ListTranscriptEntriesResponse({
-    $core.Iterable<$83.TranscriptEntry>? transcriptEntries,
+    $core.Iterable<$101.TranscriptEntry>? transcriptEntries,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1847,9 +1847,9 @@ class ListTranscriptEntriesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.meet.v2beta'),
       createEmptyInstance: create)
-    ..pc<$83.TranscriptEntry>(
+    ..pc<$101.TranscriptEntry>(
         1, _omitFieldNames ? '' : 'transcriptEntries', $pb.PbFieldType.PM,
-        subBuilder: $83.TranscriptEntry.create)
+        subBuilder: $101.TranscriptEntry.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -1882,7 +1882,7 @@ class ListTranscriptEntriesResponse extends $pb.GeneratedMessage {
 
   /// List of TranscriptEntries in one page.
   @$pb.TagNumber(1)
-  $core.List<$83.TranscriptEntry> get transcriptEntries => $_getList(0);
+  $core.List<$101.TranscriptEntry> get transcriptEntries => $_getList(0);
 
   /// Token to be circulated back for further List call if current List doesn't
   /// include all the transcript entries. Unset if all entries are returned.

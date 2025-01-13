@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'document.pb.dart' as $130;
+import 'document.pb.dart' as $148;
 
 ///  The result of a single bucket from a Firestore aggregation query.
 ///
@@ -22,7 +22,7 @@ import 'document.pb.dart' as $130;
 ///  each result.
 class AggregationResult extends $pb.GeneratedMessage {
   factory AggregationResult({
-    $core.Map<$core.String, $130.Value>? aggregateFields,
+    $core.Map<$core.String, $148.Value>? aggregateFields,
   }) {
     final $result = create();
     if (aggregateFields != null) {
@@ -43,12 +43,12 @@ class AggregationResult extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'),
       createEmptyInstance: create)
-    ..m<$core.String, $130.Value>(2, _omitFieldNames ? '' : 'aggregateFields',
+    ..m<$core.String, $148.Value>(2, _omitFieldNames ? '' : 'aggregateFields',
         entryClassName: 'AggregationResult.AggregateFieldsEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OM,
-        valueCreator: $130.Value.create,
-        valueDefaultOrMaker: $130.Value.getDefault,
+        valueCreator: $148.Value.create,
+        valueDefaultOrMaker: $148.Value.getDefault,
         packageName: const $pb.PackageName('google.firestore.v1'))
     ..hasRequiredFields = false;
 
@@ -82,7 +82,7 @@ class AggregationResult extends $pb.GeneratedMessage {
   ///  assigned to the aggregation function on input and the size of this map
   ///  equals the number of aggregation functions in the query.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $130.Value> get aggregateFields => $_getMap(0);
+  $core.Map<$core.String, $148.Value> get aggregateFields => $_getMap(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

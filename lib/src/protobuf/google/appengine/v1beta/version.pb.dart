@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $266;
-import '../../protobuf/timestamp.pb.dart' as $304;
-import 'app_yaml.pb.dart' as $383;
-import 'deploy.pb.dart' as $384;
+import '../../protobuf/duration.pb.dart' as $292;
+import '../../protobuf/timestamp.pb.dart' as $330;
+import 'app_yaml.pb.dart' as $412;
+import 'deploy.pb.dart' as $413;
 import 'version.pbenum.dart';
 
 export 'version.pbenum.dart';
@@ -44,23 +44,23 @@ class Version extends $pb.GeneratedMessage {
     $core.String? env,
     ServingStatus? servingStatus,
     $core.String? createdBy,
-    $304.Timestamp? createTime,
+    $330.Timestamp? createTime,
     $fixnum.Int64? diskUsageBytes,
     $core.String? runtimeApiVersion,
     $core.String? runtimeMainExecutablePath,
-    $core.Iterable<$383.UrlMap>? handlers,
-    $core.Iterable<$383.ErrorHandler>? errorHandlers,
-    $core.Iterable<$383.Library>? libraries,
-    $383.ApiConfigHandler? apiConfig,
+    $core.Iterable<$412.UrlMap>? handlers,
+    $core.Iterable<$412.ErrorHandler>? errorHandlers,
+    $core.Iterable<$412.Library>? libraries,
+    $412.ApiConfigHandler? apiConfig,
     $core.Map<$core.String, $core.String>? envVariables,
-    $266.Duration? defaultExpiration,
-    $383.HealthCheck? healthCheck,
+    $292.Duration? defaultExpiration,
+    $412.HealthCheck? healthCheck,
     $core.String? nobuildFilesRegex,
-    $384.Deployment? deployment,
+    $413.Deployment? deployment,
     $core.String? versionUrl,
     EndpointsApiService? endpointsApiService,
-    $383.ReadinessCheck? readinessCheck,
-    $383.LivenessCheck? livenessCheck,
+    $412.ReadinessCheck? readinessCheck,
+    $412.LivenessCheck? livenessCheck,
     $core.String? runtimeChannel,
     $core.Iterable<$core.String>? zones,
     VpcAccessConnector? vpcAccessConnector,
@@ -245,42 +245,42 @@ class Version extends $pb.GeneratedMessage {
         valueOf: ServingStatus.valueOf,
         enumValues: ServingStatus.values)
     ..aOS(16, _omitFieldNames ? '' : 'createdBy')
-    ..aOM<$304.Timestamp>(17, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(17, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $330.Timestamp.create)
     ..aInt64(18, _omitFieldNames ? '' : 'diskUsageBytes')
     ..aOS(21, _omitFieldNames ? '' : 'runtimeApiVersion')
     ..aOS(22, _omitFieldNames ? '' : 'runtimeMainExecutablePath')
-    ..pc<$383.UrlMap>(
+    ..pc<$412.UrlMap>(
         100, _omitFieldNames ? '' : 'handlers', $pb.PbFieldType.PM,
-        subBuilder: $383.UrlMap.create)
-    ..pc<$383.ErrorHandler>(
+        subBuilder: $412.UrlMap.create)
+    ..pc<$412.ErrorHandler>(
         101, _omitFieldNames ? '' : 'errorHandlers', $pb.PbFieldType.PM,
-        subBuilder: $383.ErrorHandler.create)
-    ..pc<$383.Library>(
+        subBuilder: $412.ErrorHandler.create)
+    ..pc<$412.Library>(
         102, _omitFieldNames ? '' : 'libraries', $pb.PbFieldType.PM,
-        subBuilder: $383.Library.create)
-    ..aOM<$383.ApiConfigHandler>(103, _omitFieldNames ? '' : 'apiConfig',
-        subBuilder: $383.ApiConfigHandler.create)
+        subBuilder: $412.Library.create)
+    ..aOM<$412.ApiConfigHandler>(103, _omitFieldNames ? '' : 'apiConfig',
+        subBuilder: $412.ApiConfigHandler.create)
     ..m<$core.String, $core.String>(104, _omitFieldNames ? '' : 'envVariables',
         entryClassName: 'Version.EnvVariablesEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.appengine.v1beta'))
-    ..aOM<$266.Duration>(105, _omitFieldNames ? '' : 'defaultExpiration',
-        subBuilder: $266.Duration.create)
-    ..aOM<$383.HealthCheck>(106, _omitFieldNames ? '' : 'healthCheck',
-        subBuilder: $383.HealthCheck.create)
+    ..aOM<$292.Duration>(105, _omitFieldNames ? '' : 'defaultExpiration',
+        subBuilder: $292.Duration.create)
+    ..aOM<$412.HealthCheck>(106, _omitFieldNames ? '' : 'healthCheck',
+        subBuilder: $412.HealthCheck.create)
     ..aOS(107, _omitFieldNames ? '' : 'nobuildFilesRegex')
-    ..aOM<$384.Deployment>(108, _omitFieldNames ? '' : 'deployment',
-        subBuilder: $384.Deployment.create)
+    ..aOM<$413.Deployment>(108, _omitFieldNames ? '' : 'deployment',
+        subBuilder: $413.Deployment.create)
     ..aOS(109, _omitFieldNames ? '' : 'versionUrl')
     ..aOM<EndpointsApiService>(
         110, _omitFieldNames ? '' : 'endpointsApiService',
         subBuilder: EndpointsApiService.create)
-    ..aOM<$383.ReadinessCheck>(112, _omitFieldNames ? '' : 'readinessCheck',
-        subBuilder: $383.ReadinessCheck.create)
-    ..aOM<$383.LivenessCheck>(113, _omitFieldNames ? '' : 'livenessCheck',
-        subBuilder: $383.LivenessCheck.create)
+    ..aOM<$412.ReadinessCheck>(112, _omitFieldNames ? '' : 'readinessCheck',
+        subBuilder: $412.ReadinessCheck.create)
+    ..aOM<$412.LivenessCheck>(113, _omitFieldNames ? '' : 'livenessCheck',
+        subBuilder: $412.LivenessCheck.create)
     ..aOS(117, _omitFieldNames ? '' : 'runtimeChannel')
     ..pPS(118, _omitFieldNames ? '' : 'zones')
     ..aOM<VpcAccessConnector>(121, _omitFieldNames ? '' : 'vpcAccessConnector',
@@ -554,9 +554,9 @@ class Version extends $pb.GeneratedMessage {
   ///
   ///  @OutputOnly
   @$pb.TagNumber(17)
-  $304.Timestamp get createTime => $_getN(16);
+  $330.Timestamp get createTime => $_getN(16);
   @$pb.TagNumber(17)
-  set createTime($304.Timestamp v) {
+  set createTime($330.Timestamp v) {
     setField(17, v);
   }
 
@@ -565,7 +565,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearCreateTime() => clearField(17);
   @$pb.TagNumber(17)
-  $304.Timestamp ensureCreateTime() => $_ensure(16);
+  $330.Timestamp ensureCreateTime() => $_ensure(16);
 
   ///  Total size in bytes of all the files that are included in this version
   ///  and currently hosted on the App Engine disk.
@@ -617,29 +617,29 @@ class Version extends $pb.GeneratedMessage {
   ///
   ///  Only returned in `GET` requests if `view=FULL` is set.
   @$pb.TagNumber(100)
-  $core.List<$383.UrlMap> get handlers => $_getList(20);
+  $core.List<$412.UrlMap> get handlers => $_getList(20);
 
   ///  Custom static error pages. Limited to 10KB per page.
   ///
   ///  Only returned in `GET` requests if `view=FULL` is set.
   @$pb.TagNumber(101)
-  $core.List<$383.ErrorHandler> get errorHandlers => $_getList(21);
+  $core.List<$412.ErrorHandler> get errorHandlers => $_getList(21);
 
   ///  Configuration for third-party Python runtime libraries that are required
   ///  by the application.
   ///
   ///  Only returned in `GET` requests if `view=FULL` is set.
   @$pb.TagNumber(102)
-  $core.List<$383.Library> get libraries => $_getList(22);
+  $core.List<$412.Library> get libraries => $_getList(22);
 
   ///  Serving configuration for
   ///  [Google Cloud Endpoints](https://cloud.google.com/appengine/docs/python/endpoints/).
   ///
   ///  Only returned in `GET` requests if `view=FULL` is set.
   @$pb.TagNumber(103)
-  $383.ApiConfigHandler get apiConfig => $_getN(23);
+  $412.ApiConfigHandler get apiConfig => $_getN(23);
   @$pb.TagNumber(103)
-  set apiConfig($383.ApiConfigHandler v) {
+  set apiConfig($412.ApiConfigHandler v) {
     setField(103, v);
   }
 
@@ -648,7 +648,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(103)
   void clearApiConfig() => clearField(103);
   @$pb.TagNumber(103)
-  $383.ApiConfigHandler ensureApiConfig() => $_ensure(23);
+  $412.ApiConfigHandler ensureApiConfig() => $_ensure(23);
 
   ///  Environment variables available to the application.
   ///
@@ -663,9 +663,9 @@ class Version extends $pb.GeneratedMessage {
   ///
   ///  Only returned in `GET` requests if `view=FULL` is set.
   @$pb.TagNumber(105)
-  $266.Duration get defaultExpiration => $_getN(25);
+  $292.Duration get defaultExpiration => $_getN(25);
   @$pb.TagNumber(105)
-  set defaultExpiration($266.Duration v) {
+  set defaultExpiration($292.Duration v) {
     setField(105, v);
   }
 
@@ -674,7 +674,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(105)
   void clearDefaultExpiration() => clearField(105);
   @$pb.TagNumber(105)
-  $266.Duration ensureDefaultExpiration() => $_ensure(25);
+  $292.Duration ensureDefaultExpiration() => $_ensure(25);
 
   ///  Configures health checking for instances. Unhealthy instances are
   ///  stopped and replaced with new instances.
@@ -682,9 +682,9 @@ class Version extends $pb.GeneratedMessage {
   ///
   ///  Only returned in `GET` requests if `view=FULL` is set.
   @$pb.TagNumber(106)
-  $383.HealthCheck get healthCheck => $_getN(26);
+  $412.HealthCheck get healthCheck => $_getN(26);
   @$pb.TagNumber(106)
-  set healthCheck($383.HealthCheck v) {
+  set healthCheck($412.HealthCheck v) {
     setField(106, v);
   }
 
@@ -693,7 +693,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(106)
   void clearHealthCheck() => clearField(106);
   @$pb.TagNumber(106)
-  $383.HealthCheck ensureHealthCheck() => $_ensure(26);
+  $412.HealthCheck ensureHealthCheck() => $_ensure(26);
 
   ///  Files that match this pattern will not be built into this version.
   ///  Only applicable for Go runtimes.
@@ -715,9 +715,9 @@ class Version extends $pb.GeneratedMessage {
   ///
   ///  Only returned in `GET` requests if `view=FULL` is set.
   @$pb.TagNumber(108)
-  $384.Deployment get deployment => $_getN(28);
+  $413.Deployment get deployment => $_getN(28);
   @$pb.TagNumber(108)
-  set deployment($384.Deployment v) {
+  set deployment($413.Deployment v) {
     setField(108, v);
   }
 
@@ -726,7 +726,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(108)
   void clearDeployment() => clearField(108);
   @$pb.TagNumber(108)
-  $384.Deployment ensureDeployment() => $_ensure(28);
+  $413.Deployment ensureDeployment() => $_ensure(28);
 
   ///  Serving URL for this version. Example:
   ///  "https://myversion-dot-myservice-dot-myapp.appspot.com"
@@ -767,9 +767,9 @@ class Version extends $pb.GeneratedMessage {
   ///
   ///  Only returned in `GET` requests if `view=FULL` is set.
   @$pb.TagNumber(112)
-  $383.ReadinessCheck get readinessCheck => $_getN(31);
+  $412.ReadinessCheck get readinessCheck => $_getN(31);
   @$pb.TagNumber(112)
-  set readinessCheck($383.ReadinessCheck v) {
+  set readinessCheck($412.ReadinessCheck v) {
     setField(112, v);
   }
 
@@ -778,16 +778,16 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(112)
   void clearReadinessCheck() => clearField(112);
   @$pb.TagNumber(112)
-  $383.ReadinessCheck ensureReadinessCheck() => $_ensure(31);
+  $412.ReadinessCheck ensureReadinessCheck() => $_ensure(31);
 
   ///  Configures liveness health checking for instances.
   ///  Unhealthy instances are stopped and replaced with new instances
   ///
   ///  Only returned in `GET` requests if `view=FULL` is set.
   @$pb.TagNumber(113)
-  $383.LivenessCheck get livenessCheck => $_getN(32);
+  $412.LivenessCheck get livenessCheck => $_getN(32);
   @$pb.TagNumber(113)
-  set livenessCheck($383.LivenessCheck v) {
+  set livenessCheck($412.LivenessCheck v) {
     setField(113, v);
   }
 
@@ -796,7 +796,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(113)
   void clearLivenessCheck() => clearField(113);
   @$pb.TagNumber(113)
-  $383.LivenessCheck ensureLivenessCheck() => $_ensure(32);
+  $412.LivenessCheck ensureLivenessCheck() => $_ensure(32);
 
   /// The channel of the runtime to use. Only available for some
   /// runtimes. Defaults to the `default` channel.
@@ -1030,15 +1030,15 @@ class EndpointsApiService extends $pb.GeneratedMessage {
 /// application metrics.
 class AutomaticScaling extends $pb.GeneratedMessage {
   factory AutomaticScaling({
-    $266.Duration? coolDownPeriod,
+    $292.Duration? coolDownPeriod,
     CpuUtilization? cpuUtilization,
     $core.int? maxConcurrentRequests,
     $core.int? maxIdleInstances,
     $core.int? maxTotalInstances,
-    $266.Duration? maxPendingLatency,
+    $292.Duration? maxPendingLatency,
     $core.int? minIdleInstances,
     $core.int? minTotalInstances,
-    $266.Duration? minPendingLatency,
+    $292.Duration? minPendingLatency,
     RequestUtilization? requestUtilization,
     DiskUtilization? diskUtilization,
     NetworkUtilization? networkUtilization,
@@ -1103,8 +1103,8 @@ class AutomaticScaling extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'coolDownPeriod',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'coolDownPeriod',
+        subBuilder: $292.Duration.create)
     ..aOM<CpuUtilization>(2, _omitFieldNames ? '' : 'cpuUtilization',
         subBuilder: CpuUtilization.create)
     ..a<$core.int>(
@@ -1113,14 +1113,14 @@ class AutomaticScaling extends $pb.GeneratedMessage {
         4, _omitFieldNames ? '' : 'maxIdleInstances', $pb.PbFieldType.O3)
     ..a<$core.int>(
         5, _omitFieldNames ? '' : 'maxTotalInstances', $pb.PbFieldType.O3)
-    ..aOM<$266.Duration>(6, _omitFieldNames ? '' : 'maxPendingLatency',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(6, _omitFieldNames ? '' : 'maxPendingLatency',
+        subBuilder: $292.Duration.create)
     ..a<$core.int>(
         7, _omitFieldNames ? '' : 'minIdleInstances', $pb.PbFieldType.O3)
     ..a<$core.int>(
         8, _omitFieldNames ? '' : 'minTotalInstances', $pb.PbFieldType.O3)
-    ..aOM<$266.Duration>(9, _omitFieldNames ? '' : 'minPendingLatency',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(9, _omitFieldNames ? '' : 'minPendingLatency',
+        subBuilder: $292.Duration.create)
     ..aOM<RequestUtilization>(10, _omitFieldNames ? '' : 'requestUtilization',
         subBuilder: RequestUtilization.create)
     ..aOM<DiskUtilization>(11, _omitFieldNames ? '' : 'diskUtilization',
@@ -1165,9 +1165,9 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   /// is initializing, during which the collected usage would not be reliable.
   /// Only applicable in the App Engine flexible environment.
   @$pb.TagNumber(1)
-  $266.Duration get coolDownPeriod => $_getN(0);
+  $292.Duration get coolDownPeriod => $_getN(0);
   @$pb.TagNumber(1)
-  set coolDownPeriod($266.Duration v) {
+  set coolDownPeriod($292.Duration v) {
     setField(1, v);
   }
 
@@ -1176,7 +1176,7 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCoolDownPeriod() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensureCoolDownPeriod() => $_ensure(0);
+  $292.Duration ensureCoolDownPeriod() => $_ensure(0);
 
   /// Target scaling by CPU usage.
   @$pb.TagNumber(2)
@@ -1240,9 +1240,9 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   /// Maximum amount of time that a request should wait in the pending queue
   /// before starting a new instance to handle it.
   @$pb.TagNumber(6)
-  $266.Duration get maxPendingLatency => $_getN(5);
+  $292.Duration get maxPendingLatency => $_getN(5);
   @$pb.TagNumber(6)
-  set maxPendingLatency($266.Duration v) {
+  set maxPendingLatency($292.Duration v) {
     setField(6, v);
   }
 
@@ -1251,7 +1251,7 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearMaxPendingLatency() => clearField(6);
   @$pb.TagNumber(6)
-  $266.Duration ensureMaxPendingLatency() => $_ensure(5);
+  $292.Duration ensureMaxPendingLatency() => $_ensure(5);
 
   /// Minimum number of idle instances that should be maintained for
   /// this version. Only applicable for the default version of a service.
@@ -1284,9 +1284,9 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   /// Minimum amount of time a request should wait in the pending queue before
   /// starting a new instance to handle it.
   @$pb.TagNumber(9)
-  $266.Duration get minPendingLatency => $_getN(8);
+  $292.Duration get minPendingLatency => $_getN(8);
   @$pb.TagNumber(9)
-  set minPendingLatency($266.Duration v) {
+  set minPendingLatency($292.Duration v) {
     setField(9, v);
   }
 
@@ -1295,7 +1295,7 @@ class AutomaticScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearMinPendingLatency() => clearField(9);
   @$pb.TagNumber(9)
-  $266.Duration ensureMinPendingLatency() => $_ensure(8);
+  $292.Duration ensureMinPendingLatency() => $_ensure(8);
 
   /// Target scaling by request utilization.
   @$pb.TagNumber(10)
@@ -1369,7 +1369,7 @@ class AutomaticScaling extends $pb.GeneratedMessage {
 /// user activity.
 class BasicScaling extends $pb.GeneratedMessage {
   factory BasicScaling({
-    $266.Duration? idleTimeout,
+    $292.Duration? idleTimeout,
     $core.int? maxInstances,
   }) {
     final $result = create();
@@ -1394,8 +1394,8 @@ class BasicScaling extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'idleTimeout',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'idleTimeout',
+        subBuilder: $292.Duration.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'maxInstances', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
@@ -1425,9 +1425,9 @@ class BasicScaling extends $pb.GeneratedMessage {
   /// Duration of time after the last request that an instance must wait before
   /// the instance is shut down.
   @$pb.TagNumber(1)
-  $266.Duration get idleTimeout => $_getN(0);
+  $292.Duration get idleTimeout => $_getN(0);
   @$pb.TagNumber(1)
-  set idleTimeout($266.Duration v) {
+  set idleTimeout($292.Duration v) {
     setField(1, v);
   }
 
@@ -1436,7 +1436,7 @@ class BasicScaling extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearIdleTimeout() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensureIdleTimeout() => $_ensure(0);
+  $292.Duration ensureIdleTimeout() => $_ensure(0);
 
   /// Maximum number of instances to create for this version.
   @$pb.TagNumber(2)
@@ -1523,7 +1523,7 @@ class ManualScaling extends $pb.GeneratedMessage {
 /// Target scaling by CPU usage.
 class CpuUtilization extends $pb.GeneratedMessage {
   factory CpuUtilization({
-    $266.Duration? aggregationWindowLength,
+    $292.Duration? aggregationWindowLength,
     $core.double? targetUtilization,
   }) {
     final $result = create();
@@ -1548,8 +1548,8 @@ class CpuUtilization extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.appengine.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'aggregationWindowLength',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'aggregationWindowLength',
+        subBuilder: $292.Duration.create)
     ..a<$core.double>(
         2, _omitFieldNames ? '' : 'targetUtilization', $pb.PbFieldType.OD)
     ..hasRequiredFields = false;
@@ -1579,9 +1579,9 @@ class CpuUtilization extends $pb.GeneratedMessage {
 
   /// Period of time over which CPU utilization is calculated.
   @$pb.TagNumber(1)
-  $266.Duration get aggregationWindowLength => $_getN(0);
+  $292.Duration get aggregationWindowLength => $_getN(0);
   @$pb.TagNumber(1)
-  set aggregationWindowLength($266.Duration v) {
+  set aggregationWindowLength($292.Duration v) {
     setField(1, v);
   }
 
@@ -1590,7 +1590,7 @@ class CpuUtilization extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearAggregationWindowLength() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensureAggregationWindowLength() => $_ensure(0);
+  $292.Duration ensureAggregationWindowLength() => $_ensure(0);
 
   /// Target CPU utilization ratio to maintain when scaling. Must be between 0
   /// and 1.

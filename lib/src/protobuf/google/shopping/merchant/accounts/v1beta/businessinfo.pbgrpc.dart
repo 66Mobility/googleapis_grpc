@@ -15,7 +15,7 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'businessinfo.pb.dart' as $221;
+import 'businessinfo.pb.dart' as $247;
 
 export 'businessinfo.pb.dart';
 
@@ -23,29 +23,29 @@ export 'businessinfo.pb.dart';
     'google.shopping.merchant.accounts.v1beta.BusinessInfoService')
 class BusinessInfoServiceClient extends $grpc.Client {
   static final _$getBusinessInfo = $grpc.ClientMethod<
-          $221.GetBusinessInfoRequest, $221.BusinessInfo>(
+          $247.GetBusinessInfoRequest, $247.BusinessInfo>(
       '/google.shopping.merchant.accounts.v1beta.BusinessInfoService/GetBusinessInfo',
-      ($221.GetBusinessInfoRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $221.BusinessInfo.fromBuffer(value));
+      ($247.GetBusinessInfoRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $247.BusinessInfo.fromBuffer(value));
   static final _$updateBusinessInfo = $grpc.ClientMethod<
-          $221.UpdateBusinessInfoRequest, $221.BusinessInfo>(
+          $247.UpdateBusinessInfoRequest, $247.BusinessInfo>(
       '/google.shopping.merchant.accounts.v1beta.BusinessInfoService/UpdateBusinessInfo',
-      ($221.UpdateBusinessInfoRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $221.BusinessInfo.fromBuffer(value));
+      ($247.UpdateBusinessInfoRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $247.BusinessInfo.fromBuffer(value));
 
   BusinessInfoServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$221.BusinessInfo> getBusinessInfo(
-      $221.GetBusinessInfoRequest request,
+  $grpc.ResponseFuture<$247.BusinessInfo> getBusinessInfo(
+      $247.GetBusinessInfoRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getBusinessInfo, request, options: options);
   }
 
-  $grpc.ResponseFuture<$221.BusinessInfo> updateBusinessInfo(
-      $221.UpdateBusinessInfoRequest request,
+  $grpc.ResponseFuture<$247.BusinessInfo> updateBusinessInfo(
+      $247.UpdateBusinessInfoRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateBusinessInfo, request, options: options);
   }
@@ -59,38 +59,38 @@ abstract class BusinessInfoServiceBase extends $grpc.Service {
 
   BusinessInfoServiceBase() {
     $addMethod(
-        $grpc.ServiceMethod<$221.GetBusinessInfoRequest, $221.BusinessInfo>(
+        $grpc.ServiceMethod<$247.GetBusinessInfoRequest, $247.BusinessInfo>(
             'GetBusinessInfo',
             getBusinessInfo_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $221.GetBusinessInfoRequest.fromBuffer(value),
-            ($221.BusinessInfo value) => value.writeToBuffer()));
+                $247.GetBusinessInfoRequest.fromBuffer(value),
+            ($247.BusinessInfo value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$221.UpdateBusinessInfoRequest, $221.BusinessInfo>(
+        $grpc.ServiceMethod<$247.UpdateBusinessInfoRequest, $247.BusinessInfo>(
             'UpdateBusinessInfo',
             updateBusinessInfo_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $221.UpdateBusinessInfoRequest.fromBuffer(value),
-            ($221.BusinessInfo value) => value.writeToBuffer()));
+                $247.UpdateBusinessInfoRequest.fromBuffer(value),
+            ($247.BusinessInfo value) => value.writeToBuffer()));
   }
 
-  $async.Future<$221.BusinessInfo> getBusinessInfo_Pre($grpc.ServiceCall call,
-      $async.Future<$221.GetBusinessInfoRequest> request) async {
+  $async.Future<$247.BusinessInfo> getBusinessInfo_Pre($grpc.ServiceCall call,
+      $async.Future<$247.GetBusinessInfoRequest> request) async {
     return getBusinessInfo(call, await request);
   }
 
-  $async.Future<$221.BusinessInfo> updateBusinessInfo_Pre(
+  $async.Future<$247.BusinessInfo> updateBusinessInfo_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$221.UpdateBusinessInfoRequest> request) async {
+      $async.Future<$247.UpdateBusinessInfoRequest> request) async {
     return updateBusinessInfo(call, await request);
   }
 
-  $async.Future<$221.BusinessInfo> getBusinessInfo(
-      $grpc.ServiceCall call, $221.GetBusinessInfoRequest request);
-  $async.Future<$221.BusinessInfo> updateBusinessInfo(
-      $grpc.ServiceCall call, $221.UpdateBusinessInfoRequest request);
+  $async.Future<$247.BusinessInfo> getBusinessInfo(
+      $grpc.ServiceCall call, $247.GetBusinessInfoRequest request);
+  $async.Future<$247.BusinessInfo> updateBusinessInfo(
+      $grpc.ServiceCall call, $247.UpdateBusinessInfoRequest request);
 }

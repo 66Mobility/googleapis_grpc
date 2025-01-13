@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $304;
+import '../../../../protobuf/timestamp.pb.dart' as $330;
 
 /// Information about time ranges.
 class TimeRange extends $pb.GeneratedMessage {
   factory TimeRange({
-    $304.Timestamp? startTime,
-    $304.Timestamp? endTime,
+    $330.Timestamp? startTime,
+    $330.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -43,10 +43,10 @@ class TimeRange extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.drive.activity.v2'),
       createEmptyInstance: create)
-    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -72,9 +72,9 @@ class TimeRange extends $pb.GeneratedMessage {
 
   /// The start of the time range.
   @$pb.TagNumber(1)
-  $304.Timestamp get startTime => $_getN(0);
+  $330.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($304.Timestamp v) {
+  set startTime($330.Timestamp v) {
     setField(1, v);
   }
 
@@ -83,13 +83,13 @@ class TimeRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Timestamp ensureStartTime() => $_ensure(0);
+  $330.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The end of the time range.
   @$pb.TagNumber(2)
-  $304.Timestamp get endTime => $_getN(1);
+  $330.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($304.Timestamp v) {
+  set endTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -98,7 +98,7 @@ class TimeRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureEndTime() => $_ensure(1);
+  $330.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// Information about a group.

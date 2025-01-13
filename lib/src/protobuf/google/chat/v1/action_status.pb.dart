@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../rpc/code.pbenum.dart' as $407;
+import '../../rpc/code.pbenum.dart' as $436;
 
 /// Represents the status for a request to either invoke or submit a
 /// [dialog](https://developers.google.com/workspace/chat/dialogs).
 class ActionStatus extends $pb.GeneratedMessage {
   factory ActionStatus({
-    $407.Code? statusCode,
+    $436.Code? statusCode,
     $core.String? userFacingMessage,
   }) {
     final $result = create();
@@ -43,10 +43,10 @@ class ActionStatus extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'ActionStatus',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'),
       createEmptyInstance: create)
-    ..e<$407.Code>(1, _omitFieldNames ? '' : 'statusCode', $pb.PbFieldType.OE,
-        defaultOrMaker: $407.Code.OK,
-        valueOf: $407.Code.valueOf,
-        enumValues: $407.Code.values)
+    ..e<$436.Code>(1, _omitFieldNames ? '' : 'statusCode', $pb.PbFieldType.OE,
+        defaultOrMaker: $436.Code.OK,
+        valueOf: $436.Code.valueOf,
+        enumValues: $436.Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'userFacingMessage')
     ..hasRequiredFields = false;
 
@@ -75,9 +75,9 @@ class ActionStatus extends $pb.GeneratedMessage {
 
   /// The status code.
   @$pb.TagNumber(1)
-  $407.Code get statusCode => $_getN(0);
+  $436.Code get statusCode => $_getN(0);
   @$pb.TagNumber(1)
-  set statusCode($407.Code v) {
+  set statusCode($436.Code v) {
     setField(1, v);
   }
 

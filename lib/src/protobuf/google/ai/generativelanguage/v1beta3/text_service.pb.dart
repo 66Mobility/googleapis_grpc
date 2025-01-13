@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'citation.pb.dart' as $341;
-import 'safety.pb.dart' as $340;
+import 'citation.pb.dart' as $370;
+import 'safety.pb.dart' as $369;
 
 /// Request to generate a text completion response from the model.
 class GenerateTextRequest extends $pb.GeneratedMessage {
@@ -26,7 +26,7 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
     $core.int? maxOutputTokens,
     $core.double? topP,
     $core.int? topK,
-    $core.Iterable<$340.SafetySetting>? safetySettings,
+    $core.Iterable<$369.SafetySetting>? safetySettings,
     $core.Iterable<$core.String>? stopSequences,
   }) {
     final $result = create();
@@ -83,9 +83,9 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
         5, _omitFieldNames ? '' : 'maxOutputTokens', $pb.PbFieldType.O3)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'topP', $pb.PbFieldType.OF)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'topK', $pb.PbFieldType.O3)
-    ..pc<$340.SafetySetting>(
+    ..pc<$369.SafetySetting>(
         8, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM,
-        subBuilder: $340.SafetySetting.create)
+        subBuilder: $369.SafetySetting.create)
     ..pPS(9, _omitFieldNames ? '' : 'stopSequences')
     ..hasRequiredFields = false;
 
@@ -255,7 +255,7 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
   ///  `SafetyCategory` provided in the list, the API will use the default safety
   ///  setting for that category.
   @$pb.TagNumber(8)
-  $core.List<$340.SafetySetting> get safetySettings => $_getList(7);
+  $core.List<$369.SafetySetting> get safetySettings => $_getList(7);
 
   /// The set of character sequences (up to 5) that will stop output generation.
   /// If specified, the API will stop at the first appearance of a stop
@@ -268,8 +268,8 @@ class GenerateTextRequest extends $pb.GeneratedMessage {
 class GenerateTextResponse extends $pb.GeneratedMessage {
   factory GenerateTextResponse({
     $core.Iterable<TextCompletion>? candidates,
-    $core.Iterable<$340.ContentFilter>? filters,
-    $core.Iterable<$340.SafetyFeedback>? safetyFeedback,
+    $core.Iterable<$369.ContentFilter>? filters,
+    $core.Iterable<$369.SafetyFeedback>? safetyFeedback,
   }) {
     final $result = create();
     if (candidates != null) {
@@ -299,12 +299,12 @@ class GenerateTextResponse extends $pb.GeneratedMessage {
     ..pc<TextCompletion>(
         1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM,
         subBuilder: TextCompletion.create)
-    ..pc<$340.ContentFilter>(
+    ..pc<$369.ContentFilter>(
         3, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM,
-        subBuilder: $340.ContentFilter.create)
-    ..pc<$340.SafetyFeedback>(
+        subBuilder: $369.ContentFilter.create)
+    ..pc<$369.SafetyFeedback>(
         4, _omitFieldNames ? '' : 'safetyFeedback', $pb.PbFieldType.PM,
-        subBuilder: $340.SafetyFeedback.create)
+        subBuilder: $369.SafetyFeedback.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -347,11 +347,11 @@ class GenerateTextResponse extends $pb.GeneratedMessage {
   ///  The blocking is configured by the `SafetySettings` in the request (or the
   ///  default `SafetySettings` of the API).
   @$pb.TagNumber(3)
-  $core.List<$340.ContentFilter> get filters => $_getList(1);
+  $core.List<$369.ContentFilter> get filters => $_getList(1);
 
   /// Returns any safety feedback related to content filtering.
   @$pb.TagNumber(4)
-  $core.List<$340.SafetyFeedback> get safetyFeedback => $_getList(2);
+  $core.List<$369.SafetyFeedback> get safetyFeedback => $_getList(2);
 }
 
 ///  Text given to the model as a prompt.
@@ -422,8 +422,8 @@ class TextPrompt extends $pb.GeneratedMessage {
 class TextCompletion extends $pb.GeneratedMessage {
   factory TextCompletion({
     $core.String? output,
-    $core.Iterable<$340.SafetyRating>? safetyRatings,
-    $341.CitationMetadata? citationMetadata,
+    $core.Iterable<$369.SafetyRating>? safetyRatings,
+    $370.CitationMetadata? citationMetadata,
   }) {
     final $result = create();
     if (output != null) {
@@ -451,11 +451,11 @@ class TextCompletion extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta3'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'output')
-    ..pc<$340.SafetyRating>(
+    ..pc<$369.SafetyRating>(
         2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM,
-        subBuilder: $340.SafetyRating.create)
-    ..aOM<$341.CitationMetadata>(3, _omitFieldNames ? '' : 'citationMetadata',
-        subBuilder: $341.CitationMetadata.create)
+        subBuilder: $369.SafetyRating.create)
+    ..aOM<$370.CitationMetadata>(3, _omitFieldNames ? '' : 'citationMetadata',
+        subBuilder: $370.CitationMetadata.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -498,7 +498,7 @@ class TextCompletion extends $pb.GeneratedMessage {
   ///
   ///  There is at most one rating per category.
   @$pb.TagNumber(2)
-  $core.List<$340.SafetyRating> get safetyRatings => $_getList(1);
+  $core.List<$369.SafetyRating> get safetyRatings => $_getList(1);
 
   ///  Output only. Citation information for model-generated `output` in this
   ///  `TextCompletion`.
@@ -506,9 +506,9 @@ class TextCompletion extends $pb.GeneratedMessage {
   ///  This field may be populated with attribution information for any text
   ///  included in the `output`.
   @$pb.TagNumber(3)
-  $341.CitationMetadata get citationMetadata => $_getN(2);
+  $370.CitationMetadata get citationMetadata => $_getN(2);
   @$pb.TagNumber(3)
-  set citationMetadata($341.CitationMetadata v) {
+  set citationMetadata($370.CitationMetadata v) {
     setField(3, v);
   }
 
@@ -517,7 +517,7 @@ class TextCompletion extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCitationMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $341.CitationMetadata ensureCitationMetadata() => $_ensure(2);
+  $370.CitationMetadata ensureCitationMetadata() => $_ensure(2);
 }
 
 /// Request to get a text embedding from the model.

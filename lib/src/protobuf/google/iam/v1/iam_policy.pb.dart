@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $335;
-import 'options.pb.dart' as $402;
-import 'policy.pb.dart' as $88;
+import '../../protobuf/field_mask.pb.dart' as $361;
+import 'options.pb.dart' as $431;
+import 'policy.pb.dart' as $106;
 
 /// Request message for `SetIamPolicy` method.
 class SetIamPolicyRequest extends $pb.GeneratedMessage {
   factory SetIamPolicyRequest({
     $core.String? resource,
-    $88.Policy? policy,
-    $335.FieldMask? updateMask,
+    $106.Policy? policy,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (resource != null) {
@@ -49,10 +49,10 @@ class SetIamPolicyRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resource')
-    ..aOM<$88.Policy>(2, _omitFieldNames ? '' : 'policy',
-        subBuilder: $88.Policy.create)
-    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$106.Policy>(2, _omitFieldNames ? '' : 'policy',
+        subBuilder: $106.Policy.create)
+    ..aOM<$361.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -97,9 +97,9 @@ class SetIamPolicyRequest extends $pb.GeneratedMessage {
   /// valid policy but certain Cloud Platform services (such as Projects)
   /// might reject them.
   @$pb.TagNumber(2)
-  $88.Policy get policy => $_getN(1);
+  $106.Policy get policy => $_getN(1);
   @$pb.TagNumber(2)
-  set policy($88.Policy v) {
+  set policy($106.Policy v) {
     setField(2, v);
   }
 
@@ -108,7 +108,7 @@ class SetIamPolicyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearPolicy() => clearField(2);
   @$pb.TagNumber(2)
-  $88.Policy ensurePolicy() => $_ensure(1);
+  $106.Policy ensurePolicy() => $_ensure(1);
 
   ///  OPTIONAL: A FieldMask specifying which fields of the policy to modify. Only
   ///  the fields in the mask will be modified. If no mask is provided, the
@@ -116,9 +116,9 @@ class SetIamPolicyRequest extends $pb.GeneratedMessage {
   ///
   ///  `paths: "bindings, etag"`
   @$pb.TagNumber(3)
-  $335.FieldMask get updateMask => $_getN(2);
+  $361.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(3, v);
   }
 
@@ -127,14 +127,14 @@ class SetIamPolicyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $335.FieldMask ensureUpdateMask() => $_ensure(2);
+  $361.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for `GetIamPolicy` method.
 class GetIamPolicyRequest extends $pb.GeneratedMessage {
   factory GetIamPolicyRequest({
     $core.String? resource,
-    $402.GetPolicyOptions? options,
+    $431.GetPolicyOptions? options,
   }) {
     final $result = create();
     if (resource != null) {
@@ -158,8 +158,8 @@ class GetIamPolicyRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resource')
-    ..aOM<$402.GetPolicyOptions>(2, _omitFieldNames ? '' : 'options',
-        subBuilder: $402.GetPolicyOptions.create)
+    ..aOM<$431.GetPolicyOptions>(2, _omitFieldNames ? '' : 'options',
+        subBuilder: $431.GetPolicyOptions.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -202,9 +202,9 @@ class GetIamPolicyRequest extends $pb.GeneratedMessage {
   /// OPTIONAL: A `GetPolicyOptions` object for specifying options to
   /// `GetIamPolicy`.
   @$pb.TagNumber(2)
-  $402.GetPolicyOptions get options => $_getN(1);
+  $431.GetPolicyOptions get options => $_getN(1);
   @$pb.TagNumber(2)
-  set options($402.GetPolicyOptions v) {
+  set options($431.GetPolicyOptions v) {
     setField(2, v);
   }
 
@@ -213,7 +213,7 @@ class GetIamPolicyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearOptions() => clearField(2);
   @$pb.TagNumber(2)
-  $402.GetPolicyOptions ensureOptions() => $_ensure(1);
+  $431.GetPolicyOptions ensureOptions() => $_ensure(1);
 }
 
 /// Request message for `TestIamPermissions` method.

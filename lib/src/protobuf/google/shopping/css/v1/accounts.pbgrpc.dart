@@ -15,47 +15,47 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'accounts.pb.dart' as $211;
+import 'accounts.pb.dart' as $237;
 
 export 'accounts.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.css.v1.AccountsService')
 class AccountsServiceClient extends $grpc.Client {
   static final _$listChildAccounts = $grpc.ClientMethod<
-          $211.ListChildAccountsRequest, $211.ListChildAccountsResponse>(
+          $237.ListChildAccountsRequest, $237.ListChildAccountsResponse>(
       '/google.shopping.css.v1.AccountsService/ListChildAccounts',
-      ($211.ListChildAccountsRequest value) => value.writeToBuffer(),
+      ($237.ListChildAccountsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $211.ListChildAccountsResponse.fromBuffer(value));
+          $237.ListChildAccountsResponse.fromBuffer(value));
   static final _$getAccount =
-      $grpc.ClientMethod<$211.GetAccountRequest, $211.Account>(
+      $grpc.ClientMethod<$237.GetAccountRequest, $237.Account>(
           '/google.shopping.css.v1.AccountsService/GetAccount',
-          ($211.GetAccountRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $211.Account.fromBuffer(value));
+          ($237.GetAccountRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $237.Account.fromBuffer(value));
   static final _$updateLabels =
-      $grpc.ClientMethod<$211.UpdateAccountLabelsRequest, $211.Account>(
+      $grpc.ClientMethod<$237.UpdateAccountLabelsRequest, $237.Account>(
           '/google.shopping.css.v1.AccountsService/UpdateLabels',
-          ($211.UpdateAccountLabelsRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $211.Account.fromBuffer(value));
+          ($237.UpdateAccountLabelsRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $237.Account.fromBuffer(value));
 
   AccountsServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$211.ListChildAccountsResponse> listChildAccounts(
-      $211.ListChildAccountsRequest request,
+  $grpc.ResponseFuture<$237.ListChildAccountsResponse> listChildAccounts(
+      $237.ListChildAccountsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listChildAccounts, request, options: options);
   }
 
-  $grpc.ResponseFuture<$211.Account> getAccount($211.GetAccountRequest request,
+  $grpc.ResponseFuture<$237.Account> getAccount($237.GetAccountRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getAccount, request, options: options);
   }
 
-  $grpc.ResponseFuture<$211.Account> updateLabels(
-      $211.UpdateAccountLabelsRequest request,
+  $grpc.ResponseFuture<$237.Account> updateLabels(
+      $237.UpdateAccountLabelsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateLabels, request, options: options);
   }
@@ -66,54 +66,54 @@ abstract class AccountsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.css.v1.AccountsService';
 
   AccountsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$211.ListChildAccountsRequest,
-            $211.ListChildAccountsResponse>(
+    $addMethod($grpc.ServiceMethod<$237.ListChildAccountsRequest,
+            $237.ListChildAccountsResponse>(
         'ListChildAccounts',
         listChildAccounts_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $211.ListChildAccountsRequest.fromBuffer(value),
-        ($211.ListChildAccountsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$211.GetAccountRequest, $211.Account>(
+            $237.ListChildAccountsRequest.fromBuffer(value),
+        ($237.ListChildAccountsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$237.GetAccountRequest, $237.Account>(
         'GetAccount',
         getAccount_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $211.GetAccountRequest.fromBuffer(value),
-        ($211.Account value) => value.writeToBuffer()));
+            $237.GetAccountRequest.fromBuffer(value),
+        ($237.Account value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$211.UpdateAccountLabelsRequest, $211.Account>(
+        $grpc.ServiceMethod<$237.UpdateAccountLabelsRequest, $237.Account>(
             'UpdateLabels',
             updateLabels_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $211.UpdateAccountLabelsRequest.fromBuffer(value),
-            ($211.Account value) => value.writeToBuffer()));
+                $237.UpdateAccountLabelsRequest.fromBuffer(value),
+            ($237.Account value) => value.writeToBuffer()));
   }
 
-  $async.Future<$211.ListChildAccountsResponse> listChildAccounts_Pre(
+  $async.Future<$237.ListChildAccountsResponse> listChildAccounts_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$211.ListChildAccountsRequest> request) async {
+      $async.Future<$237.ListChildAccountsRequest> request) async {
     return listChildAccounts(call, await request);
   }
 
-  $async.Future<$211.Account> getAccount_Pre($grpc.ServiceCall call,
-      $async.Future<$211.GetAccountRequest> request) async {
+  $async.Future<$237.Account> getAccount_Pre($grpc.ServiceCall call,
+      $async.Future<$237.GetAccountRequest> request) async {
     return getAccount(call, await request);
   }
 
-  $async.Future<$211.Account> updateLabels_Pre($grpc.ServiceCall call,
-      $async.Future<$211.UpdateAccountLabelsRequest> request) async {
+  $async.Future<$237.Account> updateLabels_Pre($grpc.ServiceCall call,
+      $async.Future<$237.UpdateAccountLabelsRequest> request) async {
     return updateLabels(call, await request);
   }
 
-  $async.Future<$211.ListChildAccountsResponse> listChildAccounts(
-      $grpc.ServiceCall call, $211.ListChildAccountsRequest request);
-  $async.Future<$211.Account> getAccount(
-      $grpc.ServiceCall call, $211.GetAccountRequest request);
-  $async.Future<$211.Account> updateLabels(
-      $grpc.ServiceCall call, $211.UpdateAccountLabelsRequest request);
+  $async.Future<$237.ListChildAccountsResponse> listChildAccounts(
+      $grpc.ServiceCall call, $237.ListChildAccountsRequest request);
+  $async.Future<$237.Account> getAccount(
+      $grpc.ServiceCall call, $237.GetAccountRequest request);
+  $async.Future<$237.Account> updateLabels(
+      $grpc.ServiceCall call, $237.UpdateAccountLabelsRequest request);
 }

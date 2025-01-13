@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $304;
-import '../../type/types.pb.dart' as $540;
+import '../../../protobuf/timestamp.pb.dart' as $330;
+import '../../type/types.pb.dart' as $569;
 import 'css_product_common.pbenum.dart';
 
 export 'css_product_common.pbenum.dart';
@@ -25,11 +25,11 @@ class Attributes extends $pb.GeneratedMessage {
   factory Attributes({
     $core.String? cppLink,
     $core.String? cppMobileLink,
-    $540.Price? lowPrice,
-    $540.Price? highPrice,
+    $569.Price? lowPrice,
+    $569.Price? highPrice,
     $fixnum.Int64? numberOfOffers,
     $core.String? headlineOfferCondition,
-    $540.Price? headlineOfferPrice,
+    $569.Price? headlineOfferPrice,
     $core.String? headlineOfferLink,
     $core.String? headlineOfferMobileLink,
     $core.String? title,
@@ -60,8 +60,8 @@ class Attributes extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? productHighlights,
     $core.Iterable<$core.String>? productTypes,
     $core.Iterable<Certification>? certifications,
-    $304.Timestamp? expirationDate,
-    $540.Price? headlineOfferShippingPrice,
+    $330.Timestamp? expirationDate,
+    $569.Price? headlineOfferShippingPrice,
     $core.String? cppAdsRedirect,
     $core.Iterable<$core.String>? includedDestinations,
     $core.Iterable<$core.String>? excludedDestinations,
@@ -242,14 +242,14 @@ class Attributes extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'cppLink')
     ..aOS(2, _omitFieldNames ? '' : 'cppMobileLink')
-    ..aOM<$540.Price>(3, _omitFieldNames ? '' : 'lowPrice',
-        subBuilder: $540.Price.create)
-    ..aOM<$540.Price>(4, _omitFieldNames ? '' : 'highPrice',
-        subBuilder: $540.Price.create)
+    ..aOM<$569.Price>(3, _omitFieldNames ? '' : 'lowPrice',
+        subBuilder: $569.Price.create)
+    ..aOM<$569.Price>(4, _omitFieldNames ? '' : 'highPrice',
+        subBuilder: $569.Price.create)
     ..aInt64(5, _omitFieldNames ? '' : 'numberOfOffers')
     ..aOS(6, _omitFieldNames ? '' : 'headlineOfferCondition')
-    ..aOM<$540.Price>(7, _omitFieldNames ? '' : 'headlineOfferPrice',
-        subBuilder: $540.Price.create)
+    ..aOM<$569.Price>(7, _omitFieldNames ? '' : 'headlineOfferPrice',
+        subBuilder: $569.Price.create)
     ..aOS(8, _omitFieldNames ? '' : 'headlineOfferLink')
     ..aOS(9, _omitFieldNames ? '' : 'headlineOfferMobileLink')
     ..aOS(10, _omitFieldNames ? '' : 'title')
@@ -288,10 +288,10 @@ class Attributes extends $pb.GeneratedMessage {
     ..pc<Certification>(
         39, _omitFieldNames ? '' : 'certifications', $pb.PbFieldType.PM,
         subBuilder: Certification.create)
-    ..aOM<$304.Timestamp>(40, _omitFieldNames ? '' : 'expirationDate',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$540.Price>(41, _omitFieldNames ? '' : 'headlineOfferShippingPrice',
-        subBuilder: $540.Price.create)
+    ..aOM<$330.Timestamp>(40, _omitFieldNames ? '' : 'expirationDate',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$569.Price>(41, _omitFieldNames ? '' : 'headlineOfferShippingPrice',
+        subBuilder: $569.Price.create)
     ..aOS(42, _omitFieldNames ? '' : 'cppAdsRedirect')
     ..pPS(43, _omitFieldNames ? '' : 'includedDestinations')
     ..pPS(44, _omitFieldNames ? '' : 'excludedDestinations')
@@ -361,11 +361,11 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCppMobileLink() => clearField(2);
 
-  /// Low Price of the aggregate offer.
+  /// Low Price of the CSS Product.
   @$pb.TagNumber(3)
-  $540.Price get lowPrice => $_getN(2);
+  $569.Price get lowPrice => $_getN(2);
   @$pb.TagNumber(3)
-  set lowPrice($540.Price v) {
+  set lowPrice($569.Price v) {
     setField(3, v);
   }
 
@@ -374,13 +374,13 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearLowPrice() => clearField(3);
   @$pb.TagNumber(3)
-  $540.Price ensureLowPrice() => $_ensure(2);
+  $569.Price ensureLowPrice() => $_ensure(2);
 
-  /// High Price of the aggregate offer.
+  /// High Price of the CSS Product.
   @$pb.TagNumber(4)
-  $540.Price get highPrice => $_getN(3);
+  $569.Price get highPrice => $_getN(3);
   @$pb.TagNumber(4)
-  set highPrice($540.Price v) {
+  set highPrice($569.Price v) {
     setField(4, v);
   }
 
@@ -389,9 +389,9 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearHighPrice() => clearField(4);
   @$pb.TagNumber(4)
-  $540.Price ensureHighPrice() => $_ensure(3);
+  $569.Price ensureHighPrice() => $_ensure(3);
 
-  /// The number of aggregate offers.
+  /// The number of CSS Products.
   @$pb.TagNumber(5)
   $fixnum.Int64 get numberOfOffers => $_getI64(4);
   @$pb.TagNumber(5)
@@ -417,11 +417,11 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearHeadlineOfferCondition() => clearField(6);
 
-  /// Headline Price of the aggregate offer.
+  /// Headline Price of the CSS Product.
   @$pb.TagNumber(7)
-  $540.Price get headlineOfferPrice => $_getN(6);
+  $569.Price get headlineOfferPrice => $_getN(6);
   @$pb.TagNumber(7)
-  set headlineOfferPrice($540.Price v) {
+  set headlineOfferPrice($569.Price v) {
     setField(7, v);
   }
 
@@ -430,7 +430,7 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearHeadlineOfferPrice() => clearField(7);
   @$pb.TagNumber(7)
-  $540.Price ensureHeadlineOfferPrice() => $_ensure(6);
+  $569.Price ensureHeadlineOfferPrice() => $_ensure(6);
 
   /// Link to the headline offer.
   @$pb.TagNumber(8)
@@ -806,9 +806,9 @@ class Attributes extends $pb.GeneratedMessage {
   /// Note: It may take 2+ days from the expiration date for the item to
   /// actually get deleted.
   @$pb.TagNumber(40)
-  $304.Timestamp get expirationDate => $_getN(37);
+  $330.Timestamp get expirationDate => $_getN(37);
   @$pb.TagNumber(40)
-  set expirationDate($304.Timestamp v) {
+  set expirationDate($330.Timestamp v) {
     setField(40, v);
   }
 
@@ -817,13 +817,13 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(40)
   void clearExpirationDate() => clearField(40);
   @$pb.TagNumber(40)
-  $304.Timestamp ensureExpirationDate() => $_ensure(37);
+  $330.Timestamp ensureExpirationDate() => $_ensure(37);
 
-  /// Headline Price of the aggregate offer.
+  /// Headline Price of the CSS Product.
   @$pb.TagNumber(41)
-  $540.Price get headlineOfferShippingPrice => $_getN(38);
+  $569.Price get headlineOfferShippingPrice => $_getN(38);
   @$pb.TagNumber(41)
-  set headlineOfferShippingPrice($540.Price v) {
+  set headlineOfferShippingPrice($569.Price v) {
     setField(41, v);
   }
 
@@ -832,7 +832,7 @@ class Attributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(41)
   void clearHeadlineOfferShippingPrice() => clearField(41);
   @$pb.TagNumber(41)
-  $540.Price ensureHeadlineOfferShippingPrice() => $_ensure(38);
+  $569.Price ensureHeadlineOfferShippingPrice() => $_ensure(38);
 
   /// Allows advertisers to override the item URL when the product is shown
   /// within the context of Product Ads.
@@ -1434,17 +1434,17 @@ class CssProductStatus_DestinationStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearDestination() => clearField(1);
 
-  /// List of country codes (ISO 3166-1 alpha-2) where the aggregate offer is
+  /// List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
   /// approved.
   @$pb.TagNumber(2)
   $core.List<$core.String> get approvedCountries => $_getList(1);
 
-  /// List of country codes (ISO 3166-1 alpha-2) where the aggregate offer is
+  /// List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
   /// pending approval.
   @$pb.TagNumber(3)
   $core.List<$core.String> get pendingCountries => $_getList(2);
 
-  /// List of country codes (ISO 3166-1 alpha-2) where the aggregate offer is
+  /// List of country codes (ISO 3166-1 alpha-2) where the CSS Product is
   /// disapproved.
   @$pb.TagNumber(4)
   $core.List<$core.String> get disapprovedCountries => $_getList(3);
@@ -1558,7 +1558,7 @@ class CssProductStatus_ItemLevelIssue extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCode() => clearField(1);
 
-  /// How this issue affects serving of the aggregate offer.
+  /// How this issue affects serving of the CSS Product.
   @$pb.TagNumber(2)
   $core.String get servability => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -1650,7 +1650,7 @@ class CssProductStatus_ItemLevelIssue extends $pb.GeneratedMessage {
   void clearDocumentation() => clearField(8);
 
   /// List of country codes (ISO 3166-1 alpha-2) where issue applies to the
-  /// aggregate offer.
+  /// CSS Product.
   @$pb.TagNumber(9)
   $core.List<$core.String> get applicableCountries => $_getList(8);
 }
@@ -1661,9 +1661,9 @@ class CssProductStatus extends $pb.GeneratedMessage {
   factory CssProductStatus({
     $core.Iterable<CssProductStatus_DestinationStatus>? destinationStatuses,
     $core.Iterable<CssProductStatus_ItemLevelIssue>? itemLevelIssues,
-    $304.Timestamp? creationDate,
-    $304.Timestamp? lastUpdateDate,
-    $304.Timestamp? googleExpirationDate,
+    $330.Timestamp? creationDate,
+    $330.Timestamp? lastUpdateDate,
+    $330.Timestamp? googleExpirationDate,
   }) {
     final $result = create();
     if (destinationStatuses != null) {
@@ -1702,12 +1702,12 @@ class CssProductStatus extends $pb.GeneratedMessage {
     ..pc<CssProductStatus_ItemLevelIssue>(
         4, _omitFieldNames ? '' : 'itemLevelIssues', $pb.PbFieldType.PM,
         subBuilder: CssProductStatus_ItemLevelIssue.create)
-    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'creationDate',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdateDate',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'googleExpirationDate',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(5, _omitFieldNames ? '' : 'creationDate',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdateDate',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(7, _omitFieldNames ? '' : 'googleExpirationDate',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1746,9 +1746,9 @@ class CssProductStatus extends $pb.GeneratedMessage {
   /// Date on which the item has been created, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(5)
-  $304.Timestamp get creationDate => $_getN(2);
+  $330.Timestamp get creationDate => $_getN(2);
   @$pb.TagNumber(5)
-  set creationDate($304.Timestamp v) {
+  set creationDate($330.Timestamp v) {
     setField(5, v);
   }
 
@@ -1757,14 +1757,14 @@ class CssProductStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCreationDate() => clearField(5);
   @$pb.TagNumber(5)
-  $304.Timestamp ensureCreationDate() => $_ensure(2);
+  $330.Timestamp ensureCreationDate() => $_ensure(2);
 
   /// Date on which the item has been last updated, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(6)
-  $304.Timestamp get lastUpdateDate => $_getN(3);
+  $330.Timestamp get lastUpdateDate => $_getN(3);
   @$pb.TagNumber(6)
-  set lastUpdateDate($304.Timestamp v) {
+  set lastUpdateDate($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -1773,14 +1773,14 @@ class CssProductStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearLastUpdateDate() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureLastUpdateDate() => $_ensure(3);
+  $330.Timestamp ensureLastUpdateDate() => $_ensure(3);
 
   /// Date on which the item expires, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(7)
-  $304.Timestamp get googleExpirationDate => $_getN(4);
+  $330.Timestamp get googleExpirationDate => $_getN(4);
   @$pb.TagNumber(7)
-  set googleExpirationDate($304.Timestamp v) {
+  set googleExpirationDate($330.Timestamp v) {
     setField(7, v);
   }
 
@@ -1789,7 +1789,7 @@ class CssProductStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearGoogleExpirationDate() => clearField(7);
   @$pb.TagNumber(7)
-  $304.Timestamp ensureGoogleExpirationDate() => $_ensure(4);
+  $330.Timestamp ensureGoogleExpirationDate() => $_ensure(4);
 }
 
 /// The SubscriptionCost of the product.
@@ -1797,7 +1797,7 @@ class HeadlineOfferSubscriptionCost extends $pb.GeneratedMessage {
   factory HeadlineOfferSubscriptionCost({
     SubscriptionPeriod? period,
     $fixnum.Int64? periodLength,
-    $540.Price? amount,
+    $569.Price? amount,
   }) {
     final $result = create();
     if (period != null) {
@@ -1830,8 +1830,8 @@ class HeadlineOfferSubscriptionCost extends $pb.GeneratedMessage {
         valueOf: SubscriptionPeriod.valueOf,
         enumValues: SubscriptionPeriod.values)
     ..aInt64(2, _omitFieldNames ? '' : 'periodLength')
-    ..aOM<$540.Price>(3, _omitFieldNames ? '' : 'amount',
-        subBuilder: $540.Price.create)
+    ..aOM<$569.Price>(3, _omitFieldNames ? '' : 'amount',
+        subBuilder: $569.Price.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1892,9 +1892,9 @@ class HeadlineOfferSubscriptionCost extends $pb.GeneratedMessage {
 
   /// The amount the buyer has to pay per subscription period.
   @$pb.TagNumber(3)
-  $540.Price get amount => $_getN(2);
+  $569.Price get amount => $_getN(2);
   @$pb.TagNumber(3)
-  set amount($540.Price v) {
+  set amount($569.Price v) {
     setField(3, v);
   }
 
@@ -1903,15 +1903,15 @@ class HeadlineOfferSubscriptionCost extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAmount() => clearField(3);
   @$pb.TagNumber(3)
-  $540.Price ensureAmount() => $_ensure(2);
+  $569.Price ensureAmount() => $_ensure(2);
 }
 
 /// A message that represents installment.
 class HeadlineOfferInstallment extends $pb.GeneratedMessage {
   factory HeadlineOfferInstallment({
     $fixnum.Int64? months,
-    $540.Price? amount,
-    $540.Price? downpayment,
+    $569.Price? amount,
+    $569.Price? downpayment,
   }) {
     final $result = create();
     if (months != null) {
@@ -1939,10 +1939,10 @@ class HeadlineOfferInstallment extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.shopping.css.v1'),
       createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'months')
-    ..aOM<$540.Price>(2, _omitFieldNames ? '' : 'amount',
-        subBuilder: $540.Price.create)
-    ..aOM<$540.Price>(3, _omitFieldNames ? '' : 'downpayment',
-        subBuilder: $540.Price.create)
+    ..aOM<$569.Price>(2, _omitFieldNames ? '' : 'amount',
+        subBuilder: $569.Price.create)
+    ..aOM<$569.Price>(3, _omitFieldNames ? '' : 'downpayment',
+        subBuilder: $569.Price.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1985,9 +1985,9 @@ class HeadlineOfferInstallment extends $pb.GeneratedMessage {
 
   /// The amount the buyer has to pay per month.
   @$pb.TagNumber(2)
-  $540.Price get amount => $_getN(1);
+  $569.Price get amount => $_getN(1);
   @$pb.TagNumber(2)
-  set amount($540.Price v) {
+  set amount($569.Price v) {
     setField(2, v);
   }
 
@@ -1996,13 +1996,13 @@ class HeadlineOfferInstallment extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearAmount() => clearField(2);
   @$pb.TagNumber(2)
-  $540.Price ensureAmount() => $_ensure(1);
+  $569.Price ensureAmount() => $_ensure(1);
 
   /// The up-front down payment amount the buyer has to pay.
   @$pb.TagNumber(3)
-  $540.Price get downpayment => $_getN(2);
+  $569.Price get downpayment => $_getN(2);
   @$pb.TagNumber(3)
-  set downpayment($540.Price v) {
+  set downpayment($569.Price v) {
     setField(3, v);
   }
 
@@ -2011,7 +2011,7 @@ class HeadlineOfferInstallment extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearDownpayment() => clearField(3);
   @$pb.TagNumber(3)
-  $540.Price ensureDownpayment() => $_ensure(2);
+  $569.Price ensureDownpayment() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -24,7 +24,6 @@ const DataSource$json = {
       '5': 11,
       '6':
           '.google.shopping.merchant.datasources.v1beta.PrimaryProductDataSource',
-      '8': {},
       '9': 0,
       '10': 'primaryProductDataSource'
     },
@@ -35,7 +34,6 @@ const DataSource$json = {
       '5': 11,
       '6':
           '.google.shopping.merchant.datasources.v1beta.SupplementalProductDataSource',
-      '8': {},
       '9': 0,
       '10': 'supplementalProductDataSource'
     },
@@ -46,7 +44,6 @@ const DataSource$json = {
       '5': 11,
       '6':
           '.google.shopping.merchant.datasources.v1beta.LocalInventoryDataSource',
-      '8': {},
       '9': 0,
       '10': 'localInventoryDataSource'
     },
@@ -57,7 +54,6 @@ const DataSource$json = {
       '5': 11,
       '6':
           '.google.shopping.merchant.datasources.v1beta.RegionalInventoryDataSource',
-      '8': {},
       '9': 0,
       '10': 'regionalInventoryDataSource'
     },
@@ -67,9 +63,28 @@ const DataSource$json = {
       '4': 1,
       '5': 11,
       '6': '.google.shopping.merchant.datasources.v1beta.PromotionDataSource',
-      '8': {},
       '9': 0,
       '10': 'promotionDataSource'
+    },
+    {
+      '1': 'product_review_data_source',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.ProductReviewDataSource',
+      '9': 0,
+      '10': 'productReviewDataSource'
+    },
+    {
+      '1': 'merchant_review_data_source',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6':
+          '.google.shopping.merchant.datasources.v1beta.MerchantReviewDataSource',
+      '9': 0,
+      '10': 'merchantReviewDataSource'
     },
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
     {
@@ -121,28 +136,33 @@ const DataSource_Input$json = {
 
 /// Descriptor for `DataSource`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List dataSourceDescriptor = $convert.base64Decode(
-    'CgpEYXRhU291cmNlEosBChtwcmltYXJ5X3Byb2R1Y3RfZGF0YV9zb3VyY2UYBCABKAsyRS5nb2'
+    'CgpEYXRhU291cmNlEoYBChtwcmltYXJ5X3Byb2R1Y3RfZGF0YV9zb3VyY2UYBCABKAsyRS5nb2'
     '9nbGUuc2hvcHBpbmcubWVyY2hhbnQuZGF0YXNvdXJjZXMudjFiZXRhLlByaW1hcnlQcm9kdWN0'
-    'RGF0YVNvdXJjZUID4EECSABSGHByaW1hcnlQcm9kdWN0RGF0YVNvdXJjZRKaAQogc3VwcGxlbW'
-    'VudGFsX3Byb2R1Y3RfZGF0YV9zb3VyY2UYBSABKAsySi5nb29nbGUuc2hvcHBpbmcubWVyY2hh'
-    'bnQuZGF0YXNvdXJjZXMudjFiZXRhLlN1cHBsZW1lbnRhbFByb2R1Y3REYXRhU291cmNlQgPgQQ'
-    'JIAFIdc3VwcGxlbWVudGFsUHJvZHVjdERhdGFTb3VyY2USiwEKG2xvY2FsX2ludmVudG9yeV9k'
-    'YXRhX3NvdXJjZRgGIAEoCzJFLmdvb2dsZS5zaG9wcGluZy5tZXJjaGFudC5kYXRhc291cmNlcy'
-    '52MWJldGEuTG9jYWxJbnZlbnRvcnlEYXRhU291cmNlQgPgQQJIAFIYbG9jYWxJbnZlbnRvcnlE'
-    'YXRhU291cmNlEpQBCh5yZWdpb25hbF9pbnZlbnRvcnlfZGF0YV9zb3VyY2UYByABKAsySC5nb2'
-    '9nbGUuc2hvcHBpbmcubWVyY2hhbnQuZGF0YXNvdXJjZXMudjFiZXRhLlJlZ2lvbmFsSW52ZW50'
-    'b3J5RGF0YVNvdXJjZUID4EECSABSG3JlZ2lvbmFsSW52ZW50b3J5RGF0YVNvdXJjZRJ7ChVwcm'
-    '9tb3Rpb25fZGF0YV9zb3VyY2UYCCABKAsyQC5nb29nbGUuc2hvcHBpbmcubWVyY2hhbnQuZGF0'
-    'YXNvdXJjZXMudjFiZXRhLlByb21vdGlvbkRhdGFTb3VyY2VCA+BBAkgAUhNwcm9tb3Rpb25EYX'
-    'RhU291cmNlEhcKBG5hbWUYASABKAlCA+BBCFIEbmFtZRIpCg5kYXRhX3NvdXJjZV9pZBgCIAEo'
-    'A0ID4EEDUgxkYXRhU291cmNlSWQSJgoMZGlzcGxheV9uYW1lGAMgASgJQgPgQQJSC2Rpc3BsYX'
-    'lOYW1lElgKBWlucHV0GAogASgOMj0uZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmRhdGFzb3Vy'
-    'Y2VzLnYxYmV0YS5EYXRhU291cmNlLklucHV0QgPgQQNSBWlucHV0EloKCmZpbGVfaW5wdXQYCy'
-    'ABKAsyNi5nb29nbGUuc2hvcHBpbmcubWVyY2hhbnQuZGF0YXNvdXJjZXMudjFiZXRhLkZpbGVJ'
-    'bnB1dEID4EEBUglmaWxlSW5wdXQiRwoFSW5wdXQSFQoRSU5QVVRfVU5TUEVDSUZJRUQQABIHCg'
-    'NBUEkQARIICgRGSUxFEAISBgoCVUkQAxIMCghBVVRPRkVFRBAEOnDqQW0KJW1lcmNoYW50YXBp'
-    'Lmdvb2dsZWFwaXMuY29tL0RhdGFTb3VyY2USK2FjY291bnRzL3thY2NvdW50fS9kYXRhU291cm'
-    'Nlcy97ZGF0YXNvdXJjZX0qC2RhdGFTb3VyY2VzMgpkYXRhU291cmNlQgYKBFR5cGU=');
+    'RGF0YVNvdXJjZUgAUhhwcmltYXJ5UHJvZHVjdERhdGFTb3VyY2USlQEKIHN1cHBsZW1lbnRhbF'
+    '9wcm9kdWN0X2RhdGFfc291cmNlGAUgASgLMkouZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmRh'
+    'dGFzb3VyY2VzLnYxYmV0YS5TdXBwbGVtZW50YWxQcm9kdWN0RGF0YVNvdXJjZUgAUh1zdXBwbG'
+    'VtZW50YWxQcm9kdWN0RGF0YVNvdXJjZRKGAQobbG9jYWxfaW52ZW50b3J5X2RhdGFfc291cmNl'
+    'GAYgASgLMkUuZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmRhdGFzb3VyY2VzLnYxYmV0YS5Mb2'
+    'NhbEludmVudG9yeURhdGFTb3VyY2VIAFIYbG9jYWxJbnZlbnRvcnlEYXRhU291cmNlEo8BCh5y'
+    'ZWdpb25hbF9pbnZlbnRvcnlfZGF0YV9zb3VyY2UYByABKAsySC5nb29nbGUuc2hvcHBpbmcubW'
+    'VyY2hhbnQuZGF0YXNvdXJjZXMudjFiZXRhLlJlZ2lvbmFsSW52ZW50b3J5RGF0YVNvdXJjZUgA'
+    'UhtyZWdpb25hbEludmVudG9yeURhdGFTb3VyY2USdgoVcHJvbW90aW9uX2RhdGFfc291cmNlGA'
+    'ggASgLMkAuZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmRhdGFzb3VyY2VzLnYxYmV0YS5Qcm9t'
+    'b3Rpb25EYXRhU291cmNlSABSE3Byb21vdGlvbkRhdGFTb3VyY2USgwEKGnByb2R1Y3RfcmV2aW'
+    'V3X2RhdGFfc291cmNlGAkgASgLMkQuZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmRhdGFzb3Vy'
+    'Y2VzLnYxYmV0YS5Qcm9kdWN0UmV2aWV3RGF0YVNvdXJjZUgAUhdwcm9kdWN0UmV2aWV3RGF0YV'
+    'NvdXJjZRKGAQobbWVyY2hhbnRfcmV2aWV3X2RhdGFfc291cmNlGAwgASgLMkUuZ29vZ2xlLnNo'
+    'b3BwaW5nLm1lcmNoYW50LmRhdGFzb3VyY2VzLnYxYmV0YS5NZXJjaGFudFJldmlld0RhdGFTb3'
+    'VyY2VIAFIYbWVyY2hhbnRSZXZpZXdEYXRhU291cmNlEhcKBG5hbWUYASABKAlCA+BBCFIEbmFt'
+    'ZRIpCg5kYXRhX3NvdXJjZV9pZBgCIAEoA0ID4EEDUgxkYXRhU291cmNlSWQSJgoMZGlzcGxheV'
+    '9uYW1lGAMgASgJQgPgQQJSC2Rpc3BsYXlOYW1lElgKBWlucHV0GAogASgOMj0uZ29vZ2xlLnNo'
+    'b3BwaW5nLm1lcmNoYW50LmRhdGFzb3VyY2VzLnYxYmV0YS5EYXRhU291cmNlLklucHV0QgPgQQ'
+    'NSBWlucHV0EloKCmZpbGVfaW5wdXQYCyABKAsyNi5nb29nbGUuc2hvcHBpbmcubWVyY2hhbnQu'
+    'ZGF0YXNvdXJjZXMudjFiZXRhLkZpbGVJbnB1dEID4EEBUglmaWxlSW5wdXQiRwoFSW5wdXQSFQ'
+    'oRSU5QVVRfVU5TUEVDSUZJRUQQABIHCgNBUEkQARIICgRGSUxFEAISBgoCVUkQAxIMCghBVVRP'
+    'RkVFRBAEOnDqQW0KJW1lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29tL0RhdGFTb3VyY2USK2FjY2'
+    '91bnRzL3thY2NvdW50fS9kYXRhU291cmNlcy97ZGF0YXNvdXJjZX0qC2RhdGFTb3VyY2VzMgpk'
+    'YXRhU291cmNlQgYKBFR5cGU=');
 
 @$core.Deprecated('Use getDataSourceRequestDescriptor instead')
 const GetDataSourceRequest$json = {

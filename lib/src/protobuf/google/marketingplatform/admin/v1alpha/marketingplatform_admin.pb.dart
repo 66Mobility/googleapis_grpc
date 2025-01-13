@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'marketingplatform_admin.pbenum.dart';
-import 'resources.pb.dart' as $186;
+import 'resources.pb.dart' as $212;
 
 export 'marketingplatform_admin.pbenum.dart';
 
@@ -203,7 +203,7 @@ class ListAnalyticsAccountLinksRequest extends $pb.GeneratedMessage {
 /// Response message for ListAnalyticsAccountLinks RPC.
 class ListAnalyticsAccountLinksResponse extends $pb.GeneratedMessage {
   factory ListAnalyticsAccountLinksResponse({
-    $core.Iterable<$186.AnalyticsAccountLink>? analyticsAccountLinks,
+    $core.Iterable<$212.AnalyticsAccountLink>? analyticsAccountLinks,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -228,9 +228,9 @@ class ListAnalyticsAccountLinksResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.marketingplatform.admin.v1alpha'),
       createEmptyInstance: create)
-    ..pc<$186.AnalyticsAccountLink>(
+    ..pc<$212.AnalyticsAccountLink>(
         1, _omitFieldNames ? '' : 'analyticsAccountLinks', $pb.PbFieldType.PM,
-        subBuilder: $186.AnalyticsAccountLink.create)
+        subBuilder: $212.AnalyticsAccountLink.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -264,7 +264,7 @@ class ListAnalyticsAccountLinksResponse extends $pb.GeneratedMessage {
 
   /// Analytics account links in this organization.
   @$pb.TagNumber(1)
-  $core.List<$186.AnalyticsAccountLink> get analyticsAccountLinks =>
+  $core.List<$212.AnalyticsAccountLink> get analyticsAccountLinks =>
       $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
@@ -286,7 +286,7 @@ class ListAnalyticsAccountLinksResponse extends $pb.GeneratedMessage {
 class CreateAnalyticsAccountLinkRequest extends $pb.GeneratedMessage {
   factory CreateAnalyticsAccountLinkRequest({
     $core.String? parent,
-    $186.AnalyticsAccountLink? analyticsAccountLink,
+    $212.AnalyticsAccountLink? analyticsAccountLink,
   }) {
     final $result = create();
     if (parent != null) {
@@ -311,9 +311,9 @@ class CreateAnalyticsAccountLinkRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.marketingplatform.admin.v1alpha'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$186.AnalyticsAccountLink>(
+    ..aOM<$212.AnalyticsAccountLink>(
         2, _omitFieldNames ? '' : 'analyticsAccountLink',
-        subBuilder: $186.AnalyticsAccountLink.create)
+        subBuilder: $212.AnalyticsAccountLink.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -360,9 +360,9 @@ class CreateAnalyticsAccountLinkRequest extends $pb.GeneratedMessage {
 
   /// Required. The Analytics account link to create.
   @$pb.TagNumber(2)
-  $186.AnalyticsAccountLink get analyticsAccountLink => $_getN(1);
+  $212.AnalyticsAccountLink get analyticsAccountLink => $_getN(1);
   @$pb.TagNumber(2)
-  set analyticsAccountLink($186.AnalyticsAccountLink v) {
+  set analyticsAccountLink($212.AnalyticsAccountLink v) {
     setField(2, v);
   }
 
@@ -371,7 +371,7 @@ class CreateAnalyticsAccountLinkRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearAnalyticsAccountLink() => clearField(2);
   @$pb.TagNumber(2)
-  $186.AnalyticsAccountLink ensureAnalyticsAccountLink() => $_ensure(1);
+  $212.AnalyticsAccountLink ensureAnalyticsAccountLink() => $_ensure(1);
 }
 
 /// Request message for DeleteAnalyticsAccountLink RPC.

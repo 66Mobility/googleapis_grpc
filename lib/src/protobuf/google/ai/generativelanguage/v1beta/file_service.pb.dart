@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'file.pb.dart' as $11;
+import 'file.pb.dart' as $27;
 
 /// Request for `CreateFile`.
 class CreateFileRequest extends $pb.GeneratedMessage {
   factory CreateFileRequest({
-    $11.File? file,
+    $27.File? file,
   }) {
     final $result = create();
     if (file != null) {
@@ -39,8 +39,8 @@ class CreateFileRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$11.File>(1, _omitFieldNames ? '' : 'file',
-        subBuilder: $11.File.create)
+    ..aOM<$27.File>(1, _omitFieldNames ? '' : 'file',
+        subBuilder: $27.File.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -68,9 +68,9 @@ class CreateFileRequest extends $pb.GeneratedMessage {
 
   /// Optional. Metadata for the file to create.
   @$pb.TagNumber(1)
-  $11.File get file => $_getN(0);
+  $27.File get file => $_getN(0);
   @$pb.TagNumber(1)
-  set file($11.File v) {
+  set file($27.File v) {
     setField(1, v);
   }
 
@@ -79,13 +79,13 @@ class CreateFileRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearFile() => clearField(1);
   @$pb.TagNumber(1)
-  $11.File ensureFile() => $_ensure(0);
+  $27.File ensureFile() => $_ensure(0);
 }
 
 /// Response for `CreateFile`.
 class CreateFileResponse extends $pb.GeneratedMessage {
   factory CreateFileResponse({
-    $11.File? file,
+    $27.File? file,
   }) {
     final $result = create();
     if (file != null) {
@@ -106,8 +106,8 @@ class CreateFileResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$11.File>(1, _omitFieldNames ? '' : 'file',
-        subBuilder: $11.File.create)
+    ..aOM<$27.File>(1, _omitFieldNames ? '' : 'file',
+        subBuilder: $27.File.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -135,9 +135,9 @@ class CreateFileResponse extends $pb.GeneratedMessage {
 
   /// Metadata for the created file.
   @$pb.TagNumber(1)
-  $11.File get file => $_getN(0);
+  $27.File get file => $_getN(0);
   @$pb.TagNumber(1)
-  set file($11.File v) {
+  set file($27.File v) {
     setField(1, v);
   }
 
@@ -146,7 +146,7 @@ class CreateFileResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearFile() => clearField(1);
   @$pb.TagNumber(1)
-  $11.File ensureFile() => $_ensure(0);
+  $27.File ensureFile() => $_ensure(0);
 }
 
 /// Request for `ListFiles`.
@@ -235,7 +235,7 @@ class ListFilesRequest extends $pb.GeneratedMessage {
 /// Response for `ListFiles`.
 class ListFilesResponse extends $pb.GeneratedMessage {
   factory ListFilesResponse({
-    $core.Iterable<$11.File>? files,
+    $core.Iterable<$27.File>? files,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -260,8 +260,8 @@ class ListFilesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..pc<$11.File>(1, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM,
-        subBuilder: $11.File.create)
+    ..pc<$27.File>(1, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM,
+        subBuilder: $27.File.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -290,7 +290,7 @@ class ListFilesResponse extends $pb.GeneratedMessage {
 
   /// The list of `File`s.
   @$pb.TagNumber(1)
-  $core.List<$11.File> get files => $_getList(0);
+  $core.List<$27.File> get files => $_getList(0);
 
   /// A token that can be sent as a `page_token` into a subsequent `ListFiles`
   /// call.

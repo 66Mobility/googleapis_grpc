@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $304;
+import '../../../protobuf/timestamp.pb.dart' as $330;
 import 'ev_charging.pbenum.dart';
 
 export 'ev_charging.pbenum.dart';
@@ -28,7 +28,7 @@ class EVChargeOptions_ConnectorAggregation extends $pb.GeneratedMessage {
     $core.int? count,
     $core.int? availableCount,
     $core.int? outOfServiceCount,
-    $304.Timestamp? availabilityLastUpdateTime,
+    $330.Timestamp? availabilityLastUpdateTime,
   }) {
     final $result = create();
     if (type != null) {
@@ -76,9 +76,9 @@ class EVChargeOptions_ConnectorAggregation extends $pb.GeneratedMessage {
         4, _omitFieldNames ? '' : 'availableCount', $pb.PbFieldType.O3)
     ..a<$core.int>(
         5, _omitFieldNames ? '' : 'outOfServiceCount', $pb.PbFieldType.O3)
-    ..aOM<$304.Timestamp>(
+    ..aOM<$330.Timestamp>(
         6, _omitFieldNames ? '' : 'availabilityLastUpdateTime',
-        subBuilder: $304.Timestamp.create)
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -178,9 +178,9 @@ class EVChargeOptions_ConnectorAggregation extends $pb.GeneratedMessage {
   /// The timestamp when the connector availability information in this
   /// aggregation was last updated.
   @$pb.TagNumber(6)
-  $304.Timestamp get availabilityLastUpdateTime => $_getN(5);
+  $330.Timestamp get availabilityLastUpdateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set availabilityLastUpdateTime($304.Timestamp v) {
+  set availabilityLastUpdateTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -189,7 +189,7 @@ class EVChargeOptions_ConnectorAggregation extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearAvailabilityLastUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureAvailabilityLastUpdateTime() => $_ensure(5);
+  $330.Timestamp ensureAvailabilityLastUpdateTime() => $_ensure(5);
 }
 
 /// Information about the EV Charge Station hosted in Place.

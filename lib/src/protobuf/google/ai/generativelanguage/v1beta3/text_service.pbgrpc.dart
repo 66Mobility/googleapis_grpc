@@ -15,62 +15,62 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'text_service.pb.dart' as $33;
+import 'text_service.pb.dart' as $48;
 
 export 'text_service.pb.dart';
 
 @$pb.GrpcServiceName('google.ai.generativelanguage.v1beta3.TextService')
 class TextServiceClient extends $grpc.Client {
   static final _$generateText =
-      $grpc.ClientMethod<$33.GenerateTextRequest, $33.GenerateTextResponse>(
+      $grpc.ClientMethod<$48.GenerateTextRequest, $48.GenerateTextResponse>(
           '/google.ai.generativelanguage.v1beta3.TextService/GenerateText',
-          ($33.GenerateTextRequest value) => value.writeToBuffer(),
+          ($48.GenerateTextRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $33.GenerateTextResponse.fromBuffer(value));
+              $48.GenerateTextResponse.fromBuffer(value));
   static final _$embedText =
-      $grpc.ClientMethod<$33.EmbedTextRequest, $33.EmbedTextResponse>(
+      $grpc.ClientMethod<$48.EmbedTextRequest, $48.EmbedTextResponse>(
           '/google.ai.generativelanguage.v1beta3.TextService/EmbedText',
-          ($33.EmbedTextRequest value) => value.writeToBuffer(),
+          ($48.EmbedTextRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $33.EmbedTextResponse.fromBuffer(value));
+              $48.EmbedTextResponse.fromBuffer(value));
   static final _$batchEmbedText =
-      $grpc.ClientMethod<$33.BatchEmbedTextRequest, $33.BatchEmbedTextResponse>(
+      $grpc.ClientMethod<$48.BatchEmbedTextRequest, $48.BatchEmbedTextResponse>(
           '/google.ai.generativelanguage.v1beta3.TextService/BatchEmbedText',
-          ($33.BatchEmbedTextRequest value) => value.writeToBuffer(),
+          ($48.BatchEmbedTextRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $33.BatchEmbedTextResponse.fromBuffer(value));
+              $48.BatchEmbedTextResponse.fromBuffer(value));
   static final _$countTextTokens = $grpc.ClientMethod<
-          $33.CountTextTokensRequest, $33.CountTextTokensResponse>(
+          $48.CountTextTokensRequest, $48.CountTextTokensResponse>(
       '/google.ai.generativelanguage.v1beta3.TextService/CountTextTokens',
-      ($33.CountTextTokensRequest value) => value.writeToBuffer(),
+      ($48.CountTextTokensRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $33.CountTextTokensResponse.fromBuffer(value));
+          $48.CountTextTokensResponse.fromBuffer(value));
 
   TextServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$33.GenerateTextResponse> generateText(
-      $33.GenerateTextRequest request,
+  $grpc.ResponseFuture<$48.GenerateTextResponse> generateText(
+      $48.GenerateTextRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$generateText, request, options: options);
   }
 
-  $grpc.ResponseFuture<$33.EmbedTextResponse> embedText(
-      $33.EmbedTextRequest request,
+  $grpc.ResponseFuture<$48.EmbedTextResponse> embedText(
+      $48.EmbedTextRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$embedText, request, options: options);
   }
 
-  $grpc.ResponseFuture<$33.BatchEmbedTextResponse> batchEmbedText(
-      $33.BatchEmbedTextRequest request,
+  $grpc.ResponseFuture<$48.BatchEmbedTextResponse> batchEmbedText(
+      $48.BatchEmbedTextRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchEmbedText, request, options: options);
   }
 
-  $grpc.ResponseFuture<$33.CountTextTokensResponse> countTextTokens(
-      $33.CountTextTokensRequest request,
+  $grpc.ResponseFuture<$48.CountTextTokensResponse> countTextTokens(
+      $48.CountTextTokensRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$countTextTokens, request, options: options);
   }
@@ -82,70 +82,70 @@ abstract class TextServiceBase extends $grpc.Service {
 
   TextServiceBase() {
     $addMethod(
-        $grpc.ServiceMethod<$33.GenerateTextRequest, $33.GenerateTextResponse>(
+        $grpc.ServiceMethod<$48.GenerateTextRequest, $48.GenerateTextResponse>(
             'GenerateText',
             generateText_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $33.GenerateTextRequest.fromBuffer(value),
-            ($33.GenerateTextResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$33.EmbedTextRequest, $33.EmbedTextResponse>(
+                $48.GenerateTextRequest.fromBuffer(value),
+            ($48.GenerateTextResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$48.EmbedTextRequest, $48.EmbedTextResponse>(
         'EmbedText',
         embedText_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $33.EmbedTextRequest.fromBuffer(value),
-        ($33.EmbedTextResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$33.BatchEmbedTextRequest,
-            $33.BatchEmbedTextResponse>(
+        ($core.List<$core.int> value) => $48.EmbedTextRequest.fromBuffer(value),
+        ($48.EmbedTextResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$48.BatchEmbedTextRequest,
+            $48.BatchEmbedTextResponse>(
         'BatchEmbedText',
         batchEmbedText_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $33.BatchEmbedTextRequest.fromBuffer(value),
-        ($33.BatchEmbedTextResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$33.CountTextTokensRequest,
-            $33.CountTextTokensResponse>(
+            $48.BatchEmbedTextRequest.fromBuffer(value),
+        ($48.BatchEmbedTextResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$48.CountTextTokensRequest,
+            $48.CountTextTokensResponse>(
         'CountTextTokens',
         countTextTokens_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $33.CountTextTokensRequest.fromBuffer(value),
-        ($33.CountTextTokensResponse value) => value.writeToBuffer()));
+            $48.CountTextTokensRequest.fromBuffer(value),
+        ($48.CountTextTokensResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$33.GenerateTextResponse> generateText_Pre(
+  $async.Future<$48.GenerateTextResponse> generateText_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$33.GenerateTextRequest> request) async {
+      $async.Future<$48.GenerateTextRequest> request) async {
     return generateText(call, await request);
   }
 
-  $async.Future<$33.EmbedTextResponse> embedText_Pre($grpc.ServiceCall call,
-      $async.Future<$33.EmbedTextRequest> request) async {
+  $async.Future<$48.EmbedTextResponse> embedText_Pre($grpc.ServiceCall call,
+      $async.Future<$48.EmbedTextRequest> request) async {
     return embedText(call, await request);
   }
 
-  $async.Future<$33.BatchEmbedTextResponse> batchEmbedText_Pre(
+  $async.Future<$48.BatchEmbedTextResponse> batchEmbedText_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$33.BatchEmbedTextRequest> request) async {
+      $async.Future<$48.BatchEmbedTextRequest> request) async {
     return batchEmbedText(call, await request);
   }
 
-  $async.Future<$33.CountTextTokensResponse> countTextTokens_Pre(
+  $async.Future<$48.CountTextTokensResponse> countTextTokens_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$33.CountTextTokensRequest> request) async {
+      $async.Future<$48.CountTextTokensRequest> request) async {
     return countTextTokens(call, await request);
   }
 
-  $async.Future<$33.GenerateTextResponse> generateText(
-      $grpc.ServiceCall call, $33.GenerateTextRequest request);
-  $async.Future<$33.EmbedTextResponse> embedText(
-      $grpc.ServiceCall call, $33.EmbedTextRequest request);
-  $async.Future<$33.BatchEmbedTextResponse> batchEmbedText(
-      $grpc.ServiceCall call, $33.BatchEmbedTextRequest request);
-  $async.Future<$33.CountTextTokensResponse> countTextTokens(
-      $grpc.ServiceCall call, $33.CountTextTokensRequest request);
+  $async.Future<$48.GenerateTextResponse> generateText(
+      $grpc.ServiceCall call, $48.GenerateTextRequest request);
+  $async.Future<$48.EmbedTextResponse> embedText(
+      $grpc.ServiceCall call, $48.EmbedTextRequest request);
+  $async.Future<$48.BatchEmbedTextResponse> batchEmbedText(
+      $grpc.ServiceCall call, $48.BatchEmbedTextRequest request);
+  $async.Future<$48.CountTextTokensResponse> countTextTokens(
+      $grpc.ServiceCall call, $48.CountTextTokensRequest request);
 }

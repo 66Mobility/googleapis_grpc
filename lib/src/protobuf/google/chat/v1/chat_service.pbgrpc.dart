@@ -16,344 +16,346 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../protobuf/empty.pb.dart' as $3;
-import 'attachment.pb.dart' as $97;
-import 'membership.pb.dart' as $96;
-import 'message.pb.dart' as $95;
-import 'reaction.pb.dart' as $100;
-import 'space.pb.dart' as $98;
-import 'space_event.pb.dart' as $103;
-import 'space_read_state.pb.dart' as $101;
-import 'space_setup.pb.dart' as $99;
-import 'thread_read_state.pb.dart' as $102;
+import 'attachment.pb.dart' as $115;
+import 'membership.pb.dart' as $114;
+import 'message.pb.dart' as $113;
+import 'reaction.pb.dart' as $118;
+import 'space.pb.dart' as $116;
+import 'space_event.pb.dart' as $121;
+import 'space_read_state.pb.dart' as $119;
+import 'space_setup.pb.dart' as $117;
+import 'thread_read_state.pb.dart' as $120;
 
 export 'chat_service.pb.dart';
 
 @$pb.GrpcServiceName('google.chat.v1.ChatService')
 class ChatServiceClient extends $grpc.Client {
   static final _$createMessage =
-      $grpc.ClientMethod<$95.CreateMessageRequest, $95.Message>(
+      $grpc.ClientMethod<$113.CreateMessageRequest, $113.Message>(
           '/google.chat.v1.ChatService/CreateMessage',
-          ($95.CreateMessageRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $95.Message.fromBuffer(value));
+          ($113.CreateMessageRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $113.Message.fromBuffer(value));
   static final _$listMessages =
-      $grpc.ClientMethod<$95.ListMessagesRequest, $95.ListMessagesResponse>(
+      $grpc.ClientMethod<$113.ListMessagesRequest, $113.ListMessagesResponse>(
           '/google.chat.v1.ChatService/ListMessages',
-          ($95.ListMessagesRequest value) => value.writeToBuffer(),
+          ($113.ListMessagesRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $95.ListMessagesResponse.fromBuffer(value));
+              $113.ListMessagesResponse.fromBuffer(value));
   static final _$listMemberships = $grpc.ClientMethod<
-          $96.ListMembershipsRequest, $96.ListMembershipsResponse>(
+          $114.ListMembershipsRequest, $114.ListMembershipsResponse>(
       '/google.chat.v1.ChatService/ListMemberships',
-      ($96.ListMembershipsRequest value) => value.writeToBuffer(),
+      ($114.ListMembershipsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $96.ListMembershipsResponse.fromBuffer(value));
+          $114.ListMembershipsResponse.fromBuffer(value));
   static final _$getMembership =
-      $grpc.ClientMethod<$96.GetMembershipRequest, $96.Membership>(
+      $grpc.ClientMethod<$114.GetMembershipRequest, $114.Membership>(
           '/google.chat.v1.ChatService/GetMembership',
-          ($96.GetMembershipRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $96.Membership.fromBuffer(value));
+          ($114.GetMembershipRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $114.Membership.fromBuffer(value));
   static final _$getMessage =
-      $grpc.ClientMethod<$95.GetMessageRequest, $95.Message>(
+      $grpc.ClientMethod<$113.GetMessageRequest, $113.Message>(
           '/google.chat.v1.ChatService/GetMessage',
-          ($95.GetMessageRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $95.Message.fromBuffer(value));
+          ($113.GetMessageRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $113.Message.fromBuffer(value));
   static final _$updateMessage =
-      $grpc.ClientMethod<$95.UpdateMessageRequest, $95.Message>(
+      $grpc.ClientMethod<$113.UpdateMessageRequest, $113.Message>(
           '/google.chat.v1.ChatService/UpdateMessage',
-          ($95.UpdateMessageRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $95.Message.fromBuffer(value));
+          ($113.UpdateMessageRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $113.Message.fromBuffer(value));
   static final _$deleteMessage =
-      $grpc.ClientMethod<$95.DeleteMessageRequest, $3.Empty>(
+      $grpc.ClientMethod<$113.DeleteMessageRequest, $3.Empty>(
           '/google.chat.v1.ChatService/DeleteMessage',
-          ($95.DeleteMessageRequest value) => value.writeToBuffer(),
+          ($113.DeleteMessageRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$getAttachment =
-      $grpc.ClientMethod<$97.GetAttachmentRequest, $97.Attachment>(
+      $grpc.ClientMethod<$115.GetAttachmentRequest, $115.Attachment>(
           '/google.chat.v1.ChatService/GetAttachment',
-          ($97.GetAttachmentRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $97.Attachment.fromBuffer(value));
+          ($115.GetAttachmentRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $115.Attachment.fromBuffer(value));
   static final _$uploadAttachment = $grpc.ClientMethod<
-          $97.UploadAttachmentRequest, $97.UploadAttachmentResponse>(
+          $115.UploadAttachmentRequest, $115.UploadAttachmentResponse>(
       '/google.chat.v1.ChatService/UploadAttachment',
-      ($97.UploadAttachmentRequest value) => value.writeToBuffer(),
+      ($115.UploadAttachmentRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $97.UploadAttachmentResponse.fromBuffer(value));
+          $115.UploadAttachmentResponse.fromBuffer(value));
   static final _$listSpaces =
-      $grpc.ClientMethod<$98.ListSpacesRequest, $98.ListSpacesResponse>(
+      $grpc.ClientMethod<$116.ListSpacesRequest, $116.ListSpacesResponse>(
           '/google.chat.v1.ChatService/ListSpaces',
-          ($98.ListSpacesRequest value) => value.writeToBuffer(),
+          ($116.ListSpacesRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $98.ListSpacesResponse.fromBuffer(value));
+              $116.ListSpacesResponse.fromBuffer(value));
   static final _$searchSpaces =
-      $grpc.ClientMethod<$98.SearchSpacesRequest, $98.SearchSpacesResponse>(
+      $grpc.ClientMethod<$116.SearchSpacesRequest, $116.SearchSpacesResponse>(
           '/google.chat.v1.ChatService/SearchSpaces',
-          ($98.SearchSpacesRequest value) => value.writeToBuffer(),
+          ($116.SearchSpacesRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $98.SearchSpacesResponse.fromBuffer(value));
-  static final _$getSpace = $grpc.ClientMethod<$98.GetSpaceRequest, $98.Space>(
-      '/google.chat.v1.ChatService/GetSpace',
-      ($98.GetSpaceRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $98.Space.fromBuffer(value));
+              $116.SearchSpacesResponse.fromBuffer(value));
+  static final _$getSpace =
+      $grpc.ClientMethod<$116.GetSpaceRequest, $116.Space>(
+          '/google.chat.v1.ChatService/GetSpace',
+          ($116.GetSpaceRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $116.Space.fromBuffer(value));
   static final _$createSpace =
-      $grpc.ClientMethod<$98.CreateSpaceRequest, $98.Space>(
+      $grpc.ClientMethod<$116.CreateSpaceRequest, $116.Space>(
           '/google.chat.v1.ChatService/CreateSpace',
-          ($98.CreateSpaceRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $98.Space.fromBuffer(value));
+          ($116.CreateSpaceRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $116.Space.fromBuffer(value));
   static final _$setUpSpace =
-      $grpc.ClientMethod<$99.SetUpSpaceRequest, $98.Space>(
+      $grpc.ClientMethod<$117.SetUpSpaceRequest, $116.Space>(
           '/google.chat.v1.ChatService/SetUpSpace',
-          ($99.SetUpSpaceRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $98.Space.fromBuffer(value));
+          ($117.SetUpSpaceRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $116.Space.fromBuffer(value));
   static final _$updateSpace =
-      $grpc.ClientMethod<$98.UpdateSpaceRequest, $98.Space>(
+      $grpc.ClientMethod<$116.UpdateSpaceRequest, $116.Space>(
           '/google.chat.v1.ChatService/UpdateSpace',
-          ($98.UpdateSpaceRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $98.Space.fromBuffer(value));
+          ($116.UpdateSpaceRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $116.Space.fromBuffer(value));
   static final _$deleteSpace =
-      $grpc.ClientMethod<$98.DeleteSpaceRequest, $3.Empty>(
+      $grpc.ClientMethod<$116.DeleteSpaceRequest, $3.Empty>(
           '/google.chat.v1.ChatService/DeleteSpace',
-          ($98.DeleteSpaceRequest value) => value.writeToBuffer(),
+          ($116.DeleteSpaceRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$completeImportSpace = $grpc.ClientMethod<
-          $98.CompleteImportSpaceRequest, $98.CompleteImportSpaceResponse>(
+          $116.CompleteImportSpaceRequest, $116.CompleteImportSpaceResponse>(
       '/google.chat.v1.ChatService/CompleteImportSpace',
-      ($98.CompleteImportSpaceRequest value) => value.writeToBuffer(),
+      ($116.CompleteImportSpaceRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $98.CompleteImportSpaceResponse.fromBuffer(value));
+          $116.CompleteImportSpaceResponse.fromBuffer(value));
   static final _$findDirectMessage =
-      $grpc.ClientMethod<$98.FindDirectMessageRequest, $98.Space>(
+      $grpc.ClientMethod<$116.FindDirectMessageRequest, $116.Space>(
           '/google.chat.v1.ChatService/FindDirectMessage',
-          ($98.FindDirectMessageRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $98.Space.fromBuffer(value));
+          ($116.FindDirectMessageRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $116.Space.fromBuffer(value));
   static final _$createMembership =
-      $grpc.ClientMethod<$96.CreateMembershipRequest, $96.Membership>(
+      $grpc.ClientMethod<$114.CreateMembershipRequest, $114.Membership>(
           '/google.chat.v1.ChatService/CreateMembership',
-          ($96.CreateMembershipRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $96.Membership.fromBuffer(value));
+          ($114.CreateMembershipRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $114.Membership.fromBuffer(value));
   static final _$updateMembership =
-      $grpc.ClientMethod<$96.UpdateMembershipRequest, $96.Membership>(
+      $grpc.ClientMethod<$114.UpdateMembershipRequest, $114.Membership>(
           '/google.chat.v1.ChatService/UpdateMembership',
-          ($96.UpdateMembershipRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $96.Membership.fromBuffer(value));
+          ($114.UpdateMembershipRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $114.Membership.fromBuffer(value));
   static final _$deleteMembership =
-      $grpc.ClientMethod<$96.DeleteMembershipRequest, $96.Membership>(
+      $grpc.ClientMethod<$114.DeleteMembershipRequest, $114.Membership>(
           '/google.chat.v1.ChatService/DeleteMembership',
-          ($96.DeleteMembershipRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $96.Membership.fromBuffer(value));
+          ($114.DeleteMembershipRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $114.Membership.fromBuffer(value));
   static final _$createReaction =
-      $grpc.ClientMethod<$100.CreateReactionRequest, $100.Reaction>(
+      $grpc.ClientMethod<$118.CreateReactionRequest, $118.Reaction>(
           '/google.chat.v1.ChatService/CreateReaction',
-          ($100.CreateReactionRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $100.Reaction.fromBuffer(value));
+          ($118.CreateReactionRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $118.Reaction.fromBuffer(value));
   static final _$listReactions =
-      $grpc.ClientMethod<$100.ListReactionsRequest, $100.ListReactionsResponse>(
+      $grpc.ClientMethod<$118.ListReactionsRequest, $118.ListReactionsResponse>(
           '/google.chat.v1.ChatService/ListReactions',
-          ($100.ListReactionsRequest value) => value.writeToBuffer(),
+          ($118.ListReactionsRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $100.ListReactionsResponse.fromBuffer(value));
+              $118.ListReactionsResponse.fromBuffer(value));
   static final _$deleteReaction =
-      $grpc.ClientMethod<$100.DeleteReactionRequest, $3.Empty>(
+      $grpc.ClientMethod<$118.DeleteReactionRequest, $3.Empty>(
           '/google.chat.v1.ChatService/DeleteReaction',
-          ($100.DeleteReactionRequest value) => value.writeToBuffer(),
+          ($118.DeleteReactionRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$getSpaceReadState =
-      $grpc.ClientMethod<$101.GetSpaceReadStateRequest, $101.SpaceReadState>(
+      $grpc.ClientMethod<$119.GetSpaceReadStateRequest, $119.SpaceReadState>(
           '/google.chat.v1.ChatService/GetSpaceReadState',
-          ($101.GetSpaceReadStateRequest value) => value.writeToBuffer(),
+          ($119.GetSpaceReadStateRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $101.SpaceReadState.fromBuffer(value));
+              $119.SpaceReadState.fromBuffer(value));
   static final _$updateSpaceReadState =
-      $grpc.ClientMethod<$101.UpdateSpaceReadStateRequest, $101.SpaceReadState>(
+      $grpc.ClientMethod<$119.UpdateSpaceReadStateRequest, $119.SpaceReadState>(
           '/google.chat.v1.ChatService/UpdateSpaceReadState',
-          ($101.UpdateSpaceReadStateRequest value) => value.writeToBuffer(),
+          ($119.UpdateSpaceReadStateRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $101.SpaceReadState.fromBuffer(value));
+              $119.SpaceReadState.fromBuffer(value));
   static final _$getThreadReadState =
-      $grpc.ClientMethod<$102.GetThreadReadStateRequest, $102.ThreadReadState>(
+      $grpc.ClientMethod<$120.GetThreadReadStateRequest, $120.ThreadReadState>(
           '/google.chat.v1.ChatService/GetThreadReadState',
-          ($102.GetThreadReadStateRequest value) => value.writeToBuffer(),
+          ($120.GetThreadReadStateRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $102.ThreadReadState.fromBuffer(value));
+              $120.ThreadReadState.fromBuffer(value));
   static final _$getSpaceEvent =
-      $grpc.ClientMethod<$103.GetSpaceEventRequest, $103.SpaceEvent>(
+      $grpc.ClientMethod<$121.GetSpaceEventRequest, $121.SpaceEvent>(
           '/google.chat.v1.ChatService/GetSpaceEvent',
-          ($103.GetSpaceEventRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $103.SpaceEvent.fromBuffer(value));
+          ($121.GetSpaceEventRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $121.SpaceEvent.fromBuffer(value));
   static final _$listSpaceEvents = $grpc.ClientMethod<
-          $103.ListSpaceEventsRequest, $103.ListSpaceEventsResponse>(
+          $121.ListSpaceEventsRequest, $121.ListSpaceEventsResponse>(
       '/google.chat.v1.ChatService/ListSpaceEvents',
-      ($103.ListSpaceEventsRequest value) => value.writeToBuffer(),
+      ($121.ListSpaceEventsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $103.ListSpaceEventsResponse.fromBuffer(value));
+          $121.ListSpaceEventsResponse.fromBuffer(value));
 
   ChatServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$95.Message> createMessage(
-      $95.CreateMessageRequest request,
+  $grpc.ResponseFuture<$113.Message> createMessage(
+      $113.CreateMessageRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createMessage, request, options: options);
   }
 
-  $grpc.ResponseFuture<$95.ListMessagesResponse> listMessages(
-      $95.ListMessagesRequest request,
+  $grpc.ResponseFuture<$113.ListMessagesResponse> listMessages(
+      $113.ListMessagesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listMessages, request, options: options);
   }
 
-  $grpc.ResponseFuture<$96.ListMembershipsResponse> listMemberships(
-      $96.ListMembershipsRequest request,
+  $grpc.ResponseFuture<$114.ListMembershipsResponse> listMemberships(
+      $114.ListMembershipsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listMemberships, request, options: options);
   }
 
-  $grpc.ResponseFuture<$96.Membership> getMembership(
-      $96.GetMembershipRequest request,
+  $grpc.ResponseFuture<$114.Membership> getMembership(
+      $114.GetMembershipRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getMembership, request, options: options);
   }
 
-  $grpc.ResponseFuture<$95.Message> getMessage($95.GetMessageRequest request,
+  $grpc.ResponseFuture<$113.Message> getMessage($113.GetMessageRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getMessage, request, options: options);
   }
 
-  $grpc.ResponseFuture<$95.Message> updateMessage(
-      $95.UpdateMessageRequest request,
+  $grpc.ResponseFuture<$113.Message> updateMessage(
+      $113.UpdateMessageRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateMessage, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteMessage($95.DeleteMessageRequest request,
+  $grpc.ResponseFuture<$3.Empty> deleteMessage(
+      $113.DeleteMessageRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteMessage, request, options: options);
   }
 
-  $grpc.ResponseFuture<$97.Attachment> getAttachment(
-      $97.GetAttachmentRequest request,
+  $grpc.ResponseFuture<$115.Attachment> getAttachment(
+      $115.GetAttachmentRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getAttachment, request, options: options);
   }
 
-  $grpc.ResponseFuture<$97.UploadAttachmentResponse> uploadAttachment(
-      $97.UploadAttachmentRequest request,
+  $grpc.ResponseFuture<$115.UploadAttachmentResponse> uploadAttachment(
+      $115.UploadAttachmentRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$uploadAttachment, request, options: options);
   }
 
-  $grpc.ResponseFuture<$98.ListSpacesResponse> listSpaces(
-      $98.ListSpacesRequest request,
+  $grpc.ResponseFuture<$116.ListSpacesResponse> listSpaces(
+      $116.ListSpacesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listSpaces, request, options: options);
   }
 
-  $grpc.ResponseFuture<$98.SearchSpacesResponse> searchSpaces(
-      $98.SearchSpacesRequest request,
+  $grpc.ResponseFuture<$116.SearchSpacesResponse> searchSpaces(
+      $116.SearchSpacesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$searchSpaces, request, options: options);
   }
 
-  $grpc.ResponseFuture<$98.Space> getSpace($98.GetSpaceRequest request,
+  $grpc.ResponseFuture<$116.Space> getSpace($116.GetSpaceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSpace, request, options: options);
   }
 
-  $grpc.ResponseFuture<$98.Space> createSpace($98.CreateSpaceRequest request,
+  $grpc.ResponseFuture<$116.Space> createSpace($116.CreateSpaceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createSpace, request, options: options);
   }
 
-  $grpc.ResponseFuture<$98.Space> setUpSpace($99.SetUpSpaceRequest request,
+  $grpc.ResponseFuture<$116.Space> setUpSpace($117.SetUpSpaceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$setUpSpace, request, options: options);
   }
 
-  $grpc.ResponseFuture<$98.Space> updateSpace($98.UpdateSpaceRequest request,
+  $grpc.ResponseFuture<$116.Space> updateSpace($116.UpdateSpaceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateSpace, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteSpace($98.DeleteSpaceRequest request,
+  $grpc.ResponseFuture<$3.Empty> deleteSpace($116.DeleteSpaceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteSpace, request, options: options);
   }
 
-  $grpc.ResponseFuture<$98.CompleteImportSpaceResponse> completeImportSpace(
-      $98.CompleteImportSpaceRequest request,
+  $grpc.ResponseFuture<$116.CompleteImportSpaceResponse> completeImportSpace(
+      $116.CompleteImportSpaceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$completeImportSpace, request, options: options);
   }
 
-  $grpc.ResponseFuture<$98.Space> findDirectMessage(
-      $98.FindDirectMessageRequest request,
+  $grpc.ResponseFuture<$116.Space> findDirectMessage(
+      $116.FindDirectMessageRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$findDirectMessage, request, options: options);
   }
 
-  $grpc.ResponseFuture<$96.Membership> createMembership(
-      $96.CreateMembershipRequest request,
+  $grpc.ResponseFuture<$114.Membership> createMembership(
+      $114.CreateMembershipRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createMembership, request, options: options);
   }
 
-  $grpc.ResponseFuture<$96.Membership> updateMembership(
-      $96.UpdateMembershipRequest request,
+  $grpc.ResponseFuture<$114.Membership> updateMembership(
+      $114.UpdateMembershipRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateMembership, request, options: options);
   }
 
-  $grpc.ResponseFuture<$96.Membership> deleteMembership(
-      $96.DeleteMembershipRequest request,
+  $grpc.ResponseFuture<$114.Membership> deleteMembership(
+      $114.DeleteMembershipRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteMembership, request, options: options);
   }
 
-  $grpc.ResponseFuture<$100.Reaction> createReaction(
-      $100.CreateReactionRequest request,
+  $grpc.ResponseFuture<$118.Reaction> createReaction(
+      $118.CreateReactionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createReaction, request, options: options);
   }
 
-  $grpc.ResponseFuture<$100.ListReactionsResponse> listReactions(
-      $100.ListReactionsRequest request,
+  $grpc.ResponseFuture<$118.ListReactionsResponse> listReactions(
+      $118.ListReactionsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listReactions, request, options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> deleteReaction(
-      $100.DeleteReactionRequest request,
+      $118.DeleteReactionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteReaction, request, options: options);
   }
 
-  $grpc.ResponseFuture<$101.SpaceReadState> getSpaceReadState(
-      $101.GetSpaceReadStateRequest request,
+  $grpc.ResponseFuture<$119.SpaceReadState> getSpaceReadState(
+      $119.GetSpaceReadStateRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSpaceReadState, request, options: options);
   }
 
-  $grpc.ResponseFuture<$101.SpaceReadState> updateSpaceReadState(
-      $101.UpdateSpaceReadStateRequest request,
+  $grpc.ResponseFuture<$119.SpaceReadState> updateSpaceReadState(
+      $119.UpdateSpaceReadStateRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateSpaceReadState, request, options: options);
   }
 
-  $grpc.ResponseFuture<$102.ThreadReadState> getThreadReadState(
-      $102.GetThreadReadStateRequest request,
+  $grpc.ResponseFuture<$120.ThreadReadState> getThreadReadState(
+      $120.GetThreadReadStateRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getThreadReadState, request, options: options);
   }
 
-  $grpc.ResponseFuture<$103.SpaceEvent> getSpaceEvent(
-      $103.GetSpaceEventRequest request,
+  $grpc.ResponseFuture<$121.SpaceEvent> getSpaceEvent(
+      $121.GetSpaceEventRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSpaceEvent, request, options: options);
   }
 
-  $grpc.ResponseFuture<$103.ListSpaceEventsResponse> listSpaceEvents(
-      $103.ListSpaceEventsRequest request,
+  $grpc.ResponseFuture<$121.ListSpaceEventsResponse> listSpaceEvents(
+      $121.ListSpaceEventsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listSpaceEvents, request, options: options);
   }
@@ -364,461 +366,464 @@ abstract class ChatServiceBase extends $grpc.Service {
   $core.String get $name => 'google.chat.v1.ChatService';
 
   ChatServiceBase() {
-    $addMethod($grpc.ServiceMethod<$95.CreateMessageRequest, $95.Message>(
+    $addMethod($grpc.ServiceMethod<$113.CreateMessageRequest, $113.Message>(
         'CreateMessage',
         createMessage_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $95.CreateMessageRequest.fromBuffer(value),
-        ($95.Message value) => value.writeToBuffer()));
-    $addMethod(
-        $grpc.ServiceMethod<$95.ListMessagesRequest, $95.ListMessagesResponse>(
-            'ListMessages',
-            listMessages_Pre,
-            false,
-            false,
-            ($core.List<$core.int> value) =>
-                $95.ListMessagesRequest.fromBuffer(value),
-            ($95.ListMessagesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$96.ListMembershipsRequest,
-            $96.ListMembershipsResponse>(
+            $113.CreateMessageRequest.fromBuffer(value),
+        ($113.Message value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$113.ListMessagesRequest,
+            $113.ListMessagesResponse>(
+        'ListMessages',
+        listMessages_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) =>
+            $113.ListMessagesRequest.fromBuffer(value),
+        ($113.ListMessagesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$114.ListMembershipsRequest,
+            $114.ListMembershipsResponse>(
         'ListMemberships',
         listMemberships_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $96.ListMembershipsRequest.fromBuffer(value),
-        ($96.ListMembershipsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$96.GetMembershipRequest, $96.Membership>(
+            $114.ListMembershipsRequest.fromBuffer(value),
+        ($114.ListMembershipsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$114.GetMembershipRequest, $114.Membership>(
         'GetMembership',
         getMembership_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $96.GetMembershipRequest.fromBuffer(value),
-        ($96.Membership value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$95.GetMessageRequest, $95.Message>(
+            $114.GetMembershipRequest.fromBuffer(value),
+        ($114.Membership value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$113.GetMessageRequest, $113.Message>(
         'GetMessage',
         getMessage_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $95.GetMessageRequest.fromBuffer(value),
-        ($95.Message value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$95.UpdateMessageRequest, $95.Message>(
+            $113.GetMessageRequest.fromBuffer(value),
+        ($113.Message value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$113.UpdateMessageRequest, $113.Message>(
         'UpdateMessage',
         updateMessage_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $95.UpdateMessageRequest.fromBuffer(value),
-        ($95.Message value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$95.DeleteMessageRequest, $3.Empty>(
+            $113.UpdateMessageRequest.fromBuffer(value),
+        ($113.Message value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$113.DeleteMessageRequest, $3.Empty>(
         'DeleteMessage',
         deleteMessage_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $95.DeleteMessageRequest.fromBuffer(value),
+            $113.DeleteMessageRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$97.GetAttachmentRequest, $97.Attachment>(
+    $addMethod($grpc.ServiceMethod<$115.GetAttachmentRequest, $115.Attachment>(
         'GetAttachment',
         getAttachment_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $97.GetAttachmentRequest.fromBuffer(value),
-        ($97.Attachment value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$97.UploadAttachmentRequest,
-            $97.UploadAttachmentResponse>(
+            $115.GetAttachmentRequest.fromBuffer(value),
+        ($115.Attachment value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$115.UploadAttachmentRequest,
+            $115.UploadAttachmentResponse>(
         'UploadAttachment',
         uploadAttachment_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $97.UploadAttachmentRequest.fromBuffer(value),
-        ($97.UploadAttachmentResponse value) => value.writeToBuffer()));
+            $115.UploadAttachmentRequest.fromBuffer(value),
+        ($115.UploadAttachmentResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$98.ListSpacesRequest, $98.ListSpacesResponse>(
+        $grpc.ServiceMethod<$116.ListSpacesRequest, $116.ListSpacesResponse>(
             'ListSpaces',
             listSpaces_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $98.ListSpacesRequest.fromBuffer(value),
-            ($98.ListSpacesResponse value) => value.writeToBuffer()));
-    $addMethod(
-        $grpc.ServiceMethod<$98.SearchSpacesRequest, $98.SearchSpacesResponse>(
-            'SearchSpaces',
-            searchSpaces_Pre,
-            false,
-            false,
-            ($core.List<$core.int> value) =>
-                $98.SearchSpacesRequest.fromBuffer(value),
-            ($98.SearchSpacesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$98.GetSpaceRequest, $98.Space>(
+                $116.ListSpacesRequest.fromBuffer(value),
+            ($116.ListSpacesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$116.SearchSpacesRequest,
+            $116.SearchSpacesResponse>(
+        'SearchSpaces',
+        searchSpaces_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) =>
+            $116.SearchSpacesRequest.fromBuffer(value),
+        ($116.SearchSpacesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$116.GetSpaceRequest, $116.Space>(
         'GetSpace',
         getSpace_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $98.GetSpaceRequest.fromBuffer(value),
-        ($98.Space value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$98.CreateSpaceRequest, $98.Space>(
+        ($core.List<$core.int> value) => $116.GetSpaceRequest.fromBuffer(value),
+        ($116.Space value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$116.CreateSpaceRequest, $116.Space>(
         'CreateSpace',
         createSpace_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $98.CreateSpaceRequest.fromBuffer(value),
-        ($98.Space value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$99.SetUpSpaceRequest, $98.Space>(
+            $116.CreateSpaceRequest.fromBuffer(value),
+        ($116.Space value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$117.SetUpSpaceRequest, $116.Space>(
         'SetUpSpace',
         setUpSpace_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $99.SetUpSpaceRequest.fromBuffer(value),
-        ($98.Space value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$98.UpdateSpaceRequest, $98.Space>(
+            $117.SetUpSpaceRequest.fromBuffer(value),
+        ($116.Space value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$116.UpdateSpaceRequest, $116.Space>(
         'UpdateSpace',
         updateSpace_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $98.UpdateSpaceRequest.fromBuffer(value),
-        ($98.Space value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$98.DeleteSpaceRequest, $3.Empty>(
+            $116.UpdateSpaceRequest.fromBuffer(value),
+        ($116.Space value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$116.DeleteSpaceRequest, $3.Empty>(
         'DeleteSpace',
         deleteSpace_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $98.DeleteSpaceRequest.fromBuffer(value),
+            $116.DeleteSpaceRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$98.CompleteImportSpaceRequest,
-            $98.CompleteImportSpaceResponse>(
+    $addMethod($grpc.ServiceMethod<$116.CompleteImportSpaceRequest,
+            $116.CompleteImportSpaceResponse>(
         'CompleteImportSpace',
         completeImportSpace_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $98.CompleteImportSpaceRequest.fromBuffer(value),
-        ($98.CompleteImportSpaceResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$98.FindDirectMessageRequest, $98.Space>(
+            $116.CompleteImportSpaceRequest.fromBuffer(value),
+        ($116.CompleteImportSpaceResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$116.FindDirectMessageRequest, $116.Space>(
         'FindDirectMessage',
         findDirectMessage_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $98.FindDirectMessageRequest.fromBuffer(value),
-        ($98.Space value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$96.CreateMembershipRequest, $96.Membership>(
-        'CreateMembership',
-        createMembership_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) =>
-            $96.CreateMembershipRequest.fromBuffer(value),
-        ($96.Membership value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$96.UpdateMembershipRequest, $96.Membership>(
-        'UpdateMembership',
-        updateMembership_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) =>
-            $96.UpdateMembershipRequest.fromBuffer(value),
-        ($96.Membership value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$96.DeleteMembershipRequest, $96.Membership>(
-        'DeleteMembership',
-        deleteMembership_Pre,
-        false,
-        false,
-        ($core.List<$core.int> value) =>
-            $96.DeleteMembershipRequest.fromBuffer(value),
-        ($96.Membership value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$100.CreateReactionRequest, $100.Reaction>(
+            $116.FindDirectMessageRequest.fromBuffer(value),
+        ($116.Space value) => value.writeToBuffer()));
+    $addMethod(
+        $grpc.ServiceMethod<$114.CreateMembershipRequest, $114.Membership>(
+            'CreateMembership',
+            createMembership_Pre,
+            false,
+            false,
+            ($core.List<$core.int> value) =>
+                $114.CreateMembershipRequest.fromBuffer(value),
+            ($114.Membership value) => value.writeToBuffer()));
+    $addMethod(
+        $grpc.ServiceMethod<$114.UpdateMembershipRequest, $114.Membership>(
+            'UpdateMembership',
+            updateMembership_Pre,
+            false,
+            false,
+            ($core.List<$core.int> value) =>
+                $114.UpdateMembershipRequest.fromBuffer(value),
+            ($114.Membership value) => value.writeToBuffer()));
+    $addMethod(
+        $grpc.ServiceMethod<$114.DeleteMembershipRequest, $114.Membership>(
+            'DeleteMembership',
+            deleteMembership_Pre,
+            false,
+            false,
+            ($core.List<$core.int> value) =>
+                $114.DeleteMembershipRequest.fromBuffer(value),
+            ($114.Membership value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$118.CreateReactionRequest, $118.Reaction>(
         'CreateReaction',
         createReaction_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $100.CreateReactionRequest.fromBuffer(value),
-        ($100.Reaction value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$100.ListReactionsRequest,
-            $100.ListReactionsResponse>(
+            $118.CreateReactionRequest.fromBuffer(value),
+        ($118.Reaction value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$118.ListReactionsRequest,
+            $118.ListReactionsResponse>(
         'ListReactions',
         listReactions_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $100.ListReactionsRequest.fromBuffer(value),
-        ($100.ListReactionsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$100.DeleteReactionRequest, $3.Empty>(
+            $118.ListReactionsRequest.fromBuffer(value),
+        ($118.ListReactionsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$118.DeleteReactionRequest, $3.Empty>(
         'DeleteReaction',
         deleteReaction_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $100.DeleteReactionRequest.fromBuffer(value),
+            $118.DeleteReactionRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$101.GetSpaceReadStateRequest, $101.SpaceReadState>(
+        $grpc.ServiceMethod<$119.GetSpaceReadStateRequest, $119.SpaceReadState>(
             'GetSpaceReadState',
             getSpaceReadState_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $101.GetSpaceReadStateRequest.fromBuffer(value),
-            ($101.SpaceReadState value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$101.UpdateSpaceReadStateRequest,
-            $101.SpaceReadState>(
+                $119.GetSpaceReadStateRequest.fromBuffer(value),
+            ($119.SpaceReadState value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$119.UpdateSpaceReadStateRequest,
+            $119.SpaceReadState>(
         'UpdateSpaceReadState',
         updateSpaceReadState_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $101.UpdateSpaceReadStateRequest.fromBuffer(value),
-        ($101.SpaceReadState value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$102.GetThreadReadStateRequest,
-            $102.ThreadReadState>(
+            $119.UpdateSpaceReadStateRequest.fromBuffer(value),
+        ($119.SpaceReadState value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$120.GetThreadReadStateRequest,
+            $120.ThreadReadState>(
         'GetThreadReadState',
         getThreadReadState_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $102.GetThreadReadStateRequest.fromBuffer(value),
-        ($102.ThreadReadState value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$103.GetSpaceEventRequest, $103.SpaceEvent>(
+            $120.GetThreadReadStateRequest.fromBuffer(value),
+        ($120.ThreadReadState value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$121.GetSpaceEventRequest, $121.SpaceEvent>(
         'GetSpaceEvent',
         getSpaceEvent_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $103.GetSpaceEventRequest.fromBuffer(value),
-        ($103.SpaceEvent value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$103.ListSpaceEventsRequest,
-            $103.ListSpaceEventsResponse>(
+            $121.GetSpaceEventRequest.fromBuffer(value),
+        ($121.SpaceEvent value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$121.ListSpaceEventsRequest,
+            $121.ListSpaceEventsResponse>(
         'ListSpaceEvents',
         listSpaceEvents_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $103.ListSpaceEventsRequest.fromBuffer(value),
-        ($103.ListSpaceEventsResponse value) => value.writeToBuffer()));
+            $121.ListSpaceEventsRequest.fromBuffer(value),
+        ($121.ListSpaceEventsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$95.Message> createMessage_Pre($grpc.ServiceCall call,
-      $async.Future<$95.CreateMessageRequest> request) async {
+  $async.Future<$113.Message> createMessage_Pre($grpc.ServiceCall call,
+      $async.Future<$113.CreateMessageRequest> request) async {
     return createMessage(call, await request);
   }
 
-  $async.Future<$95.ListMessagesResponse> listMessages_Pre(
+  $async.Future<$113.ListMessagesResponse> listMessages_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$95.ListMessagesRequest> request) async {
+      $async.Future<$113.ListMessagesRequest> request) async {
     return listMessages(call, await request);
   }
 
-  $async.Future<$96.ListMembershipsResponse> listMemberships_Pre(
+  $async.Future<$114.ListMembershipsResponse> listMemberships_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$96.ListMembershipsRequest> request) async {
+      $async.Future<$114.ListMembershipsRequest> request) async {
     return listMemberships(call, await request);
   }
 
-  $async.Future<$96.Membership> getMembership_Pre($grpc.ServiceCall call,
-      $async.Future<$96.GetMembershipRequest> request) async {
+  $async.Future<$114.Membership> getMembership_Pre($grpc.ServiceCall call,
+      $async.Future<$114.GetMembershipRequest> request) async {
     return getMembership(call, await request);
   }
 
-  $async.Future<$95.Message> getMessage_Pre($grpc.ServiceCall call,
-      $async.Future<$95.GetMessageRequest> request) async {
+  $async.Future<$113.Message> getMessage_Pre($grpc.ServiceCall call,
+      $async.Future<$113.GetMessageRequest> request) async {
     return getMessage(call, await request);
   }
 
-  $async.Future<$95.Message> updateMessage_Pre($grpc.ServiceCall call,
-      $async.Future<$95.UpdateMessageRequest> request) async {
+  $async.Future<$113.Message> updateMessage_Pre($grpc.ServiceCall call,
+      $async.Future<$113.UpdateMessageRequest> request) async {
     return updateMessage(call, await request);
   }
 
   $async.Future<$3.Empty> deleteMessage_Pre($grpc.ServiceCall call,
-      $async.Future<$95.DeleteMessageRequest> request) async {
+      $async.Future<$113.DeleteMessageRequest> request) async {
     return deleteMessage(call, await request);
   }
 
-  $async.Future<$97.Attachment> getAttachment_Pre($grpc.ServiceCall call,
-      $async.Future<$97.GetAttachmentRequest> request) async {
+  $async.Future<$115.Attachment> getAttachment_Pre($grpc.ServiceCall call,
+      $async.Future<$115.GetAttachmentRequest> request) async {
     return getAttachment(call, await request);
   }
 
-  $async.Future<$97.UploadAttachmentResponse> uploadAttachment_Pre(
+  $async.Future<$115.UploadAttachmentResponse> uploadAttachment_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$97.UploadAttachmentRequest> request) async {
+      $async.Future<$115.UploadAttachmentRequest> request) async {
     return uploadAttachment(call, await request);
   }
 
-  $async.Future<$98.ListSpacesResponse> listSpaces_Pre($grpc.ServiceCall call,
-      $async.Future<$98.ListSpacesRequest> request) async {
+  $async.Future<$116.ListSpacesResponse> listSpaces_Pre($grpc.ServiceCall call,
+      $async.Future<$116.ListSpacesRequest> request) async {
     return listSpaces(call, await request);
   }
 
-  $async.Future<$98.SearchSpacesResponse> searchSpaces_Pre(
+  $async.Future<$116.SearchSpacesResponse> searchSpaces_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$98.SearchSpacesRequest> request) async {
+      $async.Future<$116.SearchSpacesRequest> request) async {
     return searchSpaces(call, await request);
   }
 
-  $async.Future<$98.Space> getSpace_Pre($grpc.ServiceCall call,
-      $async.Future<$98.GetSpaceRequest> request) async {
+  $async.Future<$116.Space> getSpace_Pre($grpc.ServiceCall call,
+      $async.Future<$116.GetSpaceRequest> request) async {
     return getSpace(call, await request);
   }
 
-  $async.Future<$98.Space> createSpace_Pre($grpc.ServiceCall call,
-      $async.Future<$98.CreateSpaceRequest> request) async {
+  $async.Future<$116.Space> createSpace_Pre($grpc.ServiceCall call,
+      $async.Future<$116.CreateSpaceRequest> request) async {
     return createSpace(call, await request);
   }
 
-  $async.Future<$98.Space> setUpSpace_Pre($grpc.ServiceCall call,
-      $async.Future<$99.SetUpSpaceRequest> request) async {
+  $async.Future<$116.Space> setUpSpace_Pre($grpc.ServiceCall call,
+      $async.Future<$117.SetUpSpaceRequest> request) async {
     return setUpSpace(call, await request);
   }
 
-  $async.Future<$98.Space> updateSpace_Pre($grpc.ServiceCall call,
-      $async.Future<$98.UpdateSpaceRequest> request) async {
+  $async.Future<$116.Space> updateSpace_Pre($grpc.ServiceCall call,
+      $async.Future<$116.UpdateSpaceRequest> request) async {
     return updateSpace(call, await request);
   }
 
   $async.Future<$3.Empty> deleteSpace_Pre($grpc.ServiceCall call,
-      $async.Future<$98.DeleteSpaceRequest> request) async {
+      $async.Future<$116.DeleteSpaceRequest> request) async {
     return deleteSpace(call, await request);
   }
 
-  $async.Future<$98.CompleteImportSpaceResponse> completeImportSpace_Pre(
+  $async.Future<$116.CompleteImportSpaceResponse> completeImportSpace_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$98.CompleteImportSpaceRequest> request) async {
+      $async.Future<$116.CompleteImportSpaceRequest> request) async {
     return completeImportSpace(call, await request);
   }
 
-  $async.Future<$98.Space> findDirectMessage_Pre($grpc.ServiceCall call,
-      $async.Future<$98.FindDirectMessageRequest> request) async {
+  $async.Future<$116.Space> findDirectMessage_Pre($grpc.ServiceCall call,
+      $async.Future<$116.FindDirectMessageRequest> request) async {
     return findDirectMessage(call, await request);
   }
 
-  $async.Future<$96.Membership> createMembership_Pre($grpc.ServiceCall call,
-      $async.Future<$96.CreateMembershipRequest> request) async {
+  $async.Future<$114.Membership> createMembership_Pre($grpc.ServiceCall call,
+      $async.Future<$114.CreateMembershipRequest> request) async {
     return createMembership(call, await request);
   }
 
-  $async.Future<$96.Membership> updateMembership_Pre($grpc.ServiceCall call,
-      $async.Future<$96.UpdateMembershipRequest> request) async {
+  $async.Future<$114.Membership> updateMembership_Pre($grpc.ServiceCall call,
+      $async.Future<$114.UpdateMembershipRequest> request) async {
     return updateMembership(call, await request);
   }
 
-  $async.Future<$96.Membership> deleteMembership_Pre($grpc.ServiceCall call,
-      $async.Future<$96.DeleteMembershipRequest> request) async {
+  $async.Future<$114.Membership> deleteMembership_Pre($grpc.ServiceCall call,
+      $async.Future<$114.DeleteMembershipRequest> request) async {
     return deleteMembership(call, await request);
   }
 
-  $async.Future<$100.Reaction> createReaction_Pre($grpc.ServiceCall call,
-      $async.Future<$100.CreateReactionRequest> request) async {
+  $async.Future<$118.Reaction> createReaction_Pre($grpc.ServiceCall call,
+      $async.Future<$118.CreateReactionRequest> request) async {
     return createReaction(call, await request);
   }
 
-  $async.Future<$100.ListReactionsResponse> listReactions_Pre(
+  $async.Future<$118.ListReactionsResponse> listReactions_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$100.ListReactionsRequest> request) async {
+      $async.Future<$118.ListReactionsRequest> request) async {
     return listReactions(call, await request);
   }
 
   $async.Future<$3.Empty> deleteReaction_Pre($grpc.ServiceCall call,
-      $async.Future<$100.DeleteReactionRequest> request) async {
+      $async.Future<$118.DeleteReactionRequest> request) async {
     return deleteReaction(call, await request);
   }
 
-  $async.Future<$101.SpaceReadState> getSpaceReadState_Pre(
+  $async.Future<$119.SpaceReadState> getSpaceReadState_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$101.GetSpaceReadStateRequest> request) async {
+      $async.Future<$119.GetSpaceReadStateRequest> request) async {
     return getSpaceReadState(call, await request);
   }
 
-  $async.Future<$101.SpaceReadState> updateSpaceReadState_Pre(
+  $async.Future<$119.SpaceReadState> updateSpaceReadState_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$101.UpdateSpaceReadStateRequest> request) async {
+      $async.Future<$119.UpdateSpaceReadStateRequest> request) async {
     return updateSpaceReadState(call, await request);
   }
 
-  $async.Future<$102.ThreadReadState> getThreadReadState_Pre(
+  $async.Future<$120.ThreadReadState> getThreadReadState_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$102.GetThreadReadStateRequest> request) async {
+      $async.Future<$120.GetThreadReadStateRequest> request) async {
     return getThreadReadState(call, await request);
   }
 
-  $async.Future<$103.SpaceEvent> getSpaceEvent_Pre($grpc.ServiceCall call,
-      $async.Future<$103.GetSpaceEventRequest> request) async {
+  $async.Future<$121.SpaceEvent> getSpaceEvent_Pre($grpc.ServiceCall call,
+      $async.Future<$121.GetSpaceEventRequest> request) async {
     return getSpaceEvent(call, await request);
   }
 
-  $async.Future<$103.ListSpaceEventsResponse> listSpaceEvents_Pre(
+  $async.Future<$121.ListSpaceEventsResponse> listSpaceEvents_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$103.ListSpaceEventsRequest> request) async {
+      $async.Future<$121.ListSpaceEventsRequest> request) async {
     return listSpaceEvents(call, await request);
   }
 
-  $async.Future<$95.Message> createMessage(
-      $grpc.ServiceCall call, $95.CreateMessageRequest request);
-  $async.Future<$95.ListMessagesResponse> listMessages(
-      $grpc.ServiceCall call, $95.ListMessagesRequest request);
-  $async.Future<$96.ListMembershipsResponse> listMemberships(
-      $grpc.ServiceCall call, $96.ListMembershipsRequest request);
-  $async.Future<$96.Membership> getMembership(
-      $grpc.ServiceCall call, $96.GetMembershipRequest request);
-  $async.Future<$95.Message> getMessage(
-      $grpc.ServiceCall call, $95.GetMessageRequest request);
-  $async.Future<$95.Message> updateMessage(
-      $grpc.ServiceCall call, $95.UpdateMessageRequest request);
+  $async.Future<$113.Message> createMessage(
+      $grpc.ServiceCall call, $113.CreateMessageRequest request);
+  $async.Future<$113.ListMessagesResponse> listMessages(
+      $grpc.ServiceCall call, $113.ListMessagesRequest request);
+  $async.Future<$114.ListMembershipsResponse> listMemberships(
+      $grpc.ServiceCall call, $114.ListMembershipsRequest request);
+  $async.Future<$114.Membership> getMembership(
+      $grpc.ServiceCall call, $114.GetMembershipRequest request);
+  $async.Future<$113.Message> getMessage(
+      $grpc.ServiceCall call, $113.GetMessageRequest request);
+  $async.Future<$113.Message> updateMessage(
+      $grpc.ServiceCall call, $113.UpdateMessageRequest request);
   $async.Future<$3.Empty> deleteMessage(
-      $grpc.ServiceCall call, $95.DeleteMessageRequest request);
-  $async.Future<$97.Attachment> getAttachment(
-      $grpc.ServiceCall call, $97.GetAttachmentRequest request);
-  $async.Future<$97.UploadAttachmentResponse> uploadAttachment(
-      $grpc.ServiceCall call, $97.UploadAttachmentRequest request);
-  $async.Future<$98.ListSpacesResponse> listSpaces(
-      $grpc.ServiceCall call, $98.ListSpacesRequest request);
-  $async.Future<$98.SearchSpacesResponse> searchSpaces(
-      $grpc.ServiceCall call, $98.SearchSpacesRequest request);
-  $async.Future<$98.Space> getSpace(
-      $grpc.ServiceCall call, $98.GetSpaceRequest request);
-  $async.Future<$98.Space> createSpace(
-      $grpc.ServiceCall call, $98.CreateSpaceRequest request);
-  $async.Future<$98.Space> setUpSpace(
-      $grpc.ServiceCall call, $99.SetUpSpaceRequest request);
-  $async.Future<$98.Space> updateSpace(
-      $grpc.ServiceCall call, $98.UpdateSpaceRequest request);
+      $grpc.ServiceCall call, $113.DeleteMessageRequest request);
+  $async.Future<$115.Attachment> getAttachment(
+      $grpc.ServiceCall call, $115.GetAttachmentRequest request);
+  $async.Future<$115.UploadAttachmentResponse> uploadAttachment(
+      $grpc.ServiceCall call, $115.UploadAttachmentRequest request);
+  $async.Future<$116.ListSpacesResponse> listSpaces(
+      $grpc.ServiceCall call, $116.ListSpacesRequest request);
+  $async.Future<$116.SearchSpacesResponse> searchSpaces(
+      $grpc.ServiceCall call, $116.SearchSpacesRequest request);
+  $async.Future<$116.Space> getSpace(
+      $grpc.ServiceCall call, $116.GetSpaceRequest request);
+  $async.Future<$116.Space> createSpace(
+      $grpc.ServiceCall call, $116.CreateSpaceRequest request);
+  $async.Future<$116.Space> setUpSpace(
+      $grpc.ServiceCall call, $117.SetUpSpaceRequest request);
+  $async.Future<$116.Space> updateSpace(
+      $grpc.ServiceCall call, $116.UpdateSpaceRequest request);
   $async.Future<$3.Empty> deleteSpace(
-      $grpc.ServiceCall call, $98.DeleteSpaceRequest request);
-  $async.Future<$98.CompleteImportSpaceResponse> completeImportSpace(
-      $grpc.ServiceCall call, $98.CompleteImportSpaceRequest request);
-  $async.Future<$98.Space> findDirectMessage(
-      $grpc.ServiceCall call, $98.FindDirectMessageRequest request);
-  $async.Future<$96.Membership> createMembership(
-      $grpc.ServiceCall call, $96.CreateMembershipRequest request);
-  $async.Future<$96.Membership> updateMembership(
-      $grpc.ServiceCall call, $96.UpdateMembershipRequest request);
-  $async.Future<$96.Membership> deleteMembership(
-      $grpc.ServiceCall call, $96.DeleteMembershipRequest request);
-  $async.Future<$100.Reaction> createReaction(
-      $grpc.ServiceCall call, $100.CreateReactionRequest request);
-  $async.Future<$100.ListReactionsResponse> listReactions(
-      $grpc.ServiceCall call, $100.ListReactionsRequest request);
+      $grpc.ServiceCall call, $116.DeleteSpaceRequest request);
+  $async.Future<$116.CompleteImportSpaceResponse> completeImportSpace(
+      $grpc.ServiceCall call, $116.CompleteImportSpaceRequest request);
+  $async.Future<$116.Space> findDirectMessage(
+      $grpc.ServiceCall call, $116.FindDirectMessageRequest request);
+  $async.Future<$114.Membership> createMembership(
+      $grpc.ServiceCall call, $114.CreateMembershipRequest request);
+  $async.Future<$114.Membership> updateMembership(
+      $grpc.ServiceCall call, $114.UpdateMembershipRequest request);
+  $async.Future<$114.Membership> deleteMembership(
+      $grpc.ServiceCall call, $114.DeleteMembershipRequest request);
+  $async.Future<$118.Reaction> createReaction(
+      $grpc.ServiceCall call, $118.CreateReactionRequest request);
+  $async.Future<$118.ListReactionsResponse> listReactions(
+      $grpc.ServiceCall call, $118.ListReactionsRequest request);
   $async.Future<$3.Empty> deleteReaction(
-      $grpc.ServiceCall call, $100.DeleteReactionRequest request);
-  $async.Future<$101.SpaceReadState> getSpaceReadState(
-      $grpc.ServiceCall call, $101.GetSpaceReadStateRequest request);
-  $async.Future<$101.SpaceReadState> updateSpaceReadState(
-      $grpc.ServiceCall call, $101.UpdateSpaceReadStateRequest request);
-  $async.Future<$102.ThreadReadState> getThreadReadState(
-      $grpc.ServiceCall call, $102.GetThreadReadStateRequest request);
-  $async.Future<$103.SpaceEvent> getSpaceEvent(
-      $grpc.ServiceCall call, $103.GetSpaceEventRequest request);
-  $async.Future<$103.ListSpaceEventsResponse> listSpaceEvents(
-      $grpc.ServiceCall call, $103.ListSpaceEventsRequest request);
+      $grpc.ServiceCall call, $118.DeleteReactionRequest request);
+  $async.Future<$119.SpaceReadState> getSpaceReadState(
+      $grpc.ServiceCall call, $119.GetSpaceReadStateRequest request);
+  $async.Future<$119.SpaceReadState> updateSpaceReadState(
+      $grpc.ServiceCall call, $119.UpdateSpaceReadStateRequest request);
+  $async.Future<$120.ThreadReadState> getThreadReadState(
+      $grpc.ServiceCall call, $120.GetThreadReadStateRequest request);
+  $async.Future<$121.SpaceEvent> getSpaceEvent(
+      $grpc.ServiceCall call, $121.GetSpaceEventRequest request);
+  $async.Future<$121.ListSpaceEventsResponse> listSpaceEvents(
+      $grpc.ServiceCall call, $121.ListSpaceEventsRequest request);
 }

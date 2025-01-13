@@ -16,22 +16,22 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $13;
-import 'route_optimization_service.pb.dart' as $175;
+import 'route_optimization_service.pb.dart' as $201;
 
 export 'route_optimization_service.pb.dart';
 
 @$pb.GrpcServiceName('google.maps.routeoptimization.v1.RouteOptimization')
 class RouteOptimizationClient extends $grpc.Client {
   static final _$optimizeTours =
-      $grpc.ClientMethod<$175.OptimizeToursRequest, $175.OptimizeToursResponse>(
+      $grpc.ClientMethod<$201.OptimizeToursRequest, $201.OptimizeToursResponse>(
           '/google.maps.routeoptimization.v1.RouteOptimization/OptimizeTours',
-          ($175.OptimizeToursRequest value) => value.writeToBuffer(),
+          ($201.OptimizeToursRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $175.OptimizeToursResponse.fromBuffer(value));
+              $201.OptimizeToursResponse.fromBuffer(value));
   static final _$batchOptimizeTours = $grpc.ClientMethod<
-          $175.BatchOptimizeToursRequest, $13.Operation>(
+          $201.BatchOptimizeToursRequest, $13.Operation>(
       '/google.maps.routeoptimization.v1.RouteOptimization/BatchOptimizeTours',
-      ($175.BatchOptimizeToursRequest value) => value.writeToBuffer(),
+      ($201.BatchOptimizeToursRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
 
   RouteOptimizationClient($grpc.ClientChannel channel,
@@ -39,14 +39,14 @@ class RouteOptimizationClient extends $grpc.Client {
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$175.OptimizeToursResponse> optimizeTours(
-      $175.OptimizeToursRequest request,
+  $grpc.ResponseFuture<$201.OptimizeToursResponse> optimizeTours(
+      $201.OptimizeToursRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$optimizeTours, request, options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> batchOptimizeTours(
-      $175.BatchOptimizeToursRequest request,
+      $201.BatchOptimizeToursRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchOptimizeTours, request, options: options);
   }
@@ -58,39 +58,39 @@ abstract class RouteOptimizationServiceBase extends $grpc.Service {
       'google.maps.routeoptimization.v1.RouteOptimization';
 
   RouteOptimizationServiceBase() {
-    $addMethod($grpc.ServiceMethod<$175.OptimizeToursRequest,
-            $175.OptimizeToursResponse>(
+    $addMethod($grpc.ServiceMethod<$201.OptimizeToursRequest,
+            $201.OptimizeToursResponse>(
         'OptimizeTours',
         optimizeTours_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $175.OptimizeToursRequest.fromBuffer(value),
-        ($175.OptimizeToursResponse value) => value.writeToBuffer()));
+            $201.OptimizeToursRequest.fromBuffer(value),
+        ($201.OptimizeToursResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$175.BatchOptimizeToursRequest, $13.Operation>(
+        $grpc.ServiceMethod<$201.BatchOptimizeToursRequest, $13.Operation>(
             'BatchOptimizeTours',
             batchOptimizeTours_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $175.BatchOptimizeToursRequest.fromBuffer(value),
+                $201.BatchOptimizeToursRequest.fromBuffer(value),
             ($13.Operation value) => value.writeToBuffer()));
   }
 
-  $async.Future<$175.OptimizeToursResponse> optimizeTours_Pre(
+  $async.Future<$201.OptimizeToursResponse> optimizeTours_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$175.OptimizeToursRequest> request) async {
+      $async.Future<$201.OptimizeToursRequest> request) async {
     return optimizeTours(call, await request);
   }
 
   $async.Future<$13.Operation> batchOptimizeTours_Pre($grpc.ServiceCall call,
-      $async.Future<$175.BatchOptimizeToursRequest> request) async {
+      $async.Future<$201.BatchOptimizeToursRequest> request) async {
     return batchOptimizeTours(call, await request);
   }
 
-  $async.Future<$175.OptimizeToursResponse> optimizeTours(
-      $grpc.ServiceCall call, $175.OptimizeToursRequest request);
+  $async.Future<$201.OptimizeToursResponse> optimizeTours(
+      $grpc.ServiceCall call, $201.OptimizeToursRequest request);
   $async.Future<$13.Operation> batchOptimizeTours(
-      $grpc.ServiceCall call, $175.BatchOptimizeToursRequest request);
+      $grpc.ServiceCall call, $201.BatchOptimizeToursRequest request);
 }

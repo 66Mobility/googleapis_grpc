@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/types.pb.dart' as $540;
-import 'merchantreviews_common.pb.dart' as $553;
+import '../../../type/types.pb.dart' as $569;
+import 'merchantreviews_common.pb.dart' as $582;
 
 /// Request message for the `GetMerchantReview` method.
 class GetMerchantReviewRequest extends $pb.GeneratedMessage {
@@ -460,10 +460,10 @@ class MerchantReview extends $pb.GeneratedMessage {
   factory MerchantReview({
     $core.String? name,
     $core.String? merchantReviewId,
-    $553.MerchantReviewAttributes? attributes,
-    $core.Iterable<$540.CustomAttribute>? customAttributes,
+    $582.MerchantReviewAttributes? attributes,
+    $core.Iterable<$569.CustomAttribute>? customAttributes,
     $core.String? dataSource,
-    $553.MerchantReviewStatus? merchantReviewStatus,
+    $582.MerchantReviewStatus? merchantReviewStatus,
   }) {
     final $result = create();
     if (name != null) {
@@ -501,15 +501,15 @@ class MerchantReview extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'merchantReviewId')
-    ..aOM<$553.MerchantReviewAttributes>(3, _omitFieldNames ? '' : 'attributes',
-        subBuilder: $553.MerchantReviewAttributes.create)
-    ..pc<$540.CustomAttribute>(
+    ..aOM<$582.MerchantReviewAttributes>(3, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $582.MerchantReviewAttributes.create)
+    ..pc<$569.CustomAttribute>(
         4, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM,
-        subBuilder: $540.CustomAttribute.create)
+        subBuilder: $569.CustomAttribute.create)
     ..aOS(5, _omitFieldNames ? '' : 'dataSource')
-    ..aOM<$553.MerchantReviewStatus>(
+    ..aOM<$582.MerchantReviewStatus>(
         6, _omitFieldNames ? '' : 'merchantReviewStatus',
-        subBuilder: $553.MerchantReviewStatus.create)
+        subBuilder: $582.MerchantReviewStatus.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -566,9 +566,9 @@ class MerchantReview extends $pb.GeneratedMessage {
 
   /// Optional. A list of merchant review attributes.
   @$pb.TagNumber(3)
-  $553.MerchantReviewAttributes get attributes => $_getN(2);
+  $582.MerchantReviewAttributes get attributes => $_getN(2);
   @$pb.TagNumber(3)
-  set attributes($553.MerchantReviewAttributes v) {
+  set attributes($582.MerchantReviewAttributes v) {
     setField(3, v);
   }
 
@@ -577,7 +577,7 @@ class MerchantReview extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAttributes() => clearField(3);
   @$pb.TagNumber(3)
-  $553.MerchantReviewAttributes ensureAttributes() => $_ensure(2);
+  $582.MerchantReviewAttributes ensureAttributes() => $_ensure(2);
 
   /// Required. A list of custom (merchant-provided) attributes. It can also be
   /// used for submitting any attribute of the data specification in its generic
@@ -591,7 +591,7 @@ class MerchantReview extends $pb.GeneratedMessage {
   /// size of 102.4kB. Underscores in custom attribute names are replaced by
   /// spaces upon insertion.
   @$pb.TagNumber(4)
-  $core.List<$540.CustomAttribute> get customAttributes => $_getList(3);
+  $core.List<$569.CustomAttribute> get customAttributes => $_getList(3);
 
   /// Output only. The primary data source of the merchant review.
   @$pb.TagNumber(5)
@@ -609,9 +609,9 @@ class MerchantReview extends $pb.GeneratedMessage {
   /// Output only. The status of a merchant review, data validation issues, that
   /// is, information about a merchant review computed asynchronously.
   @$pb.TagNumber(6)
-  $553.MerchantReviewStatus get merchantReviewStatus => $_getN(5);
+  $582.MerchantReviewStatus get merchantReviewStatus => $_getN(5);
   @$pb.TagNumber(6)
-  set merchantReviewStatus($553.MerchantReviewStatus v) {
+  set merchantReviewStatus($582.MerchantReviewStatus v) {
     setField(6, v);
   }
 
@@ -620,7 +620,7 @@ class MerchantReview extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearMerchantReviewStatus() => clearField(6);
   @$pb.TagNumber(6)
-  $553.MerchantReviewStatus ensureMerchantReviewStatus() => $_ensure(5);
+  $582.MerchantReviewStatus ensureMerchantReviewStatus() => $_ensure(5);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

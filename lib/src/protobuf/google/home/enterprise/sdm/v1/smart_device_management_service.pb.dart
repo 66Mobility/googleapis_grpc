@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $263;
-import 'device.pb.dart' as $141;
-import 'site.pb.dart' as $142;
+import '../../../../protobuf/struct.pb.dart' as $289;
+import 'device.pb.dart' as $159;
+import 'site.pb.dart' as $160;
 
 /// Request message for SmartDeviceManagementService.GetDevice
 class GetDeviceRequest extends $pb.GeneratedMessage {
@@ -208,7 +208,7 @@ class ListDevicesRequest extends $pb.GeneratedMessage {
 /// Response message for SmartDeviceManagementService.ListDevices
 class ListDevicesResponse extends $pb.GeneratedMessage {
   factory ListDevicesResponse({
-    $core.Iterable<$141.Device>? devices,
+    $core.Iterable<$159.Device>? devices,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -233,8 +233,8 @@ class ListDevicesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
       createEmptyInstance: create)
-    ..pc<$141.Device>(1, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM,
-        subBuilder: $141.Device.create)
+    ..pc<$159.Device>(1, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM,
+        subBuilder: $159.Device.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -263,7 +263,7 @@ class ListDevicesResponse extends $pb.GeneratedMessage {
 
   /// The list of devices.
   @$pb.TagNumber(1)
-  $core.List<$141.Device> get devices => $_getList(0);
+  $core.List<$159.Device> get devices => $_getList(0);
 
   /// The pagination token to retrieve the next page of results.
   @$pb.TagNumber(2)
@@ -284,7 +284,7 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   factory ExecuteDeviceCommandRequest({
     $core.String? name,
     $core.String? command,
-    $263.Struct? params,
+    $289.Struct? params,
   }) {
     final $result = create();
     if (name != null) {
@@ -313,8 +313,8 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'command')
-    ..aOM<$263.Struct>(3, _omitFieldNames ? '' : 'params',
-        subBuilder: $263.Struct.create)
+    ..aOM<$289.Struct>(3, _omitFieldNames ? '' : 'params',
+        subBuilder: $289.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -374,9 +374,9 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
 
   /// The command message to execute, represented as a Struct.
   @$pb.TagNumber(3)
-  $263.Struct get params => $_getN(2);
+  $289.Struct get params => $_getN(2);
   @$pb.TagNumber(3)
-  set params($263.Struct v) {
+  set params($289.Struct v) {
     setField(3, v);
   }
 
@@ -385,13 +385,13 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearParams() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Struct ensureParams() => $_ensure(2);
+  $289.Struct ensureParams() => $_ensure(2);
 }
 
 /// Response message for SmartDeviceManagementService.ExecuteDeviceCommand
 class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
   factory ExecuteDeviceCommandResponse({
-    $263.Struct? results,
+    $289.Struct? results,
   }) {
     final $result = create();
     if (results != null) {
@@ -412,8 +412,8 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
       createEmptyInstance: create)
-    ..aOM<$263.Struct>(1, _omitFieldNames ? '' : 'results',
-        subBuilder: $263.Struct.create)
+    ..aOM<$289.Struct>(1, _omitFieldNames ? '' : 'results',
+        subBuilder: $289.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -445,9 +445,9 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
 
   /// The results of executing the command.
   @$pb.TagNumber(1)
-  $263.Struct get results => $_getN(0);
+  $289.Struct get results => $_getN(0);
   @$pb.TagNumber(1)
-  set results($263.Struct v) {
+  set results($289.Struct v) {
     setField(1, v);
   }
 
@@ -456,7 +456,7 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearResults() => clearField(1);
   @$pb.TagNumber(1)
-  $263.Struct ensureResults() => $_ensure(0);
+  $289.Struct ensureResults() => $_ensure(0);
 }
 
 /// Request message for SmartDeviceManagementService.GetStructure
@@ -648,7 +648,7 @@ class ListStructuresRequest extends $pb.GeneratedMessage {
 /// Response message for SmartDeviceManagementService.ListStructures
 class ListStructuresResponse extends $pb.GeneratedMessage {
   factory ListStructuresResponse({
-    $core.Iterable<$142.Structure>? structures,
+    $core.Iterable<$160.Structure>? structures,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -673,9 +673,9 @@ class ListStructuresResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
       createEmptyInstance: create)
-    ..pc<$142.Structure>(
+    ..pc<$160.Structure>(
         1, _omitFieldNames ? '' : 'structures', $pb.PbFieldType.PM,
-        subBuilder: $142.Structure.create)
+        subBuilder: $160.Structure.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -706,7 +706,7 @@ class ListStructuresResponse extends $pb.GeneratedMessage {
 
   /// The list of structures.
   @$pb.TagNumber(1)
-  $core.List<$142.Structure> get structures => $_getList(0);
+  $core.List<$160.Structure> get structures => $_getList(0);
 
   /// The pagination token to retrieve the next page of results.
   /// If this field is omitted, there are no subsequent pages.
@@ -893,7 +893,7 @@ class ListRoomsRequest extends $pb.GeneratedMessage {
 /// Response message for SmartDeviceManagementService.ListRooms
 class ListRoomsResponse extends $pb.GeneratedMessage {
   factory ListRoomsResponse({
-    $core.Iterable<$142.Room>? rooms,
+    $core.Iterable<$160.Room>? rooms,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -918,8 +918,8 @@ class ListRoomsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'),
       createEmptyInstance: create)
-    ..pc<$142.Room>(1, _omitFieldNames ? '' : 'rooms', $pb.PbFieldType.PM,
-        subBuilder: $142.Room.create)
+    ..pc<$160.Room>(1, _omitFieldNames ? '' : 'rooms', $pb.PbFieldType.PM,
+        subBuilder: $160.Room.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -948,7 +948,7 @@ class ListRoomsResponse extends $pb.GeneratedMessage {
 
   /// The list of rooms.
   @$pb.TagNumber(1)
-  $core.List<$142.Room> get rooms => $_getList(0);
+  $core.List<$160.Room> get rooms => $_getList(0);
 
   /// The pagination token to retrieve the next page of results.
   /// If this field is omitted, there are no subsequent pages.

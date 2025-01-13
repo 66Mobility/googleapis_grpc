@@ -69,6 +69,9 @@ class GenerateContentResponse_PromptFeedback_BlockReason
   static const GenerateContentResponse_PromptFeedback_BlockReason
       PROHIBITED_CONTENT = GenerateContentResponse_PromptFeedback_BlockReason._(
           4, _omitEnumNames ? '' : 'PROHIBITED_CONTENT');
+  static const GenerateContentResponse_PromptFeedback_BlockReason IMAGE_SAFETY =
+      GenerateContentResponse_PromptFeedback_BlockReason._(
+          5, _omitEnumNames ? '' : 'IMAGE_SAFETY');
 
   static const $core.List<GenerateContentResponse_PromptFeedback_BlockReason>
       values = <GenerateContentResponse_PromptFeedback_BlockReason>[
@@ -77,6 +80,7 @@ class GenerateContentResponse_PromptFeedback_BlockReason
     OTHER,
     BLOCKLIST,
     PROHIBITED_CONTENT,
+    IMAGE_SAFETY,
   ];
 
   static final $core
@@ -117,6 +121,8 @@ class Candidate_FinishReason extends $pb.ProtobufEnum {
   static const Candidate_FinishReason MALFORMED_FUNCTION_CALL =
       Candidate_FinishReason._(
           10, _omitEnumNames ? '' : 'MALFORMED_FUNCTION_CALL');
+  static const Candidate_FinishReason IMAGE_SAFETY =
+      Candidate_FinishReason._(11, _omitEnumNames ? '' : 'IMAGE_SAFETY');
 
   static const $core.List<Candidate_FinishReason> values =
       <Candidate_FinishReason>[
@@ -131,6 +137,7 @@ class Candidate_FinishReason extends $pb.ProtobufEnum {
     PROHIBITED_CONTENT,
     SPII,
     MALFORMED_FUNCTION_CALL,
+    IMAGE_SAFETY,
   ];
 
   static final $core.Map<$core.int, Candidate_FinishReason> _byValue =

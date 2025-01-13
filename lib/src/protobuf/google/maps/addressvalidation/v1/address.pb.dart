@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/postal_address.pb.dart' as $450;
+import '../../../type/postal_address.pb.dart' as $479;
 import 'address.pbenum.dart';
 
 export 'address.pbenum.dart';
@@ -24,7 +24,7 @@ export 'address.pbenum.dart';
 class Address extends $pb.GeneratedMessage {
   factory Address({
     $core.String? formattedAddress,
-    $450.PostalAddress? postalAddress,
+    $479.PostalAddress? postalAddress,
     $core.Iterable<AddressComponent>? addressComponents,
     $core.Iterable<$core.String>? missingComponentTypes,
     $core.Iterable<$core.String>? unconfirmedComponentTypes,
@@ -65,8 +65,8 @@ class Address extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
       createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'formattedAddress')
-    ..aOM<$450.PostalAddress>(3, _omitFieldNames ? '' : 'postalAddress',
-        subBuilder: $450.PostalAddress.create)
+    ..aOM<$479.PostalAddress>(3, _omitFieldNames ? '' : 'postalAddress',
+        subBuilder: $479.PostalAddress.create)
     ..pc<AddressComponent>(
         4, _omitFieldNames ? '' : 'addressComponents', $pb.PbFieldType.PM,
         subBuilder: AddressComponent.create)
@@ -112,9 +112,9 @@ class Address extends $pb.GeneratedMessage {
 
   /// The post-processed address represented as a postal address.
   @$pb.TagNumber(3)
-  $450.PostalAddress get postalAddress => $_getN(1);
+  $479.PostalAddress get postalAddress => $_getN(1);
   @$pb.TagNumber(3)
-  set postalAddress($450.PostalAddress v) {
+  set postalAddress($479.PostalAddress v) {
     setField(3, v);
   }
 
@@ -123,7 +123,7 @@ class Address extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearPostalAddress() => clearField(3);
   @$pb.TagNumber(3)
-  $450.PostalAddress ensurePostalAddress() => $_ensure(1);
+  $479.PostalAddress ensurePostalAddress() => $_ensure(1);
 
   ///  Unordered list. The individual address components of the formatted and
   ///  corrected address, along with validation information. This provides

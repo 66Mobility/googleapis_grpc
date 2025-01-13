@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $304;
-import '../../../protobuf/wrappers.pb.dart' as $309;
+import '../../../protobuf/timestamp.pb.dart' as $330;
+import '../../../protobuf/wrappers.pb.dart' as $335;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -461,8 +461,8 @@ class QuotaPreference extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? dimensions,
     QuotaConfig? quotaConfig,
     $core.String? etag,
-    $304.Timestamp? createTime,
-    $304.Timestamp? updateTime,
+    $330.Timestamp? createTime,
+    $330.Timestamp? updateTime,
     $core.String? service,
     $core.String? quotaId,
     $core.bool? reconciling,
@@ -527,10 +527,10 @@ class QuotaPreference extends $pb.GeneratedMessage {
     ..aOM<QuotaConfig>(3, _omitFieldNames ? '' : 'quotaConfig',
         subBuilder: QuotaConfig.create)
     ..aOS(4, _omitFieldNames ? '' : 'etag')
-    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $330.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'service')
     ..aOS(8, _omitFieldNames ? '' : 'quotaId')
     ..aOB(10, _omitFieldNames ? '' : 'reconciling')
@@ -628,9 +628,9 @@ class QuotaPreference extends $pb.GeneratedMessage {
 
   /// Output only. Create time stamp
   @$pb.TagNumber(5)
-  $304.Timestamp get createTime => $_getN(4);
+  $330.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($304.Timestamp v) {
+  set createTime($330.Timestamp v) {
     setField(5, v);
   }
 
@@ -639,13 +639,13 @@ class QuotaPreference extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $304.Timestamp ensureCreateTime() => $_ensure(4);
+  $330.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Update time stamp
   @$pb.TagNumber(6)
-  $304.Timestamp get updateTime => $_getN(5);
+  $330.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($304.Timestamp v) {
+  set updateTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -654,7 +654,7 @@ class QuotaPreference extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureUpdateTime() => $_ensure(5);
+  $330.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Required. The name of the service to which the quota preference is applied.
   @$pb.TagNumber(7)
@@ -737,7 +737,7 @@ class QuotaConfig extends $pb.GeneratedMessage {
   factory QuotaConfig({
     $fixnum.Int64? preferredValue,
     $core.String? stateDetail,
-    $309.Int64Value? grantedValue,
+    $335.Int64Value? grantedValue,
     $core.String? traceId,
     $core.Map<$core.String, $core.String>? annotations,
     QuotaConfig_Origin? requestOrigin,
@@ -778,8 +778,8 @@ class QuotaConfig extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'preferredValue')
     ..aOS(2, _omitFieldNames ? '' : 'stateDetail')
-    ..aOM<$309.Int64Value>(3, _omitFieldNames ? '' : 'grantedValue',
-        subBuilder: $309.Int64Value.create)
+    ..aOM<$335.Int64Value>(3, _omitFieldNames ? '' : 'grantedValue',
+        subBuilder: $335.Int64Value.create)
     ..aOS(4, _omitFieldNames ? '' : 'traceId')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations',
         entryClassName: 'QuotaConfig.AnnotationsEntry',
@@ -844,9 +844,9 @@ class QuotaConfig extends $pb.GeneratedMessage {
 
   /// Output only. Granted quota value.
   @$pb.TagNumber(3)
-  $309.Int64Value get grantedValue => $_getN(2);
+  $335.Int64Value get grantedValue => $_getN(2);
   @$pb.TagNumber(3)
-  set grantedValue($309.Int64Value v) {
+  set grantedValue($335.Int64Value v) {
     setField(3, v);
   }
 
@@ -855,7 +855,7 @@ class QuotaConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearGrantedValue() => clearField(3);
   @$pb.TagNumber(3)
-  $309.Int64Value ensureGrantedValue() => $_ensure(2);
+  $335.Int64Value ensureGrantedValue() => $_ensure(2);
 
   /// Output only. The trace id that the Google Cloud uses to provision the
   /// requested quota. This trace id may be used by the client to contact Cloud

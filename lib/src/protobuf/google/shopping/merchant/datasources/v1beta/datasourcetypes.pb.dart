@@ -87,10 +87,8 @@ class PrimaryProductDataSource_DefaultRule extends $pb.GeneratedMessage {
   ///  To link the data source to the default rule, you need to add a
   ///  new reference to this list (in sequential order).
   ///
-  ///  To unlink the data source from the default rule, you need to remove the
-  ///  given reference from this list. To create attribute rules that are
-  ///  different from the default rule, see [Set up your attribute
-  ///  rules](//support.google.com/merchants/answer/14994083).
+  ///  To unlink the data source from the default rule, you need to
+  ///  remove the given reference from this list.
   ///
   ///  Changing the order of this list will result in changing the priority of
   ///  data sources in the default rule.
@@ -266,12 +264,9 @@ class PrimaryProductDataSource extends $pb.GeneratedMessage {
   PrimaryProductDataSource_DefaultRule ensureDefaultRule() => $_ensure(4);
 }
 
-/// The supplemental data source for local and online products. Supplemental API
-/// data sources must not have `feedLabel` and `contentLanguage` fields set. You
-/// can only use supplemental data sources to update existing products. For
-/// information about creating a supplemental data source, see [Create a
-/// supplemental data source and link it to the primary data
-/// source](/merchant/api/guides/data-sources/overview#create-supplemental-data-source).
+/// The supplemental data source for local and online products. After creation,
+/// you should make sure to link the supplemental product data source into one or
+/// more primary product data sources.
 class SupplementalProductDataSource extends $pb.GeneratedMessage {
   factory SupplementalProductDataSource({
     $core.String? feedLabel,
@@ -352,7 +347,11 @@ class SupplementalProductDataSource extends $pb.GeneratedMessage {
   ///
   ///  `feedLabel` and `contentLanguage` must be either both set or unset for data
   ///  sources with product content type.
-  ///  They must be set for data sources with a file input.
+  ///
+  ///  They must be set for data sources with a [file
+  ///  input][google.shopping.merchant.datasources.v1main.FileInput].
+  ///  The fields must be unset for data sources without [file
+  ///  input][google.shopping.merchant.datasources.v1main.FileInput].
   ///
   ///  If set, the data source will only accept products matching this
   ///  combination. If unset, the data source will accept produts without that
@@ -673,6 +672,96 @@ class PromotionDataSource extends $pb.GeneratedMessage {
   $core.bool hasContentLanguage() => $_has(1);
   @$pb.TagNumber(2)
   void clearContentLanguage() => clearField(2);
+}
+
+/// The product review data source.
+class ProductReviewDataSource extends $pb.GeneratedMessage {
+  factory ProductReviewDataSource() => create();
+  ProductReviewDataSource._() : super();
+  factory ProductReviewDataSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ProductReviewDataSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ProductReviewDataSource',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  ProductReviewDataSource clone() =>
+      ProductReviewDataSource()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProductReviewDataSource copyWith(
+          void Function(ProductReviewDataSource) updates) =>
+      super.copyWith((message) => updates(message as ProductReviewDataSource))
+          as ProductReviewDataSource;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static ProductReviewDataSource create() => ProductReviewDataSource._();
+  ProductReviewDataSource createEmptyInstance() => create();
+  static $pb.PbList<ProductReviewDataSource> createRepeated() =>
+      $pb.PbList<ProductReviewDataSource>();
+  @$core.pragma('dart2js:noInline')
+  static ProductReviewDataSource getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ProductReviewDataSource>(create);
+  static ProductReviewDataSource? _defaultInstance;
+}
+
+/// The merchant review data source.
+class MerchantReviewDataSource extends $pb.GeneratedMessage {
+  factory MerchantReviewDataSource() => create();
+  MerchantReviewDataSource._() : super();
+  factory MerchantReviewDataSource.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory MerchantReviewDataSource.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'MerchantReviewDataSource',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'google.shopping.merchant.datasources.v1beta'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  MerchantReviewDataSource clone() =>
+      MerchantReviewDataSource()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  MerchantReviewDataSource copyWith(
+          void Function(MerchantReviewDataSource) updates) =>
+      super.copyWith((message) => updates(message as MerchantReviewDataSource))
+          as MerchantReviewDataSource;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MerchantReviewDataSource create() => MerchantReviewDataSource._();
+  MerchantReviewDataSource createEmptyInstance() => create();
+  static $pb.PbList<MerchantReviewDataSource> createRepeated() =>
+      $pb.PbList<MerchantReviewDataSource>();
+  @$core.pragma('dart2js:noInline')
+  static MerchantReviewDataSource getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<MerchantReviewDataSource>(create);
+  static MerchantReviewDataSource? _defaultInstance;
 }
 
 enum DataSourceReference_DataSourceId {

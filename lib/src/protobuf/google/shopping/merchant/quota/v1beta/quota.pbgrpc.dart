@@ -15,26 +15,26 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'quota.pb.dart' as $242;
+import 'quota.pb.dart' as $268;
 
 export 'quota.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.quota.v1beta.QuotaService')
 class QuotaServiceClient extends $grpc.Client {
   static final _$listQuotaGroups = $grpc.ClientMethod<
-          $242.ListQuotaGroupsRequest, $242.ListQuotaGroupsResponse>(
+          $268.ListQuotaGroupsRequest, $268.ListQuotaGroupsResponse>(
       '/google.shopping.merchant.quota.v1beta.QuotaService/ListQuotaGroups',
-      ($242.ListQuotaGroupsRequest value) => value.writeToBuffer(),
+      ($268.ListQuotaGroupsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $242.ListQuotaGroupsResponse.fromBuffer(value));
+          $268.ListQuotaGroupsResponse.fromBuffer(value));
 
   QuotaServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$242.ListQuotaGroupsResponse> listQuotaGroups(
-      $242.ListQuotaGroupsRequest request,
+  $grpc.ResponseFuture<$268.ListQuotaGroupsResponse> listQuotaGroups(
+      $268.ListQuotaGroupsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listQuotaGroups, request, options: options);
   }
@@ -46,23 +46,23 @@ abstract class QuotaServiceBase extends $grpc.Service {
       'google.shopping.merchant.quota.v1beta.QuotaService';
 
   QuotaServiceBase() {
-    $addMethod($grpc.ServiceMethod<$242.ListQuotaGroupsRequest,
-            $242.ListQuotaGroupsResponse>(
+    $addMethod($grpc.ServiceMethod<$268.ListQuotaGroupsRequest,
+            $268.ListQuotaGroupsResponse>(
         'ListQuotaGroups',
         listQuotaGroups_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $242.ListQuotaGroupsRequest.fromBuffer(value),
-        ($242.ListQuotaGroupsResponse value) => value.writeToBuffer()));
+            $268.ListQuotaGroupsRequest.fromBuffer(value),
+        ($268.ListQuotaGroupsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$242.ListQuotaGroupsResponse> listQuotaGroups_Pre(
+  $async.Future<$268.ListQuotaGroupsResponse> listQuotaGroups_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$242.ListQuotaGroupsRequest> request) async {
+      $async.Future<$268.ListQuotaGroupsRequest> request) async {
     return listQuotaGroups(call, await request);
   }
 
-  $async.Future<$242.ListQuotaGroupsResponse> listQuotaGroups(
-      $grpc.ServiceCall call, $242.ListQuotaGroupsRequest request);
+  $async.Future<$268.ListQuotaGroupsResponse> listQuotaGroups(
+      $grpc.ServiceCall call, $268.ListQuotaGroupsRequest request);
 }

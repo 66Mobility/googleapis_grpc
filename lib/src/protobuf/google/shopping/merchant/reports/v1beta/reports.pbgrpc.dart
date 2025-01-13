@@ -15,25 +15,25 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'reports.pb.dart' as $243;
+import 'reports.pb.dart' as $269;
 
 export 'reports.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.reports.v1beta.ReportService')
 class ReportServiceClient extends $grpc.Client {
   static final _$search =
-      $grpc.ClientMethod<$243.SearchRequest, $243.SearchResponse>(
+      $grpc.ClientMethod<$269.SearchRequest, $269.SearchResponse>(
           '/google.shopping.merchant.reports.v1beta.ReportService/Search',
-          ($243.SearchRequest value) => value.writeToBuffer(),
+          ($269.SearchRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $243.SearchResponse.fromBuffer(value));
+              $269.SearchResponse.fromBuffer(value));
 
   ReportServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$243.SearchResponse> search($243.SearchRequest request,
+  $grpc.ResponseFuture<$269.SearchResponse> search($269.SearchRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$search, request, options: options);
   }
@@ -45,20 +45,20 @@ abstract class ReportServiceBase extends $grpc.Service {
       'google.shopping.merchant.reports.v1beta.ReportService';
 
   ReportServiceBase() {
-    $addMethod($grpc.ServiceMethod<$243.SearchRequest, $243.SearchResponse>(
+    $addMethod($grpc.ServiceMethod<$269.SearchRequest, $269.SearchResponse>(
         'Search',
         search_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $243.SearchRequest.fromBuffer(value),
-        ($243.SearchResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $269.SearchRequest.fromBuffer(value),
+        ($269.SearchResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$243.SearchResponse> search_Pre(
-      $grpc.ServiceCall call, $async.Future<$243.SearchRequest> request) async {
+  $async.Future<$269.SearchResponse> search_Pre(
+      $grpc.ServiceCall call, $async.Future<$269.SearchRequest> request) async {
     return search(call, await request);
   }
 
-  $async.Future<$243.SearchResponse> search(
-      $grpc.ServiceCall call, $243.SearchRequest request);
+  $async.Future<$269.SearchResponse> search(
+      $grpc.ServiceCall call, $269.SearchRequest request);
 }

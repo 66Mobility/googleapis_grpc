@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'fallback_info.pb.dart' as $491;
-import 'route.pb.dart' as $489;
+import 'fallback_info.pb.dart' as $520;
+import 'route.pb.dart' as $518;
 
 /// ComputeRoutes the response message.
 class ComputeRoutesResponse extends $pb.GeneratedMessage {
   factory ComputeRoutesResponse({
-    $core.Iterable<$489.Route>? routes,
-    $491.FallbackInfo? fallbackInfo,
+    $core.Iterable<$518.Route>? routes,
+    $520.FallbackInfo? fallbackInfo,
   }) {
     final $result = create();
     if (routes != null) {
@@ -44,10 +44,10 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routes.v1'),
       createEmptyInstance: create)
-    ..pc<$489.Route>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM,
-        subBuilder: $489.Route.create)
-    ..aOM<$491.FallbackInfo>(2, _omitFieldNames ? '' : 'fallbackInfo',
-        subBuilder: $491.FallbackInfo.create)
+    ..pc<$518.Route>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM,
+        subBuilder: $518.Route.create)
+    ..aOM<$520.FallbackInfo>(2, _omitFieldNames ? '' : 'fallbackInfo',
+        subBuilder: $520.FallbackInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -81,16 +81,16 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
   /// recommended route. If the array is empty, then it means no route could be
   /// found.
   @$pb.TagNumber(1)
-  $core.List<$489.Route> get routes => $_getList(0);
+  $core.List<$518.Route> get routes => $_getList(0);
 
   /// In some cases when the server is not able to compute the route results with
   /// all of the input preferences, it may fallback to using a different way of
   /// computation. When fallback mode is used, this field contains detailed info
   /// about the fallback response. Otherwise this field is unset.
   @$pb.TagNumber(2)
-  $491.FallbackInfo get fallbackInfo => $_getN(1);
+  $520.FallbackInfo get fallbackInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set fallbackInfo($491.FallbackInfo v) {
+  set fallbackInfo($520.FallbackInfo v) {
     setField(2, v);
   }
 
@@ -99,7 +99,7 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearFallbackInfo() => clearField(2);
   @$pb.TagNumber(2)
-  $491.FallbackInfo ensureFallbackInfo() => $_ensure(1);
+  $520.FallbackInfo ensureFallbackInfo() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

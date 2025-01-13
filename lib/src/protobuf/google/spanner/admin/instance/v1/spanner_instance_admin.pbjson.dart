@@ -109,9 +109,41 @@ const InstanceConfig$json = {
       '8': {},
       '10': 'state'
     },
+    {
+      '1': 'free_instance_availability',
+      '3': 12,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.spanner.admin.instance.v1.InstanceConfig.FreeInstanceAvailability',
+      '8': {},
+      '10': 'freeInstanceAvailability'
+    },
+    {
+      '1': 'quorum_type',
+      '3': 18,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.instance.v1.InstanceConfig.QuorumType',
+      '8': {},
+      '10': 'quorumType'
+    },
+    {
+      '1': 'storage_limit_per_processing_unit',
+      '3': 19,
+      '4': 1,
+      '5': 3,
+      '8': {},
+      '10': 'storageLimitPerProcessingUnit'
+    },
   ],
   '3': [InstanceConfig_LabelsEntry$json],
-  '4': [InstanceConfig_Type$json, InstanceConfig_State$json],
+  '4': [
+    InstanceConfig_Type$json,
+    InstanceConfig_State$json,
+    InstanceConfig_FreeInstanceAvailability$json,
+    InstanceConfig_QuorumType$json
+  ],
   '7': {},
 };
 
@@ -145,6 +177,29 @@ const InstanceConfig_State$json = {
   ],
 };
 
+@$core.Deprecated('Use instanceConfigDescriptor instead')
+const InstanceConfig_FreeInstanceAvailability$json = {
+  '1': 'FreeInstanceAvailability',
+  '2': [
+    {'1': 'FREE_INSTANCE_AVAILABILITY_UNSPECIFIED', '2': 0},
+    {'1': 'AVAILABLE', '2': 1},
+    {'1': 'UNSUPPORTED', '2': 2},
+    {'1': 'DISABLED', '2': 3},
+    {'1': 'QUOTA_EXCEEDED', '2': 4},
+  ],
+};
+
+@$core.Deprecated('Use instanceConfigDescriptor instead')
+const InstanceConfig_QuorumType$json = {
+  '1': 'QuorumType',
+  '2': [
+    {'1': 'QUORUM_TYPE_UNSPECIFIED', '2': 0},
+    {'1': 'REGION', '2': 1},
+    {'1': 'DUAL_REGION', '2': 2},
+    {'1': 'MULTI_REGION', '2': 3},
+  ],
+};
+
 /// Descriptor for `InstanceConfig`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List instanceConfigDescriptor = $convert.base64Decode(
     'Cg5JbnN0YW5jZUNvbmZpZxISCgRuYW1lGAEgASgJUgRuYW1lEiEKDGRpc3BsYXlfbmFtZRgCIA'
@@ -159,12 +214,22 @@ final $typed_data.Uint8List instanceConfigDescriptor = $convert.base64Decode(
     'ISCgRldGFnGAkgASgJUgRldGFnEiUKDmxlYWRlcl9vcHRpb25zGAQgAygJUg1sZWFkZXJPcHRp'
     'b25zEiUKC3JlY29uY2lsaW5nGAogASgIQgPgQQNSC3JlY29uY2lsaW5nElEKBXN0YXRlGAsgAS'
     'gOMjYuZ29vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2VDb25maWcuU3Rh'
-    'dGVCA+BBA1IFc3RhdGUaOQoLTGFiZWxzRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdW'
-    'UYAiABKAlSBXZhbHVlOgI4ASJCCgRUeXBlEhQKEFRZUEVfVU5TUEVDSUZJRUQQABISCg5HT09H'
-    'TEVfTUFOQUdFRBABEhAKDFVTRVJfTUFOQUdFRBACIjcKBVN0YXRlEhUKEVNUQVRFX1VOU1BFQ0'
-    'lGSUVEEAASDAoIQ1JFQVRJTkcQARIJCgVSRUFEWRACOmDqQV0KJXNwYW5uZXIuZ29vZ2xlYXBp'
-    'cy5jb20vSW5zdGFuY2VDb25maWcSNHByb2plY3RzL3twcm9qZWN0fS9pbnN0YW5jZUNvbmZpZ3'
-    'Mve2luc3RhbmNlX2NvbmZpZ30=');
+    'dGVCA+BBA1IFc3RhdGUSjAEKGmZyZWVfaW5zdGFuY2VfYXZhaWxhYmlsaXR5GAwgASgOMkkuZ2'
+    '9vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2VDb25maWcuRnJlZUluc3Rh'
+    'bmNlQXZhaWxhYmlsaXR5QgPgQQNSGGZyZWVJbnN0YW5jZUF2YWlsYWJpbGl0eRJhCgtxdW9ydW'
+    '1fdHlwZRgSIAEoDjI7Lmdvb2dsZS5zcGFubmVyLmFkbWluLmluc3RhbmNlLnYxLkluc3RhbmNl'
+    'Q29uZmlnLlF1b3J1bVR5cGVCA+BBA1IKcXVvcnVtVHlwZRJNCiFzdG9yYWdlX2xpbWl0X3Blcl'
+    '9wcm9jZXNzaW5nX3VuaXQYEyABKANCA+BBA1Idc3RvcmFnZUxpbWl0UGVyUHJvY2Vzc2luZ1Vu'
+    'aXQaOQoLTGFiZWxzRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUYAiABKAlSBXZhbH'
+    'VlOgI4ASJCCgRUeXBlEhQKEFRZUEVfVU5TUEVDSUZJRUQQABISCg5HT09HTEVfTUFOQUdFRBAB'
+    'EhAKDFVTRVJfTUFOQUdFRBACIjcKBVN0YXRlEhUKEVNUQVRFX1VOU1BFQ0lGSUVEEAASDAoIQ1'
+    'JFQVRJTkcQARIJCgVSRUFEWRACIogBChhGcmVlSW5zdGFuY2VBdmFpbGFiaWxpdHkSKgomRlJF'
+    'RV9JTlNUQU5DRV9BVkFJTEFCSUxJVFlfVU5TUEVDSUZJRUQQABINCglBVkFJTEFCTEUQARIPCg'
+    'tVTlNVUFBPUlRFRBACEgwKCERJU0FCTEVEEAMSEgoOUVVPVEFfRVhDRUVERUQQBCJYCgpRdW9y'
+    'dW1UeXBlEhsKF1FVT1JVTV9UWVBFX1VOU1BFQ0lGSUVEEAASCgoGUkVHSU9OEAESDwoLRFVBTF'
+    '9SRUdJT04QAhIQCgxNVUxUSV9SRUdJT04QAzqBAepBfgolc3Bhbm5lci5nb29nbGVhcGlzLmNv'
+    'bS9JbnN0YW5jZUNvbmZpZxI0cHJvamVjdHMve3Byb2plY3R9L2luc3RhbmNlQ29uZmlncy97aW'
+    '5zdGFuY2VfY29uZmlnfSoPaW5zdGFuY2VDb25maWdzMg5pbnN0YW5jZUNvbmZpZw==');
 
 @$core.Deprecated('Use replicaComputeCapacityDescriptor instead')
 const ReplicaComputeCapacity$json = {
@@ -423,6 +488,14 @@ const Instance$json = {
       '6': '.google.spanner.admin.instance.v1.Instance.LabelsEntry',
       '10': 'labels'
     },
+    {
+      '1': 'instance_type',
+      '3': 10,
+      '4': 1,
+      '5': 14,
+      '6': '.google.spanner.admin.instance.v1.Instance.InstanceType',
+      '10': 'instanceType'
+    },
     {'1': 'endpoint_uris', '3': 8, '4': 3, '5': 9, '10': 'endpointUris'},
     {
       '1': 'create_time',
@@ -441,6 +514,14 @@ const Instance$json = {
       '6': '.google.protobuf.Timestamp',
       '8': {},
       '10': 'updateTime'
+    },
+    {
+      '1': 'free_instance_metadata',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.spanner.admin.instance.v1.FreeInstanceMetadata',
+      '10': 'freeInstanceMetadata'
     },
     {
       '1': 'edition',
@@ -465,6 +546,7 @@ const Instance$json = {
   '3': [Instance_LabelsEntry$json],
   '4': [
     Instance_State$json,
+    Instance_InstanceType$json,
     Instance_Edition$json,
     Instance_DefaultBackupScheduleType$json
   ],
@@ -488,6 +570,16 @@ const Instance_State$json = {
     {'1': 'STATE_UNSPECIFIED', '2': 0},
     {'1': 'CREATING', '2': 1},
     {'1': 'READY', '2': 2},
+  ],
+};
+
+@$core.Deprecated('Use instanceDescriptor instead')
+const Instance_InstanceType$json = {
+  '1': 'InstanceType',
+  '2': [
+    {'1': 'INSTANCE_TYPE_UNSPECIFIED', '2': 0},
+    {'1': 'PROVISIONED', '2': 1},
+    {'1': 'FREE_INSTANCE', '2': 2},
   ],
 };
 
@@ -524,21 +616,27 @@ final $typed_data.Uint8List instanceDescriptor = $convert.base64Decode(
     'RtaW4uaW5zdGFuY2UudjEuQXV0b3NjYWxpbmdDb25maWdCA+BBAVIRYXV0b3NjYWxpbmdDb25m'
     'aWcSSwoFc3RhdGUYBiABKA4yMC5nb29nbGUuc3Bhbm5lci5hZG1pbi5pbnN0YW5jZS52MS5Jbn'
     'N0YW5jZS5TdGF0ZUID4EEDUgVzdGF0ZRJOCgZsYWJlbHMYByADKAsyNi5nb29nbGUuc3Bhbm5l'
-    'ci5hZG1pbi5pbnN0YW5jZS52MS5JbnN0YW5jZS5MYWJlbHNFbnRyeVIGbGFiZWxzEiMKDWVuZH'
-    'BvaW50X3VyaXMYCCADKAlSDGVuZHBvaW50VXJpcxJACgtjcmVhdGVfdGltZRgLIAEoCzIaLmdv'
-    'b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBA1IKY3JlYXRlVGltZRJACgt1cGRhdGVfdGltZR'
-    'gMIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBA1IKdXBkYXRlVGltZRJRCgdl'
-    'ZGl0aW9uGBQgASgOMjIuZ29vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2'
-    'UuRWRpdGlvbkID4EEBUgdlZGl0aW9uEooBChxkZWZhdWx0X2JhY2t1cF9zY2hlZHVsZV90eXBl'
-    'GBcgASgOMkQuZ29vZ2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2UuRGVmYX'
-    'VsdEJhY2t1cFNjaGVkdWxlVHlwZUID4EEBUhlkZWZhdWx0QmFja3VwU2NoZWR1bGVUeXBlGjkK'
-    'C0xhYmVsc0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOA'
-    'EiNwoFU3RhdGUSFQoRU1RBVEVfVU5TUEVDSUZJRUQQABIMCghDUkVBVElORxABEgkKBVJFQURZ'
-    'EAIiVQoHRWRpdGlvbhIXChNFRElUSU9OX1VOU1BFQ0lGSUVEEAASDAoIU1RBTkRBUkQQARIOCg'
-    'pFTlRFUlBSSVNFEAISEwoPRU5URVJQUklTRV9QTFVTEAMiYgoZRGVmYXVsdEJhY2t1cFNjaGVk'
-    'dWxlVHlwZRIsCihERUZBVUxUX0JBQ0tVUF9TQ0hFRFVMRV9UWVBFX1VOU1BFQ0lGSUVEEAASCA'
-    'oETk9ORRABEg0KCUFVVE9NQVRJQxACOk3qQUoKH3NwYW5uZXIuZ29vZ2xlYXBpcy5jb20vSW5z'
-    'dGFuY2USJ3Byb2plY3RzL3twcm9qZWN0fS9pbnN0YW5jZXMve2luc3RhbmNlfQ==');
+    'ci5hZG1pbi5pbnN0YW5jZS52MS5JbnN0YW5jZS5MYWJlbHNFbnRyeVIGbGFiZWxzElwKDWluc3'
+    'RhbmNlX3R5cGUYCiABKA4yNy5nb29nbGUuc3Bhbm5lci5hZG1pbi5pbnN0YW5jZS52MS5JbnN0'
+    'YW5jZS5JbnN0YW5jZVR5cGVSDGluc3RhbmNlVHlwZRIjCg1lbmRwb2ludF91cmlzGAggAygJUg'
+    'xlbmRwb2ludFVyaXMSQAoLY3JlYXRlX3RpbWUYCyABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt'
+    'ZXN0YW1wQgPgQQNSCmNyZWF0ZVRpbWUSQAoLdXBkYXRlX3RpbWUYDCABKAsyGi5nb29nbGUucH'
+    'JvdG9idWYuVGltZXN0YW1wQgPgQQNSCnVwZGF0ZVRpbWUSbAoWZnJlZV9pbnN0YW5jZV9tZXRh'
+    'ZGF0YRgNIAEoCzI2Lmdvb2dsZS5zcGFubmVyLmFkbWluLmluc3RhbmNlLnYxLkZyZWVJbnN0YW'
+    '5jZU1ldGFkYXRhUhRmcmVlSW5zdGFuY2VNZXRhZGF0YRJRCgdlZGl0aW9uGBQgASgOMjIuZ29v'
+    'Z2xlLnNwYW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2UuRWRpdGlvbkID4EEBUgdlZG'
+    'l0aW9uEooBChxkZWZhdWx0X2JhY2t1cF9zY2hlZHVsZV90eXBlGBcgASgOMkQuZ29vZ2xlLnNw'
+    'YW5uZXIuYWRtaW4uaW5zdGFuY2UudjEuSW5zdGFuY2UuRGVmYXVsdEJhY2t1cFNjaGVkdWxlVH'
+    'lwZUID4EEBUhlkZWZhdWx0QmFja3VwU2NoZWR1bGVUeXBlGjkKC0xhYmVsc0VudHJ5EhAKA2tl'
+    'eRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOAEiNwoFU3RhdGUSFQoRU1RBVE'
+    'VfVU5TUEVDSUZJRUQQABIMCghDUkVBVElORxABEgkKBVJFQURZEAIiUQoMSW5zdGFuY2VUeXBl'
+    'Eh0KGUlOU1RBTkNFX1RZUEVfVU5TUEVDSUZJRUQQABIPCgtQUk9WSVNJT05FRBABEhEKDUZSRU'
+    'VfSU5TVEFOQ0UQAiJVCgdFZGl0aW9uEhcKE0VESVRJT05fVU5TUEVDSUZJRUQQABIMCghTVEFO'
+    'REFSRBABEg4KCkVOVEVSUFJJU0UQAhITCg9FTlRFUlBSSVNFX1BMVVMQAyJiChlEZWZhdWx0Qm'
+    'Fja3VwU2NoZWR1bGVUeXBlEiwKKERFRkFVTFRfQkFDS1VQX1NDSEVEVUxFX1RZUEVfVU5TUEVD'
+    'SUZJRUQQABIICgROT05FEAESDQoJQVVUT01BVElDEAI6YupBXwofc3Bhbm5lci5nb29nbGVhcG'
+    'lzLmNvbS9JbnN0YW5jZRIncHJvamVjdHMve3Byb2plY3R9L2luc3RhbmNlcy97aW5zdGFuY2V9'
+    'KglpbnN0YW5jZXMyCGluc3RhbmNl');
 
 @$core.Deprecated('Use listInstanceConfigsRequestDescriptor instead')
 const ListInstanceConfigsRequest$json = {
@@ -979,6 +1077,61 @@ final $typed_data.Uint8List updateInstanceMetadataDescriptor = $convert.base64De
     'bnN0YW5jZS52MS5GdWxmaWxsbWVudFBlcmlvZFIZZXhwZWN0ZWRGdWxmaWxsbWVudFBlcmlvZA'
     '==');
 
+@$core.Deprecated('Use freeInstanceMetadataDescriptor instead')
+const FreeInstanceMetadata$json = {
+  '1': 'FreeInstanceMetadata',
+  '2': [
+    {
+      '1': 'expire_time',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'expireTime'
+    },
+    {
+      '1': 'upgrade_time',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '8': {},
+      '10': 'upgradeTime'
+    },
+    {
+      '1': 'expire_behavior',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6':
+          '.google.spanner.admin.instance.v1.FreeInstanceMetadata.ExpireBehavior',
+      '10': 'expireBehavior'
+    },
+  ],
+  '4': [FreeInstanceMetadata_ExpireBehavior$json],
+};
+
+@$core.Deprecated('Use freeInstanceMetadataDescriptor instead')
+const FreeInstanceMetadata_ExpireBehavior$json = {
+  '1': 'ExpireBehavior',
+  '2': [
+    {'1': 'EXPIRE_BEHAVIOR_UNSPECIFIED', '2': 0},
+    {'1': 'FREE_TO_PROVISIONED', '2': 1},
+    {'1': 'REMOVE_AFTER_GRACE_PERIOD', '2': 2},
+  ],
+};
+
+/// Descriptor for `FreeInstanceMetadata`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List freeInstanceMetadataDescriptor = $convert.base64Decode(
+    'ChRGcmVlSW5zdGFuY2VNZXRhZGF0YRJACgtleHBpcmVfdGltZRgBIAEoCzIaLmdvb2dsZS5wcm'
+    '90b2J1Zi5UaW1lc3RhbXBCA+BBA1IKZXhwaXJlVGltZRJCCgx1cGdyYWRlX3RpbWUYAiABKAsy'
+    'Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQNSC3VwZ3JhZGVUaW1lEm4KD2V4cGlyZV'
+    '9iZWhhdmlvchgDIAEoDjJFLmdvb2dsZS5zcGFubmVyLmFkbWluLmluc3RhbmNlLnYxLkZyZWVJ'
+    'bnN0YW5jZU1ldGFkYXRhLkV4cGlyZUJlaGF2aW9yUg5leHBpcmVCZWhhdmlvciJpCg5FeHBpcm'
+    'VCZWhhdmlvchIfChtFWFBJUkVfQkVIQVZJT1JfVU5TUEVDSUZJRUQQABIXChNGUkVFX1RPX1BS'
+    'T1ZJU0lPTkVEEAESHQoZUkVNT1ZFX0FGVEVSX0dSQUNFX1BFUklPRBAC');
+
 @$core.Deprecated('Use createInstanceConfigMetadataDescriptor instead')
 const CreateInstanceConfigMetadata$json = {
   '1': 'CreateInstanceConfigMetadata',
@@ -1113,8 +1266,8 @@ const InstancePartition$json = {
       '3': 11,
       '4': 3,
       '5': 9,
-      '8': {},
-      '10': 'referencingBackups'
+      '8': {'3': true},
+      '10': 'referencingBackups',
     },
     {'1': 'etag', '3': 12, '4': 1, '5': 9, '10': 'etag'},
   ],
@@ -1146,12 +1299,12 @@ final $typed_data.Uint8List instancePartitionDescriptor = $convert.base64Decode(
     'ZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBA1IKY3JlYXRlVGltZRJACg'
     't1cGRhdGVfdGltZRgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBA1IKdXBk'
     'YXRlVGltZRI4ChVyZWZlcmVuY2luZ19kYXRhYmFzZXMYCiADKAlCA+BBA1IUcmVmZXJlbmNpbm'
-    'dEYXRhYmFzZXMSNAoTcmVmZXJlbmNpbmdfYmFja3VwcxgLIAMoCUID4EEDUhJyZWZlcmVuY2lu'
-    'Z0JhY2t1cHMSEgoEZXRhZxgMIAEoCVIEZXRhZyI3CgVTdGF0ZRIVChFTVEFURV9VTlNQRUNJRk'
-    'lFRBAAEgwKCENSRUFUSU5HEAESCQoFUkVBRFkQAjp+6kF7CihzcGFubmVyLmdvb2dsZWFwaXMu'
-    'Y29tL0luc3RhbmNlUGFydGl0aW9uEk9wcm9qZWN0cy97cHJvamVjdH0vaW5zdGFuY2VzL3tpbn'
-    'N0YW5jZX0vaW5zdGFuY2VQYXJ0aXRpb25zL3tpbnN0YW5jZV9wYXJ0aXRpb259QhIKEGNvbXB1'
-    'dGVfY2FwYWNpdHk=');
+    'dEYXRhYmFzZXMSNgoTcmVmZXJlbmNpbmdfYmFja3VwcxgLIAMoCUIFGAHgQQNSEnJlZmVyZW5j'
+    'aW5nQmFja3VwcxISCgRldGFnGAwgASgJUgRldGFnIjcKBVN0YXRlEhUKEVNUQVRFX1VOU1BFQ0'
+    'lGSUVEEAASDAoIQ1JFQVRJTkcQARIJCgVSRUFEWRACOqYB6kGiAQooc3Bhbm5lci5nb29nbGVh'
+    'cGlzLmNvbS9JbnN0YW5jZVBhcnRpdGlvbhJPcHJvamVjdHMve3Byb2plY3R9L2luc3RhbmNlcy'
+    '97aW5zdGFuY2V9L2luc3RhbmNlUGFydGl0aW9ucy97aW5zdGFuY2VfcGFydGl0aW9ufSoSaW5z'
+    'dGFuY2VQYXJ0aXRpb25zMhFpbnN0YW5jZVBhcnRpdGlvbkISChBjb21wdXRlX2NhcGFjaXR5');
 
 @$core.Deprecated('Use createInstancePartitionMetadataDescriptor instead')
 const CreateInstancePartitionMetadata$json = {

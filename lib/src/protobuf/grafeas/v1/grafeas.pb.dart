@@ -13,22 +13,22 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../google/protobuf/field_mask.pb.dart' as $335;
-import '../../google/protobuf/timestamp.pb.dart' as $304;
-import 'attestation.pb.dart' as $577;
-import 'build.pb.dart' as $573;
-import 'common.pb.dart' as $562;
-import 'common.pbenum.dart' as $562;
-import 'compliance.pb.dart' as $579;
-import 'deployment.pb.dart' as $575;
-import 'discovery.pb.dart' as $576;
-import 'dsse_attestation.pb.dart' as $580;
-import 'image.pb.dart' as $574;
-import 'package.pb.dart' as $569;
-import 'sbom.pb.dart' as $581;
-import 'upgrade.pb.dart' as $578;
-import 'vex.pb.dart' as $571;
-import 'vulnerability.pb.dart' as $572;
+import '../../google/protobuf/field_mask.pb.dart' as $361;
+import '../../google/protobuf/timestamp.pb.dart' as $330;
+import 'attestation.pb.dart' as $606;
+import 'build.pb.dart' as $602;
+import 'common.pb.dart' as $591;
+import 'common.pbenum.dart' as $591;
+import 'compliance.pb.dart' as $608;
+import 'deployment.pb.dart' as $604;
+import 'discovery.pb.dart' as $605;
+import 'dsse_attestation.pb.dart' as $609;
+import 'image.pb.dart' as $603;
+import 'package.pb.dart' as $598;
+import 'sbom.pb.dart' as $610;
+import 'upgrade.pb.dart' as $607;
+import 'vex.pb.dart' as $600;
+import 'vulnerability.pb.dart' as $601;
 
 enum Occurrence_Details {
   vulnerability,
@@ -51,22 +51,22 @@ class Occurrence extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? resourceUri,
     $core.String? noteName,
-    $562.NoteKind? kind,
+    $591.NoteKind? kind,
     $core.String? remediation,
-    $304.Timestamp? createTime,
-    $304.Timestamp? updateTime,
-    $572.VulnerabilityOccurrence? vulnerability,
-    $573.BuildOccurrence? build,
-    $574.ImageOccurrence? image,
-    $569.PackageOccurrence? package,
-    $575.DeploymentOccurrence? deployment,
-    $576.DiscoveryOccurrence? discovery,
-    $577.AttestationOccurrence? attestation,
-    $578.UpgradeOccurrence? upgrade,
-    $579.ComplianceOccurrence? compliance,
-    $580.DSSEAttestationOccurrence? dsseAttestation,
-    $562.Envelope? envelope,
-    $581.SBOMReferenceOccurrence? sbomReference,
+    $330.Timestamp? createTime,
+    $330.Timestamp? updateTime,
+    $601.VulnerabilityOccurrence? vulnerability,
+    $602.BuildOccurrence? build,
+    $603.ImageOccurrence? image,
+    $598.PackageOccurrence? package,
+    $604.DeploymentOccurrence? deployment,
+    $605.DiscoveryOccurrence? discovery,
+    $606.AttestationOccurrence? attestation,
+    $607.UpgradeOccurrence? upgrade,
+    $608.ComplianceOccurrence? compliance,
+    $609.DSSEAttestationOccurrence? dsseAttestation,
+    $591.Envelope? envelope,
+    $610.SBOMReferenceOccurrence? sbomReference,
   }) {
     final $result = create();
     if (name != null) {
@@ -159,42 +159,42 @@ class Occurrence extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'resourceUri')
     ..aOS(3, _omitFieldNames ? '' : 'noteName')
-    ..e<$562.NoteKind>(4, _omitFieldNames ? '' : 'kind', $pb.PbFieldType.OE,
-        defaultOrMaker: $562.NoteKind.NOTE_KIND_UNSPECIFIED,
-        valueOf: $562.NoteKind.valueOf,
-        enumValues: $562.NoteKind.values)
+    ..e<$591.NoteKind>(4, _omitFieldNames ? '' : 'kind', $pb.PbFieldType.OE,
+        defaultOrMaker: $591.NoteKind.NOTE_KIND_UNSPECIFIED,
+        valueOf: $591.NoteKind.valueOf,
+        enumValues: $591.NoteKind.values)
     ..aOS(5, _omitFieldNames ? '' : 'remediation')
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$572.VulnerabilityOccurrence>(
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(7, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$601.VulnerabilityOccurrence>(
         8, _omitFieldNames ? '' : 'vulnerability',
-        subBuilder: $572.VulnerabilityOccurrence.create)
-    ..aOM<$573.BuildOccurrence>(9, _omitFieldNames ? '' : 'build',
-        subBuilder: $573.BuildOccurrence.create)
-    ..aOM<$574.ImageOccurrence>(10, _omitFieldNames ? '' : 'image',
-        subBuilder: $574.ImageOccurrence.create)
-    ..aOM<$569.PackageOccurrence>(11, _omitFieldNames ? '' : 'package',
-        subBuilder: $569.PackageOccurrence.create)
-    ..aOM<$575.DeploymentOccurrence>(12, _omitFieldNames ? '' : 'deployment',
-        subBuilder: $575.DeploymentOccurrence.create)
-    ..aOM<$576.DiscoveryOccurrence>(13, _omitFieldNames ? '' : 'discovery',
-        subBuilder: $576.DiscoveryOccurrence.create)
-    ..aOM<$577.AttestationOccurrence>(14, _omitFieldNames ? '' : 'attestation',
-        subBuilder: $577.AttestationOccurrence.create)
-    ..aOM<$578.UpgradeOccurrence>(15, _omitFieldNames ? '' : 'upgrade',
-        subBuilder: $578.UpgradeOccurrence.create)
-    ..aOM<$579.ComplianceOccurrence>(16, _omitFieldNames ? '' : 'compliance',
-        subBuilder: $579.ComplianceOccurrence.create)
-    ..aOM<$580.DSSEAttestationOccurrence>(
+        subBuilder: $601.VulnerabilityOccurrence.create)
+    ..aOM<$602.BuildOccurrence>(9, _omitFieldNames ? '' : 'build',
+        subBuilder: $602.BuildOccurrence.create)
+    ..aOM<$603.ImageOccurrence>(10, _omitFieldNames ? '' : 'image',
+        subBuilder: $603.ImageOccurrence.create)
+    ..aOM<$598.PackageOccurrence>(11, _omitFieldNames ? '' : 'package',
+        subBuilder: $598.PackageOccurrence.create)
+    ..aOM<$604.DeploymentOccurrence>(12, _omitFieldNames ? '' : 'deployment',
+        subBuilder: $604.DeploymentOccurrence.create)
+    ..aOM<$605.DiscoveryOccurrence>(13, _omitFieldNames ? '' : 'discovery',
+        subBuilder: $605.DiscoveryOccurrence.create)
+    ..aOM<$606.AttestationOccurrence>(14, _omitFieldNames ? '' : 'attestation',
+        subBuilder: $606.AttestationOccurrence.create)
+    ..aOM<$607.UpgradeOccurrence>(15, _omitFieldNames ? '' : 'upgrade',
+        subBuilder: $607.UpgradeOccurrence.create)
+    ..aOM<$608.ComplianceOccurrence>(16, _omitFieldNames ? '' : 'compliance',
+        subBuilder: $608.ComplianceOccurrence.create)
+    ..aOM<$609.DSSEAttestationOccurrence>(
         17, _omitFieldNames ? '' : 'dsseAttestation',
-        subBuilder: $580.DSSEAttestationOccurrence.create)
-    ..aOM<$562.Envelope>(18, _omitFieldNames ? '' : 'envelope',
-        subBuilder: $562.Envelope.create)
-    ..aOM<$581.SBOMReferenceOccurrence>(
+        subBuilder: $609.DSSEAttestationOccurrence.create)
+    ..aOM<$591.Envelope>(18, _omitFieldNames ? '' : 'envelope',
+        subBuilder: $591.Envelope.create)
+    ..aOM<$610.SBOMReferenceOccurrence>(
         19, _omitFieldNames ? '' : 'sbomReference',
-        subBuilder: $581.SBOMReferenceOccurrence.create)
+        subBuilder: $610.SBOMReferenceOccurrence.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -269,9 +269,9 @@ class Occurrence extends $pb.GeneratedMessage {
   /// Output only. This explicitly denotes which of the occurrence details are
   /// specified. This field can be used as a filter in list requests.
   @$pb.TagNumber(4)
-  $562.NoteKind get kind => $_getN(3);
+  $591.NoteKind get kind => $_getN(3);
   @$pb.TagNumber(4)
-  set kind($562.NoteKind v) {
+  set kind($591.NoteKind v) {
     setField(4, v);
   }
 
@@ -295,9 +295,9 @@ class Occurrence extends $pb.GeneratedMessage {
 
   /// Output only. The time this occurrence was created.
   @$pb.TagNumber(6)
-  $304.Timestamp get createTime => $_getN(5);
+  $330.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($304.Timestamp v) {
+  set createTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -306,13 +306,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureCreateTime() => $_ensure(5);
+  $330.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. The time this occurrence was last updated.
   @$pb.TagNumber(7)
-  $304.Timestamp get updateTime => $_getN(6);
+  $330.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($304.Timestamp v) {
+  set updateTime($330.Timestamp v) {
     setField(7, v);
   }
 
@@ -321,13 +321,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $304.Timestamp ensureUpdateTime() => $_ensure(6);
+  $330.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Describes a security vulnerability.
   @$pb.TagNumber(8)
-  $572.VulnerabilityOccurrence get vulnerability => $_getN(7);
+  $601.VulnerabilityOccurrence get vulnerability => $_getN(7);
   @$pb.TagNumber(8)
-  set vulnerability($572.VulnerabilityOccurrence v) {
+  set vulnerability($601.VulnerabilityOccurrence v) {
     setField(8, v);
   }
 
@@ -336,13 +336,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearVulnerability() => clearField(8);
   @$pb.TagNumber(8)
-  $572.VulnerabilityOccurrence ensureVulnerability() => $_ensure(7);
+  $601.VulnerabilityOccurrence ensureVulnerability() => $_ensure(7);
 
   /// Describes a verifiable build.
   @$pb.TagNumber(9)
-  $573.BuildOccurrence get build => $_getN(8);
+  $602.BuildOccurrence get build => $_getN(8);
   @$pb.TagNumber(9)
-  set build($573.BuildOccurrence v) {
+  set build($602.BuildOccurrence v) {
     setField(9, v);
   }
 
@@ -351,14 +351,14 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearBuild() => clearField(9);
   @$pb.TagNumber(9)
-  $573.BuildOccurrence ensureBuild() => $_ensure(8);
+  $602.BuildOccurrence ensureBuild() => $_ensure(8);
 
   /// Describes how this resource derives from the basis in the associated
   /// note.
   @$pb.TagNumber(10)
-  $574.ImageOccurrence get image => $_getN(9);
+  $603.ImageOccurrence get image => $_getN(9);
   @$pb.TagNumber(10)
-  set image($574.ImageOccurrence v) {
+  set image($603.ImageOccurrence v) {
     setField(10, v);
   }
 
@@ -367,13 +367,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearImage() => clearField(10);
   @$pb.TagNumber(10)
-  $574.ImageOccurrence ensureImage() => $_ensure(9);
+  $603.ImageOccurrence ensureImage() => $_ensure(9);
 
   /// Describes the installation of a package on the linked resource.
   @$pb.TagNumber(11)
-  $569.PackageOccurrence get package => $_getN(10);
+  $598.PackageOccurrence get package => $_getN(10);
   @$pb.TagNumber(11)
-  set package($569.PackageOccurrence v) {
+  set package($598.PackageOccurrence v) {
     setField(11, v);
   }
 
@@ -382,13 +382,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearPackage() => clearField(11);
   @$pb.TagNumber(11)
-  $569.PackageOccurrence ensurePackage() => $_ensure(10);
+  $598.PackageOccurrence ensurePackage() => $_ensure(10);
 
   /// Describes the deployment of an artifact on a runtime.
   @$pb.TagNumber(12)
-  $575.DeploymentOccurrence get deployment => $_getN(11);
+  $604.DeploymentOccurrence get deployment => $_getN(11);
   @$pb.TagNumber(12)
-  set deployment($575.DeploymentOccurrence v) {
+  set deployment($604.DeploymentOccurrence v) {
     setField(12, v);
   }
 
@@ -397,13 +397,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearDeployment() => clearField(12);
   @$pb.TagNumber(12)
-  $575.DeploymentOccurrence ensureDeployment() => $_ensure(11);
+  $604.DeploymentOccurrence ensureDeployment() => $_ensure(11);
 
   /// Describes when a resource was discovered.
   @$pb.TagNumber(13)
-  $576.DiscoveryOccurrence get discovery => $_getN(12);
+  $605.DiscoveryOccurrence get discovery => $_getN(12);
   @$pb.TagNumber(13)
-  set discovery($576.DiscoveryOccurrence v) {
+  set discovery($605.DiscoveryOccurrence v) {
     setField(13, v);
   }
 
@@ -412,13 +412,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   void clearDiscovery() => clearField(13);
   @$pb.TagNumber(13)
-  $576.DiscoveryOccurrence ensureDiscovery() => $_ensure(12);
+  $605.DiscoveryOccurrence ensureDiscovery() => $_ensure(12);
 
   /// Describes an attestation of an artifact.
   @$pb.TagNumber(14)
-  $577.AttestationOccurrence get attestation => $_getN(13);
+  $606.AttestationOccurrence get attestation => $_getN(13);
   @$pb.TagNumber(14)
-  set attestation($577.AttestationOccurrence v) {
+  set attestation($606.AttestationOccurrence v) {
     setField(14, v);
   }
 
@@ -427,13 +427,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   void clearAttestation() => clearField(14);
   @$pb.TagNumber(14)
-  $577.AttestationOccurrence ensureAttestation() => $_ensure(13);
+  $606.AttestationOccurrence ensureAttestation() => $_ensure(13);
 
   /// Describes an available package upgrade on the linked resource.
   @$pb.TagNumber(15)
-  $578.UpgradeOccurrence get upgrade => $_getN(14);
+  $607.UpgradeOccurrence get upgrade => $_getN(14);
   @$pb.TagNumber(15)
-  set upgrade($578.UpgradeOccurrence v) {
+  set upgrade($607.UpgradeOccurrence v) {
     setField(15, v);
   }
 
@@ -442,13 +442,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   void clearUpgrade() => clearField(15);
   @$pb.TagNumber(15)
-  $578.UpgradeOccurrence ensureUpgrade() => $_ensure(14);
+  $607.UpgradeOccurrence ensureUpgrade() => $_ensure(14);
 
   /// Describes a compliance violation on a linked resource.
   @$pb.TagNumber(16)
-  $579.ComplianceOccurrence get compliance => $_getN(15);
+  $608.ComplianceOccurrence get compliance => $_getN(15);
   @$pb.TagNumber(16)
-  set compliance($579.ComplianceOccurrence v) {
+  set compliance($608.ComplianceOccurrence v) {
     setField(16, v);
   }
 
@@ -457,13 +457,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   void clearCompliance() => clearField(16);
   @$pb.TagNumber(16)
-  $579.ComplianceOccurrence ensureCompliance() => $_ensure(15);
+  $608.ComplianceOccurrence ensureCompliance() => $_ensure(15);
 
   /// Describes an attestation of an artifact using dsse.
   @$pb.TagNumber(17)
-  $580.DSSEAttestationOccurrence get dsseAttestation => $_getN(16);
+  $609.DSSEAttestationOccurrence get dsseAttestation => $_getN(16);
   @$pb.TagNumber(17)
-  set dsseAttestation($580.DSSEAttestationOccurrence v) {
+  set dsseAttestation($609.DSSEAttestationOccurrence v) {
     setField(17, v);
   }
 
@@ -472,13 +472,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearDsseAttestation() => clearField(17);
   @$pb.TagNumber(17)
-  $580.DSSEAttestationOccurrence ensureDsseAttestation() => $_ensure(16);
+  $609.DSSEAttestationOccurrence ensureDsseAttestation() => $_ensure(16);
 
   /// https://github.com/secure-systems-lab/dsse
   @$pb.TagNumber(18)
-  $562.Envelope get envelope => $_getN(17);
+  $591.Envelope get envelope => $_getN(17);
   @$pb.TagNumber(18)
-  set envelope($562.Envelope v) {
+  set envelope($591.Envelope v) {
     setField(18, v);
   }
 
@@ -487,13 +487,13 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   void clearEnvelope() => clearField(18);
   @$pb.TagNumber(18)
-  $562.Envelope ensureEnvelope() => $_ensure(17);
+  $591.Envelope ensureEnvelope() => $_ensure(17);
 
   /// Describes a specific SBOM reference occurrences.
   @$pb.TagNumber(19)
-  $581.SBOMReferenceOccurrence get sbomReference => $_getN(18);
+  $610.SBOMReferenceOccurrence get sbomReference => $_getN(18);
   @$pb.TagNumber(19)
-  set sbomReference($581.SBOMReferenceOccurrence v) {
+  set sbomReference($610.SBOMReferenceOccurrence v) {
     setField(19, v);
   }
 
@@ -502,7 +502,7 @@ class Occurrence extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   void clearSbomReference() => clearField(19);
   @$pb.TagNumber(19)
-  $581.SBOMReferenceOccurrence ensureSbomReference() => $_ensure(18);
+  $610.SBOMReferenceOccurrence ensureSbomReference() => $_ensure(18);
 }
 
 enum Note_Type {
@@ -527,24 +527,24 @@ class Note extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? shortDescription,
     $core.String? longDescription,
-    $562.NoteKind? kind,
-    $core.Iterable<$562.RelatedUrl>? relatedUrl,
-    $304.Timestamp? expirationTime,
-    $304.Timestamp? createTime,
-    $304.Timestamp? updateTime,
+    $591.NoteKind? kind,
+    $core.Iterable<$591.RelatedUrl>? relatedUrl,
+    $330.Timestamp? expirationTime,
+    $330.Timestamp? createTime,
+    $330.Timestamp? updateTime,
     $core.Iterable<$core.String>? relatedNoteNames,
-    $572.VulnerabilityNote? vulnerability,
-    $573.BuildNote? build,
-    $574.ImageNote? image,
-    $569.PackageNote? package,
-    $575.DeploymentNote? deployment,
-    $576.DiscoveryNote? discovery,
-    $577.AttestationNote? attestation,
-    $578.UpgradeNote? upgrade,
-    $579.ComplianceNote? compliance,
-    $580.DSSEAttestationNote? dsseAttestation,
-    $571.VulnerabilityAssessmentNote? vulnerabilityAssessment,
-    $581.SBOMReferenceNote? sbomReference,
+    $601.VulnerabilityNote? vulnerability,
+    $602.BuildNote? build,
+    $603.ImageNote? image,
+    $598.PackageNote? package,
+    $604.DeploymentNote? deployment,
+    $605.DiscoveryNote? discovery,
+    $606.AttestationNote? attestation,
+    $607.UpgradeNote? upgrade,
+    $608.ComplianceNote? compliance,
+    $609.DSSEAttestationNote? dsseAttestation,
+    $600.VulnerabilityAssessmentNote? vulnerabilityAssessment,
+    $610.SBOMReferenceNote? sbomReference,
   }) {
     final $result = create();
     if (name != null) {
@@ -643,46 +643,46 @@ class Note extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'shortDescription')
     ..aOS(3, _omitFieldNames ? '' : 'longDescription')
-    ..e<$562.NoteKind>(4, _omitFieldNames ? '' : 'kind', $pb.PbFieldType.OE,
-        defaultOrMaker: $562.NoteKind.NOTE_KIND_UNSPECIFIED,
-        valueOf: $562.NoteKind.valueOf,
-        enumValues: $562.NoteKind.values)
-    ..pc<$562.RelatedUrl>(
+    ..e<$591.NoteKind>(4, _omitFieldNames ? '' : 'kind', $pb.PbFieldType.OE,
+        defaultOrMaker: $591.NoteKind.NOTE_KIND_UNSPECIFIED,
+        valueOf: $591.NoteKind.valueOf,
+        enumValues: $591.NoteKind.values)
+    ..pc<$591.RelatedUrl>(
         5, _omitFieldNames ? '' : 'relatedUrl', $pb.PbFieldType.PM,
-        subBuilder: $562.RelatedUrl.create)
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'expirationTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $304.Timestamp.create)
+        subBuilder: $591.RelatedUrl.create)
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'expirationTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(7, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(8, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $330.Timestamp.create)
     ..pPS(9, _omitFieldNames ? '' : 'relatedNoteNames')
-    ..aOM<$572.VulnerabilityNote>(10, _omitFieldNames ? '' : 'vulnerability',
-        subBuilder: $572.VulnerabilityNote.create)
-    ..aOM<$573.BuildNote>(11, _omitFieldNames ? '' : 'build',
-        subBuilder: $573.BuildNote.create)
-    ..aOM<$574.ImageNote>(12, _omitFieldNames ? '' : 'image',
-        subBuilder: $574.ImageNote.create)
-    ..aOM<$569.PackageNote>(13, _omitFieldNames ? '' : 'package',
-        subBuilder: $569.PackageNote.create)
-    ..aOM<$575.DeploymentNote>(14, _omitFieldNames ? '' : 'deployment',
-        subBuilder: $575.DeploymentNote.create)
-    ..aOM<$576.DiscoveryNote>(15, _omitFieldNames ? '' : 'discovery',
-        subBuilder: $576.DiscoveryNote.create)
-    ..aOM<$577.AttestationNote>(16, _omitFieldNames ? '' : 'attestation',
-        subBuilder: $577.AttestationNote.create)
-    ..aOM<$578.UpgradeNote>(17, _omitFieldNames ? '' : 'upgrade',
-        subBuilder: $578.UpgradeNote.create)
-    ..aOM<$579.ComplianceNote>(18, _omitFieldNames ? '' : 'compliance',
-        subBuilder: $579.ComplianceNote.create)
-    ..aOM<$580.DSSEAttestationNote>(
+    ..aOM<$601.VulnerabilityNote>(10, _omitFieldNames ? '' : 'vulnerability',
+        subBuilder: $601.VulnerabilityNote.create)
+    ..aOM<$602.BuildNote>(11, _omitFieldNames ? '' : 'build',
+        subBuilder: $602.BuildNote.create)
+    ..aOM<$603.ImageNote>(12, _omitFieldNames ? '' : 'image',
+        subBuilder: $603.ImageNote.create)
+    ..aOM<$598.PackageNote>(13, _omitFieldNames ? '' : 'package',
+        subBuilder: $598.PackageNote.create)
+    ..aOM<$604.DeploymentNote>(14, _omitFieldNames ? '' : 'deployment',
+        subBuilder: $604.DeploymentNote.create)
+    ..aOM<$605.DiscoveryNote>(15, _omitFieldNames ? '' : 'discovery',
+        subBuilder: $605.DiscoveryNote.create)
+    ..aOM<$606.AttestationNote>(16, _omitFieldNames ? '' : 'attestation',
+        subBuilder: $606.AttestationNote.create)
+    ..aOM<$607.UpgradeNote>(17, _omitFieldNames ? '' : 'upgrade',
+        subBuilder: $607.UpgradeNote.create)
+    ..aOM<$608.ComplianceNote>(18, _omitFieldNames ? '' : 'compliance',
+        subBuilder: $608.ComplianceNote.create)
+    ..aOM<$609.DSSEAttestationNote>(
         19, _omitFieldNames ? '' : 'dsseAttestation',
-        subBuilder: $580.DSSEAttestationNote.create)
-    ..aOM<$571.VulnerabilityAssessmentNote>(
+        subBuilder: $609.DSSEAttestationNote.create)
+    ..aOM<$600.VulnerabilityAssessmentNote>(
         20, _omitFieldNames ? '' : 'vulnerabilityAssessment',
-        subBuilder: $571.VulnerabilityAssessmentNote.create)
-    ..aOM<$581.SBOMReferenceNote>(21, _omitFieldNames ? '' : 'sbomReference',
-        subBuilder: $581.SBOMReferenceNote.create)
+        subBuilder: $600.VulnerabilityAssessmentNote.create)
+    ..aOM<$610.SBOMReferenceNote>(21, _omitFieldNames ? '' : 'sbomReference',
+        subBuilder: $610.SBOMReferenceNote.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -752,9 +752,9 @@ class Note extends $pb.GeneratedMessage {
   /// Output only. The type of analysis. This field can be used as a filter in
   /// list requests.
   @$pb.TagNumber(4)
-  $562.NoteKind get kind => $_getN(3);
+  $591.NoteKind get kind => $_getN(3);
   @$pb.TagNumber(4)
-  set kind($562.NoteKind v) {
+  set kind($591.NoteKind v) {
     setField(4, v);
   }
 
@@ -765,13 +765,13 @@ class Note extends $pb.GeneratedMessage {
 
   /// URLs associated with this note.
   @$pb.TagNumber(5)
-  $core.List<$562.RelatedUrl> get relatedUrl => $_getList(4);
+  $core.List<$591.RelatedUrl> get relatedUrl => $_getList(4);
 
   /// Time of expiration for this note. Empty if note does not expire.
   @$pb.TagNumber(6)
-  $304.Timestamp get expirationTime => $_getN(5);
+  $330.Timestamp get expirationTime => $_getN(5);
   @$pb.TagNumber(6)
-  set expirationTime($304.Timestamp v) {
+  set expirationTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -780,14 +780,14 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearExpirationTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureExpirationTime() => $_ensure(5);
+  $330.Timestamp ensureExpirationTime() => $_ensure(5);
 
   /// Output only. The time this note was created. This field can be used as a
   /// filter in list requests.
   @$pb.TagNumber(7)
-  $304.Timestamp get createTime => $_getN(6);
+  $330.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($304.Timestamp v) {
+  set createTime($330.Timestamp v) {
     setField(7, v);
   }
 
@@ -796,14 +796,14 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $304.Timestamp ensureCreateTime() => $_ensure(6);
+  $330.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The time this note was last updated. This field can be used as
   /// a filter in list requests.
   @$pb.TagNumber(8)
-  $304.Timestamp get updateTime => $_getN(7);
+  $330.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($304.Timestamp v) {
+  set updateTime($330.Timestamp v) {
     setField(8, v);
   }
 
@@ -812,7 +812,7 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $304.Timestamp ensureUpdateTime() => $_ensure(7);
+  $330.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Other notes related to this note.
   @$pb.TagNumber(9)
@@ -820,9 +820,9 @@ class Note extends $pb.GeneratedMessage {
 
   /// A note describing a package vulnerability.
   @$pb.TagNumber(10)
-  $572.VulnerabilityNote get vulnerability => $_getN(9);
+  $601.VulnerabilityNote get vulnerability => $_getN(9);
   @$pb.TagNumber(10)
-  set vulnerability($572.VulnerabilityNote v) {
+  set vulnerability($601.VulnerabilityNote v) {
     setField(10, v);
   }
 
@@ -831,13 +831,13 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearVulnerability() => clearField(10);
   @$pb.TagNumber(10)
-  $572.VulnerabilityNote ensureVulnerability() => $_ensure(9);
+  $601.VulnerabilityNote ensureVulnerability() => $_ensure(9);
 
   /// A note describing build provenance for a verifiable build.
   @$pb.TagNumber(11)
-  $573.BuildNote get build => $_getN(10);
+  $602.BuildNote get build => $_getN(10);
   @$pb.TagNumber(11)
-  set build($573.BuildNote v) {
+  set build($602.BuildNote v) {
     setField(11, v);
   }
 
@@ -846,13 +846,13 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearBuild() => clearField(11);
   @$pb.TagNumber(11)
-  $573.BuildNote ensureBuild() => $_ensure(10);
+  $602.BuildNote ensureBuild() => $_ensure(10);
 
   /// A note describing a base image.
   @$pb.TagNumber(12)
-  $574.ImageNote get image => $_getN(11);
+  $603.ImageNote get image => $_getN(11);
   @$pb.TagNumber(12)
-  set image($574.ImageNote v) {
+  set image($603.ImageNote v) {
     setField(12, v);
   }
 
@@ -861,13 +861,13 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearImage() => clearField(12);
   @$pb.TagNumber(12)
-  $574.ImageNote ensureImage() => $_ensure(11);
+  $603.ImageNote ensureImage() => $_ensure(11);
 
   /// A note describing a package hosted by various package managers.
   @$pb.TagNumber(13)
-  $569.PackageNote get package => $_getN(12);
+  $598.PackageNote get package => $_getN(12);
   @$pb.TagNumber(13)
-  set package($569.PackageNote v) {
+  set package($598.PackageNote v) {
     setField(13, v);
   }
 
@@ -876,13 +876,13 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   void clearPackage() => clearField(13);
   @$pb.TagNumber(13)
-  $569.PackageNote ensurePackage() => $_ensure(12);
+  $598.PackageNote ensurePackage() => $_ensure(12);
 
   /// A note describing something that can be deployed.
   @$pb.TagNumber(14)
-  $575.DeploymentNote get deployment => $_getN(13);
+  $604.DeploymentNote get deployment => $_getN(13);
   @$pb.TagNumber(14)
-  set deployment($575.DeploymentNote v) {
+  set deployment($604.DeploymentNote v) {
     setField(14, v);
   }
 
@@ -891,13 +891,13 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   void clearDeployment() => clearField(14);
   @$pb.TagNumber(14)
-  $575.DeploymentNote ensureDeployment() => $_ensure(13);
+  $604.DeploymentNote ensureDeployment() => $_ensure(13);
 
   /// A note describing the initial analysis of a resource.
   @$pb.TagNumber(15)
-  $576.DiscoveryNote get discovery => $_getN(14);
+  $605.DiscoveryNote get discovery => $_getN(14);
   @$pb.TagNumber(15)
-  set discovery($576.DiscoveryNote v) {
+  set discovery($605.DiscoveryNote v) {
     setField(15, v);
   }
 
@@ -906,13 +906,13 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   void clearDiscovery() => clearField(15);
   @$pb.TagNumber(15)
-  $576.DiscoveryNote ensureDiscovery() => $_ensure(14);
+  $605.DiscoveryNote ensureDiscovery() => $_ensure(14);
 
   /// A note describing an attestation role.
   @$pb.TagNumber(16)
-  $577.AttestationNote get attestation => $_getN(15);
+  $606.AttestationNote get attestation => $_getN(15);
   @$pb.TagNumber(16)
-  set attestation($577.AttestationNote v) {
+  set attestation($606.AttestationNote v) {
     setField(16, v);
   }
 
@@ -921,13 +921,13 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   void clearAttestation() => clearField(16);
   @$pb.TagNumber(16)
-  $577.AttestationNote ensureAttestation() => $_ensure(15);
+  $606.AttestationNote ensureAttestation() => $_ensure(15);
 
   /// A note describing available package upgrades.
   @$pb.TagNumber(17)
-  $578.UpgradeNote get upgrade => $_getN(16);
+  $607.UpgradeNote get upgrade => $_getN(16);
   @$pb.TagNumber(17)
-  set upgrade($578.UpgradeNote v) {
+  set upgrade($607.UpgradeNote v) {
     setField(17, v);
   }
 
@@ -936,13 +936,13 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearUpgrade() => clearField(17);
   @$pb.TagNumber(17)
-  $578.UpgradeNote ensureUpgrade() => $_ensure(16);
+  $607.UpgradeNote ensureUpgrade() => $_ensure(16);
 
   /// A note describing a compliance check.
   @$pb.TagNumber(18)
-  $579.ComplianceNote get compliance => $_getN(17);
+  $608.ComplianceNote get compliance => $_getN(17);
   @$pb.TagNumber(18)
-  set compliance($579.ComplianceNote v) {
+  set compliance($608.ComplianceNote v) {
     setField(18, v);
   }
 
@@ -951,13 +951,13 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   void clearCompliance() => clearField(18);
   @$pb.TagNumber(18)
-  $579.ComplianceNote ensureCompliance() => $_ensure(17);
+  $608.ComplianceNote ensureCompliance() => $_ensure(17);
 
   /// A note describing a dsse attestation note.
   @$pb.TagNumber(19)
-  $580.DSSEAttestationNote get dsseAttestation => $_getN(18);
+  $609.DSSEAttestationNote get dsseAttestation => $_getN(18);
   @$pb.TagNumber(19)
-  set dsseAttestation($580.DSSEAttestationNote v) {
+  set dsseAttestation($609.DSSEAttestationNote v) {
     setField(19, v);
   }
 
@@ -966,13 +966,13 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   void clearDsseAttestation() => clearField(19);
   @$pb.TagNumber(19)
-  $580.DSSEAttestationNote ensureDsseAttestation() => $_ensure(18);
+  $609.DSSEAttestationNote ensureDsseAttestation() => $_ensure(18);
 
   /// A note describing a vulnerability assessment.
   @$pb.TagNumber(20)
-  $571.VulnerabilityAssessmentNote get vulnerabilityAssessment => $_getN(19);
+  $600.VulnerabilityAssessmentNote get vulnerabilityAssessment => $_getN(19);
   @$pb.TagNumber(20)
-  set vulnerabilityAssessment($571.VulnerabilityAssessmentNote v) {
+  set vulnerabilityAssessment($600.VulnerabilityAssessmentNote v) {
     setField(20, v);
   }
 
@@ -981,14 +981,14 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   void clearVulnerabilityAssessment() => clearField(20);
   @$pb.TagNumber(20)
-  $571.VulnerabilityAssessmentNote ensureVulnerabilityAssessment() =>
+  $600.VulnerabilityAssessmentNote ensureVulnerabilityAssessment() =>
       $_ensure(19);
 
   /// A note describing an SBOM reference.
   @$pb.TagNumber(21)
-  $581.SBOMReferenceNote get sbomReference => $_getN(20);
+  $610.SBOMReferenceNote get sbomReference => $_getN(20);
   @$pb.TagNumber(21)
-  set sbomReference($581.SBOMReferenceNote v) {
+  set sbomReference($610.SBOMReferenceNote v) {
     setField(21, v);
   }
 
@@ -997,7 +997,7 @@ class Note extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   void clearSbomReference() => clearField(21);
   @$pb.TagNumber(21)
-  $581.SBOMReferenceNote ensureSbomReference() => $_ensure(20);
+  $610.SBOMReferenceNote ensureSbomReference() => $_ensure(20);
 }
 
 /// Request to get an occurrence.
@@ -1422,7 +1422,7 @@ class UpdateOccurrenceRequest extends $pb.GeneratedMessage {
   factory UpdateOccurrenceRequest({
     $core.String? name,
     Occurrence? occurrence,
-    $335.FieldMask? updateMask,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -1451,8 +1451,8 @@ class UpdateOccurrenceRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Occurrence>(2, _omitFieldNames ? '' : 'occurrence',
         subBuilder: Occurrence.create)
-    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$361.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1511,9 +1511,9 @@ class UpdateOccurrenceRequest extends $pb.GeneratedMessage {
 
   /// The fields to update.
   @$pb.TagNumber(3)
-  $335.FieldMask get updateMask => $_getN(2);
+  $361.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(3, v);
   }
 
@@ -1522,7 +1522,7 @@ class UpdateOccurrenceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $335.FieldMask ensureUpdateMask() => $_ensure(2);
+  $361.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request to get a note.
@@ -2020,7 +2020,7 @@ class UpdateNoteRequest extends $pb.GeneratedMessage {
   factory UpdateNoteRequest({
     $core.String? name,
     Note? note,
-    $335.FieldMask? updateMask,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -2048,8 +2048,8 @@ class UpdateNoteRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Note>(2, _omitFieldNames ? '' : 'note', subBuilder: Note.create)
-    ..aOM<$335.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$361.FieldMask>(3, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2106,9 +2106,9 @@ class UpdateNoteRequest extends $pb.GeneratedMessage {
 
   /// The fields to update.
   @$pb.TagNumber(3)
-  $335.FieldMask get updateMask => $_getN(2);
+  $361.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(3, v);
   }
 
@@ -2117,7 +2117,7 @@ class UpdateNoteRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $335.FieldMask ensureUpdateMask() => $_ensure(2);
+  $361.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request to list occurrences for a note.

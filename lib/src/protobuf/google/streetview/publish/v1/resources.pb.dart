@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $266;
-import '../../../protobuf/timestamp.pb.dart' as $304;
-import '../../../type/latlng.pb.dart' as $327;
+import '../../../protobuf/duration.pb.dart' as $292;
+import '../../../protobuf/timestamp.pb.dart' as $330;
+import '../../../type/latlng.pb.dart' as $353;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -246,12 +246,12 @@ class Level extends $pb.GeneratedMessage {
 /// Raw pose measurement for an entity.
 class Pose extends $pb.GeneratedMessage {
   factory Pose({
-    $327.LatLng? latLngPair,
+    $353.LatLng? latLngPair,
     $core.double? altitude,
     $core.double? heading,
     $core.double? pitch,
     $core.double? roll,
-    $304.Timestamp? gpsRecordTimestampUnixEpoch,
+    $330.Timestamp? gpsRecordTimestampUnixEpoch,
     Level? level,
     $core.double? accuracyMeters,
   }) {
@@ -295,15 +295,15 @@ class Pose extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.streetview.publish.v1'),
       createEmptyInstance: create)
-    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'latLngPair',
-        subBuilder: $327.LatLng.create)
+    ..aOM<$353.LatLng>(1, _omitFieldNames ? '' : 'latLngPair',
+        subBuilder: $353.LatLng.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'altitude', $pb.PbFieldType.OD)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'heading', $pb.PbFieldType.OD)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'pitch', $pb.PbFieldType.OD)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'roll', $pb.PbFieldType.OD)
-    ..aOM<$304.Timestamp>(
+    ..aOM<$330.Timestamp>(
         6, _omitFieldNames ? '' : 'gpsRecordTimestampUnixEpoch',
-        subBuilder: $304.Timestamp.create)
+        subBuilder: $330.Timestamp.create)
     ..aOM<Level>(7, _omitFieldNames ? '' : 'level', subBuilder: Level.create)
     ..a<$core.double>(
         9, _omitFieldNames ? '' : 'accuracyMeters', $pb.PbFieldType.OF)
@@ -337,9 +337,9 @@ class Pose extends $pb.GeneratedMessage {
   /// exif header is used. A latitude and longitude pair not provided in the
   /// photo or exif header causes the photo process to fail.
   @$pb.TagNumber(1)
-  $327.LatLng get latLngPair => $_getN(0);
+  $353.LatLng get latLngPair => $_getN(0);
   @$pb.TagNumber(1)
-  set latLngPair($327.LatLng v) {
+  set latLngPair($353.LatLng v) {
     setField(1, v);
   }
 
@@ -348,7 +348,7 @@ class Pose extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearLatLngPair() => clearField(1);
   @$pb.TagNumber(1)
-  $327.LatLng ensureLatLngPair() => $_ensure(0);
+  $353.LatLng ensureLatLngPair() => $_ensure(0);
 
   /// Altitude of the pose in meters above WGS84 ellipsoid.
   /// NaN indicates an unmeasured quantity.
@@ -414,9 +414,9 @@ class Pose extends $pb.GeneratedMessage {
 
   /// Time of the GPS record since UTC epoch.
   @$pb.TagNumber(6)
-  $304.Timestamp get gpsRecordTimestampUnixEpoch => $_getN(5);
+  $330.Timestamp get gpsRecordTimestampUnixEpoch => $_getN(5);
   @$pb.TagNumber(6)
-  set gpsRecordTimestampUnixEpoch($304.Timestamp v) {
+  set gpsRecordTimestampUnixEpoch($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -425,7 +425,7 @@ class Pose extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearGpsRecordTimestampUnixEpoch() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureGpsRecordTimestampUnixEpoch() => $_ensure(5);
+  $330.Timestamp ensureGpsRecordTimestampUnixEpoch() => $_ensure(5);
 
   /// Level (the floor in a building) used to configure vertical navigation.
   @$pb.TagNumber(7)
@@ -464,7 +464,7 @@ class Pose extends $pb.GeneratedMessage {
 /// A Generic 3d measurement sample.
 class Imu_Measurement3d extends $pb.GeneratedMessage {
   factory Imu_Measurement3d({
-    $304.Timestamp? captureTime,
+    $330.Timestamp? captureTime,
     $core.double? x,
     $core.double? y,
     $core.double? z,
@@ -497,8 +497,8 @@ class Imu_Measurement3d extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.streetview.publish.v1'),
       createEmptyInstance: create)
-    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'captureTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'captureTime',
+        subBuilder: $330.Timestamp.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'x', $pb.PbFieldType.OF)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'y', $pb.PbFieldType.OF)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'z', $pb.PbFieldType.OF)
@@ -529,9 +529,9 @@ class Imu_Measurement3d extends $pb.GeneratedMessage {
 
   /// The timestamp of the IMU measurement.
   @$pb.TagNumber(1)
-  $304.Timestamp get captureTime => $_getN(0);
+  $330.Timestamp get captureTime => $_getN(0);
   @$pb.TagNumber(1)
-  set captureTime($304.Timestamp v) {
+  set captureTime($330.Timestamp v) {
     setField(1, v);
   }
 
@@ -540,7 +540,7 @@ class Imu_Measurement3d extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCaptureTime() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Timestamp ensureCaptureTime() => $_ensure(0);
+  $330.Timestamp ensureCaptureTime() => $_ensure(0);
 
   /// The sensor measurement in the x axis.
   @$pb.TagNumber(2)
@@ -836,14 +836,14 @@ class Photo extends $pb.GeneratedMessage {
     $core.String? downloadUrl,
     Pose? pose,
     $core.Iterable<Connection>? connections,
-    $304.Timestamp? captureTime,
+    $330.Timestamp? captureTime,
     $core.Iterable<Place>? places,
     $core.String? thumbnailUrl,
     $fixnum.Int64? viewCount,
     $core.String? shareLink,
     Photo_TransferStatus? transferStatus,
     Photo_MapsPublishStatus? mapsPublishStatus,
-    $304.Timestamp? uploadTime,
+    $330.Timestamp? uploadTime,
   }) {
     final $result = create();
     if (photoId != null) {
@@ -909,8 +909,8 @@ class Photo extends $pb.GeneratedMessage {
     ..pc<Connection>(
         5, _omitFieldNames ? '' : 'connections', $pb.PbFieldType.PM,
         subBuilder: Connection.create)
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'captureTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'captureTime',
+        subBuilder: $330.Timestamp.create)
     ..pc<Place>(7, _omitFieldNames ? '' : 'places', $pb.PbFieldType.PM,
         subBuilder: Place.create)
     ..aOS(9, _omitFieldNames ? '' : 'thumbnailUrl')
@@ -926,8 +926,8 @@ class Photo extends $pb.GeneratedMessage {
         defaultOrMaker: Photo_MapsPublishStatus.UNSPECIFIED_MAPS_PUBLISH_STATUS,
         valueOf: Photo_MapsPublishStatus.valueOf,
         enumValues: Photo_MapsPublishStatus.values)
-    ..aOM<$304.Timestamp>(14, _omitFieldNames ? '' : 'uploadTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(14, _omitFieldNames ? '' : 'uploadTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1025,9 +1025,9 @@ class Photo extends $pb.GeneratedMessage {
   /// When the photo has no exif timestamp, this is used to set a timestamp in
   /// the photo metadata.
   @$pb.TagNumber(6)
-  $304.Timestamp get captureTime => $_getN(5);
+  $330.Timestamp get captureTime => $_getN(5);
   @$pb.TagNumber(6)
-  set captureTime($304.Timestamp v) {
+  set captureTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -1036,7 +1036,7 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearCaptureTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureCaptureTime() => $_ensure(5);
+  $330.Timestamp ensureCaptureTime() => $_ensure(5);
 
   /// Optional. Places where this photo belongs.
   @$pb.TagNumber(7)
@@ -1110,9 +1110,9 @@ class Photo extends $pb.GeneratedMessage {
 
   /// Output only. Time when the image was uploaded.
   @$pb.TagNumber(14)
-  $304.Timestamp get uploadTime => $_getN(12);
+  $330.Timestamp get uploadTime => $_getN(12);
   @$pb.TagNumber(14)
-  set uploadTime($304.Timestamp v) {
+  set uploadTime($330.Timestamp v) {
     setField(14, v);
   }
 
@@ -1121,7 +1121,7 @@ class Photo extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   void clearUploadTime() => clearField(14);
   @$pb.TagNumber(14)
-  $304.Timestamp ensureUploadTime() => $_ensure(12);
+  $330.Timestamp ensureUploadTime() => $_ensure(12);
 }
 
 /// A sequence of 360 photos along with metadata.
@@ -1130,14 +1130,14 @@ class PhotoSequence extends $pb.GeneratedMessage {
     $core.String? id,
     $core.Iterable<Photo>? photos,
     UploadRef? uploadReference,
-    $304.Timestamp? captureTimeOverride,
+    $330.Timestamp? captureTimeOverride,
     $core.Iterable<Pose>? rawGpsTimeline,
     PhotoSequence_GpsSource? gpsSource,
     Imu? imu,
     ProcessingState? processingState,
     ProcessingFailureReason? failureReason,
     $core.double? distanceMeters,
-    $304.Timestamp? uploadTime,
+    $330.Timestamp? uploadTime,
     LatLngBounds? sequenceBounds,
     $fixnum.Int64? viewCount,
     $core.String? filename,
@@ -1209,8 +1209,8 @@ class PhotoSequence extends $pb.GeneratedMessage {
         subBuilder: Photo.create)
     ..aOM<UploadRef>(3, _omitFieldNames ? '' : 'uploadReference',
         subBuilder: UploadRef.create)
-    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'captureTimeOverride',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(4, _omitFieldNames ? '' : 'captureTimeOverride',
+        subBuilder: $330.Timestamp.create)
     ..pc<Pose>(7, _omitFieldNames ? '' : 'rawGpsTimeline', $pb.PbFieldType.PM,
         subBuilder: Pose.create)
     ..e<PhotoSequence_GpsSource>(
@@ -1232,8 +1232,8 @@ class PhotoSequence extends $pb.GeneratedMessage {
         enumValues: ProcessingFailureReason.values)
     ..a<$core.double>(
         16, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.OD)
-    ..aOM<$304.Timestamp>(18, _omitFieldNames ? '' : 'uploadTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(18, _omitFieldNames ? '' : 'uploadTime',
+        subBuilder: $330.Timestamp.create)
     ..aOM<LatLngBounds>(20, _omitFieldNames ? '' : 'sequenceBounds',
         subBuilder: LatLngBounds.create)
     ..aInt64(21, _omitFieldNames ? '' : 'viewCount')
@@ -1305,9 +1305,9 @@ class PhotoSequence extends $pb.GeneratedMessage {
   /// If this field is populated in input, it overrides the capture time in the
   /// video or XDM file.
   @$pb.TagNumber(4)
-  $304.Timestamp get captureTimeOverride => $_getN(3);
+  $330.Timestamp get captureTimeOverride => $_getN(3);
   @$pb.TagNumber(4)
-  set captureTimeOverride($304.Timestamp v) {
+  set captureTimeOverride($330.Timestamp v) {
     setField(4, v);
   }
 
@@ -1316,7 +1316,7 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCaptureTimeOverride() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Timestamp ensureCaptureTimeOverride() => $_ensure(3);
+  $330.Timestamp ensureCaptureTimeOverride() => $_ensure(3);
 
   /// Input only. Raw GPS measurements with increasing timestamps from the device
   /// that aren't time synced with each photo. These raw measurements will be
@@ -1404,9 +1404,9 @@ class PhotoSequence extends $pb.GeneratedMessage {
 
   /// Output only. The time this photo sequence was created in uSV Store service.
   @$pb.TagNumber(18)
-  $304.Timestamp get uploadTime => $_getN(10);
+  $330.Timestamp get uploadTime => $_getN(10);
   @$pb.TagNumber(18)
-  set uploadTime($304.Timestamp v) {
+  set uploadTime($330.Timestamp v) {
     setField(18, v);
   }
 
@@ -1415,7 +1415,7 @@ class PhotoSequence extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   void clearUploadTime() => clearField(18);
   @$pb.TagNumber(18)
-  $304.Timestamp ensureUploadTime() => $_ensure(10);
+  $330.Timestamp ensureUploadTime() => $_ensure(10);
 
   /// Output only. A rectangular box that encapsulates every image in this photo
   /// sequence.
@@ -1482,8 +1482,8 @@ class PhotoSequence extends $pb.GeneratedMessage {
 /// A rectangle in geographical coordinates.
 class LatLngBounds extends $pb.GeneratedMessage {
   factory LatLngBounds({
-    $327.LatLng? southwest,
-    $327.LatLng? northeast,
+    $353.LatLng? southwest,
+    $353.LatLng? northeast,
   }) {
     final $result = create();
     if (southwest != null) {
@@ -1507,10 +1507,10 @@ class LatLngBounds extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.streetview.publish.v1'),
       createEmptyInstance: create)
-    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'southwest',
-        subBuilder: $327.LatLng.create)
-    ..aOM<$327.LatLng>(2, _omitFieldNames ? '' : 'northeast',
-        subBuilder: $327.LatLng.create)
+    ..aOM<$353.LatLng>(1, _omitFieldNames ? '' : 'southwest',
+        subBuilder: $353.LatLng.create)
+    ..aOM<$353.LatLng>(2, _omitFieldNames ? '' : 'northeast',
+        subBuilder: $353.LatLng.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1538,9 +1538,9 @@ class LatLngBounds extends $pb.GeneratedMessage {
 
   /// The southwest corner of these bounds.
   @$pb.TagNumber(1)
-  $327.LatLng get southwest => $_getN(0);
+  $353.LatLng get southwest => $_getN(0);
   @$pb.TagNumber(1)
-  set southwest($327.LatLng v) {
+  set southwest($353.LatLng v) {
     setField(1, v);
   }
 
@@ -1549,13 +1549,13 @@ class LatLngBounds extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearSouthwest() => clearField(1);
   @$pb.TagNumber(1)
-  $327.LatLng ensureSouthwest() => $_ensure(0);
+  $353.LatLng ensureSouthwest() => $_ensure(0);
 
   /// The northeast corner of these bounds.
   @$pb.TagNumber(2)
-  $327.LatLng get northeast => $_getN(1);
+  $353.LatLng get northeast => $_getN(1);
   @$pb.TagNumber(2)
-  set northeast($327.LatLng v) {
+  set northeast($353.LatLng v) {
     setField(2, v);
   }
 
@@ -1564,7 +1564,7 @@ class LatLngBounds extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearNortheast() => clearField(2);
   @$pb.TagNumber(2)
-  $327.LatLng ensureNortheast() => $_ensure(1);
+  $353.LatLng ensureNortheast() => $_ensure(1);
 }
 
 enum ProcessingFailureDetails_Details {
@@ -1825,8 +1825,8 @@ class InsufficientGpsFailureDetails extends $pb.GeneratedMessage {
 /// is reported here.
 class GpsDataGapFailureDetails extends $pb.GeneratedMessage {
   factory GpsDataGapFailureDetails({
-    $266.Duration? gapDuration,
-    $266.Duration? gapStartTime,
+    $292.Duration? gapDuration,
+    $292.Duration? gapStartTime,
   }) {
     final $result = create();
     if (gapDuration != null) {
@@ -1850,10 +1850,10 @@ class GpsDataGapFailureDetails extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.streetview.publish.v1'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'gapDuration',
-        subBuilder: $266.Duration.create)
-    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'gapStartTime',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'gapDuration',
+        subBuilder: $292.Duration.create)
+    ..aOM<$292.Duration>(2, _omitFieldNames ? '' : 'gapStartTime',
+        subBuilder: $292.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1883,9 +1883,9 @@ class GpsDataGapFailureDetails extends $pb.GeneratedMessage {
 
   /// The duration of the gap in GPS data that was found.
   @$pb.TagNumber(1)
-  $266.Duration get gapDuration => $_getN(0);
+  $292.Duration get gapDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set gapDuration($266.Duration v) {
+  set gapDuration($292.Duration v) {
     setField(1, v);
   }
 
@@ -1894,13 +1894,13 @@ class GpsDataGapFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearGapDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensureGapDuration() => $_ensure(0);
+  $292.Duration ensureGapDuration() => $_ensure(0);
 
   /// Relative time (from the start of the video stream) when the gap started.
   @$pb.TagNumber(2)
-  $266.Duration get gapStartTime => $_getN(1);
+  $292.Duration get gapStartTime => $_getN(1);
   @$pb.TagNumber(2)
-  set gapStartTime($266.Duration v) {
+  set gapStartTime($292.Duration v) {
     setField(2, v);
   }
 
@@ -1909,7 +1909,7 @@ class GpsDataGapFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearGapStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $266.Duration ensureGapStartTime() => $_ensure(1);
+  $292.Duration ensureGapStartTime() => $_ensure(1);
 }
 
 /// Details related to ProcessingFailureReason#IMU_DATA_GAP.
@@ -1917,8 +1917,8 @@ class GpsDataGapFailureDetails extends $pb.GeneratedMessage {
 /// is reported here.
 class ImuDataGapFailureDetails extends $pb.GeneratedMessage {
   factory ImuDataGapFailureDetails({
-    $266.Duration? gapDuration,
-    $266.Duration? gapStartTime,
+    $292.Duration? gapDuration,
+    $292.Duration? gapStartTime,
   }) {
     final $result = create();
     if (gapDuration != null) {
@@ -1942,10 +1942,10 @@ class ImuDataGapFailureDetails extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.streetview.publish.v1'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'gapDuration',
-        subBuilder: $266.Duration.create)
-    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'gapStartTime',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'gapDuration',
+        subBuilder: $292.Duration.create)
+    ..aOM<$292.Duration>(2, _omitFieldNames ? '' : 'gapStartTime',
+        subBuilder: $292.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1975,9 +1975,9 @@ class ImuDataGapFailureDetails extends $pb.GeneratedMessage {
 
   /// The duration of the gap in IMU data that was found.
   @$pb.TagNumber(1)
-  $266.Duration get gapDuration => $_getN(0);
+  $292.Duration get gapDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set gapDuration($266.Duration v) {
+  set gapDuration($292.Duration v) {
     setField(1, v);
   }
 
@@ -1986,13 +1986,13 @@ class ImuDataGapFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearGapDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensureGapDuration() => $_ensure(0);
+  $292.Duration ensureGapDuration() => $_ensure(0);
 
   /// Relative time (from the start of the video stream) when the gap started.
   @$pb.TagNumber(2)
-  $266.Duration get gapStartTime => $_getN(1);
+  $292.Duration get gapStartTime => $_getN(1);
   @$pb.TagNumber(2)
-  set gapStartTime($266.Duration v) {
+  set gapStartTime($292.Duration v) {
     setField(2, v);
   }
 
@@ -2001,14 +2001,14 @@ class ImuDataGapFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearGapStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $266.Duration ensureGapStartTime() => $_ensure(1);
+  $292.Duration ensureGapStartTime() => $_ensure(1);
 }
 
 /// Details related to ProcessingFailureReason#NOT_OUTDOORS.
 /// If there are multiple indoor frames found, the first frame is recorded here.
 class NotOutdoorsFailureDetails extends $pb.GeneratedMessage {
   factory NotOutdoorsFailureDetails({
-    $266.Duration? startTime,
+    $292.Duration? startTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -2029,8 +2029,8 @@ class NotOutdoorsFailureDetails extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.streetview.publish.v1'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $292.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2061,9 +2061,9 @@ class NotOutdoorsFailureDetails extends $pb.GeneratedMessage {
   /// Relative time (from the start of the video stream) when an indoor frame was
   /// found.
   @$pb.TagNumber(1)
-  $266.Duration get startTime => $_getN(0);
+  $292.Duration get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($266.Duration v) {
+  set startTime($292.Duration v) {
     setField(1, v);
   }
 
@@ -2072,16 +2072,16 @@ class NotOutdoorsFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensureStartTime() => $_ensure(0);
+  $292.Duration ensureStartTime() => $_ensure(0);
 }
 
 /// Details related to PhotoSequenceProcessingFailureReason#NO_OVERLAP_GPS.
 class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
   factory NoOverlapGpsFailureDetails({
-    $304.Timestamp? gpsStartTime,
-    $304.Timestamp? gpsEndTime,
-    $304.Timestamp? videoStartTime,
-    $304.Timestamp? videoEndTime,
+    $330.Timestamp? gpsStartTime,
+    $330.Timestamp? gpsEndTime,
+    $330.Timestamp? videoStartTime,
+    $330.Timestamp? videoEndTime,
   }) {
     final $result = create();
     if (gpsStartTime != null) {
@@ -2111,14 +2111,14 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.streetview.publish.v1'),
       createEmptyInstance: create)
-    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'gpsStartTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'gpsEndTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'videoStartTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'videoEndTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'gpsStartTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'gpsEndTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'videoStartTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(4, _omitFieldNames ? '' : 'videoEndTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2149,9 +2149,9 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
 
   /// Time of first recorded GPS point.
   @$pb.TagNumber(1)
-  $304.Timestamp get gpsStartTime => $_getN(0);
+  $330.Timestamp get gpsStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set gpsStartTime($304.Timestamp v) {
+  set gpsStartTime($330.Timestamp v) {
     setField(1, v);
   }
 
@@ -2160,13 +2160,13 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearGpsStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Timestamp ensureGpsStartTime() => $_ensure(0);
+  $330.Timestamp ensureGpsStartTime() => $_ensure(0);
 
   /// Time of last recorded GPS point.
   @$pb.TagNumber(2)
-  $304.Timestamp get gpsEndTime => $_getN(1);
+  $330.Timestamp get gpsEndTime => $_getN(1);
   @$pb.TagNumber(2)
-  set gpsEndTime($304.Timestamp v) {
+  set gpsEndTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -2175,13 +2175,13 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearGpsEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureGpsEndTime() => $_ensure(1);
+  $330.Timestamp ensureGpsEndTime() => $_ensure(1);
 
   /// Start time of video.
   @$pb.TagNumber(3)
-  $304.Timestamp get videoStartTime => $_getN(2);
+  $330.Timestamp get videoStartTime => $_getN(2);
   @$pb.TagNumber(3)
-  set videoStartTime($304.Timestamp v) {
+  set videoStartTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -2190,13 +2190,13 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearVideoStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureVideoStartTime() => $_ensure(2);
+  $330.Timestamp ensureVideoStartTime() => $_ensure(2);
 
   /// End time of video.
   @$pb.TagNumber(4)
-  $304.Timestamp get videoEndTime => $_getN(3);
+  $330.Timestamp get videoEndTime => $_getN(3);
   @$pb.TagNumber(4)
-  set videoEndTime($304.Timestamp v) {
+  set videoEndTime($330.Timestamp v) {
     setField(4, v);
   }
 
@@ -2205,7 +2205,7 @@ class NoOverlapGpsFailureDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearVideoEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Timestamp ensureVideoEndTime() => $_ensure(3);
+  $330.Timestamp ensureVideoEndTime() => $_ensure(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

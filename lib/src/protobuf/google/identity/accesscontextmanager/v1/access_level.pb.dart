@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $304;
-import '../../../type/expr.pb.dart' as $401;
-import '../type/device_resources.pbenum.dart' as $447;
+import '../../../protobuf/timestamp.pb.dart' as $330;
+import '../../../type/expr.pb.dart' as $430;
+import '../type/device_resources.pbenum.dart' as $476;
 import 'access_level.pbenum.dart';
 
 export 'access_level.pbenum.dart';
@@ -32,8 +32,8 @@ class AccessLevel extends $pb.GeneratedMessage {
     $core.String? description,
     BasicLevel? basic,
     CustomLevel? custom,
-    $304.Timestamp? createTime,
-    $304.Timestamp? updateTime,
+    $330.Timestamp? createTime,
+    $330.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -86,10 +86,10 @@ class AccessLevel extends $pb.GeneratedMessage {
         subBuilder: BasicLevel.create)
     ..aOM<CustomLevel>(5, _omitFieldNames ? '' : 'custom',
         subBuilder: CustomLevel.create)
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(7, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(7, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -191,9 +191,9 @@ class AccessLevel extends $pb.GeneratedMessage {
 
   /// Output only. Time the `AccessLevel` was created in UTC.
   @$pb.TagNumber(6)
-  $304.Timestamp get createTime => $_getN(5);
+  $330.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($304.Timestamp v) {
+  set createTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -202,13 +202,13 @@ class AccessLevel extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureCreateTime() => $_ensure(5);
+  $330.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Time the `AccessLevel` was updated in UTC.
   @$pb.TagNumber(7)
-  $304.Timestamp get updateTime => $_getN(6);
+  $330.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($304.Timestamp v) {
+  set updateTime($330.Timestamp v) {
     setField(7, v);
   }
 
@@ -217,7 +217,7 @@ class AccessLevel extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $304.Timestamp ensureUpdateTime() => $_ensure(6);
+  $330.Timestamp ensureUpdateTime() => $_ensure(6);
 }
 
 /// `BasicLevel` is an `AccessLevel` using a set of recommended features.
@@ -448,7 +448,7 @@ class Condition extends $pb.GeneratedMessage {
 /// See CEL spec at: https://github.com/google/cel-spec
 class CustomLevel extends $pb.GeneratedMessage {
   factory CustomLevel({
-    $401.Expr? expr,
+    $430.Expr? expr,
   }) {
     final $result = create();
     if (expr != null) {
@@ -469,8 +469,8 @@ class CustomLevel extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.identity.accesscontextmanager.v1'),
       createEmptyInstance: create)
-    ..aOM<$401.Expr>(1, _omitFieldNames ? '' : 'expr',
-        subBuilder: $401.Expr.create)
+    ..aOM<$430.Expr>(1, _omitFieldNames ? '' : 'expr',
+        subBuilder: $430.Expr.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -497,9 +497,9 @@ class CustomLevel extends $pb.GeneratedMessage {
 
   /// Required. A Cloud CEL expression evaluating to a boolean.
   @$pb.TagNumber(1)
-  $401.Expr get expr => $_getN(0);
+  $430.Expr get expr => $_getN(0);
   @$pb.TagNumber(1)
-  set expr($401.Expr v) {
+  set expr($430.Expr v) {
     setField(1, v);
   }
 
@@ -508,7 +508,7 @@ class CustomLevel extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearExpr() => clearField(1);
   @$pb.TagNumber(1)
-  $401.Expr ensureExpr() => $_ensure(0);
+  $430.Expr ensureExpr() => $_ensure(0);
 }
 
 /// `DevicePolicy` specifies device specific restrictions necessary to acquire a
@@ -523,9 +523,9 @@ class CustomLevel extends $pb.GeneratedMessage {
 class DevicePolicy extends $pb.GeneratedMessage {
   factory DevicePolicy({
     $core.bool? requireScreenlock,
-    $core.Iterable<$447.DeviceEncryptionStatus>? allowedEncryptionStatuses,
+    $core.Iterable<$476.DeviceEncryptionStatus>? allowedEncryptionStatuses,
     $core.Iterable<OsConstraint>? osConstraints,
-    $core.Iterable<$447.DeviceManagementLevel>? allowedDeviceManagementLevels,
+    $core.Iterable<$476.DeviceManagementLevel>? allowedDeviceManagementLevels,
     $core.bool? requireAdminApproval,
     $core.bool? requireCorpOwned,
   }) {
@@ -565,21 +565,21 @@ class DevicePolicy extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.identity.accesscontextmanager.v1'),
       createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'requireScreenlock')
-    ..pc<$447.DeviceEncryptionStatus>(2,
+    ..pc<$476.DeviceEncryptionStatus>(2,
         _omitFieldNames ? '' : 'allowedEncryptionStatuses', $pb.PbFieldType.KE,
-        valueOf: $447.DeviceEncryptionStatus.valueOf,
-        enumValues: $447.DeviceEncryptionStatus.values,
-        defaultEnumValue: $447.DeviceEncryptionStatus.ENCRYPTION_UNSPECIFIED)
+        valueOf: $476.DeviceEncryptionStatus.valueOf,
+        enumValues: $476.DeviceEncryptionStatus.values,
+        defaultEnumValue: $476.DeviceEncryptionStatus.ENCRYPTION_UNSPECIFIED)
     ..pc<OsConstraint>(
         3, _omitFieldNames ? '' : 'osConstraints', $pb.PbFieldType.PM,
         subBuilder: OsConstraint.create)
-    ..pc<$447.DeviceManagementLevel>(
+    ..pc<$476.DeviceManagementLevel>(
         6,
         _omitFieldNames ? '' : 'allowedDeviceManagementLevels',
         $pb.PbFieldType.KE,
-        valueOf: $447.DeviceManagementLevel.valueOf,
-        enumValues: $447.DeviceManagementLevel.values,
-        defaultEnumValue: $447.DeviceManagementLevel.MANAGEMENT_UNSPECIFIED)
+        valueOf: $476.DeviceManagementLevel.valueOf,
+        enumValues: $476.DeviceManagementLevel.values,
+        defaultEnumValue: $476.DeviceManagementLevel.MANAGEMENT_UNSPECIFIED)
     ..aOB(7, _omitFieldNames ? '' : 'requireAdminApproval')
     ..aOB(8, _omitFieldNames ? '' : 'requireCorpOwned')
     ..hasRequiredFields = false;
@@ -623,7 +623,7 @@ class DevicePolicy extends $pb.GeneratedMessage {
 
   /// Allowed encryptions statuses, an empty list allows all statuses.
   @$pb.TagNumber(2)
-  $core.List<$447.DeviceEncryptionStatus> get allowedEncryptionStatuses =>
+  $core.List<$476.DeviceEncryptionStatus> get allowedEncryptionStatuses =>
       $_getList(1);
 
   /// Allowed OS versions, an empty list allows all types and all versions.
@@ -633,7 +633,7 @@ class DevicePolicy extends $pb.GeneratedMessage {
   /// Allowed device management levels, an empty list allows all management
   /// levels.
   @$pb.TagNumber(6)
-  $core.List<$447.DeviceManagementLevel> get allowedDeviceManagementLevels =>
+  $core.List<$476.DeviceManagementLevel> get allowedDeviceManagementLevels =>
       $_getList(3);
 
   /// Whether the device needs to be approved by the customer admin.
@@ -666,7 +666,7 @@ class DevicePolicy extends $pb.GeneratedMessage {
 /// A restriction on the OS type and version of devices making requests.
 class OsConstraint extends $pb.GeneratedMessage {
   factory OsConstraint({
-    $447.OsType? osType,
+    $476.OsType? osType,
     $core.String? minimumVersion,
     $core.bool? requireVerifiedChromeOs,
   }) {
@@ -695,10 +695,10 @@ class OsConstraint extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.identity.accesscontextmanager.v1'),
       createEmptyInstance: create)
-    ..e<$447.OsType>(1, _omitFieldNames ? '' : 'osType', $pb.PbFieldType.OE,
-        defaultOrMaker: $447.OsType.OS_UNSPECIFIED,
-        valueOf: $447.OsType.valueOf,
-        enumValues: $447.OsType.values)
+    ..e<$476.OsType>(1, _omitFieldNames ? '' : 'osType', $pb.PbFieldType.OE,
+        defaultOrMaker: $476.OsType.OS_UNSPECIFIED,
+        valueOf: $476.OsType.valueOf,
+        enumValues: $476.OsType.values)
     ..aOS(2, _omitFieldNames ? '' : 'minimumVersion')
     ..aOB(3, _omitFieldNames ? '' : 'requireVerifiedChromeOs')
     ..hasRequiredFields = false;
@@ -728,9 +728,9 @@ class OsConstraint extends $pb.GeneratedMessage {
 
   /// Required. The allowed OS type.
   @$pb.TagNumber(1)
-  $447.OsType get osType => $_getN(0);
+  $476.OsType get osType => $_getN(0);
   @$pb.TagNumber(1)
-  set osType($447.OsType v) {
+  set osType($476.OsType v) {
     setField(1, v);
   }
 

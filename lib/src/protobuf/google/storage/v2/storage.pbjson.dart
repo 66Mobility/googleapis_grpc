@@ -846,6 +846,381 @@ final $typed_data.Uint8List readObjectResponseDescriptor = $convert.base64Decode
     'Q29udGVudFJhbmdlUgxjb250ZW50UmFuZ2USNQoIbWV0YWRhdGEYBCABKAsyGS5nb29nbGUuc3'
     'RvcmFnZS52Mi5PYmplY3RSCG1ldGFkYXRh');
 
+@$core.Deprecated('Use bidiReadObjectSpecDescriptor instead')
+const BidiReadObjectSpec$json = {
+  '1': 'BidiReadObjectSpec',
+  '2': [
+    {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
+    {'1': 'object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'object'},
+    {'1': 'generation', '3': 3, '4': 1, '5': 3, '10': 'generation'},
+    {
+      '1': 'if_generation_match',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'ifGenerationMatch',
+      '17': true
+    },
+    {
+      '1': 'if_generation_not_match',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'ifGenerationNotMatch',
+      '17': true
+    },
+    {
+      '1': 'if_metageneration_match',
+      '3': 6,
+      '4': 1,
+      '5': 3,
+      '9': 2,
+      '10': 'ifMetagenerationMatch',
+      '17': true
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 7,
+      '4': 1,
+      '5': 3,
+      '9': 3,
+      '10': 'ifMetagenerationNotMatch',
+      '17': true
+    },
+    {
+      '1': 'common_object_request_params',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.CommonObjectRequestParams',
+      '10': 'commonObjectRequestParams'
+    },
+    {
+      '1': 'read_mask',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '8': {'3': true},
+      '9': 4,
+      '10': 'readMask',
+      '17': true,
+    },
+    {
+      '1': 'read_handle',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.BidiReadHandle',
+      '9': 5,
+      '10': 'readHandle',
+      '17': true
+    },
+    {
+      '1': 'routing_token',
+      '3': 14,
+      '4': 1,
+      '5': 9,
+      '9': 6,
+      '10': 'routingToken',
+      '17': true
+    },
+  ],
+  '8': [
+    {'1': '_if_generation_match'},
+    {'1': '_if_generation_not_match'},
+    {'1': '_if_metageneration_match'},
+    {'1': '_if_metageneration_not_match'},
+    {'1': '_read_mask'},
+    {'1': '_read_handle'},
+    {'1': '_routing_token'},
+  ],
+};
+
+/// Descriptor for `BidiReadObjectSpec`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List bidiReadObjectSpecDescriptor = $convert.base64Decode(
+    'ChJCaWRpUmVhZE9iamVjdFNwZWMSPQoGYnVja2V0GAEgASgJQiXgQQL6QR8KHXN0b3JhZ2UuZ2'
+    '9vZ2xlYXBpcy5jb20vQnVja2V0UgZidWNrZXQSGwoGb2JqZWN0GAIgASgJQgPgQQJSBm9iamVj'
+    'dBIeCgpnZW5lcmF0aW9uGAMgASgDUgpnZW5lcmF0aW9uEjMKE2lmX2dlbmVyYXRpb25fbWF0Y2'
+    'gYBCABKANIAFIRaWZHZW5lcmF0aW9uTWF0Y2iIAQESOgoXaWZfZ2VuZXJhdGlvbl9ub3RfbWF0'
+    'Y2gYBSABKANIAVIUaWZHZW5lcmF0aW9uTm90TWF0Y2iIAQESOwoXaWZfbWV0YWdlbmVyYXRpb2'
+    '5fbWF0Y2gYBiABKANIAlIVaWZNZXRhZ2VuZXJhdGlvbk1hdGNoiAEBEkIKG2lmX21ldGFnZW5l'
+    'cmF0aW9uX25vdF9tYXRjaBgHIAEoA0gDUhhpZk1ldGFnZW5lcmF0aW9uTm90TWF0Y2iIAQESbQ'
+    'ocY29tbW9uX29iamVjdF9yZXF1ZXN0X3BhcmFtcxgIIAEoCzIsLmdvb2dsZS5zdG9yYWdlLnYy'
+    'LkNvbW1vbk9iamVjdFJlcXVlc3RQYXJhbXNSGWNvbW1vbk9iamVjdFJlcXVlc3RQYXJhbXMSQA'
+    'oJcmVhZF9tYXNrGAwgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ICGAFIBFIIcmVh'
+    'ZE1hc2uIAQESRwoLcmVhZF9oYW5kbGUYDSABKAsyIS5nb29nbGUuc3RvcmFnZS52Mi5CaWRpUm'
+    'VhZEhhbmRsZUgFUgpyZWFkSGFuZGxliAEBEigKDXJvdXRpbmdfdG9rZW4YDiABKAlIBlIMcm91'
+    'dGluZ1Rva2VuiAEBQhYKFF9pZl9nZW5lcmF0aW9uX21hdGNoQhoKGF9pZl9nZW5lcmF0aW9uX2'
+    '5vdF9tYXRjaEIaChhfaWZfbWV0YWdlbmVyYXRpb25fbWF0Y2hCHgocX2lmX21ldGFnZW5lcmF0'
+    'aW9uX25vdF9tYXRjaEIMCgpfcmVhZF9tYXNrQg4KDF9yZWFkX2hhbmRsZUIQCg5fcm91dGluZ1'
+    '90b2tlbg==');
+
+@$core.Deprecated('Use bidiReadObjectRequestDescriptor instead')
+const BidiReadObjectRequest$json = {
+  '1': 'BidiReadObjectRequest',
+  '2': [
+    {
+      '1': 'read_object_spec',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.BidiReadObjectSpec',
+      '10': 'readObjectSpec'
+    },
+    {
+      '1': 'read_ranges',
+      '3': 8,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v2.ReadRange',
+      '10': 'readRanges'
+    },
+  ],
+};
+
+/// Descriptor for `BidiReadObjectRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List bidiReadObjectRequestDescriptor = $convert.base64Decode(
+    'ChVCaWRpUmVhZE9iamVjdFJlcXVlc3QSTwoQcmVhZF9vYmplY3Rfc3BlYxgBIAEoCzIlLmdvb2'
+    'dsZS5zdG9yYWdlLnYyLkJpZGlSZWFkT2JqZWN0U3BlY1IOcmVhZE9iamVjdFNwZWMSPQoLcmVh'
+    'ZF9yYW5nZXMYCCADKAsyHC5nb29nbGUuc3RvcmFnZS52Mi5SZWFkUmFuZ2VSCnJlYWRSYW5nZX'
+    'M=');
+
+@$core.Deprecated('Use bidiReadObjectResponseDescriptor instead')
+const BidiReadObjectResponse$json = {
+  '1': 'BidiReadObjectResponse',
+  '2': [
+    {
+      '1': 'object_data_ranges',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v2.ObjectRangeData',
+      '10': 'objectDataRanges'
+    },
+    {
+      '1': 'metadata',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.Object',
+      '10': 'metadata'
+    },
+    {
+      '1': 'read_handle',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.BidiReadHandle',
+      '10': 'readHandle'
+    },
+  ],
+};
+
+/// Descriptor for `BidiReadObjectResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List bidiReadObjectResponseDescriptor = $convert.base64Decode(
+    'ChZCaWRpUmVhZE9iamVjdFJlc3BvbnNlElAKEm9iamVjdF9kYXRhX3JhbmdlcxgGIAMoCzIiLm'
+    'dvb2dsZS5zdG9yYWdlLnYyLk9iamVjdFJhbmdlRGF0YVIQb2JqZWN0RGF0YVJhbmdlcxI1Cght'
+    'ZXRhZGF0YRgEIAEoCzIZLmdvb2dsZS5zdG9yYWdlLnYyLk9iamVjdFIIbWV0YWRhdGESQgoLcm'
+    'VhZF9oYW5kbGUYByABKAsyIS5nb29nbGUuc3RvcmFnZS52Mi5CaWRpUmVhZEhhbmRsZVIKcmVh'
+    'ZEhhbmRsZQ==');
+
+@$core.Deprecated('Use bidiReadObjectRedirectedErrorDescriptor instead')
+const BidiReadObjectRedirectedError$json = {
+  '1': 'BidiReadObjectRedirectedError',
+  '2': [
+    {
+      '1': 'read_handle',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.BidiReadHandle',
+      '10': 'readHandle'
+    },
+    {
+      '1': 'routing_token',
+      '3': 2,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'routingToken',
+      '17': true
+    },
+  ],
+  '8': [
+    {'1': '_routing_token'},
+  ],
+};
+
+/// Descriptor for `BidiReadObjectRedirectedError`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List bidiReadObjectRedirectedErrorDescriptor =
+    $convert.base64Decode(
+        'Ch1CaWRpUmVhZE9iamVjdFJlZGlyZWN0ZWRFcnJvchJCCgtyZWFkX2hhbmRsZRgBIAEoCzIhLm'
+        'dvb2dsZS5zdG9yYWdlLnYyLkJpZGlSZWFkSGFuZGxlUgpyZWFkSGFuZGxlEigKDXJvdXRpbmdf'
+        'dG9rZW4YAiABKAlIAFIMcm91dGluZ1Rva2VuiAEBQhAKDl9yb3V0aW5nX3Rva2Vu');
+
+@$core.Deprecated('Use bidiWriteObjectRedirectedErrorDescriptor instead')
+const BidiWriteObjectRedirectedError$json = {
+  '1': 'BidiWriteObjectRedirectedError',
+  '2': [
+    {
+      '1': 'routing_token',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '9': 0,
+      '10': 'routingToken',
+      '17': true
+    },
+    {
+      '1': 'write_handle',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.BidiWriteHandle',
+      '9': 1,
+      '10': 'writeHandle',
+      '17': true
+    },
+    {
+      '1': 'generation',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '9': 2,
+      '10': 'generation',
+      '17': true
+    },
+  ],
+  '8': [
+    {'1': '_routing_token'},
+    {'1': '_write_handle'},
+    {'1': '_generation'},
+  ],
+};
+
+/// Descriptor for `BidiWriteObjectRedirectedError`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List bidiWriteObjectRedirectedErrorDescriptor = $convert.base64Decode(
+    'Ch5CaWRpV3JpdGVPYmplY3RSZWRpcmVjdGVkRXJyb3ISKAoNcm91dGluZ190b2tlbhgBIAEoCU'
+    'gAUgxyb3V0aW5nVG9rZW6IAQESSgoMd3JpdGVfaGFuZGxlGAIgASgLMiIuZ29vZ2xlLnN0b3Jh'
+    'Z2UudjIuQmlkaVdyaXRlSGFuZGxlSAFSC3dyaXRlSGFuZGxliAEBEiMKCmdlbmVyYXRpb24YAy'
+    'ABKANIAlIKZ2VuZXJhdGlvbogBAUIQCg5fcm91dGluZ190b2tlbkIPCg1fd3JpdGVfaGFuZGxl'
+    'Qg0KC19nZW5lcmF0aW9u');
+
+@$core.Deprecated('Use bidiReadObjectErrorDescriptor instead')
+const BidiReadObjectError$json = {
+  '1': 'BidiReadObjectError',
+  '2': [
+    {
+      '1': 'read_range_errors',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.storage.v2.ReadRangeError',
+      '10': 'readRangeErrors'
+    },
+  ],
+};
+
+/// Descriptor for `BidiReadObjectError`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List bidiReadObjectErrorDescriptor = $convert.base64Decode(
+    'ChNCaWRpUmVhZE9iamVjdEVycm9yEk0KEXJlYWRfcmFuZ2VfZXJyb3JzGAEgAygLMiEuZ29vZ2'
+    'xlLnN0b3JhZ2UudjIuUmVhZFJhbmdlRXJyb3JSD3JlYWRSYW5nZUVycm9ycw==');
+
+@$core.Deprecated('Use readRangeErrorDescriptor instead')
+const ReadRangeError$json = {
+  '1': 'ReadRangeError',
+  '2': [
+    {'1': 'read_id', '3': 1, '4': 1, '5': 3, '10': 'readId'},
+    {
+      '1': 'status',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.rpc.Status',
+      '10': 'status'
+    },
+  ],
+};
+
+/// Descriptor for `ReadRangeError`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List readRangeErrorDescriptor = $convert.base64Decode(
+    'Cg5SZWFkUmFuZ2VFcnJvchIXCgdyZWFkX2lkGAEgASgDUgZyZWFkSWQSKgoGc3RhdHVzGAIgAS'
+    'gLMhIuZ29vZ2xlLnJwYy5TdGF0dXNSBnN0YXR1cw==');
+
+@$core.Deprecated('Use readRangeDescriptor instead')
+const ReadRange$json = {
+  '1': 'ReadRange',
+  '2': [
+    {'1': 'read_offset', '3': 1, '4': 1, '5': 3, '8': {}, '10': 'readOffset'},
+    {'1': 'read_length', '3': 2, '4': 1, '5': 3, '8': {}, '10': 'readLength'},
+    {'1': 'read_id', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'readId'},
+  ],
+};
+
+/// Descriptor for `ReadRange`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List readRangeDescriptor = $convert.base64Decode(
+    'CglSZWFkUmFuZ2USJAoLcmVhZF9vZmZzZXQYASABKANCA+BBAlIKcmVhZE9mZnNldBIkCgtyZW'
+    'FkX2xlbmd0aBgCIAEoA0ID4EEBUgpyZWFkTGVuZ3RoEhwKB3JlYWRfaWQYAyABKANCA+BBAlIG'
+    'cmVhZElk');
+
+@$core.Deprecated('Use objectRangeDataDescriptor instead')
+const ObjectRangeData$json = {
+  '1': 'ObjectRangeData',
+  '2': [
+    {
+      '1': 'checksummed_data',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.ChecksummedData',
+      '10': 'checksummedData'
+    },
+    {
+      '1': 'read_range',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.ReadRange',
+      '10': 'readRange'
+    },
+    {'1': 'range_end', '3': 3, '4': 1, '5': 8, '10': 'rangeEnd'},
+  ],
+};
+
+/// Descriptor for `ObjectRangeData`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List objectRangeDataDescriptor = $convert.base64Decode(
+    'Cg9PYmplY3RSYW5nZURhdGESTQoQY2hlY2tzdW1tZWRfZGF0YRgBIAEoCzIiLmdvb2dsZS5zdG'
+    '9yYWdlLnYyLkNoZWNrc3VtbWVkRGF0YVIPY2hlY2tzdW1tZWREYXRhEjsKCnJlYWRfcmFuZ2UY'
+    'AiABKAsyHC5nb29nbGUuc3RvcmFnZS52Mi5SZWFkUmFuZ2VSCXJlYWRSYW5nZRIbCglyYW5nZV'
+    '9lbmQYAyABKAhSCHJhbmdlRW5k');
+
+@$core.Deprecated('Use bidiReadHandleDescriptor instead')
+const BidiReadHandle$json = {
+  '1': 'BidiReadHandle',
+  '2': [
+    {'1': 'handle', '3': 1, '4': 1, '5': 12, '8': {}, '10': 'handle'},
+  ],
+};
+
+/// Descriptor for `BidiReadHandle`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List bidiReadHandleDescriptor = $convert.base64Decode(
+    'Cg5CaWRpUmVhZEhhbmRsZRIbCgZoYW5kbGUYASABKAxCA+BBAlIGaGFuZGxl');
+
+@$core.Deprecated('Use bidiWriteHandleDescriptor instead')
+const BidiWriteHandle$json = {
+  '1': 'BidiWriteHandle',
+  '2': [
+    {'1': 'handle', '3': 1, '4': 1, '5': 12, '8': {}, '10': 'handle'},
+  ],
+};
+
+/// Descriptor for `BidiWriteHandle`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List bidiWriteHandleDescriptor = $convert.base64Decode(
+    'Cg9CaWRpV3JpdGVIYW5kbGUSGwoGaGFuZGxlGAEgASgMQgPgQQJSBmhhbmRsZQ==');
+
 @$core.Deprecated('Use writeObjectSpecDescriptor instead')
 const WriteObjectSpec$json = {
   '1': 'WriteObjectSpec',
@@ -905,6 +1280,15 @@ const WriteObjectSpec$json = {
       '10': 'objectSize',
       '17': true
     },
+    {
+      '1': 'appendable',
+      '3': 9,
+      '4': 1,
+      '5': 8,
+      '9': 5,
+      '10': 'appendable',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_if_generation_match'},
@@ -912,6 +1296,7 @@ const WriteObjectSpec$json = {
     {'1': '_if_metageneration_match'},
     {'1': '_if_metageneration_not_match'},
     {'1': '_object_size'},
+    {'1': '_appendable'},
   ],
 };
 
@@ -924,9 +1309,10 @@ final $typed_data.Uint8List writeObjectSpecDescriptor = $convert.base64Decode(
     'YXRjaIgBARI7ChdpZl9tZXRhZ2VuZXJhdGlvbl9tYXRjaBgFIAEoA0gCUhVpZk1ldGFnZW5lcm'
     'F0aW9uTWF0Y2iIAQESQgobaWZfbWV0YWdlbmVyYXRpb25fbm90X21hdGNoGAYgASgDSANSGGlm'
     'TWV0YWdlbmVyYXRpb25Ob3RNYXRjaIgBARIkCgtvYmplY3Rfc2l6ZRgIIAEoA0gEUgpvYmplY3'
-    'RTaXpliAEBQhYKFF9pZl9nZW5lcmF0aW9uX21hdGNoQhoKGF9pZl9nZW5lcmF0aW9uX25vdF9t'
-    'YXRjaEIaChhfaWZfbWV0YWdlbmVyYXRpb25fbWF0Y2hCHgocX2lmX21ldGFnZW5lcmF0aW9uX2'
-    '5vdF9tYXRjaEIOCgxfb2JqZWN0X3NpemU=');
+    'RTaXpliAEBEiMKCmFwcGVuZGFibGUYCSABKAhIBVIKYXBwZW5kYWJsZYgBAUIWChRfaWZfZ2Vu'
+    'ZXJhdGlvbl9tYXRjaEIaChhfaWZfZ2VuZXJhdGlvbl9ub3RfbWF0Y2hCGgoYX2lmX21ldGFnZW'
+    '5lcmF0aW9uX21hdGNoQh4KHF9pZl9tZXRhZ2VuZXJhdGlvbl9ub3RfbWF0Y2hCDgoMX29iamVj'
+    'dF9zaXplQg0KC19hcHBlbmRhYmxl');
 
 @$core.Deprecated('Use writeObjectRequestDescriptor instead')
 const WriteObjectRequest$json = {
@@ -1022,6 +1408,71 @@ final $typed_data.Uint8List writeObjectResponseDescriptor = $convert.base64Decod
     'RlZFNpemUSNwoIcmVzb3VyY2UYAiABKAsyGS5nb29nbGUuc3RvcmFnZS52Mi5PYmplY3RIAFII'
     'cmVzb3VyY2VCDgoMd3JpdGVfc3RhdHVz');
 
+@$core.Deprecated('Use appendObjectSpecDescriptor instead')
+const AppendObjectSpec$json = {
+  '1': 'AppendObjectSpec',
+  '2': [
+    {'1': 'bucket', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
+    {'1': 'object', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'object'},
+    {'1': 'generation', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'generation'},
+    {
+      '1': 'if_metageneration_match',
+      '3': 4,
+      '4': 1,
+      '5': 3,
+      '9': 0,
+      '10': 'ifMetagenerationMatch',
+      '17': true
+    },
+    {
+      '1': 'if_metageneration_not_match',
+      '3': 5,
+      '4': 1,
+      '5': 3,
+      '9': 1,
+      '10': 'ifMetagenerationNotMatch',
+      '17': true
+    },
+    {
+      '1': 'routing_token',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '9': 2,
+      '10': 'routingToken',
+      '17': true
+    },
+    {
+      '1': 'write_handle',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.BidiWriteHandle',
+      '9': 3,
+      '10': 'writeHandle',
+      '17': true
+    },
+  ],
+  '8': [
+    {'1': '_if_metageneration_match'},
+    {'1': '_if_metageneration_not_match'},
+    {'1': '_routing_token'},
+    {'1': '_write_handle'},
+  ],
+};
+
+/// Descriptor for `AppendObjectSpec`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List appendObjectSpecDescriptor = $convert.base64Decode(
+    'ChBBcHBlbmRPYmplY3RTcGVjEj0KBmJ1Y2tldBgBIAEoCUIl4EEC+kEfCh1zdG9yYWdlLmdvb2'
+    'dsZWFwaXMuY29tL0J1Y2tldFIGYnVja2V0EhsKBm9iamVjdBgCIAEoCUID4EECUgZvYmplY3QS'
+    'IwoKZ2VuZXJhdGlvbhgDIAEoA0ID4EECUgpnZW5lcmF0aW9uEjsKF2lmX21ldGFnZW5lcmF0aW'
+    '9uX21hdGNoGAQgASgDSABSFWlmTWV0YWdlbmVyYXRpb25NYXRjaIgBARJCChtpZl9tZXRhZ2Vu'
+    'ZXJhdGlvbl9ub3RfbWF0Y2gYBSABKANIAVIYaWZNZXRhZ2VuZXJhdGlvbk5vdE1hdGNoiAEBEi'
+    'gKDXJvdXRpbmdfdG9rZW4YBiABKAlIAlIMcm91dGluZ1Rva2VuiAEBEkoKDHdyaXRlX2hhbmRs'
+    'ZRgHIAEoCzIiLmdvb2dsZS5zdG9yYWdlLnYyLkJpZGlXcml0ZUhhbmRsZUgDUgt3cml0ZUhhbm'
+    'RsZYgBAUIaChhfaWZfbWV0YWdlbmVyYXRpb25fbWF0Y2hCHgocX2lmX21ldGFnZW5lcmF0aW9u'
+    'X25vdF9tYXRjaEIQCg5fcm91dGluZ190b2tlbkIPCg1fd3JpdGVfaGFuZGxl');
+
 @$core.Deprecated('Use bidiWriteObjectRequestDescriptor instead')
 const BidiWriteObjectRequest$json = {
   '1': 'BidiWriteObjectRequest',
@@ -1035,6 +1486,15 @@ const BidiWriteObjectRequest$json = {
       '6': '.google.storage.v2.WriteObjectSpec',
       '9': 0,
       '10': 'writeObjectSpec'
+    },
+    {
+      '1': 'append_object_spec',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.AppendObjectSpec',
+      '9': 0,
+      '10': 'appendObjectSpec'
     },
     {'1': 'write_offset', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'writeOffset'},
     {
@@ -1076,15 +1536,16 @@ const BidiWriteObjectRequest$json = {
 final $typed_data.Uint8List bidiWriteObjectRequestDescriptor = $convert.base64Decode(
     'ChZCaWRpV3JpdGVPYmplY3RSZXF1ZXN0Eh0KCXVwbG9hZF9pZBgBIAEoCUgAUgh1cGxvYWRJZB'
     'JQChF3cml0ZV9vYmplY3Rfc3BlYxgCIAEoCzIiLmdvb2dsZS5zdG9yYWdlLnYyLldyaXRlT2Jq'
-    'ZWN0U3BlY0gAUg93cml0ZU9iamVjdFNwZWMSJgoMd3JpdGVfb2Zmc2V0GAMgASgDQgPgQQJSC3'
-    'dyaXRlT2Zmc2V0Ek8KEGNoZWNrc3VtbWVkX2RhdGEYBCABKAsyIi5nb29nbGUuc3RvcmFnZS52'
-    'Mi5DaGVja3N1bW1lZERhdGFIAVIPY2hlY2tzdW1tZWREYXRhEk0KEG9iamVjdF9jaGVja3N1bX'
-    'MYBiABKAsyIi5nb29nbGUuc3RvcmFnZS52Mi5PYmplY3RDaGVja3N1bXNSD29iamVjdENoZWNr'
-    'c3VtcxIhCgxzdGF0ZV9sb29rdXAYByABKAhSC3N0YXRlTG9va3VwEhQKBWZsdXNoGAggASgIUg'
-    'VmbHVzaBIhCgxmaW5pc2hfd3JpdGUYCSABKAhSC2ZpbmlzaFdyaXRlEm0KHGNvbW1vbl9vYmpl'
-    'Y3RfcmVxdWVzdF9wYXJhbXMYCiABKAsyLC5nb29nbGUuc3RvcmFnZS52Mi5Db21tb25PYmplY3'
-    'RSZXF1ZXN0UGFyYW1zUhljb21tb25PYmplY3RSZXF1ZXN0UGFyYW1zQg8KDWZpcnN0X21lc3Nh'
-    'Z2VCBgoEZGF0YQ==');
+    'ZWN0U3BlY0gAUg93cml0ZU9iamVjdFNwZWMSUwoSYXBwZW5kX29iamVjdF9zcGVjGAsgASgLMi'
+    'MuZ29vZ2xlLnN0b3JhZ2UudjIuQXBwZW5kT2JqZWN0U3BlY0gAUhBhcHBlbmRPYmplY3RTcGVj'
+    'EiYKDHdyaXRlX29mZnNldBgDIAEoA0ID4EECUgt3cml0ZU9mZnNldBJPChBjaGVja3N1bW1lZF'
+    '9kYXRhGAQgASgLMiIuZ29vZ2xlLnN0b3JhZ2UudjIuQ2hlY2tzdW1tZWREYXRhSAFSD2NoZWNr'
+    'c3VtbWVkRGF0YRJNChBvYmplY3RfY2hlY2tzdW1zGAYgASgLMiIuZ29vZ2xlLnN0b3JhZ2Uudj'
+    'IuT2JqZWN0Q2hlY2tzdW1zUg9vYmplY3RDaGVja3N1bXMSIQoMc3RhdGVfbG9va3VwGAcgASgI'
+    'UgtzdGF0ZUxvb2t1cBIUCgVmbHVzaBgIIAEoCFIFZmx1c2gSIQoMZmluaXNoX3dyaXRlGAkgAS'
+    'gIUgtmaW5pc2hXcml0ZRJtChxjb21tb25fb2JqZWN0X3JlcXVlc3RfcGFyYW1zGAogASgLMiwu'
+    'Z29vZ2xlLnN0b3JhZ2UudjIuQ29tbW9uT2JqZWN0UmVxdWVzdFBhcmFtc1IZY29tbW9uT2JqZW'
+    'N0UmVxdWVzdFBhcmFtc0IPCg1maXJzdF9tZXNzYWdlQgYKBGRhdGE=');
 
 @$core.Deprecated('Use bidiWriteObjectResponseDescriptor instead')
 const BidiWriteObjectResponse$json = {
@@ -1107,9 +1568,20 @@ const BidiWriteObjectResponse$json = {
       '9': 0,
       '10': 'resource'
     },
+    {
+      '1': 'write_handle',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storage.v2.BidiWriteHandle',
+      '9': 1,
+      '10': 'writeHandle',
+      '17': true
+    },
   ],
   '8': [
     {'1': 'write_status'},
+    {'1': '_write_handle'},
   ],
 };
 
@@ -1117,7 +1589,9 @@ const BidiWriteObjectResponse$json = {
 final $typed_data.Uint8List bidiWriteObjectResponseDescriptor = $convert.base64Decode(
     'ChdCaWRpV3JpdGVPYmplY3RSZXNwb25zZRInCg5wZXJzaXN0ZWRfc2l6ZRgBIAEoA0gAUg1wZX'
     'JzaXN0ZWRTaXplEjcKCHJlc291cmNlGAIgASgLMhkuZ29vZ2xlLnN0b3JhZ2UudjIuT2JqZWN0'
-    'SABSCHJlc291cmNlQg4KDHdyaXRlX3N0YXR1cw==');
+    'SABSCHJlc291cmNlEkoKDHdyaXRlX2hhbmRsZRgDIAEoCzIiLmdvb2dsZS5zdG9yYWdlLnYyLk'
+    'JpZGlXcml0ZUhhbmRsZUgBUgt3cml0ZUhhbmRsZYgBAUIOCgx3cml0ZV9zdGF0dXNCDwoNX3dy'
+    'aXRlX2hhbmRsZQ==');
 
 @$core.Deprecated('Use listObjectsRequestDescriptor instead')
 const ListObjectsRequest$json = {

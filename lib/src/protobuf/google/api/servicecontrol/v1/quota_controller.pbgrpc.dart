@@ -15,26 +15,26 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'quota_controller.pb.dart' as $39;
+import 'quota_controller.pb.dart' as $57;
 
 export 'quota_controller.pb.dart';
 
 @$pb.GrpcServiceName('google.api.servicecontrol.v1.QuotaController')
 class QuotaControllerClient extends $grpc.Client {
   static final _$allocateQuota =
-      $grpc.ClientMethod<$39.AllocateQuotaRequest, $39.AllocateQuotaResponse>(
+      $grpc.ClientMethod<$57.AllocateQuotaRequest, $57.AllocateQuotaResponse>(
           '/google.api.servicecontrol.v1.QuotaController/AllocateQuota',
-          ($39.AllocateQuotaRequest value) => value.writeToBuffer(),
+          ($57.AllocateQuotaRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $39.AllocateQuotaResponse.fromBuffer(value));
+              $57.AllocateQuotaResponse.fromBuffer(value));
 
   QuotaControllerClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$39.AllocateQuotaResponse> allocateQuota(
-      $39.AllocateQuotaRequest request,
+  $grpc.ResponseFuture<$57.AllocateQuotaResponse> allocateQuota(
+      $57.AllocateQuotaRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$allocateQuota, request, options: options);
   }
@@ -45,23 +45,23 @@ abstract class QuotaControllerServiceBase extends $grpc.Service {
   $core.String get $name => 'google.api.servicecontrol.v1.QuotaController';
 
   QuotaControllerServiceBase() {
-    $addMethod($grpc.ServiceMethod<$39.AllocateQuotaRequest,
-            $39.AllocateQuotaResponse>(
+    $addMethod($grpc.ServiceMethod<$57.AllocateQuotaRequest,
+            $57.AllocateQuotaResponse>(
         'AllocateQuota',
         allocateQuota_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $39.AllocateQuotaRequest.fromBuffer(value),
-        ($39.AllocateQuotaResponse value) => value.writeToBuffer()));
+            $57.AllocateQuotaRequest.fromBuffer(value),
+        ($57.AllocateQuotaResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$39.AllocateQuotaResponse> allocateQuota_Pre(
+  $async.Future<$57.AllocateQuotaResponse> allocateQuota_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$39.AllocateQuotaRequest> request) async {
+      $async.Future<$57.AllocateQuotaRequest> request) async {
     return allocateQuota(call, await request);
   }
 
-  $async.Future<$39.AllocateQuotaResponse> allocateQuota(
-      $grpc.ServiceCall call, $39.AllocateQuotaRequest request);
+  $async.Future<$57.AllocateQuotaResponse> allocateQuota(
+      $grpc.ServiceCall call, $57.AllocateQuotaRequest request);
 }

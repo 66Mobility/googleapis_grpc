@@ -11,15 +11,17 @@
 
 import 'dart:core' as $core;
 
+import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $266;
-import '../../protobuf/wrappers.pb.dart' as $309;
-import '../../rpc/status.pb.dart' as $324;
+import '../../protobuf/duration.pb.dart' as $292;
+import '../../protobuf/wrappers.pb.dart' as $335;
+import '../../rpc/status.pb.dart' as $350;
+import '../../type/timeofday.pb.dart' as $565;
 import 'alert.pbenum.dart';
-import 'common.pb.dart' as $535;
-import 'common.pbenum.dart' as $535;
-import 'mutation_record.pb.dart' as $534;
+import 'common.pb.dart' as $564;
+import 'common.pbenum.dart' as $564;
+import 'mutation_record.pb.dart' as $563;
 
 export 'alert.pbenum.dart';
 
@@ -354,7 +356,7 @@ class AlertPolicy_Condition_Trigger extends $pb.GeneratedMessage {
 class AlertPolicy_Condition_MetricThreshold_ForecastOptions
     extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MetricThreshold_ForecastOptions({
-    $266.Duration? forecastHorizon,
+    $292.Duration? forecastHorizon,
   }) {
     final $result = create();
     if (forecastHorizon != null) {
@@ -379,8 +381,8 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'forecastHorizon',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'forecastHorizon',
+        subBuilder: $292.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -423,9 +425,9 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions
   /// considered to be failing.
   /// The forecast horizon can range from 1 hour to 60 hours.
   @$pb.TagNumber(1)
-  $266.Duration get forecastHorizon => $_getN(0);
+  $292.Duration get forecastHorizon => $_getN(0);
   @$pb.TagNumber(1)
-  set forecastHorizon($266.Duration v) {
+  set forecastHorizon($292.Duration v) {
     setField(1, v);
   }
 
@@ -434,7 +436,7 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions
   @$pb.TagNumber(1)
   void clearForecastHorizon() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensureForecastHorizon() => $_ensure(0);
+  $292.Duration ensureForecastHorizon() => $_ensure(0);
 }
 
 /// A condition type that compares a collection of time series
@@ -442,13 +444,13 @@ class AlertPolicy_Condition_MetricThreshold_ForecastOptions
 class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MetricThreshold({
     $core.String? filter,
-    $535.ComparisonType? comparison,
+    $564.ComparisonType? comparison,
     $core.double? thresholdValue,
-    $266.Duration? duration,
+    $292.Duration? duration,
     AlertPolicy_Condition_Trigger? trigger,
-    $core.Iterable<$535.Aggregation>? aggregations,
+    $core.Iterable<$564.Aggregation>? aggregations,
     $core.String? denominatorFilter,
-    $core.Iterable<$535.Aggregation>? denominatorAggregations,
+    $core.Iterable<$564.Aggregation>? denominatorAggregations,
     AlertPolicy_Condition_EvaluationMissingData? evaluationMissingData,
     AlertPolicy_Condition_MetricThreshold_ForecastOptions? forecastOptions,
   }) {
@@ -500,24 +502,24 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'filter')
-    ..e<$535.ComparisonType>(
+    ..e<$564.ComparisonType>(
         4, _omitFieldNames ? '' : 'comparison', $pb.PbFieldType.OE,
-        defaultOrMaker: $535.ComparisonType.COMPARISON_UNSPECIFIED,
-        valueOf: $535.ComparisonType.valueOf,
-        enumValues: $535.ComparisonType.values)
+        defaultOrMaker: $564.ComparisonType.COMPARISON_UNSPECIFIED,
+        valueOf: $564.ComparisonType.valueOf,
+        enumValues: $564.ComparisonType.values)
     ..a<$core.double>(
         5, _omitFieldNames ? '' : 'thresholdValue', $pb.PbFieldType.OD)
-    ..aOM<$266.Duration>(6, _omitFieldNames ? '' : 'duration',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(6, _omitFieldNames ? '' : 'duration',
+        subBuilder: $292.Duration.create)
     ..aOM<AlertPolicy_Condition_Trigger>(7, _omitFieldNames ? '' : 'trigger',
         subBuilder: AlertPolicy_Condition_Trigger.create)
-    ..pc<$535.Aggregation>(
+    ..pc<$564.Aggregation>(
         8, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM,
-        subBuilder: $535.Aggregation.create)
+        subBuilder: $564.Aggregation.create)
     ..aOS(9, _omitFieldNames ? '' : 'denominatorFilter')
-    ..pc<$535.Aggregation>(10, _omitFieldNames ? '' : 'denominatorAggregations',
+    ..pc<$564.Aggregation>(10, _omitFieldNames ? '' : 'denominatorAggregations',
         $pb.PbFieldType.PM,
-        subBuilder: $535.Aggregation.create)
+        subBuilder: $564.Aggregation.create)
     ..e<AlertPolicy_Condition_EvaluationMissingData>(
         11, _omitFieldNames ? '' : 'evaluationMissingData', $pb.PbFieldType.OE,
         defaultOrMaker: AlertPolicy_Condition_EvaluationMissingData
@@ -588,9 +590,9 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   ///
   ///  Only `COMPARISON_LT` and `COMPARISON_GT` are supported currently.
   @$pb.TagNumber(4)
-  $535.ComparisonType get comparison => $_getN(1);
+  $564.ComparisonType get comparison => $_getN(1);
   @$pb.TagNumber(4)
-  set comparison($535.ComparisonType v) {
+  set comparison($564.ComparisonType v) {
     setField(4, v);
   }
 
@@ -623,9 +625,9 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   /// outlier does not generate spurious alerts, but short enough that
   /// unhealthy states are detected and alerted on quickly.
   @$pb.TagNumber(6)
-  $266.Duration get duration => $_getN(3);
+  $292.Duration get duration => $_getN(3);
   @$pb.TagNumber(6)
-  set duration($266.Duration v) {
+  set duration($292.Duration v) {
     setField(6, v);
   }
 
@@ -634,7 +636,7 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $266.Duration ensureDuration() => $_ensure(3);
+  $292.Duration ensureDuration() => $_ensure(3);
 
   /// The number/percent of time series for which the comparison must hold
   /// in order for the condition to trigger. If unspecified, then the
@@ -668,7 +670,7 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   ///  It is advisable to use the `ListTimeSeries` method when debugging this
   ///  field.
   @$pb.TagNumber(8)
-  $core.List<$535.Aggregation> get aggregations => $_getList(5);
+  $core.List<$564.Aggregation> get aggregations => $_getList(5);
 
   ///  A [filter](https://cloud.google.com/monitoring/api/v3/filters) that
   ///  identifies a time series that should be used as the denominator of a
@@ -702,7 +704,7 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
   ///  `denominator_aggregations` fields must use the same alignment period
   ///  and produce time series that have the same periodicity and labels.
   @$pb.TagNumber(10)
-  $core.List<$535.Aggregation> get denominatorAggregations => $_getList(7);
+  $core.List<$564.Aggregation> get denominatorAggregations => $_getList(7);
 
   /// A condition control that determines how metric-threshold conditions
   /// are evaluated when data stops arriving. To use this control, the value
@@ -750,9 +752,9 @@ class AlertPolicy_Condition_MetricThreshold extends $pb.GeneratedMessage {
 class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MetricAbsence({
     $core.String? filter,
-    $266.Duration? duration,
+    $292.Duration? duration,
     AlertPolicy_Condition_Trigger? trigger,
-    $core.Iterable<$535.Aggregation>? aggregations,
+    $core.Iterable<$564.Aggregation>? aggregations,
   }) {
     final $result = create();
     if (filter != null) {
@@ -784,13 +786,13 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'filter')
-    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'duration',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $292.Duration.create)
     ..aOM<AlertPolicy_Condition_Trigger>(3, _omitFieldNames ? '' : 'trigger',
         subBuilder: AlertPolicy_Condition_Trigger.create)
-    ..pc<$535.Aggregation>(
+    ..pc<$564.Aggregation>(
         5, _omitFieldNames ? '' : 'aggregations', $pb.PbFieldType.PM,
-        subBuilder: $535.Aggregation.create)
+        subBuilder: $564.Aggregation.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -852,9 +854,9 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   /// error will be returned. The `Duration.nanos` field is
   /// ignored.
   @$pb.TagNumber(2)
-  $266.Duration get duration => $_getN(1);
+  $292.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($266.Duration v) {
+  set duration($292.Duration v) {
     setField(2, v);
   }
 
@@ -863,7 +865,7 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $266.Duration ensureDuration() => $_ensure(1);
+  $292.Duration ensureDuration() => $_ensure(1);
 
   /// The number/percent of time series for which the comparison must hold
   /// in order for the condition to trigger. If unspecified, then the
@@ -895,7 +897,7 @@ class AlertPolicy_Condition_MetricAbsence extends $pb.GeneratedMessage {
   ///  It is advisable to use the `ListTimeSeries` method when debugging this
   ///  field.
   @$pb.TagNumber(5)
-  $core.List<$535.Aggregation> get aggregations => $_getList(3);
+  $core.List<$564.Aggregation> get aggregations => $_getList(3);
 }
 
 /// A condition type that checks whether a log message in the [scoping
@@ -1000,7 +1002,7 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition
     extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_MonitoringQueryLanguageCondition({
     $core.String? query,
-    $266.Duration? duration,
+    $292.Duration? duration,
     AlertPolicy_Condition_Trigger? trigger,
     AlertPolicy_Condition_EvaluationMissingData? evaluationMissingData,
   }) {
@@ -1037,8 +1039,8 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'query')
-    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'duration',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $292.Duration.create)
     ..aOM<AlertPolicy_Condition_Trigger>(3, _omitFieldNames ? '' : 'trigger',
         subBuilder: AlertPolicy_Condition_Trigger.create)
     ..e<AlertPolicy_Condition_EvaluationMissingData>(
@@ -1107,9 +1109,9 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition
   /// outlier does not generate spurious alerts, but short enough that
   /// unhealthy states are detected and alerted on quickly.
   @$pb.TagNumber(2)
-  $266.Duration get duration => $_getN(1);
+  $292.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($266.Duration v) {
+  set duration($292.Duration v) {
     setField(2, v);
   }
 
@@ -1118,7 +1120,7 @@ class AlertPolicy_Condition_MonitoringQueryLanguageCondition
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $266.Duration ensureDuration() => $_ensure(1);
+  $292.Duration ensureDuration() => $_ensure(1);
 
   /// The number/percent of time series for which the comparison must hold
   /// in order for the condition to trigger. If unspecified, then the
@@ -1191,11 +1193,12 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
     extends $pb.GeneratedMessage {
   factory AlertPolicy_Condition_PrometheusQueryLanguageCondition({
     $core.String? query,
-    $266.Duration? duration,
-    $266.Duration? evaluationInterval,
+    $292.Duration? duration,
+    $292.Duration? evaluationInterval,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? ruleGroup,
     $core.String? alertRule,
+    $core.bool? disableMetricValidation,
   }) {
     final $result = create();
     if (query != null) {
@@ -1215,6 +1218,9 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
     }
     if (alertRule != null) {
       $result.alertRule = alertRule;
+    }
+    if (disableMetricValidation != null) {
+      $result.disableMetricValidation = disableMetricValidation;
     }
     return $result;
   }
@@ -1236,10 +1242,10 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'query')
-    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'duration',
-        subBuilder: $266.Duration.create)
-    ..aOM<$266.Duration>(3, _omitFieldNames ? '' : 'evaluationInterval',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(2, _omitFieldNames ? '' : 'duration',
+        subBuilder: $292.Duration.create)
+    ..aOM<$292.Duration>(3, _omitFieldNames ? '' : 'evaluationInterval',
+        subBuilder: $292.Duration.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName:
             'AlertPolicy.Condition.PrometheusQueryLanguageCondition.LabelsEntry',
@@ -1248,6 +1254,7 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
         packageName: const $pb.PackageName('google.monitoring.v3'))
     ..aOS(5, _omitFieldNames ? '' : 'ruleGroup')
     ..aOS(6, _omitFieldNames ? '' : 'alertRule')
+    ..aOB(7, _omitFieldNames ? '' : 'disableMetricValidation')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1305,9 +1312,9 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
   /// Must be a non-negative duration or missing.
   /// This field is optional. Its default value is zero.
   @$pb.TagNumber(2)
-  $266.Duration get duration => $_getN(1);
+  $292.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($266.Duration v) {
+  set duration($292.Duration v) {
     setField(2, v);
   }
 
@@ -1316,7 +1323,7 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $266.Duration ensureDuration() => $_ensure(1);
+  $292.Duration ensureDuration() => $_ensure(1);
 
   /// Optional. How often this rule should be evaluated.
   /// Must be a positive multiple of 30 seconds or missing.
@@ -1325,9 +1332,9 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
   /// Prometheus alerting rule, then this value should be taken from the
   /// enclosing rule group.
   @$pb.TagNumber(3)
-  $266.Duration get evaluationInterval => $_getN(2);
+  $292.Duration get evaluationInterval => $_getN(2);
   @$pb.TagNumber(3)
-  set evaluationInterval($266.Duration v) {
+  set evaluationInterval($292.Duration v) {
     setField(3, v);
   }
 
@@ -1336,7 +1343,7 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
   @$pb.TagNumber(3)
   void clearEvaluationInterval() => clearField(3);
   @$pb.TagNumber(3)
-  $266.Duration ensureEvaluationInterval() => $_ensure(2);
+  $292.Duration ensureEvaluationInterval() => $_ensure(2);
 
   /// Optional. Labels to add to or overwrite in the PromQL query result.
   /// Label names [must be
@@ -1396,6 +1403,699 @@ class AlertPolicy_Condition_PrometheusQueryLanguageCondition
   $core.bool hasAlertRule() => $_has(5);
   @$pb.TagNumber(6)
   void clearAlertRule() => clearField(6);
+
+  ///  Optional. Whether to disable metric existence validation for this
+  ///  condition.
+  ///
+  ///  This allows alerting policies to be defined on metrics that do not yet
+  ///  exist, improving advanced customer workflows such as configuring
+  ///  alerting policies using Terraform.
+  ///
+  ///  Users with the `monitoring.alertPolicyViewer` role are able to see the
+  ///  name of the non-existent metric in the alerting policy condition.
+  @$pb.TagNumber(7)
+  $core.bool get disableMetricValidation => $_getBF(6);
+  @$pb.TagNumber(7)
+  set disableMetricValidation($core.bool v) {
+    $_setBool(6, v);
+  }
+
+  @$pb.TagNumber(7)
+  $core.bool hasDisableMetricValidation() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearDisableMetricValidation() => clearField(7);
+}
+
+/// Used to schedule the query to run every so many minutes.
+class AlertPolicy_Condition_SqlCondition_Minutes extends $pb.GeneratedMessage {
+  factory AlertPolicy_Condition_SqlCondition_Minutes({
+    $core.int? periodicity,
+  }) {
+    final $result = create();
+    if (periodicity != null) {
+      $result.periodicity = periodicity;
+    }
+    return $result;
+  }
+  AlertPolicy_Condition_SqlCondition_Minutes._() : super();
+  factory AlertPolicy_Condition_SqlCondition_Minutes.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_SqlCondition_Minutes.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Condition.SqlCondition.Minutes',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..a<$core.int>(1, _omitFieldNames ? '' : 'periodicity', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition_Minutes clone() =>
+      AlertPolicy_Condition_SqlCondition_Minutes()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition_Minutes copyWith(
+          void Function(AlertPolicy_Condition_SqlCondition_Minutes) updates) =>
+      super.copyWith((message) =>
+              updates(message as AlertPolicy_Condition_SqlCondition_Minutes))
+          as AlertPolicy_Condition_SqlCondition_Minutes;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition_Minutes create() =>
+      AlertPolicy_Condition_SqlCondition_Minutes._();
+  AlertPolicy_Condition_SqlCondition_Minutes createEmptyInstance() => create();
+  static $pb.PbList<AlertPolicy_Condition_SqlCondition_Minutes>
+      createRepeated() =>
+          $pb.PbList<AlertPolicy_Condition_SqlCondition_Minutes>();
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition_Minutes getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_Condition_SqlCondition_Minutes>(create);
+  static AlertPolicy_Condition_SqlCondition_Minutes? _defaultInstance;
+
+  /// Required. Number of minutes between runs. The interval must be
+  /// greater than or equal to 5 minutes and less than or equal to 1440
+  /// minutes.
+  @$pb.TagNumber(1)
+  $core.int get periodicity => $_getIZ(0);
+  @$pb.TagNumber(1)
+  set periodicity($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasPeriodicity() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearPeriodicity() => clearField(1);
+}
+
+/// Used to schedule the query to run every so many hours.
+class AlertPolicy_Condition_SqlCondition_Hourly extends $pb.GeneratedMessage {
+  factory AlertPolicy_Condition_SqlCondition_Hourly({
+    $core.int? periodicity,
+    $core.int? minuteOffset,
+  }) {
+    final $result = create();
+    if (periodicity != null) {
+      $result.periodicity = periodicity;
+    }
+    if (minuteOffset != null) {
+      $result.minuteOffset = minuteOffset;
+    }
+    return $result;
+  }
+  AlertPolicy_Condition_SqlCondition_Hourly._() : super();
+  factory AlertPolicy_Condition_SqlCondition_Hourly.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_SqlCondition_Hourly.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Condition.SqlCondition.Hourly',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..a<$core.int>(1, _omitFieldNames ? '' : 'periodicity', $pb.PbFieldType.O3)
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'minuteOffset', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition_Hourly clone() =>
+      AlertPolicy_Condition_SqlCondition_Hourly()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition_Hourly copyWith(
+          void Function(AlertPolicy_Condition_SqlCondition_Hourly) updates) =>
+      super.copyWith((message) =>
+              updates(message as AlertPolicy_Condition_SqlCondition_Hourly))
+          as AlertPolicy_Condition_SqlCondition_Hourly;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition_Hourly create() =>
+      AlertPolicy_Condition_SqlCondition_Hourly._();
+  AlertPolicy_Condition_SqlCondition_Hourly createEmptyInstance() => create();
+  static $pb.PbList<AlertPolicy_Condition_SqlCondition_Hourly>
+      createRepeated() =>
+          $pb.PbList<AlertPolicy_Condition_SqlCondition_Hourly>();
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition_Hourly getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_Condition_SqlCondition_Hourly>(create);
+  static AlertPolicy_Condition_SqlCondition_Hourly? _defaultInstance;
+
+  /// Required. The number of hours between runs. Must be greater than or
+  /// equal to 1 hour and less than or equal to 48 hours.
+  @$pb.TagNumber(1)
+  $core.int get periodicity => $_getIZ(0);
+  @$pb.TagNumber(1)
+  set periodicity($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasPeriodicity() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearPeriodicity() => clearField(1);
+
+  /// Optional. The number of minutes after the hour (in UTC) to run the
+  /// query. Must be greater than or equal to 0 minutes and less than or
+  /// equal to 59 minutes.  If left unspecified, then an arbitrary offset
+  /// is used.
+  @$pb.TagNumber(2)
+  $core.int get minuteOffset => $_getIZ(1);
+  @$pb.TagNumber(2)
+  set minuteOffset($core.int v) {
+    $_setSignedInt32(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasMinuteOffset() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearMinuteOffset() => clearField(2);
+}
+
+/// Used to schedule the query to run every so many days.
+class AlertPolicy_Condition_SqlCondition_Daily extends $pb.GeneratedMessage {
+  factory AlertPolicy_Condition_SqlCondition_Daily({
+    $core.int? periodicity,
+    $565.TimeOfDay? executionTime,
+  }) {
+    final $result = create();
+    if (periodicity != null) {
+      $result.periodicity = periodicity;
+    }
+    if (executionTime != null) {
+      $result.executionTime = executionTime;
+    }
+    return $result;
+  }
+  AlertPolicy_Condition_SqlCondition_Daily._() : super();
+  factory AlertPolicy_Condition_SqlCondition_Daily.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_SqlCondition_Daily.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Condition.SqlCondition.Daily',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..a<$core.int>(1, _omitFieldNames ? '' : 'periodicity', $pb.PbFieldType.O3)
+    ..aOM<$565.TimeOfDay>(2, _omitFieldNames ? '' : 'executionTime',
+        subBuilder: $565.TimeOfDay.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition_Daily clone() =>
+      AlertPolicy_Condition_SqlCondition_Daily()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition_Daily copyWith(
+          void Function(AlertPolicy_Condition_SqlCondition_Daily) updates) =>
+      super.copyWith((message) =>
+              updates(message as AlertPolicy_Condition_SqlCondition_Daily))
+          as AlertPolicy_Condition_SqlCondition_Daily;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition_Daily create() =>
+      AlertPolicy_Condition_SqlCondition_Daily._();
+  AlertPolicy_Condition_SqlCondition_Daily createEmptyInstance() => create();
+  static $pb.PbList<AlertPolicy_Condition_SqlCondition_Daily>
+      createRepeated() =>
+          $pb.PbList<AlertPolicy_Condition_SqlCondition_Daily>();
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition_Daily getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_Condition_SqlCondition_Daily>(create);
+  static AlertPolicy_Condition_SqlCondition_Daily? _defaultInstance;
+
+  /// Required. The number of days between runs. Must be greater than or
+  /// equal to 1 day and less than or equal to 31 days.
+  @$pb.TagNumber(1)
+  $core.int get periodicity => $_getIZ(0);
+  @$pb.TagNumber(1)
+  set periodicity($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasPeriodicity() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearPeriodicity() => clearField(1);
+
+  /// Optional. The time of day (in UTC) at which the query should run. If
+  /// left unspecified, the server picks an arbitrary time of day and runs
+  /// the query at the same time each day.
+  @$pb.TagNumber(2)
+  $565.TimeOfDay get executionTime => $_getN(1);
+  @$pb.TagNumber(2)
+  set executionTime($565.TimeOfDay v) {
+    setField(2, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasExecutionTime() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearExecutionTime() => clearField(2);
+  @$pb.TagNumber(2)
+  $565.TimeOfDay ensureExecutionTime() => $_ensure(1);
+}
+
+/// A test that checks if the number of rows in the result set
+/// violates some threshold.
+class AlertPolicy_Condition_SqlCondition_RowCountTest
+    extends $pb.GeneratedMessage {
+  factory AlertPolicy_Condition_SqlCondition_RowCountTest({
+    $564.ComparisonType? comparison,
+    $fixnum.Int64? threshold,
+  }) {
+    final $result = create();
+    if (comparison != null) {
+      $result.comparison = comparison;
+    }
+    if (threshold != null) {
+      $result.threshold = threshold;
+    }
+    return $result;
+  }
+  AlertPolicy_Condition_SqlCondition_RowCountTest._() : super();
+  factory AlertPolicy_Condition_SqlCondition_RowCountTest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_SqlCondition_RowCountTest.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'AlertPolicy.Condition.SqlCondition.RowCountTest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..e<$564.ComparisonType>(
+        1, _omitFieldNames ? '' : 'comparison', $pb.PbFieldType.OE,
+        defaultOrMaker: $564.ComparisonType.COMPARISON_UNSPECIFIED,
+        valueOf: $564.ComparisonType.valueOf,
+        enumValues: $564.ComparisonType.values)
+    ..aInt64(2, _omitFieldNames ? '' : 'threshold')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition_RowCountTest clone() =>
+      AlertPolicy_Condition_SqlCondition_RowCountTest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition_RowCountTest copyWith(
+          void Function(AlertPolicy_Condition_SqlCondition_RowCountTest)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as AlertPolicy_Condition_SqlCondition_RowCountTest))
+          as AlertPolicy_Condition_SqlCondition_RowCountTest;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition_RowCountTest create() =>
+      AlertPolicy_Condition_SqlCondition_RowCountTest._();
+  AlertPolicy_Condition_SqlCondition_RowCountTest createEmptyInstance() =>
+      create();
+  static $pb.PbList<AlertPolicy_Condition_SqlCondition_RowCountTest>
+      createRepeated() =>
+          $pb.PbList<AlertPolicy_Condition_SqlCondition_RowCountTest>();
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition_RowCountTest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_Condition_SqlCondition_RowCountTest>(create);
+  static AlertPolicy_Condition_SqlCondition_RowCountTest? _defaultInstance;
+
+  /// Required. The comparison to apply between the number of rows returned
+  /// by the query and the threshold.
+  @$pb.TagNumber(1)
+  $564.ComparisonType get comparison => $_getN(0);
+  @$pb.TagNumber(1)
+  set comparison($564.ComparisonType v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasComparison() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearComparison() => clearField(1);
+
+  /// Required. The value against which to compare the row count.
+  @$pb.TagNumber(2)
+  $fixnum.Int64 get threshold => $_getI64(1);
+  @$pb.TagNumber(2)
+  set threshold($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasThreshold() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearThreshold() => clearField(2);
+}
+
+/// A test that uses an alerting result in a boolean column produced by
+/// the SQL query.
+class AlertPolicy_Condition_SqlCondition_BooleanTest
+    extends $pb.GeneratedMessage {
+  factory AlertPolicy_Condition_SqlCondition_BooleanTest({
+    $core.String? column,
+  }) {
+    final $result = create();
+    if (column != null) {
+      $result.column = column;
+    }
+    return $result;
+  }
+  AlertPolicy_Condition_SqlCondition_BooleanTest._() : super();
+  factory AlertPolicy_Condition_SqlCondition_BooleanTest.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_SqlCondition_BooleanTest.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Condition.SqlCondition.BooleanTest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'column')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition_BooleanTest clone() =>
+      AlertPolicy_Condition_SqlCondition_BooleanTest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition_BooleanTest copyWith(
+          void Function(AlertPolicy_Condition_SqlCondition_BooleanTest)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as AlertPolicy_Condition_SqlCondition_BooleanTest))
+          as AlertPolicy_Condition_SqlCondition_BooleanTest;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition_BooleanTest create() =>
+      AlertPolicy_Condition_SqlCondition_BooleanTest._();
+  AlertPolicy_Condition_SqlCondition_BooleanTest createEmptyInstance() =>
+      create();
+  static $pb.PbList<AlertPolicy_Condition_SqlCondition_BooleanTest>
+      createRepeated() =>
+          $pb.PbList<AlertPolicy_Condition_SqlCondition_BooleanTest>();
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition_BooleanTest getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          AlertPolicy_Condition_SqlCondition_BooleanTest>(create);
+  static AlertPolicy_Condition_SqlCondition_BooleanTest? _defaultInstance;
+
+  /// Required. The name of the column containing the boolean value. If the
+  /// value in a row is NULL, that row is ignored.
+  @$pb.TagNumber(1)
+  $core.String get column => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set column($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasColumn() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearColumn() => clearField(1);
+}
+
+enum AlertPolicy_Condition_SqlCondition_Schedule {
+  minutes,
+  hourly,
+  daily,
+  notSet
+}
+
+enum AlertPolicy_Condition_SqlCondition_Evaluate {
+  rowCountTest,
+  booleanTest,
+  notSet
+}
+
+/// A condition that allows alerting policies to be defined using GoogleSQL.
+/// SQL conditions examine a sliding window of logs using GoogleSQL.
+/// Alert policies with SQL conditions may incur additional billing.
+class AlertPolicy_Condition_SqlCondition extends $pb.GeneratedMessage {
+  factory AlertPolicy_Condition_SqlCondition({
+    $core.String? query,
+    AlertPolicy_Condition_SqlCondition_Minutes? minutes,
+    AlertPolicy_Condition_SqlCondition_Hourly? hourly,
+    AlertPolicy_Condition_SqlCondition_Daily? daily,
+    AlertPolicy_Condition_SqlCondition_RowCountTest? rowCountTest,
+    AlertPolicy_Condition_SqlCondition_BooleanTest? booleanTest,
+  }) {
+    final $result = create();
+    if (query != null) {
+      $result.query = query;
+    }
+    if (minutes != null) {
+      $result.minutes = minutes;
+    }
+    if (hourly != null) {
+      $result.hourly = hourly;
+    }
+    if (daily != null) {
+      $result.daily = daily;
+    }
+    if (rowCountTest != null) {
+      $result.rowCountTest = rowCountTest;
+    }
+    if (booleanTest != null) {
+      $result.booleanTest = booleanTest;
+    }
+    return $result;
+  }
+  AlertPolicy_Condition_SqlCondition._() : super();
+  factory AlertPolicy_Condition_SqlCondition.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory AlertPolicy_Condition_SqlCondition.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, AlertPolicy_Condition_SqlCondition_Schedule>
+      _AlertPolicy_Condition_SqlCondition_ScheduleByTag = {
+    2: AlertPolicy_Condition_SqlCondition_Schedule.minutes,
+    3: AlertPolicy_Condition_SqlCondition_Schedule.hourly,
+    4: AlertPolicy_Condition_SqlCondition_Schedule.daily,
+    0: AlertPolicy_Condition_SqlCondition_Schedule.notSet
+  };
+  static const $core.Map<$core.int, AlertPolicy_Condition_SqlCondition_Evaluate>
+      _AlertPolicy_Condition_SqlCondition_EvaluateByTag = {
+    5: AlertPolicy_Condition_SqlCondition_Evaluate.rowCountTest,
+    6: AlertPolicy_Condition_SqlCondition_Evaluate.booleanTest,
+    0: AlertPolicy_Condition_SqlCondition_Evaluate.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'AlertPolicy.Condition.SqlCondition',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.monitoring.v3'),
+      createEmptyInstance: create)
+    ..oo(0, [2, 3, 4])
+    ..oo(1, [5, 6])
+    ..aOS(1, _omitFieldNames ? '' : 'query')
+    ..aOM<AlertPolicy_Condition_SqlCondition_Minutes>(
+        2, _omitFieldNames ? '' : 'minutes',
+        subBuilder: AlertPolicy_Condition_SqlCondition_Minutes.create)
+    ..aOM<AlertPolicy_Condition_SqlCondition_Hourly>(
+        3, _omitFieldNames ? '' : 'hourly',
+        subBuilder: AlertPolicy_Condition_SqlCondition_Hourly.create)
+    ..aOM<AlertPolicy_Condition_SqlCondition_Daily>(
+        4, _omitFieldNames ? '' : 'daily',
+        subBuilder: AlertPolicy_Condition_SqlCondition_Daily.create)
+    ..aOM<AlertPolicy_Condition_SqlCondition_RowCountTest>(
+        5, _omitFieldNames ? '' : 'rowCountTest',
+        subBuilder: AlertPolicy_Condition_SqlCondition_RowCountTest.create)
+    ..aOM<AlertPolicy_Condition_SqlCondition_BooleanTest>(
+        6, _omitFieldNames ? '' : 'booleanTest',
+        subBuilder: AlertPolicy_Condition_SqlCondition_BooleanTest.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition clone() =>
+      AlertPolicy_Condition_SqlCondition()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  AlertPolicy_Condition_SqlCondition copyWith(
+          void Function(AlertPolicy_Condition_SqlCondition) updates) =>
+      super.copyWith((message) =>
+              updates(message as AlertPolicy_Condition_SqlCondition))
+          as AlertPolicy_Condition_SqlCondition;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition create() =>
+      AlertPolicy_Condition_SqlCondition._();
+  AlertPolicy_Condition_SqlCondition createEmptyInstance() => create();
+  static $pb.PbList<AlertPolicy_Condition_SqlCondition> createRepeated() =>
+      $pb.PbList<AlertPolicy_Condition_SqlCondition>();
+  @$core.pragma('dart2js:noInline')
+  static AlertPolicy_Condition_SqlCondition getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<AlertPolicy_Condition_SqlCondition>(
+          create);
+  static AlertPolicy_Condition_SqlCondition? _defaultInstance;
+
+  AlertPolicy_Condition_SqlCondition_Schedule whichSchedule() =>
+      _AlertPolicy_Condition_SqlCondition_ScheduleByTag[$_whichOneof(0)]!;
+  void clearSchedule() => clearField($_whichOneof(0));
+
+  AlertPolicy_Condition_SqlCondition_Evaluate whichEvaluate() =>
+      _AlertPolicy_Condition_SqlCondition_EvaluateByTag[$_whichOneof(1)]!;
+  void clearEvaluate() => clearField($_whichOneof(1));
+
+  ///  Required. The Log Analytics SQL query to run, as a string.  The query
+  ///  must conform to the required shape. Specifically, the query must not
+  ///  try to filter the input by time.  A filter will automatically be
+  ///  applied to filter the input so that the query receives all rows
+  ///  received since the last time the query was run.
+  ///
+  ///  For example, the following query extracts all log entries containing an
+  ///  HTTP request:
+  ///
+  ///      SELECT
+  ///        timestamp, log_name, severity, http_request, resource, labels
+  ///      FROM
+  ///        my-project.global._Default._AllLogs
+  ///      WHERE
+  ///        http_request IS NOT NULL
+  @$pb.TagNumber(1)
+  $core.String get query => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set query($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasQuery() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearQuery() => clearField(1);
+
+  /// Schedule the query to execute every so many minutes.
+  @$pb.TagNumber(2)
+  AlertPolicy_Condition_SqlCondition_Minutes get minutes => $_getN(1);
+  @$pb.TagNumber(2)
+  set minutes(AlertPolicy_Condition_SqlCondition_Minutes v) {
+    setField(2, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasMinutes() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearMinutes() => clearField(2);
+  @$pb.TagNumber(2)
+  AlertPolicy_Condition_SqlCondition_Minutes ensureMinutes() => $_ensure(1);
+
+  /// Schedule the query to execute every so many hours.
+  @$pb.TagNumber(3)
+  AlertPolicy_Condition_SqlCondition_Hourly get hourly => $_getN(2);
+  @$pb.TagNumber(3)
+  set hourly(AlertPolicy_Condition_SqlCondition_Hourly v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasHourly() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearHourly() => clearField(3);
+  @$pb.TagNumber(3)
+  AlertPolicy_Condition_SqlCondition_Hourly ensureHourly() => $_ensure(2);
+
+  /// Schedule the query to execute every so many days.
+  @$pb.TagNumber(4)
+  AlertPolicy_Condition_SqlCondition_Daily get daily => $_getN(3);
+  @$pb.TagNumber(4)
+  set daily(AlertPolicy_Condition_SqlCondition_Daily v) {
+    setField(4, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasDaily() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearDaily() => clearField(4);
+  @$pb.TagNumber(4)
+  AlertPolicy_Condition_SqlCondition_Daily ensureDaily() => $_ensure(3);
+
+  /// Test the row count against a threshold.
+  @$pb.TagNumber(5)
+  AlertPolicy_Condition_SqlCondition_RowCountTest get rowCountTest => $_getN(4);
+  @$pb.TagNumber(5)
+  set rowCountTest(AlertPolicy_Condition_SqlCondition_RowCountTest v) {
+    setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasRowCountTest() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearRowCountTest() => clearField(5);
+  @$pb.TagNumber(5)
+  AlertPolicy_Condition_SqlCondition_RowCountTest ensureRowCountTest() =>
+      $_ensure(4);
+
+  /// Test the boolean value in the indicated column.
+  @$pb.TagNumber(6)
+  AlertPolicy_Condition_SqlCondition_BooleanTest get booleanTest => $_getN(5);
+  @$pb.TagNumber(6)
+  set booleanTest(AlertPolicy_Condition_SqlCondition_BooleanTest v) {
+    setField(6, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasBooleanTest() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearBooleanTest() => clearField(6);
+  @$pb.TagNumber(6)
+  AlertPolicy_Condition_SqlCondition_BooleanTest ensureBooleanTest() =>
+      $_ensure(5);
 }
 
 enum AlertPolicy_Condition_Condition {
@@ -1404,6 +2104,7 @@ enum AlertPolicy_Condition_Condition {
   conditionMonitoringQueryLanguage,
   conditionMatchedLog,
   conditionPrometheusQueryLanguage,
+  conditionSql,
   notSet
 }
 
@@ -1421,6 +2122,7 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
     AlertPolicy_Condition_LogMatch? conditionMatchedLog,
     AlertPolicy_Condition_PrometheusQueryLanguageCondition?
         conditionPrometheusQueryLanguage,
+    AlertPolicy_Condition_SqlCondition? conditionSql,
   }) {
     final $result = create();
     if (conditionThreshold != null) {
@@ -1446,6 +2148,9 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
       $result.conditionPrometheusQueryLanguage =
           conditionPrometheusQueryLanguage;
     }
+    if (conditionSql != null) {
+      $result.conditionSql = conditionSql;
+    }
     return $result;
   }
   AlertPolicy_Condition._() : super();
@@ -1463,6 +2168,7 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
     19: AlertPolicy_Condition_Condition.conditionMonitoringQueryLanguage,
     20: AlertPolicy_Condition_Condition.conditionMatchedLog,
     21: AlertPolicy_Condition_Condition.conditionPrometheusQueryLanguage,
+    22: AlertPolicy_Condition_Condition.conditionSql,
     0: AlertPolicy_Condition_Condition.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
@@ -1470,7 +2176,7 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..oo(0, [1, 2, 19, 20, 21])
+    ..oo(0, [1, 2, 19, 20, 21, 22])
     ..aOM<AlertPolicy_Condition_MetricThreshold>(
         1, _omitFieldNames ? '' : 'conditionThreshold',
         subBuilder: AlertPolicy_Condition_MetricThreshold.create)
@@ -1490,6 +2196,9 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
         21, _omitFieldNames ? '' : 'conditionPrometheusQueryLanguage',
         subBuilder:
             AlertPolicy_Condition_PrometheusQueryLanguageCondition.create)
+    ..aOM<AlertPolicy_Condition_SqlCondition>(
+        22, _omitFieldNames ? '' : 'conditionSql',
+        subBuilder: AlertPolicy_Condition_SqlCondition.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1657,6 +2366,21 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   AlertPolicy_Condition_PrometheusQueryLanguageCondition
       ensureConditionPrometheusQueryLanguage() => $_ensure(6);
+
+  /// A condition that periodically evaluates a SQL query result.
+  @$pb.TagNumber(22)
+  AlertPolicy_Condition_SqlCondition get conditionSql => $_getN(7);
+  @$pb.TagNumber(22)
+  set conditionSql(AlertPolicy_Condition_SqlCondition v) {
+    setField(22, v);
+  }
+
+  @$pb.TagNumber(22)
+  $core.bool hasConditionSql() => $_has(7);
+  @$pb.TagNumber(22)
+  void clearConditionSql() => clearField(22);
+  @$pb.TagNumber(22)
+  AlertPolicy_Condition_SqlCondition ensureConditionSql() => $_ensure(7);
 }
 
 /// Control over the rate of notifications sent to this alerting policy's
@@ -1664,7 +2388,7 @@ class AlertPolicy_Condition extends $pb.GeneratedMessage {
 class AlertPolicy_AlertStrategy_NotificationRateLimit
     extends $pb.GeneratedMessage {
   factory AlertPolicy_AlertStrategy_NotificationRateLimit({
-    $266.Duration? period,
+    $292.Duration? period,
   }) {
     final $result = create();
     if (period != null) {
@@ -1689,8 +2413,8 @@ class AlertPolicy_AlertStrategy_NotificationRateLimit
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'period',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'period',
+        subBuilder: $292.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1726,9 +2450,9 @@ class AlertPolicy_AlertStrategy_NotificationRateLimit
 
   /// Not more than one notification per `period`.
   @$pb.TagNumber(1)
-  $266.Duration get period => $_getN(0);
+  $292.Duration get period => $_getN(0);
   @$pb.TagNumber(1)
-  set period($266.Duration v) {
+  set period($292.Duration v) {
     setField(1, v);
   }
 
@@ -1737,7 +2461,7 @@ class AlertPolicy_AlertStrategy_NotificationRateLimit
   @$pb.TagNumber(1)
   void clearPeriod() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensurePeriod() => $_ensure(0);
+  $292.Duration ensurePeriod() => $_ensure(0);
 }
 
 /// Control over how the notification channels in `notification_channels`
@@ -1746,7 +2470,7 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy
     extends $pb.GeneratedMessage {
   factory AlertPolicy_AlertStrategy_NotificationChannelStrategy({
     $core.Iterable<$core.String>? notificationChannelNames,
-    $266.Duration? renotifyInterval,
+    $292.Duration? renotifyInterval,
   }) {
     final $result = create();
     if (notificationChannelNames != null) {
@@ -1775,8 +2499,8 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'notificationChannelNames')
-    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'renotifyInterval',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(2, _omitFieldNames ? '' : 'renotifyInterval',
+        subBuilder: $292.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1825,9 +2549,9 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy
   /// The frequency at which to send reminder notifications for open
   /// incidents.
   @$pb.TagNumber(2)
-  $266.Duration get renotifyInterval => $_getN(1);
+  $292.Duration get renotifyInterval => $_getN(1);
   @$pb.TagNumber(2)
-  set renotifyInterval($266.Duration v) {
+  set renotifyInterval($292.Duration v) {
     setField(2, v);
   }
 
@@ -1836,7 +2560,7 @@ class AlertPolicy_AlertStrategy_NotificationChannelStrategy
   @$pb.TagNumber(2)
   void clearRenotifyInterval() => clearField(2);
   @$pb.TagNumber(2)
-  $266.Duration ensureRenotifyInterval() => $_ensure(1);
+  $292.Duration ensureRenotifyInterval() => $_ensure(1);
 }
 
 /// Control over how the notification channels in `notification_channels`
@@ -1846,7 +2570,7 @@ class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
     AlertPolicy_AlertStrategy_NotificationRateLimit? notificationRateLimit,
     $core.Iterable<AlertPolicy_AlertStrategy_NotificationPrompt>?
         notificationPrompts,
-    $266.Duration? autoClose,
+    $292.Duration? autoClose,
     $core.Iterable<AlertPolicy_AlertStrategy_NotificationChannelStrategy>?
         notificationChannelStrategy,
   }) {
@@ -1887,8 +2611,8 @@ class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
         enumValues: AlertPolicy_AlertStrategy_NotificationPrompt.values,
         defaultEnumValue: AlertPolicy_AlertStrategy_NotificationPrompt
             .NOTIFICATION_PROMPT_UNSPECIFIED)
-    ..aOM<$266.Duration>(3, _omitFieldNames ? '' : 'autoClose',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(3, _omitFieldNames ? '' : 'autoClose',
+        subBuilder: $292.Duration.create)
     ..pc<AlertPolicy_AlertStrategy_NotificationChannelStrategy>(
         4,
         _omitFieldNames ? '' : 'notificationChannelStrategy',
@@ -1953,9 +2677,9 @@ class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
   /// If an alerting policy that was active has no data for this long, any open
   /// incidents will close
   @$pb.TagNumber(3)
-  $266.Duration get autoClose => $_getN(2);
+  $292.Duration get autoClose => $_getN(2);
   @$pb.TagNumber(3)
-  set autoClose($266.Duration v) {
+  set autoClose($292.Duration v) {
     setField(3, v);
   }
 
@@ -1964,7 +2688,7 @@ class AlertPolicy_AlertStrategy extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAutoClose() => clearField(3);
   @$pb.TagNumber(3)
-  $266.Duration ensureAutoClose() => $_ensure(2);
+  $292.Duration ensureAutoClose() => $_ensure(2);
 
   /// Control how notifications will be sent out, on a per-channel basis.
   @$pb.TagNumber(4)
@@ -1981,14 +2705,14 @@ class AlertPolicy extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     AlertPolicy_ConditionCombinerType? combiner,
-    $534.MutationRecord? creationRecord,
-    $534.MutationRecord? mutationRecord,
+    $563.MutationRecord? creationRecord,
+    $563.MutationRecord? mutationRecord,
     $core.Iterable<AlertPolicy_Condition>? conditions,
     AlertPolicy_Documentation? documentation,
     $core.Iterable<$core.String>? notificationChannels,
     $core.Map<$core.String, $core.String>? userLabels,
-    $309.BoolValue? enabled,
-    $324.Status? validity,
+    $335.BoolValue? enabled,
+    $350.Status? validity,
     AlertPolicy_AlertStrategy? alertStrategy,
     AlertPolicy_Severity? severity,
   }) {
@@ -2054,10 +2778,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
         defaultOrMaker: AlertPolicy_ConditionCombinerType.COMBINE_UNSPECIFIED,
         valueOf: AlertPolicy_ConditionCombinerType.valueOf,
         enumValues: AlertPolicy_ConditionCombinerType.values)
-    ..aOM<$534.MutationRecord>(10, _omitFieldNames ? '' : 'creationRecord',
-        subBuilder: $534.MutationRecord.create)
-    ..aOM<$534.MutationRecord>(11, _omitFieldNames ? '' : 'mutationRecord',
-        subBuilder: $534.MutationRecord.create)
+    ..aOM<$563.MutationRecord>(10, _omitFieldNames ? '' : 'creationRecord',
+        subBuilder: $563.MutationRecord.create)
+    ..aOM<$563.MutationRecord>(11, _omitFieldNames ? '' : 'mutationRecord',
+        subBuilder: $563.MutationRecord.create)
     ..pc<AlertPolicy_Condition>(
         12, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM,
         subBuilder: AlertPolicy_Condition.create)
@@ -2069,10 +2793,10 @@ class AlertPolicy extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.monitoring.v3'))
-    ..aOM<$309.BoolValue>(17, _omitFieldNames ? '' : 'enabled',
-        subBuilder: $309.BoolValue.create)
-    ..aOM<$324.Status>(18, _omitFieldNames ? '' : 'validity',
-        subBuilder: $324.Status.create)
+    ..aOM<$335.BoolValue>(17, _omitFieldNames ? '' : 'enabled',
+        subBuilder: $335.BoolValue.create)
+    ..aOM<$350.Status>(18, _omitFieldNames ? '' : 'validity',
+        subBuilder: $350.Status.create)
     ..aOM<AlertPolicy_AlertStrategy>(21, _omitFieldNames ? '' : 'alertStrategy',
         subBuilder: AlertPolicy_AlertStrategy.create)
     ..e<AlertPolicy_Severity>(
@@ -2167,9 +2891,9 @@ class AlertPolicy extends $pb.GeneratedMessage {
   /// A read-only record of the creation of the alerting policy. If provided
   /// in a call to create or update, this field will be ignored.
   @$pb.TagNumber(10)
-  $534.MutationRecord get creationRecord => $_getN(3);
+  $563.MutationRecord get creationRecord => $_getN(3);
   @$pb.TagNumber(10)
-  set creationRecord($534.MutationRecord v) {
+  set creationRecord($563.MutationRecord v) {
     setField(10, v);
   }
 
@@ -2178,14 +2902,14 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearCreationRecord() => clearField(10);
   @$pb.TagNumber(10)
-  $534.MutationRecord ensureCreationRecord() => $_ensure(3);
+  $563.MutationRecord ensureCreationRecord() => $_ensure(3);
 
   /// A read-only record of the most recent change to the alerting policy. If
   /// provided in a call to create or update, this field will be ignored.
   @$pb.TagNumber(11)
-  $534.MutationRecord get mutationRecord => $_getN(4);
+  $563.MutationRecord get mutationRecord => $_getN(4);
   @$pb.TagNumber(11)
-  set mutationRecord($534.MutationRecord v) {
+  set mutationRecord($563.MutationRecord v) {
     setField(11, v);
   }
 
@@ -2194,7 +2918,7 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   void clearMutationRecord() => clearField(11);
   @$pb.TagNumber(11)
-  $534.MutationRecord ensureMutationRecord() => $_ensure(4);
+  $563.MutationRecord ensureMutationRecord() => $_ensure(4);
 
   /// A list of conditions for the policy. The conditions are combined by AND or
   /// OR according to the `combiner` field. If the combined conditions evaluate
@@ -2262,9 +2986,9 @@ class AlertPolicy extends $pb.GeneratedMessage {
   /// field should always be populated on List and Get operations, unless
   /// a field projection has been specified that strips it out.
   @$pb.TagNumber(17)
-  $309.BoolValue get enabled => $_getN(9);
+  $335.BoolValue get enabled => $_getN(9);
   @$pb.TagNumber(17)
-  set enabled($309.BoolValue v) {
+  set enabled($335.BoolValue v) {
     setField(17, v);
   }
 
@@ -2273,15 +2997,15 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearEnabled() => clearField(17);
   @$pb.TagNumber(17)
-  $309.BoolValue ensureEnabled() => $_ensure(9);
+  $335.BoolValue ensureEnabled() => $_ensure(9);
 
   /// Read-only description of how the alerting policy is invalid. This field is
   /// only set when the alerting policy is invalid. An invalid alerting policy
   /// will not generate incidents.
   @$pb.TagNumber(18)
-  $324.Status get validity => $_getN(10);
+  $350.Status get validity => $_getN(10);
   @$pb.TagNumber(18)
-  set validity($324.Status v) {
+  set validity($350.Status v) {
     setField(18, v);
   }
 
@@ -2290,7 +3014,7 @@ class AlertPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   void clearValidity() => clearField(18);
   @$pb.TagNumber(18)
-  $324.Status ensureValidity() => $_ensure(10);
+  $350.Status ensureValidity() => $_ensure(10);
 
   /// Control over how this alerting policy's notification channels are notified.
   @$pb.TagNumber(21)

@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../policy.pb.dart' as $88;
+import '../policy.pb.dart' as $106;
 
 /// Audit log information specific to Cloud IAM. This message is serialized
 /// as an `Any` type in the `ServiceData` message of an
 /// `AuditLog` message.
 class AuditData extends $pb.GeneratedMessage {
   factory AuditData({
-    $88.PolicyDelta? policyDelta,
+    $106.PolicyDelta? policyDelta,
   }) {
     final $result = create();
     if (policyDelta != null) {
@@ -41,8 +41,8 @@ class AuditData extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.iam.v1.logging'),
       createEmptyInstance: create)
-    ..aOM<$88.PolicyDelta>(2, _omitFieldNames ? '' : 'policyDelta',
-        subBuilder: $88.PolicyDelta.create)
+    ..aOM<$106.PolicyDelta>(2, _omitFieldNames ? '' : 'policyDelta',
+        subBuilder: $106.PolicyDelta.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -68,9 +68,9 @@ class AuditData extends $pb.GeneratedMessage {
 
   /// Policy delta between the original policy and the newly set policy.
   @$pb.TagNumber(2)
-  $88.PolicyDelta get policyDelta => $_getN(0);
+  $106.PolicyDelta get policyDelta => $_getN(0);
   @$pb.TagNumber(2)
-  set policyDelta($88.PolicyDelta v) {
+  set policyDelta($106.PolicyDelta v) {
     setField(2, v);
   }
 
@@ -79,7 +79,7 @@ class AuditData extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearPolicyDelta() => clearField(2);
   @$pb.TagNumber(2)
-  $88.PolicyDelta ensurePolicyDelta() => $_ensure(0);
+  $106.PolicyDelta ensurePolicyDelta() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

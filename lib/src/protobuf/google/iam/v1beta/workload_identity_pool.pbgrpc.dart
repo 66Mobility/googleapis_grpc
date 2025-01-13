@@ -16,86 +16,86 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../longrunning/operations.pb.dart' as $13;
-import 'workload_identity_pool.pb.dart' as $146;
+import 'workload_identity_pool.pb.dart' as $164;
 
 export 'workload_identity_pool.pb.dart';
 
 @$pb.GrpcServiceName('google.iam.v1beta.WorkloadIdentityPools')
 class WorkloadIdentityPoolsClient extends $grpc.Client {
   static final _$listWorkloadIdentityPools = $grpc.ClientMethod<
-          $146.ListWorkloadIdentityPoolsRequest,
-          $146.ListWorkloadIdentityPoolsResponse>(
+          $164.ListWorkloadIdentityPoolsRequest,
+          $164.ListWorkloadIdentityPoolsResponse>(
       '/google.iam.v1beta.WorkloadIdentityPools/ListWorkloadIdentityPools',
-      ($146.ListWorkloadIdentityPoolsRequest value) => value.writeToBuffer(),
+      ($164.ListWorkloadIdentityPoolsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $146.ListWorkloadIdentityPoolsResponse.fromBuffer(value));
+          $164.ListWorkloadIdentityPoolsResponse.fromBuffer(value));
   static final _$getWorkloadIdentityPool = $grpc.ClientMethod<
-          $146.GetWorkloadIdentityPoolRequest, $146.WorkloadIdentityPool>(
+          $164.GetWorkloadIdentityPoolRequest, $164.WorkloadIdentityPool>(
       '/google.iam.v1beta.WorkloadIdentityPools/GetWorkloadIdentityPool',
-      ($146.GetWorkloadIdentityPoolRequest value) => value.writeToBuffer(),
+      ($164.GetWorkloadIdentityPoolRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $146.WorkloadIdentityPool.fromBuffer(value));
+          $164.WorkloadIdentityPool.fromBuffer(value));
   static final _$createWorkloadIdentityPool =
-      $grpc.ClientMethod<$146.CreateWorkloadIdentityPoolRequest, $13.Operation>(
+      $grpc.ClientMethod<$164.CreateWorkloadIdentityPoolRequest, $13.Operation>(
           '/google.iam.v1beta.WorkloadIdentityPools/CreateWorkloadIdentityPool',
-          ($146.CreateWorkloadIdentityPoolRequest value) =>
+          ($164.CreateWorkloadIdentityPoolRequest value) =>
               value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$updateWorkloadIdentityPool =
-      $grpc.ClientMethod<$146.UpdateWorkloadIdentityPoolRequest, $13.Operation>(
+      $grpc.ClientMethod<$164.UpdateWorkloadIdentityPoolRequest, $13.Operation>(
           '/google.iam.v1beta.WorkloadIdentityPools/UpdateWorkloadIdentityPool',
-          ($146.UpdateWorkloadIdentityPoolRequest value) =>
+          ($164.UpdateWorkloadIdentityPoolRequest value) =>
               value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$deleteWorkloadIdentityPool =
-      $grpc.ClientMethod<$146.DeleteWorkloadIdentityPoolRequest, $13.Operation>(
+      $grpc.ClientMethod<$164.DeleteWorkloadIdentityPoolRequest, $13.Operation>(
           '/google.iam.v1beta.WorkloadIdentityPools/DeleteWorkloadIdentityPool',
-          ($146.DeleteWorkloadIdentityPoolRequest value) =>
+          ($164.DeleteWorkloadIdentityPoolRequest value) =>
               value.writeToBuffer(),
           ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$undeleteWorkloadIdentityPool = $grpc.ClientMethod<
-          $146.UndeleteWorkloadIdentityPoolRequest, $13.Operation>(
+          $164.UndeleteWorkloadIdentityPoolRequest, $13.Operation>(
       '/google.iam.v1beta.WorkloadIdentityPools/UndeleteWorkloadIdentityPool',
-      ($146.UndeleteWorkloadIdentityPoolRequest value) => value.writeToBuffer(),
+      ($164.UndeleteWorkloadIdentityPoolRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$listWorkloadIdentityPoolProviders = $grpc.ClientMethod<
-          $146.ListWorkloadIdentityPoolProvidersRequest,
-          $146.ListWorkloadIdentityPoolProvidersResponse>(
+          $164.ListWorkloadIdentityPoolProvidersRequest,
+          $164.ListWorkloadIdentityPoolProvidersResponse>(
       '/google.iam.v1beta.WorkloadIdentityPools/ListWorkloadIdentityPoolProviders',
-      ($146.ListWorkloadIdentityPoolProvidersRequest value) =>
+      ($164.ListWorkloadIdentityPoolProvidersRequest value) =>
           value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $146.ListWorkloadIdentityPoolProvidersResponse.fromBuffer(value));
+          $164.ListWorkloadIdentityPoolProvidersResponse.fromBuffer(value));
   static final _$getWorkloadIdentityPoolProvider = $grpc.ClientMethod<
-          $146.GetWorkloadIdentityPoolProviderRequest,
-          $146.WorkloadIdentityPoolProvider>(
+          $164.GetWorkloadIdentityPoolProviderRequest,
+          $164.WorkloadIdentityPoolProvider>(
       '/google.iam.v1beta.WorkloadIdentityPools/GetWorkloadIdentityPoolProvider',
-      ($146.GetWorkloadIdentityPoolProviderRequest value) =>
+      ($164.GetWorkloadIdentityPoolProviderRequest value) =>
           value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $146.WorkloadIdentityPoolProvider.fromBuffer(value));
+          $164.WorkloadIdentityPoolProvider.fromBuffer(value));
   static final _$createWorkloadIdentityPoolProvider = $grpc.ClientMethod<
-          $146.CreateWorkloadIdentityPoolProviderRequest, $13.Operation>(
+          $164.CreateWorkloadIdentityPoolProviderRequest, $13.Operation>(
       '/google.iam.v1beta.WorkloadIdentityPools/CreateWorkloadIdentityPoolProvider',
-      ($146.CreateWorkloadIdentityPoolProviderRequest value) =>
+      ($164.CreateWorkloadIdentityPoolProviderRequest value) =>
           value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$updateWorkloadIdentityPoolProvider = $grpc.ClientMethod<
-          $146.UpdateWorkloadIdentityPoolProviderRequest, $13.Operation>(
+          $164.UpdateWorkloadIdentityPoolProviderRequest, $13.Operation>(
       '/google.iam.v1beta.WorkloadIdentityPools/UpdateWorkloadIdentityPoolProvider',
-      ($146.UpdateWorkloadIdentityPoolProviderRequest value) =>
+      ($164.UpdateWorkloadIdentityPoolProviderRequest value) =>
           value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$deleteWorkloadIdentityPoolProvider = $grpc.ClientMethod<
-          $146.DeleteWorkloadIdentityPoolProviderRequest, $13.Operation>(
+          $164.DeleteWorkloadIdentityPoolProviderRequest, $13.Operation>(
       '/google.iam.v1beta.WorkloadIdentityPools/DeleteWorkloadIdentityPoolProvider',
-      ($146.DeleteWorkloadIdentityPoolProviderRequest value) =>
+      ($164.DeleteWorkloadIdentityPoolProviderRequest value) =>
           value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
   static final _$undeleteWorkloadIdentityPoolProvider = $grpc.ClientMethod<
-          $146.UndeleteWorkloadIdentityPoolProviderRequest, $13.Operation>(
+          $164.UndeleteWorkloadIdentityPoolProviderRequest, $13.Operation>(
       '/google.iam.v1beta.WorkloadIdentityPools/UndeleteWorkloadIdentityPoolProvider',
-      ($146.UndeleteWorkloadIdentityPoolProviderRequest value) =>
+      ($164.UndeleteWorkloadIdentityPoolProviderRequest value) =>
           value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
 
@@ -104,87 +104,87 @@ class WorkloadIdentityPoolsClient extends $grpc.Client {
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$146.ListWorkloadIdentityPoolsResponse>
-      listWorkloadIdentityPools($146.ListWorkloadIdentityPoolsRequest request,
+  $grpc.ResponseFuture<$164.ListWorkloadIdentityPoolsResponse>
+      listWorkloadIdentityPools($164.ListWorkloadIdentityPoolsRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listWorkloadIdentityPools, request,
         options: options);
   }
 
-  $grpc.ResponseFuture<$146.WorkloadIdentityPool> getWorkloadIdentityPool(
-      $146.GetWorkloadIdentityPoolRequest request,
+  $grpc.ResponseFuture<$164.WorkloadIdentityPool> getWorkloadIdentityPool(
+      $164.GetWorkloadIdentityPoolRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getWorkloadIdentityPool, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> createWorkloadIdentityPool(
-      $146.CreateWorkloadIdentityPoolRequest request,
+      $164.CreateWorkloadIdentityPoolRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createWorkloadIdentityPool, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> updateWorkloadIdentityPool(
-      $146.UpdateWorkloadIdentityPoolRequest request,
+      $164.UpdateWorkloadIdentityPoolRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateWorkloadIdentityPool, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> deleteWorkloadIdentityPool(
-      $146.DeleteWorkloadIdentityPoolRequest request,
+      $164.DeleteWorkloadIdentityPoolRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteWorkloadIdentityPool, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> undeleteWorkloadIdentityPool(
-      $146.UndeleteWorkloadIdentityPoolRequest request,
+      $164.UndeleteWorkloadIdentityPoolRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$undeleteWorkloadIdentityPool, request,
         options: options);
   }
 
-  $grpc.ResponseFuture<$146.ListWorkloadIdentityPoolProvidersResponse>
+  $grpc.ResponseFuture<$164.ListWorkloadIdentityPoolProvidersResponse>
       listWorkloadIdentityPoolProviders(
-          $146.ListWorkloadIdentityPoolProvidersRequest request,
+          $164.ListWorkloadIdentityPoolProvidersRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listWorkloadIdentityPoolProviders, request,
         options: options);
   }
 
-  $grpc.ResponseFuture<$146.WorkloadIdentityPoolProvider>
+  $grpc.ResponseFuture<$164.WorkloadIdentityPoolProvider>
       getWorkloadIdentityPoolProvider(
-          $146.GetWorkloadIdentityPoolProviderRequest request,
+          $164.GetWorkloadIdentityPoolProviderRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getWorkloadIdentityPoolProvider, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> createWorkloadIdentityPoolProvider(
-      $146.CreateWorkloadIdentityPoolProviderRequest request,
+      $164.CreateWorkloadIdentityPoolProviderRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createWorkloadIdentityPoolProvider, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> updateWorkloadIdentityPoolProvider(
-      $146.UpdateWorkloadIdentityPoolProviderRequest request,
+      $164.UpdateWorkloadIdentityPoolProviderRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateWorkloadIdentityPoolProvider, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> deleteWorkloadIdentityPoolProvider(
-      $146.DeleteWorkloadIdentityPoolProviderRequest request,
+      $164.DeleteWorkloadIdentityPoolProviderRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteWorkloadIdentityPoolProvider, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$13.Operation> undeleteWorkloadIdentityPoolProvider(
-      $146.UndeleteWorkloadIdentityPoolProviderRequest request,
+      $164.UndeleteWorkloadIdentityPoolProviderRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$undeleteWorkloadIdentityPoolProvider, request,
         options: options);
@@ -196,228 +196,228 @@ abstract class WorkloadIdentityPoolsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.iam.v1beta.WorkloadIdentityPools';
 
   WorkloadIdentityPoolsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$146.ListWorkloadIdentityPoolsRequest,
-            $146.ListWorkloadIdentityPoolsResponse>(
+    $addMethod($grpc.ServiceMethod<$164.ListWorkloadIdentityPoolsRequest,
+            $164.ListWorkloadIdentityPoolsResponse>(
         'ListWorkloadIdentityPools',
         listWorkloadIdentityPools_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.ListWorkloadIdentityPoolsRequest.fromBuffer(value),
-        ($146.ListWorkloadIdentityPoolsResponse value) =>
+            $164.ListWorkloadIdentityPoolsRequest.fromBuffer(value),
+        ($164.ListWorkloadIdentityPoolsResponse value) =>
             value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$146.GetWorkloadIdentityPoolRequest,
-            $146.WorkloadIdentityPool>(
+    $addMethod($grpc.ServiceMethod<$164.GetWorkloadIdentityPoolRequest,
+            $164.WorkloadIdentityPool>(
         'GetWorkloadIdentityPool',
         getWorkloadIdentityPool_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.GetWorkloadIdentityPoolRequest.fromBuffer(value),
-        ($146.WorkloadIdentityPool value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$146.CreateWorkloadIdentityPoolRequest,
+            $164.GetWorkloadIdentityPoolRequest.fromBuffer(value),
+        ($164.WorkloadIdentityPool value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$164.CreateWorkloadIdentityPoolRequest,
             $13.Operation>(
         'CreateWorkloadIdentityPool',
         createWorkloadIdentityPool_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.CreateWorkloadIdentityPoolRequest.fromBuffer(value),
+            $164.CreateWorkloadIdentityPoolRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$146.UpdateWorkloadIdentityPoolRequest,
+    $addMethod($grpc.ServiceMethod<$164.UpdateWorkloadIdentityPoolRequest,
             $13.Operation>(
         'UpdateWorkloadIdentityPool',
         updateWorkloadIdentityPool_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.UpdateWorkloadIdentityPoolRequest.fromBuffer(value),
+            $164.UpdateWorkloadIdentityPoolRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$146.DeleteWorkloadIdentityPoolRequest,
+    $addMethod($grpc.ServiceMethod<$164.DeleteWorkloadIdentityPoolRequest,
             $13.Operation>(
         'DeleteWorkloadIdentityPool',
         deleteWorkloadIdentityPool_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.DeleteWorkloadIdentityPoolRequest.fromBuffer(value),
+            $164.DeleteWorkloadIdentityPoolRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$146.UndeleteWorkloadIdentityPoolRequest,
+    $addMethod($grpc.ServiceMethod<$164.UndeleteWorkloadIdentityPoolRequest,
             $13.Operation>(
         'UndeleteWorkloadIdentityPool',
         undeleteWorkloadIdentityPool_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.UndeleteWorkloadIdentityPoolRequest.fromBuffer(value),
+            $164.UndeleteWorkloadIdentityPoolRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
     $addMethod($grpc.ServiceMethod<
-            $146.ListWorkloadIdentityPoolProvidersRequest,
-            $146.ListWorkloadIdentityPoolProvidersResponse>(
+            $164.ListWorkloadIdentityPoolProvidersRequest,
+            $164.ListWorkloadIdentityPoolProvidersResponse>(
         'ListWorkloadIdentityPoolProviders',
         listWorkloadIdentityPoolProviders_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.ListWorkloadIdentityPoolProvidersRequest.fromBuffer(value),
-        ($146.ListWorkloadIdentityPoolProvidersResponse value) =>
+            $164.ListWorkloadIdentityPoolProvidersRequest.fromBuffer(value),
+        ($164.ListWorkloadIdentityPoolProvidersResponse value) =>
             value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$146.GetWorkloadIdentityPoolProviderRequest,
-            $146.WorkloadIdentityPoolProvider>(
+    $addMethod($grpc.ServiceMethod<$164.GetWorkloadIdentityPoolProviderRequest,
+            $164.WorkloadIdentityPoolProvider>(
         'GetWorkloadIdentityPoolProvider',
         getWorkloadIdentityPoolProvider_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.GetWorkloadIdentityPoolProviderRequest.fromBuffer(value),
-        ($146.WorkloadIdentityPoolProvider value) => value.writeToBuffer()));
+            $164.GetWorkloadIdentityPoolProviderRequest.fromBuffer(value),
+        ($164.WorkloadIdentityPoolProvider value) => value.writeToBuffer()));
     $addMethod($grpc.ServiceMethod<
-            $146.CreateWorkloadIdentityPoolProviderRequest, $13.Operation>(
+            $164.CreateWorkloadIdentityPoolProviderRequest, $13.Operation>(
         'CreateWorkloadIdentityPoolProvider',
         createWorkloadIdentityPoolProvider_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.CreateWorkloadIdentityPoolProviderRequest.fromBuffer(value),
+            $164.CreateWorkloadIdentityPoolProviderRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
     $addMethod($grpc.ServiceMethod<
-            $146.UpdateWorkloadIdentityPoolProviderRequest, $13.Operation>(
+            $164.UpdateWorkloadIdentityPoolProviderRequest, $13.Operation>(
         'UpdateWorkloadIdentityPoolProvider',
         updateWorkloadIdentityPoolProvider_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.UpdateWorkloadIdentityPoolProviderRequest.fromBuffer(value),
+            $164.UpdateWorkloadIdentityPoolProviderRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
     $addMethod($grpc.ServiceMethod<
-            $146.DeleteWorkloadIdentityPoolProviderRequest, $13.Operation>(
+            $164.DeleteWorkloadIdentityPoolProviderRequest, $13.Operation>(
         'DeleteWorkloadIdentityPoolProvider',
         deleteWorkloadIdentityPoolProvider_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.DeleteWorkloadIdentityPoolProviderRequest.fromBuffer(value),
+            $164.DeleteWorkloadIdentityPoolProviderRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
     $addMethod($grpc.ServiceMethod<
-            $146.UndeleteWorkloadIdentityPoolProviderRequest, $13.Operation>(
+            $164.UndeleteWorkloadIdentityPoolProviderRequest, $13.Operation>(
         'UndeleteWorkloadIdentityPoolProvider',
         undeleteWorkloadIdentityPoolProvider_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $146.UndeleteWorkloadIdentityPoolProviderRequest.fromBuffer(value),
+            $164.UndeleteWorkloadIdentityPoolProviderRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
   }
 
-  $async.Future<$146.ListWorkloadIdentityPoolsResponse>
+  $async.Future<$164.ListWorkloadIdentityPoolsResponse>
       listWorkloadIdentityPools_Pre($grpc.ServiceCall call,
-          $async.Future<$146.ListWorkloadIdentityPoolsRequest> request) async {
+          $async.Future<$164.ListWorkloadIdentityPoolsRequest> request) async {
     return listWorkloadIdentityPools(call, await request);
   }
 
-  $async.Future<$146.WorkloadIdentityPool> getWorkloadIdentityPool_Pre(
+  $async.Future<$164.WorkloadIdentityPool> getWorkloadIdentityPool_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$146.GetWorkloadIdentityPoolRequest> request) async {
+      $async.Future<$164.GetWorkloadIdentityPoolRequest> request) async {
     return getWorkloadIdentityPool(call, await request);
   }
 
   $async.Future<$13.Operation> createWorkloadIdentityPool_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$146.CreateWorkloadIdentityPoolRequest> request) async {
+      $async.Future<$164.CreateWorkloadIdentityPoolRequest> request) async {
     return createWorkloadIdentityPool(call, await request);
   }
 
   $async.Future<$13.Operation> updateWorkloadIdentityPool_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$146.UpdateWorkloadIdentityPoolRequest> request) async {
+      $async.Future<$164.UpdateWorkloadIdentityPoolRequest> request) async {
     return updateWorkloadIdentityPool(call, await request);
   }
 
   $async.Future<$13.Operation> deleteWorkloadIdentityPool_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$146.DeleteWorkloadIdentityPoolRequest> request) async {
+      $async.Future<$164.DeleteWorkloadIdentityPoolRequest> request) async {
     return deleteWorkloadIdentityPool(call, await request);
   }
 
   $async.Future<$13.Operation> undeleteWorkloadIdentityPool_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$146.UndeleteWorkloadIdentityPoolRequest> request) async {
+      $async.Future<$164.UndeleteWorkloadIdentityPoolRequest> request) async {
     return undeleteWorkloadIdentityPool(call, await request);
   }
 
-  $async.Future<$146.ListWorkloadIdentityPoolProvidersResponse>
+  $async.Future<$164.ListWorkloadIdentityPoolProvidersResponse>
       listWorkloadIdentityPoolProviders_Pre(
           $grpc.ServiceCall call,
-          $async.Future<$146.ListWorkloadIdentityPoolProvidersRequest>
+          $async.Future<$164.ListWorkloadIdentityPoolProvidersRequest>
               request) async {
     return listWorkloadIdentityPoolProviders(call, await request);
   }
 
-  $async.Future<$146.WorkloadIdentityPoolProvider>
+  $async.Future<$164.WorkloadIdentityPoolProvider>
       getWorkloadIdentityPoolProvider_Pre(
           $grpc.ServiceCall call,
-          $async.Future<$146.GetWorkloadIdentityPoolProviderRequest>
+          $async.Future<$164.GetWorkloadIdentityPoolProviderRequest>
               request) async {
     return getWorkloadIdentityPoolProvider(call, await request);
   }
 
   $async.Future<$13.Operation> createWorkloadIdentityPoolProvider_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$146.CreateWorkloadIdentityPoolProviderRequest>
+      $async.Future<$164.CreateWorkloadIdentityPoolProviderRequest>
           request) async {
     return createWorkloadIdentityPoolProvider(call, await request);
   }
 
   $async.Future<$13.Operation> updateWorkloadIdentityPoolProvider_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$146.UpdateWorkloadIdentityPoolProviderRequest>
+      $async.Future<$164.UpdateWorkloadIdentityPoolProviderRequest>
           request) async {
     return updateWorkloadIdentityPoolProvider(call, await request);
   }
 
   $async.Future<$13.Operation> deleteWorkloadIdentityPoolProvider_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$146.DeleteWorkloadIdentityPoolProviderRequest>
+      $async.Future<$164.DeleteWorkloadIdentityPoolProviderRequest>
           request) async {
     return deleteWorkloadIdentityPoolProvider(call, await request);
   }
 
   $async.Future<$13.Operation> undeleteWorkloadIdentityPoolProvider_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$146.UndeleteWorkloadIdentityPoolProviderRequest>
+      $async.Future<$164.UndeleteWorkloadIdentityPoolProviderRequest>
           request) async {
     return undeleteWorkloadIdentityPoolProvider(call, await request);
   }
 
-  $async.Future<$146.ListWorkloadIdentityPoolsResponse>
+  $async.Future<$164.ListWorkloadIdentityPoolsResponse>
       listWorkloadIdentityPools($grpc.ServiceCall call,
-          $146.ListWorkloadIdentityPoolsRequest request);
-  $async.Future<$146.WorkloadIdentityPool> getWorkloadIdentityPool(
-      $grpc.ServiceCall call, $146.GetWorkloadIdentityPoolRequest request);
+          $164.ListWorkloadIdentityPoolsRequest request);
+  $async.Future<$164.WorkloadIdentityPool> getWorkloadIdentityPool(
+      $grpc.ServiceCall call, $164.GetWorkloadIdentityPoolRequest request);
   $async.Future<$13.Operation> createWorkloadIdentityPool(
-      $grpc.ServiceCall call, $146.CreateWorkloadIdentityPoolRequest request);
+      $grpc.ServiceCall call, $164.CreateWorkloadIdentityPoolRequest request);
   $async.Future<$13.Operation> updateWorkloadIdentityPool(
-      $grpc.ServiceCall call, $146.UpdateWorkloadIdentityPoolRequest request);
+      $grpc.ServiceCall call, $164.UpdateWorkloadIdentityPoolRequest request);
   $async.Future<$13.Operation> deleteWorkloadIdentityPool(
-      $grpc.ServiceCall call, $146.DeleteWorkloadIdentityPoolRequest request);
+      $grpc.ServiceCall call, $164.DeleteWorkloadIdentityPoolRequest request);
   $async.Future<$13.Operation> undeleteWorkloadIdentityPool(
-      $grpc.ServiceCall call, $146.UndeleteWorkloadIdentityPoolRequest request);
-  $async.Future<$146.ListWorkloadIdentityPoolProvidersResponse>
+      $grpc.ServiceCall call, $164.UndeleteWorkloadIdentityPoolRequest request);
+  $async.Future<$164.ListWorkloadIdentityPoolProvidersResponse>
       listWorkloadIdentityPoolProviders($grpc.ServiceCall call,
-          $146.ListWorkloadIdentityPoolProvidersRequest request);
-  $async.Future<$146.WorkloadIdentityPoolProvider>
+          $164.ListWorkloadIdentityPoolProvidersRequest request);
+  $async.Future<$164.WorkloadIdentityPoolProvider>
       getWorkloadIdentityPoolProvider($grpc.ServiceCall call,
-          $146.GetWorkloadIdentityPoolProviderRequest request);
+          $164.GetWorkloadIdentityPoolProviderRequest request);
   $async.Future<$13.Operation> createWorkloadIdentityPoolProvider(
       $grpc.ServiceCall call,
-      $146.CreateWorkloadIdentityPoolProviderRequest request);
+      $164.CreateWorkloadIdentityPoolProviderRequest request);
   $async.Future<$13.Operation> updateWorkloadIdentityPoolProvider(
       $grpc.ServiceCall call,
-      $146.UpdateWorkloadIdentityPoolProviderRequest request);
+      $164.UpdateWorkloadIdentityPoolProviderRequest request);
   $async.Future<$13.Operation> deleteWorkloadIdentityPoolProvider(
       $grpc.ServiceCall call,
-      $146.DeleteWorkloadIdentityPoolProviderRequest request);
+      $164.DeleteWorkloadIdentityPoolProviderRequest request);
   $async.Future<$13.Operation> undeleteWorkloadIdentityPoolProvider(
       $grpc.ServiceCall call,
-      $146.UndeleteWorkloadIdentityPoolProviderRequest request);
+      $164.UndeleteWorkloadIdentityPoolProviderRequest request);
 }

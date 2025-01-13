@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $335;
-import '../../../protobuf/timestamp.pb.dart' as $304;
+import '../../../protobuf/field_mask.pb.dart' as $361;
+import '../../../protobuf/timestamp.pb.dart' as $330;
 import 'bigtable_instance_admin.pbenum.dart';
-import 'instance.pb.dart' as $90;
+import 'instance.pb.dart' as $108;
 
 export 'bigtable_instance_admin.pbenum.dart';
 
@@ -26,8 +26,8 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
   factory CreateInstanceRequest({
     $core.String? parent,
     $core.String? instanceId,
-    $90.Instance? instance,
-    $core.Map<$core.String, $90.Cluster>? clusters,
+    $108.Instance? instance,
+    $core.Map<$core.String, $108.Cluster>? clusters,
   }) {
     final $result = create();
     if (parent != null) {
@@ -59,14 +59,14 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'instanceId')
-    ..aOM<$90.Instance>(3, _omitFieldNames ? '' : 'instance',
-        subBuilder: $90.Instance.create)
-    ..m<$core.String, $90.Cluster>(4, _omitFieldNames ? '' : 'clusters',
+    ..aOM<$108.Instance>(3, _omitFieldNames ? '' : 'instance',
+        subBuilder: $108.Instance.create)
+    ..m<$core.String, $108.Cluster>(4, _omitFieldNames ? '' : 'clusters',
         entryClassName: 'CreateInstanceRequest.ClustersEntry',
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OM,
-        valueCreator: $90.Cluster.create,
-        valueDefaultOrMaker: $90.Cluster.getDefault,
+        valueCreator: $108.Cluster.create,
+        valueDefaultOrMaker: $108.Cluster.getDefault,
         packageName: const $pb.PackageName('google.bigtable.admin.v2'))
     ..hasRequiredFields = false;
 
@@ -127,9 +127,9 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
   /// Required. The instance to create.
   /// Fields marked `OutputOnly` must be left blank.
   @$pb.TagNumber(3)
-  $90.Instance get instance => $_getN(2);
+  $108.Instance get instance => $_getN(2);
   @$pb.TagNumber(3)
-  set instance($90.Instance v) {
+  set instance($108.Instance v) {
     setField(3, v);
   }
 
@@ -138,7 +138,7 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearInstance() => clearField(3);
   @$pb.TagNumber(3)
-  $90.Instance ensureInstance() => $_ensure(2);
+  $108.Instance ensureInstance() => $_ensure(2);
 
   /// Required. The clusters to be created within the instance, mapped by desired
   /// cluster ID, e.g., just `mycluster` rather than
@@ -146,7 +146,7 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
   /// Fields marked `OutputOnly` must be left blank.
   /// Currently, at most four clusters can be specified.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $90.Cluster> get clusters => $_getMap(3);
+  $core.Map<$core.String, $108.Cluster> get clusters => $_getMap(3);
 }
 
 /// Request message for BigtableInstanceAdmin.GetInstance.
@@ -301,7 +301,7 @@ class ListInstancesRequest extends $pb.GeneratedMessage {
 /// Response message for BigtableInstanceAdmin.ListInstances.
 class ListInstancesResponse extends $pb.GeneratedMessage {
   factory ListInstancesResponse({
-    $core.Iterable<$90.Instance>? instances,
+    $core.Iterable<$108.Instance>? instances,
     $core.Iterable<$core.String>? failedLocations,
     $core.String? nextPageToken,
   }) {
@@ -330,9 +330,9 @@ class ListInstancesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.bigtable.admin.v2'),
       createEmptyInstance: create)
-    ..pc<$90.Instance>(
+    ..pc<$108.Instance>(
         1, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM,
-        subBuilder: $90.Instance.create)
+        subBuilder: $108.Instance.create)
     ..pPS(2, _omitFieldNames ? '' : 'failedLocations')
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
@@ -364,7 +364,7 @@ class ListInstancesResponse extends $pb.GeneratedMessage {
 
   /// The list of requested instances.
   @$pb.TagNumber(1)
-  $core.List<$90.Instance> get instances => $_getList(0);
+  $core.List<$108.Instance> get instances => $_getList(0);
 
   /// Locations from which Instance information could not be retrieved,
   /// due to an outage or some other transient condition.
@@ -392,8 +392,8 @@ class ListInstancesResponse extends $pb.GeneratedMessage {
 /// Request message for BigtableInstanceAdmin.PartialUpdateInstance.
 class PartialUpdateInstanceRequest extends $pb.GeneratedMessage {
   factory PartialUpdateInstanceRequest({
-    $90.Instance? instance,
-    $335.FieldMask? updateMask,
+    $108.Instance? instance,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (instance != null) {
@@ -417,10 +417,10 @@ class PartialUpdateInstanceRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.bigtable.admin.v2'),
       createEmptyInstance: create)
-    ..aOM<$90.Instance>(1, _omitFieldNames ? '' : 'instance',
-        subBuilder: $90.Instance.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$108.Instance>(1, _omitFieldNames ? '' : 'instance',
+        subBuilder: $108.Instance.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -452,9 +452,9 @@ class PartialUpdateInstanceRequest extends $pb.GeneratedMessage {
 
   /// Required. The Instance which will (partially) replace the current value.
   @$pb.TagNumber(1)
-  $90.Instance get instance => $_getN(0);
+  $108.Instance get instance => $_getN(0);
   @$pb.TagNumber(1)
-  set instance($90.Instance v) {
+  set instance($108.Instance v) {
     setField(1, v);
   }
 
@@ -463,14 +463,14 @@ class PartialUpdateInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearInstance() => clearField(1);
   @$pb.TagNumber(1)
-  $90.Instance ensureInstance() => $_ensure(0);
+  $108.Instance ensureInstance() => $_ensure(0);
 
   /// Required. The subset of Instance fields which should be replaced.
   /// Must be explicitly set.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -479,7 +479,7 @@ class PartialUpdateInstanceRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for BigtableInstanceAdmin.DeleteInstance.
@@ -554,7 +554,7 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
   factory CreateClusterRequest({
     $core.String? parent,
     $core.String? clusterId,
-    $90.Cluster? cluster,
+    $108.Cluster? cluster,
   }) {
     final $result = create();
     if (parent != null) {
@@ -583,8 +583,8 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'clusterId')
-    ..aOM<$90.Cluster>(3, _omitFieldNames ? '' : 'cluster',
-        subBuilder: $90.Cluster.create)
+    ..aOM<$108.Cluster>(3, _omitFieldNames ? '' : 'cluster',
+        subBuilder: $108.Cluster.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -643,9 +643,9 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
   /// Required. The cluster to be created.
   /// Fields marked `OutputOnly` must be left blank.
   @$pb.TagNumber(3)
-  $90.Cluster get cluster => $_getN(2);
+  $108.Cluster get cluster => $_getN(2);
   @$pb.TagNumber(3)
-  set cluster($90.Cluster v) {
+  set cluster($108.Cluster v) {
     setField(3, v);
   }
 
@@ -654,7 +654,7 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCluster() => clearField(3);
   @$pb.TagNumber(3)
-  $90.Cluster ensureCluster() => $_ensure(2);
+  $108.Cluster ensureCluster() => $_ensure(2);
 }
 
 /// Request message for BigtableInstanceAdmin.GetCluster.
@@ -811,7 +811,7 @@ class ListClustersRequest extends $pb.GeneratedMessage {
 /// Response message for BigtableInstanceAdmin.ListClusters.
 class ListClustersResponse extends $pb.GeneratedMessage {
   factory ListClustersResponse({
-    $core.Iterable<$90.Cluster>? clusters,
+    $core.Iterable<$108.Cluster>? clusters,
     $core.Iterable<$core.String>? failedLocations,
     $core.String? nextPageToken,
   }) {
@@ -840,8 +840,8 @@ class ListClustersResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.bigtable.admin.v2'),
       createEmptyInstance: create)
-    ..pc<$90.Cluster>(1, _omitFieldNames ? '' : 'clusters', $pb.PbFieldType.PM,
-        subBuilder: $90.Cluster.create)
+    ..pc<$108.Cluster>(1, _omitFieldNames ? '' : 'clusters', $pb.PbFieldType.PM,
+        subBuilder: $108.Cluster.create)
     ..pPS(2, _omitFieldNames ? '' : 'failedLocations')
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
@@ -872,7 +872,7 @@ class ListClustersResponse extends $pb.GeneratedMessage {
 
   /// The list of requested clusters.
   @$pb.TagNumber(1)
-  $core.List<$90.Cluster> get clusters => $_getList(0);
+  $core.List<$108.Cluster> get clusters => $_getList(0);
 
   /// Locations from which Cluster information could not be retrieved,
   /// due to an outage or some other transient condition.
@@ -966,8 +966,8 @@ class DeleteClusterRequest extends $pb.GeneratedMessage {
 class CreateInstanceMetadata extends $pb.GeneratedMessage {
   factory CreateInstanceMetadata({
     CreateInstanceRequest? originalRequest,
-    $304.Timestamp? requestTime,
-    $304.Timestamp? finishTime,
+    $330.Timestamp? requestTime,
+    $330.Timestamp? finishTime,
   }) {
     final $result = create();
     if (originalRequest != null) {
@@ -996,10 +996,10 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<CreateInstanceRequest>(1, _omitFieldNames ? '' : 'originalRequest',
         subBuilder: CreateInstanceRequest.create)
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'requestTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'finishTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'requestTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'finishTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1044,9 +1044,9 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
 
   /// The time at which the original request was received.
   @$pb.TagNumber(2)
-  $304.Timestamp get requestTime => $_getN(1);
+  $330.Timestamp get requestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set requestTime($304.Timestamp v) {
+  set requestTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -1055,13 +1055,13 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRequestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureRequestTime() => $_ensure(1);
+  $330.Timestamp ensureRequestTime() => $_ensure(1);
 
   /// The time at which the operation failed or was completed successfully.
   @$pb.TagNumber(3)
-  $304.Timestamp get finishTime => $_getN(2);
+  $330.Timestamp get finishTime => $_getN(2);
   @$pb.TagNumber(3)
-  set finishTime($304.Timestamp v) {
+  set finishTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -1070,15 +1070,15 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearFinishTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureFinishTime() => $_ensure(2);
+  $330.Timestamp ensureFinishTime() => $_ensure(2);
 }
 
 /// The metadata for the Operation returned by UpdateInstance.
 class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   factory UpdateInstanceMetadata({
     PartialUpdateInstanceRequest? originalRequest,
-    $304.Timestamp? requestTime,
-    $304.Timestamp? finishTime,
+    $330.Timestamp? requestTime,
+    $330.Timestamp? finishTime,
   }) {
     final $result = create();
     if (originalRequest != null) {
@@ -1108,10 +1108,10 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
     ..aOM<PartialUpdateInstanceRequest>(
         1, _omitFieldNames ? '' : 'originalRequest',
         subBuilder: PartialUpdateInstanceRequest.create)
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'requestTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'finishTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'requestTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'finishTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1156,9 +1156,9 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
 
   /// The time at which the original request was received.
   @$pb.TagNumber(2)
-  $304.Timestamp get requestTime => $_getN(1);
+  $330.Timestamp get requestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set requestTime($304.Timestamp v) {
+  set requestTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -1167,13 +1167,13 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRequestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureRequestTime() => $_ensure(1);
+  $330.Timestamp ensureRequestTime() => $_ensure(1);
 
   /// The time at which the operation failed or was completed successfully.
   @$pb.TagNumber(3)
-  $304.Timestamp get finishTime => $_getN(2);
+  $330.Timestamp get finishTime => $_getN(2);
   @$pb.TagNumber(3)
-  set finishTime($304.Timestamp v) {
+  set finishTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -1182,7 +1182,7 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearFinishTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureFinishTime() => $_ensure(2);
+  $330.Timestamp ensureFinishTime() => $_ensure(2);
 }
 
 /// Progress info for copying a table's data to the new cluster.
@@ -1301,8 +1301,8 @@ class CreateClusterMetadata_TableProgress extends $pb.GeneratedMessage {
 class CreateClusterMetadata extends $pb.GeneratedMessage {
   factory CreateClusterMetadata({
     CreateClusterRequest? originalRequest,
-    $304.Timestamp? requestTime,
-    $304.Timestamp? finishTime,
+    $330.Timestamp? requestTime,
+    $330.Timestamp? finishTime,
     $core.Map<$core.String, CreateClusterMetadata_TableProgress>? tables,
   }) {
     final $result = create();
@@ -1335,10 +1335,10 @@ class CreateClusterMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<CreateClusterRequest>(1, _omitFieldNames ? '' : 'originalRequest',
         subBuilder: CreateClusterRequest.create)
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'requestTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'finishTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'requestTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'finishTime',
+        subBuilder: $330.Timestamp.create)
     ..m<$core.String, CreateClusterMetadata_TableProgress>(
         4, _omitFieldNames ? '' : 'tables',
         entryClassName: 'CreateClusterMetadata.TablesEntry',
@@ -1391,9 +1391,9 @@ class CreateClusterMetadata extends $pb.GeneratedMessage {
 
   /// The time at which the original request was received.
   @$pb.TagNumber(2)
-  $304.Timestamp get requestTime => $_getN(1);
+  $330.Timestamp get requestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set requestTime($304.Timestamp v) {
+  set requestTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -1402,13 +1402,13 @@ class CreateClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRequestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureRequestTime() => $_ensure(1);
+  $330.Timestamp ensureRequestTime() => $_ensure(1);
 
   /// The time at which the operation failed or was completed successfully.
   @$pb.TagNumber(3)
-  $304.Timestamp get finishTime => $_getN(2);
+  $330.Timestamp get finishTime => $_getN(2);
   @$pb.TagNumber(3)
-  set finishTime($304.Timestamp v) {
+  set finishTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -1417,7 +1417,7 @@ class CreateClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearFinishTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureFinishTime() => $_ensure(2);
+  $330.Timestamp ensureFinishTime() => $_ensure(2);
 
   ///  Keys: the full `name` of each table that existed in the instance when
   ///  CreateCluster was first called, i.e.
@@ -1435,9 +1435,9 @@ class CreateClusterMetadata extends $pb.GeneratedMessage {
 /// The metadata for the Operation returned by UpdateCluster.
 class UpdateClusterMetadata extends $pb.GeneratedMessage {
   factory UpdateClusterMetadata({
-    $90.Cluster? originalRequest,
-    $304.Timestamp? requestTime,
-    $304.Timestamp? finishTime,
+    $108.Cluster? originalRequest,
+    $330.Timestamp? requestTime,
+    $330.Timestamp? finishTime,
   }) {
     final $result = create();
     if (originalRequest != null) {
@@ -1464,12 +1464,12 @@ class UpdateClusterMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.bigtable.admin.v2'),
       createEmptyInstance: create)
-    ..aOM<$90.Cluster>(1, _omitFieldNames ? '' : 'originalRequest',
-        subBuilder: $90.Cluster.create)
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'requestTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'finishTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$108.Cluster>(1, _omitFieldNames ? '' : 'originalRequest',
+        subBuilder: $108.Cluster.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'requestTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'finishTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1499,9 +1499,9 @@ class UpdateClusterMetadata extends $pb.GeneratedMessage {
 
   /// The request that prompted the initiation of this UpdateCluster operation.
   @$pb.TagNumber(1)
-  $90.Cluster get originalRequest => $_getN(0);
+  $108.Cluster get originalRequest => $_getN(0);
   @$pb.TagNumber(1)
-  set originalRequest($90.Cluster v) {
+  set originalRequest($108.Cluster v) {
     setField(1, v);
   }
 
@@ -1510,13 +1510,13 @@ class UpdateClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearOriginalRequest() => clearField(1);
   @$pb.TagNumber(1)
-  $90.Cluster ensureOriginalRequest() => $_ensure(0);
+  $108.Cluster ensureOriginalRequest() => $_ensure(0);
 
   /// The time at which the original request was received.
   @$pb.TagNumber(2)
-  $304.Timestamp get requestTime => $_getN(1);
+  $330.Timestamp get requestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set requestTime($304.Timestamp v) {
+  set requestTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -1525,13 +1525,13 @@ class UpdateClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRequestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureRequestTime() => $_ensure(1);
+  $330.Timestamp ensureRequestTime() => $_ensure(1);
 
   /// The time at which the operation failed or was completed successfully.
   @$pb.TagNumber(3)
-  $304.Timestamp get finishTime => $_getN(2);
+  $330.Timestamp get finishTime => $_getN(2);
   @$pb.TagNumber(3)
-  set finishTime($304.Timestamp v) {
+  set finishTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -1540,14 +1540,14 @@ class UpdateClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearFinishTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureFinishTime() => $_ensure(2);
+  $330.Timestamp ensureFinishTime() => $_ensure(2);
 }
 
 /// The metadata for the Operation returned by PartialUpdateCluster.
 class PartialUpdateClusterMetadata extends $pb.GeneratedMessage {
   factory PartialUpdateClusterMetadata({
-    $304.Timestamp? requestTime,
-    $304.Timestamp? finishTime,
+    $330.Timestamp? requestTime,
+    $330.Timestamp? finishTime,
     PartialUpdateClusterRequest? originalRequest,
   }) {
     final $result = create();
@@ -1575,10 +1575,10 @@ class PartialUpdateClusterMetadata extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.bigtable.admin.v2'),
       createEmptyInstance: create)
-    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'requestTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'finishTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'requestTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'finishTime',
+        subBuilder: $330.Timestamp.create)
     ..aOM<PartialUpdateClusterRequest>(
         3, _omitFieldNames ? '' : 'originalRequest',
         subBuilder: PartialUpdateClusterRequest.create)
@@ -1613,9 +1613,9 @@ class PartialUpdateClusterMetadata extends $pb.GeneratedMessage {
 
   /// The time at which the original request was received.
   @$pb.TagNumber(1)
-  $304.Timestamp get requestTime => $_getN(0);
+  $330.Timestamp get requestTime => $_getN(0);
   @$pb.TagNumber(1)
-  set requestTime($304.Timestamp v) {
+  set requestTime($330.Timestamp v) {
     setField(1, v);
   }
 
@@ -1624,13 +1624,13 @@ class PartialUpdateClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRequestTime() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Timestamp ensureRequestTime() => $_ensure(0);
+  $330.Timestamp ensureRequestTime() => $_ensure(0);
 
   /// The time at which the operation failed or was completed successfully.
   @$pb.TagNumber(2)
-  $304.Timestamp get finishTime => $_getN(1);
+  $330.Timestamp get finishTime => $_getN(1);
   @$pb.TagNumber(2)
-  set finishTime($304.Timestamp v) {
+  set finishTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -1639,7 +1639,7 @@ class PartialUpdateClusterMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearFinishTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureFinishTime() => $_ensure(1);
+  $330.Timestamp ensureFinishTime() => $_ensure(1);
 
   /// The original request for PartialUpdateCluster.
   @$pb.TagNumber(3)
@@ -1660,8 +1660,8 @@ class PartialUpdateClusterMetadata extends $pb.GeneratedMessage {
 /// Request message for BigtableInstanceAdmin.PartialUpdateCluster.
 class PartialUpdateClusterRequest extends $pb.GeneratedMessage {
   factory PartialUpdateClusterRequest({
-    $90.Cluster? cluster,
-    $335.FieldMask? updateMask,
+    $108.Cluster? cluster,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (cluster != null) {
@@ -1685,10 +1685,10 @@ class PartialUpdateClusterRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.bigtable.admin.v2'),
       createEmptyInstance: create)
-    ..aOM<$90.Cluster>(1, _omitFieldNames ? '' : 'cluster',
-        subBuilder: $90.Cluster.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$108.Cluster>(1, _omitFieldNames ? '' : 'cluster',
+        subBuilder: $108.Cluster.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1721,9 +1721,9 @@ class PartialUpdateClusterRequest extends $pb.GeneratedMessage {
   /// Required. The Cluster which contains the partial updates to be applied,
   /// subject to the update_mask.
   @$pb.TagNumber(1)
-  $90.Cluster get cluster => $_getN(0);
+  $108.Cluster get cluster => $_getN(0);
   @$pb.TagNumber(1)
-  set cluster($90.Cluster v) {
+  set cluster($108.Cluster v) {
     setField(1, v);
   }
 
@@ -1732,13 +1732,13 @@ class PartialUpdateClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCluster() => clearField(1);
   @$pb.TagNumber(1)
-  $90.Cluster ensureCluster() => $_ensure(0);
+  $108.Cluster ensureCluster() => $_ensure(0);
 
   /// Required. The subset of Cluster fields which should be replaced.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -1747,7 +1747,7 @@ class PartialUpdateClusterRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for BigtableInstanceAdmin.CreateAppProfile.
@@ -1755,7 +1755,7 @@ class CreateAppProfileRequest extends $pb.GeneratedMessage {
   factory CreateAppProfileRequest({
     $core.String? parent,
     $core.String? appProfileId,
-    $90.AppProfile? appProfile,
+    $108.AppProfile? appProfile,
     $core.bool? ignoreWarnings,
   }) {
     final $result = create();
@@ -1788,8 +1788,8 @@ class CreateAppProfileRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'appProfileId')
-    ..aOM<$90.AppProfile>(3, _omitFieldNames ? '' : 'appProfile',
-        subBuilder: $90.AppProfile.create)
+    ..aOM<$108.AppProfile>(3, _omitFieldNames ? '' : 'appProfile',
+        subBuilder: $108.AppProfile.create)
     ..aOB(4, _omitFieldNames ? '' : 'ignoreWarnings')
     ..hasRequiredFields = false;
 
@@ -1850,9 +1850,9 @@ class CreateAppProfileRequest extends $pb.GeneratedMessage {
   /// Required. The app profile to be created.
   /// Fields marked `OutputOnly` will be ignored.
   @$pb.TagNumber(3)
-  $90.AppProfile get appProfile => $_getN(2);
+  $108.AppProfile get appProfile => $_getN(2);
   @$pb.TagNumber(3)
-  set appProfile($90.AppProfile v) {
+  set appProfile($108.AppProfile v) {
     setField(3, v);
   }
 
@@ -1861,7 +1861,7 @@ class CreateAppProfileRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearAppProfile() => clearField(3);
   @$pb.TagNumber(3)
-  $90.AppProfile ensureAppProfile() => $_ensure(2);
+  $108.AppProfile ensureAppProfile() => $_ensure(2);
 
   /// If true, ignore safety checks when creating the app profile.
   @$pb.TagNumber(4)
@@ -2060,7 +2060,7 @@ class ListAppProfilesRequest extends $pb.GeneratedMessage {
 /// Response message for BigtableInstanceAdmin.ListAppProfiles.
 class ListAppProfilesResponse extends $pb.GeneratedMessage {
   factory ListAppProfilesResponse({
-    $core.Iterable<$90.AppProfile>? appProfiles,
+    $core.Iterable<$108.AppProfile>? appProfiles,
     $core.String? nextPageToken,
     $core.Iterable<$core.String>? failedLocations,
   }) {
@@ -2089,9 +2089,9 @@ class ListAppProfilesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.bigtable.admin.v2'),
       createEmptyInstance: create)
-    ..pc<$90.AppProfile>(
+    ..pc<$108.AppProfile>(
         1, _omitFieldNames ? '' : 'appProfiles', $pb.PbFieldType.PM,
-        subBuilder: $90.AppProfile.create)
+        subBuilder: $108.AppProfile.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..pPS(3, _omitFieldNames ? '' : 'failedLocations')
     ..hasRequiredFields = false;
@@ -2123,7 +2123,7 @@ class ListAppProfilesResponse extends $pb.GeneratedMessage {
 
   /// The list of requested app profiles.
   @$pb.TagNumber(1)
-  $core.List<$90.AppProfile> get appProfiles => $_getList(0);
+  $core.List<$108.AppProfile> get appProfiles => $_getList(0);
 
   /// Set if not all app profiles could be returned in a single response.
   /// Pass this value to `page_token` in another request to get the next
@@ -2151,8 +2151,8 @@ class ListAppProfilesResponse extends $pb.GeneratedMessage {
 /// Request message for BigtableInstanceAdmin.UpdateAppProfile.
 class UpdateAppProfileRequest extends $pb.GeneratedMessage {
   factory UpdateAppProfileRequest({
-    $90.AppProfile? appProfile,
-    $335.FieldMask? updateMask,
+    $108.AppProfile? appProfile,
+    $361.FieldMask? updateMask,
     $core.bool? ignoreWarnings,
   }) {
     final $result = create();
@@ -2180,10 +2180,10 @@ class UpdateAppProfileRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.bigtable.admin.v2'),
       createEmptyInstance: create)
-    ..aOM<$90.AppProfile>(1, _omitFieldNames ? '' : 'appProfile',
-        subBuilder: $90.AppProfile.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$108.AppProfile>(1, _omitFieldNames ? '' : 'appProfile',
+        subBuilder: $108.AppProfile.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'ignoreWarnings')
     ..hasRequiredFields = false;
 
@@ -2214,9 +2214,9 @@ class UpdateAppProfileRequest extends $pb.GeneratedMessage {
 
   /// Required. The app profile which will (partially) replace the current value.
   @$pb.TagNumber(1)
-  $90.AppProfile get appProfile => $_getN(0);
+  $108.AppProfile get appProfile => $_getN(0);
   @$pb.TagNumber(1)
-  set appProfile($90.AppProfile v) {
+  set appProfile($108.AppProfile v) {
     setField(1, v);
   }
 
@@ -2225,14 +2225,14 @@ class UpdateAppProfileRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearAppProfile() => clearField(1);
   @$pb.TagNumber(1)
-  $90.AppProfile ensureAppProfile() => $_ensure(0);
+  $108.AppProfile ensureAppProfile() => $_ensure(0);
 
   /// Required. The subset of app profile fields which should be replaced.
   /// If unset, all fields will be replaced.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -2241,7 +2241,7 @@ class UpdateAppProfileRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If true, ignore safety checks when updating the app profile.
   @$pb.TagNumber(3)
@@ -2391,8 +2391,8 @@ class UpdateAppProfileMetadata extends $pb.GeneratedMessage {
 class ListHotTabletsRequest extends $pb.GeneratedMessage {
   factory ListHotTabletsRequest({
     $core.String? parent,
-    $304.Timestamp? startTime,
-    $304.Timestamp? endTime,
+    $330.Timestamp? startTime,
+    $330.Timestamp? endTime,
     $core.int? pageSize,
     $core.String? pageToken,
   }) {
@@ -2428,10 +2428,10 @@ class ListHotTabletsRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.bigtable.admin.v2'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $330.Timestamp.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
     ..hasRequiredFields = false;
@@ -2483,9 +2483,9 @@ class ListHotTabletsRequest extends $pb.GeneratedMessage {
   /// maximum allowed time range between start time and end time is 48 hours.
   /// Start time and end time should have values between Now and Now - 14 days.
   @$pb.TagNumber(2)
-  $304.Timestamp get startTime => $_getN(1);
+  $330.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($304.Timestamp v) {
+  set startTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -2494,13 +2494,13 @@ class ListHotTabletsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureStartTime() => $_ensure(1);
+  $330.Timestamp ensureStartTime() => $_ensure(1);
 
   /// The end time to list hot tablets.
   @$pb.TagNumber(3)
-  $304.Timestamp get endTime => $_getN(2);
+  $330.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($304.Timestamp v) {
+  set endTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -2509,7 +2509,7 @@ class ListHotTabletsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureEndTime() => $_ensure(2);
+  $330.Timestamp ensureEndTime() => $_ensure(2);
 
   ///  Maximum number of results per page.
   ///
@@ -2549,7 +2549,7 @@ class ListHotTabletsRequest extends $pb.GeneratedMessage {
 /// Response message for BigtableInstanceAdmin.ListHotTablets.
 class ListHotTabletsResponse extends $pb.GeneratedMessage {
   factory ListHotTabletsResponse({
-    $core.Iterable<$90.HotTablet>? hotTablets,
+    $core.Iterable<$108.HotTablet>? hotTablets,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -2574,9 +2574,9 @@ class ListHotTabletsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.bigtable.admin.v2'),
       createEmptyInstance: create)
-    ..pc<$90.HotTablet>(
+    ..pc<$108.HotTablet>(
         1, _omitFieldNames ? '' : 'hotTablets', $pb.PbFieldType.PM,
-        subBuilder: $90.HotTablet.create)
+        subBuilder: $108.HotTablet.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -2611,7 +2611,7 @@ class ListHotTabletsResponse extends $pb.GeneratedMessage {
   /// tablet within a 15-minute interval, only the hot tablet with the highest
   /// node cpu usage will be included in the response.
   @$pb.TagNumber(1)
-  $core.List<$90.HotTablet> get hotTablets => $_getList(0);
+  $core.List<$108.HotTablet> get hotTablets => $_getList(0);
 
   /// Set if not all hot tablets could be returned in a single response.
   /// Pass this value to `page_token` in another request to get the next

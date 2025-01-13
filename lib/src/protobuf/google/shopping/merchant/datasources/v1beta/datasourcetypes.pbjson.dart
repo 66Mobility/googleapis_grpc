@@ -232,6 +232,24 @@ final $typed_data.Uint8List promotionDataSourceDescriptor = $convert.base64Decod
     'RhcmdldENvdW50cnkSMQoQY29udGVudF9sYW5ndWFnZRgCIAEoCUIG4EEC4EEFUg9jb250ZW50'
     'TGFuZ3VhZ2U=');
 
+@$core.Deprecated('Use productReviewDataSourceDescriptor instead')
+const ProductReviewDataSource$json = {
+  '1': 'ProductReviewDataSource',
+};
+
+/// Descriptor for `ProductReviewDataSource`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List productReviewDataSourceDescriptor =
+    $convert.base64Decode('ChdQcm9kdWN0UmV2aWV3RGF0YVNvdXJjZQ==');
+
+@$core.Deprecated('Use merchantReviewDataSourceDescriptor instead')
+const MerchantReviewDataSource$json = {
+  '1': 'MerchantReviewDataSource',
+};
+
+/// Descriptor for `MerchantReviewDataSource`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List merchantReviewDataSourceDescriptor =
+    $convert.base64Decode('ChhNZXJjaGFudFJldmlld0RhdGFTb3VyY2U=');
+
 @$core.Deprecated('Use dataSourceReferenceDescriptor instead')
 const DataSourceReference$json = {
   '1': 'DataSourceReference',

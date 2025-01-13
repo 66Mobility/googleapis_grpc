@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $266;
-import '../../protobuf/field_mask.pb.dart' as $335;
-import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../protobuf/duration.pb.dart' as $292;
+import '../../protobuf/field_mask.pb.dart' as $361;
+import '../../protobuf/timestamp.pb.dart' as $330;
 import 'pubsub.pbenum.dart';
-import 'schema.pbenum.dart' as $208;
+import 'schema.pbenum.dart' as $234;
 
 export 'pubsub.pbenum.dart';
 
@@ -109,7 +109,7 @@ class MessageStoragePolicy extends $pb.GeneratedMessage {
 class SchemaSettings extends $pb.GeneratedMessage {
   factory SchemaSettings({
     $core.String? schema,
-    $208.Encoding? encoding,
+    $234.Encoding? encoding,
     $core.String? firstRevisionId,
     $core.String? lastRevisionId,
   }) {
@@ -142,10 +142,10 @@ class SchemaSettings extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'schema')
-    ..e<$208.Encoding>(2, _omitFieldNames ? '' : 'encoding', $pb.PbFieldType.OE,
-        defaultOrMaker: $208.Encoding.ENCODING_UNSPECIFIED,
-        valueOf: $208.Encoding.valueOf,
-        enumValues: $208.Encoding.values)
+    ..e<$234.Encoding>(2, _omitFieldNames ? '' : 'encoding', $pb.PbFieldType.OE,
+        defaultOrMaker: $234.Encoding.ENCODING_UNSPECIFIED,
+        valueOf: $234.Encoding.valueOf,
+        enumValues: $234.Encoding.values)
     ..aOS(3, _omitFieldNames ? '' : 'firstRevisionId')
     ..aOS(4, _omitFieldNames ? '' : 'lastRevisionId')
     ..hasRequiredFields = false;
@@ -191,9 +191,9 @@ class SchemaSettings extends $pb.GeneratedMessage {
 
   /// Optional. The encoding of messages validated against `schema`.
   @$pb.TagNumber(2)
-  $208.Encoding get encoding => $_getN(1);
+  $234.Encoding get encoding => $_getN(1);
   @$pb.TagNumber(2)
-  set encoding($208.Encoding v) {
+  set encoding($234.Encoding v) {
     setField(2, v);
   }
 
@@ -602,7 +602,7 @@ class IngestionDataSourceSettings_CloudStorage extends $pb.GeneratedMessage {
     IngestionDataSourceSettings_CloudStorage_TextFormat? textFormat,
     IngestionDataSourceSettings_CloudStorage_AvroFormat? avroFormat,
     IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat? pubsubAvroFormat,
-    $304.Timestamp? minimumObjectCreateTime,
+    $330.Timestamp? minimumObjectCreateTime,
     $core.String? matchGlob,
   }) {
     final $result = create();
@@ -669,8 +669,8 @@ class IngestionDataSourceSettings_CloudStorage extends $pb.GeneratedMessage {
         5, _omitFieldNames ? '' : 'pubsubAvroFormat',
         subBuilder:
             IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat.create)
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'minimumObjectCreateTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'minimumObjectCreateTime',
+        subBuilder: $330.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'matchGlob')
     ..hasRequiredFields = false;
 
@@ -794,9 +794,9 @@ class IngestionDataSourceSettings_CloudStorage extends $pb.GeneratedMessage {
   /// Optional. Only objects with a larger or equal creation timestamp will be
   /// ingested.
   @$pb.TagNumber(6)
-  $304.Timestamp get minimumObjectCreateTime => $_getN(5);
+  $330.Timestamp get minimumObjectCreateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set minimumObjectCreateTime($304.Timestamp v) {
+  set minimumObjectCreateTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -805,7 +805,7 @@ class IngestionDataSourceSettings_CloudStorage extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearMinimumObjectCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureMinimumObjectCreateTime() => $_ensure(5);
+  $330.Timestamp ensureMinimumObjectCreateTime() => $_ensure(5);
 
   /// Optional. Glob pattern used to match objects that will be ingested. If
   /// unset, all objects will be ingested. See the [supported
@@ -823,14 +823,555 @@ class IngestionDataSourceSettings_CloudStorage extends $pb.GeneratedMessage {
   void clearMatchGlob() => clearField(9);
 }
 
-enum IngestionDataSourceSettings_Source { awsKinesis, cloudStorage, notSet }
+/// Ingestion settings for Azure Event Hubs.
+class IngestionDataSourceSettings_AzureEventHubs extends $pb.GeneratedMessage {
+  factory IngestionDataSourceSettings_AzureEventHubs({
+    IngestionDataSourceSettings_AzureEventHubs_State? state,
+    $core.String? resourceGroup,
+    $core.String? namespace,
+    $core.String? eventHub,
+    $core.String? clientId,
+    $core.String? tenantId,
+    $core.String? subscriptionId,
+    $core.String? gcpServiceAccount,
+  }) {
+    final $result = create();
+    if (state != null) {
+      $result.state = state;
+    }
+    if (resourceGroup != null) {
+      $result.resourceGroup = resourceGroup;
+    }
+    if (namespace != null) {
+      $result.namespace = namespace;
+    }
+    if (eventHub != null) {
+      $result.eventHub = eventHub;
+    }
+    if (clientId != null) {
+      $result.clientId = clientId;
+    }
+    if (tenantId != null) {
+      $result.tenantId = tenantId;
+    }
+    if (subscriptionId != null) {
+      $result.subscriptionId = subscriptionId;
+    }
+    if (gcpServiceAccount != null) {
+      $result.gcpServiceAccount = gcpServiceAccount;
+    }
+    return $result;
+  }
+  IngestionDataSourceSettings_AzureEventHubs._() : super();
+  factory IngestionDataSourceSettings_AzureEventHubs.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IngestionDataSourceSettings_AzureEventHubs.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IngestionDataSourceSettings.AzureEventHubs',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
+      createEmptyInstance: create)
+    ..e<IngestionDataSourceSettings_AzureEventHubs_State>(
+        1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            IngestionDataSourceSettings_AzureEventHubs_State.STATE_UNSPECIFIED,
+        valueOf: IngestionDataSourceSettings_AzureEventHubs_State.valueOf,
+        enumValues: IngestionDataSourceSettings_AzureEventHubs_State.values)
+    ..aOS(2, _omitFieldNames ? '' : 'resourceGroup')
+    ..aOS(3, _omitFieldNames ? '' : 'namespace')
+    ..aOS(4, _omitFieldNames ? '' : 'eventHub')
+    ..aOS(5, _omitFieldNames ? '' : 'clientId')
+    ..aOS(6, _omitFieldNames ? '' : 'tenantId')
+    ..aOS(7, _omitFieldNames ? '' : 'subscriptionId')
+    ..aOS(8, _omitFieldNames ? '' : 'gcpServiceAccount')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IngestionDataSourceSettings_AzureEventHubs clone() =>
+      IngestionDataSourceSettings_AzureEventHubs()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IngestionDataSourceSettings_AzureEventHubs copyWith(
+          void Function(IngestionDataSourceSettings_AzureEventHubs) updates) =>
+      super.copyWith((message) =>
+              updates(message as IngestionDataSourceSettings_AzureEventHubs))
+          as IngestionDataSourceSettings_AzureEventHubs;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_AzureEventHubs create() =>
+      IngestionDataSourceSettings_AzureEventHubs._();
+  IngestionDataSourceSettings_AzureEventHubs createEmptyInstance() => create();
+  static $pb.PbList<IngestionDataSourceSettings_AzureEventHubs>
+      createRepeated() =>
+          $pb.PbList<IngestionDataSourceSettings_AzureEventHubs>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_AzureEventHubs getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          IngestionDataSourceSettings_AzureEventHubs>(create);
+  static IngestionDataSourceSettings_AzureEventHubs? _defaultInstance;
+
+  /// Output only. An output-only field that indicates the state of the Event
+  /// Hubs ingestion source.
+  @$pb.TagNumber(1)
+  IngestionDataSourceSettings_AzureEventHubs_State get state => $_getN(0);
+  @$pb.TagNumber(1)
+  set state(IngestionDataSourceSettings_AzureEventHubs_State v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasState() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearState() => clearField(1);
+
+  /// Optional. Name of the resource group within the azure subscription.
+  @$pb.TagNumber(2)
+  $core.String get resourceGroup => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set resourceGroup($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasResourceGroup() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearResourceGroup() => clearField(2);
+
+  /// Optional. The name of the Event Hubs namespace.
+  @$pb.TagNumber(3)
+  $core.String get namespace => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set namespace($core.String v) {
+    $_setString(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasNamespace() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearNamespace() => clearField(3);
+
+  /// Optional. The name of the Event Hub.
+  @$pb.TagNumber(4)
+  $core.String get eventHub => $_getSZ(3);
+  @$pb.TagNumber(4)
+  set eventHub($core.String v) {
+    $_setString(3, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasEventHub() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearEventHub() => clearField(4);
+
+  /// Optional. The client id of the Azure application that is being used to
+  /// authenticate Pub/Sub.
+  @$pb.TagNumber(5)
+  $core.String get clientId => $_getSZ(4);
+  @$pb.TagNumber(5)
+  set clientId($core.String v) {
+    $_setString(4, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasClientId() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearClientId() => clearField(5);
+
+  /// Optional. The tenant id of the Azure application that is being used to
+  /// authenticate Pub/Sub.
+  @$pb.TagNumber(6)
+  $core.String get tenantId => $_getSZ(5);
+  @$pb.TagNumber(6)
+  set tenantId($core.String v) {
+    $_setString(5, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasTenantId() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearTenantId() => clearField(6);
+
+  /// Optional. The Azure subscription id.
+  @$pb.TagNumber(7)
+  $core.String get subscriptionId => $_getSZ(6);
+  @$pb.TagNumber(7)
+  set subscriptionId($core.String v) {
+    $_setString(6, v);
+  }
+
+  @$pb.TagNumber(7)
+  $core.bool hasSubscriptionId() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearSubscriptionId() => clearField(7);
+
+  /// Optional. The GCP service account to be used for Federated Identity
+  /// authentication.
+  @$pb.TagNumber(8)
+  $core.String get gcpServiceAccount => $_getSZ(7);
+  @$pb.TagNumber(8)
+  set gcpServiceAccount($core.String v) {
+    $_setString(7, v);
+  }
+
+  @$pb.TagNumber(8)
+  $core.bool hasGcpServiceAccount() => $_has(7);
+  @$pb.TagNumber(8)
+  void clearGcpServiceAccount() => clearField(8);
+}
+
+/// Ingestion settings for Amazon MSK.
+class IngestionDataSourceSettings_AwsMsk extends $pb.GeneratedMessage {
+  factory IngestionDataSourceSettings_AwsMsk({
+    IngestionDataSourceSettings_AwsMsk_State? state,
+    $core.String? clusterArn,
+    $core.String? topic,
+    $core.String? awsRoleArn,
+    $core.String? gcpServiceAccount,
+  }) {
+    final $result = create();
+    if (state != null) {
+      $result.state = state;
+    }
+    if (clusterArn != null) {
+      $result.clusterArn = clusterArn;
+    }
+    if (topic != null) {
+      $result.topic = topic;
+    }
+    if (awsRoleArn != null) {
+      $result.awsRoleArn = awsRoleArn;
+    }
+    if (gcpServiceAccount != null) {
+      $result.gcpServiceAccount = gcpServiceAccount;
+    }
+    return $result;
+  }
+  IngestionDataSourceSettings_AwsMsk._() : super();
+  factory IngestionDataSourceSettings_AwsMsk.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IngestionDataSourceSettings_AwsMsk.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IngestionDataSourceSettings.AwsMsk',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
+      createEmptyInstance: create)
+    ..e<IngestionDataSourceSettings_AwsMsk_State>(
+        1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            IngestionDataSourceSettings_AwsMsk_State.STATE_UNSPECIFIED,
+        valueOf: IngestionDataSourceSettings_AwsMsk_State.valueOf,
+        enumValues: IngestionDataSourceSettings_AwsMsk_State.values)
+    ..aOS(2, _omitFieldNames ? '' : 'clusterArn')
+    ..aOS(3, _omitFieldNames ? '' : 'topic')
+    ..aOS(4, _omitFieldNames ? '' : 'awsRoleArn')
+    ..aOS(5, _omitFieldNames ? '' : 'gcpServiceAccount')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IngestionDataSourceSettings_AwsMsk clone() =>
+      IngestionDataSourceSettings_AwsMsk()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IngestionDataSourceSettings_AwsMsk copyWith(
+          void Function(IngestionDataSourceSettings_AwsMsk) updates) =>
+      super.copyWith((message) =>
+              updates(message as IngestionDataSourceSettings_AwsMsk))
+          as IngestionDataSourceSettings_AwsMsk;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_AwsMsk create() =>
+      IngestionDataSourceSettings_AwsMsk._();
+  IngestionDataSourceSettings_AwsMsk createEmptyInstance() => create();
+  static $pb.PbList<IngestionDataSourceSettings_AwsMsk> createRepeated() =>
+      $pb.PbList<IngestionDataSourceSettings_AwsMsk>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_AwsMsk getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<IngestionDataSourceSettings_AwsMsk>(
+          create);
+  static IngestionDataSourceSettings_AwsMsk? _defaultInstance;
+
+  /// Output only. An output-only field that indicates the state of the Amazon
+  /// MSK ingestion source.
+  @$pb.TagNumber(1)
+  IngestionDataSourceSettings_AwsMsk_State get state => $_getN(0);
+  @$pb.TagNumber(1)
+  set state(IngestionDataSourceSettings_AwsMsk_State v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasState() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearState() => clearField(1);
+
+  /// Required. The Amazon Resource Name (ARN) that uniquely identifies the
+  /// cluster.
+  @$pb.TagNumber(2)
+  $core.String get clusterArn => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set clusterArn($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasClusterArn() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearClusterArn() => clearField(2);
+
+  /// Required. The name of the topic in the Amazon MSK cluster that Pub/Sub
+  /// will import from.
+  @$pb.TagNumber(3)
+  $core.String get topic => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set topic($core.String v) {
+    $_setString(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasTopic() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearTopic() => clearField(3);
+
+  /// Required. AWS role ARN to be used for Federated Identity authentication
+  /// with Amazon MSK. Check the Pub/Sub docs for how to set up this role and
+  /// the required permissions that need to be attached to it.
+  @$pb.TagNumber(4)
+  $core.String get awsRoleArn => $_getSZ(3);
+  @$pb.TagNumber(4)
+  set awsRoleArn($core.String v) {
+    $_setString(3, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasAwsRoleArn() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearAwsRoleArn() => clearField(4);
+
+  /// Required. The GCP service account to be used for Federated Identity
+  /// authentication with Amazon MSK (via a `AssumeRoleWithWebIdentity` call
+  /// for the provided role). The `aws_role_arn` must be set up with
+  /// `accounts.google.com:sub` equals to this service account number.
+  @$pb.TagNumber(5)
+  $core.String get gcpServiceAccount => $_getSZ(4);
+  @$pb.TagNumber(5)
+  set gcpServiceAccount($core.String v) {
+    $_setString(4, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasGcpServiceAccount() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearGcpServiceAccount() => clearField(5);
+}
+
+/// Ingestion settings for Confluent Cloud.
+class IngestionDataSourceSettings_ConfluentCloud extends $pb.GeneratedMessage {
+  factory IngestionDataSourceSettings_ConfluentCloud({
+    IngestionDataSourceSettings_ConfluentCloud_State? state,
+    $core.String? bootstrapServer,
+    $core.String? clusterId,
+    $core.String? topic,
+    $core.String? identityPoolId,
+    $core.String? gcpServiceAccount,
+  }) {
+    final $result = create();
+    if (state != null) {
+      $result.state = state;
+    }
+    if (bootstrapServer != null) {
+      $result.bootstrapServer = bootstrapServer;
+    }
+    if (clusterId != null) {
+      $result.clusterId = clusterId;
+    }
+    if (topic != null) {
+      $result.topic = topic;
+    }
+    if (identityPoolId != null) {
+      $result.identityPoolId = identityPoolId;
+    }
+    if (gcpServiceAccount != null) {
+      $result.gcpServiceAccount = gcpServiceAccount;
+    }
+    return $result;
+  }
+  IngestionDataSourceSettings_ConfluentCloud._() : super();
+  factory IngestionDataSourceSettings_ConfluentCloud.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IngestionDataSourceSettings_ConfluentCloud.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IngestionDataSourceSettings.ConfluentCloud',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
+      createEmptyInstance: create)
+    ..e<IngestionDataSourceSettings_ConfluentCloud_State>(
+        1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
+        defaultOrMaker:
+            IngestionDataSourceSettings_ConfluentCloud_State.STATE_UNSPECIFIED,
+        valueOf: IngestionDataSourceSettings_ConfluentCloud_State.valueOf,
+        enumValues: IngestionDataSourceSettings_ConfluentCloud_State.values)
+    ..aOS(2, _omitFieldNames ? '' : 'bootstrapServer')
+    ..aOS(3, _omitFieldNames ? '' : 'clusterId')
+    ..aOS(4, _omitFieldNames ? '' : 'topic')
+    ..aOS(5, _omitFieldNames ? '' : 'identityPoolId')
+    ..aOS(6, _omitFieldNames ? '' : 'gcpServiceAccount')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IngestionDataSourceSettings_ConfluentCloud clone() =>
+      IngestionDataSourceSettings_ConfluentCloud()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IngestionDataSourceSettings_ConfluentCloud copyWith(
+          void Function(IngestionDataSourceSettings_ConfluentCloud) updates) =>
+      super.copyWith((message) =>
+              updates(message as IngestionDataSourceSettings_ConfluentCloud))
+          as IngestionDataSourceSettings_ConfluentCloud;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_ConfluentCloud create() =>
+      IngestionDataSourceSettings_ConfluentCloud._();
+  IngestionDataSourceSettings_ConfluentCloud createEmptyInstance() => create();
+  static $pb.PbList<IngestionDataSourceSettings_ConfluentCloud>
+      createRepeated() =>
+          $pb.PbList<IngestionDataSourceSettings_ConfluentCloud>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_ConfluentCloud getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          IngestionDataSourceSettings_ConfluentCloud>(create);
+  static IngestionDataSourceSettings_ConfluentCloud? _defaultInstance;
+
+  /// Output only. An output-only field that indicates the state of the
+  /// Confluent Cloud ingestion source.
+  @$pb.TagNumber(1)
+  IngestionDataSourceSettings_ConfluentCloud_State get state => $_getN(0);
+  @$pb.TagNumber(1)
+  set state(IngestionDataSourceSettings_ConfluentCloud_State v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasState() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearState() => clearField(1);
+
+  /// Required. The address of the bootstrap server. The format is url:port.
+  @$pb.TagNumber(2)
+  $core.String get bootstrapServer => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set bootstrapServer($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasBootstrapServer() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearBootstrapServer() => clearField(2);
+
+  /// Required. The id of the cluster.
+  @$pb.TagNumber(3)
+  $core.String get clusterId => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set clusterId($core.String v) {
+    $_setString(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasClusterId() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearClusterId() => clearField(3);
+
+  /// Required. The name of the topic in the Confluent Cloud cluster that
+  /// Pub/Sub will import from.
+  @$pb.TagNumber(4)
+  $core.String get topic => $_getSZ(3);
+  @$pb.TagNumber(4)
+  set topic($core.String v) {
+    $_setString(3, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasTopic() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearTopic() => clearField(4);
+
+  /// Required. The id of the identity pool to be used for Federated Identity
+  /// authentication with Confluent Cloud. See
+  /// https://docs.confluent.io/cloud/current/security/authenticate/workload-identities/identity-providers/oauth/identity-pools.html#add-oauth-identity-pools.
+  @$pb.TagNumber(5)
+  $core.String get identityPoolId => $_getSZ(4);
+  @$pb.TagNumber(5)
+  set identityPoolId($core.String v) {
+    $_setString(4, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasIdentityPoolId() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearIdentityPoolId() => clearField(5);
+
+  /// Required. The GCP service account to be used for Federated Identity
+  /// authentication with `identity_pool_id`.
+  @$pb.TagNumber(6)
+  $core.String get gcpServiceAccount => $_getSZ(5);
+  @$pb.TagNumber(6)
+  set gcpServiceAccount($core.String v) {
+    $_setString(5, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasGcpServiceAccount() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearGcpServiceAccount() => clearField(6);
+}
+
+enum IngestionDataSourceSettings_Source {
+  awsKinesis,
+  cloudStorage,
+  azureEventHubs,
+  awsMsk,
+  confluentCloud,
+  notSet
+}
 
 /// Settings for an ingestion data source on a topic.
 class IngestionDataSourceSettings extends $pb.GeneratedMessage {
   factory IngestionDataSourceSettings({
     IngestionDataSourceSettings_AwsKinesis? awsKinesis,
     IngestionDataSourceSettings_CloudStorage? cloudStorage,
+    IngestionDataSourceSettings_AzureEventHubs? azureEventHubs,
     PlatformLogsSettings? platformLogsSettings,
+    IngestionDataSourceSettings_AwsMsk? awsMsk,
+    IngestionDataSourceSettings_ConfluentCloud? confluentCloud,
   }) {
     final $result = create();
     if (awsKinesis != null) {
@@ -839,8 +1380,17 @@ class IngestionDataSourceSettings extends $pb.GeneratedMessage {
     if (cloudStorage != null) {
       $result.cloudStorage = cloudStorage;
     }
+    if (azureEventHubs != null) {
+      $result.azureEventHubs = azureEventHubs;
+    }
     if (platformLogsSettings != null) {
       $result.platformLogsSettings = platformLogsSettings;
+    }
+    if (awsMsk != null) {
+      $result.awsMsk = awsMsk;
+    }
+    if (confluentCloud != null) {
+      $result.confluentCloud = confluentCloud;
     }
     return $result;
   }
@@ -856,6 +1406,9 @@ class IngestionDataSourceSettings extends $pb.GeneratedMessage {
       _IngestionDataSourceSettings_SourceByTag = {
     1: IngestionDataSourceSettings_Source.awsKinesis,
     2: IngestionDataSourceSettings_Source.cloudStorage,
+    3: IngestionDataSourceSettings_Source.azureEventHubs,
+    5: IngestionDataSourceSettings_Source.awsMsk,
+    6: IngestionDataSourceSettings_Source.confluentCloud,
     0: IngestionDataSourceSettings_Source.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
@@ -863,16 +1416,25 @@ class IngestionDataSourceSettings extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
       createEmptyInstance: create)
-    ..oo(0, [1, 2])
+    ..oo(0, [1, 2, 3, 5, 6])
     ..aOM<IngestionDataSourceSettings_AwsKinesis>(
         1, _omitFieldNames ? '' : 'awsKinesis',
         subBuilder: IngestionDataSourceSettings_AwsKinesis.create)
     ..aOM<IngestionDataSourceSettings_CloudStorage>(
         2, _omitFieldNames ? '' : 'cloudStorage',
         subBuilder: IngestionDataSourceSettings_CloudStorage.create)
+    ..aOM<IngestionDataSourceSettings_AzureEventHubs>(
+        3, _omitFieldNames ? '' : 'azureEventHubs',
+        subBuilder: IngestionDataSourceSettings_AzureEventHubs.create)
     ..aOM<PlatformLogsSettings>(
         4, _omitFieldNames ? '' : 'platformLogsSettings',
         subBuilder: PlatformLogsSettings.create)
+    ..aOM<IngestionDataSourceSettings_AwsMsk>(
+        5, _omitFieldNames ? '' : 'awsMsk',
+        subBuilder: IngestionDataSourceSettings_AwsMsk.create)
+    ..aOM<IngestionDataSourceSettings_ConfluentCloud>(
+        6, _omitFieldNames ? '' : 'confluentCloud',
+        subBuilder: IngestionDataSourceSettings_ConfluentCloud.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -936,21 +1498,68 @@ class IngestionDataSourceSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   IngestionDataSourceSettings_CloudStorage ensureCloudStorage() => $_ensure(1);
 
+  /// Optional. Azure Event Hubs.
+  @$pb.TagNumber(3)
+  IngestionDataSourceSettings_AzureEventHubs get azureEventHubs => $_getN(2);
+  @$pb.TagNumber(3)
+  set azureEventHubs(IngestionDataSourceSettings_AzureEventHubs v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasAzureEventHubs() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearAzureEventHubs() => clearField(3);
+  @$pb.TagNumber(3)
+  IngestionDataSourceSettings_AzureEventHubs ensureAzureEventHubs() =>
+      $_ensure(2);
+
   /// Optional. Platform Logs settings. If unset, no Platform Logs will be
   /// generated.
   @$pb.TagNumber(4)
-  PlatformLogsSettings get platformLogsSettings => $_getN(2);
+  PlatformLogsSettings get platformLogsSettings => $_getN(3);
   @$pb.TagNumber(4)
   set platformLogsSettings(PlatformLogsSettings v) {
     setField(4, v);
   }
 
   @$pb.TagNumber(4)
-  $core.bool hasPlatformLogsSettings() => $_has(2);
+  $core.bool hasPlatformLogsSettings() => $_has(3);
   @$pb.TagNumber(4)
   void clearPlatformLogsSettings() => clearField(4);
   @$pb.TagNumber(4)
-  PlatformLogsSettings ensurePlatformLogsSettings() => $_ensure(2);
+  PlatformLogsSettings ensurePlatformLogsSettings() => $_ensure(3);
+
+  /// Optional. Amazon MSK.
+  @$pb.TagNumber(5)
+  IngestionDataSourceSettings_AwsMsk get awsMsk => $_getN(4);
+  @$pb.TagNumber(5)
+  set awsMsk(IngestionDataSourceSettings_AwsMsk v) {
+    setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasAwsMsk() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearAwsMsk() => clearField(5);
+  @$pb.TagNumber(5)
+  IngestionDataSourceSettings_AwsMsk ensureAwsMsk() => $_ensure(4);
+
+  /// Optional. Confluent Cloud.
+  @$pb.TagNumber(6)
+  IngestionDataSourceSettings_ConfluentCloud get confluentCloud => $_getN(5);
+  @$pb.TagNumber(6)
+  set confluentCloud(IngestionDataSourceSettings_ConfluentCloud v) {
+    setField(6, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasConfluentCloud() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearConfluentCloud() => clearField(6);
+  @$pb.TagNumber(6)
+  IngestionDataSourceSettings_ConfluentCloud ensureConfluentCloud() =>
+      $_ensure(5);
 }
 
 /// Settings for Platform Logs produced by Pub/Sub.
@@ -1301,7 +1910,529 @@ class IngestionFailureEvent_CloudStorageFailure extends $pb.GeneratedMessage {
       $_ensure(4);
 }
 
-enum IngestionFailureEvent_Failure { cloudStorageFailure, notSet }
+enum IngestionFailureEvent_AwsMskFailureReason_Reason {
+  apiViolationReason,
+  notSet
+}
+
+/// Failure when ingesting from an Amazon MSK source.
+class IngestionFailureEvent_AwsMskFailureReason extends $pb.GeneratedMessage {
+  factory IngestionFailureEvent_AwsMskFailureReason({
+    $core.String? clusterArn,
+    $core.String? kafkaTopic,
+    $fixnum.Int64? partitionId,
+    $fixnum.Int64? offset,
+    IngestionFailureEvent_ApiViolationReason? apiViolationReason,
+  }) {
+    final $result = create();
+    if (clusterArn != null) {
+      $result.clusterArn = clusterArn;
+    }
+    if (kafkaTopic != null) {
+      $result.kafkaTopic = kafkaTopic;
+    }
+    if (partitionId != null) {
+      $result.partitionId = partitionId;
+    }
+    if (offset != null) {
+      $result.offset = offset;
+    }
+    if (apiViolationReason != null) {
+      $result.apiViolationReason = apiViolationReason;
+    }
+    return $result;
+  }
+  IngestionFailureEvent_AwsMskFailureReason._() : super();
+  factory IngestionFailureEvent_AwsMskFailureReason.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IngestionFailureEvent_AwsMskFailureReason.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static const $core
+      .Map<$core.int, IngestionFailureEvent_AwsMskFailureReason_Reason>
+      _IngestionFailureEvent_AwsMskFailureReason_ReasonByTag = {
+    5: IngestionFailureEvent_AwsMskFailureReason_Reason.apiViolationReason,
+    0: IngestionFailureEvent_AwsMskFailureReason_Reason.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'IngestionFailureEvent.AwsMskFailureReason',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
+      createEmptyInstance: create)
+    ..oo(0, [5])
+    ..aOS(1, _omitFieldNames ? '' : 'clusterArn')
+    ..aOS(2, _omitFieldNames ? '' : 'kafkaTopic')
+    ..aInt64(3, _omitFieldNames ? '' : 'partitionId')
+    ..aInt64(4, _omitFieldNames ? '' : 'offset')
+    ..aOM<IngestionFailureEvent_ApiViolationReason>(
+        5, _omitFieldNames ? '' : 'apiViolationReason',
+        subBuilder: IngestionFailureEvent_ApiViolationReason.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_AwsMskFailureReason clone() =>
+      IngestionFailureEvent_AwsMskFailureReason()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_AwsMskFailureReason copyWith(
+          void Function(IngestionFailureEvent_AwsMskFailureReason) updates) =>
+      super.copyWith((message) =>
+              updates(message as IngestionFailureEvent_AwsMskFailureReason))
+          as IngestionFailureEvent_AwsMskFailureReason;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_AwsMskFailureReason create() =>
+      IngestionFailureEvent_AwsMskFailureReason._();
+  IngestionFailureEvent_AwsMskFailureReason createEmptyInstance() => create();
+  static $pb.PbList<IngestionFailureEvent_AwsMskFailureReason>
+      createRepeated() =>
+          $pb.PbList<IngestionFailureEvent_AwsMskFailureReason>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_AwsMskFailureReason getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          IngestionFailureEvent_AwsMskFailureReason>(create);
+  static IngestionFailureEvent_AwsMskFailureReason? _defaultInstance;
+
+  IngestionFailureEvent_AwsMskFailureReason_Reason whichReason() =>
+      _IngestionFailureEvent_AwsMskFailureReason_ReasonByTag[$_whichOneof(0)]!;
+  void clearReason() => clearField($_whichOneof(0));
+
+  /// Optional. The ARN of the cluster of the topic being ingested from.
+  @$pb.TagNumber(1)
+  $core.String get clusterArn => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set clusterArn($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasClusterArn() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearClusterArn() => clearField(1);
+
+  /// Optional. The name of the Kafka topic being ingested from.
+  @$pb.TagNumber(2)
+  $core.String get kafkaTopic => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set kafkaTopic($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasKafkaTopic() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearKafkaTopic() => clearField(2);
+
+  /// Optional. The partition ID of the message that failed to be ingested.
+  @$pb.TagNumber(3)
+  $fixnum.Int64 get partitionId => $_getI64(2);
+  @$pb.TagNumber(3)
+  set partitionId($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasPartitionId() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearPartitionId() => clearField(3);
+
+  /// Optional. The offset within the partition of the message that failed to
+  /// be ingested.
+  @$pb.TagNumber(4)
+  $fixnum.Int64 get offset => $_getI64(3);
+  @$pb.TagNumber(4)
+  set offset($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasOffset() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearOffset() => clearField(4);
+
+  /// Optional. The Pub/Sub API limits prevented the desired message from
+  /// being published.
+  @$pb.TagNumber(5)
+  IngestionFailureEvent_ApiViolationReason get apiViolationReason => $_getN(4);
+  @$pb.TagNumber(5)
+  set apiViolationReason(IngestionFailureEvent_ApiViolationReason v) {
+    setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasApiViolationReason() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearApiViolationReason() => clearField(5);
+  @$pb.TagNumber(5)
+  IngestionFailureEvent_ApiViolationReason ensureApiViolationReason() =>
+      $_ensure(4);
+}
+
+enum IngestionFailureEvent_AzureEventHubsFailureReason_Reason {
+  apiViolationReason,
+  notSet
+}
+
+/// Failure when ingesting from an Azure Event Hubs source.
+class IngestionFailureEvent_AzureEventHubsFailureReason
+    extends $pb.GeneratedMessage {
+  factory IngestionFailureEvent_AzureEventHubsFailureReason({
+    $core.String? namespace,
+    $core.String? eventHub,
+    $fixnum.Int64? partitionId,
+    $fixnum.Int64? offset,
+    IngestionFailureEvent_ApiViolationReason? apiViolationReason,
+  }) {
+    final $result = create();
+    if (namespace != null) {
+      $result.namespace = namespace;
+    }
+    if (eventHub != null) {
+      $result.eventHub = eventHub;
+    }
+    if (partitionId != null) {
+      $result.partitionId = partitionId;
+    }
+    if (offset != null) {
+      $result.offset = offset;
+    }
+    if (apiViolationReason != null) {
+      $result.apiViolationReason = apiViolationReason;
+    }
+    return $result;
+  }
+  IngestionFailureEvent_AzureEventHubsFailureReason._() : super();
+  factory IngestionFailureEvent_AzureEventHubsFailureReason.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IngestionFailureEvent_AzureEventHubsFailureReason.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static const $core
+      .Map<$core.int, IngestionFailureEvent_AzureEventHubsFailureReason_Reason>
+      _IngestionFailureEvent_AzureEventHubsFailureReason_ReasonByTag = {
+    5: IngestionFailureEvent_AzureEventHubsFailureReason_Reason
+        .apiViolationReason,
+    0: IngestionFailureEvent_AzureEventHubsFailureReason_Reason.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'IngestionFailureEvent.AzureEventHubsFailureReason',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
+      createEmptyInstance: create)
+    ..oo(0, [5])
+    ..aOS(1, _omitFieldNames ? '' : 'namespace')
+    ..aOS(2, _omitFieldNames ? '' : 'eventHub')
+    ..aInt64(3, _omitFieldNames ? '' : 'partitionId')
+    ..aInt64(4, _omitFieldNames ? '' : 'offset')
+    ..aOM<IngestionFailureEvent_ApiViolationReason>(
+        5, _omitFieldNames ? '' : 'apiViolationReason',
+        subBuilder: IngestionFailureEvent_ApiViolationReason.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_AzureEventHubsFailureReason clone() =>
+      IngestionFailureEvent_AzureEventHubsFailureReason()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_AzureEventHubsFailureReason copyWith(
+          void Function(IngestionFailureEvent_AzureEventHubsFailureReason)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as IngestionFailureEvent_AzureEventHubsFailureReason))
+          as IngestionFailureEvent_AzureEventHubsFailureReason;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_AzureEventHubsFailureReason create() =>
+      IngestionFailureEvent_AzureEventHubsFailureReason._();
+  IngestionFailureEvent_AzureEventHubsFailureReason createEmptyInstance() =>
+      create();
+  static $pb.PbList<IngestionFailureEvent_AzureEventHubsFailureReason>
+      createRepeated() =>
+          $pb.PbList<IngestionFailureEvent_AzureEventHubsFailureReason>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_AzureEventHubsFailureReason getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          IngestionFailureEvent_AzureEventHubsFailureReason>(create);
+  static IngestionFailureEvent_AzureEventHubsFailureReason? _defaultInstance;
+
+  IngestionFailureEvent_AzureEventHubsFailureReason_Reason whichReason() =>
+      _IngestionFailureEvent_AzureEventHubsFailureReason_ReasonByTag[
+          $_whichOneof(0)]!;
+  void clearReason() => clearField($_whichOneof(0));
+
+  /// Optional. The namespace containing the event hub being ingested from.
+  @$pb.TagNumber(1)
+  $core.String get namespace => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set namespace($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasNamespace() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearNamespace() => clearField(1);
+
+  /// Optional. The name of the event hub being ingested from.
+  @$pb.TagNumber(2)
+  $core.String get eventHub => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set eventHub($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasEventHub() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearEventHub() => clearField(2);
+
+  /// Optional. The partition ID of the message that failed to be ingested.
+  @$pb.TagNumber(3)
+  $fixnum.Int64 get partitionId => $_getI64(2);
+  @$pb.TagNumber(3)
+  set partitionId($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasPartitionId() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearPartitionId() => clearField(3);
+
+  /// Optional. The offset within the partition of the message that failed to
+  /// be ingested.
+  @$pb.TagNumber(4)
+  $fixnum.Int64 get offset => $_getI64(3);
+  @$pb.TagNumber(4)
+  set offset($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasOffset() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearOffset() => clearField(4);
+
+  /// Optional. The Pub/Sub API limits prevented the desired message from
+  /// being published.
+  @$pb.TagNumber(5)
+  IngestionFailureEvent_ApiViolationReason get apiViolationReason => $_getN(4);
+  @$pb.TagNumber(5)
+  set apiViolationReason(IngestionFailureEvent_ApiViolationReason v) {
+    setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasApiViolationReason() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearApiViolationReason() => clearField(5);
+  @$pb.TagNumber(5)
+  IngestionFailureEvent_ApiViolationReason ensureApiViolationReason() =>
+      $_ensure(4);
+}
+
+enum IngestionFailureEvent_ConfluentCloudFailureReason_Reason {
+  apiViolationReason,
+  notSet
+}
+
+/// Failure when ingesting from a Confluent Cloud source.
+class IngestionFailureEvent_ConfluentCloudFailureReason
+    extends $pb.GeneratedMessage {
+  factory IngestionFailureEvent_ConfluentCloudFailureReason({
+    $core.String? clusterId,
+    $core.String? kafkaTopic,
+    $fixnum.Int64? partitionId,
+    $fixnum.Int64? offset,
+    IngestionFailureEvent_ApiViolationReason? apiViolationReason,
+  }) {
+    final $result = create();
+    if (clusterId != null) {
+      $result.clusterId = clusterId;
+    }
+    if (kafkaTopic != null) {
+      $result.kafkaTopic = kafkaTopic;
+    }
+    if (partitionId != null) {
+      $result.partitionId = partitionId;
+    }
+    if (offset != null) {
+      $result.offset = offset;
+    }
+    if (apiViolationReason != null) {
+      $result.apiViolationReason = apiViolationReason;
+    }
+    return $result;
+  }
+  IngestionFailureEvent_ConfluentCloudFailureReason._() : super();
+  factory IngestionFailureEvent_ConfluentCloudFailureReason.fromBuffer(
+          $core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory IngestionFailureEvent_ConfluentCloudFailureReason.fromJson(
+          $core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static const $core
+      .Map<$core.int, IngestionFailureEvent_ConfluentCloudFailureReason_Reason>
+      _IngestionFailureEvent_ConfluentCloudFailureReason_ReasonByTag = {
+    5: IngestionFailureEvent_ConfluentCloudFailureReason_Reason
+        .apiViolationReason,
+    0: IngestionFailureEvent_ConfluentCloudFailureReason_Reason.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames
+          ? ''
+          : 'IngestionFailureEvent.ConfluentCloudFailureReason',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
+      createEmptyInstance: create)
+    ..oo(0, [5])
+    ..aOS(1, _omitFieldNames ? '' : 'clusterId')
+    ..aOS(2, _omitFieldNames ? '' : 'kafkaTopic')
+    ..aInt64(3, _omitFieldNames ? '' : 'partitionId')
+    ..aInt64(4, _omitFieldNames ? '' : 'offset')
+    ..aOM<IngestionFailureEvent_ApiViolationReason>(
+        5, _omitFieldNames ? '' : 'apiViolationReason',
+        subBuilder: IngestionFailureEvent_ApiViolationReason.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_ConfluentCloudFailureReason clone() =>
+      IngestionFailureEvent_ConfluentCloudFailureReason()
+        ..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  IngestionFailureEvent_ConfluentCloudFailureReason copyWith(
+          void Function(IngestionFailureEvent_ConfluentCloudFailureReason)
+              updates) =>
+      super.copyWith((message) => updates(
+              message as IngestionFailureEvent_ConfluentCloudFailureReason))
+          as IngestionFailureEvent_ConfluentCloudFailureReason;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_ConfluentCloudFailureReason create() =>
+      IngestionFailureEvent_ConfluentCloudFailureReason._();
+  IngestionFailureEvent_ConfluentCloudFailureReason createEmptyInstance() =>
+      create();
+  static $pb.PbList<IngestionFailureEvent_ConfluentCloudFailureReason>
+      createRepeated() =>
+          $pb.PbList<IngestionFailureEvent_ConfluentCloudFailureReason>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionFailureEvent_ConfluentCloudFailureReason getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<
+          IngestionFailureEvent_ConfluentCloudFailureReason>(create);
+  static IngestionFailureEvent_ConfluentCloudFailureReason? _defaultInstance;
+
+  IngestionFailureEvent_ConfluentCloudFailureReason_Reason whichReason() =>
+      _IngestionFailureEvent_ConfluentCloudFailureReason_ReasonByTag[
+          $_whichOneof(0)]!;
+  void clearReason() => clearField($_whichOneof(0));
+
+  /// Optional. The cluster ID containing the topic being ingested from.
+  @$pb.TagNumber(1)
+  $core.String get clusterId => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set clusterId($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasClusterId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearClusterId() => clearField(1);
+
+  /// Optional. The name of the Kafka topic being ingested from.
+  @$pb.TagNumber(2)
+  $core.String get kafkaTopic => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set kafkaTopic($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasKafkaTopic() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearKafkaTopic() => clearField(2);
+
+  /// Optional. The partition ID of the message that failed to be ingested.
+  @$pb.TagNumber(3)
+  $fixnum.Int64 get partitionId => $_getI64(2);
+  @$pb.TagNumber(3)
+  set partitionId($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasPartitionId() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearPartitionId() => clearField(3);
+
+  /// Optional. The offset within the partition of the message that failed to
+  /// be ingested.
+  @$pb.TagNumber(4)
+  $fixnum.Int64 get offset => $_getI64(3);
+  @$pb.TagNumber(4)
+  set offset($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasOffset() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearOffset() => clearField(4);
+
+  /// Optional. The Pub/Sub API limits prevented the desired message from
+  /// being published.
+  @$pb.TagNumber(5)
+  IngestionFailureEvent_ApiViolationReason get apiViolationReason => $_getN(4);
+  @$pb.TagNumber(5)
+  set apiViolationReason(IngestionFailureEvent_ApiViolationReason v) {
+    setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasApiViolationReason() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearApiViolationReason() => clearField(5);
+  @$pb.TagNumber(5)
+  IngestionFailureEvent_ApiViolationReason ensureApiViolationReason() =>
+      $_ensure(4);
+}
+
+enum IngestionFailureEvent_Failure {
+  cloudStorageFailure,
+  awsMskFailure,
+  azureEventHubsFailure,
+  confluentCloudFailure,
+  notSet
+}
 
 /// Payload of the Platform Log entry sent when a failure is encountered while
 /// ingesting.
@@ -1310,6 +2441,9 @@ class IngestionFailureEvent extends $pb.GeneratedMessage {
     $core.String? topic,
     $core.String? errorMessage,
     IngestionFailureEvent_CloudStorageFailure? cloudStorageFailure,
+    IngestionFailureEvent_AwsMskFailureReason? awsMskFailure,
+    IngestionFailureEvent_AzureEventHubsFailureReason? azureEventHubsFailure,
+    IngestionFailureEvent_ConfluentCloudFailureReason? confluentCloudFailure,
   }) {
     final $result = create();
     if (topic != null) {
@@ -1320,6 +2454,15 @@ class IngestionFailureEvent extends $pb.GeneratedMessage {
     }
     if (cloudStorageFailure != null) {
       $result.cloudStorageFailure = cloudStorageFailure;
+    }
+    if (awsMskFailure != null) {
+      $result.awsMskFailure = awsMskFailure;
+    }
+    if (azureEventHubsFailure != null) {
+      $result.azureEventHubsFailure = azureEventHubsFailure;
+    }
+    if (confluentCloudFailure != null) {
+      $result.confluentCloudFailure = confluentCloudFailure;
     }
     return $result;
   }
@@ -1334,6 +2477,9 @@ class IngestionFailureEvent extends $pb.GeneratedMessage {
   static const $core.Map<$core.int, IngestionFailureEvent_Failure>
       _IngestionFailureEvent_FailureByTag = {
     3: IngestionFailureEvent_Failure.cloudStorageFailure,
+    4: IngestionFailureEvent_Failure.awsMskFailure,
+    5: IngestionFailureEvent_Failure.azureEventHubsFailure,
+    6: IngestionFailureEvent_Failure.confluentCloudFailure,
     0: IngestionFailureEvent_Failure.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
@@ -1341,12 +2487,21 @@ class IngestionFailureEvent extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
       createEmptyInstance: create)
-    ..oo(0, [3])
+    ..oo(0, [3, 4, 5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'topic')
     ..aOS(2, _omitFieldNames ? '' : 'errorMessage')
     ..aOM<IngestionFailureEvent_CloudStorageFailure>(
         3, _omitFieldNames ? '' : 'cloudStorageFailure',
         subBuilder: IngestionFailureEvent_CloudStorageFailure.create)
+    ..aOM<IngestionFailureEvent_AwsMskFailureReason>(
+        4, _omitFieldNames ? '' : 'awsMskFailure',
+        subBuilder: IngestionFailureEvent_AwsMskFailureReason.create)
+    ..aOM<IngestionFailureEvent_AzureEventHubsFailureReason>(
+        5, _omitFieldNames ? '' : 'azureEventHubsFailure',
+        subBuilder: IngestionFailureEvent_AzureEventHubsFailureReason.create)
+    ..aOM<IngestionFailureEvent_ConfluentCloudFailureReason>(
+        6, _omitFieldNames ? '' : 'confluentCloudFailure',
+        subBuilder: IngestionFailureEvent_ConfluentCloudFailureReason.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1421,6 +2576,58 @@ class IngestionFailureEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   IngestionFailureEvent_CloudStorageFailure ensureCloudStorageFailure() =>
       $_ensure(2);
+
+  /// Optional. Failure when ingesting from Amazon MSK.
+  @$pb.TagNumber(4)
+  IngestionFailureEvent_AwsMskFailureReason get awsMskFailure => $_getN(3);
+  @$pb.TagNumber(4)
+  set awsMskFailure(IngestionFailureEvent_AwsMskFailureReason v) {
+    setField(4, v);
+  }
+
+  @$pb.TagNumber(4)
+  $core.bool hasAwsMskFailure() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearAwsMskFailure() => clearField(4);
+  @$pb.TagNumber(4)
+  IngestionFailureEvent_AwsMskFailureReason ensureAwsMskFailure() =>
+      $_ensure(3);
+
+  /// Optional. Failure when ingesting from Azure Event Hubs.
+  @$pb.TagNumber(5)
+  IngestionFailureEvent_AzureEventHubsFailureReason get azureEventHubsFailure =>
+      $_getN(4);
+  @$pb.TagNumber(5)
+  set azureEventHubsFailure(
+      IngestionFailureEvent_AzureEventHubsFailureReason v) {
+    setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasAzureEventHubsFailure() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearAzureEventHubsFailure() => clearField(5);
+  @$pb.TagNumber(5)
+  IngestionFailureEvent_AzureEventHubsFailureReason
+      ensureAzureEventHubsFailure() => $_ensure(4);
+
+  /// Optional. Failure when ingesting from Confluent Cloud.
+  @$pb.TagNumber(6)
+  IngestionFailureEvent_ConfluentCloudFailureReason get confluentCloudFailure =>
+      $_getN(5);
+  @$pb.TagNumber(6)
+  set confluentCloudFailure(
+      IngestionFailureEvent_ConfluentCloudFailureReason v) {
+    setField(6, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasConfluentCloudFailure() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearConfluentCloudFailure() => clearField(6);
+  @$pb.TagNumber(6)
+  IngestionFailureEvent_ConfluentCloudFailureReason
+      ensureConfluentCloudFailure() => $_ensure(5);
 }
 
 /// A topic resource.
@@ -1432,7 +2639,7 @@ class Topic extends $pb.GeneratedMessage {
     $core.String? kmsKeyName,
     SchemaSettings? schemaSettings,
     $core.bool? satisfiesPzs,
-    $266.Duration? messageRetentionDuration,
+    $292.Duration? messageRetentionDuration,
     Topic_State? state,
     IngestionDataSourceSettings? ingestionDataSourceSettings,
   }) {
@@ -1492,8 +2699,8 @@ class Topic extends $pb.GeneratedMessage {
     ..aOM<SchemaSettings>(6, _omitFieldNames ? '' : 'schemaSettings',
         subBuilder: SchemaSettings.create)
     ..aOB(7, _omitFieldNames ? '' : 'satisfiesPzs')
-    ..aOM<$266.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration',
+        subBuilder: $292.Duration.create)
     ..e<Topic_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
         defaultOrMaker: Topic_State.STATE_UNSPECIFIED,
         valueOf: Topic_State.valueOf,
@@ -1619,9 +2826,9 @@ class Topic extends $pb.GeneratedMessage {
   /// not set, message retention is controlled by settings on individual
   /// subscriptions. Cannot be more than 31 days or less than 10 minutes.
   @$pb.TagNumber(8)
-  $266.Duration get messageRetentionDuration => $_getN(6);
+  $292.Duration get messageRetentionDuration => $_getN(6);
   @$pb.TagNumber(8)
-  set messageRetentionDuration($266.Duration v) {
+  set messageRetentionDuration($292.Duration v) {
     setField(8, v);
   }
 
@@ -1630,7 +2837,7 @@ class Topic extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearMessageRetentionDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $266.Duration ensureMessageRetentionDuration() => $_ensure(6);
+  $292.Duration ensureMessageRetentionDuration() => $_ensure(6);
 
   /// Output only. An output-only field indicating the state of the topic.
   @$pb.TagNumber(9)
@@ -1675,7 +2882,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
     $core.List<$core.int>? data,
     $core.Map<$core.String, $core.String>? attributes,
     $core.String? messageId,
-    $304.Timestamp? publishTime,
+    $330.Timestamp? publishTime,
     $core.String? orderingKey,
   }) {
     final $result = create();
@@ -1717,8 +2924,8 @@ class PubsubMessage extends $pb.GeneratedMessage {
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.pubsub.v1'))
     ..aOS(3, _omitFieldNames ? '' : 'messageId')
-    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'publishTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(4, _omitFieldNames ? '' : 'publishTime',
+        subBuilder: $330.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'orderingKey')
     ..hasRequiredFields = false;
 
@@ -1785,9 +2992,9 @@ class PubsubMessage extends $pb.GeneratedMessage {
   /// it receives the `Publish` call. It must not be populated by the
   /// publisher in a `Publish` call.
   @$pb.TagNumber(4)
-  $304.Timestamp get publishTime => $_getN(3);
+  $330.Timestamp get publishTime => $_getN(3);
   @$pb.TagNumber(4)
-  set publishTime($304.Timestamp v) {
+  set publishTime($330.Timestamp v) {
     setField(4, v);
   }
 
@@ -1796,7 +3003,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearPublishTime() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Timestamp ensurePublishTime() => $_ensure(3);
+  $330.Timestamp ensurePublishTime() => $_ensure(3);
 
   /// Optional. If non-empty, identifies related messages for which publish order
   /// should be respected. If a `Subscription` has `enable_message_ordering` set
@@ -1888,7 +3095,7 @@ class GetTopicRequest extends $pb.GeneratedMessage {
 class UpdateTopicRequest extends $pb.GeneratedMessage {
   factory UpdateTopicRequest({
     Topic? topic,
-    $335.FieldMask? updateMask,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (topic != null) {
@@ -1913,8 +3120,8 @@ class UpdateTopicRequest extends $pb.GeneratedMessage {
           const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
       createEmptyInstance: create)
     ..aOM<Topic>(1, _omitFieldNames ? '' : 'topic', subBuilder: Topic.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1961,9 +3168,9 @@ class UpdateTopicRequest extends $pb.GeneratedMessage {
   /// the `topic` provided above, then the updated value is determined by the
   /// policy configured at the project or organization level.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -1972,7 +3179,7 @@ class UpdateTopicRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for the Publish method.
@@ -2938,7 +4145,7 @@ class Subscription extends $pb.GeneratedMessage {
     PushConfig? pushConfig,
     $core.int? ackDeadlineSeconds,
     $core.bool? retainAckedMessages,
-    $266.Duration? messageRetentionDuration,
+    $292.Duration? messageRetentionDuration,
     $core.Map<$core.String, $core.String>? labels,
     $core.bool? enableMessageOrdering,
     ExpirationPolicy? expirationPolicy,
@@ -2947,7 +4154,7 @@ class Subscription extends $pb.GeneratedMessage {
     RetryPolicy? retryPolicy,
     $core.bool? detached,
     $core.bool? enableExactlyOnceDelivery,
-    $266.Duration? topicMessageRetentionDuration,
+    $292.Duration? topicMessageRetentionDuration,
     BigQueryConfig? bigqueryConfig,
     Subscription_State? state,
     CloudStorageConfig? cloudStorageConfig,
@@ -3033,8 +4240,8 @@ class Subscription extends $pb.GeneratedMessage {
     ..a<$core.int>(
         5, _omitFieldNames ? '' : 'ackDeadlineSeconds', $pb.PbFieldType.O3)
     ..aOB(7, _omitFieldNames ? '' : 'retainAckedMessages')
-    ..aOM<$266.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration',
+        subBuilder: $292.Duration.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Subscription.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -3050,9 +4257,9 @@ class Subscription extends $pb.GeneratedMessage {
         subBuilder: RetryPolicy.create)
     ..aOB(15, _omitFieldNames ? '' : 'detached')
     ..aOB(16, _omitFieldNames ? '' : 'enableExactlyOnceDelivery')
-    ..aOM<$266.Duration>(
+    ..aOM<$292.Duration>(
         17, _omitFieldNames ? '' : 'topicMessageRetentionDuration',
-        subBuilder: $266.Duration.create)
+        subBuilder: $292.Duration.create)
     ..aOM<BigQueryConfig>(18, _omitFieldNames ? '' : 'bigqueryConfig',
         subBuilder: BigQueryConfig.create)
     ..e<Subscription_State>(
@@ -3195,9 +4402,9 @@ class Subscription extends $pb.GeneratedMessage {
   /// and thus configures how far back in time a `Seek` can be done. Defaults to
   /// 7 days. Cannot be more than 31 days or less than 10 minutes.
   @$pb.TagNumber(8)
-  $266.Duration get messageRetentionDuration => $_getN(5);
+  $292.Duration get messageRetentionDuration => $_getN(5);
   @$pb.TagNumber(8)
-  set messageRetentionDuration($266.Duration v) {
+  set messageRetentionDuration($292.Duration v) {
     setField(8, v);
   }
 
@@ -3206,7 +4413,7 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearMessageRetentionDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $266.Duration ensureMessageRetentionDuration() => $_ensure(5);
+  $292.Duration ensureMessageRetentionDuration() => $_ensure(5);
 
   /// Optional. See [Creating and managing
   /// labels](https://cloud.google.com/pubsub/docs/labels).
@@ -3358,9 +4565,9 @@ class Subscription extends $pb.GeneratedMessage {
   /// the `message_retention_duration` field in `Topic`. This field is set only
   /// in responses from the server; it is ignored if it is set in any requests.
   @$pb.TagNumber(17)
-  $266.Duration get topicMessageRetentionDuration => $_getN(14);
+  $292.Duration get topicMessageRetentionDuration => $_getN(14);
   @$pb.TagNumber(17)
-  set topicMessageRetentionDuration($266.Duration v) {
+  set topicMessageRetentionDuration($292.Duration v) {
     setField(17, v);
   }
 
@@ -3369,7 +4576,7 @@ class Subscription extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearTopicMessageRetentionDuration() => clearField(17);
   @$pb.TagNumber(17)
-  $266.Duration ensureTopicMessageRetentionDuration() => $_ensure(14);
+  $292.Duration ensureTopicMessageRetentionDuration() => $_ensure(14);
 
   /// Optional. If delivery to BigQuery is used with this subscription, this
   /// field is used to configure it.
@@ -3450,8 +4657,8 @@ class Subscription extends $pb.GeneratedMessage {
 ///  delay can be more or less than configured backoff.
 class RetryPolicy extends $pb.GeneratedMessage {
   factory RetryPolicy({
-    $266.Duration? minimumBackoff,
-    $266.Duration? maximumBackoff,
+    $292.Duration? minimumBackoff,
+    $292.Duration? maximumBackoff,
   }) {
     final $result = create();
     if (minimumBackoff != null) {
@@ -3475,10 +4682,10 @@ class RetryPolicy extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'minimumBackoff',
-        subBuilder: $266.Duration.create)
-    ..aOM<$266.Duration>(2, _omitFieldNames ? '' : 'maximumBackoff',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'minimumBackoff',
+        subBuilder: $292.Duration.create)
+    ..aOM<$292.Duration>(2, _omitFieldNames ? '' : 'maximumBackoff',
+        subBuilder: $292.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3506,9 +4713,9 @@ class RetryPolicy extends $pb.GeneratedMessage {
   /// Optional. The minimum delay between consecutive deliveries of a given
   /// message. Value should be between 0 and 600 seconds. Defaults to 10 seconds.
   @$pb.TagNumber(1)
-  $266.Duration get minimumBackoff => $_getN(0);
+  $292.Duration get minimumBackoff => $_getN(0);
   @$pb.TagNumber(1)
-  set minimumBackoff($266.Duration v) {
+  set minimumBackoff($292.Duration v) {
     setField(1, v);
   }
 
@@ -3517,15 +4724,15 @@ class RetryPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearMinimumBackoff() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensureMinimumBackoff() => $_ensure(0);
+  $292.Duration ensureMinimumBackoff() => $_ensure(0);
 
   /// Optional. The maximum delay between consecutive deliveries of a given
   /// message. Value should be between 0 and 600 seconds. Defaults to 600
   /// seconds.
   @$pb.TagNumber(2)
-  $266.Duration get maximumBackoff => $_getN(1);
+  $292.Duration get maximumBackoff => $_getN(1);
   @$pb.TagNumber(2)
-  set maximumBackoff($266.Duration v) {
+  set maximumBackoff($292.Duration v) {
     setField(2, v);
   }
 
@@ -3534,7 +4741,7 @@ class RetryPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearMaximumBackoff() => clearField(2);
   @$pb.TagNumber(2)
-  $266.Duration ensureMaximumBackoff() => $_ensure(1);
+  $292.Duration ensureMaximumBackoff() => $_ensure(1);
 }
 
 ///  Dead lettering is done on a best effort basis. The same message might be
@@ -3648,7 +4855,7 @@ class DeadLetterPolicy extends $pb.GeneratedMessage {
 /// automatic resource deletion).
 class ExpirationPolicy extends $pb.GeneratedMessage {
   factory ExpirationPolicy({
-    $266.Duration? ttl,
+    $292.Duration? ttl,
   }) {
     final $result = create();
     if (ttl != null) {
@@ -3669,8 +4876,8 @@ class ExpirationPolicy extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'),
       createEmptyInstance: create)
-    ..aOM<$266.Duration>(1, _omitFieldNames ? '' : 'ttl',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'ttl',
+        subBuilder: $292.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3703,9 +4910,9 @@ class ExpirationPolicy extends $pb.GeneratedMessage {
   /// associated resource, as well. If `ttl` is not set, the associated resource
   /// never expires.
   @$pb.TagNumber(1)
-  $266.Duration get ttl => $_getN(0);
+  $292.Duration get ttl => $_getN(0);
   @$pb.TagNumber(1)
-  set ttl($266.Duration v) {
+  set ttl($292.Duration v) {
     setField(1, v);
   }
 
@@ -3714,7 +4921,7 @@ class ExpirationPolicy extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTtl() => clearField(1);
   @$pb.TagNumber(1)
-  $266.Duration ensureTtl() => $_ensure(0);
+  $292.Duration ensureTtl() => $_ensure(0);
 }
 
 /// Contains information needed for generating an
@@ -4459,7 +5666,7 @@ class CloudStorageConfig extends $pb.GeneratedMessage {
     $core.String? filenameSuffix,
     CloudStorageConfig_TextConfig? textConfig,
     CloudStorageConfig_AvroConfig? avroConfig,
-    $266.Duration? maxDuration,
+    $292.Duration? maxDuration,
     $fixnum.Int64? maxBytes,
     $fixnum.Int64? maxMessages,
     CloudStorageConfig_State? state,
@@ -4529,8 +5736,8 @@ class CloudStorageConfig extends $pb.GeneratedMessage {
         subBuilder: CloudStorageConfig_TextConfig.create)
     ..aOM<CloudStorageConfig_AvroConfig>(5, _omitFieldNames ? '' : 'avroConfig',
         subBuilder: CloudStorageConfig_AvroConfig.create)
-    ..aOM<$266.Duration>(6, _omitFieldNames ? '' : 'maxDuration',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(6, _omitFieldNames ? '' : 'maxDuration',
+        subBuilder: $292.Duration.create)
     ..aInt64(7, _omitFieldNames ? '' : 'maxBytes')
     ..aInt64(8, _omitFieldNames ? '' : 'maxMessages')
     ..e<CloudStorageConfig_State>(
@@ -4650,9 +5857,9 @@ class CloudStorageConfig extends $pb.GeneratedMessage {
   /// file is created. Min 1 minute, max 10 minutes, default 5 minutes. May not
   /// exceed the subscription's acknowledgement deadline.
   @$pb.TagNumber(6)
-  $266.Duration get maxDuration => $_getN(5);
+  $292.Duration get maxDuration => $_getN(5);
   @$pb.TagNumber(6)
-  set maxDuration($266.Duration v) {
+  set maxDuration($292.Duration v) {
     setField(6, v);
   }
 
@@ -4661,7 +5868,7 @@ class CloudStorageConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearMaxDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $266.Duration ensureMaxDuration() => $_ensure(5);
+  $292.Duration ensureMaxDuration() => $_ensure(5);
 
   /// Optional. The maximum bytes that can be written to a Cloud Storage file
   /// before a new file is created. Min 1 KB, max 10 GiB. The max_bytes limit may
@@ -4930,7 +6137,7 @@ class GetSubscriptionRequest extends $pb.GeneratedMessage {
 class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   factory UpdateSubscriptionRequest({
     Subscription? subscription,
-    $335.FieldMask? updateMask,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (subscription != null) {
@@ -4956,8 +6163,8 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<Subscription>(1, _omitFieldNames ? '' : 'subscription',
         subBuilder: Subscription.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -5003,9 +6210,9 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   /// Required. Indicates which fields in the provided subscription to update.
   /// Must be specified and non-empty.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -5014,7 +6221,7 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for the `ListSubscriptions` method.
@@ -6458,7 +7665,7 @@ class CreateSnapshotRequest extends $pb.GeneratedMessage {
 class UpdateSnapshotRequest extends $pb.GeneratedMessage {
   factory UpdateSnapshotRequest({
     Snapshot? snapshot,
-    $335.FieldMask? updateMask,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (snapshot != null) {
@@ -6484,8 +7691,8 @@ class UpdateSnapshotRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<Snapshot>(1, _omitFieldNames ? '' : 'snapshot',
         subBuilder: Snapshot.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -6531,9 +7738,9 @@ class UpdateSnapshotRequest extends $pb.GeneratedMessage {
   /// Required. Indicates which fields in the provided snapshot to update.
   /// Must be specified and non-empty.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -6542,7 +7749,7 @@ class UpdateSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A snapshot resource. Snapshots are used in
@@ -6554,7 +7761,7 @@ class Snapshot extends $pb.GeneratedMessage {
   factory Snapshot({
     $core.String? name,
     $core.String? topic,
-    $304.Timestamp? expireTime,
+    $330.Timestamp? expireTime,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -6587,8 +7794,8 @@ class Snapshot extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'topic')
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $330.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels',
         entryClassName: 'Snapshot.LabelsEntry',
         keyFieldType: $pb.PbFieldType.OS,
@@ -6655,9 +7862,9 @@ class Snapshot extends $pb.GeneratedMessage {
   /// exists -- will expire in 4 days. The service will refuse to create a
   /// snapshot that would expire in less than 1 hour after creation.
   @$pb.TagNumber(3)
-  $304.Timestamp get expireTime => $_getN(2);
+  $330.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($304.Timestamp v) {
+  set expireTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -6666,7 +7873,7 @@ class Snapshot extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureExpireTime() => $_ensure(2);
+  $330.Timestamp ensureExpireTime() => $_ensure(2);
 
   /// Optional. See [Creating and managing labels]
   /// (https://cloud.google.com/pubsub/docs/labels).
@@ -6994,7 +8201,7 @@ enum SeekRequest_Target { time, snapshot, notSet }
 class SeekRequest extends $pb.GeneratedMessage {
   factory SeekRequest({
     $core.String? subscription,
-    $304.Timestamp? time,
+    $330.Timestamp? time,
     $core.String? snapshot,
   }) {
     final $result = create();
@@ -7030,8 +8237,8 @@ class SeekRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'subscription')
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'time',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'time',
+        subBuilder: $330.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'snapshot')
     ..hasRequiredFields = false;
 
@@ -7086,9 +8293,9 @@ class SeekRequest extends $pb.GeneratedMessage {
   /// creation time), only retained messages will be marked as unacknowledged,
   /// and already-expunged messages will not be restored.
   @$pb.TagNumber(2)
-  $304.Timestamp get time => $_getN(1);
+  $330.Timestamp get time => $_getN(1);
   @$pb.TagNumber(2)
-  set time($304.Timestamp v) {
+  set time($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -7097,7 +8304,7 @@ class SeekRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureTime() => $_ensure(1);
+  $330.Timestamp ensureTime() => $_ensure(1);
 
   /// Optional. The snapshot to seek to. The snapshot's topic must be the same
   /// as that of the provided subscription. Format is

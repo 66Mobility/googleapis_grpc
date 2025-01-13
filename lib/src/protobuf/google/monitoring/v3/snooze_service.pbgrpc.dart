@@ -15,59 +15,59 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'snooze.pb.dart' as $203;
-import 'snooze_service.pb.dart' as $202;
+import 'snooze.pb.dart' as $229;
+import 'snooze_service.pb.dart' as $228;
 
 export 'snooze_service.pb.dart';
 
 @$pb.GrpcServiceName('google.monitoring.v3.SnoozeService')
 class SnoozeServiceClient extends $grpc.Client {
   static final _$createSnooze =
-      $grpc.ClientMethod<$202.CreateSnoozeRequest, $203.Snooze>(
+      $grpc.ClientMethod<$228.CreateSnoozeRequest, $229.Snooze>(
           '/google.monitoring.v3.SnoozeService/CreateSnooze',
-          ($202.CreateSnoozeRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $203.Snooze.fromBuffer(value));
+          ($228.CreateSnoozeRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $229.Snooze.fromBuffer(value));
   static final _$listSnoozes =
-      $grpc.ClientMethod<$202.ListSnoozesRequest, $202.ListSnoozesResponse>(
+      $grpc.ClientMethod<$228.ListSnoozesRequest, $228.ListSnoozesResponse>(
           '/google.monitoring.v3.SnoozeService/ListSnoozes',
-          ($202.ListSnoozesRequest value) => value.writeToBuffer(),
+          ($228.ListSnoozesRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $202.ListSnoozesResponse.fromBuffer(value));
+              $228.ListSnoozesResponse.fromBuffer(value));
   static final _$getSnooze =
-      $grpc.ClientMethod<$202.GetSnoozeRequest, $203.Snooze>(
+      $grpc.ClientMethod<$228.GetSnoozeRequest, $229.Snooze>(
           '/google.monitoring.v3.SnoozeService/GetSnooze',
-          ($202.GetSnoozeRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $203.Snooze.fromBuffer(value));
+          ($228.GetSnoozeRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $229.Snooze.fromBuffer(value));
   static final _$updateSnooze =
-      $grpc.ClientMethod<$202.UpdateSnoozeRequest, $203.Snooze>(
+      $grpc.ClientMethod<$228.UpdateSnoozeRequest, $229.Snooze>(
           '/google.monitoring.v3.SnoozeService/UpdateSnooze',
-          ($202.UpdateSnoozeRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $203.Snooze.fromBuffer(value));
+          ($228.UpdateSnoozeRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $229.Snooze.fromBuffer(value));
 
   SnoozeServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$203.Snooze> createSnooze(
-      $202.CreateSnoozeRequest request,
+  $grpc.ResponseFuture<$229.Snooze> createSnooze(
+      $228.CreateSnoozeRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createSnooze, request, options: options);
   }
 
-  $grpc.ResponseFuture<$202.ListSnoozesResponse> listSnoozes(
-      $202.ListSnoozesRequest request,
+  $grpc.ResponseFuture<$228.ListSnoozesResponse> listSnoozes(
+      $228.ListSnoozesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listSnoozes, request, options: options);
   }
 
-  $grpc.ResponseFuture<$203.Snooze> getSnooze($202.GetSnoozeRequest request,
+  $grpc.ResponseFuture<$229.Snooze> getSnooze($228.GetSnoozeRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSnooze, request, options: options);
   }
 
-  $grpc.ResponseFuture<$203.Snooze> updateSnooze(
-      $202.UpdateSnoozeRequest request,
+  $grpc.ResponseFuture<$229.Snooze> updateSnooze(
+      $228.UpdateSnoozeRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateSnooze, request, options: options);
   }
@@ -78,68 +78,68 @@ abstract class SnoozeServiceBase extends $grpc.Service {
   $core.String get $name => 'google.monitoring.v3.SnoozeService';
 
   SnoozeServiceBase() {
-    $addMethod($grpc.ServiceMethod<$202.CreateSnoozeRequest, $203.Snooze>(
+    $addMethod($grpc.ServiceMethod<$228.CreateSnoozeRequest, $229.Snooze>(
         'CreateSnooze',
         createSnooze_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $202.CreateSnoozeRequest.fromBuffer(value),
-        ($203.Snooze value) => value.writeToBuffer()));
+            $228.CreateSnoozeRequest.fromBuffer(value),
+        ($229.Snooze value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$202.ListSnoozesRequest, $202.ListSnoozesResponse>(
+        $grpc.ServiceMethod<$228.ListSnoozesRequest, $228.ListSnoozesResponse>(
             'ListSnoozes',
             listSnoozes_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $202.ListSnoozesRequest.fromBuffer(value),
-            ($202.ListSnoozesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$202.GetSnoozeRequest, $203.Snooze>(
+                $228.ListSnoozesRequest.fromBuffer(value),
+            ($228.ListSnoozesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$228.GetSnoozeRequest, $229.Snooze>(
         'GetSnooze',
         getSnooze_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $202.GetSnoozeRequest.fromBuffer(value),
-        ($203.Snooze value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$202.UpdateSnoozeRequest, $203.Snooze>(
+            $228.GetSnoozeRequest.fromBuffer(value),
+        ($229.Snooze value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$228.UpdateSnoozeRequest, $229.Snooze>(
         'UpdateSnooze',
         updateSnooze_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $202.UpdateSnoozeRequest.fromBuffer(value),
-        ($203.Snooze value) => value.writeToBuffer()));
+            $228.UpdateSnoozeRequest.fromBuffer(value),
+        ($229.Snooze value) => value.writeToBuffer()));
   }
 
-  $async.Future<$203.Snooze> createSnooze_Pre($grpc.ServiceCall call,
-      $async.Future<$202.CreateSnoozeRequest> request) async {
+  $async.Future<$229.Snooze> createSnooze_Pre($grpc.ServiceCall call,
+      $async.Future<$228.CreateSnoozeRequest> request) async {
     return createSnooze(call, await request);
   }
 
-  $async.Future<$202.ListSnoozesResponse> listSnoozes_Pre(
+  $async.Future<$228.ListSnoozesResponse> listSnoozes_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$202.ListSnoozesRequest> request) async {
+      $async.Future<$228.ListSnoozesRequest> request) async {
     return listSnoozes(call, await request);
   }
 
-  $async.Future<$203.Snooze> getSnooze_Pre($grpc.ServiceCall call,
-      $async.Future<$202.GetSnoozeRequest> request) async {
+  $async.Future<$229.Snooze> getSnooze_Pre($grpc.ServiceCall call,
+      $async.Future<$228.GetSnoozeRequest> request) async {
     return getSnooze(call, await request);
   }
 
-  $async.Future<$203.Snooze> updateSnooze_Pre($grpc.ServiceCall call,
-      $async.Future<$202.UpdateSnoozeRequest> request) async {
+  $async.Future<$229.Snooze> updateSnooze_Pre($grpc.ServiceCall call,
+      $async.Future<$228.UpdateSnoozeRequest> request) async {
     return updateSnooze(call, await request);
   }
 
-  $async.Future<$203.Snooze> createSnooze(
-      $grpc.ServiceCall call, $202.CreateSnoozeRequest request);
-  $async.Future<$202.ListSnoozesResponse> listSnoozes(
-      $grpc.ServiceCall call, $202.ListSnoozesRequest request);
-  $async.Future<$203.Snooze> getSnooze(
-      $grpc.ServiceCall call, $202.GetSnoozeRequest request);
-  $async.Future<$203.Snooze> updateSnooze(
-      $grpc.ServiceCall call, $202.UpdateSnoozeRequest request);
+  $async.Future<$229.Snooze> createSnooze(
+      $grpc.ServiceCall call, $228.CreateSnoozeRequest request);
+  $async.Future<$228.ListSnoozesResponse> listSnoozes(
+      $grpc.ServiceCall call, $228.ListSnoozesRequest request);
+  $async.Future<$229.Snooze> getSnooze(
+      $grpc.ServiceCall call, $228.GetSnoozeRequest request);
+  $async.Future<$229.Snooze> updateSnooze(
+      $grpc.ServiceCall call, $228.UpdateSnoozeRequest request);
 }

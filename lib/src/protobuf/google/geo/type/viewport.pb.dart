@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../type/latlng.pb.dart' as $327;
+import '../../type/latlng.pb.dart' as $353;
 
 ///  A latitude-longitude viewport, represented as two diagonally opposite `low`
 ///  and `high` points. A viewport is considered a closed region, i.e. it includes
@@ -52,8 +52,8 @@ import '../../type/latlng.pb.dart' as $327;
 ///  }
 class Viewport extends $pb.GeneratedMessage {
   factory Viewport({
-    $327.LatLng? low,
-    $327.LatLng? high,
+    $353.LatLng? low,
+    $353.LatLng? high,
   }) {
     final $result = create();
     if (low != null) {
@@ -77,10 +77,10 @@ class Viewport extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.geo.type'),
       createEmptyInstance: create)
-    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'low',
-        subBuilder: $327.LatLng.create)
-    ..aOM<$327.LatLng>(2, _omitFieldNames ? '' : 'high',
-        subBuilder: $327.LatLng.create)
+    ..aOM<$353.LatLng>(1, _omitFieldNames ? '' : 'low',
+        subBuilder: $353.LatLng.create)
+    ..aOM<$353.LatLng>(2, _omitFieldNames ? '' : 'high',
+        subBuilder: $353.LatLng.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -106,9 +106,9 @@ class Viewport extends $pb.GeneratedMessage {
 
   /// Required. The low point of the viewport.
   @$pb.TagNumber(1)
-  $327.LatLng get low => $_getN(0);
+  $353.LatLng get low => $_getN(0);
   @$pb.TagNumber(1)
-  set low($327.LatLng v) {
+  set low($353.LatLng v) {
     setField(1, v);
   }
 
@@ -117,13 +117,13 @@ class Viewport extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearLow() => clearField(1);
   @$pb.TagNumber(1)
-  $327.LatLng ensureLow() => $_ensure(0);
+  $353.LatLng ensureLow() => $_ensure(0);
 
   /// Required. The high point of the viewport.
   @$pb.TagNumber(2)
-  $327.LatLng get high => $_getN(1);
+  $353.LatLng get high => $_getN(1);
   @$pb.TagNumber(2)
-  set high($327.LatLng v) {
+  set high($353.LatLng v) {
     setField(2, v);
   }
 
@@ -132,7 +132,7 @@ class Viewport extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearHigh() => clearField(2);
   @$pb.TagNumber(2)
-  $327.LatLng ensureHigh() => $_ensure(1);
+  $353.LatLng ensureHigh() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

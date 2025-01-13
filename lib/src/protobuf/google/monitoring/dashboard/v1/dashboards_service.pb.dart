@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'dashboard.pb.dart' as $188;
+import 'dashboard.pb.dart' as $214;
 
 /// The `CreateDashboard` request.
 class CreateDashboardRequest extends $pb.GeneratedMessage {
   factory CreateDashboardRequest({
     $core.String? parent,
-    $188.Dashboard? dashboard,
+    $214.Dashboard? dashboard,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -48,8 +48,8 @@ class CreateDashboardRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$188.Dashboard>(2, _omitFieldNames ? '' : 'dashboard',
-        subBuilder: $188.Dashboard.create)
+    ..aOM<$214.Dashboard>(2, _omitFieldNames ? '' : 'dashboard',
+        subBuilder: $214.Dashboard.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false;
 
@@ -97,9 +97,9 @@ class CreateDashboardRequest extends $pb.GeneratedMessage {
 
   /// Required. The initial dashboard specification.
   @$pb.TagNumber(2)
-  $188.Dashboard get dashboard => $_getN(1);
+  $214.Dashboard get dashboard => $_getN(1);
   @$pb.TagNumber(2)
-  set dashboard($188.Dashboard v) {
+  set dashboard($214.Dashboard v) {
     setField(2, v);
   }
 
@@ -108,7 +108,7 @@ class CreateDashboardRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDashboard() => clearField(2);
   @$pb.TagNumber(2)
-  $188.Dashboard ensureDashboard() => $_ensure(1);
+  $214.Dashboard ensureDashboard() => $_ensure(1);
 
   /// If set, validate the request and preview the review, but do not actually
   /// save it.
@@ -236,7 +236,7 @@ class ListDashboardsRequest extends $pb.GeneratedMessage {
 /// The `ListDashboards` request.
 class ListDashboardsResponse extends $pb.GeneratedMessage {
   factory ListDashboardsResponse({
-    $core.Iterable<$188.Dashboard>? dashboards,
+    $core.Iterable<$214.Dashboard>? dashboards,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -261,9 +261,9 @@ class ListDashboardsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
-    ..pc<$188.Dashboard>(
+    ..pc<$214.Dashboard>(
         1, _omitFieldNames ? '' : 'dashboards', $pb.PbFieldType.PM,
-        subBuilder: $188.Dashboard.create)
+        subBuilder: $214.Dashboard.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -294,7 +294,7 @@ class ListDashboardsResponse extends $pb.GeneratedMessage {
 
   /// The list of requested dashboards.
   @$pb.TagNumber(1)
-  $core.List<$188.Dashboard> get dashboards => $_getList(0);
+  $core.List<$214.Dashboard> get dashboards => $_getList(0);
 
   /// If there are more results than have been returned, then this field is set
   /// to a non-empty value.  To see the additional results,
@@ -451,7 +451,7 @@ class DeleteDashboardRequest extends $pb.GeneratedMessage {
 /// The `UpdateDashboard` request.
 class UpdateDashboardRequest extends $pb.GeneratedMessage {
   factory UpdateDashboardRequest({
-    $188.Dashboard? dashboard,
+    $214.Dashboard? dashboard,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -476,8 +476,8 @@ class UpdateDashboardRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.monitoring.dashboard.v1'),
       createEmptyInstance: create)
-    ..aOM<$188.Dashboard>(1, _omitFieldNames ? '' : 'dashboard',
-        subBuilder: $188.Dashboard.create)
+    ..aOM<$214.Dashboard>(1, _omitFieldNames ? '' : 'dashboard',
+        subBuilder: $214.Dashboard.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false;
 
@@ -508,9 +508,9 @@ class UpdateDashboardRequest extends $pb.GeneratedMessage {
 
   /// Required. The dashboard that will replace the existing dashboard.
   @$pb.TagNumber(1)
-  $188.Dashboard get dashboard => $_getN(0);
+  $214.Dashboard get dashboard => $_getN(0);
   @$pb.TagNumber(1)
-  set dashboard($188.Dashboard v) {
+  set dashboard($214.Dashboard v) {
     setField(1, v);
   }
 
@@ -519,7 +519,7 @@ class UpdateDashboardRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearDashboard() => clearField(1);
   @$pb.TagNumber(1)
-  $188.Dashboard ensureDashboard() => $_ensure(0);
+  $214.Dashboard ensureDashboard() => $_ensure(0);
 
   /// If set, validate the request and preview the review, but do not actually
   /// save it.

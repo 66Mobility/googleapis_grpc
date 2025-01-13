@@ -16,232 +16,232 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/empty.pb.dart' as $3;
-import 'retriever.pb.dart' as $21;
-import 'retriever_service.pb.dart' as $20;
+import 'retriever.pb.dart' as $36;
+import 'retriever_service.pb.dart' as $35;
 
 export 'retriever_service.pb.dart';
 
 @$pb.GrpcServiceName('google.ai.generativelanguage.v1beta.RetrieverService')
 class RetrieverServiceClient extends $grpc.Client {
   static final _$createCorpus =
-      $grpc.ClientMethod<$20.CreateCorpusRequest, $21.Corpus>(
+      $grpc.ClientMethod<$35.CreateCorpusRequest, $36.Corpus>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/CreateCorpus',
-          ($20.CreateCorpusRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $21.Corpus.fromBuffer(value));
+          ($35.CreateCorpusRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $36.Corpus.fromBuffer(value));
   static final _$getCorpus =
-      $grpc.ClientMethod<$20.GetCorpusRequest, $21.Corpus>(
+      $grpc.ClientMethod<$35.GetCorpusRequest, $36.Corpus>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/GetCorpus',
-          ($20.GetCorpusRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $21.Corpus.fromBuffer(value));
+          ($35.GetCorpusRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $36.Corpus.fromBuffer(value));
   static final _$updateCorpus =
-      $grpc.ClientMethod<$20.UpdateCorpusRequest, $21.Corpus>(
+      $grpc.ClientMethod<$35.UpdateCorpusRequest, $36.Corpus>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/UpdateCorpus',
-          ($20.UpdateCorpusRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $21.Corpus.fromBuffer(value));
+          ($35.UpdateCorpusRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $36.Corpus.fromBuffer(value));
   static final _$deleteCorpus =
-      $grpc.ClientMethod<$20.DeleteCorpusRequest, $3.Empty>(
+      $grpc.ClientMethod<$35.DeleteCorpusRequest, $3.Empty>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/DeleteCorpus',
-          ($20.DeleteCorpusRequest value) => value.writeToBuffer(),
+          ($35.DeleteCorpusRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$listCorpora =
-      $grpc.ClientMethod<$20.ListCorporaRequest, $20.ListCorporaResponse>(
+      $grpc.ClientMethod<$35.ListCorporaRequest, $35.ListCorporaResponse>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/ListCorpora',
-          ($20.ListCorporaRequest value) => value.writeToBuffer(),
+          ($35.ListCorporaRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $20.ListCorporaResponse.fromBuffer(value));
+              $35.ListCorporaResponse.fromBuffer(value));
   static final _$queryCorpus =
-      $grpc.ClientMethod<$20.QueryCorpusRequest, $20.QueryCorpusResponse>(
+      $grpc.ClientMethod<$35.QueryCorpusRequest, $35.QueryCorpusResponse>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/QueryCorpus',
-          ($20.QueryCorpusRequest value) => value.writeToBuffer(),
+          ($35.QueryCorpusRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $20.QueryCorpusResponse.fromBuffer(value));
-  static final _$createDocument = $grpc.ClientMethod<$20.CreateDocumentRequest,
-          $21.Document>(
+              $35.QueryCorpusResponse.fromBuffer(value));
+  static final _$createDocument = $grpc.ClientMethod<$35.CreateDocumentRequest,
+          $36.Document>(
       '/google.ai.generativelanguage.v1beta.RetrieverService/CreateDocument',
-      ($20.CreateDocumentRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $21.Document.fromBuffer(value));
+      ($35.CreateDocumentRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $36.Document.fromBuffer(value));
   static final _$getDocument =
-      $grpc.ClientMethod<$20.GetDocumentRequest, $21.Document>(
+      $grpc.ClientMethod<$35.GetDocumentRequest, $36.Document>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/GetDocument',
-          ($20.GetDocumentRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $21.Document.fromBuffer(value));
-  static final _$updateDocument = $grpc.ClientMethod<$20.UpdateDocumentRequest,
-          $21.Document>(
+          ($35.GetDocumentRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $36.Document.fromBuffer(value));
+  static final _$updateDocument = $grpc.ClientMethod<$35.UpdateDocumentRequest,
+          $36.Document>(
       '/google.ai.generativelanguage.v1beta.RetrieverService/UpdateDocument',
-      ($20.UpdateDocumentRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $21.Document.fromBuffer(value));
-  static final _$deleteDocument = $grpc.ClientMethod<$20.DeleteDocumentRequest,
+      ($35.UpdateDocumentRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $36.Document.fromBuffer(value));
+  static final _$deleteDocument = $grpc.ClientMethod<$35.DeleteDocumentRequest,
           $3.Empty>(
       '/google.ai.generativelanguage.v1beta.RetrieverService/DeleteDocument',
-      ($20.DeleteDocumentRequest value) => value.writeToBuffer(),
+      ($35.DeleteDocumentRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$listDocuments =
-      $grpc.ClientMethod<$20.ListDocumentsRequest, $20.ListDocumentsResponse>(
+      $grpc.ClientMethod<$35.ListDocumentsRequest, $35.ListDocumentsResponse>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/ListDocuments',
-          ($20.ListDocumentsRequest value) => value.writeToBuffer(),
+          ($35.ListDocumentsRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $20.ListDocumentsResponse.fromBuffer(value));
+              $35.ListDocumentsResponse.fromBuffer(value));
   static final _$queryDocument =
-      $grpc.ClientMethod<$20.QueryDocumentRequest, $20.QueryDocumentResponse>(
+      $grpc.ClientMethod<$35.QueryDocumentRequest, $35.QueryDocumentResponse>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/QueryDocument',
-          ($20.QueryDocumentRequest value) => value.writeToBuffer(),
+          ($35.QueryDocumentRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $20.QueryDocumentResponse.fromBuffer(value));
+              $35.QueryDocumentResponse.fromBuffer(value));
   static final _$createChunk =
-      $grpc.ClientMethod<$20.CreateChunkRequest, $21.Chunk>(
+      $grpc.ClientMethod<$35.CreateChunkRequest, $36.Chunk>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/CreateChunk',
-          ($20.CreateChunkRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $21.Chunk.fromBuffer(value));
+          ($35.CreateChunkRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $36.Chunk.fromBuffer(value));
   static final _$batchCreateChunks = $grpc.ClientMethod<
-          $20.BatchCreateChunksRequest, $20.BatchCreateChunksResponse>(
+          $35.BatchCreateChunksRequest, $35.BatchCreateChunksResponse>(
       '/google.ai.generativelanguage.v1beta.RetrieverService/BatchCreateChunks',
-      ($20.BatchCreateChunksRequest value) => value.writeToBuffer(),
+      ($35.BatchCreateChunksRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $20.BatchCreateChunksResponse.fromBuffer(value));
-  static final _$getChunk = $grpc.ClientMethod<$20.GetChunkRequest, $21.Chunk>(
+          $35.BatchCreateChunksResponse.fromBuffer(value));
+  static final _$getChunk = $grpc.ClientMethod<$35.GetChunkRequest, $36.Chunk>(
       '/google.ai.generativelanguage.v1beta.RetrieverService/GetChunk',
-      ($20.GetChunkRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $21.Chunk.fromBuffer(value));
+      ($35.GetChunkRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $36.Chunk.fromBuffer(value));
   static final _$updateChunk =
-      $grpc.ClientMethod<$20.UpdateChunkRequest, $21.Chunk>(
+      $grpc.ClientMethod<$35.UpdateChunkRequest, $36.Chunk>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/UpdateChunk',
-          ($20.UpdateChunkRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $21.Chunk.fromBuffer(value));
+          ($35.UpdateChunkRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $36.Chunk.fromBuffer(value));
   static final _$batchUpdateChunks = $grpc.ClientMethod<
-          $20.BatchUpdateChunksRequest, $20.BatchUpdateChunksResponse>(
+          $35.BatchUpdateChunksRequest, $35.BatchUpdateChunksResponse>(
       '/google.ai.generativelanguage.v1beta.RetrieverService/BatchUpdateChunks',
-      ($20.BatchUpdateChunksRequest value) => value.writeToBuffer(),
+      ($35.BatchUpdateChunksRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $20.BatchUpdateChunksResponse.fromBuffer(value));
+          $35.BatchUpdateChunksResponse.fromBuffer(value));
   static final _$deleteChunk =
-      $grpc.ClientMethod<$20.DeleteChunkRequest, $3.Empty>(
+      $grpc.ClientMethod<$35.DeleteChunkRequest, $3.Empty>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/DeleteChunk',
-          ($20.DeleteChunkRequest value) => value.writeToBuffer(),
+          ($35.DeleteChunkRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$batchDeleteChunks = $grpc.ClientMethod<
-          $20.BatchDeleteChunksRequest, $3.Empty>(
+          $35.BatchDeleteChunksRequest, $3.Empty>(
       '/google.ai.generativelanguage.v1beta.RetrieverService/BatchDeleteChunks',
-      ($20.BatchDeleteChunksRequest value) => value.writeToBuffer(),
+      ($35.BatchDeleteChunksRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$listChunks =
-      $grpc.ClientMethod<$20.ListChunksRequest, $20.ListChunksResponse>(
+      $grpc.ClientMethod<$35.ListChunksRequest, $35.ListChunksResponse>(
           '/google.ai.generativelanguage.v1beta.RetrieverService/ListChunks',
-          ($20.ListChunksRequest value) => value.writeToBuffer(),
+          ($35.ListChunksRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $20.ListChunksResponse.fromBuffer(value));
+              $35.ListChunksResponse.fromBuffer(value));
 
   RetrieverServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$21.Corpus> createCorpus($20.CreateCorpusRequest request,
+  $grpc.ResponseFuture<$36.Corpus> createCorpus($35.CreateCorpusRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createCorpus, request, options: options);
   }
 
-  $grpc.ResponseFuture<$21.Corpus> getCorpus($20.GetCorpusRequest request,
+  $grpc.ResponseFuture<$36.Corpus> getCorpus($35.GetCorpusRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getCorpus, request, options: options);
   }
 
-  $grpc.ResponseFuture<$21.Corpus> updateCorpus($20.UpdateCorpusRequest request,
+  $grpc.ResponseFuture<$36.Corpus> updateCorpus($35.UpdateCorpusRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateCorpus, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteCorpus($20.DeleteCorpusRequest request,
+  $grpc.ResponseFuture<$3.Empty> deleteCorpus($35.DeleteCorpusRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteCorpus, request, options: options);
   }
 
-  $grpc.ResponseFuture<$20.ListCorporaResponse> listCorpora(
-      $20.ListCorporaRequest request,
+  $grpc.ResponseFuture<$35.ListCorporaResponse> listCorpora(
+      $35.ListCorporaRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listCorpora, request, options: options);
   }
 
-  $grpc.ResponseFuture<$20.QueryCorpusResponse> queryCorpus(
-      $20.QueryCorpusRequest request,
+  $grpc.ResponseFuture<$35.QueryCorpusResponse> queryCorpus(
+      $35.QueryCorpusRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$queryCorpus, request, options: options);
   }
 
-  $grpc.ResponseFuture<$21.Document> createDocument(
-      $20.CreateDocumentRequest request,
+  $grpc.ResponseFuture<$36.Document> createDocument(
+      $35.CreateDocumentRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createDocument, request, options: options);
   }
 
-  $grpc.ResponseFuture<$21.Document> getDocument($20.GetDocumentRequest request,
+  $grpc.ResponseFuture<$36.Document> getDocument($35.GetDocumentRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getDocument, request, options: options);
   }
 
-  $grpc.ResponseFuture<$21.Document> updateDocument(
-      $20.UpdateDocumentRequest request,
+  $grpc.ResponseFuture<$36.Document> updateDocument(
+      $35.UpdateDocumentRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateDocument, request, options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> deleteDocument(
-      $20.DeleteDocumentRequest request,
+      $35.DeleteDocumentRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteDocument, request, options: options);
   }
 
-  $grpc.ResponseFuture<$20.ListDocumentsResponse> listDocuments(
-      $20.ListDocumentsRequest request,
+  $grpc.ResponseFuture<$35.ListDocumentsResponse> listDocuments(
+      $35.ListDocumentsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listDocuments, request, options: options);
   }
 
-  $grpc.ResponseFuture<$20.QueryDocumentResponse> queryDocument(
-      $20.QueryDocumentRequest request,
+  $grpc.ResponseFuture<$35.QueryDocumentResponse> queryDocument(
+      $35.QueryDocumentRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$queryDocument, request, options: options);
   }
 
-  $grpc.ResponseFuture<$21.Chunk> createChunk($20.CreateChunkRequest request,
+  $grpc.ResponseFuture<$36.Chunk> createChunk($35.CreateChunkRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createChunk, request, options: options);
   }
 
-  $grpc.ResponseFuture<$20.BatchCreateChunksResponse> batchCreateChunks(
-      $20.BatchCreateChunksRequest request,
+  $grpc.ResponseFuture<$35.BatchCreateChunksResponse> batchCreateChunks(
+      $35.BatchCreateChunksRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchCreateChunks, request, options: options);
   }
 
-  $grpc.ResponseFuture<$21.Chunk> getChunk($20.GetChunkRequest request,
+  $grpc.ResponseFuture<$36.Chunk> getChunk($35.GetChunkRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getChunk, request, options: options);
   }
 
-  $grpc.ResponseFuture<$21.Chunk> updateChunk($20.UpdateChunkRequest request,
+  $grpc.ResponseFuture<$36.Chunk> updateChunk($35.UpdateChunkRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateChunk, request, options: options);
   }
 
-  $grpc.ResponseFuture<$20.BatchUpdateChunksResponse> batchUpdateChunks(
-      $20.BatchUpdateChunksRequest request,
+  $grpc.ResponseFuture<$35.BatchUpdateChunksResponse> batchUpdateChunks(
+      $35.BatchUpdateChunksRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchUpdateChunks, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteChunk($20.DeleteChunkRequest request,
+  $grpc.ResponseFuture<$3.Empty> deleteChunk($35.DeleteChunkRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteChunk, request, options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> batchDeleteChunks(
-      $20.BatchDeleteChunksRequest request,
+      $35.BatchDeleteChunksRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchDeleteChunks, request, options: options);
   }
 
-  $grpc.ResponseFuture<$20.ListChunksResponse> listChunks(
-      $20.ListChunksRequest request,
+  $grpc.ResponseFuture<$35.ListChunksResponse> listChunks(
+      $35.ListChunksRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listChunks, request, options: options);
   }
@@ -253,315 +253,315 @@ abstract class RetrieverServiceBase extends $grpc.Service {
       'google.ai.generativelanguage.v1beta.RetrieverService';
 
   RetrieverServiceBase() {
-    $addMethod($grpc.ServiceMethod<$20.CreateCorpusRequest, $21.Corpus>(
+    $addMethod($grpc.ServiceMethod<$35.CreateCorpusRequest, $36.Corpus>(
         'CreateCorpus',
         createCorpus_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.CreateCorpusRequest.fromBuffer(value),
-        ($21.Corpus value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.GetCorpusRequest, $21.Corpus>(
+            $35.CreateCorpusRequest.fromBuffer(value),
+        ($36.Corpus value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.GetCorpusRequest, $36.Corpus>(
         'GetCorpus',
         getCorpus_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $20.GetCorpusRequest.fromBuffer(value),
-        ($21.Corpus value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.UpdateCorpusRequest, $21.Corpus>(
+        ($core.List<$core.int> value) => $35.GetCorpusRequest.fromBuffer(value),
+        ($36.Corpus value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.UpdateCorpusRequest, $36.Corpus>(
         'UpdateCorpus',
         updateCorpus_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.UpdateCorpusRequest.fromBuffer(value),
-        ($21.Corpus value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.DeleteCorpusRequest, $3.Empty>(
+            $35.UpdateCorpusRequest.fromBuffer(value),
+        ($36.Corpus value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.DeleteCorpusRequest, $3.Empty>(
         'DeleteCorpus',
         deleteCorpus_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.DeleteCorpusRequest.fromBuffer(value),
+            $35.DeleteCorpusRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$20.ListCorporaRequest, $20.ListCorporaResponse>(
+        $grpc.ServiceMethod<$35.ListCorporaRequest, $35.ListCorporaResponse>(
             'ListCorpora',
             listCorpora_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $20.ListCorporaRequest.fromBuffer(value),
-            ($20.ListCorporaResponse value) => value.writeToBuffer()));
+                $35.ListCorporaRequest.fromBuffer(value),
+            ($35.ListCorporaResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$20.QueryCorpusRequest, $20.QueryCorpusResponse>(
+        $grpc.ServiceMethod<$35.QueryCorpusRequest, $35.QueryCorpusResponse>(
             'QueryCorpus',
             queryCorpus_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $20.QueryCorpusRequest.fromBuffer(value),
-            ($20.QueryCorpusResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.CreateDocumentRequest, $21.Document>(
+                $35.QueryCorpusRequest.fromBuffer(value),
+            ($35.QueryCorpusResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.CreateDocumentRequest, $36.Document>(
         'CreateDocument',
         createDocument_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.CreateDocumentRequest.fromBuffer(value),
-        ($21.Document value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.GetDocumentRequest, $21.Document>(
+            $35.CreateDocumentRequest.fromBuffer(value),
+        ($36.Document value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.GetDocumentRequest, $36.Document>(
         'GetDocument',
         getDocument_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.GetDocumentRequest.fromBuffer(value),
-        ($21.Document value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.UpdateDocumentRequest, $21.Document>(
+            $35.GetDocumentRequest.fromBuffer(value),
+        ($36.Document value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.UpdateDocumentRequest, $36.Document>(
         'UpdateDocument',
         updateDocument_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.UpdateDocumentRequest.fromBuffer(value),
-        ($21.Document value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.DeleteDocumentRequest, $3.Empty>(
+            $35.UpdateDocumentRequest.fromBuffer(value),
+        ($36.Document value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.DeleteDocumentRequest, $3.Empty>(
         'DeleteDocument',
         deleteDocument_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.DeleteDocumentRequest.fromBuffer(value),
+            $35.DeleteDocumentRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.ListDocumentsRequest,
-            $20.ListDocumentsResponse>(
+    $addMethod($grpc.ServiceMethod<$35.ListDocumentsRequest,
+            $35.ListDocumentsResponse>(
         'ListDocuments',
         listDocuments_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.ListDocumentsRequest.fromBuffer(value),
-        ($20.ListDocumentsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.QueryDocumentRequest,
-            $20.QueryDocumentResponse>(
+            $35.ListDocumentsRequest.fromBuffer(value),
+        ($35.ListDocumentsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.QueryDocumentRequest,
+            $35.QueryDocumentResponse>(
         'QueryDocument',
         queryDocument_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.QueryDocumentRequest.fromBuffer(value),
-        ($20.QueryDocumentResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.CreateChunkRequest, $21.Chunk>(
+            $35.QueryDocumentRequest.fromBuffer(value),
+        ($35.QueryDocumentResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.CreateChunkRequest, $36.Chunk>(
         'CreateChunk',
         createChunk_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.CreateChunkRequest.fromBuffer(value),
-        ($21.Chunk value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.BatchCreateChunksRequest,
-            $20.BatchCreateChunksResponse>(
+            $35.CreateChunkRequest.fromBuffer(value),
+        ($36.Chunk value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.BatchCreateChunksRequest,
+            $35.BatchCreateChunksResponse>(
         'BatchCreateChunks',
         batchCreateChunks_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.BatchCreateChunksRequest.fromBuffer(value),
-        ($20.BatchCreateChunksResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.GetChunkRequest, $21.Chunk>(
+            $35.BatchCreateChunksRequest.fromBuffer(value),
+        ($35.BatchCreateChunksResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.GetChunkRequest, $36.Chunk>(
         'GetChunk',
         getChunk_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $20.GetChunkRequest.fromBuffer(value),
-        ($21.Chunk value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.UpdateChunkRequest, $21.Chunk>(
+        ($core.List<$core.int> value) => $35.GetChunkRequest.fromBuffer(value),
+        ($36.Chunk value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.UpdateChunkRequest, $36.Chunk>(
         'UpdateChunk',
         updateChunk_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.UpdateChunkRequest.fromBuffer(value),
-        ($21.Chunk value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.BatchUpdateChunksRequest,
-            $20.BatchUpdateChunksResponse>(
+            $35.UpdateChunkRequest.fromBuffer(value),
+        ($36.Chunk value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.BatchUpdateChunksRequest,
+            $35.BatchUpdateChunksResponse>(
         'BatchUpdateChunks',
         batchUpdateChunks_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.BatchUpdateChunksRequest.fromBuffer(value),
-        ($20.BatchUpdateChunksResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.DeleteChunkRequest, $3.Empty>(
+            $35.BatchUpdateChunksRequest.fromBuffer(value),
+        ($35.BatchUpdateChunksResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$35.DeleteChunkRequest, $3.Empty>(
         'DeleteChunk',
         deleteChunk_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.DeleteChunkRequest.fromBuffer(value),
+            $35.DeleteChunkRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$20.BatchDeleteChunksRequest, $3.Empty>(
+    $addMethod($grpc.ServiceMethod<$35.BatchDeleteChunksRequest, $3.Empty>(
         'BatchDeleteChunks',
         batchDeleteChunks_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $20.BatchDeleteChunksRequest.fromBuffer(value),
+            $35.BatchDeleteChunksRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$20.ListChunksRequest, $20.ListChunksResponse>(
+        $grpc.ServiceMethod<$35.ListChunksRequest, $35.ListChunksResponse>(
             'ListChunks',
             listChunks_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $20.ListChunksRequest.fromBuffer(value),
-            ($20.ListChunksResponse value) => value.writeToBuffer()));
+                $35.ListChunksRequest.fromBuffer(value),
+            ($35.ListChunksResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$21.Corpus> createCorpus_Pre($grpc.ServiceCall call,
-      $async.Future<$20.CreateCorpusRequest> request) async {
+  $async.Future<$36.Corpus> createCorpus_Pre($grpc.ServiceCall call,
+      $async.Future<$35.CreateCorpusRequest> request) async {
     return createCorpus(call, await request);
   }
 
-  $async.Future<$21.Corpus> getCorpus_Pre($grpc.ServiceCall call,
-      $async.Future<$20.GetCorpusRequest> request) async {
+  $async.Future<$36.Corpus> getCorpus_Pre($grpc.ServiceCall call,
+      $async.Future<$35.GetCorpusRequest> request) async {
     return getCorpus(call, await request);
   }
 
-  $async.Future<$21.Corpus> updateCorpus_Pre($grpc.ServiceCall call,
-      $async.Future<$20.UpdateCorpusRequest> request) async {
+  $async.Future<$36.Corpus> updateCorpus_Pre($grpc.ServiceCall call,
+      $async.Future<$35.UpdateCorpusRequest> request) async {
     return updateCorpus(call, await request);
   }
 
   $async.Future<$3.Empty> deleteCorpus_Pre($grpc.ServiceCall call,
-      $async.Future<$20.DeleteCorpusRequest> request) async {
+      $async.Future<$35.DeleteCorpusRequest> request) async {
     return deleteCorpus(call, await request);
   }
 
-  $async.Future<$20.ListCorporaResponse> listCorpora_Pre($grpc.ServiceCall call,
-      $async.Future<$20.ListCorporaRequest> request) async {
+  $async.Future<$35.ListCorporaResponse> listCorpora_Pre($grpc.ServiceCall call,
+      $async.Future<$35.ListCorporaRequest> request) async {
     return listCorpora(call, await request);
   }
 
-  $async.Future<$20.QueryCorpusResponse> queryCorpus_Pre($grpc.ServiceCall call,
-      $async.Future<$20.QueryCorpusRequest> request) async {
+  $async.Future<$35.QueryCorpusResponse> queryCorpus_Pre($grpc.ServiceCall call,
+      $async.Future<$35.QueryCorpusRequest> request) async {
     return queryCorpus(call, await request);
   }
 
-  $async.Future<$21.Document> createDocument_Pre($grpc.ServiceCall call,
-      $async.Future<$20.CreateDocumentRequest> request) async {
+  $async.Future<$36.Document> createDocument_Pre($grpc.ServiceCall call,
+      $async.Future<$35.CreateDocumentRequest> request) async {
     return createDocument(call, await request);
   }
 
-  $async.Future<$21.Document> getDocument_Pre($grpc.ServiceCall call,
-      $async.Future<$20.GetDocumentRequest> request) async {
+  $async.Future<$36.Document> getDocument_Pre($grpc.ServiceCall call,
+      $async.Future<$35.GetDocumentRequest> request) async {
     return getDocument(call, await request);
   }
 
-  $async.Future<$21.Document> updateDocument_Pre($grpc.ServiceCall call,
-      $async.Future<$20.UpdateDocumentRequest> request) async {
+  $async.Future<$36.Document> updateDocument_Pre($grpc.ServiceCall call,
+      $async.Future<$35.UpdateDocumentRequest> request) async {
     return updateDocument(call, await request);
   }
 
   $async.Future<$3.Empty> deleteDocument_Pre($grpc.ServiceCall call,
-      $async.Future<$20.DeleteDocumentRequest> request) async {
+      $async.Future<$35.DeleteDocumentRequest> request) async {
     return deleteDocument(call, await request);
   }
 
-  $async.Future<$20.ListDocumentsResponse> listDocuments_Pre(
+  $async.Future<$35.ListDocumentsResponse> listDocuments_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$20.ListDocumentsRequest> request) async {
+      $async.Future<$35.ListDocumentsRequest> request) async {
     return listDocuments(call, await request);
   }
 
-  $async.Future<$20.QueryDocumentResponse> queryDocument_Pre(
+  $async.Future<$35.QueryDocumentResponse> queryDocument_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$20.QueryDocumentRequest> request) async {
+      $async.Future<$35.QueryDocumentRequest> request) async {
     return queryDocument(call, await request);
   }
 
-  $async.Future<$21.Chunk> createChunk_Pre($grpc.ServiceCall call,
-      $async.Future<$20.CreateChunkRequest> request) async {
+  $async.Future<$36.Chunk> createChunk_Pre($grpc.ServiceCall call,
+      $async.Future<$35.CreateChunkRequest> request) async {
     return createChunk(call, await request);
   }
 
-  $async.Future<$20.BatchCreateChunksResponse> batchCreateChunks_Pre(
+  $async.Future<$35.BatchCreateChunksResponse> batchCreateChunks_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$20.BatchCreateChunksRequest> request) async {
+      $async.Future<$35.BatchCreateChunksRequest> request) async {
     return batchCreateChunks(call, await request);
   }
 
-  $async.Future<$21.Chunk> getChunk_Pre($grpc.ServiceCall call,
-      $async.Future<$20.GetChunkRequest> request) async {
+  $async.Future<$36.Chunk> getChunk_Pre($grpc.ServiceCall call,
+      $async.Future<$35.GetChunkRequest> request) async {
     return getChunk(call, await request);
   }
 
-  $async.Future<$21.Chunk> updateChunk_Pre($grpc.ServiceCall call,
-      $async.Future<$20.UpdateChunkRequest> request) async {
+  $async.Future<$36.Chunk> updateChunk_Pre($grpc.ServiceCall call,
+      $async.Future<$35.UpdateChunkRequest> request) async {
     return updateChunk(call, await request);
   }
 
-  $async.Future<$20.BatchUpdateChunksResponse> batchUpdateChunks_Pre(
+  $async.Future<$35.BatchUpdateChunksResponse> batchUpdateChunks_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$20.BatchUpdateChunksRequest> request) async {
+      $async.Future<$35.BatchUpdateChunksRequest> request) async {
     return batchUpdateChunks(call, await request);
   }
 
   $async.Future<$3.Empty> deleteChunk_Pre($grpc.ServiceCall call,
-      $async.Future<$20.DeleteChunkRequest> request) async {
+      $async.Future<$35.DeleteChunkRequest> request) async {
     return deleteChunk(call, await request);
   }
 
   $async.Future<$3.Empty> batchDeleteChunks_Pre($grpc.ServiceCall call,
-      $async.Future<$20.BatchDeleteChunksRequest> request) async {
+      $async.Future<$35.BatchDeleteChunksRequest> request) async {
     return batchDeleteChunks(call, await request);
   }
 
-  $async.Future<$20.ListChunksResponse> listChunks_Pre($grpc.ServiceCall call,
-      $async.Future<$20.ListChunksRequest> request) async {
+  $async.Future<$35.ListChunksResponse> listChunks_Pre($grpc.ServiceCall call,
+      $async.Future<$35.ListChunksRequest> request) async {
     return listChunks(call, await request);
   }
 
-  $async.Future<$21.Corpus> createCorpus(
-      $grpc.ServiceCall call, $20.CreateCorpusRequest request);
-  $async.Future<$21.Corpus> getCorpus(
-      $grpc.ServiceCall call, $20.GetCorpusRequest request);
-  $async.Future<$21.Corpus> updateCorpus(
-      $grpc.ServiceCall call, $20.UpdateCorpusRequest request);
+  $async.Future<$36.Corpus> createCorpus(
+      $grpc.ServiceCall call, $35.CreateCorpusRequest request);
+  $async.Future<$36.Corpus> getCorpus(
+      $grpc.ServiceCall call, $35.GetCorpusRequest request);
+  $async.Future<$36.Corpus> updateCorpus(
+      $grpc.ServiceCall call, $35.UpdateCorpusRequest request);
   $async.Future<$3.Empty> deleteCorpus(
-      $grpc.ServiceCall call, $20.DeleteCorpusRequest request);
-  $async.Future<$20.ListCorporaResponse> listCorpora(
-      $grpc.ServiceCall call, $20.ListCorporaRequest request);
-  $async.Future<$20.QueryCorpusResponse> queryCorpus(
-      $grpc.ServiceCall call, $20.QueryCorpusRequest request);
-  $async.Future<$21.Document> createDocument(
-      $grpc.ServiceCall call, $20.CreateDocumentRequest request);
-  $async.Future<$21.Document> getDocument(
-      $grpc.ServiceCall call, $20.GetDocumentRequest request);
-  $async.Future<$21.Document> updateDocument(
-      $grpc.ServiceCall call, $20.UpdateDocumentRequest request);
+      $grpc.ServiceCall call, $35.DeleteCorpusRequest request);
+  $async.Future<$35.ListCorporaResponse> listCorpora(
+      $grpc.ServiceCall call, $35.ListCorporaRequest request);
+  $async.Future<$35.QueryCorpusResponse> queryCorpus(
+      $grpc.ServiceCall call, $35.QueryCorpusRequest request);
+  $async.Future<$36.Document> createDocument(
+      $grpc.ServiceCall call, $35.CreateDocumentRequest request);
+  $async.Future<$36.Document> getDocument(
+      $grpc.ServiceCall call, $35.GetDocumentRequest request);
+  $async.Future<$36.Document> updateDocument(
+      $grpc.ServiceCall call, $35.UpdateDocumentRequest request);
   $async.Future<$3.Empty> deleteDocument(
-      $grpc.ServiceCall call, $20.DeleteDocumentRequest request);
-  $async.Future<$20.ListDocumentsResponse> listDocuments(
-      $grpc.ServiceCall call, $20.ListDocumentsRequest request);
-  $async.Future<$20.QueryDocumentResponse> queryDocument(
-      $grpc.ServiceCall call, $20.QueryDocumentRequest request);
-  $async.Future<$21.Chunk> createChunk(
-      $grpc.ServiceCall call, $20.CreateChunkRequest request);
-  $async.Future<$20.BatchCreateChunksResponse> batchCreateChunks(
-      $grpc.ServiceCall call, $20.BatchCreateChunksRequest request);
-  $async.Future<$21.Chunk> getChunk(
-      $grpc.ServiceCall call, $20.GetChunkRequest request);
-  $async.Future<$21.Chunk> updateChunk(
-      $grpc.ServiceCall call, $20.UpdateChunkRequest request);
-  $async.Future<$20.BatchUpdateChunksResponse> batchUpdateChunks(
-      $grpc.ServiceCall call, $20.BatchUpdateChunksRequest request);
+      $grpc.ServiceCall call, $35.DeleteDocumentRequest request);
+  $async.Future<$35.ListDocumentsResponse> listDocuments(
+      $grpc.ServiceCall call, $35.ListDocumentsRequest request);
+  $async.Future<$35.QueryDocumentResponse> queryDocument(
+      $grpc.ServiceCall call, $35.QueryDocumentRequest request);
+  $async.Future<$36.Chunk> createChunk(
+      $grpc.ServiceCall call, $35.CreateChunkRequest request);
+  $async.Future<$35.BatchCreateChunksResponse> batchCreateChunks(
+      $grpc.ServiceCall call, $35.BatchCreateChunksRequest request);
+  $async.Future<$36.Chunk> getChunk(
+      $grpc.ServiceCall call, $35.GetChunkRequest request);
+  $async.Future<$36.Chunk> updateChunk(
+      $grpc.ServiceCall call, $35.UpdateChunkRequest request);
+  $async.Future<$35.BatchUpdateChunksResponse> batchUpdateChunks(
+      $grpc.ServiceCall call, $35.BatchUpdateChunksRequest request);
   $async.Future<$3.Empty> deleteChunk(
-      $grpc.ServiceCall call, $20.DeleteChunkRequest request);
+      $grpc.ServiceCall call, $35.DeleteChunkRequest request);
   $async.Future<$3.Empty> batchDeleteChunks(
-      $grpc.ServiceCall call, $20.BatchDeleteChunksRequest request);
-  $async.Future<$20.ListChunksResponse> listChunks(
-      $grpc.ServiceCall call, $20.ListChunksRequest request);
+      $grpc.ServiceCall call, $35.BatchDeleteChunksRequest request);
+  $async.Future<$35.ListChunksResponse> listChunks(
+      $grpc.ServiceCall call, $35.ListChunksRequest request);
 }

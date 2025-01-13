@@ -15,14 +15,14 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $13;
-import '../../../protobuf/timestamp.pb.dart' as $304;
-import '../../../rpc/status.pb.dart' as $324;
-import '../../admin/database/v1/backup.pb.dart' as $247;
-import '../../admin/database/v1/common.pb.dart' as $555;
-import '../../admin/database/v1/spanner_database_admin.pb.dart' as $246;
-import '../../admin/instance/v1/spanner_instance_admin.pb.dart' as $249;
-import '../../v1/spanner.pbenum.dart' as $250;
-import '../../v1/type.pb.dart' as $558;
+import '../../../protobuf/timestamp.pb.dart' as $330;
+import '../../../rpc/status.pb.dart' as $350;
+import '../../admin/database/v1/backup.pb.dart' as $273;
+import '../../admin/database/v1/common.pb.dart' as $584;
+import '../../admin/database/v1/spanner_database_admin.pb.dart' as $272;
+import '../../admin/instance/v1/spanner_instance_admin.pb.dart' as $275;
+import '../../v1/spanner.pbenum.dart' as $276;
+import '../../v1/type.pb.dart' as $587;
 import 'cloud_executor.pbenum.dart';
 
 export 'cloud_executor.pbenum.dart';
@@ -839,7 +839,7 @@ class ReadAction extends $pb.GeneratedMessage {
 class QueryAction_Parameter extends $pb.GeneratedMessage {
   factory QueryAction_Parameter({
     $core.String? name,
-    $558.Type? type,
+    $587.Type? type,
     Value? value,
   }) {
     final $result = create();
@@ -868,8 +868,8 @@ class QueryAction_Parameter extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$558.Type>(2, _omitFieldNames ? '' : 'type',
-        subBuilder: $558.Type.create)
+    ..aOM<$587.Type>(2, _omitFieldNames ? '' : 'type',
+        subBuilder: $587.Type.create)
     ..aOM<Value>(3, _omitFieldNames ? '' : 'value', subBuilder: Value.create)
     ..hasRequiredFields = false;
 
@@ -913,9 +913,9 @@ class QueryAction_Parameter extends $pb.GeneratedMessage {
 
   /// Type of the parameter.
   @$pb.TagNumber(2)
-  $558.Type get type => $_getN(1);
+  $587.Type get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($558.Type v) {
+  set type($587.Type v) {
     setField(2, v);
   }
 
@@ -924,7 +924,7 @@ class QueryAction_Parameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $558.Type ensureType() => $_ensure(1);
+  $587.Type ensureType() => $_ensure(1);
 
   /// Value of the parameter.
   @$pb.TagNumber(3)
@@ -1182,11 +1182,11 @@ class Value extends $pb.GeneratedMessage {
     $core.List<$core.int>? bytesValue,
     $core.String? stringValue,
     ValueList? structValue,
-    $304.Timestamp? timestampValue,
+    $330.Timestamp? timestampValue,
     $core.int? dateDaysValue,
     $core.bool? isCommitTimestamp,
     ValueList? arrayValue,
-    $558.Type? arrayType,
+    $587.Type? arrayType,
   }) {
     final $result = create();
     if (isNull != null) {
@@ -1265,15 +1265,15 @@ class Value extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'stringValue')
     ..aOM<ValueList>(7, _omitFieldNames ? '' : 'structValue',
         subBuilder: ValueList.create)
-    ..aOM<$304.Timestamp>(8, _omitFieldNames ? '' : 'timestampValue',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(8, _omitFieldNames ? '' : 'timestampValue',
+        subBuilder: $330.Timestamp.create)
     ..a<$core.int>(
         9, _omitFieldNames ? '' : 'dateDaysValue', $pb.PbFieldType.O3)
     ..aOB(10, _omitFieldNames ? '' : 'isCommitTimestamp')
     ..aOM<ValueList>(11, _omitFieldNames ? '' : 'arrayValue',
         subBuilder: ValueList.create)
-    ..aOM<$558.Type>(12, _omitFieldNames ? '' : 'arrayType',
-        subBuilder: $558.Type.create)
+    ..aOM<$587.Type>(12, _omitFieldNames ? '' : 'arrayType',
+        subBuilder: $587.Type.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1398,9 +1398,9 @@ class Value extends $pb.GeneratedMessage {
 
   /// Timestamp type value.
   @$pb.TagNumber(8)
-  $304.Timestamp get timestampValue => $_getN(7);
+  $330.Timestamp get timestampValue => $_getN(7);
   @$pb.TagNumber(8)
-  set timestampValue($304.Timestamp v) {
+  set timestampValue($330.Timestamp v) {
     setField(8, v);
   }
 
@@ -1409,7 +1409,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearTimestampValue() => clearField(8);
   @$pb.TagNumber(8)
-  $304.Timestamp ensureTimestampValue() => $_ensure(7);
+  $330.Timestamp ensureTimestampValue() => $_ensure(7);
 
   /// Date type value. Date is specified as a number of days since Unix epoch.
   @$pb.TagNumber(9)
@@ -1455,9 +1455,9 @@ class Value extends $pb.GeneratedMessage {
 
   /// Type of array element. Only set if value is an array.
   @$pb.TagNumber(12)
-  $558.Type get arrayType => $_getN(11);
+  $587.Type get arrayType => $_getN(11);
   @$pb.TagNumber(12)
-  set arrayType($558.Type v) {
+  set arrayType($587.Type v) {
     setField(12, v);
   }
 
@@ -1466,7 +1466,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearArrayType() => clearField(12);
   @$pb.TagNumber(12)
-  $558.Type ensureArrayType() => $_ensure(11);
+  $587.Type ensureArrayType() => $_ensure(11);
 }
 
 ///  KeyRange represents a range of rows in a table or index.
@@ -1730,7 +1730,7 @@ class ValueList extends $pb.GeneratedMessage {
 class MutationAction_InsertArgs extends $pb.GeneratedMessage {
   factory MutationAction_InsertArgs({
     $core.Iterable<$core.String>? column,
-    $core.Iterable<$558.Type>? type,
+    $core.Iterable<$587.Type>? type,
     $core.Iterable<ValueList>? values,
   }) {
     final $result = create();
@@ -1759,8 +1759,8 @@ class MutationAction_InsertArgs extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'column')
-    ..pc<$558.Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.PM,
-        subBuilder: $558.Type.create)
+    ..pc<$587.Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.PM,
+        subBuilder: $587.Type.create)
     ..pc<ValueList>(3, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM,
         subBuilder: ValueList.create)
     ..hasRequiredFields = false;
@@ -1796,7 +1796,7 @@ class MutationAction_InsertArgs extends $pb.GeneratedMessage {
 
   /// Type information for the "values" entries below.
   @$pb.TagNumber(2)
-  $core.List<$558.Type> get type => $_getList(1);
+  $core.List<$587.Type> get type => $_getList(1);
 
   /// The values to be written.
   @$pb.TagNumber(3)
@@ -1807,7 +1807,7 @@ class MutationAction_InsertArgs extends $pb.GeneratedMessage {
 class MutationAction_UpdateArgs extends $pb.GeneratedMessage {
   factory MutationAction_UpdateArgs({
     $core.Iterable<$core.String>? column,
-    $core.Iterable<$558.Type>? type,
+    $core.Iterable<$587.Type>? type,
     $core.Iterable<ValueList>? values,
   }) {
     final $result = create();
@@ -1836,8 +1836,8 @@ class MutationAction_UpdateArgs extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'column')
-    ..pc<$558.Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.PM,
-        subBuilder: $558.Type.create)
+    ..pc<$587.Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.PM,
+        subBuilder: $587.Type.create)
     ..pc<ValueList>(3, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM,
         subBuilder: ValueList.create)
     ..hasRequiredFields = false;
@@ -1873,7 +1873,7 @@ class MutationAction_UpdateArgs extends $pb.GeneratedMessage {
 
   /// Type information for "values". Identical to InsertArgs.type.
   @$pb.TagNumber(2)
-  $core.List<$558.Type> get type => $_getList(1);
+  $core.List<$587.Type> get type => $_getList(1);
 
   /// The values to be updated. Identical to InsertArgs.values.
   @$pb.TagNumber(3)
@@ -2181,7 +2181,7 @@ class WriteMutationsAction extends $pb.GeneratedMessage {
 class PartitionedUpdateAction_ExecutePartitionedUpdateOptions
     extends $pb.GeneratedMessage {
   factory PartitionedUpdateAction_ExecutePartitionedUpdateOptions({
-    $250.RequestOptions_Priority? rpcPriority,
+    $276.RequestOptions_Priority? rpcPriority,
     $core.String? tag,
   }) {
     final $result = create();
@@ -2210,11 +2210,11 @@ class PartitionedUpdateAction_ExecutePartitionedUpdateOptions
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
-    ..e<$250.RequestOptions_Priority>(
+    ..e<$276.RequestOptions_Priority>(
         1, _omitFieldNames ? '' : 'rpcPriority', $pb.PbFieldType.OE,
-        defaultOrMaker: $250.RequestOptions_Priority.PRIORITY_UNSPECIFIED,
-        valueOf: $250.RequestOptions_Priority.valueOf,
-        enumValues: $250.RequestOptions_Priority.values)
+        defaultOrMaker: $276.RequestOptions_Priority.PRIORITY_UNSPECIFIED,
+        valueOf: $276.RequestOptions_Priority.valueOf,
+        enumValues: $276.RequestOptions_Priority.values)
     ..aOS(2, _omitFieldNames ? '' : 'tag')
     ..hasRequiredFields = false;
 
@@ -2253,9 +2253,9 @@ class PartitionedUpdateAction_ExecutePartitionedUpdateOptions
 
   /// RPC Priority
   @$pb.TagNumber(1)
-  $250.RequestOptions_Priority get rpcPriority => $_getN(0);
+  $276.RequestOptions_Priority get rpcPriority => $_getN(0);
   @$pb.TagNumber(1)
-  set rpcPriority($250.RequestOptions_Priority v) {
+  set rpcPriority($276.RequestOptions_Priority v) {
     setField(1, v);
   }
 
@@ -2823,7 +2823,7 @@ class TableMetadata extends $pb.GeneratedMessage {
 class ColumnMetadata extends $pb.GeneratedMessage {
   factory ColumnMetadata({
     $core.String? name,
-    $558.Type? type,
+    $587.Type? type,
   }) {
     final $result = create();
     if (name != null) {
@@ -2848,8 +2848,8 @@ class ColumnMetadata extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$558.Type>(2, _omitFieldNames ? '' : 'type',
-        subBuilder: $558.Type.create)
+    ..aOM<$587.Type>(2, _omitFieldNames ? '' : 'type',
+        subBuilder: $587.Type.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2890,9 +2890,9 @@ class ColumnMetadata extends $pb.GeneratedMessage {
 
   /// Column type.
   @$pb.TagNumber(2)
-  $558.Type get type => $_getN(1);
+  $587.Type get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($558.Type v) {
+  set type($587.Type v) {
     setField(2, v);
   }
 
@@ -2901,7 +2901,7 @@ class ColumnMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $558.Type ensureType() => $_ensure(1);
+  $587.Type ensureType() => $_ensure(1);
 }
 
 /// Options for executing the transaction.
@@ -3809,7 +3809,7 @@ class CreateUserInstanceConfigAction extends $pb.GeneratedMessage {
     $core.String? userConfigId,
     $core.String? projectId,
     $core.String? baseConfigId,
-    $core.Iterable<$249.ReplicaInfo>? replicas,
+    $core.Iterable<$275.ReplicaInfo>? replicas,
   }) {
     final $result = create();
     if (userConfigId != null) {
@@ -3842,9 +3842,9 @@ class CreateUserInstanceConfigAction extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'userConfigId')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..aOS(3, _omitFieldNames ? '' : 'baseConfigId')
-    ..pc<$249.ReplicaInfo>(
+    ..pc<$275.ReplicaInfo>(
         4, _omitFieldNames ? '' : 'replicas', $pb.PbFieldType.PM,
-        subBuilder: $249.ReplicaInfo.create)
+        subBuilder: $275.ReplicaInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -3915,7 +3915,7 @@ class CreateUserInstanceConfigAction extends $pb.GeneratedMessage {
 
   /// Replicas that should be included in the user config.
   @$pb.TagNumber(4)
-  $core.List<$249.ReplicaInfo> get replicas => $_getList(3);
+  $core.List<$275.ReplicaInfo> get replicas => $_getList(3);
 }
 
 /// Action that updates a user instance config.
@@ -4322,7 +4322,7 @@ class CreateCloudInstanceAction extends $pb.GeneratedMessage {
     $core.int? nodeCount,
     $core.Map<$core.String, $core.String>? labels,
     $core.int? processingUnits,
-    $249.AutoscalingConfig? autoscalingConfig,
+    $275.AutoscalingConfig? autoscalingConfig,
   }) {
     final $result = create();
     if (instanceId != null) {
@@ -4372,8 +4372,8 @@ class CreateCloudInstanceAction extends $pb.GeneratedMessage {
         packageName: const $pb.PackageName('google.spanner.executor.v1'))
     ..a<$core.int>(
         6, _omitFieldNames ? '' : 'processingUnits', $pb.PbFieldType.O3)
-    ..aOM<$249.AutoscalingConfig>(7, _omitFieldNames ? '' : 'autoscalingConfig',
-        subBuilder: $249.AutoscalingConfig.create)
+    ..aOM<$275.AutoscalingConfig>(7, _omitFieldNames ? '' : 'autoscalingConfig',
+        subBuilder: $275.AutoscalingConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -4474,9 +4474,9 @@ class CreateCloudInstanceAction extends $pb.GeneratedMessage {
   /// instance will be created (processing_units and node_count should be set to
   /// 0 if used).
   @$pb.TagNumber(7)
-  $249.AutoscalingConfig get autoscalingConfig => $_getN(6);
+  $275.AutoscalingConfig get autoscalingConfig => $_getN(6);
   @$pb.TagNumber(7)
-  set autoscalingConfig($249.AutoscalingConfig v) {
+  set autoscalingConfig($275.AutoscalingConfig v) {
     setField(7, v);
   }
 
@@ -4485,7 +4485,7 @@ class CreateCloudInstanceAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearAutoscalingConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $249.AutoscalingConfig ensureAutoscalingConfig() => $_ensure(6);
+  $275.AutoscalingConfig ensureAutoscalingConfig() => $_ensure(6);
 }
 
 /// Action that updates a Cloud Spanner instance.
@@ -4497,7 +4497,7 @@ class UpdateCloudInstanceAction extends $pb.GeneratedMessage {
     $core.int? nodeCount,
     $core.int? processingUnits,
     $core.Map<$core.String, $core.String>? labels,
-    $249.AutoscalingConfig? autoscalingConfig,
+    $275.AutoscalingConfig? autoscalingConfig,
   }) {
     final $result = create();
     if (instanceId != null) {
@@ -4547,8 +4547,8 @@ class UpdateCloudInstanceAction extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('google.spanner.executor.v1'))
-    ..aOM<$249.AutoscalingConfig>(7, _omitFieldNames ? '' : 'autoscalingConfig',
-        subBuilder: $249.AutoscalingConfig.create)
+    ..aOM<$275.AutoscalingConfig>(7, _omitFieldNames ? '' : 'autoscalingConfig',
+        subBuilder: $275.AutoscalingConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -4652,9 +4652,9 @@ class UpdateCloudInstanceAction extends $pb.GeneratedMessage {
   /// using autoscaling (processing_units and node_count should be set to
   /// 0 if used).
   @$pb.TagNumber(7)
-  $249.AutoscalingConfig get autoscalingConfig => $_getN(6);
+  $275.AutoscalingConfig get autoscalingConfig => $_getN(6);
   @$pb.TagNumber(7)
-  set autoscalingConfig($249.AutoscalingConfig v) {
+  set autoscalingConfig($275.AutoscalingConfig v) {
     setField(7, v);
   }
 
@@ -4663,7 +4663,7 @@ class UpdateCloudInstanceAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearAutoscalingConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $249.AutoscalingConfig ensureAutoscalingConfig() => $_ensure(6);
+  $275.AutoscalingConfig ensureAutoscalingConfig() => $_ensure(6);
 }
 
 /// Action that deletes a Cloud Spanner instance.
@@ -4757,7 +4757,7 @@ class CreateCloudDatabaseAction extends $pb.GeneratedMessage {
     $core.String? projectId,
     $core.String? databaseId,
     $core.Iterable<$core.String>? sdlStatement,
-    $555.EncryptionConfig? encryptionConfig,
+    $584.EncryptionConfig? encryptionConfig,
     $core.String? dialect,
     $core.List<$core.int>? protoDescriptors,
   }) {
@@ -4802,8 +4802,8 @@ class CreateCloudDatabaseAction extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..aOS(3, _omitFieldNames ? '' : 'databaseId')
     ..pPS(4, _omitFieldNames ? '' : 'sdlStatement')
-    ..aOM<$555.EncryptionConfig>(5, _omitFieldNames ? '' : 'encryptionConfig',
-        subBuilder: $555.EncryptionConfig.create)
+    ..aOM<$584.EncryptionConfig>(5, _omitFieldNames ? '' : 'encryptionConfig',
+        subBuilder: $584.EncryptionConfig.create)
     ..aOS(6, _omitFieldNames ? '' : 'dialect')
     ..a<$core.List<$core.int>>(
         7, _omitFieldNames ? '' : 'protoDescriptors', $pb.PbFieldType.OY)
@@ -4880,9 +4880,9 @@ class CreateCloudDatabaseAction extends $pb.GeneratedMessage {
   /// The KMS key used to encrypt the database to be created if the database
   /// should be CMEK protected.
   @$pb.TagNumber(5)
-  $555.EncryptionConfig get encryptionConfig => $_getN(4);
+  $584.EncryptionConfig get encryptionConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set encryptionConfig($555.EncryptionConfig v) {
+  set encryptionConfig($584.EncryptionConfig v) {
     setField(5, v);
   }
 
@@ -4891,7 +4891,7 @@ class CreateCloudDatabaseAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearEncryptionConfig() => clearField(5);
   @$pb.TagNumber(5)
-  $555.EncryptionConfig ensureEncryptionConfig() => $_ensure(4);
+  $584.EncryptionConfig ensureEncryptionConfig() => $_ensure(4);
 
   /// Optional SQL dialect (GOOGLESQL or POSTGRESQL).  Default: GOOGLESQL.
   @$pb.TagNumber(6)
@@ -5865,7 +5865,7 @@ class RestoreCloudDatabaseAction extends $pb.GeneratedMessage {
     $core.String? backupId,
     $core.String? databaseInstanceId,
     $core.String? databaseId,
-    $555.EncryptionConfig? encryptionConfig,
+    $584.EncryptionConfig? encryptionConfig,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -5906,8 +5906,8 @@ class RestoreCloudDatabaseAction extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'backupId')
     ..aOS(4, _omitFieldNames ? '' : 'databaseInstanceId')
     ..aOS(5, _omitFieldNames ? '' : 'databaseId')
-    ..aOM<$555.EncryptionConfig>(7, _omitFieldNames ? '' : 'encryptionConfig',
-        subBuilder: $555.EncryptionConfig.create)
+    ..aOM<$584.EncryptionConfig>(7, _omitFieldNames ? '' : 'encryptionConfig',
+        subBuilder: $584.EncryptionConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -6006,9 +6006,9 @@ class RestoreCloudDatabaseAction extends $pb.GeneratedMessage {
   /// The KMS key(s) used to encrypt the restored database to be created if the
   /// restored database should be CMEK protected.
   @$pb.TagNumber(7)
-  $555.EncryptionConfig get encryptionConfig => $_getN(5);
+  $584.EncryptionConfig get encryptionConfig => $_getN(5);
   @$pb.TagNumber(7)
-  set encryptionConfig($555.EncryptionConfig v) {
+  set encryptionConfig($584.EncryptionConfig v) {
     setField(7, v);
   }
 
@@ -6017,7 +6017,7 @@ class RestoreCloudDatabaseAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearEncryptionConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $555.EncryptionConfig ensureEncryptionConfig() => $_ensure(5);
+  $584.EncryptionConfig ensureEncryptionConfig() => $_ensure(5);
 }
 
 /// Action that gets a Cloud Spanner database.
@@ -6129,9 +6129,9 @@ class CreateCloudBackupAction extends $pb.GeneratedMessage {
     $core.String? instanceId,
     $core.String? backupId,
     $core.String? databaseId,
-    $304.Timestamp? expireTime,
-    $304.Timestamp? versionTime,
-    $555.EncryptionConfig? encryptionConfig,
+    $330.Timestamp? expireTime,
+    $330.Timestamp? versionTime,
+    $584.EncryptionConfig? encryptionConfig,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -6174,12 +6174,12 @@ class CreateCloudBackupAction extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'instanceId')
     ..aOS(3, _omitFieldNames ? '' : 'backupId')
     ..aOS(4, _omitFieldNames ? '' : 'databaseId')
-    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'versionTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$555.EncryptionConfig>(7, _omitFieldNames ? '' : 'encryptionConfig',
-        subBuilder: $555.EncryptionConfig.create)
+    ..aOM<$330.Timestamp>(5, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'versionTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$584.EncryptionConfig>(7, _omitFieldNames ? '' : 'encryptionConfig',
+        subBuilder: $584.EncryptionConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -6264,9 +6264,9 @@ class CreateCloudBackupAction extends $pb.GeneratedMessage {
   /// Output only. The expiration time of the backup, which must be at least 6
   /// hours and at most 366 days from the time the request is received.
   @$pb.TagNumber(5)
-  $304.Timestamp get expireTime => $_getN(4);
+  $330.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(5)
-  set expireTime($304.Timestamp v) {
+  set expireTime($330.Timestamp v) {
     setField(5, v);
   }
 
@@ -6275,15 +6275,15 @@ class CreateCloudBackupAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $304.Timestamp ensureExpireTime() => $_ensure(4);
+  $330.Timestamp ensureExpireTime() => $_ensure(4);
 
   /// The version time of the backup, which must be within the time range of
   /// [earliest_version_time, NOW], where earliest_version_time is retrieved by
   /// cloud spanner frontend API (See details: go/cs-pitr-lite-design).
   @$pb.TagNumber(6)
-  $304.Timestamp get versionTime => $_getN(5);
+  $330.Timestamp get versionTime => $_getN(5);
   @$pb.TagNumber(6)
-  set versionTime($304.Timestamp v) {
+  set versionTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -6292,14 +6292,14 @@ class CreateCloudBackupAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearVersionTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureVersionTime() => $_ensure(5);
+  $330.Timestamp ensureVersionTime() => $_ensure(5);
 
   /// The KMS key(s) used to encrypt the backup to be created if the backup
   /// should be CMEK protected.
   @$pb.TagNumber(7)
-  $555.EncryptionConfig get encryptionConfig => $_getN(6);
+  $584.EncryptionConfig get encryptionConfig => $_getN(6);
   @$pb.TagNumber(7)
-  set encryptionConfig($555.EncryptionConfig v) {
+  set encryptionConfig($584.EncryptionConfig v) {
     setField(7, v);
   }
 
@@ -6308,7 +6308,7 @@ class CreateCloudBackupAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearEncryptionConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $555.EncryptionConfig ensureEncryptionConfig() => $_ensure(6);
+  $584.EncryptionConfig ensureEncryptionConfig() => $_ensure(6);
 }
 
 /// Action that copies a Cloud Spanner database backup.
@@ -6318,7 +6318,7 @@ class CopyCloudBackupAction extends $pb.GeneratedMessage {
     $core.String? instanceId,
     $core.String? backupId,
     $core.String? sourceBackup,
-    $304.Timestamp? expireTime,
+    $330.Timestamp? expireTime,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -6355,8 +6355,8 @@ class CopyCloudBackupAction extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'instanceId')
     ..aOS(3, _omitFieldNames ? '' : 'backupId')
     ..aOS(4, _omitFieldNames ? '' : 'sourceBackup')
-    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(5, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -6441,9 +6441,9 @@ class CopyCloudBackupAction extends $pb.GeneratedMessage {
   /// Output only. The expiration time of the backup, which must be at least 6
   /// hours and at most 366 days from the time the request is received.
   @$pb.TagNumber(5)
-  $304.Timestamp get expireTime => $_getN(4);
+  $330.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(5)
-  set expireTime($304.Timestamp v) {
+  set expireTime($330.Timestamp v) {
     setField(5, v);
   }
 
@@ -6452,7 +6452,7 @@ class CopyCloudBackupAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $304.Timestamp ensureExpireTime() => $_ensure(4);
+  $330.Timestamp ensureExpireTime() => $_ensure(4);
 }
 
 /// Action that gets a Cloud Spanner database backup.
@@ -6562,7 +6562,7 @@ class UpdateCloudBackupAction extends $pb.GeneratedMessage {
     $core.String? projectId,
     $core.String? instanceId,
     $core.String? backupId,
-    $304.Timestamp? expireTime,
+    $330.Timestamp? expireTime,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -6595,8 +6595,8 @@ class UpdateCloudBackupAction extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'instanceId')
     ..aOS(3, _omitFieldNames ? '' : 'backupId')
-    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -6666,9 +6666,9 @@ class UpdateCloudBackupAction extends $pb.GeneratedMessage {
   /// Output only. Updated value of expire_time, this is the only field
   /// that supported to be updated.
   @$pb.TagNumber(4)
-  $304.Timestamp get expireTime => $_getN(3);
+  $330.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expireTime($304.Timestamp v) {
+  set expireTime($330.Timestamp v) {
     setField(4, v);
   }
 
@@ -6677,7 +6677,7 @@ class UpdateCloudBackupAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearExpireTime() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Timestamp ensureExpireTime() => $_ensure(3);
+  $330.Timestamp ensureExpireTime() => $_ensure(3);
 }
 
 /// Action that deletes a Cloud Spanner database backup.
@@ -7326,7 +7326,7 @@ enum StartBatchTransactionAction_Param { batchTxnTime, tid, notSet }
 ///  Cleaning up is optional, but recommended.
 class StartBatchTransactionAction extends $pb.GeneratedMessage {
   factory StartBatchTransactionAction({
-    $304.Timestamp? batchTxnTime,
+    $330.Timestamp? batchTxnTime,
     $core.List<$core.int>? tid,
     $core.String? cloudDatabaseRole,
   }) {
@@ -7362,8 +7362,8 @@ class StartBatchTransactionAction extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'batchTxnTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'batchTxnTime',
+        subBuilder: $330.Timestamp.create)
     ..a<$core.List<$core.int>>(
         2, _omitFieldNames ? '' : 'tid', $pb.PbFieldType.OY)
     ..aOS(3, _omitFieldNames ? '' : 'cloudDatabaseRole')
@@ -7402,9 +7402,9 @@ class StartBatchTransactionAction extends $pb.GeneratedMessage {
 
   /// The exact timestamp to start the batch transaction.
   @$pb.TagNumber(1)
-  $304.Timestamp get batchTxnTime => $_getN(0);
+  $330.Timestamp get batchTxnTime => $_getN(0);
   @$pb.TagNumber(1)
-  set batchTxnTime($304.Timestamp v) {
+  set batchTxnTime($330.Timestamp v) {
     setField(1, v);
   }
 
@@ -7413,7 +7413,7 @@ class StartBatchTransactionAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearBatchTxnTime() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Timestamp ensureBatchTxnTime() => $_ensure(0);
+  $330.Timestamp ensureBatchTxnTime() => $_ensure(0);
 
   /// ID of a batch read-only transaction. It can be used to start the same
   /// batch transaction on multiple executors and parallelize partition
@@ -7932,8 +7932,8 @@ class ExecutePartitionAction extends $pb.GeneratedMessage {
 class ExecuteChangeStreamQuery extends $pb.GeneratedMessage {
   factory ExecuteChangeStreamQuery({
     $core.String? name,
-    $304.Timestamp? startTime,
-    $304.Timestamp? endTime,
+    $330.Timestamp? startTime,
+    $330.Timestamp? endTime,
     $core.String? partitionToken,
     $core.Iterable<$core.String>? readOptions,
     $core.int? heartbeatMilliseconds,
@@ -7981,10 +7981,10 @@ class ExecuteChangeStreamQuery extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $330.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'partitionToken')
     ..pPS(5, _omitFieldNames ? '' : 'readOptions')
     ..a<$core.int>(
@@ -8034,9 +8034,9 @@ class ExecuteChangeStreamQuery extends $pb.GeneratedMessage {
   /// Specifies that records with commit_timestamp greater than or equal to
   /// start_time should be returned.
   @$pb.TagNumber(2)
-  $304.Timestamp get startTime => $_getN(1);
+  $330.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($304.Timestamp v) {
+  set startTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -8045,14 +8045,14 @@ class ExecuteChangeStreamQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureStartTime() => $_ensure(1);
+  $330.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Specifies that records with commit_timestamp less than or equal to
   /// end_time should be returned.
   @$pb.TagNumber(3)
-  $304.Timestamp get endTime => $_getN(2);
+  $330.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($304.Timestamp v) {
+  set endTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -8061,7 +8061,7 @@ class ExecuteChangeStreamQuery extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureEndTime() => $_ensure(2);
+  $330.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Specifies which change stream partition to query, based on the content of
   /// child partitions records.
@@ -8127,8 +8127,8 @@ class ExecuteChangeStreamQuery extends $pb.GeneratedMessage {
 /// SpannerActionOutcome defines a result of execution of a single SpannerAction.
 class SpannerActionOutcome extends $pb.GeneratedMessage {
   factory SpannerActionOutcome({
-    $324.Status? status,
-    $304.Timestamp? commitTime,
+    $350.Status? status,
+    $330.Timestamp? commitTime,
     ReadResult? readResult,
     QueryResult? queryResult,
     $core.bool? transactionRestarted,
@@ -8184,10 +8184,10 @@ class SpannerActionOutcome extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
-    ..aOM<$324.Status>(1, _omitFieldNames ? '' : 'status',
-        subBuilder: $324.Status.create)
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'commitTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$350.Status>(1, _omitFieldNames ? '' : 'status',
+        subBuilder: $350.Status.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'commitTime',
+        subBuilder: $330.Timestamp.create)
     ..aOM<ReadResult>(3, _omitFieldNames ? '' : 'readResult',
         subBuilder: ReadResult.create)
     ..aOM<QueryResult>(4, _omitFieldNames ? '' : 'queryResult',
@@ -8234,9 +8234,9 @@ class SpannerActionOutcome extends $pb.GeneratedMessage {
   /// If an outcome is split into multiple parts, status will be set only in the
   /// last part.
   @$pb.TagNumber(1)
-  $324.Status get status => $_getN(0);
+  $350.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($324.Status v) {
+  set status($350.Status v) {
     setField(1, v);
   }
 
@@ -8245,13 +8245,13 @@ class SpannerActionOutcome extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $324.Status ensureStatus() => $_ensure(0);
+  $350.Status ensureStatus() => $_ensure(0);
 
   /// Transaction timestamp. It must be set for successful committed actions.
   @$pb.TagNumber(2)
-  $304.Timestamp get commitTime => $_getN(1);
+  $330.Timestamp get commitTime => $_getN(1);
   @$pb.TagNumber(2)
-  set commitTime($304.Timestamp v) {
+  set commitTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -8260,7 +8260,7 @@ class SpannerActionOutcome extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCommitTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureCommitTime() => $_ensure(1);
+  $330.Timestamp ensureCommitTime() => $_ensure(1);
 
   /// Result of a ReadAction. This field must be set for ReadActions even if
   /// no rows were read.
@@ -8509,10 +8509,10 @@ class AdminResult extends $pb.GeneratedMessage {
 /// actions.
 class CloudBackupResponse extends $pb.GeneratedMessage {
   factory CloudBackupResponse({
-    $core.Iterable<$247.Backup>? listedBackups,
+    $core.Iterable<$273.Backup>? listedBackups,
     $core.Iterable<$13.Operation>? listedBackupOperations,
     $core.String? nextPageToken,
-    $247.Backup? backup,
+    $273.Backup? backup,
   }) {
     final $result = create();
     if (listedBackups != null) {
@@ -8542,15 +8542,15 @@ class CloudBackupResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
-    ..pc<$247.Backup>(
+    ..pc<$273.Backup>(
         1, _omitFieldNames ? '' : 'listedBackups', $pb.PbFieldType.PM,
-        subBuilder: $247.Backup.create)
+        subBuilder: $273.Backup.create)
     ..pc<$13.Operation>(
         2, _omitFieldNames ? '' : 'listedBackupOperations', $pb.PbFieldType.PM,
         subBuilder: $13.Operation.create)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
-    ..aOM<$247.Backup>(4, _omitFieldNames ? '' : 'backup',
-        subBuilder: $247.Backup.create)
+    ..aOM<$273.Backup>(4, _omitFieldNames ? '' : 'backup',
+        subBuilder: $273.Backup.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -8578,7 +8578,7 @@ class CloudBackupResponse extends $pb.GeneratedMessage {
 
   /// List of backups returned by ListCloudBackupsAction.
   @$pb.TagNumber(1)
-  $core.List<$247.Backup> get listedBackups => $_getList(0);
+  $core.List<$273.Backup> get listedBackups => $_getList(0);
 
   /// List of operations returned by ListCloudBackupOperationsAction.
   @$pb.TagNumber(2)
@@ -8600,9 +8600,9 @@ class CloudBackupResponse extends $pb.GeneratedMessage {
 
   /// Backup returned by GetCloudBackupAction/UpdateCloudBackupAction.
   @$pb.TagNumber(4)
-  $247.Backup get backup => $_getN(3);
+  $273.Backup get backup => $_getN(3);
   @$pb.TagNumber(4)
-  set backup($247.Backup v) {
+  set backup($273.Backup v) {
     setField(4, v);
   }
 
@@ -8611,7 +8611,7 @@ class CloudBackupResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearBackup() => clearField(4);
   @$pb.TagNumber(4)
-  $247.Backup ensureBackup() => $_ensure(3);
+  $273.Backup ensureBackup() => $_ensure(3);
 }
 
 /// OperationResponse contains results returned by operation related actions.
@@ -8715,9 +8715,9 @@ class OperationResponse extends $pb.GeneratedMessage {
 /// actions.
 class CloudInstanceResponse extends $pb.GeneratedMessage {
   factory CloudInstanceResponse({
-    $core.Iterable<$249.Instance>? listedInstances,
+    $core.Iterable<$275.Instance>? listedInstances,
     $core.String? nextPageToken,
-    $249.Instance? instance,
+    $275.Instance? instance,
   }) {
     final $result = create();
     if (listedInstances != null) {
@@ -8744,12 +8744,12 @@ class CloudInstanceResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
-    ..pc<$249.Instance>(
+    ..pc<$275.Instance>(
         1, _omitFieldNames ? '' : 'listedInstances', $pb.PbFieldType.PM,
-        subBuilder: $249.Instance.create)
+        subBuilder: $275.Instance.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..aOM<$249.Instance>(3, _omitFieldNames ? '' : 'instance',
-        subBuilder: $249.Instance.create)
+    ..aOM<$275.Instance>(3, _omitFieldNames ? '' : 'instance',
+        subBuilder: $275.Instance.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -8779,7 +8779,7 @@ class CloudInstanceResponse extends $pb.GeneratedMessage {
 
   /// List of instances returned by ListCloudInstancesAction.
   @$pb.TagNumber(1)
-  $core.List<$249.Instance> get listedInstances => $_getList(0);
+  $core.List<$275.Instance> get listedInstances => $_getList(0);
 
   /// "next_page_token" can be sent in a subsequent list action
   /// to fetch more of the matching data.
@@ -8797,9 +8797,9 @@ class CloudInstanceResponse extends $pb.GeneratedMessage {
 
   /// Instance returned by GetCloudInstanceAction
   @$pb.TagNumber(3)
-  $249.Instance get instance => $_getN(2);
+  $275.Instance get instance => $_getN(2);
   @$pb.TagNumber(3)
-  set instance($249.Instance v) {
+  set instance($275.Instance v) {
     setField(3, v);
   }
 
@@ -8808,16 +8808,16 @@ class CloudInstanceResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearInstance() => clearField(3);
   @$pb.TagNumber(3)
-  $249.Instance ensureInstance() => $_ensure(2);
+  $275.Instance ensureInstance() => $_ensure(2);
 }
 
 /// CloudInstanceConfigResponse contains results returned by cloud instance
 /// config related actions.
 class CloudInstanceConfigResponse extends $pb.GeneratedMessage {
   factory CloudInstanceConfigResponse({
-    $core.Iterable<$249.InstanceConfig>? listedInstanceConfigs,
+    $core.Iterable<$275.InstanceConfig>? listedInstanceConfigs,
     $core.String? nextPageToken,
-    $249.InstanceConfig? instanceConfig,
+    $275.InstanceConfig? instanceConfig,
   }) {
     final $result = create();
     if (listedInstanceConfigs != null) {
@@ -8844,12 +8844,12 @@ class CloudInstanceConfigResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
-    ..pc<$249.InstanceConfig>(
+    ..pc<$275.InstanceConfig>(
         1, _omitFieldNames ? '' : 'listedInstanceConfigs', $pb.PbFieldType.PM,
-        subBuilder: $249.InstanceConfig.create)
+        subBuilder: $275.InstanceConfig.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..aOM<$249.InstanceConfig>(3, _omitFieldNames ? '' : 'instanceConfig',
-        subBuilder: $249.InstanceConfig.create)
+    ..aOM<$275.InstanceConfig>(3, _omitFieldNames ? '' : 'instanceConfig',
+        subBuilder: $275.InstanceConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -8881,7 +8881,7 @@ class CloudInstanceConfigResponse extends $pb.GeneratedMessage {
 
   /// List of instance configs returned by ListCloudInstanceConfigsAction.
   @$pb.TagNumber(1)
-  $core.List<$249.InstanceConfig> get listedInstanceConfigs => $_getList(0);
+  $core.List<$275.InstanceConfig> get listedInstanceConfigs => $_getList(0);
 
   /// "next_page_token" can be sent in a subsequent list action
   /// to fetch more of the matching data.
@@ -8899,9 +8899,9 @@ class CloudInstanceConfigResponse extends $pb.GeneratedMessage {
 
   /// Instance config returned by GetCloudInstanceConfigAction.
   @$pb.TagNumber(3)
-  $249.InstanceConfig get instanceConfig => $_getN(2);
+  $275.InstanceConfig get instanceConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set instanceConfig($249.InstanceConfig v) {
+  set instanceConfig($275.InstanceConfig v) {
     setField(3, v);
   }
 
@@ -8910,17 +8910,17 @@ class CloudInstanceConfigResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearInstanceConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $249.InstanceConfig ensureInstanceConfig() => $_ensure(2);
+  $275.InstanceConfig ensureInstanceConfig() => $_ensure(2);
 }
 
 /// CloudDatabaseResponse contains results returned by cloud database related
 /// actions.
 class CloudDatabaseResponse extends $pb.GeneratedMessage {
   factory CloudDatabaseResponse({
-    $core.Iterable<$246.Database>? listedDatabases,
+    $core.Iterable<$272.Database>? listedDatabases,
     $core.Iterable<$13.Operation>? listedDatabaseOperations,
     $core.String? nextPageToken,
-    $246.Database? database,
+    $272.Database? database,
   }) {
     final $result = create();
     if (listedDatabases != null) {
@@ -8950,15 +8950,15 @@ class CloudDatabaseResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
-    ..pc<$246.Database>(
+    ..pc<$272.Database>(
         1, _omitFieldNames ? '' : 'listedDatabases', $pb.PbFieldType.PM,
-        subBuilder: $246.Database.create)
+        subBuilder: $272.Database.create)
     ..pc<$13.Operation>(2, _omitFieldNames ? '' : 'listedDatabaseOperations',
         $pb.PbFieldType.PM,
         subBuilder: $13.Operation.create)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
-    ..aOM<$246.Database>(4, _omitFieldNames ? '' : 'database',
-        subBuilder: $246.Database.create)
+    ..aOM<$272.Database>(4, _omitFieldNames ? '' : 'database',
+        subBuilder: $272.Database.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -8988,7 +8988,7 @@ class CloudDatabaseResponse extends $pb.GeneratedMessage {
 
   /// List of databases returned by ListCloudDatabasesAction.
   @$pb.TagNumber(1)
-  $core.List<$246.Database> get listedDatabases => $_getList(0);
+  $core.List<$272.Database> get listedDatabases => $_getList(0);
 
   /// List of operations returned by ListCloudDatabaseOperationsAction.
   @$pb.TagNumber(2)
@@ -9010,9 +9010,9 @@ class CloudDatabaseResponse extends $pb.GeneratedMessage {
 
   /// Database returned by GetCloudDatabaseAction
   @$pb.TagNumber(4)
-  $246.Database get database => $_getN(3);
+  $272.Database get database => $_getN(3);
   @$pb.TagNumber(4)
-  set database($246.Database v) {
+  set database($272.Database v) {
     setField(4, v);
   }
 
@@ -9021,7 +9021,7 @@ class CloudDatabaseResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearDatabase() => clearField(4);
   @$pb.TagNumber(4)
-  $246.Database ensureDatabase() => $_ensure(3);
+  $272.Database ensureDatabase() => $_ensure(3);
 }
 
 /// ReadResult contains rows read.
@@ -9031,7 +9031,7 @@ class ReadResult extends $pb.GeneratedMessage {
     $core.String? index,
     $core.int? requestIndex,
     $core.Iterable<ValueList>? row,
-    $558.StructType? rowType,
+    $587.StructType? rowType,
   }) {
     final $result = create();
     if (table != null) {
@@ -9069,8 +9069,8 @@ class ReadResult extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'requestIndex', $pb.PbFieldType.O3)
     ..pc<ValueList>(4, _omitFieldNames ? '' : 'row', $pb.PbFieldType.PM,
         subBuilder: ValueList.create)
-    ..aOM<$558.StructType>(5, _omitFieldNames ? '' : 'rowType',
-        subBuilder: $558.StructType.create)
+    ..aOM<$587.StructType>(5, _omitFieldNames ? '' : 'rowType',
+        subBuilder: $587.StructType.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -9140,9 +9140,9 @@ class ReadResult extends $pb.GeneratedMessage {
 
   /// The type of rows read. It must be set if at least one row was read.
   @$pb.TagNumber(5)
-  $558.StructType get rowType => $_getN(4);
+  $587.StructType get rowType => $_getN(4);
   @$pb.TagNumber(5)
-  set rowType($558.StructType v) {
+  set rowType($587.StructType v) {
     setField(5, v);
   }
 
@@ -9151,14 +9151,14 @@ class ReadResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearRowType() => clearField(5);
   @$pb.TagNumber(5)
-  $558.StructType ensureRowType() => $_ensure(4);
+  $587.StructType ensureRowType() => $_ensure(4);
 }
 
 /// QueryResult contains result of a Query.
 class QueryResult extends $pb.GeneratedMessage {
   factory QueryResult({
     $core.Iterable<ValueList>? row,
-    $558.StructType? rowType,
+    $587.StructType? rowType,
   }) {
     final $result = create();
     if (row != null) {
@@ -9184,8 +9184,8 @@ class QueryResult extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..pc<ValueList>(1, _omitFieldNames ? '' : 'row', $pb.PbFieldType.PM,
         subBuilder: ValueList.create)
-    ..aOM<$558.StructType>(2, _omitFieldNames ? '' : 'rowType',
-        subBuilder: $558.StructType.create)
+    ..aOM<$587.StructType>(2, _omitFieldNames ? '' : 'rowType',
+        subBuilder: $587.StructType.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -9217,9 +9217,9 @@ class QueryResult extends $pb.GeneratedMessage {
 
   /// The type of rows read. It must be set if at least one row was read.
   @$pb.TagNumber(2)
-  $558.StructType get rowType => $_getN(1);
+  $587.StructType get rowType => $_getN(1);
   @$pb.TagNumber(2)
-  set rowType($558.StructType v) {
+  set rowType($587.StructType v) {
     setField(2, v);
   }
 
@@ -9228,7 +9228,7 @@ class QueryResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearRowType() => clearField(2);
   @$pb.TagNumber(2)
-  $558.StructType ensureRowType() => $_ensure(1);
+  $587.StructType ensureRowType() => $_ensure(1);
 }
 
 enum ChangeStreamRecord_Record { dataChange, childPartition, heartbeat, notSet }
@@ -9584,7 +9584,7 @@ class DataChangeRecord_Mod extends $pb.GeneratedMessage {
 /// ChangeStream data change record.
 class DataChangeRecord extends $pb.GeneratedMessage {
   factory DataChangeRecord({
-    $304.Timestamp? commitTime,
+    $330.Timestamp? commitTime,
     $core.String? recordSequence,
     $core.String? transactionId,
     $core.bool? isLastRecord,
@@ -9653,8 +9653,8 @@ class DataChangeRecord extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
-    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'commitTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'commitTime',
+        subBuilder: $330.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'recordSequence')
     ..aOS(3, _omitFieldNames ? '' : 'transactionId')
     ..aOB(4, _omitFieldNames ? '' : 'isLastRecord')
@@ -9698,9 +9698,9 @@ class DataChangeRecord extends $pb.GeneratedMessage {
 
   /// The timestamp in which the change was committed.
   @$pb.TagNumber(1)
-  $304.Timestamp get commitTime => $_getN(0);
+  $330.Timestamp get commitTime => $_getN(0);
   @$pb.TagNumber(1)
-  set commitTime($304.Timestamp v) {
+  set commitTime($330.Timestamp v) {
     setField(1, v);
   }
 
@@ -9709,7 +9709,7 @@ class DataChangeRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearCommitTime() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Timestamp ensureCommitTime() => $_ensure(0);
+  $330.Timestamp ensureCommitTime() => $_ensure(0);
 
   /// The sequence number for the record within the transaction.
   @$pb.TagNumber(2)
@@ -9934,7 +9934,7 @@ class ChildPartitionsRecord_ChildPartition extends $pb.GeneratedMessage {
 /// ChangeStream child partition record.
 class ChildPartitionsRecord extends $pb.GeneratedMessage {
   factory ChildPartitionsRecord({
-    $304.Timestamp? startTime,
+    $330.Timestamp? startTime,
     $core.String? recordSequence,
     $core.Iterable<ChildPartitionsRecord_ChildPartition>? childPartitions,
   }) {
@@ -9963,8 +9963,8 @@ class ChildPartitionsRecord extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
-    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $330.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'recordSequence')
     ..pc<ChildPartitionsRecord_ChildPartition>(
         3, _omitFieldNames ? '' : 'childPartitions', $pb.PbFieldType.PM,
@@ -9999,9 +9999,9 @@ class ChildPartitionsRecord extends $pb.GeneratedMessage {
   /// Data change records returned from child partitions in this child partitions
   /// record will have a commit timestamp greater than or equal to start_time.
   @$pb.TagNumber(1)
-  $304.Timestamp get startTime => $_getN(0);
+  $330.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($304.Timestamp v) {
+  set startTime($330.Timestamp v) {
     setField(1, v);
   }
 
@@ -10010,7 +10010,7 @@ class ChildPartitionsRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Timestamp ensureStartTime() => $_ensure(0);
+  $330.Timestamp ensureStartTime() => $_ensure(0);
 
   /// A monotonically increasing sequence number that can be used to define the
   /// ordering of the child partitions record when there are multiple child
@@ -10037,7 +10037,7 @@ class ChildPartitionsRecord extends $pb.GeneratedMessage {
 /// ChangeStream heartbeat record.
 class HeartbeatRecord extends $pb.GeneratedMessage {
   factory HeartbeatRecord({
-    $304.Timestamp? heartbeatTime,
+    $330.Timestamp? heartbeatTime,
   }) {
     final $result = create();
     if (heartbeatTime != null) {
@@ -10058,8 +10058,8 @@ class HeartbeatRecord extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.spanner.executor.v1'),
       createEmptyInstance: create)
-    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'heartbeatTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'heartbeatTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -10087,9 +10087,9 @@ class HeartbeatRecord extends $pb.GeneratedMessage {
 
   /// Timestamp for this heartbeat check.
   @$pb.TagNumber(1)
-  $304.Timestamp get heartbeatTime => $_getN(0);
+  $330.Timestamp get heartbeatTime => $_getN(0);
   @$pb.TagNumber(1)
-  set heartbeatTime($304.Timestamp v) {
+  set heartbeatTime($330.Timestamp v) {
     setField(1, v);
   }
 
@@ -10098,7 +10098,7 @@ class HeartbeatRecord extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearHeartbeatTime() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Timestamp ensureHeartbeatTime() => $_ensure(0);
+  $330.Timestamp ensureHeartbeatTime() => $_ensure(0);
 }
 
 /// Options for Cloud Spanner Service.

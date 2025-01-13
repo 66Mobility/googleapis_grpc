@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'appengine.pb.dart' as $49;
+import 'appengine.pb.dart' as $67;
 
 enum AuditData_Method { updateService, createVersion, notSet }
 
@@ -115,7 +115,7 @@ class AuditData extends $pb.GeneratedMessage {
 /// Detailed information about UpdateService call.
 class UpdateServiceMethod extends $pb.GeneratedMessage {
   factory UpdateServiceMethod({
-    $49.UpdateServiceRequest? request,
+    $67.UpdateServiceRequest? request,
   }) {
     final $result = create();
     if (request != null) {
@@ -136,8 +136,8 @@ class UpdateServiceMethod extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
       createEmptyInstance: create)
-    ..aOM<$49.UpdateServiceRequest>(1, _omitFieldNames ? '' : 'request',
-        subBuilder: $49.UpdateServiceRequest.create)
+    ..aOM<$67.UpdateServiceRequest>(1, _omitFieldNames ? '' : 'request',
+        subBuilder: $67.UpdateServiceRequest.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -165,9 +165,9 @@ class UpdateServiceMethod extends $pb.GeneratedMessage {
 
   /// Update service request.
   @$pb.TagNumber(1)
-  $49.UpdateServiceRequest get request => $_getN(0);
+  $67.UpdateServiceRequest get request => $_getN(0);
   @$pb.TagNumber(1)
-  set request($49.UpdateServiceRequest v) {
+  set request($67.UpdateServiceRequest v) {
     setField(1, v);
   }
 
@@ -176,13 +176,13 @@ class UpdateServiceMethod extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRequest() => clearField(1);
   @$pb.TagNumber(1)
-  $49.UpdateServiceRequest ensureRequest() => $_ensure(0);
+  $67.UpdateServiceRequest ensureRequest() => $_ensure(0);
 }
 
 /// Detailed information about CreateVersion call.
 class CreateVersionMethod extends $pb.GeneratedMessage {
   factory CreateVersionMethod({
-    $49.CreateVersionRequest? request,
+    $67.CreateVersionRequest? request,
   }) {
     final $result = create();
     if (request != null) {
@@ -203,8 +203,8 @@ class CreateVersionMethod extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
       createEmptyInstance: create)
-    ..aOM<$49.CreateVersionRequest>(1, _omitFieldNames ? '' : 'request',
-        subBuilder: $49.CreateVersionRequest.create)
+    ..aOM<$67.CreateVersionRequest>(1, _omitFieldNames ? '' : 'request',
+        subBuilder: $67.CreateVersionRequest.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -232,9 +232,9 @@ class CreateVersionMethod extends $pb.GeneratedMessage {
 
   /// Create version request.
   @$pb.TagNumber(1)
-  $49.CreateVersionRequest get request => $_getN(0);
+  $67.CreateVersionRequest get request => $_getN(0);
   @$pb.TagNumber(1)
-  set request($49.CreateVersionRequest v) {
+  set request($67.CreateVersionRequest v) {
     setField(1, v);
   }
 
@@ -243,7 +243,7 @@ class CreateVersionMethod extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRequest() => clearField(1);
   @$pb.TagNumber(1)
-  $49.CreateVersionRequest ensureRequest() => $_ensure(0);
+  $67.CreateVersionRequest ensureRequest() => $_ensure(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

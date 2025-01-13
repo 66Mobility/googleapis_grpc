@@ -15,7 +15,7 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'promotions.pb.dart' as $241;
+import 'promotions.pb.dart' as $267;
 
 export 'promotions.pb.dart';
 
@@ -23,41 +23,41 @@ export 'promotions.pb.dart';
     'google.shopping.merchant.promotions.v1beta.PromotionsService')
 class PromotionsServiceClient extends $grpc.Client {
   static final _$insertPromotion = $grpc.ClientMethod<
-          $241.InsertPromotionRequest, $241.Promotion>(
+          $267.InsertPromotionRequest, $267.Promotion>(
       '/google.shopping.merchant.promotions.v1beta.PromotionsService/InsertPromotion',
-      ($241.InsertPromotionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $241.Promotion.fromBuffer(value));
-  static final _$getPromotion = $grpc.ClientMethod<$241.GetPromotionRequest,
-          $241.Promotion>(
+      ($267.InsertPromotionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $267.Promotion.fromBuffer(value));
+  static final _$getPromotion = $grpc.ClientMethod<$267.GetPromotionRequest,
+          $267.Promotion>(
       '/google.shopping.merchant.promotions.v1beta.PromotionsService/GetPromotion',
-      ($241.GetPromotionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $241.Promotion.fromBuffer(value));
-  static final _$listPromotions = $grpc.ClientMethod<$241.ListPromotionsRequest,
-          $241.ListPromotionsResponse>(
+      ($267.GetPromotionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $267.Promotion.fromBuffer(value));
+  static final _$listPromotions = $grpc.ClientMethod<$267.ListPromotionsRequest,
+          $267.ListPromotionsResponse>(
       '/google.shopping.merchant.promotions.v1beta.PromotionsService/ListPromotions',
-      ($241.ListPromotionsRequest value) => value.writeToBuffer(),
+      ($267.ListPromotionsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $241.ListPromotionsResponse.fromBuffer(value));
+          $267.ListPromotionsResponse.fromBuffer(value));
 
   PromotionsServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$241.Promotion> insertPromotion(
-      $241.InsertPromotionRequest request,
+  $grpc.ResponseFuture<$267.Promotion> insertPromotion(
+      $267.InsertPromotionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$insertPromotion, request, options: options);
   }
 
-  $grpc.ResponseFuture<$241.Promotion> getPromotion(
-      $241.GetPromotionRequest request,
+  $grpc.ResponseFuture<$267.Promotion> getPromotion(
+      $267.GetPromotionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getPromotion, request, options: options);
   }
 
-  $grpc.ResponseFuture<$241.ListPromotionsResponse> listPromotions(
-      $241.ListPromotionsRequest request,
+  $grpc.ResponseFuture<$267.ListPromotionsResponse> listPromotions(
+      $267.ListPromotionsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listPromotions, request, options: options);
   }
@@ -70,53 +70,53 @@ abstract class PromotionsServiceBase extends $grpc.Service {
       'google.shopping.merchant.promotions.v1beta.PromotionsService';
 
   PromotionsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$241.InsertPromotionRequest, $241.Promotion>(
+    $addMethod($grpc.ServiceMethod<$267.InsertPromotionRequest, $267.Promotion>(
         'InsertPromotion',
         insertPromotion_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $241.InsertPromotionRequest.fromBuffer(value),
-        ($241.Promotion value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$241.GetPromotionRequest, $241.Promotion>(
+            $267.InsertPromotionRequest.fromBuffer(value),
+        ($267.Promotion value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$267.GetPromotionRequest, $267.Promotion>(
         'GetPromotion',
         getPromotion_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $241.GetPromotionRequest.fromBuffer(value),
-        ($241.Promotion value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$241.ListPromotionsRequest,
-            $241.ListPromotionsResponse>(
+            $267.GetPromotionRequest.fromBuffer(value),
+        ($267.Promotion value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$267.ListPromotionsRequest,
+            $267.ListPromotionsResponse>(
         'ListPromotions',
         listPromotions_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $241.ListPromotionsRequest.fromBuffer(value),
-        ($241.ListPromotionsResponse value) => value.writeToBuffer()));
+            $267.ListPromotionsRequest.fromBuffer(value),
+        ($267.ListPromotionsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$241.Promotion> insertPromotion_Pre($grpc.ServiceCall call,
-      $async.Future<$241.InsertPromotionRequest> request) async {
+  $async.Future<$267.Promotion> insertPromotion_Pre($grpc.ServiceCall call,
+      $async.Future<$267.InsertPromotionRequest> request) async {
     return insertPromotion(call, await request);
   }
 
-  $async.Future<$241.Promotion> getPromotion_Pre($grpc.ServiceCall call,
-      $async.Future<$241.GetPromotionRequest> request) async {
+  $async.Future<$267.Promotion> getPromotion_Pre($grpc.ServiceCall call,
+      $async.Future<$267.GetPromotionRequest> request) async {
     return getPromotion(call, await request);
   }
 
-  $async.Future<$241.ListPromotionsResponse> listPromotions_Pre(
+  $async.Future<$267.ListPromotionsResponse> listPromotions_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$241.ListPromotionsRequest> request) async {
+      $async.Future<$267.ListPromotionsRequest> request) async {
     return listPromotions(call, await request);
   }
 
-  $async.Future<$241.Promotion> insertPromotion(
-      $grpc.ServiceCall call, $241.InsertPromotionRequest request);
-  $async.Future<$241.Promotion> getPromotion(
-      $grpc.ServiceCall call, $241.GetPromotionRequest request);
-  $async.Future<$241.ListPromotionsResponse> listPromotions(
-      $grpc.ServiceCall call, $241.ListPromotionsRequest request);
+  $async.Future<$267.Promotion> insertPromotion(
+      $grpc.ServiceCall call, $267.InsertPromotionRequest request);
+  $async.Future<$267.Promotion> getPromotion(
+      $grpc.ServiceCall call, $267.GetPromotionRequest request);
+  $async.Future<$267.ListPromotionsResponse> listPromotions(
+      $grpc.ServiceCall call, $267.ListPromotionsRequest request);
 }

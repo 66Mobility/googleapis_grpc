@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'vehicle_emission_type.pbenum.dart' as $503;
+import 'vehicle_emission_type.pbenum.dart' as $532;
 
 /// Contains the vehicle information, such as the vehicle emission type.
 class VehicleInfo extends $pb.GeneratedMessage {
   factory VehicleInfo({
-    $503.VehicleEmissionType? emissionType,
+    $532.VehicleEmissionType? emissionType,
   }) {
     final $result = create();
     if (emissionType != null) {
@@ -39,12 +39,12 @@ class VehicleInfo extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.routing.v2'),
       createEmptyInstance: create)
-    ..e<$503.VehicleEmissionType>(
+    ..e<$532.VehicleEmissionType>(
         2, _omitFieldNames ? '' : 'emissionType', $pb.PbFieldType.OE,
         defaultOrMaker:
-            $503.VehicleEmissionType.VEHICLE_EMISSION_TYPE_UNSPECIFIED,
-        valueOf: $503.VehicleEmissionType.valueOf,
-        enumValues: $503.VehicleEmissionType.values)
+            $532.VehicleEmissionType.VEHICLE_EMISSION_TYPE_UNSPECIFIED,
+        valueOf: $532.VehicleEmissionType.valueOf,
+        enumValues: $532.VehicleEmissionType.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -73,9 +73,9 @@ class VehicleInfo extends $pb.GeneratedMessage {
   /// Applies only to the `DRIVE`
   /// [`RouteTravelMode`][google.maps.routing.v2.RouteTravelMode].
   @$pb.TagNumber(2)
-  $503.VehicleEmissionType get emissionType => $_getN(0);
+  $532.VehicleEmissionType get emissionType => $_getN(0);
   @$pb.TagNumber(2)
-  set emissionType($503.VehicleEmissionType v) {
+  set emissionType($532.VehicleEmissionType v) {
     setField(2, v);
   }
 

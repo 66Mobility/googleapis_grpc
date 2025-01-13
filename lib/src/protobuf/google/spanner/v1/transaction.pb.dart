@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $266;
-import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../protobuf/duration.pb.dart' as $292;
+import '../../protobuf/timestamp.pb.dart' as $330;
 import 'transaction.pbenum.dart';
 
 export 'transaction.pbenum.dart';
@@ -180,10 +180,10 @@ enum TransactionOptions_ReadOnly_TimestampBound {
 class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   factory TransactionOptions_ReadOnly({
     $core.bool? strong,
-    $304.Timestamp? minReadTimestamp,
-    $266.Duration? maxStaleness,
-    $304.Timestamp? readTimestamp,
-    $266.Duration? exactStaleness,
+    $330.Timestamp? minReadTimestamp,
+    $292.Duration? maxStaleness,
+    $330.Timestamp? readTimestamp,
+    $292.Duration? exactStaleness,
     $core.bool? returnReadTimestamp,
   }) {
     final $result = create();
@@ -231,14 +231,14 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5])
     ..aOB(1, _omitFieldNames ? '' : 'strong')
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'minReadTimestamp',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$266.Duration>(3, _omitFieldNames ? '' : 'maxStaleness',
-        subBuilder: $266.Duration.create)
-    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'readTimestamp',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$266.Duration>(5, _omitFieldNames ? '' : 'exactStaleness',
-        subBuilder: $266.Duration.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'minReadTimestamp',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$292.Duration>(3, _omitFieldNames ? '' : 'maxStaleness',
+        subBuilder: $292.Duration.create)
+    ..aOM<$330.Timestamp>(4, _omitFieldNames ? '' : 'readTimestamp',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$292.Duration>(5, _omitFieldNames ? '' : 'exactStaleness',
+        subBuilder: $292.Duration.create)
     ..aOB(6, _omitFieldNames ? '' : 'returnReadTimestamp')
     ..hasRequiredFields = false;
 
@@ -298,9 +298,9 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   ///  A timestamp in RFC3339 UTC \"Zulu\" format, accurate to nanoseconds.
   ///  Example: `"2014-10-02T15:01:23.045123456Z"`.
   @$pb.TagNumber(2)
-  $304.Timestamp get minReadTimestamp => $_getN(1);
+  $330.Timestamp get minReadTimestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set minReadTimestamp($304.Timestamp v) {
+  set minReadTimestamp($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -309,7 +309,7 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearMinReadTimestamp() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureMinReadTimestamp() => $_ensure(1);
+  $330.Timestamp ensureMinReadTimestamp() => $_ensure(1);
 
   ///  Read data at a timestamp >= `NOW - max_staleness`
   ///  seconds. Guarantees that all writes that have committed more
@@ -325,9 +325,9 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   ///  Note that this option can only be used in single-use
   ///  transactions.
   @$pb.TagNumber(3)
-  $266.Duration get maxStaleness => $_getN(2);
+  $292.Duration get maxStaleness => $_getN(2);
   @$pb.TagNumber(3)
-  set maxStaleness($266.Duration v) {
+  set maxStaleness($292.Duration v) {
     setField(3, v);
   }
 
@@ -336,7 +336,7 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearMaxStaleness() => clearField(3);
   @$pb.TagNumber(3)
-  $266.Duration ensureMaxStaleness() => $_ensure(2);
+  $292.Duration ensureMaxStaleness() => $_ensure(2);
 
   ///  Executes all reads at the given timestamp. Unlike other modes,
   ///  reads at a specific timestamp are repeatable; the same read at
@@ -351,9 +351,9 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   ///  A timestamp in RFC3339 UTC \"Zulu\" format, accurate to nanoseconds.
   ///  Example: `"2014-10-02T15:01:23.045123456Z"`.
   @$pb.TagNumber(4)
-  $304.Timestamp get readTimestamp => $_getN(3);
+  $330.Timestamp get readTimestamp => $_getN(3);
   @$pb.TagNumber(4)
-  set readTimestamp($304.Timestamp v) {
+  set readTimestamp($330.Timestamp v) {
     setField(4, v);
   }
 
@@ -362,7 +362,7 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearReadTimestamp() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Timestamp ensureReadTimestamp() => $_ensure(3);
+  $330.Timestamp ensureReadTimestamp() => $_ensure(3);
 
   ///  Executes all reads at a timestamp that is `exact_staleness`
   ///  old. The timestamp is chosen soon after the read is started.
@@ -376,9 +376,9 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   ///  Useful for reading at nearby replicas without the distributed
   ///  timestamp negotiation overhead of `max_staleness`.
   @$pb.TagNumber(5)
-  $266.Duration get exactStaleness => $_getN(4);
+  $292.Duration get exactStaleness => $_getN(4);
   @$pb.TagNumber(5)
-  set exactStaleness($266.Duration v) {
+  set exactStaleness($292.Duration v) {
     setField(5, v);
   }
 
@@ -387,7 +387,7 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearExactStaleness() => clearField(5);
   @$pb.TagNumber(5)
-  $266.Duration ensureExactStaleness() => $_ensure(4);
+  $292.Duration ensureExactStaleness() => $_ensure(4);
 
   /// If true, the Cloud Spanner-selected read timestamp is included in
   /// the [Transaction][google.spanner.v1.Transaction] message that describes
@@ -899,7 +899,7 @@ class TransactionOptions extends $pb.GeneratedMessage {
 class Transaction extends $pb.GeneratedMessage {
   factory Transaction({
     $core.List<$core.int>? id,
-    $304.Timestamp? readTimestamp,
+    $330.Timestamp? readTimestamp,
     MultiplexedSessionPrecommitToken? precommitToken,
   }) {
     final $result = create();
@@ -929,8 +929,8 @@ class Transaction extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..a<$core.List<$core.int>>(
         1, _omitFieldNames ? '' : 'id', $pb.PbFieldType.OY)
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'readTimestamp',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'readTimestamp',
+        subBuilder: $330.Timestamp.create)
     ..aOM<MultiplexedSessionPrecommitToken>(
         3, _omitFieldNames ? '' : 'precommitToken',
         subBuilder: MultiplexedSessionPrecommitToken.create)
@@ -985,9 +985,9 @@ class Transaction extends $pb.GeneratedMessage {
   ///  A timestamp in RFC3339 UTC \"Zulu\" format, accurate to nanoseconds.
   ///  Example: `"2014-10-02T15:01:23.045123456Z"`.
   @$pb.TagNumber(2)
-  $304.Timestamp get readTimestamp => $_getN(1);
+  $330.Timestamp get readTimestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set readTimestamp($304.Timestamp v) {
+  set readTimestamp($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -996,7 +996,7 @@ class Transaction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearReadTimestamp() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureReadTimestamp() => $_ensure(1);
+  $330.Timestamp ensureReadTimestamp() => $_ensure(1);
 
   /// A precommit token will be included in the response of a BeginTransaction
   /// request if the read-write transaction is on a multiplexed session and

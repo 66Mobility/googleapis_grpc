@@ -15,36 +15,36 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'aerial_view.pb.dart' as $158;
+import 'aerial_view.pb.dart' as $184;
 
 export 'aerial_view.pb.dart';
 
 @$pb.GrpcServiceName('google.maps.aerialview.v1.AerialView')
 class AerialViewClient extends $grpc.Client {
   static final _$renderVideo =
-      $grpc.ClientMethod<$158.RenderVideoRequest, $158.RenderVideoResponse>(
+      $grpc.ClientMethod<$184.RenderVideoRequest, $184.RenderVideoResponse>(
           '/google.maps.aerialview.v1.AerialView/RenderVideo',
-          ($158.RenderVideoRequest value) => value.writeToBuffer(),
+          ($184.RenderVideoRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $158.RenderVideoResponse.fromBuffer(value));
+              $184.RenderVideoResponse.fromBuffer(value));
   static final _$lookupVideo =
-      $grpc.ClientMethod<$158.LookupVideoRequest, $158.Video>(
+      $grpc.ClientMethod<$184.LookupVideoRequest, $184.Video>(
           '/google.maps.aerialview.v1.AerialView/LookupVideo',
-          ($158.LookupVideoRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $158.Video.fromBuffer(value));
+          ($184.LookupVideoRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $184.Video.fromBuffer(value));
 
   AerialViewClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$158.RenderVideoResponse> renderVideo(
-      $158.RenderVideoRequest request,
+  $grpc.ResponseFuture<$184.RenderVideoResponse> renderVideo(
+      $184.RenderVideoRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$renderVideo, request, options: options);
   }
 
-  $grpc.ResponseFuture<$158.Video> lookupVideo($158.LookupVideoRequest request,
+  $grpc.ResponseFuture<$184.Video> lookupVideo($184.LookupVideoRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$lookupVideo, request, options: options);
   }
@@ -56,37 +56,37 @@ abstract class AerialViewServiceBase extends $grpc.Service {
 
   AerialViewServiceBase() {
     $addMethod(
-        $grpc.ServiceMethod<$158.RenderVideoRequest, $158.RenderVideoResponse>(
+        $grpc.ServiceMethod<$184.RenderVideoRequest, $184.RenderVideoResponse>(
             'RenderVideo',
             renderVideo_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $158.RenderVideoRequest.fromBuffer(value),
-            ($158.RenderVideoResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$158.LookupVideoRequest, $158.Video>(
+                $184.RenderVideoRequest.fromBuffer(value),
+            ($184.RenderVideoResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$184.LookupVideoRequest, $184.Video>(
         'LookupVideo',
         lookupVideo_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $158.LookupVideoRequest.fromBuffer(value),
-        ($158.Video value) => value.writeToBuffer()));
+            $184.LookupVideoRequest.fromBuffer(value),
+        ($184.Video value) => value.writeToBuffer()));
   }
 
-  $async.Future<$158.RenderVideoResponse> renderVideo_Pre(
+  $async.Future<$184.RenderVideoResponse> renderVideo_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$158.RenderVideoRequest> request) async {
+      $async.Future<$184.RenderVideoRequest> request) async {
     return renderVideo(call, await request);
   }
 
-  $async.Future<$158.Video> lookupVideo_Pre($grpc.ServiceCall call,
-      $async.Future<$158.LookupVideoRequest> request) async {
+  $async.Future<$184.Video> lookupVideo_Pre($grpc.ServiceCall call,
+      $async.Future<$184.LookupVideoRequest> request) async {
     return lookupVideo(call, await request);
   }
 
-  $async.Future<$158.RenderVideoResponse> renderVideo(
-      $grpc.ServiceCall call, $158.RenderVideoRequest request);
-  $async.Future<$158.Video> lookupVideo(
-      $grpc.ServiceCall call, $158.LookupVideoRequest request);
+  $async.Future<$184.RenderVideoResponse> renderVideo(
+      $grpc.ServiceCall call, $184.RenderVideoRequest request);
+  $async.Future<$184.Video> lookupVideo(
+      $grpc.ServiceCall call, $184.LookupVideoRequest request);
 }

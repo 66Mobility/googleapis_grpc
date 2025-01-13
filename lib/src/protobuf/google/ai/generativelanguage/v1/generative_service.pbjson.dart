@@ -188,6 +188,16 @@ const GenerationConfig$json = {
       '10': 'logprobs',
       '17': true
     },
+    {
+      '1': 'enable_enhanced_civic_answers',
+      '3': 19,
+      '4': 1,
+      '5': 8,
+      '8': {},
+      '9': 9,
+      '10': 'enableEnhancedCivicAnswers',
+      '17': true
+    },
   ],
   '8': [
     {'1': '_candidate_count'},
@@ -199,6 +209,7 @@ const GenerationConfig$json = {
     {'1': '_frequency_penalty'},
     {'1': '_response_logprobs'},
     {'1': '_logprobs'},
+    {'1': '_enable_enhanced_civic_answers'},
   ],
 };
 
@@ -212,10 +223,12 @@ final $typed_data.Uint8List generationConfigDescriptor = $convert.base64Decode(
     'ByZXNlbmNlX3BlbmFsdHkYDyABKAJCA+BBAUgFUg9wcmVzZW5jZVBlbmFsdHmIAQESNQoRZnJl'
     'cXVlbmN5X3BlbmFsdHkYECABKAJCA+BBAUgGUhBmcmVxdWVuY3lQZW5hbHR5iAEBEjUKEXJlc3'
     'BvbnNlX2xvZ3Byb2JzGBEgASgIQgPgQQFIB1IQcmVzcG9uc2VMb2dwcm9ic4gBARIkCghsb2dw'
-    'cm9icxgSIAEoBUID4EEBSAhSCGxvZ3Byb2JziAEBQhIKEF9jYW5kaWRhdGVfY291bnRCFAoSX2'
-    '1heF9vdXRwdXRfdG9rZW5zQg4KDF90ZW1wZXJhdHVyZUIICgZfdG9wX3BCCAoGX3RvcF9rQhMK'
-    'EV9wcmVzZW5jZV9wZW5hbHR5QhQKEl9mcmVxdWVuY3lfcGVuYWx0eUIUChJfcmVzcG9uc2VfbG'
-    '9ncHJvYnNCCwoJX2xvZ3Byb2Jz');
+    'cm9icxgSIAEoBUID4EEBSAhSCGxvZ3Byb2JziAEBEksKHWVuYWJsZV9lbmhhbmNlZF9jaXZpY1'
+    '9hbnN3ZXJzGBMgASgIQgPgQQFICVIaZW5hYmxlRW5oYW5jZWRDaXZpY0Fuc3dlcnOIAQFCEgoQ'
+    'X2NhbmRpZGF0ZV9jb3VudEIUChJfbWF4X291dHB1dF90b2tlbnNCDgoMX3RlbXBlcmF0dXJlQg'
+    'gKBl90b3BfcEIICgZfdG9wX2tCEwoRX3ByZXNlbmNlX3BlbmFsdHlCFAoSX2ZyZXF1ZW5jeV9w'
+    'ZW5hbHR5QhQKEl9yZXNwb25zZV9sb2dwcm9ic0ILCglfbG9ncHJvYnNCIAoeX2VuYWJsZV9lbm'
+    'hhbmNlZF9jaXZpY19hbnN3ZXJz');
 
 @$core.Deprecated('Use generateContentResponseDescriptor instead')
 const GenerateContentResponse$json = {
@@ -298,6 +311,7 @@ const GenerateContentResponse_PromptFeedback_BlockReason$json = {
     {'1': 'OTHER', '2': 2},
     {'1': 'BLOCKLIST', '2': 3},
     {'1': 'PROHIBITED_CONTENT', '2': 4},
+    {'1': 'IMAGE_SAFETY', '2': 5},
   ],
 };
 
@@ -331,16 +345,17 @@ final $typed_data.Uint8List generateContentResponseDescriptor = $convert.base64D
     'F0ZUNvbnRlbnRSZXNwb25zZS5Qcm9tcHRGZWVkYmFja1IOcHJvbXB0RmVlZGJhY2sScgoOdXNh'
     'Z2VfbWV0YWRhdGEYAyABKAsyRi5nb29nbGUuYWkuZ2VuZXJhdGl2ZWxhbmd1YWdlLnYxLkdlbm'
     'VyYXRlQ29udGVudFJlc3BvbnNlLlVzYWdlTWV0YWRhdGFCA+BBA1INdXNhZ2VNZXRhZGF0YRIo'
-    'Cg1tb2RlbF92ZXJzaW9uGAQgASgJQgPgQQNSDG1vZGVsVmVyc2lvbhrOAgoOUHJvbXB0RmVlZG'
+    'Cg1tb2RlbF92ZXJzaW9uGAQgASgJQgPgQQNSDG1vZGVsVmVyc2lvbhrgAgoOUHJvbXB0RmVlZG'
     'JhY2sSewoMYmxvY2tfcmVhc29uGAEgASgOMlMuZ29vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFn'
     'ZS52MS5HZW5lcmF0ZUNvbnRlbnRSZXNwb25zZS5Qcm9tcHRGZWVkYmFjay5CbG9ja1JlYXNvbk'
     'ID4EEBUgtibG9ja1JlYXNvbhJUCg5zYWZldHlfcmF0aW5ncxgCIAMoCzItLmdvb2dsZS5haS5n'
-    'ZW5lcmF0aXZlbGFuZ3VhZ2UudjEuU2FmZXR5UmF0aW5nUg1zYWZldHlSYXRpbmdzImkKC0Jsb2'
+    'ZW5lcmF0aXZlbGFuZ3VhZ2UudjEuU2FmZXR5UmF0aW5nUg1zYWZldHlSYXRpbmdzInsKC0Jsb2'
     'NrUmVhc29uEhwKGEJMT0NLX1JFQVNPTl9VTlNQRUNJRklFRBAAEgoKBlNBRkVUWRABEgkKBU9U'
-    'SEVSEAISDQoJQkxPQ0tMSVNUEAMSFgoSUFJPSElCSVRFRF9DT05URU5UEAQanwEKDVVzYWdlTW'
-    'V0YWRhdGESLAoScHJvbXB0X3Rva2VuX2NvdW50GAEgASgFUhBwcm9tcHRUb2tlbkNvdW50EjQK'
-    'FmNhbmRpZGF0ZXNfdG9rZW5fY291bnQYAiABKAVSFGNhbmRpZGF0ZXNUb2tlbkNvdW50EioKEX'
-    'RvdGFsX3Rva2VuX2NvdW50GAMgASgFUg90b3RhbFRva2VuQ291bnQ=');
+    'SEVSEAISDQoJQkxPQ0tMSVNUEAMSFgoSUFJPSElCSVRFRF9DT05URU5UEAQSEAoMSU1BR0VfU0'
+    'FGRVRZEAUanwEKDVVzYWdlTWV0YWRhdGESLAoScHJvbXB0X3Rva2VuX2NvdW50GAEgASgFUhBw'
+    'cm9tcHRUb2tlbkNvdW50EjQKFmNhbmRpZGF0ZXNfdG9rZW5fY291bnQYAiABKAVSFGNhbmRpZG'
+    'F0ZXNUb2tlbkNvdW50EioKEXRvdGFsX3Rva2VuX2NvdW50GAMgASgFUg90b3RhbFRva2VuQ291'
+    'bnQ=');
 
 @$core.Deprecated('Use candidateDescriptor instead')
 const Candidate$json = {
@@ -440,6 +455,7 @@ const Candidate_FinishReason$json = {
     {'1': 'PROHIBITED_CONTENT', '2': 8},
     {'1': 'SPII', '2': 9},
     {'1': 'MALFORMED_FUNCTION_CALL', '2': 10},
+    {'1': 'IMAGE_SAFETY', '2': 11},
   ],
 };
 
@@ -457,11 +473,11 @@ final $typed_data.Uint8List candidateDescriptor = $convert.base64Decode(
     'FnZS52MS5Hcm91bmRpbmdNZXRhZGF0YUID4EEDUhFncm91bmRpbmdNZXRhZGF0YRImCgxhdmdf'
     'bG9ncHJvYnMYCiABKAFCA+BBA1ILYXZnTG9ncHJvYnMSXQoPbG9ncHJvYnNfcmVzdWx0GAsgAS'
     'gLMi8uZ29vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS52MS5Mb2dwcm9ic1Jlc3VsdEID4EED'
-    'Ug5sb2dwcm9ic1Jlc3VsdCLKAQoMRmluaXNoUmVhc29uEh0KGUZJTklTSF9SRUFTT05fVU5TUE'
+    'Ug5sb2dwcm9ic1Jlc3VsdCLcAQoMRmluaXNoUmVhc29uEh0KGUZJTklTSF9SRUFTT05fVU5TUE'
     'VDSUZJRUQQABIICgRTVE9QEAESDgoKTUFYX1RPS0VOUxACEgoKBlNBRkVUWRADEg4KClJFQ0lU'
     'QVRJT04QBBIMCghMQU5HVUFHRRAGEgkKBU9USEVSEAUSDQoJQkxPQ0tMSVNUEAcSFgoSUFJPSE'
-    'lCSVRFRF9DT05URU5UEAgSCAoEU1BJSRAJEhsKF01BTEZPUk1FRF9GVU5DVElPTl9DQUxMEApC'
-    'CAoGX2luZGV4');
+    'lCSVRFRF9DT05URU5UEAgSCAoEU1BJSRAJEhsKF01BTEZPUk1FRF9GVU5DVElPTl9DQUxMEAoS'
+    'EAoMSU1BR0VfU0FGRVRZEAtCCAoGX2luZGV4');
 
 @$core.Deprecated('Use logprobsResultDescriptor instead')
 const LogprobsResult$json = {

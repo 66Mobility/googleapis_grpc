@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../type/date.pb.dart' as $329;
+import '../../type/date.pb.dart' as $355;
 
 ///  Represents a range based on whole or partial calendar dates, e.g. the
 ///  duration of a hotel reservation or the Common Era. This can represent:
@@ -62,8 +62,8 @@ import '../../type/date.pb.dart' as $329;
 ///  except that year must always be non-zero in DateRange.
 class DateRange extends $pb.GeneratedMessage {
   factory DateRange({
-    $329.Date? start,
-    $329.Date? end,
+    $355.Date? start,
+    $355.Date? end,
   }) {
     final $result = create();
     if (start != null) {
@@ -87,10 +87,10 @@ class DateRange extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.type'),
       createEmptyInstance: create)
-    ..aOM<$329.Date>(1, _omitFieldNames ? '' : 'start',
-        subBuilder: $329.Date.create)
-    ..aOM<$329.Date>(2, _omitFieldNames ? '' : 'end',
-        subBuilder: $329.Date.create)
+    ..aOM<$355.Date>(1, _omitFieldNames ? '' : 'start',
+        subBuilder: $355.Date.create)
+    ..aOM<$355.Date>(2, _omitFieldNames ? '' : 'end',
+        subBuilder: $355.Date.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -117,9 +117,9 @@ class DateRange extends $pb.GeneratedMessage {
   /// Date at which the date range begins. If unset, the date range has no
   /// beginning bound.
   @$pb.TagNumber(1)
-  $329.Date get start => $_getN(0);
+  $355.Date get start => $_getN(0);
   @$pb.TagNumber(1)
-  set start($329.Date v) {
+  set start($355.Date v) {
     setField(1, v);
   }
 
@@ -128,14 +128,14 @@ class DateRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStart() => clearField(1);
   @$pb.TagNumber(1)
-  $329.Date ensureStart() => $_ensure(0);
+  $355.Date ensureStart() => $_ensure(0);
 
   /// Date at which the date range ends. If unset, the date range has no ending
   /// bound.
   @$pb.TagNumber(2)
-  $329.Date get end => $_getN(1);
+  $355.Date get end => $_getN(1);
   @$pb.TagNumber(2)
-  set end($329.Date v) {
+  set end($355.Date v) {
     setField(2, v);
   }
 
@@ -144,7 +144,7 @@ class DateRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEnd() => clearField(2);
   @$pb.TagNumber(2)
-  $329.Date ensureEnd() => $_ensure(1);
+  $355.Date ensureEnd() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

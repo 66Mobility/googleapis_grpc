@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $335;
-import 'tax_rule.pb.dart' as $542;
+import '../../../../protobuf/field_mask.pb.dart' as $361;
+import 'tax_rule.pb.dart' as $571;
 
 /// The tax settings of a merchant account. All methods require the admin role.
 class AccountTax extends $pb.GeneratedMessage {
   factory AccountTax({
     $core.String? name,
     $fixnum.Int64? account,
-    $core.Iterable<$542.TaxRule>? taxRules,
+    $core.Iterable<$571.TaxRule>? taxRules,
   }) {
     final $result = create();
     if (name != null) {
@@ -51,8 +51,8 @@ class AccountTax extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'account')
-    ..pc<$542.TaxRule>(3, _omitFieldNames ? '' : 'taxRules', $pb.PbFieldType.PM,
-        subBuilder: $542.TaxRule.create)
+    ..pc<$571.TaxRule>(3, _omitFieldNames ? '' : 'taxRules', $pb.PbFieldType.PM,
+        subBuilder: $571.TaxRule.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -108,7 +108,7 @@ class AccountTax extends $pb.GeneratedMessage {
   /// Tax rules. "Define the tax rules in each region.
   /// No tax will be presented if a region has no rule."
   @$pb.TagNumber(3)
-  $core.List<$542.TaxRule> get taxRules => $_getList(2);
+  $core.List<$571.TaxRule> get taxRules => $_getList(2);
 }
 
 /// Request to get tax settings
@@ -180,7 +180,7 @@ class GetAccountTaxRequest extends $pb.GeneratedMessage {
 class UpdateAccountTaxRequest extends $pb.GeneratedMessage {
   factory UpdateAccountTaxRequest({
     AccountTax? accountTax,
-    $335.FieldMask? updateMask,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (accountTax != null) {
@@ -206,8 +206,8 @@ class UpdateAccountTaxRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<AccountTax>(1, _omitFieldNames ? '' : 'accountTax',
         subBuilder: AccountTax.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -252,9 +252,9 @@ class UpdateAccountTaxRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -263,7 +263,7 @@ class UpdateAccountTaxRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to list all sub-account tax settings only for the requesting merchant

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../protobuf/timestamp.pb.dart' as $330;
 import 'certificate.pbenum.dart';
 
 export 'certificate.pbenum.dart';
@@ -27,7 +27,7 @@ class AuthorizedCertificate extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? displayName,
     $core.Iterable<$core.String>? domainNames,
-    $304.Timestamp? expireTime,
+    $330.Timestamp? expireTime,
     CertificateRawData? certificateRawData,
     ManagedCertificate? managedCertificate,
     $core.Iterable<$core.String>? visibleDomainMappings,
@@ -80,8 +80,8 @@ class AuthorizedCertificate extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..pPS(4, _omitFieldNames ? '' : 'domainNames')
-    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(5, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $330.Timestamp.create)
     ..aOM<CertificateRawData>(6, _omitFieldNames ? '' : 'certificateRawData',
         subBuilder: CertificateRawData.create)
     ..aOM<ManagedCertificate>(7, _omitFieldNames ? '' : 'managedCertificate',
@@ -175,9 +175,9 @@ class AuthorizedCertificate extends $pb.GeneratedMessage {
   ///
   ///  @OutputOnly
   @$pb.TagNumber(5)
-  $304.Timestamp get expireTime => $_getN(4);
+  $330.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(5)
-  set expireTime($304.Timestamp v) {
+  set expireTime($330.Timestamp v) {
     setField(5, v);
   }
 
@@ -186,7 +186,7 @@ class AuthorizedCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $304.Timestamp ensureExpireTime() => $_ensure(4);
+  $330.Timestamp ensureExpireTime() => $_ensure(4);
 
   /// The SSL certificate serving the `AuthorizedCertificate` resource. This
   /// must be obtained independently from a certificate authority.
@@ -358,7 +358,7 @@ class CertificateRawData extends $pb.GeneratedMessage {
 /// A certificate managed by App Engine.
 class ManagedCertificate extends $pb.GeneratedMessage {
   factory ManagedCertificate({
-    $304.Timestamp? lastRenewalTime,
+    $330.Timestamp? lastRenewalTime,
     ManagementStatus? status,
   }) {
     final $result = create();
@@ -383,8 +383,8 @@ class ManagedCertificate extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'),
       createEmptyInstance: create)
-    ..aOM<$304.Timestamp>(1, _omitFieldNames ? '' : 'lastRenewalTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'lastRenewalTime',
+        subBuilder: $330.Timestamp.create)
     ..e<ManagementStatus>(
         2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE,
         defaultOrMaker: ManagementStatus.MANAGEMENT_STATUS_UNSPECIFIED,
@@ -421,9 +421,9 @@ class ManagedCertificate extends $pb.GeneratedMessage {
   ///
   ///  @OutputOnly
   @$pb.TagNumber(1)
-  $304.Timestamp get lastRenewalTime => $_getN(0);
+  $330.Timestamp get lastRenewalTime => $_getN(0);
   @$pb.TagNumber(1)
-  set lastRenewalTime($304.Timestamp v) {
+  set lastRenewalTime($330.Timestamp v) {
     setField(1, v);
   }
 
@@ -432,7 +432,7 @@ class ManagedCertificate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearLastRenewalTime() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Timestamp ensureLastRenewalTime() => $_ensure(0);
+  $330.Timestamp ensureLastRenewalTime() => $_ensure(0);
 
   ///  Status of certificate management. Refers to the most recent certificate
   ///  acquisition or renewal attempt.

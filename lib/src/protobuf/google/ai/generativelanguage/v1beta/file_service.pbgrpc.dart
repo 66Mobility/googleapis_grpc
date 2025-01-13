@@ -16,33 +16,33 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/empty.pb.dart' as $3;
-import 'file.pb.dart' as $11;
-import 'file_service.pb.dart' as $10;
+import 'file.pb.dart' as $27;
+import 'file_service.pb.dart' as $26;
 
 export 'file_service.pb.dart';
 
 @$pb.GrpcServiceName('google.ai.generativelanguage.v1beta.FileService')
 class FileServiceClient extends $grpc.Client {
   static final _$createFile =
-      $grpc.ClientMethod<$10.CreateFileRequest, $10.CreateFileResponse>(
+      $grpc.ClientMethod<$26.CreateFileRequest, $26.CreateFileResponse>(
           '/google.ai.generativelanguage.v1beta.FileService/CreateFile',
-          ($10.CreateFileRequest value) => value.writeToBuffer(),
+          ($26.CreateFileRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $10.CreateFileResponse.fromBuffer(value));
+              $26.CreateFileResponse.fromBuffer(value));
   static final _$listFiles =
-      $grpc.ClientMethod<$10.ListFilesRequest, $10.ListFilesResponse>(
+      $grpc.ClientMethod<$26.ListFilesRequest, $26.ListFilesResponse>(
           '/google.ai.generativelanguage.v1beta.FileService/ListFiles',
-          ($10.ListFilesRequest value) => value.writeToBuffer(),
+          ($26.ListFilesRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $10.ListFilesResponse.fromBuffer(value));
-  static final _$getFile = $grpc.ClientMethod<$10.GetFileRequest, $11.File>(
+              $26.ListFilesResponse.fromBuffer(value));
+  static final _$getFile = $grpc.ClientMethod<$26.GetFileRequest, $27.File>(
       '/google.ai.generativelanguage.v1beta.FileService/GetFile',
-      ($10.GetFileRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $11.File.fromBuffer(value));
+      ($26.GetFileRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $27.File.fromBuffer(value));
   static final _$deleteFile =
-      $grpc.ClientMethod<$10.DeleteFileRequest, $3.Empty>(
+      $grpc.ClientMethod<$26.DeleteFileRequest, $3.Empty>(
           '/google.ai.generativelanguage.v1beta.FileService/DeleteFile',
-          ($10.DeleteFileRequest value) => value.writeToBuffer(),
+          ($26.DeleteFileRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
 
   FileServiceClient($grpc.ClientChannel channel,
@@ -50,24 +50,24 @@ class FileServiceClient extends $grpc.Client {
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$10.CreateFileResponse> createFile(
-      $10.CreateFileRequest request,
+  $grpc.ResponseFuture<$26.CreateFileResponse> createFile(
+      $26.CreateFileRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createFile, request, options: options);
   }
 
-  $grpc.ResponseFuture<$10.ListFilesResponse> listFiles(
-      $10.ListFilesRequest request,
+  $grpc.ResponseFuture<$26.ListFilesResponse> listFiles(
+      $26.ListFilesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listFiles, request, options: options);
   }
 
-  $grpc.ResponseFuture<$11.File> getFile($10.GetFileRequest request,
+  $grpc.ResponseFuture<$27.File> getFile($26.GetFileRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getFile, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteFile($10.DeleteFileRequest request,
+  $grpc.ResponseFuture<$3.Empty> deleteFile($26.DeleteFileRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteFile, request, options: options);
   }
@@ -79,64 +79,64 @@ abstract class FileServiceBase extends $grpc.Service {
 
   FileServiceBase() {
     $addMethod(
-        $grpc.ServiceMethod<$10.CreateFileRequest, $10.CreateFileResponse>(
+        $grpc.ServiceMethod<$26.CreateFileRequest, $26.CreateFileResponse>(
             'CreateFile',
             createFile_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $10.CreateFileRequest.fromBuffer(value),
-            ($10.CreateFileResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$10.ListFilesRequest, $10.ListFilesResponse>(
+                $26.CreateFileRequest.fromBuffer(value),
+            ($26.CreateFileResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$26.ListFilesRequest, $26.ListFilesResponse>(
         'ListFiles',
         listFiles_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $10.ListFilesRequest.fromBuffer(value),
-        ($10.ListFilesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$10.GetFileRequest, $11.File>(
+        ($core.List<$core.int> value) => $26.ListFilesRequest.fromBuffer(value),
+        ($26.ListFilesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$26.GetFileRequest, $27.File>(
         'GetFile',
         getFile_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $10.GetFileRequest.fromBuffer(value),
-        ($11.File value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$10.DeleteFileRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $26.GetFileRequest.fromBuffer(value),
+        ($27.File value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$26.DeleteFileRequest, $3.Empty>(
         'DeleteFile',
         deleteFile_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $10.DeleteFileRequest.fromBuffer(value),
+            $26.DeleteFileRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$10.CreateFileResponse> createFile_Pre($grpc.ServiceCall call,
-      $async.Future<$10.CreateFileRequest> request) async {
+  $async.Future<$26.CreateFileResponse> createFile_Pre($grpc.ServiceCall call,
+      $async.Future<$26.CreateFileRequest> request) async {
     return createFile(call, await request);
   }
 
-  $async.Future<$10.ListFilesResponse> listFiles_Pre($grpc.ServiceCall call,
-      $async.Future<$10.ListFilesRequest> request) async {
+  $async.Future<$26.ListFilesResponse> listFiles_Pre($grpc.ServiceCall call,
+      $async.Future<$26.ListFilesRequest> request) async {
     return listFiles(call, await request);
   }
 
-  $async.Future<$11.File> getFile_Pre(
-      $grpc.ServiceCall call, $async.Future<$10.GetFileRequest> request) async {
+  $async.Future<$27.File> getFile_Pre(
+      $grpc.ServiceCall call, $async.Future<$26.GetFileRequest> request) async {
     return getFile(call, await request);
   }
 
   $async.Future<$3.Empty> deleteFile_Pre($grpc.ServiceCall call,
-      $async.Future<$10.DeleteFileRequest> request) async {
+      $async.Future<$26.DeleteFileRequest> request) async {
     return deleteFile(call, await request);
   }
 
-  $async.Future<$10.CreateFileResponse> createFile(
-      $grpc.ServiceCall call, $10.CreateFileRequest request);
-  $async.Future<$10.ListFilesResponse> listFiles(
-      $grpc.ServiceCall call, $10.ListFilesRequest request);
-  $async.Future<$11.File> getFile(
-      $grpc.ServiceCall call, $10.GetFileRequest request);
+  $async.Future<$26.CreateFileResponse> createFile(
+      $grpc.ServiceCall call, $26.CreateFileRequest request);
+  $async.Future<$26.ListFilesResponse> listFiles(
+      $grpc.ServiceCall call, $26.ListFilesRequest request);
+  $async.Future<$27.File> getFile(
+      $grpc.ServiceCall call, $26.GetFileRequest request);
   $async.Future<$3.Empty> deleteFile(
-      $grpc.ServiceCall call, $10.DeleteFileRequest request);
+      $grpc.ServiceCall call, $26.DeleteFileRequest request);
 }

@@ -15,23 +15,23 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'watch.pb.dart' as $261;
+import 'watch.pb.dart' as $287;
 
 export 'watch.pb.dart';
 
 @$pb.GrpcServiceName('google.watcher.v1.Watcher')
 class WatcherClient extends $grpc.Client {
-  static final _$watch = $grpc.ClientMethod<$261.Request, $261.ChangeBatch>(
+  static final _$watch = $grpc.ClientMethod<$287.Request, $287.ChangeBatch>(
       '/google.watcher.v1.Watcher/Watch',
-      ($261.Request value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $261.ChangeBatch.fromBuffer(value));
+      ($287.Request value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $287.ChangeBatch.fromBuffer(value));
 
   WatcherClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseStream<$261.ChangeBatch> watch($261.Request request,
+  $grpc.ResponseStream<$287.ChangeBatch> watch($287.Request request,
       {$grpc.CallOptions? options}) {
     return $createStreamingCall(_$watch, $async.Stream.fromIterable([request]),
         options: options);
@@ -43,20 +43,20 @@ abstract class WatcherServiceBase extends $grpc.Service {
   $core.String get $name => 'google.watcher.v1.Watcher';
 
   WatcherServiceBase() {
-    $addMethod($grpc.ServiceMethod<$261.Request, $261.ChangeBatch>(
+    $addMethod($grpc.ServiceMethod<$287.Request, $287.ChangeBatch>(
         'Watch',
         watch_Pre,
         false,
         true,
-        ($core.List<$core.int> value) => $261.Request.fromBuffer(value),
-        ($261.ChangeBatch value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $287.Request.fromBuffer(value),
+        ($287.ChangeBatch value) => value.writeToBuffer()));
   }
 
-  $async.Stream<$261.ChangeBatch> watch_Pre(
-      $grpc.ServiceCall call, $async.Future<$261.Request> request) async* {
+  $async.Stream<$287.ChangeBatch> watch_Pre(
+      $grpc.ServiceCall call, $async.Future<$287.Request> request) async* {
     yield* watch(call, await request);
   }
 
-  $async.Stream<$261.ChangeBatch> watch(
-      $grpc.ServiceCall call, $261.Request request);
+  $async.Stream<$287.ChangeBatch> watch(
+      $grpc.ServiceCall call, $287.Request request);
 }

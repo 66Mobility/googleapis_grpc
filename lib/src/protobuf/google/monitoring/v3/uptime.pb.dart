@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../api/monitored_resource.pb.dart' as $196;
-import '../../protobuf/duration.pb.dart' as $266;
+import '../../api/monitored_resource.pb.dart' as $222;
+import '../../protobuf/duration.pb.dart' as $292;
 import 'uptime.pbenum.dart';
 
 export 'uptime.pbenum.dart';
@@ -193,7 +193,7 @@ class SyntheticMonitorTarget_CloudFunctionV2Target
     extends $pb.GeneratedMessage {
   factory SyntheticMonitorTarget_CloudFunctionV2Target({
     $core.String? name,
-    $196.MonitoredResource? cloudRunRevision,
+    $222.MonitoredResource? cloudRunRevision,
   }) {
     final $result = create();
     if (name != null) {
@@ -219,8 +219,8 @@ class SyntheticMonitorTarget_CloudFunctionV2Target
           _omitMessageNames ? '' : 'google.monitoring.v3'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$196.MonitoredResource>(2, _omitFieldNames ? '' : 'cloudRunRevision',
-        subBuilder: $196.MonitoredResource.create)
+    ..aOM<$222.MonitoredResource>(2, _omitFieldNames ? '' : 'cloudRunRevision',
+        subBuilder: $222.MonitoredResource.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -274,9 +274,9 @@ class SyntheticMonitorTarget_CloudFunctionV2Target
   /// spans) are reported against this Monitored Resource. This field is output
   /// only.
   @$pb.TagNumber(2)
-  $196.MonitoredResource get cloudRunRevision => $_getN(1);
+  $222.MonitoredResource get cloudRunRevision => $_getN(1);
   @$pb.TagNumber(2)
-  set cloudRunRevision($196.MonitoredResource v) {
+  set cloudRunRevision($222.MonitoredResource v) {
     setField(2, v);
   }
 
@@ -285,7 +285,7 @@ class SyntheticMonitorTarget_CloudFunctionV2Target
   @$pb.TagNumber(2)
   void clearCloudRunRevision() => clearField(2);
   @$pb.TagNumber(2)
-  $196.MonitoredResource ensureCloudRunRevision() => $_ensure(1);
+  $222.MonitoredResource ensureCloudRunRevision() => $_ensure(1);
 }
 
 enum SyntheticMonitorTarget_Target { cloudFunctionV2, notSet }
@@ -756,10 +756,11 @@ class UptimeCheckConfig_HttpCheck_ResponseStatusCode
   void clearStatusClass() => clearField(2);
 }
 
-/// Contains information needed for generating an
+/// Contains information needed for generating either an
 /// [OpenID Connect
-/// token](https://developers.google.com/identity/protocols/OpenIDConnect).
-/// The OIDC token will be generated for the Monitoring service agent service
+/// token](https://developers.google.com/identity/protocols/OpenIDConnect) or
+/// [OAuth token](https://developers.google.com/identity/protocols/oauth2).
+/// The token will be generated for the Monitoring service agent service
 /// account.
 class UptimeCheckConfig_HttpCheck_ServiceAgentAuthentication
     extends $pb.GeneratedMessage {
@@ -1600,12 +1601,12 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
   factory UptimeCheckConfig({
     $core.String? name,
     $core.String? displayName,
-    $196.MonitoredResource? monitoredResource,
+    $222.MonitoredResource? monitoredResource,
     UptimeCheckConfig_ResourceGroup? resourceGroup,
     UptimeCheckConfig_HttpCheck? httpCheck,
     UptimeCheckConfig_TcpCheck? tcpCheck,
-    $266.Duration? period,
-    $266.Duration? timeout,
+    $292.Duration? period,
+    $292.Duration? timeout,
     $core.Iterable<UptimeCheckConfig_ContentMatcher>? contentMatchers,
     $core.Iterable<UptimeCheckRegion>? selectedRegions,
     @$core.Deprecated('This field is deprecated.')
@@ -1695,8 +1696,8 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
     ..oo(1, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$196.MonitoredResource>(3, _omitFieldNames ? '' : 'monitoredResource',
-        subBuilder: $196.MonitoredResource.create)
+    ..aOM<$222.MonitoredResource>(3, _omitFieldNames ? '' : 'monitoredResource',
+        subBuilder: $222.MonitoredResource.create)
     ..aOM<UptimeCheckConfig_ResourceGroup>(
         4, _omitFieldNames ? '' : 'resourceGroup',
         subBuilder: UptimeCheckConfig_ResourceGroup.create)
@@ -1704,10 +1705,10 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
         subBuilder: UptimeCheckConfig_HttpCheck.create)
     ..aOM<UptimeCheckConfig_TcpCheck>(6, _omitFieldNames ? '' : 'tcpCheck',
         subBuilder: UptimeCheckConfig_TcpCheck.create)
-    ..aOM<$266.Duration>(7, _omitFieldNames ? '' : 'period',
-        subBuilder: $266.Duration.create)
-    ..aOM<$266.Duration>(8, _omitFieldNames ? '' : 'timeout',
-        subBuilder: $266.Duration.create)
+    ..aOM<$292.Duration>(7, _omitFieldNames ? '' : 'period',
+        subBuilder: $292.Duration.create)
+    ..aOM<$292.Duration>(8, _omitFieldNames ? '' : 'timeout',
+        subBuilder: $292.Duration.create)
     ..pc<UptimeCheckConfig_ContentMatcher>(
         9, _omitFieldNames ? '' : 'contentMatchers', $pb.PbFieldType.PM,
         subBuilder: UptimeCheckConfig_ContentMatcher.create)
@@ -1816,9 +1817,9 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
   ///   `servicedirectory_service`
   ///   `cloud_run_revision`
   @$pb.TagNumber(3)
-  $196.MonitoredResource get monitoredResource => $_getN(2);
+  $222.MonitoredResource get monitoredResource => $_getN(2);
   @$pb.TagNumber(3)
-  set monitoredResource($196.MonitoredResource v) {
+  set monitoredResource($222.MonitoredResource v) {
     setField(3, v);
   }
 
@@ -1827,7 +1828,7 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearMonitoredResource() => clearField(3);
   @$pb.TagNumber(3)
-  $196.MonitoredResource ensureMonitoredResource() => $_ensure(2);
+  $222.MonitoredResource ensureMonitoredResource() => $_ensure(2);
 
   /// The group resource associated with the configuration.
   @$pb.TagNumber(4)
@@ -1879,9 +1880,9 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
   /// (5 minutes), `600s` (10 minutes), and `900s` (15 minutes). Optional,
   /// defaults to `60s`.
   @$pb.TagNumber(7)
-  $266.Duration get period => $_getN(6);
+  $292.Duration get period => $_getN(6);
   @$pb.TagNumber(7)
-  set period($266.Duration v) {
+  set period($292.Duration v) {
     setField(7, v);
   }
 
@@ -1890,14 +1891,14 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearPeriod() => clearField(7);
   @$pb.TagNumber(7)
-  $266.Duration ensurePeriod() => $_ensure(6);
+  $292.Duration ensurePeriod() => $_ensure(6);
 
   /// The maximum amount of time to wait for the request to complete (must be
   /// between 1 and 60 seconds). Required.
   @$pb.TagNumber(8)
-  $266.Duration get timeout => $_getN(7);
+  $292.Duration get timeout => $_getN(7);
   @$pb.TagNumber(8)
-  set timeout($266.Duration v) {
+  set timeout($292.Duration v) {
     setField(8, v);
   }
 
@@ -1906,7 +1907,7 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearTimeout() => clearField(8);
   @$pb.TagNumber(8)
-  $266.Duration ensureTimeout() => $_ensure(7);
+  $292.Duration ensureTimeout() => $_ensure(7);
 
   /// The content that is expected to appear in the data returned by the target
   /// server against which the check is run.  Currently, only the first entry

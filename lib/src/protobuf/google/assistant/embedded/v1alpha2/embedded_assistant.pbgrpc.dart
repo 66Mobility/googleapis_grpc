@@ -15,26 +15,26 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'embedded_assistant.pb.dart' as $86;
+import 'embedded_assistant.pb.dart' as $104;
 
 export 'embedded_assistant.pb.dart';
 
 @$pb.GrpcServiceName('google.assistant.embedded.v1alpha2.EmbeddedAssistant')
 class EmbeddedAssistantClient extends $grpc.Client {
   static final _$assist =
-      $grpc.ClientMethod<$86.AssistRequest, $86.AssistResponse>(
+      $grpc.ClientMethod<$104.AssistRequest, $104.AssistResponse>(
           '/google.assistant.embedded.v1alpha2.EmbeddedAssistant/Assist',
-          ($86.AssistRequest value) => value.writeToBuffer(),
+          ($104.AssistRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $86.AssistResponse.fromBuffer(value));
+              $104.AssistResponse.fromBuffer(value));
 
   EmbeddedAssistantClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseStream<$86.AssistResponse> assist(
-      $async.Stream<$86.AssistRequest> request,
+  $grpc.ResponseStream<$104.AssistResponse> assist(
+      $async.Stream<$104.AssistRequest> request,
       {$grpc.CallOptions? options}) {
     return $createStreamingCall(_$assist, request, options: options);
   }
@@ -46,15 +46,15 @@ abstract class EmbeddedAssistantServiceBase extends $grpc.Service {
       'google.assistant.embedded.v1alpha2.EmbeddedAssistant';
 
   EmbeddedAssistantServiceBase() {
-    $addMethod($grpc.ServiceMethod<$86.AssistRequest, $86.AssistResponse>(
+    $addMethod($grpc.ServiceMethod<$104.AssistRequest, $104.AssistResponse>(
         'Assist',
         assist,
         true,
         true,
-        ($core.List<$core.int> value) => $86.AssistRequest.fromBuffer(value),
-        ($86.AssistResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $104.AssistRequest.fromBuffer(value),
+        ($104.AssistResponse value) => value.writeToBuffer()));
   }
 
-  $async.Stream<$86.AssistResponse> assist(
-      $grpc.ServiceCall call, $async.Stream<$86.AssistRequest> request);
+  $async.Stream<$104.AssistResponse> assist(
+      $grpc.ServiceCall call, $async.Stream<$104.AssistRequest> request);
 }

@@ -15,7 +15,7 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'autofeedsettings.pb.dart' as $219;
+import 'autofeedsettings.pb.dart' as $245;
 
 export 'autofeedsettings.pb.dart';
 
@@ -23,29 +23,29 @@ export 'autofeedsettings.pb.dart';
     'google.shopping.merchant.accounts.v1beta.AutofeedSettingsService')
 class AutofeedSettingsServiceClient extends $grpc.Client {
   static final _$getAutofeedSettings = $grpc.ClientMethod<
-          $219.GetAutofeedSettingsRequest, $219.AutofeedSettings>(
+          $245.GetAutofeedSettingsRequest, $245.AutofeedSettings>(
       '/google.shopping.merchant.accounts.v1beta.AutofeedSettingsService/GetAutofeedSettings',
-      ($219.GetAutofeedSettingsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $219.AutofeedSettings.fromBuffer(value));
+      ($245.GetAutofeedSettingsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $245.AutofeedSettings.fromBuffer(value));
   static final _$updateAutofeedSettings = $grpc.ClientMethod<
-          $219.UpdateAutofeedSettingsRequest, $219.AutofeedSettings>(
+          $245.UpdateAutofeedSettingsRequest, $245.AutofeedSettings>(
       '/google.shopping.merchant.accounts.v1beta.AutofeedSettingsService/UpdateAutofeedSettings',
-      ($219.UpdateAutofeedSettingsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $219.AutofeedSettings.fromBuffer(value));
+      ($245.UpdateAutofeedSettingsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $245.AutofeedSettings.fromBuffer(value));
 
   AutofeedSettingsServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$219.AutofeedSettings> getAutofeedSettings(
-      $219.GetAutofeedSettingsRequest request,
+  $grpc.ResponseFuture<$245.AutofeedSettings> getAutofeedSettings(
+      $245.GetAutofeedSettingsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getAutofeedSettings, request, options: options);
   }
 
-  $grpc.ResponseFuture<$219.AutofeedSettings> updateAutofeedSettings(
-      $219.UpdateAutofeedSettingsRequest request,
+  $grpc.ResponseFuture<$245.AutofeedSettings> updateAutofeedSettings(
+      $245.UpdateAutofeedSettingsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateAutofeedSettings, request,
         options: options);
@@ -59,40 +59,40 @@ abstract class AutofeedSettingsServiceBase extends $grpc.Service {
       'google.shopping.merchant.accounts.v1beta.AutofeedSettingsService';
 
   AutofeedSettingsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$219.GetAutofeedSettingsRequest,
-            $219.AutofeedSettings>(
+    $addMethod($grpc.ServiceMethod<$245.GetAutofeedSettingsRequest,
+            $245.AutofeedSettings>(
         'GetAutofeedSettings',
         getAutofeedSettings_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $219.GetAutofeedSettingsRequest.fromBuffer(value),
-        ($219.AutofeedSettings value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$219.UpdateAutofeedSettingsRequest,
-            $219.AutofeedSettings>(
+            $245.GetAutofeedSettingsRequest.fromBuffer(value),
+        ($245.AutofeedSettings value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$245.UpdateAutofeedSettingsRequest,
+            $245.AutofeedSettings>(
         'UpdateAutofeedSettings',
         updateAutofeedSettings_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $219.UpdateAutofeedSettingsRequest.fromBuffer(value),
-        ($219.AutofeedSettings value) => value.writeToBuffer()));
+            $245.UpdateAutofeedSettingsRequest.fromBuffer(value),
+        ($245.AutofeedSettings value) => value.writeToBuffer()));
   }
 
-  $async.Future<$219.AutofeedSettings> getAutofeedSettings_Pre(
+  $async.Future<$245.AutofeedSettings> getAutofeedSettings_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$219.GetAutofeedSettingsRequest> request) async {
+      $async.Future<$245.GetAutofeedSettingsRequest> request) async {
     return getAutofeedSettings(call, await request);
   }
 
-  $async.Future<$219.AutofeedSettings> updateAutofeedSettings_Pre(
+  $async.Future<$245.AutofeedSettings> updateAutofeedSettings_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$219.UpdateAutofeedSettingsRequest> request) async {
+      $async.Future<$245.UpdateAutofeedSettingsRequest> request) async {
     return updateAutofeedSettings(call, await request);
   }
 
-  $async.Future<$219.AutofeedSettings> getAutofeedSettings(
-      $grpc.ServiceCall call, $219.GetAutofeedSettingsRequest request);
-  $async.Future<$219.AutofeedSettings> updateAutofeedSettings(
-      $grpc.ServiceCall call, $219.UpdateAutofeedSettingsRequest request);
+  $async.Future<$245.AutofeedSettings> getAutofeedSettings(
+      $grpc.ServiceCall call, $245.GetAutofeedSettingsRequest request);
+  $async.Future<$245.AutofeedSettings> updateAutofeedSettings(
+      $grpc.ServiceCall call, $245.UpdateAutofeedSettingsRequest request);
 }

@@ -15,36 +15,36 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'model.pb.dart' as $25;
-import 'model_service.pb.dart' as $24;
+import 'model.pb.dart' as $40;
+import 'model_service.pb.dart' as $39;
 
 export 'model_service.pb.dart';
 
 @$pb.GrpcServiceName('google.ai.generativelanguage.v1beta2.ModelService')
 class ModelServiceClient extends $grpc.Client {
-  static final _$getModel = $grpc.ClientMethod<$24.GetModelRequest, $25.Model>(
+  static final _$getModel = $grpc.ClientMethod<$39.GetModelRequest, $40.Model>(
       '/google.ai.generativelanguage.v1beta2.ModelService/GetModel',
-      ($24.GetModelRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $25.Model.fromBuffer(value));
+      ($39.GetModelRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $40.Model.fromBuffer(value));
   static final _$listModels =
-      $grpc.ClientMethod<$24.ListModelsRequest, $24.ListModelsResponse>(
+      $grpc.ClientMethod<$39.ListModelsRequest, $39.ListModelsResponse>(
           '/google.ai.generativelanguage.v1beta2.ModelService/ListModels',
-          ($24.ListModelsRequest value) => value.writeToBuffer(),
+          ($39.ListModelsRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $24.ListModelsResponse.fromBuffer(value));
+              $39.ListModelsResponse.fromBuffer(value));
 
   ModelServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$25.Model> getModel($24.GetModelRequest request,
+  $grpc.ResponseFuture<$40.Model> getModel($39.GetModelRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getModel, request, options: options);
   }
 
-  $grpc.ResponseFuture<$24.ListModelsResponse> listModels(
-      $24.ListModelsRequest request,
+  $grpc.ResponseFuture<$39.ListModelsResponse> listModels(
+      $39.ListModelsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listModels, request, options: options);
   }
@@ -55,36 +55,36 @@ abstract class ModelServiceBase extends $grpc.Service {
   $core.String get $name => 'google.ai.generativelanguage.v1beta2.ModelService';
 
   ModelServiceBase() {
-    $addMethod($grpc.ServiceMethod<$24.GetModelRequest, $25.Model>(
+    $addMethod($grpc.ServiceMethod<$39.GetModelRequest, $40.Model>(
         'GetModel',
         getModel_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $24.GetModelRequest.fromBuffer(value),
-        ($25.Model value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $39.GetModelRequest.fromBuffer(value),
+        ($40.Model value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$24.ListModelsRequest, $24.ListModelsResponse>(
+        $grpc.ServiceMethod<$39.ListModelsRequest, $39.ListModelsResponse>(
             'ListModels',
             listModels_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $24.ListModelsRequest.fromBuffer(value),
-            ($24.ListModelsResponse value) => value.writeToBuffer()));
+                $39.ListModelsRequest.fromBuffer(value),
+            ($39.ListModelsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$25.Model> getModel_Pre($grpc.ServiceCall call,
-      $async.Future<$24.GetModelRequest> request) async {
+  $async.Future<$40.Model> getModel_Pre($grpc.ServiceCall call,
+      $async.Future<$39.GetModelRequest> request) async {
     return getModel(call, await request);
   }
 
-  $async.Future<$24.ListModelsResponse> listModels_Pre($grpc.ServiceCall call,
-      $async.Future<$24.ListModelsRequest> request) async {
+  $async.Future<$39.ListModelsResponse> listModels_Pre($grpc.ServiceCall call,
+      $async.Future<$39.ListModelsRequest> request) async {
     return listModels(call, await request);
   }
 
-  $async.Future<$25.Model> getModel(
-      $grpc.ServiceCall call, $24.GetModelRequest request);
-  $async.Future<$24.ListModelsResponse> listModels(
-      $grpc.ServiceCall call, $24.ListModelsRequest request);
+  $async.Future<$40.Model> getModel(
+      $grpc.ServiceCall call, $39.GetModelRequest request);
+  $async.Future<$39.ListModelsResponse> listModels(
+      $grpc.ServiceCall call, $39.ListModelsRequest request);
 }

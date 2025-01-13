@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $335;
-import '../../../rpc/status.pb.dart' as $324;
-import 'dataset.pb.dart' as $169;
+import '../../../protobuf/field_mask.pb.dart' as $361;
+import '../../../rpc/status.pb.dart' as $350;
+import 'dataset.pb.dart' as $195;
 
 /// Request to create a maps dataset.
 class CreateDatasetRequest extends $pb.GeneratedMessage {
   factory CreateDatasetRequest({
     $core.String? parent,
-    $169.Dataset? dataset,
+    $195.Dataset? dataset,
   }) {
     final $result = create();
     if (parent != null) {
@@ -46,8 +46,8 @@ class CreateDatasetRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$169.Dataset>(2, _omitFieldNames ? '' : 'dataset',
-        subBuilder: $169.Dataset.create)
+    ..aOM<$195.Dataset>(2, _omitFieldNames ? '' : 'dataset',
+        subBuilder: $195.Dataset.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -90,9 +90,9 @@ class CreateDatasetRequest extends $pb.GeneratedMessage {
 
   /// Required. The dataset version to create.
   @$pb.TagNumber(2)
-  $169.Dataset get dataset => $_getN(1);
+  $195.Dataset get dataset => $_getN(1);
   @$pb.TagNumber(2)
-  set dataset($169.Dataset v) {
+  set dataset($195.Dataset v) {
     setField(2, v);
   }
 
@@ -101,14 +101,14 @@ class CreateDatasetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearDataset() => clearField(2);
   @$pb.TagNumber(2)
-  $169.Dataset ensureDataset() => $_ensure(1);
+  $195.Dataset ensureDataset() => $_ensure(1);
 }
 
 /// Request to update the metadata fields of the dataset.
 class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
   factory UpdateDatasetMetadataRequest({
-    $169.Dataset? dataset,
-    $335.FieldMask? updateMask,
+    $195.Dataset? dataset,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataset != null) {
@@ -132,10 +132,10 @@ class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'),
       createEmptyInstance: create)
-    ..aOM<$169.Dataset>(1, _omitFieldNames ? '' : 'dataset',
-        subBuilder: $169.Dataset.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$195.Dataset>(1, _omitFieldNames ? '' : 'dataset',
+        subBuilder: $195.Dataset.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -168,9 +168,9 @@ class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
   /// Required. Resource name of the dataset to update.
   /// Format: projects/{project}/datasets/{dataset_id}
   @$pb.TagNumber(1)
-  $169.Dataset get dataset => $_getN(0);
+  $195.Dataset get dataset => $_getN(0);
   @$pb.TagNumber(1)
-  set dataset($169.Dataset v) {
+  set dataset($195.Dataset v) {
     setField(1, v);
   }
 
@@ -179,15 +179,15 @@ class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearDataset() => clearField(1);
   @$pb.TagNumber(1)
-  $169.Dataset ensureDataset() => $_ensure(0);
+  $195.Dataset ensureDataset() => $_ensure(0);
 
   ///  The list of fields to be updated.
   ///
   ///  The value "*" is used for full replacement (default).
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -196,7 +196,7 @@ class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to get the specified dataset.
@@ -404,7 +404,7 @@ class ListDatasetsRequest extends $pb.GeneratedMessage {
 /// Response object of ListDatasets.
 class ListDatasetsResponse extends $pb.GeneratedMessage {
   factory ListDatasetsResponse({
-    $core.Iterable<$169.Dataset>? datasets,
+    $core.Iterable<$195.Dataset>? datasets,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -429,8 +429,8 @@ class ListDatasetsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'),
       createEmptyInstance: create)
-    ..pc<$169.Dataset>(1, _omitFieldNames ? '' : 'datasets', $pb.PbFieldType.PM,
-        subBuilder: $169.Dataset.create)
+    ..pc<$195.Dataset>(1, _omitFieldNames ? '' : 'datasets', $pb.PbFieldType.PM,
+        subBuilder: $195.Dataset.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -460,7 +460,7 @@ class ListDatasetsResponse extends $pb.GeneratedMessage {
 
   /// All the datasets for the project.
   @$pb.TagNumber(1)
-  $core.List<$169.Dataset> get datasets => $_getList(0);
+  $core.List<$195.Dataset> get datasets => $_getList(0);
 
   ///  A token that can be sent as `page_token` to retrieve the next page.
   ///
@@ -590,7 +590,7 @@ class FetchDatasetErrorsRequest extends $pb.GeneratedMessage {
 class FetchDatasetErrorsResponse extends $pb.GeneratedMessage {
   factory FetchDatasetErrorsResponse({
     $core.String? nextPageToken,
-    $core.Iterable<$324.Status>? errors,
+    $core.Iterable<$350.Status>? errors,
   }) {
     final $result = create();
     if (nextPageToken != null) {
@@ -615,8 +615,8 @@ class FetchDatasetErrorsResponse extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'),
       createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..pc<$324.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM,
-        subBuilder: $324.Status.create)
+    ..pc<$350.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM,
+        subBuilder: $350.Status.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -662,7 +662,7 @@ class FetchDatasetErrorsResponse extends $pb.GeneratedMessage {
 
   /// The errors associated with a dataset.
   @$pb.TagNumber(3)
-  $core.List<$324.Status> get errors => $_getList(1);
+  $core.List<$350.Status> get errors => $_getList(1);
 }
 
 /// Request to delete a dataset.

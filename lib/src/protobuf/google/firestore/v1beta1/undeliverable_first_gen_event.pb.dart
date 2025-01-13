@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $304;
+import '../../protobuf/timestamp.pb.dart' as $330;
 import 'undeliverable_first_gen_event.pbenum.dart';
 
 export 'undeliverable_first_gen_event.pbenum.dart';
@@ -28,7 +28,7 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
     $core.String? documentName,
     UndeliverableFirstGenEvent_DocumentChangeType? documentChangeType,
     $core.Iterable<$core.String>? functionName,
-    $304.Timestamp? triggeredTime,
+    $330.Timestamp? triggeredTime,
   }) {
     final $result = create();
     if (message != null) {
@@ -78,8 +78,8 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
         valueOf: UndeliverableFirstGenEvent_DocumentChangeType.valueOf,
         enumValues: UndeliverableFirstGenEvent_DocumentChangeType.values)
     ..pPS(5, _omitFieldNames ? '' : 'functionName')
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'triggeredTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'triggeredTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -168,9 +168,9 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
 
   /// The commit time of triggered write operation.
   @$pb.TagNumber(6)
-  $304.Timestamp get triggeredTime => $_getN(5);
+  $330.Timestamp get triggeredTime => $_getN(5);
   @$pb.TagNumber(6)
-  set triggeredTime($304.Timestamp v) {
+  set triggeredTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -179,7 +179,7 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearTriggeredTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureTriggeredTime() => $_ensure(5);
+  $330.Timestamp ensureTriggeredTime() => $_ensure(5);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

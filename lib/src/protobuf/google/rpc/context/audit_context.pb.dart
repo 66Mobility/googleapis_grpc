@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $263;
+import '../../protobuf/struct.pb.dart' as $289;
 
 /// `AuditContext` provides information that is needed for audit logging.
 class AuditContext extends $pb.GeneratedMessage {
   factory AuditContext({
     $core.List<$core.int>? auditLog,
-    $263.Struct? scrubbedRequest,
-    $263.Struct? scrubbedResponse,
+    $289.Struct? scrubbedRequest,
+    $289.Struct? scrubbedResponse,
     $core.int? scrubbedResponseItemCount,
     $core.String? targetResource,
   }) {
@@ -57,10 +57,10 @@ class AuditContext extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..a<$core.List<$core.int>>(
         1, _omitFieldNames ? '' : 'auditLog', $pb.PbFieldType.OY)
-    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'scrubbedRequest',
-        subBuilder: $263.Struct.create)
-    ..aOM<$263.Struct>(3, _omitFieldNames ? '' : 'scrubbedResponse',
-        subBuilder: $263.Struct.create)
+    ..aOM<$289.Struct>(2, _omitFieldNames ? '' : 'scrubbedRequest',
+        subBuilder: $289.Struct.create)
+    ..aOM<$289.Struct>(3, _omitFieldNames ? '' : 'scrubbedResponse',
+        subBuilder: $289.Struct.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'scrubbedResponseItemCount',
         $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'targetResource')
@@ -107,9 +107,9 @@ class AuditContext extends $pb.GeneratedMessage {
   /// Service Control will use this to assemble a complete log for Cloud Audit
   /// Logs and Google internal audit logs.
   @$pb.TagNumber(2)
-  $263.Struct get scrubbedRequest => $_getN(1);
+  $289.Struct get scrubbedRequest => $_getN(1);
   @$pb.TagNumber(2)
-  set scrubbedRequest($263.Struct v) {
+  set scrubbedRequest($289.Struct v) {
     setField(2, v);
   }
 
@@ -118,16 +118,16 @@ class AuditContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearScrubbedRequest() => clearField(2);
   @$pb.TagNumber(2)
-  $263.Struct ensureScrubbedRequest() => $_ensure(1);
+  $289.Struct ensureScrubbedRequest() => $_ensure(1);
 
   /// An API response message that is scrubbed based on the method annotation.
   /// This field should only be filled if audit_log field is present.
   /// Service Control will use this to assemble a complete log for Cloud Audit
   /// Logs and Google internal audit logs.
   @$pb.TagNumber(3)
-  $263.Struct get scrubbedResponse => $_getN(2);
+  $289.Struct get scrubbedResponse => $_getN(2);
   @$pb.TagNumber(3)
-  set scrubbedResponse($263.Struct v) {
+  set scrubbedResponse($289.Struct v) {
     setField(3, v);
   }
 
@@ -136,7 +136,7 @@ class AuditContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearScrubbedResponse() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Struct ensureScrubbedResponse() => $_ensure(2);
+  $289.Struct ensureScrubbedResponse() => $_ensure(2);
 
   /// Number of scrubbed response items.
   @$pb.TagNumber(4)

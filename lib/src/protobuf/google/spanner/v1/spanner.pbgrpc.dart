@@ -16,200 +16,200 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../protobuf/empty.pb.dart' as $3;
-import 'commit_response.pb.dart' as $253;
-import 'result_set.pb.dart' as $251;
-import 'spanner.pb.dart' as $250;
-import 'transaction.pb.dart' as $252;
+import 'commit_response.pb.dart' as $279;
+import 'result_set.pb.dart' as $277;
+import 'spanner.pb.dart' as $276;
+import 'transaction.pb.dart' as $278;
 
 export 'spanner.pb.dart';
 
 @$pb.GrpcServiceName('google.spanner.v1.Spanner')
 class SpannerClient extends $grpc.Client {
   static final _$createSession =
-      $grpc.ClientMethod<$250.CreateSessionRequest, $250.Session>(
+      $grpc.ClientMethod<$276.CreateSessionRequest, $276.Session>(
           '/google.spanner.v1.Spanner/CreateSession',
-          ($250.CreateSessionRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $250.Session.fromBuffer(value));
+          ($276.CreateSessionRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $276.Session.fromBuffer(value));
   static final _$batchCreateSessions = $grpc.ClientMethod<
-          $250.BatchCreateSessionsRequest, $250.BatchCreateSessionsResponse>(
+          $276.BatchCreateSessionsRequest, $276.BatchCreateSessionsResponse>(
       '/google.spanner.v1.Spanner/BatchCreateSessions',
-      ($250.BatchCreateSessionsRequest value) => value.writeToBuffer(),
+      ($276.BatchCreateSessionsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $250.BatchCreateSessionsResponse.fromBuffer(value));
+          $276.BatchCreateSessionsResponse.fromBuffer(value));
   static final _$getSession =
-      $grpc.ClientMethod<$250.GetSessionRequest, $250.Session>(
+      $grpc.ClientMethod<$276.GetSessionRequest, $276.Session>(
           '/google.spanner.v1.Spanner/GetSession',
-          ($250.GetSessionRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $250.Session.fromBuffer(value));
+          ($276.GetSessionRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $276.Session.fromBuffer(value));
   static final _$listSessions =
-      $grpc.ClientMethod<$250.ListSessionsRequest, $250.ListSessionsResponse>(
+      $grpc.ClientMethod<$276.ListSessionsRequest, $276.ListSessionsResponse>(
           '/google.spanner.v1.Spanner/ListSessions',
-          ($250.ListSessionsRequest value) => value.writeToBuffer(),
+          ($276.ListSessionsRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $250.ListSessionsResponse.fromBuffer(value));
+              $276.ListSessionsResponse.fromBuffer(value));
   static final _$deleteSession =
-      $grpc.ClientMethod<$250.DeleteSessionRequest, $3.Empty>(
+      $grpc.ClientMethod<$276.DeleteSessionRequest, $3.Empty>(
           '/google.spanner.v1.Spanner/DeleteSession',
-          ($250.DeleteSessionRequest value) => value.writeToBuffer(),
+          ($276.DeleteSessionRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$executeSql =
-      $grpc.ClientMethod<$250.ExecuteSqlRequest, $251.ResultSet>(
+      $grpc.ClientMethod<$276.ExecuteSqlRequest, $277.ResultSet>(
           '/google.spanner.v1.Spanner/ExecuteSql',
-          ($250.ExecuteSqlRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $251.ResultSet.fromBuffer(value));
+          ($276.ExecuteSqlRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $277.ResultSet.fromBuffer(value));
   static final _$executeStreamingSql =
-      $grpc.ClientMethod<$250.ExecuteSqlRequest, $251.PartialResultSet>(
+      $grpc.ClientMethod<$276.ExecuteSqlRequest, $277.PartialResultSet>(
           '/google.spanner.v1.Spanner/ExecuteStreamingSql',
-          ($250.ExecuteSqlRequest value) => value.writeToBuffer(),
+          ($276.ExecuteSqlRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $251.PartialResultSet.fromBuffer(value));
+              $277.PartialResultSet.fromBuffer(value));
   static final _$executeBatchDml = $grpc.ClientMethod<
-          $250.ExecuteBatchDmlRequest, $250.ExecuteBatchDmlResponse>(
+          $276.ExecuteBatchDmlRequest, $276.ExecuteBatchDmlResponse>(
       '/google.spanner.v1.Spanner/ExecuteBatchDml',
-      ($250.ExecuteBatchDmlRequest value) => value.writeToBuffer(),
+      ($276.ExecuteBatchDmlRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $250.ExecuteBatchDmlResponse.fromBuffer(value));
-  static final _$read = $grpc.ClientMethod<$250.ReadRequest, $251.ResultSet>(
+          $276.ExecuteBatchDmlResponse.fromBuffer(value));
+  static final _$read = $grpc.ClientMethod<$276.ReadRequest, $277.ResultSet>(
       '/google.spanner.v1.Spanner/Read',
-      ($250.ReadRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $251.ResultSet.fromBuffer(value));
+      ($276.ReadRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $277.ResultSet.fromBuffer(value));
   static final _$streamingRead =
-      $grpc.ClientMethod<$250.ReadRequest, $251.PartialResultSet>(
+      $grpc.ClientMethod<$276.ReadRequest, $277.PartialResultSet>(
           '/google.spanner.v1.Spanner/StreamingRead',
-          ($250.ReadRequest value) => value.writeToBuffer(),
+          ($276.ReadRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $251.PartialResultSet.fromBuffer(value));
+              $277.PartialResultSet.fromBuffer(value));
   static final _$beginTransaction =
-      $grpc.ClientMethod<$250.BeginTransactionRequest, $252.Transaction>(
+      $grpc.ClientMethod<$276.BeginTransactionRequest, $278.Transaction>(
           '/google.spanner.v1.Spanner/BeginTransaction',
-          ($250.BeginTransactionRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $252.Transaction.fromBuffer(value));
+          ($276.BeginTransactionRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $278.Transaction.fromBuffer(value));
   static final _$commit =
-      $grpc.ClientMethod<$250.CommitRequest, $253.CommitResponse>(
+      $grpc.ClientMethod<$276.CommitRequest, $279.CommitResponse>(
           '/google.spanner.v1.Spanner/Commit',
-          ($250.CommitRequest value) => value.writeToBuffer(),
+          ($276.CommitRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $253.CommitResponse.fromBuffer(value));
-  static final _$rollback = $grpc.ClientMethod<$250.RollbackRequest, $3.Empty>(
+              $279.CommitResponse.fromBuffer(value));
+  static final _$rollback = $grpc.ClientMethod<$276.RollbackRequest, $3.Empty>(
       '/google.spanner.v1.Spanner/Rollback',
-      ($250.RollbackRequest value) => value.writeToBuffer(),
+      ($276.RollbackRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$partitionQuery =
-      $grpc.ClientMethod<$250.PartitionQueryRequest, $250.PartitionResponse>(
+      $grpc.ClientMethod<$276.PartitionQueryRequest, $276.PartitionResponse>(
           '/google.spanner.v1.Spanner/PartitionQuery',
-          ($250.PartitionQueryRequest value) => value.writeToBuffer(),
+          ($276.PartitionQueryRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $250.PartitionResponse.fromBuffer(value));
+              $276.PartitionResponse.fromBuffer(value));
   static final _$partitionRead =
-      $grpc.ClientMethod<$250.PartitionReadRequest, $250.PartitionResponse>(
+      $grpc.ClientMethod<$276.PartitionReadRequest, $276.PartitionResponse>(
           '/google.spanner.v1.Spanner/PartitionRead',
-          ($250.PartitionReadRequest value) => value.writeToBuffer(),
+          ($276.PartitionReadRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $250.PartitionResponse.fromBuffer(value));
+              $276.PartitionResponse.fromBuffer(value));
   static final _$batchWrite =
-      $grpc.ClientMethod<$250.BatchWriteRequest, $250.BatchWriteResponse>(
+      $grpc.ClientMethod<$276.BatchWriteRequest, $276.BatchWriteResponse>(
           '/google.spanner.v1.Spanner/BatchWrite',
-          ($250.BatchWriteRequest value) => value.writeToBuffer(),
+          ($276.BatchWriteRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $250.BatchWriteResponse.fromBuffer(value));
+              $276.BatchWriteResponse.fromBuffer(value));
 
   SpannerClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$250.Session> createSession(
-      $250.CreateSessionRequest request,
+  $grpc.ResponseFuture<$276.Session> createSession(
+      $276.CreateSessionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createSession, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.BatchCreateSessionsResponse> batchCreateSessions(
-      $250.BatchCreateSessionsRequest request,
+  $grpc.ResponseFuture<$276.BatchCreateSessionsResponse> batchCreateSessions(
+      $276.BatchCreateSessionsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchCreateSessions, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.Session> getSession($250.GetSessionRequest request,
+  $grpc.ResponseFuture<$276.Session> getSession($276.GetSessionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSession, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.ListSessionsResponse> listSessions(
-      $250.ListSessionsRequest request,
+  $grpc.ResponseFuture<$276.ListSessionsResponse> listSessions(
+      $276.ListSessionsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listSessions, request, options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> deleteSession(
-      $250.DeleteSessionRequest request,
+      $276.DeleteSessionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteSession, request, options: options);
   }
 
-  $grpc.ResponseFuture<$251.ResultSet> executeSql(
-      $250.ExecuteSqlRequest request,
+  $grpc.ResponseFuture<$277.ResultSet> executeSql(
+      $276.ExecuteSqlRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$executeSql, request, options: options);
   }
 
-  $grpc.ResponseStream<$251.PartialResultSet> executeStreamingSql(
-      $250.ExecuteSqlRequest request,
+  $grpc.ResponseStream<$277.PartialResultSet> executeStreamingSql(
+      $276.ExecuteSqlRequest request,
       {$grpc.CallOptions? options}) {
     return $createStreamingCall(
         _$executeStreamingSql, $async.Stream.fromIterable([request]),
         options: options);
   }
 
-  $grpc.ResponseFuture<$250.ExecuteBatchDmlResponse> executeBatchDml(
-      $250.ExecuteBatchDmlRequest request,
+  $grpc.ResponseFuture<$276.ExecuteBatchDmlResponse> executeBatchDml(
+      $276.ExecuteBatchDmlRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$executeBatchDml, request, options: options);
   }
 
-  $grpc.ResponseFuture<$251.ResultSet> read($250.ReadRequest request,
+  $grpc.ResponseFuture<$277.ResultSet> read($276.ReadRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$read, request, options: options);
   }
 
-  $grpc.ResponseStream<$251.PartialResultSet> streamingRead(
-      $250.ReadRequest request,
+  $grpc.ResponseStream<$277.PartialResultSet> streamingRead(
+      $276.ReadRequest request,
       {$grpc.CallOptions? options}) {
     return $createStreamingCall(
         _$streamingRead, $async.Stream.fromIterable([request]),
         options: options);
   }
 
-  $grpc.ResponseFuture<$252.Transaction> beginTransaction(
-      $250.BeginTransactionRequest request,
+  $grpc.ResponseFuture<$278.Transaction> beginTransaction(
+      $276.BeginTransactionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$beginTransaction, request, options: options);
   }
 
-  $grpc.ResponseFuture<$253.CommitResponse> commit($250.CommitRequest request,
+  $grpc.ResponseFuture<$279.CommitResponse> commit($276.CommitRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$commit, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> rollback($250.RollbackRequest request,
+  $grpc.ResponseFuture<$3.Empty> rollback($276.RollbackRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$rollback, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.PartitionResponse> partitionQuery(
-      $250.PartitionQueryRequest request,
+  $grpc.ResponseFuture<$276.PartitionResponse> partitionQuery(
+      $276.PartitionQueryRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$partitionQuery, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.PartitionResponse> partitionRead(
-      $250.PartitionReadRequest request,
+  $grpc.ResponseFuture<$276.PartitionResponse> partitionRead(
+      $276.PartitionReadRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$partitionRead, request, options: options);
   }
 
-  $grpc.ResponseStream<$250.BatchWriteResponse> batchWrite(
-      $250.BatchWriteRequest request,
+  $grpc.ResponseStream<$276.BatchWriteResponse> batchWrite(
+      $276.BatchWriteRequest request,
       {$grpc.CallOptions? options}) {
     return $createStreamingCall(
         _$batchWrite, $async.Stream.fromIterable([request]),
@@ -222,256 +222,256 @@ abstract class SpannerServiceBase extends $grpc.Service {
   $core.String get $name => 'google.spanner.v1.Spanner';
 
   SpannerServiceBase() {
-    $addMethod($grpc.ServiceMethod<$250.CreateSessionRequest, $250.Session>(
+    $addMethod($grpc.ServiceMethod<$276.CreateSessionRequest, $276.Session>(
         'CreateSession',
         createSession_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $250.CreateSessionRequest.fromBuffer(value),
-        ($250.Session value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.BatchCreateSessionsRequest,
-            $250.BatchCreateSessionsResponse>(
+            $276.CreateSessionRequest.fromBuffer(value),
+        ($276.Session value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$276.BatchCreateSessionsRequest,
+            $276.BatchCreateSessionsResponse>(
         'BatchCreateSessions',
         batchCreateSessions_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $250.BatchCreateSessionsRequest.fromBuffer(value),
-        ($250.BatchCreateSessionsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.GetSessionRequest, $250.Session>(
+            $276.BatchCreateSessionsRequest.fromBuffer(value),
+        ($276.BatchCreateSessionsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$276.GetSessionRequest, $276.Session>(
         'GetSession',
         getSession_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $250.GetSessionRequest.fromBuffer(value),
-        ($250.Session value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.ListSessionsRequest,
-            $250.ListSessionsResponse>(
+            $276.GetSessionRequest.fromBuffer(value),
+        ($276.Session value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$276.ListSessionsRequest,
+            $276.ListSessionsResponse>(
         'ListSessions',
         listSessions_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $250.ListSessionsRequest.fromBuffer(value),
-        ($250.ListSessionsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.DeleteSessionRequest, $3.Empty>(
+            $276.ListSessionsRequest.fromBuffer(value),
+        ($276.ListSessionsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$276.DeleteSessionRequest, $3.Empty>(
         'DeleteSession',
         deleteSession_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $250.DeleteSessionRequest.fromBuffer(value),
+            $276.DeleteSessionRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.ExecuteSqlRequest, $251.ResultSet>(
+    $addMethod($grpc.ServiceMethod<$276.ExecuteSqlRequest, $277.ResultSet>(
         'ExecuteSql',
         executeSql_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $250.ExecuteSqlRequest.fromBuffer(value),
-        ($251.ResultSet value) => value.writeToBuffer()));
+            $276.ExecuteSqlRequest.fromBuffer(value),
+        ($277.ResultSet value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$250.ExecuteSqlRequest, $251.PartialResultSet>(
+        $grpc.ServiceMethod<$276.ExecuteSqlRequest, $277.PartialResultSet>(
             'ExecuteStreamingSql',
             executeStreamingSql_Pre,
             false,
             true,
             ($core.List<$core.int> value) =>
-                $250.ExecuteSqlRequest.fromBuffer(value),
-            ($251.PartialResultSet value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.ExecuteBatchDmlRequest,
-            $250.ExecuteBatchDmlResponse>(
+                $276.ExecuteSqlRequest.fromBuffer(value),
+            ($277.PartialResultSet value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$276.ExecuteBatchDmlRequest,
+            $276.ExecuteBatchDmlResponse>(
         'ExecuteBatchDml',
         executeBatchDml_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $250.ExecuteBatchDmlRequest.fromBuffer(value),
-        ($250.ExecuteBatchDmlResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.ReadRequest, $251.ResultSet>(
+            $276.ExecuteBatchDmlRequest.fromBuffer(value),
+        ($276.ExecuteBatchDmlResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$276.ReadRequest, $277.ResultSet>(
         'Read',
         read_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.ReadRequest.fromBuffer(value),
-        ($251.ResultSet value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.ReadRequest, $251.PartialResultSet>(
+        ($core.List<$core.int> value) => $276.ReadRequest.fromBuffer(value),
+        ($277.ResultSet value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$276.ReadRequest, $277.PartialResultSet>(
         'StreamingRead',
         streamingRead_Pre,
         false,
         true,
-        ($core.List<$core.int> value) => $250.ReadRequest.fromBuffer(value),
-        ($251.PartialResultSet value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $276.ReadRequest.fromBuffer(value),
+        ($277.PartialResultSet value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$250.BeginTransactionRequest, $252.Transaction>(
+        $grpc.ServiceMethod<$276.BeginTransactionRequest, $278.Transaction>(
             'BeginTransaction',
             beginTransaction_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $250.BeginTransactionRequest.fromBuffer(value),
-            ($252.Transaction value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.CommitRequest, $253.CommitResponse>(
+                $276.BeginTransactionRequest.fromBuffer(value),
+            ($278.Transaction value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$276.CommitRequest, $279.CommitResponse>(
         'Commit',
         commit_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.CommitRequest.fromBuffer(value),
-        ($253.CommitResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.RollbackRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $276.CommitRequest.fromBuffer(value),
+        ($279.CommitResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$276.RollbackRequest, $3.Empty>(
         'Rollback',
         rollback_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.RollbackRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $276.RollbackRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$250.PartitionQueryRequest, $250.PartitionResponse>(
+        $grpc.ServiceMethod<$276.PartitionQueryRequest, $276.PartitionResponse>(
             'PartitionQuery',
             partitionQuery_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $250.PartitionQueryRequest.fromBuffer(value),
-            ($250.PartitionResponse value) => value.writeToBuffer()));
+                $276.PartitionQueryRequest.fromBuffer(value),
+            ($276.PartitionResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$250.PartitionReadRequest, $250.PartitionResponse>(
+        $grpc.ServiceMethod<$276.PartitionReadRequest, $276.PartitionResponse>(
             'PartitionRead',
             partitionRead_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $250.PartitionReadRequest.fromBuffer(value),
-            ($250.PartitionResponse value) => value.writeToBuffer()));
+                $276.PartitionReadRequest.fromBuffer(value),
+            ($276.PartitionResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$250.BatchWriteRequest, $250.BatchWriteResponse>(
+        $grpc.ServiceMethod<$276.BatchWriteRequest, $276.BatchWriteResponse>(
             'BatchWrite',
             batchWrite_Pre,
             false,
             true,
             ($core.List<$core.int> value) =>
-                $250.BatchWriteRequest.fromBuffer(value),
-            ($250.BatchWriteResponse value) => value.writeToBuffer()));
+                $276.BatchWriteRequest.fromBuffer(value),
+            ($276.BatchWriteResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$250.Session> createSession_Pre($grpc.ServiceCall call,
-      $async.Future<$250.CreateSessionRequest> request) async {
+  $async.Future<$276.Session> createSession_Pre($grpc.ServiceCall call,
+      $async.Future<$276.CreateSessionRequest> request) async {
     return createSession(call, await request);
   }
 
-  $async.Future<$250.BatchCreateSessionsResponse> batchCreateSessions_Pre(
+  $async.Future<$276.BatchCreateSessionsResponse> batchCreateSessions_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$250.BatchCreateSessionsRequest> request) async {
+      $async.Future<$276.BatchCreateSessionsRequest> request) async {
     return batchCreateSessions(call, await request);
   }
 
-  $async.Future<$250.Session> getSession_Pre($grpc.ServiceCall call,
-      $async.Future<$250.GetSessionRequest> request) async {
+  $async.Future<$276.Session> getSession_Pre($grpc.ServiceCall call,
+      $async.Future<$276.GetSessionRequest> request) async {
     return getSession(call, await request);
   }
 
-  $async.Future<$250.ListSessionsResponse> listSessions_Pre(
+  $async.Future<$276.ListSessionsResponse> listSessions_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$250.ListSessionsRequest> request) async {
+      $async.Future<$276.ListSessionsRequest> request) async {
     return listSessions(call, await request);
   }
 
   $async.Future<$3.Empty> deleteSession_Pre($grpc.ServiceCall call,
-      $async.Future<$250.DeleteSessionRequest> request) async {
+      $async.Future<$276.DeleteSessionRequest> request) async {
     return deleteSession(call, await request);
   }
 
-  $async.Future<$251.ResultSet> executeSql_Pre($grpc.ServiceCall call,
-      $async.Future<$250.ExecuteSqlRequest> request) async {
+  $async.Future<$277.ResultSet> executeSql_Pre($grpc.ServiceCall call,
+      $async.Future<$276.ExecuteSqlRequest> request) async {
     return executeSql(call, await request);
   }
 
-  $async.Stream<$251.PartialResultSet> executeStreamingSql_Pre(
+  $async.Stream<$277.PartialResultSet> executeStreamingSql_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$250.ExecuteSqlRequest> request) async* {
+      $async.Future<$276.ExecuteSqlRequest> request) async* {
     yield* executeStreamingSql(call, await request);
   }
 
-  $async.Future<$250.ExecuteBatchDmlResponse> executeBatchDml_Pre(
+  $async.Future<$276.ExecuteBatchDmlResponse> executeBatchDml_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$250.ExecuteBatchDmlRequest> request) async {
+      $async.Future<$276.ExecuteBatchDmlRequest> request) async {
     return executeBatchDml(call, await request);
   }
 
-  $async.Future<$251.ResultSet> read_Pre(
-      $grpc.ServiceCall call, $async.Future<$250.ReadRequest> request) async {
+  $async.Future<$277.ResultSet> read_Pre(
+      $grpc.ServiceCall call, $async.Future<$276.ReadRequest> request) async {
     return read(call, await request);
   }
 
-  $async.Stream<$251.PartialResultSet> streamingRead_Pre(
-      $grpc.ServiceCall call, $async.Future<$250.ReadRequest> request) async* {
+  $async.Stream<$277.PartialResultSet> streamingRead_Pre(
+      $grpc.ServiceCall call, $async.Future<$276.ReadRequest> request) async* {
     yield* streamingRead(call, await request);
   }
 
-  $async.Future<$252.Transaction> beginTransaction_Pre($grpc.ServiceCall call,
-      $async.Future<$250.BeginTransactionRequest> request) async {
+  $async.Future<$278.Transaction> beginTransaction_Pre($grpc.ServiceCall call,
+      $async.Future<$276.BeginTransactionRequest> request) async {
     return beginTransaction(call, await request);
   }
 
-  $async.Future<$253.CommitResponse> commit_Pre(
-      $grpc.ServiceCall call, $async.Future<$250.CommitRequest> request) async {
+  $async.Future<$279.CommitResponse> commit_Pre(
+      $grpc.ServiceCall call, $async.Future<$276.CommitRequest> request) async {
     return commit(call, await request);
   }
 
   $async.Future<$3.Empty> rollback_Pre($grpc.ServiceCall call,
-      $async.Future<$250.RollbackRequest> request) async {
+      $async.Future<$276.RollbackRequest> request) async {
     return rollback(call, await request);
   }
 
-  $async.Future<$250.PartitionResponse> partitionQuery_Pre(
+  $async.Future<$276.PartitionResponse> partitionQuery_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$250.PartitionQueryRequest> request) async {
+      $async.Future<$276.PartitionQueryRequest> request) async {
     return partitionQuery(call, await request);
   }
 
-  $async.Future<$250.PartitionResponse> partitionRead_Pre(
+  $async.Future<$276.PartitionResponse> partitionRead_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$250.PartitionReadRequest> request) async {
+      $async.Future<$276.PartitionReadRequest> request) async {
     return partitionRead(call, await request);
   }
 
-  $async.Stream<$250.BatchWriteResponse> batchWrite_Pre($grpc.ServiceCall call,
-      $async.Future<$250.BatchWriteRequest> request) async* {
+  $async.Stream<$276.BatchWriteResponse> batchWrite_Pre($grpc.ServiceCall call,
+      $async.Future<$276.BatchWriteRequest> request) async* {
     yield* batchWrite(call, await request);
   }
 
-  $async.Future<$250.Session> createSession(
-      $grpc.ServiceCall call, $250.CreateSessionRequest request);
-  $async.Future<$250.BatchCreateSessionsResponse> batchCreateSessions(
-      $grpc.ServiceCall call, $250.BatchCreateSessionsRequest request);
-  $async.Future<$250.Session> getSession(
-      $grpc.ServiceCall call, $250.GetSessionRequest request);
-  $async.Future<$250.ListSessionsResponse> listSessions(
-      $grpc.ServiceCall call, $250.ListSessionsRequest request);
+  $async.Future<$276.Session> createSession(
+      $grpc.ServiceCall call, $276.CreateSessionRequest request);
+  $async.Future<$276.BatchCreateSessionsResponse> batchCreateSessions(
+      $grpc.ServiceCall call, $276.BatchCreateSessionsRequest request);
+  $async.Future<$276.Session> getSession(
+      $grpc.ServiceCall call, $276.GetSessionRequest request);
+  $async.Future<$276.ListSessionsResponse> listSessions(
+      $grpc.ServiceCall call, $276.ListSessionsRequest request);
   $async.Future<$3.Empty> deleteSession(
-      $grpc.ServiceCall call, $250.DeleteSessionRequest request);
-  $async.Future<$251.ResultSet> executeSql(
-      $grpc.ServiceCall call, $250.ExecuteSqlRequest request);
-  $async.Stream<$251.PartialResultSet> executeStreamingSql(
-      $grpc.ServiceCall call, $250.ExecuteSqlRequest request);
-  $async.Future<$250.ExecuteBatchDmlResponse> executeBatchDml(
-      $grpc.ServiceCall call, $250.ExecuteBatchDmlRequest request);
-  $async.Future<$251.ResultSet> read(
-      $grpc.ServiceCall call, $250.ReadRequest request);
-  $async.Stream<$251.PartialResultSet> streamingRead(
-      $grpc.ServiceCall call, $250.ReadRequest request);
-  $async.Future<$252.Transaction> beginTransaction(
-      $grpc.ServiceCall call, $250.BeginTransactionRequest request);
-  $async.Future<$253.CommitResponse> commit(
-      $grpc.ServiceCall call, $250.CommitRequest request);
+      $grpc.ServiceCall call, $276.DeleteSessionRequest request);
+  $async.Future<$277.ResultSet> executeSql(
+      $grpc.ServiceCall call, $276.ExecuteSqlRequest request);
+  $async.Stream<$277.PartialResultSet> executeStreamingSql(
+      $grpc.ServiceCall call, $276.ExecuteSqlRequest request);
+  $async.Future<$276.ExecuteBatchDmlResponse> executeBatchDml(
+      $grpc.ServiceCall call, $276.ExecuteBatchDmlRequest request);
+  $async.Future<$277.ResultSet> read(
+      $grpc.ServiceCall call, $276.ReadRequest request);
+  $async.Stream<$277.PartialResultSet> streamingRead(
+      $grpc.ServiceCall call, $276.ReadRequest request);
+  $async.Future<$278.Transaction> beginTransaction(
+      $grpc.ServiceCall call, $276.BeginTransactionRequest request);
+  $async.Future<$279.CommitResponse> commit(
+      $grpc.ServiceCall call, $276.CommitRequest request);
   $async.Future<$3.Empty> rollback(
-      $grpc.ServiceCall call, $250.RollbackRequest request);
-  $async.Future<$250.PartitionResponse> partitionQuery(
-      $grpc.ServiceCall call, $250.PartitionQueryRequest request);
-  $async.Future<$250.PartitionResponse> partitionRead(
-      $grpc.ServiceCall call, $250.PartitionReadRequest request);
-  $async.Stream<$250.BatchWriteResponse> batchWrite(
-      $grpc.ServiceCall call, $250.BatchWriteRequest request);
+      $grpc.ServiceCall call, $276.RollbackRequest request);
+  $async.Future<$276.PartitionResponse> partitionQuery(
+      $grpc.ServiceCall call, $276.PartitionQueryRequest request);
+  $async.Future<$276.PartitionResponse> partitionRead(
+      $grpc.ServiceCall call, $276.PartitionReadRequest request);
+  $async.Stream<$276.BatchWriteResponse> batchWrite(
+      $grpc.ServiceCall call, $276.BatchWriteRequest request);
 }

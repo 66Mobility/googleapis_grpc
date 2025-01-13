@@ -78,18 +78,20 @@ const ListMetricDescriptorsRequest$json = {
   '1': 'ListMetricDescriptorsRequest',
   '2': [
     {'1': 'name', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'filter', '3': 2, '4': 1, '5': 9, '10': 'filter'},
-    {'1': 'page_size', '3': 3, '4': 1, '5': 5, '10': 'pageSize'},
-    {'1': 'page_token', '3': 4, '4': 1, '5': 9, '10': 'pageToken'},
+    {'1': 'filter', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'filter'},
+    {'1': 'page_size', '3': 3, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
+    {'1': 'page_token', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
+    {'1': 'active_only', '3': 6, '4': 1, '5': 8, '8': {}, '10': 'activeOnly'},
   ],
 };
 
 /// Descriptor for `ListMetricDescriptorsRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List listMetricDescriptorsRequestDescriptor = $convert.base64Decode(
     'ChxMaXN0TWV0cmljRGVzY3JpcHRvcnNSZXF1ZXN0EkYKBG5hbWUYBSABKAlCMuBBAvpBLBIqbW'
-    '9uaXRvcmluZy5nb29nbGVhcGlzLmNvbS9NZXRyaWNEZXNjcmlwdG9yUgRuYW1lEhYKBmZpbHRl'
-    'chgCIAEoCVIGZmlsdGVyEhsKCXBhZ2Vfc2l6ZRgDIAEoBVIIcGFnZVNpemUSHQoKcGFnZV90b2'
-    'tlbhgEIAEoCVIJcGFnZVRva2Vu');
+    '9uaXRvcmluZy5nb29nbGVhcGlzLmNvbS9NZXRyaWNEZXNjcmlwdG9yUgRuYW1lEhsKBmZpbHRl'
+    'chgCIAEoCUID4EEBUgZmaWx0ZXISIAoJcGFnZV9zaXplGAMgASgFQgPgQQFSCHBhZ2VTaXplEi'
+    'IKCnBhZ2VfdG9rZW4YBCABKAlCA+BBAVIJcGFnZVRva2VuEiQKC2FjdGl2ZV9vbmx5GAYgASgI'
+    'QgPgQQFSCmFjdGl2ZU9ubHk=');
 
 @$core.Deprecated('Use listMetricDescriptorsResponseDescriptor instead')
 const ListMetricDescriptorsResponse$json = {
@@ -381,13 +383,14 @@ const QueryTimeSeriesRequest$json = {
     {'1': 'page_size', '3': 9, '4': 1, '5': 5, '10': 'pageSize'},
     {'1': 'page_token', '3': 10, '4': 1, '5': 9, '10': 'pageToken'},
   ],
+  '7': {'3': true},
 };
 
 /// Descriptor for `QueryTimeSeriesRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List queryTimeSeriesRequestDescriptor = $convert.base64Decode(
     'ChZRdWVyeVRpbWVTZXJpZXNSZXF1ZXN0EhcKBG5hbWUYASABKAlCA+BBAlIEbmFtZRIZCgVxdW'
     'VyeRgHIAEoCUID4EECUgVxdWVyeRIbCglwYWdlX3NpemUYCSABKAVSCHBhZ2VTaXplEh0KCnBh'
-    'Z2VfdG9rZW4YCiABKAlSCXBhZ2VUb2tlbg==');
+    'Z2VfdG9rZW4YCiABKAlSCXBhZ2VUb2tlbjoCGAE=');
 
 @$core.Deprecated('Use queryTimeSeriesResponseDescriptor instead')
 const QueryTimeSeriesResponse$json = {
@@ -419,6 +422,7 @@ const QueryTimeSeriesResponse$json = {
       '10': 'partialErrors'
     },
   ],
+  '7': {'3': true},
 };
 
 /// Descriptor for `QueryTimeSeriesResponse`. Decode as a `google.protobuf.DescriptorProto`.
@@ -428,7 +432,7 @@ final $typed_data.Uint8List queryTimeSeriesResponseDescriptor = $convert.base64D
     'ZXNEZXNjcmlwdG9yEk4KEHRpbWVfc2VyaWVzX2RhdGEYCSADKAsyJC5nb29nbGUubW9uaXRvcm'
     'luZy52My5UaW1lU2VyaWVzRGF0YVIOdGltZVNlcmllc0RhdGESJgoPbmV4dF9wYWdlX3Rva2Vu'
     'GAogASgJUg1uZXh0UGFnZVRva2VuEjkKDnBhcnRpYWxfZXJyb3JzGAsgAygLMhIuZ29vZ2xlLn'
-    'JwYy5TdGF0dXNSDXBhcnRpYWxFcnJvcnM=');
+    'JwYy5TdGF0dXNSDXBhcnRpYWxFcnJvcnM6AhgB');
 
 @$core.Deprecated('Use queryErrorListDescriptor instead')
 const QueryErrorList$json = {

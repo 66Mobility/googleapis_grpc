@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../geo/type/viewport.pb.dart' as $451;
-import '../../../type/latlng.pb.dart' as $327;
+import '../../../geo/type/viewport.pb.dart' as $480;
+import '../../../type/latlng.pb.dart' as $353;
 
 /// Contains information about the place the input was geocoded to.
 class Geocode extends $pb.GeneratedMessage {
   factory Geocode({
-    $327.LatLng? location,
+    $353.LatLng? location,
     PlusCode? plusCode,
-    $451.Viewport? bounds,
+    $480.Viewport? bounds,
     $core.double? featureSizeMeters,
     $core.String? placeId,
     $core.Iterable<$core.String>? placeTypes,
@@ -60,12 +60,12 @@ class Geocode extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.maps.addressvalidation.v1'),
       createEmptyInstance: create)
-    ..aOM<$327.LatLng>(1, _omitFieldNames ? '' : 'location',
-        subBuilder: $327.LatLng.create)
+    ..aOM<$353.LatLng>(1, _omitFieldNames ? '' : 'location',
+        subBuilder: $353.LatLng.create)
     ..aOM<PlusCode>(2, _omitFieldNames ? '' : 'plusCode',
         subBuilder: PlusCode.create)
-    ..aOM<$451.Viewport>(4, _omitFieldNames ? '' : 'bounds',
-        subBuilder: $451.Viewport.create)
+    ..aOM<$480.Viewport>(4, _omitFieldNames ? '' : 'bounds',
+        subBuilder: $480.Viewport.create)
     ..a<$core.double>(
         5, _omitFieldNames ? '' : 'featureSizeMeters', $pb.PbFieldType.OF)
     ..aOS(6, _omitFieldNames ? '' : 'placeId')
@@ -104,9 +104,9 @@ class Geocode extends $pb.GeneratedMessage {
   ///  reverse geocoded, there is no guarantee that the returned address will
   ///  match the original.
   @$pb.TagNumber(1)
-  $327.LatLng get location => $_getN(0);
+  $353.LatLng get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($327.LatLng v) {
+  set location($353.LatLng v) {
     setField(1, v);
   }
 
@@ -115,7 +115,7 @@ class Geocode extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearLocation() => clearField(1);
   @$pb.TagNumber(1)
-  $327.LatLng ensureLocation() => $_ensure(0);
+  $353.LatLng ensureLocation() => $_ensure(0);
 
   /// The plus code corresponding to the `location`.
   @$pb.TagNumber(2)
@@ -134,9 +134,9 @@ class Geocode extends $pb.GeneratedMessage {
 
   /// The bounds of the geocoded place.
   @$pb.TagNumber(4)
-  $451.Viewport get bounds => $_getN(2);
+  $480.Viewport get bounds => $_getN(2);
   @$pb.TagNumber(4)
-  set bounds($451.Viewport v) {
+  set bounds($480.Viewport v) {
     setField(4, v);
   }
 
@@ -145,7 +145,7 @@ class Geocode extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearBounds() => clearField(4);
   @$pb.TagNumber(4)
-  $451.Viewport ensureBounds() => $_ensure(2);
+  $480.Viewport ensureBounds() => $_ensure(2);
 
   /// The size of the geocoded place, in meters. This is another measure of the
   /// coarseness of the geocoded location, but in physical size rather than in

@@ -15,11 +15,11 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../longrunning/operations.pb.dart' as $13;
-import '../../../../protobuf/field_mask.pb.dart' as $335;
-import '../../../../protobuf/timestamp.pb.dart' as $304;
+import '../../../../protobuf/field_mask.pb.dart' as $361;
+import '../../../../protobuf/timestamp.pb.dart' as $330;
 import 'backup.pbenum.dart';
-import 'common.pb.dart' as $555;
-import 'common.pbenum.dart' as $555;
+import 'common.pb.dart' as $584;
+import 'common.pbenum.dart' as $584;
 
 export 'backup.pbenum.dart';
 
@@ -28,22 +28,22 @@ class Backup extends $pb.GeneratedMessage {
   factory Backup({
     $core.String? name,
     $core.String? database,
-    $304.Timestamp? expireTime,
-    $304.Timestamp? createTime,
+    $330.Timestamp? expireTime,
+    $330.Timestamp? createTime,
     $fixnum.Int64? sizeBytes,
     Backup_State? state,
     $core.Iterable<$core.String>? referencingDatabases,
-    $555.EncryptionInfo? encryptionInfo,
-    $304.Timestamp? versionTime,
-    $555.DatabaseDialect? databaseDialect,
+    $584.EncryptionInfo? encryptionInfo,
+    $330.Timestamp? versionTime,
+    $584.DatabaseDialect? databaseDialect,
     $core.Iterable<$core.String>? referencingBackups,
-    $304.Timestamp? maxExpireTime,
-    $core.Iterable<$555.EncryptionInfo>? encryptionInformation,
+    $330.Timestamp? maxExpireTime,
+    $core.Iterable<$584.EncryptionInfo>? encryptionInformation,
     $core.Iterable<$core.String>? backupSchedules,
     $fixnum.Int64? freeableSizeBytes,
     $fixnum.Int64? exclusiveSizeBytes,
     $core.String? incrementalBackupChainId,
-    $304.Timestamp? oldestVersionTime,
+    $330.Timestamp? oldestVersionTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -117,37 +117,37 @@ class Backup extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'database')
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(4, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $330.Timestamp.create)
     ..aInt64(5, _omitFieldNames ? '' : 'sizeBytes')
     ..e<Backup_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE,
         defaultOrMaker: Backup_State.STATE_UNSPECIFIED,
         valueOf: Backup_State.valueOf,
         enumValues: Backup_State.values)
     ..pPS(7, _omitFieldNames ? '' : 'referencingDatabases')
-    ..aOM<$555.EncryptionInfo>(8, _omitFieldNames ? '' : 'encryptionInfo',
-        subBuilder: $555.EncryptionInfo.create)
-    ..aOM<$304.Timestamp>(9, _omitFieldNames ? '' : 'versionTime',
-        subBuilder: $304.Timestamp.create)
-    ..e<$555.DatabaseDialect>(
+    ..aOM<$584.EncryptionInfo>(8, _omitFieldNames ? '' : 'encryptionInfo',
+        subBuilder: $584.EncryptionInfo.create)
+    ..aOM<$330.Timestamp>(9, _omitFieldNames ? '' : 'versionTime',
+        subBuilder: $330.Timestamp.create)
+    ..e<$584.DatabaseDialect>(
         10, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE,
-        defaultOrMaker: $555.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED,
-        valueOf: $555.DatabaseDialect.valueOf,
-        enumValues: $555.DatabaseDialect.values)
+        defaultOrMaker: $584.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED,
+        valueOf: $584.DatabaseDialect.valueOf,
+        enumValues: $584.DatabaseDialect.values)
     ..pPS(11, _omitFieldNames ? '' : 'referencingBackups')
-    ..aOM<$304.Timestamp>(12, _omitFieldNames ? '' : 'maxExpireTime',
-        subBuilder: $304.Timestamp.create)
-    ..pc<$555.EncryptionInfo>(
+    ..aOM<$330.Timestamp>(12, _omitFieldNames ? '' : 'maxExpireTime',
+        subBuilder: $330.Timestamp.create)
+    ..pc<$584.EncryptionInfo>(
         13, _omitFieldNames ? '' : 'encryptionInformation', $pb.PbFieldType.PM,
-        subBuilder: $555.EncryptionInfo.create)
+        subBuilder: $584.EncryptionInfo.create)
     ..pPS(14, _omitFieldNames ? '' : 'backupSchedules')
     ..aInt64(15, _omitFieldNames ? '' : 'freeableSizeBytes')
     ..aInt64(16, _omitFieldNames ? '' : 'exclusiveSizeBytes')
     ..aOS(17, _omitFieldNames ? '' : 'incrementalBackupChainId')
-    ..aOM<$304.Timestamp>(18, _omitFieldNames ? '' : 'oldestVersionTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(18, _omitFieldNames ? '' : 'oldestVersionTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -224,9 +224,9 @@ class Backup extends $pb.GeneratedMessage {
   /// has passed, the backup is eligible to be automatically deleted by Cloud
   /// Spanner to free the resources used by the backup.
   @$pb.TagNumber(3)
-  $304.Timestamp get expireTime => $_getN(2);
+  $330.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($304.Timestamp v) {
+  set expireTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -235,16 +235,16 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureExpireTime() => $_ensure(2);
+  $330.Timestamp ensureExpireTime() => $_ensure(2);
 
   /// Output only. The time the
   /// [CreateBackup][google.spanner.admin.database.v1.DatabaseAdmin.CreateBackup]
   /// request is received. If the request does not specify `version_time`, the
   /// `version_time` of the backup will be equivalent to the `create_time`.
   @$pb.TagNumber(4)
-  $304.Timestamp get createTime => $_getN(3);
+  $330.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($304.Timestamp v) {
+  set createTime($330.Timestamp v) {
     setField(4, v);
   }
 
@@ -253,7 +253,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Timestamp ensureCreateTime() => $_ensure(3);
+  $330.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Size of the backup in bytes.
   @$pb.TagNumber(5)
@@ -293,9 +293,9 @@ class Backup extends $pb.GeneratedMessage {
 
   /// Output only. The encryption information for the backup.
   @$pb.TagNumber(8)
-  $555.EncryptionInfo get encryptionInfo => $_getN(7);
+  $584.EncryptionInfo get encryptionInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set encryptionInfo($555.EncryptionInfo v) {
+  set encryptionInfo($584.EncryptionInfo v) {
     setField(8, v);
   }
 
@@ -304,16 +304,16 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearEncryptionInfo() => clearField(8);
   @$pb.TagNumber(8)
-  $555.EncryptionInfo ensureEncryptionInfo() => $_ensure(7);
+  $584.EncryptionInfo ensureEncryptionInfo() => $_ensure(7);
 
   /// The backup will contain an externally consistent copy of the database at
   /// the timestamp specified by `version_time`. If `version_time` is not
   /// specified, the system will set `version_time` to the `create_time` of the
   /// backup.
   @$pb.TagNumber(9)
-  $304.Timestamp get versionTime => $_getN(8);
+  $330.Timestamp get versionTime => $_getN(8);
   @$pb.TagNumber(9)
-  set versionTime($304.Timestamp v) {
+  set versionTime($330.Timestamp v) {
     setField(9, v);
   }
 
@@ -322,13 +322,13 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearVersionTime() => clearField(9);
   @$pb.TagNumber(9)
-  $304.Timestamp ensureVersionTime() => $_ensure(8);
+  $330.Timestamp ensureVersionTime() => $_ensure(8);
 
   /// Output only. The database dialect information for the backup.
   @$pb.TagNumber(10)
-  $555.DatabaseDialect get databaseDialect => $_getN(9);
+  $584.DatabaseDialect get databaseDialect => $_getN(9);
   @$pb.TagNumber(10)
-  set databaseDialect($555.DatabaseDialect v) {
+  set databaseDialect($584.DatabaseDialect v) {
     setField(10, v);
   }
 
@@ -353,9 +353,9 @@ class Backup extends $pb.GeneratedMessage {
   /// copying an existing backup, the expiration time specified must be
   /// less than `Backup.max_expire_time`.
   @$pb.TagNumber(12)
-  $304.Timestamp get maxExpireTime => $_getN(11);
+  $330.Timestamp get maxExpireTime => $_getN(11);
   @$pb.TagNumber(12)
-  set maxExpireTime($304.Timestamp v) {
+  set maxExpireTime($330.Timestamp v) {
     setField(12, v);
   }
 
@@ -364,7 +364,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   void clearMaxExpireTime() => clearField(12);
   @$pb.TagNumber(12)
-  $304.Timestamp ensureMaxExpireTime() => $_ensure(11);
+  $330.Timestamp ensureMaxExpireTime() => $_ensure(11);
 
   /// Output only. The encryption information for the backup, whether it is
   /// protected by one or more KMS keys. The information includes all Cloud
@@ -373,7 +373,7 @@ class Backup extends $pb.GeneratedMessage {
   /// versions must be available for the backup to be restored. If a key version
   /// is revoked in the middle of a restore, the restore behavior is undefined.
   @$pb.TagNumber(13)
-  $core.List<$555.EncryptionInfo> get encryptionInformation => $_getList(12);
+  $core.List<$584.EncryptionInfo> get encryptionInformation => $_getList(12);
 
   ///  Output only. List of backup schedule URIs that are associated with
   ///  creating this backup. This is only applicable for scheduled backups, and
@@ -449,9 +449,9 @@ class Backup extends $pb.GeneratedMessage {
   /// of the backup. This field can be used to understand what data is being
   /// retained by the backup system.
   @$pb.TagNumber(18)
-  $304.Timestamp get oldestVersionTime => $_getN(17);
+  $330.Timestamp get oldestVersionTime => $_getN(17);
   @$pb.TagNumber(18)
-  set oldestVersionTime($304.Timestamp v) {
+  set oldestVersionTime($330.Timestamp v) {
     setField(18, v);
   }
 
@@ -460,7 +460,7 @@ class Backup extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   void clearOldestVersionTime() => clearField(18);
   @$pb.TagNumber(18)
-  $304.Timestamp ensureOldestVersionTime() => $_ensure(17);
+  $330.Timestamp ensureOldestVersionTime() => $_ensure(17);
 }
 
 /// The request for
@@ -605,8 +605,8 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   factory CreateBackupMetadata({
     $core.String? name,
     $core.String? database,
-    $555.OperationProgress? progress,
-    $304.Timestamp? cancelTime,
+    $584.OperationProgress? progress,
+    $330.Timestamp? cancelTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -638,10 +638,10 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'database')
-    ..aOM<$555.OperationProgress>(3, _omitFieldNames ? '' : 'progress',
-        subBuilder: $555.OperationProgress.create)
-    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'cancelTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$584.OperationProgress>(3, _omitFieldNames ? '' : 'progress',
+        subBuilder: $584.OperationProgress.create)
+    ..aOM<$330.Timestamp>(4, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -698,9 +698,9 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   /// [CreateBackup][google.spanner.admin.database.v1.DatabaseAdmin.CreateBackup]
   /// operation.
   @$pb.TagNumber(3)
-  $555.OperationProgress get progress => $_getN(2);
+  $584.OperationProgress get progress => $_getN(2);
   @$pb.TagNumber(3)
-  set progress($555.OperationProgress v) {
+  set progress($584.OperationProgress v) {
     setField(3, v);
   }
 
@@ -709,7 +709,7 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearProgress() => clearField(3);
   @$pb.TagNumber(3)
-  $555.OperationProgress ensureProgress() => $_ensure(2);
+  $584.OperationProgress ensureProgress() => $_ensure(2);
 
   /// The time at which cancellation of this operation was received.
   /// [Operations.CancelOperation][google.longrunning.Operations.CancelOperation]
@@ -724,9 +724,9 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   /// [google.rpc.Status.code][google.rpc.Status.code] of 1,
   /// corresponding to `Code.CANCELLED`.
   @$pb.TagNumber(4)
-  $304.Timestamp get cancelTime => $_getN(3);
+  $330.Timestamp get cancelTime => $_getN(3);
   @$pb.TagNumber(4)
-  set cancelTime($304.Timestamp v) {
+  set cancelTime($330.Timestamp v) {
     setField(4, v);
   }
 
@@ -735,7 +735,7 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCancelTime() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Timestamp ensureCancelTime() => $_ensure(3);
+  $330.Timestamp ensureCancelTime() => $_ensure(3);
 }
 
 /// The request for
@@ -745,7 +745,7 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? backupId,
     $core.String? sourceBackup,
-    $304.Timestamp? expireTime,
+    $330.Timestamp? expireTime,
     CopyBackupEncryptionConfig? encryptionConfig,
   }) {
     final $result = create();
@@ -782,8 +782,8 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'backupId')
     ..aOS(3, _omitFieldNames ? '' : 'sourceBackup')
-    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(4, _omitFieldNames ? '' : 'expireTime',
+        subBuilder: $330.Timestamp.create)
     ..aOM<CopyBackupEncryptionConfig>(
         5, _omitFieldNames ? '' : 'encryptionConfig',
         subBuilder: CopyBackupEncryptionConfig.create)
@@ -865,9 +865,9 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
   /// passed, the backup is eligible to be automatically deleted by Cloud Spanner
   /// to free the resources used by the backup.
   @$pb.TagNumber(4)
-  $304.Timestamp get expireTime => $_getN(3);
+  $330.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expireTime($304.Timestamp v) {
+  set expireTime($330.Timestamp v) {
     setField(4, v);
   }
 
@@ -876,7 +876,7 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearExpireTime() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Timestamp ensureExpireTime() => $_ensure(3);
+  $330.Timestamp ensureExpireTime() => $_ensure(3);
 
   /// Optional. The encryption configuration used to encrypt the backup. If this
   /// field is not specified, the backup will use the same encryption
@@ -904,8 +904,8 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   factory CopyBackupMetadata({
     $core.String? name,
     $core.String? sourceBackup,
-    $555.OperationProgress? progress,
-    $304.Timestamp? cancelTime,
+    $584.OperationProgress? progress,
+    $330.Timestamp? cancelTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -937,10 +937,10 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'sourceBackup')
-    ..aOM<$555.OperationProgress>(3, _omitFieldNames ? '' : 'progress',
-        subBuilder: $555.OperationProgress.create)
-    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'cancelTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$584.OperationProgress>(3, _omitFieldNames ? '' : 'progress',
+        subBuilder: $584.OperationProgress.create)
+    ..aOM<$330.Timestamp>(4, _omitFieldNames ? '' : 'cancelTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1000,9 +1000,9 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   /// [CopyBackup][google.spanner.admin.database.v1.DatabaseAdmin.CopyBackup]
   /// operation.
   @$pb.TagNumber(3)
-  $555.OperationProgress get progress => $_getN(2);
+  $584.OperationProgress get progress => $_getN(2);
   @$pb.TagNumber(3)
-  set progress($555.OperationProgress v) {
+  set progress($584.OperationProgress v) {
     setField(3, v);
   }
 
@@ -1011,7 +1011,7 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearProgress() => clearField(3);
   @$pb.TagNumber(3)
-  $555.OperationProgress ensureProgress() => $_ensure(2);
+  $584.OperationProgress ensureProgress() => $_ensure(2);
 
   /// The time at which cancellation of CopyBackup operation was received.
   /// [Operations.CancelOperation][google.longrunning.Operations.CancelOperation]
@@ -1026,9 +1026,9 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   /// [google.rpc.Status.code][google.rpc.Status.code] of 1,
   /// corresponding to `Code.CANCELLED`.
   @$pb.TagNumber(4)
-  $304.Timestamp get cancelTime => $_getN(3);
+  $330.Timestamp get cancelTime => $_getN(3);
   @$pb.TagNumber(4)
-  set cancelTime($304.Timestamp v) {
+  set cancelTime($330.Timestamp v) {
     setField(4, v);
   }
 
@@ -1037,7 +1037,7 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearCancelTime() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Timestamp ensureCancelTime() => $_ensure(3);
+  $330.Timestamp ensureCancelTime() => $_ensure(3);
 }
 
 /// The request for
@@ -1045,7 +1045,7 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
 class UpdateBackupRequest extends $pb.GeneratedMessage {
   factory UpdateBackupRequest({
     Backup? backup,
-    $335.FieldMask? updateMask,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (backup != null) {
@@ -1070,8 +1070,8 @@ class UpdateBackupRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
       createEmptyInstance: create)
     ..aOM<Backup>(1, _omitFieldNames ? '' : 'backup', subBuilder: Backup.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1121,9 +1121,9 @@ class UpdateBackupRequest extends $pb.GeneratedMessage {
   /// specified; this prevents any future fields from being erased accidentally
   /// by clients that do not know about them.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -1132,7 +1132,7 @@ class UpdateBackupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request for
@@ -1803,9 +1803,9 @@ class ListBackupOperationsResponse extends $pb.GeneratedMessage {
 class BackupInfo extends $pb.GeneratedMessage {
   factory BackupInfo({
     $core.String? backup,
-    $304.Timestamp? createTime,
+    $330.Timestamp? createTime,
     $core.String? sourceDatabase,
-    $304.Timestamp? versionTime,
+    $330.Timestamp? versionTime,
   }) {
     final $result = create();
     if (backup != null) {
@@ -1836,11 +1836,11 @@ class BackupInfo extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.spanner.admin.database.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'backup')
-    ..aOM<$304.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $330.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'sourceDatabase')
-    ..aOM<$304.Timestamp>(4, _omitFieldNames ? '' : 'versionTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(4, _omitFieldNames ? '' : 'versionTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1881,9 +1881,9 @@ class BackupInfo extends $pb.GeneratedMessage {
   /// [CreateBackup][google.spanner.admin.database.v1.DatabaseAdmin.CreateBackup]
   /// request was received.
   @$pb.TagNumber(2)
-  $304.Timestamp get createTime => $_getN(1);
+  $330.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($304.Timestamp v) {
+  set createTime($330.Timestamp v) {
     setField(2, v);
   }
 
@@ -1892,7 +1892,7 @@ class BackupInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $304.Timestamp ensureCreateTime() => $_ensure(1);
+  $330.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Name of the database the backup was created from.
   @$pb.TagNumber(3)
@@ -1913,9 +1913,9 @@ class BackupInfo extends $pb.GeneratedMessage {
   /// request did not specify `version_time`, the `version_time` of the backup is
   /// equivalent to the `create_time`.
   @$pb.TagNumber(4)
-  $304.Timestamp get versionTime => $_getN(3);
+  $330.Timestamp get versionTime => $_getN(3);
   @$pb.TagNumber(4)
-  set versionTime($304.Timestamp v) {
+  set versionTime($330.Timestamp v) {
     setField(4, v);
   }
 
@@ -1924,7 +1924,7 @@ class BackupInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearVersionTime() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Timestamp ensureVersionTime() => $_ensure(3);
+  $330.Timestamp ensureVersionTime() => $_ensure(3);
 }
 
 /// Encryption configuration for the backup to create.

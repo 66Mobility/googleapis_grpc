@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $335;
-import 'model.pb.dart' as $15;
-import 'tuned_model.pb.dart' as $16;
+import '../../../protobuf/field_mask.pb.dart' as $361;
+import 'model.pb.dart' as $30;
+import 'tuned_model.pb.dart' as $31;
 
 /// Request for getting information about a specific Model.
 class GetModelRequest extends $pb.GeneratedMessage {
@@ -180,7 +180,7 @@ class ListModelsRequest extends $pb.GeneratedMessage {
 /// Response from `ListModel` containing a paginated list of Models.
 class ListModelsResponse extends $pb.GeneratedMessage {
   factory ListModelsResponse({
-    $core.Iterable<$15.Model>? models,
+    $core.Iterable<$30.Model>? models,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -205,8 +205,8 @@ class ListModelsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..pc<$15.Model>(1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM,
-        subBuilder: $15.Model.create)
+    ..pc<$30.Model>(1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM,
+        subBuilder: $30.Model.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -235,7 +235,7 @@ class ListModelsResponse extends $pb.GeneratedMessage {
 
   /// The returned Models.
   @$pb.TagNumber(1)
-  $core.List<$15.Model> get models => $_getList(0);
+  $core.List<$30.Model> get models => $_getList(0);
 
   ///  A token, which can be sent as `page_token` to retrieve the next page.
   ///
@@ -449,7 +449,7 @@ class ListTunedModelsRequest extends $pb.GeneratedMessage {
 /// Response from `ListTunedModels` containing a paginated list of Models.
 class ListTunedModelsResponse extends $pb.GeneratedMessage {
   factory ListTunedModelsResponse({
-    $core.Iterable<$16.TunedModel>? tunedModels,
+    $core.Iterable<$31.TunedModel>? tunedModels,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -474,9 +474,9 @@ class ListTunedModelsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..pc<$16.TunedModel>(
+    ..pc<$31.TunedModel>(
         1, _omitFieldNames ? '' : 'tunedModels', $pb.PbFieldType.PM,
-        subBuilder: $16.TunedModel.create)
+        subBuilder: $31.TunedModel.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -507,7 +507,7 @@ class ListTunedModelsResponse extends $pb.GeneratedMessage {
 
   /// The returned Models.
   @$pb.TagNumber(1)
-  $core.List<$16.TunedModel> get tunedModels => $_getList(0);
+  $core.List<$31.TunedModel> get tunedModels => $_getList(0);
 
   ///  A token, which can be sent as `page_token` to retrieve the next page.
   ///
@@ -529,7 +529,7 @@ class ListTunedModelsResponse extends $pb.GeneratedMessage {
 class CreateTunedModelRequest extends $pb.GeneratedMessage {
   factory CreateTunedModelRequest({
     $core.String? tunedModelId,
-    $16.TunedModel? tunedModel,
+    $31.TunedModel? tunedModel,
   }) {
     final $result = create();
     if (tunedModelId != null) {
@@ -554,8 +554,8 @@ class CreateTunedModelRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tunedModelId')
-    ..aOM<$16.TunedModel>(2, _omitFieldNames ? '' : 'tunedModel',
-        subBuilder: $16.TunedModel.create)
+    ..aOM<$31.TunedModel>(2, _omitFieldNames ? '' : 'tunedModel',
+        subBuilder: $31.TunedModel.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -601,9 +601,9 @@ class CreateTunedModelRequest extends $pb.GeneratedMessage {
 
   /// Required. The tuned model to create.
   @$pb.TagNumber(2)
-  $16.TunedModel get tunedModel => $_getN(1);
+  $31.TunedModel get tunedModel => $_getN(1);
   @$pb.TagNumber(2)
-  set tunedModel($16.TunedModel v) {
+  set tunedModel($31.TunedModel v) {
     setField(2, v);
   }
 
@@ -612,7 +612,7 @@ class CreateTunedModelRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearTunedModel() => clearField(2);
   @$pb.TagNumber(2)
-  $16.TunedModel ensureTunedModel() => $_ensure(1);
+  $31.TunedModel ensureTunedModel() => $_ensure(1);
 }
 
 /// Metadata about the state and progress of creating a tuned model returned from
@@ -622,7 +622,7 @@ class CreateTunedModelMetadata extends $pb.GeneratedMessage {
     $core.int? totalSteps,
     $core.int? completedSteps,
     $core.double? completedPercent,
-    $core.Iterable<$16.TuningSnapshot>? snapshots,
+    $core.Iterable<$31.TuningSnapshot>? snapshots,
     $core.String? tunedModel,
   }) {
     final $result = create();
@@ -661,9 +661,9 @@ class CreateTunedModelMetadata extends $pb.GeneratedMessage {
         2, _omitFieldNames ? '' : 'completedSteps', $pb.PbFieldType.O3)
     ..a<$core.double>(
         3, _omitFieldNames ? '' : 'completedPercent', $pb.PbFieldType.OF)
-    ..pc<$16.TuningSnapshot>(
+    ..pc<$31.TuningSnapshot>(
         4, _omitFieldNames ? '' : 'snapshots', $pb.PbFieldType.PM,
-        subBuilder: $16.TuningSnapshot.create)
+        subBuilder: $31.TuningSnapshot.create)
     ..aOS(5, _omitFieldNames ? '' : 'tunedModel')
     ..hasRequiredFields = false;
 
@@ -733,7 +733,7 @@ class CreateTunedModelMetadata extends $pb.GeneratedMessage {
 
   /// Metrics collected during tuning.
   @$pb.TagNumber(4)
-  $core.List<$16.TuningSnapshot> get snapshots => $_getList(3);
+  $core.List<$31.TuningSnapshot> get snapshots => $_getList(3);
 
   /// Name of the tuned model associated with the tuning operation.
   @$pb.TagNumber(5)
@@ -752,8 +752,8 @@ class CreateTunedModelMetadata extends $pb.GeneratedMessage {
 /// Request to update a TunedModel.
 class UpdateTunedModelRequest extends $pb.GeneratedMessage {
   factory UpdateTunedModelRequest({
-    $16.TunedModel? tunedModel,
-    $335.FieldMask? updateMask,
+    $31.TunedModel? tunedModel,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (tunedModel != null) {
@@ -777,10 +777,10 @@ class UpdateTunedModelRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'),
       createEmptyInstance: create)
-    ..aOM<$16.TunedModel>(1, _omitFieldNames ? '' : 'tunedModel',
-        subBuilder: $16.TunedModel.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$31.TunedModel>(1, _omitFieldNames ? '' : 'tunedModel',
+        subBuilder: $31.TunedModel.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -810,9 +810,9 @@ class UpdateTunedModelRequest extends $pb.GeneratedMessage {
 
   /// Required. The tuned model to update.
   @$pb.TagNumber(1)
-  $16.TunedModel get tunedModel => $_getN(0);
+  $31.TunedModel get tunedModel => $_getN(0);
   @$pb.TagNumber(1)
-  set tunedModel($16.TunedModel v) {
+  set tunedModel($31.TunedModel v) {
     setField(1, v);
   }
 
@@ -821,13 +821,13 @@ class UpdateTunedModelRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTunedModel() => clearField(1);
   @$pb.TagNumber(1)
-  $16.TunedModel ensureTunedModel() => $_ensure(0);
+  $31.TunedModel ensureTunedModel() => $_ensure(0);
 
   /// Optional. The list of fields to update.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -836,7 +836,7 @@ class UpdateTunedModelRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete a TunedModel.

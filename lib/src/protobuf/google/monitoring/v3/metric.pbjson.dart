@@ -95,6 +95,7 @@ const TimeSeries$json = {
       '10': 'points'
     },
     {'1': 'unit', '3': 8, '4': 1, '5': 9, '10': 'unit'},
+    {'1': 'description', '3': 9, '4': 1, '5': 9, '10': 'description'},
   ],
 };
 
@@ -107,7 +108,7 @@ final $typed_data.Uint8List timeSeriesDescriptor = $convert.base64Decode(
     'Y0Rlc2NyaXB0b3IuTWV0cmljS2luZFIKbWV0cmljS2luZBJFCgp2YWx1ZV90eXBlGAQgASgOMi'
     'YuZ29vZ2xlLmFwaS5NZXRyaWNEZXNjcmlwdG9yLlZhbHVlVHlwZVIJdmFsdWVUeXBlEjMKBnBv'
     'aW50cxgFIAMoCzIbLmdvb2dsZS5tb25pdG9yaW5nLnYzLlBvaW50UgZwb2ludHMSEgoEdW5pdB'
-    'gIIAEoCVIEdW5pdA==');
+    'gIIAEoCVIEdW5pdBIgCgtkZXNjcmlwdGlvbhgJIAEoCVILZGVzY3JpcHRpb24=');
 
 @$core.Deprecated('Use timeSeriesDescriptorDescriptor instead')
 const TimeSeriesDescriptor$json = {

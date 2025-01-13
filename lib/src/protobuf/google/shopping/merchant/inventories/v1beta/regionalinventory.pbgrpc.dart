@@ -16,7 +16,7 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'regionalinventory.pb.dart' as $234;
+import 'regionalinventory.pb.dart' as $260;
 
 export 'regionalinventory.pb.dart';
 
@@ -24,22 +24,22 @@ export 'regionalinventory.pb.dart';
     'google.shopping.merchant.inventories.v1beta.RegionalInventoryService')
 class RegionalInventoryServiceClient extends $grpc.Client {
   static final _$listRegionalInventories = $grpc.ClientMethod<
-          $234.ListRegionalInventoriesRequest,
-          $234.ListRegionalInventoriesResponse>(
+          $260.ListRegionalInventoriesRequest,
+          $260.ListRegionalInventoriesResponse>(
       '/google.shopping.merchant.inventories.v1beta.RegionalInventoryService/ListRegionalInventories',
-      ($234.ListRegionalInventoriesRequest value) => value.writeToBuffer(),
+      ($260.ListRegionalInventoriesRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $234.ListRegionalInventoriesResponse.fromBuffer(value));
+          $260.ListRegionalInventoriesResponse.fromBuffer(value));
   static final _$insertRegionalInventory = $grpc.ClientMethod<
-          $234.InsertRegionalInventoryRequest, $234.RegionalInventory>(
+          $260.InsertRegionalInventoryRequest, $260.RegionalInventory>(
       '/google.shopping.merchant.inventories.v1beta.RegionalInventoryService/InsertRegionalInventory',
-      ($234.InsertRegionalInventoryRequest value) => value.writeToBuffer(),
+      ($260.InsertRegionalInventoryRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $234.RegionalInventory.fromBuffer(value));
+          $260.RegionalInventory.fromBuffer(value));
   static final _$deleteRegionalInventory = $grpc.ClientMethod<
-          $234.DeleteRegionalInventoryRequest, $3.Empty>(
+          $260.DeleteRegionalInventoryRequest, $3.Empty>(
       '/google.shopping.merchant.inventories.v1beta.RegionalInventoryService/DeleteRegionalInventory',
-      ($234.DeleteRegionalInventoryRequest value) => value.writeToBuffer(),
+      ($260.DeleteRegionalInventoryRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
 
   RegionalInventoryServiceClient($grpc.ClientChannel channel,
@@ -47,22 +47,22 @@ class RegionalInventoryServiceClient extends $grpc.Client {
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$234.ListRegionalInventoriesResponse>
-      listRegionalInventories($234.ListRegionalInventoriesRequest request,
+  $grpc.ResponseFuture<$260.ListRegionalInventoriesResponse>
+      listRegionalInventories($260.ListRegionalInventoriesRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listRegionalInventories, request,
         options: options);
   }
 
-  $grpc.ResponseFuture<$234.RegionalInventory> insertRegionalInventory(
-      $234.InsertRegionalInventoryRequest request,
+  $grpc.ResponseFuture<$260.RegionalInventory> insertRegionalInventory(
+      $260.InsertRegionalInventoryRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$insertRegionalInventory, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> deleteRegionalInventory(
-      $234.DeleteRegionalInventoryRequest request,
+      $260.DeleteRegionalInventoryRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteRegionalInventory, request,
         options: options);
@@ -76,56 +76,56 @@ abstract class RegionalInventoryServiceBase extends $grpc.Service {
       'google.shopping.merchant.inventories.v1beta.RegionalInventoryService';
 
   RegionalInventoryServiceBase() {
-    $addMethod($grpc.ServiceMethod<$234.ListRegionalInventoriesRequest,
-            $234.ListRegionalInventoriesResponse>(
+    $addMethod($grpc.ServiceMethod<$260.ListRegionalInventoriesRequest,
+            $260.ListRegionalInventoriesResponse>(
         'ListRegionalInventories',
         listRegionalInventories_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $234.ListRegionalInventoriesRequest.fromBuffer(value),
-        ($234.ListRegionalInventoriesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$234.InsertRegionalInventoryRequest,
-            $234.RegionalInventory>(
+            $260.ListRegionalInventoriesRequest.fromBuffer(value),
+        ($260.ListRegionalInventoriesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$260.InsertRegionalInventoryRequest,
+            $260.RegionalInventory>(
         'InsertRegionalInventory',
         insertRegionalInventory_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $234.InsertRegionalInventoryRequest.fromBuffer(value),
-        ($234.RegionalInventory value) => value.writeToBuffer()));
+            $260.InsertRegionalInventoryRequest.fromBuffer(value),
+        ($260.RegionalInventory value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$234.DeleteRegionalInventoryRequest, $3.Empty>(
+        $grpc.ServiceMethod<$260.DeleteRegionalInventoryRequest, $3.Empty>(
             'DeleteRegionalInventory',
             deleteRegionalInventory_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $234.DeleteRegionalInventoryRequest.fromBuffer(value),
+                $260.DeleteRegionalInventoryRequest.fromBuffer(value),
             ($3.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$234.ListRegionalInventoriesResponse>
+  $async.Future<$260.ListRegionalInventoriesResponse>
       listRegionalInventories_Pre($grpc.ServiceCall call,
-          $async.Future<$234.ListRegionalInventoriesRequest> request) async {
+          $async.Future<$260.ListRegionalInventoriesRequest> request) async {
     return listRegionalInventories(call, await request);
   }
 
-  $async.Future<$234.RegionalInventory> insertRegionalInventory_Pre(
+  $async.Future<$260.RegionalInventory> insertRegionalInventory_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$234.InsertRegionalInventoryRequest> request) async {
+      $async.Future<$260.InsertRegionalInventoryRequest> request) async {
     return insertRegionalInventory(call, await request);
   }
 
   $async.Future<$3.Empty> deleteRegionalInventory_Pre($grpc.ServiceCall call,
-      $async.Future<$234.DeleteRegionalInventoryRequest> request) async {
+      $async.Future<$260.DeleteRegionalInventoryRequest> request) async {
     return deleteRegionalInventory(call, await request);
   }
 
-  $async.Future<$234.ListRegionalInventoriesResponse> listRegionalInventories(
-      $grpc.ServiceCall call, $234.ListRegionalInventoriesRequest request);
-  $async.Future<$234.RegionalInventory> insertRegionalInventory(
-      $grpc.ServiceCall call, $234.InsertRegionalInventoryRequest request);
+  $async.Future<$260.ListRegionalInventoriesResponse> listRegionalInventories(
+      $grpc.ServiceCall call, $260.ListRegionalInventoriesRequest request);
+  $async.Future<$260.RegionalInventory> insertRegionalInventory(
+      $grpc.ServiceCall call, $260.InsertRegionalInventoryRequest request);
   $async.Future<$3.Empty> deleteRegionalInventory(
-      $grpc.ServiceCall call, $234.DeleteRegionalInventoryRequest request);
+      $grpc.ServiceCall call, $260.DeleteRegionalInventoryRequest request);
 }

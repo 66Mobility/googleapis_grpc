@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/dayofweek.pbenum.dart' as $429;
-import '../../../../type/timeofday.pb.dart' as $539;
+import '../../../../type/dayofweek.pbenum.dart' as $458;
+import '../../../../type/timeofday.pb.dart' as $565;
 import 'fileinputs.pbenum.dart';
 
 export 'fileinputs.pbenum.dart';
@@ -24,8 +24,8 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   factory FileInput_FetchSettings({
     $core.bool? enabled,
     $core.int? dayOfMonth,
-    $539.TimeOfDay? timeOfDay,
-    $429.DayOfWeek? dayOfWeek,
+    $565.TimeOfDay? timeOfDay,
+    $458.DayOfWeek? dayOfWeek,
     $core.String? timeZone,
     FileInput_FetchSettings_Frequency? frequency,
     $core.String? fetchUri,
@@ -78,13 +78,13 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'dayOfMonth', $pb.PbFieldType.O3)
-    ..aOM<$539.TimeOfDay>(3, _omitFieldNames ? '' : 'timeOfDay',
-        subBuilder: $539.TimeOfDay.create)
-    ..e<$429.DayOfWeek>(
+    ..aOM<$565.TimeOfDay>(3, _omitFieldNames ? '' : 'timeOfDay',
+        subBuilder: $565.TimeOfDay.create)
+    ..e<$458.DayOfWeek>(
         4, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE,
-        defaultOrMaker: $429.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
-        valueOf: $429.DayOfWeek.valueOf,
-        enumValues: $429.DayOfWeek.values)
+        defaultOrMaker: $458.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
+        valueOf: $458.DayOfWeek.valueOf,
+        enumValues: $458.DayOfWeek.values)
     ..aOS(5, _omitFieldNames ? '' : 'timeZone')
     ..e<FileInput_FetchSettings_Frequency>(
         6, _omitFieldNames ? '' : 'frequency', $pb.PbFieldType.OE,
@@ -151,9 +151,9 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   /// Optional. The hour of the day when the data source file should be
   /// fetched. Minutes and seconds are not supported and will be ignored.
   @$pb.TagNumber(3)
-  $539.TimeOfDay get timeOfDay => $_getN(2);
+  $565.TimeOfDay get timeOfDay => $_getN(2);
   @$pb.TagNumber(3)
-  set timeOfDay($539.TimeOfDay v) {
+  set timeOfDay($565.TimeOfDay v) {
     setField(3, v);
   }
 
@@ -162,14 +162,14 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearTimeOfDay() => clearField(3);
   @$pb.TagNumber(3)
-  $539.TimeOfDay ensureTimeOfDay() => $_ensure(2);
+  $565.TimeOfDay ensureTimeOfDay() => $_ensure(2);
 
   /// Optional. The day of the week when the data source file should be
   /// fetched. This field can only be set for weekly frequency.
   @$pb.TagNumber(4)
-  $429.DayOfWeek get dayOfWeek => $_getN(3);
+  $458.DayOfWeek get dayOfWeek => $_getN(3);
   @$pb.TagNumber(4)
-  set dayOfWeek($429.DayOfWeek v) {
+  set dayOfWeek($458.DayOfWeek v) {
     setField(4, v);
   }
 
@@ -221,8 +221,8 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearFetchUri() => clearField(7);
 
-  /// Optional. An optional user name for [fetch
-  /// url][google.shopping.content.bundles.DataSources.FileInput.fetch_url].
+  /// Optional. An optional user name for
+  /// [fetch_uri][google.shopping.merchant.datasources.v1beta.FileInput.FetchSettings.fetch_uri].
   /// Used for [submitting data sources through
   /// SFTP](https://support.google.com/merchants/answer/13813117).
   @$pb.TagNumber(8)
@@ -237,8 +237,8 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearUsername() => clearField(8);
 
-  /// Optional. An optional password for [fetch
-  /// url][google.shopping.content.bundles.DataSources.FileInput.fetch_url].
+  /// Optional. An optional password for
+  /// [fetch_uri][google.shopping.merchant.datasources.v1beta.FileInput.FetchSettings.fetch_uri].
   /// Used for [submitting data sources through
   /// SFTP](https://support.google.com/merchants/answer/13813117).
   @$pb.TagNumber(9)

@@ -16,65 +16,65 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'user.pb.dart' as $217;
+import 'user.pb.dart' as $243;
 
 export 'user.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.accounts.v1beta.UserService')
 class UserServiceClient extends $grpc.Client {
-  static final _$getUser = $grpc.ClientMethod<$217.GetUserRequest, $217.User>(
+  static final _$getUser = $grpc.ClientMethod<$243.GetUserRequest, $243.User>(
       '/google.shopping.merchant.accounts.v1beta.UserService/GetUser',
-      ($217.GetUserRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $217.User.fromBuffer(value));
+      ($243.GetUserRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $243.User.fromBuffer(value));
   static final _$createUser =
-      $grpc.ClientMethod<$217.CreateUserRequest, $217.User>(
+      $grpc.ClientMethod<$243.CreateUserRequest, $243.User>(
           '/google.shopping.merchant.accounts.v1beta.UserService/CreateUser',
-          ($217.CreateUserRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $217.User.fromBuffer(value));
+          ($243.CreateUserRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $243.User.fromBuffer(value));
   static final _$deleteUser =
-      $grpc.ClientMethod<$217.DeleteUserRequest, $3.Empty>(
+      $grpc.ClientMethod<$243.DeleteUserRequest, $3.Empty>(
           '/google.shopping.merchant.accounts.v1beta.UserService/DeleteUser',
-          ($217.DeleteUserRequest value) => value.writeToBuffer(),
+          ($243.DeleteUserRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
   static final _$updateUser =
-      $grpc.ClientMethod<$217.UpdateUserRequest, $217.User>(
+      $grpc.ClientMethod<$243.UpdateUserRequest, $243.User>(
           '/google.shopping.merchant.accounts.v1beta.UserService/UpdateUser',
-          ($217.UpdateUserRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $217.User.fromBuffer(value));
+          ($243.UpdateUserRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $243.User.fromBuffer(value));
   static final _$listUsers =
-      $grpc.ClientMethod<$217.ListUsersRequest, $217.ListUsersResponse>(
+      $grpc.ClientMethod<$243.ListUsersRequest, $243.ListUsersResponse>(
           '/google.shopping.merchant.accounts.v1beta.UserService/ListUsers',
-          ($217.ListUsersRequest value) => value.writeToBuffer(),
+          ($243.ListUsersRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $217.ListUsersResponse.fromBuffer(value));
+              $243.ListUsersResponse.fromBuffer(value));
 
   UserServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$217.User> getUser($217.GetUserRequest request,
+  $grpc.ResponseFuture<$243.User> getUser($243.GetUserRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getUser, request, options: options);
   }
 
-  $grpc.ResponseFuture<$217.User> createUser($217.CreateUserRequest request,
+  $grpc.ResponseFuture<$243.User> createUser($243.CreateUserRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createUser, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteUser($217.DeleteUserRequest request,
+  $grpc.ResponseFuture<$3.Empty> deleteUser($243.DeleteUserRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteUser, request, options: options);
   }
 
-  $grpc.ResponseFuture<$217.User> updateUser($217.UpdateUserRequest request,
+  $grpc.ResponseFuture<$243.User> updateUser($243.UpdateUserRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateUser, request, options: options);
   }
 
-  $grpc.ResponseFuture<$217.ListUsersResponse> listUsers(
-      $217.ListUsersRequest request,
+  $grpc.ResponseFuture<$243.ListUsersResponse> listUsers(
+      $243.ListUsersRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listUsers, request, options: options);
   }
@@ -86,81 +86,81 @@ abstract class UserServiceBase extends $grpc.Service {
       'google.shopping.merchant.accounts.v1beta.UserService';
 
   UserServiceBase() {
-    $addMethod($grpc.ServiceMethod<$217.GetUserRequest, $217.User>(
+    $addMethod($grpc.ServiceMethod<$243.GetUserRequest, $243.User>(
         'GetUser',
         getUser_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $217.GetUserRequest.fromBuffer(value),
-        ($217.User value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$217.CreateUserRequest, $217.User>(
+        ($core.List<$core.int> value) => $243.GetUserRequest.fromBuffer(value),
+        ($243.User value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$243.CreateUserRequest, $243.User>(
         'CreateUser',
         createUser_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $217.CreateUserRequest.fromBuffer(value),
-        ($217.User value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$217.DeleteUserRequest, $3.Empty>(
+            $243.CreateUserRequest.fromBuffer(value),
+        ($243.User value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$243.DeleteUserRequest, $3.Empty>(
         'DeleteUser',
         deleteUser_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $217.DeleteUserRequest.fromBuffer(value),
+            $243.DeleteUserRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$217.UpdateUserRequest, $217.User>(
+    $addMethod($grpc.ServiceMethod<$243.UpdateUserRequest, $243.User>(
         'UpdateUser',
         updateUser_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $217.UpdateUserRequest.fromBuffer(value),
-        ($217.User value) => value.writeToBuffer()));
+            $243.UpdateUserRequest.fromBuffer(value),
+        ($243.User value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$217.ListUsersRequest, $217.ListUsersResponse>(
+        $grpc.ServiceMethod<$243.ListUsersRequest, $243.ListUsersResponse>(
             'ListUsers',
             listUsers_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $217.ListUsersRequest.fromBuffer(value),
-            ($217.ListUsersResponse value) => value.writeToBuffer()));
+                $243.ListUsersRequest.fromBuffer(value),
+            ($243.ListUsersResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$217.User> getUser_Pre($grpc.ServiceCall call,
-      $async.Future<$217.GetUserRequest> request) async {
+  $async.Future<$243.User> getUser_Pre($grpc.ServiceCall call,
+      $async.Future<$243.GetUserRequest> request) async {
     return getUser(call, await request);
   }
 
-  $async.Future<$217.User> createUser_Pre($grpc.ServiceCall call,
-      $async.Future<$217.CreateUserRequest> request) async {
+  $async.Future<$243.User> createUser_Pre($grpc.ServiceCall call,
+      $async.Future<$243.CreateUserRequest> request) async {
     return createUser(call, await request);
   }
 
   $async.Future<$3.Empty> deleteUser_Pre($grpc.ServiceCall call,
-      $async.Future<$217.DeleteUserRequest> request) async {
+      $async.Future<$243.DeleteUserRequest> request) async {
     return deleteUser(call, await request);
   }
 
-  $async.Future<$217.User> updateUser_Pre($grpc.ServiceCall call,
-      $async.Future<$217.UpdateUserRequest> request) async {
+  $async.Future<$243.User> updateUser_Pre($grpc.ServiceCall call,
+      $async.Future<$243.UpdateUserRequest> request) async {
     return updateUser(call, await request);
   }
 
-  $async.Future<$217.ListUsersResponse> listUsers_Pre($grpc.ServiceCall call,
-      $async.Future<$217.ListUsersRequest> request) async {
+  $async.Future<$243.ListUsersResponse> listUsers_Pre($grpc.ServiceCall call,
+      $async.Future<$243.ListUsersRequest> request) async {
     return listUsers(call, await request);
   }
 
-  $async.Future<$217.User> getUser(
-      $grpc.ServiceCall call, $217.GetUserRequest request);
-  $async.Future<$217.User> createUser(
-      $grpc.ServiceCall call, $217.CreateUserRequest request);
+  $async.Future<$243.User> getUser(
+      $grpc.ServiceCall call, $243.GetUserRequest request);
+  $async.Future<$243.User> createUser(
+      $grpc.ServiceCall call, $243.CreateUserRequest request);
   $async.Future<$3.Empty> deleteUser(
-      $grpc.ServiceCall call, $217.DeleteUserRequest request);
-  $async.Future<$217.User> updateUser(
-      $grpc.ServiceCall call, $217.UpdateUserRequest request);
-  $async.Future<$217.ListUsersResponse> listUsers(
-      $grpc.ServiceCall call, $217.ListUsersRequest request);
+      $grpc.ServiceCall call, $243.DeleteUserRequest request);
+  $async.Future<$243.User> updateUser(
+      $grpc.ServiceCall call, $243.UpdateUserRequest request);
+  $async.Future<$243.ListUsersResponse> listUsers(
+      $grpc.ServiceCall call, $243.ListUsersRequest request);
 }

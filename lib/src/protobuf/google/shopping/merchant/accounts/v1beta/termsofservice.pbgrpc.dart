@@ -16,7 +16,7 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'termsofservice.pb.dart' as $228;
+import 'termsofservice.pb.dart' as $254;
 
 export 'termsofservice.pb.dart';
 
@@ -24,19 +24,19 @@ export 'termsofservice.pb.dart';
     'google.shopping.merchant.accounts.v1beta.TermsOfServiceService')
 class TermsOfServiceServiceClient extends $grpc.Client {
   static final _$getTermsOfService = $grpc.ClientMethod<
-          $228.GetTermsOfServiceRequest, $228.TermsOfService>(
+          $254.GetTermsOfServiceRequest, $254.TermsOfService>(
       '/google.shopping.merchant.accounts.v1beta.TermsOfServiceService/GetTermsOfService',
-      ($228.GetTermsOfServiceRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $228.TermsOfService.fromBuffer(value));
+      ($254.GetTermsOfServiceRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $254.TermsOfService.fromBuffer(value));
   static final _$retrieveLatestTermsOfService = $grpc.ClientMethod<
-          $228.RetrieveLatestTermsOfServiceRequest, $228.TermsOfService>(
+          $254.RetrieveLatestTermsOfServiceRequest, $254.TermsOfService>(
       '/google.shopping.merchant.accounts.v1beta.TermsOfServiceService/RetrieveLatestTermsOfService',
-      ($228.RetrieveLatestTermsOfServiceRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $228.TermsOfService.fromBuffer(value));
+      ($254.RetrieveLatestTermsOfServiceRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $254.TermsOfService.fromBuffer(value));
   static final _$acceptTermsOfService = $grpc.ClientMethod<
-          $228.AcceptTermsOfServiceRequest, $3.Empty>(
+          $254.AcceptTermsOfServiceRequest, $3.Empty>(
       '/google.shopping.merchant.accounts.v1beta.TermsOfServiceService/AcceptTermsOfService',
-      ($228.AcceptTermsOfServiceRequest value) => value.writeToBuffer(),
+      ($254.AcceptTermsOfServiceRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
 
   TermsOfServiceServiceClient($grpc.ClientChannel channel,
@@ -44,21 +44,21 @@ class TermsOfServiceServiceClient extends $grpc.Client {
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$228.TermsOfService> getTermsOfService(
-      $228.GetTermsOfServiceRequest request,
+  $grpc.ResponseFuture<$254.TermsOfService> getTermsOfService(
+      $254.GetTermsOfServiceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getTermsOfService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$228.TermsOfService> retrieveLatestTermsOfService(
-      $228.RetrieveLatestTermsOfServiceRequest request,
+  $grpc.ResponseFuture<$254.TermsOfService> retrieveLatestTermsOfService(
+      $254.RetrieveLatestTermsOfServiceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$retrieveLatestTermsOfService, request,
         options: options);
   }
 
   $grpc.ResponseFuture<$3.Empty> acceptTermsOfService(
-      $228.AcceptTermsOfServiceRequest request,
+      $254.AcceptTermsOfServiceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$acceptTermsOfService, request, options: options);
   }
@@ -72,54 +72,54 @@ abstract class TermsOfServiceServiceBase extends $grpc.Service {
 
   TermsOfServiceServiceBase() {
     $addMethod(
-        $grpc.ServiceMethod<$228.GetTermsOfServiceRequest, $228.TermsOfService>(
+        $grpc.ServiceMethod<$254.GetTermsOfServiceRequest, $254.TermsOfService>(
             'GetTermsOfService',
             getTermsOfService_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $228.GetTermsOfServiceRequest.fromBuffer(value),
-            ($228.TermsOfService value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$228.RetrieveLatestTermsOfServiceRequest,
-            $228.TermsOfService>(
+                $254.GetTermsOfServiceRequest.fromBuffer(value),
+            ($254.TermsOfService value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$254.RetrieveLatestTermsOfServiceRequest,
+            $254.TermsOfService>(
         'RetrieveLatestTermsOfService',
         retrieveLatestTermsOfService_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $228.RetrieveLatestTermsOfServiceRequest.fromBuffer(value),
-        ($228.TermsOfService value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$228.AcceptTermsOfServiceRequest, $3.Empty>(
+            $254.RetrieveLatestTermsOfServiceRequest.fromBuffer(value),
+        ($254.TermsOfService value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$254.AcceptTermsOfServiceRequest, $3.Empty>(
         'AcceptTermsOfService',
         acceptTermsOfService_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $228.AcceptTermsOfServiceRequest.fromBuffer(value),
+            $254.AcceptTermsOfServiceRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$228.TermsOfService> getTermsOfService_Pre(
+  $async.Future<$254.TermsOfService> getTermsOfService_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$228.GetTermsOfServiceRequest> request) async {
+      $async.Future<$254.GetTermsOfServiceRequest> request) async {
     return getTermsOfService(call, await request);
   }
 
-  $async.Future<$228.TermsOfService> retrieveLatestTermsOfService_Pre(
+  $async.Future<$254.TermsOfService> retrieveLatestTermsOfService_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$228.RetrieveLatestTermsOfServiceRequest> request) async {
+      $async.Future<$254.RetrieveLatestTermsOfServiceRequest> request) async {
     return retrieveLatestTermsOfService(call, await request);
   }
 
   $async.Future<$3.Empty> acceptTermsOfService_Pre($grpc.ServiceCall call,
-      $async.Future<$228.AcceptTermsOfServiceRequest> request) async {
+      $async.Future<$254.AcceptTermsOfServiceRequest> request) async {
     return acceptTermsOfService(call, await request);
   }
 
-  $async.Future<$228.TermsOfService> getTermsOfService(
-      $grpc.ServiceCall call, $228.GetTermsOfServiceRequest request);
-  $async.Future<$228.TermsOfService> retrieveLatestTermsOfService(
-      $grpc.ServiceCall call, $228.RetrieveLatestTermsOfServiceRequest request);
+  $async.Future<$254.TermsOfService> getTermsOfService(
+      $grpc.ServiceCall call, $254.GetTermsOfServiceRequest request);
+  $async.Future<$254.TermsOfService> retrieveLatestTermsOfService(
+      $grpc.ServiceCall call, $254.RetrieveLatestTermsOfServiceRequest request);
   $async.Future<$3.Empty> acceptTermsOfService(
-      $grpc.ServiceCall call, $228.AcceptTermsOfServiceRequest request);
+      $grpc.ServiceCall call, $254.AcceptTermsOfServiceRequest request);
 }

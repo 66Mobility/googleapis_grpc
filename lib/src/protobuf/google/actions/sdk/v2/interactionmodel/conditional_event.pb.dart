@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'event_handler.pb.dart' as $279;
+import 'event_handler.pb.dart' as $305;
 
 /// Registers events that trigger as the result of a true condition.
 class ConditionalEvent extends $pb.GeneratedMessage {
   factory ConditionalEvent({
     $core.String? condition,
     $core.String? transitionToScene,
-    $279.EventHandler? handler,
+    $305.EventHandler? handler,
   }) {
     final $result = create();
     if (condition != null) {
@@ -49,8 +49,8 @@ class ConditionalEvent extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'condition')
     ..aOS(2, _omitFieldNames ? '' : 'transitionToScene')
-    ..aOM<$279.EventHandler>(3, _omitFieldNames ? '' : 'handler',
-        subBuilder: $279.EventHandler.create)
+    ..aOM<$305.EventHandler>(3, _omitFieldNames ? '' : 'handler',
+        subBuilder: $305.EventHandler.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -122,9 +122,9 @@ class ConditionalEvent extends $pb.GeneratedMessage {
   /// to `true`. Should execute before transitioning to the destination scene.
   /// Useful to generate Prompts in response to events.
   @$pb.TagNumber(3)
-  $279.EventHandler get handler => $_getN(2);
+  $305.EventHandler get handler => $_getN(2);
   @$pb.TagNumber(3)
-  set handler($279.EventHandler v) {
+  set handler($305.EventHandler v) {
     setField(3, v);
   }
 
@@ -133,7 +133,7 @@ class ConditionalEvent extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearHandler() => clearField(3);
   @$pb.TagNumber(3)
-  $279.EventHandler ensureHandler() => $_ensure(2);
+  $305.EventHandler ensureHandler() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

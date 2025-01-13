@@ -42,7 +42,8 @@ const CssProductInput$json = {
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.Timestamp',
-      '10': 'freshnessTime'
+      '8': {'3': true},
+      '10': 'freshnessTime',
     },
     {
       '1': 'attributes',
@@ -69,13 +70,13 @@ final $typed_data.Uint8List cssProductInputDescriptor = $convert.base64Decode(
     'Cg9Dc3NQcm9kdWN0SW5wdXQSEgoEbmFtZRgBIAEoCVIEbmFtZRIiCgpmaW5hbF9uYW1lGAIgAS'
     'gJQgPgQQNSCWZpbmFsTmFtZRIrCg9yYXdfcHJvdmlkZWRfaWQYAyABKAlCA+BBAlINcmF3UHJv'
     'dmlkZWRJZBIuChBjb250ZW50X2xhbmd1YWdlGAQgASgJQgPgQQJSD2NvbnRlbnRMYW5ndWFnZR'
-    'IiCgpmZWVkX2xhYmVsGAUgASgJQgPgQQJSCWZlZWRMYWJlbBJBCg5mcmVzaG5lc3NfdGltZRgG'
-    'IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSDWZyZXNobmVzc1RpbWUSQgoKYXR0cm'
-    'lidXRlcxgHIAEoCzIiLmdvb2dsZS5zaG9wcGluZy5jc3MudjEuQXR0cmlidXRlc1IKYXR0cmli'
-    'dXRlcxJSChFjdXN0b21fYXR0cmlidXRlcxgIIAMoCzIlLmdvb2dsZS5zaG9wcGluZy50eXBlLk'
-    'N1c3RvbUF0dHJpYnV0ZVIQY3VzdG9tQXR0cmlidXRlczpg6kFdCiJjc3MuZ29vZ2xlYXBpcy5j'
-    'b20vQ3NzUHJvZHVjdElucHV0EjdhY2NvdW50cy97YWNjb3VudH0vY3NzUHJvZHVjdElucHV0cy'
-    '97Y3NzX3Byb2R1Y3RfaW5wdXR9');
+    'IiCgpmZWVkX2xhYmVsGAUgASgJQgPgQQJSCWZlZWRMYWJlbBJFCg5mcmVzaG5lc3NfdGltZRgG'
+    'IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCAhgBUg1mcmVzaG5lc3NUaW1lEkIKCm'
+    'F0dHJpYnV0ZXMYByABKAsyIi5nb29nbGUuc2hvcHBpbmcuY3NzLnYxLkF0dHJpYnV0ZXNSCmF0'
+    'dHJpYnV0ZXMSUgoRY3VzdG9tX2F0dHJpYnV0ZXMYCCADKAsyJS5nb29nbGUuc2hvcHBpbmcudH'
+    'lwZS5DdXN0b21BdHRyaWJ1dGVSEGN1c3RvbUF0dHJpYnV0ZXM6YOpBXQoiY3NzLmdvb2dsZWFw'
+    'aXMuY29tL0Nzc1Byb2R1Y3RJbnB1dBI3YWNjb3VudHMve2FjY291bnR9L2Nzc1Byb2R1Y3RJbn'
+    'B1dHMve2Nzc19wcm9kdWN0X2lucHV0fQ==');
 
 @$core.Deprecated('Use insertCssProductInputRequestDescriptor instead')
 const InsertCssProductInputRequest$json = {
@@ -91,7 +92,14 @@ const InsertCssProductInputRequest$json = {
       '8': {},
       '10': 'cssProductInput'
     },
-    {'1': 'feed_id', '3': 3, '4': 1, '5': 3, '8': {}, '10': 'feedId'},
+    {
+      '1': 'feed_id',
+      '3': 3,
+      '4': 1,
+      '5': 3,
+      '8': {'3': true},
+      '10': 'feedId',
+    },
   ],
 };
 
@@ -100,7 +108,38 @@ final $typed_data.Uint8List insertCssProductInputRequestDescriptor = $convert.ba
     'ChxJbnNlcnRDc3NQcm9kdWN0SW5wdXRSZXF1ZXN0EkIKBnBhcmVudBgBIAEoCUIq4EEC+kEkEi'
     'Jjc3MuZ29vZ2xlYXBpcy5jb20vQ3NzUHJvZHVjdElucHV0UgZwYXJlbnQSWAoRY3NzX3Byb2R1'
     'Y3RfaW5wdXQYAiABKAsyJy5nb29nbGUuc2hvcHBpbmcuY3NzLnYxLkNzc1Byb2R1Y3RJbnB1dE'
-    'ID4EECUg9jc3NQcm9kdWN0SW5wdXQSHAoHZmVlZF9pZBgDIAEoA0ID4EECUgZmZWVkSWQ=');
+    'ID4EECUg9jc3NQcm9kdWN0SW5wdXQSHgoHZmVlZF9pZBgDIAEoA0IFGAHgQQFSBmZlZWRJZA==');
+
+@$core.Deprecated('Use updateCssProductInputRequestDescriptor instead')
+const UpdateCssProductInputRequest$json = {
+  '1': 'UpdateCssProductInputRequest',
+  '2': [
+    {
+      '1': 'css_product_input',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.shopping.css.v1.CssProductInput',
+      '8': {},
+      '10': 'cssProductInput'
+    },
+    {
+      '1': 'update_mask',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'updateMask'
+    },
+  ],
+};
+
+/// Descriptor for `UpdateCssProductInputRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List updateCssProductInputRequestDescriptor = $convert.base64Decode(
+    'ChxVcGRhdGVDc3NQcm9kdWN0SW5wdXRSZXF1ZXN0ElgKEWNzc19wcm9kdWN0X2lucHV0GAEgAS'
+    'gLMicuZ29vZ2xlLnNob3BwaW5nLmNzcy52MS5Dc3NQcm9kdWN0SW5wdXRCA+BBAlIPY3NzUHJv'
+    'ZHVjdElucHV0EjsKC3VwZGF0ZV9tYXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTW'
+    'Fza1IKdXBkYXRlTWFzaw==');
 
 @$core.Deprecated('Use deleteCssProductInputRequestDescriptor instead')
 const DeleteCssProductInputRequest$json = {

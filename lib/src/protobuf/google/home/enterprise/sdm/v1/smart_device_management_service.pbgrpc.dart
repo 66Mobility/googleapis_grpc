@@ -15,95 +15,95 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'device.pb.dart' as $141;
-import 'site.pb.dart' as $142;
-import 'smart_device_management_service.pb.dart' as $140;
+import 'device.pb.dart' as $159;
+import 'site.pb.dart' as $160;
+import 'smart_device_management_service.pb.dart' as $158;
 
 export 'smart_device_management_service.pb.dart';
 
 @$pb.GrpcServiceName(
     'google.home.enterprise.sdm.v1.SmartDeviceManagementService')
 class SmartDeviceManagementServiceClient extends $grpc.Client {
-  static final _$getDevice = $grpc.ClientMethod<$140.GetDeviceRequest,
-          $141.Device>(
+  static final _$getDevice = $grpc.ClientMethod<$158.GetDeviceRequest,
+          $159.Device>(
       '/google.home.enterprise.sdm.v1.SmartDeviceManagementService/GetDevice',
-      ($140.GetDeviceRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $141.Device.fromBuffer(value));
-  static final _$listDevices = $grpc.ClientMethod<$140.ListDevicesRequest,
-          $140.ListDevicesResponse>(
+      ($158.GetDeviceRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $159.Device.fromBuffer(value));
+  static final _$listDevices = $grpc.ClientMethod<$158.ListDevicesRequest,
+          $158.ListDevicesResponse>(
       '/google.home.enterprise.sdm.v1.SmartDeviceManagementService/ListDevices',
-      ($140.ListDevicesRequest value) => value.writeToBuffer(),
+      ($158.ListDevicesRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $140.ListDevicesResponse.fromBuffer(value));
+          $158.ListDevicesResponse.fromBuffer(value));
   static final _$executeDeviceCommand = $grpc.ClientMethod<
-          $140.ExecuteDeviceCommandRequest, $140.ExecuteDeviceCommandResponse>(
+          $158.ExecuteDeviceCommandRequest, $158.ExecuteDeviceCommandResponse>(
       '/google.home.enterprise.sdm.v1.SmartDeviceManagementService/ExecuteDeviceCommand',
-      ($140.ExecuteDeviceCommandRequest value) => value.writeToBuffer(),
+      ($158.ExecuteDeviceCommandRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $140.ExecuteDeviceCommandResponse.fromBuffer(value));
-  static final _$getStructure = $grpc.ClientMethod<$140.GetStructureRequest,
-          $142.Structure>(
+          $158.ExecuteDeviceCommandResponse.fromBuffer(value));
+  static final _$getStructure = $grpc.ClientMethod<$158.GetStructureRequest,
+          $160.Structure>(
       '/google.home.enterprise.sdm.v1.SmartDeviceManagementService/GetStructure',
-      ($140.GetStructureRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $142.Structure.fromBuffer(value));
-  static final _$listStructures = $grpc.ClientMethod<$140.ListStructuresRequest,
-          $140.ListStructuresResponse>(
+      ($158.GetStructureRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $160.Structure.fromBuffer(value));
+  static final _$listStructures = $grpc.ClientMethod<$158.ListStructuresRequest,
+          $158.ListStructuresResponse>(
       '/google.home.enterprise.sdm.v1.SmartDeviceManagementService/ListStructures',
-      ($140.ListStructuresRequest value) => value.writeToBuffer(),
+      ($158.ListStructuresRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $140.ListStructuresResponse.fromBuffer(value));
-  static final _$getRoom = $grpc.ClientMethod<$140.GetRoomRequest, $142.Room>(
+          $158.ListStructuresResponse.fromBuffer(value));
+  static final _$getRoom = $grpc.ClientMethod<$158.GetRoomRequest, $160.Room>(
       '/google.home.enterprise.sdm.v1.SmartDeviceManagementService/GetRoom',
-      ($140.GetRoomRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $142.Room.fromBuffer(value));
-  static final _$listRooms = $grpc.ClientMethod<$140.ListRoomsRequest,
-          $140.ListRoomsResponse>(
+      ($158.GetRoomRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $160.Room.fromBuffer(value));
+  static final _$listRooms = $grpc.ClientMethod<$158.ListRoomsRequest,
+          $158.ListRoomsResponse>(
       '/google.home.enterprise.sdm.v1.SmartDeviceManagementService/ListRooms',
-      ($140.ListRoomsRequest value) => value.writeToBuffer(),
+      ($158.ListRoomsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $140.ListRoomsResponse.fromBuffer(value));
+          $158.ListRoomsResponse.fromBuffer(value));
 
   SmartDeviceManagementServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$141.Device> getDevice($140.GetDeviceRequest request,
+  $grpc.ResponseFuture<$159.Device> getDevice($158.GetDeviceRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getDevice, request, options: options);
   }
 
-  $grpc.ResponseFuture<$140.ListDevicesResponse> listDevices(
-      $140.ListDevicesRequest request,
+  $grpc.ResponseFuture<$158.ListDevicesResponse> listDevices(
+      $158.ListDevicesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listDevices, request, options: options);
   }
 
-  $grpc.ResponseFuture<$140.ExecuteDeviceCommandResponse> executeDeviceCommand(
-      $140.ExecuteDeviceCommandRequest request,
+  $grpc.ResponseFuture<$158.ExecuteDeviceCommandResponse> executeDeviceCommand(
+      $158.ExecuteDeviceCommandRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$executeDeviceCommand, request, options: options);
   }
 
-  $grpc.ResponseFuture<$142.Structure> getStructure(
-      $140.GetStructureRequest request,
+  $grpc.ResponseFuture<$160.Structure> getStructure(
+      $158.GetStructureRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getStructure, request, options: options);
   }
 
-  $grpc.ResponseFuture<$140.ListStructuresResponse> listStructures(
-      $140.ListStructuresRequest request,
+  $grpc.ResponseFuture<$158.ListStructuresResponse> listStructures(
+      $158.ListStructuresRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listStructures, request, options: options);
   }
 
-  $grpc.ResponseFuture<$142.Room> getRoom($140.GetRoomRequest request,
+  $grpc.ResponseFuture<$160.Room> getRoom($158.GetRoomRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getRoom, request, options: options);
   }
 
-  $grpc.ResponseFuture<$140.ListRoomsResponse> listRooms(
-      $140.ListRoomsRequest request,
+  $grpc.ResponseFuture<$158.ListRoomsResponse> listRooms(
+      $158.ListRoomsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listRooms, request, options: options);
   }
@@ -116,117 +116,117 @@ abstract class SmartDeviceManagementServiceBase extends $grpc.Service {
       'google.home.enterprise.sdm.v1.SmartDeviceManagementService';
 
   SmartDeviceManagementServiceBase() {
-    $addMethod($grpc.ServiceMethod<$140.GetDeviceRequest, $141.Device>(
+    $addMethod($grpc.ServiceMethod<$158.GetDeviceRequest, $159.Device>(
         'GetDevice',
         getDevice_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $140.GetDeviceRequest.fromBuffer(value),
-        ($141.Device value) => value.writeToBuffer()));
+            $158.GetDeviceRequest.fromBuffer(value),
+        ($159.Device value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$140.ListDevicesRequest, $140.ListDevicesResponse>(
+        $grpc.ServiceMethod<$158.ListDevicesRequest, $158.ListDevicesResponse>(
             'ListDevices',
             listDevices_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $140.ListDevicesRequest.fromBuffer(value),
-            ($140.ListDevicesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$140.ExecuteDeviceCommandRequest,
-            $140.ExecuteDeviceCommandResponse>(
+                $158.ListDevicesRequest.fromBuffer(value),
+            ($158.ListDevicesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$158.ExecuteDeviceCommandRequest,
+            $158.ExecuteDeviceCommandResponse>(
         'ExecuteDeviceCommand',
         executeDeviceCommand_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $140.ExecuteDeviceCommandRequest.fromBuffer(value),
-        ($140.ExecuteDeviceCommandResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$140.GetStructureRequest, $142.Structure>(
+            $158.ExecuteDeviceCommandRequest.fromBuffer(value),
+        ($158.ExecuteDeviceCommandResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$158.GetStructureRequest, $160.Structure>(
         'GetStructure',
         getStructure_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $140.GetStructureRequest.fromBuffer(value),
-        ($142.Structure value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$140.ListStructuresRequest,
-            $140.ListStructuresResponse>(
+            $158.GetStructureRequest.fromBuffer(value),
+        ($160.Structure value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$158.ListStructuresRequest,
+            $158.ListStructuresResponse>(
         'ListStructures',
         listStructures_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $140.ListStructuresRequest.fromBuffer(value),
-        ($140.ListStructuresResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$140.GetRoomRequest, $142.Room>(
+            $158.ListStructuresRequest.fromBuffer(value),
+        ($158.ListStructuresResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$158.GetRoomRequest, $160.Room>(
         'GetRoom',
         getRoom_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $140.GetRoomRequest.fromBuffer(value),
-        ($142.Room value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $158.GetRoomRequest.fromBuffer(value),
+        ($160.Room value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$140.ListRoomsRequest, $140.ListRoomsResponse>(
+        $grpc.ServiceMethod<$158.ListRoomsRequest, $158.ListRoomsResponse>(
             'ListRooms',
             listRooms_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $140.ListRoomsRequest.fromBuffer(value),
-            ($140.ListRoomsResponse value) => value.writeToBuffer()));
+                $158.ListRoomsRequest.fromBuffer(value),
+            ($158.ListRoomsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$141.Device> getDevice_Pre($grpc.ServiceCall call,
-      $async.Future<$140.GetDeviceRequest> request) async {
+  $async.Future<$159.Device> getDevice_Pre($grpc.ServiceCall call,
+      $async.Future<$158.GetDeviceRequest> request) async {
     return getDevice(call, await request);
   }
 
-  $async.Future<$140.ListDevicesResponse> listDevices_Pre(
+  $async.Future<$158.ListDevicesResponse> listDevices_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$140.ListDevicesRequest> request) async {
+      $async.Future<$158.ListDevicesRequest> request) async {
     return listDevices(call, await request);
   }
 
-  $async.Future<$140.ExecuteDeviceCommandResponse> executeDeviceCommand_Pre(
+  $async.Future<$158.ExecuteDeviceCommandResponse> executeDeviceCommand_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$140.ExecuteDeviceCommandRequest> request) async {
+      $async.Future<$158.ExecuteDeviceCommandRequest> request) async {
     return executeDeviceCommand(call, await request);
   }
 
-  $async.Future<$142.Structure> getStructure_Pre($grpc.ServiceCall call,
-      $async.Future<$140.GetStructureRequest> request) async {
+  $async.Future<$160.Structure> getStructure_Pre($grpc.ServiceCall call,
+      $async.Future<$158.GetStructureRequest> request) async {
     return getStructure(call, await request);
   }
 
-  $async.Future<$140.ListStructuresResponse> listStructures_Pre(
+  $async.Future<$158.ListStructuresResponse> listStructures_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$140.ListStructuresRequest> request) async {
+      $async.Future<$158.ListStructuresRequest> request) async {
     return listStructures(call, await request);
   }
 
-  $async.Future<$142.Room> getRoom_Pre($grpc.ServiceCall call,
-      $async.Future<$140.GetRoomRequest> request) async {
+  $async.Future<$160.Room> getRoom_Pre($grpc.ServiceCall call,
+      $async.Future<$158.GetRoomRequest> request) async {
     return getRoom(call, await request);
   }
 
-  $async.Future<$140.ListRoomsResponse> listRooms_Pre($grpc.ServiceCall call,
-      $async.Future<$140.ListRoomsRequest> request) async {
+  $async.Future<$158.ListRoomsResponse> listRooms_Pre($grpc.ServiceCall call,
+      $async.Future<$158.ListRoomsRequest> request) async {
     return listRooms(call, await request);
   }
 
-  $async.Future<$141.Device> getDevice(
-      $grpc.ServiceCall call, $140.GetDeviceRequest request);
-  $async.Future<$140.ListDevicesResponse> listDevices(
-      $grpc.ServiceCall call, $140.ListDevicesRequest request);
-  $async.Future<$140.ExecuteDeviceCommandResponse> executeDeviceCommand(
-      $grpc.ServiceCall call, $140.ExecuteDeviceCommandRequest request);
-  $async.Future<$142.Structure> getStructure(
-      $grpc.ServiceCall call, $140.GetStructureRequest request);
-  $async.Future<$140.ListStructuresResponse> listStructures(
-      $grpc.ServiceCall call, $140.ListStructuresRequest request);
-  $async.Future<$142.Room> getRoom(
-      $grpc.ServiceCall call, $140.GetRoomRequest request);
-  $async.Future<$140.ListRoomsResponse> listRooms(
-      $grpc.ServiceCall call, $140.ListRoomsRequest request);
+  $async.Future<$159.Device> getDevice(
+      $grpc.ServiceCall call, $158.GetDeviceRequest request);
+  $async.Future<$158.ListDevicesResponse> listDevices(
+      $grpc.ServiceCall call, $158.ListDevicesRequest request);
+  $async.Future<$158.ExecuteDeviceCommandResponse> executeDeviceCommand(
+      $grpc.ServiceCall call, $158.ExecuteDeviceCommandRequest request);
+  $async.Future<$160.Structure> getStructure(
+      $grpc.ServiceCall call, $158.GetStructureRequest request);
+  $async.Future<$158.ListStructuresResponse> listStructures(
+      $grpc.ServiceCall call, $158.ListStructuresRequest request);
+  $async.Future<$160.Room> getRoom(
+      $grpc.ServiceCall call, $158.GetRoomRequest request);
+  $async.Future<$158.ListRoomsResponse> listRooms(
+      $grpc.ServiceCall call, $158.ListRoomsRequest request);
 }

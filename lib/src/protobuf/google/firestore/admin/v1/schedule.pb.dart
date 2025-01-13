@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $266;
-import '../../../protobuf/timestamp.pb.dart' as $304;
-import '../../../type/dayofweek.pbenum.dart' as $429;
+import '../../../protobuf/duration.pb.dart' as $292;
+import '../../../protobuf/timestamp.pb.dart' as $330;
+import '../../../type/dayofweek.pbenum.dart' as $458;
 
 enum BackupSchedule_Recurrence { dailyRecurrence, weeklyRecurrence, notSet }
 
@@ -26,11 +26,11 @@ enum BackupSchedule_Recurrence { dailyRecurrence, weeklyRecurrence, notSet }
 class BackupSchedule extends $pb.GeneratedMessage {
   factory BackupSchedule({
     $core.String? name,
-    $304.Timestamp? createTime,
-    $266.Duration? retention,
+    $330.Timestamp? createTime,
+    $292.Duration? retention,
     DailyRecurrence? dailyRecurrence,
     WeeklyRecurrence? weeklyRecurrence,
-    $304.Timestamp? updateTime,
+    $330.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -74,16 +74,16 @@ class BackupSchedule extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [7, 8])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$304.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$266.Duration>(6, _omitFieldNames ? '' : 'retention',
-        subBuilder: $266.Duration.create)
+    ..aOM<$330.Timestamp>(3, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$292.Duration>(6, _omitFieldNames ? '' : 'retention',
+        subBuilder: $292.Duration.create)
     ..aOM<DailyRecurrence>(7, _omitFieldNames ? '' : 'dailyRecurrence',
         subBuilder: DailyRecurrence.create)
     ..aOM<WeeklyRecurrence>(8, _omitFieldNames ? '' : 'weeklyRecurrence',
         subBuilder: WeeklyRecurrence.create)
-    ..aOM<$304.Timestamp>(10, _omitFieldNames ? '' : 'updateTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(10, _omitFieldNames ? '' : 'updateTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -137,9 +137,9 @@ class BackupSchedule extends $pb.GeneratedMessage {
   ///
   ///  No backups will be created for this schedule before this time.
   @$pb.TagNumber(3)
-  $304.Timestamp get createTime => $_getN(1);
+  $330.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
-  set createTime($304.Timestamp v) {
+  set createTime($330.Timestamp v) {
     setField(3, v);
   }
 
@@ -148,16 +148,16 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $304.Timestamp ensureCreateTime() => $_ensure(1);
+  $330.Timestamp ensureCreateTime() => $_ensure(1);
 
   ///  At what relative time in the future, compared to its creation time,
   ///  the backup should be deleted, e.g. keep backups for 7 days.
   ///
   ///  The maximum supported retention period is 14 weeks.
   @$pb.TagNumber(6)
-  $266.Duration get retention => $_getN(2);
+  $292.Duration get retention => $_getN(2);
   @$pb.TagNumber(6)
-  set retention($266.Duration v) {
+  set retention($292.Duration v) {
     setField(6, v);
   }
 
@@ -166,7 +166,7 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearRetention() => clearField(6);
   @$pb.TagNumber(6)
-  $266.Duration ensureRetention() => $_ensure(2);
+  $292.Duration ensureRetention() => $_ensure(2);
 
   /// For a schedule that runs daily.
   @$pb.TagNumber(7)
@@ -202,9 +202,9 @@ class BackupSchedule extends $pb.GeneratedMessage {
   /// updated. When a backup schedule is first created, this is the same as
   /// create_time.
   @$pb.TagNumber(10)
-  $304.Timestamp get updateTime => $_getN(5);
+  $330.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(10)
-  set updateTime($304.Timestamp v) {
+  set updateTime($330.Timestamp v) {
     setField(10, v);
   }
 
@@ -213,7 +213,7 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $304.Timestamp ensureUpdateTime() => $_ensure(5);
+  $330.Timestamp ensureUpdateTime() => $_ensure(5);
 }
 
 ///  Represents a recurring schedule that runs every day.
@@ -265,7 +265,7 @@ class DailyRecurrence extends $pb.GeneratedMessage {
 ///  The time zone is UTC.
 class WeeklyRecurrence extends $pb.GeneratedMessage {
   factory WeeklyRecurrence({
-    $429.DayOfWeek? day,
+    $458.DayOfWeek? day,
   }) {
     final $result = create();
     if (day != null) {
@@ -286,10 +286,10 @@ class WeeklyRecurrence extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.firestore.admin.v1'),
       createEmptyInstance: create)
-    ..e<$429.DayOfWeek>(2, _omitFieldNames ? '' : 'day', $pb.PbFieldType.OE,
-        defaultOrMaker: $429.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
-        valueOf: $429.DayOfWeek.valueOf,
-        enumValues: $429.DayOfWeek.values)
+    ..e<$458.DayOfWeek>(2, _omitFieldNames ? '' : 'day', $pb.PbFieldType.OE,
+        defaultOrMaker: $458.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED,
+        valueOf: $458.DayOfWeek.valueOf,
+        enumValues: $458.DayOfWeek.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -319,9 +319,9 @@ class WeeklyRecurrence extends $pb.GeneratedMessage {
   ///
   ///  DAY_OF_WEEK_UNSPECIFIED is not allowed.
   @$pb.TagNumber(2)
-  $429.DayOfWeek get day => $_getN(0);
+  $458.DayOfWeek get day => $_getN(0);
   @$pb.TagNumber(2)
-  set day($429.DayOfWeek v) {
+  set day($458.DayOfWeek v) {
     setField(2, v);
   }
 

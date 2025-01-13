@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $263;
+import '../../../protobuf/struct.pb.dart' as $289;
 
 export 'polyline.pbenum.dart';
 
@@ -23,7 +23,7 @@ enum Polyline_PolylineType { encodedPolyline, geoJsonLinestring, notSet }
 class Polyline extends $pb.GeneratedMessage {
   factory Polyline({
     $core.String? encodedPolyline,
-    $263.Struct? geoJsonLinestring,
+    $289.Struct? geoJsonLinestring,
   }) {
     final $result = create();
     if (encodedPolyline != null) {
@@ -55,8 +55,8 @@ class Polyline extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'encodedPolyline')
-    ..aOM<$263.Struct>(2, _omitFieldNames ? '' : 'geoJsonLinestring',
-        subBuilder: $263.Struct.create)
+    ..aOM<$289.Struct>(2, _omitFieldNames ? '' : 'geoJsonLinestring',
+        subBuilder: $289.Struct.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -101,9 +101,9 @@ class Polyline extends $pb.GeneratedMessage {
   /// Specifies a polyline using the [GeoJSON LineString
   /// format](https://tools.ietf.org/html/rfc7946#section-3.1.4).
   @$pb.TagNumber(2)
-  $263.Struct get geoJsonLinestring => $_getN(1);
+  $289.Struct get geoJsonLinestring => $_getN(1);
   @$pb.TagNumber(2)
-  set geoJsonLinestring($263.Struct v) {
+  set geoJsonLinestring($289.Struct v) {
     setField(2, v);
   }
 
@@ -112,7 +112,7 @@ class Polyline extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearGeoJsonLinestring() => clearField(2);
   @$pb.TagNumber(2)
-  $263.Struct ensureGeoJsonLinestring() => $_ensure(1);
+  $289.Struct ensureGeoJsonLinestring() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

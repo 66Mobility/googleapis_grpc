@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pbenum.dart' as $263;
-import '../../protobuf/timestamp.pb.dart' as $304;
-import '../../type/latlng.pb.dart' as $327;
+import '../../protobuf/struct.pbenum.dart' as $289;
+import '../../protobuf/timestamp.pb.dart' as $330;
+import '../../type/latlng.pb.dart' as $353;
 
 ///  A partition ID identifies a grouping of entities. The grouping is always
 ///  by project and namespace, however the namespace ID may be empty.
@@ -447,10 +447,10 @@ class Value extends $pb.GeneratedMessage {
     $core.double? doubleValue,
     Key? keyValue,
     Entity? entityValue,
-    $327.LatLng? geoPointValue,
+    $353.LatLng? geoPointValue,
     ArrayValue? arrayValue,
-    $304.Timestamp? timestampValue,
-    $263.NullValue? nullValue,
+    $330.Timestamp? timestampValue,
+    $289.NullValue? nullValue,
     $core.int? meaning,
     $core.String? stringValue,
     $core.List<$core.int>? blobValue,
@@ -533,17 +533,17 @@ class Value extends $pb.GeneratedMessage {
     ..aOM<Key>(5, _omitFieldNames ? '' : 'keyValue', subBuilder: Key.create)
     ..aOM<Entity>(6, _omitFieldNames ? '' : 'entityValue',
         subBuilder: Entity.create)
-    ..aOM<$327.LatLng>(8, _omitFieldNames ? '' : 'geoPointValue',
-        subBuilder: $327.LatLng.create)
+    ..aOM<$353.LatLng>(8, _omitFieldNames ? '' : 'geoPointValue',
+        subBuilder: $353.LatLng.create)
     ..aOM<ArrayValue>(9, _omitFieldNames ? '' : 'arrayValue',
         subBuilder: ArrayValue.create)
-    ..aOM<$304.Timestamp>(10, _omitFieldNames ? '' : 'timestampValue',
-        subBuilder: $304.Timestamp.create)
-    ..e<$263.NullValue>(
+    ..aOM<$330.Timestamp>(10, _omitFieldNames ? '' : 'timestampValue',
+        subBuilder: $330.Timestamp.create)
+    ..e<$289.NullValue>(
         11, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE,
-        defaultOrMaker: $263.NullValue.NULL_VALUE,
-        valueOf: $263.NullValue.valueOf,
-        enumValues: $263.NullValue.values)
+        defaultOrMaker: $289.NullValue.NULL_VALUE,
+        valueOf: $289.NullValue.valueOf,
+        enumValues: $289.NullValue.values)
     ..a<$core.int>(14, _omitFieldNames ? '' : 'meaning', $pb.PbFieldType.O3)
     ..aOS(17, _omitFieldNames ? '' : 'stringValue')
     ..a<$core.List<$core.int>>(
@@ -650,9 +650,9 @@ class Value extends $pb.GeneratedMessage {
 
   /// A geo point value representing a point on the surface of Earth.
   @$pb.TagNumber(8)
-  $327.LatLng get geoPointValue => $_getN(5);
+  $353.LatLng get geoPointValue => $_getN(5);
   @$pb.TagNumber(8)
-  set geoPointValue($327.LatLng v) {
+  set geoPointValue($353.LatLng v) {
     setField(8, v);
   }
 
@@ -661,7 +661,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearGeoPointValue() => clearField(8);
   @$pb.TagNumber(8)
-  $327.LatLng ensureGeoPointValue() => $_ensure(5);
+  $353.LatLng ensureGeoPointValue() => $_ensure(5);
 
   /// An array value.
   /// Cannot contain another array value.
@@ -685,9 +685,9 @@ class Value extends $pb.GeneratedMessage {
   /// When stored in the Datastore, precise only to microseconds;
   /// any additional precision is rounded down.
   @$pb.TagNumber(10)
-  $304.Timestamp get timestampValue => $_getN(7);
+  $330.Timestamp get timestampValue => $_getN(7);
   @$pb.TagNumber(10)
-  set timestampValue($304.Timestamp v) {
+  set timestampValue($330.Timestamp v) {
     setField(10, v);
   }
 
@@ -696,13 +696,13 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearTimestampValue() => clearField(10);
   @$pb.TagNumber(10)
-  $304.Timestamp ensureTimestampValue() => $_ensure(7);
+  $330.Timestamp ensureTimestampValue() => $_ensure(7);
 
   /// A null value.
   @$pb.TagNumber(11)
-  $263.NullValue get nullValue => $_getN(8);
+  $289.NullValue get nullValue => $_getN(8);
   @$pb.TagNumber(11)
-  set nullValue($263.NullValue v) {
+  set nullValue($289.NullValue v) {
     setField(11, v);
   }
 

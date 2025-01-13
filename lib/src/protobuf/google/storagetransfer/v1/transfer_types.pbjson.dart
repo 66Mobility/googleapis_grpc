@@ -708,6 +708,61 @@ final $typed_data.Uint8List transferSpecDescriptor = $convert.base64Decode(
     'IgASgJUhFzaW5rQWdlbnRQb29sTmFtZUILCglkYXRhX3NpbmtCDQoLZGF0YV9zb3VyY2VCHAoa'
     'aW50ZXJtZWRpYXRlX2RhdGFfbG9jYXRpb24=');
 
+@$core.Deprecated('Use replicationSpecDescriptor instead')
+const ReplicationSpec$json = {
+  '1': 'ReplicationSpec',
+  '2': [
+    {
+      '1': 'gcs_data_source',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.GcsData',
+      '9': 0,
+      '10': 'gcsDataSource'
+    },
+    {
+      '1': 'gcs_data_sink',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.GcsData',
+      '9': 1,
+      '10': 'gcsDataSink'
+    },
+    {
+      '1': 'object_conditions',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.ObjectConditions',
+      '10': 'objectConditions'
+    },
+    {
+      '1': 'transfer_options',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.TransferOptions',
+      '10': 'transferOptions'
+    },
+  ],
+  '8': [
+    {'1': 'data_source'},
+    {'1': 'data_sink'},
+  ],
+};
+
+/// Descriptor for `ReplicationSpec`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List replicationSpecDescriptor = $convert.base64Decode(
+    'Cg9SZXBsaWNhdGlvblNwZWMSTAoPZ2NzX2RhdGFfc291cmNlGAEgASgLMiIuZ29vZ2xlLnN0b3'
+    'JhZ2V0cmFuc2Zlci52MS5HY3NEYXRhSABSDWdjc0RhdGFTb3VyY2USSAoNZ2NzX2RhdGFfc2lu'
+    'axgCIAEoCzIiLmdvb2dsZS5zdG9yYWdldHJhbnNmZXIudjEuR2NzRGF0YUgBUgtnY3NEYXRhU2'
+    'luaxJYChFvYmplY3RfY29uZGl0aW9ucxgDIAEoCzIrLmdvb2dsZS5zdG9yYWdldHJhbnNmZXIu'
+    'djEuT2JqZWN0Q29uZGl0aW9uc1IQb2JqZWN0Q29uZGl0aW9ucxJVChB0cmFuc2Zlcl9vcHRpb2'
+    '5zGAQgASgLMiouZ29vZ2xlLnN0b3JhZ2V0cmFuc2Zlci52MS5UcmFuc2Zlck9wdGlvbnNSD3Ry'
+    'YW5zZmVyT3B0aW9uc0INCgtkYXRhX3NvdXJjZUILCglkYXRhX3Npbms=');
+
 @$core.Deprecated('Use metadataOptionsDescriptor instead')
 const MetadataOptions$json = {
   '1': 'MetadataOptions',
@@ -1041,6 +1096,14 @@ const TransferJob$json = {
       '10': 'transferSpec'
     },
     {
+      '1': 'replication_spec',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.storagetransfer.v1.ReplicationSpec',
+      '10': 'replicationSpec'
+    },
+    {
       '1': 'notification_config',
       '3': 11,
       '4': 1,
@@ -1134,20 +1197,22 @@ final $typed_data.Uint8List transferJobDescriptor = $convert.base64Decode(
     'CgtUcmFuc2ZlckpvYhISCgRuYW1lGAEgASgJUgRuYW1lEiAKC2Rlc2NyaXB0aW9uGAIgASgJUg'
     'tkZXNjcmlwdGlvbhIdCgpwcm9qZWN0X2lkGAMgASgJUglwcm9qZWN0SWQSTAoNdHJhbnNmZXJf'
     'c3BlYxgEIAEoCzInLmdvb2dsZS5zdG9yYWdldHJhbnNmZXIudjEuVHJhbnNmZXJTcGVjUgx0cm'
-    'Fuc2ZlclNwZWMSXgoTbm90aWZpY2F0aW9uX2NvbmZpZxgLIAEoCzItLmdvb2dsZS5zdG9yYWdl'
-    'dHJhbnNmZXIudjEuTm90aWZpY2F0aW9uQ29uZmlnUhJub3RpZmljYXRpb25Db25maWcSTwoObG'
-    '9nZ2luZ19jb25maWcYDiABKAsyKC5nb29nbGUuc3RvcmFnZXRyYW5zZmVyLnYxLkxvZ2dpbmdD'
-    'b25maWdSDWxvZ2dpbmdDb25maWcSPwoIc2NoZWR1bGUYBSABKAsyIy5nb29nbGUuc3RvcmFnZX'
-    'RyYW5zZmVyLnYxLlNjaGVkdWxlUghzY2hlZHVsZRJJCgxldmVudF9zdHJlYW0YDyABKAsyJi5n'
-    'b29nbGUuc3RvcmFnZXRyYW5zZmVyLnYxLkV2ZW50U3RyZWFtUgtldmVudFN0cmVhbRJFCgZzdG'
-    'F0dXMYBiABKA4yLS5nb29nbGUuc3RvcmFnZXRyYW5zZmVyLnYxLlRyYW5zZmVySm9iLlN0YXR1'
-    'c1IGc3RhdHVzEkQKDWNyZWF0aW9uX3RpbWUYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZX'
-    'N0YW1wQgPgQQNSDGNyZWF0aW9uVGltZRJVChZsYXN0X21vZGlmaWNhdGlvbl90aW1lGAggASgL'
-    'MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EEDUhRsYXN0TW9kaWZpY2F0aW9uVGltZR'
-    'JECg1kZWxldGlvbl90aW1lGAkgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EED'
-    'UgxkZWxldGlvblRpbWUSMgoVbGF0ZXN0X29wZXJhdGlvbl9uYW1lGAwgASgJUhNsYXRlc3RPcG'
-    'VyYXRpb25OYW1lIkgKBlN0YXR1cxIWChJTVEFUVVNfVU5TUEVDSUZJRUQQABILCgdFTkFCTEVE'
-    'EAESDAoIRElTQUJMRUQQAhILCgdERUxFVEVEEAM=');
+    'Fuc2ZlclNwZWMSVQoQcmVwbGljYXRpb25fc3BlYxgRIAEoCzIqLmdvb2dsZS5zdG9yYWdldHJh'
+    'bnNmZXIudjEuUmVwbGljYXRpb25TcGVjUg9yZXBsaWNhdGlvblNwZWMSXgoTbm90aWZpY2F0aW'
+    '9uX2NvbmZpZxgLIAEoCzItLmdvb2dsZS5zdG9yYWdldHJhbnNmZXIudjEuTm90aWZpY2F0aW9u'
+    'Q29uZmlnUhJub3RpZmljYXRpb25Db25maWcSTwoObG9nZ2luZ19jb25maWcYDiABKAsyKC5nb2'
+    '9nbGUuc3RvcmFnZXRyYW5zZmVyLnYxLkxvZ2dpbmdDb25maWdSDWxvZ2dpbmdDb25maWcSPwoI'
+    'c2NoZWR1bGUYBSABKAsyIy5nb29nbGUuc3RvcmFnZXRyYW5zZmVyLnYxLlNjaGVkdWxlUghzY2'
+    'hlZHVsZRJJCgxldmVudF9zdHJlYW0YDyABKAsyJi5nb29nbGUuc3RvcmFnZXRyYW5zZmVyLnYx'
+    'LkV2ZW50U3RyZWFtUgtldmVudFN0cmVhbRJFCgZzdGF0dXMYBiABKA4yLS5nb29nbGUuc3Rvcm'
+    'FnZXRyYW5zZmVyLnYxLlRyYW5zZmVySm9iLlN0YXR1c1IGc3RhdHVzEkQKDWNyZWF0aW9uX3Rp'
+    'bWUYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQNSDGNyZWF0aW9uVGltZR'
+    'JVChZsYXN0X21vZGlmaWNhdGlvbl90aW1lGAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz'
+    'dGFtcEID4EEDUhRsYXN0TW9kaWZpY2F0aW9uVGltZRJECg1kZWxldGlvbl90aW1lGAkgASgLMh'
+    'ouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EEDUgxkZWxldGlvblRpbWUSMgoVbGF0ZXN0'
+    'X29wZXJhdGlvbl9uYW1lGAwgASgJUhNsYXRlc3RPcGVyYXRpb25OYW1lIkgKBlN0YXR1cxIWCh'
+    'JTVEFUVVNfVU5TUEVDSUZJRUQQABILCgdFTkFCTEVEEAESDAoIRElTQUJMRUQQAhILCgdERUxF'
+    'VEVEEAM=');
 
 @$core.Deprecated('Use errorLogEntryDescriptor instead')
 const ErrorLogEntry$json = {

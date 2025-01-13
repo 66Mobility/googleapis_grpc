@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $335;
-import 'field.pb.dart' as $128;
-import 'index.pb.dart' as $127;
+import '../../../protobuf/field_mask.pb.dart' as $361;
+import 'field.pb.dart' as $146;
+import 'index.pb.dart' as $145;
 
 /// The request for [FirestoreAdmin.CreateIndex][google.firestore.admin.v1beta2.FirestoreAdmin.CreateIndex].
 class CreateIndexRequest extends $pb.GeneratedMessage {
   factory CreateIndexRequest({
     $core.String? parent,
-    $127.Index? index,
+    $145.Index? index,
   }) {
     final $result = create();
     if (parent != null) {
@@ -46,8 +46,8 @@ class CreateIndexRequest extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.firestore.admin.v1beta2'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$127.Index>(2, _omitFieldNames ? '' : 'index',
-        subBuilder: $127.Index.create)
+    ..aOM<$145.Index>(2, _omitFieldNames ? '' : 'index',
+        subBuilder: $145.Index.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -89,9 +89,9 @@ class CreateIndexRequest extends $pb.GeneratedMessage {
 
   /// The composite index to create.
   @$pb.TagNumber(2)
-  $127.Index get index => $_getN(1);
+  $145.Index get index => $_getN(1);
   @$pb.TagNumber(2)
-  set index($127.Index v) {
+  set index($145.Index v) {
     setField(2, v);
   }
 
@@ -100,7 +100,7 @@ class CreateIndexRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearIndex() => clearField(2);
   @$pb.TagNumber(2)
-  $127.Index ensureIndex() => $_ensure(1);
+  $145.Index ensureIndex() => $_ensure(1);
 }
 
 /// The request for [FirestoreAdmin.ListIndexes][google.firestore.admin.v1beta2.FirestoreAdmin.ListIndexes].
@@ -227,7 +227,7 @@ class ListIndexesRequest extends $pb.GeneratedMessage {
 /// The response for [FirestoreAdmin.ListIndexes][google.firestore.admin.v1beta2.FirestoreAdmin.ListIndexes].
 class ListIndexesResponse extends $pb.GeneratedMessage {
   factory ListIndexesResponse({
-    $core.Iterable<$127.Index>? indexes,
+    $core.Iterable<$145.Index>? indexes,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -252,8 +252,8 @@ class ListIndexesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.firestore.admin.v1beta2'),
       createEmptyInstance: create)
-    ..pc<$127.Index>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.PM,
-        subBuilder: $127.Index.create)
+    ..pc<$145.Index>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.PM,
+        subBuilder: $145.Index.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -282,7 +282,7 @@ class ListIndexesResponse extends $pb.GeneratedMessage {
 
   /// The requested indexes.
   @$pb.TagNumber(1)
-  $core.List<$127.Index> get indexes => $_getList(0);
+  $core.List<$145.Index> get indexes => $_getList(0);
 
   /// A page token that may be used to request another page of results. If blank,
   /// this is the last page.
@@ -432,8 +432,8 @@ class DeleteIndexRequest extends $pb.GeneratedMessage {
 /// The request for [FirestoreAdmin.UpdateField][google.firestore.admin.v1beta2.FirestoreAdmin.UpdateField].
 class UpdateFieldRequest extends $pb.GeneratedMessage {
   factory UpdateFieldRequest({
-    $128.Field? field_1,
-    $335.FieldMask? updateMask,
+    $146.Field? field_1,
+    $361.FieldMask? updateMask,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -457,10 +457,10 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.firestore.admin.v1beta2'),
       createEmptyInstance: create)
-    ..aOM<$128.Field>(1, _omitFieldNames ? '' : 'field',
-        subBuilder: $128.Field.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$146.Field>(1, _omitFieldNames ? '' : 'field',
+        subBuilder: $146.Field.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -488,9 +488,9 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
 
   /// The field to be updated.
   @$pb.TagNumber(1)
-  $128.Field get field_1 => $_getN(0);
+  $146.Field get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1($128.Field v) {
+  set field_1($146.Field v) {
     setField(1, v);
   }
 
@@ -499,14 +499,14 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearField_1() => clearField(1);
   @$pb.TagNumber(1)
-  $128.Field ensureField_1() => $_ensure(0);
+  $146.Field ensureField_1() => $_ensure(0);
 
   /// A mask, relative to the field. If specified, only configuration specified
   /// by this field_mask will be updated in the field.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -515,7 +515,7 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request for [FirestoreAdmin.GetField][google.firestore.admin.v1beta2.FirestoreAdmin.GetField].
@@ -711,7 +711,7 @@ class ListFieldsRequest extends $pb.GeneratedMessage {
 /// The response for [FirestoreAdmin.ListFields][google.firestore.admin.v1beta2.FirestoreAdmin.ListFields].
 class ListFieldsResponse extends $pb.GeneratedMessage {
   factory ListFieldsResponse({
-    $core.Iterable<$128.Field>? fields,
+    $core.Iterable<$146.Field>? fields,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -736,8 +736,8 @@ class ListFieldsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.firestore.admin.v1beta2'),
       createEmptyInstance: create)
-    ..pc<$128.Field>(1, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM,
-        subBuilder: $128.Field.create)
+    ..pc<$146.Field>(1, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM,
+        subBuilder: $146.Field.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -766,7 +766,7 @@ class ListFieldsResponse extends $pb.GeneratedMessage {
 
   /// The requested fields.
   @$pb.TagNumber(1)
-  $core.List<$128.Field> get fields => $_getList(0);
+  $core.List<$146.Field> get fields => $_getList(0);
 
   /// A page token that may be used to request another page of results. If blank,
   /// this is the last page.

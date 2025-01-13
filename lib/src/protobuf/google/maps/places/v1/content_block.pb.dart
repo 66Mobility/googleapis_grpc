@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/localized_text.pb.dart' as $462;
-import 'reference.pb.dart' as $465;
+import '../../../type/localized_text.pb.dart' as $491;
+import 'reference.pb.dart' as $494;
 
 /// A block of content that can be served individually.
 class ContentBlock extends $pb.GeneratedMessage {
   factory ContentBlock({
     $core.String? topic,
-    $462.LocalizedText? content,
-    $465.References? references,
+    $491.LocalizedText? content,
+    $494.References? references,
   }) {
     final $result = create();
     if (topic != null) {
@@ -49,10 +49,10 @@ class ContentBlock extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.maps.places.v1'),
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'topic')
-    ..aOM<$462.LocalizedText>(2, _omitFieldNames ? '' : 'content',
-        subBuilder: $462.LocalizedText.create)
-    ..aOM<$465.References>(3, _omitFieldNames ? '' : 'references',
-        subBuilder: $465.References.create)
+    ..aOM<$491.LocalizedText>(2, _omitFieldNames ? '' : 'content',
+        subBuilder: $491.LocalizedText.create)
+    ..aOM<$494.References>(3, _omitFieldNames ? '' : 'references',
+        subBuilder: $494.References.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -93,9 +93,9 @@ class ContentBlock extends $pb.GeneratedMessage {
 
   /// Content related to the topic.
   @$pb.TagNumber(2)
-  $462.LocalizedText get content => $_getN(1);
+  $491.LocalizedText get content => $_getN(1);
   @$pb.TagNumber(2)
-  set content($462.LocalizedText v) {
+  set content($491.LocalizedText v) {
     setField(2, v);
   }
 
@@ -104,7 +104,7 @@ class ContentBlock extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearContent() => clearField(2);
   @$pb.TagNumber(2)
-  $462.LocalizedText ensureContent() => $_ensure(1);
+  $491.LocalizedText ensureContent() => $_ensure(1);
 
   ///  Experimental: See
   ///  https://developers.google.com/maps/documentation/places/web-service/experimental/places-generative
@@ -112,9 +112,9 @@ class ContentBlock extends $pb.GeneratedMessage {
   ///
   ///  References that are related to this block of content.
   @$pb.TagNumber(3)
-  $465.References get references => $_getN(2);
+  $494.References get references => $_getN(2);
   @$pb.TagNumber(3)
-  set references($465.References v) {
+  set references($494.References v) {
     setField(3, v);
   }
 
@@ -123,7 +123,7 @@ class ContentBlock extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearReferences() => clearField(3);
   @$pb.TagNumber(3)
-  $465.References ensureReferences() => $_ensure(2);
+  $494.References ensureReferences() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

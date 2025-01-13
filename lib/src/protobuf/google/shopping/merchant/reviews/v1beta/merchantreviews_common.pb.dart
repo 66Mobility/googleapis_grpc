@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $304;
-import '../../../type/types.pbenum.dart' as $540;
+import '../../../../protobuf/timestamp.pb.dart' as $330;
+import '../../../type/types.pbenum.dart' as $569;
 import 'merchantreviews_common.pbenum.dart';
 
 export 'merchantreviews_common.pbenum.dart';
@@ -36,7 +36,7 @@ class MerchantReviewAttributes extends $pb.GeneratedMessage {
     $core.String? reviewerUsername,
     $core.bool? isAnonymous,
     MerchantReviewAttributes_CollectionMethod? collectionMethod,
-    $304.Timestamp? reviewTime,
+    $330.Timestamp? reviewTime,
     $core.String? reviewLanguage,
     $core.String? reviewCountry,
   }) {
@@ -122,8 +122,8 @@ class MerchantReviewAttributes extends $pb.GeneratedMessage {
             .COLLECTION_METHOD_UNSPECIFIED,
         valueOf: MerchantReviewAttributes_CollectionMethod.valueOf,
         enumValues: MerchantReviewAttributes_CollectionMethod.values)
-    ..aOM<$304.Timestamp>(14, _omitFieldNames ? '' : 'reviewTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(14, _omitFieldNames ? '' : 'reviewTime',
+        subBuilder: $330.Timestamp.create)
     ..aOS(15, _omitFieldNames ? '' : 'reviewLanguage')
     ..aOS(16, _omitFieldNames ? '' : 'reviewCountry')
     ..hasRequiredFields = false;
@@ -336,9 +336,9 @@ class MerchantReviewAttributes extends $pb.GeneratedMessage {
 
   /// Required. The timestamp indicating when the review was written.
   @$pb.TagNumber(14)
-  $304.Timestamp get reviewTime => $_getN(13);
+  $330.Timestamp get reviewTime => $_getN(13);
   @$pb.TagNumber(14)
-  set reviewTime($304.Timestamp v) {
+  set reviewTime($330.Timestamp v) {
     setField(14, v);
   }
 
@@ -347,7 +347,7 @@ class MerchantReviewAttributes extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   void clearReviewTime() => clearField(14);
   @$pb.TagNumber(14)
-  $304.Timestamp ensureReviewTime() => $_ensure(13);
+  $330.Timestamp ensureReviewTime() => $_ensure(13);
 
   /// Required. The language of the review defined by BCP-47 language code.
   @$pb.TagNumber(15)
@@ -381,7 +381,7 @@ class MerchantReviewAttributes extends $pb.GeneratedMessage {
 class MerchantReviewStatus_MerchantReviewDestinationStatus
     extends $pb.GeneratedMessage {
   factory MerchantReviewStatus_MerchantReviewDestinationStatus({
-    $540.ReportingContext_ReportingContextEnum? reportingContext,
+    $569.ReportingContext_ReportingContextEnum? reportingContext,
   }) {
     final $result = create();
     if (reportingContext != null) {
@@ -406,12 +406,12 @@ class MerchantReviewStatus_MerchantReviewDestinationStatus
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.shopping.merchant.reviews.v1beta'),
       createEmptyInstance: create)
-    ..e<$540.ReportingContext_ReportingContextEnum>(
+    ..e<$569.ReportingContext_ReportingContextEnum>(
         1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE,
-        defaultOrMaker: $540.ReportingContext_ReportingContextEnum
+        defaultOrMaker: $569.ReportingContext_ReportingContextEnum
             .REPORTING_CONTEXT_ENUM_UNSPECIFIED,
-        valueOf: $540.ReportingContext_ReportingContextEnum.valueOf,
-        enumValues: $540.ReportingContext_ReportingContextEnum.values)
+        valueOf: $569.ReportingContext_ReportingContextEnum.valueOf,
+        enumValues: $569.ReportingContext_ReportingContextEnum.values)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -448,9 +448,9 @@ class MerchantReviewStatus_MerchantReviewDestinationStatus
 
   /// Output only. The name of the reporting context.
   @$pb.TagNumber(1)
-  $540.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
+  $569.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
   @$pb.TagNumber(1)
-  set reportingContext($540.ReportingContext_ReportingContextEnum v) {
+  set reportingContext($569.ReportingContext_ReportingContextEnum v) {
     setField(1, v);
   }
 
@@ -468,7 +468,7 @@ class MerchantReviewStatus_MerchantReviewItemLevelIssue
     MerchantReviewStatus_MerchantReviewItemLevelIssue_Severity? severity,
     $core.String? resolution,
     $core.String? attribute,
-    $540.ReportingContext_ReportingContextEnum? reportingContext,
+    $569.ReportingContext_ReportingContextEnum? reportingContext,
     $core.String? description,
     $core.String? detail,
     $core.String? documentation,
@@ -529,12 +529,12 @@ class MerchantReviewStatus_MerchantReviewItemLevelIssue
             MerchantReviewStatus_MerchantReviewItemLevelIssue_Severity.values)
     ..aOS(3, _omitFieldNames ? '' : 'resolution')
     ..aOS(4, _omitFieldNames ? '' : 'attribute')
-    ..e<$540.ReportingContext_ReportingContextEnum>(
+    ..e<$569.ReportingContext_ReportingContextEnum>(
         5, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE,
-        defaultOrMaker: $540.ReportingContext_ReportingContextEnum
+        defaultOrMaker: $569.ReportingContext_ReportingContextEnum
             .REPORTING_CONTEXT_ENUM_UNSPECIFIED,
-        valueOf: $540.ReportingContext_ReportingContextEnum.valueOf,
-        enumValues: $540.ReportingContext_ReportingContextEnum.values)
+        valueOf: $569.ReportingContext_ReportingContextEnum.valueOf,
+        enumValues: $569.ReportingContext_ReportingContextEnum.values)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..aOS(7, _omitFieldNames ? '' : 'detail')
     ..aOS(8, _omitFieldNames ? '' : 'documentation')
@@ -628,9 +628,9 @@ class MerchantReviewStatus_MerchantReviewItemLevelIssue
 
   /// Output only. The reporting context the issue applies to.
   @$pb.TagNumber(5)
-  $540.ReportingContext_ReportingContextEnum get reportingContext => $_getN(4);
+  $569.ReportingContext_ReportingContextEnum get reportingContext => $_getN(4);
   @$pb.TagNumber(5)
-  set reportingContext($540.ReportingContext_ReportingContextEnum v) {
+  set reportingContext($569.ReportingContext_ReportingContextEnum v) {
     setField(5, v);
   }
 
@@ -687,8 +687,8 @@ class MerchantReviewStatus extends $pb.GeneratedMessage {
         destinationStatuses,
     $core.Iterable<MerchantReviewStatus_MerchantReviewItemLevelIssue>?
         itemLevelIssues,
-    $304.Timestamp? createTime,
-    $304.Timestamp? lastUpdateTime,
+    $330.Timestamp? createTime,
+    $330.Timestamp? lastUpdateTime,
   }) {
     final $result = create();
     if (destinationStatuses != null) {
@@ -724,10 +724,10 @@ class MerchantReviewStatus extends $pb.GeneratedMessage {
     ..pc<MerchantReviewStatus_MerchantReviewItemLevelIssue>(
         4, _omitFieldNames ? '' : 'itemLevelIssues', $pb.PbFieldType.PM,
         subBuilder: MerchantReviewStatus_MerchantReviewItemLevelIssue.create)
-    ..aOM<$304.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdateTime',
-        subBuilder: $304.Timestamp.create)
+    ..aOM<$330.Timestamp>(5, _omitFieldNames ? '' : 'createTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdateTime',
+        subBuilder: $330.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -767,9 +767,9 @@ class MerchantReviewStatus extends $pb.GeneratedMessage {
   /// Output only. Date on which the item has been created, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(5)
-  $304.Timestamp get createTime => $_getN(2);
+  $330.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(5)
-  set createTime($304.Timestamp v) {
+  set createTime($330.Timestamp v) {
     setField(5, v);
   }
 
@@ -778,14 +778,14 @@ class MerchantReviewStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $304.Timestamp ensureCreateTime() => $_ensure(2);
+  $330.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Date on which the item has been last updated, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(6)
-  $304.Timestamp get lastUpdateTime => $_getN(3);
+  $330.Timestamp get lastUpdateTime => $_getN(3);
   @$pb.TagNumber(6)
-  set lastUpdateTime($304.Timestamp v) {
+  set lastUpdateTime($330.Timestamp v) {
     setField(6, v);
   }
 
@@ -794,7 +794,7 @@ class MerchantReviewStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearLastUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $304.Timestamp ensureLastUpdateTime() => $_ensure(3);
+  $330.Timestamp ensureLastUpdateTime() => $_ensure(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

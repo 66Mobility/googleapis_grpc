@@ -15,43 +15,43 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'conformance_service.pb.dart' as $38;
+import 'conformance_service.pb.dart' as $56;
 
 export 'conformance_service.pb.dart';
 
 @$pb.GrpcServiceName('google.api.expr.conformance.v1alpha1.ConformanceService')
 class ConformanceServiceClient extends $grpc.Client {
   static final _$parse =
-      $grpc.ClientMethod<$38.ParseRequest, $38.ParseResponse>(
+      $grpc.ClientMethod<$56.ParseRequest, $56.ParseResponse>(
           '/google.api.expr.conformance.v1alpha1.ConformanceService/Parse',
-          ($38.ParseRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $38.ParseResponse.fromBuffer(value));
+          ($56.ParseRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $56.ParseResponse.fromBuffer(value));
   static final _$check =
-      $grpc.ClientMethod<$38.CheckRequest, $38.CheckResponse>(
+      $grpc.ClientMethod<$56.CheckRequest, $56.CheckResponse>(
           '/google.api.expr.conformance.v1alpha1.ConformanceService/Check',
-          ($38.CheckRequest value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $38.CheckResponse.fromBuffer(value));
-  static final _$eval = $grpc.ClientMethod<$38.EvalRequest, $38.EvalResponse>(
+          ($56.CheckRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $56.CheckResponse.fromBuffer(value));
+  static final _$eval = $grpc.ClientMethod<$56.EvalRequest, $56.EvalResponse>(
       '/google.api.expr.conformance.v1alpha1.ConformanceService/Eval',
-      ($38.EvalRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $38.EvalResponse.fromBuffer(value));
+      ($56.EvalRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $56.EvalResponse.fromBuffer(value));
 
   ConformanceServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$38.ParseResponse> parse($38.ParseRequest request,
+  $grpc.ResponseFuture<$56.ParseResponse> parse($56.ParseRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$parse, request, options: options);
   }
 
-  $grpc.ResponseFuture<$38.CheckResponse> check($38.CheckRequest request,
+  $grpc.ResponseFuture<$56.CheckResponse> check($56.CheckRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$check, request, options: options);
   }
 
-  $grpc.ResponseFuture<$38.EvalResponse> eval($38.EvalRequest request,
+  $grpc.ResponseFuture<$56.EvalResponse> eval($56.EvalRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$eval, request, options: options);
   }
@@ -63,48 +63,48 @@ abstract class ConformanceServiceBase extends $grpc.Service {
       'google.api.expr.conformance.v1alpha1.ConformanceService';
 
   ConformanceServiceBase() {
-    $addMethod($grpc.ServiceMethod<$38.ParseRequest, $38.ParseResponse>(
+    $addMethod($grpc.ServiceMethod<$56.ParseRequest, $56.ParseResponse>(
         'Parse',
         parse_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $38.ParseRequest.fromBuffer(value),
-        ($38.ParseResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$38.CheckRequest, $38.CheckResponse>(
+        ($core.List<$core.int> value) => $56.ParseRequest.fromBuffer(value),
+        ($56.ParseResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$56.CheckRequest, $56.CheckResponse>(
         'Check',
         check_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $38.CheckRequest.fromBuffer(value),
-        ($38.CheckResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$38.EvalRequest, $38.EvalResponse>(
+        ($core.List<$core.int> value) => $56.CheckRequest.fromBuffer(value),
+        ($56.CheckResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$56.EvalRequest, $56.EvalResponse>(
         'Eval',
         eval_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $38.EvalRequest.fromBuffer(value),
-        ($38.EvalResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $56.EvalRequest.fromBuffer(value),
+        ($56.EvalResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$38.ParseResponse> parse_Pre(
-      $grpc.ServiceCall call, $async.Future<$38.ParseRequest> request) async {
+  $async.Future<$56.ParseResponse> parse_Pre(
+      $grpc.ServiceCall call, $async.Future<$56.ParseRequest> request) async {
     return parse(call, await request);
   }
 
-  $async.Future<$38.CheckResponse> check_Pre(
-      $grpc.ServiceCall call, $async.Future<$38.CheckRequest> request) async {
+  $async.Future<$56.CheckResponse> check_Pre(
+      $grpc.ServiceCall call, $async.Future<$56.CheckRequest> request) async {
     return check(call, await request);
   }
 
-  $async.Future<$38.EvalResponse> eval_Pre(
-      $grpc.ServiceCall call, $async.Future<$38.EvalRequest> request) async {
+  $async.Future<$56.EvalResponse> eval_Pre(
+      $grpc.ServiceCall call, $async.Future<$56.EvalRequest> request) async {
     return eval(call, await request);
   }
 
-  $async.Future<$38.ParseResponse> parse(
-      $grpc.ServiceCall call, $38.ParseRequest request);
-  $async.Future<$38.CheckResponse> check(
-      $grpc.ServiceCall call, $38.CheckRequest request);
-  $async.Future<$38.EvalResponse> eval(
-      $grpc.ServiceCall call, $38.EvalRequest request);
+  $async.Future<$56.ParseResponse> parse(
+      $grpc.ServiceCall call, $56.ParseRequest request);
+  $async.Future<$56.CheckResponse> check(
+      $grpc.ServiceCall call, $56.CheckRequest request);
+  $async.Future<$56.EvalResponse> eval(
+      $grpc.ServiceCall call, $56.EvalRequest request);
 }

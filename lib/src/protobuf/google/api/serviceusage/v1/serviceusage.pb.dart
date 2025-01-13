@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'resources.pb.dart' as $46;
+import 'resources.pb.dart' as $64;
 import 'serviceusage.pbenum.dart';
 
 export 'serviceusage.pbenum.dart';
@@ -98,7 +98,7 @@ class EnableServiceRequest extends $pb.GeneratedMessage {
 /// Operation when that operation is done.
 class EnableServiceResponse extends $pb.GeneratedMessage {
   factory EnableServiceResponse({
-    $46.Service? service,
+    $64.Service? service,
   }) {
     final $result = create();
     if (service != null) {
@@ -119,8 +119,8 @@ class EnableServiceResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.api.serviceusage.v1'),
       createEmptyInstance: create)
-    ..aOM<$46.Service>(1, _omitFieldNames ? '' : 'service',
-        subBuilder: $46.Service.create)
+    ..aOM<$64.Service>(1, _omitFieldNames ? '' : 'service',
+        subBuilder: $64.Service.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -150,9 +150,9 @@ class EnableServiceResponse extends $pb.GeneratedMessage {
 
   /// The new state of the service after enabling.
   @$pb.TagNumber(1)
-  $46.Service get service => $_getN(0);
+  $64.Service get service => $_getN(0);
   @$pb.TagNumber(1)
-  set service($46.Service v) {
+  set service($64.Service v) {
     setField(1, v);
   }
 
@@ -161,7 +161,7 @@ class EnableServiceResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearService() => clearField(1);
   @$pb.TagNumber(1)
-  $46.Service ensureService() => $_ensure(0);
+  $64.Service ensureService() => $_ensure(0);
 }
 
 /// Request message for the `DisableService` method.
@@ -287,7 +287,7 @@ class DisableServiceRequest extends $pb.GeneratedMessage {
 /// Operation when that operation is done.
 class DisableServiceResponse extends $pb.GeneratedMessage {
   factory DisableServiceResponse({
-    $46.Service? service,
+    $64.Service? service,
   }) {
     final $result = create();
     if (service != null) {
@@ -308,8 +308,8 @@ class DisableServiceResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.api.serviceusage.v1'),
       createEmptyInstance: create)
-    ..aOM<$46.Service>(1, _omitFieldNames ? '' : 'service',
-        subBuilder: $46.Service.create)
+    ..aOM<$64.Service>(1, _omitFieldNames ? '' : 'service',
+        subBuilder: $64.Service.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -339,9 +339,9 @@ class DisableServiceResponse extends $pb.GeneratedMessage {
 
   /// The new state of the service after disabling.
   @$pb.TagNumber(1)
-  $46.Service get service => $_getN(0);
+  $64.Service get service => $_getN(0);
   @$pb.TagNumber(1)
-  set service($46.Service v) {
+  set service($64.Service v) {
     setField(1, v);
   }
 
@@ -350,7 +350,7 @@ class DisableServiceResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearService() => clearField(1);
   @$pb.TagNumber(1)
-  $46.Service ensureService() => $_ensure(0);
+  $64.Service ensureService() => $_ensure(0);
 }
 
 /// Request message for the `GetService` method.
@@ -549,7 +549,7 @@ class ListServicesRequest extends $pb.GeneratedMessage {
 /// Response message for the `ListServices` method.
 class ListServicesResponse extends $pb.GeneratedMessage {
   factory ListServicesResponse({
-    $core.Iterable<$46.Service>? services,
+    $core.Iterable<$64.Service>? services,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -574,8 +574,8 @@ class ListServicesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.api.serviceusage.v1'),
       createEmptyInstance: create)
-    ..pc<$46.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM,
-        subBuilder: $46.Service.create)
+    ..pc<$64.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM,
+        subBuilder: $64.Service.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -605,7 +605,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
 
   /// The available services for the requested project.
   @$pb.TagNumber(1)
-  $core.List<$46.Service> get services => $_getList(0);
+  $core.List<$64.Service> get services => $_getList(0);
 
   /// Token that can be passed to `ListServices` to resume a paginated
   /// query.
@@ -807,7 +807,7 @@ class BatchEnableServicesResponse_EnableFailure extends $pb.GeneratedMessage {
 /// Operation when that operation is done.
 class BatchEnableServicesResponse extends $pb.GeneratedMessage {
   factory BatchEnableServicesResponse({
-    $core.Iterable<$46.Service>? services,
+    $core.Iterable<$64.Service>? services,
     $core.Iterable<BatchEnableServicesResponse_EnableFailure>? failures,
   }) {
     final $result = create();
@@ -832,8 +832,8 @@ class BatchEnableServicesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.api.serviceusage.v1'),
       createEmptyInstance: create)
-    ..pc<$46.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM,
-        subBuilder: $46.Service.create)
+    ..pc<$64.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM,
+        subBuilder: $64.Service.create)
     ..pc<BatchEnableServicesResponse_EnableFailure>(
         2, _omitFieldNames ? '' : 'failures', $pb.PbFieldType.PM,
         subBuilder: BatchEnableServicesResponse_EnableFailure.create)
@@ -868,7 +868,7 @@ class BatchEnableServicesResponse extends $pb.GeneratedMessage {
 
   /// The new state of the services after enabling.
   @$pb.TagNumber(1)
-  $core.List<$46.Service> get services => $_getList(0);
+  $core.List<$64.Service> get services => $_getList(0);
 
   /// If allow_partial_success is true, and one or more services could not be
   /// enabled, this field contains the details about each failure.
@@ -964,7 +964,7 @@ class BatchGetServicesRequest extends $pb.GeneratedMessage {
 /// Response message for the `BatchGetServices` method.
 class BatchGetServicesResponse extends $pb.GeneratedMessage {
   factory BatchGetServicesResponse({
-    $core.Iterable<$46.Service>? services,
+    $core.Iterable<$64.Service>? services,
   }) {
     final $result = create();
     if (services != null) {
@@ -985,8 +985,8 @@ class BatchGetServicesResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.api.serviceusage.v1'),
       createEmptyInstance: create)
-    ..pc<$46.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM,
-        subBuilder: $46.Service.create)
+    ..pc<$64.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM,
+        subBuilder: $64.Service.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -1016,7 +1016,7 @@ class BatchGetServicesResponse extends $pb.GeneratedMessage {
 
   /// The requested Service states.
   @$pb.TagNumber(1)
-  $core.List<$46.Service> get services => $_getList(0);
+  $core.List<$64.Service> get services => $_getList(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

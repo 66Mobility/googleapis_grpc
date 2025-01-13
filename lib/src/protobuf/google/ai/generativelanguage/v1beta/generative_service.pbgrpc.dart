@@ -15,88 +15,88 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'generative_service.pb.dart' as $12;
+import 'generative_service.pb.dart' as $28;
 
 export 'generative_service.pb.dart';
 
 @$pb.GrpcServiceName('google.ai.generativelanguage.v1beta.GenerativeService')
 class GenerativeServiceClient extends $grpc.Client {
   static final _$generateContent = $grpc.ClientMethod<
-          $12.GenerateContentRequest, $12.GenerateContentResponse>(
+          $28.GenerateContentRequest, $28.GenerateContentResponse>(
       '/google.ai.generativelanguage.v1beta.GenerativeService/GenerateContent',
-      ($12.GenerateContentRequest value) => value.writeToBuffer(),
+      ($28.GenerateContentRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $12.GenerateContentResponse.fromBuffer(value));
-  static final _$generateAnswer = $grpc.ClientMethod<$12.GenerateAnswerRequest,
-          $12.GenerateAnswerResponse>(
+          $28.GenerateContentResponse.fromBuffer(value));
+  static final _$generateAnswer = $grpc.ClientMethod<$28.GenerateAnswerRequest,
+          $28.GenerateAnswerResponse>(
       '/google.ai.generativelanguage.v1beta.GenerativeService/GenerateAnswer',
-      ($12.GenerateAnswerRequest value) => value.writeToBuffer(),
+      ($28.GenerateAnswerRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $12.GenerateAnswerResponse.fromBuffer(value));
+          $28.GenerateAnswerResponse.fromBuffer(value));
   static final _$streamGenerateContent = $grpc.ClientMethod<
-          $12.GenerateContentRequest, $12.GenerateContentResponse>(
+          $28.GenerateContentRequest, $28.GenerateContentResponse>(
       '/google.ai.generativelanguage.v1beta.GenerativeService/StreamGenerateContent',
-      ($12.GenerateContentRequest value) => value.writeToBuffer(),
+      ($28.GenerateContentRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $12.GenerateContentResponse.fromBuffer(value));
+          $28.GenerateContentResponse.fromBuffer(value));
   static final _$embedContent =
-      $grpc.ClientMethod<$12.EmbedContentRequest, $12.EmbedContentResponse>(
+      $grpc.ClientMethod<$28.EmbedContentRequest, $28.EmbedContentResponse>(
           '/google.ai.generativelanguage.v1beta.GenerativeService/EmbedContent',
-          ($12.EmbedContentRequest value) => value.writeToBuffer(),
+          ($28.EmbedContentRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $12.EmbedContentResponse.fromBuffer(value));
+              $28.EmbedContentResponse.fromBuffer(value));
   static final _$batchEmbedContents = $grpc.ClientMethod<
-          $12.BatchEmbedContentsRequest, $12.BatchEmbedContentsResponse>(
+          $28.BatchEmbedContentsRequest, $28.BatchEmbedContentsResponse>(
       '/google.ai.generativelanguage.v1beta.GenerativeService/BatchEmbedContents',
-      ($12.BatchEmbedContentsRequest value) => value.writeToBuffer(),
+      ($28.BatchEmbedContentsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $12.BatchEmbedContentsResponse.fromBuffer(value));
+          $28.BatchEmbedContentsResponse.fromBuffer(value));
   static final _$countTokens =
-      $grpc.ClientMethod<$12.CountTokensRequest, $12.CountTokensResponse>(
+      $grpc.ClientMethod<$28.CountTokensRequest, $28.CountTokensResponse>(
           '/google.ai.generativelanguage.v1beta.GenerativeService/CountTokens',
-          ($12.CountTokensRequest value) => value.writeToBuffer(),
+          ($28.CountTokensRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $12.CountTokensResponse.fromBuffer(value));
+              $28.CountTokensResponse.fromBuffer(value));
 
   GenerativeServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$12.GenerateContentResponse> generateContent(
-      $12.GenerateContentRequest request,
+  $grpc.ResponseFuture<$28.GenerateContentResponse> generateContent(
+      $28.GenerateContentRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$generateContent, request, options: options);
   }
 
-  $grpc.ResponseFuture<$12.GenerateAnswerResponse> generateAnswer(
-      $12.GenerateAnswerRequest request,
+  $grpc.ResponseFuture<$28.GenerateAnswerResponse> generateAnswer(
+      $28.GenerateAnswerRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$generateAnswer, request, options: options);
   }
 
-  $grpc.ResponseStream<$12.GenerateContentResponse> streamGenerateContent(
-      $12.GenerateContentRequest request,
+  $grpc.ResponseStream<$28.GenerateContentResponse> streamGenerateContent(
+      $28.GenerateContentRequest request,
       {$grpc.CallOptions? options}) {
     return $createStreamingCall(
         _$streamGenerateContent, $async.Stream.fromIterable([request]),
         options: options);
   }
 
-  $grpc.ResponseFuture<$12.EmbedContentResponse> embedContent(
-      $12.EmbedContentRequest request,
+  $grpc.ResponseFuture<$28.EmbedContentResponse> embedContent(
+      $28.EmbedContentRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$embedContent, request, options: options);
   }
 
-  $grpc.ResponseFuture<$12.BatchEmbedContentsResponse> batchEmbedContents(
-      $12.BatchEmbedContentsRequest request,
+  $grpc.ResponseFuture<$28.BatchEmbedContentsResponse> batchEmbedContents(
+      $28.BatchEmbedContentsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchEmbedContents, request, options: options);
   }
 
-  $grpc.ResponseFuture<$12.CountTokensResponse> countTokens(
-      $12.CountTokensRequest request,
+  $grpc.ResponseFuture<$28.CountTokensResponse> countTokens(
+      $28.CountTokensRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$countTokens, request, options: options);
   }
@@ -108,107 +108,107 @@ abstract class GenerativeServiceBase extends $grpc.Service {
       'google.ai.generativelanguage.v1beta.GenerativeService';
 
   GenerativeServiceBase() {
-    $addMethod($grpc.ServiceMethod<$12.GenerateContentRequest,
-            $12.GenerateContentResponse>(
+    $addMethod($grpc.ServiceMethod<$28.GenerateContentRequest,
+            $28.GenerateContentResponse>(
         'GenerateContent',
         generateContent_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $12.GenerateContentRequest.fromBuffer(value),
-        ($12.GenerateContentResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$12.GenerateAnswerRequest,
-            $12.GenerateAnswerResponse>(
+            $28.GenerateContentRequest.fromBuffer(value),
+        ($28.GenerateContentResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$28.GenerateAnswerRequest,
+            $28.GenerateAnswerResponse>(
         'GenerateAnswer',
         generateAnswer_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $12.GenerateAnswerRequest.fromBuffer(value),
-        ($12.GenerateAnswerResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$12.GenerateContentRequest,
-            $12.GenerateContentResponse>(
+            $28.GenerateAnswerRequest.fromBuffer(value),
+        ($28.GenerateAnswerResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$28.GenerateContentRequest,
+            $28.GenerateContentResponse>(
         'StreamGenerateContent',
         streamGenerateContent_Pre,
         false,
         true,
         ($core.List<$core.int> value) =>
-            $12.GenerateContentRequest.fromBuffer(value),
-        ($12.GenerateContentResponse value) => value.writeToBuffer()));
+            $28.GenerateContentRequest.fromBuffer(value),
+        ($28.GenerateContentResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$12.EmbedContentRequest, $12.EmbedContentResponse>(
+        $grpc.ServiceMethod<$28.EmbedContentRequest, $28.EmbedContentResponse>(
             'EmbedContent',
             embedContent_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $12.EmbedContentRequest.fromBuffer(value),
-            ($12.EmbedContentResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$12.BatchEmbedContentsRequest,
-            $12.BatchEmbedContentsResponse>(
+                $28.EmbedContentRequest.fromBuffer(value),
+            ($28.EmbedContentResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$28.BatchEmbedContentsRequest,
+            $28.BatchEmbedContentsResponse>(
         'BatchEmbedContents',
         batchEmbedContents_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $12.BatchEmbedContentsRequest.fromBuffer(value),
-        ($12.BatchEmbedContentsResponse value) => value.writeToBuffer()));
+            $28.BatchEmbedContentsRequest.fromBuffer(value),
+        ($28.BatchEmbedContentsResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$12.CountTokensRequest, $12.CountTokensResponse>(
+        $grpc.ServiceMethod<$28.CountTokensRequest, $28.CountTokensResponse>(
             'CountTokens',
             countTokens_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $12.CountTokensRequest.fromBuffer(value),
-            ($12.CountTokensResponse value) => value.writeToBuffer()));
+                $28.CountTokensRequest.fromBuffer(value),
+            ($28.CountTokensResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$12.GenerateContentResponse> generateContent_Pre(
+  $async.Future<$28.GenerateContentResponse> generateContent_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$12.GenerateContentRequest> request) async {
+      $async.Future<$28.GenerateContentRequest> request) async {
     return generateContent(call, await request);
   }
 
-  $async.Future<$12.GenerateAnswerResponse> generateAnswer_Pre(
+  $async.Future<$28.GenerateAnswerResponse> generateAnswer_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$12.GenerateAnswerRequest> request) async {
+      $async.Future<$28.GenerateAnswerRequest> request) async {
     return generateAnswer(call, await request);
   }
 
-  $async.Stream<$12.GenerateContentResponse> streamGenerateContent_Pre(
+  $async.Stream<$28.GenerateContentResponse> streamGenerateContent_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$12.GenerateContentRequest> request) async* {
+      $async.Future<$28.GenerateContentRequest> request) async* {
     yield* streamGenerateContent(call, await request);
   }
 
-  $async.Future<$12.EmbedContentResponse> embedContent_Pre(
+  $async.Future<$28.EmbedContentResponse> embedContent_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$12.EmbedContentRequest> request) async {
+      $async.Future<$28.EmbedContentRequest> request) async {
     return embedContent(call, await request);
   }
 
-  $async.Future<$12.BatchEmbedContentsResponse> batchEmbedContents_Pre(
+  $async.Future<$28.BatchEmbedContentsResponse> batchEmbedContents_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$12.BatchEmbedContentsRequest> request) async {
+      $async.Future<$28.BatchEmbedContentsRequest> request) async {
     return batchEmbedContents(call, await request);
   }
 
-  $async.Future<$12.CountTokensResponse> countTokens_Pre($grpc.ServiceCall call,
-      $async.Future<$12.CountTokensRequest> request) async {
+  $async.Future<$28.CountTokensResponse> countTokens_Pre($grpc.ServiceCall call,
+      $async.Future<$28.CountTokensRequest> request) async {
     return countTokens(call, await request);
   }
 
-  $async.Future<$12.GenerateContentResponse> generateContent(
-      $grpc.ServiceCall call, $12.GenerateContentRequest request);
-  $async.Future<$12.GenerateAnswerResponse> generateAnswer(
-      $grpc.ServiceCall call, $12.GenerateAnswerRequest request);
-  $async.Stream<$12.GenerateContentResponse> streamGenerateContent(
-      $grpc.ServiceCall call, $12.GenerateContentRequest request);
-  $async.Future<$12.EmbedContentResponse> embedContent(
-      $grpc.ServiceCall call, $12.EmbedContentRequest request);
-  $async.Future<$12.BatchEmbedContentsResponse> batchEmbedContents(
-      $grpc.ServiceCall call, $12.BatchEmbedContentsRequest request);
-  $async.Future<$12.CountTokensResponse> countTokens(
-      $grpc.ServiceCall call, $12.CountTokensRequest request);
+  $async.Future<$28.GenerateContentResponse> generateContent(
+      $grpc.ServiceCall call, $28.GenerateContentRequest request);
+  $async.Future<$28.GenerateAnswerResponse> generateAnswer(
+      $grpc.ServiceCall call, $28.GenerateAnswerRequest request);
+  $async.Stream<$28.GenerateContentResponse> streamGenerateContent(
+      $grpc.ServiceCall call, $28.GenerateContentRequest request);
+  $async.Future<$28.EmbedContentResponse> embedContent(
+      $grpc.ServiceCall call, $28.EmbedContentRequest request);
+  $async.Future<$28.BatchEmbedContentsResponse> batchEmbedContents(
+      $grpc.ServiceCall call, $28.BatchEmbedContentsRequest request);
+  $async.Future<$28.CountTokensResponse> countTokens(
+      $grpc.ServiceCall call, $28.CountTokensRequest request);
 }

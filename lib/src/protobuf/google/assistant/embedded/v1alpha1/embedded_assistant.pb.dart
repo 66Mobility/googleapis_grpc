@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $324;
+import '../../../rpc/status.pb.dart' as $350;
 import 'embedded_assistant.pbenum.dart';
 
 export 'embedded_assistant.pbenum.dart';
@@ -747,7 +747,7 @@ enum ConverseResponse_ConverseResponse {
 /// `ConverseResponse` messages are streamed back to the client.
 class ConverseResponse extends $pb.GeneratedMessage {
   factory ConverseResponse({
-    $324.Status? error,
+    $350.Status? error,
     ConverseResponse_EventType? eventType,
     AudioOut? audioOut,
     ConverseResult? result,
@@ -789,8 +789,8 @@ class ConverseResponse extends $pb.GeneratedMessage {
           _omitMessageNames ? '' : 'google.assistant.embedded.v1alpha1'),
       createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 5])
-    ..aOM<$324.Status>(1, _omitFieldNames ? '' : 'error',
-        subBuilder: $324.Status.create)
+    ..aOM<$350.Status>(1, _omitFieldNames ? '' : 'error',
+        subBuilder: $350.Status.create)
     ..e<ConverseResponse_EventType>(
         2, _omitFieldNames ? '' : 'eventType', $pb.PbFieldType.OE,
         defaultOrMaker: ConverseResponse_EventType.EVENT_TYPE_UNSPECIFIED,
@@ -834,9 +834,9 @@ class ConverseResponse extends $pb.GeneratedMessage {
   /// during processing, this message will be set and there will be no further
   /// messages sent.
   @$pb.TagNumber(1)
-  $324.Status get error => $_getN(0);
+  $350.Status get error => $_getN(0);
   @$pb.TagNumber(1)
-  set error($324.Status v) {
+  set error($350.Status v) {
     setField(1, v);
   }
 
@@ -845,7 +845,7 @@ class ConverseResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearError() => clearField(1);
   @$pb.TagNumber(1)
-  $324.Status ensureError() => $_ensure(0);
+  $350.Status ensureError() => $_ensure(0);
 
   /// *Output-only* Indicates the type of event.
   @$pb.TagNumber(2)

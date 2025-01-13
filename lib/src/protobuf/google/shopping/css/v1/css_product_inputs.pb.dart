@@ -14,9 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $304;
-import '../../type/types.pb.dart' as $540;
-import 'css_product_common.pb.dart' as $541;
+import '../../../protobuf/field_mask.pb.dart' as $361;
+import '../../../protobuf/timestamp.pb.dart' as $330;
+import '../../type/types.pb.dart' as $569;
+import 'css_product_common.pb.dart' as $570;
 
 /// This resource represents input data you submit for a CSS Product, not
 /// the processed CSS Product that you see in CSS Center, in Shopping Ads, or
@@ -28,9 +29,10 @@ class CssProductInput extends $pb.GeneratedMessage {
     $core.String? rawProvidedId,
     $core.String? contentLanguage,
     $core.String? feedLabel,
-    $304.Timestamp? freshnessTime,
-    $541.Attributes? attributes,
-    $core.Iterable<$540.CustomAttribute>? customAttributes,
+    @$core.Deprecated('This field is deprecated.')
+    $330.Timestamp? freshnessTime,
+    $570.Attributes? attributes,
+    $core.Iterable<$569.CustomAttribute>? customAttributes,
   }) {
     final $result = create();
     if (name != null) {
@@ -49,6 +51,7 @@ class CssProductInput extends $pb.GeneratedMessage {
       $result.feedLabel = feedLabel;
     }
     if (freshnessTime != null) {
+      // ignore: deprecated_member_use_from_same_package
       $result.freshnessTime = freshnessTime;
     }
     if (attributes != null) {
@@ -77,13 +80,13 @@ class CssProductInput extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'rawProvidedId')
     ..aOS(4, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(5, _omitFieldNames ? '' : 'feedLabel')
-    ..aOM<$304.Timestamp>(6, _omitFieldNames ? '' : 'freshnessTime',
-        subBuilder: $304.Timestamp.create)
-    ..aOM<$541.Attributes>(7, _omitFieldNames ? '' : 'attributes',
-        subBuilder: $541.Attributes.create)
-    ..pc<$540.CustomAttribute>(
+    ..aOM<$330.Timestamp>(6, _omitFieldNames ? '' : 'freshnessTime',
+        subBuilder: $330.Timestamp.create)
+    ..aOM<$570.Attributes>(7, _omitFieldNames ? '' : 'attributes',
+        subBuilder: $570.Attributes.create)
+    ..pc<$569.CustomAttribute>(
         8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM,
-        subBuilder: $540.CustomAttribute.create)
+        subBuilder: $569.CustomAttribute.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -189,6 +192,7 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearFeedLabel() => clearField(5);
 
+  ///  DEPRECATED. Use expiration_date instead.
   ///  Represents the existing version (freshness) of the CSS Product, which
   ///  can be used to preserve the right order when multiple updates are done at
   ///  the same time.
@@ -206,25 +210,30 @@ class CssProductInput extends $pb.GeneratedMessage {
   ///
   ///  If the operation is prevented, the aborted exception will be
   ///  thrown.
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
-  $304.Timestamp get freshnessTime => $_getN(5);
+  $330.Timestamp get freshnessTime => $_getN(5);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
-  set freshnessTime($304.Timestamp v) {
+  set freshnessTime($330.Timestamp v) {
     setField(6, v);
   }
 
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
   $core.bool hasFreshnessTime() => $_has(5);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
   void clearFreshnessTime() => clearField(6);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
-  $304.Timestamp ensureFreshnessTime() => $_ensure(5);
+  $330.Timestamp ensureFreshnessTime() => $_ensure(5);
 
   /// A list of CSS Product attributes.
   @$pb.TagNumber(7)
-  $541.Attributes get attributes => $_getN(6);
+  $570.Attributes get attributes => $_getN(6);
   @$pb.TagNumber(7)
-  set attributes($541.Attributes v) {
+  set attributes($570.Attributes v) {
     setField(7, v);
   }
 
@@ -233,7 +242,7 @@ class CssProductInput extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearAttributes() => clearField(7);
   @$pb.TagNumber(7)
-  $541.Attributes ensureAttributes() => $_ensure(6);
+  $570.Attributes ensureAttributes() => $_ensure(6);
 
   /// A list of custom (CSS-provided) attributes. It can also be used for
   /// submitting any attribute of the feed specification in its generic
@@ -242,7 +251,7 @@ class CssProductInput extends $pb.GeneratedMessage {
   /// This is useful for submitting attributes not explicitly exposed by the
   /// API, such as additional attributes used for Buy on Google.
   @$pb.TagNumber(8)
-  $core.List<$540.CustomAttribute> get customAttributes => $_getList(7);
+  $core.List<$569.CustomAttribute> get customAttributes => $_getList(7);
 }
 
 /// Request message for the InsertCssProductInput method.
@@ -250,7 +259,7 @@ class InsertCssProductInputRequest extends $pb.GeneratedMessage {
   factory InsertCssProductInputRequest({
     $core.String? parent,
     CssProductInput? cssProductInput,
-    $fixnum.Int64? feedId,
+    @$core.Deprecated('This field is deprecated.') $fixnum.Int64? feedId,
   }) {
     final $result = create();
     if (parent != null) {
@@ -260,6 +269,7 @@ class InsertCssProductInputRequest extends $pb.GeneratedMessage {
       $result.cssProductInput = cssProductInput;
     }
     if (feedId != null) {
+      // ignore: deprecated_member_use_from_same_package
       $result.feedId = feedId;
     }
     return $result;
@@ -339,22 +349,136 @@ class InsertCssProductInputRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   CssProductInput ensureCssProductInput() => $_ensure(1);
 
-  /// Required. The primary or supplemental feed id. If CSS Product already
-  /// exists and feed id provided is different, then the CSS Product will be
-  /// moved to a new feed. Note: For now, CSSs do not need to provide feed ids as
-  /// we create feeds on the fly. We do not have supplemental feed support for
-  /// CSS Products yet.
+  /// Optional. DEPRECATED. Feed id is not required for CSS Products.
+  /// The primary or supplemental feed id. If CSS Product already exists and
+  /// feed id provided is different, then the CSS Product will be moved to a
+  /// new feed.
+  /// Note: For now, CSSs do not need to provide feed ids as we create
+  /// feeds on the fly.
+  /// We do not have supplemental feed support for CSS Products yet.
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $fixnum.Int64 get feedId => $_getI64(2);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   set feedId($fixnum.Int64 v) {
     $_setInt64(2, v);
   }
 
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $core.bool hasFeedId() => $_has(2);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   void clearFeedId() => clearField(3);
+}
+
+/// Request message for the UpdateCssProductInput method.
+class UpdateCssProductInputRequest extends $pb.GeneratedMessage {
+  factory UpdateCssProductInputRequest({
+    CssProductInput? cssProductInput,
+    $361.FieldMask? updateMask,
+  }) {
+    final $result = create();
+    if (cssProductInput != null) {
+      $result.cssProductInput = cssProductInput;
+    }
+    if (updateMask != null) {
+      $result.updateMask = updateMask;
+    }
+    return $result;
+  }
+  UpdateCssProductInputRequest._() : super();
+  factory UpdateCssProductInputRequest.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory UpdateCssProductInputRequest.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'UpdateCssProductInputRequest',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.shopping.css.v1'),
+      createEmptyInstance: create)
+    ..aOM<CssProductInput>(1, _omitFieldNames ? '' : 'cssProductInput',
+        subBuilder: CssProductInput.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  UpdateCssProductInputRequest clone() =>
+      UpdateCssProductInputRequest()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  UpdateCssProductInputRequest copyWith(
+          void Function(UpdateCssProductInputRequest) updates) =>
+      super.copyWith(
+              (message) => updates(message as UpdateCssProductInputRequest))
+          as UpdateCssProductInputRequest;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static UpdateCssProductInputRequest create() =>
+      UpdateCssProductInputRequest._();
+  UpdateCssProductInputRequest createEmptyInstance() => create();
+  static $pb.PbList<UpdateCssProductInputRequest> createRepeated() =>
+      $pb.PbList<UpdateCssProductInputRequest>();
+  @$core.pragma('dart2js:noInline')
+  static UpdateCssProductInputRequest getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<UpdateCssProductInputRequest>(create);
+  static UpdateCssProductInputRequest? _defaultInstance;
+
+  /// Required. The CSS product input resource to update. Information you submit
+  /// will be applied to the processed CSS product as well.
+  @$pb.TagNumber(1)
+  CssProductInput get cssProductInput => $_getN(0);
+  @$pb.TagNumber(1)
+  set cssProductInput(CssProductInput v) {
+    setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasCssProductInput() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearCssProductInput() => clearField(1);
+  @$pb.TagNumber(1)
+  CssProductInput ensureCssProductInput() => $_ensure(0);
+
+  ///  The list of CSS product attributes to be updated.
+  ///
+  ///  If the update mask is omitted, then it is treated as implied field mask
+  ///  equivalent to all fields that are populated (have a non-empty value).
+  ///
+  ///  Attributes specified in the update mask without a value specified in the
+  ///  body will be deleted from the CSS product.
+  ///
+  ///  Update mask can only be specified for top level fields in
+  ///  attributes and custom attributes.
+  ///
+  ///  To specify the update mask for custom attributes you need to add the
+  ///  `custom_attribute.` prefix.
+  ///
+  ///  Providing special "*" value for full CSS product replacement is not
+  ///  supported.
+  @$pb.TagNumber(2)
+  $361.FieldMask get updateMask => $_getN(1);
+  @$pb.TagNumber(2)
+  set updateMask($361.FieldMask v) {
+    setField(2, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasUpdateMask() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearUpdateMask() => clearField(2);
+  @$pb.TagNumber(2)
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the DeleteCssProductInput method.

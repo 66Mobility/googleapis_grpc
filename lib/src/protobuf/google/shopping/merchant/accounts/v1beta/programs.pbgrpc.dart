@@ -15,58 +15,58 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'programs.pb.dart' as $225;
+import 'programs.pb.dart' as $251;
 
 export 'programs.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.accounts.v1beta.ProgramsService')
 class ProgramsServiceClient extends $grpc.Client {
-  static final _$getProgram = $grpc.ClientMethod<$225.GetProgramRequest,
-          $225.Program>(
+  static final _$getProgram = $grpc.ClientMethod<$251.GetProgramRequest,
+          $251.Program>(
       '/google.shopping.merchant.accounts.v1beta.ProgramsService/GetProgram',
-      ($225.GetProgramRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $225.Program.fromBuffer(value));
-  static final _$listPrograms = $grpc.ClientMethod<$225.ListProgramsRequest,
-          $225.ListProgramsResponse>(
+      ($251.GetProgramRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $251.Program.fromBuffer(value));
+  static final _$listPrograms = $grpc.ClientMethod<$251.ListProgramsRequest,
+          $251.ListProgramsResponse>(
       '/google.shopping.merchant.accounts.v1beta.ProgramsService/ListPrograms',
-      ($225.ListProgramsRequest value) => value.writeToBuffer(),
+      ($251.ListProgramsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $225.ListProgramsResponse.fromBuffer(value));
-  static final _$enableProgram = $grpc.ClientMethod<$225.EnableProgramRequest,
-          $225.Program>(
+          $251.ListProgramsResponse.fromBuffer(value));
+  static final _$enableProgram = $grpc.ClientMethod<$251.EnableProgramRequest,
+          $251.Program>(
       '/google.shopping.merchant.accounts.v1beta.ProgramsService/EnableProgram',
-      ($225.EnableProgramRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $225.Program.fromBuffer(value));
-  static final _$disableProgram = $grpc.ClientMethod<$225.DisableProgramRequest,
-          $225.Program>(
+      ($251.EnableProgramRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $251.Program.fromBuffer(value));
+  static final _$disableProgram = $grpc.ClientMethod<$251.DisableProgramRequest,
+          $251.Program>(
       '/google.shopping.merchant.accounts.v1beta.ProgramsService/DisableProgram',
-      ($225.DisableProgramRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $225.Program.fromBuffer(value));
+      ($251.DisableProgramRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $251.Program.fromBuffer(value));
 
   ProgramsServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$225.Program> getProgram($225.GetProgramRequest request,
+  $grpc.ResponseFuture<$251.Program> getProgram($251.GetProgramRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getProgram, request, options: options);
   }
 
-  $grpc.ResponseFuture<$225.ListProgramsResponse> listPrograms(
-      $225.ListProgramsRequest request,
+  $grpc.ResponseFuture<$251.ListProgramsResponse> listPrograms(
+      $251.ListProgramsRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listPrograms, request, options: options);
   }
 
-  $grpc.ResponseFuture<$225.Program> enableProgram(
-      $225.EnableProgramRequest request,
+  $grpc.ResponseFuture<$251.Program> enableProgram(
+      $251.EnableProgramRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$enableProgram, request, options: options);
   }
 
-  $grpc.ResponseFuture<$225.Program> disableProgram(
-      $225.DisableProgramRequest request,
+  $grpc.ResponseFuture<$251.Program> disableProgram(
+      $251.DisableProgramRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$disableProgram, request, options: options);
   }
@@ -78,68 +78,68 @@ abstract class ProgramsServiceBase extends $grpc.Service {
       'google.shopping.merchant.accounts.v1beta.ProgramsService';
 
   ProgramsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$225.GetProgramRequest, $225.Program>(
+    $addMethod($grpc.ServiceMethod<$251.GetProgramRequest, $251.Program>(
         'GetProgram',
         getProgram_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $225.GetProgramRequest.fromBuffer(value),
-        ($225.Program value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$225.ListProgramsRequest,
-            $225.ListProgramsResponse>(
+            $251.GetProgramRequest.fromBuffer(value),
+        ($251.Program value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$251.ListProgramsRequest,
+            $251.ListProgramsResponse>(
         'ListPrograms',
         listPrograms_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $225.ListProgramsRequest.fromBuffer(value),
-        ($225.ListProgramsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$225.EnableProgramRequest, $225.Program>(
+            $251.ListProgramsRequest.fromBuffer(value),
+        ($251.ListProgramsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$251.EnableProgramRequest, $251.Program>(
         'EnableProgram',
         enableProgram_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $225.EnableProgramRequest.fromBuffer(value),
-        ($225.Program value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$225.DisableProgramRequest, $225.Program>(
+            $251.EnableProgramRequest.fromBuffer(value),
+        ($251.Program value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$251.DisableProgramRequest, $251.Program>(
         'DisableProgram',
         disableProgram_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $225.DisableProgramRequest.fromBuffer(value),
-        ($225.Program value) => value.writeToBuffer()));
+            $251.DisableProgramRequest.fromBuffer(value),
+        ($251.Program value) => value.writeToBuffer()));
   }
 
-  $async.Future<$225.Program> getProgram_Pre($grpc.ServiceCall call,
-      $async.Future<$225.GetProgramRequest> request) async {
+  $async.Future<$251.Program> getProgram_Pre($grpc.ServiceCall call,
+      $async.Future<$251.GetProgramRequest> request) async {
     return getProgram(call, await request);
   }
 
-  $async.Future<$225.ListProgramsResponse> listPrograms_Pre(
+  $async.Future<$251.ListProgramsResponse> listPrograms_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$225.ListProgramsRequest> request) async {
+      $async.Future<$251.ListProgramsRequest> request) async {
     return listPrograms(call, await request);
   }
 
-  $async.Future<$225.Program> enableProgram_Pre($grpc.ServiceCall call,
-      $async.Future<$225.EnableProgramRequest> request) async {
+  $async.Future<$251.Program> enableProgram_Pre($grpc.ServiceCall call,
+      $async.Future<$251.EnableProgramRequest> request) async {
     return enableProgram(call, await request);
   }
 
-  $async.Future<$225.Program> disableProgram_Pre($grpc.ServiceCall call,
-      $async.Future<$225.DisableProgramRequest> request) async {
+  $async.Future<$251.Program> disableProgram_Pre($grpc.ServiceCall call,
+      $async.Future<$251.DisableProgramRequest> request) async {
     return disableProgram(call, await request);
   }
 
-  $async.Future<$225.Program> getProgram(
-      $grpc.ServiceCall call, $225.GetProgramRequest request);
-  $async.Future<$225.ListProgramsResponse> listPrograms(
-      $grpc.ServiceCall call, $225.ListProgramsRequest request);
-  $async.Future<$225.Program> enableProgram(
-      $grpc.ServiceCall call, $225.EnableProgramRequest request);
-  $async.Future<$225.Program> disableProgram(
-      $grpc.ServiceCall call, $225.DisableProgramRequest request);
+  $async.Future<$251.Program> getProgram(
+      $grpc.ServiceCall call, $251.GetProgramRequest request);
+  $async.Future<$251.ListProgramsResponse> listPrograms(
+      $grpc.ServiceCall call, $251.ListProgramsRequest request);
+  $async.Future<$251.Program> enableProgram(
+      $grpc.ServiceCall call, $251.EnableProgramRequest request);
+  $async.Future<$251.Program> disableProgram(
+      $grpc.ServiceCall call, $251.DisableProgramRequest request);
 }

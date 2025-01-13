@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $335;
-import 'subscription_resource.pb.dart' as $79;
+import '../../../../protobuf/field_mask.pb.dart' as $361;
+import 'subscription_resource.pb.dart' as $97;
 
 /// The request message for
 /// [SubscriptionsService.CreateSubscription][google.apps.events.subscriptions.v1.SubscriptionsService.CreateSubscription].
 class CreateSubscriptionRequest extends $pb.GeneratedMessage {
   factory CreateSubscriptionRequest({
-    $79.Subscription? subscription,
+    $97.Subscription? subscription,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -45,8 +45,8 @@ class CreateSubscriptionRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'),
       createEmptyInstance: create)
-    ..aOM<$79.Subscription>(1, _omitFieldNames ? '' : 'subscription',
-        subBuilder: $79.Subscription.create)
+    ..aOM<$97.Subscription>(1, _omitFieldNames ? '' : 'subscription',
+        subBuilder: $97.Subscription.create)
     ..aOB(2, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false;
 
@@ -77,9 +77,9 @@ class CreateSubscriptionRequest extends $pb.GeneratedMessage {
 
   /// Required. The subscription resource to create.
   @$pb.TagNumber(1)
-  $79.Subscription get subscription => $_getN(0);
+  $97.Subscription get subscription => $_getN(0);
   @$pb.TagNumber(1)
-  set subscription($79.Subscription v) {
+  set subscription($97.Subscription v) {
     setField(1, v);
   }
 
@@ -88,7 +88,7 @@ class CreateSubscriptionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearSubscription() => clearField(1);
   @$pb.TagNumber(1)
-  $79.Subscription ensureSubscription() => $_ensure(0);
+  $97.Subscription ensureSubscription() => $_ensure(0);
 
   /// Optional. If set to `true`, validates and previews the request, but doesn't
   /// create the subscription.
@@ -306,8 +306,8 @@ class GetSubscriptionRequest extends $pb.GeneratedMessage {
 /// [SubscriptionsService.UpdateSubscription][google.apps.events.subscriptions.v1.SubscriptionsService.UpdateSubscription].
 class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   factory UpdateSubscriptionRequest({
-    $79.Subscription? subscription,
-    $335.FieldMask? updateMask,
+    $97.Subscription? subscription,
+    $361.FieldMask? updateMask,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -335,10 +335,10 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'),
       createEmptyInstance: create)
-    ..aOM<$79.Subscription>(1, _omitFieldNames ? '' : 'subscription',
-        subBuilder: $79.Subscription.create)
-    ..aOM<$335.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
-        subBuilder: $335.FieldMask.create)
+    ..aOM<$97.Subscription>(1, _omitFieldNames ? '' : 'subscription',
+        subBuilder: $97.Subscription.create)
+    ..aOM<$361.FieldMask>(2, _omitFieldNames ? '' : 'updateMask',
+        subBuilder: $361.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false;
 
@@ -372,9 +372,9 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   ///  The subscription's `name` field is used to identify the subscription to
   ///  update.
   @$pb.TagNumber(1)
-  $79.Subscription get subscription => $_getN(0);
+  $97.Subscription get subscription => $_getN(0);
   @$pb.TagNumber(1)
-  set subscription($79.Subscription v) {
+  set subscription($97.Subscription v) {
     setField(1, v);
   }
 
@@ -383,7 +383,7 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearSubscription() => clearField(1);
   @$pb.TagNumber(1)
-  $79.Subscription ensureSubscription() => $_ensure(0);
+  $97.Subscription ensureSubscription() => $_ensure(0);
 
   ///  Optional. Required. The field to update.
   ///
@@ -395,9 +395,9 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   ///  time-to-live (TTL) or duration of the
   ///    subscription.
   @$pb.TagNumber(2)
-  $335.FieldMask get updateMask => $_getN(1);
+  $361.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($335.FieldMask v) {
+  set updateMask($361.FieldMask v) {
     setField(2, v);
   }
 
@@ -406,7 +406,7 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $335.FieldMask ensureUpdateMask() => $_ensure(1);
+  $361.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. If set to `true`, validates and previews the request, but doesn't
   /// update the subscription.
@@ -638,7 +638,7 @@ class ListSubscriptionsRequest extends $pb.GeneratedMessage {
 /// [SubscriptionsService.ListSubscriptions][google.apps.events.subscriptions.v1.SubscriptionsService.ListSubscriptions].
 class ListSubscriptionsResponse extends $pb.GeneratedMessage {
   factory ListSubscriptionsResponse({
-    $core.Iterable<$79.Subscription>? subscriptions,
+    $core.Iterable<$97.Subscription>? subscriptions,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -663,9 +663,9 @@ class ListSubscriptionsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'),
       createEmptyInstance: create)
-    ..pc<$79.Subscription>(
+    ..pc<$97.Subscription>(
         1, _omitFieldNames ? '' : 'subscriptions', $pb.PbFieldType.PM,
-        subBuilder: $79.Subscription.create)
+        subBuilder: $97.Subscription.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false;
 
@@ -696,7 +696,7 @@ class ListSubscriptionsResponse extends $pb.GeneratedMessage {
 
   /// List of subscriptions.
   @$pb.TagNumber(1)
-  $core.List<$79.Subscription> get subscriptions => $_getList(0);
+  $core.List<$97.Subscription> get subscriptions => $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no subsequent pages.

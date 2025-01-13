@@ -15,7 +15,7 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'emailpreferences.pb.dart' as $222;
+import 'emailpreferences.pb.dart' as $248;
 
 export 'emailpreferences.pb.dart';
 
@@ -23,29 +23,29 @@ export 'emailpreferences.pb.dart';
     'google.shopping.merchant.accounts.v1beta.EmailPreferencesService')
 class EmailPreferencesServiceClient extends $grpc.Client {
   static final _$getEmailPreferences = $grpc.ClientMethod<
-          $222.GetEmailPreferencesRequest, $222.EmailPreferences>(
+          $248.GetEmailPreferencesRequest, $248.EmailPreferences>(
       '/google.shopping.merchant.accounts.v1beta.EmailPreferencesService/GetEmailPreferences',
-      ($222.GetEmailPreferencesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $222.EmailPreferences.fromBuffer(value));
+      ($248.GetEmailPreferencesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $248.EmailPreferences.fromBuffer(value));
   static final _$updateEmailPreferences = $grpc.ClientMethod<
-          $222.UpdateEmailPreferencesRequest, $222.EmailPreferences>(
+          $248.UpdateEmailPreferencesRequest, $248.EmailPreferences>(
       '/google.shopping.merchant.accounts.v1beta.EmailPreferencesService/UpdateEmailPreferences',
-      ($222.UpdateEmailPreferencesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $222.EmailPreferences.fromBuffer(value));
+      ($248.UpdateEmailPreferencesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $248.EmailPreferences.fromBuffer(value));
 
   EmailPreferencesServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$222.EmailPreferences> getEmailPreferences(
-      $222.GetEmailPreferencesRequest request,
+  $grpc.ResponseFuture<$248.EmailPreferences> getEmailPreferences(
+      $248.GetEmailPreferencesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getEmailPreferences, request, options: options);
   }
 
-  $grpc.ResponseFuture<$222.EmailPreferences> updateEmailPreferences(
-      $222.UpdateEmailPreferencesRequest request,
+  $grpc.ResponseFuture<$248.EmailPreferences> updateEmailPreferences(
+      $248.UpdateEmailPreferencesRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateEmailPreferences, request,
         options: options);
@@ -59,40 +59,40 @@ abstract class EmailPreferencesServiceBase extends $grpc.Service {
       'google.shopping.merchant.accounts.v1beta.EmailPreferencesService';
 
   EmailPreferencesServiceBase() {
-    $addMethod($grpc.ServiceMethod<$222.GetEmailPreferencesRequest,
-            $222.EmailPreferences>(
+    $addMethod($grpc.ServiceMethod<$248.GetEmailPreferencesRequest,
+            $248.EmailPreferences>(
         'GetEmailPreferences',
         getEmailPreferences_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $222.GetEmailPreferencesRequest.fromBuffer(value),
-        ($222.EmailPreferences value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$222.UpdateEmailPreferencesRequest,
-            $222.EmailPreferences>(
+            $248.GetEmailPreferencesRequest.fromBuffer(value),
+        ($248.EmailPreferences value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$248.UpdateEmailPreferencesRequest,
+            $248.EmailPreferences>(
         'UpdateEmailPreferences',
         updateEmailPreferences_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $222.UpdateEmailPreferencesRequest.fromBuffer(value),
-        ($222.EmailPreferences value) => value.writeToBuffer()));
+            $248.UpdateEmailPreferencesRequest.fromBuffer(value),
+        ($248.EmailPreferences value) => value.writeToBuffer()));
   }
 
-  $async.Future<$222.EmailPreferences> getEmailPreferences_Pre(
+  $async.Future<$248.EmailPreferences> getEmailPreferences_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$222.GetEmailPreferencesRequest> request) async {
+      $async.Future<$248.GetEmailPreferencesRequest> request) async {
     return getEmailPreferences(call, await request);
   }
 
-  $async.Future<$222.EmailPreferences> updateEmailPreferences_Pre(
+  $async.Future<$248.EmailPreferences> updateEmailPreferences_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$222.UpdateEmailPreferencesRequest> request) async {
+      $async.Future<$248.UpdateEmailPreferencesRequest> request) async {
     return updateEmailPreferences(call, await request);
   }
 
-  $async.Future<$222.EmailPreferences> getEmailPreferences(
-      $grpc.ServiceCall call, $222.GetEmailPreferencesRequest request);
-  $async.Future<$222.EmailPreferences> updateEmailPreferences(
-      $grpc.ServiceCall call, $222.UpdateEmailPreferencesRequest request);
+  $async.Future<$248.EmailPreferences> getEmailPreferences(
+      $grpc.ServiceCall call, $248.GetEmailPreferencesRequest request);
+  $async.Future<$248.EmailPreferences> updateEmailPreferences(
+      $grpc.ServiceCall call, $248.UpdateEmailPreferencesRequest request);
 }
