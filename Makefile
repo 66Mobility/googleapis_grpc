@@ -25,14 +25,15 @@ clone:
 	cp $$(brew --prefix protobuf)/include/google/protobuf/*.proto googleapis/google/protobuf
 
 	# Delete cloud and ads sub-folders as they are enourmous (200mb)
-	rm -rf googleapis/google/cloud
-	rm -rf googleapis/google/ads
-	rm -rf googleapis/google/devtools
-	rm -rf googleapis/google/analytics
-	rm -rf googleapis/google/container
+	# rm -rf googleapis/google/cloud
+	# rm -rf googleapis/google/ads
+	# rm -rf googleapis/google/devtools
+	# rm -rf googleapis/google/analytics
+	# rm -rf googleapis/google/container
+	# find googleapis/google/ -type d -not -name 'maps' -not -name 'maps' -exec rm -rf {} +
 
 protoc:
 	rm -rf lib/src/protobuf/*
-	rm lib/*.dart
-	zsh -c "protoc googleapis/**/*.proto -Igoogleapis --plugin=$$HOME/.pub-cache/bin/protoc-gen-dart --dart_out=grpc:lib/src/protobuf"
+	-rm lib/*.dart
+	zsh -c "protoc googleapis/google/maps/routing/**/*.proto googleapis/google/type/**/*.proto googleapis/google/rpc/**/*.proto googleapis/google/geo/**/*.proto googleapis/google/protobuf/**/*.proto -Igoogleapis --plugin=$$HOME/.pub-cache/bin/protoc-gen-dart --dart_out=grpc:lib/src/protobuf"
 	dart scripts/generate_libraries.dart

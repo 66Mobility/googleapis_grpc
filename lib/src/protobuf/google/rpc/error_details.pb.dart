@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/duration.pb.dart' as $292;
+import '../protobuf/duration.pb.dart' as $10;
 
 ///  Describes the cause of the error with structured details.
 ///
@@ -162,7 +162,7 @@ class ErrorInfo extends $pb.GeneratedMessage {
 ///  reached.
 class RetryInfo extends $pb.GeneratedMessage {
   factory RetryInfo({
-    $292.Duration? retryDelay,
+    $10.Duration? retryDelay,
   }) {
     final $result = create();
     if (retryDelay != null) {
@@ -182,8 +182,8 @@ class RetryInfo extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'RetryInfo',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.rpc'),
       createEmptyInstance: create)
-    ..aOM<$292.Duration>(1, _omitFieldNames ? '' : 'retryDelay',
-        subBuilder: $292.Duration.create)
+    ..aOM<$10.Duration>(1, _omitFieldNames ? '' : 'retryDelay',
+        subBuilder: $10.Duration.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -209,9 +209,9 @@ class RetryInfo extends $pb.GeneratedMessage {
 
   /// Clients should wait at least this long between retrying the same request.
   @$pb.TagNumber(1)
-  $292.Duration get retryDelay => $_getN(0);
+  $10.Duration get retryDelay => $_getN(0);
   @$pb.TagNumber(1)
-  set retryDelay($292.Duration v) {
+  set retryDelay($10.Duration v) {
     setField(1, v);
   }
 
@@ -220,7 +220,7 @@ class RetryInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearRetryDelay() => clearField(1);
   @$pb.TagNumber(1)
-  $292.Duration ensureRetryDelay() => $_ensure(0);
+  $10.Duration ensureRetryDelay() => $_ensure(0);
 }
 
 /// Describes additional debugging info.

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/timestamp.pb.dart' as $330;
+import '../protobuf/timestamp.pb.dart' as $18;
 
 ///  Represents a time interval, encoded as a Timestamp start (inclusive) and a
 ///  Timestamp end (exclusive).
@@ -23,8 +23,8 @@ import '../protobuf/timestamp.pb.dart' as $330;
 ///  When both start and end are unspecified, the interval matches any time.
 class Interval extends $pb.GeneratedMessage {
   factory Interval({
-    $330.Timestamp? startTime,
-    $330.Timestamp? endTime,
+    $18.Timestamp? startTime,
+    $18.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -47,10 +47,10 @@ class Interval extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'Interval',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'google.type'),
       createEmptyInstance: create)
-    ..aOM<$330.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
-        subBuilder: $330.Timestamp.create)
-    ..aOM<$330.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
-        subBuilder: $330.Timestamp.create)
+    ..aOM<$18.Timestamp>(1, _omitFieldNames ? '' : 'startTime',
+        subBuilder: $18.Timestamp.create)
+    ..aOM<$18.Timestamp>(2, _omitFieldNames ? '' : 'endTime',
+        subBuilder: $18.Timestamp.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -79,9 +79,9 @@ class Interval extends $pb.GeneratedMessage {
   ///  If specified, a Timestamp matching this interval will have to be the same
   ///  or after the start.
   @$pb.TagNumber(1)
-  $330.Timestamp get startTime => $_getN(0);
+  $18.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($330.Timestamp v) {
+  set startTime($18.Timestamp v) {
     setField(1, v);
   }
 
@@ -90,16 +90,16 @@ class Interval extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $330.Timestamp ensureStartTime() => $_ensure(0);
+  $18.Timestamp ensureStartTime() => $_ensure(0);
 
   ///  Optional. Exclusive end of the interval.
   ///
   ///  If specified, a Timestamp matching this interval will have to be before the
   ///  end.
   @$pb.TagNumber(2)
-  $330.Timestamp get endTime => $_getN(1);
+  $18.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($330.Timestamp v) {
+  set endTime($18.Timestamp v) {
     setField(2, v);
   }
 
@@ -108,7 +108,7 @@ class Interval extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $330.Timestamp ensureEndTime() => $_ensure(1);
+  $18.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
