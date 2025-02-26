@@ -1,3 +1,8 @@
+## 1.0.28+routingonly
+
+- Only Google Maps Routing is included
+- Update protobuf definitions
+
 ## 1.0.28
 
 - Update protobuf definitions
